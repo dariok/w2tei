@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+	xmlns:tei="http://www.tei-c.org/ns/1.0" 
+	stylesheet="wtotei-intro.xsl">
+	<x:scenario label="ein Bearbeiter">
+		<x:context mode="head">
+			<w:p><w:t>Bearbeitet von Stefania Salvadori</w:t></w:p>
+		</x:context>
+		<x:expect label="Ein author">
+			<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
+		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="zwei Bearbeiter">
+		<x:context mode="head">
+			<w:p><w:t>Bearbeitet von Stefania Salvadori und Harald Bollbuck</w:t></w:p>
+		</x:context>
+		<x:expect label="zwei author">
+			<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
+			<author xmlns="http://www.tei-c.org/ns/1.0">Harald Bollbuck</author>
+		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="mehr als zwei Bearbeiter">
+		<x:context mode="head">
+			<w:p><w:t>Bearbeitet von Stefania Salvadori, Alejandro Zorzin und Harald Bollbuck</w:t></w:p>
+		</x:context>
+		<x:expect label="drei author">
+			<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
+			<author xmlns="http://www.tei-c.org/ns/1.0">Alejandro Zorzin</author>
+			<author xmlns="http://www.tei-c.org/ns/1.0">Harald Bollbuck</author>
+		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="Ort und Datum unbekannt">
+		<x:context mode="date">
+			<w:p>
+				<w:pPr>
+					<w:pStyle w:val="KSEE-Titel"/>
+				</w:pPr>
+				<w:r w:rsidRPr="003B43BE">
+					<w:t>[Wittenberg], [1520, November]</w:t>
+				</w:r>
+			</w:p>
+		</x:context>
+		<x:expect label="Ort und Datum">
+			<placeName xmlns="http://www.tei-c.org/ns/1.0" cert="unknown">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-00" cert="unknown">1520, November</date>
+		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="Ort unbekannt und Datum">
+		<x:context mode="date">
+			<w:p>
+				<w:pPr>
+					<w:pStyle w:val="KSEE-Titel"/>
+				</w:pPr>
+				<w:r w:rsidRPr="003B43BE">
+					<w:t>[Wittenberg], 1520, 4. November</w:t>
+				</w:r>
+			</w:p>
+		</x:context>
+		<x:expect label="Ort und Datum">
+			<placeName cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
+		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="Ort bekannt und Datum teilw. nicht">
+		<x:context mode="date">
+			<w:p>
+				<w:pPr>
+					<w:pStyle w:val="KSEE-Titel"/>
+				</w:pPr>
+				<w:r w:rsidRPr="003B43BE">
+					<w:t>Wittenberg, 1520, [November]</w:t>
+				</w:r>
+			</w:p>
+		</x:context>
+		<x:expect label="Datum mit cert">
+			<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date
+				xmlns="http://www.tei-c.org/ns/1.0"
+				when="1520-11-00">1520, <supplied  xmlns="http://www.tei-c.org/ns/1.0"
+					>November</supplied></date>
+		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="Ort und Datum bekannt">
+		<x:context mode="date">
+			<w:p>
+				<w:pPr>
+					<w:pStyle w:val="KSEE-Titel"/>
+				</w:pPr>
+				<w:r w:rsidRPr="003B43BE">
+					<w:t>Wittenberg, 1520, 4. November</w:t>
+				</w:r>
+			</w:p>
+		</x:context>
+		<x:expect label="Datum mit cert">
+			<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
+		</x:expect>
+	</x:scenario>
+</x:description>
