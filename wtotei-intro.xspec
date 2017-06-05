@@ -99,4 +99,53 @@
 			<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="Ü1">
+		<x:context>
+			<w:body>
+				<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+					</w:pPr>
+					<w:r>
+						<w:t>Überlieferung</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="004D7ABF" w:rsidRPr="004D7ABF"
+					w:rsidRDefault="004D7ABF" w:rsidP="004D7ABF">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+					</w:pPr>
+					<w:r w:rsidRPr="004D7ABF">
+						<w:t>A web annotation.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+					</w:pPr>
+					<w:r>
+						<w:t>Entstehung und Inhalt</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="004D7ABF" w:rsidRPr="004D7ABF"
+					w:rsidRDefault="004D7ABF" w:rsidP="004D7ABF">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+					</w:pPr>
+					<w:r w:rsidRPr="004D7ABF">
+						<w:t>Another web annotation.</w:t>
+					</w:r>
+				</w:p>
+			</w:body>
+		</x:context>
+		<x:expect label="div mit p">
+			<div xmlns="http://www.tei-c.org/ns/1.0" type="history_of_the_work">
+				<p>A web annotation.</p>
+			</div>
+			<div xmlns="http://www.tei-c.org/ns/1.0" type="contents">
+				<p>Another web annotation.</p>
+			</div>
+		</x:expect>
+	</x:scenario>
 </x:description>

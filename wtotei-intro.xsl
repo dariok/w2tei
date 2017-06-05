@@ -169,9 +169,27 @@
 	<!-- Texte aus dem Header nicht ausgeben; 2017-05-151 DK -->
 	<xsl:template match="w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel']" />
 	
-	<xsl:template match="w:p[descendant::w:t and preceding::w:pStyle[starts-with(@w:val, 'KSberschrift')]]">
-		<p>
-			<xsl:apply-templates select="w:r"/>
-		</p>
+	<!-- Grobgliederung; 2017-06-05 DK -->
+	<xsl:template match="w:p[preceding-sibling::w:p[descendant::w:pStyle/@w:val='KSberschrift1']
+		and not(descendant::w:pStyle/@w:val='KSberschrift1')]"/>
+	<xsl:template match="w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift1')]]">
+		<div>
+			<xsl:attribute name="type">
+				<xsl:choose>
+					<xsl:when test="descendant::w:t='Überlieferung'">history_of_the_work</xsl:when>
+					<xsl:when test="descendant::w:t='Entstehung und Inhalt'">contents</xsl:when>
+				</xsl:choose>
+			</xsl:attribute>
+			<xsl:apply-templates select="following-sibling::w:p intersect
+				following-sibling::w:p[descendant::w:pStyle/@w:val='KSberschrift1']/preceding-sibling::w:p"
+				mode="content"/>
+			<xsl:if test="not(following::w:p[descendant::w:pStyle/@w:val='KSberschrift1'])">
+				<xsl:apply-templates select="following-sibling::w:p" mode="content" />
+			</xsl:if>
+		</div>
+	</xsl:template>
+	
+	<xsl:template match="w:p" mode="content">
+		<p><xsl:apply-templates select="descendant::w:t" /></p>
 	</xsl:template>
 </xsl:stylesheet>
