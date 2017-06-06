@@ -3,101 +3,106 @@
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:tei="http://www.tei-c.org/ns/1.0" 
 	stylesheet="wtotei-intro.xsl">
-	<x:scenario label="ein Bearbeiter">
-		<x:context mode="head">
-			<w:p><w:t>Bearbeitet von Stefania Salvadori</w:t></w:p>
-		</x:context>
-		<x:expect label="Ein author">
-			<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
-		</x:expect>
+	
+	<x:scenario label="Bearbeiter">
+		<x:scenario label="ein Bearbeiter">
+			<x:context mode="head">
+				<w:p><w:t>Bearbeitet von Stefania Salvadori</w:t></w:p>
+			</x:context>
+			<x:expect label="Ein author">
+				<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
+			</x:expect>
+		</x:scenario>
+		
+		<x:scenario label="zwei Bearbeiter">
+			<x:context mode="head">
+				<w:p><w:t>Bearbeitet von Stefania Salvadori und Harald Bollbuck</w:t></w:p>
+			</x:context>
+			<x:expect label="zwei author">
+				<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
+				<author xmlns="http://www.tei-c.org/ns/1.0">Harald Bollbuck</author>
+			</x:expect>
+		</x:scenario>
+		
+		<x:scenario label="mehr als zwei Bearbeiter">
+			<x:context mode="head">
+				<w:p><w:t>Bearbeitet von Stefania Salvadori, Alejandro Zorzin und Harald Bollbuck</w:t></w:p>
+			</x:context>
+			<x:expect label="drei author">
+				<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
+				<author xmlns="http://www.tei-c.org/ns/1.0">Alejandro Zorzin</author>
+				<author xmlns="http://www.tei-c.org/ns/1.0">Harald Bollbuck</author>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
-	<x:scenario label="zwei Bearbeiter">
-		<x:context mode="head">
-			<w:p><w:t>Bearbeitet von Stefania Salvadori und Harald Bollbuck</w:t></w:p>
-		</x:context>
-		<x:expect label="zwei author">
-			<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
-			<author xmlns="http://www.tei-c.org/ns/1.0">Harald Bollbuck</author>
-		</x:expect>
-	</x:scenario>
-	
-	<x:scenario label="mehr als zwei Bearbeiter">
-		<x:context mode="head">
-			<w:p><w:t>Bearbeitet von Stefania Salvadori, Alejandro Zorzin und Harald Bollbuck</w:t></w:p>
-		</x:context>
-		<x:expect label="drei author">
-			<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
-			<author xmlns="http://www.tei-c.org/ns/1.0">Alejandro Zorzin</author>
-			<author xmlns="http://www.tei-c.org/ns/1.0">Harald Bollbuck</author>
-		</x:expect>
-	</x:scenario>
-	
-	<x:scenario label="Ort und Datum unbekannt">
-		<x:context mode="date">
-			<w:p>
-				<w:pPr>
-					<w:pStyle w:val="KSEE-Titel"/>
-				</w:pPr>
-				<w:r w:rsidRPr="003B43BE">
-					<w:t>[Wittenberg], [1520, November]</w:t>
-				</w:r>
-			</w:p>
-		</x:context>
-		<x:expect label="Ort und Datum">
-			<placeName xmlns="http://www.tei-c.org/ns/1.0" cert="unknown">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-00" cert="unknown">1520, November</date>
-		</x:expect>
-	</x:scenario>
-	
-	<x:scenario label="Ort unbekannt und Datum">
-		<x:context mode="date">
-			<w:p>
-				<w:pPr>
-					<w:pStyle w:val="KSEE-Titel"/>
-				</w:pPr>
-				<w:r w:rsidRPr="003B43BE">
-					<w:t>[Wittenberg], 1520, 4. November</w:t>
-				</w:r>
-			</w:p>
-		</x:context>
-		<x:expect label="Ort und Datum">
-			<placeName cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
-		</x:expect>
-	</x:scenario>
-	
-	<x:scenario label="Ort bekannt und Datum teilw. nicht">
-		<x:context mode="date">
-			<w:p>
-				<w:pPr>
-					<w:pStyle w:val="KSEE-Titel"/>
-				</w:pPr>
-				<w:r w:rsidRPr="003B43BE">
-					<w:t>Wittenberg, 1520, [November]</w:t>
-				</w:r>
-			</w:p>
-		</x:context>
-		<x:expect label="Datum mit cert">
-			<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date
-				xmlns="http://www.tei-c.org/ns/1.0"
-				when="1520-11-00">1520, <supplied  xmlns="http://www.tei-c.org/ns/1.0"
-					>November</supplied></date>
-		</x:expect>
-	</x:scenario>
-	
-	<x:scenario label="Ort und Datum bekannt">
-		<x:context mode="date">
-			<w:p>
-				<w:pPr>
-					<w:pStyle w:val="KSEE-Titel"/>
-				</w:pPr>
-				<w:r w:rsidRPr="003B43BE">
-					<w:t>Wittenberg, 1520, 4. November</w:t>
-				</w:r>
-			</w:p>
-		</x:context>
-		<x:expect label="Datum mit cert">
-			<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
-		</x:expect>
+	<x:scenario label="Ort und Datum formatieren">
+		<x:scenario label="beide unbekannt">
+			<x:context mode="date">
+				<w:p>
+					<w:pPr>
+						<w:pStyle w:val="KSEE-Titel"/>
+					</w:pPr>
+					<w:r w:rsidRPr="003B43BE">
+						<w:t>[Wittenberg], [1520, November]</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="Ort und Datum">
+				<placeName xmlns="http://www.tei-c.org/ns/1.0" cert="unknown">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-00" cert="unknown">1520, November</date>
+			</x:expect>
+		</x:scenario>
+		
+		<x:scenario label="Ort unbekannt und Datum">
+			<x:context mode="date">
+				<w:p>
+					<w:pPr>
+						<w:pStyle w:val="KSEE-Titel"/>
+					</w:pPr>
+					<w:r w:rsidRPr="003B43BE">
+						<w:t>[Wittenberg], 1520, 4. November</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="Ort und Datum">
+				<placeName cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
+			</x:expect>
+		</x:scenario>
+		
+		<x:scenario label="Ort bekannt und Datum teilw. nicht">
+			<x:context mode="date">
+				<w:p>
+					<w:pPr>
+						<w:pStyle w:val="KSEE-Titel"/>
+					</w:pPr>
+					<w:r w:rsidRPr="003B43BE">
+						<w:t>Wittenberg, 1520, [November]</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="Datum mit cert">
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date
+					xmlns="http://www.tei-c.org/ns/1.0"
+					when="1520-11-00">1520, <supplied  xmlns="http://www.tei-c.org/ns/1.0"
+						>November</supplied></date>
+			</x:expect>
+		</x:scenario>
+		
+		<x:scenario label="Ort und Datum bekannt">
+			<x:context mode="date">
+				<w:p>
+					<w:pPr>
+						<w:pStyle w:val="KSEE-Titel"/>
+					</w:pPr>
+					<w:r w:rsidRPr="003B43BE">
+						<w:t>Wittenberg, 1520, 4. November</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="Datum mit cert">
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="Ü1">
@@ -147,5 +152,83 @@
 				<p>Another web annotation.</p>
 			</div>
 		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="Ü2">
+		<x:context mode="content2">
+			<w:p w:rsidR="004C6DB6" w:rsidRDefault="004C6DB6"
+				w:rsidP="0011564A">
+				<w:pPr>
+					<w:pStyle w:val="KSberschrift2"/>
+				</w:pPr>
+				<w:r>
+					<w:t>Frühdrucke</w:t>
+				</w:r>
+			</w:p>
+			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
+				w:rsidP="003B43BE">
+				<w:pPr>
+					<w:pStyle w:val="Listenabsatz"/>
+					<w:tabs>
+						<w:tab w:val="left" w:pos="0"/>
+					</w:tabs>
+					<w:spacing w:line="240" w:lineRule="auto"/>
+					<w:ind w:left="0"/>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="003B43BE">
+					<w:rPr>
+						<w:rStyle w:val="KSSigle"/>
+					</w:rPr>
+					<w:t>[A:]</w:t>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von</w:t>
+				</w:r>
+			</w:p>
+			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
+				w:rsidP="003B43BE">
+				<w:pPr>
+					<w:pStyle w:val="Listenabsatz"/>
+					<w:tabs>
+						<w:tab w:val="left" w:pos="0"/>
+					</w:tabs>
+					<w:spacing w:line="240" w:lineRule="auto"/>
+					<w:ind w:left="0"/>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>Welche bucher Bibli</w:t>
+				</w:r>
+			</w:p>
+		</x:context>
+		<x:scenario label="Frühdrucke">
+			<x:expect label="listBibl">
+				<listBibl xmlns="http://www.tei-c.org/ns/1.0" type="sigla">
+					<biblStruct type="imprint" xml:id="A">
+						<author>Karlstadt, Andreas Bodenstein von</author>
+						<title>Welche bucher Bibli</title>	
+					</biblStruct>
+				</listBibl>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>

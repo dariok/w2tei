@@ -23,7 +23,7 @@
 	</xsl:variable>
 	<xsl:variable name="nr">
 		<xsl:variable name="t" select="string-join((//w:p)[1]//w:t, ' ')"/>
-		<xsl:value-of select="substring-after($t, 'Nr. ')" />
+		<xsl:value-of select="normalize-space(substring-after($t, 'Nr. '))" />
 	</xsl:variable>
 	
 	<xsl:template match="/">
@@ -180,15 +180,48 @@
 					<xsl:when test="descendant::w:t='Entstehung und Inhalt'">contents</xsl:when>
 				</xsl:choose>
 			</xsl:attribute>
-			<xsl:apply-templates select="following-sibling::w:p intersect
-				following-sibling::w:p[descendant::w:pStyle/@w:val='KSberschrift1']/preceding-sibling::w:p"
-				mode="content"/>
-			<xsl:if test="not(following::w:p[descendant::w:pStyle/@w:val='KSberschrift1'])">
-				<xsl:apply-templates select="following-sibling::w:p" mode="content" />
-			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="following-sibling::w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]]">
+					<xsl:apply-templates select="following-sibling::w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]]"
+					mode="content2"/>
+				</xsl:when>
+				<xsl:when test="not(following::w:p[descendant::w:pStyle/@w:val='KSberschrift1'])">
+					<xsl:apply-templates select="following-sibling::w:p" mode="content" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates select="following-sibling::w:p intersect
+						following-sibling::w:p[descendant::w:pStyle/@w:val='KSberschrift1']/preceding-sibling::w:p"
+						mode="content"/>
+				</xsl:otherwise>
+			</xsl:choose>
 		</div>
 	</xsl:template>
 	
+	<!-- Untergliederung im 1. div; 2017-06-05 DK -->
+	<xsl:template match="w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]]" mode="content2">
+		<xsl:choose>
+			<xsl:when test="descendant::w:t = 'Frühdrucke'">
+				<listBibl type="sigla">
+					<xsl:for-each select="following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle']">
+						<biblStruct type="imprint">
+							<xsl:attribute name="xml:id">
+								<xsl:analyze-string select="w:r[descendant::w:rStyle/@w:val='KSSigle']/w:t"
+									regex="\[(\w+).?\]">
+									<xsl:matching-substring>
+										<xsl:value-of select="regex-group(1)"/>
+									</xsl:matching-substring>
+								</xsl:analyze-string>
+							</xsl:attribute>
+							<author><xsl:value-of select="normalize-space(w:r[2]/w:t)"/></author>
+							<title><xsl:apply-templates select="following-sibling::w:p[1]//w:t" mode="titleContent"/></title>
+						</biblStruct>
+					</xsl:for-each>
+				</listBibl>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
+	
+	<xsl:template match="w:p" mode="content2" />
 	<xsl:template match="w:p" mode="content">
 		<p><xsl:apply-templates select="descendant::w:t" /></p>
 	</xsl:template>
