@@ -219,13 +219,214 @@
 					<w:t>Welche bucher Bibli</w:t>
 				</w:r>
 			</w:p>
+			<w:p w:rsidR="003B43BE" w:rsidRPr="003B356E"
+				w:rsidRDefault="003B43BE" w:rsidP="003B43BE">
+				<w:pPr>
+					<w:pStyle w:val="Listenabsatz"/>
+					<w:tabs>
+						<w:tab w:val="left" w:pos="0"/>
+					</w:tabs>
+					<w:spacing w:line="240" w:lineRule="auto"/>
+					<w:ind w:left="0"/>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>Wittenberg: [Melchior Lotter d. J.], 1520</w:t>
+				</w:r>
+			</w:p>
+			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
+				w:rsidP="003B43BE">
+				<w:pPr>
+					<w:pStyle w:val="Listenabsatz"/>
+					<w:tabs>
+						<w:tab w:val="left" w:pos="0"/>
+					</w:tabs>
+					<w:spacing w:line="240" w:lineRule="auto"/>
+					<w:ind w:left="0"/>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>4°, 12 Bl., Sign. A2</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>, A3</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>, B1</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>, B2</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>, C1</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>, C2</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>, C3</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="003B356E">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:t xml:space="preserve">. </w:t>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>Keine Kustoden.</w:t>
+				</w:r>
+			</w:p>
 		</x:context>
 		<x:scenario label="Frühdrucke">
 			<x:expect label="listBibl">
 				<listBibl xmlns="http://www.tei-c.org/ns/1.0" type="sigla">
 					<biblStruct type="imprint" xml:id="A">
-						<author>Karlstadt, Andreas Bodenstein von</author>
-						<title>Welche bucher Bibli</title>	
+						<monogr>
+							<author>Karlstadt, Andreas Bodenstein von</author>
+							<title>Welche bucher Bibli</title>
+							<imprint>
+								<pubPlace><rs type="place">Wittenberg</rs></pubPlace>
+								<publisher cert="unknown"><rs type="person">Melchior Lotter d. J.</rs></publisher>
+								<date when="1520">1520</date>
+							</imprint>
+							<extent>4°, 12 Bl., Sign. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>, B1<hi rend="super">r</hi>, B2<hi rend="super">r</hi>, C1<hi rend="super">r</hi>, C2<hi rend="super">r</hi>, C3<hi rend="super">r</hi>. Keine Kustoden.</extent>
+						</monogr>
+						<idno type="siglum">A</idno>
 					</biblStruct>
 				</listBibl>
 			</x:expect>

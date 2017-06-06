@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+	xmlns:hab="http://diglib.hab.de"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="2.0">
 	<!-- neu für Projekt Rist, 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
@@ -49,7 +50,7 @@
 	<!-- neu 2016-08-11 DK -->
 	<!-- Word produziert ggf. leere Absätze oder Text in Body. Auch wenn diese für die Gliederung erwünscht sind,
 		dürfen sie nicht ausgegeben werden -->
-	<xsl:template match="w:p[not(descendant::w:t)]" />
+<!--	<xsl:template match="w:p[not(descendant::w:t)]" />-->
 	<xsl:template match="w:p[not(descendant::w:t)]" mode="text" />
 	<xsl:template match="w:body/text()" />
 	
@@ -203,17 +204,53 @@
 			<xsl:when test="descendant::w:t = 'Frühdrucke'">
 				<listBibl type="sigla">
 					<xsl:for-each select="following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle']">
-						<biblStruct type="imprint">
-							<xsl:attribute name="xml:id">
-								<xsl:analyze-string select="w:r[descendant::w:rStyle/@w:val='KSSigle']/w:t"
-									regex="\[(\w+).?\]">
-									<xsl:matching-substring>
-										<xsl:value-of select="regex-group(1)"/>
-									</xsl:matching-substring>
-								</xsl:analyze-string>
-							</xsl:attribute>
-							<author><xsl:value-of select="normalize-space(w:r[2]/w:t)"/></author>
-							<title><xsl:apply-templates select="following-sibling::w:p[1]//w:t" mode="titleContent"/></title>
+						<xsl:variable name="idNo">
+							<xsl:analyze-string select="w:r[descendant::w:rStyle/@w:val='KSSigle']/w:t"
+								regex="\[(\w+).?\]">
+								<xsl:matching-substring>
+									<xsl:value-of select="regex-group(1)"/>
+								</xsl:matching-substring>
+							</xsl:analyze-string>
+						</xsl:variable>
+						<biblStruct type="imprint" xml:id="{$idNo}">
+							<monogr>
+								<author><xsl:value-of select="normalize-space(w:r[2]/w:t)"/></author>
+								<title><xsl:apply-templates select="following-sibling::w:p[1]//w:t" mode="titleContent"/></title>
+								<imprint>
+									<xsl:variable name="imprintText">
+										<xsl:apply-templates select="following-sibling::w:p[2]//w:t" mode="imprintContent" />
+									</xsl:variable>
+									<xsl:analyze-string select="$imprintText"
+										regex="(.*): (.*), (.*)">
+										<xsl:matching-substring>
+											<pubPlace>
+												<xsl:if test="starts-with(regex-group(1), '[')">
+													<xsl:attribute name="cert">unknown</xsl:attribute>
+												</xsl:if>
+												<rs type="place">
+													<xsl:value-of select="hab:rmSquare(regex-group(1))"/>
+												</rs>
+											</pubPlace>
+											<publisher>
+												<xsl:if test="starts-with(regex-group(2), '[')">
+													<xsl:attribute name="cert">unknown</xsl:attribute>
+												</xsl:if>
+												<rs type="person">
+													<xsl:value-of select="hab:rmSquare(regex-group(2))"/>
+												</rs>
+											</publisher>
+											<date when="{hab:rmSquare(regex-group(3))}">
+												<xsl:if test="ends-with(regex-group(3), ']')">
+													<xsl:attribute name="cert">unknown</xsl:attribute>
+												</xsl:if>
+												<xsl:value-of select="hab:rmSquare(regex-group(3))"/>
+											</date>
+										</xsl:matching-substring>
+									</xsl:analyze-string>
+								</imprint>
+								<extent><xsl:apply-templates select="following-sibling::w:p[3]//w:t"/></extent>
+							</monogr>
+							<idno type="siglum"><xsl:value-of select="$idNo" /></idno>
 						</biblStruct>
 					</xsl:for-each>
 				</listBibl>
@@ -225,4 +262,17 @@
 	<xsl:template match="w:p" mode="content">
 		<p><xsl:apply-templates select="descendant::w:t" /></p>
 	</xsl:template>
+	
+	<xsl:template match="w:t[preceding-sibling::w:rPr/w:vertAlign/@w:val='superscript']">
+		<hi rend="super"><xsl:value-of select="."/></hi>
+	</xsl:template>
+	
+	<xsl:function name="hab:rmSquare" as="xs:string">
+		<xsl:param name="input" />
+		<xsl:analyze-string select="$input" regex="\[?([^\]]+)\]?">
+			<xsl:matching-substring>
+				<xsl:value-of select="normalize-space(regex-group(1))"/>
+			</xsl:matching-substring>
+		</xsl:analyze-string>
+	</xsl:function>
 </xsl:stylesheet>
