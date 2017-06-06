@@ -644,6 +644,28 @@
 					<w:t>Zorzin, Flugschriftenautor, Nr. 27</w:t>
 				</w:r>
 			</w:p>
+			<w:comment w:id="0" w:author="Stefania" w:date="2017-04-07T16:01:00Z" w:initials="S">
+				<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
+					w:rsidP="003B43BE">
+					<w:pPr>
+						<w:pStyle w:val="Kommentartext"/>
+					</w:pPr>
+					<w:r>
+						<w:rPr>
+							<w:rStyle w:val="Kommentarzeichen"/>
+						</w:rPr>
+						<w:annotationRef/>
+					</w:r>
+					<w:hyperlink r:id="rId1" w:history="1">
+						<w:r w:rsidRPr="00DF2734">
+							<w:rPr>
+								<w:rStyle w:val="Hyperlink"/>
+							</w:rPr>
+							<w:t>http://diglib.hab.de/drucke/yv-2186-8f-helmst/start.htm</w:t>
+						</w:r>
+					</w:hyperlink>
+				</w:p>
+			</w:comment>
 		</x:context>
 		<x:scenario label="Frühdrucke">
 			<x:expect label="listBibl">
@@ -665,6 +687,8 @@
 								<item n="editionsvorlage">
 									<label>HAB</label>
 									<idno>H: Yv 2186.8° Helmst.</idno>
+									<ptr type="digitalisat"
+										target="http://diglib.hab.de/drucke/yv-2186-8f-helmst/start.htm"/>
 								</item>
 								<item>
 									<label>BSB</label>

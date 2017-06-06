@@ -261,6 +261,14 @@
 											select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
 										<idno><xsl:value-of
 											select="normalize-space(substring-after($ex, ','))"/></idno>
+										<xsl:if test="following-sibling::w:p[5]/w:commentRangeEnd">
+											<xsl:variable name="coID" select="following-sibling::w:p[5]/w:commentRangeEnd/@w:id"/>
+											<ptr type="digitalisat">
+												<xsl:attribute name="target">
+													<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
+												</xsl:attribute>
+											</ptr>
+										</xsl:if>
 									</item>
 									<xsl:variable name="weitere">
 										<xsl:apply-templates select="following-sibling::w:p[6]//w:t" />
