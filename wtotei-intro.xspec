@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 	xmlns:tei="http://www.tei-c.org/ns/1.0" 
 	stylesheet="wtotei-intro.xsl">
 	
@@ -411,6 +412,238 @@
 					<w:t>Keine Kustoden.</w:t>
 				</w:r>
 			</w:p>
+			<w:p/>
+			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
+				w:rsidP="003B43BE">
+				<w:pPr>
+					<w:pStyle w:val="Listenabsatz"/>
+					<w:tabs>
+						<w:tab w:val="left" w:pos="0"/>
+					</w:tabs>
+					<w:spacing w:line="240" w:lineRule="auto"/>
+					<w:ind w:left="0"/>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="0091168C">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:i/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>Editionsvorlage</w:t>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve">: HAB, </w:t>
+				</w:r>
+				<w:commentRangeStart w:id="0"/>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>H: Yv 2186.8° Helmst</w:t>
+				</w:r>
+				<w:commentRangeEnd w:id="0"/>
+				<w:r>
+					<w:rPr>
+						<w:rStyle w:val="Kommentarzeichen"/>
+					</w:rPr>
+					<w:commentReference w:id="0"/>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
+				w:rsidP="003B43BE">
+				<w:pPr>
+					<w:pStyle w:val="Listenabsatz"/>
+					<w:tabs>
+						<w:tab w:val="left" w:pos="0"/>
+					</w:tabs>
+					<w:spacing w:line="240" w:lineRule="auto"/>
+					<w:ind w:left="0"/>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="0091168C">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:i/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>Weitere Exemplare</w:t>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve">: BSB, </w:t>
+				</w:r>
+				<w:commentRangeStart w:id="1"/>
+				<w:r w:rsidRPr="0091168C">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve">4 Exeg. </w:t>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>90</w:t>
+				</w:r>
+				<w:commentRangeEnd w:id="1"/>
+				<w:r>
+					<w:rPr>
+						<w:rStyle w:val="Kommentarzeichen"/>
+					</w:rPr>
+					<w:commentReference w:id="1"/>
+				</w:r>
+			</w:p>
+			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
+				w:rsidP="003B43BE">
+				<w:pPr>
+					<w:pStyle w:val="Listenabsatz"/>
+					<w:tabs>
+						<w:tab w:val="left" w:pos="0"/>
+					</w:tabs>
+					<w:spacing w:line="240" w:lineRule="auto"/>
+					<w:ind w:left="0"/>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="0091168C">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:i/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>Bibliographische Nachweise</w:t>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve">: </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00EB7472">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t xml:space="preserve">VD16 </w:t>
+				</w:r>
+				<w:hyperlink r:id="rId6" w:history="1">
+					<w:r w:rsidRPr="00EB7472">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>B 6259</w:t>
+					</w:r>
+				</w:hyperlink>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="0091168C">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>—</w:t>
+				</w:r>
+				<w:r w:rsidRPr="0091168C">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00EB7472">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>Freys/Barge, Verze</w:t>
+				</w:r>
+				<w:bookmarkStart w:id="2" w:name="_GoBack"/>
+				<w:bookmarkEnd w:id="2"/>
+				<w:r w:rsidRPr="00EB7472">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>ichnis, Nr. 46</w:t>
+				</w:r>
+				<w:r>
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="0091168C">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>—</w:t>
+				</w:r>
+				<w:r w:rsidRPr="0091168C">
+					<w:rPr>
+						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+						<w:sz w:val="24"/>
+						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00EB7472">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>Zorzin, Flugschriftenautor, Nr. 27</w:t>
+				</w:r>
+			</w:p>
 		</x:context>
 		<x:scenario label="Frühdrucke">
 			<x:expect label="listBibl">
@@ -427,6 +660,25 @@
 							<extent>4°, 12 Bl., Sign. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>, B1<hi rend="super">r</hi>, B2<hi rend="super">r</hi>, C1<hi rend="super">r</hi>, C2<hi rend="super">r</hi>, C3<hi rend="super">r</hi>. Keine Kustoden.</extent>
 						</monogr>
 						<idno type="siglum">A</idno>
+						<note type="copies">
+							<list>
+								<item n="editionsvorlage">
+									<label>HAB</label>
+									<idno>H: Yv 2186.8° Helmst.</idno>
+								</item>
+								<item>
+									<label>BSB</label>
+									<idno>4 Exeg. 90</idno>
+								</item>
+							</list>
+						</note>
+						<note type="references">
+							<listBibl>
+								<bibl>VD16 B 6259</bibl>
+								<bibl>Freys/Barge, Verzeichnis, Nr. 46</bibl>
+								<bibl>Zorzin, Flugschriftenautor, Nr. 27</bibl>
+							</listBibl>
+						</note>
 					</biblStruct>
 				</listBibl>
 			</x:expect>

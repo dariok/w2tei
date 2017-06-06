@@ -251,6 +251,41 @@
 								<extent><xsl:apply-templates select="following-sibling::w:p[3]//w:t"/></extent>
 							</monogr>
 							<idno type="siglum"><xsl:value-of select="$idNo" /></idno>
+							<note type="copies">
+								<list>
+									<item n="editionsvorlage">
+										<xsl:variable name="ex">
+											<xsl:apply-templates select="following-sibling::w:p[5]//w:t" />
+										</xsl:variable>
+										<label><xsl:value-of
+											select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
+										<idno><xsl:value-of
+											select="normalize-space(substring-after($ex, ','))"/></idno>
+									</item>
+									<xsl:variable name="weitere">
+										<xsl:apply-templates select="following-sibling::w:p[6]//w:t" />
+									</xsl:variable>
+									<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare:'), ';')">
+										<item>
+											<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
+											<idno><xsl:value-of select="normalize-space(substring-after(current(), ','))"/></idno>
+										</item>
+									</xsl:for-each>
+								</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<xsl:variable name="weitere">
+										<xsl:apply-templates select="following-sibling::w:p[7]//w:t" />
+									</xsl:variable>
+									<xsl:for-each select="tokenize(substring-after($weitere, 'Nachweise:'), '–|—')">
+										<bibl>
+											<!-- TODO ID aus bibliography übernehmen -->
+											<xsl:value-of select="normalize-space(current())"/>
+										</bibl>
+									</xsl:for-each>
+								</listBibl>
+							</note>
 						</biblStruct>
 					</xsl:for-each>
 				</listBibl>
