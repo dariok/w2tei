@@ -28,8 +28,8 @@
 	</xsl:variable>
 	
 	<xsl:template match="/">
-		<TEI xmlns="http://www.tei-c.org/ns/1.0" n="{$nr}"
-			xml:id="edoc_ed000240_{$nr}_introduction">
+		<TEI xmlns="http://www.tei-c.org/ns/1.0" n="{$nr}">
+			<xsl:attribute name="xml:id" select="concat('edoc_ed000240_', $nr, '_introduction')" />
 			<teiHeader>
 				<fileDesc>
 					<title><xsl:value-of select="string-join(//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t, ' ')" />
@@ -212,7 +212,8 @@
 								</xsl:matching-substring>
 							</xsl:analyze-string>
 						</xsl:variable>
-						<biblStruct type="imprint" xml:id="{$idNo}">
+						<biblStruct type="imprint">
+							<xsl:attribute name="xml:id" select="$idNo" />
 							<monogr>
 								<author><xsl:value-of select="normalize-space(w:r[2]/w:t)"/></author>
 								<title><xsl:apply-templates select="following-sibling::w:p[1]//w:t" mode="titleContent"/></title>
