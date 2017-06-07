@@ -71,8 +71,10 @@
 	<!-- Ort/Datum zusammensetzen; 2017-05-16 DK -->
 	<!-- fertiggestellt 2017-06-05 DK -->
 	<xsl:template match="w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel']" mode="date">
-		<xsl:variable name="pdline"></xsl:variable>
-		<xsl:analyze-string select="normalize-space(w:r/w:t)" regex="(.*), (\[?\d+, .*)">
+		<xsl:variable name="pdline">
+			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />
+		</xsl:variable>
+		<xsl:analyze-string select="normalize-space($pdline)" regex="(.*), (\[?\d+, .*)">
 			<xsl:matching-substring>
 				<placeName><xsl:if test="starts-with(regex-group(1), '[')">
 					<xsl:attribute name="cert">unknown</xsl:attribute>
