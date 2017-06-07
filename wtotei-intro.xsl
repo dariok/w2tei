@@ -24,12 +24,16 @@
 	</xsl:variable>
 	<xsl:variable name="nr">
 		<xsl:variable name="t" select="string-join((//w:p)[1]//w:t, ' ')"/>
-		<xsl:value-of select="normalize-space(substring-after($t, 'Nr. '))" />
+		<xsl:value-of select="hab:rmSquare(substring-after($t, 'Nr. '))" />
+	</xsl:variable>
+	<xsl:variable name="ee">
+		<xsl:variable name="t" select="string-join((//w:p)[1]//w:t, ' ')"/>
+		<xsl:value-of select="substring-before(substring-after($t, 'EE '), ' ')" />
 	</xsl:variable>
 	
 	<xsl:template match="/">
 		<TEI xmlns="http://www.tei-c.org/ns/1.0" n="{$nr}">
-			<xsl:attribute name="xml:id" select="concat('edoc_ed000240_', $nr, '_introduction')" />
+			<xsl:attribute name="xml:id" select="concat('edoc_ed000240_', $ee, '_introduction')" />
 			<teiHeader>
 				<fileDesc>
 					<title><xsl:value-of select="string-join(//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t, ' ')" />
@@ -313,7 +317,7 @@
 	
 	<xsl:function name="hab:rmSquare" as="xs:string">
 		<xsl:param name="input" />
-		<xsl:analyze-string select="$input" regex="\[?([^\]]+)\]?">
+		<xsl:analyze-string select="normalize-space($input)" regex="\[?([^\]]+)\]?">
 			<xsl:matching-substring>
 				<xsl:value-of select="normalize-space(regex-group(1))"/>
 			</xsl:matching-substring>
