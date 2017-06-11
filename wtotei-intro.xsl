@@ -258,57 +258,35 @@
 						</xsl:variable>
 						<biblStruct type="imprint">
 							<xsl:attribute name="xml:id" select="$idNo" />
-							<monogr>
+							<xsl:variable name="elem">
+								<xsl:choose>
+									<xsl:when test="following::w:p[2]//w:t[normalize-space() = 'in:']">
+										<xsl:text>analytic</xsl:text>
+									</xsl:when>
+									<xsl:otherwise>monogr</xsl:otherwise>
+								</xsl:choose>
+							</xsl:variable>
+							<xsl:element name="{$elem}">
 								<xsl:variable name="au">
 									<xsl:apply-templates select="descendant::w:t" />
 								</xsl:variable>
 								<author>
 									<xsl:value-of select="normalize-space(substring-after($au, ']'))"/></author>
 								<title><xsl:apply-templates select="following-sibling::w:p[1]//w:t" mode="titleContent"/></title>
-								<imprint>
-									<xsl:variable name="imprintText">
-										<xsl:apply-templates select="following-sibling::w:p[2]//w:t" mode="imprintContent" />
-									</xsl:variable>
-									<xsl:analyze-string select="$imprintText"
-										regex="(.*): (.*), (.*)">
-										<xsl:matching-substring>
-											<pubPlace>
-												<xsl:if test="starts-with(regex-group(1), '[')">
-													<xsl:attribute name="cert">unknown</xsl:attribute>
-												</xsl:if>
-												<rs type="place">
-													<xsl:value-of select="hab:rmSquare(regex-group(1))"/>
-												</rs>
-											</pubPlace>
-											<publisher>
-												<xsl:if test="starts-with(regex-group(2), '[')">
-													<xsl:attribute name="cert">unknown</xsl:attribute>
-												</xsl:if>
-												<rs type="person">
-													<xsl:value-of select="hab:rmSquare(regex-group(2))"/>
-												</rs>
-											</publisher>
-											<xsl:variable name="dWhen">
-												<xsl:choose>
-													<xsl:when test="ends-with(hab:rmSquare(regex-group(3)), '.')">
-														<xsl:value-of select="substring-before(hab:rmSquare(regex-group(3)), '.')" />
-													</xsl:when>
-													<xsl:otherwise>
-														<xsl:value-of select="hab:rmSquare(regex-group(3))" />
-													</xsl:otherwise>
-												</xsl:choose>
-											</xsl:variable>
-											<date when="{$dWhen}">
-												<xsl:if test="ends-with(regex-group(3), ']')">
-													<xsl:attribute name="cert">unknown</xsl:attribute>
-												</xsl:if>
-												<xsl:value-of select="$dWhen"/>
-											</date>
-										</xsl:matching-substring>
-									</xsl:analyze-string>
-								</imprint>
-								<extent><xsl:apply-templates select="following-sibling::w:p[3]//w:t"/></extent>
-							</monogr>
+								<xsl:if test="not(following::w:p[2]//w:t[normalize-space() = 'in:'])">
+									<xsl:call-template name="imprint">
+										<xsl:with-param name="context" select="." />
+									</xsl:call-template>
+								</xsl:if>
+							</xsl:element>
+							<xsl:if test="following::w:p[2]//w:t[normalize-space() = 'in:']">
+								<title><xsl:apply-templates select="following::w:p[3]//w:t" /></title>
+								<monogr>
+									<xsl:call-template name="imprint">
+										<xsl:with-param name="context" select="following-sibling::w:p[2]" />
+									</xsl:call-template>
+								</monogr>
+							</xsl:if>
 							<idno type="siglum"><xsl:value-of select="$idNo" /></idno>
 							<note type="copies">
 								<list>
@@ -368,6 +346,56 @@
 				</listBibl>
 			</xsl:when>
 		</xsl:choose>
+	</xsl:template>
+	
+	<xsl:template name="imprint">
+		<xsl:param name="context" />
+		<imprint>
+			<xsl:variable name="imprintText">
+				<xsl:apply-templates select="$context/following-sibling::w:p[2]//w:t" mode="imprintContent" />
+			</xsl:variable>
+			<xsl:analyze-string select="$imprintText"
+				regex="(.*): (.*), (.*)(, .*)?">
+				<xsl:matching-substring>
+					<pubPlace>
+						<xsl:if test="starts-with(regex-group(1), '[')">
+							<xsl:attribute name="cert">unknown</xsl:attribute>
+						</xsl:if>
+						<rs type="place">
+							<xsl:value-of select="hab:rmSquare(regex-group(1))"/>
+						</rs>
+					</pubPlace>
+					<publisher>
+						<xsl:if test="starts-with(regex-group(2), '[')">
+							<xsl:attribute name="cert">unknown</xsl:attribute>
+						</xsl:if>
+						<rs type="person">
+							<xsl:value-of select="hab:rmSquare(regex-group(2))"/>
+						</rs>
+					</publisher>
+					<xsl:variable name="dWhen">
+						<xsl:choose>
+							<xsl:when test="ends-with(hab:rmSquare(regex-group(3)), '.')">
+								<xsl:value-of select="substring-before(hab:rmSquare(regex-group(3)), '.')" />
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="hab:rmSquare(regex-group(3))" />
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:variable>
+					<date when="{$dWhen}">
+						<xsl:if test="ends-with(regex-group(3), ']')">
+							<xsl:attribute name="cert">unknown</xsl:attribute>
+						</xsl:if>
+						<xsl:value-of select="$dWhen"/>
+					</date>
+				</xsl:matching-substring>
+			</xsl:analyze-string>
+		</imprint>
+		<extent><xsl:apply-templates select="$context/following-sibling::w:p[3]//w:t"/></extent>
+		<xsl:if test="regex-group(4)">
+			<biblScope><xsl:value-of select="regex-group(4)" /></biblScope>
+		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template match="w:p" mode="content2" />
