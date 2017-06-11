@@ -350,13 +350,13 @@
 	
 	<xsl:template name="imprint">
 		<xsl:param name="context" />
-		<imprint>
-			<xsl:variable name="imprintText">
-				<xsl:apply-templates select="$context/following-sibling::w:p[2]//w:t" mode="imprintContent" />
-			</xsl:variable>
-			<xsl:analyze-string select="$imprintText"
-				regex="(.*): (.*), (.*)(, .*)?">
-				<xsl:matching-substring>
+		<xsl:variable name="imprintText">
+			<xsl:apply-templates select="$context/following-sibling::w:p[2]//w:t" mode="imprintContent" />
+		</xsl:variable>
+		<xsl:analyze-string select="$imprintText"
+			regex="(.*): ([^,]*), ([^,]*),? ?(.*)??">
+			<xsl:matching-substring>
+				<imprint>
 					<pubPlace>
 						<xsl:if test="starts-with(regex-group(1), '[')">
 							<xsl:attribute name="cert">unknown</xsl:attribute>
@@ -389,13 +389,13 @@
 						</xsl:if>
 						<xsl:value-of select="$dWhen"/>
 					</date>
-				</xsl:matching-substring>
-			</xsl:analyze-string>
-		</imprint>
-		<extent><xsl:apply-templates select="$context/following-sibling::w:p[3]//w:t"/></extent>
-		<xsl:if test="regex-group(4)">
-			<biblScope><xsl:value-of select="regex-group(4)" /></biblScope>
-		</xsl:if>
+				</imprint>
+				<extent><xsl:apply-templates select="$context/following-sibling::w:p[3]//w:t"/></extent>
+				<xsl:if test="regex-group(4)">
+					<biblScope><xsl:value-of select="regex-group(4)" /></biblScope>
+				</xsl:if>
+			</xsl:matching-substring>
+		</xsl:analyze-string>
 	</xsl:template>
 	
 	<xsl:template match="w:p" mode="content2" />
