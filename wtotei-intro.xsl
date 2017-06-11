@@ -288,18 +288,24 @@
 								</monogr>
 							</xsl:if>
 							<idno type="siglum"><xsl:value-of select="$idNo" /></idno>
+							<xsl:variable name="start" as="xs:integer">
+								<xsl:choose>
+									<xsl:when test="following::w:p[2]//w:t[normalize-space() = 'in:']">6</xsl:when>
+									<xsl:otherwise>4</xsl:otherwise>
+								</xsl:choose>
+							</xsl:variable>
 							<note type="copies">
 								<list>
 									<item n="editionsvorlage">
 										<xsl:variable name="ex">
-											<xsl:apply-templates select="following-sibling::w:p[4]//w:t" />
+											<xsl:apply-templates select="following-sibling::w:p[$start]//w:t" />
 										</xsl:variable>
 										<label><xsl:value-of
 											select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
 										<idno type="signatur"><xsl:value-of
 											select="normalize-space(substring-after($ex, ','))"/></idno>
-										<xsl:if test="following-sibling::w:p[4]/w:commentRangeEnd">
-											<xsl:variable name="coID" select="following-sibling::w:p[4]/w:commentRangeEnd/@w:id"/>
+										<xsl:if test="following-sibling::w:p[$start]/w:commentRangeEnd">
+											<xsl:variable name="coID" select="following-sibling::w:p[$start]/w:commentRangeEnd/@w:id"/>
 											<ptr type="digitalisat">
 												<xsl:attribute name="target">
 													<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
@@ -308,7 +314,7 @@
 										</xsl:if>
 									</item>
 									<xsl:variable name="weitere">
-										<xsl:apply-templates select="following-sibling::w:p[5]//w:t" mode="exemplar" />
+										<xsl:apply-templates select="following-sibling::w:p[$start+1]//w:t" mode="exemplar" />
 									</xsl:variable>
 									<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare: '), ';')">
 										<item>
@@ -331,7 +337,7 @@
 							<note type="references">
 								<listBibl>
 									<xsl:variable name="weitere">
-										<xsl:apply-templates select="following-sibling::w:p[6]//w:t" />
+										<xsl:apply-templates select="following-sibling::w:p[$start+2]//w:t" />
 									</xsl:variable>
 									<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
 										<bibl>
