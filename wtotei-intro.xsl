@@ -28,7 +28,18 @@
 	</xsl:variable>
 	<xsl:variable name="ee">
 		<xsl:variable name="t" select="string-join((//w:p)[1]//w:t, ' ')"/>
-		<xsl:value-of select="substring-before(substring-after($t, 'EE '), ' ')" />
+		<xsl:variable name="nr" select="substring-before(substring-after($t, 'EE '), ' ')" />
+		<xsl:choose>
+			<xsl:when test="$nr castable as xs:integer">
+				<xsl:value-of select="format-number(number($nr), '000')" />
+			</xsl:when>
+			<xsl:when test="string-length($nr) &lt; 4">
+				<xsl:value-of select="concat('0', $nr)" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$nr" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:variable>
 	
 	<xsl:template match="/">
