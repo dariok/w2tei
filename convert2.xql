@@ -25,57 +25,80 @@ let $filename := if (request:get-uploaded-file-name('file'))
 	
 let $user := request:get-attribute("wd.user")
 return if (not(sm:get-group-members('ed000240') = $user) or $user = 'guest')
-	then <p>Keine Schreibberechtigung für Benutzer / No permission to write for user {$user}</p>
+	then <p>Keine Schreibberechtigung für Benutzer / No permission to write for user {$user}
+		<span>{sm:get-group-members('ed000240')}</span></p>
 	else if (request:is-multipart-content() and $filename != '')
 		then
 			let $origFileData := string(request:get-uploaded-file-data('file'))
 			(: unzip erwartet base64Binary, die vom Upload direkt geliefert werden :)
 			let $unpack := compression:unzip($origFileData, $filter, (), $entry-data, ())
 			let $word := 
-			<pack>{
-			    for $item in $unpack
-			        return $item}
-		    </pack>
-		    let $xslt := doc('../xslt/wtotei-intro.xsl')
-		    
-		    let $xml := transform:transform($word, $xslt, ())
-            let $eeID := $xml/tei:TEI/@xml:id
-            
-(:(:			let $login := xmldb:login('/db/edoc/ed000245/texts', 'guest', 'adf'):):)
-(:			(:let $store := try { xmldb:store('/db/edoc/ed000245/texts', $filename, $resultData) }:)
-(:				catch * { 'Speicherfehler:\n' || $err:code || ': ' || $err:description || '\nDaten:\n\n' || $resultData }:):)
-(:			let $store := xmldb:store('/db/edoc/ed000245/texts', $filename, $resultData):)
-(:(:			let $user := xmldb:get-current-user():):)
-(:			let $own := try { sm:chown($store, concat($user, ':ed000245')) }:)
-(:				catch * { '' } (: XQuery nervt manchmal :):)
-(:			let $perm := try { sm:chmod($store, 'rw-rw-r--') }:)
-(:				catch * { '' }:)
-(:			let $id := $resultData/@xml:id:)
-(:			let $title := if (contains($resultData//tei:title[1], '::')):)
-(:				then normalize-space(substring-before($resultData//tei:title[1], '::')):)
-(:				else normalize-space($resultData//tei:title[1]):)
-(:			let $location := substring-after($store, '245/'):)
-(:			:)
-(:			(: Daten in die METS einfügen :):)
-(:			let $mets := doc('/db/edoc/ed000245/mets.xml'):)
-(:			let $lastOrder := $mets//mets:div[@ORDER and position()=last()]/@ORDER:)
-(:			let $order := format-number($lastOrder + 1, '000'):)
-(:			let $metsFile :=:)
-(:				<mets:file ID="{$id}" MIMETYPE="application/xml">:)
-(:					<mets:FLocat LOCTYPE="URL" xlink:href="{$location}"/>:)
-(:				</mets:file>:)
-(:			let $metsDiv :=:)
-(:				<mets:div LABEL="{$title}" ID="edoc_ed000245_{$order}" ORDER="{$order}">:)
-(:					<mets:fptr FILEID="{$id}"/>:)
-(:				</mets:div>:)
-(:			let $upd1 := if (not($mets//mets:file[@ID=$id])):)
-(:				then update insert $metsFile into $mets//mets:fileGrp[@ID='transcript']:)
-(:				else ():)
-(:			let $upd2 := if ($mets//mets:div[mets:fptr[@FILEID=$id]]):)
-(:				then update replace $mets//mets:div[mets:fptr[@FILEID=$id]]/@LABEL with $title:)
-(:				else update insert $metsDiv into $mets//mets:div[@ID='edoc_ed000245_dokumente']:)
-(:			let $target := concat('/edoc/view.html?id=', $id):)
-(:			return response:redirect-to($target):)
+				<pack>{
+					for $item in $unpack
+						return $item}
+				</pack>
+			let $xslt := doc('../xslt/wtotei-intro.xsl')
+			let $xml := transform:transform($word, $xslt, ())
+			
+			(: notwendige Werte aus XML holen :) 
+			let $eeID := $xml/@xml:id
+			let $nid := $xml/@n
+			let $titel := normalize-space(($xml//tei:title)[1])
+			
+			(: ggfs. Collection erstellen :)
+			let $nr := substring-before(substring-after($eeID, '240_'), '_')
+			let $eeNr := if (string-length($nr) < 3)
+				then 0 || $nr
+				else if (not($nr castable as xs:integer))
+				then 0 || $nr
+				else $nr
+			let $collName := ('/db/edoc/ed000240/texts/' || $eeNr)
+			
+			let $createColl := if (not(xmldb:collection-available($collName)))
+				then xmldb:create-collection('/db/edoc/ed000240/texts/', $eeNr)
+				else ()
+			
+			(: Datei speichern :)
+			let $store := xmldb:store($collName, $eeNr || '_introduction.xml', $xml)
+			let $location := substring-after($store, '240/')
+			let $mets := doc('/db/edoc/ed000240/mets.xml')
+			
+			(: Eintragen in die METS :)
+			(: 1. ggf. mets:file erstellen :)
+			let $metsFile :=
+				<mets:file ID="{$eeID}" MIMETYPE="application/xml">
+					<mets:FLocat LOCTYPE="URL" xlink:href="{$location}"/>
+				</mets:file>
+			let $upd1 := if (not($mets//mets:file[@ID=$eeID]))
+				then update insert $metsFile into $mets//mets:fileGrp[@ID='introduction']
+				else ()
+			
+			(: 2. ggf. div für EE erstellen :)
+			let $div1id := "edoc_ed000240_d" || $eeNr
+			let $div1 := <mets:div TYPE="submenu" LABEL="{$titel}" ID="{$div1id}" ORDER="{$nid}"></mets:div>
+			let $upd2 := if (not($mets//mets:div[@ID=$div1id]))
+				then update insert $div1 into $mets//mets:div[@ID='edoc_ed000240']
+				else ()
+				
+			(: 3. ggf. div für Intro erstellen :)
+			let $div2id := $div1id || "_introduction"
+			let $div2 :=
+				<mets:div TYPE="introduction" LABEL="Einleitung" ID="{$div2id}">
+					<mets:fptr FILEID="{$eeID}" />
+				</mets:div>
+			let $upd2 := if (not($mets//mets:div[@ID=$div2id]))
+				then update insert $div2 into $mets//mets:div[@ID=$div1id]
+				else ()
+			
+			(: 4. ggf. in 2. structMap eintragen :)
+			let $fptr := <mets:fptr FILEID="{$eeID}" />
+			let $upd3 := if (not($mets//mets:div[@ID='ed000240_intros']/mets:fptr[@FILEID=$eeID]))
+				then update insert $fptr into $mets//mets:div[@ID='ed000240_intros']
+				else ()
+			
+			(: TODO prüfen, ob das reicht, oder wir die Texte überschreiben müssen :)
+			let $target := concat('/edoc/view.html?id=', $eeID)
+			return response:redirect-to($target)
 		else if ($filename = '')
 		then
 		    <div>
