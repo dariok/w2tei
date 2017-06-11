@@ -280,8 +280,8 @@
 								</xsl:if>
 							</xsl:element>
 							<xsl:if test="following::w:p[2]//w:t[normalize-space() = 'in:']">
-								<title><xsl:apply-templates select="following::w:p[3]//w:t" /></title>
 								<monogr>
+									<title><xsl:apply-templates select="following::w:p[3]//w:t" /></title>
 									<xsl:call-template name="imprint">
 										<xsl:with-param name="context" select="following-sibling::w:p[2]" />
 									</xsl:call-template>
