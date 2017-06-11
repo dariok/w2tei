@@ -3,6 +3,7 @@
 	xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:hab="http://diglib.hab.de"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="2.0">
 	<!-- neu für Projekt Rist, 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
@@ -47,12 +48,39 @@
 			<xsl:attribute name="xml:id" select="concat('edoc_ed000240_', $ee, '_introduction')" />
 			<teiHeader>
 				<fileDesc>
-					<title><xsl:value-of select="string-join(//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t, ' ')" />
-						<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
-							mode="date"/></title>
-					<xsl:apply-templates select="(//w:p[starts-with(normalize-space(), 'Bearbeitet')])[1]"
-						mode="head"/>
+					<titleStmt>
+						<title><xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
+							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
+								mode="date"/></title>
+						<xsl:apply-templates select="(//w:p[starts-with(normalize-space(), 'Bearbeitet')])[1]"
+							mode="head"/>
+					</titleStmt>
+					<publicationStmt>
+						<publisher>
+							<name type="org">Herzog August Bibliothek Wolfenbüttel</name>
+							<ptr target="http://www.hab.de"/>
+						</publisher>
+						<date when="2013"/>
+						<!--<date type="digitised" when="">Datum der Digitalisierung</date>-->
+						<distributor>Herzog August Bibliothek Wolfenbüttel</distributor>
+						<availability status="restricted">
+							<p>Herzog August Bibliothek Wolfenbüttel (<ref target="http://diglib.hab.de/?link=012">copyright
+								information</ref>)</p>
+						</availability>
+					</publicationStmt>
+					<sourceDesc>
+						<p>born digital</p>
+					</sourceDesc>
 				</fileDesc>
+				<encodingDesc>
+					<p>Zeichen aus der Private Use Area entsprechen MUFI 3.0 (http://mufi.info)</p>
+					<projectDesc>
+						<p xml:id="kgk">
+							<ref target="http://diglib.hab.de/edoc/ed000216/start.htm">Kritische Gesamtausgabe der Schriften und Briefe
+								Andreas Bodensteins von Karlstadt</ref>
+						</p>
+					</projectDesc>
+				</encodingDesc>
 			</teiHeader>
 			<text>
 				<body>
