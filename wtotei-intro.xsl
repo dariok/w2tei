@@ -310,14 +310,14 @@
 								<list>
 									<item n="editionsvorlage">
 										<xsl:variable name="ex">
-											<xsl:apply-templates select="following-sibling::w:p[5]//w:t" />
+											<xsl:apply-templates select="following-sibling::w:p[4]//w:t" />
 										</xsl:variable>
 										<label><xsl:value-of
 											select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
 										<idno type="signatur"><xsl:value-of
 											select="normalize-space(substring-after($ex, ','))"/></idno>
-										<xsl:if test="following-sibling::w:p[5]/w:commentRangeEnd">
-											<xsl:variable name="coID" select="following-sibling::w:p[5]/w:commentRangeEnd/@w:id"/>
+										<xsl:if test="following-sibling::w:p[4]/w:commentRangeEnd">
+											<xsl:variable name="coID" select="following-sibling::w:p[4]/w:commentRangeEnd/@w:id"/>
 											<ptr type="digitalisat">
 												<xsl:attribute name="target">
 													<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
@@ -326,12 +326,22 @@
 										</xsl:if>
 									</item>
 									<xsl:variable name="weitere">
-										<xsl:apply-templates select="following-sibling::w:p[6]//w:t" />
+										<xsl:apply-templates select="following-sibling::w:p[5]//w:t" mode="exemplar" />
 									</xsl:variable>
-									<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare:'), ';')">
+									<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare: '), ';')">
 										<item>
 											<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
-											<idno type="signatur"><xsl:value-of select="normalize-space(substring-after(current(), ','))"/></idno>
+											<idno type="signatur"><xsl:choose>
+												<xsl:when test="contains(current(), '→')">
+													<xsl:value-of select="normalize-space(substring-before(substring-after(current(), ','), '→'))"/>
+												</xsl:when>
+												<xsl:otherwise>
+													<xsl:value-of select="normalize-space(substring-after(current(), ','))"/>
+												</xsl:otherwise>
+											</xsl:choose></idno>
+											<xsl:if test="contains(., '→')">
+												<ptr type="digitalisat" target="{substring-after(., '→')}" />
+											</xsl:if>
 										</item>
 									</xsl:for-each>
 								</list>
@@ -339,9 +349,9 @@
 							<note type="references">
 								<listBibl>
 									<xsl:variable name="weitere">
-										<xsl:apply-templates select="following-sibling::w:p[7]//w:t" />
+										<xsl:apply-templates select="following-sibling::w:p[6]//w:t" />
 									</xsl:variable>
-									<xsl:for-each select="tokenize(substring-after($weitere, 'Nachweise:'), '–|—')">
+									<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
 										<bibl>
 											<!-- TODO ID aus bibliography übernehmen -->
 											<xsl:value-of select="normalize-space(current())"/>
@@ -363,6 +373,17 @@
 	
 	<xsl:template match="w:t[preceding-sibling::w:rPr/w:vertAlign/@w:val='superscript']">
 		<hi rend="super"><xsl:value-of select="."/></hi>
+	</xsl:template>
+	
+	<!-- neu 2017-06-11 DK -->
+	<xsl:template match="w:t" mode="exemplar">
+		<xsl:apply-templates />
+		<xsl:apply-templates select="parent::w:r/following-sibling::*[1][self::w:commentRangeEnd]"/>
+	</xsl:template>
+	<xsl:template match="w:commentRangeEnd">
+		<xsl:variable name="coID" select="@w:id" />
+		<xsl:text>→</xsl:text>
+		<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
 	</xsl:template>
 	
 	<xsl:function name="hab:rmSquare" as="xs:string">
