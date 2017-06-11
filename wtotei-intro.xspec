@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-	xmlns:tei="http://www.tei-c.org/ns/1.0" 
+	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:tei="http://www.tei-c.org/ns/1.0"
 	stylesheet="wtotei-intro.xsl">
-	
 	<x:scenario label="Bearbeiter">
 		<x:scenario label="ein Bearbeiter">
 			<x:context mode="head">
@@ -14,7 +13,6 @@
 				<author xmlns="http://www.tei-c.org/ns/1.0">Stefania Salvadori</author>
 			</x:expect>
 		</x:scenario>
-		
 		<x:scenario label="zwei Bearbeiter">
 			<x:context mode="head">
 				<w:p><w:t>Bearbeitet von Stefania Salvadori und Harald Bollbuck</w:t></w:p>
@@ -24,7 +22,6 @@
 				<author xmlns="http://www.tei-c.org/ns/1.0">Harald Bollbuck</author>
 			</x:expect>
 		</x:scenario>
-		
 		<x:scenario label="mehr als zwei Bearbeiter">
 			<x:context mode="head">
 				<w:p><w:t>Bearbeitet von Stefania Salvadori, Alejandro Zorzin und Harald Bollbuck</w:t></w:p>
@@ -36,7 +33,6 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
-	
 	<x:scenario label="Ort und Datum formatieren">
 		<x:scenario label="beide unbekannt">
 			<x:context mode="date">
@@ -50,10 +46,10 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Ort und Datum">
-				<placeName xmlns="http://www.tei-c.org/ns/1.0" cert="unknown">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-00" cert="unknown">1520, November</date>
+				<placeName xmlns="http://www.tei-c.org/ns/1.0" cert="unknown">Wittenberg</placeName>, <date
+					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-00" cert="unknown">1520, November</date>
 			</x:expect>
 		</x:scenario>
-		
 		<x:scenario label="Ort unbekannt und Datum">
 			<x:context mode="date">
 				<w:p>
@@ -66,10 +62,10 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Ort und Datum">
-				<placeName cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
+				<placeName cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date
+					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
 			</x:expect>
 		</x:scenario>
-		
 		<x:scenario label="Ort bekannt und Datum teilw. nicht">
 			<x:context mode="date">
 				<w:p>
@@ -82,13 +78,10 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Datum mit cert">
-				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date
-					xmlns="http://www.tei-c.org/ns/1.0"
-					when="1520-11-00">1520, <supplied  xmlns="http://www.tei-c.org/ns/1.0"
-						>November</supplied></date>
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0"
+					when="1520-11-00">1520, <supplied xmlns="http://www.tei-c.org/ns/1.0">November</supplied></date>
 			</x:expect>
 		</x:scenario>
-		
 		<x:scenario label="Ort und Datum bekannt">
 			<x:context mode="date">
 				<w:p>
@@ -101,11 +94,11 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Datum mit cert">
-				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0"
+					when="1520-11-04">1520, 4. November</date>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
-	
 	<x:scenario label="Ü1">
 		<x:context>
 			<w:body>
@@ -117,8 +110,7 @@
 						<w:t>Überlieferung</w:t>
 					</w:r>
 				</w:p>
-				<w:p w:rsidR="004D7ABF" w:rsidRPr="004D7ABF"
-					w:rsidRDefault="004D7ABF" w:rsidP="004D7ABF">
+				<w:p w:rsidR="004D7ABF" w:rsidRPr="004D7ABF" w:rsidRDefault="004D7ABF" w:rsidP="004D7ABF">
 					<w:pPr>
 						<w:pStyle w:val="KSText"/>
 					</w:pPr>
@@ -134,8 +126,7 @@
 						<w:t>Entstehung und Inhalt</w:t>
 					</w:r>
 				</w:p>
-				<w:p w:rsidR="004D7ABF" w:rsidRPr="004D7ABF"
-					w:rsidRDefault="004D7ABF" w:rsidP="004D7ABF">
+				<w:p w:rsidR="004D7ABF" w:rsidRPr="004D7ABF" w:rsidRDefault="004D7ABF" w:rsidP="004D7ABF">
 					<w:pPr>
 						<w:pStyle w:val="KSText"/>
 					</w:pPr>
@@ -157,7 +148,7 @@
 	
 	<x:scenario label="Ü2">
 		<x:context mode="content2">
-			<w:p w:rsidR="004C6DB6" w:rsidRDefault="004C6DB6"
+			<w:p w14:paraId="2C2EA526" w14:textId="77777777" w:rsidR="004C6DB6" w:rsidRDefault="004C6DB6"
 				w:rsidP="0011564A">
 				<w:pPr>
 					<w:pStyle w:val="KSberschrift2"/>
@@ -166,489 +157,739 @@
 					<w:t>Frühdrucke</w:t>
 				</w:r>
 			</w:p>
-			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
-				w:rsidP="003B43BE">
+			<w:p w14:paraId="222443E8" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
 				<w:pPr>
-					<w:pStyle w:val="Listenabsatz"/>
-					<w:tabs>
-						<w:tab w:val="left" w:pos="0"/>
-					</w:tabs>
-					<w:spacing w:line="240" w:lineRule="auto"/>
-					<w:ind w:left="0"/>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
+					<w:pStyle w:val="KSText"/>
 				</w:pPr>
-				<w:r w:rsidRPr="003B43BE">
+				<w:r w:rsidRPr="00797996">
 					<w:rPr>
 						<w:rStyle w:val="KSSigle"/>
+						<w:b w:val="0"/>
 					</w:rPr>
-					<w:t>[A:]</w:t>
+					<w:t>[C:]</w:t>
 				</w:r>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von</w:t>
+				<w:r w:rsidR="0072121F" w:rsidRPr="0072121F">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F" w:rsidRPr="00D61276">
+					<w:t>Karlstadt, Andreas Bodenstein von</w:t>
 				</w:r>
 			</w:p>
-			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
-				w:rsidP="003B43BE">
+			<w:p w14:paraId="644DE755" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
 				<w:pPr>
-					<w:pStyle w:val="Listenabsatz"/>
-					<w:tabs>
-						<w:tab w:val="left" w:pos="0"/>
-					</w:tabs>
-					<w:spacing w:line="240" w:lineRule="auto"/>
-					<w:ind w:left="0"/>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:commentRangeStart w:id="5"/>
+				<w:r w:rsidRPr="00452700">
+					<w:t>COnclu</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
 					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
+						<w:lang w:val="la-Latn"/>
 					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>iōes</w:t>
+				</w:r>
+				<w:r w:rsidR="000832E5">
+					<w:t xml:space="preserve"> ‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> Carolo</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F" w:rsidRPr="00577B88">
+					<w:rPr>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>ﬅ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">ady </w:t>
+				</w:r>
+				<w:commentRangeEnd w:id="5"/>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:commentReference w:id="5"/>
+				</w:r>
+				<w:r w:rsidR="000832E5">
+					<w:t>contra D. ‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> Johānem Eccum Lip</w:t>
+				</w:r>
+				<w:r w:rsidR="000832E5" w:rsidRPr="00577B88">
+					<w:rPr>
+						<w:rFonts w:cs="Times New Roman"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>⸗</w:t>
+				</w:r>
+				<w:r w:rsidR="000832E5">
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">ie xxvij Junij </w:t>
+				</w:r>
+				<w:r w:rsidR="000832E5">
+					<w:rPr>
+						<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+					</w:rPr>
+					<w:t xml:space="preserve">‖ </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>tuende.</w:t>
+				</w:r>
+				<w:r w:rsidR="000832E5">
+					<w:t xml:space="preserve"> ‖</w:t>
+				</w:r>
+				<w:r w:rsidR="0035581D">
+					<w:t xml:space="preserve"> [TE]</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="1BB08FBB" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="000B2667"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
 				</w:pPr>
 				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t>Welche bucher Bibli</w:t>
+					<w:t>[Breslau]:</w:t>
+				</w:r>
+				<w:r w:rsidR="00452700" w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> [Adam Dyon], 1519</w:t>
+				</w:r>
+				<w:r w:rsidR="000832E5">
+					<w:t>.</w:t>
 				</w:r>
 			</w:p>
-			<w:p w:rsidR="003B43BE" w:rsidRPr="003B356E"
-				w:rsidRDefault="003B43BE" w:rsidP="003B43BE">
+			<w:p w14:paraId="5F86C954" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
 				<w:pPr>
-					<w:pStyle w:val="Listenabsatz"/>
-					<w:tabs>
-						<w:tab w:val="left" w:pos="0"/>
-					</w:tabs>
-					<w:spacing w:line="240" w:lineRule="auto"/>
-					<w:ind w:left="0"/>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
+					<w:pStyle w:val="KSText"/>
 				</w:pPr>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>Wittenberg: [Melchior Lotter d. J.], 1520</w:t>
+				<w:r w:rsidRPr="00452700">
+					<w:t>4°, 4 Bl.</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F">
+					<w:t>,</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F" w:rsidRPr="00797996">
+					<w:t xml:space="preserve"> Titelbl., A2-A4.</w:t>
 				</w:r>
 			</w:p>
-			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
-				w:rsidP="003B43BE">
+			<w:p w14:paraId="50E697E5" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
 				<w:pPr>
-					<w:pStyle w:val="Listenabsatz"/>
-					<w:tabs>
-						<w:tab w:val="left" w:pos="0"/>
-					</w:tabs>
-					<w:spacing w:line="240" w:lineRule="auto"/>
-					<w:ind w:left="0"/>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
+					<w:pStyle w:val="KSText"/>
 				</w:pPr>
-				<w:r w:rsidRPr="003B356E">
+				<w:r w:rsidRPr="00452700">
 					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>4°, 12 Bl., Sign. A2</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:vertAlign w:val="superscript"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>r</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>, A3</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:vertAlign w:val="superscript"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>r</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>, B1</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:vertAlign w:val="superscript"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>r</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>, B2</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:vertAlign w:val="superscript"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>r</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>, C1</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:vertAlign w:val="superscript"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>r</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>, C2</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:vertAlign w:val="superscript"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>r</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>, C3</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:vertAlign w:val="superscript"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t>r</w:t>
-				</w:r>
-				<w:r w:rsidRPr="003B356E">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-						<w:lang w:val="en-US"/>
-					</w:rPr>
-					<w:t xml:space="preserve">. </w:t>
-				</w:r>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t>Keine Kustoden.</w:t>
-				</w:r>
-			</w:p>
-			<w:p/>
-			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
-				w:rsidP="003B43BE">
-				<w:pPr>
-					<w:pStyle w:val="Listenabsatz"/>
-					<w:tabs>
-						<w:tab w:val="left" w:pos="0"/>
-					</w:tabs>
-					<w:spacing w:line="240" w:lineRule="auto"/>
-					<w:ind w:left="0"/>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-				</w:pPr>
-				<w:r w:rsidRPr="0091168C">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
 						<w:i/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
 					</w:rPr>
 					<w:t>Editionsvorlage</w:t>
 				</w:r>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t xml:space="preserve">: HAB, </w:t>
+				<w:r w:rsidRPr="00452700">
+					<w:t>: BU Wrocław, Mf 4956</w:t>
 				</w:r>
-				<w:commentRangeStart w:id="0"/>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t>H: Yv 2186.8° Helmst</w:t>
+				<w:r w:rsidR="0035581D">
+					<w:t>.</w:t>
 				</w:r>
-				<w:commentRangeEnd w:id="0"/>
-				<w:r>
+			</w:p>
+			<w:p w14:paraId="395E1A1D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
 					<w:rPr>
-						<w:rStyle w:val="Kommentarzeichen"/>
+						<w:i/>
 					</w:rPr>
-					<w:commentReference w:id="0"/>
+					<w:t>Weitere Exemplare</w:t>
 				</w:r>
-				<w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">: </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="6A1C8FEB" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
 					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
+						<w:i/>
+					</w:rPr>
+					<w:t>Bibliographische Nachweis</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>: VD 16 B 6127</w:t>
+				</w:r>
+				<w:r w:rsidR="00797996">
+					<w:t>.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>—</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>Freys/Barge, Verzeichnis, Nr. 18</w:t>
+				</w:r>
+				<w:r w:rsidR="00797996">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>—</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>Zorzin, Flugschriftenautor, 13</w:t>
+				</w:r>
+				<w:r w:rsidR="0035581D">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>C</w:t>
+				</w:r>
+				<w:r w:rsidR="00797996">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="64CA0BDA" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="36359019" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:rStyle w:val="KSSigle"/>
+					</w:rPr>
+					<w:t>[D:]</w:t>
+				</w:r>
+				<w:r w:rsidR="00797996" w:rsidRPr="00797996">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidR="00797996" w:rsidRPr="00D61276">
+					<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="3FE5EA1F" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:t>Sub</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>criptas Conclu</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>iones, Andreas Carolo</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F" w:rsidRPr="00577B88">
+					<w:rPr>
 						<w:szCs w:val="24"/>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>ﬅ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>adius, ad</w:t>
+				</w:r>
+				<w:r w:rsidR="0051288F">
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>uersus dominū Ioannem Eckium defendet Lipsiæ,</w:t>
+				</w:r>
+				<w:r w:rsidR="0051288F">
+					<w:t xml:space="preserve"> ‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> die xxvij Iunij.M.D.XIX.</w:t>
+				</w:r>
+				<w:r w:rsidR="0051288F">
+					<w:t xml:space="preserve"> ‖</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="72537556" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:t>in:</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="06C9486D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve">Contenta in hoc Libello. </w:t>
+				</w:r>
+				<w:r w:rsidR="00DC2480" w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidR="0051288F" w:rsidRPr="00797996">
+					<w:rPr>
+						<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>Era</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>mi Roterodami Epi</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>tola,ad illu</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>tri</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>s,</w:t>
+				</w:r>
+				<w:r w:rsidR="00DC2480" w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve"> ‖ </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00797996">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve">Principē ac Ducē Saxoniæ &amp;c. Fridericū. </w:t>
+				</w:r>
+				<w:r w:rsidR="00DC2480">
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> Po</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>itiones Ioannis Eckij ,</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">cholasticæ. </w:t>
+				</w:r>
+				<w:r w:rsidR="00DC2480">
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> Po</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">itiones Martini Lutherij theologicæ. </w:t>
+				</w:r>
+				<w:r w:rsidR="00DC2480">
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> Cōclu</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>iōes Andreæ Carolo</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F" w:rsidRPr="00577B88">
+					<w:rPr>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>ﬅ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">adij,theologicæ. </w:t>
+				</w:r>
+				<w:r w:rsidR="00DC2480">
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">  ... </w:t>
+				</w:r>
+				<w:r w:rsidR="00DC2480">
+					<w:t>‖ [TE]</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="72EC2B87" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00797996" w:rsidRDefault="000B2667"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r>
+					<w:t>[Leipzig]</w:t>
+				</w:r>
+				<w:r w:rsidR="00452700" w:rsidRPr="00452700">
+					<w:t xml:space="preserve">: [Melchior Lotter d. Ä], [1519], fol. </w:t>
+				</w:r>
+				<w:r w:rsidR="004E136A">
+					<w:t>A</w:t>
+				</w:r>
+				<w:r w:rsidR="00452700" w:rsidRPr="00452700">
+					<w:t>5</w:t>
+				</w:r>
+				<w:r w:rsidR="00452700" w:rsidRPr="00452700">
+					<w:rPr>
+						<w:vertAlign w:val="superscript"/>
+					</w:rPr>
+					<w:t>v</w:t>
+				</w:r>
+				<w:r w:rsidR="005C4288" w:rsidRPr="005C4288">
+					<w:t>‒</w:t>
+				</w:r>
+				<w:r w:rsidR="004E136A">
+					<w:t>A</w:t>
+				</w:r>
+				<w:r w:rsidR="00452700" w:rsidRPr="00452700">
+					<w:t>6</w:t>
+				</w:r>
+				<w:r w:rsidR="00452700" w:rsidRPr="00452700">
+					<w:rPr>
+						<w:vertAlign w:val="superscript"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidR="00797996">
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="694EC124" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00A5355A" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="00A5355A">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve">4°, 6 Bl., </w:t>
+				</w:r>
+				<w:r w:rsidR="00A5355A" w:rsidRPr="00A5355A">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve">Titelbl., A2-A6, </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00A5355A">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>Sig. A2</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00A5355A">
+					<w:rPr>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00A5355A">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>, A3</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00A5355A">
+					<w:rPr>
+						<w:vertAlign w:val="superscript"/>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidR="00A5355A">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
 					</w:rPr>
 					<w:t>.</w:t>
 				</w:r>
 			</w:p>
-			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
-				w:rsidP="003B43BE">
+			<w:p w14:paraId="0D547FE3" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
 				<w:pPr>
-					<w:pStyle w:val="Listenabsatz"/>
-					<w:tabs>
-						<w:tab w:val="left" w:pos="0"/>
-					</w:tabs>
-					<w:spacing w:line="240" w:lineRule="auto"/>
-					<w:ind w:left="0"/>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
+					<w:pStyle w:val="KSText"/>
 				</w:pPr>
-				<w:r w:rsidRPr="0091168C">
+				<w:r w:rsidRPr="00452700">
 					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
 						<w:i/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
+					</w:rPr>
+					<w:t>Editionsvorlage</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">: </w:t>
+				</w:r>
+				<w:commentRangeStart w:id="6"/>
+				<w:r w:rsidRPr="00452700">
+					<w:t>ÖNB</w:t>
+				</w:r>
+				<w:r w:rsidR="000B2667">
+					<w:t xml:space="preserve"> Wien</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>, 11.J.64</w:t>
+				</w:r>
+				<w:r w:rsidR="000B2667">
+					<w:t>.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:commentRangeEnd w:id="6"/>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:commentReference w:id="6"/>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="7DBAD9F7" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:i/>
 					</w:rPr>
 					<w:t>Weitere Exemplare</w:t>
 				</w:r>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t xml:space="preserve">: BSB, </w:t>
+				<w:r w:rsidR="00A5355A">
+					<w:t>: HAB</w:t>
 				</w:r>
-				<w:commentRangeStart w:id="1"/>
-				<w:r w:rsidRPr="0091168C">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t xml:space="preserve">4 Exeg. </w:t>
+				<w:r w:rsidR="00FF7E6D">
+					<w:t xml:space="preserve"> Wolfenbüttel,</w:t>
 				</w:r>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t>90</w:t>
+				<w:r w:rsidR="00A5355A">
+					<w:t xml:space="preserve"> H 54.4° Helmst. (2).</w:t>
 				</w:r>
-				<w:commentRangeEnd w:id="1"/>
-				<w:r>
-					<w:rPr>
-						<w:rStyle w:val="Kommentarzeichen"/>
-					</w:rPr>
-					<w:commentReference w:id="1"/>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
 				</w:r>
 			</w:p>
-			<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
-				w:rsidP="003B43BE">
+			<w:p w14:paraId="0448C2E8" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
+				w:rsidP="00452700">
 				<w:pPr>
-					<w:pStyle w:val="Listenabsatz"/>
-					<w:tabs>
-						<w:tab w:val="left" w:pos="0"/>
-					</w:tabs>
-					<w:spacing w:line="240" w:lineRule="auto"/>
-					<w:ind w:left="0"/>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
+					<w:pStyle w:val="KSText"/>
 				</w:pPr>
-				<w:r w:rsidRPr="0091168C">
+				<w:r w:rsidRPr="00452700">
 					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
 						<w:i/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
 					</w:rPr>
-					<w:t>Bibliographische Nachweise</w:t>
+					<w:lastRenderedPageBreak/>
+					<w:t>Bibliographische Nachweis</w:t>
 				</w:r>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
-					<w:t xml:space="preserve">: </w:t>
+				<w:r w:rsidRPr="00452700">
+					<w:t>: VD 16 E 2832</w:t>
 				</w:r>
-				<w:r w:rsidRPr="00EB7472">
-					<w:rPr>
-						<w:rStyle w:val="KSbibliographischeAngabe"/>
-					</w:rPr>
-					<w:t xml:space="preserve">VD16 </w:t>
+				<w:r w:rsidR="00FF7E6D">
+					<w:t>.</w:t>
 				</w:r>
-				<w:hyperlink r:id="rId6" w:history="1">
-					<w:r w:rsidRPr="00EB7472">
-						<w:rPr>
-							<w:rStyle w:val="KSbibliographischeAngabe"/>
-						</w:rPr>
-						<w:t>B 6259</w:t>
-					</w:r>
-				</w:hyperlink>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
+				<w:r w:rsidRPr="00452700">
 					<w:t xml:space="preserve"> </w:t>
 				</w:r>
-				<w:r w:rsidRPr="0091168C">
+				<w:r w:rsidRPr="00452700">
 					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
 						<w:lang w:val="la-Latn"/>
 					</w:rPr>
 					<w:t>—</w:t>
 				</w:r>
-				<w:r w:rsidRPr="0091168C">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
+				<w:r w:rsidRPr="00452700">
 					<w:t xml:space="preserve"> </w:t>
 				</w:r>
-				<w:r w:rsidRPr="00EB7472">
+				<w:r w:rsidRPr="00FF7E6D">
 					<w:rPr>
 						<w:rStyle w:val="KSbibliographischeAngabe"/>
 					</w:rPr>
-					<w:t>Freys/Barge, Verze</w:t>
+					<w:t>Freys/Barge, Verzeichnis, Nr. 19</w:t>
 				</w:r>
-				<w:bookmarkStart w:id="2" w:name="_GoBack"/>
-				<w:bookmarkEnd w:id="2"/>
-				<w:r w:rsidRPr="00EB7472">
+				<w:r w:rsidR="00FF7E6D">
 					<w:rPr>
 						<w:rStyle w:val="KSbibliographischeAngabe"/>
 					</w:rPr>
-					<w:t>ichnis, Nr. 46</w:t>
+					<w:t>.</w:t>
 				</w:r>
-				<w:r>
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
+				<w:r w:rsidRPr="00452700">
 					<w:t xml:space="preserve"> </w:t>
 				</w:r>
-				<w:r w:rsidRPr="0091168C">
+				<w:r w:rsidRPr="00452700">
 					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
 						<w:lang w:val="la-Latn"/>
 					</w:rPr>
 					<w:t>—</w:t>
 				</w:r>
-				<w:r w:rsidRPr="0091168C">
-					<w:rPr>
-						<w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
-						<w:sz w:val="24"/>
-						<w:szCs w:val="24"/>
-					</w:rPr>
+				<w:r w:rsidRPr="00452700">
 					<w:t xml:space="preserve"> </w:t>
 				</w:r>
-				<w:r w:rsidRPr="00EB7472">
+				<w:r w:rsidRPr="00FF7E6D">
 					<w:rPr>
 						<w:rStyle w:val="KSbibliographischeAngabe"/>
 					</w:rPr>
-					<w:t>Zorzin, Flugschriftenautor, Nr. 27</w:t>
+					<w:t>Zorzin, Flugschriftenautor, 13a</w:t>
+				</w:r>
+				<w:r w:rsidR="0035581D">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>A</w:t>
+				</w:r>
+				<w:r w:rsidR="00FF7E6D">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
 				</w:r>
 			</w:p>
-			<w:comment w:id="0" w:author="Stefania" w:date="2017-04-07T16:01:00Z" w:initials="S">
-				<w:p w:rsidR="003B43BE" w:rsidRDefault="003B43BE"
-					w:rsidP="003B43BE">
+			<w:comment w:id="6" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z" w:initials="Salv">
+				<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+					w:rsidRDefault="00452700" w:rsidP="00452700">
 					<w:pPr>
 						<w:pStyle w:val="Kommentartext"/>
+						<w:rPr>
+							<w:lang w:val="en-GB"/>
+						</w:rPr>
 					</w:pPr>
 					<w:r>
 						<w:rPr>
@@ -656,51 +897,100 @@
 						</w:rPr>
 						<w:annotationRef/>
 					</w:r>
-					<w:hyperlink r:id="rId1" w:history="1">
-						<w:r w:rsidRPr="00DF2734">
+					<w:hyperlink r:id="rId4" w:history="1">
+						<w:r w:rsidRPr="000B2667">
 							<w:rPr>
 								<w:rStyle w:val="Hyperlink"/>
+								<w:lang w:val="en-GB"/>
 							</w:rPr>
-							<w:t>http://diglib.hab.de/drucke/yv-2186-8f-helmst/start.htm</w:t>
+							<w:t>http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808</w:t>
 						</w:r>
 					</w:hyperlink>
+				</w:p>
+				<w:p w14:paraId="6F0D1E24" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+					w:rsidRDefault="00452700" w:rsidP="00452700">
+					<w:pPr>
+						<w:pStyle w:val="Kommentartext"/>
+						<w:rPr>
+							<w:lang w:val="en-GB"/>
+						</w:rPr>
+					</w:pPr>
 				</w:p>
 			</w:comment>
 		</x:context>
 		<x:scenario label="Frühdrucke">
 			<x:expect label="listBibl">
-				<listBibl xmlns="http://www.tei-c.org/ns/1.0" type="sigla">
-					<biblStruct type="imprint" xml:id="A">
+				<listBibl type="sigla" xmlns="http://www.tei-c.org/ns/1.0">
+					<biblStruct type="imprint" xml:id="C">
 						<monogr>
 							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Welche bucher Bibli</title>
+							<title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖ tuende. ‖ [TE]</title>
 							<imprint>
-								<pubPlace><rs type="place">Wittenberg</rs></pubPlace>
-								<publisher cert="unknown"><rs type="person">Melchior Lotter d. J.</rs></publisher>
-								<date when="1520">1520</date>
+								<pubPlace cert="unknown">
+									<rs type="place">Breslau</rs>
+								</pubPlace>
+								<publisher cert="unknown">
+									<rs type="person">Adam Dyon</rs>
+								</publisher>
+								<date when="1519">1519</date>
 							</imprint>
-							<extent>4°, 12 Bl., Sign. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>, B1<hi rend="super">r</hi>, B2<hi rend="super">r</hi>, C1<hi rend="super">r</hi>, C2<hi rend="super">r</hi>, C3<hi rend="super">r</hi>. Keine Kustoden.</extent>
+							<extent>4°, 4 Bl., Titelbl., A2-A4.</extent>
 						</monogr>
-						<idno type="siglum">A</idno>
+						<idno type="siglum">C</idno>
 						<note type="copies">
 							<list>
 								<item n="editionsvorlage">
-									<label>HAB</label>
-									<idno>H: Yv 2186.8° Helmst.</idno>
-									<ptr type="digitalisat"
-										target="http://diglib.hab.de/drucke/yv-2186-8f-helmst/start.htm"/>
-								</item>
-								<item>
-									<label>BSB</label>
-									<idno>4 Exeg. 90</idno>
+									<label>BU Wrocław</label>
+									<idno type="signatur">Mf 4956.</idno>
 								</item>
 							</list>
 						</note>
 						<note type="references">
 							<listBibl>
-								<bibl>VD16 B 6259</bibl>
-								<bibl>Freys/Barge, Verzeichnis, Nr. 46</bibl>
-								<bibl>Zorzin, Flugschriftenautor, Nr. 27</bibl>
+								<bibl>VD 16 B 6127.</bibl>
+								<bibl>Freys/Barge, Verzeichnis, Nr. 18.</bibl>
+								<bibl>Zorzin, Flugschriftenautor, 13C.</bibl>
+							</listBibl>
+						</note>
+					</biblStruct>
+					<biblStruct type="imprint" xml:id="D">
+						<analytic>
+							<author>Karlstadt, Andreas Bodenstein von</author>
+							<title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title>
+						</analytic>
+						<monogr>
+							<title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖ Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij ,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ Caroloﬅadij,theologicæ. ‖  ... ‖ [TE]</title>
+							<imprint>
+								<pubPlace cert="unknown">
+									<rs type="place">Leipzig</rs>
+								</pubPlace>
+								<publisher cert="unknown">
+									<rs type="person">Melchior Lotter d. Ä</rs>
+								</publisher>
+								<date when="1519" cert="unknown">1519</date>
+							</imprint>
+							<extent>4°, 6 Bl., Titelbl., A2-A6, Sig. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>.</extent>
+							<biblScope>fol. A5v‒A6r.</biblScope>
+						</monogr>
+						<idno type="siglum">D</idno>
+						<note type="copies">
+							<list>
+								<item n="editionsvorlage">
+									<label>ÖNB Wien</label>
+									<idno type="signatur">11.J.64.</idno>
+									<ptr type="digitalisat" target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/>
+								</item>
+								<item>
+									<label>HAB Wolfenbüttel</label>
+									<idno type="signatur">H 54.4° Helmst. (2).</idno>
+								</item>
+							</list>
+						</note>
+						<note type="references">
+							<listBibl>
+								<bibl>VD 16 E 2832.</bibl>
+								<bibl>Freys/Barge, Verzeichnis, Nr. 19.</bibl>
+								<bibl>Zorzin, Flugschriftenautor, 13aA.</bibl>
 							</listBibl>
 						</note>
 					</biblStruct>
