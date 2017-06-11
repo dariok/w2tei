@@ -259,7 +259,11 @@
 						<biblStruct type="imprint">
 							<xsl:attribute name="xml:id" select="$idNo" />
 							<monogr>
-								<author><xsl:value-of select="normalize-space(w:r[2]/w:t)"/></author>
+								<xsl:variable name="au">
+									<xsl:apply-templates select="descendant::w:t" />
+								</xsl:variable>
+								<author>
+									<xsl:value-of select="normalize-space(substring-after($au, ']'))"/></author>
 								<title><xsl:apply-templates select="following-sibling::w:p[1]//w:t" mode="titleContent"/></title>
 								<imprint>
 									<xsl:variable name="imprintText">
