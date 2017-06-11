@@ -60,8 +60,7 @@
 							<name type="org">Herzog August Bibliothek Wolfenbüttel</name>
 							<ptr target="http://www.hab.de"/>
 						</publisher>
-						<date when="2013"/>
-						<!--<date type="digitised" when="">Datum der Digitalisierung</date>-->
+						<date when="2017" type="created"/>
 						<distributor>Herzog August Bibliothek Wolfenbüttel</distributor>
 						<availability status="restricted">
 							<p>Herzog August Bibliothek Wolfenbüttel (<ref target="http://diglib.hab.de/?link=012">copyright
@@ -285,11 +284,21 @@
 													<xsl:value-of select="hab:rmSquare(regex-group(2))"/>
 												</rs>
 											</publisher>
-											<date when="{hab:rmSquare(regex-group(3))}">
+											<xsl:variable name="dWhen">
+												<xsl:choose>
+													<xsl:when test="ends-with(hab:rmSquare(regex-group(3)), '.')">
+														<xsl:value-of select="substring-before(hab:rmSquare(regex-group(3)), '.')" />
+													</xsl:when>
+													<xsl:otherwise>
+														<xsl:value-of select="hab:rmSquare(regex-group(3))" />
+													</xsl:otherwise>
+												</xsl:choose>
+											</xsl:variable>
+											<date when="{$dWhen}">
 												<xsl:if test="ends-with(regex-group(3), ']')">
 													<xsl:attribute name="cert">unknown</xsl:attribute>
 												</xsl:if>
-												<xsl:value-of select="hab:rmSquare(regex-group(3))"/>
+												<xsl:value-of select="$dWhen"/>
 											</date>
 										</xsl:matching-substring>
 									</xsl:analyze-string>
