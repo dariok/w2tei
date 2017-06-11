@@ -314,7 +314,7 @@
 										</xsl:variable>
 										<label><xsl:value-of
 											select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
-										<idno><xsl:value-of
+										<idno type="signatur"><xsl:value-of
 											select="normalize-space(substring-after($ex, ','))"/></idno>
 										<xsl:if test="following-sibling::w:p[5]/w:commentRangeEnd">
 											<xsl:variable name="coID" select="following-sibling::w:p[5]/w:commentRangeEnd/@w:id"/>
@@ -331,7 +331,7 @@
 									<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare:'), ';')">
 										<item>
 											<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
-											<idno><xsl:value-of select="normalize-space(substring-after(current(), ','))"/></idno>
+											<idno type="signatur"><xsl:value-of select="normalize-space(substring-after(current(), ','))"/></idno>
 										</item>
 									</xsl:for-each>
 								</list>
