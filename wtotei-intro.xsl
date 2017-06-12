@@ -12,7 +12,7 @@
 	<xsl:output indent="yes"/>
 	
 	<!-- die überwiegend genutzte Schriftgröße für Normaltext ermitteln; 2017-05-03 DK -->
-	<xsl:variable name="mainsize">
+	<!--<xsl:variable name="mainsize">
 		<xsl:variable name ="t">
 			<xsl:for-each-group select="//w:rPr/w:sz" group-by="@w:val">
 				<xsl:sort select="count(current-group())" order="descending"/>
@@ -22,23 +22,24 @@
 			</xsl:for-each-group>
 		</xsl:variable>
 		<xsl:value-of select="$t/*[1]"/>
+	</xsl:variable>-->
+	<xsl:variable name="fline">
+		<xsl:value-of select="string-join(//w:body/w:p[1]//w:t, '')" />
 	</xsl:variable>
 	<xsl:variable name="nr">
-		<xsl:variable name="t" select="string-join((//w:p)[1]//w:t, ' ')"/>
-		<xsl:value-of select="hab:rmSquare(substring-after($t, 'Nr. '))" />
+		<xsl:value-of select="hab:rmSquare(substring-after($fline, 'Nr. '))" />
 	</xsl:variable>
 	<xsl:variable name="ee">
-		<xsl:variable name="t" select="string-join((//w:p)[1]//w:t, ' ')"/>
-		<xsl:variable name="nr" select="substring-before(substring-after($t, 'EE '), ' ')" />
+		<xsl:variable name="nro" select="substring-before(substring-after($fline, 'EE '), ' ')" />
 		<xsl:choose>
-			<xsl:when test="$nr castable as xs:integer">
-				<xsl:value-of select="format-number(number($nr), '000')" />
+			<xsl:when test="$nro castable as xs:integer">
+				<xsl:value-of select="format-number(number($nro), '000')" />
 			</xsl:when>
-			<xsl:when test="string-length($nr) &lt; 4">
-				<xsl:value-of select="concat('0', $nr)" />
+			<xsl:when test="string-length($nro) &lt; 4">
+				<xsl:value-of select="concat('0', $nro)" />
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="$nr" />
+				<xsl:value-of select="$nro" />
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
