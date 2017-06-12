@@ -882,6 +882,306 @@
 					<w:t xml:space="preserve"> </w:t>
 				</w:r>
 			</w:p>
+			<w:p w14:paraId="6427EC3C" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00D61276"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+					<w:rPr>
+						<w:rStyle w:val="KSSigle"/>
+						<w:b w:val="0"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="000B2667">
+					<w:rPr>
+						<w:rStyle w:val="KSSigle"/>
+					</w:rPr>
+					<w:t>[B:]</w:t>
+				</w:r>
+				<w:r w:rsidR="00D61276" w:rsidRPr="00AC7C10">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidR="00D61276" w:rsidRPr="00D61276">
+					<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="6A9E998E" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:t>Conclu</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">iones </w:t>
+				</w:r>
+				<w:r w:rsidR="00D61276">
+					<w:t>ca‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>rolo</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F" w:rsidRPr="00577B88">
+					<w:rPr>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t>ﬅ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>adij contra D.</w:t>
+				</w:r>
+				<w:r w:rsidR="00AC7C10">
+					<w:t xml:space="preserve"> ‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> Johānem Eccum</w:t>
+				</w:r>
+				<w:r w:rsidR="00AC7C10">
+					<w:t xml:space="preserve"> ‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> Lip</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>ie xxvij Ju</w:t>
+				</w:r>
+				<w:r w:rsidR="00AC7C10" w:rsidRPr="00577B88">
+					<w:rPr>
+						<w:rFonts w:cs="Times New Roman"/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>⸗</w:t>
+				</w:r>
+				<w:r w:rsidR="00AC7C10">
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>nij tuende.</w:t>
+				</w:r>
+				<w:r w:rsidR="00D61276">
+					<w:t xml:space="preserve"> ‖</w:t>
+				</w:r>
+				<w:r w:rsidR="00BC7191">
+					<w:t xml:space="preserve"> [TE]</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="6175BBAB" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:t>[Leipzig] : [Martin Landsberg], 1519</w:t>
+				</w:r>
+				<w:r w:rsidR="00AC7C10">
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="7CAD7C37" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00AC7C10">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve">4°, 4 Bl., </w:t>
+				</w:r>
+				<w:r w:rsidR="00AC7C10" w:rsidRPr="00D61276">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve">Titelbl., A2-A4, </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00AC7C10">
+					<w:rPr>
+						<w:lang w:val="it-IT"/>
+					</w:rPr>
+					<w:t xml:space="preserve">Sign. </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>A2</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:vertAlign w:val="superscript"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>, A3</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:vertAlign w:val="superscript"/>
+					</w:rPr>
+					<w:t>r</w:t>
+				</w:r>
+				<w:r w:rsidR="00AC7C10">
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="268335CE" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:i/>
+					</w:rPr>
+					<w:t>Editionsvorlage</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>: HAB</w:t>
+				</w:r>
+				<w:r w:rsidR="00FF7E6D">
+					<w:t xml:space="preserve"> Wolfenbüttel</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">, </w:t>
+				</w:r>
+				<w:commentRangeStart w:id="3"/>
+				<w:r w:rsidRPr="00452700">
+					<w:t>H: H 55.4° Helmst. (6)</w:t>
+				</w:r>
+				<w:commentRangeEnd w:id="3"/>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:commentReference w:id="3"/>
+				</w:r>
+				<w:r w:rsidR="0072121F">
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="12B3E200" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:i/>
+					</w:rPr>
+					<w:t>Weitere Exemplare</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>: BSB</w:t>
+				</w:r>
+				<w:r w:rsidR="00FF7E6D">
+					<w:t xml:space="preserve"> München</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve">, </w:t>
+				</w:r>
+				<w:commentRangeStart w:id="4"/>
+				<w:r w:rsidRPr="00452700">
+					<w:t>Rar. 1953#Beibd.1</w:t>
+				</w:r>
+				<w:commentRangeEnd w:id="4"/>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="en-US"/>
+					</w:rPr>
+					<w:commentReference w:id="4"/>
+				</w:r>
+				<w:r w:rsidR="0072121F">
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="19F1DC64" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:i/>
+					</w:rPr>
+					<w:lastRenderedPageBreak/>
+					<w:t>Bibliographische Nachweis</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t>: VD 16 B 6128</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F">
+					<w:t>.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>—</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="0072121F">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>Freys/Barge, Verzeichnis, Nr. 17</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F">
+					<w:t>.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>—</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="0072121F">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>Zorzin, Flugschriftenautor, 13</w:t>
+				</w:r>
+				<w:r w:rsidR="0035581D">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe"/>
+					</w:rPr>
+					<w:t>B</w:t>
+				</w:r>
+				<w:r w:rsidR="0072121F">
+					<w:t>.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00452700">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="6EA09941" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+				</w:pPr>
+			</w:p>
 			<w:comment w:id="6" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z" w:initials="Salv">
 				<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
 					w:rsidRDefault="00452700" w:rsidP="00452700">
@@ -908,6 +1208,82 @@
 					</w:hyperlink>
 				</w:p>
 				<w:p w14:paraId="6F0D1E24" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+					w:rsidRDefault="00452700" w:rsidP="00452700">
+					<w:pPr>
+						<w:pStyle w:val="Kommentartext"/>
+						<w:rPr>
+							<w:lang w:val="en-GB"/>
+						</w:rPr>
+					</w:pPr>
+				</w:p>
+			</w:comment>
+			<w:comment w:id="3" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z" w:initials="Salv">
+				<w:p w14:paraId="67F86CDF" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00BC7191"
+					w:rsidRDefault="00452700" w:rsidP="00452700">
+					<w:pPr>
+						<w:pStyle w:val="Kommentartext"/>
+						<w:rPr>
+							<w:lang w:val="en-GB"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r>
+						<w:rPr>
+							<w:rStyle w:val="Kommentarzeichen"/>
+						</w:rPr>
+						<w:annotationRef/>
+					</w:r>
+					<w:r w:rsidRPr="00BC7191">
+						<w:rPr>
+							<w:lang w:val="en-GB"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Permalink: </w:t>
+					</w:r>
+					<w:hyperlink r:id="rId2" w:history="1">
+						<w:r w:rsidRPr="00BC7191">
+							<w:rPr>
+								<w:rStyle w:val="Hyperlink"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>http://diglib.hab.de/drucke/h-55-4f-helmst-6s/start.htm</w:t>
+						</w:r>
+					</w:hyperlink>
+				</w:p>
+				<w:p w14:paraId="4075A8A3" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00BC7191"
+					w:rsidRDefault="00452700" w:rsidP="00452700">
+					<w:pPr>
+						<w:pStyle w:val="Kommentartext"/>
+						<w:rPr>
+							<w:lang w:val="en-GB"/>
+						</w:rPr>
+					</w:pPr>
+				</w:p>
+			</w:comment>
+			<w:comment w:id="4" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z" w:initials="Salv">
+				<w:p w14:paraId="7CD35831" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+					w:rsidRDefault="00452700" w:rsidP="00452700">
+					<w:pPr>
+						<w:pStyle w:val="Kommentartext"/>
+						<w:rPr>
+							<w:lang w:val="en-GB"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r>
+						<w:rPr>
+							<w:rStyle w:val="Kommentarzeichen"/>
+						</w:rPr>
+						<w:annotationRef/>
+					</w:r>
+					<w:hyperlink r:id="rId3" w:history="1">
+						<w:r w:rsidRPr="000B2667">
+							<w:rPr>
+								<w:rStyle w:val="Hyperlink"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>http://daten.digitale-sammlungen.de/~db/0002/bsb00025776/images/</w:t>
+						</w:r>
+					</w:hyperlink>
+				</w:p>
+				<w:p w14:paraId="52EB4DFB" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
 					w:rsidRDefault="00452700" w:rsidP="00452700">
 					<w:pPr>
 						<w:pStyle w:val="Kommentartext"/>
@@ -991,6 +1367,46 @@
 								<bibl>VD 16 E 2832.</bibl>
 								<bibl>Freys/Barge, Verzeichnis, Nr. 19.</bibl>
 								<bibl>Zorzin, Flugschriftenautor, 13aA.</bibl>
+							</listBibl>
+						</note>
+					</biblStruct>
+					<biblStruct type="imprint" xml:id="B">
+						<monogr>
+							<author>Karlstadt, Andreas Bodenstein von</author>
+							<title>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij tuende. ‖ [TE]</title>
+							<imprint>
+								<pubPlace cert="unknown">
+									<rs type="place">Leipzig</rs>
+								</pubPlace>
+								<publisher cert="unknown">
+									<rs type="person">Martin Landsberg</rs>
+								</publisher>
+								<date when="1519">1519</date>
+							</imprint>
+							<extent>4°, 4 Bl., Titelbl., A2-A4, Sign. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>.</extent>
+						</monogr>
+						<idno type="siglum">B</idno>
+						<note type="copies">
+							<list>
+								<item n="editionsvorlage">
+									<label>HAB Wolfenbüttel</label>
+									<idno type="signatur">H: H 55.4° Helmst. (6).</idno>
+									<ptr type="digitalisat"
+										target="Permalink: http://diglib.hab.de/drucke/h-55-4f-helmst-6s/start.htm"/>
+								</item>
+								<item>
+									<label>BSB München</label>
+									<idno type="signatur">Rar. 1953#Beibd.1</idno>
+									<ptr type="digitalisat"
+										target="http://daten.digitale-sammlungen.de/~db/0002/bsb00025776/images/."/>
+								</item>
+							</list>
+						</note>
+						<note type="references">
+							<listBibl>
+								<bibl>VD 16 B 6128.</bibl>
+								<bibl>Freys/Barge, Verzeichnis, Nr. 17.</bibl>
+								<bibl>Zorzin, Flugschriftenautor, 13B.</bibl>
 							</listBibl>
 						</note>
 					</biblStruct>
