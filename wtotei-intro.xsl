@@ -393,7 +393,7 @@
 									<xsl:choose>
 										<xsl:when test="$pos > 7">
 											<author><xsl:apply-templates select="$struct[4]//w:t" /></author>
-											<title><xsl:apply-templates select="$struct[position() > 4 and position() &lt; $pos]//w:t" /></title>
+											<title><xsl:apply-templates select="$struct[position() > 4 and position() &lt; ($pos - 2)]//w:t" /></title>
 										</xsl:when>
 										<xsl:otherwise>
 											<title><xsl:apply-templates select="$struct[4]//w:t" /></title>
