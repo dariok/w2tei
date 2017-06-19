@@ -114,7 +114,7 @@
 		<xsl:variable name="pdline">
 			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />
 		</xsl:variable>
-		<xsl:analyze-string select="normalize-space($pdline)" regex="(.*), (\[?\d+, .*)">
+		<xsl:analyze-string select="normalize-space($pdline)" regex="(\[?\w*\]?),? ?(\[?\d+, .*)">
 			<xsl:matching-substring>
 				<placeName><xsl:if test="starts-with(regex-group(1), '[')">
 					<xsl:attribute name="cert">unknown</xsl:attribute>
@@ -156,7 +156,14 @@
 							</xsl:matching-substring>
 						</xsl:analyze-string>
 					</xsl:variable>
-					<xsl:attribute name="when">
+					<xsl:variable name="att">
+						<xsl:choose>
+							<xsl:when test="contains($date, 'vor')">notAfter</xsl:when>
+							<xsl:when test="contains($date, 'nach')">notBefore</xsl:when>
+							<xsl:otherwise>when</xsl:otherwise>
+						</xsl:choose>
+					</xsl:variable>
+					<xsl:attribute name="{$att}">
 						<xsl:variable name="numYear">
 							<xsl:analyze-string select="$year" regex="\[?(\d+)\]?">
 								<xsl:matching-substring>
@@ -167,6 +174,12 @@
 						<xsl:choose>
 							<xsl:when test="substring-before($day, '.') castable as xs:integer">
 								<xsl:variable name="num" select="number(substring-before($day, '.'))"/>
+								<xsl:value-of select="concat($numYear, '-', $month, '-', 
+									format-number($num, '00'))" />
+							</xsl:when>
+							<xsl:when test="substring-after(substring-before($day, '.'), ' ')
+								castable as xs:integer">
+								<xsl:variable name="num" select="number(substring-after(substring-before($day, '.'), ' '))"/>
 								<xsl:value-of select="concat($numYear, '-', $month, '-', 
 									format-number($num, '00'))" />
 							</xsl:when>
