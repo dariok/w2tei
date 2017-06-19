@@ -116,16 +116,18 @@
 		</xsl:variable>
 		<xsl:analyze-string select="normalize-space($pdline)" regex="(^\d*),? ?(\[?\d+, .*)">
 			<xsl:matching-substring>
-				<placeName><xsl:if test="starts-with(regex-group(1), '[')">
-					<xsl:attribute name="cert">unknown</xsl:attribute>
+				<xsl:if test="regex-group(1)">
+					<placeName><xsl:if test="starts-with(regex-group(1), '[')">
+						<xsl:attribute name="cert">unknown</xsl:attribute>
+					</xsl:if>
+					<xsl:analyze-string select="regex-group(1)"
+						regex="\[?(\w+)\]?">
+						<xsl:matching-substring>
+							<xsl:value-of select="regex-group(1)"/>
+						</xsl:matching-substring>
+					</xsl:analyze-string></placeName>
+					<xsl:text>, </xsl:text>
 				</xsl:if>
-				<xsl:analyze-string select="regex-group(1)"
-					regex="\[?(\w+)\]?">
-					<xsl:matching-substring>
-						<xsl:value-of select="regex-group(1)"/>
-					</xsl:matching-substring>
-				</xsl:analyze-string></placeName>
-				<xsl:text>, </xsl:text>
 				<date>
 					<xsl:variable name="year" select="substring-before(regex-group(2), ', ')"/>
 					<xsl:variable name="date" select="substring-after(regex-group(2), ',')"/>
