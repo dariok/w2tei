@@ -223,8 +223,10 @@
 		<div>
 			<xsl:attribute name="type">
 				<xsl:choose>
-					<xsl:when test="descendant::w:t='Überlieferung'">history_of_the_work</xsl:when>
-					<xsl:when test="descendant::w:t='Entstehung und Inhalt'">contents</xsl:when>
+					<xsl:when test="string-join(descendant::w:t, '') ='Überlieferung'">history_of_the_work</xsl:when>
+					<xsl:when test="string-join(descendant::w:t, '') ='Entstehung und Inhalt'">contents</xsl:when>
+					<xsl:when test="string-join(descendant::w:t, '') ='Referenz'">reference</xsl:when>
+					<xsl:when test="string-join(descendant::w:t, '') = 'Inhaltliche Hinweise'">evidence</xsl:when>
 				</xsl:choose>
 			</xsl:attribute>
 			<xsl:choose>
@@ -246,9 +248,9 @@
 	
 	<!-- Untergliederung im 1. div; 2017-06-05 DK -->
 	<xsl:template match="w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]]" mode="content2">
-		<xsl:choose>
-			<xsl:when test="descendant::w:t = 'Frühdrucke'">
-				<listBibl type="sigla">
+		<listBibl type="sigla">
+			<xsl:choose>
+				<xsl:when test="descendant::w:t[starts-with(., 'Frühdruck')]">
 					<xsl:for-each select="following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle']">
 						<xsl:variable name="end"
 							select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Bibliographische')][1]" />
@@ -359,27 +361,32 @@
 							</note>
 						</biblStruct>
 					</xsl:for-each>
-				</listBibl>
-				<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
-					or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]">
-					<listBibl type="editions">
-						<xsl:variable name="text"
-								select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
-								or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]"/>
-						<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-							and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" />
-					</listBibl>
-				</xsl:if>
-				<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]">
-					<listBibl type="literatur">
-						<xsl:variable name="text"
-								select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]"/>
-						<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-							and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" />
-					</listBibl>
-				</xsl:if>
-			</xsl:when>
-		</xsl:choose>
+				</xsl:when>
+				<xsl:when test="descendant::w:t[starts-with(., 'Handschrift')]">
+					<msDesc>
+						<xsl:apply-templates select="following-sibling::w:p[1]//w:t" />
+					</msDesc>
+				</xsl:when>
+			</xsl:choose>
+		</listBibl>
+		<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
+			or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]">
+			<listBibl type="editions">
+				<xsl:variable name="text"
+					select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
+					or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]"/>
+				<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" />
+			</listBibl>
+		</xsl:if>
+		<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]">
+			<listBibl type="literatur">
+				<xsl:variable name="text"
+					select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]"/>
+				<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" />
+			</listBibl>
+		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template name="imprint">
