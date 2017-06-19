@@ -114,7 +114,7 @@
 		<xsl:variable name="pdline">
 			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />
 		</xsl:variable>
-		<xsl:analyze-string select="normalize-space($pdline)" regex="(\[?\w*\]?),? ?(\[?\d+, .*)">
+		<xsl:analyze-string select="normalize-space($pdline)" regex="(^\d*),? ?(\[?\d+, .*)">
 			<xsl:matching-substring>
 				<placeName><xsl:if test="starts-with(regex-group(1), '[')">
 					<xsl:attribute name="cert">unknown</xsl:attribute>
