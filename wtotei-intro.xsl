@@ -448,7 +448,7 @@
 	</xsl:template>
 	<xsl:template match="w:commentRangeEnd">
 		<xsl:variable name="coID" select="@w:id" />
-		<ptr type="wdb">
+		<ptr type="digitalisat">
 			<xsl:attribute name="target">
 				<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
 			</xsl:attribute>
