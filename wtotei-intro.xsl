@@ -391,7 +391,8 @@
 					select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
 					or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]"/>
 				<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" />
+					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+					or descendant::w:rStyle[@w:val='Kommentarzeichen'])]]" />
 			</listBibl>
 		</xsl:if>
 		<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]">
@@ -488,7 +489,8 @@
 			<xsl:apply-templates select="descendant::w:t |
 				following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe'] and
 					generate-id(preceding-sibling::w:r[
-						preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
+						preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+						or descendant::w:rStyle[@w:val='Kommentarzeichen'])]][1])
 							= $me
 				]//w:t" />
 			<xsl:apply-templates select="following-sibling::w:commentRangeEnd[generate-id(preceding-sibling::w:r[
