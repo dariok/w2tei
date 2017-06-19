@@ -390,7 +390,8 @@
 				<xsl:variable name="text"
 					select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
 					or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]"/>
-				<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+				<xsl:apply-templates select="$text/w:r[descendant::w:rStyle and
+					descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 					or descendant::w:rStyle[@w:val='Kommentarzeichen'])]]" />
 			</listBibl>
@@ -471,11 +472,12 @@
 	</xsl:template>
 	<xsl:template match="w:commentRangeEnd">
 		<xsl:variable name="coID" select="@w:id" />
-		<ptr type="digitalisat">
-			<xsl:attribute name="target">
-				<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
-			</xsl:attribute>
-		</ptr>
+		<xsl:variable name="text">
+			<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
+		</xsl:variable>
+		<xsl:if test="starts-with($text, 'http')">
+			<ptr type="digitalisat" target="{$text}" />
+		</xsl:if>
 	</xsl:template>
 	<xsl:template match="w:commentRangeEnd" mode="exemplar">
 		<xsl:variable name="coID" select="@w:id" />
@@ -485,14 +487,24 @@
 	
 	<xsl:template match="w:r">
 		<xsl:variable name="me" select="generate-id()" />
+		<xsl:variable name="next" select="generate-id((following::w:r[descendant::w:rStyle and
+			descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+			and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+			or descendant::w:rStyle[@w:val='Kommentarzeichen'])]])[1])" />
 		<bibl>
-			<xsl:apply-templates select="descendant::w:t |
-				following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe'] and
-					generate-id(preceding-sibling::w:r[
-						preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-						or descendant::w:rStyle[@w:val='Kommentarzeichen'])]][1])
-							= $me
-				]//w:t" />
+			<xsl:choose>
+				<xsl:when test="$next">
+					<xsl:apply-templates select="descendant::w:t |
+						following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe'] and
+							preceding-sibling::w:r[generate-id()=$me]
+							and following-sibling::w:r[generate-id() = $next]]//w:t" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates select="descendant::w:t | following-sibling::w:r//w:t" />
+				</xsl:otherwise>
+			</xsl:choose>
+			<!--<xsl:apply-templates select="descendant::w:t |
+				following-sibling::w:r[generate-]//w:t" />-->
 			<xsl:apply-templates select="following-sibling::w:commentRangeEnd[generate-id(preceding-sibling::w:r[
 				preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
 				= $me]" />
