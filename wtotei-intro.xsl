@@ -371,7 +371,15 @@
 						<xsl:for-each select="tokenize(substring-after($text, ':'), '–|—')">
 							<bibl>
 								<!-- TODO ID aus bibliography übernehmen -->
-								<xsl:value-of select="normalize-space(current())"/>
+								<xsl:choose>
+									<xsl:when test="contains(., '→')">
+										<xsl:value-of select="normalize-space(substring-before(current(), '→'))" />
+										<ptr type="digitalisat" target="{substring-after(., '→')}" />
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:value-of select="normalize-space(current())"/>
+									</xsl:otherwise>
+								</xsl:choose>
 							</bibl>
 						</xsl:for-each>
 					</listBibl>
@@ -386,7 +394,15 @@
 						<xsl:for-each select="tokenize(substring-after($text, ':'), '–|—')">
 							<bibl>
 								<!-- TODO ID aus bibliography übernehmen -->
-								<xsl:value-of select="normalize-space(current())"/>
+								<xsl:choose>
+									<xsl:when test="contains(., '→')">
+										<xsl:value-of select="normalize-space(substring-before(current(), '→'))" />
+										<ptr type="digitalisat" target="{substring-after(., '→')}" />
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:value-of select="normalize-space(current())"/>
+									</xsl:otherwise>
+								</xsl:choose>
 							</bibl>
 						</xsl:for-each>
 					</listBibl>
