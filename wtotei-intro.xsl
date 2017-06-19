@@ -326,7 +326,7 @@
 									<xsl:variable name="weitere">
 										<xsl:apply-templates select="$struct[$pos + 1]//w:t" mode="exemplar" />
 									</xsl:variable>
-									<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare: '), ';')">
+									<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare: '), ';|–|—')">
 										<item>
 											<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
 											<idno type="signatur"><xsl:choose>
