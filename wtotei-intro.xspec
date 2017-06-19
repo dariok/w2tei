@@ -1414,4 +1414,69 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	<x:scenario label="ms">
+		<x:context mode="content2">
+			<w:p w14:paraId="2476FCF8" w14:textId="77777777" w:rsidR="004C6DB6" w:rsidRDefault="006D34C8"
+				w:rsidP="00827E89">
+				<w:pPr>
+					<w:pStyle w:val="KSberschrift2"/>
+				</w:pPr>
+				<w:r>
+					<w:t>Handschrift</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="03D388D2" w14:textId="77777777" w:rsidR="006D34C8" w:rsidRDefault="006D34C8"
+				w:rsidP="006D34C8">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+					<w:ind w:left="709"/>
+				</w:pPr>
+				<w:r w:rsidRPr="006D34C8">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl. 12a/b (Stempel, nach
+						alter handsch</w:t>
+				</w:r>
+				<w:bookmarkStart w:id="0" w:name="_GoBack"/>
+				<w:bookmarkEnd w:id="0"/>
+				<w:r w:rsidRPr="006D34C8">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>riftlicher Fo</w:t>
+				</w:r>
+				<w:commentRangeStart w:id="1"/>
+				<w:r w:rsidRPr="006D34C8">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>lii</w:t>
+				</w:r>
+				<w:commentRangeEnd w:id="1"/>
+				<w:r w:rsidR="00B90BE4">
+					<w:rPr>
+						<w:rStyle w:val="Kommentarzeichen"/>
+					</w:rPr>
+					<w:commentReference w:id="1"/>
+				</w:r>
+				<w:r w:rsidRPr="006D34C8">
+					<w:rPr>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+					<w:t>erung Bl. 6a/b</w:t>
+				</w:r>
+				<w:r w:rsidRPr="006D34C8">
+					<w:t>)</w:t>
+				</w:r>
+			</w:p>
+		</x:context>
+		<x:expect label="formatiert">
+			<listBibl type="sigla"  xmlns="http://www.tei-c.org/ns/1.0">
+				<msDesc>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl. 12a/b (Stempel, nach
+						alter handschriftlicher Foliierung Bl. 6a/b)</msDesc>
+			</listBibl>
+		</x:expect>
+	</x:scenario>
+
 </x:description>
