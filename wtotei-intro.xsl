@@ -363,48 +363,19 @@
 				<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
 					or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]">
 					<listBibl type="editions">
-						<xsl:variable name="text">
-							<xsl:apply-templates
+						<xsl:variable name="text"
 								select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
-								or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]//w:t" mode="exemplar" />
-						</xsl:variable>
-						<xsl:for-each select="tokenize(substring-after($text, ':'), '–|—')">
-							<bibl>
-								<!-- TODO ID aus bibliography übernehmen -->
-								<xsl:choose>
-									<xsl:when test="contains(., '→')">
-										<xsl:value-of select="normalize-space(substring-before(current(), '→'))" />
-										<ptr type="digitalisat" target="{substring-after(., '→')}" />
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:value-of select="normalize-space(current())"/>
-									</xsl:otherwise>
-								</xsl:choose>
-							</bibl>
-						</xsl:for-each>
+								or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]"/>
+						<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+							and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" />
 					</listBibl>
 				</xsl:if>
 				<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]">
 					<listBibl type="literatur">
-						<xsl:variable name="text">
-							<xsl:apply-templates
-								select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]//w:t"
-								mode="exemplar"/>
-						</xsl:variable>
-						<xsl:for-each select="tokenize(substring-after($text, ':'), '–|—')">
-							<bibl>
-								<!-- TODO ID aus bibliography übernehmen -->
-								<xsl:choose>
-									<xsl:when test="contains(., '→')">
-										<xsl:value-of select="normalize-space(substring-before(current(), '→'))" />
-										<ptr type="digitalisat" target="{substring-after(., '→')}" />
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:value-of select="normalize-space(current())"/>
-									</xsl:otherwise>
-								</xsl:choose>
-							</bibl>
-						</xsl:for-each>
+						<xsl:variable name="text"
+								select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]"/>
+						<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+							and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" />
 					</listBibl>
 				</xsl:if>
 			</xsl:when>
@@ -473,12 +444,39 @@
 	<!-- neu 2017-06-11 DK -->
 	<xsl:template match="w:t" mode="exemplar">
 		<xsl:apply-templates />
-		<xsl:apply-templates select="parent::w:r/following-sibling::*[1][self::w:commentRangeEnd]"/>
+		<xsl:apply-templates select="parent::w:r/following-sibling::*[1][self::w:commentRangeEnd]" mode="exemplar"/>
 	</xsl:template>
 	<xsl:template match="w:commentRangeEnd">
 		<xsl:variable name="coID" select="@w:id" />
+		<ptr type="wdb">
+			<xsl:attribute name="target">
+				<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
+			</xsl:attribute>
+		</ptr>
+	</xsl:template>
+	<xsl:template match="w:commentRangeEnd" mode="exemplar">
+		<xsl:variable name="coID" select="@w:id" />
 		<xsl:text>→</xsl:text>
 		<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
+	</xsl:template>
+	
+	<xsl:template match="w:r">
+		<xsl:variable name="me" select="generate-id()" />
+		<bibl>
+			<xsl:apply-templates select="descendant::w:t |
+				following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe'] and
+					generate-id(preceding-sibling::w:r[
+						preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
+							= $me
+				]//w:t" />
+			<xsl:apply-templates select="following-sibling::w:commentRangeEnd[generate-id(preceding-sibling::w:r[
+				preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
+				= $me]" />
+			<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
+				generate-id(preceding-sibling::w:r[
+				preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
+				= $me]//w:t" />
+		</bibl>
 	</xsl:template>
 	
 	<xsl:function name="hab:rmSquare" as="xs:string">
