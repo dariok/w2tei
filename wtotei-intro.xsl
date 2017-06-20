@@ -296,7 +296,7 @@
 								<xsl:attribute name="xml:id" select="$idNo" />
 								<xsl:variable name="elem">
 									<xsl:choose>
-										<xsl:when test="$struct[3]//w:t[normalize-space() = 'in:']">
+										<xsl:when test="$struct[3]//w:t[normalize-space() = 'in']">
 											<xsl:text>analytic</xsl:text>
 										</xsl:when>
 										<xsl:otherwise>monogr</xsl:otherwise>
@@ -309,7 +309,7 @@
 									<author>
 										<xsl:value-of select="normalize-space(substring-after($au, ']'))"/></author>
 									<title><xsl:apply-templates select="following-sibling::w:p[1]//w:t" mode="titleContent"/></title>
-									<xsl:if test="not($struct[3]//w:t[normalize-space() = 'in:'])">
+									<xsl:if test="not($struct[3]//w:t[normalize-space() = 'in'])">
 										<xsl:call-template name="imprint">
 											<xsl:with-param name="context" select="$struct[3]" />
 										</xsl:call-template>
@@ -317,7 +317,7 @@
 								</xsl:element>
 								<xsl:variable name="pos"
 									select="index-of($struct, $struct//w:t[starts-with(., 'Editions')]/ancestor::w:p)" />
-								<xsl:if test="$struct[3]//w:t[normalize-space() = 'in:']">
+								<xsl:if test="$struct[3]//w:t[normalize-space() = 'in']">
 									<monogr>
 										<xsl:choose>
 											<xsl:when test="$pos > 7">
