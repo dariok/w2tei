@@ -115,9 +115,10 @@
 	<!-- fertiggestellt 2017-06-05 DK -->
 	<xsl:template match="w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel']" mode="date">
 		<xsl:variable name="pdline">
-			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />
+<!--			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />-->
+			<xsl:value-of select="string-join(descendant::w:t, '')" />
 		</xsl:variable>
-		<xsl:analyze-string select="normalize-space($pdline)" regex="([\[\w\]äöüß]*),? ?(\[?\d+, .*)">
+		<xsl:analyze-string select="normalize-space($pdline)" regex="([\[a-zA-Zäöüß\]]*),? ?(\[?\d+, .*)">
 			<xsl:matching-substring>
 				<xsl:if test="regex-group(1)">
 					<placeName><xsl:if test="starts-with(regex-group(1), '[')">
