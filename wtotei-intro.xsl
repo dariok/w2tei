@@ -272,7 +272,7 @@
 						<xsl:variable name="struct" select="current() | 
 							current()/following::w:p intersect $end/preceding::w:p | $end" />
 						<xsl:variable name="idNo">
-							<xsl:analyze-string select="w:r[descendant::w:rStyle/@w:val='KSSigle']/w:t"
+							<xsl:analyze-string select="string-join(w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t, '')"
 								regex="\[(\w+).?\]">
 								<xsl:matching-substring>
 									<xsl:value-of select="regex-group(1)"/>
@@ -393,7 +393,8 @@
 				<xsl:apply-templates select="$text/w:r[descendant::w:rStyle and
 					descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-					or descendant::w:rStyle[@w:val='Kommentarzeichen'])]]" />
+					or descendant::w:rStyle[@w:val='Kommentarzeichen']
+					or descendant::w:commentReference)]]" />
 			</listBibl>
 		</xsl:if>
 		<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]">
@@ -490,21 +491,21 @@
 		<xsl:variable name="next" select="generate-id((following::w:r[descendant::w:rStyle and
 			descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 			and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-			or descendant::w:rStyle[@w:val='Kommentarzeichen'])]])[1])" />
+			or descendant::w:rStyle[@w:val='Kommentarzeichen']
+			or descendant::w:commentReference)]])[1])" />
 		<bibl>
 			<xsl:choose>
 				<xsl:when test="$next">
 					<xsl:apply-templates select="descendant::w:t |
-						following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe'] and
-							preceding-sibling::w:r[generate-id()=$me]
-							and following-sibling::w:r[generate-id() = $next]]//w:t" />
+						following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
+							and preceding-sibling::w:r[generate-id()=$me]
+							and following::w:r[generate-id() = $next]]//w:t" />
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:apply-templates select="descendant::w:t | following-sibling::w:r//w:t" />
+					<xsl:apply-templates select="descendant::w:t |
+						following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']]//w:t" />
 				</xsl:otherwise>
 			</xsl:choose>
-			<!--<xsl:apply-templates select="descendant::w:t |
-				following-sibling::w:r[generate-]//w:t" />-->
 			<xsl:apply-templates select="following-sibling::w:commentRangeEnd[generate-id(preceding-sibling::w:r[
 				preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
 				= $me]" />
