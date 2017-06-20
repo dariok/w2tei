@@ -250,7 +250,7 @@
 			</xsl:attribute>
 			<xsl:choose>
 				<!-- Ü2 folgt, also Detailangaben -->
-				<xsl:when test="following-sibling::w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]]">
+				<xsl:when test="following-sibling::w:p[descendant::w:pStyle[@w:val='KSberschrift2']]">
 					<xsl:apply-templates select="following-sibling::w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]]"
 					mode="content2"/>
 				</xsl:when>
@@ -263,7 +263,7 @@
 					not(following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle'])">
 					<xsl:call-template name="edlit" />
 				</xsl:when>
-				<!-- anderer Text – kommt das vor? -->
+				<!-- anderer Text -->
 				<xsl:otherwise>
 					<xsl:apply-templates select="following-sibling::w:p intersect
 						following-sibling::w:p[descendant::w:pStyle/@w:val='KSberschrift1']/preceding-sibling::w:p"

@@ -99,53 +99,6 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
-	<x:scenario label="Ü1">
-		<x:context>
-			<w:body>
-				<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
-					<w:pPr>
-						<w:pStyle w:val="KSberschrift1"/>
-					</w:pPr>
-					<w:r>
-						<w:t>Überlieferung</w:t>
-					</w:r>
-				</w:p>
-				<w:p w:rsidR="004D7ABF" w:rsidRPr="004D7ABF" w:rsidRDefault="004D7ABF" w:rsidP="004D7ABF">
-					<w:pPr>
-						<w:pStyle w:val="KSText"/>
-					</w:pPr>
-					<w:r w:rsidRPr="004D7ABF">
-						<w:t>A web annotation.</w:t>
-					</w:r>
-				</w:p>
-				<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
-					<w:pPr>
-						<w:pStyle w:val="KSberschrift1"/>
-					</w:pPr>
-					<w:r>
-						<w:t>Entstehung und Inhalt</w:t>
-					</w:r>
-				</w:p>
-				<w:p w:rsidR="004D7ABF" w:rsidRPr="004D7ABF" w:rsidRDefault="004D7ABF" w:rsidP="004D7ABF">
-					<w:pPr>
-						<w:pStyle w:val="KSText"/>
-					</w:pPr>
-					<w:r w:rsidRPr="004D7ABF">
-						<w:t>Another web annotation.</w:t>
-					</w:r>
-				</w:p>
-			</w:body>
-		</x:context>
-		<x:expect label="div mit p">
-			<div xmlns="http://www.tei-c.org/ns/1.0" type="history_of_the_work">
-				<p>A web annotation.</p>
-			</div>
-			<div xmlns="http://www.tei-c.org/ns/1.0" type="contents">
-				<p>Another web annotation.</p>
-			</div>
-		</x:expect>
-	</x:scenario>
-	
 	<x:scenario label="Ü2">
 		<x:context mode="content2">
 			<w:p w14:paraId="2C2EA526" w14:textId="77777777" w:rsidR="004C6DB6" w:rsidRDefault="004C6DB6"
@@ -1425,8 +1378,23 @@
 					<w:t>Handschrift</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="03D388D2" w14:textId="77777777" w:rsidR="006D34C8" w:rsidRDefault="006D34C8"
-				w:rsidP="006D34C8">
+			<w:p w14:paraId="1EA19D43" w14:textId="77777777" w:rsidR="003F7030" w:rsidRPr="000627A1" w:rsidRDefault="003F7030"
+				w:rsidP="000627A1">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+					<w:rPr>
+						<w:rFonts w:eastAsia="Calibri" w:cs="Times New Roman"/>
+						<w:b/>
+						<w:szCs w:val="24"/>
+						<w:lang w:val="la-Latn"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="005049A7">
+					<w:rPr>
+						<w:rStyle w:val="KSSigle"/>
+					</w:rPr>
+					<w:t>[A:]</w:t>
+				</w:r>
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 					<w:ind w:left="709"/>
@@ -1472,8 +1440,8 @@
 			</w:p>
 		</x:context>
 		<x:expect label="formatiert">
-			<listBibl type="sigla"  xmlns="http://www.tei-c.org/ns/1.0">
-				<msDesc>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl. 12a/b (Stempel, nach
+			<listBibl type="sigla" xmlns="http://www.tei-c.org/ns/1.0">
+				<msDesc>[A:]Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl. 12a/b (Stempel, nach
 						alter handschriftlicher Foliierung Bl. 6a/b)</msDesc>
 			</listBibl>
 		</x:expect>
