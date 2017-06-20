@@ -528,10 +528,12 @@
 			<xsl:apply-templates select="following-sibling::w:commentRangeEnd[generate-id(preceding-sibling::w:r[
 				preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
 				= $me]" />
-			<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
-				generate-id(preceding-sibling::w:r[
-				preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
-				= $me]//w:t" />
+			<xsl:if test="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung']]">
+				<note>
+					<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
+						following::w:r[generate-id() = $next]]//w:t" />
+				</note>
+			</xsl:if>
 		</bibl>
 	</xsl:template>
 	
