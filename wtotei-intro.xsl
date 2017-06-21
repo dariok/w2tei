@@ -57,7 +57,7 @@
 						<title><xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
 							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
 								mode="date"/></title>
-						<xsl:apply-templates select="(//w:p[starts-with(normalize-space(), 'Bearbeitet')])[1]"
+						<xsl:apply-templates select="(//w:p[starts-with(normalize-space(), 'Bearb')])[1]"
 							mode="head"/>
 					</titleStmt>
 					<publicationStmt>
@@ -118,14 +118,14 @@
 <!--			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />-->
 			<xsl:value-of select="string-join(descendant::w:t, '')" />
 		</xsl:variable>
-		<xsl:analyze-string select="normalize-space($pdline)" regex="([\[a-zA-Zäöüß\]]*),? ?(\[?\d+, .*)">
+		<xsl:analyze-string select="normalize-space($pdline)" regex="([\[a-zA-Zäöüß\?\]]*),? ?(\[?\d+, .*)">
 			<xsl:matching-substring>
 				<xsl:if test="regex-group(1)">
 					<placeName><xsl:if test="starts-with(regex-group(1), '[')">
 						<xsl:attribute name="cert">unknown</xsl:attribute>
 					</xsl:if>
 					<xsl:analyze-string select="regex-group(1)"
-						regex="\[?(\w+)\]?">
+						regex="\[?([\w\?]+)\]?">
 						<xsl:matching-substring>
 							<xsl:value-of select="regex-group(1)"/>
 						</xsl:matching-substring>
@@ -242,10 +242,10 @@
 		<div>
 			<xsl:attribute name="type">
 				<xsl:choose>
-					<xsl:when test="string-join(descendant::w:t, '') ='Überlieferung'">history_of_the_work</xsl:when>
-					<xsl:when test="string-join(descendant::w:t, '') ='Entstehung und Inhalt'">contents</xsl:when>
-					<xsl:when test="string-join(descendant::w:t, '') ='Referenz'">reference</xsl:when>
-					<xsl:when test="string-join(descendant::w:t, '') = 'Inhaltliche Hinweise'">evidence</xsl:when>
+					<xsl:when test="contains(string-join(descendant::w:t, ''), 'Überlieferung')">history_of_the_work</xsl:when>
+					<xsl:when test="contains(string-join(descendant::w:t, ''), 'Entstehung und Inhalt')">contents</xsl:when>
+					<xsl:when test="contains(string-join(descendant::w:t, ''), 'Referenz')">reference</xsl:when>
+					<xsl:when test="contains(string-join(descendant::w:t, ''), 'Inhaltliche Hinweise')">evidence</xsl:when>
 				</xsl:choose>
 			</xsl:attribute>
 			<xsl:choose>
@@ -398,8 +398,14 @@
 					<xsl:when test="descendant::w:t[starts-with(., 'Handschrift')]">
 						<msDesc>
 							<xsl:apply-templates select="following-sibling::w:p[1]//w:t" />
+							<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
+								<physDesc><objectDesc form="codex_lost"/></physDesc>
+							</xsl:if>
 						</msDesc>
 					</xsl:when>
+					<xsl:otherwise>
+						<xsl:call-template name="edlit" />
+					</xsl:otherwise>
 				</xsl:choose>
 			</listBibl>
 		</xsl:if>
@@ -408,12 +414,10 @@
 	</xsl:template>
 	
 	<xsl:template name="edlit">
-		<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
-			or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]">
+		<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edi')]">
 			<listBibl type="editions">
 				<xsl:variable name="text"
-					select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edition:')
-					or starts-with(string-join(descendant::w:t, ''), 'Editionen:')]"/>
+					select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Edi')]"/>
 				<xsl:apply-templates select="$text/w:r[descendant::w:rStyle and
 					descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
