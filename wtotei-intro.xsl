@@ -387,10 +387,12 @@
 										</xsl:for-each>
 									</listBibl>
 								</note>
+								<xsl:if test="$struct/following-sibling::w:p[1][not(descendant::w:rStyle/@w:val='KSSigle')]">
+									<physDesc>
+										<xsl:apply-templates select="$struct/following-sibling::w:p[1]" mode="content"/>
+									</physDesc>
+								</xsl:if>
 							</biblStruct>
-							<xsl:if test="$struct/following-sibling::w:p[1][not(descendant::w:rStyle/@w:val='KSSigle')]">
-								<p><xsl:apply-templates select="$struct/following-sibling::w:p[1]" /></p>
-							</xsl:if>
 						</xsl:for-each>
 					</xsl:when>
 					<xsl:when test="descendant::w:t[starts-with(., 'Handschrift')]">
