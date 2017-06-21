@@ -388,6 +388,9 @@
 									</listBibl>
 								</note>
 							</biblStruct>
+							<xsl:if test="$struct/following-sibling::w:p[1][not(descendant::w:rStyle/@w:val='KSSigle')]">
+								<p><xsl:apply-templates select="$struct/following-sibling::w:p[1]" /></p>
+							</xsl:if>
 						</xsl:for-each>
 					</xsl:when>
 					<xsl:when test="descendant::w:t[starts-with(., 'Handschrift')]">
@@ -530,10 +533,10 @@
 				= $me]" />
 			<xsl:if test="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung']
 				and following::w:r[generate-id() = $next]]">
-				<note>
+				<!--<note>-->
 					<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
 						following::w:r[generate-id() = $next]]//w:t" />
-				</note>
+				<!--</note>-->
 			</xsl:if>
 		</bibl>
 	</xsl:template>
