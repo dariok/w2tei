@@ -404,11 +404,6 @@
 										</xsl:for-each>
 									</listBibl>
 								</note>
-								<xsl:if test="$struct/following-sibling::w:p[1][not(descendant::w:rStyle/@w:val='KSSigle')]">
-									<physDesc>
-										<xsl:apply-templates select="$struct/following-sibling::w:p[1]" mode="content"/>
-									</physDesc>
-								</xsl:if>
 							</biblStruct>
 						</xsl:for-each>
 					</xsl:when>
@@ -427,7 +422,14 @@
 			</listBibl>
 		</xsl:if>
 		<!-- auslagern für z.B. verschollene -->
-		<xsl:call-template name="edlit" />
+		<xsl:if test="not(following-sibling::w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift2')]])">
+			<xsl:call-template name="edlit" />
+		</xsl:if>
+		<!--<xsl:if test="$struct/following-sibling::w:p[1][not(descendant::w:rStyle/@w:val='KSSigle')]">
+			<p>
+				<xsl:apply-templates select="$struct/following-sibling::w:p[1]" mode="content"/>
+			</p>
+		</xsl:if>-->
 	</xsl:template>
 	
 	<xsl:template name="edlit">
