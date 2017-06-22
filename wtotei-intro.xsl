@@ -316,7 +316,7 @@
 									</xsl:if>
 								</xsl:element>
 								<xsl:variable name="pos"
-									select="index-of($struct, $struct//w:t[starts-with(., 'Editions')]/ancestor::w:p)" />
+									select="index-of($struct, ($struct//w:t[starts-with(., 'Editions')]/ancestor::w:p)[1])" />
 								<xsl:if test="$struct[3]//w:t[starts-with(normalize-space(), 'in')]">
 									<monogr>
 										<xsl:choose>
@@ -340,10 +340,18 @@
 											<xsl:variable name="ex">
 												<xsl:apply-templates select="$struct[$pos]//w:t" />
 											</xsl:variable>
-											<label><xsl:value-of
-												select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
-											<idno type="signatur"><xsl:value-of
-												select="normalize-space(substring-after($ex, ','))"/></idno>
+											<xsl:choose>
+												<xsl:when test="contains($ex, ',')">
+													<label><xsl:value-of
+														select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
+													<idno type="signatur"><xsl:value-of
+														select="normalize-space(substring-after($ex, ','))"/></idno>
+												</xsl:when>
+												<xsl:otherwise>
+													<idno type="signatur"><xsl:value-of
+														select="normalize-space(substring-after($ex, ':'))"/></idno>
+												</xsl:otherwise>
+											</xsl:choose>
 											<xsl:if test="$struct[$pos]/w:commentRangeEnd">
 												<xsl:variable name="coID" select="$struct[$pos]/w:commentRangeEnd/@w:id"/>
 												<ptr type="digitalisat">
@@ -358,15 +366,22 @@
 										</xsl:variable>
 										<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare: '), ';|–|—')">
 											<item>
-												<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
-												<idno type="signatur"><xsl:choose>
-													<xsl:when test="contains(current(), '→')">
-														<xsl:value-of select="normalize-space(substring-before(substring-after(current(), ','), '→'))"/>
+												<xsl:choose>
+													<xsl:when test="contains(., ',')">
+														<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
+														<idno type="signatur"><xsl:choose>
+															<xsl:when test="contains(current(), '→')">
+																<xsl:value-of select="normalize-space(substring-before(substring-after(current(), ','), '→'))"/>
+															</xsl:when>
+															<xsl:otherwise>
+																<xsl:value-of select="normalize-space(substring-after(current(), ','))"/>
+															</xsl:otherwise>
+														</xsl:choose></idno>
 													</xsl:when>
 													<xsl:otherwise>
-														<xsl:value-of select="normalize-space(substring-after(current(), ','))"/>
+														<idno type="signatur"><xsl:value-of select="normalize-space()"/></idno>
 													</xsl:otherwise>
-												</xsl:choose></idno>
+												</xsl:choose>
 												<xsl:if test="contains(., '→')">
 													<ptr type="digitalisat" target="{substring-after(., '→')}" />
 												</xsl:if>
