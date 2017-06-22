@@ -409,7 +409,12 @@
 					</xsl:when>
 					<xsl:when test="descendant::w:t[starts-with(., 'Handschrift')]">
 						<msDesc>
-							<xsl:apply-templates select="following-sibling::w:p[1]//w:t" />
+							<xsl:if test="following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']">
+								<xsl:attribute name="xml:id">
+									<xsl:value-of select="substring-before(hab:rmSquare(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t), ':')"/>
+								</xsl:attribute>
+							</xsl:if>
+							<xsl:apply-templates select="following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t" />
 							<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
 								<physDesc><objectDesc form="codex_lost"/></physDesc>
 							</xsl:if>
