@@ -280,7 +280,8 @@
 				<xsl:choose>
 					<xsl:when test="descendant::w:t[starts-with(., 'Frühdruck')]">
 						<xsl:for-each select="following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle'
-							and preceding-sibling::w:p[descendant::w:t[starts-with(., 'Frühdruck')]]]">
+							and not(preceding-sibling::w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]
+								and descendant::w:t[starts-with(., 'Hand')]])]">
 							<xsl:variable name="end"
 								select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Bibliographische')][1]" />
 							<xsl:variable name="struct" select="current() | 
