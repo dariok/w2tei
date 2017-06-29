@@ -43,8 +43,8 @@ return if (not(sm:get-group-members('ed000240') = $user) or $user = 'guest')
 			(: notwendige Werte aus XML holen :) 
 			let $eeID := $xml/@xml:id
 			let $nid := $xml/@n
-			let $titel := concat(normalize-space(string-join($xml//tei:title[1]/text(), '')), ' ('
-				, $xml//tei:title[1]/tei:placeName, ', ', $xml//tei:title[1]/tei:date, ')')
+			let $titel := concat(normalize-space(string-join(($xml//tei:title)[1]/text(), '')), ' ('
+				, ($xml//tei:title)[1]/tei:placeName, ', ', ($xml//tei:title)[1]/tei:date, ')')
 			
 			(: ggfs. Collection erstellen :)
 			let $nr := substring-before(substring-after($eeID, '240_'), '_')
