@@ -43,7 +43,8 @@ return if (not(sm:get-group-members('ed000240') = $user) or $user = 'guest')
 			(: notwendige Werte aus XML holen :) 
 			let $eeID := $xml/@xml:id
 			let $nid := $xml/@n
-			let $titel := normalize-space(($xml//tei:title)[1])
+			let $titel := concat(normalize-space(string-join(($xml//tei:title)[1]/text(), '')), ' ('
+				, ($xml//tei:title)[1]/tei:placeName, ', ', ($xml//tei:title)[1]/tei:date, ')')
 			
 			(: ggfs. Collection erstellen :)
 			let $nr := substring-before(substring-after($eeID, '240_'), '_')
@@ -78,7 +79,7 @@ return if (not(sm:get-group-members('ed000240') = $user) or $user = 'guest')
 			let $div1 := <mets:div TYPE="submenu" LABEL="{$titel}" ID="{$div1id}" ORDER="{$nid}"></mets:div>
 			let $upd2 := if (not($mets//mets:div[@ID=$div1id]))
 				then update insert $div1 into $mets//mets:div[@ID='edoc_ed000240']
-				else ()
+				else update replace $mets//mets:div[@ID=$div1id] with $div1
 				
 			(: 3. ggf. div für Intro erstellen :)
 			let $div2id := $div1id || "_introduction"
