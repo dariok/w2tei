@@ -57,7 +57,7 @@
 						<title><xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
 							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
 								mode="date"/></title>
-						<xsl:apply-templates select="(//w:p[starts-with(normalize-space(), 'Bearb')])[1]"
+						<xsl:apply-templates select="(//w:p[starts-with(string-join(descendant::w:t, ''), 'Bearb')])[1]"
 							mode="head"/>
 					</titleStmt>
 					<publicationStmt>
@@ -102,8 +102,8 @@
 	<xsl:template match="w:body/text()" />
 	
 	<!-- Bearbeiter/Autor; 2017-05-03 DK -->
-	<xsl:template match="w:p[starts-with(normalize-space(), 'Bearbeitet')]" mode="head">
-		<xsl:variable name="aut" select="substring-after(normalize-space(), 'Bearbeitet von ')"/>
+	<xsl:template match="w:p[starts-with(string-join(descendant::w:t, ''), 'Bearbeitet')]" mode="head">
+		<xsl:variable name="aut" select="substring-after(string-join(descendant::w:t, ''), 'Bearbeitet von ')"/>
 		<xsl:analyze-string select="$aut" regex="(,|und)">
 			<xsl:non-matching-substring>
 				<author><xsl:value-of select="normalize-space()"/></author>
@@ -118,7 +118,7 @@
 <!--			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />-->
 			<xsl:value-of select="string-join(descendant::w:t, '')" />
 		</xsl:variable>
-		<xsl:analyze-string select="normalize-space($pdline)" regex="([\[a-zA-Zäöüß\?\]]*),? ?(\[?\d+, .*)">
+		<xsl:analyze-string select="normalize-space($pdline)" regex="([\[a-zA-Zäöüß\?\]]*)?,? ?(\[?\d+\]?, .*)">
 			<xsl:matching-substring>
 				<xsl:if test="regex-group(1)">
 					<placeName><xsl:if test="starts-with(regex-group(1), '[')">
@@ -202,6 +202,10 @@
 						<xsl:when test="starts-with($year, '[') and ends-with($year, ']')">
 							<supplied><xsl:value-of
 								select="substring-after(substring-before($year, ']'), '[')"/></supplied>
+						</xsl:when>
+						<xsl:when test="ends-with($year, ']')">
+							<supplied><xsl:value-of
+								select="substring-before($year, ']')"/></supplied>
 						</xsl:when>
 						<xsl:when test="starts-with($year, '[')">
 							<xsl:value-of select="substring-after($year, '[')"/>
@@ -415,8 +419,8 @@
 								</xsl:attribute>
 							</xsl:if>
 							<xsl:apply-templates select="following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t" />
-							<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
-								<physDesc><objectDesc form="codex_lost"/></physDesc>
+							<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift2')]][1]//w:t='Referenz'">
+									<physDesc><objectDesc form="codex_lost"/></physDesc>
 							</xsl:if>
 						</msDesc>
 					</xsl:when>
@@ -426,15 +430,20 @@
 				</xsl:choose>
 			</listBibl>
 		</xsl:if>
+		<xsl:if test="(following-sibling::w:p)[1][not(descendant::w:rStyle/@w:val='KSSigle')]">
+			<!--<p>-->
+				<xsl:apply-templates select="(following-sibling::w:p)[1]" mode="content"/>
+			<!--</p>-->
+		</xsl:if>
 		<!-- auslagern für z.B. verschollene -->
-		<xsl:if test="not(following-sibling::w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift2')]])">
+		<!-- TODO !important! $struct erstellen mit allen Knoten und dann durchgehen,
+			damit hier die Literatur auftaucht, aber bei beim ersten Eintrag nur die vom
+			1. und nicht auch die von den folgenden Einträgen! -->
+		<xsl:if test="not(following-sibling::w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift2')]])
+			and (starts-with(string-join((following-sibling::w:p)[1]//w:t, ''),  'Edi')
+			or starts-with(string-join((following-sibling::w:p)[1]//w:t, ''),  'Litera'))">
 			<xsl:call-template name="edlit" />
 		</xsl:if>
-		<!--<xsl:if test="$struct/following-sibling::w:p[1][not(descendant::w:rStyle/@w:val='KSSigle')]">
-			<p>
-				<xsl:apply-templates select="$struct/following-sibling::w:p[1]" mode="content"/>
-			</p>
-		</xsl:if>-->
 	</xsl:template>
 	
 	<xsl:template name="edlit">
@@ -573,10 +582,20 @@
 	
 	<xsl:function name="hab:rmSquare" as="xs:string">
 		<xsl:param name="input" />
-		<xsl:analyze-string select="normalize-space($input)" regex="\[?([^\]]+)\]?\.?">
-			<xsl:matching-substring>
-				<xsl:value-of select="normalize-space(regex-group(1))"/>
-			</xsl:matching-substring>
-		</xsl:analyze-string>
+		<xsl:choose>
+			<xsl:when test="contains($input, '[')">
+				<xsl:analyze-string select="normalize-space($input)" regex="\[?([^\]]+)\]?\.?">
+					<xsl:matching-substring>
+						<xsl:value-of select="normalize-space(regex-group(1))"/>
+					</xsl:matching-substring>
+				</xsl:analyze-string>
+			</xsl:when>
+			<xsl:when test="contains($input, ']')">
+				<xsl:value-of select="substring-before($input, ']')"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$input"/>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:function>
 </xsl:stylesheet>
