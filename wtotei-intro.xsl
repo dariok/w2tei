@@ -130,7 +130,7 @@
 							<xsl:value-of select="regex-group(1)"/>
 						</xsl:matching-substring>
 					</xsl:analyze-string></placeName>
-					<xsl:text>, </xsl:text>
+<!--					<xsl:text>, </xsl:text>-->
 				</xsl:if>
 				<date>
 					<xsl:variable name="year" select="substring-before(regex-group(2), ', ')"/>
