@@ -10,7 +10,7 @@
 	<!-- neu für Projekt Rist, 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	<!-- übernommen für Karlstadt Einleitungen; 2017-05-03 DK -->
 	
-	<xsl:output indent="yes"/>
+<!--	<xsl:output indent="yes"/>-->
 	
 	<!-- die überwiegend genutzte Schriftgröße für Normaltext ermitteln; 2017-05-03 DK -->
 	<!--<xsl:variable name="mainsize">
@@ -75,6 +75,9 @@
 					<sourceDesc>
 						<p>born digital</p>
 					</sourceDesc>
+					<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
+						<msDesc><physDesc><objectDesc form="codex_lost"/></physDesc></msDesc>
+					</xsl:if>
 				</fileDesc>
 				<encodingDesc>
 					<p>Zeichen aus der Private Use Area entsprechen MUFI 3.0 (http://mufi.info)</p>
@@ -419,9 +422,6 @@
 								</xsl:attribute>
 							</xsl:if>
 							<xsl:apply-templates select="following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t" />
-							<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift2')]][1]//w:t='Referenz'">
-									<physDesc><objectDesc form="codex_lost"/></physDesc>
-							</xsl:if>
 						</msDesc>
 					</xsl:when>
 					<xsl:otherwise>
