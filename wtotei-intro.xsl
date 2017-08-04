@@ -230,6 +230,9 @@
 							<supplied><xsl:value-of select="substring-after($day, '[')"/></supplied>
 							<xsl:value-of select="$month"/>
 						</xsl:when>
+						<xsl:when test="ends-with($date, ']')">
+							<xsl:value-of select="normalize-space(substring-before($date, ']'))" />
+						</xsl:when>
 						<xsl:otherwise>
 							<xsl:value-of select="normalize-space($date)"/>
 						</xsl:otherwise>
