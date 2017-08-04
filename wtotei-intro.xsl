@@ -74,10 +74,10 @@
 					</publicationStmt>
 					<sourceDesc>
 						<p>born digital</p>
+						<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
+							<msDesc><physDesc><objectDesc form="codex_lost"/></physDesc></msDesc>
+						</xsl:if>
 					</sourceDesc>
-					<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
-						<msDesc><physDesc><objectDesc form="codex_lost"/></physDesc></msDesc>
-					</xsl:if>
 				</fileDesc>
 				<encodingDesc>
 					<p>Zeichen aus der Private Use Area entsprechen MUFI 3.0 (http://mufi.info)</p>
