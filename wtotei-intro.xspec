@@ -1446,5 +1446,99 @@
 			</listBibl>
 		</x:expect>
 	</x:scenario>
-
+	<!-- neu ab 2017-08-08 DK -->
+	<x:scenario label="Ausgabe ab 1. Überschrift">
+		<x:scenario label="verschollene mit Referenz und Literatur">
+			<x:context>
+				<w:p w:rsidR="004C6DB6" w:rsidRDefault="00061D06" w:rsidP="00C87A59">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+					</w:pPr>
+					<w:r w:rsidRPr="00061D06">
+						<w:t>Referenz</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00477099" w:rsidRDefault="00061D06" w:rsidP="00BA7CCD">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+					</w:pPr>
+					<w:r w:rsidRPr="00061D06">
+						<w:t xml:space="preserve">Brief Karlstadts vom 3. April 1519 an Spalatin: </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00061D06">
+						<w:rPr>
+							<w:i/>
+						</w:rPr>
+						<w:t xml:space="preserve">„Praeter illa putavi nuper in Concione quadam“; „Ego typographo humeros hos supposui.“ </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00061D06">
+						<w:t>(EE 90 [=Nr. 113]).</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="004C6DB6" w:rsidRPr="004C6DB6" w:rsidRDefault="00061D06" w:rsidP="00BA7CCD">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+					</w:pPr>
+					<w:r w:rsidRPr="00061D06">
+						<w:rPr>
+							<w:i/>
+						</w:rPr>
+						<w:t>Liter</w:t>
+					</w:r>
+					<w:bookmarkStart w:id="0" w:name="_GoBack"/>
+					<w:bookmarkEnd w:id="0"/>
+					<w:r w:rsidRPr="00061D06">
+						<w:rPr>
+							<w:i/>
+						</w:rPr>
+						<w:t>atur:</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00061D06">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>Bubenheimer, Karlstadt liest Tauler</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00061D06">
+						<w:t xml:space="preserve">; </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>Zorzin, Flugschriftenautor</w:t>
+					</w:r>
+					<w:r w:rsidR="00477099">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>,</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> 225.</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="p mit Text und listBibl">
+				<div xmlns="http://www.tei-c.org/ns/1.0"
+					xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+					xmlns:tei="http://www.tei-c.org/ns/1.0"
+					type="reference">
+					<p>Brief Karlstadts vom 3. April 1519 an Spalatin: „Praeter illa putavi nuper in Concione quadam“; „Ego typographo humeros hos supposui.“ (EE 90 [=Nr. 113]).</p>
+					<listBibl type="literatur">
+						<bibl>Bubenheimer, Karlstadt liest Tauler</bibl>
+						<bibl>Zorzin, Flugschriftenautor, 225.</bibl>
+					</listBibl>
+				</div>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
