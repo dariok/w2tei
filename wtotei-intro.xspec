@@ -46,7 +46,7 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Ort und Datum">
-				<placeName xmlns="http://www.tei-c.org/ns/1.0" cert="unknown">Wittenberg</placeName>, <date
+				<placeName xmlns="http://www.tei-c.org/ns/1.0" cert="unknown">Wittenberg</placeName><date
 					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-00" cert="unknown">1520, November</date>
 			</x:expect>
 		</x:scenario>
@@ -62,7 +62,7 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Ort und Datum">
-				<placeName cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date
+				<placeName cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date
 					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
 			</x:expect>
 		</x:scenario>
@@ -78,7 +78,7 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Datum mit cert">
-				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0"
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date xmlns="http://www.tei-c.org/ns/1.0"
 					when="1520-11-00">1520, <supplied xmlns="http://www.tei-c.org/ns/1.0">November</supplied></date>
 			</x:expect>
 		</x:scenario>
@@ -94,7 +94,7 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Datum mit cert">
-				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName>, <date xmlns="http://www.tei-c.org/ns/1.0"
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date xmlns="http://www.tei-c.org/ns/1.0"
 					when="1520-11-04">1520, 4. November</date>
 			</x:expect>
 		</x:scenario>
@@ -1441,7 +1441,7 @@
 		</x:context>
 		<x:expect label="formatiert">
 			<listBibl type="sigla" xmlns="http://www.tei-c.org/ns/1.0">
-				<msDesc>[A:]Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl. 12a/b (Stempel, nach
+				<msDesc xml:id="A">Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl. 12a/b (Stempel, nach
 						alter handschriftlicher Foliierung Bl. 6a/b)</msDesc>
 			</listBibl>
 		</x:expect>
