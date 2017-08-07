@@ -119,7 +119,7 @@
 	<xsl:template match="w:body/text()" />
 	
 	<!-- Bearbeiter/Autor; 2017-05-03 DK -->
-	<xsl:template match="w:p[starts-with(string-join(descendant::w:t, ''), 'Bearbeitet')]" mode="head">
+	<xsl:template match="w:p[starts-with(string-join(descendant::w:t, ''), 'Bearb')]" mode="head">
 		<xsl:variable name="aut" select="substring-after(string-join(descendant::w:t, ''), 'Bearbeitet von ')"/>
 		<xsl:analyze-string select="$aut" regex="(,|und)">
 			<xsl:non-matching-substring>
@@ -291,7 +291,8 @@
 				<!-- In der Referenz ohne weitere Ü1 - verschollene mit Angaben; 2017-08-08 DK -->
 				<xsl:when test="contains(string-join(descendant::w:t, ''), 'Referenz') and
 					not(following-sibling::w:p[descendant::w:pStyle/@w:val='KSberschrift1'])">
-					<xsl:apply-templates select="following-sibling::w:p[1]" mode="content" />
+					<xsl:apply-templates select="following-sibling::w:p[not(starts-with(descendant::w:t[1], 'Lit')
+						or starts-with(descendant::w:t[1], 'Edi'))]" mode="content" />
 					<xsl:call-template name="edlit" />
 				</xsl:when>
 				<!-- anderer Text -->
