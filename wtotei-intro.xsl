@@ -57,6 +57,19 @@
 						<title><xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
 							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
 								mode="date"/></title>
+						<title type="short">
+							<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
+								<xsl:text>Verschollen: </xsl:text>
+							</xsl:if>
+							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
+							<xsl:text> (</xsl:text>
+							<xsl:variable name="dpline">
+								<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
+									mode="date"/>
+							</xsl:variable>
+							<xsl:value-of select="$dpline/*:date"/>
+							<xsl:text>)</xsl:text>
+						</title>
 						<xsl:apply-templates select="(//w:p[starts-with(string-join(descendant::w:t, ''), 'Bearb')])[1]"
 							mode="head"/>
 					</titleStmt>
