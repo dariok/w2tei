@@ -28,7 +28,7 @@
 		<xsl:value-of select="string-join(//w:body/w:p[1]//w:t, '')" />
 	</xsl:variable>
 	<xsl:variable name="nr">
-		<xsl:value-of select="hab:rmSquare(substring-after($fline, 'Nr. '))" />
+		<xsl:value-of select="hab:rmSquare(substring-after($fline, 'Nr.'))" />
 	</xsl:variable>
 	<xsl:variable name="ee">
 		<xsl:variable name="nro" select="substring-before(substring-after($fline, 'EE '), ' ')" />
