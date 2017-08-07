@@ -1448,7 +1448,7 @@
 	</x:scenario>
 	<!-- neu ab 2017-08-08 DK -->
 	<x:scenario label="Ausgabe ab 1. Überschrift">
-		<x:scenario label="verschollene mit Referenz und Literatur">
+		<x:scenario label="verschollene mit Referenz (1 Abs.) und Literatur">
 			<x:context>
 				<w:p w:rsidR="004C6DB6" w:rsidRDefault="00061D06" w:rsidP="00C87A59">
 					<w:pPr>
@@ -1537,6 +1537,55 @@
 						<bibl>Bubenheimer, Karlstadt liest Tauler</bibl>
 						<bibl>Zorzin, Flugschriftenautor, 225.</bibl>
 					</listBibl>
+				</div>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="verschollene mit Referenz (2 Abs.)">
+			<x:context>
+				<w:p w14:paraId="0FB06673" w14:textId="50695BB9" w:rsidR="00CE2F47" w:rsidRDefault="00FA4C5D"
+					w:rsidP="0011564A">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+					</w:pPr>
+					<w:r>
+						<w:t>Referenz</w:t>
+					</w:r>
+				</w:p>
+				<w:p w14:paraId="48BFB6DB" w14:textId="77777777" w:rsidR="00FA4C5D" w:rsidRPr="00FA4C5D"
+					w:rsidRDefault="00FA4C5D" w:rsidP="00FA4C5D">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:rStyle w:val="KSEE-Verweis"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00FA4C5D">
+						<w:rPr>
+							<w:rStyle w:val="KSEE-Verweis"/>
+						</w:rPr>
+						<w:t>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“ hinterlassen hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin keine Rückmeldung erhalten; er erwähnt ihn und schreibt Spalatin erneut am 6. Mai.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w14:paraId="65040C9E" w14:textId="7DD6B84F" w:rsidR="003A7BB3" w:rsidRPr="002112A8"
+					w:rsidRDefault="00FA4C5D" w:rsidP="00FA4C5D">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:rStyle w:val="KSEE-Verweis"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00FA4C5D">
+						<w:rPr>
+							<w:rStyle w:val="KSEE-Verweis"/>
+						</w:rPr>
+						<w:t>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.) der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6. Mai eine (verschollene) Antwort darauf von Karlstadts (EE 93B).</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="2 Absätze">
+				<div type="reference" xmlns="http://www.tei-c.org/ns/1.0">
+					<p>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“ hinterlassen hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin keine Rückmeldung erhalten; er erwähnt ihn und schreibt Spalatin erneut am 6. Mai.</p>
+					<p>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.) der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6. Mai eine (verschollene) Antwort darauf von Karlstadts (EE 93B).</p>
 				</div>
 			</x:expect>
 		</x:scenario>
