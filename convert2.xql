@@ -78,7 +78,9 @@ return if (not(sm:get-group-members('ed000240') = $user) or $user = 'guest')
 			let $div1 := <mets:div TYPE="submenu" LABEL="{$titel}" ID="{$div1id}" ORDER="{$nid}"></mets:div>
 			let $upd2 := if (not($mets//mets:div[@ID=$div1id]))
 				then update insert $div1 into $mets//mets:div[@ID='edoc_ed000240']
-				else update replace $mets//mets:div[@ID=$div1id] with $div1
+				else (: nicht komplett überschreiben, da sonst Digitalisate wegfallen :)
+					let $upd2a := update replace $mets//id($div1id)/@LABEL with $titel
+					return update replace $mets//id($div1id)/@ORDER with $nid
 				
 			(: 3. ggf. div für Intro erstellen :)
 			let $div2id := $div1id || "_introduction"
