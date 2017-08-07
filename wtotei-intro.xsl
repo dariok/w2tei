@@ -57,6 +57,7 @@
 						<title><xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
 							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
 								mode="date"/></title>
+						<!-- Kurztitel erzeugen; 2017-08-07 DK -->
 						<title type="short">
 							<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
 								<xsl:text>Verschollen: </xsl:text>
@@ -278,12 +279,19 @@
 					mode="content2"/>
 				</xsl:when>
 				<!-- Hinter der 2. Ü1, also nur Text ausgeben -->
-				<xsl:when test="not(following::w:p[descendant::w:pStyle/@w:val='KSberschrift1'])">
+				<xsl:when test="count (//w:pStyle/@w:val='KSberschrift1') &gt; 1
+					and not(following::w:p[descendant::w:pStyle/@w:val='KSberschrift1'])">
 					<xsl:apply-templates select="following-sibling::w:p" mode="content" />
 				</xsl:when>
 				<!-- In der 1. Ü1, aber keine Sigle, z.B. Brief ohne Original -->
 				<xsl:when test="following::w:p[descendant::w:pStyle/@w:val='KSberschrift1'] and
 					not(following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle'])">
+					<xsl:call-template name="edlit" />
+				</xsl:when>
+				<!-- In der Referenz ohne weitere Ü1 - verschollene mit Angaben; 2017-08-08 DK -->
+				<xsl:when test="contains(string-join(descendant::w:t, ''), 'Referenz') and
+					not(following-sibling::w:p[descendant::w:pStyle/@w:val='KSberschrift1'])">
+					<xsl:apply-templates select="following-sibling::w:p[1]" mode="content" />
 					<xsl:call-template name="edlit" />
 				</xsl:when>
 				<!-- anderer Text -->
