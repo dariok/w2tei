@@ -47,11 +47,12 @@ return if (not(sm:get-group-members('ed000240') = $user) or $user = 'guest')
 			
 			(: ggfs. Collection erstellen :)
 			let $nr := substring-before(substring-after($eeID, '240_'), '_')
-			let $eeNr := if (string-length($nr) < 3)
+			let $eeNr := substring-after(substring-before($xml/tei:TEI/@xml:id, '_introduction'), '240_')
+			(:if (string-length($nr) < 3)
 				then 0 || $nr
 				else if (not($nr castable as xs:integer))
 				then 0 || $nr
-				else $nr
+				else $nr:)
 			let $collName := ('/db/edoc/ed000240/texts/' || $eeNr)
 			
 			let $createColl := if (not(xmldb:collection-available($collName)))
