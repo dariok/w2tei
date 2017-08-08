@@ -547,7 +547,8 @@
 	
 	<xsl:template match="w:p" mode="content2" />
 	<xsl:template match="w:p" mode="content">
-		<p><xsl:apply-templates select="descendant::w:t" /></p>
+		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
+		<p><xsl:apply-templates select="descendant::w:t | descendant::w:endnoteReference" /></p>
 	</xsl:template>
 	
 	<xsl:template match="w:t[preceding-sibling::w:rPr/w:vertAlign/@w:val='superscript']">
