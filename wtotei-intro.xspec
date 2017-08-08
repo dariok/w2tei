@@ -98,6 +98,39 @@
 					when="1520-11-04">1520, 4. November</date>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="kein Ort und Datum unbekannt">
+			<x:context mode="date">
+				<w:p w:rsidR="00061D06" w:rsidRPr="00BA7CCD" w:rsidRDefault="00061D06" w:rsidP="00BA7CCD">
+					<w:pPr>
+						<w:pStyle w:val="KSEE-Titel"/>
+					</w:pPr>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:t>[</w:t>
+					</w:r>
+					<w:r w:rsidR="00477099" w:rsidRPr="00477099">
+						<w:t>1519</w:t>
+					</w:r>
+					<w:r w:rsidR="00477099">
+						<w:t>,</w:t>
+					</w:r>
+					<w:r w:rsidR="00477099" w:rsidRPr="00477099">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:t>Ende März</w:t>
+					</w:r>
+					<w:r w:rsidR="0049423F">
+						<w:t>?</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:t>]</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="nur Datum in Klammern">
+				<date when="1519-03-00" cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">1519, Ende März?</date>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="Ü2">
 		<x:context mode="content2">
