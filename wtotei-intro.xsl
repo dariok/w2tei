@@ -6,7 +6,7 @@
 	xmlns:hab="http://diglib.hab.de"
 	xmlns:xi="http://www.w3.org/2001/XInclude"
 	xmlns="http://www.tei-c.org/ns/1.0"
-	exclude-result-prefixes="#all" version="2.0">
+	exclude-result-prefixes="#all" version="3.0">
 	<!-- neu für Projekt Rist, 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	<!-- übernommen für Karlstadt Einleitungen; 2017-05-03 DK -->
 	
@@ -28,7 +28,7 @@
 		<xsl:value-of select="string-join(//w:body/w:p[1]//w:t, '')" />
 	</xsl:variable>
 	<xsl:variable name="nr">
-		<xsl:value-of select="hab:rmSquare(substring-after($fline, 'Nr.'))" />
+		<xsl:value-of select="normalize-space(hab:rmSquare(substring-after($fline, 'Nr.')))" />
 	</xsl:variable>
 	<xsl:variable name="ee">
 		<xsl:variable name="nro" select="substring-before(substring-after($fline, 'EE '), ' ')" />
@@ -135,9 +135,10 @@
 <!--			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />-->
 			<xsl:value-of select="string-join(descendant::w:t, '')" />
 		</xsl:variable>
-		<xsl:analyze-string select="normalize-space($pdline)" regex="([\[a-zA-Zäöüß\?\]]*)?,? ?(\[?\d+\]?, .*)">
+		<!-- RegEx aktualisiert; hoffentlich geht das auf eXist...; 2017-08-07 DK -->
+		<xsl:analyze-string select="normalize-space($pdline)" regex="(?:([\[\]A-Za-z ]+), )?([\[\]\w\sä\?,\.]+)">
 			<xsl:matching-substring>
-				<xsl:if test="regex-group(1)">
+				<xsl:if test="string-length(regex-group(1)) &gt; 1">
 					<placeName><xsl:if test="starts-with(regex-group(1), '[')">
 						<xsl:attribute name="cert">unknown</xsl:attribute>
 					</xsl:if>
@@ -480,7 +481,7 @@
 					descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 					or descendant::w:rStyle[@w:val='Kommentarzeichen']
-					or descendant::w:commentReference)]]" />
+					or descendant::w:commentReference)]]" mode="bibl"/>
 			</listBibl>
 		</xsl:if>
 		<xsl:if test="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]">
@@ -488,7 +489,8 @@
 				<xsl:variable name="text"
 					select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Literatur:')]"/>
 				<xsl:apply-templates select="$text/w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" />
+					and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]]" 
+				mode="bibl" />
 			</listBibl>
 		</xsl:if>
 	</xsl:template>
@@ -572,7 +574,7 @@
 		<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
 	</xsl:template>
 	
-	<xsl:template match="w:r">
+	<xsl:template match="w:r" mode="bibl">
 		<xsl:variable name="me" select="generate-id()" />
 		<xsl:variable name="next" select="generate-id((following::w:r[descendant::w:rStyle and
 			descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
@@ -602,7 +604,28 @@
 						following::w:r[generate-id() = $next]]//w:t" />
 				<!--</note>-->
 			</xsl:if>
+			<!-- FN berücksichtigen; 2017-08-07 DK -->
+			<xsl:choose>
+				<xsl:when test="$next">
+					<xsl:apply-templates select="following-sibling::w:r[w:endnoteReference
+						and preceding-sibling::w:r[generate-id() = $me] and following-sibling::w:r[generate-id() = $next]]/w:endnoteReference"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates select="following-sibling::w:r[w:endnoteReference]/w:endnoteReference" />
+				</xsl:otherwise>
+			</xsl:choose>
 		</bibl>
+	</xsl:template>
+	
+	<!-- neu 2017-08-07 DK -->
+	<xsl:template match="w:endnoteReference">
+		<xsl:variable name="wid" select="@w:id"/>
+		<note type="footnote">
+			<xsl:apply-templates select="//w:endnote[@w:id = $wid]/w:p/w:r" />
+		</note>
+	</xsl:template>
+	<xsl:template match="w:endnote//w:r">
+		<xsl:apply-templates select="w:t" />
 	</xsl:template>
 	
 	<xsl:function name="hab:rmSquare" as="xs:string">
