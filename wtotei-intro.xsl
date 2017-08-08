@@ -48,7 +48,7 @@
 	<xsl:template match="/">
 		<TEI xmlns="http://www.tei-c.org/ns/1.0"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/edoc/ed000216/rules/tei-p5-transcr.xsd"
+			xsi:schemaLocation="http://www.tei -c.org/ns/1.0 http://diglib.hab.de/edoc/ed000216/rules/tei-p5-transcr.xsd"
 			n="{$nr}">
 			<xsl:attribute name="xml:id" select="concat('edoc_ed000240_', $ee, '_introduction')" />
 			<teiHeader>
@@ -280,7 +280,7 @@
 					mode="content2"/>
 				</xsl:when>
 				<!-- Hinter der 2. Ü1, also nur Text ausgeben -->
-				<xsl:when test="count (//w:pStyle/@w:val='KSberschrift1') &gt; 1
+				<xsl:when test="count (//w:pStyle[@w:val='KSberschrift1']) &gt; 1
 					and not(following::w:p[descendant::w:pStyle/@w:val='KSberschrift1'])">
 					<xsl:apply-templates select="following-sibling::w:p" mode="content" />
 				</xsl:when>
@@ -350,93 +350,95 @@
 										</xsl:call-template>
 									</xsl:if>
 								</xsl:element>
-								<xsl:variable name="pos"
-									select="index-of($struct, ($struct//w:t[starts-with(., 'Editions')]/ancestor::w:p)[1])" />
-								<xsl:if test="$struct[3]//w:t[starts-with(normalize-space(), 'in')]">
-									<monogr>
-										<xsl:choose>
-											<xsl:when test="$pos > 7">
-												<author><xsl:apply-templates select="$struct[4]//w:t" /></author>
-												<title><xsl:apply-templates select="$struct[position() > 4 and position() &lt; ($pos - 2)]//w:t" /></title>
-											</xsl:when>
-											<xsl:otherwise>
-												<title><xsl:apply-templates select="$struct[4]//w:t" /></title>
-											</xsl:otherwise>
-										</xsl:choose>
-										<xsl:call-template name="imprint">
-											<xsl:with-param name="context" select="$struct[$pos - 2]" />
-										</xsl:call-template>
-									</monogr>
-								</xsl:if>
-								<idno type="siglum"><xsl:value-of select="$idNo" /></idno>
-								<note type="copies">
-									<list>
-										<item n="editionsvorlage">
-											<xsl:variable name="ex">
-												<xsl:apply-templates select="$struct[$pos]//w:t" />
-											</xsl:variable>
+								<xsl:if test="$struct//w:t[starts-with(., 'Editions')]">
+									<xsl:variable name="pos"
+										select="index-of($struct, ($struct//w:t[starts-with(., 'Editions')]/ancestor::w:p)[1])" />
+									<xsl:if test="$struct[3]//w:t[starts-with(normalize-space(), 'in')]">
+										<monogr>
 											<xsl:choose>
-												<xsl:when test="contains($ex, ',')">
-													<label><xsl:value-of
-														select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
-													<idno type="signatur"><xsl:value-of
-														select="normalize-space(substring-after($ex, ','))"/></idno>
+												<xsl:when test="$pos > 7">
+													<author><xsl:apply-templates select="$struct[4]//w:t" /></author>
+													<title><xsl:apply-templates select="$struct[position() > 4 and position() &lt; ($pos - 2)]//w:t" /></title>
 												</xsl:when>
 												<xsl:otherwise>
-													<idno type="signatur"><xsl:value-of
-														select="normalize-space(substring-after($ex, ':'))"/></idno>
+													<title><xsl:apply-templates select="$struct[4]//w:t" /></title>
 												</xsl:otherwise>
 											</xsl:choose>
-											<xsl:if test="$struct[$pos]/w:commentRangeEnd">
-												<xsl:variable name="coID" select="$struct[$pos]/w:commentRangeEnd/@w:id"/>
-												<ptr type="digitalisat">
-													<xsl:attribute name="target">
-														<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
-													</xsl:attribute>
-												</ptr>
-											</xsl:if>
-										</item>
-										<xsl:variable name="weitere">
-											<xsl:apply-templates select="$struct[$pos + 1]//w:t" mode="exemplar" />
-										</xsl:variable>
-										<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare: '), ';|–|—')">
-											<item>
+											<xsl:call-template name="imprint">
+												<xsl:with-param name="context" select="$struct[$pos - 2]" />
+											</xsl:call-template>
+										</monogr>
+									</xsl:if>
+									<idno type="siglum"><xsl:value-of select="$idNo" /></idno>
+									<note type="copies">
+										<list>
+											<item n="editionsvorlage">
+												<xsl:variable name="ex">
+													<xsl:apply-templates select="$struct[$pos]//w:t" />
+												</xsl:variable>
 												<xsl:choose>
-													<xsl:when test="contains(., ',')">
-														<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
-														<idno type="signatur"><xsl:choose>
-															<xsl:when test="contains(current(), '→')">
-																<xsl:value-of select="normalize-space(substring-before(substring-after(current(), ','), '→'))"/>
-															</xsl:when>
-															<xsl:otherwise>
-																<xsl:value-of select="normalize-space(substring-after(current(), ','))"/>
-															</xsl:otherwise>
-														</xsl:choose></idno>
+													<xsl:when test="contains($ex, ',')">
+														<label><xsl:value-of
+															select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
+														<idno type="signatur"><xsl:value-of
+															select="normalize-space(substring-after($ex, ','))"/></idno>
 													</xsl:when>
 													<xsl:otherwise>
-														<idno type="signatur"><xsl:value-of select="normalize-space()"/></idno>
+														<idno type="signatur"><xsl:value-of
+															select="normalize-space(substring-after($ex, ':'))"/></idno>
 													</xsl:otherwise>
 												</xsl:choose>
-												<xsl:if test="contains(., '→')">
-													<ptr type="digitalisat" target="{substring-after(., '→')}" />
+												<xsl:if test="$struct[$pos]/w:commentRangeEnd">
+													<xsl:variable name="coID" select="$struct[$pos]/w:commentRangeEnd/@w:id"/>
+													<ptr type="digitalisat">
+														<xsl:attribute name="target">
+															<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
+														</xsl:attribute>
+													</ptr>
 												</xsl:if>
 											</item>
-										</xsl:for-each>
-									</list>
-								</note>
-								<note type="references">
-									<listBibl>
-										<xsl:variable name="weitere">
-											<xsl:apply-templates select="$struct[$pos + 2]//w:t" />
-										</xsl:variable>
-										<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
-											<bibl>
-												<!-- TODO ID aus bibliography übernehmen -->
-												<xsl:value-of select="normalize-space(current())"/>
-											</bibl>
-										</xsl:for-each>
-									</listBibl>
-								</note>
+											<xsl:variable name="weitere">
+												<xsl:apply-templates select="$struct[$pos + 1]//w:t" mode="exemplar" />
+											</xsl:variable>
+											<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare: '), ';|–|—')">
+												<item>
+													<xsl:choose>
+														<xsl:when test="contains(., ',')">
+															<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
+															<idno type="signatur"><xsl:choose>
+																<xsl:when test="contains(current(), '→')">
+																	<xsl:value-of select="normalize-space(substring-before(substring-after(current(), ','), '→'))"/>
+																</xsl:when>
+																<xsl:otherwise>
+																	<xsl:value-of select="normalize-space(substring-after(current(), ','))"/>
+																</xsl:otherwise>
+															</xsl:choose></idno>
+														</xsl:when>
+														<xsl:otherwise>
+															<idno type="signatur"><xsl:value-of select="normalize-space()"/></idno>
+														</xsl:otherwise>
+													</xsl:choose>
+													<xsl:if test="contains(., '→')">
+														<ptr type="digitalisat" target="{substring-after(., '→')}" />
+													</xsl:if>
+												</item>
+											</xsl:for-each>
+										</list>
+									</note>
+									<note type="references">
+										<listBibl>
+											<xsl:variable name="weitere">
+												<xsl:apply-templates select="$struct[$pos + 2]//w:t" />
+											</xsl:variable>
+											<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
+												<bibl>
+													<!-- TODO ID aus bibliography übernehmen -->
+													<xsl:value-of select="normalize-space(current())"/>
+												</bibl>
+											</xsl:for-each>
+										</listBibl>
+									</note>
+								</xsl:if>
 							</biblStruct>
 						</xsl:for-each>
 					</xsl:when>
