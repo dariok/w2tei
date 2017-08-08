@@ -47,20 +47,17 @@ return if (not(sm:get-group-members('ed000240') = $user) or $user = 'guest')
 			
 			(: ggfs. Collection erstellen :)
 			let $nr := substring-before(substring-after($eeID, '240_'), '_')
-			let $eeNr := substring-after(substring-before($xml/tei:TEI/@xml:id, '_introduction'), '240_')
-			(:if (string-length($nr) < 3)
-				then 0 || $nr
-				else if (not($nr castable as xs:integer))
-				then 0 || $nr
-				else $nr:)
+			(: in-memory-nodes do not have a document root :)
+			let $eeNr := substring-after(substring-before($xml/@xml:id, '_introduction'), '240_')
 			let $collName := ('/db/edoc/ed000240/texts/' || $eeNr)
+			let $fileName := substring-after($xml/@xml:id, '000240_') || '.xml'
 			
 			let $createColl := if (not(xmldb:collection-available($collName)))
 				then xmldb:create-collection('/db/edoc/ed000240/texts/', $eeNr)
 				else ()
 			
 			(: Datei speichern :)
-			let $store := xmldb:store($collName, $eeNr || '_introduction.xml', $xml)
+			let $store := xmldb:store($collName, $fileName, $xml)
 			let $location := substring-after($store, '240/')
 			let $mets := doc('/db/edoc/ed000240/mets.xml')
 			
