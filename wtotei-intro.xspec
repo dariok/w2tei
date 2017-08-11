@@ -1481,7 +1481,7 @@
 	</x:scenario>
 	<!-- neu ab 2017-08-08 DK -->
 	<x:scenario label="Ausgabe ab 1. Überschrift">
-		<x:scenario label="verschollene mit Referenz (1 Abs.) und Literatur">
+		<x:scenario label="verschollene mit Referenz (k. Sigle, 1 Abs., Lit.) o. Hinw.">
 			<x:context>
 				<w:p w:rsidR="004C6DB6" w:rsidRDefault="00061D06" w:rsidP="00C87A59">
 					<w:pPr>
@@ -1573,7 +1573,7 @@
 				</div>
 			</x:expect>
 		</x:scenario>
-		<x:scenario label="verschollene mit Referenz (2 Abs.)">
+		<x:scenario label="verschollene mit Referenz (k. Sigle, 2 Abs., k. Lit.) o. Hinw.">
 			<x:context>
 				<w:p w14:paraId="0FB06673" w14:textId="50695BB9" w:rsidR="00CE2F47" w:rsidRDefault="00FA4C5D"
 					w:rsidP="0011564A">
@@ -1620,6 +1620,266 @@
 					<p>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“ hinterlassen hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin keine Rückmeldung erhalten; er erwähnt ihn und schreibt Spalatin erneut am 6. Mai.</p>
 					<p>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.) der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6. Mai eine (verschollene) Antwort darauf von Karlstadts (EE 93B).</p>
 				</div>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="versch. m. Referenz (k. Sigle, 1 Abs., Lit) und Hinweisen">
+			<x:context>
+				<w:p w:rsidR="004C6DB6" w:rsidRDefault="00061D06" w:rsidP="00CA5D97">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+					</w:pPr>
+					<w:r w:rsidRPr="00061D06">
+						<w:t>Refer</w:t>
+					</w:r>
+					<w:bookmarkStart w:id="0" w:name="_GoBack"/>
+					<w:bookmarkEnd w:id="0"/>
+					<w:r w:rsidRPr="00061D06">
+						<w:t>enz</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00477099" w:rsidRPr="004B7DC6" w:rsidRDefault="00061D06" w:rsidP="004B7DC6">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+					</w:pPr>
+					<w:r w:rsidRPr="004B7DC6">
+						<w:t xml:space="preserve">Brief </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="004B7DC6">
+						<w:t>Karlstadts</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="004B7DC6">
+						<w:t xml:space="preserve"> vom 3. </w:t>
+					</w:r>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve">April 1519 an </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>Spalatin</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>: „</w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>Praeter</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>illa</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>putavi</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>nuper</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve"> in </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>Concione</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>quadam</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve">“; „Ego </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>typographo</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>humeros</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>hos</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t>supposui</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="0008226B">
+						<w:t xml:space="preserve">.“ </w:t>
+					</w:r>
+					<w:r w:rsidRPr="004B7DC6">
+						<w:t>(EE 90 [=Nr. 113]).</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="0024211D" w:rsidRDefault="00061D06" w:rsidP="004B7DC6">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="004B7DC6">
+						<w:rPr>
+							<w:i/>
+						</w:rPr>
+						<w:t>Literatur</w:t>
+					</w:r>
+					<w:r w:rsidRPr="004B7DC6">
+						<w:t xml:space="preserve">: </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>Bubenheimer</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t xml:space="preserve">, Karlstadt liest </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>Tauler</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="00061D06">
+						<w:t xml:space="preserve">; </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>Zorzin</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>, Flugschriftenautor</w:t>
+					</w:r>
+					<w:r w:rsidR="00477099">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>,</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00BA7CCD">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> 225.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00AD28ED" w:rsidRPr="0008226B" w:rsidRDefault="00AD28ED" w:rsidP="0008226B">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="0008226B">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+						</w:rPr>
+						<w:t>Inhaltliche Hinweise</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="000522A7" w:rsidRPr="00F11557" w:rsidRDefault="00BD26B6" w:rsidP="00F11557">
+					<w:r w:rsidRPr="00F11557">
+						<w:t xml:space="preserve">Auf </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="00F11557">
+						<w:t>Spalatins</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="00F11557">
+						<w:t xml:space="preserve"> Frage, ob kirchliche Vorschriften in gleichem Maße verpflichtend seien wie göttliche Gebote, antwortete ihm Karlstadt Ende März 1519 in einem ausführlichen Brief</w:t>
+					</w:r>
+					<w:r w:rsidR="008036C1" w:rsidRPr="00F11557">
+						<w:rPr>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:footnoteReference w:id="1"/>
+					</w:r>
+					<w:r w:rsidRPr="00F11557">
+						<w:t xml:space="preserve"> (EE 90 [= Nr. 113]). Darin erwähnt Karlstadt, dass er „</w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="00F11557">
+						<w:t>nuper</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="00F11557">
+						<w:t xml:space="preserve"> in </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="00F11557">
+						<w:t>Concione</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="00F11557">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:proofErr w:type="spellStart"/>
+					<w:r w:rsidRPr="00F11557">
+						<w:t>quadam</w:t>
+					</w:r>
+					<w:proofErr w:type="spellEnd"/>
+					<w:r w:rsidRPr="00F11557">
+						<w:t>“ [neulich in einer gewissen Predigt] diese Thematik reflektiert habe, und dem Drucker eine Schrift „zugeschoben“ habe, die das Thema behandelt.</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="1. div mit. Text und Lit. o. Sigle; 2. div mit Text">
+				<div type="reference" xmlns="http://www.tei-c.org/ns/1.0"><p>Brief Karlstadts vom 3. April 1519 an Spalatin: „Praeter illa putavi nuper in Concione quadam“; „Ego typographo humeros hos supposui.“ (EE 90 [=Nr. 113]).</p>
+					<listBibl type="literatur"><bibl>Bubenheimer, Karlstadt liest Tauler</bibl><bibl>Zorzin, Flugschriftenautor, 225.</bibl></listBibl></div>
+				<div type="evidence" xmlns="http://www.tei-c.org/ns/1.0"><p>Auf Spalatins Frage, ob kirchliche Vorschriften in gleichem Maße verpflichtend seien wie göttliche Gebote, antwortete ihm Karlstadt Ende März 1519 in einem ausführlichen Brief (EE 90 [= Nr. 113]). Darin erwähnt Karlstadt, dass er „nuper in Concione quadam“ [neulich in einer gewissen Predigt] diese Thematik reflektiert habe, und dem Drucker eine Schrift „zugeschoben“ habe, die das Thema behandelt.</p></div>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>

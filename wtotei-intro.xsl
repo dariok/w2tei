@@ -287,6 +287,8 @@
 				<!-- In der 1. Ü1, aber keine Sigle, z.B. Brief ohne Original -->
 				<xsl:when test="following::w:p[descendant::w:pStyle/@w:val='KSberschrift1'] and
 					not(following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle'])">
+					<xsl:apply-templates select="following-sibling::w:p[following-sibling::w:p[descendant::w:pStyle/@w:val='KSberschrift1']
+						and not(descendant::w:rStyle/@w:val='KSbibliographischeAngabe')]" mode="content"/>
 					<xsl:call-template name="edlit" />
 				</xsl:when>
 				<!-- In der Referenz ohne weitere Ü1 - verschollene mit Angaben; 2017-08-08 DK -->
