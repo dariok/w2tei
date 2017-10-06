@@ -1,19 +1,30 @@
 xquery version "3.0";
 
-module namespace habq = "http://diglib.hab.de/ns/habq";
+declare option exist:serialize "method=html5 media-type=text/html";
 
-declare function habq:query() {
-	<div id="content">
-		<form enctype="multipart/form-data" method="post" action="ed000245/scripts/xquery/convert2.xql">
-			<fieldset>
-				<legend>Upload von TEI-P4-Dateien:</legend>
-				<input type="file" name="file" style="width: 90%;"/>
-				<input type="submit" value="Upload" style="float: right;"/>
-			</fieldset>
-		</form>
-	</div>
-};
-
-declare function habq:getTask() {
-	<h2>TEI-P4-Upload</h2>
-};
+<html>
+	<head>
+		<title>Table Conversion</title>
+	</head>
+	<body>
+		<div id="content">
+			<form enctype="multipart/form-data" method="post" action="/apps/word2tei/convert2.xql">
+				<fieldset>
+					<legend>Upload Word (.docx) [or OO (.odt)]:</legend>
+					<input type="file" name="file" style="width: 90%;"/>
+					<input type="submit" value="Upload" style="float: right;"/>
+					<br/>
+					<label>select XSLT for processing: </label>
+					<select name="xslt">
+						<option selected="selected">none</option>
+						{
+							for $file in doc('adds.xml')//entry
+								return
+									<option value="{$file/@file}">{$file/@label}</option>
+						}
+					</select>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

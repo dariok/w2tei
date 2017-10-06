@@ -19,101 +19,47 @@ let $entry-data := function ($path as xs:string, $data-type as xs:string, $data 
   $data
 }
 
-let $filename := if (request:get-uploaded-file-name('file'))
-	then request:get-uploaded-file-name('file')
-	else ''
+let $title := if (ends-with(request:get-uploaded-file-name('file'), '.odt'))
+	then substring-before(request:get-uploaded-file-name('file'), '.odt')
+	else substring-before(request:get-uploaded-file-name('file'), '.docx')
+
+let $origFileData := string(request:get-uploaded-file-data('file'))
+(: unzip erwartet base64Binary, die vom Upload direkt geliefert werden :)
+let $unpack := compression:unzip($origFileData, $filter, (), $entry-data, ())
+let $incoming := 
+	<pack>{
+		for $item in $unpack
+			return $item}
+	</pack>
+
+(: for now, we assume that we will do this in one pass - or we might later need
+		two specific runs anyway :)
+(:let $type := if (local-name($incoming/*[1]) = 'document-content')
+	then 'OO'
+	else 'MS'
+let $xslt := if ($type = 'OO')
+	then doc('xslt/oo2tei.xsl')
+	else doc('xslt/ms2tei.xsl'):)
+let $add := request:get-parameter('xslt', 'none')
+let $post := request:get-parameter('firstheading', false())
+
+let $params :=
+	<parameters>
+		<param name="title" value="{$title}" />
+		<param name="filename" value="{request:get-uploaded-file-name('file')}" />
+	</parameters>
+
+(:let $firstPass :=
+	if ($post)
+		then transform:transform($incoming, $xslt, $params)
+		else transform:transform($incoming, $xslt, ())
+
+let $result := if ($add != 'none')
+	then transform:transform($firstPass, doc($add), ())
+	else $firstPass:)
 	
-let $user := request:get-attribute("wd.user")
-return if (not(sm:get-group-members('ed000240') = $user) or $user = 'guest')
-	then <p>Keine Schreibberechtigung für Benutzer / No permission to write for user {$user}
-		<span>{sm:get-group-members('ed000240')}</span></p>
-	else if (request:is-multipart-content() and $filename != '')
-		then
-			let $origFileData := string(request:get-uploaded-file-data('file'))
-			(: unzip erwartet base64Binary, die vom Upload direkt geliefert werden :)
-			let $unpack := compression:unzip($origFileData, $filter, (), $entry-data, ())
-			let $word := 
-				<pack>{
-					for $item in $unpack
-						return $item}
-				</pack>
-			let $xslt := doc('../xslt/wtotei-intro.xsl')
-			let $xml := transform:transform($word, $xslt, ())
-			
-			(: notwendige Werte aus XML holen :) 
-			let $eeID := $xml/@xml:id
-			let $nid := $xml/@n
-			let $titel := $xml//tei:title[@type='short']
-			
-			(: ggfs. Collection erstellen :)
-			let $nr := substring-before(substring-after($eeID, '240_'), '_')
-			(: in-memory-nodes do not have a document root :)
-			let $eeNr := substring-after(substring-before($xml/@xml:id, '_introduction'), '240_')
-			let $collName := ('/db/edoc/ed000240/texts/' || $eeNr)
-			let $fileName := substring-after($xml/@xml:id, '000240_') || '.xml'
-			
-			let $createColl := if (not(xmldb:collection-available($collName)))
-				then xmldb:create-collection('/db/edoc/ed000240/texts/', $eeNr)
-				else ()
-			
-			(: Datei speichern :)
-			let $store := xmldb:store($collName, $fileName, $xml)
-			let $location := substring-after($store, '240/')
-			let $mets := doc('/db/edoc/ed000240/mets.xml')
-			
-			(: Eintragen in die METS :)
-			(: 1. ggf. mets:file erstellen :)
-			let $metsFile :=
-				<mets:file ID="{$eeID}" MIMETYPE="application/xml">
-					<mets:FLocat LOCTYPE="URL" xlink:href="{$location}"/>
-				</mets:file>
-			let $upd1 := if (not($mets//mets:file[@ID=$eeID]))
-				then update insert $metsFile into $mets//mets:fileGrp[@ID='introduction']
-				else ()
-			
-			(: 2. ggf. div für EE erstellen :)
-			let $div1id := "edoc_ed000240_d" || $eeNr
-			let $div1 := <mets:div TYPE="submenu" LABEL="{$titel}" ID="{$div1id}" ORDER="{$nid}"></mets:div>
-			let $upd2 := if (not($mets//mets:div[@ID=$div1id]))
-				then update insert $div1 into $mets//mets:div[@ID='edoc_ed000240']
-				else (: nicht komplett überschreiben, da sonst Digitalisate wegfallen :)
-					let $upd2a := update replace $mets//mets:div[@ID = $div1id]/@LABEL with $titel
-					return update replace $mets//mets:div[@ID = $div1id]/@ORDER with $nid
-				
-			(: 3. ggf. div für Intro erstellen :)
-			let $div2id := $div1id || "_introduction"
-			let $div2 :=
-				<mets:div TYPE="introduction" LABEL="Einleitung" ID="{$div2id}">
-					<mets:fptr FILEID="{$eeID}" />
-				</mets:div>
-			let $upd2 := if (not($mets//mets:div[@ID=$div2id]))
-				then update insert $div2 into $mets//mets:div[@ID=$div1id]
-				else ()
-			
-			(: 4. ggf. in 2. structMap eintragen :)
-			let $fptr := <mets:fptr FILEID="{$eeID}" />
-			let $upd3 := if (not($mets//mets:div[@ID='ed000240_intros']/mets:fptr[@FILEID=$eeID]))
-				then update insert $fptr into $mets//mets:div[@ID='ed000240_intros']
-				else ()
-			
-			(: TODO prüfen, ob das reicht, oder wir die Texte überschreiben müssen :)
-			let $target := concat('/edoc/view.html?id=', $eeID)
-			return response:redirect-to($target)
-		else if ($filename = '')
-		then
-		    <div>
-		        <h1>Problem beim Upload</h1>
-		        <p>Es wurde keine Datei ausgewählt</p>
-            </div>
-        else
-		    let $user := request:get-attribute("wd.user")
-		    return
-			<div>
-				<h1>Problem beim Upload</h1>
-				<ul>
-				    <li>Benutzer (Att): {$user}</li>
-				    <li>Benutzer (get): {xmldb:get-current-user()}</li>
-				    <li>Gruppen: {sm:get-group-members('ed000245') = $user}</li>
-				</ul>
-			</div>
-			
+let $result := transform:transform($incoming, doc($add), $params)
+
+let $filename := $title || '.xml'
+let $header := response:set-header("Content-Disposition", concat("attachment; filename=", $filename))
+return $result
