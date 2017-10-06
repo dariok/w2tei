@@ -1,0 +1,4 @@
+<list>
+	<entry label="Mondsee" file="add/mondsee.xsl"/>
+	<entry label="Mondsee Word" file="add/mondsee-word.xsl"/>
+</list>
