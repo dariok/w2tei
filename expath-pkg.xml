@@ -1,0 +1,4 @@
+<package xmlns="http://expath.org/ns/pkg" name="http://github.com/dariok/w2tei" abbrev="w2t" version="0.1" spec="1.0">
+    <title>Word to TEI</title>
+    <dependency package="http://exist-db.org/apps/shared"/>
+</package>

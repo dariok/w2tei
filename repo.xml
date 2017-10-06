@@ -1,0 +1,14 @@
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Word to TEI</description>
+    <author>Dario Kampkaspar</author>
+    <website/>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>word2tei</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+    <permissions user="kampkaspar" group="dba" mode="rw-rw-r--"/>
+<deployed>2017-10-06T11:29:29.952+02:00</deployed>
+</meta>
