@@ -6,7 +6,7 @@
 	exclude-result-prefixes="#all" version="2.0">
 	<!-- neu 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	
-	<xsl:output indent="yes"/>
+<!--	<xsl:output indent="yes"/>-->
 	
 	<!-- Standard-Schriftgröße bestimmen -->
 	<xsl:variable name="mainsize">
