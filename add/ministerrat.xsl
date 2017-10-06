@@ -3,10 +3,10 @@
 	xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns="http://www.tei-c.org/ns/1.0"
-	exclude-result-prefixes="#all" version="2.0">
+	exclude-result-prefixes="#all" version="3.0">
 	<!-- neu 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	
-	<xsl:output indent="yes"/>
+<!--	<xsl:output indent="yes"/>-->
 	
 	<!-- Standard-Schriftgröße bestimmen -->
 	<xsl:variable name="mainsize">
@@ -30,7 +30,6 @@
 	<xsl:template match="w:p[w:pPr/w:rPr/w:b or w:pPr/w:pStyle[@w:val='berschrift1']]">
 		<TEI>
 			<teiHeader>
-				<xsl:comment>Mainsize: <xsl:value-of select="$mainsize"/> = <xsl:value-of select="$mainsize div 2"/>pt;</xsl:comment>
 				<xsl:variable name="md" select="tokenize(w:r/w:t, ', ')"/>
 				<xsl:variable name="dat">
 					<xsl:choose>

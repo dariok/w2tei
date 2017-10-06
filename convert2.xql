@@ -4,6 +4,8 @@ declare namespace tei	= "http://www.tei-c.org/ns/1.0";
 declare namespace mets	= "http://www.loc.gov/METS/";
 declare namespace xlink	= "http://www.w3.org/1999/xlink";
 
+import module namespace console = "http://exist-db.org/xquery/console";
+
 let $filter := function ($path as xs:string, $data-type as xs:string, $param as item()*) as xs:boolean {
     switch ($path)
         case "word/document.xml"
@@ -44,10 +46,8 @@ let $add := request:get-parameter('xslt', 'none')
 let $post := request:get-parameter('firstheading', false())
 
 let $params :=
-	<parameters>
-		<param name="title" value="{$title}" />
-		<param name="filename" value="{request:get-uploaded-file-name('file')}" />
-	</parameters>
+	<parameters/>
+	
 
 (:let $firstPass :=
 	if ($post)
@@ -58,8 +58,27 @@ let $result := if ($add != 'none')
 	then transform:transform($firstPass, doc($add), ())
 	else $firstPass:)
 	
-let $result := transform:transform($incoming, doc($add), $params)
+(:let $ret := if (count($incoming//w:pStyle[@w:val='berschrift1']) > 1)
+	then 
+		let $result := transform:transform($incoming, doc($add), $params)
+		let $filename := $result//tei:TEI/@xml:id || '.xml'
+		return xmldb:store('/db/apps/word2tei/mp-data', $filename, $result)
+	else
+		for :)
 
-let $filename := $title || '.xml'
-let $header := response:set-header("Content-Disposition", concat("attachment; filename=", $filename))
-return $result
+(:let $result := transform:transform($incoming, doc($add), $params):)
+let $attr := <attributes><attr name="http://saxon.sf.net/feature/recoveryPolicyName" value="recoverSilently" /></attributes>
+let $result := try { transform:transform($incoming, doc($add), $params) }
+		catch * { console:log('
+		x:' || $add || '
+		p: ' || $params || '
+		a: ' || $attr || '
+		e: ' ||	$err:code || ': ' || $err:description || ' @ ' || $err:line-number ||':'||$err:column-number || '
+		c: ' || $err:value || ' in ' || $err:module || '
+		a: ' || $err:additional)
+		}
+
+for $el in $result//tei:TEI
+	let $filename := $el//tei:title[@type='short'] || '.xml'
+	(:return xmldb:store('/db/apps/word2tei/mp-data', $filename, $el):)
+	return $filename
