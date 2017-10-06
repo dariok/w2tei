@@ -6,7 +6,7 @@
 	exclude-result-prefixes="#all" version="2.0">
 	<!-- neu 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	
-<!--	<xsl:output indent="yes"/>-->
+	<xsl:output indent="yes"/>
 	
 	<!-- Standard-Schriftgröße bestimmen -->
 	<xsl:variable name="mainsize">
@@ -32,26 +32,53 @@
 			<teiHeader>
 				<xsl:comment>Mainsize: <xsl:value-of select="$mainsize"/> = <xsl:value-of select="$mainsize div 2"/>pt;</xsl:comment>
 				<xsl:variable name="md" select="tokenize(w:r/w:t, ', ')"/>
+				<xsl:variable name="dat">
+					<xsl:choose>
+						<xsl:when test="contains($md[3], ' – ')">
+							<xsl:value-of select="substring-before($md[3], ' – ')" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="$md[3]" />
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
 				<fileDesc>
 					<titleStmt>
 						<title type="num"><xsl:value-of select="substring-before(substring-after($md[1], 'Nr. '), ' ')"/></title>
 						<meeting>
 							<placeName><xsl:value-of select="$md[2]"/></placeName>
 							<orgName><xsl:value-of select="substring-after(substring-after($md[1], 'Nr. '), ' ')"/></orgName>
-							<date><xsl:choose>
-								<xsl:when test="contains($md[3], ' – ')">
-									<xsl:value-of select="substring-before($md[3], ' – ')" />
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:value-of select="$md[3]" />
-								</xsl:otherwise>
-							</xsl:choose></date>
+							<date><xsl:value-of select="$dat" /></date>
 						</meeting>
 						<xsl:if test="contains($md[3], ' – ')">
 							<title type="order">
 								<xsl:value-of select="substring-after($md[3], ' – ')" />
 							</title>
 						</xsl:if>
+						<title type="short">
+							<xsl:value-of select="format-number(xs:int(substring-before(substring-after($md[1], 'Nr. '), ' ')),
+								'000')" />
+							<xsl:text>-</xsl:text>
+							<xsl:variable name="da" select="tokenize($dat, ' ')" />
+							<xsl:variable name="mo">
+								<xsl:choose>
+									<xsl:when test="$da[2] = 'Jänner'">01</xsl:when>
+									<xsl:when test="$da[2] = 'Februar'">02</xsl:when>
+									<xsl:when test="$da[2] = 'März'">03</xsl:when>
+									<xsl:when test="$da[2] = 'April'">04</xsl:when>
+									<xsl:when test="$da[2] = 'Mai'">05</xsl:when>
+									<xsl:when test="$da[2] = 'Juni'">06</xsl:when>
+									<xsl:when test="$da[2] = 'Juli'">07</xsl:when>
+									<xsl:when test="$da[2] = 'August'">08</xsl:when>
+									<xsl:when test="$da[2] = 'September'">09</xsl:when>
+									<xsl:when test="$da[2] = 'Oktober'">10</xsl:when>
+									<xsl:when test="$da[2] = 'November'">11</xsl:when>
+									<xsl:when test="$da[2] = 'Dezember'">12</xsl:when>
+								</xsl:choose>
+							</xsl:variable>
+							<xsl:value-of select="concat($da[3], '-', $mo, '-',
+								format-number(number(substring-before($da[1], '.')), '00'))"/>
+						</title>
 					</titleStmt>
 					<publicationStmt><p/></publicationStmt>
 					<sourceDesc><p/></sourceDesc>
@@ -81,12 +108,12 @@
     <xsl:template match="w:body/text()" />
 	
 	<!-- Aktenzeichen -->
-	<xsl:template match="w:p[not(w:pPr/w:ind or w:pPr/w:pStyle) and descendant::w:t][1]">
+	<xsl:template match="w:p[not(w:pPr/w:rPr/w:b or w:pPr/w:ind or w:pPr/w:pStyle) and descendant::w:t][1]">
 		<div type="idno"><p><idno><xsl:apply-templates select="w:r//w:t"/></idno></p></div>
 	</xsl:template>
 	
 	<!-- Struktur hinter dem AZ -->
-	<xsl:template match="w:p[not(w:pPr/w:ind or w:pPr/w:pStyle) and descendant::w:t][2]">
+	<xsl:template match="w:p[not(w:pPr/w:rPr/w:b or w:pPr/w:ind or w:pPr/w:pStyle) and descendant::w:t][2]">
 		<div type="text">
 			<xsl:apply-templates
 				select=".
