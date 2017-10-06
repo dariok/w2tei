@@ -1,4 +1,3 @@
 <list>
-	<entry label="Mondsee" file="add/mondsee.xsl"/>
-	<entry label="Mondsee Word" file="add/mondsee-word.xsl"/>
+	<entry label="Ministerratsprotokolle" file="add/ministerrat.xsl"/>
 </list>
