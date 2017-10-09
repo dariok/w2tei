@@ -44,11 +44,6 @@
 				<fileDesc>
 					<titleStmt>
 						<title type="num"><xsl:value-of select="substring-before(substring-after($md[1], 'Nr. '), ' ')"/></title>
-						<meeting>
-							<placeName><xsl:value-of select="$md[2]"/></placeName>
-							<orgName><xsl:value-of select="substring-after(substring-after($md[1], 'Nr. '), ' ')"/></orgName>
-							<date><xsl:value-of select="$dat" /></date>
-						</meeting>
 						<xsl:if test="contains($md[3], ' – ')">
 							<title type="order">
 								<xsl:value-of select="substring-after($md[3], ' – ')" />
@@ -78,6 +73,11 @@
 							<xsl:value-of select="concat($da[3], '-', $mo, '-',
 								format-number(number(substring-before($da[1], '.')), '00'))"/>
 						</title>
+						<meeting>
+							<placeName><xsl:value-of select="$md[2]"/></placeName>
+							<orgName><xsl:value-of select="substring-after(substring-after($md[1], 'Nr. '), ' ')"/></orgName>
+							<date><xsl:value-of select="$dat" /></date>
+						</meeting>
 					</titleStmt>
 					<publicationStmt><p/></publicationStmt>
 					<sourceDesc><p/></sourceDesc>
@@ -153,21 +153,21 @@
 					<xsl:variable name="pers" select="substring($str, 1, string-length($str)-1)" />
 					<xsl:variable name="functs" select="tokenize($pers, '; ')" />
 					<listPerson>
-						<person role="protocol"><xsl:value-of select="substring-after($functs[1], ' ')"/></person>
-						<person role="chair"><xsl:value-of select="substring-after($functs[2], ' ')"/></person>
+						<person role="protocol"><persName><xsl:value-of select="substring-after($functs[1], ' ')"/></persName></person>
+						<person role="chair"><persName><xsl:value-of select="substring-after($functs[2], ' ')"/></persName></person>
 						<xsl:for-each select="tokenize(substring-after($functs[3], 'anw. '), ', ')">
-							<person><xsl:value-of select="current()"/></person>
+							<person><persName><xsl:value-of select="current()"/></persName></person>
 						</xsl:for-each>
 					</listPerson>
 				</xsl:when>
 				<xsl:when test="starts-with(w:r[1]/w:t, 'I.')">
 					<!-- Kurzregest -->
 					<xsl:attribute name="type">reg</xsl:attribute>
-					<xsl:apply-templates select="w:r"/>
+					<p><xsl:apply-templates select="w:r"/></p>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:attribute name="type">other</xsl:attribute>
-					<xsl:apply-templates select="w:r"/>
+					<p><xsl:apply-templates select="w:r"/></p>
 				</xsl:otherwise>
 			</xsl:choose>
 		</div>
