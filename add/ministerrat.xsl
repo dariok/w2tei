@@ -55,7 +55,7 @@
 							</title>
 						</xsl:if>
 						<title type="short">
-							<xsl:value-of select="format-number(xs:int(substring-before(substring-after($md[1], 'Nr. '), ' ')),
+							<xsl:value-of select="format-number(xs:integer(substring-before(substring-after($md[1], 'Nr. '), ' ')),
 								'000')" />
 							<xsl:text>-</xsl:text>
 							<xsl:variable name="da" select="tokenize($dat, ' ')" />
