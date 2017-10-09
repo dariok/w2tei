@@ -23,14 +23,15 @@
 	
 	<xsl:template match="/">
 		<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
-			<xsl:apply-templates select="//w:p[w:pPr/w:rPr/w:b or w:pPr/w:pStyle[@w:val='berschrift1']]" />
+			<xsl:apply-templates select="//w:p[w:pPr/w:rPr/w:b[ancestor::w:document]
+				or w:pPr/w:pStyle[@w:val='berschrift1']]" />
 		</teiCorpus>
 	</xsl:template>
 	
 	<xsl:template match="w:p[w:pPr/w:rPr/w:b or w:pPr/w:pStyle[@w:val='berschrift1']]">
 		<TEI>
 			<teiHeader>
-				<xsl:variable name="md" select="tokenize(w:r/w:t, ', ')"/>
+				<xsl:variable name="md" select="tokenize(string-join(w:r/w:t, ''), ', ')"/>
 				<xsl:variable name="dat">
 					<xsl:choose>
 						<xsl:when test="contains($md[3], ' – ')">
@@ -43,15 +44,15 @@
 				</xsl:variable>
 				<fileDesc>
 					<titleStmt>
-						<title type="num"><xsl:value-of select="substring-before(substring-after($md[1], 'Nr. '), ' ')"/></title>
+						<xsl:variable name="num" select="substring-before(substring-after($md[1], 'Nr. '), ' ')" />
+						<title type="num"><xsl:value-of select="$num"/></title>
 						<xsl:if test="contains($md[3], ' – ')">
 							<title type="order">
 								<xsl:value-of select="substring-after($md[3], ' – ')" />
 							</title>
 						</xsl:if>
 						<title type="short">
-							<xsl:value-of select="format-number(xs:integer(substring-before(substring-after($md[1], 'Nr. '), ' ')),
-								'000')" />
+							<xsl:value-of select="format-number(xs:integer($num), '000')" />
 							<xsl:text>-</xsl:text>
 							<xsl:variable name="da" select="tokenize($dat, ' ')" />
 							<xsl:variable name="mo">
