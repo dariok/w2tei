@@ -45,6 +45,25 @@
 				<fileDesc>
 					<titleStmt>
 						<xsl:variable name="num" select="substring-before(substring-after($md[1], 'Nr. '), ' ')" />
+						<xsl:variable name="da" select="tokenize($dat, ' ')" />
+						<xsl:variable name="mo">
+							<xsl:choose>
+								<xsl:when test="$da[2] = 'Jänner'">01</xsl:when>
+								<xsl:when test="$da[2] = 'Februar'">02</xsl:when>
+								<xsl:when test="$da[2] = 'März'">03</xsl:when>
+								<xsl:when test="$da[2] = 'April'">04</xsl:when>
+								<xsl:when test="$da[2] = 'Mai'">05</xsl:when>
+								<xsl:when test="$da[2] = 'Juni'">06</xsl:when>
+								<xsl:when test="$da[2] = 'Juli'">07</xsl:when>
+								<xsl:when test="$da[2] = 'August'">08</xsl:when>
+								<xsl:when test="$da[2] = 'September'">09</xsl:when>
+								<xsl:when test="$da[2] = 'Oktober'">10</xsl:when>
+								<xsl:when test="$da[2] = 'November'">11</xsl:when>
+								<xsl:when test="$da[2] = 'Dezember'">12</xsl:when>
+							</xsl:choose>
+						</xsl:variable>
+						<xsl:variable name="datum" select="concat($mo, '-',
+							format-number(number(substring-before($da[1], '.')), '00'))" />
 						<title type="num"><xsl:value-of select="$num"/></title>
 						<xsl:if test="contains($md[3], ' – ')">
 							<title type="order">
@@ -52,32 +71,14 @@
 							</title>
 						</xsl:if>
 						<title type="short">
-							<xsl:value-of select="format-number(xs:integer($num), '000')" />
+							<xsl:value-of select="format-number(xs:integer($num), '0000')" />
 							<xsl:text>-</xsl:text>
-							<xsl:variable name="da" select="tokenize($dat, ' ')" />
-							<xsl:variable name="mo">
-								<xsl:choose>
-									<xsl:when test="$da[2] = 'Jänner'">01</xsl:when>
-									<xsl:when test="$da[2] = 'Februar'">02</xsl:when>
-									<xsl:when test="$da[2] = 'März'">03</xsl:when>
-									<xsl:when test="$da[2] = 'April'">04</xsl:when>
-									<xsl:when test="$da[2] = 'Mai'">05</xsl:when>
-									<xsl:when test="$da[2] = 'Juni'">06</xsl:when>
-									<xsl:when test="$da[2] = 'Juli'">07</xsl:when>
-									<xsl:when test="$da[2] = 'August'">08</xsl:when>
-									<xsl:when test="$da[2] = 'September'">09</xsl:when>
-									<xsl:when test="$da[2] = 'Oktober'">10</xsl:when>
-									<xsl:when test="$da[2] = 'November'">11</xsl:when>
-									<xsl:when test="$da[2] = 'Dezember'">12</xsl:when>
-								</xsl:choose>
-							</xsl:variable>
-							<xsl:value-of select="concat($da[3], '-', $mo, '-',
-								format-number(number(substring-before($da[1], '.')), '00'))"/>
+							<xsl:value-of select="concat($da[3], '-', $datum)"/>
 						</title>
 						<meeting>
 							<placeName><xsl:value-of select="$md[2]"/></placeName>
 							<orgName><xsl:value-of select="substring-after(substring-after($md[1], 'Nr. '), ' ')"/></orgName>
-							<date><xsl:value-of select="$dat" /></date>
+							<date when="{$datum}"><xsl:value-of select="$dat" /></date>
 						</meeting>
 					</titleStmt>
 					<publicationStmt><p/></publicationStmt>
@@ -244,8 +245,9 @@
 	<!-- neu 2016-07-31 DK -->
 	<xsl:template match="w:r[w:endnoteReference]">
 		<note type="footnote">
+			<xsl:variable name="nid" select="w:endnoteReference/@w:id" />
 			<xsl:apply-templates
-				select="/pkg:package/pkg:part[@pkg:name = '/word/endnotes.xml']/pkg:xmlData/w:endnotes/w:endnote[@w:id = current()/w:endnoteReference/@w:id]"
+				select="//w:endnote[@w:id = $nid]"
 			/>
 		</note>
 	</xsl:template>
