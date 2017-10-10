@@ -75,7 +75,7 @@
 								<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
 									mode="date"/>
 							</xsl:variable>
-							<xsl:value-of select="$dpline/*:date"/>
+							<xsl:apply-templates select="$dpline/*:date" mode="header"/>
 							<xsl:choose>
 								<xsl:when test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
 									<xsl:text>]</xsl:text>
@@ -123,6 +123,15 @@
 				</body>
 			</text>
 		</TEI>
+	</xsl:template>
+	
+	<xsl:template match="*:date" mode="header">
+		<xsl:apply-templates mode="header"/>
+	</xsl:template>
+	<xsl:template match="*:supplied" mode="header">
+		<xsl:text>[</xsl:text>
+		<xsl:apply-templates />
+		<xsl:text>]</xsl:text>
 	</xsl:template>
 	
 	<!-- neu 2016-08-11 DK -->
