@@ -78,7 +78,7 @@
 						<meeting>
 							<placeName><xsl:value-of select="$md[2]"/></placeName>
 							<orgName><xsl:value-of select="substring-after(substring-after($md[1], 'Nr. '), ' ')"/></orgName>
-							<date when="{$datum}"><xsl:value-of select="$dat" /></date>
+							<date when="{concat($da[3], '-', $datum)}"><xsl:value-of select="$dat" /></date>
 						</meeting>
 					</titleStmt>
 					<publicationStmt><p/></publicationStmt>
