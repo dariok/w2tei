@@ -10,7 +10,7 @@
 	<!-- neu für Projekt Rist, 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	<!-- übernommen für Karlstadt Einleitungen; 2017-05-03 DK -->
 	
-<!--	<xsl:output indent="yes"/>-->
+	<xsl:output indent="yes"/>
 	
 	<!-- die überwiegend genutzte Schriftgröße für Normaltext ermitteln; 2017-05-03 DK -->
 	<!--<xsl:variable name="mainsize">
@@ -460,17 +460,55 @@
 					</xsl:when>
 					<xsl:when test="descendant::w:t[starts-with(., 'Handschrift')]">
 						<msDesc>
+							<xsl:variable name="desc"
+								select="string-join(following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t, '')" />
+							<xsl:variable name="md" select="tokenize($desc, ', ')" />
 							<xsl:if test="following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']">
 								<xsl:attribute name="xml:id">
 									<xsl:value-of select="substring-before(hab:rmSquare(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t), ':')"/>
 								</xsl:attribute>
-								<msIdentifier>
+							</xsl:if>
+							<msIdentifier>
+								<xsl:if test="following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']">
 									<altIdentifier type="siglum">
 										<idno><xsl:value-of select="substring-before(hab:rmSquare(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t), ':')"/></idno>
 									</altIdentifier>
-								</msIdentifier>
+								</xsl:if>
+								<repository><xsl:value-of select="normalize-space($md[1])"/></repository>
+								<idno type="signatur"><xsl:value-of select="$md[2]"/></idno>
+							</msIdentifier>
+							<xsl:if test="$md[3]">
+								<msContents>
+									<msItem>
+										<locus>
+											<xsl:choose>
+												<xsl:when test="contains($md[3], '(')">
+													<xsl:value-of select="normalize-space(substring-before($md[3], '('))" />
+												</xsl:when>
+												<xsl:otherwise>
+													<xsl:value-of select="normalize-space($md[3])" />
+												</xsl:otherwise>
+											</xsl:choose>
+										</locus>
+									</msItem>
+								</msContents>
 							</xsl:if>
-							<xsl:apply-templates select="following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t" />
+							<physDesc>
+								<xsl:if test="contains($md[3], '(')">
+									<handDesc>
+										<handNote>
+											<xsl:value-of select="substring-before(substring-after($md[3], '('), ')')"/>
+										</handNote>
+									</handDesc>
+								</xsl:if>
+								<xsl:if test="following-sibling::w:p[1]/w:r/w:commentReference">
+									<xsl:variable name="link">
+										<xsl:variable name="ln" select="following-sibling::w:p[1]/w:r/w:commentReference/@w:id" />
+										<xsl:value-of select="normalize-space(string-join(//w:comment[@w:id = $ln]//w:t, ''))" />
+									</xsl:variable>
+									<p><ptr type="digitalisat" target="{$link}"/></p>
+								</xsl:if>
+							</physDesc>
 						</msDesc>
 					</xsl:when>
 					<xsl:otherwise>
