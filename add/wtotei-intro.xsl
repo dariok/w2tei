@@ -125,15 +125,6 @@
 		</TEI>
 	</xsl:template>
 	
-	<xsl:template match="*:date" mode="header">
-		<xsl:apply-templates mode="header"/>
-	</xsl:template>
-	<xsl:template match="*:supplied" mode="header">
-		<xsl:text>[</xsl:text>
-		<xsl:apply-templates />
-		<xsl:text>]</xsl:text>
-	</xsl:template>
-	
 	<!-- neu 2016-08-11 DK -->
 	<!-- Word produziert ggf. leere Absätze oder Text in Body. Auch wenn diese für die Gliederung erwünscht sind,
 		dürfen sie nicht ausgegeben werden -->
@@ -473,6 +464,11 @@
 								<xsl:attribute name="xml:id">
 									<xsl:value-of select="substring-before(hab:rmSquare(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t), ':')"/>
 								</xsl:attribute>
+								<msIdentifier>
+									<altIdentifier type="siglum">
+										<idno><xsl:value-of select="substring-before(hab:rmSquare(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t), ':')"/></idno>
+									</altIdentifier>
+								</msIdentifier>
 							</xsl:if>
 							<xsl:apply-templates select="following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t" />
 						</msDesc>
