@@ -463,15 +463,27 @@
 							<xsl:variable name="desc"
 								select="string-join(following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t, '')" />
 							<xsl:variable name="md" select="tokenize($desc, ', ')" />
-							<xsl:if test="following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']">
-								<xsl:attribute name="xml:id">
-									<xsl:value-of select="substring-before(hab:rmSquare(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t), ':')"/>
-								</xsl:attribute>
+							<xsl:variable name="si"
+								select="string-join(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t, '')" />
+							<xsl:variable name="sigle">
+								<xsl:choose>
+									<xsl:when test="contains($si, ':')">
+										<xsl:value-of
+											select="substring-before(hab:rmSquare($si), ':')"/>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:value-of select="hab:rmSquare($si)" />
+									</xsl:otherwise>
+								</xsl:choose>
+							</xsl:variable>
+							<xsl:if test="string-length($si) &gt; 1">
+								<!-- Fälle besser behandeln; 2017-10-12 -->
+								<xsl:attribute name="xml:id" select="$sigle"/>
 							</xsl:if>
 							<msIdentifier>
-								<xsl:if test="following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']">
+								<xsl:if test="string-length($si) &gt; 1">
 									<altIdentifier type="siglum">
-										<idno><xsl:value-of select="substring-before(hab:rmSquare(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t), ':')"/></idno>
+										<idno><xsl:value-of select="$sigle"/></idno>
 									</altIdentifier>
 								</xsl:if>
 								<repository><xsl:value-of select="normalize-space($md[1])"/></repository>
