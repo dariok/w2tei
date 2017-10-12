@@ -505,6 +505,7 @@
 												</xsl:otherwise>
 											</xsl:choose>
 										</locus>
+										<xsl:apply-templates select="following-sibling::w:p[1]//w:endnoteReference" />
 									</msItem>
 								</msContents>
 							</xsl:if>
