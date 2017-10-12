@@ -48,7 +48,7 @@
 	<xsl:template match="/">
 		<TEI xmlns="http://www.tei-c.org/ns/1.0"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:schemaLocation="http://www.tei -c.org/ns/1.0 http://diglib.hab.de/edoc/ed000216/rules/tei-p5-transcr.xsd"
+			xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/edoc/ed000216/rules/tei-p5-transcr.xsd"
 			n="{$nr}">
 			<xsl:attribute name="xml:id" select="concat('edoc_ed000240_', $ee, '_introduction')" />
 			<teiHeader>
@@ -222,7 +222,7 @@
 									format-number($num, '00'))" />
 							</xsl:when>
 							<xsl:otherwise>
-								<xsl:value-of select="concat($numYear, '-', $month, '-00')"/>
+								<xsl:value-of select="concat($numYear, '-', $month)"/>
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:attribute>
