@@ -64,7 +64,8 @@
 							</xsl:if>
 							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
 							<xsl:choose>
-								<xsl:when test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
+								<xsl:when test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'
+									or ends-with(string-join(//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]//w:t, ''), ']')">
 									<xsl:text> [</xsl:text>
 								</xsl:when>
 								<xsl:otherwise>
@@ -77,7 +78,8 @@
 							</xsl:variable>
 							<xsl:apply-templates select="$dpline/*:date" mode="header"/>
 							<xsl:choose>
-								<xsl:when test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
+								<xsl:when test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'
+									or ends-with(string-join(//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]//w:t, ''), ']')">
 									<xsl:text>]</xsl:text>
 								</xsl:when>
 								<xsl:otherwise>
