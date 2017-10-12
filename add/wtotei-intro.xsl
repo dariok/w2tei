@@ -323,7 +323,8 @@
 	</xsl:template>
 	
 	<!-- Untergliederung im 1. div; 2017-06-05 DK -->
-	<xsl:template match="w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]]" mode="content2">
+	<xsl:template match="w:p[descendant::w:pStyle[starts-with(@w:val, 'KSberschrift2')]
+		and descendant::w:t]" mode="content2">
 		<xsl:if test="following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle']">
 			<listBibl type="sigla">
 				<xsl:choose>
