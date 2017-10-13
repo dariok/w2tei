@@ -61,7 +61,8 @@
 	</xsl:template>
 
 	<xsl:template match="tei:person">
-		<person xml:id="{lower-case(translate(normalize-space(), ' éüäöáŠčćŽłÖ,()', '-euaoaSccZlO'))}">
+		<person>
+			<xsl:attribute name="xml:id" select="{lower-case(translate(normalize-space(), ' éüäöáŠčćŽłÖ,()', '-euaoaSccZlO'))}"/>
 			<persName>
 				<surname>
 					<xsl:value-of select="substring-before(., ',')"/>
