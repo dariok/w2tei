@@ -462,70 +462,75 @@
 						</xsl:for-each>
 					</xsl:when>
 					<xsl:when test="descendant::w:t[starts-with(., 'Handschrift')]">
-						<msDesc>
-							<xsl:variable name="desc"
-								select="string-join(following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t, '')" />
-							<xsl:variable name="md" select="tokenize($desc, ', ')" />
-							<xsl:variable name="si"
-								select="string-join(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t, '')" />
-							<xsl:variable name="sigle">
-								<xsl:choose>
-									<xsl:when test="contains($si, ':')">
-										<xsl:value-of
-											select="substring-before(hab:rmSquare($si), ':')"/>
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:value-of select="hab:rmSquare($si)" />
-									</xsl:otherwise>
-								</xsl:choose>
-							</xsl:variable>
-							<xsl:if test="string-length($si) &gt; 1">
-								<!-- Fälle besser behandeln; 2017-10-12 -->
-								<xsl:attribute name="xml:id" select="$sigle"/>
-							</xsl:if>
-							<msIdentifier>
+						<xsl:for-each select="following-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle']">
+							<xsl:variable name="myId" select="generate-id()"/>
+							<msDesc>
+								<xsl:variable name="desc"
+									select="string-join(following-sibling::w:p[1]/w:r[not(descendant::w:rStyle/@w:val='KSSigle')]/w:t, '')" />
+								<xsl:variable name="md" select="tokenize($desc, ', ')" />
+								<xsl:variable name="si"
+									select="string-join(following-sibling::w:p[1]/w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t, '')" />
+								<xsl:variable name="sigle">
+									<xsl:choose>
+										<xsl:when test="contains($si, ':')">
+											<xsl:value-of
+												select="substring-before(hab:rmSquare($si), ':')"/>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:value-of select="hab:rmSquare($si)" />
+										</xsl:otherwise>
+									</xsl:choose>
+								</xsl:variable>
 								<xsl:if test="string-length($si) &gt; 1">
-									<altIdentifier type="siglum">
-										<idno><xsl:value-of select="$sigle"/></idno>
-									</altIdentifier>
+									<!-- Fälle besser behandeln; 2017-10-12 -->
+									<xsl:attribute name="xml:id" select="$sigle"/>
 								</xsl:if>
-								<repository><xsl:value-of select="normalize-space($md[1])"/></repository>
-								<idno type="signatur"><xsl:value-of select="$md[2]"/></idno>
-							</msIdentifier>
-							<xsl:if test="$md[3]">
-								<msContents>
-									<msItem>
-										<locus>
-											<xsl:choose>
-												<xsl:when test="contains($md[3], '(')">
-													<xsl:value-of select="normalize-space(substring-before($md[3], '('))" />
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:value-of select="normalize-space($md[3])" />
-												</xsl:otherwise>
-											</xsl:choose>
-										</locus>
-										<xsl:apply-templates select="following-sibling::w:p[1]//w:endnoteReference" />
-									</msItem>
-								</msContents>
-							</xsl:if>
-							<physDesc>
-								<xsl:if test="contains($md[3], '(')">
-									<handDesc>
-										<handNote>
-											<xsl:value-of select="substring-before(substring-after($md[3], '('), ')')"/>
-										</handNote>
-									</handDesc>
+								<msIdentifier>
+									<xsl:if test="string-length($si) &gt; 1">
+										<altIdentifier type="siglum">
+											<idno><xsl:value-of select="$sigle"/></idno>
+										</altIdentifier>
+									</xsl:if>
+									<repository><xsl:value-of select="normalize-space($md[1])"/></repository>
+									<idno type="signatur"><xsl:value-of select="$md[2]"/></idno>
+								</msIdentifier>
+								<xsl:if test="$md[3]">
+									<msContents>
+										<msItem>
+											<locus>
+												<xsl:choose>
+													<xsl:when test="contains($md[3], '(')">
+														<xsl:value-of select="normalize-space(substring-before($md[3], '('))" />
+													</xsl:when>
+													<xsl:otherwise>
+														<xsl:value-of select="normalize-space($md[3])" />
+													</xsl:otherwise>
+												</xsl:choose>
+											</locus>
+											<xsl:apply-templates select="following-sibling::w:p[1]//w:endnoteReference" />
+										</msItem>
+									</msContents>
 								</xsl:if>
-								<xsl:if test="following-sibling::w:p[1]/w:r/w:commentReference">
-									<xsl:variable name="link">
-										<xsl:variable name="ln" select="following-sibling::w:p[1]/w:r/w:commentReference/@w:id" />
-										<xsl:value-of select="normalize-space(string-join(//w:comment[@w:id = $ln]//w:t, ''))" />
-									</xsl:variable>
-									<p><ptr type="digitalisat" target="{$link}"/></p>
-								</xsl:if>
-							</physDesc>
-						</msDesc>
+								<physDesc>
+									<xsl:if test="contains($md[3], '(')">
+										<handDesc>
+											<handNote>
+												<xsl:value-of select="substring-before(substring-after($md[3], '('), ')')"/>
+											</handNote>
+										</handDesc>
+									</xsl:if>
+									<xsl:if test="following-sibling::w:p[1]/w:r/w:commentReference">
+										<xsl:variable name="link">
+											<xsl:variable name="ln" select="following-sibling::w:p[1]/w:r/w:commentReference/@w:id" />
+											<xsl:value-of select="normalize-space(string-join(//w:comment[@w:id = $ln]//w:t, ''))" />
+										</xsl:variable>
+										<p><ptr type="digitalisat" target="{$link}"/></p>
+									</xsl:if>
+									<xsl:apply-templates select="following-sibling::w:p[position() &gt; 1
+										and generate-id(preceding-sibling::w:p[descendant::w:rStyle/@w:val='KSSigle']) = $myId]"/>
+								</physDesc>
+							</msDesc>
+						</xsl:for-each>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:call-template name="edlit" />
