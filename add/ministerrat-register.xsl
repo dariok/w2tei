@@ -10,59 +10,68 @@
 	<xsl:output indent="yes"/>
 
 	<xsl:template match="/">
-		<TEI xmlns="http://www.tei-c.org/ns/1.0">
+		<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
 			<xsl:apply-templates select="//w:body"/>
-		</TEI>
+		</teiCorpus>
 	</xsl:template>
 
 	<xsl:template match="w:body">
-		<teiHeader>
-			<xsl:variable name="md" select="tokenize(string-join(w:r/w:t, ''), ', ')"/>
-			<xsl:variable name="dat">
-				<xsl:choose>
-					<xsl:when test="contains($md[3], ' – ')">
-						<xsl:value-of select="substring-before($md[3], ' – ')"/>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:value-of select="$md[3]"/>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:variable>
-			<fileDesc>
-				<titleStmt>
-					<title>Register</title>
-				</titleStmt>
-				<publicationStmt>
-					<p/>
-				</publicationStmt>
-				<sourceDesc>
-					<p/>
-				</sourceDesc>
-			</fileDesc>
-		</teiHeader>
-		<text>
-			<body>
-				<xsl:call-template name="loop"/>
-			</body>
-		</text>
-
+		<xsl:call-template name="loop"/>
 	</xsl:template>
 
 	<xsl:template name="loop">
 		<xsl:variable name="temp">
 			<xsl:apply-templates select="w:p[position() > 2]"/>
 		</xsl:variable>
-		<listPlace>
-			<xsl:apply-templates select="$temp/*:place"/>
-		</listPlace>
-		<listPerson>
-			<xsl:apply-templates select="$temp/*:person"/>
-		</listPerson>
+		<TEI>
+			<teiHeader>
+				<fileDesc>
+					<titleStmt>
+						<title type="short">listplace</title>
+					</titleStmt>
+					<publicationStmt>
+						<p/>
+					</publicationStmt>
+					<sourceDesc>
+						<p/>
+					</sourceDesc>
+				</fileDesc>
+			</teiHeader>
+			<text>
+				<body>
+			<listPlace>
+				<xsl:apply-templates select="$temp/*:place"/>
+			</listPlace>
+				</body>
+			</text>
+			</TEI>
+			<TEI>
+			<teiHeader>
+				<fileDesc>
+					<titleStmt>
+						<title type="short">listperson</title>
+					</titleStmt>
+					<publicationStmt>
+						<p/>
+					</publicationStmt>
+					<sourceDesc>
+						<p/>
+					</sourceDesc>
+				</fileDesc>
+			</teiHeader>
+			<text>
+				<body>
+			<listPerson>
+				<xsl:apply-templates select="$temp/*:person"/>
+			</listPerson>
+				</body>
+			</text>
+		</TEI>
 	</xsl:template>
 
 	<xsl:template match="tei:person">
 		<person>
-			<xsl:attribute name="xml:id" select="{lower-case(translate(normalize-space(), ' éüäöáŠčćŽłÖ,()', '-euaoaSccZlO'))}"/>
+			<xsl:attribute name="xml:id" select="lower-case(translate(normalize-space(), ' éüäöáŠčćŽłÖ,()', '-euaoaSccZlO'))"/>
 			<persName>
 				<surname>
 					<xsl:value-of select="substring-before(., ',')"/>
