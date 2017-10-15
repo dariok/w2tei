@@ -448,7 +448,16 @@
 					</altIdentifier>
 				</xsl:if>
 				<repository><xsl:value-of select="normalize-space($md[1])"/></repository>
-				<idno type="signatur"><xsl:value-of select="$md[2]"/></idno>
+				<idno type="signatur">
+					<xsl:choose>
+						<xsl:when test="contains($md[2], '(') and contains($md[2], ')')">
+							<xsl:value-of select="normalize-space(substring-before($md[2], '('))"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="$md[2]"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</idno>
 			</msIdentifier>
 			<xsl:if test="$md[3]">
 				<msContents>
