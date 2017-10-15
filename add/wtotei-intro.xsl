@@ -36,24 +36,24 @@
 	<xsl:template match="/">
 		<TEI xmlns="http://www.tei-c.org/ns/1.0"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/edoc/ed000216/rules/tei-p5-transcr.xsd"
+			xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/edoc/ed000240/rules/tei-p5-transcr.xsd"
 			n="{$nr}">
 			<xsl:attribute name="xml:id" select="concat('edoc_ed000240_', $ee, '_introduction')" />
 			<teiHeader>
 				<fileDesc>
 					<titleStmt>
-						<title><xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
-							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
+						<title><xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle" />
+							<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][3]"
 								mode="date"/></title>
 						<!-- Kurztitel erzeugen; 2017-08-07 DK -->
 						<title type="short">
-							<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
+							<xsl:if test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'">
 								<xsl:text>Verschollen: </xsl:text>
 							</xsl:if>
-							<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][2]//w:t" mode="mTitle" />
+							<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle" />
 							<xsl:choose>
-								<xsl:when test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'
-									or ends-with(string-join(//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]//w:t, ''), ']')">
+								<xsl:when test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'
+									or ends-with(hab:string(//w:p[hab:is(., 'KSEE-Titel')][3]), ']')">
 									<xsl:text> [</xsl:text>
 								</xsl:when>
 								<xsl:otherwise>
@@ -61,13 +61,13 @@
 								</xsl:otherwise>
 							</xsl:choose>
 							<xsl:variable name="dpline">
-								<xsl:apply-templates select="//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]"
+								<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][3]"
 									mode="date"/>
 							</xsl:variable>
 							<xsl:apply-templates select="$dpline/*:date" mode="header"/>
 							<xsl:choose>
-								<xsl:when test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'
-									or ends-with(string-join(//w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel'][3]//w:t, ''), ']')">
+								<xsl:when test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'
+									or ends-with(hab:string(//w:p[hab:is(., 'KSEE-Titel')][3]), ']')">
 									<xsl:text>]</xsl:text>
 								</xsl:when>
 								<xsl:otherwise>
@@ -75,7 +75,7 @@
 								</xsl:otherwise>
 							</xsl:choose>
 						</title>
-						<xsl:apply-templates select="(//w:p[starts-with(string-join(descendant::w:t, ''), 'Bearb')])[1]"
+						<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel') and hab:starts(., 'Bearb')]"
 							mode="head"/>
 					</titleStmt>
 					<publicationStmt>
@@ -92,7 +92,7 @@
 					</publicationStmt>
 					<sourceDesc>
 						<p>born digital</p>
-						<xsl:if test="//w:p[descendant::w:pStyle[contains(@w:val, 'KSberschrift1')]][1]//w:t='Referenz'">
+						<xsl:if test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'">
 							<msDesc><physDesc><objectDesc form="codex_lost"/></physDesc></msDesc>
 						</xsl:if>
 					</sourceDesc>
@@ -116,8 +116,8 @@
 	</xsl:template>
 	
 	<!-- Bearbeiter/Autor; 2017-05-03 DK -->
-	<xsl:template match="w:p[starts-with(string-join(descendant::w:t, ''), 'Bearb')]" mode="head">
-		<xsl:variable name="aut" select="substring-after(string-join(descendant::w:t, ''), 'Bearbeitet von ')"/>
+	<xsl:template match="w:p[hab:is(., 'KSEE-Titel') and hab:starts(., 'Bearb')]" mode="head">
+		<xsl:variable name="aut" select="substring-after(hab:string(.), 'von')"/>
 		<xsl:analyze-string select="$aut" regex="(,|und)">
 			<xsl:non-matching-substring>
 				<author><xsl:value-of select="normalize-space()"/></author>
@@ -127,11 +127,8 @@
 	
 	<!-- Ort/Datum zusammensetzen; 2017-05-16 DK -->
 	<!-- fertiggestellt 2017-06-05 DK -->
-	<xsl:template match="w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel']" mode="date">
-		<xsl:variable name="pdline">
-<!--			<xsl:apply-templates select="w:r/w:t" mode="pdContent" />-->
-			<xsl:value-of select="string-join(descendant::w:t, '')" />
-		</xsl:variable>
+	<xsl:template match="w:p[hab:is(., 'KSEE-Titel')]" mode="date">
+		<xsl:variable name="pdline" select="hab:string(.)"/>
 		<!-- RegEx aktualisiert; hoffentlich geht das auf eXist...; 2017-08-07 DK -->
 		<xsl:analyze-string select="normalize-space($pdline)" regex="(?:([\[\]A-Za-z ]+), )?([\[\]\w\sä\?,\.]+)">
 			<xsl:matching-substring>
@@ -255,7 +252,7 @@
 	</xsl:template>
 	
 	<!-- Texte aus dem Header nicht ausgeben; 2017-05-151 DK -->
-	<xsl:template match="w:p[w:pPr/w:pStyle/@w:val='KSEE-Titel']" />
+	<xsl:template match="w:p[hab:is(., 'KSEE-Titel')]" />
 	
 	<!-- Grobgliederung; 2017-06-05 DK -->
 	<xsl:template match="w:p[hab:isHead(., 1)]">
@@ -294,11 +291,11 @@
 	<xsl:template match="w:p[descendant::w:rStyle/@w:val='KSSigle'
 		and starts-with(string-join(preceding-sibling::w:p[hab:isHead(., 2)][1]//w:t, ''), 'Früh')]">
 		<xsl:variable name="end"
-			select="following-sibling::w:p[starts-with(string-join(descendant::w:t, ''), 'Bibliographische')][1]" />
+			select="following-sibling::w:p[starts-with(hab:string(.), 'Bibliographische')][1]" />
 		<xsl:variable name="struct" select="current() | 
 			current()/following::w:p intersect $end/preceding::w:p | $end" />
 		<xsl:variable name="idNo">
-			<xsl:analyze-string select="string-join(w:r[descendant::w:rStyle/@w:val='KSSigle']//w:t, '')"
+			<xsl:analyze-string select="hab:string(w:r[hab:isSigle(.)])"
 				regex="\[(\w+).?\]">
 				<xsl:matching-substring>
 					<xsl:value-of select="regex-group(1)"/>
