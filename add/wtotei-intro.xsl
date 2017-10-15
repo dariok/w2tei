@@ -288,10 +288,10 @@
 		</listBibl>
 	</xsl:template>
 	
-	<xsl:template match="w:p[descendant::w:rStyle/@w:val='KSSigle'
-		and starts-with(string-join(preceding-sibling::w:p[hab:isHead(., 2)][1]//w:t, ''), 'Früh')]">
+	<xsl:template match="w:p[hab:isSigle(.)
+		and hab:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Früh')]">
 		<xsl:variable name="end"
-			select="following-sibling::w:p[starts-with(hab:string(.), 'Bibliographische')][1]" />
+			select="following-sibling::w:p[hab:starts(., 'Bibliographische')][1]" />
 		<xsl:variable name="struct" select="current() | 
 			current()/following::w:p intersect $end/preceding::w:p | $end" />
 		<xsl:variable name="idNo">
@@ -418,7 +418,7 @@
 	</xsl:template>
 	
 	<xsl:template match="w:p[hab:isSigle(.)
-		and hab:starts(preceding-sibling::w:p[hab:isHead(., 2)], 'Hand')]">
+		and hab:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Hand')]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<msDesc>
 			<xsl:variable name="desc"
@@ -696,10 +696,12 @@
 		<xsl:param name="num"/>
 		<xsl:value-of select="hab:is($context, 'KSberschrift'||$num)"/>
 	</xsl:function>
+	
 	<xsl:function name="hab:isSigle" as="xs:boolean">
 		<xsl:param name="context" as="node()" />
-		<xsl:value-of select="hab:is($context, 'KSSigle', 'r')"/>
+		<xsl:value-of select="hab:is($context/descendant-or-self::w:r, 'KSSigle', 'r')"/>
 	</xsl:function>
+	
 	<xsl:function name="hab:is" as="xs:boolean">
 		<xsl:param name="context" />
 		<xsl:param name="test"/>
@@ -719,14 +721,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:choose>
-			<xsl:when test="$val = $test">
-				<xsl:value-of select="true()"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="false()"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:value-of select="contains($val, $test)"/>
 	</xsl:function>
 	
 	<xsl:function name="hab:starts" as="xs:boolean">
