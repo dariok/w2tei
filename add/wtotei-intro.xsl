@@ -507,6 +507,16 @@
 		</listBibl>
 	</xsl:template>
 	
+	<!-- neu 2017-10-15 DK -->
+	<xsl:template match="w:p[hab:is(., 'KSZitatblock')]">
+		<cit>
+			<xsl:apply-templates select="w:r"/>
+		</cit>
+	</xsl:template>
+	<xsl:template match="w:br[ancestor::w:p[hab:is(., 'KSZitatblock')]]">
+		<lb/>
+	</xsl:template>
+	
 	<xsl:template name="imprint">
 		<xsl:param name="context" />
 		<xsl:variable name="imprintText">
@@ -581,7 +591,7 @@
 	
 	<xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i
 		or w:endnoteReference or w:footnoteReference)]">
-		<xsl:apply-templates select="w:t" />
+		<xsl:apply-templates select="w:t | w:br" />
 	</xsl:template>
 	<!-- Ende Styles -->
 	
