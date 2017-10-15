@@ -475,6 +475,14 @@
 						</handNote>
 					</handDesc>
 				</xsl:if>
+				<!-- falls keine Seitenangabe vorhanden -->
+				<xsl:if test="not($md[3]) and contains($md[2], '(')">
+				<handDesc>
+					<handNote>
+						<xsl:value-of select="substring-before(substring-after($md[2], '('), ')')"/>
+					</handNote>
+				</handDesc>
+				</xsl:if>
 				<xsl:if test="following-sibling::w:p[1]/w:r/w:commentReference">
 					<xsl:variable name="link">
 						<xsl:variable name="ln" select="following-sibling::w:p[1]/w:r/w:commentReference/@w:id" />
