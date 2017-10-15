@@ -510,10 +510,10 @@
 	<!-- neu 2017-10-15 DK -->
 	<xsl:template match="w:p[hab:is(., 'KSZitatblock')]">
 		<cit>
-			<p>
+			<quote>
 				<xsl:apply-templates select="w:r[not(hab:is(., 'KSbibliographischeAngabe', 'r')
 					or hab:is(., 'EndnoteReference', 'r'))]"/>
-			</p>
+			</quote>
 			<xsl:apply-templates select="w:r[hab:is(., 'KSbibliographischeAngabe', 'r')
 				or hab:is(., 'EndnoteReference', 'r')]"/>
 		</cit>
