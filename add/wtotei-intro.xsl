@@ -451,7 +451,16 @@
 				<idno type="signatur">
 					<xsl:choose>
 						<xsl:when test="contains($md[2], '(') and contains($md[2], ')')">
-							<xsl:value-of select="normalize-space(substring-before($md[2], '('))"/>
+							<!-- ggf. Punkt entfernen -->
+							<xsl:variable name="str" select="normalize-space(substring-before($md[2], '('))"/>
+							<xsl:choose>
+								<xsl:when test="ends-with($str, '.')">
+									<xsl:value-of select="substring($str, 1, string-length($str)-1)"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="$str"/>
+								</xsl:otherwise>
+							</xsl:choose>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:value-of select="$md[2]"/>
