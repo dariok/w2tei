@@ -347,10 +347,10 @@
 				<idno type="siglum"><xsl:value-of select="$idNo" /></idno>
 				<note type="copies">
 					<list>
-						<item n="editionsvorlage">
-							<xsl:variable name="ex">
-								<xsl:apply-templates select="$struct[$pos]//w:t" />
-							</xsl:variable>
+						<xsl:apply-templates select="$struct[hab:starts(., 'Editionsv')
+							or hab:starts(., 'Weitere')]" mode="item" />
+						<!--<item n="editionsvorlage">
+							<xsl:variable name="ex" select="$struct[$pos]" />
 							<xsl:choose>
 								<xsl:when test="contains($ex, ',')">
 									<label><xsl:value-of
@@ -397,7 +397,7 @@
 									<ptr type="digitalisat" target="{substring-after(., '→')}" />
 								</xsl:if>
 							</item>
-						</xsl:for-each>
+						</xsl:for-each>-->
 					</list>
 				</note>
 				<note type="references">
@@ -415,6 +415,23 @@
 				</note>
 			</xsl:if>
 		</biblStruct>
+	</xsl:template>
+	
+	<!-- neu 2017-10-15 DK -->
+	<xsl:template match="w:p" mode="item">
+			<xsl:choose>
+				<xsl:when test="position() = 1">
+					<item n="Editionsvorlage">
+						<xsl:apply-templates
+							select="w:r[hab:contains(preceding-sibling::w:r, 'vorlage:')]"/>
+					</item>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates
+						select="w:r[hab:contains(preceding-sibling::w:r, 'plare:')]"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		
 	</xsl:template>
 	
 	<xsl:template match="w:p[hab:isSigle(.)
@@ -606,9 +623,17 @@
 	
 	<!-- Style von Textabschnitten -->
 	<!-- hochgestellte -->
-	<xsl:template match="w:r[descendant::w:vertAlign/@w:val='superscript'
+	<xsl:template match="w:r[descendant::w:vertAlign
 		and not(w:endnoteReference or w:footnoteReference)]">
-		<hi rend="super"><xsl:apply-templates select="w:t" /></hi>
+		<hi>
+			<xsl:attribute name="rend">
+				<xsl:choose>
+					<xsl:when test="@w:val='superscript'">super</xsl:when>
+					<xsl:otherwise>sub</xsl:otherwise>
+				</xsl:choose>
+			</xsl:attribute>
+			<xsl:apply-templates select="w:t" />
+		</hi>
 	</xsl:template>
 	
 	<xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1][descendant::w:i]]"/>
@@ -753,8 +778,13 @@
 	<xsl:function name="hab:starts" as="xs:boolean">
 		<xsl:param name="elem" />
 		<xsl:param name="test" />
-		<xsl:variable name="string" select="string-join($elem//w:t, '')"/>
-		<xsl:value-of select="starts-with($string, $test)"/>
+		<xsl:value-of select="starts-with(hab:string($elem), $test)"/>
+	</xsl:function>
+	
+	<xsl:function name="hab:contains" as="xs:boolean">
+		<xsl:param name="elem" />
+		<xsl:param name="test" />
+		<xsl:value-of select="contains(hab:string($elem), $test)"/>
 	</xsl:function>
 	
 	<xsl:function name="hab:string" as="xs:string">

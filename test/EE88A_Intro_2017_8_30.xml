@@ -73,8 +73,6 @@
 						<w:pPr>
 							<w:pStyle w:val="KSEE-Titel"/>
 						</w:pPr>
-						<w:bookmarkStart w:id="0" w:name="_GoBack"/>
-						<w:bookmarkEnd w:id="0"/>
 						<w:r>
 							<w:t>EE 88A</w:t>
 						</w:r>
@@ -199,7 +197,7 @@
 						</w:r>
 						<w:r w:rsidR="004B09E4">
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="3"/>
 						</w:r>
@@ -280,7 +278,16 @@
 							<w:t>Edition</w:t>
 						</w:r>
 						<w:r w:rsidRPr="00493EA0">
-							<w:t>: Kolde, Disputationsthesen, 471, Nr. XXII.</w:t>
+							<w:t xml:space="preserve">: </w:t>
+						</w:r>
+						<w:r w:rsidRPr="0032047D">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Kolde, Disputationsthesen, 471, Nr. XXII</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00493EA0">
+							<w:t>.</w:t>
 						</w:r>
 					</w:p>
 					<w:p w:rsidR="00493EA0" w:rsidRPr="00493EA0" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
@@ -293,7 +300,6 @@
 							<w:pStyle w:val="KSberschrift1"/>
 						</w:pPr>
 						<w:r>
-							<w:lastRenderedPageBreak/>
 							<w:t>Entstehung und Inhalt</w:t>
 						</w:r>
 					</w:p>
@@ -341,9 +347,12 @@
 							<w:endnoteReference w:id="5"/>
 						</w:r>
 						<w:r w:rsidRPr="00493EA0">
-							<w:t>. Karlstadt ging in seinem gedruckten Kommentar zu dieser Schrift in c. 10 und am
-								Anfang von c. 11 auf die von Augustin diskutierte Bedeutung jener paulinischen
-								Begriffe ausführlich ein</w:t>
+							<w:t xml:space="preserve">. Karlstadt ging in seinem gedruckten Kommentar zu dieser Schrift in c. 10 und am         Anfang von c. 11 auf </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00493EA0">
+							<w:lastRenderedPageBreak/>
+							<w:t>die von Augustin diskutierte Bedeutung jener paulinischen Begriffe ausführlich
+								ein</w:t>
 						</w:r>
 						<w:r w:rsidRPr="00493EA0">
 							<w:rPr>
@@ -464,7 +473,7 @@
 						</w:r>
 						<w:r w:rsidR="0065676C">
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="11"/>
 						</w:r>
@@ -551,27 +560,28 @@
 							<w:pStyle w:val="KSText"/>
 						</w:pPr>
 						<w:r>
-							<w:lastRenderedPageBreak/>
 							<w:t>In der vorliegenden Thesenreihe, in der das Verhältnis des Gesetzes der Werke zum
 								Gesetz des Glaubens bestimmt wird, reflektierte Karlstadt die Position weiter, die
 								er in den 151 Conclusiones vom 26. April 1517 zur Diskussion gestellt hatte</w:t>
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="12"/>
 						</w:r>
 						<w:r>
-							<w:t>. Die Thesenreihe für die Zirkulardisputation eröffnete er mit der allgemeinen
-								Feststellung, dass das Gesetz der Werke keineswegs nur im Judentum Geltung habe (Th.
-								1). In den 151 Conclusiones hatte er ausgeführt: „Das alte Gesetz enthielt solche
+							<w:t xml:space="preserve">. Die Thesenreihe für die Zirkulardisputation eröffnete er mit der allgemeinen         Feststellung, dass das Gesetz der Werke keineswegs nur im Judentum Geltung habe (Th.         </w:t>
+						</w:r>
+						<w:r>
+							<w:lastRenderedPageBreak/>
+							<w:t>1). In den 151 Conclusiones hatte er ausgeführt: „Das alte Gesetz enthielt solche
 								Gebote der Gerechtigkeit, deren Einhaltung uns auch jetzt geboten ist“ (Th.
 								108</w:t>
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="13"/>
 						</w:r>
@@ -589,7 +599,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="14"/>
 						</w:r>
@@ -600,7 +610,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="15"/>
 						</w:r>
@@ -610,7 +620,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="16"/>
 						</w:r>
@@ -625,7 +635,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="17"/>
 						</w:r>
@@ -650,7 +660,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="18"/>
 						</w:r>
@@ -668,7 +678,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="19"/>
 						</w:r>
@@ -677,7 +687,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="20"/>
 						</w:r>
@@ -687,7 +697,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="21"/>
 						</w:r>
@@ -695,14 +705,14 @@
 							<w:t xml:space="preserve"> Doch gibt es einen Unterschied in der Argumentation der beiden: Karlstadt hatte in den 151 Conclusiones die Unterscheidung von lex factorum und lex fidei in einem Paradox zugespitzt: </w:t>
 						</w:r>
 					</w:p>
-					<w:p w:rsidR="0065676C" w:rsidRPr="00303C2E" w:rsidRDefault="0065676C" w:rsidP="0065676C">
+					<w:p w:rsidR="0065676C" w:rsidRPr="00303C2E" w:rsidRDefault="0065676C" w:rsidP="0032047D">
 						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-							<w:ind w:left="284"/>
+							<w:pStyle w:val="KSZitatblock"/>
 							<w:rPr>
 								<w:lang w:val="it-IT"/>
 							</w:rPr>
 						</w:pPr>
+						<w:bookmarkStart w:id="0" w:name="_GoBack"/>
 						<w:r w:rsidRPr="00303C2E">
 							<w:rPr>
 								<w:lang w:val="it-IT"/>
@@ -718,11 +728,12 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="22"/>
 						</w:r>
 					</w:p>
+					<w:bookmarkEnd w:id="0"/>
 					<w:p w:rsidR="0065676C" w:rsidRPr="003830C9" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
 							<w:pStyle w:val="KSText"/>
@@ -734,7 +745,6 @@
 							<w:rPr>
 								<w:rStyle w:val="KSEE-Verweis"/>
 							</w:rPr>
-							<w:lastRenderedPageBreak/>
 							<w:t xml:space="preserve">Luther </w:t>
 						</w:r>
 						<w:r>
@@ -769,7 +779,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="23"/>
 						</w:r>
@@ -782,7 +792,7 @@
 						</w:r>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteReference w:id="24"/>
 						</w:r>
@@ -836,7 +846,7 @@
 				xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
 				xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
 				<w:endnote w:type="separator" w:id="-1">
-					<w:p w:rsidR="004278DA" w:rsidRDefault="004278DA" w:rsidP="00493EA0">
+					<w:p w:rsidR="00193A06" w:rsidRDefault="00193A06" w:rsidP="00493EA0">
 						<w:pPr>
 							<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
 						</w:pPr>
@@ -846,7 +856,7 @@
 					</w:p>
 				</w:endnote>
 				<w:endnote w:type="continuationSeparator" w:id="0">
-					<w:p w:rsidR="004278DA" w:rsidRDefault="004278DA" w:rsidP="00493EA0">
+					<w:p w:rsidR="00193A06" w:rsidRDefault="00193A06" w:rsidP="00493EA0">
 						<w:pPr>
 							<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
 						</w:pPr>
@@ -858,11 +868,11 @@
 				<w:endnote w:id="1">
 					<w:p w:rsidR="00493EA0" w:rsidRDefault="00493EA0" w:rsidP="000938FB">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
@@ -880,32 +890,44 @@
 				<w:endnote w:id="2">
 					<w:p w:rsidR="00493EA0" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Siehe ebd. S. 485 Anm. 1.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Siehe </w:t>
+						</w:r>
+						<w:r>
+							<w:t>ebd. S. 485 Anm. 1.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="3">
 					<w:p w:rsidR="004B09E4" w:rsidRPr="004B09E4" w:rsidRDefault="004B09E4" w:rsidP="004B09E4">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Fol. 72</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Fol. </w:t>
+						</w:r>
+						<w:r>
+							<w:t>72</w:t>
 						</w:r>
 						<w:r>
 							<w:rPr>
@@ -930,16 +952,21 @@
 				<w:endnote w:id="4">
 					<w:p w:rsidR="00493EA0" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Die Disputation über diese Thesenreihe war zwar für Freitag, 21. Juni 1521 angekündigt (s. die zeitgenössische handschriftliche Überlieferung aus dem Besitz des Augustinereremiten Johannes Mantel (um 1470</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t>Die Disputation über diese Thesenreihe war zwar für Freitag, 21. Juni 1521
+								angekündigt (s. die zeitgenössische handschriftliche Überlieferung aus dem Besitz
+								des Augustinereremiten Johannes Mantel (um 1470</w:t>
 						</w:r>
 						<w:r>
 							<w:noBreakHyphen/>
@@ -974,14 +1001,14 @@
 				<w:endnote w:id="5">
 					<w:p w:rsidR="00493EA0" w:rsidRPr="007B6B05" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 							<w:rPr>
 								<w:lang w:val="da-DK"/>
 							</w:rPr>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
@@ -989,18 +1016,24 @@
 							<w:rPr>
 								<w:lang w:val="da-DK"/>
 							</w:rPr>
-							<w:t xml:space="preserve"> Aug. spir. et litt. 10, 16-17; CSEL 60, 169, 14 – 170, 6.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="007B6B05">
+							<w:rPr>
+								<w:lang w:val="da-DK"/>
+							</w:rPr>
+							<w:t>Aug. spir. et litt. 10, 16-17; CSEL 60, 169, 14 – 170, 6.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="6">
 					<w:p w:rsidR="00493EA0" w:rsidRPr="007B6B05" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
@@ -1008,7 +1041,19 @@
 							<w:rPr>
 								<w:lang w:val="da-DK"/>
 							</w:rPr>
-							<w:t xml:space="preserve"> KGK I.2, Nr. 64, S. 676, 17 – 682, 29. </w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00FA64AE">
+							<w:rPr>
+								<w:lang w:val="da-DK"/>
+							</w:rPr>
+							<w:t xml:space="preserve">KGK </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00FA64AE">
+							<w:rPr>
+								<w:lang w:val="da-DK"/>
+							</w:rPr>
+							<w:t xml:space="preserve">I.2, Nr. 64, S. 676, 17 – 682, 29. </w:t>
 						</w:r>
 						<w:r w:rsidRPr="007B6B05">
 							<w:t xml:space="preserve">In </w:t>
@@ -1027,27 +1072,33 @@
 				<w:endnote w:id="7">
 					<w:p w:rsidR="00493EA0" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> CSEL 60, 173-184.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">CSEL </w:t>
+						</w:r>
+						<w:r>
+							<w:t>60, 173-184.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="8">
 					<w:p w:rsidR="00493EA0" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
@@ -1055,7 +1106,10 @@
 							<w:t xml:space="preserve"> </w:t>
 						</w:r>
 						<w:r w:rsidRPr="007B6B05">
-							<w:t xml:space="preserve">KGK I.2, </w:t>
+							<w:t xml:space="preserve">KGK </w:t>
+						</w:r>
+						<w:r w:rsidRPr="007B6B05">
+							<w:t xml:space="preserve">I.2, </w:t>
 						</w:r>
 						<w:r>
 							<w:t>Nr. 64, S. 722, 10-15.</w:t>
@@ -1065,176 +1119,242 @@
 				<w:endnote w:id="9">
 					<w:p w:rsidR="00493EA0" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Kolde, Disputationsthesen, 471, Nr. XXII erweiterte die Überschrift der Thesenreihe folgendermaßen: „Alia Positio Circularis (Jo. Doelsch?).“ </w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Kolde, </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Disputationsthesen, 471, Nr. XXII erweiterte die Überschrift der Thesenreihe folgendermaßen: „Alia Positio Circularis (Jo. Doelsch?).“ </w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="10">
 					<w:p w:rsidR="00493EA0" w:rsidRDefault="00493EA0" w:rsidP="00493EA0">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Benzing/Claus, Lutherbibliographie, Nr. 60 f. und 63 f.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Benzing/Claus, </w:t>
+						</w:r>
+						<w:r>
+							<w:t>Lutherbibliographie, Nr. 60 f. und 63 f.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="11">
 					<w:p w:rsidR="0065676C" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> WA 6, 23 f. Dazu s. u.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">WA </w:t>
+						</w:r>
+						<w:r>
+							<w:t>6, 23 f. Dazu s. u.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="12">
 					<w:p w:rsidR="0065676C" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Thesen 101-109 und 141 f.; KGK I.1, Nr. 58, S. 507, 4-19 und 510, 13 f.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Thesen </w:t>
+						</w:r>
+						<w:r>
+							<w:t>101-109 und 141 f.; KGK I.1, Nr. 58, S. 507, 4-19 und 510, 13 f.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="13">
 					<w:p w:rsidR="0065676C" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> KGK I.1, S. 507, 17 f.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">KGK </w:t>
+						</w:r>
+						<w:r>
+							<w:t>I.1, S. 507, 17 f.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="14">
 					<w:p w:rsidR="0065676C" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Ebd. S. 507, 4.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Ebd. </w:t>
+						</w:r>
+						<w:r>
+							<w:t>S. 507, 4.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="15">
 					<w:p w:rsidR="0065676C" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Ebd. S. 507, 7 f.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Ebd. </w:t>
+						</w:r>
+						<w:r>
+							<w:t>S. 507, 7 f.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="16">
 					<w:p w:rsidR="0065676C" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Ebd. S. 507, 19.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Ebd. </w:t>
+						</w:r>
+						<w:r>
+							<w:t>S. 507, 19.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="17">
 					<w:p w:rsidR="0065676C" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Ebd. S. 507, 12-14 und 510, 13 f.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Ebd. </w:t>
+						</w:r>
+						<w:r>
+							<w:t>S. 507, 12-14 und 510, 13 f.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="18">
 					<w:p w:rsidR="0065676C" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r>
-							<w:t xml:space="preserve"> Zum Gesetzesverständnis in diesen Thesen vgl. KGK I.1, Nr. 58, S. 498.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve">Zum </w:t>
+						</w:r>
+						<w:r>
+							<w:t>Gesetzesverständnis in diesen Thesen vgl. KGK I.1, Nr. 58, S. 498.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="19">
 					<w:p w:rsidR="0065676C" w:rsidRPr="00075A18" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
 						<w:r w:rsidRPr="00075A18">
-							<w:t xml:space="preserve"> WA 6, 2</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00075A18">
+							<w:t xml:space="preserve">WA </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00075A18">
+							<w:t>6, 2</w:t>
 						</w:r>
 						<w:r>
 							<w:t>3</w:t>
@@ -1266,14 +1386,14 @@
 				<w:endnote w:id="20">
 					<w:p w:rsidR="0065676C" w:rsidRPr="00303C2E" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 							<w:rPr>
 								<w:lang w:val="en-GB"/>
 							</w:rPr>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
@@ -1286,13 +1406,16 @@
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="21">
-					<w:p w:rsidR="0065676C" w:rsidRPr="00113EC2" w:rsidRDefault="0065676C" w:rsidP="0065676C">
+					<w:p w:rsidR="0065676C" w:rsidRPr="0032047D" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
@@ -1300,9 +1423,132 @@
 							<w:rPr>
 								<w:lang w:val="en-GB"/>
 							</w:rPr>
-							<w:t xml:space="preserve"> „Nam quod erat impossibile per legem factorum, possibile factum est lege Fidei.“ </w:t>
+							<w:t xml:space="preserve"> „Nam quod </w:t>
 						</w:r>
-						<w:r w:rsidRPr="00113EC2">
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>erat</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>impossibile</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> per </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>legem</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>factorum</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>possibile</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> factum </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>est</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>lege</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>Fidei</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>.“</w:t>
+						</w:r>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00303C2E">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="0032047D">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
 							<w:t>WA 6, 24, 14 f.</w:t>
 						</w:r>
 					</w:p>
@@ -1310,18 +1556,21 @@
 				<w:endnote w:id="22">
 					<w:p w:rsidR="0065676C" w:rsidRPr="00690250" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 							<w:rPr>
 								<w:lang w:val="fr-FR"/>
 							</w:rPr>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
-						<w:r w:rsidRPr="00113EC2">
+						<w:r w:rsidRPr="0032047D">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
 							<w:t xml:space="preserve"> 151 Conclusiones, Th. 141 f.; KGK I.1, S. 510, 13 f. Hinter dieser Argumentation steht Aug. grat. et lib. arb. 16, 32: „Magnum aliquod Pelagiani se scire putant, quando dicunt, ‚Non juberet Deus, quod sciret non posse ab homine fieri.‘ quis hoc nesciat? </w:t>
 						</w:r>
 						<w:r w:rsidRPr="00303C2E">
@@ -1330,25 +1579,139 @@
 							</w:rPr>
 							<w:t xml:space="preserve">Sed ideo jubet aliqua quae non possumus, ut noverimus quid ab illo petere debeamus. </w:t>
 						</w:r>
+						<w:proofErr w:type="spellStart"/>
 						<w:r w:rsidRPr="00690250">
 							<w:rPr>
 								<w:lang w:val="fr-FR"/>
 							</w:rPr>
-							<w:t>Ipsa est enim fides, quae orando impetrat quod lex imperat.“ (PL 44, 900.)</w:t>
+							<w:t>Ipsa</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> est </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>enim</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>fides</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>quae</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>orando</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>impetrat</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> quod </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>lex</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>imperat</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>.“</w:t>
+						</w:r>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> (PL 44, 900.)</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="23">
 					<w:p w:rsidR="0065676C" w:rsidRPr="00690250" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 							<w:rPr>
 								<w:lang w:val="fr-FR"/>
 							</w:rPr>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
@@ -1356,18 +1719,60 @@
 							<w:rPr>
 								<w:lang w:val="fr-FR"/>
 							</w:rPr>
-							<w:t xml:space="preserve"> Disputatio de lege et fide, These 10; WA 6, 24, 13.</w:t>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>Disputatio</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> de lege et </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>fide</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>These</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00690250">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> 10; WA 6, 24, 13.</w:t>
 						</w:r>
 					</w:p>
 				</w:endnote>
 				<w:endnote w:id="24">
 					<w:p w:rsidR="0065676C" w:rsidRPr="00075A18" w:rsidRDefault="0065676C" w:rsidP="0065676C">
 						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
+							<w:pStyle w:val="EndnoteText"/>
 						</w:pPr>
 						<w:r>
 							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
+								<w:rStyle w:val="EndnoteReference"/>
 							</w:rPr>
 							<w:endnoteRef/>
 						</w:r>
@@ -1375,8 +1780,66 @@
 							<w:rPr>
 								<w:lang w:val="fr-FR"/>
 							</w:rPr>
-							<w:t xml:space="preserve"> „16. Christus igitur sit gloria, nobis confusio.“</w:t>
+							<w:t xml:space="preserve"> „16. Christus </w:t>
 						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="005857F3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>igitur</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="005857F3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="005857F3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>sit</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="005857F3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> gloria, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="005857F3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>nobis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="005857F3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="005857F3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>confusio</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="005857F3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>.“</w:t>
+						</w:r>
+						<w:proofErr w:type="gramEnd"/>
 						<w:r w:rsidRPr="006141F0">
 							<w:rPr>
 								<w:lang w:val="fr-FR"/>
@@ -1415,7 +1878,7 @@
 				xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
 				xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
 				<w:footnote w:type="separator" w:id="-1">
-					<w:p w:rsidR="004278DA" w:rsidRDefault="004278DA" w:rsidP="00493EA0">
+					<w:p w:rsidR="00193A06" w:rsidRDefault="00193A06" w:rsidP="00493EA0">
 						<w:pPr>
 							<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
 						</w:pPr>
@@ -1425,7 +1888,7 @@
 					</w:p>
 				</w:footnote>
 				<w:footnote w:type="continuationSeparator" w:id="0">
-					<w:p w:rsidR="004278DA" w:rsidRDefault="004278DA" w:rsidP="00493EA0">
+					<w:p w:rsidR="00193A06" w:rsidRDefault="00193A06" w:rsidP="00493EA0">
 						<w:pPr>
 							<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
 						</w:pPr>
@@ -1736,6 +2199,7 @@
 				xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
 				xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main">
 				<w:zoom w:percent="100"/>
+				<w:proofState w:spelling="clean" w:grammar="clean"/>
 				<w:attachedTemplate r:id="rId1"/>
 				<w:defaultTabStop w:val="708"/>
 				<w:hyphenationZone w:val="425"/>
@@ -1816,6 +2280,7 @@
 					<w:rsid w:val="001868BD"/>
 					<w:rsid w:val="00186ED2"/>
 					<w:rsid w:val="00190D64"/>
+					<w:rsid w:val="00193A06"/>
 					<w:rsid w:val="001977A9"/>
 					<w:rsid w:val="001A636F"/>
 					<w:rsid w:val="001B22F0"/>
@@ -1867,6 +2332,7 @@
 					<w:rsid w:val="002E6E55"/>
 					<w:rsid w:val="002F261F"/>
 					<w:rsid w:val="00303C2E"/>
+					<w:rsid w:val="0032047D"/>
 					<w:rsid w:val="00323454"/>
 					<w:rsid w:val="003251C1"/>
 					<w:rsid w:val="00346B34"/>
@@ -2224,7 +2690,7 @@
 		pkg:contentType="application/vnd.openxmlformats-officedocument.customXmlProperties+xml"
 		pkg:padding="32">
 		<pkg:xmlData pkg:originalXmlStandalone="no">
-			<ds:datastoreItem ds:itemID="{A585B10C-ABDB-4C40-8A17-65C8BB3323E2}"
+			<ds:datastoreItem ds:itemID="{6ED2D3A1-D0E6-4807-A0E3-59ED3BA92C89}"
 				xmlns:ds="http://schemas.openxmlformats.org/officeDocument/2006/customXml">
 				<ds:schemaRefs>
 					<ds:schemaRef ds:uri="http://schemas.openxmlformats.org/officeDocument/2006/bibliography"
@@ -2644,7 +3110,7 @@
 					<w:lsdException w:name="List Table 6 Colorful Accent 6" w:uiPriority="51"/>
 					<w:lsdException w:name="List Table 7 Colorful Accent 6" w:uiPriority="52"/>
 				</w:latentStyles>
-				<w:style w:type="paragraph" w:default="1" w:styleId="Standard">
+				<w:style w:type="paragraph" w:default="1" w:styleId="Normal">
 					<w:name w:val="Normal"/>
 					<w:qFormat/>
 					<w:rsid w:val="004C6DB6"/>
@@ -2653,11 +3119,11 @@
 						<w:sz w:val="24"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="paragraph" w:styleId="berschrift1">
+				<w:style w:type="paragraph" w:styleId="Heading1">
 					<w:name w:val="heading 1"/>
-					<w:basedOn w:val="Standard"/>
-					<w:next w:val="Standard"/>
-					<w:link w:val="berschrift1Zchn"/>
+					<w:basedOn w:val="Normal"/>
+					<w:next w:val="Normal"/>
+					<w:link w:val="Heading1Char"/>
 					<w:uiPriority w:val="9"/>
 					<w:qFormat/>
 					<w:rsid w:val="004C6DB6"/>
@@ -2675,11 +3141,11 @@
 						<w:szCs w:val="32"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="paragraph" w:styleId="berschrift2">
+				<w:style w:type="paragraph" w:styleId="Heading2">
 					<w:name w:val="heading 2"/>
-					<w:basedOn w:val="Standard"/>
-					<w:next w:val="Standard"/>
-					<w:link w:val="berschrift2Zchn"/>
+					<w:basedOn w:val="Normal"/>
+					<w:next w:val="Normal"/>
+					<w:link w:val="Heading2Char"/>
 					<w:uiPriority w:val="9"/>
 					<w:unhideWhenUsed/>
 					<w:qFormat/>
@@ -2696,13 +3162,13 @@
 						<w:szCs w:val="26"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:default="1" w:styleId="Absatz-Standardschriftart">
+				<w:style w:type="character" w:default="1" w:styleId="DefaultParagraphFont">
 					<w:name w:val="Default Paragraph Font"/>
 					<w:uiPriority w:val="1"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
 				</w:style>
-				<w:style w:type="table" w:default="1" w:styleId="NormaleTabelle">
+				<w:style w:type="table" w:default="1" w:styleId="TableNormal">
 					<w:name w:val="Normal Table"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
@@ -2717,16 +3183,16 @@
 						</w:tblCellMar>
 					</w:tblPr>
 				</w:style>
-				<w:style w:type="numbering" w:default="1" w:styleId="KeineListe">
+				<w:style w:type="numbering" w:default="1" w:styleId="NoList">
 					<w:name w:val="No List"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
 				</w:style>
-				<w:style w:type="character" w:customStyle="1" w:styleId="berschrift1Zchn">
-					<w:name w:val="Überschrift 1 Zchn"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
-					<w:link w:val="berschrift1"/>
+				<w:style w:type="character" w:customStyle="1" w:styleId="Heading1Char">
+					<w:name w:val="Heading 1 Char"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
+					<w:link w:val="Heading1"/>
 					<w:uiPriority w:val="9"/>
 					<w:rsid w:val="004C6DB6"/>
 					<w:rPr>
@@ -2737,10 +3203,10 @@
 						<w:szCs w:val="32"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:customStyle="1" w:styleId="berschrift2Zchn">
-					<w:name w:val="Überschrift 2 Zchn"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
-					<w:link w:val="berschrift2"/>
+				<w:style w:type="character" w:customStyle="1" w:styleId="Heading2Char">
+					<w:name w:val="Heading 2 Char"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
+					<w:link w:val="Heading2"/>
 					<w:uiPriority w:val="9"/>
 					<w:rsid w:val="004C6DB6"/>
 					<w:rPr>
@@ -2753,21 +3219,21 @@
 				</w:style>
 				<w:style w:type="character" w:customStyle="1" w:styleId="KSHand">
 					<w:name w:val="KS: Hand"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
 					<w:uiPriority w:val="1"/>
 					<w:qFormat/>
 					<w:rsid w:val="00B23EEF"/>
 				</w:style>
 				<w:style w:type="character" w:customStyle="1" w:styleId="KSHinzufgungen">
 					<w:name w:val="KS: Hinzufügungen"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
 					<w:uiPriority w:val="1"/>
 					<w:qFormat/>
 					<w:rsid w:val="00B23EEF"/>
 				</w:style>
 				<w:style w:type="character" w:customStyle="1" w:styleId="KSSigle">
 					<w:name w:val="KS: Sigle"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
 					<w:uiPriority w:val="1"/>
 					<w:qFormat/>
 					<w:rsid w:val="00B23EEF"/>
@@ -2787,7 +3253,7 @@
 				</w:style>
 				<w:style w:type="paragraph" w:customStyle="1" w:styleId="KSMarginalie">
 					<w:name w:val="KS: Marginalie"/>
-					<w:basedOn w:val="Standard"/>
+					<w:basedOn w:val="Normal"/>
 					<w:qFormat/>
 					<w:rsid w:val="009713D8"/>
 					<w:pPr>
@@ -2802,11 +3268,11 @@
 						<w:szCs w:val="18"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="paragraph" w:styleId="Zitat">
+				<w:style w:type="paragraph" w:styleId="Quote">
 					<w:name w:val="Quote"/>
-					<w:basedOn w:val="Standard"/>
-					<w:next w:val="Standard"/>
-					<w:link w:val="ZitatZchn"/>
+					<w:basedOn w:val="Normal"/>
+					<w:next w:val="Normal"/>
+					<w:link w:val="QuoteChar"/>
 					<w:uiPriority w:val="29"/>
 					<w:qFormat/>
 					<w:rsid w:val="003A7BB3"/>
@@ -2820,10 +3286,10 @@
 						<w:color w:val="404040" w:themeColor="text1" w:themeTint="BF"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:customStyle="1" w:styleId="ZitatZchn">
-					<w:name w:val="Zitat Zchn"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
-					<w:link w:val="Zitat"/>
+				<w:style w:type="character" w:customStyle="1" w:styleId="QuoteChar">
+					<w:name w:val="Quote Char"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
+					<w:link w:val="Quote"/>
 					<w:uiPriority w:val="29"/>
 					<w:rsid w:val="003A7BB3"/>
 					<w:rPr>
@@ -2834,9 +3300,9 @@
 						<w:sz w:val="24"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:styleId="SchwacheHervorhebung">
+				<w:style w:type="character" w:styleId="SubtleEmphasis">
 					<w:name w:val="Subtle Emphasis"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
 					<w:uiPriority w:val="19"/>
 					<w:qFormat/>
 					<w:rsid w:val="00E95CB1"/>
@@ -2848,7 +3314,7 @@
 				</w:style>
 				<w:style w:type="character" w:customStyle="1" w:styleId="KSbibliographischeAngabe">
 					<w:name w:val="KS: bibliographische Angabe"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
 					<w:uiPriority w:val="1"/>
 					<w:qFormat/>
 					<w:rsid w:val="00E95CB1"/>
@@ -2876,7 +3342,7 @@
 				</w:style>
 				<w:style w:type="character" w:customStyle="1" w:styleId="KSAutorenstelle">
 					<w:name w:val="KS: Autorenstelle"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
 					<w:uiPriority w:val="1"/>
 					<w:qFormat/>
 					<w:rsid w:val="002112A8"/>
@@ -2897,13 +3363,13 @@
 				</w:style>
 				<w:style w:type="paragraph" w:customStyle="1" w:styleId="KSZitatblock">
 					<w:name w:val="KS: Zitatblock"/>
-					<w:basedOn w:val="Zitat"/>
+					<w:basedOn w:val="Quote"/>
 					<w:qFormat/>
 					<w:rsid w:val="002112A8"/>
 				</w:style>
 				<w:style w:type="paragraph" w:customStyle="1" w:styleId="KSEE-Titel">
 					<w:name w:val="KS: EE-Titel"/>
-					<w:basedOn w:val="berschrift1"/>
+					<w:basedOn w:val="Heading1"/>
 					<w:qFormat/>
 					<w:rsid w:val="0010182F"/>
 					<w:rPr>
@@ -2914,26 +3380,26 @@
 				</w:style>
 				<w:style w:type="paragraph" w:customStyle="1" w:styleId="KSText">
 					<w:name w:val="KS: Text"/>
-					<w:basedOn w:val="Standard"/>
+					<w:basedOn w:val="Normal"/>
 					<w:qFormat/>
 					<w:rsid w:val="0010182F"/>
 				</w:style>
 				<w:style w:type="paragraph" w:customStyle="1" w:styleId="KSberschrift1">
 					<w:name w:val="KS: Überschrift 1"/>
-					<w:basedOn w:val="berschrift1"/>
+					<w:basedOn w:val="Heading1"/>
 					<w:qFormat/>
 					<w:rsid w:val="00827E89"/>
 				</w:style>
 				<w:style w:type="paragraph" w:customStyle="1" w:styleId="KSberschrift2">
 					<w:name w:val="KS: Überschrift 2"/>
-					<w:basedOn w:val="berschrift2"/>
+					<w:basedOn w:val="Heading2"/>
 					<w:qFormat/>
 					<w:rsid w:val="00827E89"/>
 				</w:style>
-				<w:style w:type="paragraph" w:styleId="Funotentext">
+				<w:style w:type="paragraph" w:styleId="FootnoteText">
 					<w:name w:val="footnote text"/>
-					<w:basedOn w:val="Standard"/>
-					<w:link w:val="FunotentextZchn"/>
+					<w:basedOn w:val="Normal"/>
+					<w:link w:val="FootnoteTextChar"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
@@ -2946,10 +3412,10 @@
 						<w:szCs w:val="20"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:customStyle="1" w:styleId="FunotentextZchn">
-					<w:name w:val="Fußnotentext Zchn"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
-					<w:link w:val="Funotentext"/>
+				<w:style w:type="character" w:customStyle="1" w:styleId="FootnoteTextChar">
+					<w:name w:val="Footnote Text Char"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
+					<w:link w:val="FootnoteText"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:rsid w:val="00493EA0"/>
@@ -2959,9 +3425,9 @@
 						<w:szCs w:val="20"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:styleId="Funotenzeichen">
+				<w:style w:type="character" w:styleId="FootnoteReference">
 					<w:name w:val="footnote reference"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
@@ -2970,10 +3436,10 @@
 						<w:vertAlign w:val="superscript"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="paragraph" w:styleId="Endnotentext">
+				<w:style w:type="paragraph" w:styleId="EndnoteText">
 					<w:name w:val="endnote text"/>
-					<w:basedOn w:val="Standard"/>
-					<w:link w:val="EndnotentextZchn"/>
+					<w:basedOn w:val="Normal"/>
+					<w:link w:val="EndnoteTextChar"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
@@ -2987,10 +3453,10 @@
 						<w:szCs w:val="20"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:customStyle="1" w:styleId="EndnotentextZchn">
-					<w:name w:val="Endnotentext Zchn"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
-					<w:link w:val="Endnotentext"/>
+				<w:style w:type="character" w:customStyle="1" w:styleId="EndnoteTextChar">
+					<w:name w:val="Endnote Text Char"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
+					<w:link w:val="EndnoteText"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:rsid w:val="00493EA0"/>
@@ -3000,7 +3466,7 @@
 						<w:szCs w:val="20"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:styleId="Endnotenzeichen">
+				<w:style w:type="character" w:styleId="EndnoteReference">
 					<w:name w:val="endnote reference"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
@@ -3010,9 +3476,9 @@
 						<w:vertAlign w:val="superscript"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:styleId="Kommentarzeichen">
+				<w:style w:type="character" w:styleId="CommentReference">
 					<w:name w:val="annotation reference"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
@@ -3022,10 +3488,10 @@
 						<w:szCs w:val="16"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="paragraph" w:styleId="Kommentartext">
+				<w:style w:type="paragraph" w:styleId="CommentText">
 					<w:name w:val="annotation text"/>
-					<w:basedOn w:val="Standard"/>
-					<w:link w:val="KommentartextZchn"/>
+					<w:basedOn w:val="Normal"/>
+					<w:link w:val="CommentTextChar"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
@@ -3038,10 +3504,10 @@
 						<w:szCs w:val="20"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:customStyle="1" w:styleId="KommentartextZchn">
-					<w:name w:val="Kommentartext Zchn"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
-					<w:link w:val="Kommentartext"/>
+				<w:style w:type="character" w:customStyle="1" w:styleId="CommentTextChar">
+					<w:name w:val="Comment Text Char"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
+					<w:link w:val="CommentText"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:rsid w:val="004873FA"/>
@@ -3051,11 +3517,11 @@
 						<w:szCs w:val="20"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="paragraph" w:styleId="Kommentarthema">
+				<w:style w:type="paragraph" w:styleId="CommentSubject">
 					<w:name w:val="annotation subject"/>
-					<w:basedOn w:val="Kommentartext"/>
-					<w:next w:val="Kommentartext"/>
-					<w:link w:val="KommentarthemaZchn"/>
+					<w:basedOn w:val="CommentText"/>
+					<w:next w:val="CommentText"/>
+					<w:link w:val="CommentSubjectChar"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
@@ -3065,10 +3531,10 @@
 						<w:bCs/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:customStyle="1" w:styleId="KommentarthemaZchn">
-					<w:name w:val="Kommentarthema Zchn"/>
-					<w:basedOn w:val="KommentartextZchn"/>
-					<w:link w:val="Kommentarthema"/>
+				<w:style w:type="character" w:customStyle="1" w:styleId="CommentSubjectChar">
+					<w:name w:val="Comment Subject Char"/>
+					<w:basedOn w:val="CommentTextChar"/>
+					<w:link w:val="CommentSubject"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:rsid w:val="004873FA"/>
@@ -3080,10 +3546,10 @@
 						<w:szCs w:val="20"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="paragraph" w:styleId="Sprechblasentext">
+				<w:style w:type="paragraph" w:styleId="BalloonText">
 					<w:name w:val="Balloon Text"/>
-					<w:basedOn w:val="Standard"/>
-					<w:link w:val="SprechblasentextZchn"/>
+					<w:basedOn w:val="Normal"/>
+					<w:link w:val="BalloonTextChar"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:unhideWhenUsed/>
@@ -3097,10 +3563,10 @@
 						<w:szCs w:val="16"/>
 					</w:rPr>
 				</w:style>
-				<w:style w:type="character" w:customStyle="1" w:styleId="SprechblasentextZchn">
-					<w:name w:val="Sprechblasentext Zchn"/>
-					<w:basedOn w:val="Absatz-Standardschriftart"/>
-					<w:link w:val="Sprechblasentext"/>
+				<w:style w:type="character" w:customStyle="1" w:styleId="BalloonTextChar">
+					<w:name w:val="Balloon Text Char"/>
+					<w:basedOn w:val="DefaultParagraphFont"/>
+					<w:link w:val="BalloonText"/>
 					<w:uiPriority w:val="99"/>
 					<w:semiHidden/>
 					<w:rsid w:val="004873FA"/>
@@ -3123,9 +3589,9 @@
 				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<dc:creator>Salvadori, Stefania</dc:creator>
 				<cp:lastModifiedBy>Kampkaspar, Dario</cp:lastModifiedBy>
-				<cp:revision>2</cp:revision>
+				<cp:revision>3</cp:revision>
 				<dcterms:created xsi:type="dcterms:W3CDTF">2017-10-12T06:34:00Z</dcterms:created>
-				<dcterms:modified xsi:type="dcterms:W3CDTF">2017-10-12T06:34:00Z</dcterms:modified>
+				<dcterms:modified xsi:type="dcterms:W3CDTF">2017-10-15T11:08:00Z</dcterms:modified>
 			</cp:coreProperties>
 		</pkg:xmlData>
 	</pkg:part>
@@ -3162,11 +3628,11 @@
 						w:csb0="000001FF" w:csb1="00000000"/>
 				</w:font>
 				<w:font w:name="Junicode">
-					<w:panose1 w:val="02040502000000000000"/>
+					<w:altName w:val="MS Mincho"/>
 					<w:charset w:val="00"/>
 					<w:family w:val="roman"/>
 					<w:pitch w:val="variable"/>
-					<w:sig w:usb0="E40000FF" w:usb1="5200E4FF" w:usb2="00408004" w:usb3="00000000"
+					<w:sig w:usb0="00000001" w:usb1="5200E4FF" w:usb2="00408004" w:usb3="00000000"
 						w:csb0="8000009B" w:csb1="00000000"/>
 				</w:font>
 				<w:font w:name="Times New Roman">
@@ -3219,11 +3685,11 @@
 				<Template>intro.dotx</Template>
 				<TotalTime>0</TotalTime>
 				<Pages>4</Pages>
-				<Words>927</Words>
-				<Characters>5841</Characters>
+				<Words>957</Words>
+				<Characters>6035</Characters>
 				<Application>Microsoft Office Word</Application>
 				<DocSecurity>0</DocSecurity>
-				<Lines>48</Lines>
+				<Lines>50</Lines>
 				<Paragraphs>13</Paragraphs>
 				<ScaleCrop>false</ScaleCrop>
 				<HeadingPairs>
@@ -3250,7 +3716,7 @@
 				</TitlesOfParts>
 				<Company>Universität Göttingen</Company>
 				<LinksUpToDate>false</LinksUpToDate>
-				<CharactersWithSpaces>6755</CharactersWithSpaces>
+				<CharactersWithSpaces>6979</CharactersWithSpaces>
 				<SharedDoc>false</SharedDoc>
 				<HyperlinksChanged>false</HyperlinksChanged>
 				<AppVersion>15.0000</AppVersion>
