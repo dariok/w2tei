@@ -1,3 +1,4 @@
 <list>
 	<entry label="Ministerratsprotokolle" file="add/ministerrat.xsl"/>
+	<entry label="Transk" file="add/wtotei-trans.xsl"/>
 </list>
