@@ -1352,14 +1352,10 @@
 					<biblStruct type="imprint" xml:id="D">
 						<analytic>
 							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem
-								Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title>
+							<title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title>
 						</analytic>
 						<monogr>
-							<title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖
-								Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij
-								,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ
-								Caroloﬅadij,theologicæ. ‖ ... ‖ [TE]</title>
+							<title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖ Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij ,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ Caroloﬅadij,theologicæ. ‖  ... ‖ [TE]</title>
 							<imprint>
 								<pubPlace cert="unknown">
 									<rs type="place">Leipzig</rs>
@@ -1378,13 +1374,13 @@
 							<list>
 								<item n="editionsvorlage">
 									<label>ÖNB Wien</label>
-									<idno type="signatur">11.J.64.</idno>
+									<idno type="signatur">11.J.64</idno>
 									<ptr type="digitalisat"
 										target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/>
 								</item>
 								<item>
 									<label>HAB Wolfenbüttel</label>
-									<idno type="signatur">H 54.4° Helmst. (2).</idno>
+									<idno type="signatur">H 54.4° Helmst. (2)</idno>
 								</item>
 							</list>
 						</note>
@@ -1399,8 +1395,7 @@
 					<biblStruct type="imprint" xml:id="B">
 						<monogr>
 							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij
-								tuende. ‖ [TE]</title>
+							<title>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij tuende. ‖ [TE]</title>
 							<imprint>
 								<pubPlace cert="unknown">
 									<rs type="place">Leipzig</rs>
@@ -1418,15 +1413,15 @@
 							<list>
 								<item n="editionsvorlage">
 									<label>HAB Wolfenbüttel</label>
-									<idno type="signatur">H: H 55.4° Helmst. (6).</idno>
+									<idno type="signatur">H: H 55.4° Helmst. (6)</idno>
 									<ptr type="digitalisat"
-										target="Permalink: http://diglib.hab.de/drucke/h-55-4f-helmst-6s/start.htm"/>
+										target="http://diglib.hab.de/drucke/h-55-4f-helmst-6s/start.htm"/>
 								</item>
 								<item>
 									<label>BSB München</label>
 									<idno type="signatur">Rar. 1953#Beibd.1</idno>
 									<ptr type="digitalisat"
-										target="http://daten.digitale-sammlungen.de/~db/0002/bsb00025776/images/."/>
+										target="http://daten.digitale-sammlungen.de/~db/0002/bsb00025776/images/"/>
 								</item>
 							</list>
 						</note>

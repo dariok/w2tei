@@ -305,7 +305,7 @@
 			<xsl:attribute name="xml:id" select="$idNo" />
 			<xsl:variable name="elem">
 				<xsl:choose>
-					<xsl:when test="following-sibling::w:t[2][hab:starts(., 'in')]">
+					<xsl:when test="following-sibling::w:p[2][hab:starts(., 'in')]">
 						<xsl:text>analytic</xsl:text>
 					</xsl:when>
 					<xsl:otherwise>monogr</xsl:otherwise>
@@ -411,10 +411,8 @@
 							</bibl>
 						</xsl:for-each>
 					</listBibl>
-					<xsl:if test="$struct[last()]/following-sibling::w:p[1][not(hab:isSigle(.))]">
-						<p><xsl:apply-templates select="$struct[$pos + 3]/following-sibling::w:p
-							intersect $struct[last()]/following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p"/></p>
-					</xsl:if>
+					<xsl:apply-templates select="$struct[last()]/following-sibling::w:p
+						intersect $struct[last()]/following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p"/>
 				</note>
 			</xsl:if>
 		</biblStruct>
@@ -428,7 +426,8 @@
 						<xsl:variable name="temp">
 							<hab:t>
 								<xsl:apply-templates
-									select="w:r[hab:contains(preceding-sibling::w:r, 'vorlage')]" />
+									select="w:r[hab:contains(preceding-sibling::w:r, 'vorlage')]
+									| w:commentRangeEnd" />
 							</hab:t>
 						</xsl:variable>
 						<xsl:apply-templates select="$temp" mode="ex" />
@@ -439,7 +438,8 @@
 					<xsl:if test="w:r[hab:contains(., 'plare')] and string-length(hab:string(.)) &gt; 20">
 						<xsl:variable name="t1">
 							<hab:t>
-								<xsl:apply-templates select="w:r[hab:contains(preceding-sibling::w:r, 'plare')]"/>
+								<xsl:apply-templates select="w:r[hab:contains(preceding-sibling::w:r, 'plare')]
+									| w:commentRangeEnd"/>
 							</hab:t>
 						</xsl:variable>
 						<xsl:variable name="t2">
@@ -493,6 +493,7 @@
 			<xsl:value-of
 				select="hab:substring-before-if-ends(normalize-space($temp/*:idno), '.')"/>
 		</idno>
+		<xsl:copy-of select="*:ptr"/>
 	</xsl:template>
 	
 	<xsl:template match="hab:t" mode="split">
@@ -694,7 +695,7 @@
 						<xsl:value-of select="$dWhen"/>
 					</date>
 				</imprint>
-				<extent><xsl:apply-templates select="$context/following-sibling::w:p[1]//w:t"/></extent>
+				<extent><xsl:apply-templates select="$context/following-sibling::w:p[1]/w:r"/></extent>
 				<xsl:if test="regex-group(4)">
 					<biblScope><xsl:value-of select="normalize-space(regex-group(4))" /></biblScope>
 				</xsl:if>
@@ -702,12 +703,12 @@
 		</xsl:analyze-string>
 	</xsl:template>
 	
-	<xsl:template match="w:p[not(descendant::w:t)]" />
+	<!-- leere p abfangen; 2017-10-24 DK -->
+	<xsl:template match="w:p[not(descendant::w:t) or string-length(hab:string(.)) &lt; 5]" />
 	<xsl:template match="w:p[(not(descendant::w:pStyle)
 		or hab:is(., 'KSText')) and not(hab:isSigle(.) or hab:starts(., 'Edition') or
-		hab:starts(., 'Literatur')) and descendant::w:t]">
+		hab:starts(., 'Literatur')) and descendant::w:t and string-length(hab:string(.)) &gt; 5]">
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
-<!--		<p><xsl:apply-templates select="descendant::w:t | descendant::w:endnoteReference" /></p>-->
 		<p><xsl:apply-templates select="w:r" /></p>
 	</xsl:template>
 	
@@ -718,7 +719,7 @@
 		<hi>
 			<xsl:attribute name="rend">
 				<xsl:choose>
-					<xsl:when test="@w:val='superscript'">super</xsl:when>
+					<xsl:when test="w:rPr/w:vertAlign/@w:val='superscript'">super</xsl:when>
 					<xsl:otherwise>sub</xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
@@ -750,10 +751,10 @@
 	<xsl:template match="w:commentRangeEnd">
 		<xsl:variable name="coID" select="@w:id" />
 		<xsl:variable name="text">
-			<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
+			<xsl:apply-templates select="hab:string(//w:comment[@w:id=$coID])"/>
 		</xsl:variable>
-		<xsl:if test="starts-with($text, 'http')">
-			<ptr type="digitalisat" target="{$text}" />
+		<xsl:if test="contains($text, 'http')">
+			<ptr type="digitalisat" target="{'http'||hab:substring-after($text, 'http')}" />
 		</xsl:if>
 	</xsl:template>
 	<xsl:template match="w:commentRangeEnd" mode="exemplar">
