@@ -2,9 +2,8 @@
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:tei="http://www.tei-c.org/ns/1.0"
-	stylesheet="wtotei-intro.xsl"
-	xslt-version="3.0">
+	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+	xmlns:tei="http://www.tei-c.org/ns/1.0" stylesheet="wtotei-intro.xsl" xslt-version="3.0">
 	<x:scenario label="Bearbeiter">
 		<x:scenario label="ein Bearbeiter">
 			<x:context mode="head">
@@ -78,7 +77,7 @@
 			</x:context>
 			<x:expect label="Ort und Datum">
 				<placeName xmlns="http://www.tei-c.org/ns/1.0" cert="unknown">Wittenberg</placeName><date
-					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-00" cert="unknown">1520, November</date>
+					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11" cert="unknown">1520, November</date>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="Ort unbekannt und Datum">
@@ -109,8 +108,9 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Datum mit cert">
-				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date xmlns="http://www.tei-c.org/ns/1.0"
-					when="1520-11-00">1520, <supplied xmlns="http://www.tei-c.org/ns/1.0">November</supplied></date>
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date
+					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11">1520, <supplied
+						xmlns="http://www.tei-c.org/ns/1.0">November</supplied></date>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="Ort und Datum bekannt">
@@ -125,8 +125,8 @@
 				</w:p>
 			</x:context>
 			<x:expect label="Datum mit cert">
-				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date xmlns="http://www.tei-c.org/ns/1.0"
-					when="1520-11-04">1520, 4. November</date>
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date
+					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11-04">1520, 4. November</date>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="kein Ort und Datum unbekannt">
@@ -159,7 +159,8 @@
 				</w:p>
 			</x:context>
 			<x:expect label="nur Datum in Klammern">
-				<date when="1519-03-00" cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">1519, Ende März?</date>
+				<date when="1519-03" cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">1519, Ende
+					März?</date>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
@@ -174,8 +175,8 @@
 					<w:t>Frühdrucke</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="222443E8" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="222443E8" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -193,8 +194,8 @@
 					<w:t>Karlstadt, Andreas Bodenstein von</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="644DE755" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="644DE755" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -276,8 +277,8 @@
 					<w:t xml:space="preserve"> [TE]</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="1BB08FBB" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="000B2667"
-				w:rsidP="00452700">
+			<w:p w14:paraId="1BB08FBB" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="000B2667" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -291,8 +292,8 @@
 					<w:t>.</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="5F86C954" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="5F86C954" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -306,8 +307,8 @@
 					<w:t xml:space="preserve"> Titelbl., A2-A4.</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="50E697E5" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="50E697E5" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -324,8 +325,8 @@
 					<w:t>.</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="395E1A1D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="395E1A1D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -339,8 +340,8 @@
 					<w:t xml:space="preserve">: </w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="6A1C8FEB" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="6A1C8FEB" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -414,8 +415,8 @@
 					<w:t xml:space="preserve"> </w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="64CA0BDA" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="64CA0BDA" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -423,8 +424,8 @@
 					<w:t xml:space="preserve"> </w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="36359019" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="36359019" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -441,8 +442,8 @@
 					<w:t>Karlstadt, Andreas Bodenstein von</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="3FE5EA1F" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="3FE5EA1F" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -493,8 +494,8 @@
 					<w:t xml:space="preserve"> ‖</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="72537556" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="72537556" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -502,8 +503,8 @@
 					<w:t>in:</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="06C9486D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="06C9486D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -666,8 +667,8 @@
 					<w:t>‖ [TE]</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="72EC2B87" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00797996" w:rsidRDefault="000B2667"
-				w:rsidP="00452700">
+			<w:p w14:paraId="72EC2B87" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00797996"
+				w:rsidRDefault="000B2667" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -708,8 +709,8 @@
 					<w:t>.</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="694EC124" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00A5355A" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="694EC124" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00A5355A"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 					<w:rPr>
@@ -761,8 +762,8 @@
 					<w:t>.</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="0D547FE3" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="0D547FE3" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -799,8 +800,8 @@
 					<w:commentReference w:id="6"/>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="7DBAD9F7" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="7DBAD9F7" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -823,8 +824,8 @@
 					<w:t xml:space="preserve"> </w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="0448C2E8" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700" w:rsidRDefault="00452700"
-				w:rsidP="00452700">
+			<w:p w14:paraId="0448C2E8" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00452700"
+				w:rsidRDefault="00452700" w:rsidP="00452700">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
@@ -1199,7 +1200,8 @@
 					<w:pStyle w:val="KSText"/>
 				</w:pPr>
 			</w:p>
-			<w:comment w:id="6" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z" w:initials="Salv">
+			<w:comment w:id="6" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+				w:initials="Salv">
 				<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
 					w:rsidRDefault="00452700" w:rsidP="00452700">
 					<w:pPr>
@@ -1234,7 +1236,8 @@
 					</w:pPr>
 				</w:p>
 			</w:comment>
-			<w:comment w:id="3" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z" w:initials="Salv">
+			<w:comment w:id="3" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+				w:initials="Salv">
 				<w:p w14:paraId="67F86CDF" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="00BC7191"
 					w:rsidRDefault="00452700" w:rsidP="00452700">
 					<w:pPr>
@@ -1275,7 +1278,8 @@
 					</w:pPr>
 				</w:p>
 			</w:comment>
-			<w:comment w:id="4" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z" w:initials="Salv">
+			<w:comment w:id="4" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+				w:initials="Salv">
 				<w:p w14:paraId="7CD35831" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
 					w:rsidRDefault="00452700" w:rsidP="00452700">
 					<w:pPr>
@@ -1317,7 +1321,8 @@
 					<biblStruct type="imprint" xml:id="C">
 						<monogr>
 							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖ tuende. ‖ [TE]</title>
+							<title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖
+								tuende. ‖ [TE]</title>
 							<imprint>
 								<pubPlace cert="unknown">
 									<rs type="place">Breslau</rs>
@@ -1349,10 +1354,14 @@
 					<biblStruct type="imprint" xml:id="D">
 						<analytic>
 							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title>
+							<title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem
+								Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title>
 						</analytic>
 						<monogr>
-							<title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖ Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij ,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ Caroloﬅadij,theologicæ. ‖  ... ‖ [TE]</title>
+							<title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖
+								Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij
+								,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ
+								Caroloﬅadij,theologicæ. ‖ ... ‖ [TE]</title>
 							<imprint>
 								<pubPlace cert="unknown">
 									<rs type="place">Leipzig</rs>
@@ -1362,7 +1371,8 @@
 								</publisher>
 								<date when="1519" cert="unknown">1519</date>
 							</imprint>
-							<extent>4°, 6 Bl., Titelbl., A2-A6, Sig. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>.</extent>
+							<extent>4°, 6 Bl., Titelbl., A2-A6, Sig. A2<hi rend="super">r</hi>, A3<hi rend="super"
+									>r</hi>.</extent>
 							<biblScope>fol. A5v‒A6r.</biblScope>
 						</monogr>
 						<idno type="siglum">D</idno>
@@ -1371,7 +1381,8 @@
 								<item n="editionsvorlage">
 									<label>ÖNB Wien</label>
 									<idno type="signatur">11.J.64.</idno>
-									<ptr type="digitalisat" target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/>
+									<ptr type="digitalisat"
+										target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/>
 								</item>
 								<item>
 									<label>HAB Wolfenbüttel</label>
@@ -1390,7 +1401,8 @@
 					<biblStruct type="imprint" xml:id="B">
 						<monogr>
 							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij tuende. ‖ [TE]</title>
+							<title>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij
+								tuende. ‖ [TE]</title>
 							<imprint>
 								<pubPlace cert="unknown">
 									<rs type="place">Leipzig</rs>
@@ -1400,7 +1412,8 @@
 								</publisher>
 								<date when="1519">1519</date>
 							</imprint>
-							<extent>4°, 4 Bl., Titelbl., A2-A4, Sign. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>.</extent>
+							<extent>4°, 4 Bl., Titelbl., A2-A4, Sign. A2<hi rend="super">r</hi>, A3<hi
+									rend="super">r</hi>.</extent>
 						</monogr>
 						<idno type="siglum">B</idno>
 						<note type="copies">
@@ -1442,8 +1455,8 @@
 					<w:t>Handschrift</w:t>
 				</w:r>
 			</w:p>
-			<w:p w14:paraId="1EA19D43" w14:textId="77777777" w:rsidR="003F7030" w:rsidRPr="000627A1" w:rsidRDefault="003F7030"
-				w:rsidP="000627A1">
+			<w:p w14:paraId="1EA19D43" w14:textId="77777777" w:rsidR="003F7030" w:rsidRPr="000627A1"
+				w:rsidRDefault="003F7030" w:rsidP="000627A1">
 				<w:pPr>
 					<w:pStyle w:val="KSText"/>
 					<w:rPr>
@@ -1467,8 +1480,8 @@
 					<w:rPr>
 						<w:lang w:val="la-Latn"/>
 					</w:rPr>
-					<w:t>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl. 12a/b (Stempel, nach
-						alter handsch</w:t>
+					<w:t>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl.
+						12a/b (Stempel, nach alter handsch</w:t>
 				</w:r>
 				<w:bookmarkStart w:id="0" w:name="_GoBack"/>
 				<w:bookmarkEnd w:id="0"/>
@@ -1505,8 +1518,8 @@
 		</x:context>
 		<x:expect label="formatiert">
 			<listBibl type="sigla" xmlns="http://www.tei-c.org/ns/1.0">
-				<msDesc xml:id="A">Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl. 12a/b (Stempel, nach
-						alter handschriftlicher Foliierung Bl. 6a/b)</msDesc>
+				<msDesc xml:id="A">Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr.
+					129, Bl. 12a/b (Stempel, nach alter handschriftlicher Foliierung Bl. 6a/b)</msDesc>
 			</listBibl>
 		</x:expect>
 	</x:scenario>
@@ -1594,9 +1607,9 @@
 					xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
 					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-					xmlns:tei="http://www.tei-c.org/ns/1.0"
-					type="reference">
-					<p>Brief Karlstadts vom 3. April 1519 an Spalatin: „Praeter illa putavi nuper in Concione quadam“; „Ego typographo humeros hos supposui.“ (EE 90 [=Nr. 113]).</p>
+					xmlns:tei="http://www.tei-c.org/ns/1.0" type="reference">
+					<p>Brief Karlstadts vom 3. April 1519 an Spalatin: „Praeter illa putavi nuper in Concione
+						quadam“; „Ego typographo humeros hos supposui.“ (EE 90 [=Nr. 113]).</p>
 					<listBibl type="literatur">
 						<bibl>Bubenheimer, Karlstadt liest Tauler</bibl>
 						<bibl>Zorzin, Flugschriftenautor, 225.</bibl>
@@ -1606,8 +1619,8 @@
 		</x:scenario>
 		<x:scenario label="verschollene mit Referenz (k. Sigle, 2 Abs., k. Lit.) o. Hinw.">
 			<x:context>
-				<w:p w14:paraId="0FB06673" w14:textId="50695BB9" w:rsidR="00CE2F47" w:rsidRDefault="00FA4C5D"
-					w:rsidP="0011564A">
+				<w:p w14:paraId="0FB06673" w14:textId="50695BB9" w:rsidR="00CE2F47"
+					w:rsidRDefault="00FA4C5D" w:rsidP="0011564A">
 					<w:pPr>
 						<w:pStyle w:val="KSberschrift1"/>
 					</w:pPr>
@@ -1627,7 +1640,11 @@
 						<w:rPr>
 							<w:rStyle w:val="KSEE-Verweis"/>
 						</w:rPr>
-						<w:t>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“ hinterlassen hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin keine Rückmeldung erhalten; er erwähnt ihn und schreibt Spalatin erneut am 6. Mai.</w:t>
+						<w:t>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet,
+							den dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“
+							hinterlassen hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin
+							keine Rückmeldung erhalten; er erwähnt ihn und schreibt Spalatin erneut am 6.
+							Mai.</w:t>
 					</w:r>
 				</w:p>
 				<w:p w14:paraId="65040C9E" w14:textId="7DD6B84F" w:rsidR="003A7BB3" w:rsidRPr="002112A8"
@@ -1642,14 +1659,21 @@
 						<w:rPr>
 							<w:rStyle w:val="KSEE-Verweis"/>
 						</w:rPr>
-						<w:t>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.) der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6. Mai eine (verschollene) Antwort darauf von Karlstadts (EE 93B).</w:t>
+						<w:t>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519:
+							(1.) der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6.
+							Mai eine (verschollene) Antwort darauf von Karlstadts (EE 93B).</w:t>
 					</w:r>
 				</w:p>
 			</x:context>
 			<x:expect label="2 Absätze">
 				<div type="reference" xmlns="http://www.tei-c.org/ns/1.0">
-					<p>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“ hinterlassen hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin keine Rückmeldung erhalten; er erwähnt ihn und schreibt Spalatin erneut am 6. Mai.</p>
-					<p>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.) der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6. Mai eine (verschollene) Antwort darauf von Karlstadts (EE 93B).</p>
+					<p>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den
+						dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“ hinterlassen
+						hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin keine
+						Rückmeldung erhalten; er erwähnt ihn und schreibt Spalatin erneut am 6. Mai.</p>
+					<p>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.)
+						der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6. Mai eine
+						(verschollene) Antwort darauf von Karlstadts (EE 93B).</p>
 				</div>
 			</x:expect>
 		</x:scenario>
@@ -1903,14 +1927,2950 @@
 					</w:r>
 					<w:proofErr w:type="spellEnd"/>
 					<w:r w:rsidRPr="00F11557">
-						<w:t>“ [neulich in einer gewissen Predigt] diese Thematik reflektiert habe, und dem Drucker eine Schrift „zugeschoben“ habe, die das Thema behandelt.</w:t>
+						<w:t>“ [neulich in einer gewissen Predigt] diese Thematik reflektiert habe, und dem
+							Drucker eine Schrift „zugeschoben“ habe, die das Thema behandelt.</w:t>
 					</w:r>
 				</w:p>
 			</x:context>
 			<x:expect label="1. div mit. Text und Lit. o. Sigle; 2. div mit Text">
-				<div type="reference" xmlns="http://www.tei-c.org/ns/1.0"><p>Brief Karlstadts vom 3. April 1519 an Spalatin: „Praeter illa putavi nuper in Concione quadam“; „Ego typographo humeros hos supposui.“ (EE 90 [=Nr. 113]).</p>
-					<listBibl type="literatur"><bibl>Bubenheimer, Karlstadt liest Tauler</bibl><bibl>Zorzin, Flugschriftenautor, 225.</bibl></listBibl></div>
-				<div type="evidence" xmlns="http://www.tei-c.org/ns/1.0"><p>Auf Spalatins Frage, ob kirchliche Vorschriften in gleichem Maße verpflichtend seien wie göttliche Gebote, antwortete ihm Karlstadt Ende März 1519 in einem ausführlichen Brief (EE 90 [= Nr. 113]). Darin erwähnt Karlstadt, dass er „nuper in Concione quadam“ [neulich in einer gewissen Predigt] diese Thematik reflektiert habe, und dem Drucker eine Schrift „zugeschoben“ habe, die das Thema behandelt.</p></div>
+				<div type="reference" xmlns="http://www.tei-c.org/ns/1.0"><p>Brief Karlstadts vom 3. April
+						1519 an Spalatin: „Praeter illa putavi nuper in Concione quadam“; „Ego typographo
+						humeros hos supposui.“ (EE 90 [=Nr. 113]).</p>
+					<listBibl type="literatur"><bibl>Bubenheimer, Karlstadt liest Tauler</bibl><bibl>Zorzin,
+							Flugschriftenautor, 225.</bibl></listBibl></div>
+				<div type="evidence" xmlns="http://www.tei-c.org/ns/1.0"><p>Auf Spalatins Frage, ob
+						kirchliche Vorschriften in gleichem Maße verpflichtend seien wie göttliche Gebote,
+						antwortete ihm Karlstadt Ende März 1519 in einem ausführlichen Brief (EE 90 [= Nr.
+						113]). Darin erwähnt Karlstadt, dass er „nuper in Concione quadam“ [neulich in einer
+						gewissen Predigt] diese Thematik reflektiert habe, und dem Drucker eine Schrift
+						„zugeschoben“ habe, die das Thema behandelt.</p></div>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="EE 110: Druck mit Kokmmentar">
+			<x:context>
+				<w:p w:rsidR="00CE2F47" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+						<w:numPr>
+							<w:ilvl w:val="0"/>
+							<w:numId w:val="1"/>
+						</w:numPr>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+						</w:rPr>
+						<w:t>Überlieferung</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="004C6DB6" w:rsidRPr="005D3362" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift2"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="005D3362">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Frühdrucke</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="007E13CC" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00691302">
+						<w:rPr>
+							<w:rStyle w:val="KSSigle"/>
+						</w:rPr>
+						<w:t>[A:]</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26" w:rsidRPr="00C86F26">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00EA439F" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">EPISTOLA ANDREĘ CAROLOSTADII </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00E8236F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>ADVERSVS INEPTAM ET RIDI/</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">CVLAM INVENTIONEM IO/ </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">ANNIS ECKII ARGVTATO </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00E8236F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>RIS, QVI DIXIT,LIP/</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidR="00E8236F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>SIAE, CVM VR/</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidR="00E8236F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>GERET/</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>VR.</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> OPVS BONVM ESSE A DEO TOTVM,</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> SED NON TOTALITER.</w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> ... </w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> [Am Ende:] </w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">IMPRESSVM VVITTENBERGAE </w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> PER IOAN: GRVNENBERGIVM. </w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidR="00633679" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> ANNO SALVTIS M. D. XIX.</w:t>
+					</w:r>
+					<w:r w:rsidR="00EA439F" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00EA439F" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00633679" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00633679">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Wittenberg: Johannes Rhau-Grunenberg, 1519.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9" w:rsidRDefault="00BE2F1B" w:rsidP="005D3362">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>4°, 18 Bl., A</w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>4</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>–C</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>4</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, D</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>6</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:i/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Editionsvorlage</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>:</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> [A</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26" w:rsidRPr="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>L</w:t>
+					</w:r>
+					<w:r w:rsidR="00647C4D">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+						</w:rPr>
+						<w:t>:</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>]</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> UB Leipzig, Lib.sep.1960at.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="00BE2F1B" w:rsidP="00034D39">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:i/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Weitere Exemplare:</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26" w:rsidRPr="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>[</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26" w:rsidRPr="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>Br</w:t>
+					</w:r>
+					<w:r w:rsidR="00647C4D">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+						</w:rPr>
+						<w:t>:</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26" w:rsidRPr="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">] </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">KB St. Gotthardt Brandenburg, B 4, 14, 6. </w:t>
+					</w:r>
+					<w:r w:rsidR="00034D39">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">– </w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>[A</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>1</w:t>
+					</w:r>
+					<w:r w:rsidR="00647C4D">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+						</w:rPr>
+						<w:t>:</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">] </w:t>
+					</w:r>
+					<w:r w:rsidR="00034D39" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Concordia Seminary St. Louis, L 270.6 K (3). – </w:t>
+					</w:r>
+					<w:r w:rsidR="003D3CCC">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>[A</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>3</w:t>
+					</w:r>
+					<w:r w:rsidR="003D3CCC">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">:] </w:t>
+					</w:r>
+					<w:r w:rsidR="00034D39" w:rsidRPr="00272DF3">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>BPS</w:t>
+					</w:r>
+					<w:r w:rsidR="00034D39">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00034D39" w:rsidRPr="00272DF3">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Wittenberg, LC 708,6</w:t>
+					</w:r>
+					<w:r w:rsidR="00034D39">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:r w:rsidR="00034D39" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">– </w:t>
+					</w:r>
+					<w:r w:rsidR="00AE2281">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>[A</w:t>
+					</w:r>
+					<w:r w:rsidR="00AE2281" w:rsidRPr="00AE2281">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>2</w:t>
+					</w:r>
+					<w:r w:rsidR="002E1208">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>-Wo</w:t>
+					</w:r>
+					<w:r w:rsidR="00AE2281">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">:] </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">HAB Wolfenbüttel, A: 112.4 Theol. (16). – </w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>[A</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A" w:rsidRPr="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>3</w:t>
+					</w:r>
+					<w:r w:rsidR="002E1208">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>-Wo</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">:] </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Ebd., H: 55.4 Helmst.</w:t>
+					</w:r>
+					<w:r w:rsidR="00C7072A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>(3)</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="00BE2F1B" w:rsidP="005D3362">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:i/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Bibliographische Nachweise</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">: </w:t>
+					</w:r>
+					<w:r w:rsidR="001F328A">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Riederer, Versuch, Nr. 16</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">. – </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Freys/Barge, Verzeichnis, Nr. 24</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">. – </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Zorzin, Flugschriftenautor, Nr. 14A</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> – </w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>VD</w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>16 B 6154.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="006112F9" w:rsidRPr="00272DF3" w:rsidRDefault="00BE2F1B" w:rsidP="000207C9">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Die Exemplare </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">aus </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Leipzig und Brandenburg </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>enthalten handschriftliche</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Korrekturen und </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>autographe</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Widmungen an Georg Spalatin (</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26" w:rsidRPr="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>L</w:t>
+					</w:r>
+					<w:r w:rsidR="00870AA8" w:rsidRPr="00870AA8">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+						</w:rPr>
+						<w:t>:</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00E779F7">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>„D. G</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>eorgio Spalatino patrono optimo</w:t>
+					</w:r>
+					<w:r w:rsidR="00870AA8">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> |</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> A Carolo. D D“) </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>bzw.</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Heinrich Tulken (</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26" w:rsidRPr="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>BR</w:t>
+					</w:r>
+					<w:r w:rsidR="00647C4D">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="20"/>
+							<w:szCs w:val="20"/>
+						</w:rPr>
+						<w:t>:</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>„Charissimo fratri Hermanno Tulichio | homini eruditionis multę | et exussi iudicij
+							| Andreas Carolo | D D“).</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Der Druck ist in </w:t>
+					</w:r>
+					<w:r w:rsidR="00AE2281">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>vier</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Varianten ausgegangen</w:t>
+					</w:r>
+					<w:r w:rsidR="00870AA8">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, die Korrekturen erfolgten augenscheinlich im Satz</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">. </w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57" w:rsidRPr="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>1</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> ist ein fehlerhafter Druck. Fol. </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A1</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>v</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Z. 9 </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">setzt </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">ein </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">mit ausgelassenem </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Buchstabe</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>n</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>: „</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>olostadius”</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>;</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> fol. A1</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>v</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Z. 22</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> wurde die </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:lastRenderedPageBreak/>
+						<w:t>Wendung nicht in den Genetiv Plural gesetzt</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>: „</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">arbitror </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="en-US"/>
+						</w:rPr>
+						<w:t>ꝓ</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>nūctiationē”</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">. </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="en-US"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Die Blattsignatur von fol. </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00272DF3">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="en-US"/>
+						</w:rPr>
+						<w:t>D2</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+							<w:lang w:val="en-US"/>
+						</w:rPr>
+						<w:t>r</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="en-US"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> fehlt.</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415" w:rsidRPr="00272DF3">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="en-US"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Das einzig bekannte Exemp</w:t>
+					</w:r>
+					<w:r w:rsidR="00034D39" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>lar dieses Typs befindet sich in St</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>. Louis</w:t>
+					</w:r>
+					<w:r w:rsidR="00870AA8">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> (</w:t>
+					</w:r>
+					<w:r w:rsidR="00C86F26" w:rsidRPr="00C01A5A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57" w:rsidRPr="00C01A5A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>1</w:t>
+					</w:r>
+					<w:r w:rsidR="00870AA8" w:rsidRPr="00C01A5A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>)</w:t>
+					</w:r>
+					<w:r w:rsidR="007841A9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, dessen Titelblatt</w:t>
+					</w:r>
+					<w:r w:rsidR="00C01A5A" w:rsidRPr="00C01A5A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> eine handschriftliche Widmung an Paul Lindenau</w:t>
+					</w:r>
+					<w:r w:rsidR="007841A9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> aufweist</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00C01A5A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Bei </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Typ </w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57" w:rsidRPr="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>2</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57" w:rsidRPr="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>ist der erste</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Fehler auf fol. A1</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57" w:rsidRPr="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>v</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> korrigiert</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, der zweite in „</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>arbitror</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>,</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="en-US"/>
+						</w:rPr>
+						<w:t>ꝓ</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>nūctiationē”</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> verschlimmbessert</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, die Blattsignatur „Dij“ wurde noch nicht gesetzt</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> (das erste Wolfenbütteler Exemplar). Typ A</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A" w:rsidRPr="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>3</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> verbessert beide Fehler auf fol. </w:t>
+					</w:r>
+					<w:r w:rsidR="003E50C2">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A1v, doch noch immer fehlt die B</w:t>
+					</w:r>
+					<w:r w:rsidR="00511A0A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>lattsignatur „Dij“</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>. Der verbesserte Druck A, dem die Edition folgt und</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> dem </w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">sowohl das </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Leipziger </w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>(A</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57" w:rsidRPr="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>L</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">) als auch das Brandenburger </w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Exemplar</w:t>
+					</w:r>
+					<w:r w:rsidR="00870AA8">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> (A</w:t>
+					</w:r>
+					<w:r w:rsidR="00870AA8" w:rsidRPr="00870AA8">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>L</w:t>
+					</w:r>
+					<w:r w:rsidR="00870AA8">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>)</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>zugehört</w:t>
+					</w:r>
+					<w:r w:rsidR="003E1415">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">, korrigiert diese Druckfehler: </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">fol. </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A1</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>v</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Z. 9: “rolostadius”; A1</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>v</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Z. 22: “arbitrorū </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="en-US"/>
+						</w:rPr>
+						<w:t>ꝓ</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">nūctiationē”; die </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00272DF3">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Blattsignatur „Dij“ </w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>ist gesetzt. Zudem ist Zeile 9 auf fol. A1</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>v</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00272DF3">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> gegenüber Typ </w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>A</w:t>
+					</w:r>
+					<w:r w:rsidR="00A66F57" w:rsidRPr="00A66F57">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>1</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9" w:rsidRPr="00272DF3">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> leicht nach rechts verschoben</w:t>
+					</w:r>
+					<w:r w:rsidR="006112F9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:r w:rsidR="003E50C2">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Beide Wolfenbütteler Exemplare sind reich glossiert; das dem Typus A</w:t>
+					</w:r>
+					<w:r w:rsidR="003E50C2" w:rsidRPr="003E50C2">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>3</w:t>
+					</w:r>
+					<w:r w:rsidR="003E50C2">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> zugehörige trägt eine handschriftliche Widmung an </w:t>
+					</w:r>
+					<w:r w:rsidR="002E1208">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Magister </w:t>
+					</w:r>
+					<w:r w:rsidR="003E50C2">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Balthasar </w:t>
+					</w:r>
+					<w:r w:rsidR="00711E4F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>(</w:t>
+					</w:r>
+					<w:r w:rsidR="003E50C2">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Predicator</w:t>
+					</w:r>
+					<w:r w:rsidR="00711E4F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>)</w:t>
+					</w:r>
+					<w:r w:rsidR="003E50C2">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="007E13CC" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00691302">
+						<w:rPr>
+							<w:rStyle w:val="KSSigle"/>
+						</w:rPr>
+						<w:t>[B:]</w:t>
+					</w:r>
+					<w:r w:rsidR="001A3FEE">
+						<w:rPr>
+							<w:rStyle w:val="KSSigle"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="00BE2F1B" w:rsidP="00F91D3E">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Epistola </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Andree Carolo=</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>STADII ADVER=</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>sus ineptam &amp; ri=</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>diculā inuen=</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">tionem </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Ioannis Eckij </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00F91D3E">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">argutatoris, </w:t>
+					</w:r>
+					<w:r w:rsidR="00F91D3E" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>qui dix</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">it Lipsiae, cū vrgeretur </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> ¶</w:t>
+					</w:r>
+					<w:r w:rsidR="00F91D3E" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Opus bonum esse a deo </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> totum</w:t>
+					</w:r>
+					<w:r w:rsidR="00F91D3E" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>,</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> sed non </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> totaliter. </w:t>
+					</w:r>
+					<w:r w:rsidR="00EA439F" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>║</w:t>
+					</w:r>
+					<w:r w:rsidR="00EA439F" w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EA439F">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>[</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>TE]</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>[Leipzig</w:t>
+					</w:r>
+					<w:r w:rsidR="009B012A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>]</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">: </w:t>
+					</w:r>
+					<w:r w:rsidR="009B012A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>[</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Valentin Schumann</w:t>
+					</w:r>
+					<w:r w:rsidR="009B012A">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>]</w:t>
+					</w:r>
+					<w:r w:rsidR="00B638A0">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, [1519]</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="00AF48C2" w:rsidP="005D3362">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>4°, 16</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Bl., A</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>6</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, B</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>4</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, C</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>6</w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> (f</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">ol. </w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>C</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="superscript"/>
+						</w:rPr>
+						<w:t>6</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>leer)</w:t>
+					</w:r>
+					<w:r w:rsidR="00BE2F1B" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> – TE.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="009A0526" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:i/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Editionsvorlage: </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">HAB </w:t>
+					</w:r>
+					<w:r w:rsidRPr="009A0526">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Wolfenbüttel, H: Yv 143.8 Helmst. (5).</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="009A0526" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="009A0526">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:i/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Weitere Exemplare:</w:t>
+					</w:r>
+					<w:r w:rsidR="009A0526" w:rsidRPr="009A0526">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:i/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="009A0526" w:rsidRPr="009A0526">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>BSB München, Res/4 Polem. 3340,18</w:t>
+					</w:r>
+					<w:r w:rsidR="00D0302E">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> – ÖNB Wien, </w:t>
+					</w:r>
+					<w:r w:rsidR="00D0302E" w:rsidRPr="00D0302E">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>20.Dd.1237</w:t>
+					</w:r>
+					<w:r w:rsidR="00D0302E">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9" w:rsidRDefault="00BE2F1B" w:rsidP="005D3362">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="009A0526">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:i/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Bibliographische Nachweise</w:t>
+					</w:r>
+					<w:r w:rsidRPr="009A0526">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">: </w:t>
+					</w:r>
+					<w:r w:rsidRPr="009A0526">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Freys/Barge</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>, Verzeichnis, Nr. 25</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">. – </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Zorzin, Flugschriftenautor, Nr. 14B</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> – </w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362" w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>VD 16 B 6153</w:t>
+					</w:r>
+					<w:r w:rsidR="005D3362" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+				</w:p>
+				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00EB6FF9" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:spacing w:after="0"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:i/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Literatur</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>:</w:t>
+					</w:r>
+					<w:r w:rsidR="00AA4922" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00AA4922" w:rsidRPr="00AA4922">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Jäger, Carlstadt, 59f.</w:t>
+					</w:r>
+					<w:r w:rsidR="00AA4922" w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> –</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00AA4922">
+						<w:rPr>
+							<w:rStyle w:val="KSbibliographischeAngabe"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Barge, Karlstadt 1, 168–172</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00EB6FF9">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w:rsidR="003A7BB3" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+						<w:numPr>
+							<w:ilvl w:val="0"/>
+							<w:numId w:val="1"/>
+						</w:numPr>
+						<w:rPr>
+							<w:rStyle w:val="KSEE-Verweis"/>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00A25B42">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+						</w:rPr>
+						<w:t>Entstehung und Inhalt</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="2 bibl und ein p">
+				<div type="history_of_the_work">
+					<listBibl type="sigla">
+						<biblStruct type="imprint" xml:id="A">
+							<monogr>
+								<author>Karlstadt, Andreas Bodenstein von</author>
+								<title>EPISTOLA ANDREĘ CAROLOSTADII ║ ADVERSVS INEPTAM ET RIDI/║CVLAM INVENTIONEM
+									IO/ ║ ANNIS ECKII ARGVTATO ║ RIS, QVI DIXIT,LIP/║SIAE, CVM VR/║GERET/║VR. ║ OPVS
+									BONVM ESSE A DEO TOTVM, ║ SED NON TOTALITER. ║ ... ║ [Am Ende:] IMPRESSVM
+									VVITTENBERGAE ║ PER IOAN: GRVNENBERGIVM. ║ ANNO SALVTIS M. D. XIX. ║</title>
+								<imprint>
+									<pubPlace>
+										<rs type="place">Wittenberg</rs>
+									</pubPlace>
+									<publisher>
+										<rs type="person">Johannes Rhau-Grunenberg</rs>
+									</publisher>
+									<date when="1519">1519</date>
+								</imprint>
+								<extent>4°, 18 Bl., A4–C4, D6.</extent>
+							</monogr>
+							<idno type="siglum">A</idno>
+							<note type="copies">
+								<list>
+									<item n="Editionsvorlage"> [A<hi rend="sub">L</hi>:] UB Leipzig,
+										Lib.sep.1960at.</item> [A<hi rend="sub">Br</hi>:] KB St. Gotthardt Brandenburg,
+									B 4, 14, 6. – [A<hi rend="sub">1</hi>:] Concordia Seminary St. Louis, L 270.6 K
+									(3). – [A<hi rend="sub">3</hi>:] BPS Wittenberg, LC 708,6. – [A<hi rend="sub"
+										>2</hi>
+									<hi rend="sub">-Wo</hi>:] HAB Wolfenbüttel, A: 112.4 Theol. (16). – [A<hi
+										rend="sub">3</hi>
+									<hi rend="sub">-Wo</hi>:] Ebd., H: 55.4 Helmst. (3)</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<bibl>Riederer, Versuch, Nr. 16.</bibl>
+									<bibl>Freys/Barge, Verzeichnis, Nr. 24.</bibl>
+									<bibl>Zorzin, Flugschriftenautor, Nr. 14A.</bibl>
+									<bibl>VD 16 B 6154.</bibl>
+								</listBibl>
+								<p>Die Exemplare aus Leipzig und Brandenburg enthalten handschriftliche Korrekturen
+									und autographe Widmungen an Georg Spalatin (A<hi rend="sub">L</hi>: „D. Georgio
+									Spalatino patrono optimo | A Carolo. D D“) bzw. Heinrich Tulken (A<hi rend="sub"
+										>BR</hi>: „Charissimo fratri Hermanno Tulichio | homini eruditionis multę | et
+									exussi iudicij | Andreas Carolo | D D“). Der Druck ist in vier Varianten
+									ausgegangen, die Korrekturen erfolgten augenscheinlich im Satz. A<hi rend="sub"
+										>1</hi> ist ein fehlerhafter Druck. Fol. A1<hi rend="super">v</hi> Z. 9 setzt
+									ein mit ausgelassenem Buchstaben: „olostadius”; fol. A1<hi rend="super">v</hi> Z.
+									22 wurde die Wendung nicht in den Genetiv Plural gesetzt: „arbitror ꝓnūctiationē”.
+									Die Blattsignatur von fol. D2<hi rend="super">r</hi> fehlt. Das einzig bekannte
+									Exemplar dieses Typs befindet sich in St. Louis (A<hi rend="sub">1</hi>), dessen
+									Titelblatt eine handschriftliche Widmung an Paul Lindenau aufweist. Bei Typ A<hi
+										rend="sub">2</hi> ist der erste Fehler auf fol. A1<hi rend="super">v</hi>
+									korrigiert, der zweite in „arbitror, ꝓnūctiationē” verschlimmbessert, die
+									Blattsignatur „Dij“ wurde noch nicht gesetzt (das erste Wolfenbütteler Exemplar).
+									Typ A<hi rend="sub">3</hi> verbessert beide Fehler auf fol. A1v, doch noch immer
+									fehlt die Blattsignatur „Dij“. Der verbesserte Druck A, dem die Edition folgt und
+									dem sowohl das Leipziger (A<hi rend="sub">L</hi>) als auch das Brandenburger
+									Exemplar (A<hi rend="sub">L</hi>) zugehört, korrigiert diese Druckfehler: fol.
+										A1<hi rend="super">v</hi> Z. 9: “rolostadius”; A1<hi rend="super">v</hi> Z. 22:
+									“arbitrorū ꝓnūctiationē”; die Blattsignatur „Dij“ ist gesetzt. Zudem ist Zeile 9
+									auf fol. A1<hi rend="super">v</hi> gegenüber Typ A<hi rend="sub">1</hi> leicht
+									nach rechts verschoben. Beide Wolfenbütteler Exemplare sind reich glossiert; das
+									dem Typus A<hi rend="sub">3</hi> zugehörige trägt eine handschriftliche Widmung an
+									Magister Balthasar (Predicator).</p>
+								<p/>
+							</note>
+						</biblStruct>
+						<biblStruct type="imprint" xml:id="B">
+							<monogr>
+								<author>Karlstadt, Andreas Bodenstein von</author>
+								<title>Epistola ║ Andree Carolo=║STADII ADVER=║sus ineptam &amp; ri=║diculā
+									inuen=║tionem ║ Ioannis Eckij ║ argutatoris, qui dix║it Lipsiae, cū vrgeretur ║ ¶
+									Opus bonum esse a deo ║ totum , sed non ║ totaliter. ║ [TE]</title>
+								<imprint>
+									<pubPlace cert="unknown">
+										<rs type="place">Leipzig</rs>
+									</pubPlace>
+									<publisher cert="unknown">
+										<rs type="person">Valentin Schumann</rs>
+									</publisher>
+									<date when="1519" cert="unknown">1519</date>
+								</imprint>
+								<extent>4°, 16 Bl., A6, B4, C6 (fol. C6 leer). – TE.</extent>
+							</monogr>
+							<idno type="siglum">B</idno>
+							<note type="copies">
+								<list>
+									<item n="Editionsvorlage">HAB Wolfenbüttel, H: Yv 143.8 Helmst. (5).</item>BSB
+									München, Res/4 Polem. 3340,18 – ÖNB Wien, 20.Dd.1237.</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<bibl>Freys/Barge, Verzeichnis, Nr. 25.</bibl>
+									<bibl>Zorzin, Flugschriftenautor, Nr. 14B.</bibl>
+									<bibl>VD 16 B 6153.</bibl>
+								</listBibl>
+								<p/>
+							</note>
+						</biblStruct>
+					</listBibl>
+					<listBibl type="editions"/>
+					<listBibl type="editions"/>
+					<listBibl type="literatur">
+						<bibl>Jäger, Carlstadt, 59f.</bibl>
+						<bibl>Barge, Karlstadt 1, 168–172</bibl>
+					</listBibl>
+				</div>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
