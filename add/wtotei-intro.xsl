@@ -634,7 +634,8 @@
 			<xsl:if test="preceding-sibling::w:p[1][hab:starts(., 'Beilage')]">
 				<head><xsl:apply-templates select="preceding-sibling::w:p[1]/w:r"/></head>
 			</xsl:if>
-			<xsl:apply-templates select="w:r[hab:is(., 'KSbibliographischeAngabe', 'r')]" mode="bibl" />
+			<xsl:apply-templates select="w:r[hab:is(., 'KSbibliographischeAngabe', 'r')
+				and not(preceding-sibling::w:r[1][hab:is(., 'KSbibliographischeAngabe', 'r')])]" mode="bibl" />
 				<!--and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 				or descendant::w:rStyle[@w:val='Kommentarzeichen']
 				or descendant::w:commentReference)]]" mode="bibl"/>-->
@@ -768,11 +769,8 @@
 	
 	<xsl:template match="w:r" mode="bibl">
 		<xsl:variable name="me" select="generate-id()" />
-		<xsl:variable name="next" select="generate-id((following::w:r[descendant::w:rStyle and
-			descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-			and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-			or descendant::w:rStyle[@w:val='Kommentarzeichen']
-			or descendant::w:commentReference)]])[1])" />
+		<xsl:variable name="next" select="following::w:r[ancestor::w:body and hab:is(., 'KSbibliographischeAngabe', 'r')
+			and not(preceding-sibling::w:r[1][hab:is(., 'KSbibliographischeAngabe', 'r')])][1]" />
 		<bibl>
 			<xsl:choose>
 				<xsl:when test="$next">
@@ -797,13 +795,14 @@
 				<!--</note>-->
 			</xsl:if>
 			<!-- FN berücksichtigen; 2017-08-07 DK -->
+			<xsl:value-of select="count(following-sibling::w:r[w:endnoteReference])"/>
 			<xsl:choose>
 				<xsl:when test="$next">
 					<xsl:apply-templates select="following-sibling::w:r[w:endnoteReference
-						and preceding-sibling::w:r[generate-id() = $me] and following-sibling::w:r[generate-id() = $next]]/w:endnoteReference"/>
+						and following-sibling::w:r[generate-id() = $next]]/w:endnoteReference"/>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:apply-templates select="following-sibling::w:r[w:endnoteReference]/w:endnoteReference" />
+					<xsl:apply-templates select="following-sibling::w:r/w:endnoteReference" />
 				</xsl:otherwise>
 			</xsl:choose>
 		</bibl>
