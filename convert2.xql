@@ -79,6 +79,9 @@ let $result := try { transform:transform($incoming, doc($add), $params) }
 		}
 
 for $el in $result//tei:TEI
-	let $filename := $el//tei:title[@type='short'] || '.xml'
+	for $el in $result//tei:TEI
+	let $filename := if ($el//tei:title[@type='short'])
+		then $el//tei:title[@type='short'] || '.xml'
+		else $title || '.xml'
 	return <p>{xmldb:store('/db/apps/word2tei/mp-data', $filename, $el)}</p>
 (:	return $filename:)

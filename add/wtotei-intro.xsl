@@ -288,8 +288,7 @@
 		</listBibl>
 	</xsl:template>
 	
-	<xsl:template match="w:p[hab:isSigle(.)
-		and hab:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Früh')]">
+	<xsl:template match="w:p[hab:isSigle(.) and hab:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Früh')]">
 		<xsl:variable name="end"
 			select="following-sibling::w:p[hab:starts(., 'Bibliographische')][1]" />
 		<xsl:variable name="struct" select="current() | 
@@ -306,7 +305,7 @@
 			<xsl:attribute name="xml:id" select="$idNo" />
 			<xsl:variable name="elem">
 				<xsl:choose>
-					<xsl:when test="$struct[3]//w:t[starts-with(normalize-space(), 'in')]">
+					<xsl:when test="following-sibling::w:p[2][hab:starts(., 'in')]">
 						<xsl:text>analytic</xsl:text>
 					</xsl:when>
 					<xsl:otherwise>monogr</xsl:otherwise>
@@ -412,6 +411,8 @@
 							</bibl>
 						</xsl:for-each>
 					</listBibl>
+					<xsl:apply-templates select="$struct[last()]/following-sibling::w:p
+						intersect $struct[last()]/following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p"/>
 				</note>
 			</xsl:if>
 		</biblStruct>
@@ -421,18 +422,108 @@
 	<xsl:template match="w:p" mode="item">
 			<xsl:choose>
 				<xsl:when test="position() = 1">
-					<item n="Editionsvorlage">
-						<xsl:apply-templates
-							select="w:r[hab:contains(preceding-sibling::w:r, 'vorlage:')]"/>
+					<item n="editionsvorlage">
+						<xsl:variable name="temp">
+							<hab:t>
+								<xsl:apply-templates
+									select="w:r[hab:contains(preceding-sibling::w:r, 'vorlage')]
+									| w:commentRangeEnd" />
+							</hab:t>
+						</xsl:variable>
+						<xsl:apply-templates select="$temp" mode="ex" />
 					</item>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:apply-templates
-						select="w:r[hab:contains(preceding-sibling::w:r, 'plare:')]"/>
+					<!-- leere Exemplarangaben abfangen; 2017-10-24 DK -->
+					<xsl:if test="w:r[hab:contains(., 'plare')] and string-length(hab:string(.)) &gt; 20">
+						<xsl:variable name="t1">
+							<hab:t>
+								<xsl:apply-templates select="w:r[hab:contains(preceding-sibling::w:r, 'plare')]
+									| w:commentRangeEnd"/>
+							</hab:t>
+						</xsl:variable>
+						<xsl:variable name="t2">
+							<xsl:apply-templates select="$t1" mode="split"/>
+						</xsl:variable>
+						<xsl:apply-templates select="$t2/hab:br"/>
+						<item>
+							<xsl:variable name="t3">
+								<hab:t>
+									<xsl:copy-of select="$t2/node()[not(following-sibling::hab:br)]"/>
+								</hab:t>
+							</xsl:variable>
+							<xsl:apply-templates select="$t3" mode="ex" />
+						</item>
+					</xsl:if>
 				</xsl:otherwise>
 			</xsl:choose>
-		
 	</xsl:template>
+	
+	<!-- Exemplare in Literaturlisten trennen -->
+	<!-- neu 2017-10-24 DK -->
+	<xsl:template match="hab:t" mode="ex">
+		<xsl:variable name="temp">
+			<xsl:for-each select="node()">
+				<xsl:choose>
+					<xsl:when test="self::text() and contains(., ',')">
+						<xsl:value-of select="substring-before(., ',')"/>
+						<idno><xsl:value-of select="substring-after(., ',')"/></idno>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:copy-of select="."/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
+		</xsl:variable>
+		
+		<label>
+			<xsl:for-each select="$temp/node()[following-sibling::*:idno]">
+				<xsl:choose>
+					<xsl:when test="self::text()">
+						<xsl:value-of select="normalize-space(hab:substring-after(current(), ':'))"/>
+					</xsl:when>
+					<xsl:when test="self::hab:br" />
+					<xsl:otherwise>
+						<xsl:copy-of select="current()" />
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
+		</label>
+		<idno type="signatur">
+			<xsl:value-of
+				select="hab:substring-before-if-ends(normalize-space($temp/*:idno), '.')"/>
+		</idno>
+		<xsl:copy-of select="*:ptr"/>
+	</xsl:template>
+	
+	<xsl:template match="hab:t" mode="split">
+		<xsl:for-each select="node()">
+			<xsl:choose>
+				<xsl:when test="self::text()">
+					<xsl:analyze-string select="." regex="–">
+						<xsl:matching-substring><hab:br/></xsl:matching-substring>
+						<xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
+					</xsl:analyze-string>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:copy-of select="." />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:for-each>
+	</xsl:template>
+	
+	<xsl:template match="hab:br">
+		<xsl:variable name="myId" select="generate-id()" />
+		<xsl:variable name="temp">
+			<hab:t>
+				<xsl:copy-of select="preceding-sibling::node()[following-sibling::hab:br[1][generate-id()=$myId]]"/>
+			</hab:t>
+		</xsl:variable>
+		<item>
+			<xsl:apply-templates select="$temp" mode="ex" />
+		</item>
+	</xsl:template>
+	<!-- ENDE Exemplare trennen -->
 	
 	<xsl:template match="w:p[hab:isSigle(.)
 		and hab:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Hand')]">
@@ -604,7 +695,7 @@
 						<xsl:value-of select="$dWhen"/>
 					</date>
 				</imprint>
-				<extent><xsl:apply-templates select="$context/following-sibling::w:p[1]//w:t"/></extent>
+				<extent><xsl:apply-templates select="$context/following-sibling::w:p[1]/w:r"/></extent>
 				<xsl:if test="regex-group(4)">
 					<biblScope><xsl:value-of select="normalize-space(regex-group(4))" /></biblScope>
 				</xsl:if>
@@ -612,12 +703,12 @@
 		</xsl:analyze-string>
 	</xsl:template>
 	
-	<xsl:template match="w:p[not(descendant::w:t)]" />
+	<!-- leere p abfangen; 2017-10-24 DK -->
+	<xsl:template match="w:p[not(descendant::w:t) or string-length(hab:string(.)) &lt; 5]" />
 	<xsl:template match="w:p[(not(descendant::w:pStyle)
 		or hab:is(., 'KSText')) and not(hab:isSigle(.) or hab:starts(., 'Edition') or
-		hab:starts(., 'Literatur')) and descendant::w:t]">
+		hab:starts(., 'Literatur')) and descendant::w:t and string-length(hab:string(.)) &gt; 5]">
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
-<!--		<p><xsl:apply-templates select="descendant::w:t | descendant::w:endnoteReference" /></p>-->
 		<p><xsl:apply-templates select="w:r" /></p>
 	</xsl:template>
 	
@@ -628,7 +719,7 @@
 		<hi>
 			<xsl:attribute name="rend">
 				<xsl:choose>
-					<xsl:when test="@w:val='superscript'">super</xsl:when>
+					<xsl:when test="w:rPr/w:vertAlign/@w:val='superscript'">super</xsl:when>
 					<xsl:otherwise>sub</xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
@@ -660,10 +751,10 @@
 	<xsl:template match="w:commentRangeEnd">
 		<xsl:variable name="coID" select="@w:id" />
 		<xsl:variable name="text">
-			<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
+			<xsl:apply-templates select="hab:string(//w:comment[@w:id=$coID])"/>
 		</xsl:variable>
-		<xsl:if test="starts-with($text, 'http')">
-			<ptr type="digitalisat" target="{$text}" />
+		<xsl:if test="contains($text, 'http')">
+			<ptr type="digitalisat" target="{'http'||hab:substring-after($text, 'http')}" />
 		</xsl:if>
 	</xsl:template>
 	<xsl:template match="w:commentRangeEnd" mode="exemplar">
@@ -790,5 +881,19 @@
 	<xsl:function name="hab:string" as="xs:string">
 		<xsl:param name="context" />
 		<xsl:value-of select="string-join($context//w:t, '')"/>
+	</xsl:function>
+	
+	<xsl:function name="hab:substring-after" as="xs:string">
+		<xsl:param name="s" />
+		<xsl:param name="c" />
+		<xsl:value-of
+			select="if (contains($s, $c)) then substring-after($s, $c) else $s" />
+	</xsl:function>
+	
+	<xsl:function name="hab:substring-before-if-ends">
+		<xsl:param name="s" />
+		<xsl:param name="c" />
+		<xsl:variable name="l" select="string-length($s)" />
+		<xsl:value-of select="if(ends-with($s, $c)) then substring($s, 1, $l - 1) else $s"/>
 	</xsl:function>
 </xsl:stylesheet>
