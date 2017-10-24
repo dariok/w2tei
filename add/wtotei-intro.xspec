@@ -159,13 +159,12 @@
 				</w:p>
 			</x:context>
 			<x:expect label="nur Datum in Klammern">
-				<date when="1519-03" cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">1519, Ende
-					März?</date>
+				<date when="1519-03" cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">1519, Ende März?</date>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
 	<x:scenario label="Ü2">
-		<x:context mode="content2">
+		<x:context>
 			<w:p w14:paraId="2C2EA526" w14:textId="77777777" w:rsidR="004C6DB6" w:rsidRDefault="004C6DB6"
 				w:rsidP="0011564A">
 				<w:pPr>
@@ -1321,8 +1320,7 @@
 					<biblStruct type="imprint" xml:id="C">
 						<monogr>
 							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖
-								tuende. ‖ [TE]</title>
+							<title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖ tuende. ‖ [TE]</title>
 							<imprint>
 								<pubPlace cert="unknown">
 									<rs type="place">Breslau</rs>
@@ -1445,7 +1443,7 @@
 		</x:scenario>
 	</x:scenario>
 	<x:scenario label="ms">
-		<x:context mode="content2">
+		<x:context>
 			<w:p w14:paraId="2476FCF8" w14:textId="77777777" w:rsidR="004C6DB6" w:rsidRDefault="006D34C8"
 				w:rsidP="00827E89">
 				<w:pPr>
@@ -1608,8 +1606,7 @@
 					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
 					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 					xmlns:tei="http://www.tei-c.org/ns/1.0" type="reference">
-					<p>Brief Karlstadts vom 3. April 1519 an Spalatin: „Praeter illa putavi nuper in Concione
-						quadam“; „Ego typographo humeros hos supposui.“ (EE 90 [=Nr. 113]).</p>
+					<p>Brief Karlstadts vom 3. April 1519 an Spalatin: <hi style="font-style:italic;">„Praeter illa putavi nuper in Concione quadam“; „Ego typographo humeros hos supposui.“ </hi>(EE 90 [=Nr. 113]).</p>
 					<listBibl type="literatur">
 						<bibl>Bubenheimer, Karlstadt liest Tauler</bibl>
 						<bibl>Zorzin, Flugschriftenautor, 225.</bibl>
