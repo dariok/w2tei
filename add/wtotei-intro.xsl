@@ -631,6 +631,9 @@
 					<xsl:otherwise>literatur</xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
+			<xsl:if test="preceding-sibling::w:p[1][hab:starts(., 'Beilage')]">
+				<head><xsl:apply-templates select="preceding-sibling::w:p[1]/w:r"/></head>
+			</xsl:if>
 			<xsl:apply-templates select="w:r[hab:is(., 'KSbibliographischeAngabe', 'r')]" mode="bibl" />
 				<!--and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 				or descendant::w:rStyle[@w:val='Kommentarzeichen']
