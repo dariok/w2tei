@@ -435,23 +435,26 @@
 					</item>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:variable name="t1">
-						<hab:t>
-							<xsl:apply-templates select="w:r[hab:contains(preceding-sibling::w:r, 'plare')]"/>
-						</hab:t>
-					</xsl:variable>
-					<xsl:variable name="t2">
-						<xsl:apply-templates select="$t1" mode="split"/>
-					</xsl:variable>
-					<xsl:apply-templates select="$t2/hab:br"/>
-					<item>
-						<xsl:variable name="t3">
+					<!-- leere Exemplarangaben abfangen; 2017-10-24 DK -->
+					<xsl:if test="w:r[hab:contains(., 'plare')] and string-length(hab:string(.)) &gt; 20">
+						<xsl:variable name="t1">
 							<hab:t>
-								<xsl:copy-of select="$t2/node()[not(following-sibling::hab:br)]"/>
+								<xsl:apply-templates select="w:r[hab:contains(preceding-sibling::w:r, 'plare')]"/>
 							</hab:t>
 						</xsl:variable>
-						<xsl:apply-templates select="$t3" mode="ex" />
-					</item>
+						<xsl:variable name="t2">
+							<xsl:apply-templates select="$t1" mode="split"/>
+						</xsl:variable>
+						<xsl:apply-templates select="$t2/hab:br"/>
+						<item>
+							<xsl:variable name="t3">
+								<hab:t>
+									<xsl:copy-of select="$t2/node()[not(following-sibling::hab:br)]"/>
+								</hab:t>
+							</xsl:variable>
+							<xsl:apply-templates select="$t3" mode="ex" />
+						</item>
+					</xsl:if>
 				</xsl:otherwise>
 			</xsl:choose>
 	</xsl:template>
@@ -486,7 +489,7 @@
 				</xsl:choose>
 			</xsl:for-each>
 		</label>
-		<idno>
+		<idno type="signatur">
 			<xsl:value-of
 				select="hab:substring-before-if-ends(normalize-space($temp/*:idno), '.')"/>
 		</idno>
