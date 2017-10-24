@@ -130,7 +130,7 @@
 	<xsl:template match="w:p[hab:is(., 'KSEE-Titel')]" mode="date">
 		<xsl:variable name="pdline" select="hab:string(.)"/>
 		<!-- RegEx aktualisiert; hoffentlich geht das auf eXist...; 2017-08-07 DK -->
-		<xsl:analyze-string select="normalize-space($pdline)" regex="(?:([\[\]A-Za-z ]+), )?([\[\]\w\sä\?,\.]+)">
+		<xsl:analyze-string select="normalize-space($pdline)" regex="(?:([\[\]A-Za-z ]+), )?([\[\]\w\sä\?,\./]+)">
 			<xsl:matching-substring>
 				<xsl:if test="string-length(regex-group(1)) &gt; 1">
 					<placeName><xsl:if test="starts-with(regex-group(1), '[')">

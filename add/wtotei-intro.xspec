@@ -113,6 +113,41 @@
 						xmlns="http://www.tei-c.org/ns/1.0">November</supplied></date>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="Datum teils unbekannt und nur Text">
+			<x:context mode="date">
+				<w:p w:rsidR="0066718E" w:rsidRPr="00653B58" w:rsidRDefault="0066718E" w:rsidP="0010182F">
+					<w:pPr>
+						<w:pStyle w:val="KSEE-Titel"/>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00653B58">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+						</w:rPr>
+						<w:t>Wittenberg, 1520</w:t>
+					</w:r>
+					<w:r w:rsidR="007C6279">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+						</w:rPr>
+						<w:t>,</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00653B58">
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> [Ende September/ Anfang Oktober]</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="eckige Klammern">
+				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date
+					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11">1520, <supplied
+						xmlns="http://www.tei-c.org/ns/1.0">Ende September/Anfang Oktober</supplied></date>
+			</x:expect>
+		</x:scenario>
 		<x:scenario label="Ort und Datum bekannt">
 			<x:context mode="date">
 				<w:p>
