@@ -1508,7 +1508,7 @@
 					<w:rPr>
 						<w:lang w:val="la-Latn"/>
 					</w:rPr>
-					<w:t>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr. 129, Bl.
+					<w:t>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden , 10004 Kopiale, Nr. 129 , Bl.
 						12a/b (Stempel, nach alter handsch</w:t>
 				</w:r>
 				<w:bookmarkStart w:id="0" w:name="_GoBack"/>
@@ -1545,9 +1545,33 @@
 			</w:p>
 		</x:context>
 		<x:expect label="formatiert">
-			<listBibl type="sigla" xmlns="http://www.tei-c.org/ns/1.0">
-				<msDesc xml:id="A">Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden, 10004 Kopiale, Nr.
-					129, Bl. 12a/b (Stempel, nach alter handschriftlicher Foliierung Bl. 6a/b)</msDesc>
+			<listBibl xmlns="http://www.tei-c.org/ns/1.0"
+				xmlns:pkg="http://expath.org/ns/pkg"
+				xmlns:impl="urn:x-xspec:compile:xslt:impl"
+				xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+				xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+				xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+				xmlns:tei="http://www.tei-c.org/ns/1.0"
+				type="sigla">
+				<msDesc xml:id="A">
+					<msIdentifier>
+						<altIdentifier type="siglum">
+							<idno>A</idno>
+						</altIdentifier>
+						<repository>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden</repository>
+						<idno type="signatur">10004 Kopiale, Nr. 129</idno>
+					</msIdentifier>
+					<msContents>
+						<msItem>
+							<locus>Bl. 12a/b</locus>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<handDesc>
+							<handNote>Stempel, nach alter handschriftlicher Foliierung Bl. 6a/b</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
 			</listBibl>
 		</x:expect>
 	</x:scenario>

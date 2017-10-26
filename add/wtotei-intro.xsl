@@ -465,9 +465,9 @@
 		<xsl:variable name="temp">
 			<xsl:for-each select="node()">
 				<xsl:choose>
-					<xsl:when test="self::text() and contains(., ',')">
-						<xsl:value-of select="substring-before(., ',')"/>
-						<idno><xsl:value-of select="substring-after(., ',')"/></idno>
+					<xsl:when test="self::text() and contains(., ' , ')">
+						<xsl:value-of select="substring-before(., ' , ')"/>
+						<idno><xsl:value-of select="substring-after(., ' , ')"/></idno>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:copy-of select="."/>
@@ -531,7 +531,7 @@
 		<msDesc>
 			<xsl:variable name="desc"
 				select="hab:string(w:r[not(hab:isSigle(.))])" />
-			<xsl:variable name="md" select="tokenize($desc, ', ')" />
+			<xsl:variable name="md" select="tokenize($desc, ' , ')" />
 			<xsl:variable name="si"
 				select="hab:string(w:r[hab:isSigle(.)])" />
 			<xsl:variable name="sigle">
