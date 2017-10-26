@@ -130,7 +130,7 @@
 	<xsl:template match="w:t" mode="mTitle">
 		<xsl:analyze-string select="." regex="\.">
 			<xsl:matching-substring>
-				<br/>
+				<lb/>
 			</xsl:matching-substring>
 			<xsl:non-matching-substring>
 				<xsl:value-of select="."/>
