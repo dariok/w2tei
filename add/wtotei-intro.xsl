@@ -489,10 +489,25 @@
 				</xsl:choose>
 			</xsl:for-each>
 		</label>
+		<xsl:variable name="strings" select="tokenize($temp/*:idno, '\(')"/>
 		<idno type="signatur">
-			<xsl:value-of
-				select="hab:substring-before-if-ends(normalize-space($temp/*:idno), '.')"/>
+			<xsl:choose>
+				<xsl:when test="count($strings) = 3">
+					<xsl:value-of select=" $strings[1]"/>
+					<xsl:value-of select="concat('(', normalize-space($strings[2]))"/>
+				</xsl:when>
+				<xsl:when test="count($strings) = 2 and string-length($strings[2]) &lt; 10">
+					<xsl:value-of select=" $strings[1]"/>
+					<xsl:value-of select="concat('(', normalize-space($strings[2]))"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$strings[1]"/>
+				</xsl:otherwise>
+			</xsl:choose>
 		</idno>
+		<xsl:if test="count($strings) &gt; 1 and string-length($strings[last()]) &gt; 10">
+			<note><xsl:value-of select="substring-before($strings[last()], ')')"/></note>
+		</xsl:if>
 		<xsl:copy-of select="*:ptr"/>
 	</xsl:template>
 	
