@@ -144,8 +144,8 @@
 			</x:context>
 			<x:expect label="eckige Klammern">
 				<placeName xmlns="http://www.tei-c.org/ns/1.0">Wittenberg</placeName><date
-					xmlns="http://www.tei-c.org/ns/1.0" when="1520-11">1520, <supplied
-						xmlns="http://www.tei-c.org/ns/1.0">Ende September/Anfang Oktober</supplied></date>
+					xmlns="http://www.tei-c.org/ns/1.0" when="1520-10">1520, <supplied
+						xmlns="http://www.tei-c.org/ns/1.0">Ende September/ Anfang Oktober</supplied></date>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="Ort und Datum bekannt">

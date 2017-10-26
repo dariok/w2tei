@@ -529,21 +529,12 @@
 		and hab:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Hand')]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<msDesc>
-			<xsl:variable name="desc"
-				select="hab:string(w:r[not(hab:isSigle(.))])" />
+			<xsl:variable name="desc" select="hab:string(w:r[not(hab:isSigle(.))])" />
 			<xsl:variable name="md" select="tokenize($desc, ' , ')" />
 			<xsl:variable name="si"
 				select="hab:string(w:r[hab:isSigle(.)])" />
 			<xsl:variable name="sigle">
-				<xsl:choose>
-					<xsl:when test="contains($si, ':')">
-						<xsl:value-of
-							select="substring-before(hab:rmSquare($si), ':')"/>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:value-of select="hab:rmSquare($si)" />
-					</xsl:otherwise>
-				</xsl:choose>
+				<xsl:value-of select="hab:substring-before(hab:rmSquare($si), ':')"/>
 			</xsl:variable>
 			<xsl:if test="string-length($si) &gt; 1">
 				<!-- Fälle besser behandeln; 2017-10-12 -->
@@ -795,7 +786,6 @@
 				<!--</note>-->
 			</xsl:if>
 			<!-- FN berücksichtigen; 2017-08-07 DK -->
-			<xsl:value-of select="count(following-sibling::w:r[w:endnoteReference])"/>
 			<xsl:choose>
 				<xsl:when test="$next">
 					<xsl:apply-templates select="following-sibling::w:r[w:endnoteReference
@@ -890,6 +880,13 @@
 		<xsl:param name="c" />
 		<xsl:value-of
 			select="if (contains($s, $c)) then substring-after($s, $c) else $s" />
+	</xsl:function>
+	
+	<xsl:function name="hab:substring-before" as="xs:string">
+		<xsl:param name="s" />
+		<xsl:param name="c" />
+		<xsl:value-of
+			select="if (contains($s, $c)) then substring-before($s, $c) else $s" />
 	</xsl:function>
 	
 	<xsl:function name="hab:substring-before-if-ends">
