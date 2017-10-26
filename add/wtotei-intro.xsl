@@ -500,7 +500,7 @@
 		<xsl:for-each select="node()">
 			<xsl:choose>
 				<xsl:when test="self::text()">
-					<xsl:analyze-string select="." regex="–">
+					<xsl:analyze-string select="." regex="–|—">
 						<xsl:matching-substring><hab:br/></xsl:matching-substring>
 						<xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
 					</xsl:analyze-string>
