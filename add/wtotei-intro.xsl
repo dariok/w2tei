@@ -42,9 +42,10 @@
 			<teiHeader>
 				<fileDesc>
 					<titleStmt>
-						<title><xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle" />
-							<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][3]"
-								mode="date"/></title>
+						<title>
+							<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle" />
+							<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][3]" mode="date"/>
+						</title>
 						<!-- Kurztitel erzeugen; 2017-08-07 DK -->
 						<title type="short">
 							<xsl:if test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'">
@@ -121,6 +122,18 @@
 		<xsl:analyze-string select="$aut" regex="(,|und)">
 			<xsl:non-matching-substring>
 				<author><xsl:value-of select="normalize-space()"/></author>
+			</xsl:non-matching-substring>
+		</xsl:analyze-string>
+	</xsl:template>
+	
+	<!-- Titel mit Untertitel; 2017-10-26 DK -->
+	<xsl:template match="w:t" mode="mTitle">
+		<xsl:analyze-string select="." regex="\.">
+			<xsl:matching-substring>
+				<br/>
+			</xsl:matching-substring>
+			<xsl:non-matching-substring>
+				<xsl:value-of select="."/>
 			</xsl:non-matching-substring>
 		</xsl:analyze-string>
 	</xsl:template>
