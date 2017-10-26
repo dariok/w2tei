@@ -51,7 +51,17 @@
 							<xsl:if test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'">
 								<xsl:text>Verschollen: </xsl:text>
 							</xsl:if>
-							<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle" />
+							<xsl:variable name="title">
+								<xsl:apply-templates select="//w:p[hab:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle" />
+							</xsl:variable>
+							<xsl:choose>
+								<xsl:when test="$title/*:lb">
+									<xsl:value-of select="$title/text()[following-sibling::*:lb]"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="$title"/>
+								</xsl:otherwise>
+							</xsl:choose>
 							<xsl:choose>
 								<xsl:when test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'
 									or ends-with(hab:string(//w:p[hab:is(., 'KSEE-Titel')][3]), ']')">
