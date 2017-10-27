@@ -120,10 +120,14 @@
 			</teiHeader>
 			<text>
 				<body>
-					<xsl:apply-templates select="descendant::w:p[hab:isHead(., 1)]"/>
+					<xsl:apply-templates select="//w:body" />
 				</body>
 			</text>
 		</TEI>
+	</xsl:template>
+	
+	<xsl:template match="w:body">
+		<xsl:apply-templates select="descendant::w:p[hab:isHead(., 1)]"/>
 	</xsl:template>
 	
 	<!-- Bearbeiter/Autor; 2017-05-03 DK -->
@@ -295,8 +299,8 @@
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:apply-templates select="following-sibling::w:p[hab:isHead(., 2)]"/>
-					<xsl:apply-templates select="following-sibling::w:p[not(following-sibling::w:p[hab:isHead(., 2)])
-						and (hab:starts(., 'Edition') or hab:starts(., 'Literatur'))]"/>
+					<xsl:apply-templates select="following-sibling::w:p[not(following-sibling::w:p[hab:isSigle(.)])
+						and (hab:starts(., 'Edition') or hab:starts(., 'Literatur')) and not(hab:starts(., 'Editionsvorlage'))]"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</div>
@@ -371,55 +375,6 @@
 					<list>
 						<xsl:apply-templates select="$struct[hab:starts(., 'Editionsv')
 							or hab:starts(., 'Weitere')]" mode="item" />
-						<!--<item n="editionsvorlage">
-							<xsl:variable name="ex" select="$struct[$pos]" />
-							<xsl:choose>
-								<xsl:when test="contains($ex, ',')">
-									<label><xsl:value-of
-										select="normalize-space(substring-before(substring-after($ex, ':'), ','))"/></label>
-									<idno type="signatur"><xsl:value-of
-										select="normalize-space(substring-after($ex, ','))"/></idno>
-								</xsl:when>
-								<xsl:otherwise>
-									<idno type="signatur"><xsl:value-of
-										select="normalize-space(substring-after($ex, ':'))"/></idno>
-								</xsl:otherwise>
-							</xsl:choose>
-							<xsl:if test="$struct[$pos]/w:commentRangeEnd">
-								<xsl:variable name="coID" select="$struct[$pos]/w:commentRangeEnd/@w:id"/>
-								<ptr type="digitalisat">
-									<xsl:attribute name="target">
-										<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
-									</xsl:attribute>
-								</ptr>
-							</xsl:if>
-						</item>
-						<xsl:variable name="weitere">
-							<xsl:apply-templates select="$struct[$pos + 1]//w:t" mode="exemplar" />
-						</xsl:variable>
-						<xsl:for-each select="tokenize(substring-after($weitere, 'Exemplare: '), ';|–|—')">
-							<item>
-								<xsl:choose>
-									<xsl:when test="contains(., ',')">
-										<label><xsl:value-of select="normalize-space(substring-before(current(), ','))"/></label>
-										<idno type="signatur"><xsl:choose>
-											<xsl:when test="contains(current(), '→')">
-												<xsl:value-of select="normalize-space(substring-before(substring-after(current(), ','), '→'))"/>
-											</xsl:when>
-											<xsl:otherwise>
-												<xsl:value-of select="normalize-space(substring-after(current(), ','))"/>
-											</xsl:otherwise>
-										</xsl:choose></idno>
-									</xsl:when>
-									<xsl:otherwise>
-										<idno type="signatur"><xsl:value-of select="normalize-space()"/></idno>
-									</xsl:otherwise>
-								</xsl:choose>
-								<xsl:if test="contains(., '→')">
-									<ptr type="digitalisat" target="{substring-after(., '→')}" />
-								</xsl:if>
-							</item>
-						</xsl:for-each>-->
 					</list>
 				</note>
 				<note type="references">
@@ -448,8 +403,7 @@
 					<item n="editionsvorlage">
 						<xsl:variable name="temp">
 							<hab:t>
-								<xsl:apply-templates
-									select="w:r[hab:contains(preceding-sibling::w:r, 'vorlage')]
+								<xsl:apply-templates select="w:r[hab:contains(preceding-sibling::w:r, 'vorlage')]
 									| w:commentRangeEnd" />
 							</hab:t>
 						</xsl:variable>

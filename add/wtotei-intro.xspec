@@ -200,6 +200,15 @@
 	</x:scenario>
 	<x:scenario label="Ü2">
 		<x:context>
+			<w:body>
+				<w:p w:rsidR="003E79AF" w:rsidRDefault="003E79AF" w:rsidP="003E79AF">
+					<w:pPr>
+						<w:pStyle w:val="KSberschrift1"/>
+					</w:pPr>
+					<w:r>
+						<w:t>Überlieferung</w:t>
+					</w:r>
+				</w:p>>
 			<w:p w14:paraId="2C2EA526" w14:textId="77777777" w:rsidR="004C6DB6" w:rsidRDefault="004C6DB6"
 				w:rsidP="0011564A">
 				<w:pPr>
@@ -1348,129 +1357,133 @@
 					</w:pPr>
 				</w:p>
 			</w:comment>
+			</w:body>
 		</x:context>
-		<x:scenario label="Frühdrucke">
+		<!--<x:scenario label="Frühdrucke">-->
 			<x:expect label="listBibl">
-				<listBibl type="sigla" xmlns="http://www.tei-c.org/ns/1.0">
-					<biblStruct type="imprint" xml:id="C">
-						<monogr>
-							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖ tuende. ‖ [TE]</title>
-							<imprint>
-								<pubPlace cert="unknown">
-									<rs type="place">Breslau</rs>
-								</pubPlace>
-								<publisher cert="unknown">
-									<rs type="person">Adam Dyon</rs>
-								</publisher>
-								<date when="1519">1519</date>
-							</imprint>
-							<extent>4°, 4 Bl., Titelbl., A2-A4.</extent>
-						</monogr>
-						<idno type="siglum">C</idno>
-						<note type="copies">
-							<list>
-								<item n="editionsvorlage">
-									<label>BU Wrocław</label>
-									<idno type="signatur">Mf 4956</idno>
-								</item>
-							</list>
-						</note>
-						<note type="references">
-							<listBibl>
-								<bibl>VD 16 B 6127.</bibl>
-								<bibl>Freys/Barge, Verzeichnis, Nr. 18.</bibl>
-								<bibl>Zorzin, Flugschriftenautor, 13C.</bibl>
-							</listBibl>
-						</note>
-					</biblStruct>
-					<biblStruct type="imprint" xml:id="D">
-						<analytic>
-							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title>
-						</analytic>
-						<monogr>
-							<title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖ Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij ,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ Caroloﬅadij,theologicæ. ‖  ... ‖ [TE]</title>
-							<imprint>
-								<pubPlace cert="unknown">
-									<rs type="place">Leipzig</rs>
-								</pubPlace>
-								<publisher cert="unknown">
-									<rs type="person">Melchior Lotter d. Ä</rs>
-								</publisher>
-								<date when="1519" cert="unknown">1519</date>
-							</imprint>
-							<extent>4°, 6 Bl., Titelbl., A2-A6, Sig. A2<hi rend="super">r</hi>, A3<hi rend="super"
-									>r</hi>.</extent>
-							<biblScope>fol. A5v‒A6r.</biblScope>
-						</monogr>
-						<idno type="siglum">D</idno>
-						<note type="copies">
-							<list>
-								<item n="editionsvorlage">
-									<label>ÖNB Wien</label>
-									<idno type="signatur">11.J.64</idno>
-									<ptr type="digitalisat"
-										target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/>
-								</item>
-								<item>
-									<label>HAB Wolfenbüttel</label>
-									<idno type="signatur">H 54.4° Helmst. (2)</idno>
-								</item>
-							</list>
-						</note>
-						<note type="references">
-							<listBibl>
-								<bibl>VD 16 E 2832.</bibl>
-								<bibl>Freys/Barge, Verzeichnis, Nr. 19.</bibl>
-								<bibl>Zorzin, Flugschriftenautor, 13aA.</bibl>
-							</listBibl>
-						</note>
-					</biblStruct>
-					<biblStruct type="imprint" xml:id="B">
-						<monogr>
-							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij tuende. ‖ [TE]</title>
-							<imprint>
-								<pubPlace cert="unknown">
-									<rs type="place">Leipzig</rs>
-								</pubPlace>
-								<publisher cert="unknown">
-									<rs type="person">Martin Landsberg</rs>
-								</publisher>
-								<date when="1519">1519</date>
-							</imprint>
-							<extent>4°, 4 Bl., Titelbl., A2-A4, Sign. A2<hi rend="super">r</hi>, A3<hi
-									rend="super">r</hi>.</extent>
-						</monogr>
-						<idno type="siglum">B</idno>
-						<note type="copies">
-							<list>
-								<item n="editionsvorlage">
-									<label>HAB Wolfenbüttel</label>
-									<idno type="signatur">H: H 55.4° Helmst. (6)</idno>
-									<ptr type="digitalisat"
-										target="http://diglib.hab.de/drucke/h-55-4f-helmst-6s/start.htm"/>
-								</item>
-								<item>
-									<label>BSB München</label>
-									<idno type="signatur">Rar. 1953#Beibd.1</idno>
-									<ptr type="digitalisat"
-										target="http://daten.digitale-sammlungen.de/~db/0002/bsb00025776/images/"/>
-								</item>
-							</list>
-						</note>
-						<note type="references">
-							<listBibl>
-								<bibl>VD 16 B 6128.</bibl>
-								<bibl>Freys/Barge, Verzeichnis, Nr. 17.</bibl>
-								<bibl>Zorzin, Flugschriftenautor, 13B.</bibl>
-							</listBibl>
-						</note>
-					</biblStruct>
-				</listBibl>
+				<div xmlns="http://www.tei-c.org/ns/1.0"
+					type="history_of_the_work">
+					<listBibl type="sigla">
+						<biblStruct type="imprint" xml:id="C">
+							<monogr>
+								<author>Karlstadt, Andreas Bodenstein von</author>
+								<title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖ tuende. ‖ [TE]</title>
+								<imprint>
+									<pubPlace cert="unknown">
+										<rs type="place">Breslau</rs>
+									</pubPlace>
+									<publisher cert="unknown">
+										<rs type="person">Adam Dyon</rs>
+									</publisher>
+									<date when="1519">1519</date>
+								</imprint>
+								<extent>4°, 4 Bl., Titelbl., A2-A4.</extent>
+							</monogr>
+							<idno type="siglum">C</idno>
+							<note type="copies">
+								<list>
+									<item n="editionsvorlage">
+										<label>BU Wrocław</label>
+										<idno type="signatur">Mf 4956</idno>
+									</item>
+								</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<bibl>VD 16 B 6127.</bibl>
+									<bibl>Freys/Barge, Verzeichnis, Nr. 18.</bibl>
+									<bibl>Zorzin, Flugschriftenautor, 13C.</bibl>
+								</listBibl>
+							</note>
+						</biblStruct>
+						<biblStruct type="imprint" xml:id="D">
+							<analytic>
+								<author>Karlstadt, Andreas Bodenstein von</author>
+								<title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title>
+							</analytic>
+							<monogr>
+								<title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖ Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij ,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ Caroloﬅadij,theologicæ. ‖  ... ‖ [TE]</title>
+								<imprint>
+									<pubPlace cert="unknown">
+										<rs type="place">Leipzig</rs>
+									</pubPlace>
+									<publisher cert="unknown">
+										<rs type="person">Melchior Lotter d. Ä</rs>
+									</publisher>
+									<date when="1519" cert="unknown">1519</date>
+								</imprint>
+								<extent>4°, 6 Bl., Titelbl., A2-A6, Sig. A2<hi rend="super">r</hi>, A3<hi rend="super"
+										>r</hi>.</extent>
+								<biblScope>fol. A5v‒A6r.</biblScope>
+							</monogr>
+							<idno type="siglum">D</idno>
+							<note type="copies">
+								<list>
+									<item n="editionsvorlage">
+										<label>ÖNB Wien</label>
+										<idno type="signatur">11.J.64</idno>
+										<ptr type="digitalisat"
+											target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/>
+									</item>
+									<item>
+										<label>HAB Wolfenbüttel</label>
+										<idno type="signatur">H 54.4° Helmst. (2)</idno>
+									</item>
+								</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<bibl>VD 16 E 2832.</bibl>
+									<bibl>Freys/Barge, Verzeichnis, Nr. 19.</bibl>
+									<bibl>Zorzin, Flugschriftenautor, 13aA.</bibl>
+								</listBibl>
+							</note>
+						</biblStruct>
+						<biblStruct type="imprint" xml:id="B">
+							<monogr>
+								<author>Karlstadt, Andreas Bodenstein von</author>
+								<title>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij tuende. ‖ [TE]</title>
+								<imprint>
+									<pubPlace cert="unknown">
+										<rs type="place">Leipzig</rs>
+									</pubPlace>
+									<publisher cert="unknown">
+										<rs type="person">Martin Landsberg</rs>
+									</publisher>
+									<date when="1519">1519</date>
+								</imprint>
+								<extent>4°, 4 Bl., Titelbl., A2-A4, Sign. A2<hi rend="super">r</hi>, A3<hi
+										rend="super">r</hi>.</extent>
+							</monogr>
+							<idno type="siglum">B</idno>
+							<note type="copies">
+								<list>
+									<item n="editionsvorlage">
+										<label>HAB Wolfenbüttel</label>
+										<idno type="signatur">H: H 55.4° Helmst. (6)</idno>
+										<ptr type="digitalisat"
+											target="http://diglib.hab.de/drucke/h-55-4f-helmst-6s/start.htm"/>
+									</item>
+									<item>
+										<label>BSB München</label>
+										<idno type="signatur">Rar. 1953#Beibd.1</idno>
+										<ptr type="digitalisat"
+											target="http://daten.digitale-sammlungen.de/~db/0002/bsb00025776/images/"/>
+									</item>
+								</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<bibl>VD 16 B 6128.</bibl>
+									<bibl>Freys/Barge, Verzeichnis, Nr. 17.</bibl>
+									<bibl>Zorzin, Flugschriftenautor, 13B.</bibl>
+								</listBibl>
+							</note>
+						</biblStruct>
+					</listBibl>
+				</div>
 			</x:expect>
-		</x:scenario>
+		<!--</x:scenario>-->
 	</x:scenario>
 	<x:scenario label="ms">
 		<x:context>
