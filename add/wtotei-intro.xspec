@@ -3,7 +3,8 @@
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
 	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-	xmlns:tei="http://www.tei-c.org/ns/1.0" stylesheet="wtotei-intro.xsl" xslt-version="3.0">
+	xmlns:tei="http://www.tei-c.org/ns/1.0" stylesheet="wtotei-intro.xsl" xslt-version="3.0"
+	preserve-space="no">
 	<x:scenario label="Bearbeiter">
 		<x:scenario label="ein Bearbeiter">
 			<x:context mode="head">
@@ -4922,6 +4923,475 @@
 						<bibl>Barge, Karlstadt 1, 168–172</bibl>
 					</listBibl>
 				</div>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="verschiedene Drucksignaturen">
+			<x:context mode="item">
+				<w:p w14:paraId="3EBF4E3E" w14:textId="77777777" w:rsidR="00B32C7A" w:rsidRPr="00040E52"
+					w:rsidRDefault="00B32C7A" w:rsidP="00B32C7A">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:i/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Editionsvorlage</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>: HAB</w:t>
+					</w:r>
+					<w:r w:rsidR="00294503" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Wolfenbüttel</w:t>
+					</w:r>
+					<w:r w:rsidR="00846FEF">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">, </w:t>
+					</w:r>
+					<w:commentRangeStart w:id="0"/>
+					<w:r w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>H: Yv 1677.8° Helmst.</w:t>
+					</w:r>
+					<w:commentRangeEnd w:id="0"/>
+					<w:r w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:rStyle w:val="CommentReference"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:commentReference w:id="0"/>
+					</w:r>
+				</w:p>
+				<w:p w14:paraId="4C29659B" w14:textId="77777777" w:rsidR="00B32C7A" w:rsidRPr="00577B88"
+					w:rsidRDefault="00B32C7A" w:rsidP="00B32C7A">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:i/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Weitere Exemplare</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">: </w:t>
+					</w:r>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>ThULB Jena</w:t>
+					</w:r>
+					<w:r w:rsidR="00846FEF">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">, </w:t>
+					</w:r>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="la-Latn"/>
+						</w:rPr>
+						<w:t>6463</w:t>
+					</w:r>
+					<w:r w:rsidR="007116D1">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="la-Latn"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> 23</w:t>
+					</w:r>
+					<w:r w:rsidR="009A0967">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>(12)</w:t>
+					</w:r>
+					<w:commentRangeStart w:id="1"/>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:commentRangeEnd w:id="1"/>
+					<w:r w:rsidR="00CA6477">
+						<w:rPr>
+							<w:rStyle w:val="CommentReference"/>
+							<w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi"/>
+						</w:rPr>
+						<w:commentReference w:id="1"/>
+					</w:r>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00F452CB">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="la-Latn"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="la-Latn"/>
+						</w:rPr>
+						<!--<w:t>—</w:t>-->
+						<w:t>–</w:t>
+					</w:r>
+					<w:r w:rsidR="00F452CB" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00CC117C">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>UB Paderborn</w:t>
+					</w:r>
+					<w:r w:rsidR="000F2A2C">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Erzbischöfliche Akademische</w:t>
+					</w:r>
+					<w:r w:rsidR="0031410A">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Bibliothek</w:t>
+					</w:r>
+					<w:r w:rsidR="00846FEF">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="0031410A">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>,</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:commentRangeStart w:id="2"/>
+					<w:r w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>T</w:t>
+					</w:r>
+					<w:r w:rsidR="000913F3">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>h</w:t>
+					</w:r>
+					<w:r w:rsidR="0031410A">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">. </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>6116</w:t>
+					</w:r>
+					<w:commentRangeEnd w:id="2"/>
+					<w:r w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:rStyle w:val="CommentReference"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:commentReference w:id="2"/>
+					</w:r>
+				</w:p>
+				<w:p w14:paraId="5FA97F40" w14:textId="77777777" w:rsidR="00B32C7A" w:rsidRPr="00577B88"
+					w:rsidRDefault="00B32C7A" w:rsidP="00B32C7A">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:b/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00294503">
+						<w:rPr>
+							<w:rStyle w:val="KSSigle"/>
+						</w:rPr>
+						<w:t>[B:]</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:b/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Luther, Martin</w:t>
+					</w:r>
+				</w:p>
+				<w:p w14:paraId="3BA188F4" w14:textId="77777777" w:rsidR="00B32C7A" w:rsidRPr="00CC117C"
+					w:rsidRDefault="00B32C7A" w:rsidP="00B32C7A">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00CC117C">
+						<w:rPr>
+							<w:i/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Editionsvorlage</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00CC117C">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve">: UB Basel, </w:t>
+					</w:r>
+					<w:commentRangeStart w:id="5"/>
+					<w:r w:rsidRPr="00CC117C">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>FM1 X 1:4</w:t>
+					</w:r>
+					<w:commentRangeEnd w:id="5"/>
+					<w:r w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:rStyle w:val="CommentReference"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:commentReference w:id="5"/>
+					</w:r>
+					<w:r w:rsidR="00CB0224" w:rsidRPr="00CC117C">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+				</w:p>
+				<w:p w14:paraId="3F0FBCFA" w14:textId="77777777" w:rsidR="00B32C7A" w:rsidRPr="005C06BC"
+					w:rsidRDefault="00B32C7A" w:rsidP="00B32C7A">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:i/>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:lastRenderedPageBreak/>
+						<w:t>Weitere Exemplare</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>: BSB</w:t>
+					</w:r>
+					<w:r w:rsidR="004A69E0" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> München,</w:t>
+					</w:r>
+					<w:r w:rsidR="007616B0" w:rsidRPr="00040E52">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="007616B0" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>Res/4 Biogr. 129</w:t>
+					</w:r>
+					<w:commentRangeStart w:id="6"/>
+					<w:r w:rsidR="00CB0224" w:rsidRPr="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:commentRangeEnd w:id="6"/>
+					<w:r w:rsidR="007616B0">
+						<w:rPr>
+							<w:rStyle w:val="CommentReference"/>
+							<w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi"/>
+						</w:rPr>
+						<w:commentReference w:id="6"/>
+					</w:r>
+					<w:r w:rsidR="00FF0606" w:rsidRPr="00F452CB">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="la-Latn"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00FF0606" w:rsidRPr="00577B88">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+							<w:lang w:val="la-Latn"/>
+						</w:rPr>
+						<w:t>—</w:t>
+					</w:r>
+					<w:r w:rsidR="00FF0606" w:rsidRPr="00FF0606">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00040E52">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>ebd.</w:t>
+					</w:r>
+					<w:r w:rsidR="00FF0606" w:rsidRPr="005C06BC">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>,</w:t>
+					</w:r>
+					<w:r w:rsidR="00FF0606" w:rsidRPr="00FF0606">
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="00FF0606" w:rsidRPr="00FF0606">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>4 Exeg. 190</w:t>
+					</w:r>
+					<w:commentRangeStart w:id="7"/>
+					<w:r w:rsidR="00FF0606">
+						<w:rPr>
+							<w:szCs w:val="24"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+					<w:commentRangeEnd w:id="7"/>
+					<w:r w:rsidR="00FF0606">
+						<w:rPr>
+							<w:rStyle w:val="CommentReference"/>
+							<w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi"/>
+						</w:rPr>
+						<w:commentReference w:id="7"/>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label="Aufteilung inkl. Fußnote">
+				<item n="editionsvorlage">
+					<label>HAB Wolfenbüttel</label>
+					<idno type="signatur">H: Yv 1677.8° Helmst.</idno>
+					<ptr xmlns:hab="http://diglib.hab.de"
+						type="digitalisat"
+						target="http://diglib.hab.de/drucke/yv-1677-8f-helmst/start.htm "/>
+				</item>
+				<item>
+					<label>ThULB Jena</label>
+					<idno type="signatur">6463. 23 (12).</idno>
+					<ptr xmlns:hab="http://diglib.hab.de"
+						type="digitalisat"
+						target="https://archive.thulb.uni-jena.de/hisbest/rsc/viewer/HisBest_derivate_00001559/RN_0041_0337.tif"/>
+				</item>
+				<item>
+					<label>UB Paderborn Erzbischöfliche Akademische Bibliothek</label>
+					<idno type="signatur">Th. 6116</idno>
+					<ptr xmlns:hab="http://diglib.hab.de"
+						type="digitalisat"
+						target="http://digital.ub.uni-paderborn.de/eab/content/zoom/1682491"/>
+				</item>
+				<item>
+					<label>[B<hi xmlns:hab="http://diglib.hab.de" rend="sub">2</hi>] Bodleian Library Oxford</label>
+					<idno type="signatur">Tr. Luth. 86 (21)</idno>
+					<note>mit Druckvarianten</note>
+				</item>
+				<item n="editionsvorlage">
+					<label>UB Basel</label>
+					<idno type="signatur">FM1 X 1:4</idno>
+					<ptr xmlns:hab="http://diglib.hab.de"
+						type="digitalisat"
+						target="http://www.e-rara.ch/bau_1/content/pageview/641058"/>
+				</item>
+				<item>
+					<label>BSB München</label>
+					<idno type="signatur">Res/4 Biogr. 129.</idno>
+					<ptr xmlns:hab="http://diglib.hab.de"
+						type="digitalisat"
+						target="http://daten.digitale-sammlungen.de/bsb00026956/image_5"/>
+				</item>
+				<item>
+					<label>ebd.</label>
+					<idno type="signatur">4 Exeg. 190.</idno>
+					<ptr xmlns:hab="http://diglib.hab.de"
+						type="digitalisat"
+						target="http://daten.digitale-sammlungen.de/bsb00011438/image_8"/>
+				</item>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
