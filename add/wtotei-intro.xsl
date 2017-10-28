@@ -437,7 +437,7 @@
 	</xsl:template>
 	
 	<!-- Angaben zu Exemplaren; 2017-10-28 DK -->
-	<xsl:template match="w:r" mode="item">
+	<xsl:template match="w:r | w:commentRangeEnd" mode="item">
 		<xsl:choose>
 			<xsl:when test="hab:is(., 'KSAnmerkunginberlieferung', 'r')
 				and preceding-sibling::w:r[1][hab:is(., 'KSAnmerkunginberlieferung', 'r')]"/>
@@ -461,7 +461,7 @@
 				<xsl:choose>
 					<xsl:when test="self::text() and contains(., ' , ')">
 						<xsl:value-of select="substring-before(., ' , ')"/>
-						<idno><xsl:value-of select="substring-after(., ' , ')"/></idno>
+						<idno><xsl:value-of select="normalize-space(substring-after(., ' , '))"/></idno>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:copy-of select="."/>
