@@ -363,7 +363,7 @@
 					<w:t>Editionsvorlage</w:t>
 				</w:r>
 				<w:r w:rsidRPr="00452700">
-					<w:t>: BU Wrocław, Mf 4956</w:t>
+					<w:t>: BU Wrocław , Mf 4956</w:t>
 				</w:r>
 				<w:r w:rsidR="0035581D">
 					<w:t>.</w:t>
@@ -825,7 +825,7 @@
 					<w:t>ÖNB</w:t>
 				</w:r>
 				<w:r w:rsidR="000B2667">
-					<w:t xml:space="preserve"> Wien</w:t>
+					<w:t xml:space="preserve"> Wien </w:t>
 				</w:r>
 				<w:r w:rsidRPr="00452700">
 					<w:t>, 11.J.64</w:t>
@@ -859,7 +859,7 @@
 					<w:t>: HAB</w:t>
 				</w:r>
 				<w:r w:rsidR="00FF7E6D">
-					<w:t xml:space="preserve"> Wolfenbüttel,</w:t>
+					<w:t xml:space="preserve"> Wolfenbüttel ,</w:t>
 				</w:r>
 				<w:r w:rsidR="00A5355A">
 					<w:t xml:space="preserve"> H 54.4° Helmst. (2).</w:t>
@@ -1116,7 +1116,7 @@
 					<w:t xml:space="preserve"> Wolfenbüttel</w:t>
 				</w:r>
 				<w:r w:rsidRPr="00452700">
-					<w:t xml:space="preserve">, </w:t>
+					<w:t xml:space="preserve"> , </w:t>
 				</w:r>
 				<w:commentRangeStart w:id="3"/>
 				<w:r w:rsidRPr="00452700">
@@ -1151,7 +1151,7 @@
 					<w:t xml:space="preserve"> München</w:t>
 				</w:r>
 				<w:r w:rsidRPr="00452700">
-					<w:t xml:space="preserve">, </w:t>
+					<w:t xml:space="preserve"> , </w:t>
 				</w:r>
 				<w:commentRangeStart w:id="4"/>
 				<w:r w:rsidRPr="00452700">
@@ -1385,7 +1385,7 @@
 								<list>
 									<item n="editionsvorlage">
 										<label>BU Wrocław</label>
-										<idno type="signatur">Mf 4956</idno>
+										<idno type="signatur">Mf 4956.</idno>
 									</item>
 								</list>
 							</note>
@@ -1415,7 +1415,7 @@
 								</imprint>
 								<extent>4°, 6 Bl., Titelbl., A2-A6, Sig. A2<hi rend="super">r</hi>, A3<hi rend="super"
 										>r</hi>.</extent>
-								<biblScope>fol. A5v‒A6r.</biblScope>
+								<biblScope>fol. A5<hi rend="super">v</hi>‒A6<hi rend="super">r</hi>.</biblScope>
 							</monogr>
 							<idno type="siglum">D</idno>
 							<note type="copies">
