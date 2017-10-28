@@ -404,7 +404,7 @@
 						<xsl:variable name="temp">
 							<hab:t>
 								<xsl:apply-templates select="w:r[hab:contains(preceding-sibling::w:r, 'vorlage')]
-									| w:commentRangeEnd" />
+									| w:commentRangeEnd" mode="item"/>
 							</hab:t>
 						</xsl:variable>
 						<xsl:apply-templates select="$temp" mode="ex" />
@@ -416,7 +416,7 @@
 						<xsl:variable name="t1">
 							<hab:t>
 								<xsl:apply-templates select="w:r[hab:contains(preceding-sibling::w:r, 'plare')]
-									| w:commentRangeEnd"/>
+									| w:commentRangeEnd" mode="item"/>
 							</hab:t>
 						</xsl:variable>
 						<xsl:variable name="t2">
@@ -434,6 +434,23 @@
 					</xsl:if>
 				</xsl:otherwise>
 			</xsl:choose>
+	</xsl:template>
+	
+	<!-- Angaben zu Exemplaren; 2017-10-28 DK -->
+	<xsl:template match="w:r" mode="item">
+		<xsl:choose>
+			<xsl:when test="hab:is(., 'KSAnmerkunginberlieferung', 'r')
+				and preceding-sibling::w:r[1][hab:is(., 'KSAnmerkunginberlieferung', 'r')]"/>
+			<xsl:when test="hab:is(., 'KSAnmerkunginberlieferung', 'r')
+				and not(preceding-sibling::w:r[1][hab:is(., 'KSAnmerkunginberlieferung', 'r')])">
+				<note>
+					<xsl:apply-templates select=". | following-sibling::w:r[hab:is(., 'KSAnmerkunginberlieferung', 'r')]"/>
+				</note>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="."/>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<!-- Exemplare in Literaturlisten trennen -->
@@ -482,9 +499,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</idno>
-		<xsl:if test="count($strings) &gt; 1 and string-length($strings[last()]) &gt; 10">
-			<note><xsl:value-of select="substring-before($strings[last()], ')')"/></note>
-		</xsl:if>
+		<xsl:copy-of select="*:note" />
 		<xsl:copy-of select="*:ptr"/>
 	</xsl:template>
 	
