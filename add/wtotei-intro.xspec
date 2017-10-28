@@ -1422,13 +1422,13 @@
 								<list>
 									<item n="editionsvorlage">
 										<label>ÖNB Wien</label>
-										<idno type="signatur">11.J.64</idno>
+										<idno type="signatur">11.J.64.</idno>
 										<ptr type="digitalisat"
 											target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/>
 									</item>
 									<item>
 										<label>HAB Wolfenbüttel</label>
-										<idno type="signatur">H 54.4° Helmst. (2)</idno>
+										<idno type="signatur">H 54.4° Helmst. (2).</idno>
 									</item>
 								</list>
 							</note>
