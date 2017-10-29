@@ -5985,7 +5985,7 @@
 					<idno type="signatur">Tr. Luth. 86 (21)</idno>
 					<note>mit Druckvarianten</note>
 				</item>
-				<item n="editionsvorlage">
+				<item>
 					<label>UB Basel</label>
 					<idno type="signatur">FM1 X 1:4</idno>
 					<ptr xmlns:hab="http://diglib.hab.de" type="digitalisat"
