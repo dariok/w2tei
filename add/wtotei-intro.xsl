@@ -294,8 +294,14 @@
 			</xsl:attribute>
 			
 			<xsl:choose>
-				<xsl:when test="not(following-sibling::w:p[hab:isHead(., 2)])">
+				<xsl:when test="not(following-sibling::w:p[hab:isHead(., 2)])
+					and not(following-sibling::w:p[hab:isHead(., 1)])">
 					<xsl:apply-templates select="following-sibling::w:p" />
+				</xsl:when>
+				<xsl:when test="not(following-sibling::w:p[hab:isHead(., 2)])
+					and following-sibling::w:p[hab:isHead(., 1)]">
+					<xsl:apply-templates select="following-sibling::w:p[not(hab:isHead(., 1))
+						and not(preceding-sibling::w:p[hab:isHead(., 1)][2])]"/>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:apply-templates select="following-sibling::w:p[hab:isHead(., 2)]"/>
@@ -851,7 +857,7 @@
 	
 	<xsl:template match="w:r" mode="bibl">
 		<xsl:variable name="me" select="generate-id()" />
-		<xsl:variable name="next" select="following::w:r[ancestor::w:body and hab:is(., 'KSbibliographischeAngabe', 'r')
+		<xsl:variable name="next" select="following-sibling::w:r[ancestor::w:body and hab:is(., 'KSbibliographischeAngabe', 'r')
 			and not(preceding-sibling::w:r[1][hab:is(., 'KSbibliographischeAngabe', 'r')])][1]" />
 		<bibl>
 			<xsl:choose>
