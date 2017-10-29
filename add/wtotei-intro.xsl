@@ -444,7 +444,10 @@
 			<xsl:when test="hab:is(., 'KSAnmerkunginberlieferung', 'r')
 				and not(preceding-sibling::w:r[1][hab:is(., 'KSAnmerkunginberlieferung', 'r')])">
 				<note>
-					<xsl:apply-templates select=". | following-sibling::w:r[hab:is(., 'KSAnmerkunginberlieferung', 'r')]"/>
+					<xsl:variable name="anmerkung">
+						<xsl:apply-templates select=". | following-sibling::w:r[hab:is(., 'KSAnmerkunginberlieferung', 'r')]"/>
+					</xsl:variable>
+					<xsl:value-of select="hab:substring-before-if-ends(hab:substring-after-if-starts($anmerkung, '('), ')')"/>
 				</note>
 			</xsl:when>
 			<xsl:otherwise>
@@ -868,10 +871,8 @@
 				= $me]" />
 			<xsl:if test="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung']
 				and following::w:r[generate-id() = $next]]">
-				<!--<note>-->
-					<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
-						following::w:r[generate-id() = $next]]//w:t" />
-				<!--</note>-->
+				<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
+					following::w:r[generate-id() = $next]]" />
 			</xsl:if>
 			<!-- FN berücksichtigen; 2017-08-07 DK -->
 			<xsl:choose>
@@ -982,5 +983,11 @@
 		<xsl:param name="c" />
 		<xsl:variable name="l" select="string-length($s)" />
 		<xsl:value-of select="if(ends-with($s, $c)) then substring($s, 1, $l - 1) else $s"/>
+	</xsl:function>
+	
+	<xsl:function name="hab:substring-after-if-starts">
+		<xsl:param name="s" />
+		<xsl:param name="c" />
+		<xsl:value-of select="if(starts-with($s, $c)) then substring($s, 2) else $s"/>
 	</xsl:function>
 </xsl:stylesheet>
