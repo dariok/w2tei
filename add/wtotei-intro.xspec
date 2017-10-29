@@ -5086,7 +5086,7 @@
 						</w:rPr>
 						<w:t xml:space="preserve">KB St. Gotthardt Brandenburg , B 4, 14, 6. </w:t>
 					</w:r>
-					<!--<w:r w:rsidR="00034D39">
+					<w:r w:rsidR="00034D39">
 						<w:rPr>
 							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
 							<w:sz w:val="24"/>
@@ -5314,7 +5314,7 @@
 							<w:sz w:val="24"/>
 							<w:szCs w:val="24"/>
 						</w:rPr>
-						<w:t xml:space="preserve">HAB </w:t>
+						<w:t xml:space="preserve"> – HAB </w:t>
 					</w:r>
 					<w:r w:rsidRPr="009A0526">
 						<w:rPr>
@@ -5327,19 +5327,10 @@
 					<w:r w:rsidR="009A0526" w:rsidRPr="009A0526">
 						<w:rPr>
 							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-							<w:i/>
 							<w:sz w:val="24"/>
 							<w:szCs w:val="24"/>
 						</w:rPr>
-						<w:t xml:space="preserve"> </w:t>
-					</w:r>
-					<w:r w:rsidR="009A0526" w:rsidRPr="009A0526">
-						<w:rPr>
-							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-							<w:sz w:val="24"/>
-							<w:szCs w:val="24"/>
-						</w:rPr>
-						<w:t>BSB München , Res/4 Polem. 3340,18</w:t>
+						<w:t> – BSB München , Res/4 Polem. 3340,18</w:t>
 					</w:r>
 					<w:r w:rsidR="00D0302E">
 						<w:rPr>
@@ -5566,11 +5557,32 @@
 						</w:rPr>
 						<w:commentReference w:id="2"/>
 					</w:r>
+					<w:r>
+						<w:t> — [B</w:t>
+					</w:r>
+					<w:r>
+						<w:rPr>
+							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							<w:sz w:val="24"/>
+							<w:szCs w:val="24"/>
+							<w:vertAlign w:val="subscript"/>
+						</w:rPr>
+						<w:t>2</w:t>
+						</w:r>
+					<w:r>
+						<w:t>] Bodleian Library Oxford , Tr. Luth. 86 (21)</w:t>
+					</w:r>
+					<w:r>
+						<w:rPr>
+							<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+						</w:rPr>
+						<w:t>(mit Druckvarianten)</w:t>
+					</w:r>
 					<w:r w:rsidRPr="00CC117C">
 						<w:rPr>
 							<w:szCs w:val="24"/>
 						</w:rPr>
-						<w:t xml:space="preserve"> — UB Basel, </w:t>
+						<w:t xml:space="preserve"> — UB Basel , </w:t>
 					</w:r>
 					<w:commentRangeStart w:id="5"/>
 					<w:r w:rsidRPr="00CC117C">
@@ -5604,7 +5616,7 @@
 						<w:rPr>
 							<w:szCs w:val="24"/>
 						</w:rPr>
-						<w:t xml:space="preserve"> München,</w:t>
+						<w:t xml:space="preserve"> München ,</w:t>
 					</w:r>
 					<w:r w:rsidR="007616B0" w:rsidRPr="00040E52">
 						<w:t xml:space="preserve"> </w:t>
@@ -5660,7 +5672,7 @@
 						<w:rPr>
 							<w:szCs w:val="24"/>
 						</w:rPr>
-						<w:t>,</w:t>
+						<w:t> ,</w:t>
 					</w:r>
 					<w:r w:rsidR="00FF0606" w:rsidRPr="00FF0606">
 						<w:t xml:space="preserve"> </w:t>
@@ -5685,15 +5697,271 @@
 							<w:rFonts w:asciiTheme="minorHAnsi" w:hAnsiTheme="minorHAnsi"/>
 						</w:rPr>
 						<w:commentReference w:id="7"/>
-					</w:r>-->
+					</w:r>
 				</w:p>
+				<w:comment w:id="0" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+					w:initials="Salv">
+					<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="Kommentarzeichen"/>
+							</w:rPr>
+							<w:annotationRef/>
+						</w:r>
+						<w:hyperlink r:id="rId4" w:history="1">
+							<w:r w:rsidRPr="000B2667">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>http://diglib.hab.de/drucke/Yv-1677_8-Helmst</w:t>
+							</w:r>
+						</w:hyperlink>
+					</w:p>
+					<w:p w14:paraId="6F0D1E24" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+				</w:comment>
+				<w:comment w:id="1" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+					w:initials="Salv">
+					<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="Kommentarzeichen"/>
+							</w:rPr>
+							<w:annotationRef/>
+						</w:r>
+						<w:hyperlink r:id="rId4" w:history="1">
+							<w:r w:rsidRPr="000B2667">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>https://archive.thulb.uni-jena.de/hisbest/rsc/viewer/HisBest_derivate_00001559/RN_0041_0337.tif</w:t>
+							</w:r>
+						</w:hyperlink>
+					</w:p>
+					<w:p w14:paraId="6F0D1E24" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+				</w:comment>
+				<w:comment w:id="2" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+					w:initials="Salv">
+					<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="Kommentarzeichen"/>
+							</w:rPr>
+							<w:annotationRef/>
+						</w:r>
+						<w:hyperlink r:id="rId4" w:history="1">
+							<w:r w:rsidRPr="000B2667">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>http://digital.ub.uni-paderborn.de/eab/content/zoom/1682491</w:t>
+							</w:r>
+						</w:hyperlink>
+					</w:p>
+					<w:p w14:paraId="6F0D1E24" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+				</w:comment>
+				<w:comment w:id="5" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+					w:initials="Salv">
+					<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="Kommentarzeichen"/>
+							</w:rPr>
+							<w:annotationRef/>
+						</w:r>
+						<w:hyperlink r:id="rId4" w:history="1">
+							<w:r w:rsidRPr="000B2667">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>http://www.e-rara.ch/bau_1/content/pageview/641058</w:t>
+							</w:r>
+						</w:hyperlink>
+					</w:p>
+					<w:p w14:paraId="6F0D1E24" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+				</w:comment>
+				<w:comment w:id="6" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+					w:initials="Salv">
+					<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="Kommentarzeichen"/>
+							</w:rPr>
+							<w:annotationRef/>
+						</w:r>
+						<w:hyperlink r:id="rId4" w:history="1">
+							<w:r w:rsidRPr="000B2667">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>http://daten.digitale-sammlungen.de/bsb00026956/image_5</w:t>
+							</w:r>
+						</w:hyperlink>
+					</w:p>
+					<w:p w14:paraId="6F0D1E24" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+				</w:comment>
+				<w:comment w:id="7" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
+					w:initials="Salv">
+					<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="Kommentarzeichen"/>
+							</w:rPr>
+							<w:annotationRef/>
+						</w:r>
+						<w:hyperlink r:id="rId4" w:history="1">
+							<w:r w:rsidRPr="000B2667">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>http://daten.digitale-sammlungen.de/bsb00011438/image_8</w:t>
+							</w:r>
+						</w:hyperlink>
+					</w:p>
+					<w:p w14:paraId="6F0D1E24" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
+						w:rsidRDefault="00452700" w:rsidP="00452700">
+						<w:pPr>
+							<w:pStyle w:val="Kommentartext"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+				</w:comment>
 			</x:context>
-			<x:expect label="Aufteilung inkl. Fußnote">
-				<item n="editionsvorlage">
+			<x:expect label="Aufteilung inkl. Fußnote" xmlns="http://www.tei-c.org/ns/1.0">
+				<item n="editionsvorlage" >
+					<label>[A<hi xmlns:hab="http://diglib.hab.de"
+						rend="sub">L</hi>] UB Leipzig</label>
+					<idno type="signatur">Lib.sep.1960at.</idno>
+				</item>
+				<item>
+					<label>[A<hi xmlns:hab="http://diglib.hab.de"
+						rend="sub">Br</hi>] KB St. Gotthardt Brandenburg</label>
+					<idno type="signatur">B 4, 14, 6.</idno>
+				</item>
+				<item>
+					<label>[A<hi xmlns:hab="http://diglib.hab.de"
+						rend="sub">1</hi>] Concordia Seminary St. Louis</label>
+					<idno type="signatur">L 270.6 K (3).</idno>
+				</item>
+				<item>
+					<label>[A<hi xmlns:hab="http://diglib.hab.de" rend="sub">3</hi>] BPS Wittenberg</label>
+					<idno type="signatur">LC 708,6.</idno>
+				</item>
+				<item>
+					<label>[A<hi rend="sub">2</hi>
+						<hi rend="sub">-Wo</hi>] HAB Wolfenbüttel</label>
+					<idno type="signatur">A: 112.4 Theol. (16).</idno>
+				</item>
+				<item>
+					<label>[A<hi rend="sub">3</hi>
+						<hi rend="sub">-Wo</hi>] Ebd.</label>
+					<idno type="signatur">H: 55.4 Helmst. (3)</idno>
+				</item>
+				<item>
+					<label>HAB Wolfenbüttel</label>
+					<idno type="signatur">H: Yv 143.8 Helmst. (5).</idno>
+				</item>
+				<item>
+					<label>BSB München</label>
+					<idno type="signatur">Res/4 Polem. 3340,18</idno>
+				</item>
+				<item>
+					<label>ÖNB Wien</label>
+					<idno type="signatur">20.Dd.1237.</idno>
+				</item>
+				<item>
 					<label>HAB Wolfenbüttel</label>
 					<idno type="signatur">H: Yv 1677.8° Helmst.</idno>
-					<ptr xmlns:hab="http://diglib.hab.de" type="digitalisat"
-						target="http://diglib.hab.de/drucke/yv-1677-8f-helmst/start.htm "/>
+					<ptr type="digitalisat" target="http://diglib.hab.de/drucke/Yv-1677_8-Helmst"/>
 				</item>
 				<item>
 					<label>ThULB Jena</label>
@@ -5709,8 +5977,7 @@
 						target="http://digital.ub.uni-paderborn.de/eab/content/zoom/1682491"/>
 				</item>
 				<item>
-					<label>[B<hi xmlns:hab="http://diglib.hab.de" rend="sub">2</hi>] Bodleian Library
-						Oxford</label>
+					<label>[B<hi xmlns:hab="http://diglib.hab.de" rend="sub">2</hi>] Bodleian Library Oxford</label>
 					<idno type="signatur">Tr. Luth. 86 (21)</idno>
 					<note>mit Druckvarianten</note>
 				</item>
