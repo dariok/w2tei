@@ -4943,6 +4943,7 @@
 		</x:scenario>
 		<x:scenario label="verschiedene Drucksignaturen">
 			<x:context mode="item">
+				<w:body>
 				<w:p w:rsidR="00BE2F1B" w:rsidRPr="00A25B42" w:rsidRDefault="00BE2F1B" w:rsidP="00BE2F1B">
 					<w:pPr>
 						<w:spacing w:after="0"/>
@@ -5699,6 +5700,8 @@
 						<w:commentReference w:id="7"/>
 					</w:r>
 				</w:p>
+				</w:body>
+				<w:comments>
 				<w:comment w:id="0" w:author="Salvadori, Stefania" w:date="2017-05-12T16:43:00Z"
 					w:initials="Salv">
 					<w:p w14:paraId="3EF8EF9D" w14:textId="77777777" w:rsidR="00452700" w:rsidRPr="000B2667"
@@ -5915,6 +5918,7 @@
 						</w:pPr>
 					</w:p>
 				</w:comment>
+				</w:comments>
 			</x:context>
 			<x:expect label="Aufteilung inkl. Fußnote" xmlns="http://www.tei-c.org/ns/1.0">
 				<item n="editionsvorlage" >

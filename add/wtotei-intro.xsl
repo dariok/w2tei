@@ -843,6 +843,8 @@
 		<xsl:text>→</xsl:text>
 		<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
 	</xsl:template>
+	<!-- für Verabreitung im XSPEC -->
+	<xsl:template match="w:comments" mode="item" />
 	
 	<xsl:template match="w:r" mode="bibl">
 		<xsl:variable name="me" select="generate-id()" />
