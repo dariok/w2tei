@@ -2299,6 +2299,7 @@
 		</x:scenario>
 	</x:scenario>
 	<x:scenario label="ms">
+		<x:scenario label="EE 100">
 		<x:context>
 			<w:body>
 				<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="00703482">
@@ -2354,19 +2355,11 @@
 						</w:rPr>
 						<w:t>riftlicher Fo</w:t>
 					</w:r>
-					<w:commentRangeStart w:id="1"/>
 					<w:r w:rsidRPr="006D34C8">
 						<w:rPr>
 							<w:lang w:val="la-Latn"/>
 						</w:rPr>
 						<w:t>lii</w:t>
-					</w:r>
-					<w:commentRangeEnd w:id="1"/>
-					<w:r w:rsidR="00B90BE4">
-						<w:rPr>
-							<w:rStyle w:val="Kommentarzeichen"/>
-						</w:rPr>
-						<w:commentReference w:id="1"/>
 					</w:r>
 					<w:r w:rsidRPr="006D34C8">
 						<w:rPr>
@@ -2409,6 +2402,408 @@
 				</listBibl>
 			</div>
 		</x:expect>
+		</x:scenario>
+		<x:scenario label="EE 107">
+			<x:context>
+				<w:body>
+					<w:p w14:paraId="1688D78F" w14:textId="77777777" w:rsidR="0010182F"
+						w:rsidRDefault="00255645" w:rsidP="0010182F">
+						<w:pPr>
+							<w:pStyle w:val="KSEE-Titel"/>
+						</w:pPr>
+						<w:r>
+							<w:t xml:space="preserve">EE 107 [= </w:t>
+						</w:r>
+						<w:r w:rsidR="0010182F">
+							<w:t>Nr.</w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve"> 13</w:t>
+						</w:r>
+						<w:r w:rsidR="00C760FE">
+							<w:t>3</w:t>
+						</w:r>
+						<w:r>
+							<w:t>]</w:t>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="1AC2415F" w14:textId="77777777" w:rsidR="0010182F"
+						w:rsidRDefault="00BC2A8D" w:rsidP="0010182F">
+						<w:pPr>
+							<w:pStyle w:val="KSEE-Titel"/>
+						</w:pPr>
+						<w:r>
+							<w:t xml:space="preserve">Martin </w:t>
+						</w:r>
+						<w:r w:rsidR="00255645" w:rsidRPr="00255645">
+							<w:t>Luther und Karlstadt</w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve"> Karlstadt</w:t>
+						</w:r>
+						<w:r w:rsidR="00255645" w:rsidRPr="00255645">
+							<w:t xml:space="preserve"> an Kurfürst Friedrich</w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve"> III.</w:t>
+						</w:r>
+						<w:r w:rsidR="00255645" w:rsidRPr="00255645">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="002865D2">
+							<w:t>–</w:t>
+						</w:r>
+						<w:r w:rsidR="00255645" w:rsidRPr="00255645">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00255645">
+							<w:t>Begleitschreiben</w:t>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="2952AABC" w14:textId="77777777" w:rsidR="002865D2"
+						w:rsidRDefault="002865D2" w:rsidP="0010182F">
+						<w:pPr>
+							<w:pStyle w:val="KSEE-Titel"/>
+						</w:pPr>
+						<w:r>
+							<w:t>Wittenberg, 1519, 18. August</w:t>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="636CC43D" w14:textId="77777777" w:rsidR="0010182F" w:rsidRPr="0010182F"
+						w:rsidRDefault="0010182F" w:rsidP="0010182F">
+						<w:pPr>
+							<w:pStyle w:val="KSEE-Titel"/>
+						</w:pPr>
+						<w:r>
+							<w:t>Bearbeitet von</w:t>
+						</w:r>
+						<w:r w:rsidR="00255645">
+							<w:t xml:space="preserve"> Stefania Salvadori</w:t>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="5EB13F1C" w14:textId="77777777" w:rsidR="00CE2F47"
+						w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift1"/>
+						</w:pPr>
+						<w:r>
+							<w:t>Überlieferung</w:t>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="50CF050A" w14:textId="77777777" w:rsidR="00255645" w:rsidRPr="004C6DB6"
+						w:rsidRDefault="00255645" w:rsidP="00255645">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift2"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Segoe UI Symbol" w:hAnsi="Segoe UI Symbol"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:t>Handschriften:</w:t>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="310131BE" w14:textId="77777777" w:rsidR="004C6DB6" w:rsidRPr="00BC2A8D"
+						w:rsidRDefault="00481065" w:rsidP="00255645">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00BC2A8D">
+							<w:rPr>
+								<w:rStyle w:val="KSSigle"/>
+							</w:rPr>
+							<w:t>[a:]</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00BC2A8D">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00255645" w:rsidRPr="00BC2A8D">
+							<w:t xml:space="preserve">FB Gotha , Chart. A 379 , </w:t>
+						</w:r>
+						<w:r w:rsidR="00221F98" w:rsidRPr="00BC2A8D">
+							<w:t>fol</w:t>
+						</w:r>
+						<w:r w:rsidR="00255645" w:rsidRPr="00BC2A8D">
+							<w:t xml:space="preserve">. 7r-v </w:t>
+						</w:r>
+						<w:r w:rsidR="0037579C" w:rsidRPr="00BC2A8D">
+							<w:t>(</w:t>
+						</w:r>
+						<w:r w:rsidR="00255645" w:rsidRPr="00BC2A8D">
+							<w:t>Autograph</w:t>
+						</w:r>
+						<w:r w:rsidR="0037579C" w:rsidRPr="00BC2A8D">
+							<w:t>)</w:t>
+						</w:r>
+						<w:commentRangeStart w:id="0"/>
+						<w:r w:rsidR="000C59C2" w:rsidRPr="00BC2A8D">
+							<w:t>.</w:t>
+						</w:r>
+						<w:commentRangeEnd w:id="0"/>
+						<w:r w:rsidR="000C59C2">
+							<w:rPr>
+								<w:rStyle w:val="Kommentarzeichen"/>
+							</w:rPr>
+							<w:commentReference w:id="0"/>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="15DE0916" w14:textId="77777777" w:rsidR="005426EB" w:rsidRPr="005426EB"
+						w:rsidRDefault="00255645" w:rsidP="005426EB">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="005426EB">
+							<w:rPr>
+								<w:i/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>Edition</w:t>
+						</w:r>
+						<w:r w:rsidRPr="005426EB">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>:</w:t>
+						</w:r>
+						<w:r w:rsidR="005426EB" w:rsidRPr="005426EB">
+							<w:rPr>
+								<w:i/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve">WA.B 1, </w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="002973B4">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>501</w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>‒</w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="002973B4">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>502</w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>, Nr. 19</w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="002973B4">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>3</w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="005426EB">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. — </w:t>
+						</w:r>
+						<w:r w:rsidR="005426EB" w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>Wa</w:t>
+						</w:r>
+						<w:r w:rsidR="005426EB" w:rsidRPr="002973B4">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>lch</w:t>
+						</w:r>
+						<w:r w:rsidR="005426EB" w:rsidRPr="002973B4">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:vertAlign w:val="superscript"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>2</w:t>
+						</w:r>
+						<w:r w:rsidR="005426EB" w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> 15, Sp. 1</w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="002973B4">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>306</w:t>
+						</w:r>
+						<w:r w:rsidR="005426EB" w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>‒130</w:t>
+						</w:r>
+						<w:bookmarkStart w:id="1" w:name="_GoBack"/>
+						<w:bookmarkEnd w:id="1"/>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="002973B4">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>7</w:t>
+						</w:r>
+						<w:r w:rsidR="005426EB" w:rsidRPr="005426EB">
+							<w:rPr>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+						<w:r w:rsidR="005426EB" w:rsidRPr="005426EB">
+							<w:rPr>
+								<w:rFonts w:eastAsia="Calibri" w:cs="Times New Roman"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="020F5A47" w14:textId="77777777" w:rsidR="005426EB"
+						w:rsidRDefault="005426EB" w:rsidP="005426EB">
+						<w:r w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:i/>
+							</w:rPr>
+							<w:t>Literatur</w:t>
+						</w:r>
+						<w:r w:rsidRPr="005426EB">
+							<w:t xml:space="preserve">: </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Barge, Karlstadt 1, 168</w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>‒169</w:t>
+						</w:r>
+						<w:r w:rsidRPr="005426EB">
+							<w:rPr>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+						<w:r w:rsidRPr="005426EB">
+							<w:t xml:space="preserve"> — </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Brecht, Luther 1, 3</w:t>
+						</w:r>
+						<w:r w:rsidR="00774B4C" w:rsidRPr="00774B4C">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>07‒312</w:t>
+						</w:r>
+						<w:r w:rsidRPr="005426EB">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+				</w:body>
+				<w:comments>
+					<w:comment w:id="0" w:author="Salvadori, Stefania" w:date="2017-06-22T11:16:00Z"
+						w:initials="Salv">
+						<w:p w14:paraId="1C9E93F4" w14:textId="77777777" w:rsidR="000C59C2"
+							w:rsidRDefault="000C59C2" w:rsidP="000C59C2">
+							<w:pPr>
+								<w:pStyle w:val="Kommentartext"/>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rStyle w:val="Kommentarzeichen"/>
+								</w:rPr>
+								<w:annotationRef/>
+							</w:r>
+							<w:r>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:hyperlink r:id="rId1" w:history="1">
+								<w:r w:rsidRPr="001722EF">
+									<w:rPr>
+										<w:rStyle w:val="Hyperlink"/>
+									</w:rPr>
+									<w:t>https://archive.thulb.uni-jena.de/ufb/receive/ufb_cbu_00005372</w:t>
+								</w:r>
+							</w:hyperlink>
+						</w:p>
+					</w:comment>
+				</w:comments>
+			</x:context>
+			<x:expect label="Link zum Digitalisat">
+				<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
+					<listBibl type="sigla">
+						<msDesc xml:id="a">
+							<msIdentifier>
+								<altIdentifier type="siglum">
+									<idno>a</idno>
+								</altIdentifier>
+								<repository>FB Gotha</repository>
+								<idno type="signatur">Chart. A 379</idno>
+							</msIdentifier>
+							<msContents>
+								<msItem>
+									<locus>fol. 7r-v</locus>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<p>
+									<ptr type="digitalisat"
+										target="https://archive.thulb.uni-jena.de/ufb/receive/ufb_cbu_00005372"/>
+								</p>
+								<handDesc>
+									<handNote>Autograph</handNote>
+								</handDesc>
+							</physDesc>
+						</msDesc>
+					</listBibl>
+					<listBibl type="editions">
+						<bibl>WA.B 1, </bibl>
+						<bibl>Walch2 15, Sp. 1306‒1307</bibl>
+					</listBibl>
+					<listBibl type="literatur">
+						<bibl>Barge, Karlstadt 1, 168</bibl>
+						<bibl>Brecht, Luther 1, 307‒312</bibl>
+					</listBibl>
+				</div>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<!-- neu ab 2017-08-08 DK -->
 	<x:scenario label="Ausgabe ab 1. Überschrift">

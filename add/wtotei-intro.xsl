@@ -870,6 +870,7 @@
 
 	<!-- (auch) für Verabreitung im XSPEC -->
 	<xsl:template match="w:comments" mode="item" />
+	<xsl:template match="w:comments" />
 	
 	<xsl:template match="w:r" mode="bibl">
 		<xsl:variable name="me" select="generate-id()" />
