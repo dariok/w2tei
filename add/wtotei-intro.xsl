@@ -386,7 +386,7 @@
 				<note type="references">
 					<listBibl>
 						<xsl:variable name="weitere">
-							<xsl:apply-templates select="$struct[$pos + 2]//w:t" />
+							<xsl:apply-templates select="$struct[hab:starts(., 'Bibliographische')]//w:r" />
 						</xsl:variable>
 						<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
 							<bibl>
