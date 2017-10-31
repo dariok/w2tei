@@ -611,6 +611,9 @@
 				</msContents>
 			</xsl:if>
 			<physDesc>
+				<xsl:if test="w:commentRangeEnd">
+					<p><xsl:apply-templates select="w:commentRangeEnd"/></p>
+				</xsl:if>
 				<xsl:if test="contains($md[3], '(')">
 					<handDesc>
 						<handNote>
