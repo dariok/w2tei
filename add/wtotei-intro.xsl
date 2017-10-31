@@ -453,7 +453,17 @@
 					<xsl:variable name="anmerkung">
 						<xsl:apply-templates select=". | following-sibling::w:r[hab:is(., 'KSAnmerkunginberlieferung', 'r')]"/>
 					</xsl:variable>
-					<xsl:value-of select="hab:substring-before-if-ends(hab:substring-after-if-starts($anmerkung, '('), ')')"/>
+					<xsl:for-each select="$anmerkung/node()">
+						<xsl:choose>
+							<xsl:when test="self::text()">
+								<xsl:value-of select="hab:substring-before-if-ends(hab:substring-after-if-starts(current(), '('), ')')"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:copy-of select="."/>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+					
 				</note>
 			</xsl:when>
 			<xsl:otherwise>
