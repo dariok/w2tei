@@ -842,6 +842,8 @@
 	<xsl:template match="w:r[w:endnoteReference]">
 		<xsl:apply-templates select="w:endnoteReference" />
 	</xsl:template>
+	<!-- (auch) zur einfacheren Verarbeitung im XSpec; 2017-10-31 DK -->
+	<xsl:template match="w:endnotes" />
 	
 	<!-- neu 2017-06-11 DK -->
 	<xsl:template match="w:t" mode="exemplar">
@@ -862,7 +864,8 @@
 		<xsl:text>→</xsl:text>
 		<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
 	</xsl:template>
-	<!-- für Verabreitung im XSPEC -->
+
+	<!-- (auch) für Verabreitung im XSPEC -->
 	<xsl:template match="w:comments" mode="item" />
 	
 	<xsl:template match="w:r" mode="bibl">

@@ -200,6 +200,7 @@
 		</x:scenario>
 	</x:scenario>
 	<x:scenario label="Ü2">
+		<x:scenario label="Beispiel 1">
 		<x:context>
 			<w:body>
 				<w:p w:rsidR="003E79AF" w:rsidRDefault="003E79AF" w:rsidP="003E79AF">
@@ -1484,6 +1485,818 @@
 			</div>
 		</x:expect>
 		<!--</x:scenario>-->
+	</x:scenario>
+		<x:scenario label="EE 132a">
+			<x:context>
+				<w:body>
+					<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="00703482">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift1"/>
+						</w:pPr>
+						<w:r>
+							<w:t>Überlieferung</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="00703482" w:rsidRPr="00F90826" w:rsidRDefault="004C6DB6" w:rsidP="00F90826">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift2"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00F90826">
+							<w:t>Frühdrucke</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="00F92761" w:rsidRPr="00273C38" w:rsidRDefault="00C04153" w:rsidP="00273C38">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00D711BB">
+							<w:rPr>
+								<w:rStyle w:val="KSSigle"/>
+							</w:rPr>
+							<w:lastRenderedPageBreak/>
+							<w:t>[B:]</w:t>
+						</w:r>
+						<w:r w:rsidR="00EC125A" w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="0018300F" w:rsidRPr="00273C38">
+							<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="002D1EC0" w:rsidRPr="00A51FFF" w:rsidRDefault="002D1EC0" w:rsidP="00273C38">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00A51FFF">
+							<w:t>Conclu</w:t>
+						</w:r>
+						<w:r w:rsidR="00A51FFF" w:rsidRPr="00A51FFF">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00A51FFF">
+							<w:t>iones duodecim de Legis non fur</w:t>
+						</w:r>
+						<w:r w:rsidR="00A51FFF" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>⸗</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00A51FFF">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00A51FFF">
+							<w:t>tum facies,impletione &amp; te</w:t>
+						</w:r>
+						<w:r w:rsidR="00A51FFF" w:rsidRPr="00577B88">
+							<w:rPr>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="it-IT"/>
+							</w:rPr>
+							<w:t>ﬅ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00A51FFF">
+							<w:t>amentorum lega</w:t>
+						</w:r>
+						<w:r w:rsidR="00A51FFF" w:rsidRPr="00A51FFF">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>⸗</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00A51FFF">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00A51FFF">
+							<w:t>tione altatium, &amp; mi</w:t>
+						</w:r>
+						<w:r w:rsidR="00A51FFF" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidR="00A51FFF" w:rsidRPr="00A51FFF">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00A51FFF">
+							<w:t>arum fundatione.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="002D1EC0" w:rsidRPr="00273C38" w:rsidRDefault="002D1EC0" w:rsidP="00273C38">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>in:</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="002D1EC0" w:rsidRPr="00273C38" w:rsidRDefault="00273C38" w:rsidP="00D711BB">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.
+								a</w:t>
+						</w:r>
+						<w:r w:rsidR="002D1EC0" w:rsidRPr="00273C38">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="002D1EC0" w:rsidRPr="00DC0D46" w:rsidRDefault="002D1EC0" w:rsidP="00273C38">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve">INSIGNIVM THEOLOGORVM </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> Domini</w:t>
+						</w:r>
+						<w:r w:rsidR="005078BB">
+							<w:t xml:space="preserve"> Martini</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve">Lutheri, dominiAndree </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> Ba</w:t>
+						</w:r>
+						<w:r w:rsidRPr="005078BB">
+							<w:t>rol</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="00F90826">
+							<w:t>o</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="00577B88">
+							<w:rPr>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="it-IT"/>
+							</w:rPr>
+							<w:t>ﬅ</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="00F90826">
+							<w:t>a</w:t>
+						</w:r>
+						<w:r w:rsidRPr="005078BB">
+							<w:t>dij</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> , Philippi melan</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve">thonis &amp; aliorum </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> conclu</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>⸗</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>iones varię, pro diuinæ gratiæ defen</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve">ione </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> ac commendatione,contra </w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>co</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>la</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="00577B88">
+							<w:rPr>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="it-IT"/>
+							</w:rPr>
+							<w:t>ﬅ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve">icos &amp; pelagianos </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> di</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve">putate </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> in præ</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>⸗</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"
+								/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve">clara academia. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Vvittembergen</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve">i. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Lege le</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t></w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>or &amp; afficieris ver</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve">afacie catalogum </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> inuenies.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="002D1EC0" w:rsidRPr="006D6587" w:rsidRDefault="002D1EC0" w:rsidP="00273C38">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>[Paris]: [Pierre Vidou</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>é</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve">], [1521?], </w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t>fo</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00DC0D46">
+							<w:rPr>
+								<w:lang w:val="fr-FR"/>
+							</w:rPr>
+							<w:t xml:space="preserve">l. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>D4</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F67416">
+							<w:rPr>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>r–v</w:t>
+						</w:r>
+						<w:r w:rsidR="006D6587">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="002D1EC0" w:rsidRPr="006D6587" w:rsidRDefault="002D1EC0" w:rsidP="00273C38">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>4°, 18 Bl., A</w:t>
+						</w:r>
+						<w:r w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>4</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3" w:rsidRPr="008E25E3">
+							<w:t>–</w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3">
+							<w:t>C</w:t>
+						</w:r>
+						<w:r w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>4</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:r w:rsidR="008E25E3">
+							<w:t>D</w:t>
+						</w:r>
+						<w:r w:rsidRPr="008E25E3">
+							<w:rPr>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>6</w:t>
+						</w:r>
+						<w:r w:rsidR="006D6587">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="002D1EC0" w:rsidRDefault="002D1EC0" w:rsidP="00273C38">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:i/>
+							</w:rPr>
+							<w:t>Editionsvorlage</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>: HAB Wolfenbüttel</w:t>
+						</w:r>
+						<w:r w:rsidR="00860D77">
+							<w:t xml:space="preserve"> ,</w:t>
+						</w:r>
+						<w:r w:rsidR="00274BF0" w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:t>M: Li 5530 Slg. Hardt (38, 662)</w:t>
+						</w:r>
+						<w:r w:rsidR="00897E83" w:rsidRPr="00273C38">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00897E83" w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>(</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>Einziges bekanntes Exemplar</w:t>
+						</w:r>
+						<w:r w:rsidR="00860D77">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>;</w:t>
+						</w:r>
+						<w:r w:rsidR="00274BF0" w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Provenienz: Heino Gottschalk, Abt des Benediktinerklosters Oldenstadt bei </w:t>
+						</w:r>
+						<w:r w:rsidR="00860D77">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>Ue</w:t>
+						</w:r>
+						<w:r w:rsidR="00860D77" w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>lzen</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00857706">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:endnoteReference w:id="2"/>
+						</w:r>
+						<w:r w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>, mit desse</w:t>
+						</w:r>
+						<w:r w:rsidR="00A303CC" w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>n handschriftlichen Korrekturen</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00857706">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:endnoteReference w:id="3"/>
+						</w:r>
+						<w:r w:rsidR="00897E83" w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>)</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="002D1EC0" w:rsidRPr="00273C38" w:rsidRDefault="00274BF0" w:rsidP="00B131F0">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:i/>
+							</w:rPr>
+							<w:t>B</w:t>
+						</w:r>
+						<w:r w:rsidR="002D1EC0" w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:i/>
+							</w:rPr>
+							<w:t>ibliographisc</w:t>
+						</w:r>
+						<w:r w:rsidR="00273C38" w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:i/>
+							</w:rPr>
+							<w:t>h</w:t>
+						</w:r>
+						<w:r w:rsidR="002D1EC0" w:rsidRPr="00273C38">
+							<w:rPr>
+								<w:i/>
+							</w:rPr>
+							<w:t>e Nachweise</w:t>
+						</w:r>
+						<w:r w:rsidR="002D1EC0" w:rsidRPr="00273C38">
+							<w:t>:</w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="00493D04">
+							<w:rPr>
+								<w:rFonts w:cs="Junicode"/>
+								<w:sz w:val="18"/>
+								<w:szCs w:val="18"/>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="003A6068">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Benz</w:t>
+						</w:r>
+						<w:r w:rsidR="00EE47ED">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>ing</w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="003A6068">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>/Claus, Lutherbibliographie, Nr. 86</w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="003A6068">
+							<w:t xml:space="preserve"> — </w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="00BB0297">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Brieger,</w:t>
+						</w:r>
+						<w:r w:rsidR="00BB0297">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="00BB0297">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Thesen, 480.</w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="00493D04">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> — </w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="003A6068">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Hammer, Militia Franciscana 1,55.</w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="00493D04">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="00493D04">
+							<w:rPr>
+								<w:rFonts w:cs="Junicode"/>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t>—</w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="00493D04">
+							<w:rPr>
+								<w:lang w:val="la-Latn"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="003A6068">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Moreau, Inventaire 2, Nr.</w:t>
+						</w:r>
+						<w:r w:rsidR="00B131F0">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04" w:rsidRPr="003A6068">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>2406</w:t>
+						</w:r>
+						<w:r w:rsidR="00493D04">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+				</w:body>
+				<w:endnotes>
+					<w:endnote w:id="2">
+						<w:p w:rsidR="002D1EC0" w:rsidRDefault="002D1EC0" w:rsidP="002D1EC0">
+							<w:pPr>
+								<w:pStyle w:val="EndnoteText"/>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rStyle w:val="EndnoteReference"/>
+								</w:rPr>
+								<w:endnoteRef/>
+							</w:r>
+							<w:r>
+								<w:t xml:space="preserve"> Zu Gottschalk s. KGK I.1, Nr. 26, S. 366 und Nr. 58, S. 489.</w:t>
+							</w:r>
+						</w:p>
+					</w:endnote>
+					<w:endnote w:id="3">
+						<w:p w:rsidR="002D1EC0" w:rsidRDefault="002D1EC0" w:rsidP="002D1EC0">
+							<w:pPr>
+								<w:pStyle w:val="EndnoteText"/>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rStyle w:val="EndnoteReference"/>
+								</w:rPr>
+								<w:endnoteRef/>
+							</w:r>
+							<w:r>
+								<w:t xml:space="preserve"> Zu weiteren bibliographische Daten s. KGK I.1, Nr. 58, S. 489.</w:t>
+							</w:r>
+						</w:p>
+					</w:endnote>
+				</w:endnotes>
+			</x:context>
+			<x:expect label="Ausgabe inkl. FN in Anm. und Nachweisen">
+				<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
+					<listBibl type="sigla">
+						<biblStruct type="imprint" xml:id="B">
+							<analytic>
+								<author>Karlstadt, Andreas Bodenstein von</author>
+								<title>Concluſiones duodecim de Legis non fur⸗║tum facies,impletione &amp; teﬅamentorum lega⸗║tione altatium, &amp; miſſarum fundatione.</title>
+							</analytic>
+							<monogr>
+								<author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.
+								a.</author>
+								<title>INSIGNIVM THEOLOGORVM ║ Domini MartiniLutheri, dominiAndree ║ Baroloﬅadij , Philippi melan║thonis &amp; aliorum ║ conclu⸗║ſiones varię, pro diuinæ gratiæ defenſione ║ ac commendatione,contra ſco║laﬅicos &amp; pelagianos ║ diſputate ║ in præ⸗║clara academia. ║ Vvittembergenſi. ║ Lege leor &amp; afficieris verſafacie catalogum ║ inuenies.</title>
+								<imprint>
+									<pubPlace cert="unknown">
+										<rs type="place">Paris</rs>
+									</pubPlace>
+									<publisher cert="unknown">
+										<rs type="person">Pierre Vidoué</rs>
+									</publisher>
+									<date when="1521?" cert="unknown">1521?</date>
+								</imprint>
+								<extent>4°, 18 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>, D<hi rend="super">6</hi>.</extent>
+								<biblScope>fol. D4<hi rend="super">r–v</hi>.</biblScope>
+							</monogr>
+							<idno type="siglum">B</idno>
+							<note type="copies">
+								<list>
+									<item n="editionsvorlage">
+										<label>HAB Wolfenbüttel</label>
+										<idno type="signatur">M: Li 5530 Slg. Hardt (38, 662)</idno>
+										<note xmlns:hab="http://diglib.hab.de">Einziges bekanntes Exemplar; Provenienz: Heino Gottschalk, Abt des Benediktinerklosters Oldenstadt bei Uelzen<note type="footnote"> Zu Gottschalk s. KGK I.1, Nr. 26, S. 366 und Nr. 58, S. 489.</note>, mit dessen handschriftlichen Korrekturen<note type="footnote"> Zu weiteren bibliographische Daten s. KGK I.1, Nr. 58, S. 489.</note>
+										</note>
+									</item>
+								</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<bibl>Benzing/Claus, Lutherbibliographie, Nr. 86</bibl>
+									<bibl>Brieger, Thesen, 480.</bibl>
+									<bibl>Hammer, Militia Franciscana 1,55.</bibl>
+									<bibl>Moreau, Inventaire 2, Nr. 2406.</bibl>
+								</listBibl>
+							</note>
+						</biblStruct>
+					</listBibl>
+				</div>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="ms">
 		<x:context>
