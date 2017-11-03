@@ -889,14 +889,14 @@
 		<bibl>
 			<xsl:choose>
 				<xsl:when test="$next">
-					<xsl:apply-templates select="descendant::w:t |
+					<xsl:apply-templates select=". |
 						following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 							and preceding-sibling::w:r[generate-id()=$me]
-							and following::w:r[generate-id() = $next]]//w:t" />
+							and following::w:r[generate-id() = $next]]" />
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:apply-templates select="descendant::w:t |
-						following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']]//w:t" />
+					<xsl:apply-templates select=". |
+						following-sibling::w:r[hab:is(., 'KSbibliographischeAngabe', 'r')]" />
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:apply-templates select="following-sibling::w:commentRangeEnd[generate-id(preceding-sibling::w:r[
