@@ -3,7 +3,9 @@
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
 	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-	xmlns:tei="http://www.tei-c.org/ns/1.0" stylesheet="wtotei-intro.xsl" xslt-version="3.0"
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
+	xmlns="http://www.tei-c.org/ns/1.0"
+	stylesheet="wtotei-intro.xsl" xslt-version="3.0"
 	preserve-space="no">
 	<x:scenario label="Bearbeiter">
 		<x:scenario label="ein Bearbeiter">
@@ -2662,13 +2664,4142 @@
 						</msDesc>
 					</listBibl>
 					<listBibl type="editions">
-						<bibl>WA.B 1, </bibl>
+						<bibl>WA.B 1, 501‒502, Nr. 193</bibl>
 						<bibl>Walch<hi rend="super">2</hi> 15, Sp. 1306‒1307</bibl>
 					</listBibl>
 					<listBibl type="literatur">
-						<bibl>Barge, Karlstadt 1, 168</bibl>
+						<bibl>Barge, Karlstadt 1, 168‒169</bibl>
 						<bibl>Brecht, Luther 1, 307‒312</bibl>
 					</listBibl>
+				</div>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="EE 138 = 168">
+			<x:context>
+				<w:body>
+					<w:p w:rsidR="0010182F" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="0010182F">
+						<w:pPr>
+							<w:pStyle w:val="KSEE-Titel"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+						</w:pPr>
+						<w:bookmarkStart w:id="0" w:name="_GoBack"/>
+						<w:bookmarkEnd w:id="0"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t xml:space="preserve">EE 139 [= </w:t>
+						</w:r>
+						<w:r w:rsidR="0010182F" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>Nr.</w:t>
+						</w:r>
+						<w:r w:rsidR="00FC0FDA">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> 165</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>]</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:pStyle w:val="KSEE-Titel"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t xml:space="preserve">33 Conclusiones de </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>tribulationis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> et </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>praedestinationis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>materia</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="00AB7F56" w:rsidP="008D5430">
+						<w:pPr>
+							<w:pStyle w:val="KSEE-Titel"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>[</w:t>
+						</w:r>
+						<w:r w:rsidR="008D5430" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>Wittenberg</w:t>
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>]</w:t>
+						</w:r>
+						<w:r w:rsidR="008D5430" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>[</w:t>
+						</w:r>
+						<w:r w:rsidR="008D5430" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>1520</w:t>
+						</w:r>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>],</w:t>
+						</w:r>
+						<w:r w:rsidR="008D5430" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> [Herbst</w:t>
+						</w:r>
+						<w:r w:rsidR="00FF0E74">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>?</w:t>
+						</w:r>
+						<w:r w:rsidR="008D5430" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>]</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="0010182F" w:rsidRPr="00F04EA7" w:rsidRDefault="0010182F" w:rsidP="008D5430">
+						<w:pPr>
+							<w:pStyle w:val="KSEE-Titel"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>Bearbeitet von</w:t>
+						</w:r>
+						<w:r w:rsidR="008D5430" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Harald Bollbuck</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="00CE2F47" w:rsidRPr="007E7C69" w:rsidRDefault="004C6DB6" w:rsidP="007E7C69">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift1"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="007E7C69">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>Überlieferung</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="004C6DB6" w:rsidRPr="00F04EA7" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift2"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>Frühdrucke</w:t>
+						</w:r>
+						<w:r w:rsidR="008D5430" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>:</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="007E7C69">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="007E7C69">
+							<w:rPr>
+								<w:rStyle w:val="KSSigle"/>
+							</w:rPr>
+							<w:t>[A:]</w:t>
+						</w:r>
+						<w:r w:rsidR="007E7C69">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Trigintatres</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>conclusiones</w:t>
+						</w:r>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>:de</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>tribulatio</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>=</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>nis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> et </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>predestinationis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Materia.D.A.C</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="00320D33" w:rsidRDefault="00320D33" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:proofErr w:type="gramStart"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>in</w:t>
+						</w:r>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>:</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="007E7C69" w:rsidRPr="00F04EA7" w:rsidRDefault="007E7C69" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Luther, Martin; </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Karlstadt</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, Andreas </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Bodenstein</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> von; Melanchthon, Philipp </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>u.a</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>¶</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Jnſignium</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>theologorū</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Domini Martini </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Luthe</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>=</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ri</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>/</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>domini</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Andree </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Caroloſtadij</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>/</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Philippi </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Melanthonis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> et </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>aliorū</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">/ </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>cōcluſiōes</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> | </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>varie</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">/ ꝓ </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>diui</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ne</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>gratie</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> | </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>defenſione</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> ac </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>cōmendatione</w:t>
+						</w:r>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>:contra</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ſcola</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ſticos</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> et </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>pelagianos:diſputate</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> in </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>preclara</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> academia | </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Vvittenbergenſi</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Segoe UI Symbol" w:eastAsia="MS Gothic" w:hAnsi="Segoe UI Symbol"
+									w:cs="Segoe UI Symbol"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>✠</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Arial"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> ¶</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Lege</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> lector </w:t>
+						</w:r>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>et</w:t>
+						</w:r>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>afficieris</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">/ </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>verſa</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> facie/ </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>catalogum</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>inuenies</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> [TE]</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>[Leiden</w:t>
+						</w:r>
+						<w:r w:rsidR="00A63EB2">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>]:</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00A63EB2">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>[</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Jan </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Seversz</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00A63EB2">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>]</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:r w:rsidR="00A63EB2">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>[</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>1520/21], fol. C1</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>v</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>– C2</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>v</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="00C31EB0">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00D8603B">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>4˚, 12 Bl., A</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0" w:rsidRPr="00D8603B">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>4</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00D8603B">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>–C</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00D8603B">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>4</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00D8603B">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0" w:rsidRPr="00D8603B">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-GB"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Pag.: 2 (fol. </w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>A</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0" w:rsidRPr="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>1v</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>) – 24 (</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>fol</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>. C</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0" w:rsidRPr="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>4v</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>).</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00BB0B7E">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Editionsvorlage</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">: </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Biblioteca</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>della</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Fondazione Centro </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>culturale</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>valdese</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, Torre </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Pellice</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t> , A. III. 12.64.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="00C31EB0">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Weitere</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Exemplare</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">: </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Det</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Kongelige</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Bibliotek</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Kopenhagen</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t> , 24</w:t>
+						</w:r>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>,35</w:t>
+						</w:r>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> – </w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Bodleian</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Libr</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">ary Oxford , </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Tr.Luth</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>. 39 (195).</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Bibliographische</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Nachweise</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">: </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Benzing/Claus, Lutherbibliographie 1, Nr. 85</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. – </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Nijhoff</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>/Kronenberg, Nr. 4516</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. – </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Zorzin</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, Flugschriftenautor, Nr. 29A</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+						<w:r w:rsidR="00392A25">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00392A25">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">– </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidR="00392A25">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Lenardo</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00392A25" w:rsidRPr="00440ED7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidR="00392A25" w:rsidRPr="00440ED7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Catalogo</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00392A25" w:rsidRPr="00440ED7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, Nr. 18</w:t>
+						</w:r>
+						<w:r w:rsidR="00392A25">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> (mit der Druckangabe: „Antwerpen, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidR="00392A25">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Wilem</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00392A25">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidR="00392A25">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Vorsterman</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00392A25">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, 1521?“).</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="007E7C69">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="007E7C69">
+							<w:rPr>
+								<w:rStyle w:val="KSSigle"/>
+							</w:rPr>
+							<w:t>[B:]</w:t>
+						</w:r>
+						<w:r w:rsidR="007E7C69">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Triginta</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>tres</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>conclu</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>iones</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">: de </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>tribulatio</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>=</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>nis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>et</w:t>
+						</w:r>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>pręde</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>tinationis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Materia.D.A.C</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="003529E3" w:rsidRDefault="003529E3" w:rsidP="007E7C69">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:proofErr w:type="gramStart"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>in</w:t>
+						</w:r>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>:</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="007E7C69" w:rsidRPr="007E7C69" w:rsidRDefault="007E7C69" w:rsidP="007E7C69">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Luther, Martin; </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Karlstadt</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, Andreas </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Bodenstein</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> von; Melanchthon, Philipp </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>u.a</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:lastRenderedPageBreak/>
+							<w:t xml:space="preserve">INSIGNIVM THEOLOGORVM </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Domini Martini </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Lutheri</w:t>
+						</w:r>
+						<w:proofErr w:type="gramStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>,domini</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:proofErr w:type="gramEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> Andree </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Barolo</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>tadij</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> , Philippi </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>melan</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>thonis</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> &amp; </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>aliorum</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>conclu</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>=</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ſ</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>iones</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>vari</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Calibri"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>ę</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, pro </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>diuinæ</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>gratiæ</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>defensione</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> ac </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>commendatione,contra</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>sco</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>lasticos</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> &amp; </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>pelagianos</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>disputate</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> in </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>pr</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Calibri"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>æ</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>=</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>clara</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">  academia. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Vvittembergensi</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Lege</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> lector &amp; </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>afficieris</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>versafacie</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>catalogum</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>inuenies</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+						<w:r w:rsidR="00E7037B">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00E7037B" w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>║</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>[Paris</w:t>
+						</w:r>
+						<w:r w:rsidR="00A63EB2">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>]</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">: </w:t>
+						</w:r>
+						<w:r w:rsidR="00A63EB2">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>[</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Pierre </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>Vidoué</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00A63EB2">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>]</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:r w:rsidR="00A63EB2">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>[</w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>nach</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> 1520], fol. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>D1</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>v</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>–D3</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>r</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="00C31EB0">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">4°, 18 </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Bl</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>., A</w:t>
+						</w:r>
+						<w:r w:rsidR="00C31EB0">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>4</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>–D</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>4</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, E</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>2</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Editionsvorlage</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">: HAB Wolfenbüttel , M: Li 5530 </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Slg</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>. Hardt (38, 662).</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="005D57A2" w:rsidRDefault="005D57A2" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Bibliographische Nachweise</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>:</w:t>
+						</w:r>
+						<w:r w:rsidR="00DA269F">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00DA269F" w:rsidRPr="00DA269F">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Riederer, Versuch, Nr. 17</w:t>
+						</w:r>
+						<w:r w:rsidR="00DA269F">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>. –</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Benzing, Lutherbibliographie 1, Nr. 86</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. – </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Moreau, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Inventaire</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> 2, Nr. 2460</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">.– </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Zorzin</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, Flugschriftenautor, Nr. 29B</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="00C6365E" w:rsidRDefault="00C6365E" w:rsidP="00817CE1">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+					<w:p w:rsidR="00817CE1" w:rsidRDefault="008D5430" w:rsidP="00817CE1">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Edition</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>:</w:t>
+						</w:r>
+						<w:r w:rsidR="009A1EDE">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="009A1EDE" w:rsidRPr="009A1EDE">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Riederer, </w:t>
+						</w:r>
+						<w:r w:rsidR="00DA269F">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Disputationen</w:t>
+						</w:r>
+						<w:r w:rsidR="009A1EDE" w:rsidRPr="009A1EDE">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, 66.</w:t>
+						</w:r>
+						<w:r w:rsidR="009A1EDE">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> –</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Brieger</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, Thesen, 481–483</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="00CD43F1">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:i/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Literatur</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>:</w:t>
+						</w:r>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Jäger, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Carlstadt</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, 172</w:t>
+						</w:r>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. – </w:t>
+						</w:r>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Fischer, Beichte, 136</w:t>
+						</w:r>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">. – </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Barge</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, Karlstadt 1, 246-248; 331; 474f.</w:t>
+						</w:r>
+						<w:r w:rsidR="00EE5644" w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> –</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00EE5644">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Bubenhei</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>mer</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>, Reliquienfest, Anhang 1 Anm. 200</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="003A7BB3" w:rsidRPr="00F04EA7" w:rsidRDefault="004C6DB6" w:rsidP="00827E89">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift1"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+							<w:t>Entstehung und Inhalt</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:spacing w:after="0"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">Laut </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>Widmungsvorrede</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> der „Loci </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>tres</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve">“ (KGK 139-2) ist die vorliegende Thesenreihe bereits Ende 1520 entstanden und disputiert worden: „Conclusiones </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>igitur</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> anno XX </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>disceptatas</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t>mitto</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00F04EA7">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:sz w:val="24"/>
+								<w:szCs w:val="24"/>
+							</w:rPr>
+							<w:t xml:space="preserve"> […].“ Inhaltlich besteht eine große Nähe zu KGK 127 und 131.</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="008D5430">
+						<w:pPr>
+							<w:rPr>
+								<w:rStyle w:val="KSEE-Verweis"/>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+					<w:sectPr w:rsidR="008D5430" w:rsidRPr="00F04EA7" w:rsidSect="00CE2F47">
+						<w:pgSz w:w="11906" w:h="16838"/>
+						<w:pgMar w:top="1417" w:right="1417" w:bottom="1134" w:left="1417" w:header="708"
+							w:footer="708" w:gutter="0"/>
+						<w:cols w:space="708"/>
+						<w:docGrid w:linePitch="360"/>
+					</w:sectPr>
+				</w:body>
+			</x:context>
+			<x:expect label=".">
+				<div type="history_of_the_work">
+					<listBibl type="sigla">
+						<biblStruct type="imprint" xml:id="A">
+							<analytic>
+								<author>Karlstadt, Andreas Bodenstein von</author>
+								<title>Trigintatres conclusiones:de tribulatio=║nis et predestinationis Materia.D.A.C.</title>
+							</analytic>
+							<monogr>
+								<author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author>
+								<title>¶Jnſignium theologorū ║ Domini Martini Luthe=║ri/domini Andree Caroloſtadij/║ Philippi Melanthonis et ║aliorū/ cōcluſiōes | varie/ ꝓ diui║ne gratie | defenſione ac cōmendatione:contra ſcola║ſticos et pelagianos:diſputate ║ in preclara academia | Vvittenbergenſi. ║ ✠ ║ ¶Lege lector et afficieris/ verſa facie/ ║ catalogum inuenies. ║ [TE]</title>
+								<imprint>
+									<pubPlace cert="unknown">
+										<rs type="place">Leiden</rs>
+									</pubPlace>
+									<publisher cert="unknown">
+										<rs type="person">Jan Seversz</rs>
+									</publisher>
+									<date when="1520/21" cert="unknown">1520/21</date>
+								</imprint>
+								<extent>4˚, 12 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>. Pag.: 2 (fol. A<hi rend="super">1v</hi>) – 24 (fol. C<hi rend="super">4v</hi>).</extent>
+								<biblScope>fol. C1<hi rend="super">v</hi>– C2<hi rend="super">v</hi>.</biblScope>
+							</monogr>
+							<idno type="siglum">A</idno>
+							<note type="copies">
+								<list>
+									<item n="editionsvorlage">
+										<label>Biblioteca della Fondazione Centro culturale valdese, Torre Pellice</label>
+										<idno type="signatur">A. III. 12.64.</idno>
+									</item>
+									<item>
+										<label>Det Kongelige Bibliotek, Kopenhagen</label>
+										<idno type="signatur">24,35.</idno>
+									</item>
+									<item>
+										<label>Bodleian Library Oxford</label>
+										<idno type="signatur">Tr.Luth. 39 (195).</idno>
+									</item>
+								</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<bibl>Benzing/Claus, Lutherbibliographie 1, Nr. 85.</bibl>
+									<bibl>Nijhoff/Kronenberg, Nr. 4516.</bibl>
+									<bibl>Zorzin, Flugschriftenautor, Nr. 29A.</bibl>
+									<bibl>Lenardo, Catalogo, Nr. 18 (mit der Druckangabe: „Antwerpen, Wilem Vorsterman, 1521?“).</bibl>
+								</listBibl>
+							</note>
+						</biblStruct>
+						<biblStruct type="imprint" xml:id="B">
+							<analytic>
+								<author>Karlstadt, Andreas Bodenstein von</author>
+								<title>Triginta tres concluſiones: de tribulatio=║nis et prędeſtinationis Materia.D.A.C.</title>
+							</analytic>
+							<monogr>
+								<author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author>
+								<title>INSIGNIVM THEOLOGORVM ║ Domini Martini Lutheri,domini Andree ║ Baroloſtadij , Philippi melan║thonis &amp; aliorum ║ conclu=║ſiones varię, pro diuinæ gratiæ defensione ║ ac commendatione,contra sco║lasticos &amp; pelagianos ║ disputate in præ=║clara  academia. ║ Vvittembergensi. ║ Lege lector &amp; afficieris versafacie catalogum ║ inuenies. ║</title>
+								<imprint>
+									<pubPlace cert="unknown">
+										<rs type="place">Paris</rs>
+									</pubPlace>
+									<publisher cert="unknown">
+										<rs type="person">Pierre Vidoué</rs>
+									</publisher>
+									<date when="nach 1520" cert="unknown">nach 1520</date>
+								</imprint>
+								<extent>4°, 18 Bl., A<hi rend="super">4</hi>–D<hi rend="super">4</hi>, E<hi rend="super">2</hi>.</extent>
+								<biblScope>fol. D1<hi rend="super">v</hi>–D3<hi rend="super">r</hi>.</biblScope>
+							</monogr>
+							<idno type="siglum">B</idno>
+							<note type="copies">
+								<list>
+									<item n="editionsvorlage">
+										<label>HAB Wolfenbüttel</label>
+										<idno type="signatur">M: Li 5530 Slg. Hardt (38, 662).</idno>
+									</item>
+								</list>
+							</note>
+							<note type="references">
+								<listBibl>
+									<bibl>Riederer, Versuch, Nr. 17.</bibl>
+									<bibl>Benzing, Lutherbibliographie 1, Nr. 86.</bibl>
+									<bibl>Moreau, Inventaire 2, Nr. 2460.</bibl>
+									<bibl>Zorzin, Flugschriftenautor, Nr. 29B.</bibl>
+								</listBibl>
+							</note>
+						</biblStruct>
+					</listBibl>
+					<listBibl type="editions">
+						<bibl>Riederer, Disputationen, 66.</bibl>
+						<bibl>Brieger, Thesen, 481–483</bibl>
+					</listBibl>
+					<listBibl type="literatur">
+						<bibl>Jäger, Carlstadt, 172</bibl>
+						<bibl>Fischer, Beichte, 136</bibl>
+						<bibl>Barge, Karlstadt 1, 246-248; 331; 474f.</bibl>
+						<bibl>Bubenheimer, Reliquienfest, Anhang 1 Anm. 200</bibl>
+					</listBibl>
+				</div>
+				<div type="contents">
+					<p>Laut Widmungsvorrede der „Loci tres“ (KGK 139-2) ist die vorliegende Thesenreihe bereits Ende 1520 entstanden und disputiert worden: „Conclusiones igitur anno XX disceptatas mitto […].“ Inhaltlich besteht eine große Nähe zu KGK 127 und 131.</p>
 				</div>
 			</x:expect>
 		</x:scenario>
@@ -3169,11 +7300,11 @@
 						</msDesc>
 					</listBibl>
 					<listBibl type="editions">
-						<bibl>WA.B 1, </bibl>
+						<bibl>WA.B 1, 501‒502, Nr. 193</bibl>
 						<bibl>Walch<hi rend="super">2</hi> 15, Sp. 1306‒1307</bibl>
 					</listBibl>
 					<listBibl type="literatur">
-						<bibl>Barge, Karlstadt 1, 168</bibl>
+						<bibl>Barge, Karlstadt 1, 168‒169</bibl>
 						<bibl>Brecht, Luther 1, 307‒312</bibl>
 					</listBibl>
 				</div>

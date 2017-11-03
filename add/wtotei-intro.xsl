@@ -884,15 +884,14 @@
 	
 	<xsl:template match="w:r" mode="bibl">
 		<xsl:variable name="me" select="generate-id()" />
-		<xsl:variable name="next" select="following-sibling::w:r[ancestor::w:body and hab:is(., 'KSbibliographischeAngabe', 'r')
+		<xsl:variable name="next" select="following-sibling::w:r[hab:is(., 'KSbibliographischeAngabe', 'r')
 			and not(preceding-sibling::w:r[1][hab:is(., 'KSbibliographischeAngabe', 'r')])][1]" />
 		<bibl>
 			<xsl:choose>
 				<xsl:when test="$next">
 					<xsl:apply-templates select=". |
-						following-sibling::w:r[descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
-							and preceding-sibling::w:r[generate-id()=$me]
-							and following::w:r[generate-id() = $next]]" />
+						following-sibling::w:r[hab:is(., 'KSbibliographischeAngabe', 'r')]
+							intersect $next/preceding-sibling::w:r" />
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:apply-templates select=". |
@@ -902,11 +901,8 @@
 			<xsl:apply-templates select="following-sibling::w:commentRangeEnd[generate-id(preceding-sibling::w:r[
 				preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
 				= $me]" />
-			<xsl:if test="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung']
-				and following::w:r[generate-id() = $next]]">
-				<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
-					following::w:r[generate-id() = $next]]" />
-			</xsl:if>
+			<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
+				following::w:r[generate-id() = generate-id($next)]]" />
 			<!-- FN berücksichtigen; 2017-08-07 DK -->
 			<xsl:choose>
 				<xsl:when test="$next">
