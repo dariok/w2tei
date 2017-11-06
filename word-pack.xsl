@@ -4,6 +4,7 @@
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	exclude-result-prefixes="xs math"
 	version="3.0">
 	
@@ -37,7 +38,7 @@
 	<xsl:function name="wdb:is" as="xs:boolean">
 		<xsl:param name="context" as="item()" />
 		<xsl:param name="test" as="xs:string" />
-		<xsl:value-of select="hab:is($context, $test, 'p')"/>
+		<xsl:value-of select="wdb:is($context, $test, 'p')"/>
 	</xsl:function>
 	
 	<xd:doc>
@@ -112,10 +113,10 @@
 				<xd:pre>fn:contains()</xd:pre> the test string, <xd:pre>false()</xd:pre> otherwise.</xd:p>
 		</xd:return>
 	</xd:doc>
-	<xsl:function name="hab:contains" as="xs:boolean">
+	<xsl:function name="wdb:contains" as="xs:boolean">
 		<xsl:param name="context" as="item()"/>
 		<xsl:param name="test" as="xs:string"/>
-		<xsl:value-of select="contains(hab:string($elem), $test)"/>
+		<xsl:value-of select="contains(wdb:string($context), $test)"/>
 	</xsl:function>
 	
 	<xd:doc>
@@ -136,7 +137,7 @@
 	<xsl:function name="wdb:starts" as="xs:boolean">
 		<xsl:param name="context" as="item()"/>
 		<xsl:param name="test" as="xs:string"/>
-		<xsl:value-of select="starts-with(hab:string($elem), $test)"/>
+		<xsl:value-of select="starts-with(wdb:string($context), $test)"/>
 	</xsl:function>
 	
 	<xd:doc>
@@ -157,7 +158,7 @@
 	<xsl:function name="wdb:ends" as="xs:boolean">
 		<xsl:param name="context" as="item()"/>
 		<xsl:param name="test" as="xs:string"/>
-		<xsl:value-of select="endss-with(hab:string($elem), $test)"/>
+		<xsl:value-of select="ends-with(wdb:string($context), $test)"/>
 	</xsl:function>
 	<!-- END Functions to deal with strings independently of Word 'runs' -->
-</xsl:>
+</xsl:stylesheet>
