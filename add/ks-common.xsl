@@ -135,10 +135,6 @@
 			</text>
 		</TEI>
 	</xsl:template>
-	
-	<xsl:template match="w:body">
-		<xsl:apply-templates select="descendant::w:p[hab:isHead(., 1)]"/>
-	</xsl:template>
 	<!-- Ende root -->
 	
 	<!-- Kopf-Zeug -->

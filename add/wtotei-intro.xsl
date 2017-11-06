@@ -15,6 +15,10 @@
 	
 	<xsl:output indent="yes"/>
 	
+	<xsl:template match="w:body">
+		<xsl:apply-templates select="w:p[hab:isHead(., 1)]"/>
+	</xsl:template>
+	
 	<!-- Titel mit Untertitel; 2017-10-26 DK -->
 	<xsl:template match="w:t" mode="mTitle">
 		<xsl:analyze-string select="." regex="\.">
