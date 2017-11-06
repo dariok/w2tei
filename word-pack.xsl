@@ -5,7 +5,7 @@
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
 	exclude-result-prefixes="xs math"
-	name="wdb-word"
+	name="https://github.com/dariok/w2tei/word-pack.xsl"
 	version="3.0">
 	
 	<xd:doc scope="stylesheet">

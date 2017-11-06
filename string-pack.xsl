@@ -6,7 +6,7 @@
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	exclude-result-prefixes="xs math xd"
 	version="3.0"
-	name="wdb-strings">
+	name="https://github.com/dariok/w2tei/string-pack.xsl">
 	<xd:doc scope="stylesheet">
 		<xd:desc>
 			<xd:p><xd:b>Created on:</xd:b> Nov 6, 2017</xd:p>
