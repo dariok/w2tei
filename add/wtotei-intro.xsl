@@ -405,8 +405,18 @@
 							</bibl>
 						</xsl:for-each>
 					</listBibl>
-					<xsl:apply-templates select="$struct[last()]/following-sibling::w:p
-						intersect $struct[last()]/following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p"/>
+					<!-- auch dann ausgeben, wenn die Anmerkung hinter dem letzten Exemplar steht -->
+					<xsl:choose>
+						<xsl:when test="$struct[last()]/following-sibling::w:p[hab:isSigle(.)]">
+							<xsl:apply-templates select="$struct[last()]/following-sibling::w:p
+								intersect $struct[last()]/following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
+								$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)[not(
+								hab:starts(., 'Edition') or hab:starts(., 'Literatur'))]"/>
+						</xsl:otherwise>
+					</xsl:choose>
 				</note>
 			</xsl:if>
 		</biblStruct>
