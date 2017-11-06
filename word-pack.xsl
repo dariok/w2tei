@@ -5,6 +5,7 @@
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
 	exclude-result-prefixes="xs math"
+	name="wdb-word"
 	version="3.0">
 	
 	<xd:doc scope="stylesheet">
