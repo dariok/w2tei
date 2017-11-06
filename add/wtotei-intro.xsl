@@ -499,37 +499,45 @@
 			</xsl:for-each>
 		</xsl:variable>
 		
-		<label>
-			<xsl:for-each select="$temp/node()[following-sibling::*:idno]">
-				<xsl:choose>
-					<xsl:when test="self::text()">
-						<xsl:value-of select="normalize-space(hab:substring-after(current(), ':'))"/>
-					</xsl:when>
-					<xsl:when test="self::hab:br" />
-					<xsl:otherwise>
-						<xsl:copy-of select="current()" />
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:for-each>
-		</label>
-		<xsl:variable name="strings" select="tokenize($temp/*:idno, '\(')"/>
-		<idno type="signatur">
-			<xsl:choose>
-				<xsl:when test="count($strings) = 3">
-					<xsl:value-of select=" $strings[1]"/>
-					<xsl:value-of select="concat('(', normalize-space($strings[2]))"/>
-				</xsl:when>
-				<xsl:when test="count($strings) = 2 and string-length($strings[2]) &lt; 10">
-					<xsl:value-of select=" $strings[1]"/>
-					<xsl:value-of select="concat('(', normalize-space($strings[2]))"/>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of select="$strings[1]"/>
-				</xsl:otherwise>
-			</xsl:choose>
-		</idno>
-		<xsl:copy-of select="*:note" />
-		<xsl:copy-of select="*:ptr"/>
+		<!-- falls keine Exemplardaten vorhanden sind, Text direkt ausgeben; 2017-11-06 DK -->
+		<xsl:choose>
+			<xsl:when test="string-length($temp/*:idno) &gt; 0">
+				<label>
+					<xsl:for-each select="$temp/node()[following-sibling::*:idno]">
+						<xsl:choose>
+							<xsl:when test="self::text()">
+								<xsl:value-of select="normalize-space(hab:substring-after(current(), ':'))"/>
+							</xsl:when>
+							<xsl:when test="self::hab:br" />
+							<xsl:otherwise>
+								<xsl:copy-of select="current()" />
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+				</label>
+				<xsl:variable name="strings" select="tokenize($temp/*:idno, '\(')"/>
+				<idno type="signatur">
+					<xsl:choose>
+						<xsl:when test="count($strings) = 3">
+							<xsl:value-of select=" $strings[1]"/>
+							<xsl:value-of select="concat('(', normalize-space($strings[2]))"/>
+						</xsl:when>
+						<xsl:when test="count($strings) = 2 and string-length($strings[2]) &lt; 10">
+							<xsl:value-of select=" $strings[1]"/>
+							<xsl:value-of select="concat('(', normalize-space($strings[2]))"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="$strings[1]"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</idno>
+				<xsl:copy-of select="*:note" />
+				<xsl:copy-of select="*:ptr"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="*:note" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<xsl:template match="hab:t" mode="split">
