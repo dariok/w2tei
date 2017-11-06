@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
-	xmlns:wdb="https://github.com/dariok/w2tei"
+	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	exclude-result-prefixes="xs math"
