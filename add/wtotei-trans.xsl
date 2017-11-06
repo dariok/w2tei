@@ -130,7 +130,7 @@
 			</teiHeader>
 			<text>
 				<body>
-					<xsl:apply-templates select="//w:body/w:p" />
+					<xsl:apply-templates select="//w:body/w:p[hab:isHead(., '1')]" />
 				</body>
 			</text>
 		</TEI>
@@ -138,28 +138,9 @@
 	
 	<xsl:template match="w:p[wdb:isHead(., 1)]"/>
 	
-	<xsl:function name="hab:rmSquare" as="xs:string">
-		<xsl:param name="input" />
-		<xsl:choose>
-			<xsl:when test="contains($input, '[')">
-				<xsl:analyze-string select="normalize-space($input)" regex="\[?([^\]]+)\]?\.?">
-					<xsl:matching-substring>
-						<xsl:value-of select="normalize-space(regex-group(1))"/>
-					</xsl:matching-substring>
-				</xsl:analyze-string>
-			</xsl:when>
-			<xsl:when test="contains($input, ']')">
-				<xsl:value-of select="substring-before($input, ']')"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="$input"/>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:function>
-	
-	<xsl:function name="wdb:isHead" as="xs:boolean">
-		<xsl:param name="context" as="node()" />
-		<xsl:param name="num"/>
-		<xsl:value-of select="wdb:is($context, 'KSberschrift'||$num)"/>
-	</xsl:function>
+	<xsl:template match="w:p[(not(descendant::w:pStyle)
+		or wdb:is(., 'KSText')) and descendant::w:t]">
+		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
+		<p><xsl:apply-templates select="w:r" /></p>
+	</xsl:template>
 </xsl:stylesheet>

@@ -51,7 +51,7 @@
 						</title>
 						<!-- Kurztitel erzeugen; 2017-08-07 DK -->
 						<title type="short">
-							<xsl:if test="//w:p[wdb:isHead(., 1)][1]//w:t='Referenz'">
+							<xsl:if test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'">
 								<xsl:text>Verschollen: </xsl:text>
 							</xsl:if>
 							<xsl:variable name="title">
@@ -76,7 +76,7 @@
 								</xsl:choose>
 							</xsl:for-each>
 							<xsl:choose>
-								<xsl:when test="//w:p[wdb:isHead(., 1)][1]//w:t='Referenz'
+								<xsl:when test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'
 									or ends-with(wdb:string(//w:p[wdb:is(., 'KSEE-Titel')][3]), ']')">
 									<xsl:text> [</xsl:text>
 								</xsl:when>
@@ -90,7 +90,7 @@
 							</xsl:variable>
 							<xsl:apply-templates select="$dpline/*:date" mode="header"/>
 							<xsl:choose>
-								<xsl:when test="//w:p[wdb:isHead(., 1)][1]//w:t='Referenz'
+								<xsl:when test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'
 									or ends-with(wdb:string(//w:p[wdb:is(., 'KSEE-Titel')][3]), ']')">
 									<xsl:text>]</xsl:text>
 								</xsl:when>
@@ -116,7 +116,7 @@
 					</publicationStmt>
 					<sourceDesc>
 						<p>born digital</p>
-						<xsl:if test="//w:p[wdb:isHead(., 1)][1]//w:t='Referenz'">
+						<xsl:if test="//w:p[hab:isHead(., 1)][1]//w:t='Referenz'">
 							<msDesc><physDesc><objectDesc form="codex_lost"/></physDesc></msDesc>
 						</xsl:if>
 					</sourceDesc>
@@ -140,7 +140,7 @@
 	</xsl:template>
 	
 	<xsl:template match="w:body">
-		<xsl:apply-templates select="descendant::w:p[wdb:isHead(., 1)]"/>
+		<xsl:apply-templates select="descendant::w:p[hab:isHead(., 1)]"/>
 	</xsl:template>
 	
 	<!-- Titel mit Untertitel; 2017-10-26 DK -->
@@ -156,7 +156,7 @@
 	</xsl:template>
 	
 	<!-- Grobgliederung; 2017-06-05 DK -->
-	<xsl:template match="w:p[wdb:isHead(., 1)]">
+	<xsl:template match="w:p[hab:isHead(., 1)]">
 		<div>
 			<xsl:attribute name="type">
 				<xsl:choose>
@@ -168,17 +168,17 @@
 			</xsl:attribute>
 			
 			<xsl:choose>
-				<xsl:when test="not(following-sibling::w:p[wdb:isHead(., 2)])
-					and not(following-sibling::w:p[wdb:isHead(., 1)])">
+				<xsl:when test="not(following-sibling::w:p[hab:isHead(., 2)])
+					and not(following-sibling::w:p[hab:isHead(., 1)])">
 					<xsl:apply-templates select="following-sibling::w:p" />
 				</xsl:when>
-				<xsl:when test="not(following-sibling::w:p[wdb:isHead(., 2)])
-					and following-sibling::w:p[wdb:isHead(., 1)]">
-					<xsl:apply-templates select="following-sibling::w:p[not(wdb:isHead(., 1))
-						and not(preceding-sibling::w:p[wdb:isHead(., 1)][2])]"/>
+				<xsl:when test="not(following-sibling::w:p[hab:isHead(., 2)])
+					and following-sibling::w:p[hab:isHead(., 1)]">
+					<xsl:apply-templates select="following-sibling::w:p[not(hab:isHead(., 1))
+						and not(preceding-sibling::w:p[hab:isHead(., 1)][2])]"/>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:apply-templates select="following-sibling::w:p[wdb:isHead(., 2)]"/>
+					<xsl:apply-templates select="following-sibling::w:p[hab:isHead(., 2)]"/>
 					<xsl:apply-templates select="following-sibling::w:p[not(following-sibling::w:p[hab:isSigle(.)])
 						and (wdb:starts(., 'Edition') or wdb:starts(., 'Literatur')) and not(wdb:starts(., 'Editionsvorlage'))]"/>
 				</xsl:otherwise>
@@ -187,15 +187,15 @@
 	</xsl:template>
 	
 	<!-- Untergliederung im 1. div; 2017-06-05 DK -->
-	<xsl:template match="w:p[wdb:isHead(., 2) and descendant::w:t]">
+	<xsl:template match="w:p[hab:isHead(., 2) and descendant::w:t]">
 		<xsl:variable name="myId" select="generate-id()" />
 		<listBibl type="sigla">
 			<xsl:apply-templates select="following-sibling::w:p[hab:isSigle(.)
-				and generate-id(preceding-sibling::w:p[wdb:isHead(., 2)][1]) = $myId]"/>
+				and generate-id(preceding-sibling::w:p[hab:isHead(., 2)][1]) = $myId]"/>
 		</listBibl>
 	</xsl:template>
 	
-	<xsl:template match="w:p[hab:isSigle(.) and wdb:starts(preceding-sibling::w:p[wdb:isHead(., 2)][1], 'Früh')]">
+	<xsl:template match="w:p[hab:isSigle(.) and wdb:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Früh')]">
 		<xsl:variable name="end"
 			select="following-sibling::w:p[wdb:starts(., 'Bibliographische')][1]" />
 		<xsl:variable name="struct" select="current() | 
@@ -277,7 +277,7 @@
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
-								$struct[last()]/following-sibling::w:p[wdb:isHead(., '1')]/preceding-sibling::w:p)[not(
+								$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)[not(
 								wdb:starts(., 'Edition') or wdb:starts(., 'Literatur'))]"/>
 						</xsl:otherwise>
 					</xsl:choose>
@@ -444,7 +444,7 @@
 	<!-- ENDE Exemplare trennen -->
 	
 	<xsl:template match="w:p[hab:isSigle(.)
-		and wdb:starts(preceding-sibling::w:p[wdb:isHead(., 2)][1], 'Hand')]">
+		and wdb:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Hand')]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<msDesc>
 			<xsl:variable name="desc" select="wdb:string(w:r[not(hab:isSigle(.))])" />
@@ -529,7 +529,7 @@
 					<p><ptr type="digitalisat" target="{$link}"/></p>
 				</xsl:if>
 				<xsl:apply-templates select="following-sibling::w:p[not(wdb:starts(., 'Edition') or wdb:starts(., 'Literatur'))
-					and following-sibling::w:p[wdb:isHead(., 1)]
+					and following-sibling::w:p[hab:isHead(., 1)]
 					and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>
 			</physDesc>
 		</msDesc>

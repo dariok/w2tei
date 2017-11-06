@@ -5,7 +5,8 @@
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:hab="http://diglib.hab.de"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
-	exclude-result-prefixes="xs math"
+	xmlns="http://www.tei-c.org/ns/1.0"
+	exclude-result-prefixes="#all"
 	version="3.0">
 	
 	<xsl:include href="../string-pack.xsl"/>
@@ -213,7 +214,7 @@
 		</xsl:choose>
 	</xsl:function>
 	
-	<xsl:function name="wdb:isHead" as="xs:boolean">
+	<xsl:function name="hab:isHead" as="xs:boolean">
 		<xsl:param name="context" as="node()" />
 		<xsl:param name="num"/>
 		<xsl:value-of select="wdb:is($context, 'KSberschrift'||$num)"/>
