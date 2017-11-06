@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:package xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
 	exclude-result-prefixes="xs math"
-	name="https://github.com/dariok/w2tei/word-pack.xsl"
 	version="3.0">
 	
 	<xd:doc scope="stylesheet">
@@ -161,4 +160,4 @@
 		<xsl:value-of select="endss-with(hab:string($elem), $test)"/>
 	</xsl:function>
 	<!-- END Functions to deal with strings independently of Word 'runs' -->
-</xsl:package>
+</xsl:>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:package xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	exclude-result-prefixes="xs math xd"
-	version="3.0"
-	name="https://github.com/dariok/w2tei/string-pack.xsl">
+	version="3.0">
 	<xd:doc scope="stylesheet">
 		<xd:desc>
 			<xd:p><xd:b>Created on:</xd:b> Nov 6, 2017</xd:p>
@@ -106,4 +105,4 @@
 		<xsl:param name="c" />
 		<xsl:value-of select="if(starts-with($s, $c)) then substring-after($s, $c) else $s"/>
 	</xsl:function>
-</xsl:package>
+</xsl:stylesheet>
