@@ -36,7 +36,7 @@
 		</xd:return>
 	</xd:doc>
 	<xsl:function name="wdb:is" as="xs:boolean">
-		<xsl:param name="context" as="item()" />
+		<xsl:param name="context" as="item()*" />
 		<xsl:param name="test" as="xs:string" />
 		<xsl:value-of select="wdb:is($context, $test, 'p')"/>
 	</xsl:function>
@@ -62,7 +62,7 @@
 		</xd:return>
 	</xd:doc>
 	<xsl:function name="wdb:is" as="xs:boolean">
-		<xsl:param name="context" as="item()" />
+		<xsl:param name="context" as="item()*" />
 		<xsl:param name="test" as="xs:string" />
 		<xsl:param name="pr" as="xs:string" />
 		<xsl:variable name="val">
@@ -94,7 +94,7 @@
 			<xd:pre>w:r</xd:pre>.</xd:return>
 	</xd:doc>
 	<xsl:function name="wdb:string" as="xs:string">
-		<xsl:param name="context" as="item()" />
+		<xsl:param name="context" as="item()*" />
 		<xsl:value-of select="string-join($context//w:t, '')"/>
 	</xsl:function>
 	
@@ -114,7 +114,7 @@
 		</xd:return>
 	</xd:doc>
 	<xsl:function name="wdb:contains" as="xs:boolean">
-		<xsl:param name="context" as="item()"/>
+		<xsl:param name="context" as="item()*"/>
 		<xsl:param name="test" as="xs:string"/>
 		<xsl:value-of select="contains(wdb:string($context), $test)"/>
 	</xsl:function>
