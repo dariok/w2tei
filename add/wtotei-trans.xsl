@@ -32,19 +32,53 @@
 		<p>
 			<xsl:apply-templates select="preceding-sibling::w:p[descendant::w:t and not(hab:div(.))
 				and generate-id(following-sibling::w:p[hab:div(.)][1]) = $myId]" />
+			<xsl:text>
+               </xsl:text>
 			<lb/>
 			<xsl:apply-templates select="." mode="pb"/>
 		</p>
 	</xsl:template>
 	
 	<xsl:template match="w:p[descendant::w:t and not(hab:isStruct(.))]">
-		<lb/><xsl:apply-templates select="." mode="pb"/>
+		<xsl:if test="not(matches(wdb:string(.), '^\[.+?\]$'))">
+			<xsl:text>
+               </xsl:text>
+			<lb/>
+		</xsl:if>
+		<xsl:apply-templates select="." mode="pb"/>
 	</xsl:template>
 	
 	<xsl:template match="w:p" mode="pb">
-		<xsl:apply-templates select="w:r"/>
+		<xsl:variable name="temp">
+			<xsl:apply-templates select="w:r"/>
+		</xsl:variable>
+		<xsl:for-each select="$temp/node()">
+			<xsl:choose>
+				<xsl:when test="self::text()">
+					<xsl:analyze-string select="." regex="(\[.+?\])">
+						<xsl:matching-substring>
+							<xsl:text>
+               </xsl:text>
+							<pb n="{regex-group(1)}" />
+						</xsl:matching-substring>
+						<xsl:non-matching-substring>
+							<xsl:value-of select="."/>
+						</xsl:non-matching-substring>
+					</xsl:analyze-string>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:copy-of select="."/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:for-each>
 	</xsl:template>
 	<!-- Ende Paragraphen -->
+	
+	<!-- kritische Anmerkungen -->
+	<xsl:template match="w:r[descendant::w:footnoteReference]">
+		<note type="crit_app"></note>
+	</xsl:template>
+	<!-- ENDE kritische Anmerkungen -->
 		
 	<!-- Funktionen -->
 	<xsl:function name="hab:div" as="xs:boolean">
