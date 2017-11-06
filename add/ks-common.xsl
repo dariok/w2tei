@@ -313,8 +313,20 @@
 	<!-- neu 2017-08-07 DK -->
 	<xsl:template match="w:endnoteReference">
 		<xsl:variable name="wid" select="@w:id"/>
-		<note type="footnote">
+		<xsl:variable name="temp">
 			<xsl:apply-templates select="//w:endnote[@w:id = $wid]/w:p/w:r" />
+		</xsl:variable>
+		<note type="footnote">
+			<xsl:for-each select="$temp/node()">
+				<xsl:choose>
+					<xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
+						<xsl:value-of select="substring(., 2)" />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:copy-of select="." />
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
 		</note>
 	</xsl:template>
 	<!-- ENDE Fuß-/Endnoten -->
