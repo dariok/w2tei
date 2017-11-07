@@ -38,7 +38,16 @@
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/edoc/ed000240/rules/tei-p5-transcr.xsd"
 			n="{$nr}">
-			<xsl:attribute name="xml:id" select="concat('edoc_ed000240_', $ee, '_introduction')" />
+			<xsl:attribute name="xml:id">
+				<xsl:choose>
+					<xsl:when test="wdb:string(//w:body/w:p[not(wdb:is(., 'KSEE-Titel'))][1]) = 'Text'">
+						<xsl:value-of select="concat('edoc_ed000240_', $ee, '_transcript')" />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="concat('edoc_ed000240_', $ee, '_introduction')" />
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:attribute>
 			<teiHeader>
 				<fileDesc>
 					<titleStmt>
