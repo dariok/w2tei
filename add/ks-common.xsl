@@ -340,6 +340,21 @@
 	</xsl:template>
 	<!-- ENDE Fuß-/Endnoten -->
 	
+	<!-- normalize -->
+	<xsl:template match="node()" mode="normalize">
+		<xsl:choose>
+			<xsl:when test="self::text() and not(preceding-sibling::node())">
+				<xsl:value-of select="normalize-space()"/>
+			</xsl:when>
+			<xsl:when test="self::text() and not(following-sibling::node())">
+				<xsl:value-of select="normalize-space(wdb:substring-before-if-ends(., '.'))"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:sequence select="." />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
 	<!-- FUNCTIONS -->
 	<xsl:function name="hab:rmSquare" as="xs:string">
 		<xsl:param name="input" />

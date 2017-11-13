@@ -323,8 +323,49 @@
 		and wdb:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Hand')]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<msDesc>
-			<xsl:variable name="desc" select="wdb:string(w:r[not(hab:isSigle(.))])" />
-			<xsl:variable name="md" select="tokenize($desc, ' , ')" />
+			<xsl:variable name="desc">
+				<xsl:apply-templates select="w:r[not(hab:isSigle(.))]"/>
+			</xsl:variable>
+			<xsl:variable name="md">
+				<xsl:for-each select="$desc/node()">
+					<xsl:choose>
+						<xsl:when test="self::text()">
+							<xsl:analyze-string select="." regex="( , )">
+								<xsl:matching-substring>
+									<hab:b/>
+								</xsl:matching-substring>
+								<xsl:non-matching-substring>
+									<xsl:value-of select="."/>
+								</xsl:non-matching-substring>
+							</xsl:analyze-string>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:copy-of select="." />
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:for-each>
+			</xsl:variable>
+			<xsl:variable name="md3">
+				<xsl:if test="$md/hab:b[2]">
+					<xsl:for-each select="$md/hab:b[2]/following-sibling::node()">
+						<xsl:choose>
+							<xsl:when test="self::text()">
+								<xsl:analyze-string select="." regex="\(|\)">
+									<xsl:matching-substring>
+										<hab:c/>
+									</xsl:matching-substring>
+									<xsl:non-matching-substring>
+										<xsl:value-of select="."/>
+									</xsl:non-matching-substring>
+								</xsl:analyze-string>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:sequence select="."/>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+				</xsl:if>
+			</xsl:variable>
 			<xsl:variable name="si"
 				select="wdb:string(w:r[hab:isSigle(.)])" />
 			<xsl:variable name="sigle">
@@ -340,12 +381,15 @@
 						<idno><xsl:value-of select="$sigle"/></idno>
 					</altIdentifier>
 				</xsl:if>
-				<repository><xsl:value-of select="normalize-space($md[1])"/></repository>
+				<repository><xsl:apply-templates select="$md/hab:b[1]/preceding::node()" mode="normalize" /></repository>
 				<idno type="signatur">
+					<xsl:variable name="te">
+						<xsl:apply-templates select="$md/hab:b[2]/preceding-sibling::node() intersect $md/hab:b[1]/following-sibling::node()" />
+					</xsl:variable>
 					<xsl:choose>
-						<xsl:when test="contains($md[2], '(') and contains($md[2], ')')">
+						<xsl:when test="contains($te, '(') and contains($te, ')')">
 							<!-- ggf. Punkt entfernen -->
-							<xsl:variable name="str" select="normalize-space(substring-before($md[2], '('))"/>
+							<xsl:variable name="str" select="normalize-space(substring-before($te, '('))"/>
 							<xsl:choose>
 								<xsl:when test="ends-with($str, '.')">
 									<xsl:value-of select="substring($str, 1, string-length($str)-1)"/>
@@ -356,21 +400,21 @@
 							</xsl:choose>
 						</xsl:when>
 						<xsl:otherwise>
-							<xsl:value-of select="$md[2]"/>
+							<xsl:value-of select="$te"/>
 						</xsl:otherwise>
 					</xsl:choose>
 				</idno>
 			</msIdentifier>
-			<xsl:if test="$md[3]">
+			<xsl:if test="$md3/node()">
 				<msContents>
 					<msItem>
 						<locus>
 							<xsl:choose>
-								<xsl:when test="contains($md[3], '(')">
-									<xsl:value-of select="normalize-space(substring-before($md[3], '('))" />
+								<xsl:when test="$md3/hab:c">
+									<xsl:apply-templates select="$md3/hab:c[1]/preceding-sibling::node()" mode="normalize" />
 								</xsl:when>
 								<xsl:otherwise>
-									<xsl:value-of select="normalize-space($md[3])" />
+									<xsl:apply-templates select="$md3" mode="normalize" />
 								</xsl:otherwise>
 							</xsl:choose>
 						</locus>
@@ -382,10 +426,10 @@
 				<xsl:if test="w:commentRangeEnd">
 					<p><xsl:apply-templates select="w:commentRangeEnd"/></p>
 				</xsl:if>
-				<xsl:if test="contains($md[3], '(')">
+				<xsl:if test="$md3/hab:c">
 					<handDesc>
 						<handNote>
-							<xsl:value-of select="substring-before(substring-after($md[3], '('), ')')"/>
+							<xsl:apply-templates select="$md3/hab:c[1]/following-sibling::node()[not(self::hab:c)]" mode="normalize" />
 						</handNote>
 					</handDesc>
 				</xsl:if>
