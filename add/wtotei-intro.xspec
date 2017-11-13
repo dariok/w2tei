@@ -8756,6 +8756,166 @@
 				<div type="contents"></div>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="EE 101">
+			<x:context>
+				<w:body>
+					<w:p w:rsidR="004C6DB6" w:rsidRPr="004C6DB6" w:rsidRDefault="004C6DB6" w:rsidP="001B01E0">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift1"/>
+						</w:pPr>
+						<w:r>
+							<w:t>Überlieferung</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="004C6DB6" w:rsidRDefault="001B01E0" w:rsidP="00827E89">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift2"/>
+						</w:pPr>
+						<w:r>
+							<w:t>Handschrift</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="00F518BB" w:rsidRDefault="000304C2" w:rsidP="001B01E0">
+						<w:pPr>
+							<w:pStyle w:val="KSText"/>
+						</w:pPr>
+						<w:r w:rsidRPr="000304C2">
+							<w:rPr>
+								<w:rStyle w:val="KSSigle"/>
+							</w:rPr>
+							<w:t>[a:]</w:t>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="006A52F9">
+							<w:t>Sächsisches Staatsarchiv Hauptstaatsarchiv Dresden</w:t>
+						</w:r>
+						<w:r w:rsidR="00080A51" w:rsidRPr="006A52F9">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="006A52F9">
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:r w:rsidR="009650D4">
+							<w:t>10024 Geheimer Rat</w:t>
+						</w:r>
+						<w:r w:rsidR="00BC5DAF">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00C17C00">
+							<w:t>(</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="006A52F9">
+							<w:t>Geheimes Archiv) Loc</w:t>
+						</w:r>
+						<w:r w:rsidR="001F31B0">
+							<w:t>. 10300/02</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="006A52F9">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:r w:rsidR="00DB4A8A">
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:r w:rsidR="003F06A8" w:rsidRPr="006A52F9">
+							<w:t>fol</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="006A52F9">
+							<w:t>. 48</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="004B6D41">
+							<w:rPr>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>a</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="001C15F6">
+							<w:rPr>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>/b</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="006A52F9">
+							<w:t xml:space="preserve"> </w:t>
+						</w:r>
+						<w:bookmarkStart w:id="0" w:name="_GoBack"/>
+						<w:bookmarkEnd w:id="0"/>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="00080A51">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>(Stempel, nach alter handschriftlicher Foli</w:t>
+						</w:r>
+						<w:r w:rsidR="00001158">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>i</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="00080A51">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t xml:space="preserve">erung </w:t>
+						</w:r>
+						<w:r w:rsidR="003F06A8" w:rsidRPr="00080A51">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>fo</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="00080A51">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>l. 33</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="00080A51">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+								<w:vertAlign w:val="superscript"/>
+							</w:rPr>
+							<w:t>a/b</w:t>
+						</w:r>
+						<w:r w:rsidR="001B01E0" w:rsidRPr="00080A51">
+							<w:rPr>
+								<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+							</w:rPr>
+							<w:t>)</w:t>
+						</w:r>
+						<w:r w:rsidR="00F518BB">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+				</w:body>
+			</x:context>
+			<x:expect label="Hochstellung in fol.-Angabe">
+				<div type="history_of_the_work">
+					<listBibl type="sigla">
+						<msDesc xml:id="a">
+							<msIdentifier>
+								<altIdentifier type="siglum">
+									<idno>a</idno>
+								</altIdentifier>
+								<repository>Sächsisches Staatsarchiv Hauptstaatsarchiv Dresden</repository>
+								<idno type="signatur">10024 Geheimer Rat</idno>
+							</msIdentifier>
+							<msContents>
+								<msItem>
+									<locus>fol. 48<hi rend="super">a/b</hi></locus>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<handDesc>
+									<handNote>Stempel, nach alter handschriftlicher Foliierung fol. 33<hi rend="super">a/b</hi></handNote>
+								</handDesc>
+							</physDesc>
+						</msDesc>
+					</listBibl>
+				</div>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="ms">
 		<x:scenario label="EE 100">
