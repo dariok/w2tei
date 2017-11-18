@@ -206,12 +206,16 @@
 	<xsl:template match="w:r | w:commentRangeEnd" mode="item">
 		<xsl:choose>
 			<xsl:when test="wdb:is(., 'KSAnmerkunginberlieferung', 'r')
-				and preceding-sibling::w:r[1][wdb:is(., 'KSAnmerkunginberlieferung', 'r')]"/>
+				and not(wdb:isFirst(., 'KSAnmerkunginberlieferung', 'r'))"/>
 			<xsl:when test="wdb:is(., 'KSAnmerkunginberlieferung', 'r')
-				and not(preceding-sibling::w:r[1][wdb:is(., 'KSAnmerkunginberlieferung', 'r')])">
+				and wdb:isFirst(., 'KSAnmerkunginberlieferung', 'r')">
 				<note>
+					<xsl:variable name="myId" select="generate-id()" />
 					<xsl:variable name="anmerkung">
-						<xsl:apply-templates select=". | following-sibling::w:r[wdb:is(., 'KSAnmerkunginberlieferung', 'r')]"/>
+						<xsl:apply-templates select=". |
+							following-sibling::w:r[wdb:is(., 'KSAnmerkunginberlieferung', 'r')
+								and not(wdb:isFirst(., 'KSAnmerkunginberlieferung', 'r'))
+								and $myId = generate-id(preceding-sibling::w:r[wdb:isFirst(., 'KSAnmerkunginberlieferung', 'r')][1])]" />
 					</xsl:variable>
 					<xsl:for-each select="$anmerkung/node()">
 						<xsl:choose>
@@ -223,7 +227,6 @@
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:for-each>
-					
 				</note>
 			</xsl:when>
 			<xsl:otherwise>
