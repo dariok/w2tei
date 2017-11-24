@@ -21,7 +21,7 @@
 	
 	<!-- Titel mit Untertitel; 2017-10-26 DK -->
 	<xsl:template match="w:t" mode="mTitle">
-		<xsl:analyze-string select="." regex="\.">
+		<xsl:analyze-string select="." regex="\. ">
 			<xsl:matching-substring>
 				<lb/>
 			</xsl:matching-substring>
