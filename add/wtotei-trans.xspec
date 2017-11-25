@@ -1,11 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
-	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-	xmlns:tei="http://www.tei-c.org/ns/1.0"
-	xmlns="http://www.tei-c.org/ns/1.0"
-	stylesheet="wtotei-intro.xsl" xslt-version="3.0"
-	preserve-space="no">
-	
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
+  stylesheet="wtotei-trans.xsl" xslt-version="3.0" preserve-space="no">
+  <x:scenario label="normaler Absatz">
+    <x:scenario label="mit Leerzeilen">
+      <x:context>
+        <w:body>
+          <w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53"
+            w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
+            <w:pPr>
+              <w:pStyle w:val="berschrift1"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E46B53">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+              <w:t>Text</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="4EB56B69" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E46B53">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+              <w:t>Disses buchlin beschleust durch heylige schrifft/</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="20E66C98" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E46B53">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+              <w:t>das Bepstliche heylickeit altzu viel yrrenn/</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="42E0C7B4" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E46B53">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+              <w:t>sundigen/ unnd unrecht thun kan.</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="445A1EFB" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E46B53">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+              <w:t>Wer das nit glaubt/ der ist</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="50634DD0" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+            <w:pPr>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E46B53">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+              <w:t>Ein boszer unchrist.</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00E46B53">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="de-DE"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F05E"/>
+            </w:r>
+          </w:p>
+        </w:body>
+      </x:context>
+      <x:expect label="div">
+        <div>
+          <p>
+            <lb/>Disses buchlin beschleust durch heylige schrifft/
+               <lb/>das Bepstliche heylickeit altzu viel yrrenn/
+               <lb/>sundigen/ unnd unrecht thun kan.
+               <lb/>Wer das nit glaubt/ der ist
+               <lb/>Ein boszer unchrist.</p>
+        </div>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>
