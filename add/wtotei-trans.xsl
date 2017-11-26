@@ -4,6 +4,7 @@
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:hab="http://diglib.hab.de"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
+	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="3.0">
 	<!-- neu 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
@@ -13,21 +14,22 @@
 	<xsl:output indent="yes"/>
 	
 	<xsl:template match="w:body">
-		<xsl:apply-templates select="w:p[wdb:is(., 'berschrift1')]/following-sibling::w:p[not(descendant::w:t)]"/>
+		<xsl:apply-templates
+		  select="w:p[wdb:is(., 'berschrift1')]/following-sibling::w:p[hab:isDiv(.)]"/>
 	</xsl:template>
 	
 	<!-- Paragraphen -->
-	<xsl:template match="w:p[not(descendant::w:t)]">
+	<xsl:template match="w:p[hab:isDiv(.)]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<div>
-			<xsl:apply-templates select="following-sibling::w:p[hab:div(.)
-				and generate-id(preceding-sibling::w:p[not(descendant::w:t)][1]) = $myId]" />
+			<xsl:apply-templates select="following-sibling::w:p[hab:isP(.)
+				and generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />
 		</div>
 	</xsl:template>
 	
 	<xsl:template match="w:p[wdb:is(., 'berschrift1')]" />
 	
-	<xsl:template match="w:p[hab:div(.)]">
+	<xsl:template match="w:p[hab:isP(.)]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<xsl:variable name="name">
 			<xsl:choose>
@@ -36,8 +38,8 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:element name="{$name}">
-			<xsl:apply-templates select="preceding-sibling::w:p[descendant::w:t and not(hab:div(.))
-				and generate-id(following-sibling::w:p[hab:div(.)][1]) = $myId]" />
+			<xsl:apply-templates select="preceding-sibling::w:p[descendant::w:t and not(hab:isP(.))
+				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]" />
 			<xsl:text>
                </xsl:text>
 			<lb/>
@@ -47,7 +49,7 @@
 	
 	<!-- normaler Absatz -->
 	<xsl:template match="w:p[descendant::w:t and not(hab:isStruct(.))
-		and (not(descendant::w:pStyle or wdb:is(., 'KSText')))]">
+		and not(hab:isP(.) or hab:isDiv(.))]">
 		<xsl:if test="not(matches(wdb:string(.), '^\[.+?\]$'))">
 			<xsl:text>
                </xsl:text>
@@ -89,14 +91,25 @@
 	<!-- ENDE kritische Anmerkungen -->
 		
 	<!-- Funktionen -->
-	<xsl:function name="hab:div" as="xs:boolean">
+  <xd:doc>
+    <xd:desc>Prüfen, ob es einen Absatz bildet</xd:desc>
+  </xd:doc>
+	<xsl:function name="hab:isP" as="xs:boolean">
 		<xsl:param name="context"/>
 		<xsl:sequence select="if($context//w:sym/@w:char='F05E') then true() else false()"/>
 	</xsl:function>
-	
+  
+  <xd:doc>
+    <xd:desc>Prüfen, ob es eine div begrenzt</xd:desc>
+  </xd:doc>
+  <xsl:function name="hab:isDiv" as="xs:boolean">
+    <xsl:param name="context" />
+    <xsl:sequence select="if($context//w:t) then false() else true()" />
+  </xsl:function>
+  
 	<xsl:function name="hab:isStruct" as="xs:boolean">
 		<xsl:param name="context" />
-		<xsl:sequence select="hab:div($context) or wdb:is($context, 'KSEE-Titel')
+		<xsl:sequence select="hab:isP($context) or wdb:is($context, 'KSEE-Titel')
 			or wdb:is($context, 'berschrift1')"></xsl:sequence>
 	</xsl:function>
 </xsl:stylesheet>
