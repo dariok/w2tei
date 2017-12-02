@@ -86,7 +86,22 @@
 	
 	<!-- kritische Anmerkungen -->
 	<xsl:template match="w:r[descendant::w:footnoteReference]">
-		<note type="crit_app"></note>
+		<note type="crit_app">
+			<xsl:variable name="wid" select="w:footnoteReference/@w:id"/>
+			<xsl:variable name="temp">
+				<xsl:apply-templates select="//w:footnote[@w:id = $wid]/w:p/w:r" />
+			</xsl:variable>
+			<xsl:for-each select="$temp/node()">
+				<xsl:choose>
+					<xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
+						<xsl:value-of select="substring(., 2)" />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:copy-of select="." />
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
+		</note>
 	</xsl:template>
 	<!-- ENDE kritische Anmerkungen -->
 		
