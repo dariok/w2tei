@@ -96,8 +96,11 @@
 					<xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
 						<xsl:value-of select="substring(., 2)" />
 					</xsl:when>
+					<xsl:when test="position() = last() and self::text() and matches(., '\s$')">
+						<xsl:value-of select="substring(., 1, string-length()-1)" />
+					</xsl:when>
 					<xsl:otherwise>
-						<xsl:copy-of select="." />
+						<xsl:sequence select="." />
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
