@@ -134,6 +134,10 @@
 				mode="eval" />
 		</bibl>
 	</xsl:template>
+	<xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
+		not(descendant::w:vertAlign or descendant::w:i)]" mode="eval">
+		<xsl:apply-templates select="w:t" />
+	</xsl:template>
 	<!-- Ende RS -->
 	
 	<!-- Funktionen -->

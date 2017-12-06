@@ -310,6 +310,10 @@
 		or w:endnoteReference or w:footnoteReference or hab:isSem(.))]">
 		<xsl:apply-templates select="w:t | w:br" />
 	</xsl:template>
+	<xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i
+		or w:endnoteReference or w:footnoteReference or hab:isSem(.))]" mode="eval">
+		<xsl:apply-templates select="w:t | w:br" />
+	</xsl:template>
 	<!-- Ende Styles -->
 	
 	<!-- neu 2017-10-15 DK -->
