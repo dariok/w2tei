@@ -212,10 +212,9 @@
 				<note>
 					<xsl:variable name="myId" select="generate-id()" />
 					<xsl:variable name="anmerkung">
+						<xsl:variable name="me" select="." />
 						<xsl:apply-templates select=". |
-							following-sibling::w:r[wdb:is(., 'KSAnmerkunginberlieferung', 'r')
-								and not(wdb:isFirst(., 'KSAnmerkunginberlieferung', 'r'))
-								and $myId = generate-id(preceding-sibling::w:r[wdb:isFirst(., 'KSAnmerkunginberlieferung', 'r')][1])]" />
+							following-sibling::w:r[wdb:followMe(., $me, 'KSAnmerkunginberlieferung', 'r')]" />
 					</xsl:variable>
 					<xsl:for-each select="$anmerkung/node()">
 						<xsl:choose>
@@ -634,7 +633,7 @@
 		<xsl:text>→</xsl:text>
 		<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
 	</xsl:template>
-
+	
 	<!-- (auch) für Verabreitung im XSPEC -->
 	<xsl:template match="w:comments" mode="item" />
 	<xsl:template match="w:comments" />

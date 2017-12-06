@@ -177,9 +177,13 @@
 		<xsl:param name="test" as="xs:string" />
 		<xsl:param name="pr" as="xs:string" />
 		<xsl:choose>
-			<xsl:when test="$pr = 'p' or $pr = 'r'">
+			<xsl:when test="$pr = 'p'">
 				<xsl:sequence select="wdb:is($context, $test, $pr)
 					and not(wdb:is($context/preceding-sibling::w:p[1], $test, $pr))" />
+			</xsl:when>
+			<xsl:when test="$pr = 'r'">
+				<xsl:sequence select="wdb:is($context, $test, $pr)
+					and not(wdb:is($context/preceding-sibling::w:r[1], $test, $pr))" />
 			</xsl:when>
 			<xsl:otherwise><xsl:sequence select="false()"/></xsl:otherwise>
 		</xsl:choose>

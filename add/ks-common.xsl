@@ -286,7 +286,7 @@
 	<!-- ENDE Kopf-Zeug -->
 	
 	<!-- Styles -->
-	<!-- kursiv -->y
+	<!-- kursiv -->
 	<xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1][descendant::w:i]]"/>
 	<xsl:template match="w:r[descendant::w:i and not(preceding-sibling::w:r[1][descendant::w:i])]">
 		<hi style="font-style:italic;"><xsl:apply-templates select="w:t | following-sibling::w:r[descendant::w:i
@@ -294,8 +294,10 @@
 	</xsl:template>
 	
 	<!-- hochgestellte -->
-	<xsl:template match="w:r[descendant::w:vertAlign
-		and not(w:endnoteReference or w:footnoteReference)]">
+	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]" mode="eval">
+		<xsl:apply-templates select="."/>
+	</xsl:template>
+	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]">
 		<hi>
 			<xsl:attribute name="rend">
 				<xsl:choose>
@@ -316,16 +318,6 @@
 		<xsl:apply-templates select="w:t | w:br" />
 	</xsl:template>
 	<!-- Ende Styles -->
-	
-	<!-- neu 2017-12-06 DK -->
-	<xsl:template match="w:r[not(wdb:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
-	<xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
-		<xsl:variable name="me" select="." />
-		<bibl>
-			<xsl:apply-templates select=". | following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]" 
-			mode="eval" />
-		</bibl>
-	</xsl:template>
 	
 	<!-- neu 2017-10-15 DK -->
 	<xsl:template match="w:p[wdb:is(., 'KSZitatblock')]">
