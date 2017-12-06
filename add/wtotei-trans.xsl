@@ -47,9 +47,14 @@
 		</xsl:element>
 	</xsl:template>
 	
+	<!-- Marginalie -->
+	<xsl:template match="w:p[wdb:is(., 'KSMarginalie', 'p')]">
+		<note place="margin"><xsl:apply-templates select="w:r" /></note>
+	</xsl:template>
+	
 	<!-- normaler Absatz -->
 	<xsl:template match="w:p[descendant::w:t and not(hab:isStruct(.))
-		and not(hab:isP(.) or hab:isDiv(.))]">
+		and not(hab:isP(.) or hab:isDiv(.) or wdb:is(., 'KSMarginalie', 'p'))]">
 		<xsl:if test="not(matches(wdb:string(.), '^\[.+?\]$'))">
 			<xsl:text>
                </xsl:text>
