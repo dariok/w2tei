@@ -91,6 +91,7 @@
 			<xsl:variable name="temp">
 				<xsl:apply-templates select="//w:footnote[@w:id = $wid]/w:p/w:r" />
 			</xsl:variable>
+			<!-- TODO String auswerten und passend kodieren! -->
 			<xsl:for-each select="$temp/node()">
 				<xsl:choose>
 					<xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
@@ -107,7 +108,23 @@
 		</note>
 	</xsl:template>
 	<!-- ENDE kritische Anmerkungen -->
-		
+	
+	<!-- RS -->
+	<xsl:template match="w:r[wdb:is(., 'KSOrt', 'r')]">
+		<rs type="place">
+			<xsl:comment>TODO ref eintragen</xsl:comment>
+			<xsl:apply-templates select="w:t"/>
+		</rs>
+	</xsl:template>
+	
+	<xsl:template match="w:r[wdb:is(., 'KSPerson', 'r')]">
+		<rs type="person">
+			<xsl:comment>TODO ref eintragen</xsl:comment>
+			<xsl:apply-templates select="w:t"/>
+		</rs>
+	</xsl:template>
+	<!-- Ende RS -->
+	
 	<!-- Funktionen -->
   <xd:doc>
     <xd:desc>Prüfen, ob es einen Absatz bildet</xd:desc>

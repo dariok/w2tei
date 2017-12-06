@@ -293,7 +293,7 @@
 	</xsl:template>
 	
 	<xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i
-		or w:endnoteReference or w:footnoteReference)]">
+		or w:endnoteReference or w:footnoteReference or hab:isSem(.))]">
 		<xsl:apply-templates select="w:t | w:br" />
 	</xsl:template>
 	<!-- Ende Styles -->
@@ -379,5 +379,10 @@
 		<xsl:param name="context" as="node()" />
 		<xsl:param name="num"/>
 		<xsl:value-of select="wdb:is($context, 'KSberschrift'||$num)"/>
+	</xsl:function>
+	
+	<xsl:function name="hab:isSem" as="xs:boolean">
+		<xsl:param name="context" as="node()" />
+		<xsl:value-of select="matches($context//w:rStyle/@w:val, 'KSOrt|KSPerson')"/>
 	</xsl:function>
 </xsl:stylesheet>
