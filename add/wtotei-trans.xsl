@@ -94,7 +94,7 @@
 		<note type="crit_app">
 			<xsl:variable name="wid" select="w:footnoteReference/@w:id"/>
 			<xsl:variable name="temp">
-				<xsl:apply-templates select="//w:footnote[@w:id = $wid]/w:p/w:r" />
+				<xsl:apply-templates select="//w:footnote[@w:id = $wid]/w:p/w:r" mode="eval" />
 			</xsl:variable>
 			<!-- TODO String auswerten und passend kodieren! -->
 			<xsl:for-each select="$temp/node()">
