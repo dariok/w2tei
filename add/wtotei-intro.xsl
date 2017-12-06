@@ -229,7 +229,7 @@
 				</note>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:apply-templates select="."/>
+				<xsl:apply-templates select="." mode="eval" />
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -326,7 +326,7 @@
 		<xsl:variable name="myId" select="generate-id()"/>
 		<msDesc>
 			<xsl:variable name="desc">
-				<xsl:apply-templates select="w:r[not(hab:isSigle(.))]"/>
+				<xsl:apply-templates select="w:r[not(hab:isSigle(.))]" mode="eval" />
 			</xsl:variable>
 			<xsl:variable name="md">
 				<xsl:for-each select="$desc/node()">
@@ -479,7 +479,7 @@
 	<xsl:template name="imprint">
 		<xsl:param name="context" />
 		<xsl:variable name="imprintText">
-			<xsl:apply-templates select="$context/w:r" />
+			<xsl:apply-templates select="$context/w:r" mode="eval"/>
 		</xsl:variable>
 		
 		<xsl:variable name="imp">
@@ -538,7 +538,7 @@
 						<xsl:value-of select="$dWhen"/>
 					</date>
 				</imprint>
-				<extent><xsl:apply-templates select="$context/following-sibling::w:p[1]/w:r"/></extent>
+				<extent><xsl:apply-templates select="$context/following-sibling::w:p[1]/w:r" mode="eval"/></extent>
 			</xsl:matching-substring>
 		</xsl:analyze-string>
 		
@@ -611,7 +611,7 @@
 		or wdb:is(., 'KSText')) and not(hab:isSigle(.) or wdb:starts(., 'Edition') or
 		wdb:starts(., 'Literatur')) and descendant::w:t and string-length(wdb:string(.)) &gt; 5]">
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
-		<p><xsl:apply-templates select="w:r" /></p>
+		<p><xsl:apply-templates select="w:r" mode="eval" /></p>
 	</xsl:template>
 	
 	<!-- neu 2017-06-11 DK -->
@@ -633,6 +633,9 @@
 		<xsl:text>→</xsl:text>
 		<xsl:apply-templates select="//w:comment[@w:id=$coID]//w:t"/>
 	</xsl:template>
+	<xsl:template match="w:commentRangeEnd" mode="eval">
+		<xsl:apply-templates select="." />
+	</xsl:template>
 	
 	<!-- (auch) für Verabreitung im XSPEC -->
 	<xsl:template match="w:comments" mode="item" />
@@ -647,18 +650,20 @@
 				<xsl:when test="$next">
 					<xsl:apply-templates select=". |
 						following-sibling::w:r[wdb:is(., 'KSbibliographischeAngabe', 'r')]
-							intersect $next/preceding-sibling::w:r" />
+							intersect $next/preceding-sibling::w:r" mode="eval" />
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:apply-templates select=". |
-						following-sibling::w:r[wdb:is(., 'KSbibliographischeAngabe', 'r')]" />
+						following-sibling::w:r[wdb:is(., 'KSbibliographischeAngabe', 'r')]" mode="eval" />
 				</xsl:otherwise>
 			</xsl:choose>
+			
 			<xsl:apply-templates select="following-sibling::w:commentRangeEnd[generate-id(preceding-sibling::w:r[
 				preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe'])]][1])
 				= $me]" />
 			<xsl:apply-templates select="following-sibling::w:r[descendant::w:rStyle[@w:val='KSAnmerkunginberlieferung'] and
 				following::w:r[generate-id() = generate-id($next)]]" />
+			
 			<!-- FN berücksichtigen; 2017-08-07 DK -->
 			<xsl:choose>
 				<xsl:when test="$next">

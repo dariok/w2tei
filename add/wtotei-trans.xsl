@@ -125,7 +125,8 @@
 	</xsl:template>
 	
 	<!-- neu 2017-12-06 DK -->
-	<xsl:template match="w:r[not(wdb:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
+	<xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
+		not(wdb:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
 	<xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
 		<xsl:variable name="me" select="." />
 		<bibl>
