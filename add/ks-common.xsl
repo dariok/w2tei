@@ -298,6 +298,16 @@
 	</xsl:template>
 	<!-- Ende Styles -->
 	
+	<!-- neu 2017-12-06 DK -->
+	<xsl:template match="w:r[not(wdb:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
+	<xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
+		<xsl:variable name="me" select="." />
+		<bibl>
+			<xsl:apply-templates select=". | following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]" 
+			mode="eval"/>
+		</bibl>
+	</xsl:template>
+	
 	<!-- neu 2017-10-15 DK -->
 	<xsl:template match="w:p[wdb:is(., 'KSZitatblock')]">
 		<cit>
@@ -383,6 +393,6 @@
 	
 	<xsl:function name="hab:isSem" as="xs:boolean">
 		<xsl:param name="context" as="node()" />
-		<xsl:value-of select="matches($context//w:rStyle/@w:val, 'KSOrt|KSPerson')"/>
+		<xsl:value-of select="matches($context//w:rStyle/@w:val, 'KSOrt|KSPerson|KSbibliographischeAngabe')"/>
 	</xsl:function>
 </xsl:stylesheet>
