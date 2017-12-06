@@ -615,22 +615,6 @@
 		<p><xsl:apply-templates select="w:r" /></p>
 	</xsl:template>
 	
-	<!-- Style von Textabschnitten -->
-	<!-- hochgestellte -->
-	<xsl:template match="w:r[descendant::w:vertAlign
-		and not(w:endnoteReference or w:footnoteReference)]">
-		<hi>
-			<xsl:attribute name="rend">
-				<xsl:choose>
-					<xsl:when test="w:rPr/w:vertAlign/@w:val='superscript'">super</xsl:when>
-					<xsl:otherwise>sub</xsl:otherwise>
-				</xsl:choose>
-			</xsl:attribute>
-			<xsl:apply-templates select="w:t" />
-		</hi>
-	</xsl:template>
-	<!-- Ende Styles -->
-	
 	<!-- neu 2017-06-11 DK -->
 	<xsl:template match="w:t" mode="exemplar">
 		<xsl:apply-templates />
