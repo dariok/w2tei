@@ -163,20 +163,41 @@
 	<!-- END Functions to deal with strings independently of Word 'runs' -->
 	
 	<!-- Functions to select runs -->
+	<xd:doc>
+		<xd:desc>Check whether this is the first run in a possible series of runs (e.g. the first 'berschrift1'
+		possibly immediately followed by one or more 'berschrift1'). May be used for paragraphs, too.</xd:desc>
+		<xd:param name="context">The context item.</xd:param>
+		<xd:param name="test">The test string for the paragraph or run style</xd:param>
+		<xd:param name="pr">check in Paragraph or Run</xd:param>
+		<xd:return><xd:pre>true()</xd:pre> if <xd:pre>wdb:is($xontext, $text, $pr)</xd:pre> evaluates as true and the
+		immediately preceding sibling will check as false.</xd:return>
+	</xd:doc>
 	<xsl:function name="wdb:isFirst" as="xs:boolean">
 		<xsl:param name="context" as="item()" />
 		<xsl:param name="test" as="xs:string" />
 		<xsl:param name="pr" as="xs:string" />
 		<xsl:choose>
-			<xsl:when test="$pr = 'p'">
+			<xsl:when test="$pr = 'p' or $pr = 'r'">
 				<xsl:sequence select="wdb:is($context, $test, $pr)
 					and not(wdb:is($context/preceding-sibling::w:p[1], $test, $pr))" />
 			</xsl:when>
-			<xsl:when test="$pr = 'r'">
-				<xsl:sequence select="wdb:is($context, $test, $pr)
-					and not(wdb:is($context/preceding-sibling::w:r[1], $test, $pr))" />
-			</xsl:when>
 			<xsl:otherwise><xsl:sequence select="false()"/></xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+	
+	<xsl:function name="wdb:followMe" as="xs:boolean">
+		<xsl:param name="context" as="item()" />
+		<xsl:param name="me" as="item()" />
+		<xsl:param name="test" as="xs:string" />
+		<xsl:param name="pr" as="xs:string" />
+		<xsl:choose>
+			<xsl:when test="$pr = 'p' or $pr = 'r'">
+				<xsl:variable name="myID" select="generate-id($me)"/>
+				<xsl:variable name="pre" select="$context/preceding-sibling::w:*[wdb:isFirst(., $test, $pr)][1]" />
+				<xsl:sequence select="wdb:is($context, $test, $pr) and not(wdb:isFirst($context, $test, $pr))
+					and $myID = generate-id($pre)" />
+			</xsl:when>
+			<xsl:otherwise><xsl:sequence select="false()" /></xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
 	<!-- END Functions to select runs -->
