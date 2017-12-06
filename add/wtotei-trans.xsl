@@ -123,6 +123,16 @@
 			<xsl:apply-templates select="w:t"/>
 		</rs>
 	</xsl:template>
+	
+	<!-- neu 2017-12-06 DK -->
+	<xsl:template match="w:r[not(wdb:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
+	<xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
+		<xsl:variable name="me" select="." />
+		<bibl>
+			<xsl:apply-templates select=". | following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]" 
+				mode="eval" />
+		</bibl>
+	</xsl:template>
 	<!-- Ende RS -->
 	
 	<!-- Funktionen -->
