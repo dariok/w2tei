@@ -1,0 +1,7034 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+	xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+	xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+	xmlns:w10="urn:schemas-microsoft-com:office:word"
+	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+	xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+	xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+	xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+	xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 wp14">
+	<w:body>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00002C4D" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSEE-Titel"/>
+			</w:pPr>
+			<w:r w:rsidRPr="00002C4D">
+				<w:t>EE 92 =[Nr. 115]</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00002C4D" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSEE-Titel"/>
+			</w:pPr>
+			<w:r w:rsidRPr="00002C4D">
+				<w:t xml:space="preserve"> Conclusiones contra </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00002C4D">
+				<w:t>Eccum</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00002C4D">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00002C4D">
+				<w:t>Lipsiae</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00002C4D">
+				<w:t xml:space="preserve"> tuende</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00002C4D" w:rsidRDefault="00392D1D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSEE-Titel"/>
+			</w:pPr>
+			<w:r>
+				<w:t>1519, [Anfang Mai]</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="0010182F" w:rsidRPr="0010182F" w:rsidRDefault="0010182F" w:rsidP="0010182F">
+			<w:pPr>
+				<w:pStyle w:val="KSEE-Titel"/>
+			</w:pPr>
+			<w:r>
+				<w:t>Bearbeitet von</w:t>
+			</w:r>
+			<w:r w:rsidR="00002C4D" w:rsidRPr="00002C4D">
+				<w:t xml:space="preserve"> Stefania Salvadori</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
+			<w:pPr>
+				<w:pStyle w:val="KSberschrift1"/>
+			</w:pPr>
+			<w:r>
+				<w:t>Überlieferung</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="004C6DB6" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
+			<w:pPr>
+				<w:pStyle w:val="KSberschrift2"/>
+			</w:pPr>
+			<w:r>
+				<w:t>Frühdrucke</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+				</w:rPr>
+				<w:t>[A:]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Conclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iōes</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ contra D. </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Joannem</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eccum</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lipsiae</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>xxvij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Junij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ tuen</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>⸗</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖de. ‖</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">[Wittenberg]: [Johann </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Rhau</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>-Grunenberg], 1519.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">4°, 4 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Bl</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>., A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Editionsvorlage</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>: UB Leipzig</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, </w:t>
+			</w:r>
+			<w:commentRangeStart w:id="0"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Kirchg.948/8</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="0"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:commentReference w:id="0"/>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Bibliographische Nachweis</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Freys/</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>, Verzeichnis, Nr. 16</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00D04D63">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Köhler, Bibliographie, Nr. 350</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Zorzin, Flugschriftenautor, 13A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00D04D63">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>VD 16 B 6129</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:b w:val="0"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+				</w:rPr>
+				<w:t>[B:]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Conclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iones</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ca‖rolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> contra D. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Johānem</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eccum</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lip</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ie</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>xxvij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Ju</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>⸗</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>nij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> tuende. ‖ </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[H]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="0015680E">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[TE]</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[Leipzig]: [Martin Landsberg], 1519.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">4°, 4 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Bl</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>., A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="0015680E">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00810972">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> H, TE.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Editionsvorlage</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>:  HAB Wolfenbüttel</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, H: H 55.4° </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Helmst</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. (6)</w:t>
+			</w:r>
+			<w:commentRangeStart w:id="1"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="1"/>
+			<w:r w:rsidR="00E509B7">
+				<w:rPr>
+					<w:rStyle w:val="Kommentarzeichen"/>
+				</w:rPr>
+				<w:commentReference w:id="1"/>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:lastRenderedPageBreak/>
+				<w:t>Weitere Exemplare</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>: BSB München</w:t>
+			</w:r>
+			<w:r w:rsidR="0035530F">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, </w:t>
+			</w:r>
+			<w:commentRangeStart w:id="2"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Rar. 1953#Beibd.1</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="2"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:commentReference w:id="2"/>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00002C4D" w:rsidP="00002C4D">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Bibliographische Nachweis</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Freys/</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>, Verzeichnis, Nr. 17</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00D04D63">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Köhler, Bibliographie, Nr. </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>1186</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00D04D63">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>VD 16 B 6128</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Zorzin, Flugschriftenautor, 13B</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00CD2339">
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+				</w:rPr>
+				<w:t>[C:]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>COnclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iōes</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="009726AE">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>c</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>arolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ady</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> contra D. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Johānem</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eccum</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lip</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>⸗</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ie</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>xxvij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Junij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ tuende. ‖ </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[H]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="0015680E">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖ [TE]</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">[Breslau]: [Adam </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Dyon</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>], 1519.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">4°, 4 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Bl</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>., A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="0015680E">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00810972">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> H, TE.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Editionsvorlage</w:t>
+			</w:r>
+			<w:r w:rsidR="00A318B8">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>: BU Wrocław</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="00A318B8">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>, Mf 4956</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Bibliographische Nachweis</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Freys/</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>, Verzeichnis, Nr. 18.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Zorzin, Flugschriftenautor, 13C.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>VD 16 B 6127</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[D:]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Sub</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>criptas</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Conclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iones</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, Andreas </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adius</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ad‖uersus</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>dominu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Ioannem</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eckium</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>defendet</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lipsiæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, ‖ die </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>xxvij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Iunij.M.D.XIX</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. ‖</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00D864A3" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>in:</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00D23643" w:rsidRPr="00D23643" w:rsidRDefault="00D23643" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00D23643">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Erasmus, </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D23643">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Desiderius</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D23643">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>; Eck, Johannes; Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+			<w:r w:rsidR="009C58BE">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>;</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00D23643">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Luther, Martin</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00A87437" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Contenta in hoc Libello. ‖ Era</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">mi </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Roterodami</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Epi</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>tola</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>,</w:t>
+			</w:r>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ad</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>illu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>tri</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">s, ‖ Principē </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ac</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Ducē </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Saxoniæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> &amp;c. </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Fridericu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">̄. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>‖ Po</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>itiones</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>Ioannis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>Eckij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ,</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>cholasticæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>‖ Po</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>itiones</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Martini </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>Lutherij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>theologicæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>Cōclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>iōes</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>Andreæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>,theologicæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidR="00D864A3" w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ... ‖ [TE]</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00A87437" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">[Leipzig]: [Melchior Lotter d. Ä], [1519], </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="00D864A3" w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>fol</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="00D864A3" w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> A5</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‒A6</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>r</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00A87437">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00FF33C9" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">4°, 6 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Bl</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>., A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>6</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="0015680E">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00810972">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> TE.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00FF33C9" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Editionsvorlage</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:commentRangeStart w:id="3"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ÖNB</w:t>
+			</w:r>
+			<w:r w:rsidR="00137409" w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Wien </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, 11.J.64 </w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="3"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:commentReference w:id="3"/>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="008E448C" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Weitere Exemplare</w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>: HAB Wolfenbüttel</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C" w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, H 54.4° </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Helmst</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidR="002D211C" w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>(2)</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:lastRenderedPageBreak/>
+				<w:t>Bibliographis</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>che Nachweis</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Freys/</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>, Verzeichnis, Nr. 19.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00D04D63">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Köhler, Bibliographie, Nr. </w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>2642</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Zorzin, Flugschriftenautor, 13aA.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00D04D63">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>VD 16 E 2832</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[E:]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Sub</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>criptas</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Conclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iones</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, Andreas </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adius</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>, ad</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>⸗</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>uersus</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>dominu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Ioannem</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eckium</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>defendet</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lipsiæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, ‖ die </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>xxvij.Iunij.M.D.XIX</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. ‖</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00D864A3" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>in:</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00B92363" w:rsidRPr="00D23643" w:rsidRDefault="00B92363" w:rsidP="00B92363">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00D23643">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Erasmus, </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00D23643">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Desiderius</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00D23643">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>; Eck, Johannes; Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+			<w:r>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>;</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00D23643">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Luther, Martin</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Contenta in hoc Libello. ‖ Era</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">mi </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Roterodami</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Epi</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>tola</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>,</w:t>
+			</w:r>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ad</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>illu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>tri</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">s. ‖ Principē </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ac</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Ducē </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Saxoniæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> &amp;c. </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Fridericu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>̄. ‖ Po</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>itiones</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Ioannis </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Eckij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>cholasticæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>. ‖ Po</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>itiones</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Martini </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Lutherij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>theologicæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Cōclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>iōes</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Andreæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>,</w:t>
+			</w:r>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>theologicæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>. ‖</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">  </w:t>
+			</w:r>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>... ‖ [TE]</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+			</w:pPr>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>[Leipzig</w:t>
+			</w:r>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">]: [Melchior </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Lotter</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> d. Ä], [1519], </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>fol</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> A5</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>‒A6</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>r</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00293123" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">4°, 6 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Bl</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>, A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>6</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="0015680E">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00810972">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> TE.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00293123" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+			</w:pPr>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Editionsvorlage</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>: BSB München</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidR="008E448C" w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>,</w:t>
+			</w:r>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:commentRangeStart w:id="4"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Res/4 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>H.ref</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>. 800,10 a</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="4"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:commentReference w:id="4"/>
+			</w:r>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00293123" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+			</w:pPr>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Weitere</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>Exemplare</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00293123">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="008E448C" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Bibliographische Nachweis</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>F</w:t>
+			</w:r>
+			<w:r w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>reys/</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>, Verzeichnis, Nr. 20.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Köhler, Bibliographie, Nr. </w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C" w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>978</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Zorzin, Flugschriftenautor, 13aB</w:t>
+			</w:r>
+			<w:r w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00D04D63">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>VD 16 E 2831</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="008E448C" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00FF33C9" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[F:]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:commentRangeStart w:id="5"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="5"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="Kommentarzeichen"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:commentReference w:id="5"/>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="002406D3" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Sub</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>criptas</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Conclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="00310F12" w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iones</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidR="00310F12" w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>,</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Andreas</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="001E7EFA" w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adius</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>,aduersus</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>domi</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>⸗</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>num</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Ioannem</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eccium</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>defendet</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lipsiæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ,die </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>xxvij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Iunij.M.D.XIX</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. ‖</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00843C1F" w:rsidRDefault="00AA69D1" w:rsidP="00843C1F">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+			</w:pPr>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>in:</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="005F7888" w:rsidRPr="00843C1F" w:rsidRDefault="005F7888" w:rsidP="00843C1F">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+			</w:pPr>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="005F7888" w:rsidRPr="00843C1F" w:rsidRDefault="005F7888" w:rsidP="00843C1F">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+			</w:pPr>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:lastRenderedPageBreak/>
+				<w:t>Diſputatio</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>excellentium.D.doorūIohannis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Eccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> &amp; ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Andreę</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial Unicode MS" w:hAnsi="Arial Unicode MS" w:cs="Arial Unicode MS"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> q̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>cepta</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>eſt</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Lipsię</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>XXVII.Iunij.AN.M.XIX</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Diſ</w:t>
+			</w:r>
+			<w:r w:rsidR="006717E6">
+				<w:t>putatio</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>ſecunda.D.Dooru</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve">̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Iohānis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Eccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> &amp; </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Andreę</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial Unicode MS" w:hAnsi="Arial Unicode MS" w:cs="Arial Unicode MS"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> q̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>cepit</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>XV.Iulij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Diſputatio</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>eiuſdem.D.Iohannis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Eccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> &amp; ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>D.Martini</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Lutheri</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Augu</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:rPr>
+					<w:rFonts w:ascii="Arial Unicode MS" w:hAnsi="Arial Unicode MS" w:cs="Arial Unicode MS"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>iani</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> q̄ </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ǁ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>cepit.IIII.Iulij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>. ‖</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="005F7888" w:rsidRPr="00C46E3B" w:rsidRDefault="005F7888" w:rsidP="00843C1F">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+			</w:pPr>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>[Erfurt]: [Matthes Maler]</w:t>
+			</w:r>
+			<w:r w:rsidR="00271F96">
+				<w:t>,</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> [1519], </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="00D864A3">
+				<w:t>fol</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="00D864A3">
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>A1</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00C46E3B">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>‒D4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00C46E3B">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve"> und P3</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00C46E3B">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>‒P4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00C46E3B">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>r</w:t>
+			</w:r>
+			<w:r w:rsidR="00C46E3B">
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="005F7888" w:rsidRPr="00843C1F" w:rsidRDefault="005F7888" w:rsidP="00843C1F">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+			</w:pPr>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t xml:space="preserve">4°, 62 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>Bl</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>., A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00C46E3B">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>6</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>, B</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00C46E3B">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>‒P</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00C46E3B">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="005F7888" w:rsidRPr="00843C1F" w:rsidRDefault="005F7888" w:rsidP="00843C1F">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+			</w:pPr>
+			<w:r w:rsidRPr="001217EA">
+				<w:rPr>
+					<w:i/>
+				</w:rPr>
+				<w:t>Editionsvorlage</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>: BSB München</w:t>
+			</w:r>
+			<w:r w:rsidR="007936A2">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>, Rar. 1954</w:t>
+			</w:r>
+			<w:commentRangeStart w:id="6"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:t>.</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="6"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:commentReference w:id="6"/>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="005F7888" w:rsidRPr="005F7888" w:rsidRDefault="005F7888" w:rsidP="0007598B">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+			</w:pPr>
+			<w:r w:rsidRPr="001217EA">
+				<w:rPr>
+					<w:i/>
+				</w:rPr>
+				<w:t>Weitere Exemplare</w:t>
+			</w:r>
+			<w:r w:rsidRPr="005F7888">
+				<w:t>: UB Leipzig</w:t>
+			</w:r>
+			<w:r w:rsidR="007936A2">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="005F7888">
+				<w:t xml:space="preserve">, Kirchg.948/5 </w:t>
+			</w:r>
+			<w:r w:rsidRPr="004102F4">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t xml:space="preserve">(mit zahlreichen </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="004102F4">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t>hsl</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="004102F4">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="004102F4">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t>Notizien</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="001D6461" w:rsidRPr="004102F4">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t>)</w:t>
+			</w:r>
+			<w:r w:rsidR="004102F4" w:rsidRPr="0007598B">
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:eastAsia="Cambria" w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Bibliographische Nachweise</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00843C1F">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Freys/</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00843C1F">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>, Verzeichnis, Nr. 21</w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:eastAsia="Cambria" w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:eastAsia="Cambria" w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:eastAsia="Cambria" w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Benzing, Lutherbibliographie, Nr. 405.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:eastAsia="Cambria" w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:eastAsia="Cambria" w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>VD16 E 321</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Zorzin, Flugschriftenautor, 15</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[G:]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:b/>
+				</w:rPr>
+				<w:t xml:space="preserve">  </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Sub</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>criptas</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Conclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="00B11C00">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iones</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidR="00B11C00">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>,</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Andreas</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="00FA2439">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adius</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>,aduersus</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>domi</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>⸗</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>num</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Ioannem</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eccium</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>defendet</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lipsiæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ,die </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>xxvij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Iunij.M.D.XIX</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. ‖</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>in:</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Diſputatio</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>excellentium.D.doorūIohannis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> &amp; ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Andreę</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> q̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>cepta</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>eſt</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lipsię</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>XXVII.Iunij.AN.M.XIX</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Diſputatio</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ſecunda.D.Dooru</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Iohānis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> &amp; </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Andreę</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> q̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>cepit</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>XV.Iulij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Diſputatio</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>eiuſdem.D.Iohannis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>E</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00145DF2">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> &amp; ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>D.Martini</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lutheri</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Augu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iani</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> q̄ ǁ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>cepit.IIII.Iulij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00392D1D" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>[Erfurt]: [</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>Matthes</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Maler], [1519], </w:t>
+			</w:r>
+			<w:r w:rsidR="00D864A3" w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>fol.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> P3</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>‒P4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>r</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00392D1D" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>4°, 62 Bl., A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>6</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>, B</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>‒P</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:vertAlign w:val="superscript"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00392D1D">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Editionsvorlage: BSB München</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, 4 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Hom</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. 1596 d</w:t>
+			</w:r>
+			<w:r w:rsidR="00C46E3B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Weitere Exemplare: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00B0359E">
+				<w:t>[G</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00B0359E">
+				<w:rPr>
+					<w:vertAlign w:val="subscript"/>
+				</w:rPr>
+				<w:t>1</w:t>
+			</w:r>
+			<w:r w:rsidR="00B0359E">
+				<w:t>:</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00B0359E">
+				<w:t>]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">  UB Heidelberg</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, Salem 78,3/E RES </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>(mit Druckvarianten)</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> — </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00B0359E">
+				<w:t>[G</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00B0359E">
+				<w:rPr>
+					<w:vertAlign w:val="subscript"/>
+				</w:rPr>
+				<w:t>2</w:t>
+			</w:r>
+			<w:r w:rsidR="00B0359E">
+				<w:t>:</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00B0359E">
+				<w:t>]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> HAB Wolfenbüttel</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, A: 459 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Theol</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. (2) </w:t>
+			</w:r>
+			<w:r w:rsidR="00173547" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">— </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ebd.</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="00D864A3">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">, </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">H: S 180.4° </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Helmst</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. (2) </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>(mit Druckvarianten)</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:lastRenderedPageBreak/>
+				<w:t xml:space="preserve">Bibliographische Nachweise: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Freys/</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>, Verzeichnis, Nr. 22</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. —</w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Benzing, Lutherbibliographie, Nr. 406</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. — </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Zorzin, Flugschriftenautor, 15</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">— </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:highlight w:val="yellow"/>
+				</w:rPr>
+				<w:t>VD16 ZV 29362</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSSigle"/>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>[H:]</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Sub</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>criptas</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Conclu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="002C1ECF">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>iones</w:t>
+			</w:r>
+			<w:proofErr w:type="gramStart"/>
+			<w:r w:rsidR="002C1ECF">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>,</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Andreas</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:proofErr w:type="gramEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="002C1ECF">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>adius</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>,aduersus</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>domi</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>⸗</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>num</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Ioannem</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Eccium</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>defendet</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Lipsiæ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ,die </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>xxvij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Iunij.M.D.XIX</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. ‖</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>in:</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="003041CF" w:rsidRPr="003041CF" w:rsidRDefault="003041CF" w:rsidP="003041CF">
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="003041CF" w:rsidRPr="003041CF" w:rsidRDefault="003041CF" w:rsidP="003041CF">
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Diſputatio</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>excellentium.D.doctoru</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve">̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Iohannis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Eccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> &amp; ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Andreę</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="001D1355" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> q</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>̄</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>cepta</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>e</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>t</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Lipsi</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>ę</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>XXVII.Iunij.AN.M.D.XIX</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve">. ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Diſputatio</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>ſecunda.D.Dooru</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve">̄ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Iohānis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> ‖ </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Eccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> &amp; </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Andreę</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Carolo</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="001D1355" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>adij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> q</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>̄</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>cepit</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>XV.Iulij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Di</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>putatio</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>eiu</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>ſ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>dem.D.Iohannis</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Eccij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> &amp; </w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>D.Martini</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Lutheri</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Augu</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="001D1355" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Arial Unicode MS"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="it-IT"/>
+				</w:rPr>
+				<w:t>ﬅ</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>iniani</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> q</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>̄</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>ǁ</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>cepit.IIII.Iulij</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Junicode"/>
+				</w:rPr>
+				<w:t>‖</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="003041CF" w:rsidRPr="003041CF" w:rsidRDefault="003041CF" w:rsidP="003041CF">
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve">[Erfurt]: [Matthes Maler], [1519], </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="00173547">
+				<w:t>fol</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="00173547">
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>A1</w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>‒D4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> und P3</w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>v</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>‒P4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>r</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="003041CF" w:rsidRPr="003041CF" w:rsidRDefault="003041CF" w:rsidP="003041CF">
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve">4°, 62 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Bl</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>., A</w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>6</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>, B</w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>‒P</w:t>
+			</w:r>
+			<w:r w:rsidRPr="008E448C">
+				<w:rPr>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>4</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="003041CF" w:rsidRPr="003041CF" w:rsidRDefault="003041CF" w:rsidP="003041CF">
+			<w:r w:rsidRPr="00FF33C9">
+				<w:rPr>
+					<w:i/>
+				</w:rPr>
+				<w:t>Editionsvorlage</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>: HAB</w:t>
+			</w:r>
+			<w:r w:rsidR="008E448C">
+				<w:t xml:space="preserve"> Wolfenbüttel ,</w:t>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> H: H 65.4° </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>Helmst</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:t>. (4)</w:t>
+			</w:r>
+			<w:commentRangeStart w:id="7"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="7"/>
+			<w:r w:rsidRPr="003041CF">
+				<w:rPr>
+					<w:sz w:val="16"/>
+					<w:szCs w:val="16"/>
+				</w:rPr>
+				<w:commentReference w:id="7"/>
+			</w:r>
+			<w:r w:rsidRPr="003041CF">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="003041CF" w:rsidRPr="0099129B" w:rsidRDefault="003041CF" w:rsidP="0099129B">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+			</w:pPr>
+			<w:r w:rsidRPr="0099129B">
+				<w:rPr>
+					<w:i/>
+				</w:rPr>
+				<w:t>Weitere Exemplare</w:t>
+			</w:r>
+			<w:r w:rsidR="00FF33C9" w:rsidRPr="0099129B">
+				<w:t>:</w:t>
+			</w:r>
+			<w:r w:rsidR="00A87437">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:t xml:space="preserve">MKB Goslar , 349,4 </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="0055746B">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t xml:space="preserve">(aus dem Besitz von Andreas </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="0099129B" w:rsidRPr="0055746B">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t>Gronewalt</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="0099129B" w:rsidRPr="0055746B">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t>)</w:t>
+			</w:r>
+			<w:r w:rsidR="00655032" w:rsidRPr="00655032">
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="00655032">
+				<w:t xml:space="preserve">— </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:t xml:space="preserve">UB Leipzig , Libri.sep.2379 </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="0099129B">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t xml:space="preserve">(auf dem Titelblatt, Widmung an Georg </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="0099129B" w:rsidRPr="0099129B">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t>Spalatin</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="0099129B" w:rsidRPr="0099129B">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> von der Hand Johannes Langs)</w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ULB Münster , COLL.ERH. </w:t>
+			</w:r>
+			<w:commentRangeStart w:id="8"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>313</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="8"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rStyle w:val="Kommentarzeichen"/>
+				</w:rPr>
+				<w:commentReference w:id="8"/>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> BSB München , </w:t>
+			</w:r>
+			<w:commentRangeStart w:id="9"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Res/4 </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>H.ref</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. 258</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="9"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rStyle w:val="Kommentarzeichen"/>
+				</w:rPr>
+				<w:commentReference w:id="9"/>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> UB Paderborn , Erzbischöfliche Akademische Bibliothek </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>Th</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>. 6116(19)</w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="0099129B">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="00AE1944">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="00A27EC6">
+				<w:rPr>
+					<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+				</w:rPr>
+				<w:t>(aus dem Besitz von Otto Beckmann)</w:t>
+			</w:r>
+			<w:commentRangeStart w:id="10"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="10"/>
+			<w:r w:rsidR="002F7AD0">
+				<w:rPr>
+					<w:rStyle w:val="Kommentarzeichen"/>
+				</w:rPr>
+				<w:commentReference w:id="10"/>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> ÖNB Wien , </w:t>
+			</w:r>
+			<w:commentRangeStart w:id="12"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>*35.R.200</w:t>
+			</w:r>
+			<w:commentRangeEnd w:id="12"/>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rStyle w:val="Kommentarzeichen"/>
+				</w:rPr>
+				<w:commentReference w:id="12"/>
+			</w:r>
+			<w:r w:rsidR="0099129B">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="0099129B">
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Bibliographische Nachweise</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Freys/</w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>, Verzeichnis, Nr. 23</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Benzing, Lutherbibliographie, Nr. 407</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Zorzin, Flugschriftenautor, 15</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="001C2485">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:lang w:val="la-Latn"/>
+				</w:rPr>
+				<w:t>—</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="002406D3">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>VD16 E 320</w:t>
+			</w:r>
+			<w:r w:rsidR="001C2485" w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:eastAsia="Calibri" w:cs="Times New Roman"/>
+					<w:lang w:eastAsia="it-IT"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Edition</w:t>
+			</w:r>
+			<w:r w:rsidR="00556AAF">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">: </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00556AAF">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Löscher, Reformations-Acta 3, 284‒291</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. — </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00556AAF">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t xml:space="preserve">Eck, Briefwechsel, Nr. 84 (nur </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00556AAF">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Karlstadts</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00556AAF">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> Brief an Eck)</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t xml:space="preserve">. — </w:t>
+			</w:r>
+			<w:r w:rsidRPr="00556AAF">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Walch</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00C46E3B">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:vertAlign w:val="superscript"/>
+				</w:rPr>
+				<w:t>2</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00556AAF">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> 15, </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00556AAF">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>Sp</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00556AAF">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+				</w:rPr>
+				<w:t>. 825‒830</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:eastAsia="Calibri" w:cs="Times New Roman"/>
+				</w:rPr>
+				<w:t>.</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:eastAsia="Calibri" w:cs="Times New Roman"/>
+					<w:lang w:eastAsia="it-IT"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="00AA69D1" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+				<w:rPr>
+					<w:rFonts w:eastAsia="Calibri" w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:eastAsia="it-IT"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidR="00002C4D" w:rsidRPr="00963B92" w:rsidRDefault="00AA69D1" w:rsidP="00AA69D1">
+			<w:pPr>
+				<w:pStyle w:val="KSText"/>
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:i/>
+				</w:rPr>
+				<w:t>Literatur:</w:t>
+			</w:r>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="berschrift1Zchn"/>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t xml:space="preserve"> </w:t>
+			</w:r>
+			<w:proofErr w:type="spellStart"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t>Barge</w:t>
+			</w:r>
+			<w:proofErr w:type="spellEnd"/>
+			<w:r w:rsidRPr="00963B92">
+				<w:rPr>
+					<w:rStyle w:val="KSbibliographischeAngabe"/>
+					<w:rFonts w:cs="Times New Roman"/>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t>, Karlstadt 1, 144‒146</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidR="003A7BB3" w:rsidRPr="002112A8" w:rsidRDefault="004C6DB6" w:rsidP="00827E89">
+			<w:pPr>
+				<w:pStyle w:val="KSberschrift1"/>
+				<w:rPr>
+					<w:rStyle w:val="KSEE-Verweis"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r>
+				<w:lastRenderedPageBreak/>
+				<w:t>Entstehung und Inhalt</w:t>
+			</w:r>
+		</w:p>
+		<w:sectPr w:rsidR="003A7BB3" w:rsidRPr="002112A8" w:rsidSect="00CE2F47">
+			<w:pgSz w:w="11906" w:h="16838"/>
+			<w:pgMar w:top="1417" w:right="1417" w:bottom="1134" w:left="1417" w:header="708" w:footer="708" w:gutter="0"/>
+			<w:cols w:space="708"/>
+			<w:docGrid w:linePitch="360"/>
+		</w:sectPr>
+	</w:body>
+</w:document>
