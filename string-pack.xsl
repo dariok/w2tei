@@ -105,4 +105,34 @@
 		<xsl:param name="c" />
 		<xsl:value-of select="if(starts-with($s, $c)) then substring-after($s, $c) else $s"/>
 	</xsl:function>
+	
+	<xd:doc>
+		<xd:desc>Returns the substring before the last occurrence of the search string.</xd:desc>
+		<xd:param name="s">
+			<xd:p>The string to be checked</xd:p>
+		</xd:param>
+		<xd:param name="c">
+			<xd:p>The text to be searched for in the string value of <xd:pre>$s</xd:pre>.</xd:p>
+		</xd:param>
+	</xd:doc>
+	<xsl:function name="wdb:substring-before-last">
+		<xsl:param name="s" />
+		<xsl:param name="c" />
+		<xsl:value-of select="string-join(tokenize(normalize-space($s), $c)[not(position() = last())], $c)" />
+	</xsl:function>
+	
+	<xd:doc>
+		<xd:desc>Returns the substring after the last occurrence of the search string.</xd:desc>
+		<xd:param name="s">
+			<xd:p>The string to be checked</xd:p>
+		</xd:param>
+		<xd:param name="c">
+			<xd:p>The text to be searched for in the string value of <xd:pre>$s</xd:pre>.</xd:p>
+		</xd:param>
+	</xd:doc>
+	<xsl:function name="wdb:substring-after-last">
+		<xsl:param name="s" as="xs:string" />
+		<xsl:param name="c" as="xs:string" />
+		<xsl:value-of select="tokenize(normalize-space($s), $c)[last()]" />
+	</xsl:function>
 </xsl:stylesheet>

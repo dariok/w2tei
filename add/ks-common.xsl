@@ -297,7 +297,8 @@
 	</xsl:template>
 	
 	<!-- hochgestellte -->
-	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]">
+	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference
+		or hab:isSem(.))]">
 		<xsl:apply-templates select="." mode="eval" />
 	</xsl:template>
 	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]" mode="eval">

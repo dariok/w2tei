@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
+	xmlns="http://www.tei-c.org/ns/1.0"
+	xslt-version="2.0"
+	stylesheet="trans-2.xsl">
+	<x:scenario label="Zeilenumbrüche">
+		<x:context>
+			<p>
+			<lb/>Viel gelarten und ungelarten/ gestrenger her und
+			<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
+			<lb/>heylig mache/ und umbkere/ das erwelter und bestetig-
+			<lb/>ter Bapst/ in keinen weg yrren und sundigen/ auch nie-
+			<lb/>mants gewalt odder unrecht thun kan/ unnd sprechen/
+			<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
+			<lb/>Seel beschediget/ aber sunst ubel thunn/ das ehr das nit
+			<lb/>thue/ als ein Bapst/ sunder als ein mensch/ es sey auch
+			<lb/>nit unrecht/ was er furnympt. Item er kan niemandts
+			<lb/>vorfuren und betriegen/ darumb man auch den vorstor-
+			<lb/>ben Bepsten/ kein seel Messe nach halten sol/ und weysz
+			<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
+			<lb/>und schreyben den bapst einen got aller menschen.
+			</p>
+		</x:context>
+		<x:expect label="aller Text und w">
+			<p>
+			<lb/>Viel gelarten und ungelarten/ gestrenger her und
+			<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
+			<lb/>heylig mache/ und umbkere/ das erwelter und <w>bestetig-<lb break="no"/>ter</w> Bapst/ in keinen weg yrren und sundigen/ auch <w>nie-<lb break="no"/>mants</w> gewalt odder unrecht thun kan/ unnd sprechen/
+			<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
+			<lb/>Seel beschediget/ aber sunst ubel thunn/ das ehr das nit
+			<lb/>thue/ als ein Bapst/ sunder als ein mensch/ es sey auch
+			<lb/>nit unrecht/ was er furnympt. Item er kan niemandts
+			<lb/>vorfuren und betriegen/ darumb man auch den <w>vorstor-<lb break="no"/>ben</w> Bepsten/ kein seel Messe nach halten sol/ und weysz
+			<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
+			<lb/>und schreyben den bapst einen got aller menschen.
+			</p>
+		</x:expect>
+	</x:scenario>
+</x:description>
