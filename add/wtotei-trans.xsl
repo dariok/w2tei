@@ -159,7 +159,7 @@
   </xd:doc>
   <xsl:function name="hab:isDiv" as="xs:boolean">
     <xsl:param name="context" />
-    <xsl:sequence select="if($context//w:t) then false() else true()" />
+    <xsl:sequence select="if($context//w:t or $context//w:pStyle) then false() else true()" />
   </xsl:function>
   
 	<xsl:function name="hab:isStruct" as="xs:boolean">
