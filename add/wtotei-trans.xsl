@@ -155,6 +155,17 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	
+	<xsl:template match="w:r[wdb:is(., 'KSAutorenstelle', 'r')]">
+		<ref type="medieval">
+			<xsl:attribute name="cRef">
+				<xsl:value-of select="substring-before(w:t, ',')" />
+				<xsl:text>!</xsl:text>
+				<xsl:value-of select="substring-after(w:t, ',')" />
+			</xsl:attribute>
+			<xsl:apply-templates select="w:t" />
+		</ref>
+	</xsl:template>
 	<!-- Ende RS -->
 	
 	<!-- Funktionen -->
