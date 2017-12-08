@@ -136,4 +136,853 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+	
+	<x:scenario label="Fußnoten">
+		<x:scenario label="mit Kursiven">
+			<x:context>
+				<w:endnoteReference w:id="11" />
+				<w:endnotes>
+					<w:endnote w:id="11">
+						<w:p w14:paraId="797474FC" w14:textId="6CCCD027" w:rsidR="002D392F" w:rsidRPr="00A27704"
+							w:rsidRDefault="002D392F" w:rsidP="00014391">
+							<w:pPr>
+								<w:pStyle w:val="Endnotentext"/>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+							</w:pPr>
+							<w:r w:rsidRPr="00A27704">
+								<w:rPr>
+									<w:rStyle w:val="Endnotenzeichen"/>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:endnoteRef/>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> Die Ablässe der Mendikantenorden nahmen immer größerre Ausmaße an. Die </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">gefälschte </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">Sammlung von Privilegien der Minoriten des </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Markus von Treviso</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">aus dem Jahr </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>1428, angeblich päpstlichen Registern entnommen</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">, setzte </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">für </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">eine Reihe von </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>Feste</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>n, die in Ordenskirchen begangen wurden,</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> 100 Jahre Ablass</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> an. Ein notarielles Instrument erka</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>nnt</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>e</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> 1482 diese Ablässe als echt an</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">. Karlstadt mag der Druck dieser </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:i/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>Privilegia fratrum minorum</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> (Hain 13371)</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">, zuletzt in </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSOrt"/>
+								</w:rPr>
+								<w:t>Leipzig</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> 1495 und 1498 sowie in Venedig 1500, 1502 und 1508,</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">zusammen </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">mit </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">den </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">Bullen </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">bekannt gewesen sein. </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Sixtus IV.</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> erließ für den</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> Besuch der Ordenskirche am Fest des Hl. Franziskus 100 Jahre</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> Ablass, </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Leo X.</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> gar einen vollkommenen</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00DA585D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> Ablass für die, die sich </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">im Ordenskleid beerdigen ließen. Die </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">Dominikaner nahmen </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>kurzerhand die</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> Ablässe der Franziskaner </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">auch </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>für sich in Anspruch</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">; dieser Übertragung gaben </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Bonifaz IX.</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> 1402 und </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Sixtus IV.</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> 1479 </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>ihren päpstlichen Segen, der auch einen</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> Ablass von 100 Jahren für </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">den </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">Kirchenbesuch am Fest des </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Hl. Dominikus</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> anordnete. Den Augustinern gewährte schon </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Innozenz IV.</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>im Jahr</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> 1244</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> einen absurd anmutenden Ablass von</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> 1000 Jahre</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>n</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> für Almosen und </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">den </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>Besuch der Augustinerkirche zw</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>ischen</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> Septuagesima und Palmsonntag sowie </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>einen vollkommenen</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> Ablass an drei Tagen in </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">der </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>Karwoche</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">. </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Julius II.</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> bestätigt in </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">der </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>Bulle „Dum uberes fructus“ alte</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>,</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> den Augustinern gewährte Ablässe mit Beifügung eines Ablasses von 100 Jahren für </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">den </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>Kirchenbesuch an Festen von drei Ordensheiligen</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">, erwähnte jedoch nicht den Ablass von 1244. Veröffentlicht wurden diese Ablässe in den </w:t>
+							</w:r>
+							<w:r w:rsidRPr="003773C4">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>Privilegia fratrum Heremitarum Augustini, Rom 1514</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>, 27ff.</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00014391">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">S. hierzu </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rStyle w:val="KSbibliographischeAngabe"/>
+								</w:rPr>
+								<w:t>Paulus, Ablass 3, 260-268</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t>.</w:t>
+							</w:r>
+						</w:p>
+					</w:endnote>
+				</w:endnotes>
+			</x:context>
+			<x:expect label="mixed content">
+				<note type="footnote">Die Ablässe der Mendikantenorden nahmen immer größerre Ausmaße an. Die gefälschte Sammlung von Privilegien der Minoriten des <rs type="person"><!--TODO ref eintragen-->Markus von Treviso</rs> aus dem Jahr 1428, angeblich päpstlichen Registern entnommen, setzte für eine Reihe von Festen, die in Ordenskirchen begangen wurden, 100 Jahre Ablass an. Ein notarielles Instrument erkannte 1482 diese Ablässe als echt an. Karlstadt mag der Druck dieser <hi style="font-style:italic;">Privilegia fratrum minorum</hi> (Hain 13371), zuletzt in <rs type="place"><!--TODO ref eintragen-->Leipzig</rs> 1495 und 1498 sowie in Venedig 1500, 1502 und 1508, zusammen mit den Bullen bekannt gewesen sein. <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> erließ für den Besuch der Ordenskirche am Fest des Hl. Franziskus 100 Jahre Ablass, <rs type="person"><!--TODO ref eintragen-->Leo X.</rs> gar einen vollkommenen Ablass für die, die sich im Ordenskleid beerdigen ließen. Die Dominikaner nahmen kurzerhand die Ablässe der Franziskaner auch für sich in Anspruch; dieser Übertragung gaben <rs type="person"><!--TODO ref eintragen-->Bonifaz IX.</rs> 1402 und <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> 1479 ihren päpstlichen Segen, der auch einen Ablass von 100 Jahren für den Kirchenbesuch am Fest des <rs type="person"><!--TODO ref eintragen-->Hl. Dominikus</rs> anordnete. Den Augustinern gewährte schon <rs type="person"><!--TODO ref eintragen-->Innozenz IV.</rs> im Jahr 1244 einen absurd anmutenden Ablass von 1000 Jahren für Almosen und den Besuch der Augustinerkirche zwischen Septuagesima und Palmsonntag sowie einen vollkommenen Ablass an drei Tagen in der Karwoche. <rs type="person"><!--TODO ref eintragen-->Julius II.</rs> bestätigt in der Bulle „Dum uberes fructus“ alte, den Augustinern gewährte Ablässe mit Beifügung eines Ablasses von 100 Jahren für den Kirchenbesuch an Festen von drei Ordensheiligen, erwähnte jedoch nicht den Ablass von 1244. Veröffentlicht wurden diese Ablässe in den Privilegia fratrum Heremitarum Augustini, Rom 1514, 27ff. S. hierzu <bibl>Paulus, Ablass 3, 260-268</bibl>.</note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="Kursive 2">
+			<x:context>
+				<w:endnoteReference w:id="31" />
+				<w:endnotes>
+					<w:endnote w:id="31">
+						<w:p w14:paraId="0A966011" w14:textId="2E9939CD" w:rsidR="002D392F" w:rsidRPr="0068563D"
+							w:rsidRDefault="002D392F" w:rsidP="00AF3C75">
+							<w:pPr>
+								<w:pStyle w:val="Endnotentext"/>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+							</w:pPr>
+							<w:r w:rsidRPr="0068563D">
+								<w:rPr>
+									<w:rStyle w:val="Endnotenzeichen"/>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:endnoteRef/>
+							</w:r>
+							<w:r w:rsidRPr="0068563D">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">Karlstadt übersetzt einen seinerzeit </w:t>
+							</w:r>
+							<w:r w:rsidRPr="009465CE">
+								<w:rPr>
+									<w:rStyle w:val="KSPerson"/>
+								</w:rPr>
+								<w:t>Cyrill von Alexandria</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> zugeschriebenen Text. S. </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00FA1BA7">
+								<w:rPr>
+									<w:rStyle w:val="KSAutorenstelle"/>
+								</w:rPr>
+								<w:t>Origines, In Leviticum homilia 2</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+								</w:rPr>
+								<w:t xml:space="preserve">: </w:t>
+							</w:r>
+							<w:r w:rsidRPr="002E5F0F">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t>„</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t>Sed quid praecipue in huiusmodi sacerdote mirandum est? non ut non peccet, quod
+									fieri non potest, sed ut agnoscat et intelligat peccatum suum. Nunquam enim se
+									emendat, qui pecasse se non putat. Simul quia et facilius potest indulgere
+									peccantibus, is qui alicuius infirmitatis suae conscientiae remordetur.“ (</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00FA1BA7">
+								<w:rPr>
+									<w:rStyle w:val="KSbibliographischeAngabe"/>
+								</w:rPr>
+								<w:t>PG 12, 415C</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t>). Vgl. Eximii patris Cyrilli Alexandrini commentarii in Leviticum sexdecim
+									libris digesti, Paris: Wolfgang Hopyl, 1514, fol. 5</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00B13318">
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+									<w:vertAlign w:val="superscript"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t>v</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t xml:space="preserve">: </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									<w:sz w:val="20"/>
+									<w:szCs w:val="20"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t>„Sed quid precipue in huiusmodi sacerdote mirandum est? Non ut non peccet/ quod
+									fieri potest: sed ut agnoscat et intelligat peccatum suum. Nunquam enim emendat: qui
+									se pecasse non putat, simul quia et facilius potest indulgere peccantibus: is qui
+									alicuius infirmitatis conscientie sue remordetur.“</w:t>
+							</w:r>
+						</w:p>
+					</w:endnote>
+				</w:endnotes>
+			</x:context>
+			<x:expect label="Kursiv und korrektes ref">
+				<note type="footnote">Karlstadt übersetzt einen seinerzeit <rs type="person"><!--TODO ref eintragen-->Cyrill von Alexandria</rs> zugeschriebenen Text. S. <ref type="medieval" cRef="Origines!In Leviticum homilia 2">Origines, In Leviticum homilia 2</ref>: „Sed quid praecipue in huiusmodi sacerdote mirandum est? non ut non peccet, quod
+									fieri non potest, sed ut agnoscat et intelligat peccatum suum. Nunquam enim se
+									emendat, qui pecasse se non putat. Simul quia et facilius potest indulgere
+									peccantibus, is qui alicuius infirmitatis suae conscientiae remordetur.“ (<bibl>PG 12, 415C</bibl>). Vgl. Eximii patris Cyrilli Alexandrini commentarii in Leviticum sexdecim
+									libris digesti, Paris: Wolfgang Hopyl, 1514, fol. 5<hi rend="super">v</hi>: „Sed quid precipue in huiusmodi sacerdote mirandum est? Non ut non peccet/ quod
+									fieri potest: sed ut agnoscat et intelligat peccatum suum. Nunquam enim emendat: qui
+									se pecasse non putat, simul quia et facilius potest indulgere peccantibus: is qui
+									alicuius infirmitatis conscientie sue remordetur.“</note>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>

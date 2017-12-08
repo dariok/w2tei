@@ -287,6 +287,9 @@
 	
 	<!-- Styles -->
 	<!-- kursiv -->
+	<xsl:template match="w:r[descendant::w:i]">
+		<xsl:apply-templates select="." mode="eval" />
+	</xsl:template>
 	<xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1][descendant::w:i]]" mode="eval"/>
 	<xsl:template match="w:r[descendant::w:i and not(preceding-sibling::w:r[1][descendant::w:i])]" mode="eval">
 		<hi style="font-style:italic;"><xsl:apply-templates select="w:t | following-sibling::w:r[descendant::w:i
@@ -294,6 +297,9 @@
 	</xsl:template>
 	
 	<!-- hochgestellte -->
+	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]">
+		<xsl:apply-templates select="." mode="eval" />
+	</xsl:template>
 	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]" mode="eval">
 		<hi>
 			<xsl:attribute name="rend">

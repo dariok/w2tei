@@ -161,7 +161,7 @@
 			<xsl:attribute name="cRef">
 				<xsl:value-of select="substring-before(w:t, ',')" />
 				<xsl:text>!</xsl:text>
-				<xsl:value-of select="substring-after(w:t, ',')" />
+				<xsl:value-of select="normalize-space(substring-after(w:t, ','))" />
 			</xsl:attribute>
 			<xsl:apply-templates select="w:t" />
 		</ref>
