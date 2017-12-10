@@ -84,11 +84,20 @@
 							<corr><xsl:value-of select="$last"/></corr>
 						</choice>
 					</xsl:when>
+					<xsl:when test="$note/node()[1][self::text()]">
+						<!-- TODO später für mehrere rdg anpassen -->
+						<xsl:variable name="wit" select="normalize-space($note/tei:hi)"/>
+						<app>
+							<lem><xsl:value-of select="$last"/></lem>
+							<rdg wit="{$wit}"><xsl:value-of select="normalize-space($note/text()[1])"/></rdg>
+						</app>
+					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="$last"/>
 						<xsl:sequence select="$note"/>
 					</xsl:otherwise>
 				</xsl:choose>
+				<xsl:text> </xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="." />

@@ -11,7 +11,7 @@
 	
 	<xsl:include href="ks-common.xsl"/>
 	
-	<xsl:output indent="yes"/>
+	<xsl:output indent="no"/>
 	
 	<xsl:template match="w:body">
 		<xsl:apply-templates
@@ -82,7 +82,7 @@
 					</xsl:analyze-string>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:copy-of select="."/>
+					<xsl:sequence select="."/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:for-each>
@@ -99,6 +99,7 @@
 			<!-- TODO String auswerten und passend kodieren! -->
 			<xsl:for-each select="$temp/node()">
 				<xsl:choose>
+					<xsl:when test="position() = 1 and self::text() and normalize-space() = ''" />
 					<xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
 						<xsl:value-of select="substring(., 2)" />
 					</xsl:when>

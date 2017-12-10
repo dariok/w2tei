@@ -1,75 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/edoc/ed000240/rules/tei-p5-transcr.xsd"
-     n="160"
-     xml:id="edoc_ed000240_128_transcript">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>Von Päpstlicher Heiligkeit<date when="1520-10-17">1520, 17. Oktober</date>
-            </title>
-            <title type="short">Von Päpstlicher Heiligkeit (1520, 17. Oktober)</title>
-            <author>Harald Bollbuck</author>
-            <author>Alyssa Lehr Evans</author>
-         </titleStmt>
-         <publicationStmt>
-            <publisher>
-               <name type="org">Herzog August Bibliothek Wolfenbüttel</name>
-               <ptr target="http://www.hab.de"/>
-            </publisher>
-            <date when="2017" type="created"/>
-            <distributor>Herzog August Bibliothek Wolfenbüttel</distributor>
-            <availability status="restricted">
-               <p>Herzog August Bibliothek Wolfenbüttel (<ref target="http://diglib.hab.de/?link=012">copyright
-								information</ref>)</p>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <p>born digital</p>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <p>Zeichen aus der Private Use Area entsprechen MUFI 3.0 (http://mufi.info)</p>
-         <projectDesc>
-            <p xml:id="kgk">
-               <ref target="http://diglib.hab.de/edoc/ed000240/start.htm">Kritische Gesamtausgabe der Schriften und Briefe
-								Andreas Bodensteins von Karlstadt</ref>
-            </p>
-         </projectDesc>
-      </encodingDesc>
-   </teiHeader>
-   <text>
-      <body>
-         <div>
-            <p>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/edoc/ed000240/rules/tei-p5-transcr.xsd" n="160" xml:id="edoc_ed000240_128_transcript"><teiHeader><fileDesc><titleStmt><title>Von Päpstlicher Heiligkeit<date when="1520-10-17">1520, 17. Oktober</date></title><title type="short">Von Päpstlicher Heiligkeit (1520, 17. Oktober)</title><author>Harald Bollbuck</author><author>Alyssa Lehr Evans</author></titleStmt><publicationStmt><publisher><name type="org">Herzog August Bibliothek Wolfenbüttel</name><ptr target="http://www.hab.de"/></publisher><date when="2017" type="created"/><distributor>Herzog August Bibliothek Wolfenbüttel</distributor><availability status="restricted"><p>Herzog August Bibliothek Wolfenbüttel (<ref target="http://diglib.hab.de/?link=012">copyright
+								information</ref>)</p></availability></publicationStmt><sourceDesc><p>born digital</p></sourceDesc></fileDesc><encodingDesc><p>Zeichen aus der Private Use Area entsprechen MUFI 3.0 (http://mufi.info)</p><projectDesc><p xml:id="kgk"><ref target="http://diglib.hab.de/edoc/ed000240/start.htm">Kritische Gesamtausgabe der Schriften und Briefe
+								Andreas Bodensteins von Karlstadt</ref></p></projectDesc></encodingDesc></teiHeader><text><body><div><p>
                <lb/>Disses buchlin beschleust durch heylige schrifft/
                <lb/>das Bepstliche heylickeit altzu viel yrrenn/
                <lb/>sundigen/ unnd unrecht thun kan.
                <lb/>Wer das nit glaubt/ der ist
-               <lb/>Ein boszer unchrist.</p>
-         </div>
-         <div>
-            <p>
-               <lb/>
-               <rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</p>
-         </div>
-         <div>
-            <salute>
+               <lb/>Ein boszer unchrist.</p></div><div><p>
+               <lb/><rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</p></div><div><salute>
                <pb n="[A1v]"/>
                <lb/>Dem gestrengen und erhnvehstenn
-               <lb/>hern <rs type="person"><!--TODO ref eintragen-->Neythart von Thungen zu Sodenberg</rs>
-               <note type="footnote">
-                  <rs type="person"><!--TODO ref eintragen-->Neidhard von Thüngen zu Sodenberg</rs> (nicht vor 1446–1522), Ritter seit 1504 oder 1506, Anführer des fränkischen Adels im Krieg, Onkel des <rs type="person"><!--TODO ref eintragen-->Götz von Berlichingen</rs>, den er in einigen Fehden unterstützte. Vgl. <bibl>Thüngen, Thüngen Lutzische Linie 1, 179–188</bibl>. <rs type="person"><!--TODO ref eintragen-->Neidhards</rs> Sitz auf der Burg <rs type="place"><!--TODO ref eintragen-->Sodenberg</rs> (Kilianstein) lag nahe <rs type="place"><!--TODO ref eintragen-->Hamelburg</rs>, woher Karlstadts Mutter stammte, vgl. <bibl>Bubenheimer,Andreas Rudolff Bodenstein, 6</bibl>. Ein weiteres Mitglied des Geschlechts von Thüngen, <rs type="person"><!--TODO ref eintragen-->Konrad</rs> (1466–1540), war seit 1519 Bischof von <rs type="place"><!--TODO ref eintragen-->Würzburg</rs>. Vgl. <bibl>Thüngen, Thüngen Lutzische Linie 1, 207–259</bibl>; <bibl>Wendehorst, Würzburg, 72–100</bibl>. Seit dem Frühjahr 1520 hatten fränkische Adlige wie <rs type="person"><!--TODO ref eintragen-->Franz von Sickingen</rs> und <rs type="person"><!--TODO ref eintragen-->Sylvester von Schaumburg</rs> 
-                  <rs type="person"><!--TODO ref eintragen-->Luther</rs> Offerten zu Schutz, Geleit und Unterschlupf angeboten. Vgl. <bibl>Kaufmann, Adel, 11–13</bibl>. Karlstadts Widmung mag äquivalent zu verstehen sein.</note>/ Ritter etc. 
-               <lb/>meinem gunstigen herren und furderer/ wunsche ich<note type="crit_app">ist <hi style="font-style:italic;">a</hi>
-               </note> An-
+               <lb/>hern <rs type="person"><!--TODO ref eintragen-->Neythart von Thungen zu Sodenberg</rs><note type="footnote"><rs type="person"><!--TODO ref eintragen-->Neidhard von Thüngen zu Sodenberg</rs> (nicht vor 1446–1522), Ritter seit 1504 oder 1506, Anführer des fränkischen Adels im Krieg, Onkel des <rs type="person"><!--TODO ref eintragen-->Götz von Berlichingen</rs>, den er in einigen Fehden unterstützte. Vgl. <bibl>Thüngen, Thüngen Lutzische Linie 1, 179–188</bibl>. <rs type="person"><!--TODO ref eintragen-->Neidhards</rs> Sitz auf der Burg <rs type="place"><!--TODO ref eintragen-->Sodenberg</rs> (Kilianstein) lag nahe <rs type="place"><!--TODO ref eintragen-->Hamelburg</rs>, woher Karlstadts Mutter stammte, vgl. <bibl>Bubenheimer,Andreas Rudolff Bodenstein, 6</bibl>. Ein weiteres Mitglied des Geschlechts von Thüngen, <rs type="person"><!--TODO ref eintragen-->Konrad</rs> (1466–1540), war seit 1519 Bischof von <rs type="place"><!--TODO ref eintragen-->Würzburg</rs>. Vgl. <bibl>Thüngen, Thüngen Lutzische Linie 1, 207–259</bibl>; <bibl>Wendehorst, Würzburg, 72–100</bibl>. Seit dem Frühjahr 1520 hatten fränkische Adlige wie <rs type="person"><!--TODO ref eintragen-->Franz von Sickingen</rs> und <rs type="person"><!--TODO ref eintragen-->Sylvester von Schaumburg</rs> <rs type="person"><!--TODO ref eintragen-->Luther</rs> Offerten zu Schutz, Geleit und Unterschlupf angeboten. Vgl. <bibl>Kaufmann, Adel, 11–13</bibl>. Karlstadts Widmung mag äquivalent zu verstehen sein.</note>/ Ritter etc. 
+               <lb/>meinem gunstigen herren und furderer/ wunsche ich<note type="crit_app">ist <hi style="font-style:italic;">a</hi></note> An-
                <lb/>dres Bodenstein vonn Carolstat doctor/ gesuntheit in
-               <lb/>got/ und embiet<note type="crit_app">empeutt <hi style="font-style:italic;">a</hi>
-               </note> mein willig und bereit dinst.</salute>
-         </div>
-         <div>
-            <p>
+               <lb/>got/ und embiet<note type="crit_app">empeutt <hi style="font-style:italic;">a</hi></note> mein willig und bereit dinst.</salute></div><div><p>
                <lb/>Viel gelarten und ungelarten/ gestrenger her und
                <lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
                <lb/>heylig mache/ und umbkere/ das erwelter und bestetig-
@@ -82,35 +25,27 @@
                <lb/>vorfuren und betriegen/ darumb man auch den vorstor-
                <lb/>ben Bepsten/ kein seel Messe nach halten sol/ und weysz
                <lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
-               <lb/>und schreyben den bapst einen got aller menschen. Item<note place="margin">Jesse zwu meyln von <rs type="place"><!--TODO ref eintragen-->Torgaw</rs>.<note type="footnote">Der Ort <rs type="place"><!--TODO ref eintragen-->Jessen</rs> an der Elster ist ungefähr 30 km von <rs type="place"><!--TODO ref eintragen-->Torgau</rs> entfernt, also fast 4 Meilen. Karlstadt ironisiert und bricht die heilsgeschichtliche Tradition, vgl. Anm. 3.</note>
-               </note>
+               <lb/>und schreyben den bapst einen got aller menschen. Item<note place="margin">Jesse zwu meyln von <rs type="place"><!--TODO ref eintragen-->Torgaw</rs>.<note type="footnote">Der Ort <rs type="place"><!--TODO ref eintragen-->Jessen</rs> an der Elster ist ungefähr 30 km von <rs type="place"><!--TODO ref eintragen-->Torgau</rs> entfernt, also fast 4 Meilen. Karlstadt ironisiert und bricht die heilsgeschichtliche Tradition, vgl. Anm. 3.</note></note>
                <lb/>einen lawen de tribu Juda/ Radix vonn Jesse/ der zu-schleusset/ und keiner schleusset auff etc.<note type="footnote">Vgl. <ref type="biblical">Offb 5,5</ref> Vg
 			 „Ecce vicit leo de tribu Iuda radix David/ aperire librum [...].“ Die Wurzel Jesse, das Stammgeschlecht <rs type="person"><!--TODO ref eintragen-->Davids</rs>, aus der der Messias entstammt, geht zurück auf <ref type="biblical">Jes 11,1-10</ref>. Aus ihr bezog sich die heilsgeschichtliche Legitimation der gegenwärtigen
 								Kirche, die sich im Glauben in apostolischer und ungebrochener Kontinuität verstand.
 								Die Symbolisierung Judas durch einen Löwen findet sich in <ref type="biblical">1.Mose 49,9</ref>. Karlstadt nutzt die Synonymität mit dem Namen Papst <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> Zugleich verbindet er diese Textstelle mit <ref type="biblical">Offb 3,7</ref> Vg
-			 „qui aperit et nemo cludit, et cludit et nemo aperit.“</note>
-            </p>
-            <p>
+			 „qui aperit et nemo cludit, et cludit et nemo aperit.“</note></p><p>
                <lb/>Sie halten yhn auch fur einen herren heyliger geschrifft/
                <lb/>und geben yme macht/ mit heyligen worten gottis nach
                <lb/>eygenem gefallen zuhandeln/ wie einem heffner<note type="footnote">Vgl. <bibl>DWb 10, 127</bibl>: Hafner = Töpfer.</note>/ der mit
-               <lb/>dem don umbgeht/ wen er<note type="crit_app">
-                  <hi style="font-style:italic;">folgt</hi> heffen <hi style="font-style:italic;">a</hi>
-               </note> dopff odder krauszen<note type="footnote">Vgl. <bibl>DWb 11, 2093</bibl>: Krause = Krug, Trinkgeschirr.</note> nach
+               <lb/>dem don umbgeht/ wen er<note type="crit_app"><hi style="font-style:italic;">folgt</hi> heffen <hi style="font-style:italic;">a</hi></note> dopff odder krauszen<note type="footnote">Vgl. <bibl>DWb 11, 2093</bibl>: Krause = Krug, Trinkgeschirr.</note> nach
                <lb/>seinem willen machet.<note type="footnote">Karlstadt verwendet die Metaphorik von Gott als Töpfer nach <ref type="biblical">Jer 18,1-6</ref>. Vgl. auch <ref type="biblical">Jes 45,9</ref>; <ref type="biblical">ebd., 64,8</ref>; <ref type="biblical">Röm 9,21</ref>.</note> Das hab ich/ in vorgangen jaren
                <lb/>auch alszo mussen glauben/ dan ich hette schulmeyster
                <lb/>die den blinden fuerern viel bequemer gewest werenn/
                <lb/>dan den yenen/ die sich leer halben befleyssen/ vater und
                <lb/>mutter zulassen.<note type="footnote">Vgl. <ref type="biblical">Mt 19,29</ref> Vg
-			 „Et omnis qui reliquit domum vel fratres aut sorores aut patrem aut matrem aut uxorem aut filios aut agros propter nomen meum centuplum accipiet et vitam aeternam possidibit.“</note>
-            </p>
-            <p>
+			 „Et omnis qui reliquit domum vel fratres aut sorores aut patrem aut matrem aut uxorem aut filios aut agros propter nomen meum centuplum accipiet et vitam aeternam possidibit.“</note></p><p>
                <lb/>Wen ich aber itzt diesser nerrischen einfeltickeit ge-
                <lb/>denck/ und nach yhr tracht/ so lach ich meiner selber. mir
                <lb/>felt auch nicht anders in mein gedancken/ dan das die
                <pb n="[A2r]"/>
-               <lb/>Monichen solche liedlin<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> solcheliedlin</note> erdicht/ und dem Bapst mit
+               <lb/>Monichen solche liedlin<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> solcheliedlin</note> erdicht/ und dem Bapst mit
                <lb/>bedriegischer leer geheuchlet/ und die feddern von den
                <lb/>kleydern geleszen haben/ auff das sie mit ablas und krab-
                <lb/>las/ mit schmucken unnd drucken/ mit drewmen unnd
@@ -119,22 +54,15 @@
                <lb/>kondten/ und nicht grosz achten/ wie der recht lebendig
                <lb/>glaub/ ausz heyliger schrifft geschopffet/ und in die dur-
                <lb/>stige Christ gleubige seelen mocht gegossen werden.<note type="footnote">Vgl. <ref type="biblical">Joh 4,14</ref> Vg
-			 „sed aqua, quam dabo ei, fiet in eo fons aquae salientis in vitam aeternam.</note> 
-            </p>
-            <p>
+			 „sed aqua, quam dabo ei, fiet in eo fons aquae salientis in vitam aeternam.</note> </p><p>
                <lb/>Sie haben vor allem betracht/ wie sie scheinbarli-
-               <lb/>che kloster erbauten. Wie sie auch yhre keesz secke<note type="footnote">
-                  <bibl>DWb 11, 257</bibl>: „Käsesack: sack in den der quark gethan wird, wenn er unter die presse kommt“.</note> ful-
-               <lb/>ten. Wie sie<note type="crit_app">
-                  <hi style="font-style:italic;">folgt</hi> auch <hi style="font-style:italic;">a</hi>
-               </note> entlich heylig und frum geachtet wur-
+               <lb/>che kloster erbauten. Wie sie auch yhre keesz secke<note type="footnote"><bibl>DWb 11, 257</bibl>: „Käsesack: sack in den der quark gethan wird, wenn er unter die presse kommt“.</note> ful-
+               <lb/>ten. Wie sie<note type="crit_app"><hi style="font-style:italic;">folgt</hi> auch <hi style="font-style:italic;">a</hi></note> entlich heylig und frum geachtet wur-
                <lb/>den/ darumb haben sie den Christen das gesetz gottis
                <lb/>(darausz sunden gelernet werden) verdeckt unnd auch
-               <lb/>verbotten zuleszen. </p>
-            <p>
+               <lb/>verbotten zuleszen. </p><p>
                <lb/>Es ist gleich mit dem Bapst unnd Monchen/ als
-               <lb/>wan sich zwey pferde miteinander kreben<note type="footnote">
-                  <bibl>DWb 11, 2127</bibl>: kratzen.</note> aber reyben/
+               <lb/>wan sich zwey pferde miteinander kreben<note type="footnote"><bibl>DWb 11, 2127</bibl>: kratzen.</note> aber reyben/
                <lb/>die sumerfliegen von sich zutreyben. Der bapst hat new
                <lb/>betler bestetiget/ szo haben die newe betler/ new ablas
                <lb/>erfunden/<note type="footnote">Die Ablässe der Mendikantenorden nahmen immer größerre Ausmaße an. Die gefälschte Sammlung von Privilegien der Minoriten des <rs type="person"><!--TODO ref eintragen-->Markus von Treviso</rs> aus dem Jahr 1428, angeblich päpstlichen Registern entnommen, setzte für eine Reihe von Festen, die in Ordenskirchen begangen wurden, 100 Jahre Ablass an. Ein notarielles Instrument erkannte 1482 diese Ablässe als echt an. Karlstadt mag der Druck dieser <hi style="font-style:italic;">Privilegia fratrum minorum</hi> (Hain 13371), zuletzt in <rs type="place"><!--TODO ref eintragen-->Leipzig</rs> 1495 und 1498 sowie in Venedig 1500, 1502 und 1508, zusammen mit den Bullen bekannt gewesen sein. <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> erließ für den Besuch der Ordenskirche am Fest des Hl. Franziskus 100 Jahre Ablass, <rs type="person"><!--TODO ref eintragen-->Leo X.</rs> gar einen vollkommenen Ablass für die, die sich im Ordenskleid beerdigen ließen. Die Dominikaner nahmen kurzerhand die Ablässe der Franziskaner auch für sich in Anspruch; dieser Übertragung gaben <rs type="person"><!--TODO ref eintragen-->Bonifaz IX.</rs> 1402 und <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> 1479 ihren päpstlichen Segen, der auch einen Ablass von 100 Jahren für den Kirchenbesuch am Fest des <rs type="person"><!--TODO ref eintragen-->Hl. Dominikus</rs> anordnete. Den Augustinern gewährte schon <rs type="person"><!--TODO ref eintragen-->Innozenz IV.</rs> im Jahr 1244 einen absurd anmutenden Ablass von 1000 Jahren für Almosen und den Besuch der Augustinerkirche zwischen Septuagesima und Palmsonntag sowie einen vollkommenen Ablass an drei Tagen in der Karwoche. <rs type="person"><!--TODO ref eintragen-->Julius II.</rs> bestätigt in der Bulle „Dum uberes fructus“ alte, den Augustinern gewährte Ablässe mit Beifügung eines Ablasses von 100 Jahren für den Kirchenbesuch an Festen von drei Ordensheiligen, erwähnte jedoch nicht den Ablass von 1244. Veröffentlicht wurden diese Ablässe in den Privilegia fratrum Heremitarum Augustini, Rom 1514, 27ff. S. hierzu <bibl>Paulus, Ablass 3, 260-268</bibl>.</note> und mit disputiren lange zeit vorteydigt/ dar-
@@ -145,50 +73,34 @@
                <lb/>wol gethan/ unser heyligster vatter der Bapst kan nicht
                <lb/>sundigen/ nicht yrren/ und ist ubir alle konige und fursten
                <lb/>und hat heylige geschrifft in seiner macht. Ich meyn das
-               <lb/>heysse wol gekraebet und geheuchelt. </p>
-            <p>
+               <lb/>heysse wol gekraebet und geheuchelt. </p><p>
                <lb/>Derhalben hab ich alle Christlichenn menschen in 
                <lb/>gemeyn/ mit diessem buchlin und in eyl/ wollen berich-
                <lb/>ten/ das obermelte Monichen und betler nicht wissen
                <lb/>was yhn getreumbt/ und was das wortlin Bepstliche
                <lb/>heylickeit vormag. Darumb wil ich dasselbig kurtzlich
-               <lb/>auszlegen/ unnd<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> unud</note> durch die schrifft beweyszen/ Das alle
+               <lb/>auszlegen/ unnd<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> unud</note> durch die schrifft beweyszen/ Das alle
                <pb n="[A2v]"/>
                <lb/>Bebst sunder sein/ und haben geyrret/ und irren noch/
-               <lb/>und werden yrren szo lang die welt stehet. </p>
-            <p>
+               <lb/>und werden yrren szo lang die welt stehet. </p><p>
                <lb/>Das wer genuglich ausz sanct Peters leben abtzu-
                <lb/>nehmen/ der vilmals in dem glauben geyrret/ Christum
                <lb/>verlaugnet<note type="footnote">Vgl. <ref type="biblical">Mt 26,69-75</ref>; <ref type="biblical">Mk 14,66-72</ref>; <ref type="biblical">Lk 22,54-62</ref>; <ref type="biblical">Joh 18,15-27</ref>.</note>/ und nach Christi aufferstehung von Pau-
                <lb/>lo gestraffet/ das er unrecht gethan unnd geyrret hette
-               <lb/>als ad Gala. ii. geschrieben.<note type="footnote">Vgl. <ref type="biblical">Gal 2,11-14</ref>.</note>
-            </p>
-            <p>
+               <lb/>als ad Gala. ii. geschrieben.<note type="footnote">Vgl. <ref type="biblical">Gal 2,11-14</ref>.</note></p><p>
                <lb/>Derhalbenn wil ich/ szo myrsz got vorleyhet/ durch
                <lb/>heylige geschrifft (die nit liegen und betriegen kan) erst-
                <lb/>lich antzeygen/ wie der mensch heylig wurt/ darnach be-
                <lb/>weysen/ das der Bapst hie in dissem jamerthal/ sol nit
                <lb/>heylig geschatzt werden/ er halte sich dan zuvor fur einen
                <lb/>sunder/ der yrren/ betriegen/ und liegen/ und unrecht thun
-               <lb/>kan/ und das yme gar nicht zugleuben/<note type="crit_app">
-                  <hi style="font-style:italic;">folgt</hi> oder <hi style="font-style:italic;">a</hi>
-               </note> aber nach zufol-
+               <lb/>kan/ und das yme gar nicht zugleuben/<note type="crit_app"><hi style="font-style:italic;">folgt</hi> oder <hi style="font-style:italic;">a</hi></note> aber nach zufol-
                <lb/>gen sey/ man sol yhne auch gar nicht horen/ er singe uns
                <lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
                <lb/>befelh gottis/ der genugsamlich in heyliger schrifft an-
-               <lb/>getzeigt und begriffen. </p>
-         </div>
-         <div>
-            <p>
-               <lb/>Wie<note type="crit_app">Die <hi style="font-style:italic;">a</hi>
-               </note> heylickeit in diessem le-
-               <lb/>
-               <hi style="font-style:italic;">ben geschicht. </hi>
-            </p>
-         </div>
-         <div>
-            <p>
+               <lb/>getzeigt und begriffen. </p></div><div><p>
+               <lb/>Wie<note type="crit_app">Die <hi style="font-style:italic;">a</hi></note> heylickeit in diessem le-
+               <lb/><hi style="font-style:italic;">ben geschicht. </hi></p></div><div><p>
                <lb/>Heylickeit disses lebens wurt yeglichen heyligen/
                <lb/>in anfahungen/ sonder volkommenheit/ beschert/ nach
                <lb/>dem Paulus ad Ro. viii geschrieben/ Wir selber haben
@@ -211,8 +123,7 @@
                <lb/>und altem weszen/ wir hoffen alhie/ das unser ungefol-
                <pb n="[A3r]"/>
                <lb/>giger leyp erlost werd/ und haben die erlosung in hoffe-
-               <lb/>nung und glauben/ aber nit ym wesen und werck. </p>
-            <p>
+               <lb/>nung und glauben/ aber nit ym wesen und werck. </p><p>
                <lb/>Durch glauben/ hoffnung und liebe/ wurt der geyst
                <lb/>widder geboren/ aber der leyp wurt nit ehr geborn/ dan 
                <lb/>nach seinem sterbenn unnd aufferstehung/ alszo wurt
@@ -233,8 +144,7 @@
                <lb/>heylickeit. Dann das ist nit vorgebens gesagt/ das wir 
                <lb/>allein erste fruchte des geystes<note type="footnote">Vgl. <ref type="biblical">Gal 5,22f.</ref> Vg
 			 „Fructus autem Spiritus est caritas, gaudium, pax, longanimitas, bonitas, benignitas/ fides, modestia, continentia adversus huiusmodi non est lex.“</note> empfahen/ und volkom-
-               <lb/>menheit noch hoffen und gewartten sollen. </p>
-            <p>
+               <lb/>menheit noch hoffen und gewartten sollen. </p><p>
                <lb/>Dan wie heylig der mensch auff erdtreich wurt od-<note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note>
                <lb/>der ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
                <lb/>heylig Paulus ad Ro. vii. spricht/ das gesetz ist geyst-
@@ -247,14 +157,10 @@
                <lb/>das ist/ ich weisz wol das die sunde in meinem fleisch/ ist
                <lb/>strebende wider meinen geyst/ und gesetz gottis/ Ich weysz
                <lb/>das ich der sunde vorkaufft bin/ und das sie mich gefangen
-               <lb/>furet/ ich zurne oder weer mich/ so thue<note type="crit_app">th <hi style="font-style:italic;">a</hi>
-               </note> ich/ das ich nit
-               <lb/>wil. Nun die weyl ich das thue<note type="crit_app">th <hi style="font-style:italic;">a</hi>
-               </note>/ das ich hasse und neyd/
+               <lb/>furet/ ich zurne oder weer mich/ so thue<note type="crit_app">th <hi style="font-style:italic;">a</hi></note> ich/ das ich nit
+               <lb/>wil. Nun die weyl ich das thue<note type="crit_app">th <hi style="font-style:italic;">a</hi></note>/ das ich hasse und neyd/
                <pb n="[A3v]"/>
-               <lb/>szo macht das die sunde/ die<note type="crit_app">
-                  <hi style="font-style:italic;">folgt</hi> ich <hi style="font-style:italic;">a</hi>
-               </note> in meinem fleisch warhaff-
+               <lb/>szo macht das die sunde/ die<note type="crit_app"><hi style="font-style:italic;">folgt</hi> ich <hi style="font-style:italic;">a</hi></note> in meinem fleisch warhaff-
                <lb/>tig/ on unterlasz das boesz und sunden wircket.<note type="footnote">Vgl. <ref type="biblical">Röm 7,18-20</ref> Vg
 			 „Scio enim quia non habitat in me, hoc est in carne mea, bonum. Nam velle, adiacet mihi/ perficere autem bonum, non invenio. Non enim quod volo bonum, hoc facio, sed quod nolo malum, hoc ago. Si autem quod nolo, illud facio, iam non ego operor illud, sed quod habitat in me peccatum.“</note> Pau-
                <lb/>lus (der on ymants widerred) warhafftig alhie heylig
@@ -267,21 +173,15 @@
                <lb/>das in allen menschen zuwegen brengt/ das sie meyden
                <lb/>unnd fliehen.<note type="footnote">Vgl. erneut <ref type="biblical">Röm 7,19</ref>.</note> Wie dorffen dan die ketzerischen heuchler
                <lb/>dem Bapst volkommen heylickeit in diessem leben vorhey-
-               <lb/>ssen? Ich gestehe<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> gestehen</note> den bepsten gar nicht/ das sie heyliger
+               <lb/>ssen? Ich gestehe<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> gestehen</note> den bepsten gar nicht/ das sie heyliger
                <lb/>seint/ dan Paulus gewest/ sie haben bosz gifftig fleisch/
                <lb/>und des genug unnd uberflussig/ wie andere Christen/
                <lb/>und ligen in den sunden gefangen/ und wen sie recht hey-
                <lb/>lig seint/ so mussen sie bey sich yrren/ und sich selber ney-
                <lb/>den und hassen/ yhre sunde got und der welt/ und yhre un-
-               <lb/>volkommenheit/ bekennen/ und yhn gar nicht vorheymlichen. </p>
-         </div>
-         <div>
-            <p>
-               <lb/>Ist<note type="crit_app">Er <hi style="font-style:italic;">a</hi>
-               </note> der Bapst heylig: so musz
-               <lb/>er sein boszheit bekennen. </p>
-            <p>
+               <lb/>volkommenheit/ bekennen/ und yhn gar nicht vorheymlichen. </p></div><div><p>
+               <lb/>Ist<note type="crit_app">Er <hi style="font-style:italic;">a</hi></note> der Bapst heylig: so musz
+               <lb/>er sein boszheit bekennen. </p><p>
                <lb/>Alle und yegliche heyligen disses lebens seint bosz-
                <lb/>hafftig und warhafftiglich sunder/ unnd laugnen auch
                <lb/>yhre boszheit und sunde gar nicht. Dan David der ein
@@ -289,9 +189,7 @@
                <lb/>und heylig gewest<note type="footnote">Vgl. <ref type="biblical">Apg 13,22</ref> Vg
 			 „et amoto illo suscitavit illis David regem cui testimonium perhibens dixit/ inveni David filium Iesse virum secundum cor meum qui faciet omnes voluntates meas.“</note>/ saget also/ Ein yeglicher heylig wirt 
                <lb/>dich bitten umb das. was ist das/ das die heyligen bit-
-               <lb/>ten? hoer wie<note type="crit_app">
-                  <hi style="font-style:italic;">folgt</hi> der <hi style="font-style:italic;">a</hi>
-               </note> David vorgesagt/ er spricht/ Ich hab ge-
+               <lb/>ten? hoer wie<note type="crit_app"><hi style="font-style:italic;">folgt</hi> der <hi style="font-style:italic;">a</hi></note> David vorgesagt/ er spricht/ Ich hab ge-
                <lb/>sagt/ ich wert dir got dem herren/ mein laster und sunde
                <lb/>bekennen/ und du hast mir die boszheit meiner sunde vor
                <lb/>geben/ umb das vorgeben der schalckheyten/ wurt dich
@@ -304,24 +202,19 @@
                <lb/>yrren/ betriegen/ liegen/ und sundigen kan/ der umb sey-
                <lb/>ne schalckheyten und boszheyten bitten muesz/ Ja er ist
                <lb/>in der warheit ein boszer/ der bereyt geyrret und gesun-
-               <lb/>diget hat/ der sein sunde und misztodten<note type="crit_app">mißtatten <hi style="font-style:italic;">a</hi>
-               </note> got bekennen und
+               <lb/>diget hat/ der sein sunde und misztodten<note type="crit_app">mißtatten <hi style="font-style:italic;">a</hi></note> got bekennen und
                <lb/>beichten schuldig ist. Die ketzerische schmeychler vor-
                <lb/>mugen den bapst (und andere heyligen) nymmer besser
                <lb/>beschreybenn/ dan wie sie die schrifft abgemalt/ die sie 
-               <lb/>samptlich sunder genant und getzelt hat. </p>
-            <p>
+               <lb/>samptlich sunder genant und getzelt hat. </p><p>
                <lb/>Weyl auch der bapst volkommenn wil geacht sein/ szo
                <lb/>musz er nach sanct Pauls leer ad Philippenses. iii. sein 
                <lb/>gebrechen und unvolkommenheit meniglich zu erkennen
                <lb/>geben/ wil er gerecht sein bey got unnd Christen/ szo ist 
                <lb/>er pflichtig sein eygen ungerechtickeit zubeklagen/ nach
                <lb/>sanct Pauls leer sprechende/ welche volkommen seyndt/
-               <lb/>die sollen das von sich halten/ das sie unvolkommen seint.<note type="footnote">Vgl. <ref type="biblical">Phil 3,12f.</ref>
-                  <ref type="biblical"/> Vg
-			 „non quod iam acceperim aut iam perfectus sim, sequor autem si quomodo comprehendam in quo et comprehensus sum a Christo Iesu/ fratres ego me non arbitror comprehendisse.“</note> 
-            </p>
-            <p>
+               <lb/>die sollen das von sich halten/ das sie unvolkommen seint.<note type="footnote">Vgl. <ref type="biblical">Phil 3,12f.</ref><ref type="biblical"/> Vg
+			 „non quod iam acceperim aut iam perfectus sim, sequor autem si quomodo comprehendam in quo et comprehensus sum a Christo Iesu/ fratres ego me non arbitror comprehendisse.“</note> </p><p>
                <lb/>Nach sanct Jobs lernung/ ist der Bapst auch hoffar-
                <lb/>tig in seiner person/ und seinen wercken/ und verderbli-
                <lb/>cher unguttickeit/ nicht mehr ledig/ dan der aller gerin-
@@ -355,8 +248,7 @@
                <lb/>odder zureyst die schefflin nit/ in dem das er ein Law is/
                <lb/>szonder in dem das er klawen und scharffe negel und si-
                <lb/>geln in henden/ und sein vorgessen hat/ das er selber ein
-               <lb/>armer gebrechlicher mensch ist. </p>
-            <p>
+               <lb/>armer gebrechlicher mensch ist. </p><p>
                <lb/>Nun wil ich furt faren/ und durch schrifft beweyszen/
                <lb/>das keiner der Christen oberster odder regierer/ aber
                <lb/>Babst odder Bischoffe sein sol/ er sey dan gebrechlich
@@ -364,8 +256,7 @@
                <lb/>es sey offenbarer/ das prelaten unnd wir arme knecht/
                <lb/>vil erger seint/ dan etzliche leyhen wenen/ aber doch nit 
                <lb/>wenig wissen/ die das sagen wurdenn/ das die geystli-
-               <lb/>chen/ der ich mit urlaub<note type="footnote">
-                  <bibl>Götze, Glossar, 221</bibl>: „Erlaubnis; wenn ich so sagen darf“.</note> auch einer bin/ gleyszner unnd
+               <lb/>chen/ der ich mit urlaub<note type="footnote"><bibl>Götze, Glossar, 221</bibl>: „Erlaubnis; wenn ich so sagen darf“.</note> auch einer bin/ gleyszner unnd
                <lb/>gleich die schrifft weyszen seynt/ die Christum vorfolget
                <lb/>haben/ aber der ban ist uns gut fur solchs gethon/ dan
                <lb/>man vorstopffet den leutten das maul mit Bannischem
@@ -373,16 +264,10 @@
                <lb/>setzen/ und durch die selben beweysen/ das der Bapst
                <lb/>kein pfarher mug gesein (ich geschweyg ein hoher pre-
                <lb/>lat) er wer dan (wie ander menschen) kranck/ und ein 
-               <lb/>sunder. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>sunder. </p></div><div><p>
                <lb/>Wan der Bapst nit ein sun-
                <lb/>der/ ein gebrechlicher krancker mensch ist/
-               <lb/>szo ist er auch kein Bapst. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>szo ist er auch kein Bapst. </p></div><div><p>
                <lb/>Ich wil zuvorausz behalten und bedingen/ das ich 
                <lb/>durch volgende schrifft/ niemant sunde halben erheben
                <pb n="[B1r]"/>
@@ -412,8 +297,7 @@
                <lb/>sie kein merlin ertichten und sagen/ der Bapst sundiget
                <lb/>nit als ein bapst/ szonder als einn mensch. dan ausz vor-
                <lb/>gemelten text ist es klar/ das der priester seiner/ als prie-
-               <lb/>ster/ nit vorgessen sol/ wan er fur sunder bittet. </p>
-            <p>
+               <lb/>ster/ nit vorgessen sol/ wan er fur sunder bittet. </p><p>
                <lb/>Cyrillus ein kriechischer doctor/ fragt was in dem
                <lb/>pontifex allermeist zuvorwundern sey/ unnd antwort/
                <lb/>das sol niemandts vorwundern/ das ehr nit sundiget/
@@ -428,13 +312,10 @@
 								fieri non potest, sed ut agnoscat et intelligat peccatum suum. Nunquam enim se
 								emendat, qui pecasse se non putat. Simul quia et facilius potest indulgere
 								peccantibus, is qui alicuius infirmitatis suae conscientiae remordetur.“ (<bibl>PG 12, 415C</bibl>). Vgl. Eximii patris Cyrilli Alexandrini commentarii in Leviticum sexdecim
-								libris digesti, Paris: Wolfgang Hopyl, 1514, fol. 5<hi rend="super">v</hi>
-                  <hi rend="super">: </hi>„Sed quid precipue in huiusmodi sacerdote mirandum est? Non ut non peccet/ quod
+								libris digesti, Paris: Wolfgang Hopyl, 1514, fol. 5<hi rend="super">v</hi><hi rend="super">: </hi>„Sed quid precipue in huiusmodi sacerdote mirandum est? Non ut non peccet/ quod
 								fieri potest: sed ut agnoscat et intelligat peccatum suum. Nunquam enim emendat: qui
 								se pecasse non putat, simul quia et facilius potest indulgere peccantibus: is qui
-								alicuius infirmitatis conscientie sue remordetur.“</note> 
-            </p>
-            <p>
+								alicuius infirmitatis conscientie sue remordetur.“</note> </p><p>
                <pb n="[B1v]"/>
                <lb/>Wan uns schrifften gebrechen/ hetten wir doch einn
                <lb/>gewisse urkund/ das die Bepst sundigenn mogen/ hat
@@ -448,8 +329,7 @@
                <lb/>kirchen widder zu S. Peter brengen wil?<note type="footnote">Unter leichter Abwandlung übermittelte auch Luther die blasphemischen Ausrufe des Papstes, die ihm von <rs type="person"><!--TODO ref eintragen-->Liborius Magdeburg</rs> zugetragen wurden, der fast 10 Jahre als Notar an der Rota tätig war. Vgl. <bibl>WA.Tr 3, 559,18-21 Nr. 3717; 4, 289,26-40 Nr. 4388; 5, 674,20f. Nr. 6459</bibl>. <rs type="person"><!--TODO ref eintragen-->Liborius</rs> war vermutlich zwischen 1515 und 1524 in Rom. Zu diesem vgl. <bibl>Clemen, Liborius</bibl>. Bei <rs type="person"><!--TODO ref eintragen-->Luther</rs> ist aber nicht von der Verbrennung des Gebetbuchs die Rede, dagegen wieder in: Der pfarrhern und prediger zu Magdeburg Christliche kurtze erinnerung an ihre Christliche gemeine, Magdeburg: Melchior Lotter, 1550, fol. B4<hi rend="super">r</hi>. Vgl. <bibl>Kaufmann, Ende, 201 Anm. 215</bibl>.</note> Got vorgebe
                <lb/>yhm/ ich halt solche wort seint nicht minder dan gotis 
                <lb/>lesterung zu urteylen/ dennoch dorffen die grohen holtz&lt;-&gt;
-               <lb/>schucher sprechen/ der babst konne nit sundigen. </p>
-            <p>
+               <lb/>schucher sprechen/ der babst konne nit sundigen. </p><p>
                <lb/>Ist es wol gethan/wan der bapst widder allis recht
                <lb/>thut/wan er das gotlich/ naturlich/ und menschlich recht
                <lb/>uberfert/ dieszer bapst Leo/ von dem ich nie gehort/ das
@@ -475,18 +355,14 @@
                <lb/>sol/ behendet werden/ sein bepstlich heylickeit/ als einen ke-
                <lb/>tzer/ der von seinem stuel und eren abtzusetzen ist/ ankla-
                <lb/>gen/ und vil mehr von seinen unlaugbarlichen yrrungen
-               <lb/>sagen/ dan yhm lieb wurt. </p>
-            <p>
+               <lb/>sagen/ dan yhm lieb wurt. </p><p>
                <lb/>Damit ich das dester freyher thue/ schick ich yhm
                <lb/>mein Vicecomitat (doch den yenen an schaden/ den ich
                <lb/>zuvor gewilfaret) widder heym/ und ubirgeb es hy mit
                <lb/>freyheitten und burden.<note type="footnote">Dieser knappe Hinweis Karlstadts auf die Resignation vom Vicecomitat ist die einzige Information darüber, dass er Inhaber dieses Instituts war. Dieses kaiserlich oder, wie in seinem Fall, päpstlich verliehene Amt eines Untergrafen deutet entweder darauf hin, dass sich Karlstadt diese Rechte von einem Hofpfalzgrafen in <rs type="place"><!--TODO ref eintragen-->Rom</rs> erkauft oder aber dass er in <rs type="place"><!--TODO ref eintragen-->Rom</rs> das Amt eines kurialen Kanzleischreibers ausgeübt hatte, die 1514 von <rs type="person"><!--TODO ref eintragen-->Leo X.</rs> zu „comites aulae Lateranensis“ (als Hofpfalzgrafen des Lateran) ernannt worden waren. Vgl. <bibl>Bubenheimer, Consonantia, 55-57</bibl>. Zur Käuflichkeit der Rechte vgl. <bibl>Barraclough, Public Notaries, 13 Anm. 3</bibl>; <bibl>Knemeyer, Notariat, 54</bibl>. Handschriftliche Einträge zu dieser Textstelle in Exemplaren der WLB Stuttgart, Theol. 4°. 889 und im Concordia Seminary St. Louis bestätigen die Möglichkeit einer Resignation vom Amt: „resignat Vicecomitatum“. Vgl. <bibl>Bubenheimer, Consonantia, 55 Anm. 196</bibl>. </note> Quia oportet deo magis obedire/
-               <lb/>quam hominibus.<note type="footnote">
-                  <ref type="biblical">Apg 5,29</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>quam hominibus.<note type="footnote"><ref type="biblical">Apg 5,29</ref><ref type="biblical"/> Vg
 			 „obedire oportet Deo magis quam hominibus“. </note> et qui amat patrem plus quam Christum/ non
-               <lb/>est Christo dignus.<note type="footnote">
-                  <ref type="biblical">Mt 10,37</ref> Vg
+               <lb/>est Christo dignus.<note type="footnote"><ref type="biblical">Mt 10,37</ref> Vg
 			 „Qui amat patrem aut matrem plus quam me non est me dignus“.</note> Wan er ein tyran und wutterich sein
                <lb/>wil/ sol er yhm einen nerrischern son auszsuchen/ dan ich 
                <lb/>bin. Ich hoff auch/ der almechtig lebendig got/ werd mir 
@@ -499,18 +375,13 @@
                <lb/>den lawen/ der auff den gulden ducaten stoltzieret/ und sich
                <lb/>ubir alle welt setzet/ und besigt/ wie er alle ding in seinen
                <lb/>nutz und gedeyen breng/ den will ich durch gotliche hulff
-               <lb/>und stercke/ nit fast forchten. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>und stercke/ nit fast forchten. </p></div><div><p>
                <lb/>Der Bapst ist kein Commissarius
-               <lb/>Christi/ er halde sich dan nach Christlichen bevelh. </p>
-            <p>
+               <lb/>Christi/ er halde sich dan nach Christlichen bevelh. </p><p>
                <lb/>Der Bapst zu Rom wil/ das man yhn fur einen Com-
                <lb/>missarien und bevelhtrager Christi halde/ Aber wan er 
                <lb/>ein rechter getreuer diener ist/ szo darff er gar nicht ausz
-               <lb/>dem bevelh dreten/ und ist yhm gar nicht erlaubet/ anders<note place="margin">Forma mandati exacte debet servari c. cum dilecta de rescrip’tione‘.<note type="footnote">Vgl. <bibl>X 1,3,22</bibl> (<bibl>Friedberg 2, 25-28</bibl>).</note>
-               </note>
+               <lb/>dem bevelh dreten/ und ist yhm gar nicht erlaubet/ anders<note place="margin">Forma mandati exacte debet servari c. cum dilecta de rescrip’tione‘.<note type="footnote">Vgl. <bibl>X 1,3,22</bibl> (<bibl>Friedberg 2, 25-28</bibl>).</note></note>
                <lb/>zuregiren und erkenden/ dan nach der form und massen/ szo
                <lb/>die schrifft gottis ausztrucket/ so bald er ausz inhalt des
                <lb/>bevelhs geet/ ist sein macht vorloschen und unpundig<note type="footnote">ungültig, vgl. <bibl>DWb 24, 397</bibl>.</note>.
@@ -523,10 +394,8 @@
                <lb/>leuthe/ szo gutter halben tzenckisch seint/ befriden/ und 
                <lb/>voreynen. Aber ich sag das mit schmertzen/ Ich glewb
                <lb/>nit/ das ubir vier Cardinal zu Rom seint/ die die heyli-
-               <lb/>ge schrifft haben mit ernst durchlesen<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> duchlesen</note>/ und vil weniger/ das
-               <lb/>sie nach noturfft vorstehen/ alszo unmer<note type="crit_app">
-                  <hi style="font-style:italic;">im Sinne von</hi> immer <hi style="font-style:italic;">vom Editor verbesster für</hi> unmer</note> unnd vorachtet
+               <lb/>ge schrifft haben mit ernst durchlesen<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> duchlesen</note>/ und vil weniger/ das
+               <lb/>sie nach noturfft vorstehen/ alszo unmer<note type="crit_app"><hi style="font-style:italic;">im Sinne von</hi> immer <hi style="font-style:italic;">vom Editor verbesster für</hi> unmer</note> unnd vorachtet
                <lb/>ist die Biblien/ vonn den Romischen regierern. Ich
                <lb/>weysz/ und wir sehens alle vor augenn/ das der Bapst
                <lb/>ausz seinen Decretalen urteylet/ und geystliche und welt-
@@ -538,8 +407,7 @@
                <lb/>brauchen/ mit den selben beweysen/ das der Bapst yr-
                <lb/>ren kan/ und sol nit gehoret werden/ wan er etwas an-
                <lb/>ders furnympt/ dan die heylige Biblienn mit brenget
-               <lb/>odder leyden kan. </p>
-            <p>
+               <lb/>odder leyden kan. </p><p>
                <lb/>Wir haben gar ein schonen text ym .xvii. capittel der
                <lb/>andern ehe geschrieben/ welcher lauttet alszo. Der regent
                <lb/>odder konig der Juden/ das ist/ der gleubigen/ sol ausz
@@ -567,8 +435,7 @@
                <lb/>gen/ und vor allen dingen solten alle gottis dienste unnd
                <lb/>ehr erbiettung ausz den Biblien fliessen/ und auffgericht
                <lb/>werden/ wan das geschee/ szo musten seine Decretales
-               <lb/>ad infernum fliehen. </p>
-            <p>
+               <lb/>ad infernum fliehen. </p><p>
                <lb/>Nun volgt ferner zubeweyszen/ das der Bapst unge-
                <lb/>lart ist/ unnd yrren kann. dan/ wan er nit teglich yrrenn
                <lb/>mocht/ szo wer yhm yhe nit auffgelegt unnd gebotten/
@@ -579,9 +446,7 @@
                <lb/>dat bleyb. Wan auch der bapst niemandts gewalt und
                <lb/>unrecht thun kund/ szo wer yhm yhe nit gebotten/ ausz
                <lb/>dem gesetz zulernen/ das er sich nit uber sein bruder/ das
-               <lb/>seint alle Christen/ erheben sol.<note type="footnote">S. o. Anm. 46 (<ref type="biblical">5.Mose 17,20</ref>).</note> 
-            </p>
-            <p>
+               <lb/>seint alle Christen/ erheben sol.<note type="footnote">S. o. Anm. 46 (<ref type="biblical">5.Mose 17,20</ref>).</note> </p><p>
                <lb/>Wan auch der bapst des rechten stegs odder wegs
                <lb/>nit kunt felen/ und auff die rechten odder lincken hand
                <lb/>gleytten odder strauchlen/ weer yhm solch gebet von un-
@@ -596,40 +461,31 @@
                <pb n="[B3v]"/>
                <lb/>das aller menschen gesetz nach unnd ausz gotlicher ge-
                <lb/>schrifft sol geurteilt werden/ das doch der bapst nit tuet/
-               <lb/>dennoch singen wir/ der bapst yrret nit. </p>
-         </div>
-         <div>
-            <p>
-               <lb/>Von den viel pferden. </p>
-            <p>
+               <lb/>dennoch singen wir/ der bapst yrret nit. </p></div><div><p>
+               <lb/>Von den viel pferden. </p><p>
                <lb/>Dartzu yrret der Bapst/ das er widder gottis ver-
                <lb/>bot/ und Christi beyspiel (szo yhm Christus mit hoher
-               <lb/>vermanung fur ougen gegeben teglich thuet/<note type="crit_app">
-                  <hi style="font-style:italic;">vermutlich die schließende Klammer</hi>
-               </note> Dan welcher
+               <lb/>vermanung fur ougen gegeben teglich thuet/<note type="crit_app"><hi style="font-style:italic;">vermutlich die schließende Klammer</hi></note> Dan welcher
                <lb/>wider gotlichen/ auszgedruckten willen handelet/ der yr-
                <lb/>ret und thut unrecht. Der bapst lebet wissentlich/ wider
                <lb/>das alt und new gesetz/ der wegen er sundigt/ und von notten 
                <lb/>yrret. Dan got hat durch Moysen in obberurten. xvii. ca-
                <lb/>pittel der andern ehe gesagt/ der konig der glaubigen sol nit
                <lb/>vil pferd zu sich sameln/ er sol auch das volck nit wider
-               <lb/>in Egipten furen.<note type="footnote">Vgl. <ref type="biblical">5.Mose 17,16</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>in Egipten furen.<note type="footnote">Vgl. <ref type="biblical">5.Mose 17,16</ref><ref type="biblical"/> Vg
 			 „cumque fuerit constitutus, non multiplicabit sibi equos, nec reducet populum in Aegyptum equitatus numero sublevatus, praesertim cum Dominus praeceperit vobis, ut nequaquam amplius per eandem viam revertamini.“</note> weil nu der bapst der Christen oberster
                <lb/>konig und keyszermessig sein wil/ und ist ein geystlicher re-
                <lb/>gierer/ zimet yhm/ vil weniger dan einem weltlichen konig
                <lb/>ein solchen ubermessigen hauffen pfert zuhalten/ die er mit 
                <lb/>silber/ golt/ berlin/ und edeln gestein behencket/ und ist ym
                <lb/>doch allis von unnoten/ aber die armen mussen die selbe
-               <lb/>zeit/ not und angst leyden/ das leyhen und pfaffen clagen. </p>
-            <p>
+               <lb/>zeit/ not und angst leyden/ das leyhen und pfaffen clagen. </p><p>
                <lb/>Es kan ein yeglicher wol vornehmen/ der das heylig 
                <lb/>Evangelium lyeset/ das Christus dem bapst form/ massen/
                <lb/>und weysz gegeben/ wie er prangen und leben sol/ Aber ehr
                <lb/>uberfeert (durch unser zusehen) form und leer Christi/
                <lb/>und fleucht durch Christlichen bevelh/ wie ein grosse wes-
-               <lb/>pen/ ein fliehen netz odder spinnen garn durchfleucht. </p>
-            <p>
+               <lb/>pen/ ein fliehen netz odder spinnen garn durchfleucht. </p><p>
                <lb/>Was fragt er nach dem verbot gottis/ odder yrret
                <lb/>ehr nit/ wan er zeitten mit tausent odder hundert pfer-
                <lb/>den zu sanct Paul odder Sebastian/ odder Laurentzen
@@ -649,12 +505,9 @@
                <lb/>gethon hoffiere/ unnd gantz wie einen der gottis gesetz
                <lb/>gar nichts achtet/ feyher. Noch wollenn wir frum
                <lb/>Christen sein/ wen wir yhm vorhengen/ das got misz-
-               <lb/>haget und ungefellig ist. </p>
-            <p>
+               <lb/>haget und ungefellig ist. </p><p>
                <lb/>Verner saget got durch Moysen/ der regierer glaubi-
-               <lb/>ger vorsamlung sol das volck nit in Egypten furen.<note type="footnote">S. o. Anm. 46 (<ref type="biblical">5.Mose 17,16</ref>). </note> 
-            </p>
-            <p>
+               <lb/>ger vorsamlung sol das volck nit in Egypten furen.<note type="footnote">S. o. Anm. 46 (<ref type="biblical">5.Mose 17,16</ref>). </note> </p><p>
                <lb/>Nun wollen wir vorsuchenn abtzunemenn/ ab der 
                <lb/>Bapst dasselbe verbot achtet. Ich meyn zu dem Orsten<note type="footnote">Ersten.</note>
                <lb/>es sey genug in Egypten gefurt/ wan einer leuth in sche-
@@ -680,29 +533,22 @@
                <lb/>tempel gebawet/ oder den Palast/ aber das Castell/ oder
                <lb/>wasser gemacht (das durch gmein ubung gelindert wer)
                <pb n="[B4v]"/>
-               <lb/>szonder er feert ubir sich<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> ubirsich</note>/ und nympt got sein ehre und na-
+               <lb/>szonder er feert ubir sich<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> ubirsich</note>/ und nympt got sein ehre und na-
                <lb/>men/ und wil ein schopffer odder creator der geystlichen
                <lb/>menschen genent sein. Die Bischoffen und etzliche an-
                <lb/>dere prelaten/ wan sie Bepstliche heylickeit umb etwas
                <lb/>supplicieren/ odder bitten wollen/ fahen sie yhre suppli-
-               <lb/>cation alszo an. </p>
-            <p>
+               <lb/>cation alszo an. </p><p>
                <lb/>Aller heyligester in got vatter/ ewre andechtige crea-
                <lb/>tur . N. und etc bittet und begert etc.<note type="footnote">Die Eingangsformel einer Supplikation an den Papst, im kanonischen Recht als Appellation bezeichnet, lautete: „Supplicat [Petit] Sanctitati Vestrae humilis creatura vestra N. N., quatenus
 								[....] dignemini […].“ Vgl. <bibl>Breslauer, Urkundenlehre 2, 6</bibl>. Dieses Formular wurde zuerst beschrieben im <hi style="font-style:italic;">Libellus de formis peticionum secundum cursum Romanae curiae </hi>(1226/27). Karlstadt lehnt die Formelhaftigkeit der kanonischen Appellation ab, indem er
-								ironisch darauf verweist, dass der Appellant sich zur Schöpfung des Papstes („ewre ... creatur“) ernennt. In seiner Appellation (KGK 161) verwirft Karlstadt daher die „Romischen formular red“ auch in der Praxis. An das Ende der <hi style="font-style:italic;">Päpstlichen Heiligkeit</hi> setzt Karlstadt eine Appellation (Erbittung), die nicht an den Papst gerichtet ist, sondern auf andere Theologen und ein adliges Unterstütznetzwerk zielt.</note>
-            </p>
-            <p>
-               <lb/>Ist das nit grober/ dan das einer spricht/ ich hab mit<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> mir</note>
+								ironisch darauf verweist, dass der Appellant sich zur Schöpfung des Papstes („ewre ... creatur“) ernennt. In seiner Appellation (KGK 161) verwirft Karlstadt daher die „Romischen formular red“ auch in der Praxis. An das Ende der <hi style="font-style:italic;">Päpstlichen Heiligkeit</hi> setzt Karlstadt eine Appellation (Erbittung), die nicht an den Papst gerichtet ist, sondern auf andere Theologen und ein adliges Unterstütznetzwerk zielt.</note></p><p>
+               <lb/>Ist das nit grober/ dan das einer spricht/ ich hab mit<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> mir</note>
                <lb/>wollust dieszer wasser gemacht?<note type="footnote">Vgl. <ref type="biblical">Hes 29,3 u. 9</ref>.</note> ich meyn ydermenig-
                <lb/>lich werd bekennen/ das der mensch hoher unnd mehr
                <lb/>dan ein element gesetzt ist. Nun ist es unverdeckt/ das 
                <lb/>got Pharaonem denn konig Egipti/ umb solche wort
-               <lb/>hat gestrafft/ und<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> vud</note> yhm sein land vorwustet<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> rorwustet</note>/ unnd auch
+               <lb/>hat gestrafft/ und<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> vud</note> yhm sein land vorwustet<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> rorwustet</note>/ unnd auch
                <lb/>die yene/ szo dem konig Pharaoni solche wort und ehr
                <lb/>ertzeygtenn/ gepeyniget. Wie werd die Bischoffen ym
                <lb/>gericht gottis bestehen/ das sie sich des Bapstes crea-
@@ -777,10 +623,7 @@
                <lb/>sein/ und auff dich gar nicht bawen/ Du bist ein armer
                <lb/>mensch/ got unterthan wie ich. Ich wil dich aber key-
                <lb/>nen Trachen und Luciper nennen/ auff das du mich
-               <lb/>nit in dem Ban verbrennest. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>nit in dem Ban verbrennest. </p></div><div><p>
                <lb/>Nun horent noch eynsz/ am Jartag der erwelung
                <lb/>unnd kronung/ als ein Bapst erwelt unnd gekront ist/
                <lb/>mussen die Cardinalen/ Bischoffen/ und grosse bur-
@@ -804,8 +647,7 @@
                <lb/>widder got pflegen. Yedoch ist das ungenug/ der bapst
                <pb n="[C2r]"/>
                <lb/>lasset sich auch mehr feyhern unnd ehren/ dan das hey-
-               <lb/>lig/ hochwirdig Sacrament.<note type="footnote">
-                  <rs type="person"><!--TODO ref eintragen-->Luther</rs> berichtet im 11. Artikel seiner Adelsschrift ebenfalls beschämende Bräuche hinsichtlich der Austeilung des Sakraments an der Kurie: „Dan wilch Christen hertz mag odder sol das mit lust sehen/ das der Bapst/ wen er
+               <lb/>lig/ hochwirdig Sacrament.<note type="footnote"><rs type="person"><!--TODO ref eintragen-->Luther</rs> berichtet im 11. Artikel seiner Adelsschrift ebenfalls beschämende Bräuche hinsichtlich der Austeilung des Sakraments an der Kurie: „Dan wilch Christen hertz mag odder sol das mit lust sehen/ das der Bapst/ wen er
 								sich wil lassen communiciern/ stille sitzt als ein gnad Jungher/ und lessit yhm das
 								sacrament von einem knienden gebeugten Cardinal mit einem gulden rohr reychen/ grad
 								als were das heylig sacrament nit wirdig […].“ (<bibl>WA 6, 436,22-25</bibl>). Vgl. <bibl>Kaufmann, Adel, 262</bibl>.</note> Dann ich hab gesehenn/
@@ -815,9 +657,7 @@
                <lb/>steig/ musten die umbsteher/ durch seyner diener einge-
                <lb/>ben und vormanung schreyen. Vivat Leo/ Vivat Leo.<note type="footnote">Karlstadt gibt seine in <rs type="place"><!--TODO ref eintragen-->Rom</rs> gemachten Erfahrungen einer Prozession anläßlich des Jahrestages der Krönung des Papstes wieder. Das Krönungsdatum <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> war der 11. März. 1516, als Karlstadt in <rs type="place"><!--TODO ref eintragen-->Rom</rs> weilte, wurde das Fest wegen der Karwoche auf den 27. März verschoben. Vgl. <bibl>Bubenheimer, Consonantia, 35</bibl>, zitiert aus dem Tagebuch des päptlichen Zeremonienmeisters <rs type="person"><!--TODO ref eintragen-->Paride de Grassi</rs> (<bibl>Delicati/Armellini, Diario, 30-32</bibl>). Dass Karlstadt in dieser Zeit in Rom war, beweist sein Brief an Spalatin vom
 								20. Juni 1516, in dem er mitteilt, dass er in der Woche nach Ostern, zwischen 24.
-								und 29. März desselben Jahres, promoviert worden sei (KGK 28, S. 386 Z. 11f.). Erschien der Papst auf einer Prozession in vollem Ornat, wurde ihm das Sakrament vorangetragen. Vgl. <bibl>Bubenheimer, Consonantia, 35</bibl> nach <bibl>Augustinus, Rituus, fol. 50<hi rend="super">r-v</hi>
-                  </bibl>.  Ähnlich der Bericht des venezianischen Gesandten <rs type="person"><!--TODO ref eintragen-->Marino Sanudo</rs>, vgl. <bibl>Bubenheimer, Consonantia, 35 Anm. 102</bibl> nach <bibl>Sanudo, Diarii 21, 374</bibl>. Die päpstlichen Diener motivierten die Zuschauer der Prozession zu „Vivat“-Rufen, wie im kurialen Protokoll vorgesehen. <bibl>Augustinus, Rituus, fol. 52<hi rend="super">r</hi>
-                  </bibl>. Bereits laut <rs type="person"><!--TODO ref eintragen-->Enea Silvios </rs>Beschreibung des Krönungszuges für <rs type="person"><!--TODO ref eintragen-->Nikolaus V.</rs> (s. o. Anm. 49) wurde an der Spitze des Prozessionszuges dem Papst das Sakrament vorangetragen. Vgl. <bibl>Carlen, Zeremoniell, 32</bibl>.</note>
+								und 29. März desselben Jahres, promoviert worden sei (KGK 28, S. 386 Z. 11f.). Erschien der Papst auf einer Prozession in vollem Ornat, wurde ihm das Sakrament vorangetragen. Vgl. <bibl>Bubenheimer, Consonantia, 35</bibl> nach <bibl>Augustinus, Rituus, fol. 50<hi rend="super">r-v</hi></bibl>.  Ähnlich der Bericht des venezianischen Gesandten <rs type="person"><!--TODO ref eintragen-->Marino Sanudo</rs>, vgl. <bibl>Bubenheimer, Consonantia, 35 Anm. 102</bibl> nach <bibl>Sanudo, Diarii 21, 374</bibl>. Die päpstlichen Diener motivierten die Zuschauer der Prozession zu „Vivat“-Rufen, wie im kurialen Protokoll vorgesehen. <bibl>Augustinus, Rituus, fol. 52<hi rend="super">r</hi></bibl>. Bereits laut <rs type="person"><!--TODO ref eintragen-->Enea Silvios </rs>Beschreibung des Krönungszuges für <rs type="person"><!--TODO ref eintragen-->Nikolaus V.</rs> (s. o. Anm. 49) wurde an der Spitze des Prozessionszuges dem Papst das Sakrament vorangetragen. Vgl. <bibl>Carlen, Zeremoniell, 32</bibl>.</note>
                <lb/>Ich kond aber nit merckenn/ das ein diener gesagt het-
                <lb/>te/ Schreyhet/ Misericordia/ Misericordia/ das sie 
                <lb/>doch pflegen singen/ wan man heylchtumb (das grosz
@@ -831,10 +671,7 @@
                <lb/>grosze ehr und gut emphecht/ und wil sein statvorweszer
                <lb/>sein. und sol sich schemen odder beschweren/ das sacra-
                <lb/>ment an seiner brust zutragen/ davon yhm ehr gut und
-               <lb/>leben beschert. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>leben beschert. </p></div><div><p>
                <lb/>Die priestern altes gesetz beschwertenn sich nit/
                <lb/>die arckenn durch wasser und staudten zutragen/ aber
                <lb/>unszer allerhochster Pfaff/ schemet sich ein leicht/ klein
@@ -850,21 +687,15 @@
                <lb/>und horen was uns die schrifft mit wortten/ und Chri-
                <lb/>stus mit beyspielen leert/ gleich als weer uns der bapst
                <lb/>gewisser dan gotlichs wort/ und wollen yhn entschul-
-               <lb/>digen/ das ehr nit yrre und sundige. </p>
-            <p>
+               <lb/>digen/ das ehr nit yrre und sundige. </p><p>
                <lb/>Auch felt mir mehr zu/ darinne der Bapst yrret/ und
-               <lb/>unrecht thut/ und stoltz ist. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>unrecht thut/ und stoltz ist. </p></div><div><p>
                <lb/>Wie der Bapst sich ungebur-
                <lb/>licher weysz/ und widder gottis befelh lasset
                <lb/>ehren/ anbeten/ und fuesz kussenn.<note type="footnote">Vgl. den 11. Artikel von <rs type="person"><!--TODO ref eintragen-->Luthers</rs> Adelsschrift: „Zum eylfften/ das das fuszkussen des Bapsts/ auch nit mehr
 								geschehe. Es ist ein unchristlich/ ja Endchristlich exempel/ das ein armer sundiger
 								mensch yhm lessit seine fusz kussen/ von dem/ der hundertmal besser ist den er […].“
-								(<bibl>WA 6, 435,25-27</bibl>). Vgl. <bibl>Kaufmann, Adel, 258</bibl>.</note> 
-            </p>
-            <p>
+								(<bibl>WA 6, 435,25-27</bibl>). Vgl. <bibl>Kaufmann, Adel, 258</bibl>.</note> </p><p>
                <lb/>Nemlich/ der Bapst und sein schmeichler wollenn/
                <lb/>das wir yhn einen got nennen/ darausz viel ubels erfol-
                <lb/>get/ wie ich sagen werd. Zuvor befrembd mich/ das er
@@ -886,23 +717,20 @@
                <lb/>gleubigenn/ yhr gemeyn eher/ unnd hencket sie/ an sich
                <lb/>allein/ er angst die schrifft/ und Christum in der schrifft/
                <lb/>noch sagenn die ketzerischen gleyszner/ der Bapst thue
-               <lb/>nit unrecht. </p>
-            <p>
+               <lb/>nit unrecht. </p><p>
                <lb/>Heylige schrifft hat nit gesagt/ welcher einn Bapst
                <lb/>odder ein bischoffe/ aber Cardinal/ oder ein groeher
                <lb/>holtzschueger ist/ der ist ein got. Neyn/ sonder alszo/ ich<note place="margin">Gala. iii.</note>
                <lb/>hab in gemeyn gesagt/ yhr seint gote/ dan in Christo ist
                <lb/>weder man nach weyb/ weder keyszer nach bapst/szon-
                <pb n="[C3r]"/>
-               <lb/>der allis ein ding.<note type="footnote">
-                  <ref type="biblical">Gal 3,28</ref> Vg
+               <lb/>der allis ein ding.<note type="footnote"><ref type="biblical">Gal 3,28</ref> Vg
 			 „non est Iudaeus neque Graecus non est servus neque liber non est masculus neque
 								femina omnes enim vos unum estis in Christo Iesu“. </note> Got sicht nit an die personen<note type="footnote">Vgl. <ref type="biblical">Röm 2,11</ref> Vg
 			 „non est enim personarum acceptio apud Deum.“ Vgl. <ref type="biblical">2.Chr 19,7</ref>; <ref type="biblical">Apg 10,34</ref>; <ref type="biblical">1.Petr 1,17</ref>; <ref type="biblical">Kol 3,25</ref>.</note>/ ehr wil
                <lb/>das alle sein son seint/ die Christum enphahen und an-<note place="margin">Johan. i.</note>
                <lb/>nehmen/ als geschrieben/ Dedit eis potestatem filios dei
-               <lb/>fieri etc.<note type="footnote">
-                  <ref type="biblical">Joh 1,12</ref> Vg
+               <lb/>fieri etc.<note type="footnote"><ref type="biblical">Joh 1,12</ref> Vg
 			 „quotquot autem receperunt eum dedit eis potestatem filios Dei fieri his qui
 								credunt in nomine eius“. </note> Er hat yhn macht geben/ gottis son zuwerden/
                <lb/>szoviel yhn annehmen. Lieber bapst/ heyst das Chri-
@@ -924,21 +752,16 @@
 								Dominus Deus noster adest cunctis obsecrationibus nostris“. </note>/ Sich dich umb und
                <lb/>umb/ szo wurstu vor allem vornehmen/ das das Jubil
                <lb/>unnd rum/ allein zu denen gesagt/ die das gesetz gottis
-               <lb/>verstehen/ odder gerne wolten vornehmen.</p>
-         </div>
-         <div>
-            <p>
+               <lb/>verstehen/ odder gerne wolten vornehmen.</p></div><div><p>
                <lb/>Ein losze behelff rede des Bapsts
-               <lb/>und seiner heuchler.</p>
-            <p>
+               <lb/>und seiner heuchler.</p><p>
                <lb/>Sie springen aber bald zu der weer und sprechen/ Ja
                <lb/>der allerheyligist vatter Bapst/ ist ein yrdischer und kein
                <lb/>hymelischer got/ Ja ich gestehe dir bald und gerne/ das
                <lb/>er ein yrrischer und unhymlischer got ist/ dan alle men-
                <lb/>schen szo glauben/ seint yrdische got (doch recht vorstan-
                <lb/>den) die weyl in obgemelten versickel folget. Ihr wer-
-               <lb/>dent aber sterben/ wie die menschen odder Adam<note type="footnote">
-                  <ref type="biblical">Ps 81(82), 7 Vg </ref>„ergo quasi Adam moriemini“. Vgl. <ref type="biblical">Röm 5,14</ref>. </note>/ Adam
+               <lb/>dent aber sterben/ wie die menschen odder Adam<note type="footnote"><ref type="biblical">Ps 81(82), 7 Vg </ref>„ergo quasi Adam moriemini“. Vgl. <ref type="biblical">Röm 5,14</ref>. </note>/ Adam
                <lb/>hat geyrret und gesundiget/ szo verbricht der Bapst got-
                <lb/>lich gesetz nach seinem gefallen/ dennoch wolten sie ger-
                <lb/>ne einen sunderlichen got ausz bappest machen/ gleich 
@@ -946,12 +769,8 @@
                <lb/>und gult uberredens/ das wir den fedder predigen mu-
                <pb n="[C3v]"/>
                <lb/>sten nach geben/ das der Bapst andere fleisch/ pauch/
-               <lb/>gepeyn/ und hyrn hab/ dan andere glaubigen haben.</p>
-         </div>
-         <div>
-            <p>
-               <lb/>Vorlegung einer andern schutzred.</p>
-            <p>
+               <lb/>gepeyn/ und hyrn hab/ dan andere glaubigen haben.</p></div><div><p>
+               <lb/>Vorlegung einer andern schutzred.</p><p>
                <lb/>Damit sie aber den Bapst/ noch fur einen yrdischen
                <lb/>got/ vordeytigen/ sprechen sie/ Er ist ein Bapst auff der
                <lb/>erden/ aber nicht in den hymeln/ dartzu setzenn sie disse
@@ -963,11 +782,8 @@
                <lb/>ist gepunden. Antwort/ fur das erste sag ich/ der bapst
                <lb/>yrret vielmals mit seinen panden und ketten/ ehr vorbin-
                <lb/>det/ der in hymeln auff gelost ist/ wie er selber de sen’tentia‘ ex-
-               <lb/>com’municationis‘ in c’apitulo‘ a nobis<note type="footnote">Vgl. X 5,39,28: „[…] iudicium ecclesiae divinum [possit et] debeat iudicium imitari […] et propter hoc absolutus apud Deum esse credatur, absolutus etiam ab ecclesia sit habendus; sed e contrario, quum ex sola culpa ligetur quis quoad Deum apud triumphantem ecclesiam, ex sola vero sententia ligetur quoad hominem apud ecclesiam militantem, quando vinculum culpae remittitur, absolvitur apud Deum, sed apud homines non absolvitur, nisi quando vinculum sententiae relaxatur […].“ Den Namen hat das Kapitel von den einsetzenden Worten: „A nobis est saepe quaesitam […].“ Glossa ordinaria des Bernhard von Parma [UdL: 2" Fp 3579]?</note> bekennet·<note type="crit_app">
-                  <hi style="font-style:italic;">Der Punkt ist hochgestellt.</hi>
-               </note> Iudicium Ecclesiae opinio-
-               <lb/>nes interdum sequitur. </p>
-            <p>
+               <lb/>com’municationis‘ in c’apitulo‘ a nobis<note type="footnote">Vgl. X 5,39,28: „[…] iudicium ecclesiae divinum [possit et] debeat iudicium imitari […] et propter hoc absolutus apud Deum esse credatur, absolutus etiam ab ecclesia sit habendus; sed e contrario, quum ex sola culpa ligetur quis quoad Deum apud triumphantem ecclesiam, ex sola vero sententia ligetur quoad hominem apud ecclesiam militantem, quando vinculum culpae remittitur, absolvitur apud Deum, sed apud homines non absolvitur, nisi quando vinculum sententiae relaxatur […].“ Den Namen hat das Kapitel von den einsetzenden Worten: „A nobis est saepe quaesitam […].“ Glossa ordinaria des Bernhard von Parma [UdL: 2" Fp 3579]?</note> bekennet·<note type="crit_app"><hi style="font-style:italic;">Der Punkt ist hochgestellt.</hi></note> Iudicium Ecclesiae opinio-
+               <lb/>nes interdum sequitur. </p><p>
                <lb/>Fur das ander/ frag ich die Bepstlichen federleszer/
                <lb/>sie sprechen er sey ein got auff erdtrich/ das yhm gesagt/
                <lb/>Alles dastu auff erdtrich auffpindest<note type="footnote">S. o. Anm. 73.</note>/ warumb sagen
@@ -987,8 +803,7 @@
                <lb/>losest auff erdtrich etc.<note type="footnote">S. o. Anm. 73.</note> dan Christus hat das zu allenn
                <lb/>Christen gesagt/ wie ichs wol beweyszen kan/ und wil/
                <lb/>szo mir der bapst mein geschwer/ das er auffgestossenn
-               <lb/>hat/ hefftiger trucken wirt. </p>
-            <p>
+               <lb/>hat/ hefftiger trucken wirt. </p><p>
                <pb n="[C4r]"/>
                <lb/>Fur das dritte beschlieszlich/ der bapst und sein heuch-
                <lb/>ler/ unser verderber/ yrren das sie meynen/ einer kon/ ein
@@ -1007,8 +822,7 @@
                <lb/>konig von israel redende/ Alszo spricht got/ darumb das
                <lb/>die Syrien gesagt/ der her ist ein got der beerg/ und nit
                <lb/>der talher/ darumb wil ich den grossen mechtigen hau-
-               <lb/>ffen in dein hende geben.<note type="footnote">
-                  <ref type="biblical">1.Kön 20,28</ref> Vg
+               <lb/>ffen in dein hende geben.<note type="footnote"><ref type="biblical">1.Kön 20,28</ref> Vg
 			 „et accedens unus vir Dei dixit ad regem Israhel haec dicit Dominus quia dixerunt
 								Syri deus montium est Dominus et non est deus vallium dabo omnem multitudinem
 								grandem hanc in manu tua et scietis quia ego Dominus“. </note> Die bebstlichen heuchler/ ver-
@@ -1029,8 +843,7 @@
                <lb/>das got das erdtrich/ und uns armen menschen/ nicht so
                <lb/>wol erhalt als die hymeln? das sey fer von mir/ Ich hab
                <lb/>einen herren/ der ist got in hymeln und erdtrich<note type="footnote">Vgl. <ref type="biblical">Mt 28,18 Vg „</ref>Et accedens Iesus locutus est eis dicens data est mihi omnis potestas in caelo et in terra.”</note>/ der mit
-               <lb/>uns bisz zu end der welt bleybt<note type="footnote">
-                  <ref type="biblical">Mt 28,20</ref> Vg
+               <lb/>uns bisz zu end der welt bleybt<note type="footnote"><ref type="biblical">Mt 28,20</ref> Vg
 			 „Et ecce ego vobiscum sum omnibus diebus usque ad consummationem saeculi.“</note>/ der ist ein Irdischer und
                <lb/>hymelischer got/ ein got der berg und talher/ Der we-
                <lb/>gen szol keiner gedenckenn/ das der bapst ein meicklin<note type="footnote">Mücklein.</note>/
@@ -1038,13 +851,9 @@
                <lb/>ein hoher odder besser got sey/ dan der kleinst getaufft
                <lb/>mensch/ und yrret unnd sundiget der bapst totlich/ das
                <lb/>er sich mit untzimlichen wortten und ehren lesset nennen
-               <lb/>und ehren. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>und ehren. </p></div><div><p>
                <lb/>Der Bapst yrret mercklich:
-               <lb/>das er sich wie got wil gefeyert haben. </p>
-            <p>
+               <lb/>das er sich wie got wil gefeyert haben. </p><p>
                <lb/>Ehr yrret auch nicht wenig/ das er sich lasset ehren
                <lb/>und feyern (ich darff nit sagen anbetten) wie einen got
                <lb/>der etwas mehr sein sol/ dan andere frum Christenn/ 
@@ -1066,11 +875,7 @@
                <lb/>len anbetten? Der engel sprach/ Selig seint die/ szo zu
                <lb/>der wirtschafft des lemblins gebeten seint.<note type="footnote">Vgl. <ref type="biblical">Offb 19,9</ref> Vg
 			 „et dicit mihi scribe beati qui ad cenam nuptiarum agni vocati sunt“.</note> Und in den
-               <lb/>xxii.<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> xii.</note> capitel. Selig seint die/ welche die wort der prophe-<note place="margin">Vide ne</note>
-               <note place="margin">feceris. id</note>
-               <note place="margin">est/ ne ardores/</note>
-               <note place="margin">ne procumbas.</note>
+               <lb/>xxii.<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> xii.</note> capitel. Selig seint die/ welche die wort der prophe-<note place="margin">Vide ne</note><note place="margin">feceris. id</note><note place="margin">est/ ne ardores/</note><note place="margin">ne procumbas.</note>
                <lb/>ceyen behuten.<note type="footnote">Vgl. <ref type="biblical">Offb 22, 7</ref> Vg
 			 „beatus qui custodit verba prophetiae libri huius“.</note> Als das Johannes gehort het/ viel er fur
                <lb/>die fuesz des Engels/ auff das er yhnen anbettet/ wer 
@@ -1079,9 +884,7 @@
                <lb/>bey leyb thue das nicht/ sihe dich fur/ auff das du mich
                <lb/>yhe nit anbettest/ dan ich bin auch ein knecht/ diener und
                <lb/>aller bruder/ die do haben das getzeugnisz Jesu Christi/ 
-               <lb/>du solt got anbeten.<note type="footnote">S. o. Anm. 85 und 86.</note> 
-            </p>
-            <p>
+               <lb/>du solt got anbeten.<note type="footnote">S. o. Anm. 85 und 86.</note> </p><p>
                <lb/>Des gleichen haben wir von dem Engel Raphael/ To-
                <lb/>bie ym.xii. der gesagt/ Ihr solt got loben und ehren/ und 
                <lb/>sein wunderbarliche macht preyszen. Dan ich bin durch
@@ -1111,15 +914,13 @@
 			 „carissimi nunc filii Dei sumus et nondum apparuit quid erimus“. </note>/ Alle ding seint 
                <lb/>behalten auff die zukunfftickeit. Paulus hat auch nit 
                <lb/>vergeblich gesagt/ Ihr solt ewr selickeit mit forcht und
-               <lb/>zitter behutten/ Dan yhr<note type="crit_app">
-                  <hi style="font-style:italic;">von Editor verbessert aus</hi> Danyhr</note> seint yr nit mechtig/ allein got
+               <lb/>zitter behutten/ Dan yhr<note type="crit_app"><hi style="font-style:italic;">von Editor verbessert aus</hi> Danyhr</note> seint yr nit mechtig/ allein got
                <lb/>ist der/ der gutten willen unnd werck wircket.<note type="footnote">Vgl. <ref type="biblical">Phil 2,12f.</ref> Vg
 			 „itaque carissimi mei sicut semper oboedistis non ut in praesentia mei tantum sed
 								multo magis nunc in absentia mea cum metu et tremore vestram salutem operamini/ Deus est enim qui operatur in vobis et velle et perficere pro bona
 								voluntate“.</note> Darausz 
                <lb/>ist gut abtzunehmen/ wie vergessen und ungerecht unszer
-               <lb/>Bapst ist. </p>
-            <p>
+               <lb/>Bapst ist. </p><p>
                <lb/>Dartzu beweg ich/ das wir/ Bepstliche gotheit/ nit
                <lb/>alszo ehren sollen/ das wir yhnen anbetten/ aber fur yhn 
                <lb/>fallen/ aber das wir yhm einen namen geben eines got-
@@ -1145,8 +946,7 @@
                <lb/>machen. Er wil auch ein nachfolger Petri sein/<note place="margin">Actuum. x.</note>
                <lb/>und vorachtet doch seine geperde/ sitten und leer/ Dan
                <lb/>Actuum. x. stehet geschrieben/ Cornelius viel fur die fusz
-               <lb/>Petri/ yhn antzubetten/ aber Petrus<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> Petrns</note> hub yhn auff und
+               <lb/>Petri/ yhn antzubetten/ aber Petrus<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> Petrns</note> hub yhn auff und
                <lb/>sprach/ stehe auff/ ich bin auch ein mensch.<note type="footnote">Vgl. <ref type="biblical">Apg 10,25f.</ref> Vg
 			 „et factum est cum introisset Petrus obvius ei Cornelius et procidens ad pedes
 								adoravit Petrus vero levavit eum dicens surge et ego ipse homo sum“. </note> Die heyligen
@@ -1163,22 +963,16 @@
                <lb/>fuszer bruder. Es ist offenbar/ das die Bepst sterben/
                <lb/>darausz von noten folget/ das sie andern leuthen gleich/
                <lb/>und nicht mehr sein/ wie wol sie sich vilfeltiger stuck an
-               <lb/>massen/ die got gepuren. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>massen/ die got gepuren. </p></div><div><p>
                <lb/>Der Bapst yrret in dem blut
-               <lb/>Christi. </p>
-            <p>
+               <lb/>Christi. </p><p>
                <lb/>Ausz bepstlicher heylickeit folget ein grosser anderer
                <lb/>yrsal/ Dan etlich petler Monchen sagen/ das der Bapst
                <lb/>des heyligen blutes Christi macht hab/ dasselbe nach <note place="margin">Ablas.</note>
                <lb/>seinem gefallen ausztzuteylen/ Auff die selben yrrung/
-               <lb/>haben sie den genadloessen Ablas gegrundet<note type="footnote">Der Dominikaner <rs type="person"><!--TODO ref eintragen-->Markus von Weida</rs>, Lektor der Theologie in <rs type="place"><!--TODO ref eintragen-->Leipzig</rs>, hatte 1515 eine Schrift über den Rosenkranz verfasst und herausgegeben: <bibl>Spiegel hochloblicher Bruderschafft des Rosenkrantz Marie</bibl> (1515; Exemplar der ThULB Jena mit kritischen Randbemerkungen von <rs type="person"><!--TODO ref eintragen-->Luther</rs>
-                  <rs type="person"><!--TODO ref eintragen-->s</rs> Hand). Für ihn bedeutet der Ablass nicht ein Nachlassen der Strafe oder Pein, sondern nur eine Aufrechnung oder Bezahlung kraft des unschuldigen Leidens und Blutvergießens Christi. Ablass ist das Verdienst des Blutvergießens Christi am Kreuz, das den unerschöpflichen Schatz der Kirche ausmache, aus dem allein der Papst schöpfen und austeilen könne, soviel er will; Bischöfe nach Zahl und Maß, wie ihnen gesetzte. Vgl. <bibl>Paulus, Ablass 3, 144-146</bibl>. Vgl. auch die Ausführungen Seylers und Luthers 95 Thesen samt seinen Resolutionen
+               <lb/>haben sie den genadloessen Ablas gegrundet<note type="footnote">Der Dominikaner <rs type="person"><!--TODO ref eintragen-->Markus von Weida</rs>, Lektor der Theologie in <rs type="place"><!--TODO ref eintragen-->Leipzig</rs>, hatte 1515 eine Schrift über den Rosenkranz verfasst und herausgegeben: <bibl>Spiegel hochloblicher Bruderschafft des Rosenkrantz Marie</bibl> (1515; Exemplar der ThULB Jena mit kritischen Randbemerkungen von <rs type="person"><!--TODO ref eintragen-->Luther</rs><rs type="person"><!--TODO ref eintragen-->s</rs> Hand). Für ihn bedeutet der Ablass nicht ein Nachlassen der Strafe oder Pein, sondern nur eine Aufrechnung oder Bezahlung kraft des unschuldigen Leidens und Blutvergießens Christi. Ablass ist das Verdienst des Blutvergießens Christi am Kreuz, das den unerschöpflichen Schatz der Kirche ausmache, aus dem allein der Papst schöpfen und austeilen könne, soviel er will; Bischöfe nach Zahl und Maß, wie ihnen gesetzte. Vgl. <bibl>Paulus, Ablass 3, 144-146</bibl>. Vgl. auch die Ausführungen Seylers und Luthers 95 Thesen samt seinen Resolutionen
 								sowie den Gegenschriften von Wimpina-Tetzel, Eck und Prierias und den Antworten
-								Luthers darauf, erl. v. Walther Köhler, Leipzig 1903 [UdL: Luth. 88&lt;a&gt;]Die Lehre, dass sich in der Gesamtkirche unerschöpfliche Verdienste auf Grund der unendlichen Verdienste Christi speicherten und der Papst als Stellvertreter Christi über diesen Verdienstschatz verfüge, arbeitete bereits <rs type="person"><!--TODO ref eintragen-->Thomas</rs>
-                  <rs type="person"><!--TODO ref eintragen--> von Aquin</rs> aus (Thomas, STh, Suppl. qu. 25,1; 26,1;3). Die Bulle „Unigenitus Dei Filius“ (27. Januar 1343) bestätigte, dass eine Minderung des kirchlichen Gnadenschatzes auf Grund der unendlichen Verdienste Christi nicht zu befürchten sei. Vgl. <bibl>Angenendt, Entwicklung, 40</bibl>.</note>/ und auff
+								Luthers darauf, erl. v. Walther Köhler, Leipzig 1903 [UdL: Luth. 88&lt;a&gt;]Die Lehre, dass sich in der Gesamtkirche unerschöpfliche Verdienste auf Grund der unendlichen Verdienste Christi speicherten und der Papst als Stellvertreter Christi über diesen Verdienstschatz verfüge, arbeitete bereits <rs type="person"><!--TODO ref eintragen-->Thomas</rs><rs type="person"><!--TODO ref eintragen--> von Aquin</rs> aus (Thomas, STh, Suppl. qu. 25,1; 26,1;3). Die Bulle „Unigenitus Dei Filius“ (27. Januar 1343) bestätigte, dass eine Minderung des kirchlichen Gnadenschatzes auf Grund der unendlichen Verdienste Christi nicht zu befürchten sei. Vgl. <bibl>Angenendt, Entwicklung, 40</bibl>.</note>/ und auff
                <pb n="[D2r]"/>
                <lb/>sandt gepawet.<note type="footnote">Vgl. <ref type="biblical">Mt 7,26</ref> Vg
 			 „Et omnis, qui audit verba mea haec et non facit ea, similis erit viro stulto,
@@ -1189,9 +983,7 @@
                <lb/>und das reich gottis zugeben.<note type="footnote">Vgl. <ref type="biblical">Mt 9,6</ref> Vg
 			 „Ut sciatis autem quoniam Filius hominis habet potestatem in terris dimittedi
 								peccata […]“; <ref type="biblical">ebd., 20,28</ref> Vg
-			 „Sicut  Filius hominis non venit ministrari sed monistrare et dare animam suam redemptionem pro multis.“ S. auch <ref type="biblical">1.Tim 2,6</ref>.</note> Nun wissen wir alle/ das<note place="margin">Math. xx.<note type="crit_app">
-                     <hi style="font-style:italic;">vom Editor verbessert für</hi> ix.</note>
-               </note>
+			 „Sicut  Filius hominis non venit ministrari sed monistrare et dare animam suam redemptionem pro multis.“ S. auch <ref type="biblical">1.Tim 2,6</ref>.</note> Nun wissen wir alle/ das<note place="margin">Math. xx.<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> ix.</note></note>
                <lb/>Christus selber gesagt/ Es stehet nicht in meiner ma-
                <lb/>cht zugeben/ das eines zu der rechten oder lincken handt
                <lb/>sitze/ sonder allein/ den yhenen/ welchen es von ewickeit
@@ -1218,23 +1010,16 @@
 			 „nemo potest venire ad me nisi Pater qui misit me traxerit eum“.</note>/ dar
                <lb/>ausz zumercken/ das Christus keinen mit seinem blut
                <lb/>besprenget odder eloszet/ er sey dan vor/ von dem vatter
-               <lb/>getzogen. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>getzogen. </p></div><div><p>
                <lb/>Der heylig Bapst felt vonn
                <lb/>einem unweg in den andern/ ausz yrrungen
-               <lb/>in yrrungen. </p>
-            <p>
+               <lb/>in yrrungen. </p><p>
                <lb/>Dan nach seiner ubirckeit und macht (welche schrifft
                <lb/>verderbt und got uneert) ist ym nicht zuvil disser versickel
-               <pb n="[D2v]"/>
-               <note place="margin">Psal. xc.</note>
+               <pb n="[D2v]"/><note place="margin">Psal. xc.</note>
                <lb/>Super aspidem et basiliscum ambulabis/ et conculcabis
-               <lb/>leonem et draconem.<note type="footnote">
-                  <ref type="biblical">Ps 90(91),13</ref> Vg
-			. Vgl. auch <ref type="biblical">Lk 10,19</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>leonem et draconem.<note type="footnote"><ref type="biblical">Ps 90(91),13</ref> Vg
+			. Vgl. auch <ref type="biblical">Lk 10,19</ref><ref type="biblical"/> Vg
 			 „Ecce dedi vobis potestatem calcandi supra serpentes et scorpiones […].“</note> alszo ausztzulegen/ Du solt keyszer-
                <lb/>liche maiestat/ Konig/ und fursten/ mit fuessen tretten/
                <lb/>und sprechen/ solche herlickeit geburt Petro. Ey du mut-
@@ -1249,8 +1034,7 @@
                <lb/>mutig und guttig sey/ der seinen bruder mit fussen trit/
                <lb/>So wolt ich auch fast gerne bericht horen/ wo sich sanct
                <lb/>Peter solcher hoffart angenommen/ das er keyszer unnd
-               <lb/>konigen mit fuessen solt gedretten haben. </p>
-            <p>
+               <lb/>konigen mit fuessen solt gedretten haben. </p><p>
                <lb/>Nein lieber Bapst/ ich wil deynenn heuchlern das<note place="margin">i.Pet. ii.</note>
                <lb/>maul mit sanct Peters schrifft verstopffen der alszo ge-
                <lb/>schrieben/ Ihr solt alle menschen ehren/ und bruderliche
@@ -1264,8 +1048,7 @@
                <lb/>der mit fuessen umbkehren/ Petrus sagt clar/ das alle
                <lb/>menschen die konig ehren sollen/ szo sprecht yhr unver-
                <lb/>schempte federleser/ und oren melcker/ der bapst sol die
-               <lb/>Konig unehren/ und mit fuessen dretten.</p>
-            <p>
+               <lb/>Konig unehren/ und mit fuessen dretten.</p><p>
                <lb/>Ich meyn der bapst solt wol Paulum auch der gley-<note place="margin">Ro. xii.</note>
                <lb/>chen glossiern/ Paulus spricht/ Yhr sollet eynander fur-
                <lb/>kommen mit ehr erbiettung<note type="footnote">Vgl. <ref type="biblical">Röm 12,10</ref> Vg
@@ -1286,15 +1069,10 @@
                <lb/>tertenick. Ich forcht noch eyns/ der bapst solt wol sa-
                <lb/>gen/ sanct Peter leert ander leut und sein unterthan/ der
                <lb/>halben sol sein schrifft Bebsten/ und Cardinalen unnd
-               <lb/>Bischoffen mit nicht treffen. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>Bischoffen mit nicht treffen. </p></div><div><p>
                <lb/>Der Bapst sol den Fursten ge-
-               <lb/>horsam sein. </p>
-            <p>
-               <lb/>Alhie musz ich mit den Decretalen (wie die katz mit<note type="crit_app">
-                  <hi style="font-style:italic;">gestrichen folgendes</hi> mit</note>
+               <lb/>horsam sein. </p><p>
+               <lb/>Alhie musz ich mit den Decretalen (wie die katz mit<note type="crit_app"><hi style="font-style:italic;">gestrichen folgendes</hi> mit</note>
                <lb/>der mausz) spilen/ Das arm textlin und elend elend com-
                <lb/>ment (das ich billich mehr beweynen/ dan anfechtenn
                <lb/>solt) welches die brotgewinner und ehrgeytzige leerer
@@ -1303,15 +1081,7 @@
 								Episcopus non debet subesse principibus, sed praeesse.“ (<bibl>Friedberg 2, 196)</bibl>.</note>/ geschrieben/ zurstreyhet den gantzen vorstand Petri/
                <lb/>und ist dem safft und geyst gotlicher schrifft ferner/ dan
                <lb/>Rhom von Wittenberg. Curtzhalben/ und auff das 
-               <lb/>mahl/ wil ich obgemelt commentlin alszo antzapffen. </p>
-            <p>
-               <note place="margin">Pontifex in c. Solite/</note>
-               <note place="margin">insolenter et mire</note>
-               <note place="margin">rhetoricatur i‘d est‘ fallacibus</note>
-               <note place="margin">et frivolis illationum  </note>
-               <note place="margin">nexibus argutatur/ ut</note>
-               <note place="margin">frequenter</note>
-               <note place="margin">adsolet.</note>
+               <lb/>mahl/ wil ich obgemelt commentlin alszo antzapffen. </p><p><note place="margin">Pontifex in c. Solite/</note><note place="margin">insolenter et mire</note><note place="margin">rhetoricatur i‘d est‘ fallacibus</note><note place="margin">et frivolis illationum  </note><note place="margin">nexibus argutatur/ ut</note><note place="margin">frequenter</note><note place="margin">adsolet.</note>
                <lb/>Fur das erst/ und do der text spricht/ du solt ange-
                <lb/>sehen hab/ die person des redners/ und zu denen ehr ge-
                <lb/>redt hat. Lieber/ du solst wol sagen/ Petrus hab nit zu
@@ -1338,8 +1108,7 @@
                <lb/>bannet mich/ szo lach ich/ und so ich den leyhen die frey-
                <lb/>heit Christi<note type="footnote">Vgl. <ref type="biblical">Gal 4,31</ref> Vg
 			 „non sumus ancillae filii sed liberae qua libertate nos Christus liberavit“.</note> predige/ sol ewr Ban und ewr maledeyung
-               <lb/>mir ein kueler thawe sein.</p>
-            <p>
+               <lb/>mir ein kueler thawe sein.</p><p>
                <lb/>Fur das Tritte/ saget obgemeltes capitel Insolite/
                <lb/>sanct Peter hab seinen unterthanen und vorwonten ge-
                <lb/>schrieben.<note type="footnote">Vgl. X 1,33,6: „Scribebat enim Apostolus subditis suis, et eos ad humilitatis meritum provocabat.
@@ -1348,8 +1117,7 @@
                <lb/>er schreybet/ so wurdestu schmecken/ das er alle Christen
                <lb/>in gemeyn lernet<note type="footnote">Vgl. <ref type="biblical">1.Petr 2,9</ref> Vg
 			 „Vos autem genus electum, regale sacerdotium, gens sancta, populus adquisitionis
-								[…].“</note>/ und nicht allein sein unterthan. </p>
-            <p>
+								[…].“</note>/ und nicht allein sein unterthan. </p><p>
                <lb/>Fur das vierd/ meynet gemeltes capittel/ Solite/
                <lb/>das sich ein pfaff gegen einem knecht demutigen/ und
                <lb/>in seinem regiment must stehen/ und achtet das fur ein
@@ -1360,10 +1128,8 @@
                <lb/>nachlesset/ das ein Leyh zeitten einem knecht musz un-
                <lb/>terteynig sein/ Szo folget/ das die pfaffen den knechten
                <lb/>dienen mussen. Dan alle Christen seint pfaffen/ dan sie
-               <lb/>seint auff einen steyn gepawet/ der sie zu pfaffen macht.<note type="footnote">Karlstadt artikuliert hier das Konzept des Priestertums aller Gläubigen (s. auch <hi style="font-style:italic;">De canonicis scripturis</hi> KGK 157). Vgl. Kotabe, Laien. Zur Eckstein-Metaphiorik vgl. <ref type="biblical">1.Petr 2,6</ref>
-                  <ref type="biblical"/> Vg
-			 „Ecce pono in Sion lapidem summum angularem electum pretiosum“, sowie <ref type="biblical">Eph 2,19f.</ref>, s. Anm. 118. Vgl. auch <ref type="biblical">Mt 7,24</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>seint auff einen steyn gepawet/ der sie zu pfaffen macht.<note type="footnote">Karlstadt artikuliert hier das Konzept des Priestertums aller Gläubigen (s. auch <hi style="font-style:italic;">De canonicis scripturis</hi> KGK 157). Vgl. Kotabe, Laien. Zur Eckstein-Metaphiorik vgl. <ref type="biblical">1.Petr 2,6</ref><ref type="biblical"/> Vg
+			 „Ecce pono in Sion lapidem summum angularem electum pretiosum“, sowie <ref type="biblical">Eph 2,19f.</ref>, s. Anm. 118. Vgl. auch <ref type="biblical">Mt 7,24</ref><ref type="biblical"/> Vg
 			 „Omnis ergo qui audit verba mea haec et facit, adsimilabitur viro sapienti qui
 								aedificavit domum suam supra petram.“ Vor Karlstadt hatte Luther in seiner im August 1520 erschienenen Adelsschrift (vgl. <bibl>Kaufmann, Adel, 4-7</bibl>) hinsichtlich des Niederreissens der ersten Mauer der römischen Kirche, des geistlichen Standes, erklärt: „Dan alle Christen sein wahrhafftig geystlichs stands/ unnd ist unter yhn kein unterscheyd/ denn des ampts halben allein. ... Dem nach szo werden wir allesampt durch die tauff zu priestern geweyhet.“ (<bibl>WA 6, 407,13-15; 22f.</bibl>). Vgl. <bibl>Kaufmann, Adel, 81</bibl>. Im Traktat <hi style="font-style:italic;">Von der Freiheit eines Christenmenschen</hi> vom Oktober/ November 1520 schreibt Luther: „Ubir das seyn wir priester, das ist noch vil mehr, denn kuenig sein, darumb, das das priesterthum uns wirdig macht fur gott zu tretten vnd fur andere zu bitten.“ (<bibl>WA 7, 28,6-8</bibl>).</note>
                <lb/>Christus ist derselbich aufzerwelt steyn/ auff den sel-
@@ -1404,20 +1170,16 @@
                <lb/>dan sagen/ ich schreyb mich Servum servorum/ causa
                <lb/>humilitatis/ und nicht veritatis/ szo lieg und betrieg ehr
                <lb/>szo lang/ bisz die graehen rock vorgehen/ unnd wollenn
-               <lb/>wir yhm nicht gleuben. </p>
-            <p>
+               <lb/>wir yhm nicht gleuben. </p><p>
                <lb/>Weyl auch der bapst schuldig ist den kayszer zuehren
                <lb/>wie gebraucht er dan diessen text/ Super aspidem et basi-
-               <lb/>liscum ambulabis/ et conculcabis leonem et draconem.<note type="footnote">
-                  <ref type="biblical">Ps 90(91),13</ref>, s. o. Anm. 104.</note> dan ehr
+               <lb/>liscum ambulabis/ et conculcabis leonem et draconem.<note type="footnote"><ref type="biblical">Ps 90(91),13</ref>, s. o. Anm. 104.</note> dan ehr
                <lb/>glossiert/ Der bapst sol mit fuessen auff den keyszern und
                <lb/>fursten gehen/ Wan es recht ist/ das einer ein stroherin
                <lb/>bart von einem unschuldigen kindlin reuffen mag/ szo
                <lb/>werd ich sagen/ Conculcabis leonem et draconem.<note type="footnote">S. o. Anm. 104. </note> Der key-
-               <lb/>szer und fursten sollen den Bapst zurtretten. </p>
-            <p>
-               <pb n="[D4v]"/>
-               <note place="margin">Math. v.</note>
+               <lb/>szer und fursten sollen den Bapst zurtretten. </p><p>
+               <pb n="[D4v]"/><note place="margin">Math. v.</note>
                <lb/>Christus spricht/ welcher zu seinem bruder saget/ du
                <lb/>Nar/ der ist schuldig des weigenn fewers.<note type="footnote">Vgl. <ref type="biblical">Mt 5,22</ref> Vg
 			 „ego autem dico vobis quia omnis qui irascitur fratri suo reus erit iudicio qui
@@ -1437,8 +1199,7 @@
                <lb/>pestilentzische schlang/ den menschen gar gefer/ und alle
                <lb/>zeit zu nachteil ist. Derhalben offenbar ist/ das der bapst
                <lb/>und sein heuchler/ den Kayszer abnennen/ unnd yrren/
-               <lb/>vil sundigen und vil unrecht thun. </p>
-            <p>
+               <lb/>vil sundigen und vil unrecht thun. </p><p>
                <lb/>Ich darff wol sagen/ das die ketzerischen schmeych-<note place="margin">Rom ist gleich dem teuffel.</note>
                <lb/>ler/ erger zurbrecher der schrifft seint/ dan der leydig teu-
                <lb/>ffel. Dan Chrysostomus und Hieronymus sagen/ das
@@ -1472,13 +1233,9 @@
                <lb/>schuldig seint/ weltlich fursten zuehren/ da dartzu/ den ge-
                <lb/>ringsten Christen sollen sie/ rechter liebe und hertzlicher
                <lb/>ehr/ gut thun/ und auszhertzen wol meynen/ den armen
-               <lb/>gleich/ wie den reychen. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>gleich/ wie den reychen. </p></div><div><p>
                <lb/>Scopus: das ist: das zeygen
-               <lb/>und zihel diesses buchlinsz. </p>
-            <p>
+               <lb/>und zihel diesses buchlinsz. </p><p>
                <lb/>Eer ich furt far/ und den manigfeltigen gewalt/ und
                <lb/>ubirmuttickeit auszleeg/ welchen der tyrannisch Bapst
                <lb/>widder gottis schrifft und eehr/ auch gemeyner Christen-
@@ -1506,24 +1263,20 @@
                <lb/>und vorterbet mein leben. Darumb horend yhr wind-
                <lb/>plaszer/ das obertzelt yrrungen (die yhr fur gut urteilt)
                <lb/>machen/ das glaubich volck von got yrren. Auch weisz
-               <lb/>ich/ das got nicht schwinder/<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> (</note> zu seiner zeit straffet/ dan
+               <lb/>ich/ das got nicht schwinder/<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> (</note> zu seiner zeit straffet/ dan
                <lb/>die vorleytungen der obersten/ wan sie das volck gottis
                <pb n="[E1v]"/>
                <lb/>mit wolscheinlichen furgeben/ vorfuren/ Ich weysz das
                <lb/>got nicht allein/ die vorleyder/ szonder auch die unwey-
                <lb/>szen nachfolger vorderbt hat/ und wurt sie hynfur/ son-
-               <lb/>der zweyffel vorderben.<note type="footnote">Vgl. <ref type="biblical">Jer 23,1f.</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>der zweyffel vorderben.<note type="footnote">Vgl. <ref type="biblical">Jer 23,1f.</ref><ref type="biblical"/> Vg
 			 „Vae pastoribus qui disperdunt et dilacerant gregem pascuae meae […]“; <ref type="biblical">Mt 15,14</ref> Vg
 			 „Sinite illos caeci sunt dues caecorum, caecus autem si caeco ducatum praestet ambo in foveam cadunt.“</note> Derwegen wil ich nit schwey-
                <lb/>gen/ damit ich die Christen trewlich warne/ auff das sie
                <lb/>sich mit hoher furbetrachtung selbs erkundenn/ was
-               <lb/>yhnen in dem Bapst geburt zumeyden und zufliehen. </p>
-            <p>
+               <lb/>yhnen in dem Bapst geburt zumeyden und zufliehen. </p><p>
                <lb/>Ich kan den Bapst nit fast vordencken/ das er wid-
-               <lb/>der heylige schrifft handelt/ und<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> uud</note> mit boszen glossen ver-
+               <lb/>der heylige schrifft handelt/ und<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> uud</note> mit boszen glossen ver-
                <lb/>bricht/ die weil solche ungelerte meyster (des pallacii)<note type="footnote">Silvester Mazzolini Prierias, s. o. Anm. 127.</note>
                <lb/>zu lesen und auszlegung gotlicher Biblien mit offentlichen
                <lb/>solt bestelt/ die kein wissen in der heyligen Biblien haben.
@@ -1531,8 +1284,7 @@
                <lb/>ster betzeygung/ die ich yhe kan gethun) das ich zu Rom
                <lb/>in der Sapientz von einen Theologen und monchen eynsz
                <lb/>hab mussen horen (als ich ein autoritet ausz der Biblien
-               <lb/>ym furwarff)<note type="footnote">
-                  <bibl>Bubenheimer, Consonantia, 61f.</bibl> erkennt in dem Theologen, mit dem Karlstadt in einer Disputation über den Vorrang des Schriftwortes während seines Romaufenthalts 1516 in einen Streit geraten war, ebenfalls Prierias. <bibl>Ebd., 67-71,</bibl> vermutet er Teile der in Rom disputierten Thesen in <hi style="font-style:italic;">De canonicis scripturis</hi>,. Vgl. KGK 157, S. ...</note> Diesse wort/ Venis tu cum credere/ das ist
+               <lb/>ym furwarff)<note type="footnote"><bibl>Bubenheimer, Consonantia, 61f.</bibl> erkennt in dem Theologen, mit dem Karlstadt in einer Disputation über den Vorrang des Schriftwortes während seines Romaufenthalts 1516 in einen Streit geraten war, ebenfalls Prierias. <bibl>Ebd., 67-71,</bibl> vermutet er Teile der in Rom disputierten Thesen in <hi style="font-style:italic;">De canonicis scripturis</hi>,. Vgl. KGK 157, S. ...</note> Diesse wort/ Venis tu cum credere/ das ist
                <lb/>kombstu mit dem buch des glauben. Ist das nit ein cleg-
                <lb/>lich elend jamer (wir disputierten/ wie Theologen/ von
                <lb/>got/ und seinem willen/ von menschlicher gebrechlickeit und
@@ -1576,15 +1328,13 @@
 			 „amen amen dico vobis qui non intrat per ostium in ovile ovium sed ascendit aliunde ille fur est et latro“; <ref type="biblical">ebd., 10,9</ref> Vg
 			 „ego sum ostium., per me si quis introierit, salvabitur et ingredietur et egredietur et pascua inveniet.“ </note>/ Alle szo
                <lb/>Christum nit wollen horen/ und die schimpflich von seinem
-               <lb/>wort reden/ seint die/ die nit durch die pforten eingehen. </p>
-            <p>
+               <lb/>wort reden/ seint die/ die nit durch die pforten eingehen. </p><p>
                <lb/>Fur das ander/ behertzet doch/ das der kleinste bu-<note place="margin">Jotta vel apex.</note>
                <lb/>chstabenn/ ja der geringst punckt der schrifft festiglich
                <lb/>musz gehalden werden<note type="footnote">Vgl. <ref type="biblical">Mt 5,18</ref> Vg
 			 „Amen quippe dico vobis donec transeat caelum et terra iota unum aut unus apex non
 								praeteribit a lege donec omnia fiant“; auch <ref type="biblical">Lk 16,17</ref>. </note>/ wie dorffen dan/ die ketzerische
-               <lb/>keeszbetler sagen/ Venis tu cum credere? </p>
-            <p>
+               <lb/>keeszbetler sagen/ Venis tu cum credere? </p><p>
                <lb/>Fur das drit/ bit/ ermessent/ das got seinn schrifft/
                <lb/>und wort/ in den mund der propheten gelegt/ unnd der
                <lb/>heylig geyst ausz den menschenn geret/ nach dem Chri-
@@ -1592,8 +1342,7 @@
                <lb/>nes vaters der redet in euch<note type="footnote">Vgl. <ref type="biblical">Mt 10,20</ref> Vg
 			 „non enim vos estis qui loquimini sed Spiritus Patris vestri qui loquitur in
 								vobis“. </note>/ Das heylig geystlich wort
-               <lb/>vorspotten die boszhafftigen zungen. </p>
-            <p>
+               <lb/>vorspotten die boszhafftigen zungen. </p><p>
                <pb n="[E2v]"/>
                <lb/>Christus der ist gottis son/ noch spricht er/ Ich red
                <lb/>nit von mir selber/ szonder wie mir mein vatter befoh-
@@ -1603,24 +1352,19 @@
                <lb/>born treget/ und saget/ das seine wort/ seines vaters sey/
                <lb/>Wie sein die knebel so durstig/ das sie sich nit schemen/
                <lb/>zusagen/ Venis cum credere? das ist/ kommestu mit dem
-               <lb/>wort gottis? </p>
-            <p>
+               <lb/>wort gottis? </p><p>
                <lb/>Vornement eben und tieff/ wesz ich ewr koniglichen
                <lb/>furstlichen wirden/ hohen und gnaden erynner/ unnd
                <lb/>wehn obberurte unehr berembt. Ich weisz yhr wurdet
                <lb/>keinen Juden odder heyden ungestrafft lassen/ wen yhr
                <lb/>solch lesterung von yhm horen wurt/ wolt yhr den durch
-               <lb/>die finger<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> singer</note> sehen/ und den pestilentzischen platzmeystern
-               <lb/>lenger zugebenn/ das gottis wort alszo geschwecht<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus </hi>geschmecht</note> sol
+               <lb/>die finger<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> singer</note> sehen/ und den pestilentzischen platzmeystern
+               <lb/>lenger zugebenn/ das gottis wort alszo geschwecht<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus </hi>geschmecht</note> sol
                <lb/>werden/ szo werden alle Christen vorfuret/ und wirt got
                <lb/>seinen grymmen ubir uns alle/ wie einer ein schosz vol-
-               <lb/>ler fewrsz/ auszwerffen. </p>
-            <p>
+               <lb/>ler fewrsz/ auszwerffen. </p><p>
                <lb/>Ach die groben kelber unnd ochszen/ die meyster des
-               <lb/>palacii/ leszen/ und wer der gantzen Christenheit nutzer/<note place="margin">Ochszen</note>
-               <note place="margin">Kelber.</note>
+               <lb/>palacii/ leszen/ und wer der gantzen Christenheit nutzer/<note place="margin">Ochszen</note><note place="margin">Kelber.</note>
                <lb/>das sie dafur schliffen. Ich nenne die selben platzmeister
                <lb/>Ochszen und kelber/ das sie vor grosser boszheyten/ wid-
                <lb/>der gottis wort/ wie ein kalp/ umb und umb springenn/
@@ -1630,24 +1374,18 @@
                <lb/>nern) widder heylig geschrifft leffen/ und erkennen und
                <lb/>predigen Bepstliche yrrungen/ fur wolthet/ und sagen
                <lb/>er thue wol. Ich hab aber angetzeicht/ das der Bapst/
-               <lb/>got hochlichen zu zorn/ mit obberurten stucken/ bewecht. </p>
-            <p>
+               <lb/>got hochlichen zu zorn/ mit obberurten stucken/ bewecht. </p><p>
                <lb/>Ich wil nit sagen/ von den groben fleischlichen sun-
                <lb/>den/ sonder allein/ von den geystlichen/ sunden/ die grosser/
-               <lb/>dan morderey/ ehebrecherey/ und reuberey zuachten sein. </p>
-            <p>
+               <lb/>dan morderey/ ehebrecherey/ und reuberey zuachten sein. </p><p>
                <lb/>Ich sag auch nit/ wie ein Bapst den keyszer Barba-
                <lb/>rosz dem heydnischen keyszer verraten/ wie ehr den key-
                <pb n="[E3r]"/>
                <lb/>szer liesz abkunderfehen/ und schicket das bild dem Tur-
                <lb/>ckischenn keyszer/ Ich wil solcher offenbarer stucke ge-
-               <lb/>schweygen. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>schweygen. </p></div><div><p>
                <lb/>Wie der Bapst das heylig
-               <lb/>Evangelium ehret.  </p>
-            <p>
+               <lb/>Evangelium ehret.  </p><p>
                <lb/>Das Evangelium Christi ehret der Bapst gleycher
                <lb/>weysz/ wie die Bapstliche platzmeyster/ von der heyli-
                <lb/>gen schrifft horenden/ die in theologischen disputationen
@@ -1657,9 +1395,7 @@
                <lb/>mit sitten/ gegen den heyligen Evangelien/ und thut das
                <lb/>mit geberden/ das obvermelte kelber und ochszen/ mit
                <lb/>wortten und zungen miszhandeln. Dan der bapst steelt
-               <lb/>sich gegen den<note type="crit_app">
-                  <hi style="font-style:italic;">vermutlich falsche Auflösung einer Kasus-Abbreviatur</hi>
-               </note> Evangelium/ wen es in der kirchen wurt ge-
+               <lb/>sich gegen den<note type="crit_app"><hi style="font-style:italic;">vermutlich falsche Auflösung einer Kasus-Abbreviatur</hi></note> Evangelium/ wen es in der kirchen wurt ge-
                <lb/>leszen odder gesungen/ gleich als wer yhm das Evan-
                <lb/>gelium zugering/ odder er solt auff das wenigest/ dem Evan-
                <lb/>gelio mit aller herlickeit und erwirdickeit gleichwirdig
@@ -1669,34 +1405,28 @@
                <lb/>sthul sasz/ Er bleyb sitzen wie ein gemalter und wol ge-
                <lb/>tzyrter heyd/ dem das Evangelium nicht vorwand/ und gar
                <lb/>nicht befohlen/ und der gotlichen wort kein her zuthun
-               <lb/>schuldig ist. </p>
-            <p>
-               <lb/>An einem tag hab ich gesehen<note type="footnote">Im Folgenden beschreibt Karlstadt die von ihm in <rs type="place"><!--TODO ref eintragen-->Rom</rs> gesehenen Riten eines Gottesdienstes in der päpstlichen Kapelle. Das Zeremoniell vor der Lesung des Evangeliums, die dem Kardinaldiakon oblag, ähnlich bei <bibl>Augustinus, Rituus, fol. 70<hi rend="super">v</hi>
-                  </bibl>; s. <bibl>Bubenheimer, Consonantia, 36</bibl>.</note>/ das ein grosser prelat
+               <lb/>schuldig ist. </p><p>
+               <lb/>An einem tag hab ich gesehen<note type="footnote">Im Folgenden beschreibt Karlstadt die von ihm in <rs type="place"><!--TODO ref eintragen-->Rom</rs> gesehenen Riten eines Gottesdienstes in der päpstlichen Kapelle. Das Zeremoniell vor der Lesung des Evangeliums, die dem Kardinaldiakon oblag, ähnlich bei <bibl>Augustinus, Rituus, fol. 70<hi rend="super">v</hi></bibl>; s. <bibl>Bubenheimer, Consonantia, 36</bibl>.</note>/ das ein grosser prelat
                <lb/>(ich acht einn Ertzbischoff odder Cardinal/ wie ich
                <lb/>wart vorstendiget) das Evangelium solt leszen/ der selbe
                <lb/>bracht yhm das buch (darinnen das Evangelium ge-
                <lb/>schrieben) von dem bapst Benedeyung zunehmen/ und
                <lb/>must bald auff sein knihe fallen (wie er auch fielh) und
                <lb/>dem bapst seinen fuesz kussen/ darnach laesz gedachter
-               <lb/>Prelat das Evangelium. </p>
-            <p>
+               <lb/>Prelat das Evangelium. </p><p>
                <pb n="[E3v]"/>
                <lb/>Was sol ich sagen/ unszer Leo/ disser Bapst (der ein
                <lb/>vatter und pfarher aller Christen sein wil) sasz unter le-
                <lb/>sung des Evangelien gar stilh/ er keret auch sein augen
                <lb/>nicht zu dem Evangelien/ er bleyb gar stilh und unbe-
-               <lb/>wegt sitzen/ und tat den heyligen Evangelien keine ehr. </p>
-            <p>
+               <lb/>wegt sitzen/ und tat den heyligen Evangelien keine ehr. </p><p>
                <lb/>Welchem doch/ Kayszer/ Konig/ Churfursten/ fur-
                <lb/>sten und hern/ alle Christen auffsteen/ odder (szo sie un-
                <lb/>vermuglich sein) yhe ein ehr erbiettenn/ damit sie yhre
-               <lb/>unterteynickeit und bereytten willen antzeygen mugen. </p>
-            <p>
+               <lb/>unterteynickeit und bereytten willen antzeygen mugen. </p><p>
                <lb/>Der teuffel forcht die krafft heyliges Evangelien
                <lb/>unnd der Bapst ensetzet sich gar nicht vor Evangeli-
-               <lb/>scher maiestet. </p>
-            <p>
+               <lb/>scher maiestet. </p><p>
                <lb/>Ich weysz (und wissens nicht wenig) das der
                <lb/>bapst ernstlich wil habenn/ das sein Delegaten odder
                <lb/>Commissarien (die zeytten mit seinem wortte und brieffen
@@ -1738,14 +1468,12 @@
                <lb/>hartmutig/ das er nit widerumb/ der gleichen der schrifft
                <lb/>und befelh Christi thuet/ und verschafft das got werde
                <lb/>gethan und ertzeicht/ das wir seinen lausichen keszpet-
-               <lb/>lern und heylischen bullen thun sollen. </p>
-            <p>
+               <lb/>lern und heylischen bullen thun sollen. </p><p>
                <lb/>Steynerin kirchen und silberin kelch ehren die leut/
                <lb/>darumb/ das sie got eygen gemacht seint/ und alszo ge-
                <lb/>heyliget/ und konden doch keinen geist Christi/ ausz ynen/
                <lb/>durchleszen odder ansehen/ erlernen/ odder richen od-
-               <lb/>der schmecken. </p>
-            <p>
+               <lb/>der schmecken. </p><p>
                <lb/>Die heylige geschrifft ist got nichts mynder voreynet
                <lb/>und eygen gemacht/ dan ein kelch odder altar/ und kon-
                <lb/>den in der schrifft leszen/ odder horen leszenn alles das/
@@ -1755,10 +1483,8 @@
                <lb/>die schrifft heyliger und got neher ist/ dan ein kelch/ altar
                <lb/>und messegewand. Warumb sprechenn sie nit/ das einer
                <lb/>grosse und herte penitentz leyden sol/ wan er das wort gotis
-               <lb/>uneret/ oder vorachtet/ aber wil es nit horen aber lesenn. </p>
-            <p>
-               <pb n="[E4v]"/>
-               <note place="margin">Mat. xxii</note>
+               <lb/>uneret/ oder vorachtet/ aber wil es nit horen aber lesenn. </p><p>
+               <pb n="[E4v]"/><note place="margin">Mat. xxii</note>
                <lb/>O wie war ist/ das wort Christi/ Die gleyszner haben
                <lb/>alwegen/ das klein ist/ grosz geacht/ und das in sich selb
                <lb/>hochachtpar ist/ das haben sie wenig geschatzt und vor-
@@ -1773,9 +1499,7 @@
                <lb/>Paul die Christen mit hohern vleisz erynnert/ das sie/
                <lb/>in der form und massen (die er geschrieben) sollen bley-
                <lb/>ben/ sich darnach zurichten/ mit glauben und wercken<note type="footnote">Vgl. <ref type="biblical">2.Tim 1,13</ref> Vg
-			 „formam habe sanorum verborum quae a me audisti“; <ref type="biblical">ebd.,</ref>
-                  <ref type="biblical"> 3,14</ref>
-                  <ref type="biblical"/> Vg
+			 „formam habe sanorum verborum quae a me audisti“; <ref type="biblical">ebd.,</ref><ref type="biblical"> 3,14</ref><ref type="biblical"/> Vg
 			<ref type="biblical"> </ref>„Tu vero permane in his quae didicisti“.</note>/
                <lb/>dan das wir yhnen odder sein gepein/ ym todt/ sollenn
                <lb/>ehren und besuchen. Wir leszen nyndert<note type="footnote">nirgends, vgl. <bibl>Götze, Glossar, 168</bibl>.</note>/ das uns Pau-
@@ -1785,8 +1509,7 @@
                <lb/>Ablas zihen. Sanct Pauls geyst und leben und krafft
                <lb/>ist vil krefftiger in der schrifft/ dan in seinen vorstorbenn
                <lb/>glidern/ noch ist sein leer bey den narren gering/ und der
-               <lb/>bart hocher gepreysset. </p>
-            <p>
+               <lb/>bart hocher gepreysset. </p><p>
                <lb/>Wir leszen geschrieben/ welcher einen tempel uneret/<note place="margin">Templum.</note>
                <lb/>der vorcleynet denen/ der ym tempel wanhafftig.<note type="footnote">Vgl. <ref type="biblical">1.Kor 3,16-17</ref> Vg
 			 „nescitis quia templum Dei estis et Spiritus Dei habitat in vobis si quis autem
@@ -1796,14 +1519,11 @@
                <lb/>schrifft/ geborn/ beschnitten/ von den konigen gesucht/
                <lb/>und angebet/ Das er in dem tempel leeret/ und ein stym
                <lb/>von dem hymeln horet/ Disser ist mein lieber son/ in dem
-               <lb/>ich gefallen hab/ den horent<note type="footnote">
-                  <ref type="biblical">Mt 3,17</ref> Vg
+               <lb/>ich gefallen hab/ den horent<note type="footnote"><ref type="biblical">Mt 3,17</ref> Vg
 			 „et ecce vox de caelis dicens hic est Filius meus dilectus in quo mihi conplacui.“ Vgl. <ref type="biblical">Mk 1,11</ref>; <ref type="biblical">Lk 3,22</ref>. </note>. Item Christus/ macht die
                <lb/>blinden sehen in der schrifft/ die kruppel gerat/ die ausz-
-               <lb/>setzigen reyn<note type="footnote">Vgl. <ref type="biblical">Mt 11,4f.</ref>; <ref type="biblical">Lk 7,22f.</ref>
-               </note>/ er lesset seine Sonn den frumen und bo-
-               <lb/>szen scheynen<note type="footnote">Vgl. <ref type="biblical">Mt 5,45</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>setzigen reyn<note type="footnote">Vgl. <ref type="biblical">Mt 11,4f.</ref>; <ref type="biblical">Lk 7,22f.</ref></note>/ er lesset seine Sonn den frumen und bo-
+               <lb/>szen scheynen<note type="footnote">Vgl. <ref type="biblical">Mt 5,45</ref><ref type="biblical"/> Vg
 			 „qui solem suum oriri facit super bonos et malos“.</note>/ er vergibt sunde/ er prediget den armenn
                <lb/>froliche und heylsame botschafften/ gegenwertickeit des
                <pb n="[F1r]"/>
@@ -1836,8 +1556,7 @@
 			 „pasce oves meas“. </note>/ Weisz er auch nit/ das die weyd oder das
                <lb/>prod/ dadurch Petrus die schaff speyszen sol/ das wort
                <lb/>gottis ist? warumb stelt er sich dan szo gar froem<note type="footnote">fremd</note> zu der
-               <lb/>weyd?<note type="footnote">Vgl. <ref type="biblical">Joh 10,4f.</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>weyd?<note type="footnote">Vgl. <ref type="biblical">Joh 10,4f.</ref><ref type="biblical"/> Vg
 			 „et oves illum sequuntur quia sciunt vocem eius/ alienum autem non sequuntur sed fugient ab eo.“</note> und wil uns doch fur sein schaff haben. Ja wan
                <lb/>sein Decretales und gewaltsame statuten/ die weyd hy-
                <lb/>ssen/ szo solt er wolff/ lawen/ bern/ und lindtwurme spey-
@@ -1850,8 +1569,7 @@
                <lb/>den/ er weyde mich dan mit der weyde Christi/ und sa-
                <lb/>ge/ das Keyszer/ konig/ unnd alle Christliche fursten/
                <lb/>got fur yhre nachlassickeit in seinem gestrengen gericht
-               <lb/>antwortten mussen. </p>
-            <p>
+               <lb/>antwortten mussen. </p><p>
                <lb/>Ich weysz wann uns einer ein vihedrifft/ aber vihe-
                <lb/>tzucht/ oder wiszen/ davon das vihe weyde suchet und
                <lb/>sich speyszet/ vergifftet/ odder mit kottigem wasser ver-
@@ -1865,9 +1583,7 @@
                <lb/>sich die propheten/ schmertzlicher beclagenn/ dan alles
                <lb/>leyden/ und fur ein hellisch peyn achten.<note type="footnote">Vgl. <ref type="biblical">Ps 118(119),20f.</ref> Vg
 			 „concupivit anima mea desiderare justificationes tuas in omni tempore/increpasti superbos, maledicti qui declinant a mandatis tuis.“; <ref type="biblical">ebd., 41f.</ref> Vg
-			 „Et veniat super me misericordia tua, Domine, salutare tuum secundum eloquium tuum/ et respondebo exprobrantibus mihi verbum, quia speravi in sermonibus tuis.“</note> 
-            </p>
-            <p>
+			 „Et veniat super me misericordia tua, Domine, salutare tuum secundum eloquium tuum/ et respondebo exprobrantibus mihi verbum, quia speravi in sermonibus tuis.“</note> </p><p>
                <lb/>Der Bapst wil/ das wir alle seiner traditionen/ und
                <lb/>fleischlichen rechten sollen glauben/ und uns an sein men-
                <lb/>schlich gesetz pinden. Er lesset sein decretalen/ wie das
@@ -1887,13 +1603,10 @@
                <lb/>zupredigen. Welcher solch jamer leszen wil und erkunden/
                <lb/>wie got die selbe propheten gestrafft/ und straffen wurt/
                <lb/>der lesze Hieremiam am .xxiii. capittel/ und Mosen ym
-               <lb/>buch des andern gesetz/ odder ehe yn dem .xiii. capittel.<note type="footnote">
-                  <ref type="biblical">5.Mose 8,19f.</ref> Vg
+               <lb/>buch des andern gesetz/ odder ehe yn dem .xiii. capittel.<note type="footnote"><ref type="biblical">5.Mose 8,19f.</ref> Vg
 			 „sin autem oblitus Domini Dei tui secutus fueris alienos deos coluerisque illos et
 								adoraveris, ecce nunc prædico tibi quod omnino dispereas/ sicut gentes quas delevit Dominus in introitu tuo ita et vos peribitis si
-								inobedientes fueritis voci Domini Dei vestri.“</note>
-            </p>
-            <p>
+								inobedientes fueritis voci Domini Dei vestri.“</note></p><p>
                <lb/>Unszer Bapst wurt auch (mit solchen gemeynen sche-
                <lb/>den) nit gesettiget/ das er uns das wort gottis mit sey-
                <lb/>nen gedancken verschlempt odder vergifftet/ aber das
@@ -1904,8 +1617,7 @@
                <lb/>augen/ und machet glossen/ welche/ den grund gotlicher
                <lb/>Biblien verwusten und auszwurtzeln/ wie ich von dem
                <lb/>versickel/ Super aspidem et basiliscum<note type="footnote">S. o. Anm. 104.</note> gesagt hab/ und zu
-               <lb/>seiner zeit (uber das itzt nachfolget) sagen werd.</p>
-            <p>
+               <lb/>seiner zeit (uber das itzt nachfolget) sagen werd.</p><p>
                <lb/>Wir halden alle/ das der Befehlhaber oder ein An-
                <lb/>wald/ den befelh sunderlich/ und vor allen behertzen/ und
                <lb/>auszrichten sol/ den yhm sein her/ in grosser not und in
@@ -1924,9 +1636,7 @@
                <lb/>umb/ dan er ertzeygt sein gemut mit eusserlichen geberden
                <lb/>als sprech er/ Ich solt dem diener fuesse waschen/ das wil
                <lb/>ich nicht thun/ ich wil das alle menschen mein fuesse sol-
-               <lb/>len kussen/ darausz wol zumercken/ wie er das mandat<note place="margin">Deu. xiii. </note>
-               <note place="margin">Ibi lege vindictam et</note>
-               <note place="margin">horripilabit tua pellis.</note>
+               <lb/>len kussen/ darausz wol zumercken/ wie er das mandat<note place="margin">Deu. xiii. </note><note place="margin">Ibi lege vindictam et</note><note place="margin">horripilabit tua pellis.</note>
                <lb/>heldet. Nu die weil er die schrifft gar umb keret/ so sollen
                <lb/>wir yhn hynfur auch keinen Comissarien Christi/ sonder
                <lb/>einen feynd gottis nennen/ und sein heuchler (die sagen/ der
@@ -1934,24 +1644,17 @@
                <lb/>last zureyssen/<note type="footnote">Vgl. <ref type="biblical">5.Mose 13,15</ref> Vg
 			 „statim percuties habitatores urbis illius in ore gladii, et delebis eam ac omnia
 								quæ in illa sunt, usque ad pecora.“</note> und ein newheit (durch einfurung und bewa-
-               <lb/>rung des alten und gotlichen befehlsz) an alle forcht machen.</p>
-            <p>
+               <lb/>rung des alten und gotlichen befehlsz) an alle forcht machen.</p><p>
                <lb/>Ich wolte noch vil mehr gesagt haben/ aber ich wil
-               <lb/>beschlissen/ und etzlich stuck in der feddern behalten.</p>
-            <p>
+               <lb/>beschlissen/ und etzlich stuck in der feddern behalten.</p><p>
                <pb n="[F2v]"/>
                <lb/>Efferung<note type="footnote">Wiederholung, Rache, vgl. <bibl>Götze, Glossar, 60</bibl>; <bibl>Lexer, Handwörterbuch 1, 106</bibl>.</note> unnd Repetition:
                <lb/>obvermelter yrrungen des Bapsts/ mit an-
-               <lb/>dern schrifften becleydet/ und gewappent.</p>
-            <p>
-               <note place="margin">Papatus est ens rationis</note>
-               <note place="margin">secundum Petrum nigri</note>
-               <note place="margin">ideo peccatum non tollit.<note type="footnote">Nach spätscholastisch-thomistischer Philosophie ist „das Papstum“ (<hi style="font-style:italic;">papatus</hi>) als eine Begrifflichkeit und Entität der Vernunft (<hi style="font-style:italic;">ens rationis</hi>) nur Gegenstand des Intellekts, kann keine realitären Relationen entwickeln und
+               <lb/>dern schrifften becleydet/ und gewappent.</p><p><note place="margin">Papatus est ens rationis</note><note place="margin">secundum Petrum nigri</note><note place="margin">ideo peccatum non tollit.<note type="footnote">Nach spätscholastisch-thomistischer Philosophie ist „das Papstum“ (<hi style="font-style:italic;">papatus</hi>) als eine Begrifflichkeit und Entität der Vernunft (<hi style="font-style:italic;">ens rationis</hi>) nur Gegenstand des Intellekts, kann keine realitären Relationen entwickeln und
 								keine realen Wirkungen erzielen. Vgl. <bibl>Nigri, Clypeus (1504) I, q. 4, fol. 7r</bibl>: „ens rationis est illud quod consequitur rem secundum quod est obiective in intellectu speculativo.“; <bibl>ebd., 7v</bibl>: „Primum ens rationis in nullo est subiective. […] ens rationis non est accidens
 								reale. […] Ens rationis a nullo est effective. […] ens rationis ad nihil refertur
 								realiter. […] Ens rationis in intellectu est obiective.“ Allerdings verschweigt
-								Karlstadt hier die Korrelation zwischen „ens rationis“ und „ens reale“.</note>
-               </note>
+								Karlstadt hier die Korrelation zwischen „ens rationis“ und „ens reale“.</note></note>
                <lb/>In und ausz obvertzelten schrifften/ mag meniglicher
                <lb/>erkennen/ das Bepstliche wirde/ niemandts zu einem
                <lb/>unbetriegischen got machet/ szonder lasset einen yeglichen
@@ -1975,29 +1678,23 @@
                <lb/>oder nit? Ist er kein mensch/ so kan er kein Bapst sein/<note place="margin">Heb. v.</note>
                <lb/>Dan der Pontifex sol ausz menschen erwelt sein<note type="footnote">Vgl. <ref type="biblical">Heb 5,1</ref> Vg
 			 „omnis namque pontifex ex hominibus adsumptus“.</note>/ auch
-               <lb/>sehen wir offentlich/ das die Bepste aller menschen<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> meuschen</note> un-
-               <lb/>tugenden und gebrechen mit der tat volbrengen.</p>
-            <p>
-               <lb/>Sie durstenn/ sie leydenn hunger/ sie trinckenn/ sie<note place="margin">iii.<note type="crit_app">
-                     <hi style="font-style:italic;">vom Editor verbessert aus</hi> ii.</note> Regum viii.</note>
+               <lb/>sehen wir offentlich/ das die Bepste aller menschen<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> meuschen</note> un-
+               <lb/>tugenden und gebrechen mit der tat volbrengen.</p><p>
+               <lb/>Sie durstenn/ sie leydenn hunger/ sie trinckenn/ sie<note place="margin">iii.<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> ii.</note> Regum viii.</note>
                <lb/>essen/ unnd sterben. Ist aber der Bapst ein mensch/ szo<note place="margin">ii. Paralip. vi.</note>
                <lb/>ist er auch ein sunder/ und sundiget. Dan. iii. Regum. viii
                <lb/>unnd .ii. Paralip. vi. spricht David alszo/ Kein mensch
                <lb/>ist/ dero nit sundiget.<note type="footnote">Vgl. <ref type="biblical">1.Kön 8,46</ref> Vg
 			 „non est enim homo qui non peccet“; 2.Chron. 6,36 Vg „neque enim est homo qui non peccet“.</note> Darumb folget von noten/ das der
-               <lb/>Bapst ein sunder ist/ und sundiget. Eya welcher darff<note place="margin">Pro. xx.</note>
-               <note place="margin">Lu. xviii.</note>
+               <lb/>Bapst ein sunder ist/ und sundiget. Eya welcher darff<note place="margin">Pro. xx.</note><note place="margin">Lu. xviii.</note>
                <lb/>sagen/ Mein hertz ist reyn/ und ich bin von den sunden
                <lb/>frey/?<note type="footnote">Vgl. <ref type="biblical">Spr 20,9</ref> Vg
 			 „quis potest dicere mundum est cor meum purus sum a peccato“.</note> Niemants/ dan die gleyszner/ die sprechen/ Ich
-               <lb/>bin nit wie die andern.<note type="footnote">Vgl. <ref type="biblical">Lk 18,11</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>bin nit wie die andern.<note type="footnote">Vgl. <ref type="biblical">Lk 18,11</ref><ref type="biblical"/> Vg
 			 „Pharisaeus stans haec apud se orabat, Deus gratias ago tibi quia non sum sicut
 								ceteri hominum“.</note> Die gerechten und warhafftigen
                <lb/>heyligen/ seint nicht allein sunder/ szonder sie fulen und
-               <pb n="[F3r]"/>
-               <note place="margin">Prover. xviii.</note>
+               <pb n="[F3r]"/><note place="margin">Prover. xviii.</note>
                <lb/>empfinden/ und urteylen und beschuldigen yhre sunde.
                <lb/>Als geschrieben/ Der gerecht ym anfang seiner red/ be-
                <lb/>claget und beschuldigt sich selber.<note type="footnote">Vgl. <ref type="biblical">Spr 18,17</ref> Vg
@@ -2032,11 +1729,9 @@
                <lb/>szo leugt er/ mit urlaub/ und bettet das Vater unszer be-
                <lb/>trieglich und felschlich. Die gerechten haben yhres be-
                <lb/>kentnisz lonung und grossen nutz. Ursach/ wan sie sich vor-
-               <lb/>urteylen/ szo aburteylet sie got/ und macht sie ledig/ Wan<note place="margin">i. Johan. i.</note>
-               <note place="margin">Esa. xliii.</note>
+               <lb/>urteylen/ szo aburteylet sie got/ und macht sie ledig/ Wan<note place="margin">i. Johan. i.</note><note place="margin">Esa. xliii.</note>
                <lb/>die gerechten yhre sund got beichten/ szo ist got getrew
-               <lb/>und vergibt sunde<note type="footnote">Vgl. <ref type="biblical">1.Joh 1,9</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>und vergibt sunde<note type="footnote">Vgl. <ref type="biblical">1.Joh 1,9</ref><ref type="biblical"/> Vg
 			 „si confiteamur peccata nostra, fidelis est et iustus ut remittat nobis
 								peccata.“</note>/ als Johannes geschrieben/ und got
                <lb/>durch Esaiam gesagt/ Bedenck du deiner sunde/ so wil
@@ -2050,15 +1745,13 @@
                <pb n="[F3v]"/>
                <lb/>Bapst/ und weer viel besser er regieret Teuffel/ Scor-
                <lb/>pion/ Tarander/ Schlangen/ Trachen/ und Schwein
-               <lb/>dan menschen.</p>
-            <p>
+               <lb/>dan menschen.</p><p>
                <lb/>Wir sollen den Bapst yhe fur keynen Pontifex und
                <lb/>pastor achten und halten/ wan er vorneynen (oder mit
                <lb/>einem mantel uns bergen) wolt/ das er sundiget/ yrret
                <lb/>und unrecht thut. Dan sein befelh/ welchen er teglich in
                <lb/>seinen henden sol haben/ saget klerlich/ das er ein sunder
-               <lb/>struichler und ein yrrender weglauffer ist. </p>
-            <p>
+               <lb/>struichler und ein yrrender weglauffer ist. </p><p>
                <lb/>Dan got spricht selber/ der synn und gedancken men-
                <lb/>schliches hertzen ist von jugenten zu den boszen geneiget<note place="margin">Joan. xviii</note>
                <lb/>und bereyt<note type="footnote">Vgl. <ref type="biblical">1.Mose 8,21</ref> Vg
@@ -2088,8 +1781,7 @@
                <lb/>und undunckeln wortten leszen odder horen leszen/ Le-
                <lb/>vitici an dem .viii. und .ix. capittel. Nemlich/ Octavo autem
                <lb/>die vocavit Moses Aaron dicens/ Accede ad aram et
-               <lb/>imola pro peccato tuo et populi.<note type="footnote">Vgl. <ref type="biblical">3.Mose 9,1</ref>
-                  <ref type="biblical"/> Vg
+               <lb/>imola pro peccato tuo et populi.<note type="footnote">Vgl. <ref type="biblical">3.Mose 9,1</ref><ref type="biblical"/> Vg
 			 „facto autem octavo die vocavit Moses Aaron et filios eius […]“; ebd., 9,7 „dixit et ad Aaron accede ad altare et immola pro peccato tuo.“</note> Aaron musset des an-
                <lb/>dern tags (do er yhe noch/nach freuscher heylickeit solt
                <lb/>gerochen haben) fur sein sund und des volckes opffern.<note type="footnote">Vgl. <ref type="biblical">3.Mose 9,8-22</ref>.</note>
@@ -2097,17 +1789,14 @@
                <lb/>warumb solt mir dan verbotten sein/ dem Bapst zusagen/
                <lb/>das er des andern tags/ nach erlangter Bepstlicher hey-
                <lb/>lickeit/ sunden und yrren kan (wie dan zusehen) das er sun-
-               <lb/>diget<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> undiget</note> und yrret. Ja ich darff yhm wol ansagen/ das der
+               <lb/>diget<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> undiget</note> und yrret. Ja ich darff yhm wol ansagen/ das der
                <lb/>Bapst mit allen seinen anhenger (das ist seinem Concilio)
                <lb/>in der geschrifft durch unwissenheit kan yrren und sundi-
                <lb/>gen/ dartzu gottis volck ym glauben yrren machen<note type="footnote">Vgl. <ref type="biblical">3.Mose 4,2f.</ref> Vg
 			 „loquere filiis Israhel anima cum peccaverit per ignorantiam […] si sacerdos qui
 								est unctus peccaverit delinquere faciens populum offeret pro peccato suo vitulum
 								inmaculatum Domino.“</note>/ als<note place="margin">Levit. iiii </note>
-               <lb/>Levitici ym .iiii. capittel geschrieben.</p>
-            <p>
-               <note place="margin">Arglistickeit dises Bapstes.</note>
+               <lb/>Levitici ym .iiii. capittel geschrieben.</p><p><note place="margin">Arglistickeit dises Bapstes.</note>
                <lb/>Ich weysz/ das disser Bapst viel ausz unwissenheit
                <lb/>thut/ ich wolt auch sein fast gern geschont haben/ szo wil
                <lb/>er mich zu hoch antasten/ und mocht mich mit sich in die
@@ -2136,8 +1825,7 @@
                <lb/>massen bedriglich und schalcklich wider mich gehandelt/
                <pb n="[F4v]"/>
                <lb/>Quia contra biblie tenorem et continentiam/ und wider
-               <lb/>naturlich und menschlich gesetz und recht.<note type="footnote">Karlstadt setzt das biblische Recht gegen das kanonische Prozessrecht, vgl. <bibl>Bubenheimer, Consonantia, 235 Anm. 170.</bibl>
-               </note> Das ich wey-<note place="margin">Bapst lernet.</note>
+               <lb/>naturlich und menschlich gesetz und recht.<note type="footnote">Karlstadt setzt das biblische Recht gegen das kanonische Prozessrecht, vgl. <bibl>Bubenheimer, Consonantia, 235 Anm. 170.</bibl></note> Das ich wey-<note place="margin">Bapst lernet.</note>
                <lb/>szen kan unnd wil. Doch szo der bapst lernen wolt/ wie
                <lb/>in solchen sachenn nach form unnd lauth heyliger Bi-
                <lb/>blien/ solt gerichtlich und rechtlich gehandelt und pro-
@@ -2147,8 +1835,7 @@
                <lb/>endgelden/ und mich von dem glauben lassen abfuren.
                <lb/>Neyn/ Ich wil sie besser angreyffen/ und wider dissen
                <lb/>Bapst mein gerechtickeit und klag vor fursten und hern
-               <lb/>schrifftlich furwenden.</p>
-            <p>
+               <lb/>schrifftlich furwenden.</p><p>
                <lb/>Wan er sich aber noch wolt entsinnen/ und zu Christo
                <lb/>dretten/ szo wolt ich yhm hend und fuesz kussenn. Aber
                <lb/>wil er starren/ und mir das wort gottis ausz meinem maul
@@ -2162,8 +1849,7 @@
                <lb/>yhe/ wie ich durch clare schrifften gethan/ etzlichen nar-
                <lb/>ren/ den Bapst ausz yhrem maul tzihen/ und yhn mit li-
                <lb/>nien und farben heyliger Biblien fur yhren augen/ ab
-               <lb/>gemalte/ furstellen. </p>
-            <p>
+               <lb/>gemalte/ furstellen. </p><p>
                <lb/>Cyrillus saget/ das die kirchen keynes heyligen ge-
                <lb/>burtstag sol feyhern/ auszgenommenn Christum<note type="footnote">Cyrillus von Alexandria: nur Feier der Geburt Christi, nicht von Heiligengeburtstagen = Namenstagen; im Zusammenhang der Auseinandersetzung mit Ostkirche über Christi Geburtstag?</note>/ Nun
                <lb/>ist der bapst yhe nit szo heylig als sanct Johannes der
@@ -2171,8 +1857,7 @@
                <lb/>vil Romer den jartag seiner erwelung und kronung fey-
                <lb/>hern/ und mit lichten und wachsz unnd vassen/ pulver/
                <lb/>und puchszen gesang/ begehen.<note type="footnote">Das päpstliche Krönungszeremoniell stand nicht nur in der Kritik der frühen Reformatoren, sondern hatte im Lauf des 15. Jahrhunderts immer ausgefeiltere und pompösere Formen angenommen. Die Wahl von Innozenz VIII. 1484 war vom Glockengeläut der Peterskirche und Kanonenschüssen von der Engelsburg begleitet, vgl. <bibl>Carlen, Zeremoniell, 11</bibl>. Zur Wahl Alexanders VI. 1492 waren die Straße mit Triumphpforten und Blumen geschmückt, im ganzen Land wurden Freudenfeuer entzündet, vgl. <bibl>Pastor, Päpste 3.1, 352f.</bibl>; <bibl>Carlen, Zeremoniell, 11</bibl>. Zwar nicht im Zusammenhang seiner Krönung, sondern im Zuge des Krieges mit Frankreich veranstaltete Papst Julius II. im Juni 1512 eine dreitägige Dankprozession und wurde mit einem Triumphzug vom Kapitol bis zur Engelsbrücke geehrt. <bibl>Pastor, Päpste 3.2, 855-857</bibl>. Zum Amtsantritt Leos X. wurde ein großer Festumzug mit mehr als 400 Berittene veranstaltet, die Straßen waren mit Triumphbögen, Girlanden und Teppichen geschmückt. Vgl. <bibl>Pastor, Päpste 4.1, 24-29</bibl>; s. auch Anm. 63.</note> Ist das nit geyrret/ szo
-               <lb/>synt die prediger monchen kein recht petler.</p>
-            <p>
+               <lb/>synt die prediger monchen kein recht petler.</p><p>
                <pb n="[G1r]"/>
                <lb/>Ich mein der Bapst yrre groblich/ das ehr sich lesset
                <lb/>anbetten/ als Platina sagt/ und ehren wie einen got.<note type="footnote">Platina: Kritik an göttlicher Anbetung des PapstesSpalatin hatte Luther im Vorfeld der Leipziger Disputation eine Ausgabe der Papstgeschichte Platinas zukommen lassen. Vgl. WA ...; Lyndal Roper: Martin Luther – Renegade and Prophet, London 2016, 137 Anm.
@@ -2181,16 +1866,13 @@
                <lb/>und stosset dem Keyszer die koniglich kron mit fuessen
                <lb/>auff sein heubt/ wie ich zu Rom gemalt gesehen<note type="footnote">Gemälde, auf dem Papst dem Kaiser die Krone mit dem Fuß auf Kopf stößt</note>/ unnd
                <lb/>nennet yhnen einen Aspidem und Basiliscum/ unnd sich
-               <lb/>eine geystliche Sunn der kirchen.<note type="footnote">Kaiser als Basilisk, Papst als geistliche Sonne in päpstlicher Propaganda </note>
-            </p>
-            <p>
+               <lb/>eine geystliche Sunn der kirchen.<note type="footnote">Kaiser als Basilisk, Papst als geistliche Sonne in päpstlicher Propaganda </note></p><p>
                <lb/>Ich weysz wol/ unnd sag das unverholen/ das der<note place="margin">i. Can. xiiii</note>
                <lb/>Bapst unnd alle Christen/ sie sint geistlich odder welt-
                <lb/>lich/ heylige schrifften mugen auszlegen/ ercleren/ erleuch-
                <lb/>ten/ szo sie dartzu geschickt seint/ und vermuglich.<note type="footnote">1. Can. 14? Vgl. CIC 10 c. 12: Auf Grund der Tiefe der Heiligen Schrift dringen nicht nur
 								schlichte, sondern auch gebildete Leute bei ihrer Erforschung nicht genügend
-								voran.</note> Aber<note place="margin">Deut. ix.<note type="footnote">Vgl. 5.Mose 9,7-29.</note>
-               </note>
+								voran.</note> Aber<note place="margin">Deut. ix.<note type="footnote">Vgl. 5.Mose 9,7-29.</note></note>
                <lb/>das die glossen/ ausz heydnischem born/ odder andersz
                <lb/>her/ dan ausz der Biblien solten fliessen/ unnd gnummen
                <lb/>werden/ gestehe ich keinem Christen/ Der Bapst musz
@@ -2200,8 +1882,7 @@
                <lb/>Deut. iiii. Ihr sollet zu gotlichem gesetz unnd geboten
                <lb/>und gerichten kein wort zugeben/ aber alszo. Yhr solt zu
                <lb/>keinem wortlin etwas zuthuen odder zuwerffenn/ yhr
-               <lb/>solt auch nicht von eynigem wortlin etwas nehmenn.<note type="footnote">Vgl. 5.Mose 4,2 Vg „non addetis ad verbum quod vobis loquor neque auferetis ex eo.“</note>
-               <note place="margin">Josue. xxiii.</note>
+               <lb/>solt auch nicht von eynigem wortlin etwas nehmenn.<note type="footnote">Vgl. 5.Mose 4,2 Vg „non addetis ad verbum quod vobis loquor neque auferetis ex eo.“</note><note place="margin">Josue. xxiii.</note>
                <lb/>Derwegen Josue gesagt/ Yhr sollet gleich in gottis ge-
                <lb/>setzen unnd gebotten gehen/ weder zu der rechten/ noch
                <lb/>zu der luchten odder lincken hand dreten.<note type="footnote">Vgl. Jos 23,6 Vg „ut custodiatis cuncta quae scripta sunt in volumine legis Mosi et non declinetis
@@ -2248,8 +1929,7 @@
                <lb/>menschen lerungen forchten/ Got wurt den Bepsten an
                <lb/>zweyffel yhren verdienten lon geben/ und wol belonen/
                <lb/>das die Bepstliche Statuten/ den vleysz zu der schrifft
-               <lb/>haben verhyndert.</p>
-            <p>
+               <lb/>haben verhyndert.</p><p>
                <lb/>Wie auch der Bapst zu der lincken hand/ wider got-
                <lb/>tis verbot/ gleydet/ und von und zu gotlichem gesetz nymbt
                <lb/>und brengt/ weer wil zusagen/ Die weil aber das disse
@@ -2259,24 +1939,16 @@
                <lb/>talen urteylet/ und alle gerichtliche handelung und verge-
                <lb/>bung der sunden/ auff seinen nutz und zunehmen gerich-
                <lb/>tet hat/ weil er dan yhe szo frevelich sich gegen den got-
-               <lb/>lichen reden stellet/ strebet und schreybet/ wer es kein wun-<note place="margin">Deu. xxvi</note>
-               <note place="margin">Roma. i.</note>
-               <note place="margin">Apocalip xx.</note>
+               <lb/>lichen reden stellet/ strebet und schreybet/ wer es kein wun-<note place="margin">Deu. xxvi</note><note place="margin">Roma. i.</note><note place="margin">Apocalip xx.</note>
                <pb n="[G2r]"/>
                <lb/>der/ das die plagen auff den Bapst fillen/ die Moses
                <lb/>und Paulus und Johannes in Apocalip’si‘ den verderbern
                <lb/>odder zusetzern unnd abnehmern der wortten heyliger
-               <lb/>Biblien getreyhet haben.<note type="footnote">Vgl. <ref type="biblical">5.Mose 13,5-10</ref>; <ref type="biblical">Röm 1,18</ref>; <ref type="biblical">Offb 20,11-15</ref>.</note>
-            </p>
-            <p>
+               <lb/>Biblien getreyhet haben.<note type="footnote">Vgl. <ref type="biblical">5.Mose 13,5-10</ref>; <ref type="biblical">Röm 1,18</ref>; <ref type="biblical">Offb 20,11-15</ref>.</note></p><p>
                <lb/>Ich wil den Christen ratten mit ernst/ sie geruchen und<note place="margin">Deu. xiii.</note>
                <lb/>wollen sich hynfure/ vor Bepstlichen gesetzen behutten/
                <lb/>und das sie die selbe weder lesen noch horen lesen. Dan
-               <lb/>Moyses hat wol gesagt/ aber got durch Moysen/ So<note place="margin">Hodie non diceret Christus</note>
-               <note place="margin">quod dicunt facite. Neque illud.</note>
-               <note place="margin">Qui vos audit/ me audit.<note type="footnote">
-                     <ref type="biblical">Lk 10,16</ref>.</note>
-               </note>
+               <lb/>Moyses hat wol gesagt/ aber got durch Moysen/ So<note place="margin">Hodie non diceret Christus</note><note place="margin">quod dicunt facite. Neque illud.</note><note place="margin">Qui vos audit/ me audit.<note type="footnote"><ref type="biblical">Lk 10,16</ref>.</note></note>
                <lb/>ein prophet auff stehen/ und euch new gotte (als sich der
                <lb/>Bapst) predigenn wurt/ odder auch von gottis wort
                <lb/>from<note type="footnote">fremd</note> wil machen/ dasselbe wort solt yhr nit horen/ dan
@@ -2293,10 +1965,8 @@
 								servietis et ipsi adherebitis.“</note>/ Der-
                <lb/>wegen sollen wir uns fursehen/ das uns bepstliche De-
                <lb/>creten/ nit vonn dem wort gottis abtzyhen/ odder ma-
-               <lb/>chen uns die Biblienn<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> Biblienu</note> unbekant/ an schmack unnd an
-               <lb/>safft.</p>
-            <p>
+               <lb/>chen uns die Biblienn<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> Biblienu</note> unbekant/ an schmack unnd an
+               <lb/>safft.</p><p>
                <lb/>Was aber Moyses selber von dem selben Prophe-
                <lb/>ten geschrieben<note type="footnote">Vgl. <ref type="biblical">ebd., 13,5</ref> Vg
 			 „Propheta autem ille aut fictor somniorum interficietur […].“</note>/ befehl ich den leszern/ ich wunsche nie-
@@ -2308,16 +1978,14 @@
                <lb/>sunst unnd ausserhalben des wort gottis/ ist ehr nit an-<note place="margin">Johan. x.</note>
                <lb/>ders/ dan ein mensch der ligen und drigen kan (quia om-
                <lb/>nis homo mendax) zuhalten. Derhalben uns Christus
-               <lb/>nit vorgebens<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> vorgebes</note> gesagt/ Mein Schoff horen meine stymme<note type="footnote">Vgl. <ref type="biblical">Joh 10,2-4</ref> Vg
+               <lb/>nit vorgebens<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> vorgebes</note> gesagt/ Mein Schoff horen meine stymme<note type="footnote">Vgl. <ref type="biblical">Joh 10,2-4</ref> Vg
 			 „qui autem intrat per ostium pastor est ovium/ huic ostiarius aperit et oves
 								vocem eius audiunt […] et oves illum sequuntur quia sciunt vocem eius.“</note>/
                <lb/>als solt er sagen/ welcher mein wort nit horet/ der ist nit
                <lb/>mein schaff. Unnd durch Ezechielem/ Ich wil meinn
                <lb/>schaff selber weyden<note type="footnote">Vgl. <ref type="biblical">Hes 34,15</ref> Vg
 			 „Ego pascam oves meas […].“</note>/ das ist/ ich gebe die weyd/ unnd
-               <lb/>kein ander. </p>
-            <p>
+               <lb/>kein ander. </p><p>
                <pb n="[G2v]"/>
                <lb/>Dem Bapst ist die weyd/ damit er uns/ und andere
                <lb/>Christen weyden solle/ in ein wahn geschudet/ das ist/
@@ -2333,13 +2001,10 @@
                <lb/>die yene/ szo gottis wort wider an tag helffen brengen/
                <lb/>als ketzer und unglaubige sollen getodt werdenn/ heyst
                <lb/>das nit geyrret/ szo ist das fewr kalt/ unnd der Bapst
-               <lb/>gut biblisch.</p>
-            <p>
-               <note place="margin">Ezechielis. xxxiiii.</note>
+               <lb/>gut biblisch.</p><p><note place="margin">Ezechielis. xxxiiii.</note>
                <lb/>Wee und aber wee den hyrtten/ die sich selber weyden/
                <lb/>die nit den herd oder samlung der schaffen suchen/ son-
-               <lb/>der sich selbst<note type="footnote">
-                  <ref type="biblical">Hes 34,2</ref> Vg
+               <lb/>der sich selbst<note type="footnote"><ref type="biblical">Hes 34,2</ref> Vg
 			 „Vae patoribus Israhel qui pascebant semet ipsos nonne greges pascuntur a
 								pastoribus.“</note>/ Darumb wil ich machenn (spricht got
                <lb/>Ezech. am .xxxiiii. capitel) das die hyrtten hynfur/ nach
@@ -2363,12 +2028,9 @@
                <lb/>thut) das die Christlichen hyrtten suchen sollen das
                <lb/>verloren was/ unnd wider zu der vorsamlung furenn/
                <lb/>Und das zergentzt odder zurbrochen ist/ widderumb
-               <lb/>zusammen &lt;gentsz pinden&gt;<note type="crit_app">
-                  <hi style="font-style:italic;">konjiziert für a</hi> pigentszden <hi style="font-style:italic;">A a</hi>
-               </note>/ Und das kranck und schwach
+               <lb/>zusammen &lt;gentsz pinden&gt;<note type="crit_app"><hi style="font-style:italic;">konjiziert für a</hi> pigentszden <hi style="font-style:italic;">A a</hi></note>/ Und das kranck und schwach
                <lb/>widderumb starck unnd vest machenn/ Und das/ die
-               <lb/>veyste unnd starck seint/ behut und bewaret werdenn.</p>
-            <p>
+               <lb/>veyste unnd starck seint/ behut und bewaret werdenn.</p><p>
                <pb n="[G3r]"/>
                <lb/>Aber unszer bapst wendet das karten blat umb/ er wil
                <lb/>uns mit seinen wortten speyszen/ das got hasset/ Er wil
@@ -2376,8 +2038,7 @@
                <lb/>nit gesund machen mit gotlichem wort/ sunder er geden-
                <lb/>cket wie er sich speysz/ und den schefflin das gelt ausz dem
                <lb/>beuttel breng/ und die/ szo das weren/ verjage/ und die
-               <lb/>veistickeit auszz yhrem leyb nehm/ das ich itzt nit sagen wil.</p>
-            <p>
+               <lb/>veistickeit auszz yhrem leyb nehm/ das ich itzt nit sagen wil.</p><p>
                <lb/>Disses buchlin hab ich gestrenger/ gunstiger her/
                <lb/>ewr gestrengheit und gunst/ in eehafften/ und diszer mey-
                <lb/>nung zugeschrieben/ Ich weysz/ das ich niemants/ mit<note place="margin">Entschuldigung.</note>
@@ -2450,8 +2111,7 @@
                <lb/>kan keyner contumax getzelt werden/ er habe den eygent-
                <lb/>lich bewust umb die Citation odder Monitorium/ Szo
                <lb/>kan auch der termin nicht er anfahen zulauffen/ dan an
-               <lb/>dem tag des<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> tagdes</note> wissens/ da einer anfecht zuwissen/ das er
+               <lb/>dem tag des<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> tagdes</note> wissens/ da einer anfecht zuwissen/ das er
                <lb/>vermant oder berufft<note type="footnote">Die Beschwerdesupplik ist beim Unterrichter einzuwenden („interponere“), mündlich sofort nach Verkündigung des Urteils („viva voce“) oder schriftlich innerhalb von 10 Tagen. Vgl. <bibl>HRG<hi rend="super">2</hi> 1, 270</bibl>.</note>/ Und wiewol ein gerucht/ etwan
                <lb/>einen mag vorstendigen/ das er citirt odder monirt ist/
                <lb/>dannoch bericht es keinen eygentlich/ sonderlich szo ei-
@@ -2477,13 +2137,9 @@
                <lb/>alle ding werden heymlich/ listiglich unnd bedrieglich/
                <lb/>widder mich armen knecht gesucht unnd furgenommen/
                <lb/>darausz ewr gunst leichtiglich kan abnehmen/ was der
-               <lb/>Bapst suchet.</p>
-            <p>
+               <lb/>Bapst suchet.</p><p>
                <pb n="[G4v]"/>
-               <lb/>Erbiettung<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert für</hi> Erbiettnug</note>
-               <note type="footnote">Petitio, vgl. <bibl>DWb 3, 727</bibl>. Reichsrechtlich war eine Appellation eine Anrufung eines höher als die Erstinstanz rangierenden Richters bzw. Gerichts zur Erhebung einer Beschwerde (Klage) wegen Rechtsverweigerung. Das kanonische Recht erlaubte Appellationen gegen Endurteile und Zwischenentscheidungen. Vgl. <bibl>HRG<hi rend="super">2</hi> 1, 268-271. Angesichts dessen, dass Karlstadt gegen die höchste kirchengerichtliche Instanz, die römische Kurie, eine Beschwerde einlegte, verfasste er eine Appellation neuer Art. Als Rechtsbeistand appellierte er an die Adligen von Thüngen aus seiner fränkischen Heimat, vor denen</bibl> er das Recht, seine biblisch gegründeten Thesen vor einem Gremium von Theologen verteidigen zu dürfen, erbittet.</note>.</p>
-            <p>
+               <lb/>Erbiettung<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> Erbiettnug</note><note type="footnote">Petitio, vgl. <bibl>DWb 3, 727</bibl>. Reichsrechtlich war eine Appellation eine Anrufung eines höher als die Erstinstanz rangierenden Richters bzw. Gerichts zur Erhebung einer Beschwerde (Klage) wegen Rechtsverweigerung. Das kanonische Recht erlaubte Appellationen gegen Endurteile und Zwischenentscheidungen. Vgl. <bibl>HRG<hi rend="super">2</hi> 1, 268-271. Angesichts dessen, dass Karlstadt gegen die höchste kirchengerichtliche Instanz, die römische Kurie, eine Beschwerde einlegte, verfasste er eine Appellation neuer Art. Als Rechtsbeistand appellierte er an die Adligen von Thüngen aus seiner fränkischen Heimat, vor denen</bibl> er das Recht, seine biblisch gegründeten Thesen vor einem Gremium von Theologen verteidigen zu dürfen, erbittet.</note>.</p><p>
                <lb/>Nun weysz ich/ und wil das mit recht beweyszen/
                <lb/>das ich mein leer mit fingern<note type="footnote">Der Ausdruck „mit fingern [...] dewten“ kann auf die in Marginalien zeitgenössischer Drucke üblichen Kommentarhände deuten, die Belegstellen in der Bibel bzw. allgemein in Quellen anzeigen. Karlstadt dokumentiert damit die feste Verankerung seiner
 								Argumentation in der heiligen Schrift.</note> in heyliger geschrifften dew-
@@ -2497,8 +2153,7 @@
                <lb/>lert hab/ bekrefftigen. Ich hoff auch yhr und alle christ
                <lb/>glaubigen werden erkennen/ das diszes mein erbitten/
                <lb/>zu recht und gleich/ redlich/ erbarlich/ und fur gnugsam
-               <lb/>sol geacht werden/ zu recht. </p>
-            <p>
+               <lb/>sol geacht werden/ zu recht. </p><p>
                <lb/>Ich were auch gantz willig und bereyt/ etzliche Car-
                <lb/>dinalen und bischoffen und andere prelaten Teutscher
                <lb/>und Welscher Nation/ zukyeszen unnd nennen/ meiner
@@ -2511,15 +2166,11 @@
                <lb/>thuen. Und ob sie in hochstem fleysz mein gerechtickeit
                <lb/>hyn und her wenden und durchsehen/ unnd das mein
                <lb/>sach gut ist mercken wurden/ Dannoch ist zuschewen/
-               <lb/>das sie/ wie Pilatus/ sprechen dorften<note type="crit_app">
-                  <hi style="font-style:italic;">vom Editor verbessert aus</hi> dorsten</note>/ Ego non inve-
-               <lb/>nio causam in eo<note type="footnote">
-                  <ref type="biblical">Joh 19,6.</ref>
-               </note>/ Der bapst wurds ynnen werden/ und
+               <lb/>das sie/ wie Pilatus/ sprechen dorften<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert aus</hi> dorsten</note>/ Ego non inve-
+               <lb/>nio causam in eo<note type="footnote"><ref type="biblical">Joh 19,6.</ref></note>/ Der bapst wurds ynnen werden/ und
                <lb/>mochten/ villeicht/ yhr hende in meinem blut waschen/
                <lb/>das yhr selber wol kont achten/ unnd ich weysz exempel
-               <lb/>zu Rom. </p>
-            <p>
+               <lb/>zu Rom. </p><p>
                <lb/>Weil nu der bapst widder billickeit alszo geforcht/
                <lb/>weysz ich nit/ wu ich mich hyn keren sol/ doch wolt ich
                <lb/>yhe gerne erkentnusz horen und annehmen. Ich darff dem
@@ -2527,14 +2178,11 @@
                <lb/>fangen/ derhalben zubefaren/ das er mit seinen auffge-
                <pb n="[G5r]"/>
                <lb/>spandtenn klawbern unnd gespitzten siggeln/ alle ding
-               <lb/>durch gewalt und unrecht thun werd. </p>
-            <p>
+               <lb/>durch gewalt und unrecht thun werd. </p><p>
                <lb/>Szo weisz ich viel redliche Bischoffe und Cardi-
                <lb/>nalen/ die der Biblien emsiglich noch suchen und folgen/
                <lb/>sie mussen aber das thier forchten/ das mich zerreyssen
-               <lb/>und fressen wil.<note type="footnote">Vermutlich sucht Karlstadt hier über den bewidmeten Neidhard von Thüngen einen Schulterschluss zu dessen Verwandten Konrad als Bischof von Würzburg zu erringen. Vgl. hierzu <bibl>Bubenheimer, Andreas Rudolff Bodenstein, 8</bibl>.</note> 
-            </p>
-            <p>
+               <lb/>und fressen wil.<note type="footnote">Vermutlich sucht Karlstadt hier über den bewidmeten Neidhard von Thüngen einen Schulterschluss zu dessen Verwandten Konrad als Bischof von Würzburg zu erringen. Vgl. hierzu <bibl>Bubenheimer, Andreas Rudolff Bodenstein, 8</bibl>.</note> </p><p>
                <lb/>Ich kan auch die elenden kugeltreger<note type="footnote">Mönch, Dominikaner, vgl. <bibl>DWb 11, 1578</bibl>: „kogel, f. cuculla, cucullus, kappe, kapuze, aus dem lat., auch kugel, gugel“.</note>/ die sich itzt
                <lb/>Theologen schreyben (und sein doch nicht myndersz/
                <lb/>dan gelarten in der schrifft) nit erwelen/ Dan ich binn
@@ -2552,10 +2200,8 @@
                <lb/>fodert verdampt/ Szo noehmen die keszpetler<note type="footnote">Mendikanten, insonderheit Franziskaner.</note> in kesz
                <lb/>kalp oder ochszen und brieden mich/ er sie mich fragten/
                <lb/>Des wolt ich ein grob exempel von den grawen holtz-
-               <lb/>schuhern geben. </p>
-            <p>
-               <lb/>Leyhen seint disse zeit verstendiger/ geschickter/ und<note place="margin">Papa suffuratus est</note>
-               <note place="margin">verbum dei de ore populi.</note>
+               <lb/>schuhern geben. </p><p>
+               <lb/>Leyhen seint disse zeit verstendiger/ geschickter/ und<note place="margin">Papa suffuratus est</note><note place="margin">verbum dei de ore populi.</note>
                <lb/>gelarter in der heyligenn schrifft/ dan etzliche unnd viel
                <lb/>geistliche prelaten. Aber die vermaledeyten und ketzeri-
                <lb/>sche Canones haben den leyhen das urteil und erkent-
@@ -2569,9 +2215,7 @@
                <lb/>pfaffenn/ doch das ich ein sychers/ strackesz/ redliches
                <lb/>und ungeferlichsz geleyd/ an ungeferlich stad/ bisz wid-
                <lb/>der in mein gewarsam/ zuvor hab/ wie ich in meiner be-
-               <lb/>dingung protestiret und bedingt hab.<note type="footnote">Ersuchen um sicheres Geleit in der <hi style="font-style:italic;">Bedingung</hi> (KGK 158).</note>
-            </p>
-            <p>
+               <lb/>dingung protestiret und bedingt hab.<note type="footnote">Ersuchen um sicheres Geleit in der <hi style="font-style:italic;">Bedingung</hi> (KGK 158).</note></p><p>
                <lb/>Damit ich aber yegliche verdechtickeit meyd/ unnd
                <lb/>von mir/ auff den Bapst schyeb/ Verman ich den Ro-
                <lb/>mischen Bischoff/ bey aller seiner freuntschafft/ bey sei-
@@ -2592,8 +2236,7 @@
                <lb/>das er die feynd unnd sein widerreder mit heylsamer
                <lb/>schrifft ubirwind unnd nyderleeg<note type="footnote">Vgl. <ref type="biblical">Tit 1,9</ref> Vg
 			 „ut potens sit et exhortari in doctrina sana et eos, qui contradicunt
-								arguere.“</note>/ das hat Paulus ge-<note place="margin">actuum. xvi.</note>
-               <note place="margin">Deut. xvii. et xiiii</note>
+								arguere.“</note>/ das hat Paulus ge-<note place="margin">actuum. xvi.</note><note place="margin">Deut. xvii. et xiiii</note>
                <lb/>than<note type="footnote">Vgl. <ref type="biblical">Apg 16,5</ref> handelt von der Vermehrung der Gemeinden in Kleinasien nach Paulus’ Predigten, <ref type="biblical">ebd., 16,37-40</ref> von seiner Weigerung, das Gefängnis zu verlassen, wenn ihn nicht die städtischen Autoritäten, die ihn eingekerkert hatten, persönlich darum bitten würden.</note>/ und Moysen gebotten/ das die pfaffen alle dun-
                <lb/>ckelheit und spenne der schrifften unnd sachen/ nach den
                <lb/>gesetz/ nit nach yhren eygen kopffen/ sollen erleuchten
@@ -2622,19 +2265,6 @@
                <lb/>Wie yhr euch got wolt befohlen habenn/ dero ewr ge-
                <lb/>strengheit geruch in gesuntheit zuhalten. Datum Wit-
                <lb/>temberg an dem .xvii. tag Octobris/ In dem Tausent
-               <lb/>Funffhundert und zwentzigsten Jar. </p>
-         </div>
-         <div>
-            <p>
+               <lb/>Funffhundert und zwentzigsten Jar. </p></div><div><p>
                <lb/>Ich wil dem Bapst zwue grosse ordten
-               <lb/>anschreyben/ bisz zu seyner zeyt. </p>
-         </div>
-         <div/>
-         <div/>
-         <div/>
-         <div/>
-         <div/>
-         <div/>
-      </body>
-   </text>
-</TEI>
+               <lb/>anschreyben/ bisz zu seyner zeyt. </p></div><div/><div/><div/><div/><div/><div/></body></text></TEI>
