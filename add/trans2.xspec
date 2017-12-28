@@ -62,5 +62,17 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="lem und rdg">
+			<x:context>
+				<p>
+					<lb/>Wie<note type="crit_app">Die <hi style="font-style:italic;">a</hi></note> heylickeit in diessem le-
+				</p>
+			</x:context>
+			<x:expect label="lem und rdg">
+				<p>
+					<lb/><app><lem>Wie</lem><rdg wit="#a">Die</rdg></app>  heylickeit in diessem le-
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>

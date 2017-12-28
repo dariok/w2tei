@@ -89,7 +89,7 @@
 						<xsl:variable name="wit" select="normalize-space($note/tei:hi)"/>
 						<app>
 							<lem><xsl:value-of select="$last"/></lem>
-							<rdg wit="{$wit}"><xsl:value-of select="normalize-space($note/text()[1])"/></rdg>
+							<rdg wit="#{$wit}"><xsl:value-of select="normalize-space($note/text()[1])"/></rdg>
 						</app>
 					</xsl:when>
 					<xsl:otherwise>
