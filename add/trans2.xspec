@@ -49,4 +49,18 @@
 			</p>
 		</x:expect>
 	</x:scenario>
+	<x:scenario label="krit. Anmerkungen">
+		<x:scenario label="einmal vom Editor verbessert für">
+			<x:context>
+				<p>
+					<lb/>auszlegen/ unnd<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> unud</note> durch die schrifft beweyszen/ Das alle
+				</p>
+			</x:context>
+			<x:expect label="sic und corr">
+				<p>
+					<lb/>auszlegen/ <choice><sic>unud</sic><corr>unnd</corr></choice>  durch die schrifft beweyszen/ Das alle
+				</p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
