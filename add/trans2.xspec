@@ -38,10 +38,15 @@
 		</x:expect>
 	</x:scenario>
 	<x:scenario label="quote">
-		<x:xontext>
+		<x:context>
 			<p>
 				<lb/>che kloster erbauten. Wie sie auch yhre keesz secke<note type="footnote"><bibl>DWb 11, 257</bibl>: „Käsesack: sack in den der quark gethan wird, wenn er unter die presse kommt“.</note> ful-
 			</p>
-		</x:xontext>
+		</x:context>
+		<x:expect label="Umsetzung mit quote">
+			<p>
+				<lb/>che kloster erbauten. Wie sie auch yhre keesz secke<note type="footnote"><bibl>DWb 11, 257</bibl>: <quote>Käsesack: sack in den der quark gethan wird, wenn er unter die presse kommt</quote>.</note> ful-
+			</p>
+		</x:expect>
 	</x:scenario>
 </x:description>
