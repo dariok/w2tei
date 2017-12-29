@@ -13,6 +13,20 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	
+	<xsl:template match="tei:teiHeader">
+		<teiHeader>
+			<xsl:apply-templates select="node()" />
+		</teiHeader>
+	</xsl:template>
+	<xsl:template match="tei:sourceDesc">
+		<sourceDesc>
+			<listWit>
+				<witness xml:id="A" />
+			</listWit>
+			<xsl:comment>TODO witness eintragen</xsl:comment>
+		</sourceDesc>
+	</xsl:template>
+	
 	<xsl:template match="tei:p">
 		<p>
 			<xsl:apply-templates select="node()" />
@@ -53,9 +67,6 @@
 		</xsl:analyze-string>
 	</xsl:template>
 	
-	<!-- Wird im Template für den text() ausgegeben -->
-	<xsl:template match="tei:note[@type = 'crit_app']" />
-	
 	<xsl:template match="text()[not(ancestor::tei:note)]">
 		<xsl:choose>
 			<xsl:when test="ends-with(normalize-space(), '-')
@@ -69,35 +80,6 @@
 			<xsl:when test="preceding-sibling::node()[1][self::tei:lb] and
 				ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
 				<xsl:value-of select="substring-after(., ' ')" />
-			</xsl:when>
-			<xsl:when test="following-sibling::node()[1][self::tei:note[@type = 'crit_app']]">
-				<xsl:variable name="last" select="tokenize(., ' ')[last()]"/>
-				<xsl:variable name="front" select="wdb:substring-before-last(., ' ')" />
-				<xsl:variable name="note" select="following-sibling::tei:note[1]"/>
-				
-				<xsl:value-of select="string-join($front, ' ')"/>
-				<xsl:text> </xsl:text>
-				<xsl:choose>
-					<xsl:when test="$note/tei:hi[. = 'vom Editor verbessert für']">
-						<choice>
-							<sic><xsl:value-of select="normalize-space($note/tei:hi/following-sibling::text())"/></sic>
-							<corr><xsl:value-of select="$last"/></corr>
-						</choice>
-					</xsl:when>
-					<xsl:when test="$note/node()[1][self::text()]">
-						<!-- TODO später für mehrere rdg anpassen -->
-						<xsl:variable name="wit" select="normalize-space($note/tei:hi)"/>
-						<app>
-							<lem><xsl:value-of select="$last"/></lem>
-							<rdg wit="#{$wit}"><xsl:value-of select="normalize-space($note/text()[1])"/></rdg>
-						</app>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:value-of select="$last"/>
-						<xsl:sequence select="$note"/>
-					</xsl:otherwise>
-				</xsl:choose>
-				<xsl:text> </xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="." />
