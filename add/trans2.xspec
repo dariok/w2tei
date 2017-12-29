@@ -65,4 +65,48 @@
 			</p>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="Absätze">
+		<x:scenario label="Absatz mit FN">
+			<x:context>
+				<p>
+					<lb/>Viel gelarten und ungelarten/ gestrenger her und
+					<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
+					<lb/>heylig mache/ und umbkere/ das erwelter und bestetig-
+					<lb/>ter Bapst/ in keinen weg yrren und sundigen/ auch nie-
+					<lb/>mants gewalt odder unrecht thun kan/ unnd sprechen/
+					<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
+					<lb/>Seel beschediget/ aber sunst ubel thunn/ das ehr das nit
+					<lb/>thue/ als ein Bapst/ sunder als ein mensch/ es sey auch
+					<lb/>nit unrecht/ was er furnympt. Item er kan niemandts
+					<lb/>vorfuren und betriegen/ darumb man auch den vorstor-
+					<lb/>ben Bepsten/ kein seel Messe nach halten sol/ und weysz
+					<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
+					<lb/>und schreyben den bapst einen got aller menschen. Item<note place="margin">Jesse zwu meyln von <rs type="place"><!--TODO ref eintragen-->Torgaw</rs>.<note type="footnote">Der Ort <rs type="place"><!--TODO ref eintragen-->Jessen</rs> an der Elster ist ungefähr 30 km von <rs type="place"><!--TODO ref eintragen-->Torgau</rs> entfernt, also fast 4 Meilen. Karlstadt ironisiert und bricht die heilsgeschichtliche Tradition, vgl. Anm. 3.</note></note>
+					<lb/>einen lawen de tribu Juda/ Radix vonn Jesse/ der zu-schleusset/ und keiner schleusset auff etc.<note type="footnote">Vgl. <ref type="biblical">Offb 5,5</ref> Vg
+						„Ecce vicit leo de tribu Iuda radix David/ aperire librum [...].“ Die Wurzel Jesse, das Stammgeschlecht <rs type="person"><!--TODO ref eintragen-->Davids</rs>, aus der der Messias entstammt, geht zurück auf <ref type="biblical">Jes 11,1-10</ref>. Aus ihr bezog sich die heilsgeschichtliche Legitimation der gegenwärtigen
+						Kirche, die sich im Glauben in apostolischer und ungebrochener Kontinuität verstand.
+						Die Symbolisierung Judas durch einen Löwen findet sich in <ref type="biblical">1.Mose 49,9</ref>. Karlstadt nutzt die Synonymität mit dem Namen Papst <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> Zugleich verbindet er diese Textstelle mit <ref type="biblical">Offb 3,7</ref> Vg
+						„qui aperit et nemo cludit, et cludit et nemo aperit.“</note></p>
+			</x:context>
+			<x:expect label="identisch, zwei quote aufgelöst, ein gap ersetzt, mehrere Trennungen">
+				<p>
+					<lb/>Viel gelarten und ungelarten/ gestrenger her und
+					<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
+					<lb/>heylig mache/ und umbkere/ das erwelter und <w>bestetig<lb break="no"/>ter</w> Bapst/ in keinen weg yrren und sundigen/ auch <w>nie<lb break="no"/>mants</w> gewalt odder unrecht thun kan/ unnd sprechen/
+					<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
+					<lb/>Seel beschediget/ aber sunst ubel thunn/ das ehr das nit
+					<lb/>thue/ als ein Bapst/ sunder als ein mensch/ es sey auch
+					<lb/>nit unrecht/ was er furnympt. Item er kan niemandts
+					<lb/>vorfuren und betriegen/ darumb man auch den <w>vorstor<lb break="no"/>ben</w> Bepsten/ kein seel Messe nach halten sol/ und weysz
+					<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
+					<lb/>und schreyben den bapst einen got aller menschen. Item<note place="margin">Jesse zwu meyln von <rs type="place"><!--TODO ref eintragen-->Torgaw</rs>.<note type="footnote">Der Ort <rs type="place"><!--TODO ref eintragen-->Jessen</rs> an der Elster ist ungefähr 30 km von <rs type="place"><!--TODO ref eintragen-->Torgau</rs> entfernt, also fast 4 Meilen. Karlstadt ironisiert und bricht die heilsgeschichtliche Tradition, vgl. Anm. 3.</note></note>
+					<lb/>einen lawen de tribu Juda/ Radix vonn Jesse/ der zu-schleusset/ und keiner schleusset auff etc.<note type="footnote">Vgl. <ref type="biblical">Offb 5,5</ref> Vg
+						<quote>Ecce vicit leo de tribu Iuda radix David/ aperire librum <gap />.</quote> Die Wurzel Jesse, das Stammgeschlecht <rs type="person"><!--TODO ref eintragen-->Davids</rs>, aus der der Messias entstammt, geht zurück auf <ref type="biblical">Jes 11,1-10</ref>. Aus ihr bezog sich die heilsgeschichtliche Legitimation der gegenwärtigen
+						Kirche, die sich im Glauben in apostolischer und ungebrochener Kontinuität verstand.
+						Die Symbolisierung Judas durch einen Löwen findet sich in <ref type="biblical">1.Mose 49,9</ref>. Karlstadt nutzt die Synonymität mit dem Namen Papst <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> Zugleich verbindet er diese Textstelle mit <ref type="biblical">Offb 3,7</ref> Vg
+						<quote>qui aperit et nemo cludit, et cludit et nemo aperit.</quote></note></p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
