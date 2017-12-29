@@ -15,7 +15,7 @@
 	
 	<xsl:template match="tei:*">
 		<xsl:element name="{name()}">
-			<xsl:apply-templates select="node()" />
+			<xsl:apply-templates select="@* | node()" />
 		</xsl:element>
 	</xsl:template>
 	
@@ -57,4 +57,8 @@
 	</xsl:template>
 	
 	<xsl:template match="tei:note[@type='crit_app']" />
+	
+	<xsl:template match="@*">
+		<xsl:copy-of select="." />
+	</xsl:template>
 </xsl:stylesheet>
