@@ -3,10 +3,21 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
+	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="xs"
 	version="2.0">
 	
 	<xsl:include href="../string-pack.xsl" />
+	
+	<xsl:template match="/">
+		<xsl:apply-templates />
+	</xsl:template>
+	
+	<xsl:template match="tei:*">
+		<xsl:element name="{name()}">
+			<xsl:apply-templates select="node()" />
+		</xsl:element>
+	</xsl:template>
 	
 	<xsl:template match="text()">
 		<xsl:choose>
@@ -39,6 +50,11 @@
 				</xsl:choose>
 				<xsl:text> </xsl:text>
 			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="." />
+			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	
+	<xsl:template match="tei:note[@type='crit_app']" />
 </xsl:stylesheet>
