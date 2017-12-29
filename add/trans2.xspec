@@ -89,7 +89,7 @@
 						Die Symbolisierung Judas durch einen Löwen findet sich in <ref type="biblical">1.Mose 49,9</ref>. Karlstadt nutzt die Synonymität mit dem Namen Papst <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> Zugleich verbindet er diese Textstelle mit <ref type="biblical">Offb 3,7</ref> Vg
 						„qui aperit et nemo cludit, et cludit et nemo aperit.“</note></p>
 			</x:context>
-			<x:expect label="identisch, zwei quote aufgelöst, ein gap ersetzt, mehrere Trennungen">
+			<x:expect label="identisch, zwei quote aufgelöst,mehrere Trennungen">
 				<p>
 					<lb/>Viel gelarten und ungelarten/ gestrenger her und
 					<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
