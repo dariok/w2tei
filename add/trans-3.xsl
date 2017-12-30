@@ -4,7 +4,7 @@
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xmlns="http://www.tei-c.org/ns/1.0"
-	exclude-result-prefixes="xs"
+	exclude-result-prefixes="#all"
 	version="2.0">
 	
 	<xsl:include href="../string-pack.xsl" />
@@ -51,6 +51,16 @@
 					</xsl:otherwise>
 				</xsl:choose>
 				<xsl:text> </xsl:text>
+			</xsl:when>
+			<xsl:when test="matches(., '&lt;.+&gt;')">
+				<xsl:analyze-string select="." regex="&lt;.+&gt;">
+					<xsl:matching-substring>
+						<supplied><xsl:value-of select="substring(substring-before(., '&gt;'), 2)"/></supplied>
+					</xsl:matching-substring>
+					<xsl:non-matching-substring>
+						<xsl:value-of select="."/>
+					</xsl:non-matching-substring>
+				</xsl:analyze-string>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="." />
