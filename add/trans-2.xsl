@@ -26,6 +26,9 @@
 			<xsl:comment>TODO witness eintragen</xsl:comment>
 		</sourceDesc>
 	</xsl:template>
+	<xsl:template match="tei:author">
+		<editor><xsl:apply-templates /></editor>
+	</xsl:template>
 	
 	<xsl:template match="tei:p">
 		<p>
