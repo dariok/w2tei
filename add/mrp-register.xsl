@@ -34,7 +34,7 @@
 		</xsl:variable>
 		
 		<xsl:variable name="step3">
-			<xsl:analyze-string select="$step2" regex=" [XLIV]+( f?f\.)?,?">
+			<xsl:analyze-string select="$step2" regex="[ -]?[XLIV]+[^\.]( f?f\.)?,?">
 				<xsl:non-matching-substring>
 					<xsl:value-of select="normalize-space(.)"/>
 				</xsl:non-matching-substring>
