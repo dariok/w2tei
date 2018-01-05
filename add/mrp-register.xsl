@@ -13,8 +13,17 @@
 	<xsl:import href="../word-pack.xsl"/>
 	
 	<xsl:template match="/">
-		<list>
+		<xsl:variable name="entries">
 			<xsl:apply-templates select="//w:p"/>
+		</xsl:variable>
+		
+		<list>
+			<xsl:for-each select="distinct-values($entries/*)">
+				<xsl:sort select="normalize-space(current())" />
+				<entry>
+					<xsl:sequence select="current()"/>
+				</entry>
+			</xsl:for-each>
 		</list>
 	</xsl:template>
 	
@@ -38,7 +47,7 @@
 		</xsl:variable>
 		
 		<xsl:variable name="step4">
-			<xsl:analyze-string select="$step3" regex="([A-Z] ([^A-Z] )+[^A-Z(])">
+			<xsl:analyze-string select="$step3" regex="([A-ZČ] ([^A-ZČ] )*[^A-ZČ(])">
 				<xsl:matching-substring>
 					<xsl:value-of select="replace(., ' ', '')"/>
 				</xsl:matching-substring>
@@ -56,6 +65,9 @@
 	</xsl:template>
 	
 	<xsl:template match="w:r">
+		<xsl:if test="w:rPr/w:vertAlign">
+			<xsl:text>, </xsl:text>
+		</xsl:if>
 		<xsl:apply-templates select="w:t" />
 	</xsl:template>
 </xsl:stylesheet>
