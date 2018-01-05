@@ -101,8 +101,8 @@
 		</xd:return>
 	</xd:doc>
 	<xsl:function name="wdb:substring-after-if-starts">
-		<xsl:param name="s" />
-		<xsl:param name="c" />
+		<xsl:param name="s" as="xs:string" />
+		<xsl:param name="c" as="xs:string" />
 		<xsl:value-of select="if(starts-with($s, $c)) then substring-after($s, $c) else $s"/>
 	</xsl:function>
 	
@@ -116,8 +116,8 @@
 		</xd:param>
 	</xd:doc>
 	<xsl:function name="wdb:substring-before-last">
-		<xsl:param name="s" />
-		<xsl:param name="c" />
+		<xsl:param name="s" as="xs:string" />
+		<xsl:param name="c" as="xs:string" />
 		<xsl:value-of select="string-join(tokenize(normalize-space($s), $c)[not(position() = last())], $c)" />
 	</xsl:function>
 	
