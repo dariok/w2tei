@@ -26,11 +26,6 @@
 		<xsl:variable name="step1" select="normalize-space(wdb:substring-after-if-starts(normalize-space($val), '-'))"/>
 			
 		<xsl:variable name="step2">
-			<!--<xsl:analyze-string select="$step1" regex=" \d+( f?f\.)?,?">
-				<xsl:non-matching-substring>
-					<xsl:value-of select="wdb:substring-before(., 'siehe')"/>
-				</xsl:non-matching-substring>
-			</xsl:analyze-string>-->
 			<xsl:value-of select="wdb:substring-before($step1, 'siehe')"/>
 		</xsl:variable>
 		
@@ -42,9 +37,20 @@
 			</xsl:analyze-string>
 		</xsl:variable>
 		
-		<xsl:if test="string-length($step3) &gt; 0">
+		<xsl:variable name="step4">
+			<xsl:analyze-string select="$step3" regex="([A-Z] ([^A-Z] )+[^A-Z(])">
+				<xsl:matching-substring>
+					<xsl:value-of select="replace(., ' ', '')"/>
+				</xsl:matching-substring>
+				<xsl:non-matching-substring>
+					<xsl:value-of select="."/>
+				</xsl:non-matching-substring>
+			</xsl:analyze-string>
+		</xsl:variable>
+		
+		<xsl:if test="string-length($step4) &gt; 0">
 			<entry>
-				<xsl:value-of select="$step3"/>
+				<xsl:value-of select="$step4"/>
 			</entry>
 		</xsl:if>
 	</xsl:template>
