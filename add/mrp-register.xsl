@@ -17,14 +17,21 @@
 			<xsl:apply-templates select="//w:p"/>
 		</xsl:variable>
 		
-		<list>
-			<xsl:for-each select="distinct-values($entries/*)">
-				<xsl:sort select="normalize-space(current())" />
-				<entry>
-					<xsl:sequence select="current()"/>
-				</entry>
-			</xsl:for-each>
-		</list>
+		<TEI xmlns="http://www.tei-c.org/ns/1.0">
+			<teiHeader />
+			<text>
+				<body>
+					<list>
+						<xsl:for-each select="distinct-values($entries/*)">
+							<xsl:sort select="normalize-space(current())" />
+							<item>
+								<xsl:sequence select="current()"/>
+							</item>
+						</xsl:for-each>
+					</list>
+				</body>
+			</text>
+		</TEI>
 	</xsl:template>
 	
 	<xsl:template match="w:p">
