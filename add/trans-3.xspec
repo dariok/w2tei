@@ -11,7 +11,7 @@
 			</x:context>
 			<x:expect label="sic und corr">
 				<p>
-					<lb/>auszlegen/ <choice><sic>unud</sic><corr>unnd</corr></choice>  durch die schrifft beweyszen/ Das alle
+					<lb/>auszlegen/ <choice><sic>unud</sic><corr>unnd</corr></choice> durch die schrifft beweyszen/ Das alle
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -23,9 +23,21 @@
 			</x:context>
 			<x:expect label="lem und rdg">
 				<p>
-					<lb/><app><lem wit="#A">Wie</lem><rdg wit="#a">Die</rdg></app>  heylickeit in diessem le-
+					<lb/><app><lem wit="#A">Wie</lem><rdg wit="#a">Die</rdg></app> heylickeit in diessem le-
 				</p>
 			</x:expect>
 		</x:scenario>
+	</x:scenario>
+	<x:scenario label="text vor krit. FN">
+		<x:context>
+			<p>
+				<w>ful<lb break="no"/>ten.</w> Wie sie<note type="crit_app"><hi style="font-style:italic;">folgt</hi> auch <hi style="font-style:italic;">a</hi></note> entlich heylig
+			</p>
+		</x:context>
+		<x:expect label="Spatium">
+			<p>
+				<w>ful<lb break="no"/>ten.</w> Wie sie<note type="crit_app"><hi style="font-style:italic;">folgt</hi> auch <hi style="font-style:italic;">a</hi></note> entlich heylig
+			</p>
+		</x:expect>
 	</x:scenario>
 </x:description>

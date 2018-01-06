@@ -26,6 +26,9 @@
 				<xsl:variable name="front" select="wdb:substring-before-last(., ' ')" />
 				<xsl:variable name="note" select="following-sibling::tei:note[1]"/>
 				
+				<xsl:if test="starts-with(., ' ')">
+					<xsl:text> </xsl:text>
+				</xsl:if>
 				<xsl:value-of select="string-join($front, ' ')"/>
 				<xsl:text> </xsl:text>
 				<xsl:choose>
@@ -50,7 +53,7 @@
 						<xsl:sequence select="$note"/>
 					</xsl:otherwise>
 				</xsl:choose>
-				<xsl:text> </xsl:text>
+<!--				<xsl:text> </xsl:text>-->
 			</xsl:when>
 			<xsl:when test="matches(., '&lt;.+&gt;')">
 				<xsl:analyze-string select="." regex="&lt;.+&gt;">
