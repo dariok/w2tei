@@ -60,13 +60,13 @@
 	</xsl:template>
 	
 	<xsl:template match="tei:note[@type = 'footnote']/text()">
-		<xsl:analyze-string select="." regex="„(.*)“">
+		<xsl:analyze-string select="." regex="„([^“]*)“">
 			<xsl:matching-substring>
 				<quote>
 					<xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.\.\.\]">
 						<xsl:matching-substring><gap/></xsl:matching-substring>
 						<xsl:non-matching-substring>
-							<xsl:value-of select="."/>
+							<xsl:sequence select="."/>
 						</xsl:non-matching-substring>
 					</xsl:analyze-string>
 				</quote>

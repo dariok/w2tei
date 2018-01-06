@@ -52,8 +52,8 @@
 			<x:expect label="w mit lb und korrekte Spatien">
 				<p>
 					<lb/>gewest/ der bekant offentlich/ das sein fleisch unheylig/ <w>sun<lb break="no"/>dig/</w> und ein mutter aller boszheiten ist.<note type="footnote">Vgl. <ref type="biblical">Röm 7,5</ref> Vg
-						„Cum enim essemus in carne, passiones peccatorum, quæ per legem erant, operabantur
-						in membris nostris, ut fructificarent morti.“; <ref type="biblical">ebd., 7,25</ref> Vg
+						<quote>Cum enim essemus in carne, passiones peccatorum, quæ per legem erant, operabantur
+						in membris nostris, ut fructificarent morti.</quote>; <ref type="biblical">ebd., 7,25</ref> Vg
 						<quote>gratia Dei per Iesum Christum Dominum nostrum. Igitur ego ipse mente servio legi Dei/ carne autem, legi peccati.</quote></note> Item/ das in <w>al<lb break="no"/>len</w> gutten ubungen und wercken yhm widder sei/ und
 				</p>
 			</x:expect>
@@ -70,6 +70,28 @@
 				<lb/>che kloster erbauten. Wie sie auch yhre keesz secke<note type="footnote"><bibl>DWb 11, 257</bibl>: <quote>Käsesack: sack in den der quark gethan wird, wenn er unter die presse kommt</quote>.</note> ful-
 			</p>
 		</x:expect>
+		<x:scenario label="mehrere quote in FN">
+			<x:context>
+				<lb/>iiii.<note type="footnote">Vgl. <ref type="biblical">Eph 4,22-24</ref> Vg
+					„deponere vos secundum pristinam conversationem veterem hominem, qui corrumpitur secundum desideria erroris/ Renovamini autem spiritu mentis vestrae, et induite novum hominem qui secundum Deum creatus est in iustitia et sanctitate veritatis.“ Vgl. auch <ref type="biblical">2.Kor 4,16</ref> Vg
+					„Propter quod non deficimus, sed licet is qui foris est noster homo corrumpitur, tamen is qui intus est, renovatur de die in diem.“ Vgl. auch <ref type="medieval" cRef="Aug. de trin 4!3,5">Aug. de trin 4,3,5</ref>: „Resuscitatur ergo anima per poenitentiam, et in corpore adhuc mortali renovatio
+					vitae inchoatur a fide qua creditur in eum qui iustificat impium, bonisque moribus
+					augetur et roboratur de die in diem cum magis magisque renovatur interior homo.
+					Corpus vero tamquam homo exterior quanto est haec vita diuturnior magis magisque
+					corrumpitur vele aetate vel morbo vel variis afflictationibus donec veniat ad
+					ultimam quae ab omnibus mors vocatur.“ (<bibl>CCSL 50, 165,13-21</bibl>; <bibl>PL 42, 890</bibl>).</note> beschriebenn/ aber der leyp/ das ist/ der ausserlich
+			</x:context>
+			<x:expect label="korrekte quote">
+				<lb/>iiii.<note type="footnote">Vgl. <ref type="biblical">Eph 4,22-24</ref> Vg
+					<quote>deponere vos secundum pristinam conversationem veterem hominem, qui corrumpitur secundum desideria erroris/ Renovamini autem spiritu mentis vestrae, et induite novum hominem qui secundum Deum creatus est in iustitia et sanctitate veritatis.</quote> Vgl. auch <ref type="biblical">2.Kor 4,16</ref> Vg
+					<quote>Propter quod non deficimus, sed licet is qui foris est noster homo corrumpitur, tamen is qui intus est, renovatur de die in diem.</quote> Vgl. auch <ref type="medieval" cRef="Aug. de trin 4!3,5">Aug. de trin 4,3,5</ref>: <quote>Resuscitatur ergo anima per poenitentiam, et in corpore adhuc mortali renovatio
+					vitae inchoatur a fide qua creditur in eum qui iustificat impium, bonisque moribus
+					augetur et roboratur de die in diem cum magis magisque renovatur interior homo.
+					Corpus vero tamquam homo exterior quanto est haec vita diuturnior magis magisque
+					corrumpitur vele aetate vel morbo vel variis afflictationibus donec veniat ad
+					ultimam quae ab omnibus mors vocatur.</quote> (<bibl>CCSL 50, 165,13-21</bibl>; <bibl>PL 42, 890</bibl>).</note> beschriebenn/ aber der leyp/ das ist/ der ausserlich
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="Worttrennung">
