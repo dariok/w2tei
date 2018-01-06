@@ -5,37 +5,59 @@
 	xslt-version="2.0"
 	stylesheet="trans-2.xsl">
 	<x:scenario label="Zeilenumbrüche">
-		<x:context>
-			<p>
-			<lb/>Viel gelarten und ungelarten/ gestrenger her und
-			<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
-			<lb/>heylig mache/ und umbkere/ das erwelter und bestetig-
-			<lb/>ter Bapst/ in keinen weg yrren und sundigen/ auch nie-
-			<lb/>mants gewalt odder unrecht thun kan/ unnd sprechen/
-			<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
-			<lb/>Seel beschediget/ aber sunst ubel thunn/ das ehr das nit
-			<lb/>thue/ als ein Bapst/ sunder als ein mensch/ es sey auch
-			<lb/>nit unrecht/ was er furnympt. Item er kan niemandts
-			<lb/>vorfuren und betriegen/ darumb man auch den vorstor-
-			<lb/>ben Bepsten/ kein seel Messe nach halten sol/ und weysz
-			<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
-			<lb/>und schreyben den bapst einen got aller menschen.
-			</p>
-		</x:context>
-		<x:expect label="aller Text und w">
-			<p>
-			<lb/>Viel gelarten und ungelarten/ gestrenger her und
-			<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
-			<lb/>heylig mache/ und umbkere/ das erwelter und <w>bestetig<lb break="no"/>ter</w> Bapst/ in keinen weg yrren und sundigen/ auch <w>nie<lb break="no"/>mants</w> gewalt odder unrecht thun kan/ unnd sprechen/
-			<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
-			<lb/>Seel beschediget/ aber sunst ubel thunn/ das ehr das nit
-			<lb/>thue/ als ein Bapst/ sunder als ein mensch/ es sey auch
-			<lb/>nit unrecht/ was er furnympt. Item er kan niemandts
-			<lb/>vorfuren und betriegen/ darumb man auch den <w>vorstor<lb break="no"/>ben</w> Bepsten/ kein seel Messe nach halten sol/ und weysz
-			<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
-			<lb/>und schreyben den bapst einen got aller menschen.
-			</p>
-		</x:expect>
+		<x:scenario label="ohne FN">
+			<x:context>
+				<p>
+					<lb/>Viel gelarten und ungelarten/ gestrenger her und
+					<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
+					<lb/>heylig mache/ und umbkere/ das erwelter und bestetig-
+					<lb/>ter Bapst/ in keinen weg yrren und sundigen/ auch nie-
+					<lb/>mants gewalt odder unrecht thun kan/ unnd sprechen/
+					<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
+					<lb/>Seel beschediget/ aber sunst ubel thunn/ das ehr das nit
+					<lb/>thue/ als ein Bapst/ sunder als ein mensch/ es sey auch
+					<lb/>nit unrecht/ was er furnympt. Item er kan niemandts
+					<lb/>vorfuren und betriegen/ darumb man auch den vorstor-
+					<lb/>ben Bepsten/ kein seel Messe nach halten sol/ und weysz
+					<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
+					<lb/>und schreyben den bapst einen got aller menschen.
+				</p>
+			</x:context>
+			<x:expect label="aller Text und w">
+				<p>
+					<lb/>Viel gelarten und ungelarten/ gestrenger her und
+					<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
+					<lb/>heylig mache/ und umbkere/ das erwelter und <w>bestetig<lb break="no"/>ter</w> Bapst/ in keinen weg yrren und sundigen/ auch <w>nie<lb break="no"/>mants</w> gewalt odder unrecht thun kan/ unnd sprechen/
+					<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
+					<lb/>Seel beschediget/ aber sunst ubel thunn/ das ehr das nit
+					<lb/>thue/ als ein Bapst/ sunder als ein mensch/ es sey auch
+					<lb/>nit unrecht/ was er furnympt. Item er kan niemandts
+					<lb/>vorfuren und betriegen/ darumb man auch den <w>vorstor<lb break="no"/>ben</w> Bepsten/ kein seel Messe nach halten sol/ und weysz
+					<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
+					<lb/>und schreyben den bapst einen got aller menschen.
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="mit FN">
+			<x:context>
+				<p>
+					<lb/>gewest/ der bekant offentlich/ das sein fleisch unheylig/ sun-
+					<lb/>dig/ und ein mutter aller boszheiten ist.<note type="footnote">Vgl. <ref type="biblical">Röm 7,5</ref> Vg
+						„Cum enim essemus in carne, passiones peccatorum, quæ per legem erant, operabantur
+						in membris nostris, ut fructificarent morti.“; <ref type="biblical">ebd., 7,25</ref> Vg
+						„gratia Dei per Iesum Christum Dominum nostrum. Igitur ego ipse mente servio legi Dei/ carne autem, legi peccati.“</note> Item/ das in al-
+					<lb/>len gutten ubungen und wercken yhm widder sei/ und
+				</p>
+			</x:context>
+			<x:expect label="w mit lb und korrekte Spatien">
+				<p>
+					<lb/>gewest/ der bekant offentlich/ das sein fleisch unheylig/ <w>sun<lb break="no"/>dig/</w> und ein mutter aller boszheiten ist.<note type="footnote">Vgl. <ref type="biblical">Röm 7,5</ref> Vg
+						„Cum enim essemus in carne, passiones peccatorum, quæ per legem erant, operabantur
+						in membris nostris, ut fructificarent morti.“; <ref type="biblical">ebd., 7,25</ref> Vg
+						<quote>gratia Dei per Iesum Christum Dominum nostrum. Igitur ego ipse mente servio legi Dei/ carne autem, legi peccati.</quote></note> Item/ das in <w>al<lb break="no"/>len</w> gutten ubungen und wercken yhm widder sei/ und
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="quote">
 		<x:context>
