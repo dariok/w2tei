@@ -118,7 +118,15 @@
 	<xsl:function name="wdb:substring-before-last">
 		<xsl:param name="s" as="xs:string" />
 		<xsl:param name="c" as="xs:string" />
-		<xsl:value-of select="string-join(tokenize(normalize-space($s), $c)[not(position() = last())], $c)" />
+		<xsl:variable name="string" select="string-join(tokenize(normalize-space($s), $c)[not(position() = last())], $c)" />
+		<xsl:choose>
+			<xsl:when test="starts-with($s, $c)">
+				<xsl:value-of select="concat($c, $string)"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$string"/>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:function>
 	
 	<xd:doc>
