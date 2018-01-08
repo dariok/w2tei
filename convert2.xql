@@ -78,6 +78,10 @@ let $result := try { transform:transform($incoming, doc($add), $params) }
 		a: ' || $err:additional)
 		}
 
+let $create := if (not(xmldb:collection-available('/db/apps/w2tei/result')))
+		then xmldb:create-collection('/db/apps/w2tei', 'result')
+		else ()
+
 return if (local-name($result) = 'TEI')
 	then
 		let $filename := if ($result//tei:title[@type='short'])
