@@ -6,7 +6,7 @@
     <license>GNU-LGPL</license>
     <copyright>true</copyright>
     <type>application</type>
-    <target>word2tei</target>
+    <target>w2tei</target>
     <prepare>pre-install.xql</prepare>
     <finish/>
     <permissions user="kampkaspar" group="dba" mode="rw-rw-r--"/>

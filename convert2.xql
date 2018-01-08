@@ -78,10 +78,16 @@ let $result := try { transform:transform($incoming, doc($add), $params) }
 		a: ' || $err:additional)
 		}
 
-for $el in $result//tei:TEI
-	for $el in $result//tei:TEI
-	let $filename := if ($el//tei:title[@type='short'])
-		then $el//tei:title[@type='short'] || '.xml'
-		else $title || '.xml'
-	return <p>{xmldb:store('/db/apps/word2tei/mp-data', $filename, $el)}</p>
-(:	return $filename:)
+return if (local-name($result) = 'TEI')
+	then
+		let $filename := if ($result//tei:title[@type='short'])
+				then $result//tei:title[@type='short'] || '.xml'
+				else $title || '.xml'
+		return <p>{xmldb:store('/db/apps/w2tei/result', encode-for-uri($filename), $result)}</p>
+	else
+		for $el in $result//tei:TEI
+			for $el in $result//tei:TEI
+			let $filename := if ($el//tei:title[@type='short'])
+				then $el//tei:title[@type='short'] || '.xml'
+				else $title || '.xml'
+			return <p>{xmldb:store('/db/apps/w2tei/result', encode-for-uri($filename), $el)}</p>
