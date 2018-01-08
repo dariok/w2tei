@@ -77,7 +77,7 @@
 		</xsl:analyze-string>
 	</xsl:template>
 	
-	<xsl:template match="tei:item[preceding-sibling::tei:*[1][not(self::tei:item or self::tei:pb)]]">
+	<xsl:template match="tei:item[not(preceding-sibling::*) or preceding-sibling::tei:*[1][not(self::tei:item or self::tei:pb)]]">
 		<list>
 			<xsl:sequence select=". | following-sibling::tei:item | tei:pb"/>
 		</list>
