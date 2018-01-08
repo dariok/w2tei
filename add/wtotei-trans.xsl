@@ -22,14 +22,14 @@
 	<xsl:template match="w:p[hab:isDiv(.)]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<div>
-			<xsl:apply-templates select="following-sibling::w:p[hab:isP(.)
+			<xsl:apply-templates select="following-sibling::w:p[(hab:isP(.) or descendant::w:numPr)
 				and generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />
 		</div>
 	</xsl:template>
 	
 	<xsl:template match="w:p[wdb:is(., 'berschrift1')]" />
 	
-	<xsl:template match="w:p[hab:isP(.)]">
+	<xsl:template match="w:p[hab:isP(.) and not(descendant::w:numPr)]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<xsl:variable name="name">
 			<xsl:choose>
@@ -53,7 +53,7 @@
 	</xsl:template>
 	
 	<!-- normaler Absatz -->
-	<xsl:template match="w:p[descendant::w:t and not(hab:isStruct(.))
+	<xsl:template match="w:p[descendant::w:t and not(hab:isStruct(.) and not(descendant::w:numPr))
 		and not(hab:isP(.) or hab:isDiv(.) or wdb:is(., 'KSMarginalie', 'p'))]">
 		<xsl:if test="not(matches(wdb:string(.), '^\[.+?\]$'))">
 			<xsl:text>
@@ -61,6 +61,12 @@
 			<lb/>
 		</xsl:if>
 		<xsl:apply-templates select="." mode="pb"/>
+	</xsl:template>
+	
+	<xsl:template match="w:p[descendant::w:numPr]">
+		<item>
+			<xsl:apply-templates select="." mode="pb" />
+		</item>
 	</xsl:template>
 	
 	<xsl:template match="w:p" mode="pb">
