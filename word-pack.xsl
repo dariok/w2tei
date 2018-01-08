@@ -164,7 +164,7 @@
 	
 	<!-- Functions to select runs -->
 	<xd:doc>
-		<xd:desc>Check whether this is the first run in a possible series of runs (e.g. the first 'berschrift1'
+		<xd:desc>Check whether this is the first run in a possible sequence of runs (e.g. the first 'berschrift1'
 		possibly immediately followed by one or more 'berschrift1'). May be used for paragraphs, too.</xd:desc>
 		<xd:param name="context">The context item.</xd:param>
 		<xd:param name="test">The test string for the paragraph or run style</xd:param>
@@ -189,6 +189,14 @@
 		</xsl:choose>
 	</xsl:function>
 	
+	<xd:doc>
+		<xd:desc>Matches all those runs with a sequence of runs that immediately follow the first on, i.e. they are of the
+			same type and are immediately preceded by w:r of the same type.</xd:desc>
+		<xd:param name="context">The context item</xd:param>
+		<xd:param name="me">The item that forms the start of the sequence</xd:param>
+		<xd:param name="test">The type to test</xd:param>
+		<xd:param name="pr">Whether this is a paragraph or a run style</xd:param>
+	</xd:doc>
 	<xsl:function name="wdb:followMe" as="xs:boolean">
 		<xsl:param name="context" as="item()" />
 		<xsl:param name="me" as="item()" />
