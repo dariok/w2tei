@@ -8,7 +8,7 @@ declare option exist:serialize "method=html5 media-type=text/html";
 	</head>
 	<body>
 		<div id="content">
-			<form enctype="multipart/form-data" method="post" action="/apps/word2tei/convert2.xql">
+			<form enctype="multipart/form-data" method="post" action="convert2.xql">
 				<fieldset>
 					<legend>Upload Word (.docx) [or OO (.odt)]:</legend>
 					<input type="file" name="file" style="width: 90%;"/>
