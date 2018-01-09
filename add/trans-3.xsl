@@ -37,8 +37,8 @@
 						<xsl:sequence select="$note"/>
 					</xsl:when>
 					<!-- Phrasen in 128 -->
-					<xsl:when test="$note/tei:hi[normalize-space() = 'vom Editor verbessert für' or
-						normalize-space() = 'vom Editor verbessert aus' or normalize-space() = 'von Editor verbessert aus']">
+					<xsl:when test="$note/tei:hi[normalize-space() = ('vom Editor verbessert für', 'vom Editor verbessert aus',
+						'von Editor verbessert aus')]">
 						<choice>
 							<sic><xsl:value-of select="normalize-space($note/tei:hi/following-sibling::text())"/></sic>
 							<corr><xsl:value-of select="$last"/></corr>
