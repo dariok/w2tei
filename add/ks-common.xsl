@@ -287,7 +287,7 @@
 	
 	<!-- Styles -->
 	<!-- kursiv -->
-	<xsl:template match="w:r[descendant::w:i]">
+	<xsl:template match="w:r[descendant::w:i and not(wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
 		<!--<xsl:apply-templates select="." mode="eval" />-->
 		<hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
 	</xsl:template>

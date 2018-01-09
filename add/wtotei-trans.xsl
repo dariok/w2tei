@@ -100,7 +100,7 @@
 		<note type="crit_app">
 			<xsl:variable name="wid" select="w:footnoteReference/@w:id"/>
 			<xsl:variable name="temp">
-				<xsl:apply-templates select="//w:footnote[@w:id = $wid]/w:p/w:r" mode="eval" />
+				<xsl:apply-templates select="//w:footnote[@w:id = $wid]/w:p/w:r" />
 			</xsl:variable>
 			<xsl:for-each select="$temp/node()">
 				<xsl:choose>
@@ -141,8 +141,7 @@
 	<xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
 		<xsl:variable name="me" select="." />
 		<bibl>
-			<xsl:apply-templates select=". | following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]" 
-				mode="eval" />
+			<xsl:apply-templates select="w:t | following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]/w:t" />
 		</bibl>
 	</xsl:template>
 	<xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and

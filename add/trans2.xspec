@@ -153,4 +153,12 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="zusammenziehen">
+		<x:scenario label="mehrere i">
+			<x:context>
+				
+			</x:context>
+		</x:scenario>
+	</x:scenario>
 </x:description>
