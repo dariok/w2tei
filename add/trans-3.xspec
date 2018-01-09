@@ -36,8 +36,24 @@
 		</x:context>
 		<x:expect label="Spatium">
 			<p>
-				<w>ful<lb break="no"/>ten.</w> Wie sie<note type="crit_app"><hi style="font-style:italic;">folgt</hi> auch <hi style="font-style:italic;">a</hi></note> entlich heylig
+				<w>ful<lb break="no"/>ten.</w>  Wie sie<note type="crit_app"><hi style="font-style:italic;">folgt</hi> auch <hi style="font-style:italic;">a</hi></note> entlich heylig
 			</p>
 		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="zusammenziehen">
+		<x:scenario label="mehrere ref">
+			<x:context>
+				<note type="footnote">Vgl. <ref type="biblical">Jer</ref>
+					<ref type="biblical"> 31,33</ref>: „Dabo legem meam in visceribus eorum, et in corde eorum scribam eam […]“. Zitiert von <ref type="medieval" cRef="!">Aug. </ref>
+					<ref type="medieval" cRef="!">spir</ref>
+					<ref type="medieval" cRef="!">. et litt. </ref>20,35 und 21,36 (<bibl>CSEL 60, 188,21-24</bibl> und <bibl>CSEL 60, 190,3f.</bibl>). Vgl. <ref type="medieval" cRef="!">Aug. </ref>
+					<ref type="medieval" cRef="!">spir</ref>
+					<ref type="medieval" cRef="!">. et litt.</ref> 17,29: „[…] ibi in tabulis lapideis digitus dei operatus est, hic in cordibus hominum.“ (<bibl>CSEL 60, 182,24f.</bibl>).</note>
+			</x:context>
+			<x:expect label="zusammengezogene refs">
+				<note type="footnote">Vgl. <ref type="biblical">Jer 31,33</ref>: „Dabo legem meam in visceribus eorum, et in corde eorum scribam eam […]“. Zitiert von <ref type="medieval">Aug. spir. et litt. </ref>20,35 und 21,36 (<bibl>CSEL 60, 188,21-24</bibl> und <bibl>CSEL 60, 190,3f.</bibl>). Vgl. <ref type="medieval">Aug. spir. et litt.</ref> 17,29: „[…] ibi in tabulis lapideis digitus dei operatus est, hic in cordibus hominum.“ (<bibl>CSEL 60, 182,24f.</bibl>).</note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>
