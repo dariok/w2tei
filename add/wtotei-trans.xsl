@@ -11,7 +11,7 @@
 	
 	<xsl:include href="ks-common.xsl"/>
 	
-	<xsl:output indent="yes"/>
+<!--	<xsl:output indent="yes"/>-->
 	
 	<xsl:template match="w:body">
 		<xsl:apply-templates
@@ -63,7 +63,14 @@
 		<xsl:apply-templates select="." mode="pb"/>
 	</xsl:template>
 	
-	<xsl:template match="w:p[descendant::w:numPr]">
+	<xsl:template match="w:p[descendant::w:numPr][position() &gt; 1]"/>
+	<xsl:template match="w:p[descendant::w:numPr][1]">
+		<list>
+			<xsl:apply-templates select=". | following-sibling::w:p[descendant::w:numPr]" mode="item" />
+		</list>
+	</xsl:template>
+	<xsl:template match="w:p[descendant::w:numPr]" mode="item">
+		<label><xsl:number count="w:p[descendant::w:numPr]"/>.</label>
 		<item>
 			<xsl:apply-templates select="." mode="pb" />
 		</item>

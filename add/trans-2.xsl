@@ -7,6 +7,8 @@
 	exclude-result-prefixes="#all"
 	version="2.0">
 	
+<!--	<xsl:output indent="yes"/>-->
+	
 	<xsl:include href="../string-pack.xsl" />
 	
 	<xsl:template match="/">
@@ -78,12 +80,14 @@
 	</xsl:template>
 	
 	<!-- Zusammenziehen von zusammengehörigen Teilen -->
-	<xsl:template match="tei:item[not(preceding-sibling::*) or preceding-sibling::tei:*[1][not(self::tei:item or self::tei:pb)]]">
+	<!--<xsl:template match="tei:label[not(preceding-sibling::*) or preceding-sibling::tei:*[1][not(self::tei:item or self::tei:pb)]]">
 		<list>
-			<xsl:sequence select=". | following-sibling::tei:item | tei:pb"/>
+			<xsl:apply-templates select=". | following-sibling::tei:item | following-sibling::tei:label | following-sibling::tei:pb"/>
 		</list>
 	</xsl:template>
-	<xsl:template match="tei:item[preceding-sibling::*[1][self::tei:item or self::tei:pb]]" />
+	<xsl:template match="tei:item[preceding-sibling::*[1][self::tei:item or self::tei:pb or self::tei:label]]" />
+	<xsl:template match="tei:pb[preceding-sibling::tei:*[self::tei:item]]" />
+	<xsl:template match="tei:label[preceding-sibling::tei:*[self::tei:item ]]" />-->
 	
 	<xsl:template match="tei:hi[@style='font-style: italic;' and not(preceding-sibling::tei:*[1][self::tei:hi])]">
 		<xsl:variable name="myId" select="generate-id()" />

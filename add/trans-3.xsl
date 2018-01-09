@@ -32,6 +32,10 @@
 				<xsl:value-of select="string-join($front, ' ')"/>
 				<xsl:text> </xsl:text>
 				<xsl:choose>
+					<xsl:when test="count($note/tei:hi) &gt; 1">
+						<xsl:value-of select="$last"/>
+						<xsl:sequence select="$note"/>
+					</xsl:when>
 					<!-- Phrasen in 128 -->
 					<xsl:when test="$note/tei:hi[normalize-space() = 'vom Editor verbessert für' or
 						normalize-space() = 'vom Editor verbessert aus' or normalize-space() = 'von Editor verbessert aus']">
@@ -78,7 +82,7 @@
 			and generate-id(preceding-sibling::tei:ref[@type='biblical'
 			and not(preceding-sibling::tei:*[1][self::tei:ref[@type='biblical' ]])][1]) = $myId]/text()" /></ref>
 	</xsl:template>
-	<xsl:template match="tei:ref[preceding-sibling::tei:*[1][self::tei:ref[@type='biblical']]]"/>
+	<xsl:template match="tei:ref[@type='biblical' and preceding-sibling::tei:*[1][self::tei:ref[@type='biblical']]]"/>
 	
 	<xsl:template match="tei:ref[@type='medieval' and not(preceding-sibling::tei:*[1][self::tei:ref[@type='medieval']])]">
 		<xsl:variable name="myId" select="generate-id()" />
@@ -87,7 +91,7 @@
 			and generate-id(preceding-sibling::tei:ref[@type='medieval'
 			and not(preceding-sibling::tei:*[1][self::tei:ref[@type='medieval' ]])][1]) = $myId]/text()" /></ref>
 	</xsl:template>
-	<xsl:template match="tei:ref[preceding-sibling::tei:*[1][self::tei:ref[@type='medieval']]]"/>
+	<xsl:template match="tei:ref[@type='medieval' and preceding-sibling::tei:*[1][self::tei:ref[@type='medieval']]]"/>
 	
 	<xsl:template match="tei:note[@type='crit_app']" />
 	
