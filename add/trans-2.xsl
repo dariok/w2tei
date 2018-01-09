@@ -82,6 +82,7 @@
 			<xsl:sequence select=". | following-sibling::tei:item | tei:pb"/>
 		</list>
 	</xsl:template>
+	<xsl:template match="tei:item[preceding-sibling::*[1][self::tei:item or self::tei:pb]]" />
 	
 	<xsl:template match="text()[not(ancestor::tei:note)]">
 		<xsl:choose>
