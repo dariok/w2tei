@@ -102,7 +102,6 @@
 			<xsl:variable name="temp">
 				<xsl:apply-templates select="//w:footnote[@w:id = $wid]/w:p/w:r" mode="eval" />
 			</xsl:variable>
-			<!-- TODO String auswerten und passend kodieren! -->
 			<xsl:for-each select="$temp/node()">
 				<xsl:choose>
 					<xsl:when test="position() = 1 and self::text() and normalize-space() = ''" />

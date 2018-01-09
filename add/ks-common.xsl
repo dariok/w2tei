@@ -288,13 +288,15 @@
 	<!-- Styles -->
 	<!-- kursiv -->
 	<xsl:template match="w:r[descendant::w:i]">
-		<xsl:apply-templates select="." mode="eval" />
+		<!--<xsl:apply-templates select="." mode="eval" />-->
+		<hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
 	</xsl:template>
-	<xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1][descendant::w:i]]" mode="eval"/>
-	<xsl:template match="w:r[descendant::w:i and not(preceding-sibling::w:r[1][descendant::w:i])]" mode="eval">
+<!--	<xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1]//w:i]" mode="eval"/>-->
+	<!--<xsl:template match="w:r[descendant::w:i and not(preceding-sibling::w:r[1]//w:i)]" mode="eval">
+		<xsl:variable name="myId" select="generate-id(preceding-sibling::w:r[1])" />
 		<hi style="font-style:italic;"><xsl:apply-templates select="w:t | following-sibling::w:r[descendant::w:i
-			and preceding-sibling::w:r[1][descendant::w:i]]/w:t" /></hi>
-	</xsl:template>
+			and $myId = generate-id((preceding-sibling::w:r[not(descendant::w:i)])[1])]/w:t" /></hi>
+	</xsl:template>-->
 	
 	<!-- hochgestellte -->
 	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference
