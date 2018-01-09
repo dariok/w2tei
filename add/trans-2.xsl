@@ -84,10 +84,11 @@
 	</xsl:template>
 	<xsl:template match="tei:item[preceding-sibling::*[1][self::tei:item or self::tei:pb]]" />
 	
-	<xsl:template match="tei:hi[@style='font-style: italic;' and not(preceding-sibling::tei:hi)]">
+	<xsl:template match="tei:hi[@style='font-style: italic;' and not(preceding-sibling::tei:*[1][self::tei:hi])]">
 		<xsl:variable name="myId" select="generate-id()" />
-		<hi style="font-style: italic;"><xsl:apply-templates select=". |
-				following-sibling::tei:hi[generate-id(preceding-sibling::tei:hi[not(preceding-sibling::tei:hi)][1]) = $myId]" /></hi>
+		<hi style="font-style: italic;"><xsl:sequence select="text()
+				| following-sibling::tei:hi[preceding-sibling::tei:*[1][self::tei:hi]
+					and generate-id(preceding-sibling::tei:hi[not(preceding-sibling::tei:*[1][self::tei:hi])][1]) = $myId]/text()" /></hi>
 	</xsl:template>
 	<xsl:template match="tei:hi[preceding-sibling::tei:*[1][self::tei:hi]]"/>
 	

@@ -157,8 +157,19 @@
 	<x:scenario label="zusammenziehen">
 		<x:scenario label="mehrere i">
 			<x:context>
-				
+				<note type="crit_app">
+					<hi style="font-style: italic;">Vom Editor verbessert</hi>
+					<hi style="font-style: italic;"> für</hi> lucando: <bibl>Kolde, 471</bibl>
+					<hi style="font-style: italic;">, </hi>
+					<hi style="font-style: italic;">ändert</hi>
+					<hi style="font-style: italic;"> stillschweigend </hi>
+					<hi style="font-style: italic;">in</hi> non lucendo.</note>
 			</x:context>
+			<x:expect label="zusammengezogene hi">
+				<note type="crit_app">
+					<hi style="font-style: italic;">Vom Editor verbessert für</hi> lucando: <bibl>Kolde, 471</bibl>
+					<hi style="font-style: italic;">, ändert stillschweigend in</hi> non lucendo.</note>
+			</x:expect>
 		</x:scenario>
 	</x:scenario>
 </x:description>
