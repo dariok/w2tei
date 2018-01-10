@@ -5,7 +5,7 @@
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all"
-	version="2.0">
+	version="3.0">
 	
 	<xsl:include href="../string-pack.xsl" />
 	
@@ -32,6 +32,12 @@
 				<xsl:value-of select="string-join($front, ' ')"/>
 				<xsl:text> </xsl:text>
 				<xsl:choose>
+					<xsl:when test="starts-with($note/tei:hi[1], 'folgt')">
+						<xsl:variable name="wit" select="normalize-space($note/tei:hi[2])"/>
+						<xsl:variable name="val" select="normalize-space($note/tei:hi[1]/following-sibling::text()[1])"/>
+						<xsl:value-of select="$last"/>
+						<add wit="{'#'||$wit}"><xsl:value-of select="$val"/></add>
+					</xsl:when>
 					<xsl:when test="count($note/tei:hi) &gt; 1">
 						<xsl:sequence select="$last" />
 							<note type="crit_app">

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns="http://www.tei-c.org/ns/1.0"
-	stylesheet="trans-3.xsl">
+	stylesheet="trans-3.xsl"
+	xslt-version="3.0">
 	<x:scenario label="krit. Anmerkungen">
 		<x:scenario label="einmal vom Editor verbessert für">
 			<x:context>
@@ -44,7 +45,7 @@
 		</x:context>
 		<x:expect label="Spatium">
 			<p>
-				<w>ful<lb break="no"/>ten.</w>  Wie sie<note type="crit_app"><hi style="font-style:italic;">folgt</hi> auch <hi style="font-style:italic;">a</hi></note> entlich heylig
+				<w>ful<lb break="no"/>ten.</w>  Wie sie<add wit="#a">auch</add> entlich heylig
 			</p>
 		</x:expect>
 	</x:scenario>
