@@ -95,23 +95,23 @@
 		</xsl:choose>
 	</xsl:template>
 	
-	<xsl:template match="tei:ref[@type='biblical' and not(preceding-sibling::tei:*[1][self::tei:ref[@type='biblical']])]">
+	<xsl:template match="tei:ref[@type='biblical' and not(preceding-sibling::node()[1][self::tei:ref[@type='biblical']])]">
 		<xsl:variable name="myId" select="generate-id()" />
 		<ref type="{@type}"><xsl:sequence select="text()
-			| following-sibling::tei:ref[@type='biblical' and preceding-sibling::tei:*[1][self::tei:ref[@type='biblical' ]]
+			| following-sibling::tei:ref[@type='biblical' and preceding-sibling::node()[1][self::tei:ref[@type='biblical' ]]
 			and generate-id(preceding-sibling::tei:ref[@type='biblical'
-			and not(preceding-sibling::tei:*[1][self::tei:ref[@type='biblical' ]])][1]) = $myId]/text()" /></ref>
+			and not(preceding-sibling::node()[1][self::tei:ref[@type='biblical' ]])][1]) = $myId]/text()" /></ref>
 	</xsl:template>
-	<xsl:template match="tei:ref[@type='biblical' and preceding-sibling::tei:*[1][self::tei:ref[@type='biblical']]]"/>
+	<xsl:template match="tei:ref[@type='biblical' and preceding-sibling::node()[1][self::tei:ref[@type='biblical']]]"/>
 	
-	<xsl:template match="tei:ref[@type='medieval' and not(preceding-sibling::tei:*[1][self::tei:ref[@type='medieval']])]">
+	<xsl:template match="tei:ref[@type='medieval' and not(preceding-sibling::node()[1][self::tei:ref[@type='medieval']])]">
 		<xsl:variable name="myId" select="generate-id()" />
 		<ref type="{@type}"><xsl:sequence select="text()
-			| following-sibling::tei:ref[@type='medieval' and preceding-sibling::tei:*[1][self::tei:ref[@type='medieval' ]]
+			| following-sibling::tei:ref[@type='medieval' and preceding-sibling::node()[1][self::tei:ref[@type='medieval' ]]
 			and generate-id(preceding-sibling::tei:ref[@type='medieval'
-			and not(preceding-sibling::tei:*[1][self::tei:ref[@type='medieval' ]])][1]) = $myId]/text()" /></ref>
+			and not(preceding-sibling::node()[1][self::tei:ref[@type='medieval' ]])][1]) = $myId]/text()" /></ref>
 	</xsl:template>
-	<xsl:template match="tei:ref[@type='medieval' and preceding-sibling::tei:*[1][self::tei:ref[@type='medieval']]]"/>
+	<xsl:template match="tei:ref[@type='medieval' and preceding-sibling::node()[1][self::tei:ref[@type='medieval']]]"/>
 	
 	<xsl:template match="tei:note[@type='crit_app']" />
 	
