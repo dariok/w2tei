@@ -27,6 +27,14 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="orig im Text herstellen">
+			<x:context>
+				<p>Lex factorum dicitur. sicut lucus a luc&lt;e&gt;ndo:<note type="crit_app"><hi style="font-style: italic;">Vom Editor verbessert für</hi> lucando: <bibl>Kolde, 471</bibl><hi style="font-style: italic;">, ändert stillschweigend in</hi> non lucendo.</note></p>
+			</x:context>
+			<x:expect label="orig">
+				<p>Lex factorum dicitur. sicut lucus a luc&lt;e&gt;ndo:<note type="crit_app">Vom Editor verbessert für<orig> lucando: </orig><bibl>Kolde, 471</bibl>, ändert stillschweigend in<orig> non lucendo.</orig></note></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="text vor krit. FN">
 		<x:context>

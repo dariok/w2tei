@@ -33,8 +33,22 @@
 				<xsl:text> </xsl:text>
 				<xsl:choose>
 					<xsl:when test="count($note/tei:hi) &gt; 1">
-						<xsl:value-of select="$last"/>
-						<xsl:sequence select="$note"/>
+						<xsl:sequence select="$last" />
+							<note type="crit_app">
+								<xsl:for-each select="$note/node()">
+									<xsl:choose>
+										<xsl:when test="self::tei:hi">
+											<xsl:value-of select="current()"/>
+										</xsl:when>
+										<xsl:when test="self::text()">
+											<orig><xsl:value-of select="current()"/></orig>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:sequence select="current()" />
+										</xsl:otherwise>
+									</xsl:choose>
+								</xsl:for-each>
+							</note>
 					</xsl:when>
 					<!-- Phrasen in 128 -->
 					<xsl:when test="$note/tei:hi[normalize-space() = ('vom Editor verbessert für', 'vom Editor verbessert aus',
