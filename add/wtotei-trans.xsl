@@ -70,7 +70,22 @@
 		</list>
 	</xsl:template>
 	<xsl:template match="w:p[descendant::w:numPr]" mode="item">
-		<label><xsl:number count="w:p[descendant::w:numPr]"/>.</label>
+		<xsl:variable name="numId" select="descendant::w:numPr/w:numId/@w:val"/>
+		<xsl:variable name="ilvl" select="descendant::w:numPr/w:ilvl/@w:val"/>
+		<xsl:variable name="num" select="//w:numbering/w:num[@w:numId = $numId]/w:abstractNumId/@w:val"/>
+		<xsl:variable name="style" select="//w:numbering/w:abstractNum[@w:abstractNumId = $num]/w:lvl[@w:ilvl = $ilvl]/w:numFmt/@w:val" />
+		
+		<label>
+			<xsl:choose>
+				<xsl:when test="$style = 'upperRoman'">
+					<xsl:number count="w:p[descendant::w:numPr]" format="I"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:number count="w:p[descendant::w:numPr]"/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:text>.</xsl:text>
+		</label>
 		<item>
 			<xsl:apply-templates select="." mode="pb" />
 		</item>
