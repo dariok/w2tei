@@ -289,7 +289,14 @@
 	<!-- kursiv -->
 	<xsl:template match="w:r[descendant::w:i and not(wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
 		<!--<xsl:apply-templates select="." mode="eval" />-->
-		<hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
+		<xsl:choose>
+			<xsl:when test="descendant::w:i/@w:val=0">
+				<xsl:apply-templates />
+			</xsl:when>
+			<xsl:otherwise>
+				<hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 <!--	<xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1]//w:i]" mode="eval"/>-->
 	<!--<xsl:template match="w:r[descendant::w:i and not(preceding-sibling::w:r[1]//w:i)]" mode="eval">
