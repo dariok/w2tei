@@ -50,21 +50,23 @@
 				and ends-with(preceding-sibling::tei:note[1]/preceding-sibling::text()[1], '-')">
 				<xsl:text> </xsl:text>
 				<w>
-					<xsl:value-of select="substring-before(wdb:substring-after-last(preceding-sibling::text()[1], ' '), '-')" />
+					<xsl:value-of select="wdb:substring-before(wdb:substring-after-last(preceding-sibling::text()[1], ' '), '-')" />
 					<xsl:sequence select="preceding-sibling::tei:note[1]" />
 					<lb break="no" />
-					<xsl:value-of select="substring-before(following-sibling::text()[1], ' ')" />
+					<xsl:value-of select="wdb:substring-before(following-sibling::text()[1], ' ')" />
 				</w>
 				<xsl:text> </xsl:text>
 			</xsl:when>
 			<xsl:when test="ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
 				<xsl:text> </xsl:text>
 				<w>
-					<xsl:value-of select="substring-before(wdb:substring-after-last(preceding-sibling::text()[1], ' '), '-')" />
+					<xsl:value-of select="wdb:substring-before(wdb:substring-after-last(preceding-sibling::text()[1], ' '), '-')" />
 					<lb break="no" />
-					<xsl:value-of select="substring-before(following-sibling::text()[1], ' ')" />
+					<xsl:value-of select="wdb:substring-before(following-sibling::text()[1], ' ')" />
 				</w>
-				<xsl:text> </xsl:text>
+				<xsl:if test="contains(following-sibling::text()[1], ' ')">
+					<xsl:text> </xsl:text>
+				</xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
 				<lb/>

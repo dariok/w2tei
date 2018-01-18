@@ -71,6 +71,23 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="FN vor nächstem Wort">
+			<x:context>
+				<p>
+					<lb/>nit von mir selber/ szonder wie mir mein vatter befoh-
+					<lb/>len.<note type="footnote">Vgl. <ref type="biblical">Joh 12,49</ref> Vg
+						„quia ego ex me ipso non sum locutus sed qui misit me Pater ipse mihi mandatum
+						dedit quid dicam et quid loquar“. </note> Nu die weil Christus sein wort/ in den gotlichenn
+				</p>
+			</x:context>
+			<x:expect label="ganzes Wort im w">
+				<p>
+					<lb/>nit von mir selber/ szonder wie mir mein vatter <w>befoh<lb break="no"/>len.</w><note type="footnote">Vgl. <ref type="biblical">Joh 12,49</ref> Vg
+						<quote>quia ego ex me ipso non sum locutus sed qui misit me Pater ipse mihi mandatum
+						dedit quid dicam et quid loquar</quote>. </note> Nu die weil Christus sein wort/ in den gotlichenn
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="quote">
 		<x:context>
