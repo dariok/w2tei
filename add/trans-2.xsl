@@ -46,6 +46,17 @@
 	
 	<xsl:template match="tei:lb">
 		<xsl:choose>
+			<xsl:when test="preceding-sibling::*[1][self::tei:note]
+				and ends-with(preceding-sibling::tei:note[1]/preceding-sibling::text()[1], '-')">
+				<xsl:text> </xsl:text>
+				<w>
+					<xsl:value-of select="substring-before(wdb:substring-after-last(preceding-sibling::text()[1], ' '), '-')" />
+					<xsl:sequence select="preceding-sibling::tei:note[1]" />
+					<lb break="no" />
+					<xsl:value-of select="substring-before(following-sibling::text()[1], ' ')" />
+				</w>
+				<xsl:text> </xsl:text>
+			</xsl:when>
 			<xsl:when test="ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
 				<xsl:text> </xsl:text>
 				<w>
@@ -57,6 +68,15 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<lb/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+	<xsl:template match="tei:note[@place]">
+		<xsl:choose>
+			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::text()[1], '-')"/>
+			<xsl:otherwise>
+				<xsl:sequence select="." />
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -96,6 +116,9 @@
 				<xsl:value-of select="wdb:substring-before-last($mid, ' ')" />
 			</xsl:when>
 			<xsl:when test="ends-with(normalize-space(), '-') and following-sibling::node()[1][self::tei:lb]">
+				<xsl:value-of select="wdb:substring-before-last(., ' ')" />
+			</xsl:when>
+			<xsl:when test="ends-with(normalize-space(), '-') and following-sibling::*[1][self::tei:note]">
 				<xsl:value-of select="wdb:substring-before-last(., ' ')" />
 			</xsl:when>
 			<xsl:when test="preceding-sibling::node()[1][self::tei:lb] and

@@ -58,6 +58,19 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="mit Marginalie">
+			<x:context>
+				<p>
+					<lb/>Dan wie heylig der mensch auff erdtreich wurt od-<note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note>
+					<lb/>der ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
+				</p>
+			</x:context>
+			<x:expect label="w und Marginalie drin">
+				<p>
+					<lb/>Dan wie heylig der mensch auff erdtreich wurt <w>od<note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note><lb break="no"/>der</w> ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="quote">
 		<x:context>
