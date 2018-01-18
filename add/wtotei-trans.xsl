@@ -52,6 +52,16 @@
 		<note place="margin"><xsl:apply-templates select="w:r" /></note>
 	</xsl:template>
 	
+	<!-- Zwischenüberschriften -->
+	<xsl:template match="w:p[wdb:is(., 'KSZwischenberschrift', 'p')]">
+		<head>
+			<xsl:if test="wdb:is(., 'KSZwischenberschrift2', 'p')">
+				<xsl:attribute name="type">subheading</xsl:attribute>
+			</xsl:if>
+			<xsl:apply-templates />
+		</head>
+	</xsl:template>
+	
 	<!-- normaler Absatz -->
 	<xsl:template match="w:p[descendant::w:t and not(hab:isStruct(.)) and not(descendant::w:numPr)
 		and not(hab:isP(.) or hab:isDiv(.) or wdb:is(., 'KSMarginalie', 'p'))]">
