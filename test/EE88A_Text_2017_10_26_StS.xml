@@ -156,7 +156,6 @@
 					</w:p>
 					<w:p w:rsidR="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
 						<w:pPr>
-							<w:pStyle w:val="KSText"/>
 							<w:spacing w:line="360" w:lineRule="auto"/>
 							<w:jc w:val="center"/>
 							<w:rPr>
@@ -1203,25 +1202,13 @@
 							</w:rPr>
 							<w:t>:</w:t>
 						</w:r>
-					</w:p>
-					<w:p w:rsidR="00FD2C96" w:rsidRPr="00F111D2" w:rsidRDefault="00FD2C96" w:rsidP="00FD2C96">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:ind w:left="360"/>
-							<w:rPr>
-								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
-								<w:sz w:val="24"/>
-								<w:szCs w:val="24"/>
-							</w:rPr>
-						</w:pPr>
 						<w:r w:rsidRPr="00F111D2">
 							<w:rPr>
 								<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
 								<w:sz w:val="24"/>
 								<w:szCs w:val="24"/>
 							</w:rPr>
-							<w:t>[77r]</w:t>
+							<w:t xml:space="preserve"> [77r]</w:t>
 						</w:r>
 					</w:p>
 					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00FD2C96" w:rsidP="00F111D2">
@@ -1501,163 +1488,7 @@
 						<w:pPr>
 							<w:pStyle w:val="KSText"/>
 						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2">
-						<w:pPr>
-							<w:spacing w:line="360" w:lineRule="auto"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
-					</w:p>
-					<w:p w:rsidR="00D642DF" w:rsidRPr="00F111D2" w:rsidRDefault="00D642DF" w:rsidP="005E1AA9">
-						<w:pPr>
-							<w:pStyle w:val="KSText"/>
-							<w:rPr>
-								<w:lang w:val="en-US"/>
-							</w:rPr>
-						</w:pPr>
+						<w:sym w:char="F05E" />
 					</w:p>
 					<w:sectPr w:rsidR="00D642DF" w:rsidRPr="00F111D2">
 						<w:footnotePr>
