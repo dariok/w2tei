@@ -11,7 +11,7 @@
 	
 	<xsl:include href="ks-common.xsl"/>
 	
-<!--	<xsl:output indent="yes"/>-->
+	<xsl:output indent="yes"/>
 	
 	<xsl:template match="w:body">
 		<xsl:apply-templates
@@ -103,7 +103,7 @@
 	
 	<xsl:template match="w:p" mode="pb">
 		<xsl:variable name="temp">
-			<xsl:apply-templates select="w:r"/>
+			<xsl:apply-templates select="w:r | w:bookmarkStart"/>
 		</xsl:variable>
 		<xsl:for-each select="$temp/node()">
 			<xsl:choose>
@@ -126,6 +126,20 @@
 		</xsl:for-each>
 	</xsl:template>
 	<!-- Ende Paragraphen -->
+	
+	<!-- Vertweise -->
+	<xsl:template match="w:bookmarkStart">
+		<hab:bm name="{@w:name}"/>
+	</xsl:template>
+	<xsl:template match="w:r[w:fldChar]">
+		<xsl:if test="not(w:fldChar/@w:fldCharType='separate')">
+			<hab:mark>
+				<xsl:if test="w:fldChar/@w:fldCharType='begin'">
+					<xsl:attribute name="ref" select="normalize-space(following-sibling::w:r[1]/w:instrText)"/>
+				</xsl:if>
+			</hab:mark>
+		</xsl:if>
+	</xsl:template>
 	
 	<!-- kritische Anmerkungen -->
 	<xsl:template match="w:r[descendant::w:footnoteReference]">

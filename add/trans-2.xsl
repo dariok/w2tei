@@ -3,6 +3,7 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
+	xmlns:hab="http://diglib.hab.de"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all"
 	version="2.0">
@@ -81,6 +82,14 @@
 				<xsl:sequence select="." />
 			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>
+	
+	<!-- Verweise -->
+	<xsl:template match="hab:bm" />
+	<xsl:template match="tei:note[@type='footnote' and preceding-sibling::*[1][self::hab:bm]]">
+		<note type="footnote" xml:id="n{count(preceding::hab:bm)}">
+			<xsl:apply-templates select="node()" />
+		</note>
 	</xsl:template>
 	
 	<xsl:template match="tei:note[@type = 'footnote']/text()">

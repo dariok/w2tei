@@ -323,7 +323,7 @@
 	</xsl:template>
 	
 	<xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i
-		or w:endnoteReference or w:footnoteReference or hab:isSem(.))]">
+		or w:endnoteReference or w:footnoteReference or hab:isSem(.) or descendant::w:fldChar)]">
 		<xsl:apply-templates select="w:t | w:br" />
 	</xsl:template>
 	<xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i

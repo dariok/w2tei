@@ -222,4 +222,16 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="Verweise">
+		<x:scenario label="Nummer für normale FN">
+			<x:context>
+				<hab:bm xmlns:hab="http://diglib.hab.de" name="_Ref495566379"/>
+				<note type="footnote">Der Begrifflichkeit der Thesenreihe liegt</note>
+			</x:context>
+			<x:expect label="ID n1">
+				<note type="footnote" xml:id="n1">Der Begrifflichkeit der Thesenreihe liegt</note>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
