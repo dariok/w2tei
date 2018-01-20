@@ -291,7 +291,7 @@
 		<!--<xsl:apply-templates select="." mode="eval" />-->
 		<xsl:choose>
 			<xsl:when test="descendant::w:i/@w:val=0">
-				<xsl:apply-templates />
+				<xsl:apply-templates select="w:t"/>
 			</xsl:when>
 			<xsl:otherwise>
 				<hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
