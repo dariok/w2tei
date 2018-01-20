@@ -122,6 +122,26 @@
 					ultimam quae ab omnibus mors vocatur.</quote> (<bibl>CCSL 50, 165,13-21</bibl>; <bibl>PL 42, 890</bibl>).</note> beschriebenn/ aber der leyp/ das ist/ der ausserlich
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="ungleiche Zeichen">
+			<x:context>
+				<lb/><item>Lex factorum<note type="footnote">Der Begrifflichkeit der
+					Thesenreihe liegt <ref type="biblical">Röm</ref><ref type="biblical"> 3,27-30</ref> zu Grunde: „(27) Ubi
+					est ergo gloriatio tua? Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur
+					enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium?
+					Immo et gentium. (30) Quoniam quidem unus est Deus, qui justificat circumcisionem ex fide, et praeputium
+					per fidem."</note> non in solo iudaismo<note type="footnote">Vgl. <ref type="biblical">Röm</ref><ref
+						type="biblical"> 3,29</ref> (s. o. Anm. 2).</note> Existit.</item>
+			</x:context>
+			<x:expect label="quote">
+				<lb/><item>Lex factorum<note type="footnote">Der Begrifflichkeit der
+					Thesenreihe liegt <ref type="biblical">Röm</ref><ref type="biblical"> 3,27-30</ref> zu Grunde: <quote>(27) Ubi
+					est ergo gloriatio tua? Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur
+					enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium?
+					Immo et gentium. (30) Quoniam quidem unus est Deus, qui justificat circumcisionem ex fide, et praeputium
+					per fidem.</quote></note> non in solo iudaismo<note type="footnote">Vgl. <ref type="biblical">Röm</ref><ref
+						type="biblical"> 3,29</ref> (s. o. Anm. 2).</note> Existit.</item>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="Worttrennung">
