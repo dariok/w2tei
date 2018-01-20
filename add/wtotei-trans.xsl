@@ -22,7 +22,7 @@
 	<xsl:template match="w:p[hab:isDiv(.)]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<div>
-			<xsl:apply-templates select="following-sibling::w:p[hab:isP(.)
+			<xsl:apply-templates select="following-sibling::w:p[(hab:isP(.) or wdb:is(., 'KSZwischenberschrift', 'p'))
 				and generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />
 		</div>
 	</xsl:template>
@@ -58,7 +58,7 @@
 			<xsl:if test="wdb:is(., 'KSZwischenberschrift2', 'p')">
 				<xsl:attribute name="type">subheading</xsl:attribute>
 			</xsl:if>
-			<xsl:apply-templates />
+			<xsl:apply-templates select="w:r"/>
 		</head>
 	</xsl:template>
 	
