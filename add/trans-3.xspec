@@ -36,6 +36,15 @@
 				<p>Lex factorum dicitur. sicut lucus a luc&lt;e&gt;ndo:<note type="crit_app">Vom Editor verbessert für<orig> lucando: </orig><bibl>Kolde, 471</bibl>, ändert stillschweigend in<orig> non lucendo.</orig></note></p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="danach gestrichen">
+			<x:context>
+				<p>Lex<note type="crit_app"><hi
+					style="font-style: italic;">Danach gestrichen</hi> factorum</note> fidei bonorum operum et</p>
+			</x:context>
+			<x:expect label="del mit Leerzeichen vorne">
+				<p>Lex<del> factorum</del> fidei bonorum operum et</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="text vor krit. FN">
 		<x:context>

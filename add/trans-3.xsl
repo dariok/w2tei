@@ -29,8 +29,11 @@
 				<xsl:if test="starts-with(., ' ')">
 					<xsl:text> </xsl:text>
 				</xsl:if>
-				<xsl:value-of select="string-join($front, ' ')"/>
-				<xsl:text> </xsl:text>
+				<xsl:if test="string-length($front) &gt; 0">
+					<xsl:value-of select="string-join($front, ' ')"/>
+					<xsl:text> </xsl:text>
+				</xsl:if>
+				
 				<xsl:choose>
 					<xsl:when test="starts-with($note/tei:hi[1], 'folgt')">
 						<xsl:variable name="wit" select="normalize-space($note/tei:hi[2])"/>
@@ -71,6 +74,13 @@
 							<lem wit="#A"><xsl:value-of select="$last"/></lem>
 							<rdg wit="#{$wit}"><xsl:value-of select="normalize-space($note/text()[1])"/></rdg>
 						</app>
+					</xsl:when>
+					<xsl:when test="$note/tei:hi[normalize-space() = 'Danach gestrichen']">
+						<xsl:value-of select="$last" />
+						<del>
+							<xsl:text> </xsl:text>
+							<xsl:value-of select="normalize-space($note/tei:hi/following-sibling::text())"/>
+						</del>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="$last"/>
