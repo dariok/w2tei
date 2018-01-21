@@ -87,19 +87,36 @@
 		
 		<label>
 			<xsl:choose>
-				<xsl:when test="$style = 'upperRoman'">
-					<xsl:number count="w:p[descendant::w:numPr]" format="I"/>
+				<xsl:when test="wdb:is(w:r[1], 'KSkorrigierteThesennummer', 'r')">
+					<app>
+						<lem>
+							<xsl:choose>
+								<xsl:when test="$style = 'upperRoman'">
+									<xsl:number count="w:p[descendant::w:numPr]" format="I" />
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:number count="w:p[descendant::w:numPr]" />
+								</xsl:otherwise>
+							</xsl:choose>
+							<xsl:text>.</xsl:text>
+						</lem>
+						<rdg>
+							<xsl:apply-templates select="w:r[1]/w:t"/>
+						</rdg>
+					</app>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:number count="w:p[descendant::w:numPr]"/>
+					<xsl:choose>
+						<xsl:when test="$style = 'upperRoman'">
+							<xsl:number count="w:p[descendant::w:numPr]" format="I" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:number count="w:p[descendant::w:numPr]" />
+						</xsl:otherwise>
+					</xsl:choose>
+					<xsl:text>.</xsl:text>
 				</xsl:otherwise>
 			</xsl:choose>
-			<xsl:text>.</xsl:text>
-			<xsl:if test="wdb:is(w:r[1], 'KSkorrigierteThesennummer', 'r')">
-				<sic>
-					<xsl:apply-templates select="w:r[1]/w:t"/>
-				</sic>
-			</xsl:if>
 		</label>
 		<item>
 			<xsl:apply-templates select="." mode="pb" />

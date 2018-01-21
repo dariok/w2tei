@@ -1487,7 +1487,7 @@
 			</x:context>
 			<x:expect label="in label positioniert">
 				<list>
-					<label>I.<sic>iiij</sic></label>
+					<label><app><lem>I.</lem><rdg>iiij</rdg></app></label>
 					<item> Que lex/ et si negativa esse censeatur/ non tamen impletur absque illa affirmativa/ scilicet Quecunque vultis ut vobis faciant homines/ et vos facite illis.</item>
 				</list>
 			</x:expect>
