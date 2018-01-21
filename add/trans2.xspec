@@ -241,7 +241,7 @@
 			</x:context>
 			<x:expect label="ptr type wdb mit n1">
 				<note type="footnote" xml:id="n1">Der Begrifflichkeit der Thesenreihe liegt</note>
-				<note type="footnote">(s. o. Anm. <ptr type="wdb" target="n1" />) die</note> 
+				<note type="footnote">(s. o. Anm. <ptr type="wdb" target="#n1" />) die</note> 
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
