@@ -233,5 +233,16 @@
 				<note type="footnote" xml:id="n1">Der Begrifflichkeit der Thesenreihe liegt</note>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="Verweis auf normale FN">
+			<x:context>
+				<hab:bm xmlns:hab="http://diglib.hab.de" name="_Ref495566379"/>
+				<note type="footnote">Der Begrifflichkeit der Thesenreihe liegt</note>
+				<note type="footnote">(s. o. Anm. <hab:mark xmlns:hab="http://diglib.hab.de" ref="NOTEREF _Ref495566379 \h"/>2<hab:mark xmlns:hab="http://diglib.hab.de"/>) die</note> 
+			</x:context>
+			<x:expect label="ptr type wdb mit n1">
+				<note type="footnote" xml:id="n1">Der Begrifflichkeit der Thesenreihe liegt</note>
+				<note type="footnote">(s. o. Anm. <ptr type="wdb" target="n1" />) die</note> 
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>

@@ -92,7 +92,19 @@
 		</note>
 	</xsl:template>
 	
-	<xsl:template match="tei:note[@type = 'footnote']/text()">
+	<xsl:template match="hab:mark[not(@ref)]" />
+	<xsl:template match="text()[preceding-sibling::*[1][self::hab:mark[@ref]]]" />
+	<xsl:template match="hab:mark[@ref]">
+		<xsl:variable name="ref" select="substring-before(substring-after(@ref, 'REF '), ' ')" />
+		<xsl:variable name="target" select="//hab:bm[@name = $ref]/following-sibling::*[1]" />
+		<xsl:choose>
+			<xsl:when test="$target/@type='footnote'">
+				<ptr type="wdb" target="n{count($target/preceding::hab:bm)}" />
+			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
+	
+	<xsl:template match="tei:note[@type = 'footnote']/text()[not(preceding-sibling::*[1][self::hab:mark])]">
 		<xsl:analyze-string select="." regex="„([^“^&quot;]*)[“&quot;]">
 			<xsl:matching-substring>
 				<quote>
