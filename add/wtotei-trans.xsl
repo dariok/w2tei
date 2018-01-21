@@ -95,11 +95,17 @@
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:text>.</xsl:text>
+			<xsl:if test="wdb:is(w:r[1], 'KSkorrigierteThesennummer', 'r')">
+				<sic>
+					<xsl:apply-templates select="w:r[1]/w:t"/>
+				</sic>
+			</xsl:if>
 		</label>
 		<item>
 			<xsl:apply-templates select="." mode="pb" />
 		</item>
 	</xsl:template>
+	<xsl:template match="w:r[wdb:is(., 'KSkorrigierteThesennummer', 'r')]" />
 	
 	<xsl:template match="w:p" mode="pb">
 		<xsl:variable name="temp">

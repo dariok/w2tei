@@ -1163,5 +1163,334 @@
 				</list>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="korrigierte Zählung">
+			<x:context>
+				<w:p w:rsidR="00FE24A7" w:rsidRPr="00E5383B" w:rsidRDefault="00FE24A7" w:rsidP="00B10639">
+					<w:pPr>
+						<w:pStyle w:val="Listenabsatz"/>
+						<w:numPr>
+							<w:ilvl w:val="0"/>
+							<w:numId w:val="3"/>
+						</w:numPr>
+						<w:spacing w:line="360" w:lineRule="auto"/>
+						<w:rPr>
+							<w:lang w:val="fr-FR"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="00D03717">
+						<w:rPr>
+							<w:rStyle w:val="KSkorrigierteThesennummer"/>
+							<w:lang w:val="fr-FR"/>
+						</w:rPr>
+						<w:t>iiij</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00E5383B">
+						<w:rPr>
+							<w:lang w:val="fr-FR"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Que lex/ et si negativa esse censeatur/ non tamen impletur absque illa affirmativa/ scilicet Quecunque vultis ut vobis faciant homines/ et vos facite illis</w:t>
+					</w:r>
+					<w:r w:rsidRPr="00E5383B">
+						<w:rPr>
+							<w:lang w:val="fr-FR"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+				</w:p>
+				<w:numbering mc:Ignorable="w14 w15 wp14"
+					xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+					xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+					xmlns:o="urn:schemas-microsoft-com:office:office"
+					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+					xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml"
+					xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+					xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+					xmlns:w10="urn:schemas-microsoft-com:office:word"
+					xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+					xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+					xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+					xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+					xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+					xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
+					<w:abstractNum w:abstractNumId="0" w15:restartNumberingAfterBreak="0">
+						<w:nsid w:val="179D0E78"/>
+						<w:multiLevelType w:val="hybridMultilevel"/>
+						<w:tmpl w:val="67021DC8"/>
+						<w:lvl w:ilvl="0" w:tplc="04070013">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="upperRoman"/>
+							<w:lvlText w:val="%1."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="720" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="1" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%2."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="1440" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="2" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%3."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="2160" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="3" w:tplc="0476000F" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="decimal"/>
+							<w:lvlText w:val="%4."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="2880" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="4" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%5."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="3600" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="5" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%6."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="4320" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="6" w:tplc="0476000F" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="decimal"/>
+							<w:lvlText w:val="%7."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="5040" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="7" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%8."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="5760" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="8" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%9."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="6480" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+					</w:abstractNum>
+					<w:abstractNum w:abstractNumId="1" w15:restartNumberingAfterBreak="0">
+						<w:nsid w:val="28561AF3"/>
+						<w:multiLevelType w:val="hybridMultilevel"/>
+						<w:tmpl w:val="332682C2"/>
+						<w:lvl w:ilvl="0" w:tplc="04070013">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="upperRoman"/>
+							<w:lvlText w:val="%1."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="360" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="1" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%2."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="1080" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="2" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%3."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="1800" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="3" w:tplc="0476000F" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="decimal"/>
+							<w:lvlText w:val="%4."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="2520" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="4" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%5."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="3240" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="5" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%6."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="3960" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="6" w:tplc="0476000F" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="decimal"/>
+							<w:lvlText w:val="%7."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="4680" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="7" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%8."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="5400" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="8" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%9."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="6120" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+					</w:abstractNum>
+					<w:abstractNum w:abstractNumId="2" w15:restartNumberingAfterBreak="0">
+						<w:nsid w:val="4BF23588"/>
+						<w:multiLevelType w:val="hybridMultilevel"/>
+						<w:tmpl w:val="2FBEE660"/>
+						<w:lvl w:ilvl="0" w:tplc="726C204A">
+							<w:start w:val="2"/>
+							<w:numFmt w:val="upperRoman"/>
+							<w:lvlText w:val="%1."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="502" w:hanging="360"/>
+							</w:pPr>
+							<w:rPr>
+								<w:rFonts w:hint="default"/>
+							</w:rPr>
+						</w:lvl>
+						<w:lvl w:ilvl="1" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%2."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="1440" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="2" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%3."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="2160" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="3" w:tplc="0476000F" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="decimal"/>
+							<w:lvlText w:val="%4."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="2880" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="4" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%5."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="3600" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="5" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%6."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="4320" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="6" w:tplc="0476000F" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="decimal"/>
+							<w:lvlText w:val="%7."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="5040" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="7" w:tplc="04760019" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerLetter"/>
+							<w:lvlText w:val="%8."/>
+							<w:lvlJc w:val="left"/>
+							<w:pPr>
+								<w:ind w:left="5760" w:hanging="360"/>
+							</w:pPr>
+						</w:lvl>
+						<w:lvl w:ilvl="8" w:tplc="0476001B" w:tentative="1">
+							<w:start w:val="1"/>
+							<w:numFmt w:val="lowerRoman"/>
+							<w:lvlText w:val="%9."/>
+							<w:lvlJc w:val="right"/>
+							<w:pPr>
+								<w:ind w:left="6480" w:hanging="180"/>
+							</w:pPr>
+						</w:lvl>
+					</w:abstractNum>
+					<w:num w:numId="1">
+						<w:abstractNumId w:val="2"/>
+					</w:num>
+					<w:num w:numId="2">
+						<w:abstractNumId w:val="1"/>
+					</w:num>
+					<w:num w:numId="3">
+						<w:abstractNumId w:val="0"/>
+					</w:num>
+				</w:numbering>
+			</x:context>
+			<x:expect label="in label positioniert">
+				<list>
+					<label>I.<sic>iiij</sic></label>
+					<item> Que lex/ et si negativa esse censeatur/ non tamen impletur absque illa affirmativa/ scilicet Quecunque vultis ut vobis faciant homines/ et vos facite illis.</item>
+				</list>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>
