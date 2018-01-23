@@ -187,6 +187,15 @@
 			</xsl:for-each>
 		</note>
 	</xsl:template>
+	
+	<xsl:template match="w:r[wdb:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]">
+		<anchor type="crit_app">
+			<xsl:attribute name="ref">
+				<xsl:text>s</xsl:text>
+			</xsl:attribute>
+		</anchor>
+		<xsl:apply-templates select="w:t" />
+	</xsl:template>
 	<!-- ENDE kritische Anmerkungen -->
 	
 	<!-- RS -->
@@ -248,7 +257,8 @@
   </xd:doc>
 	<xsl:function name="hab:isP" as="xs:boolean">
 		<xsl:param name="context"/>
-		<xsl:sequence select="if($context//w:sym/@w:char='F05E') then true() else false()"/>
+		<xsl:sequence select="if($context//w:sym/@w:char='F05E' or $context//w:t[contains(., '')])
+			then true() else false()"/>
 	</xsl:function>
   
   <xd:doc>
