@@ -207,18 +207,41 @@
 	<x:scenario label="zusammenziehen">
 		<x:scenario label="mehrere i">
 			<x:context>
-				<note type="crit_app">
-					<hi style="font-style: italic;">Vom Editor verbessert</hi>
-					<hi style="font-style: italic;"> für</hi> lucando: <bibl>Kolde, 471</bibl>
-					<hi style="font-style: italic;">, </hi>
-					<hi style="font-style: italic;">ändert</hi>
-					<hi style="font-style: italic;"> stillschweigend </hi>
-					<hi style="font-style: italic;">in</hi> non lucendo.</note>
+				<note type="crit_app">Vom Editor verbessert für für<orig> lucando: </orig><bibl>Kolde, 471</bibl>, ändert stillschweigend inändert stillschweigend in<orig> non lucendo.</orig></note>
 			</x:context>
 			<x:expect label="zusammengezogene hi">
+				<note type="crit_app"><hi style="font-style: italic;">Vom Editor verbessert für</hi> lucando:
+					<bibl>Kolde, 471</bibl><hi style="font-style: italic;">, ändert stillschweigend in</hi> non lucendo.</note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="mehrere i (2)">
+			<x:context>
 				<note type="crit_app">
-					<hi style="font-style: italic;">Vom Editor verbessert für</hi> lucando: <bibl>Kolde, 471</bibl>
-					<hi style="font-style: italic;">, ändert stillschweigend in</hi> non lucendo.</note>
+					<hi style="font-style: italic;">Im Inhaltsverzeichnis</hi>
+					<hi style="font-style: italic;"> von A</hi>
+					<hi style="font-style: italic;">, </hi>
+					<hi style="font-style: italic;">pag. 2,</hi>
+					<hi style="font-style: italic;"> lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
+				</note>
+			</x:context>
+			<x:expect label="zusammengezogen">
+				<note type="crit_app">
+					<hi style="font-style: italic;">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
+				</note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="mehrere i (3)">
+			<x:context>
+				<note type="crit_app">
+					<hi style="font-style: italic;">Teil 1</hi> und 
+					<hi style="font-style: italic;"> von A</hi>
+				</note>
+			</x:context>
+			<x:expect label="zusammengezogen">
+				<note type="crit_app">
+					<hi style="font-style: italic;">Teil 1</hi> und 
+					<hi style="font-style: italic;"> von A</hi>
+				</note>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>

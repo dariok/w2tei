@@ -11,7 +11,7 @@
 	
 	<xsl:include href="ks-common.xsl"/>
 	
-	<xsl:output indent="yes"/>
+<!--	<xsl:output indent="yes"/>-->
 	
 	<xsl:template match="w:body">
 		<xsl:apply-templates
