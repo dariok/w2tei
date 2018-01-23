@@ -196,6 +196,9 @@
 	</xsl:template>
 	<xsl:template match="w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r') and
 		not(following-sibling::w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])]">
+		<xsl:if test="not(preceding-sibling::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])">
+			<anchor type="crit_app" ref="s" />
+		</xsl:if>
 		<xsl:apply-templates select="w:t" />
 		<anchor type="crit_app" ref="se" />
 	</xsl:template>
