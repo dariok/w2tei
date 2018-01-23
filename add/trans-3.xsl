@@ -125,6 +125,13 @@
 	
 	<xsl:template match="tei:note[@type='crit_app']" />
 	
+	<xsl:template match="tei:anchor[not(ends-with(@xml:id, 'e'))]">
+		<xsl:variable name="id" select="'#'||@xml:id" />
+		<xsl:sequence select="//tei:span[@from=$id]"/>
+		<xsl:sequence select="." />
+	</xsl:template>
+	<xsl:template match="tei:span" />
+	
 	<xsl:template match="@*">
 		<xsl:copy-of select="." />
 	</xsl:template>

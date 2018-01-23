@@ -2,7 +2,7 @@
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns="http://www.tei-c.org/ns/1.0"
-	xslt-version="2.0"
+	xslt-version="3.0"
 	stylesheet="trans-2.xsl">
 	<x:scenario label="Zeilenumbrüche">
 		<x:scenario label="ohne FN">
@@ -244,5 +244,30 @@
 				<note type="footnote">(s. o. Anm. <ptr type="wdb" target="#n1" />) die</note> 
 			</x:expect>
 		</x:scenario>
+	</x:scenario>
+	
+	<x:scenario label="anchor und span">
+		<x:context>
+			<lb/>
+			<pb n="[21]"/> 
+			<anchor type="crit_app" ref="s"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk 18,20</ref>.</note>/ impletione et testamentorum legatione altarium<note type="crit_app">altatium <hi style="font-style: italic;">B, von Gottschalk verbessert</hi>
+			</note>/ et missrum fundatione<anchor type="crit_app" ref="se"/>
+			<note type="crit_app">
+				<hi style="font-style: italic;">Im Inhaltsverzeichnis</hi>
+				<hi style="font-style: italic;"> von A</hi>
+				<hi style="font-style: italic;">, </hi>
+				<hi style="font-style: italic;">pag. 2,</hi>
+				<hi style="font-style: italic;"> lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
+			</note>.
+		</x:context>
+		<x:expect label="span">
+			<lb/>
+			<pb n="[21]"/> 
+			<anchor type="crit_app" xml:id="s1"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk 18,20</ref>.</note>/ impletione et testamentorum legatione altarium<note type="crit_app">altatium <hi style="font-style: italic;">B, von Gottschalk verbessert</hi>
+			</note>/ et missrum fundatione<anchor type="crit_app" xml:id="s1e"/>
+			<span type="crit_app" from="#s1" to="#s1e">
+				<hi style="font-style: italic;">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
+			</span>.
+		</x:expect>	
 	</x:scenario>
 </x:description>

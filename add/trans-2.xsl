@@ -6,7 +6,7 @@
 	xmlns:hab="http://diglib.hab.de"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all"
-	version="2.0">
+	version="3.0">
 	
 <!--	<xsl:output indent="yes"/>-->
 	
@@ -120,6 +120,34 @@
 				<xsl:value-of select="."/>
 			</xsl:non-matching-substring>
 		</xsl:analyze-string>
+	</xsl:template>
+	
+	<!-- Anmerkung über mehrere Wörter -->
+	<xsl:template match="tei:anchor">
+		<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])+1"/>
+		<xsl:choose>
+			<xsl:when test="@ref='se'">
+				<anchor type="crit_app" xml:id="{'s'||$num||'e'}" />
+			</xsl:when>
+			<xsl:otherwise>
+				<anchor type="crit_app" xml:id="{@ref||$num}" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<xsl:template match="tei:note[@type = 'crit_app']">
+		<xsl:choose>
+			<xsl:when test="preceding-sibling::*[1][self::tei:anchor]">
+				<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])" />
+				<span type="crit_app" from="{'#s'||$num}" to="{'#s'||$num||'e'}">
+					<xsl:apply-templates />
+				</span>
+			</xsl:when>
+			<xsl:otherwise>
+				<note type="crit_app">
+					<xsl:apply-templates />
+				</note>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<!-- Zusammenziehen von zusammengehörigen Teilen -->

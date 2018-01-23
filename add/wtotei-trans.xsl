@@ -152,7 +152,9 @@
 	
 	<!-- Vertweise -->
 	<xsl:template match="w:bookmarkStart">
-		<hab:bm name="{@w:name}"/>
+		<xsl:if test="@name != '_GoBack'">
+			<hab:bm name="{@w:name}"/>
+		</xsl:if>
 	</xsl:template>
 	<xsl:template match="w:r[w:fldChar]">
 		<xsl:if test="not(w:fldChar/@w:fldCharType='separate')">
@@ -189,12 +191,13 @@
 	</xsl:template>
 	
 	<xsl:template match="w:r[wdb:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]">
-		<anchor type="crit_app">
-			<xsl:attribute name="ref">
-				<xsl:text>s</xsl:text>
-			</xsl:attribute>
-		</anchor>
+		<anchor type="crit_app" ref="s"/>
 		<xsl:apply-templates select="w:t" />
+	</xsl:template>
+	<xsl:template match="w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r') and
+		not(following-sibling::w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])]">
+		<xsl:apply-templates select="w:t" />
+		<anchor type="crit_app" ref="se" />
 	</xsl:template>
 	<!-- ENDE kritische Anmerkungen -->
 	
