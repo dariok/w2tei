@@ -138,7 +138,7 @@
 							<pb n="{regex-group(1)}" />
 						</xsl:matching-substring>
 						<xsl:non-matching-substring>
-							<xsl:value-of select="."/>
+							<xsl:value-of select="wdb:substring-before-if-ends(., '')"/>
 						</xsl:non-matching-substring>
 					</xsl:analyze-string>
 				</xsl:when>
