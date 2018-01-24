@@ -52,7 +52,7 @@
 				<xsl:text> </xsl:text>
 				<w>
 					<xsl:value-of select="wdb:substring-before(wdb:substring-after-last(preceding-sibling::text()[1], ' '), '-')" />
-					<xsl:sequence select="preceding-sibling::tei:note[1]" />
+<!--					<xsl:sequence select="preceding-sibling::tei:note[1]" />-->
 					<lb break="no" />
 					<xsl:value-of select="wdb:substring-before(following-sibling::text()[1], ' ')" />
 				</w>
@@ -162,6 +162,21 @@
 	</xsl:template>
 	<xsl:template match="tei:hi[preceding-sibling::tei:*[1][self::tei:hi]
 		and preceding-sibling::node()[1][self::text() and normalize-space()='']]"/>-->
+	
+	<xsl:template match="tei:note[@place='margin' and not(preceding-sibling::node()[1][self::tei:note[@place='margin']])]">
+		<note place="margin">
+			<xsl:variable name="myId" select="generate-id()"/>
+			<xsl:apply-templates />
+			<xsl:apply-templates select="following-sibling::tei:note[@place='margin'
+				and $myId = generate-id(preceding-sibling::tei:note[not(preceding-sibling::tei:note)])]" mode="content" />
+		</note>
+	</xsl:template>
+	<xsl:template match="tei:note[@place='margin' and preceding-sibling::node()[1][self::tei:note[@place='margin']]]"/>
+	<xsl:template match="tei:note[@place='margin' and preceding-sibling::node()[1][self::tei:note[@place='margin']]]"
+		mode="content">
+		<xsl:text> </xsl:text>
+		<xsl:apply-templates />
+	</xsl:template>
 	
 	<xsl:template match="text()[not(ancestor::tei:note)]">
 		<xsl:choose>

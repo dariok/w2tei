@@ -67,7 +67,7 @@
 			</x:context>
 			<x:expect label="w und Marginalie drin">
 				<p>
-					<lb/>Dan wie heylig der mensch auff erdtreich wurt <w>od<note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note><lb break="no"/>der</w> ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
+					<lb/>Dan wie heylig der mensch auff erdtreich wurt<note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note><w>od<lb break="no"/>der</w> ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -238,6 +238,14 @@
 					<hi style="font-style: italic;">Teil 1</hi> und 
 					<hi style="font-style: italic;"> von A</hi>
 				</note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="Marginalien">
+			<x:context>
+				<note place="margin">Pontifex in c. Solite/</note><note place="margin">insolenter et mire</note><note place="margin">rhetoricatur i‘d est‘ fallacibus</note><note place="margin">et frivolis illationum  </note><note place="margin">nexibus argutatur/ ut</note><note place="margin">frequenter</note><note place="margin">adsolet.</note>
+			</x:context>
+			<x:expect label="nur eine Marginalie">
+				<note place="margin">Pontifex in c. Solite/ insolenter et mire rhetoricatur i‘d est‘ fallacibus et frivolis illationum   nexibus argutatur/ ut frequenter adsolet.</note>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
