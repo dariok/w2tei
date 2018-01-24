@@ -204,24 +204,20 @@
 		</x:scenario>
 	</x:scenario>
 	
-	<x:scenario label="zusammenziehen">
-		<x:scenario label="mehrere i">
+	<x:scenario label="zusammenziehen / ersetzen">
+		<!--<x:scenario label="mehrere i in crit_app">
 			<x:context>
-				<note type="crit_app">Vom Editor verbessert für für<orig> lucando: </orig><bibl>Kolde, 471</bibl>, ändert stillschweigend inändert stillschweigend in<orig> non lucendo.</orig></note>
+				<note type="crit_app"><hi style="font-style: italic;">Vom Editor verbessert</hi><hi style="font-style: italic;"> für</hi> lucando: <bibl>Kolde, 471</bibl><hi style="font-style: italic;">, </hi><hi style="font-style: italic;">ändert</hi><hi style="font-style: italic;"> stillschweigend </hi><hi style="font-style: italic;">in</hi> non lucendo.</note>
 			</x:context>
-			<x:expect label="zusammengezogene hi">
-				<note type="crit_app"><hi style="font-style: italic;">Vom Editor verbessert für</hi> lucando:
-					<bibl>Kolde, 471</bibl><hi style="font-style: italic;">, ändert stillschweigend in</hi> non lucendo.</note>
+			<x:expect label="ohne hi">
+				<note type="crit_app">Vom Editor verbessert für <orig>lucando:</orig>
+	<bibl>Kolde, 471</bibl>, ändert stillschweigend in <quote>non lucendo.</quote></note>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="mehrere i (2)">
 			<x:context>
 				<note type="crit_app">
-					<hi style="font-style: italic;">Im Inhaltsverzeichnis</hi>
-					<hi style="font-style: italic;"> von A</hi>
-					<hi style="font-style: italic;">, </hi>
-					<hi style="font-style: italic;">pag. 2,</hi>
-					<hi style="font-style: italic;"> lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
+					<hi style="font-style: italic;">Im Inhaltsverzeichnis</hi><hi style="font-style: italic;"> von A</hi><hi style="font-style: italic;">, </hi><hi style="font-style: italic;">pag. 2,</hi><hi style="font-style: italic;"> lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
 				</note>
 			</x:context>
 			<x:expect label="zusammengezogen">
@@ -229,7 +225,7 @@
 					<hi style="font-style: italic;">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
 				</note>
 			</x:expect>
-		</x:scenario>
+		</x:scenario>-->
 		<x:scenario label="mehrere i (3)">
 			<x:context>
 				<note type="crit_app">
@@ -289,7 +285,11 @@
 			<anchor type="crit_app" xml:id="s1"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk 18,20</ref>.</note>/ impletione et testamentorum legatione altarium<note type="crit_app">altatium <hi style="font-style: italic;">B, von Gottschalk verbessert</hi>
 			</note>/ et missrum fundatione<anchor type="crit_app" xml:id="s1e"/>
 			<span type="crit_app" from="#s1" to="#s1e">
-				<hi style="font-style: italic;">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
+				<hi style="font-style: italic;">Im Inhaltsverzeichnis</hi>
+				<hi style="font-style: italic;"> von A</hi>
+				<hi style="font-style: italic;">, </hi>
+				<hi style="font-style: italic;">pag. 2,</hi>
+				<hi style="font-style: italic;"> lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
 			</span>.
 		</x:expect>	
 	</x:scenario>

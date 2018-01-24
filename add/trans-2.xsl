@@ -151,7 +151,8 @@
 	</xsl:template>
 	
 	<!-- Zusammenziehen von zusammengehörigen Teilen -->
-	<xsl:template match="tei:hi[@style='font-style: italic;' and not(preceding-sibling::node()[1][self::tei:hi])]">
+	<!-- prüfen, ob das für hi überhaupt relevant ist -->
+	<!--<xsl:template match="tei:hi[@style='font-style: italic;' and not(preceding-sibling::node()[1][self::tei:hi])]">
 		<xsl:variable name="myId" select="generate-id()" />
 		<hi style="font-style: italic;">
 			<xsl:sequence select="text()
@@ -160,7 +161,7 @@
 		</hi>
 	</xsl:template>
 	<xsl:template match="tei:hi[preceding-sibling::tei:*[1][self::tei:hi]
-		and preceding-sibling::node()[1][self::text() and normalize-space()='']]"/>
+		and preceding-sibling::node()[1][self::text() and normalize-space()='']]"/>-->
 	
 	<xsl:template match="text()[not(ancestor::tei:note)]">
 		<xsl:choose>

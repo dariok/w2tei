@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for C:/Users/kampkaspar/workspace/W2TEI/add/trans-2.xsl (passed:12 / pending:0 / failed:3 / total:15)</title>
+      <title>Test Report for C:/Users/kampkaspar/workspace/W2TEI/add/trans-2.xsl (passed:13 / pending:0 / failed:0 / total:13)</title>
       <link rel="stylesheet" type="text/css" href="file:/C:/Users/kampkaspar/.p2/pool/plugins/com.oxygenxml.editor_18.1.0.v2017020917/frameworks/xspec/src/reporter/test-report.css" />
    </head>
    <body>
       <h1>Test Report</h1>
       <p xmlns:oxy="http://www.oxygenxml.com/xslt/xspec">Stylesheet: <a href="file:/C:/Users/kampkaspar/workspace/W2TEI/add/trans-2.xsl">C:/Users/kampkaspar/workspace/W2TEI/add/trans-2.xsl</a></p>
-      <p xmlns:oxy="http://www.oxygenxml.com/xslt/xspec">Tested: 23 Januar 2018 at 20:07</p>
+      <p xmlns:oxy="http://www.oxygenxml.com/xslt/xspec">Tested: 24 Januar 2018 at 12:28</p>
       <h2 xmlns:oxy="http://www.oxygenxml.com/xslt/xspec">Contents</h2>
       <table xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" class="xspec">
          <col width="80%" />
@@ -18,10 +18,10 @@
          <thead>
             <tr>
                <th></th>
-               <th class="result">passed:12</th>
+               <th class="result">passed:13</th>
                <th class="result">pending:0</th>
-               <th class="result">failed:3</th>
-               <th class="result">total:15</th>
+               <th class="result">failed:0</th>
+               <th class="result">total:13</th>
             </tr>
          </thead>
          <tbody>
@@ -53,25 +53,25 @@
                <th class="result">0</th>
                <th class="result">1</th>
             </tr>
-            <tr class="failed">
-               <th><a href="#d4e968">zusammenziehen</a></th>
+            <tr class="successful">
+               <th><a href="#d4e968">zusammenziehen / ersetzen</a></th>
                <th class="result">1</th>
                <th class="result">0</th>
-               <th class="result">2</th>
-               <th class="result">3</th>
+               <th class="result">0</th>
+               <th class="result">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d4e1154">Verweise</a></th>
+               <th><a href="#d4e1023">Verweise</a></th>
                <th class="result">2</th>
                <th class="result">0</th>
                <th class="result">0</th>
                <th class="result">2</th>
             </tr>
-            <tr class="failed">
-               <th><a href="#d4e1241">anchor und span</a></th>
-               <th class="result">0</th>
-               <th class="result">0</th>
+            <tr class="successful">
+               <th><a href="#d4e1110">anchor und span</a></th>
                <th class="result">1</th>
+               <th class="result">0</th>
+               <th class="result">0</th>
                <th class="result">1</th>
             </tr>
          </tbody>
@@ -193,30 +193,14 @@
          </table>
       </div>
       <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e968">
-         <h2 class="successful">zusammenziehen<span class="scenario-totals">passed:1 / pending:0 / failed:2 / total:3</span></h2>
+         <h2 class="successful">zusammenziehen / ersetzen<span class="scenario-totals">passed:1 / pending:0 / failed:0 / total:1</span></h2>
          <table class="xspec" id="t-d4e968">
             <col width="80%" />
             <col width="20%" />
             <tbody>
                <tr class="successful">
-                  <th>zusammenziehen</th>
-                  <th>passed:1 / pending:0 / failed:2 / total:3</th>
-               </tr>
-               <tr class="failed">
-                  <th><a href="#d4e973">mehrere i</a></th>
-                  <th>passed:0 / pending:0 / failed:1 / total:1</th>
-               </tr>
-               <tr class="failed">
-                  <td><a href="#d4e1008">zusammengezogene hi</a></td>
-                  <td>Failure</td>
-               </tr>
-               <tr class="failed">
-                  <th><a href="#d4e1030">mehrere i (2)</a></th>
-                  <th>passed:0 / pending:0 / failed:1 / total:1</th>
-               </tr>
-               <tr class="failed">
-                  <td><a href="#d4e1085">zusammengezogen</a></td>
-                  <td>Failure</td>
+                  <th>zusammenziehen / ersetzen</th>
+                  <th>passed:1 / pending:0 / failed:0 / total:1</th>
                </tr>
                <tr class="successful">
                   <th>mehrere i (3)</th>
@@ -228,71 +212,10 @@
                </tr>
             </tbody>
          </table>
-         <h3 id="d4e973">zusammenziehen mehrere i</h3>
-         <h4 id="d4e1008">zusammengezogene hi</h4>
-         <table class="xspecResult">
-            <thead>
-               <tr>
-                  <th>Result</th>
-                  <th>Expected Result</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td><pre>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">note</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">Vom Editor verbessert für für</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">orig</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> lucando: </span>&lt;/orig&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">bibl</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Kolde, 471</span>&lt;/bibl&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">, ändert stillschweigend inändert stillschweigend in</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">orig</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> non lucendo.</span>&lt;/orig&gt;
-&lt;/note&gt;</pre></td>
-                  <td><pre>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">note</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">Vom Editor verbessert für</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> lucando:
-					</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">bibl</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Kolde, 471</span>&lt;/bibl&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">, ändert stillschweigend in</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> non lucendo.</span>&lt;/note&gt;</pre></td>
-               </tr>
-            </tbody>
-         </table>
-         <h3 id="d4e1030">zusammenziehen mehrere i (2)</h3>
-         <h4 id="d4e1085">zusammengezogen</h4>
-         <table class="xspecResult">
-            <thead>
-               <tr>
-                  <th>Result</th>
-                  <th>Expected Result</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td><pre>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">note</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</span>&lt;/hi&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> von A</span>&lt;/hi&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">, </span>&lt;/hi&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">pag. 2,</span>&lt;/hi&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> lautet der Titel:</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">Entsprechend in B</span>&lt;/hi&gt;
-&lt;/note&gt;</pre></td>
-                  <td><pre>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">note</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">Entsprechend in B</span>&lt;/hi&gt;
-&lt;/note&gt;</pre></td>
-               </tr>
-            </tbody>
-         </table>
       </div>
-      <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e1154">
+      <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e1023">
          <h2 class="successful">Verweise<span class="scenario-totals">passed:2 / pending:0 / failed:0 / total:2</span></h2>
-         <table class="xspec" id="t-d4e1154">
+         <table class="xspec" id="t-d4e1023">
             <col width="80%" />
             <col width="20%" />
             <tbody>
@@ -319,113 +242,19 @@
             </tbody>
          </table>
       </div>
-      <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e1241">
-         <h2 class="failed">anchor und span<span class="scenario-totals">passed:0 / pending:0 / failed:1 / total:1</span></h2>
-         <table class="xspec" id="t-d4e1241">
+      <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e1110">
+         <h2 class="successful">anchor und span<span class="scenario-totals">passed:1 / pending:0 / failed:0 / total:1</span></h2>
+         <table class="xspec" id="t-d4e1110">
             <col width="80%" />
             <col width="20%" />
             <tbody>
-               <tr class="failed">
+               <tr class="successful">
                   <th>anchor und span</th>
-                  <th>passed:0 / pending:0 / failed:1 / total:1</th>
+                  <th>passed:1 / pending:0 / failed:0 / total:1</th>
                </tr>
-               <tr class="failed">
-                  <td><a href="#d4e1344">span</a></td>
-                  <td>Failure</td>
-               </tr>
-            </tbody>
-         </table>
-         <h3 id="d4e1241">anchor und span</h3>
-         <h4 id="d4e1344">span</h4>
-         <table class="xspecResult">
-            <thead>
-               <tr>
-                  <th>Result</th>
-                  <th>Expected Result</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>
-                     <p>XPath <code>/node()</code> from:
-                     </p><pre>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lb</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0" /&gt;&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">pb</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">n</span>="[21]" /&gt;&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">anchor</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">xml:id</span>="s1" /&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Conclusiones duodecim de legis non furtum facies</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">note</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="footnote"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Wortlaut nach </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">ref</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="biblical"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Ex 20,15</span>&lt;/ref&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">; </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">ref</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="biblical"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Lk 18,20</span>&lt;/ref&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">.</span>&lt;/note&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">/ impletione et testamentorum legatione altarium</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">note</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">altatium </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">B, von Gottschalk verbessert</span>&lt;/hi&gt;
-&lt;/note&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">/ et missrum fundatione</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">anchor</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">xml:id</span>="s1e" /&gt;&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">span</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">from</span>="#s1"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">to</span>="#s1e"&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</span>&lt;/hi&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> von A</span>&lt;/hi&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">, </span>&lt;/hi&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">pag. 2,</span>&lt;/hi&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> lautet der Titel:</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">Entsprechend in B</span>&lt;/hi&gt;
-&lt;/span&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">.
-		</span></pre></td>
-                  <td>
-                     <p>XPath <code>/node()</code> from:
-                     </p><pre>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lb</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0" /&gt;&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">pb</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">n</span>="[21]" /&gt;&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">anchor</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">xml:id</span>="s1" /&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Conclusiones duodecim de legis non furtum facies</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">note</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="footnote"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Wortlaut nach </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">ref</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="biblical"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Ex 20,15</span>&lt;/ref&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">; </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">ref</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="biblical"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Lk 18,20</span>&lt;/ref&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">.</span>&lt;/note&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">/ impletione et testamentorum legatione altarium</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">note</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">altatium </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">B, von Gottschalk verbessert</span>&lt;/hi&gt;
-&lt;/note&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">/ et missrum fundatione</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">anchor</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">xml:id</span>="s1e" /&gt;&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">span</span> xmlns:pkg="http://expath.org/ns/pkg"
-         xmlns:impl="urn:x-xspec:compile:xslt:impl"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="crit_app"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">from</span>="#s1"
-         <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">to</span>="#s1e"&gt;
-   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff"> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">Entsprechend in B</span>&lt;/hi&gt;
-&lt;/span&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">.
-		</span></pre></td>
+               <tr class="successful">
+                  <td>span</td>
+                  <td>Success</td>
                </tr>
             </tbody>
          </table>
