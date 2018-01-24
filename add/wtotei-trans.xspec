@@ -4,6 +4,7 @@
   xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
   xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
   xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:hab="http://diglib.hab.de"
   stylesheet="wtotei-trans.xsl" xslt-version="3.0" preserve-space="no">
   <x:scenario label="normaler Absatz">
     <x:scenario label="mit Leerzeilen">
@@ -1044,6 +1045,52 @@
 			</x:expect>
 		</x:scenario>
 
+	</x:scenario>
+	
+	<x:scenario label="Verweise">
+		<x:scenario label="Zielmarke erstellen">
+			<x:context>
+				<w:body>
+					<w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53"
+						w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
+						<w:pPr>
+							<w:pStyle w:val="berschrift1"/>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:lang w:val="de-DE"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="00E46B53">
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:lang w:val="de-DE"/>
+							</w:rPr>
+							<w:t>Text</w:t>
+						</w:r>
+					</w:p>
+					<w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+						w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+						<w:pPr>
+							<w:rPr>
+								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+								<w:lang w:val="de-DE"/>
+							</w:rPr>
+						</w:pPr>
+					</w:p>
+					<w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2"><w:pPr><w:pStyle w:val="KSText"/><w:spacing w:line="360" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="it-IT"/></w:rPr></w:pPr><w:r w:rsidRPr="00F111D2"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="it-IT"/></w:rPr><w:t>Lex factorum</w:t></w:r><w:bookmarkStart w:id="0" w:name="_Ref495566379"/><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="Endnotenzeichen"/><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr><w:endnoteReference w:id="2"/></w:r><w:bookmarkEnd w:id="0"/><w:r w:rsidRPr="00F111D2"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="it-IT"/></w:rPr><w:t xml:space="preserve"> non in solo iudaismo</w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="Endnotenzeichen"/><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr><w:endnoteReference w:id="3"/></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="it-IT"/></w:rPr><w:t xml:space="preserve"> Existit.</w:t></w:r></w:p>
+				</w:body>
+				<w:endnotes>
+					<w:endnote w:id="2"><w:p w:rsidR="00F111D2" w:rsidRPr="00367BD8" w:rsidRDefault="00F111D2" w:rsidP="00F111D2"><w:pPr><w:pStyle w:val="Endnotentext"/><w:rPr><w:lang w:val="fr-FR"/></w:rPr></w:pPr><w:r><w:rPr><w:rStyle w:val="Endnotenzeichen"/></w:rPr><w:endnoteRef/></w:r><w:r><w:t xml:space="preserve"> Der Begrifflichkeit der Thesenreihe liegt </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="KSBibelstelle"/></w:rPr><w:t>Röm 3,27-30</w:t></w:r><w:r><w:t xml:space="preserve"> zu Grunde: „(27) Ubi est ergo gloriatio tua? </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:lang w:val="it-IT"/></w:rPr><w:t xml:space="preserve">Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium? </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">Immo et gentium. </w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>(3</w:t></w:r><w:r w:rsidRPr="00C264D0"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">0) </w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">Quoniam </w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">quidem </w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>unus e</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>s</w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>t Deus, qui justificat circumci</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>s</w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>ionem ex fide, et praeputium per fidem.</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>"</w:t></w:r></w:p></w:endnote>
+					<w:endnote w:id="3"><w:p w:rsidR="00F111D2" w:rsidRPr="00C264D0" w:rsidRDefault="00F111D2" w:rsidP="00F111D2"><w:pPr><w:pStyle w:val="Endnotentext"/><w:rPr><w:lang w:val="sv-SE"/></w:rPr></w:pPr><w:r><w:rPr><w:rStyle w:val="Endnotenzeichen"/></w:rPr><w:endnoteRef/></w:r><w:r><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t xml:space="preserve"> Vgl. </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="KSBibelstelle"/></w:rPr><w:t>Röm 3,29</w:t></w:r><w:r w:rsidRPr="00C264D0"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t xml:space="preserve"> (s. o. Anm. </w:t></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="begin"/></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:instrText xml:space="preserve"> NOTEREF _Ref495566379 \h </w:instrText></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="separate"/></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t>2</w:t></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="end"/></w:r><w:r><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t>).</w:t></w:r></w:p></w:endnote>
+				</w:endnotes>
+			</x:context>
+			<x:expect label="hab:bm">
+				<div>
+				<p><lb/>Lex factorum<hab:bm name="_Ref495566379" /><note type="footnote">Der Begrifflichkeit der Thesenreihe liegt <ref type="biblical">Röm 3,27-30</ref> zu Grunde: „(27) Ubi est ergo gloriatio tua? Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium? Immo et gentium. (30) Quoniam quidem unus est Deus, qui justificat circumcisionem ex fide, et praeputium per fidem."</note> non in solo iudaismo<note type="footnote">Vgl. <ref type="biblical">Röm 3,29</ref> (s. o. Anm. <hab:mark xmlns:hab="http://diglib.hab.de" ref="NOTEREF _Ref495566379 \h"/>2<hab:mark xmlns:hab="http://diglib.hab.de"/>).</note> Existit.</p>
+				</div>
+			</x:expect>
+		</x:scenario>
+		
 	</x:scenario>
 	
 	<x:scenario label="listen">

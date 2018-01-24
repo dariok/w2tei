@@ -152,7 +152,7 @@
 	
 	<!-- Vertweise -->
 	<xsl:template match="w:bookmarkStart">
-		<xsl:if test="@name != '_GoBack'">
+		<xsl:if test="not(@name = '_GoBack')">
 			<hab:bm name="{@w:name}"/>
 		</xsl:if>
 	</xsl:template>
