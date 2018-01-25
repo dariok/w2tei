@@ -20,12 +20,12 @@
 		<x:scenario label="lem und rdg">
 			<x:context>
 				<p>
-					<lb/>Wie<note type="crit_app">Die <hi style="font-style:italic;">a</hi></note> heylickeit in diessem
+					<lb/>Wie<note type="crit_app"><orig>Die </orig>a</note> heylickeit in diessem <w>le<lb break="no"/>ben</w> geschicht.
 				</p>
 			</x:context>
 			<x:expect label="lem und rdg">
 				<p>
-					<lb/><app><lem wit="#A">Wie</lem><rdg wit="#a">Die</rdg></app> heylickeit in diessem
+					<lb/><app><lem>Wie</lem><rdg wit="#a">Die</rdg></app> heylickeit in diessem <w>le<lb break="no"/>ben</w> geschicht.
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -45,15 +45,16 @@
 				<item>Lex<del> factorum</del> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <hi style="font-style: italic;">factorum</hi> mit <hi style="font-style: italic;">operum</hi> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
 			</x:expect>
 		</x:scenario>
-		<!--<x:scenario label="rdg mit Kommentar">
+		<x:scenario label="rdg mit Kommentar">
 			<x:context>
-				
+				<p>legatione altarium<note type="crit_app">A;<orig> altatium </orig>B, von Gottschalk verbessert</note>/ et</p>
 			</x:context>
 			<x:expect label="comment">
-				<app><lem wit="#A">altarium</lem><rdg wit="#B">altatium<note type="comment">von Gottschalk verbessert</note></rdg></app>
+				<p>legatione <app><lem wit="#A">altarium</lem><rdg wit="#B">altatium<note type="comment">von Gottschalk verbessert</note></rdg></app>/ et</p>
 			</x:expect>
-		</x:scenario>-->
+		</x:scenario>
 	</x:scenario>
+	
 	<x:scenario label="text vor krit. FN">
 		<x:context>
 			<p>
@@ -66,6 +67,7 @@
 			</p>
 		</x:expect>
 	</x:scenario>
+	
 	<!--<x:scenario label="span/anchor">
 		<x:context>
 			<anchor type="crit_app" xml:id="s1"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk 18,20</ref>.</note>/ impletione et testamentorum legatione altarium/ et missrum fundatione<anchor type="crit_app" xml:id="s1e"/>

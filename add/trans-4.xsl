@@ -56,22 +56,36 @@
 					<xsl:value-of select="normalize-space($note/tei:orig)"/>
 				</del>
 			</xsl:when>
-			<xsl:when test="$note/node()[1][self::text()]">
+			<xsl:when test="$note/node()[1][self::text()[ends-with(., ';')]]">
 				<!-- TODO später für mehrere rdg anpassen -->
-				<xsl:variable name="wit" select="normalize-space($note/tei:hi)"/>
+				<xsl:variable name="textB" select="normalize-space($note/tei:orig[1]/following-sibling::node())"/>
+				<xsl:variable name="witA">
+					<xsl:value-of select="wdb:substring-before-if-ends($note/text()[1], ';')"/>
+				</xsl:variable>
+				<xsl:variable name="witB">
+					<xsl:value-of select="wdb:substring-before($textB, ',')"/>
+				</xsl:variable>
 				<app>
-					<lem wit="#A"><xsl:value-of select="$last"/></lem>
+					<lem wit="#{$witA}"><xsl:value-of select="$last"/></lem>
 					<xsl:choose>
-						<xsl:when test="contains($wit, ',')">
-							<rdg wit="#{substring-before($wit, ',')}">
-								<xsl:value-of select="normalize-space($note/text()[1])"/>
-								<note type="comment"><xsl:value-of select="normalize-space(substring-after($wit, ','))"/></note>
+						<xsl:when test="contains($textB, ',')">
+							<rdg wit="#{$witB}">
+								<xsl:value-of select="normalize-space($note/tei:orig[1])"/>
+								<note type="comment"><xsl:value-of select="normalize-space(substring-after($textB, ','))"/></note>
 							</rdg>
 						</xsl:when>
 						<xsl:otherwise>
-							<rdg wit="#{$wit}"><xsl:value-of select="normalize-space($note/text()[1])"/></rdg>
+							<rdg wit="#{$witB}"><xsl:value-of select="normalize-space($note/tei:orig[1])"/></rdg>
 						</xsl:otherwise>
 					</xsl:choose>
+				</app>
+			</xsl:when>
+			<xsl:when test="$note/node()[1][self::tei:orig]">
+				<app>
+					<lem><xsl:value-of select="$last"/></lem>
+					<rdg wit="#{$note/tei:orig/following-sibling::text()[1]}">
+						<xsl:value-of select="normalize-space($note/tei:orig)"/>
+					</rdg>
 				</app>
 			</xsl:when>
 			<xsl:otherwise>
