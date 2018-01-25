@@ -3,61 +3,6 @@
 	xmlns="http://www.tei-c.org/ns/1.0"
 	stylesheet="trans-3.xsl"
 	xslt-version="3.0">
-	<x:scenario label="krit. Anmerkungen">
-		<x:scenario label="einmal vom Editor verbessert für">
-			<x:context>
-				<p>
-					<lb/>auszlegen/ unnd<note type="crit_app"><hi style="font-style:italic;">vom Editor verbessert für</hi> unud</note> durch die schrifft beweyszen/ Das alle
-				</p>
-			</x:context>
-			<x:expect label="sic und corr">
-				<p>
-					<lb/>auszlegen/ <choice><sic>unud</sic><corr>unnd</corr></choice> durch die schrifft beweyszen/ Das alle
-				</p>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="lem und rdg">
-			<x:context>
-				<p>
-					<lb/>Wie<note type="crit_app">Die <hi style="font-style:italic;">a</hi></note> heylickeit in diessem le-
-				</p>
-			</x:context>
-			<x:expect label="lem und rdg">
-				<p>
-					<lb/><app><lem wit="#A">Wie</lem><rdg wit="#a">Die</rdg></app> heylickeit in diessem le-
-				</p>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="orig im Text herstellen">
-			<x:context>
-				<p>Lex factorum dicitur. sicut lucus a luc&lt;e&gt;ndo:<note type="crit_app"><hi style="font-style: italic;">Vom Editor verbessert für</hi> lucando: <bibl>Kolde, 471</bibl><hi style="font-style: italic;">, ändert stillschweigend in</hi> non lucendo.</note></p>
-			</x:context>
-			<x:expect label="orig">
-				<p>Lex factorum dicitur. sicut lucus a luc&lt;e&gt;ndo:<note type="crit_app">Vom Editor verbessert für<orig> lucando: </orig><bibl>Kolde, 471</bibl>, ändert stillschweigend in<orig> non lucendo.</orig></note></p>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="danach gestrichen">
-			<x:context>
-				<p>Lex<note type="crit_app"><hi
-					style="font-style: italic;">Danach gestrichen</hi> factorum</note> fidei bonorum operum et</p>
-			</x:context>
-			<x:expect label="del mit Leerzeichen vorne">
-				<p>Lex<del> factorum</del> fidei bonorum operum et</p>
-			</x:expect>
-		</x:scenario>
-	</x:scenario>
-	<x:scenario label="text vor krit. FN">
-		<x:context>
-			<p>
-				<w>ful<lb break="no"/>ten.</w> Wie sie<note type="crit_app"><hi style="font-style:italic;">folgt</hi> auch <hi style="font-style:italic;">a</hi></note> entlich heylig
-			</p>
-		</x:context>
-		<x:expect label="Spatium">
-			<p>
-				<w>ful<lb break="no"/>ten.</w>  Wie sie<add wit="#a">auch</add> entlich heylig
-			</p>
-		</x:expect>
-	</x:scenario>
 	
 	<x:scenario label="zusammenziehen">
 		<x:scenario label="mehrere ref">
@@ -79,24 +24,6 @@
 					18,20</ref>.</note>
 			</x:expect>
 		</x:scenario>
-	</x:scenario>
-	
-	<x:scenario label="span/anchor">
-		<x:context>
-			<anchor type="crit_app" xml:id="s1"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk 18,20</ref>.</note>/ impletione et testamentorum legatione altarium/ et missrum fundatione<anchor type="crit_app" xml:id="s1e"/>
-			<span type="crit_app" from="#s1" to="#s1e">
-				<hi style="font-style: italic;">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
-			</span>
-		</x:context>
-		<x:expect label="span vor anchor">
-			<span type="crit_app" from="#s1" to="#s1e">
-				<hi style="font-style: italic;">Im Inhaltsverzeichnis von A, pag. 2, lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi>
-			</span>
-			<anchor type="crit_app" xml:id="s1"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk 18,20</ref>.</note>/ impletione et testamentorum legatione altarium/ et missrum fundatione<anchor type="crit_app" xml:id="s1e"/>
-		</x:expect>
-	</x:scenario>
-	
-	<x:scenario label="zusammenziehen">
 		<x:scenario label="Marginalien">
 			<x:context>
 				<note place="margin">Pontifex in c. Solite/</note><note place="margin">insolenter et mire</note><note place="margin">rhetoricatur i‘d est‘ fallacibus</note><note place="margin">et frivolis illationum  </note><note place="margin">nexibus argutatur/ ut</note><note place="margin">frequenter</note><note place="margin">adsolet.</note>
