@@ -95,4 +95,58 @@
 			<anchor type="crit_app" xml:id="s1"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk 18,20</ref>.</note>/ impletione et testamentorum legatione altarium/ et missrum fundatione<anchor type="crit_app" xml:id="s1e"/>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="zusammenziehen">
+		<x:scenario label="Marginalien">
+			<x:context>
+				<note place="margin">Pontifex in c. Solite/</note><note place="margin">insolenter et mire</note><note place="margin">rhetoricatur i‘d est‘ fallacibus</note><note place="margin">et frivolis illationum  </note><note place="margin">nexibus argutatur/ ut</note><note place="margin">frequenter</note><note place="margin">adsolet.</note>
+			</x:context>
+			<x:expect label="nur eine Marginalie">
+				<note place="margin">Pontifex in c. Solite/ insolenter et mire rhetoricatur i‘d est‘ fallacibus et frivolis illationum   nexibus argutatur/ ut frequenter adsolet.</note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="mehrere getrennte Marginalien">
+			<x:context>
+				<lb/>auszrichten sol/ den yhm sein her/ in grosser not und in
+				<lb/>seinem abgehen oder abstehen befihlet. Christus/ der<note place="margin">Johan. ii.</note>
+				<lb/>auch zu einem zeychen (solcher bedechtickeit) zu letz-
+				<lb/>tenn den besten wein gemacht<note type="footnote">Vgl. <ref type="biblical">Joh 2,1-11</ref>.</note>/ hat/ sanct Peter/ unnd<note place="margin">Johan. xiii.</note>
+				<lb/>seinem nachfolger/ ym ende seines abstehens und vor
+				<lb/>seinem tod (yhm und allen jungern) befohlen/ das der
+				<lb/>mit diensparckeit allen menschen sol dienenn/ dero der
+				<lb/>hochste wil sein odder ist/ darumb wuesch der meyster
+				<lb/>und her/ seinen jungern und knechten yhre fuesz/ das sie/ ob
+				<lb/>sie erhohet wurden/ den nydern und dienern yhre fuesze
+				<lb/>auch solten waschen.<note type="footnote">Vgl. <ref type="biblical">Joh 13,5-15</ref>.</note> Das ist der letzte und allerheffti-
+				<lb/>giste befehl Christi (des/ der Bapst vicarien sein wil)
+				<lb/>und achtet doch den befehl gar nicht. Ja er sturtzet yhn
+				<lb/>umb/ dan er ertzeygt sein gemut mit eusserlichen geberden
+				<lb/>als sprech er/ Ich solt dem diener fuesse waschen/ das wil
+				<lb/>ich nicht thun/ ich wil das alle menschen mein fuesse sol-
+				<lb/>len kussen/ darausz wol zumercken/ wie er das mandat<note place="margin">Deu. xiii. </note><note place="margin">Ibi lege vindictam et</note><note place="margin">horripilabit tua pellis.</note>
+				<lb/>heldet. Nu die weil er die schrifft gar umb keret/ so sollen
+			</x:context>
+			<x:expect label="3 getrennte, die letzte lang">
+				<lb/>auszrichten sol/ den yhm sein her/ in grosser not und in
+				<lb/>seinem abgehen oder abstehen befihlet. Christus/ der<note place="margin">Johan. ii.</note>
+				<lb/>auch zu einem zeychen (solcher bedechtickeit) zu letz-
+				<lb/>tenn den besten wein gemacht<note type="footnote">Vgl. <ref type="biblical">Joh 2,1-11</ref>.</note>/ hat/ sanct Peter/ unnd<note place="margin">Johan. xiii.</note>
+				<lb/>seinem nachfolger/ ym ende seines abstehens und vor
+				<lb/>seinem tod (yhm und allen jungern) befohlen/ das der
+				<lb/>mit diensparckeit allen menschen sol dienenn/ dero der
+				<lb/>hochste wil sein odder ist/ darumb wuesch der meyster
+				<lb/>und her/ seinen jungern und knechten yhre fuesz/ das sie/ ob
+				<lb/>sie erhohet wurden/ den nydern und dienern yhre fuesze
+				<lb/>auch solten waschen.<note type="footnote">Vgl. <ref type="biblical">Joh 13,5-15</ref>.</note> Das ist der letzte und allerheffti-
+				<lb/>giste befehl Christi (des/ der Bapst vicarien sein wil)
+				<lb/>und achtet doch den befehl gar nicht. Ja er sturtzet yhn
+				<lb/>umb/ dan er ertzeygt sein gemut mit eusserlichen geberden
+				<lb/>als sprech er/ Ich solt dem diener fuesse waschen/ das wil
+				<lb/>ich nicht thun/ ich wil das alle menschen mein fuesse sol-
+				<lb/>len kussen/ darausz wol zumercken/ wie er das mandat<note place="margin">Deu. xiii.  Ibi lege vindictam et horripilabit tua pellis.</note>
+				<lb/>heldet. Nu die weil er die schrifft gar umb keret/ so sollen
+			</x:expect>
+		</x:scenario>
+		
+	</x:scenario>
 </x:description>

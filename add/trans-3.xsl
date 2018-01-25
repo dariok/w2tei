@@ -123,6 +123,27 @@
 	</xsl:template>
 	<xsl:template match="tei:ref[@type='medieval' and preceding-sibling::node()[1][self::tei:ref[@type='medieval']]]"/>
 	
+	<!-- Zusammenziehen von Marginalien -->
+	<xsl:template match="tei:note[@place='margin' and not(preceding-sibling::node()[1][self::tei:note[@place='margin']])]">
+		<note place="margin">
+			<xsl:variable name="myId" select="generate-id()"/>
+			<xsl:apply-templates />
+			<xsl:apply-templates select="following-sibling::tei:note[@place='margin'
+				and preceding-sibling::node()[1][self::tei:note[@place='margin']]
+				and $myId = generate-id(preceding-sibling::tei:note[@place='margin'
+				and not(preceding-sibling::node()[1][self::tei:note[@place='margin']])][1])
+				]" mode="content" />
+			<!-- and $myId = generate-id(preceding-sibling::tei:note[@place='margin'
+					and not(preceding-sibling::tei:note[@place='margin'])][1])]] -->
+		</note>
+	</xsl:template>
+	<xsl:template match="tei:note[@place='margin' and preceding-sibling::node()[1][self::tei:note[@place='margin']]]"/>
+	<xsl:template match="tei:note[@place='margin' and preceding-sibling::node()[1][self::tei:note[@place='margin']]]"
+		mode="content">
+		<xsl:text> </xsl:text>
+		<xsl:apply-templates />
+	</xsl:template>
+	
 	<xsl:template match="tei:note[@type='crit_app']" />
 	
 	<xsl:template match="tei:anchor[not(ends-with(@xml:id, 'e'))]">
