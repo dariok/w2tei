@@ -34,6 +34,8 @@
 		<xsl:variable name="name">
 			<xsl:choose>
 				<xsl:when test="wdb:is(., 'KSWidmung')">salute</xsl:when>
+				<xsl:when test="wdb:is(., 'KSAdresse')">opener</xsl:when>
+				<xsl:when test="wdb:is(., 'KSSchluformeln')">closer</xsl:when>
 				<xsl:otherwise>p</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
