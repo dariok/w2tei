@@ -185,7 +185,7 @@
 			</xsl:when>-->
 			<xsl:when test="$span/node()[1][self::tei:orig]">
 				<app>
-					<lem><xsl:value-of select="."/></lem>
+					<lem wit="#A"><xsl:value-of select="."/></lem>
 					<xsl:apply-templates select="$span/tei:orig" />
 				</app>
 			</xsl:when>
