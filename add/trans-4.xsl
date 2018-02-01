@@ -93,7 +93,7 @@
 					</xsl:when>
 					<xsl:otherwise>
 						<app>
-							<lem><xsl:value-of select="$last"/></lem>
+							<lem wit="#A"><xsl:value-of select="$last"/></lem>
 							<xsl:apply-templates select="$note/tei:orig" />
 						</app>
 					</xsl:otherwise>

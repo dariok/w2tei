@@ -25,7 +25,7 @@
 			</x:context>
 			<x:expect label="lem und rdg">
 				<p>
-					<lb/><app><lem>Wie</lem><rdg wit="#a">Die</rdg></app> heylickeit in diessem <w>le<lb break="no"/>ben</w> geschicht.
+					<lb/><app><lem wit="#A">Wie</lem><rdg wit="#a">Die</rdg></app> heylickeit in diessem <w>le<lb break="no"/>ben</w> geschicht.
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -37,7 +37,7 @@
 			</x:context>
 			<x:expect label="lem, 2rdg">
 				<p>
-					<lb/>das an der <app><lem>schotistichen</lem><rdg wit="#WA">schotistischen</rdg><rdg wit="#EA">Scotistischen</rdg></app> und <app><lem>textualis logicis und physicis</lem><rdg wit="#EA">Textual Logica und Physica</rdg></app> gnug
+					<lb/>das an der <app><lem wit="#A">schotistichen</lem><rdg wit="#WA">schotistischen</rdg><rdg wit="#EA">Scotistischen</rdg></app> und <app><lem>textualis logicis und physicis</lem><rdg wit="#EA">Textual Logica und Physica</rdg></app> gnug
 				</p>
 			</x:expect>
 		</x:scenario>
