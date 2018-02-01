@@ -192,7 +192,8 @@
 		</note>
 	</xsl:template>
 	
-	<xsl:template match="w:r[wdb:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]">
+	<xsl:template match="w:r[wdb:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
+		and following-sibling::w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
 		<anchor type="crit_app" ref="s"/>
 		<xsl:apply-templates select="w:t" />
 	</xsl:template>
