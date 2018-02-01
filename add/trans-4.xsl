@@ -82,10 +82,22 @@
 				</app>
 			</xsl:when>
 			<xsl:when test="$note/node()[1][self::tei:orig]">
-				<app>
-					<lem><xsl:value-of select="$last"/></lem>
-					<xsl:apply-templates select="$note/tei:orig" />
-				</app>
+				<xsl:choose>
+					<xsl:when test="starts-with(normalize-space(($note/tei:orig/following-sibling::text())[1]), 'vermutet')">
+						<xsl:value-of select="$last"/>
+						<note type="crit_app">
+							<orig><xsl:value-of select="normalize-space($note/tei:orig)"/></orig>
+							<xsl:text> </xsl:text>
+							<xsl:value-of select="normalize-space($note/tei:orig/following-sibling::text())"/>
+						</note>
+					</xsl:when>
+					<xsl:otherwise>
+						<app>
+							<lem><xsl:value-of select="$last"/></lem>
+							<xsl:apply-templates select="$note/tei:orig" />
+						</app>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="$last"/>
