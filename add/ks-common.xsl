@@ -414,6 +414,6 @@
 	<xsl:function name="hab:isSem" as="xs:boolean">
 		<xsl:param name="context" as="node()" />
 		<xsl:value-of select="matches($context//w:rStyle/@w:val,
-			'KSOrt|KSPerson|KSbibliographischeAngabe|KSBibelstelle|KSAutorenstelle')"/>
+			'KSOrt|KSPerson|KSbibliographischeAngabe|KSBibelstelle|KSAutorenstelle|KSkorrigierteThesennummer')"/>
 	</xsl:function>
 </xsl:stylesheet>
