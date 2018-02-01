@@ -93,7 +93,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	<xsl:template match="tei:note[@type='crit_app']" />
+	<xsl:template match="tei:note[@type='crit_app' and preceding-sibling::node()[1][self::text()]]" />
 	<xsl:template match="tei:orig">
 		<rdg wit="#{normalize-space(wdb:substring-before(following-sibling::text()[1], ';'))}">
 			<xsl:value-of select="normalize-space()"/>
