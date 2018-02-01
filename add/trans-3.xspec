@@ -74,6 +74,20 @@
 				<lb/>heldet. Nu die weil er die schrifft gar umb keret/ so sollen
 			</x:expect>
 		</x:scenario>
-		
+	</x:scenario>
+	
+	<x:scenario label="Ersetzungen">
+		<x:scenario label="Expansionen">
+			<x:context>
+				<p>
+					<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf'urstlich' g'naden'
+				</p>
+			</x:context>
+			<x:expect label="ex">
+				<p>
+					<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf<ex>urstlich</ex> g<ex>naden</ex>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>

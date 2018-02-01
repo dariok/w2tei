@@ -20,21 +20,21 @@
 	</xsl:template>
 	
 	<xsl:template match="text()">
-		<xsl:choose>
-			<xsl:when test="matches(., '&lt;.+&gt;')">
-				<xsl:analyze-string select="." regex="&lt;.+&gt;">
+		<xsl:analyze-string select="." regex="&lt;.+&gt;">
+			<xsl:matching-substring>
+				<supplied><xsl:value-of select="substring(substring-before(., '&gt;'), 2)"/></supplied>
+			</xsl:matching-substring>
+			<xsl:non-matching-substring>
+				<xsl:analyze-string select="." regex="'.+?'">
 					<xsl:matching-substring>
-						<supplied><xsl:value-of select="substring(substring-before(., '&gt;'), 2)"/></supplied>
+						<ex><xsl:value-of select="substring(substring(., 2), 1, string-length(.)-2)"/></ex>
 					</xsl:matching-substring>
 					<xsl:non-matching-substring>
 						<xsl:value-of select="."/>
 					</xsl:non-matching-substring>
 				</xsl:analyze-string>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="." />
-			</xsl:otherwise>
-		</xsl:choose>
+			</xsl:non-matching-substring>
+		</xsl:analyze-string>
 	</xsl:template>
 	
 	<xsl:template match="tei:ref[@type='biblical' and not(preceding-sibling::node()[1][self::tei:ref[@type='biblical']])]">
