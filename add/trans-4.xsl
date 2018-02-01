@@ -95,9 +95,18 @@
 	</xsl:template>
 	<xsl:template match="tei:note[@type='crit_app' and preceding-sibling::node()[1][self::text()]]" />
 	<xsl:template match="tei:orig">
-		<rdg wit="#{normalize-space(wdb:substring-before(following-sibling::text()[1], ';'))}">
-			<xsl:value-of select="normalize-space()"/>
-		</rdg>
+		<xsl:choose>
+			<xsl:when test="following-sibling::node()[self::text()]">
+				<rdg wit="#{normalize-space(wdb:substring-before(following-sibling::text()[1], ';'))}">
+					<xsl:value-of select="normalize-space()"/>
+				</rdg>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text> </xsl:text>
+				<orig><xsl:value-of select="normalize-space()"/></orig>
+			</xsl:otherwise>
+		</xsl:choose>
+
 	</xsl:template>
 	
 	<xsl:template match="text()[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]
