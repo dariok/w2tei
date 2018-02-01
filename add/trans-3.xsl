@@ -13,11 +13,11 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	
-	<xsl:template match="tei:*">
+	<!--<xsl:template match="tei:*">
 		<xsl:element name="{name()}">
 			<xsl:apply-templates select="@* | node()" />
 		</xsl:element>
-	</xsl:template>
+	</xsl:template>-->
 	
 	<xsl:template match="text()">
 		<xsl:analyze-string select="." regex="&lt;.+&gt;">
@@ -91,7 +91,9 @@
 	</xsl:template>
 	<xsl:template match="tei:span" />-->
 	
-	<xsl:template match="@*">
-		<xsl:copy-of select="." />
+	<xsl:template match="@* | * | comment()">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()" />
+		</xsl:copy>
 	</xsl:template>
 </xsl:stylesheet>
