@@ -34,9 +34,6 @@
 	</xsl:variable>
 	
 	<xsl:template match="/">
-		<xsl:processing-instruction name="xml-model">
-			<xsl:attribute name="href">http://dev2.hab.de/edoc/ed000240/rules/phase.sch</xsl:attribute>
-		</xsl:processing-instruction>
 		<TEI xmlns="http://www.tei-c.org/ns/1.0"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://dev2.hab.de/edoc/ed000240/rules/tei-p5-transcr.xsd"
