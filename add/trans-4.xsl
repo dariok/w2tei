@@ -93,7 +93,12 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	
 	<xsl:template match="tei:note[@type='crit_app' and preceding-sibling::node()[1][self::text()]]" />
+	<xsl:template match="tei:note[preceding-sibling::node()[1][self::tei:*]]">
+		<xsl:sequence select="." />
+	</xsl:template>
+	
 	<xsl:template match="tei:orig">
 		<xsl:choose>
 			<xsl:when test="following-sibling::node()[self::text()]">
@@ -106,7 +111,6 @@
 				<orig><xsl:value-of select="normalize-space()"/></orig>
 			</xsl:otherwise>
 		</xsl:choose>
-
 	</xsl:template>
 	
 	<xsl:template match="text()[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]
