@@ -40,7 +40,7 @@
 			n="{$nr}">
 			<xsl:attribute name="xml:id">
 				<xsl:choose>
-					<xsl:when test="wdb:string(//w:body/w:p[not(wdb:is(., 'KSEE-Titel'))][1]) = 'Text'">
+					<xsl:when test="wdb:string(//w:body/w:p[wdb:is(., 'berschrift1')]) = 'Text'">
 						<xsl:value-of select="concat('edoc_ed000240_', $ee, '_transcript')" />
 					</xsl:when>
 					<xsl:otherwise>
