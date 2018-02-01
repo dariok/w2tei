@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec" stylesheet="trans-4.xsl"
-	xmlns="http://tei-c.org/ns/1.0"
-	xmlns:tei="http://tei-c.org/ns/1.0"
+	xmlns="http://www.tei-c.org/ns/1.0"
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xslt-version="3.0">
 	<x:scenario label="krit. Anmerkungen">
@@ -26,6 +26,18 @@
 			<x:expect label="lem und rdg">
 				<p>
 					<lb/><app><lem>Wie</lem><rdg wit="#a">Die</rdg></app> heylickeit in diessem <w>le<lb break="no"/>ben</w> geschicht.
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="mehrere rdg">
+			<x:context>
+				<p>
+					<lb/>das an der schotistichen<note type="crit_app"><orig>schotistischen </orig>WA; <orig>Scotistischen </orig>EA</note> und <anchor type="crit_app" xml:id="s1"/>textualis logicis und physicis<anchor type="crit_app" xml:id="s1e"/><span type="crit_app" from="#s1" to="#s1e"><orig>Textual Logica und Physica </orig>EA</span> gnug
+				</p>
+			</x:context>
+			<x:expect label="lem, 2rdg">
+				<p>
+					<lb/>das an der <app><lem>schotistichen</lem><rdg wit="#WA">schotistischen</rdg><rdg wit="#EA">Scotistischen</rdg></app> und <app><lem>textualis logicis und physicis</lem><rdg wit="#EA">Textual Logica und Physica</rdg></app> gnug
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -68,6 +80,18 @@
 		</x:expect>
 	</x:scenario>
 	
+	<x:scenario label="Expansionen">
+		<x:context>
+			<p>
+				<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf<ex>urstlich</ex> g<ex>naden</ex>
+			</p>
+		</x:context>
+		<x:expect label="expan/ex">
+			<p>
+				<lb/>Durchleuchtigster Hochgebornner Churfurst. euern <expan>churf<ex>urstlich</ex></expan> <expan>g<ex>naden</ex></expan>
+			</p>
+		</x:expect>
+	</x:scenario>
 	<!--<x:scenario label="span/anchor">
 		<x:context>
 			<anchor type="crit_app" xml:id="s1"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk 18,20</ref>.</note>/ impletione et testamentorum legatione altarium/ et missrum fundatione<anchor type="crit_app" xml:id="s1e"/>
