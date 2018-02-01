@@ -87,7 +87,8 @@
 	<!-- Verweise -->
 	<xsl:template match="hab:bm" />
 	<xsl:template match="tei:note[@type='footnote' and preceding-sibling::*[1][self::hab:bm]]">
-		<note type="footnote" xml:id="n{count(preceding::hab:bm)}">
+		<note type="footnote">
+			<xsl:attribute name="xml:id" select="'n'||count(preceding::hab:bm)"/>
 			<xsl:apply-templates select="node()" />
 		</note>
 	</xsl:template>
@@ -127,10 +128,14 @@
 		<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])+1"/>
 		<xsl:choose>
 			<xsl:when test="@ref='se'">
-				<anchor type="crit_app" xml:id="{'s'||$num||'e'}" />
+				<anchor type="crit_app">
+					<xsl:attribute name="xml:id" select="'s'||$num||'e'" />
+				</anchor>
 			</xsl:when>
 			<xsl:otherwise>
-				<anchor type="crit_app" xml:id="{@ref||$num}" />
+				<anchor type="crit_app">
+					<xsl:attribute name="xml:id" select="@ref||$num"/>
+				</anchor>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
