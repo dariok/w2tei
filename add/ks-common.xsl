@@ -34,9 +34,12 @@
 	</xsl:variable>
 	
 	<xsl:template match="/">
+		<xsl:processing-instruction name="xml-model">
+			<xsl:attribute name="href">http://dev2.hab.de/edoc/ed000240/rules/phase.sch</xsl:attribute>
+		</xsl:processing-instruction>
 		<TEI xmlns="http://www.tei-c.org/ns/1.0"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/edoc/ed000240/rules/tei-p5-transcr.xsd"
+			xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://dev2.hab.de/edoc/ed000240/rules/tei-p5-transcr.xsd"
 			n="{$nr}">
 			<xsl:attribute name="xml:id">
 				<xsl:choose>
@@ -287,16 +290,9 @@
 	
 	<!-- Styles -->
 	<!-- kursiv -->
-	<xsl:template match="w:r[descendant::w:i and not(wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
+	<xsl:template match="w:r[descendant::w:i[not(@w:val=0)] and not(wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
 		<!--<xsl:apply-templates select="." mode="eval" />-->
-		<xsl:choose>
-			<xsl:when test="descendant::w:i/@w:val=0">
-				<xsl:apply-templates select="w:t"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
-			</xsl:otherwise>
-		</xsl:choose>
+		<hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
 	</xsl:template>
 <!--	<xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1]//w:i]" mode="eval"/>-->
 	<!--<xsl:template match="w:r[descendant::w:i and not(preceding-sibling::w:r[1]//w:i)]" mode="eval">
