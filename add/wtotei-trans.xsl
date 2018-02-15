@@ -33,7 +33,7 @@
 		<xsl:variable name="myId" select="generate-id()"/>
 		<xsl:variable name="name">
 			<xsl:choose>
-				<xsl:when test="wdb:is(., 'KSWidmung')">salute</xsl:when>
+				<xsl:when test="wdb:is(., 'KSWidmung') or wdb:is(., 'KSAnrede')">salute</xsl:when>
 				<xsl:when test="wdb:is(., 'KSAdresse')">opener</xsl:when>
 				<xsl:when test="wdb:is(., 'KSSchluformeln')">closer</xsl:when>
 				<xsl:otherwise>p</xsl:otherwise>
