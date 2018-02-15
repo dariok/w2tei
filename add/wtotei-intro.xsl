@@ -57,6 +57,8 @@
 					<xsl:apply-templates select="following-sibling::w:p[hab:isHead(., 2)]"/>
 					<xsl:apply-templates select="following-sibling::w:p[not(following-sibling::w:p[hab:isSigle(.)])
 						and (wdb:starts(., 'Edition') or wdb:starts(., 'Literatur')) and not(wdb:starts(., 'Editionsvorlage'))]"/>
+					<xsl:apply-templates select="following-sibling::w:p[wdb:is(., 'KSText', 'p') and
+						following-sibling::w:p[hab:isHead(., 1)] and preceding-sibling::w:p[wdb:starts(., 'Literatur')]]"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</div>
@@ -154,7 +156,8 @@
 						<xsl:otherwise>
 							<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
 								$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)[not(
-								wdb:starts(., 'Edition') or wdb:starts(., 'Literatur'))]"/>
+								wdb:starts(., 'Edition') or wdb:starts(., 'Literatur')
+								or wdb:is(., 'KSText', 'p'))]"/>
 						</xsl:otherwise>
 					</xsl:choose>
 				</note>
