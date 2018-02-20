@@ -13,6 +13,12 @@
 		<xsl:apply-templates select="node()" />
 	</xsl:template>
 	
+	<xsl:template match="tei:ref[@type='biblical']">
+		<ref type="biblical" cRef="{normalize-space(replace(., 'ö', ''))}">
+			<xsl:value-of select="."/>
+		</ref>
+	</xsl:template>
+	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type = 'crit_app']]]">
 		<xsl:variable name="last" select="tokenize(., ' ')[last()]"/>
 		<xsl:variable name="front" select="wdb:substring-before-last(., ' ')"/>
