@@ -19,6 +19,18 @@
 		</ref>
 	</xsl:template>
 	
+	<xsl:template match="tei:bibl">
+		<bibl>
+			<xsl:attribute name="ref">
+				<xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
+				<xsl:variable name="self" select="normalize-space()" />
+				<xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, tei:abbr)]"/>
+				<xsl:value-of select="'#'||$entry/@xml:id"/>
+			</xsl:attribute>
+			<xsl:apply-templates />
+		</bibl>
+	</xsl:template>
+	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type = 'crit_app']]]">
 		<xsl:variable name="last" select="tokenize(., ' ')[last()]"/>
 		<xsl:variable name="front" select="wdb:substring-before-last(., ' ')"/>
