@@ -21,13 +21,13 @@
 	
 	<xsl:template match="tei:bibl">
 		<bibl>
+			<xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
+			<xsl:variable name="self" select="normalize-space()" />
+			<xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, tei:abbr)]"/>
 			<xsl:attribute name="ref">
-				<xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
-				<xsl:variable name="self" select="normalize-space()" />
-				<xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, tei:abbr)]"/>
 				<xsl:value-of select="'#'||$entry/@xml:id"/>
 			</xsl:attribute>
-			<xsl:apply-templates />
+			<xsl:value-of select="substring-after(., $entry/tei:abbr)"/>
 		</bibl>
 	</xsl:template>
 	
