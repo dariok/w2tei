@@ -40,7 +40,8 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:element name="{$name}">
-			<xsl:apply-templates select="preceding-sibling::w:p[descendant::w:t and not(hab:isP(.))
+			<xsl:apply-templates select="preceding-sibling::w:p[descendant::w:t and not(hab:isP(.)
+				or hab:isStruct(.))
 				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]" />
 			<xsl:text>
                </xsl:text>
@@ -281,6 +282,6 @@
 	<xsl:function name="hab:isStruct" as="xs:boolean">
 		<xsl:param name="context" />
 		<xsl:sequence select="hab:isP($context) or wdb:is($context, 'KSEE-Titel')
-			or wdb:is($context, 'berschrift1')"></xsl:sequence>
+			or wdb:is($context, 'berschrift1') or wdb:is($context, 'KSZwischenberschrift')" />
 	</xsl:function>
 </xsl:stylesheet>
