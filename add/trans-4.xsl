@@ -6,6 +6,8 @@
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="3.0">
 	
+<!--	<xsl:output indent="true"/>-->
+	
 	<xsl:include href="../string-pack.xsl"/>
 	
 	<xsl:template match="/">
