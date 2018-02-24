@@ -40,6 +40,17 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:element name="{$name}">
+			<!-- TODO später auf für Anreden und ggf. Buchtitle -->
+			<xsl:if test="wdb:is(., 'KSSchluformeln')">
+				<xsl:attribute name="rendition">
+					<xsl:choose>
+						<xsl:when test="descendant::w:ind">
+							<xsl:text>#r</xsl:text>
+						</xsl:when>
+						<xsl:otherwise>#l</xsl:otherwise>
+					</xsl:choose>
+				</xsl:attribute>
+			</xsl:if>
 			<xsl:apply-templates select="preceding-sibling::w:p[descendant::w:t and not(hab:isP(.)
 				or hab:isStruct(.))
 				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]" />
