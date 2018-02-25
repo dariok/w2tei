@@ -59,7 +59,11 @@
 			</xsl:if>
 			<xsl:apply-templates select="preceding-sibling::w:p[descendant::w:t and not(hab:isP(.)
 				or hab:isStruct(.))
-				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]" />
+				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]">
+				<xsl:with-param name="parind">
+						<xsl:value-of select="descendant::w:ind/@w:left"/>
+				</xsl:with-param>
+			</xsl:apply-templates>
 			<xsl:text>
                </xsl:text>
 			<lb/>
@@ -85,12 +89,15 @@
 	<!-- normaler Absatz -->
 	<xsl:template match="w:p[descendant::w:t and not(hab:isStruct(.)) and not(descendant::w:numPr)
 		and not(hab:isP(.) or hab:isDiv(.) or wdb:is(., 'KSMarginalie', 'p'))]">
+		<xsl:param name="parind">0</xsl:param>
 		<xsl:if test="not(matches(wdb:string(.), '^\[.+?\]$'))">
 			<xsl:text>
                </xsl:text>
 			<lb/>
 		</xsl:if>
-		<xsl:apply-templates select="." mode="pb"/>
+		<xsl:apply-templates select="." mode="pb">
+			<xsl:with-param name="parind" select="$parind"/>
+		</xsl:apply-templates>
 	</xsl:template>
 	
 	<xsl:template match="w:p[descendant::w:numPr][position() &gt; 1]"/>
@@ -145,6 +152,18 @@
 	<xsl:template match="w:r[wdb:is(., 'KSkorrigierteThesennummer', 'r')]" />
 	
 	<xsl:template match="w:p" mode="pb">
+		<xsl:param name="parind" select="xs:int(0)"/>
+		<xsl:variable name="relind">
+			<xsl:choose>
+				<xsl:when test="$parind castable as xs:int and $parind > 0 and descendant::w:ind">
+					<xsl:value-of select="xs:int(descendant::w:ind/@w:left) - xs:int($parind)"/>
+				</xsl:when>
+				<xsl:otherwise>0</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:if test="$relind castable as xs:int and  $relind > 0">
+			<space />
+		</xsl:if>
 		<xsl:variable name="temp">
 			<xsl:apply-templates select="w:r | w:bookmarkStart"/>
 		</xsl:variable>
@@ -222,6 +241,11 @@
 		</xsl:if>
 		<xsl:apply-templates select="w:t" />
 		<anchor type="crit_app" ref="se" />
+	</xsl:template>
+	<xsl:template match="w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
+		and following-sibling::w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
+		and preceding-sibling::w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
+		<xsl:apply-templates select="w:t"/>
 	</xsl:template>
 	<!-- ENDE kritische Anmerkungen -->
 	
