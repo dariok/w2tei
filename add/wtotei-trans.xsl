@@ -44,6 +44,9 @@
 			<xsl:if test="wdb:is(., 'KSSchluformeln')">
 				<xsl:attribute name="rendition">
 					<xsl:choose>
+						<xsl:when test="not(descendant::w:ind)">
+							<xsl:text>#l</xsl:text>
+						</xsl:when>
 						<xsl:when test="descendant::w:ind/@w:left &lt; 2000">
 							<xsl:text>#l</xsl:text>
 						</xsl:when>
