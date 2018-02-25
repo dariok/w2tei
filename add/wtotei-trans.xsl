@@ -40,14 +40,20 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:element name="{$name}">
-			<!-- TODO später auf für Anreden und ggf. Buchtitle -->
+			<!-- TODO später auch für Anreden und ggf. Buchtitle -->
 			<xsl:if test="wdb:is(., 'KSSchluformeln')">
 				<xsl:attribute name="rendition">
 					<xsl:choose>
-						<xsl:when test="descendant::w:ind">
+						<xsl:when test="descendant::w:ind/@w:left &lt; 2000">
+							<xsl:text>#l</xsl:text>
+						</xsl:when>
+						<xsl:when test="descendant::w:ind/@w:left &lt; 4900">
+							<xsl:text>#c</xsl:text>
+						</xsl:when>
+						<xsl:when test="descendant::w:ind/@w:left &lt; 6400">
 							<xsl:text>#r</xsl:text>
 						</xsl:when>
-						<xsl:otherwise>#l</xsl:otherwise>
+						<xsl:otherwise>#rc</xsl:otherwise>
 					</xsl:choose>
 				</xsl:attribute>
 			</xsl:if>
