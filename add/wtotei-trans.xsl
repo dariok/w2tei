@@ -161,31 +161,40 @@
 				<xsl:otherwise>0</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:if test="$relind castable as xs:integer and  $relind > 0">
-			<space />
-		</xsl:if>
 		<xsl:variable name="temp">
 			<xsl:apply-templates select="w:r | w:bookmarkStart"/>
 		</xsl:variable>
-		<xsl:for-each select="$temp/node()">
-			<xsl:choose>
-				<xsl:when test="self::text()">
-					<xsl:analyze-string select="." regex="(\[.+?\])">
-						<xsl:matching-substring>
-							<xsl:text>
+		<xsl:variable name="content">
+			<xsl:for-each select="$temp/node()">
+				<xsl:choose>
+					<xsl:when test="self::text()">
+						<xsl:analyze-string select="." regex="(\[.+?\])">
+							<xsl:matching-substring>
+								<xsl:text>
                </xsl:text>
-							<pb n="{regex-group(1)}" />
-						</xsl:matching-substring>
-						<xsl:non-matching-substring>
-							<xsl:value-of select="wdb:substring-before-if-ends(., '')"/>
-						</xsl:non-matching-substring>
-					</xsl:analyze-string>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:sequence select="."/>
-				</xsl:otherwise>
-			</xsl:choose>
-		</xsl:for-each>
+								<pb n="{regex-group(1)}" />
+							</xsl:matching-substring>
+							<xsl:non-matching-substring>
+								<xsl:value-of select="wdb:substring-before-if-ends(., '')"/>
+							</xsl:non-matching-substring>
+						</xsl:analyze-string>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:sequence select="."/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="$relind castable as xs:integer and  $relind > 0">
+				<ab style="centre">
+					<xsl:sequence select="$content"/>
+				</ab>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:sequence select="$content" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	<!-- Ende Paragraphen -->
 	
