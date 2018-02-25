@@ -152,16 +152,16 @@
 	<xsl:template match="w:r[wdb:is(., 'KSkorrigierteThesennummer', 'r')]" />
 	
 	<xsl:template match="w:p" mode="pb">
-		<xsl:param name="parind" select="xs:int(0)"/>
+		<xsl:param name="parind" select="xs:integer(0)"/>
 		<xsl:variable name="relind">
 			<xsl:choose>
-				<xsl:when test="$parind castable as xs:int and $parind > 0 and descendant::w:ind">
-					<xsl:value-of select="xs:int(descendant::w:ind/@w:left) - xs:int($parind)"/>
+				<xsl:when test="$parind castable as xs:integer and $parind > 0 and descendant::w:ind">
+					<xsl:value-of select="xs:integer(descendant::w:ind/@w:left) - xs:integer($parind)"/>
 				</xsl:when>
 				<xsl:otherwise>0</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:if test="$relind castable as xs:int and  $relind > 0">
+		<xsl:if test="$relind castable as xs:integer and  $relind > 0">
 			<space />
 		</xsl:if>
 		<xsl:variable name="temp">
