@@ -16,6 +16,23 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	
+	<xsl:template match="tei:text">
+		<text>
+			<xsl:if test="//tei:titlePart">
+				<front>
+					<titlePage>
+						<docTitle>
+							<xsl:apply-templates select="descendant::tei:titlePart"/>
+						</docTitle>
+					</titlePage>
+				</front>
+			</xsl:if>
+			<body>
+				<xsl:apply-templates select="tei:body/*[not(tei:titlePart)]"/>
+			</body>
+		</text>
+	</xsl:template>
+	
 	<xsl:template match="tei:teiHeader">
 		<teiHeader>
 			<xsl:apply-templates select="node()" />

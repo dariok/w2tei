@@ -293,4 +293,51 @@
 			</span>.
 		</x:expect>	
 	</x:scenario>
+    
+    <x:scenario label="Titel verschieben">
+        <x:context>
+           <text> 
+                <body>
+                    <div><titlePart rendition="#l">
+                        <pb n="[A1r]"/>
+                        <lb/>Von Bepstlicher heylickeit:
+                        <lb/>Andres Bodenstein von
+                        <lb/>Carolstat Doctor.</titlePart><titlePart rendition="#l">
+                            <lb/>Disses buchlin beschleust durch heylige schrifft/
+                            <lb/>das Bepstliche heylickeit altzu viel yrrenn/
+                            <lb/>sundigen/ unnd unrecht thun kan.
+                            <lb/>Wer das nit glaubt/ der ist
+                            <lb/>Ein boszer unchrist.</titlePart><titlePart rendition="#l">
+                                <lb/><rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</titlePart></div>
+                    <div>
+                        <pb n="[A1v]"/></div>
+                </body>
+           </text>           
+        </x:context>
+        <x:expect label="front, body">
+            <text>
+                <front>
+                    <titlePage>
+                        <docTitle>
+                            <titlePart rendition="#l">
+                                <pb n="[A1r]"/>
+                                <lb/>Von Bepstlicher heylickeit:
+                        <lb/>Andres Bodenstein von
+                        <lb/>Carolstat Doctor.</titlePart><titlePart rendition="#l">
+                            <lb/>Disses buchlin beschleust durch heylige schrifft/
+                            <lb/>das Bepstliche heylickeit altzu viel yrrenn/
+                            <lb/>sundigen/ unnd unrecht thun kan.
+                            <lb/>Wer das nit glaubt/ der ist
+                            <lb/>Ein boszer unchrist.</titlePart><titlePart rendition="#l">
+                                        <lb/><rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</titlePart>
+                        </docTitle>
+                    </titlePage>
+                </front>
+                <body>
+                    <div>
+                        <pb n="[A1v]" /></div>
+                </body>
+            </text>
+        </x:expect>
+    </x:scenario>
 </x:description>
