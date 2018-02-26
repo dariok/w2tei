@@ -291,6 +291,9 @@
         <!--<xsl:apply-templates select="." mode="eval" />-->
         <hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
     </xsl:template>
+    <xsl:template match="w:r[descendant::w:i[@w:val=0] and not(wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
+        <xsl:apply-templates select="w:t" />
+    </xsl:template>
 <!--    <xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1]//w:i]" mode="eval"/>-->
     <!--<xsl:template match="w:r[descendant::w:i and not(preceding-sibling::w:r[1]//w:i)]" mode="eval">
         <xsl:variable name="myId" select="generate-id(preceding-sibling::w:r[1])" />
