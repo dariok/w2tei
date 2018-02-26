@@ -37,6 +37,7 @@
                 <xsl:when test="wdb:is(., 'KSAdresse')">opener</xsl:when>
                 <xsl:when test="wdb:is(., 'KSSchluformeln')">closer</xsl:when>
                 <xsl:when test="wdb:is(., 'KSBuchtitel')">titlePart</xsl:when>
+                <xsl:when test="wdb:is(., 'KSZwischenberschrift', 'p')">head</xsl:when>
                 <xsl:otherwise>p</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -61,6 +62,9 @@
                     </xsl:choose>
                 </xsl:attribute>
             </xsl:if>
+            <xsl:if test="wdb:is(., 'KSZwischenberschrift2', 'p')">
+                <xsl:attribute name="type">subheading</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates select="preceding-sibling::w:p[descendant::w:t and not(hab:isP(.)
                 or hab:isStruct(.))
                 and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]">
@@ -78,16 +82,6 @@
     <!-- Marginalie -->
     <xsl:template match="w:p[wdb:is(., 'KSMarginalie', 'p')]">
         <note place="margin"><xsl:apply-templates select="w:r" /></note>
-    </xsl:template>
-    
-    <!-- Zwischenüberschriften -->
-    <xsl:template match="w:p[wdb:is(., 'KSZwischenberschrift', 'p')]">
-        <head>
-            <xsl:if test="wdb:is(., 'KSZwischenberschrift2', 'p')">
-                <xsl:attribute name="type">subheading</xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates select="w:r"/>
-        </head>
     </xsl:template>
     
     <!-- normaler Absatz -->
