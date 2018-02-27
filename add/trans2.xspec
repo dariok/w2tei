@@ -88,6 +88,21 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="mit pb">
+			<x:context>
+				<p>
+					<lb/>und altem weszen/ wir hoffen alhie/ das unser ungefol-
+					<pb n="[A3r]"/>
+					<lb/>giger leyp erlost werd/ und haben die erlosung in hoffe-
+					<lb/>nung und glauben/ aber nit ym wesen und werck.
+				</p>
+			</x:context>
+			<x:expect label="w">
+				<p>
+					<lb/>und altem weszen/ wir hoffen alhie/ das unser <w>ungefol<pb n="[A3r]" break="no" /><lb break="no" />giger</w> leyp erlost werd/ und haben die erlosung in <w>hoffe<lb break="no"/>nung</w> und glauben/ aber nit ym wesen und werck.
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="quote">
 		<x:context>
