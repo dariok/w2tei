@@ -25,11 +25,11 @@
 		<bibl>
 			<xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
 			<xsl:variable name="self" select="normalize-space()" />
-			<xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, tei:abbr)]"/>
+			<xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
 			<xsl:attribute name="ref">
-				<xsl:value-of select="'#'||$entry/@xml:id"/>
+				<xsl:value-of select="'#'||$entry[1]/@xml:id"/>
 			</xsl:attribute>
-			<xsl:value-of select="substring-after(., $entry/tei:abbr)"/>
+			<xsl:value-of select="substring-after(., normalize-space($entry[1]/tei:abbr))"/>
 		</bibl>
 	</xsl:template>
 	
