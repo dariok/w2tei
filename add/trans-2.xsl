@@ -99,11 +99,32 @@
 					<xsl:text> </xsl:text>
 				</xsl:if>
 			</xsl:when>
+	        <xsl:when test="preceding-sibling::*[1][self::tei:rs]  and ends-with(preceding-sibling::tei:rs[1], '-')
+	            and following-sibling::node()[1][self::tei:rs]">
+	            <xsl:variable name="type" select="preceding-sibling::tei:rs[1]/@type"/>
+	            <rs type="{$type}">
+	                <xsl:sequence select="preceding-sibling::tei:rs[1]/comment()" />
+	                <w>
+	                    <xsl:value-of select="normalize-space(substring-before(preceding-sibling::tei:rs[1], '-'))"/>
+	                    <lb break="no"/>
+	                    <xsl:value-of select="normalize-space(following-sibling::tei:rs[1])"/>
+	                </w>
+	            </rs>
+	            <xsl:if test="starts-with(following-sibling::text()[1], ' ')
+	                or ends-with(following-sibling::tei:rs[1], ' ')">
+	                <xsl:text> </xsl:text>
+	            </xsl:if>
+	        </xsl:when>
 			<xsl:otherwise>
 				<lb/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+    
+    <xsl:template match="tei:rs[ends-with(., '-') and following-sibling::*[1][self::tei:lb]
+        and following-sibling::*[2][self::tei:rs]]"/>
+    <xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:lb]
+        and preceding-sibling::*[2][self::tei:rs[ends-with(., '-')]]]" />
     
     <xsl:template match="tei:pb[ends-with(normalize-space(preceding-sibling::text()[1]), '-')]" />
 	
