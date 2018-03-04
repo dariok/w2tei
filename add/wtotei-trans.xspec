@@ -1044,7 +1044,82 @@
                                     alicuius infirmitatis conscientie sue remordetur.“</note>
             </x:expect>
         </x:scenario>
-
+        <x:scenario label="w:i und w:vertAlign">
+            <x:context>
+                <w:endnoteReference w:id="31" />
+                <w:endnotes>
+                    <w:endnote w:id="31">
+                        <w:p w:rsidR="00B71AA3" w:rsidRPr="004812BE" w:rsidRDefault="00B71AA3" w:rsidP="00D05E63">
+                            <w:pPr>
+                                <w:pStyle w:val="Funotentext"/>
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r>
+                                <w:rPr>
+                                    <w:rStyle w:val="Funotenzeichen"/>
+                                </w:rPr>
+                                <w:footnoteRef/>
+                            </w:r>
+                            <w:r w:rsidRPr="004812BE">
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve"> Eckium </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="004812BE">
+                                <w:rPr>
+                                    <w:i/>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t>D, E</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="004812BE">
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">; Eccium, </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="004812BE">
+                                <w:rPr>
+                                    <w:i/>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">F, H, </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="004812BE">
+                                <w:rPr>
+                                    <w:i/>
+                                    <w:highlight w:val="yellow"/>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t>G</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="004812BE">
+                                <w:rPr>
+                                    <w:i/>
+                                    <w:highlight w:val="yellow"/>
+                                    <w:vertAlign w:val="subscript"/>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t>1</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="004812BE">
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t>.</w:t>
+                            </w:r>
+                        </w:p>
+                    </w:endnote>
+                </w:endnotes>
+            </x:context>
+            <x:expect label="beides umgesetzt">
+                <note type="footnote">Eckium <hi style="font-style: italic;">D, E</hi>; Eccium, <hi style="font-style: italic;">F, H, </hi>
+                    <hi style="font-style: italic;">G</hi><hi rend="sub"><hi style="font-style: italic;">1</hi></hi>.</note>
+            </x:expect>
+        </x:scenario>
     </x:scenario>
     
     <x:scenario label="Verweise">

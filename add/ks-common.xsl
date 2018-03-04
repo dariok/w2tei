@@ -287,23 +287,17 @@
     
     <!-- Styles -->
     <!-- kursiv -->
-    <xsl:template match="w:r[descendant::w:i[not(@w:val=0)] and not(wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
-        <!--<xsl:apply-templates select="." mode="eval" />-->
+    <xsl:template match="w:r[descendant::w:i[not(@w:val=0)]
+        and not(descendant::w:vertAlign or wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
         <hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
     </xsl:template>
     <xsl:template match="w:r[descendant::w:i[@w:val=0] and not(wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
         <xsl:apply-templates select="w:t" />
     </xsl:template>
-<!--    <xsl:template match="w:r[descendant::w:i and preceding-sibling::w:r[1]//w:i]" mode="eval"/>-->
-    <!--<xsl:template match="w:r[descendant::w:i and not(preceding-sibling::w:r[1]//w:i)]" mode="eval">
-        <xsl:variable name="myId" select="generate-id(preceding-sibling::w:r[1])" />
-        <hi style="font-style:italic;"><xsl:apply-templates select="w:t | following-sibling::w:r[descendant::w:i
-            and $myId = generate-id((preceding-sibling::w:r[not(descendant::w:i)])[1])]/w:t" /></hi>
-    </xsl:template>-->
     
     <!-- hochgestellte -->
-    <xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference
-        or hab:isSem(.))]">
+    <xsl:template match="w:r[descendant::w:vertAlign and not(descendant::w:i or w:endnoteReference
+        or w:footnoteReference or hab:isSem(.))]">
         <xsl:apply-templates select="." mode="eval" />
     </xsl:template>
     <xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]" mode="eval">
@@ -315,6 +309,18 @@
                 </xsl:choose>
             </xsl:attribute>
             <xsl:apply-templates select="w:t" />
+        </hi>
+    </xsl:template>
+    
+    <xsl:template match="w:r[descendant::w:vertAlign and descendant::w:i[not(@w:val=0)]]">
+        <hi>
+            <xsl:attribute name="rend">
+                <xsl:choose>
+                    <xsl:when test="w:rPr/w:vertAlign/@w:val='superscript'">super</xsl:when>
+                    <xsl:otherwise>sub</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
         </hi>
     </xsl:template>
     
