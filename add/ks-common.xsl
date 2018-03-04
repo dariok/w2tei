@@ -313,14 +313,16 @@
     </xsl:template>
     
     <xsl:template match="w:r[descendant::w:vertAlign and descendant::w:i[not(@w:val=0)]]">
-        <hi>
-            <xsl:attribute name="rend">
-                <xsl:choose>
-                    <xsl:when test="w:rPr/w:vertAlign/@w:val='superscript'">super</xsl:when>
-                    <xsl:otherwise>sub</xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
-            <hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
+        <hi style="font-style: italic;">
+            <hi>
+                <xsl:attribute name="rend">
+                    <xsl:choose>
+                        <xsl:when test="w:rPr/w:vertAlign/@w:val='superscript'">super</xsl:when>
+                        <xsl:otherwise>sub</xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+                <xsl:apply-templates select="w:t" />
+            </hi>
         </hi>
     </xsl:template>
     
