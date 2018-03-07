@@ -59,7 +59,6 @@
 			<!-- Phrasen in 128 -->
 			<xsl:when
 				test="matches($note/text()[1], '[vV]o[mn] Editor verbessert (für|aus)')">
-				<!-- ('vom Editor verbessert für', 'vom Editor verbessert aus', 'von Editor verbessert aus') -->
 				<choice>
 					<sic>
 						<xsl:value-of select="normalize-space($note/tei:orig[1])"/>
@@ -111,11 +110,71 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+    
+    <xsl:template match="tei:note[@type = 'crit_app'
+        and (preceding-sibling::node()[1][self::tei:*] or not(preceding-sibling::node()))]">
+        <xsl:choose>
+            <xsl:when test="starts-with(., 'folgt')">
+                <xsl:variable name="wit" select="normalize-space(./tei:orig/following-sibling::text())"/>
+                <xsl:variable name="val" select="normalize-space(./tei:orig)"/>
+                <add wit="{'#'||$wit}">
+                    <xsl:value-of select="$val"/>
+                </add>
+            </xsl:when>
+            <!-- Phrasen in 128 -->
+            <!--<xsl:when
+                test="matches(./text()[1], '[vV]o[mn] Editor verbessert (für|aus)')">
+                <choice>
+                    <sic>
+                        <xsl:value-of select="normalize-space(./tei:orig[1])"/>
+                        <xsl:if test="./tei:orig[1]/following-sibling::node()">
+                            <note type="comment"><xsl:sequence select="./tei:orig[1]/following-sibling::node()"/></note>
+                        </xsl:if>
+                    </sic>
+                    <corr><xsl:value-of select="$last"/></corr>
+                </choice>
+            </xsl:when>-->
+            <xsl:when test="./text()[1][normalize-space() = 'Danach gestrichen']">
+                <del>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="normalize-space(./tei:orig)"/>
+                </del>
+            </xsl:when>
+            <xsl:when test="./node()[1][self::text()[ends-with(., ';')]]">
+                <xsl:variable name="witA">
+                    <xsl:value-of select="wdb:substring-before-if-ends(./text()[1], ';')"/>
+                </xsl:variable>
+                <app>
+                    <lem wit="#{$witA}"/>
+                    <xsl:apply-templates select="./tei:orig" />
+                </app>
+            </xsl:when>
+            <xsl:when test="./node()[1][self::tei:orig]
+                or (./node()[1][self::text()[normalize-space()='']] and ./node()[2][self::tei:orig])">
+                <xsl:choose>
+                    <xsl:when test="starts-with(normalize-space((./tei:orig/following-sibling::text())[1]), 'vermutet')">
+                        <note type="crit_app">
+                            <orig><xsl:value-of select="normalize-space(./tei:orig)"/></orig>
+                            <xsl:text> </xsl:text>
+                            <xsl:value-of select="normalize-space(./tei:orig/following-sibling::text())"/>
+                        </note>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <app>
+                            <lem wit="#A"/>
+                            <xsl:apply-templates select="./tei:orig" />
+                        </app>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:sequence select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
 	
 	<xsl:template match="tei:note[@type='crit_app' and preceding-sibling::node()[1][self::text()]]" />
-	<xsl:template match="tei:note[preceding-sibling::node()[1][self::tei:*]]">
-		<xsl:sequence select="." />
-	</xsl:template>
 	
 	<xsl:template match="tei:orig">
 		<xsl:choose>
