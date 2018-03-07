@@ -86,7 +86,8 @@
 				    <xsl:apply-templates select="$note/tei:orig" />
 				</app>
 			</xsl:when>
-			<xsl:when test="$note/node()[1][self::tei:orig]">
+			<xsl:when test="$note/node()[1][self::tei:orig]
+			    or ($note/node()[1][self::text()[normalize-space()='']] and $note/node()[2][self::tei:orig])">
 				<xsl:choose>
 					<xsl:when test="starts-with(normalize-space(($note/tei:orig/following-sibling::text())[1]), 'vermutet')">
 						<xsl:value-of select="$last"/>
@@ -118,12 +119,11 @@
 	
 	<xsl:template match="tei:orig">
 		<xsl:choose>
+		    <xsl:when test="normalize-space() = '.' and normalize-space(following-sibling::text()) = ''"/>
 			<xsl:when test="following-sibling::node()[self::text()]">
 			    <xsl:variable name="myId" select="generate-id()"/>
-			    <xsl:variable name="val">
-			        <xsl:apply-templates select="following-sibling::node()[not(self::tei:orig)
-			            and generate-id(preceding-sibling::tei:orig[1]) = $myId]"/>
-			    </xsl:variable>
+			    <xsl:variable name="val" select="normalize-space(string-join(following-sibling::node()[not(self::tei:orig)
+			            and generate-id(preceding-sibling::tei:orig[1]) = $myId]))"/>
 				<rdg>
 				    <xsl:attribute name="wit">
 				        <xsl:variable name="wits">
