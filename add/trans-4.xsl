@@ -78,27 +78,12 @@
 				</del>
 			</xsl:when>
 			<xsl:when test="$note/node()[1][self::text()[ends-with(., ';')]]">
-				<!-- TODO später für mehrere rdg anpassen -->
-				<xsl:variable name="textB" select="normalize-space($note/tei:orig[1]/following-sibling::node())"/>
 				<xsl:variable name="witA">
 					<xsl:value-of select="wdb:substring-before-if-ends($note/text()[1], ';')"/>
 				</xsl:variable>
-				<xsl:variable name="witB">
-					<xsl:value-of select="wdb:substring-before($textB, ',')"/>
-				</xsl:variable>
 				<app>
 					<lem wit="#{$witA}"><xsl:value-of select="$last"/></lem>
-					<xsl:choose>
-						<xsl:when test="contains($textB, ',')">
-							<rdg wit="#{$witB}">
-								<xsl:value-of select="normalize-space($note/tei:orig[1])"/>
-								<note type="comment"><xsl:value-of select="normalize-space(substring-after($textB, ','))"/></note>
-							</rdg>
-						</xsl:when>
-						<xsl:otherwise>
-							<rdg wit="#{$witB}"><xsl:value-of select="normalize-space($note/tei:orig[1])"/></rdg>
-						</xsl:otherwise>
-					</xsl:choose>
+				    <xsl:apply-templates select="$note/tei:orig" />
 				</app>
 			</xsl:when>
 			<xsl:when test="$note/node()[1][self::tei:orig]">
@@ -134,8 +119,31 @@
 	<xsl:template match="tei:orig">
 		<xsl:choose>
 			<xsl:when test="following-sibling::node()[self::text()]">
-				<rdg wit="#{normalize-space(wdb:substring-before(following-sibling::text()[1], ';'))}">
+			    <xsl:variable name="myId" select="generate-id()"/>
+			    <xsl:variable name="val">
+			        <xsl:apply-templates select="following-sibling::node()[not(self::tei:orig)
+			            and generate-id(preceding-sibling::tei:orig[1]) = $myId]"/>
+			    </xsl:variable>
+				<rdg>
+				    <xsl:attribute name="wit">
+				        <xsl:variable name="wits">
+				            <xsl:for-each select="tokenize($val, ',')">
+				                <xsl:if test="string-length(.) &lt; 5">
+    				                <xsl:value-of
+    				                    select="'#'||normalize-space(wdb:substring-before(., ';'))||' '"/>
+				                </xsl:if>
+				            </xsl:for-each>
+				        </xsl:variable>
+				        <xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
+				    </xsl:attribute>
 					<xsl:value-of select="normalize-space()"/>
+				    <xsl:for-each select="tokenize($val, ',')">
+				        <xsl:if test="string-length(.) &gt; 4">
+				            <note type="comment">
+				                <xsl:value-of select="normalize-space(wdb:substring-before(., ';'))"/>
+				            </note>
+				        </xsl:if>
+				    </xsl:for-each>
 				</rdg>
 			</xsl:when>
 			<xsl:otherwise>
