@@ -1,1129 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
-  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-  xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
-  xmlns:hab="http://diglib.hab.de"
-  stylesheet="wtotei-trans.xsl" xslt-version="3.0" preserve-space="no">
-  <x:scenario label="normaler Absatz">
-    <x:scenario label="mit Leerzeilen">
-      <x:context>
-        <w:body>
-          <w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53"
-            w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
-            <w:pPr>
-              <w:pStyle w:val="berschrift1"/>
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="00E46B53">
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-              <w:t>Text</w:t>
-            </w:r>
-          </w:p>
-          <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-            <w:pPr>
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-            </w:pPr>
-          </w:p>
-          <w:p w14:paraId="4EB56B69" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-            <w:pPr>
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="00E46B53">
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-              <w:t>Disses buchlin beschleust durch heylige schrifft/</w:t>
-            </w:r>
-          </w:p>
-          <w:p w14:paraId="20E66C98" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-            <w:pPr>
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="00E46B53">
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-              <w:t>das Bepstliche heylickeit altzu viel yrrenn/</w:t>
-            </w:r>
-          </w:p>
-          <w:p w14:paraId="42E0C7B4" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-            <w:pPr>
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="00E46B53">
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-              <w:t>sundigen/ unnd unrecht thun kan.</w:t>
-            </w:r>
-          </w:p>
-          <w:p w14:paraId="445A1EFB" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-            <w:pPr>
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="00E46B53">
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-              <w:t>Wer das nit glaubt/ der ist</w:t>
-            </w:r>
-          </w:p>
-          <w:p w14:paraId="50634DD0" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-            <w:pPr>
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-            </w:pPr>
-            <w:r w:rsidRPr="00E46B53">
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-              <w:t>Ein boszer unchrist.</w:t>
-            </w:r>
-            <w:r w:rsidRPr="00E46B53">
-              <w:rPr>
-                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                <w:lang w:val="de-DE"/>
-              </w:rPr>
-              <w:sym w:font="Symbol" w:char="F05E"/>
-            </w:r>
-          </w:p>
-        </w:body>
-      </x:context>
-      <x:expect label="div">
-        <div>
-          <p>
-            <lb/>Disses buchlin beschleust durch heylige schrifft/
-               <lb/>das Bepstliche heylickeit altzu viel yrrenn/
-               <lb/>sundigen/ unnd unrecht thun kan.
-               <lb/>Wer das nit glaubt/ der ist
-               <lb/>Ein boszer unchrist.</p>
-        </div>
-      </x:expect>
-    </x:scenario>
-      <x:scenario label="Endzeichen löschen">
-          <x:context>
-              <w:body>
-                  <w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53"
-                      w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
-                      <w:pPr>
-                          <w:pStyle w:val="berschrift1"/>
-                          <w:rPr>
-                              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                              <w:lang w:val="de-DE"/>
-                          </w:rPr>
-                      </w:pPr>
-                      <w:r w:rsidRPr="00E46B53">
-                          <w:rPr>
-                              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                              <w:lang w:val="de-DE"/>
-                          </w:rPr>
-                          <w:t>Text</w:t>
-                      </w:r>
-                  </w:p>
-                  <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-                      w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-                      <w:pPr>
-                          <w:rPr>
-                              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                              <w:lang w:val="de-DE"/>
-                          </w:rPr>
-                      </w:pPr>
-                  </w:p>
-                  <w:p w:rsidR="00FE24A7" w:rsidRPr="00FE4F55" w:rsidRDefault="00FE24A7" w:rsidP="00FE4F55">
-                      <w:pPr>
-                          <w:spacing w:line="360" w:lineRule="auto"/>
-                          <w:ind w:left="360"/>
-                          <w:jc w:val="center"/>
-                          <w:rPr>
-                              <w:lang w:val="it-IT"/>
-                          </w:rPr>
-                      </w:pPr>
-                      <w:r w:rsidRPr="00FE4F55">
-                          <w:rPr>
-                              <w:lang w:val="it-IT"/>
-                          </w:rPr>
-                          <w:t>Christus in eternum regnat.</w:t>
-                      </w:r>
-                      <w:r w:rsidR="00F56B88">
-                          <w:rPr>
-                              <w:lang w:val="it-IT"/>
-                          </w:rPr>
-                          <w:t></w:t>
-                      </w:r>
-                  </w:p>
-              </w:body>
-          </x:context>
-          <x:expect label="Text ohne F05E">
-              <div>
-                  <p><lb/>Christus in eternum regnat.</p>
-              </div>
-          </x:expect>
-      </x:scenario>
-  </x:scenario>
-    
-    <x:scenario label="Fußnoten">
-        <x:scenario label="mit Kursiven">
-            <x:context>
-                <w:endnoteReference w:id="11" />
-                <w:endnotes>
-                    <w:endnote w:id="11">
-                        <w:p w14:paraId="797474FC" w14:textId="6CCCD027" w:rsidR="002D392F" w:rsidRPr="00A27704"
-                            w:rsidRDefault="002D392F" w:rsidP="00014391">
-                            <w:pPr>
-                                <w:pStyle w:val="Endnotentext"/>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r w:rsidRPr="00A27704">
-                                <w:rPr>
-                                    <w:rStyle w:val="Endnotenzeichen"/>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:endnoteRef/>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Die Ablässe der Mendikantenorden nahmen immer größerre Ausmaße an. Die </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">gefälschte </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">Sammlung von Privilegien der Minoriten des </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Markus von Treviso</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">aus dem Jahr </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>1428, angeblich päpstlichen Registern entnommen</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">, setzte </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">für </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">eine Reihe von </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>Feste</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>n, die in Ordenskirchen begangen wurden,</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> 100 Jahre Ablass</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> an. Ein notarielles Instrument erka</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>nnt</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>e</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> 1482 diese Ablässe als echt an</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">. Karlstadt mag der Druck dieser </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:i/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>Privilegia fratrum minorum</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> (Hain 13371)</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">, zuletzt in </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSOrt"/>
-                                </w:rPr>
-                                <w:t>Leipzig</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> 1495 und 1498 sowie in Venedig 1500, 1502 und 1508,</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">zusammen </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">mit </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">den </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">Bullen </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">bekannt gewesen sein. </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Sixtus IV.</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> erließ für den</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Besuch der Ordenskirche am Fest des Hl. Franziskus 100 Jahre</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Ablass, </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Leo X.</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> gar einen vollkommenen</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00DA585D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Ablass für die, die sich </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">im Ordenskleid beerdigen ließen. Die </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">Dominikaner nahmen </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>kurzerhand die</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Ablässe der Franziskaner </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">auch </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>für sich in Anspruch</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">; dieser Übertragung gaben </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Bonifaz IX.</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> 1402 und </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Sixtus IV.</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> 1479 </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>ihren päpstlichen Segen, der auch einen</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Ablass von 100 Jahren für </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">den </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">Kirchenbesuch am Fest des </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Hl. Dominikus</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> anordnete. Den Augustinern gewährte schon </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Innozenz IV.</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>im Jahr</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> 1244</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> einen absurd anmutenden Ablass von</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> 1000 Jahre</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>n</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> für Almosen und </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">den </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>Besuch der Augustinerkirche zw</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>ischen</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Septuagesima und Palmsonntag sowie </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>einen vollkommenen</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Ablass an drei Tagen in </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">der </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>Karwoche</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">. </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Julius II.</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> bestätigt in </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">der </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>Bulle „Dum uberes fructus“ alte</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>,</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> den Augustinern gewährte Ablässe mit Beifügung eines Ablasses von 100 Jahren für </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">den </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>Kirchenbesuch an Festen von drei Ordensheiligen</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">, erwähnte jedoch nicht den Ablass von 1244. Veröffentlicht wurden diese Ablässe in den </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="003773C4">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>Privilegia fratrum Heremitarum Augustini, Rom 1514</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>, 27ff.</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00014391">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">S. hierzu </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rStyle w:val="KSbibliographischeAngabe"/>
-                                </w:rPr>
-                                <w:t>Paulus, Ablass 3, 260-268</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t>.</w:t>
-                            </w:r>
-                        </w:p>
-                    </w:endnote>
-                </w:endnotes>
-            </x:context>
-            <x:expect label="mixed content">
-                <note type="footnote">Die Ablässe der Mendikantenorden nahmen immer größerre Ausmaße an. Die gefälschte Sammlung von Privilegien der Minoriten des <rs type="person"><!--TODO ref eintragen-->Markus von Treviso</rs> aus dem Jahr 1428, angeblich päpstlichen Registern entnommen, setzte für eine Reihe von Festen, die in Ordenskirchen begangen wurden, 100 Jahre Ablass an. Ein notarielles Instrument erkannte 1482 diese Ablässe als echt an. Karlstadt mag der Druck dieser <hi style="font-style: italic;">Privilegia fratrum minorum</hi> (Hain 13371), zuletzt in <rs type="place"><!--TODO ref eintragen-->Leipzig</rs> 1495 und 1498 sowie in Venedig 1500, 1502 und 1508, zusammen mit den Bullen bekannt gewesen sein. <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> erließ für den Besuch der Ordenskirche am Fest des Hl. Franziskus 100 Jahre Ablass, <rs type="person"><!--TODO ref eintragen-->Leo X.</rs> gar einen vollkommenen Ablass für die, die sich im Ordenskleid beerdigen ließen. Die Dominikaner nahmen kurzerhand die Ablässe der Franziskaner auch für sich in Anspruch; dieser Übertragung gaben <rs type="person"><!--TODO ref eintragen-->Bonifaz IX.</rs> 1402 und <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> 1479 ihren päpstlichen Segen, der auch einen Ablass von 100 Jahren für den Kirchenbesuch am Fest des <rs type="person"><!--TODO ref eintragen-->Hl. Dominikus</rs> anordnete. Den Augustinern gewährte schon <rs type="person"><!--TODO ref eintragen-->Innozenz IV.</rs> im Jahr 1244 einen absurd anmutenden Ablass von 1000 Jahren für Almosen und den Besuch der Augustinerkirche zwischen Septuagesima und Palmsonntag sowie einen vollkommenen Ablass an drei Tagen in der Karwoche. <rs type="person"><!--TODO ref eintragen-->Julius II.</rs> bestätigt in der Bulle „Dum uberes fructus“ alte, den Augustinern gewährte Ablässe mit Beifügung eines Ablasses von 100 Jahren für den Kirchenbesuch an Festen von drei Ordensheiligen, erwähnte jedoch nicht den Ablass von 1244. Veröffentlicht wurden diese Ablässe in den Privilegia fratrum Heremitarum Augustini, Rom 1514, 27ff. S. hierzu <bibl>Paulus, Ablass 3, 260-268</bibl>.</note>
-            </x:expect>
-        </x:scenario>
-        <x:scenario label="Kursive 2">
-            <x:context>
-                <w:endnoteReference w:id="31" />
-                <w:endnotes>
-                    <w:endnote w:id="31">
-                        <w:p w14:paraId="0A966011" w14:textId="2E9939CD" w:rsidR="002D392F" w:rsidRPr="0068563D"
-                            w:rsidRDefault="002D392F" w:rsidP="00AF3C75">
-                            <w:pPr>
-                                <w:pStyle w:val="Endnotentext"/>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r w:rsidRPr="0068563D">
-                                <w:rPr>
-                                    <w:rStyle w:val="Endnotenzeichen"/>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:endnoteRef/>
-                            </w:r>
-                            <w:r w:rsidRPr="0068563D">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">Karlstadt übersetzt einen seinerzeit </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="009465CE">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSPerson"/>
-                                </w:rPr>
-                                <w:t>Cyrill von Alexandria</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> zugeschriebenen Text. S. </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00FA1BA7">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSAutorenstelle"/>
-                                </w:rPr>
-                                <w:t>Origines, In Leviticum homilia 2</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">: </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="002E5F0F">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>„</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>Sed quid praecipue in huiusmodi sacerdote mirandum est? non ut non peccet, quod
-                                    fieri non potest, sed ut agnoscat et intelligat peccatum suum. Nunquam enim se
-                                    emendat, qui pecasse se non putat. Simul quia et facilius potest indulgere
-                                    peccantibus, is qui alicuius infirmitatis suae conscientiae remordetur.“ (</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00FA1BA7">
-                                <w:rPr>
-                                    <w:rStyle w:val="KSbibliographischeAngabe"/>
-                                </w:rPr>
-                                <w:t>PG 12, 415C</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>). Vgl. Eximii patris Cyrilli Alexandrini commentarii in Leviticum sexdecim
-                                    libris digesti, Paris: Wolfgang Hopyl, 1514, fol. 5</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00B13318">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                    <w:vertAlign w:val="superscript"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>v</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">: </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:sz w:val="20"/>
-                                    <w:szCs w:val="20"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>„Sed quid precipue in huiusmodi sacerdote mirandum est? Non ut non peccet/ quod
-                                    fieri potest: sed ut agnoscat et intelligat peccatum suum. Nunquam enim emendat: qui
-                                    se pecasse non putat, simul quia et facilius potest indulgere peccantibus: is qui
-                                    alicuius infirmitatis conscientie sue remordetur.“</w:t>
-                            </w:r>
-                        </w:p>
-                    </w:endnote>
-                </w:endnotes>
-            </x:context>
-            <x:expect label="Kursiv und korrektes ref">
-                <note type="footnote">Karlstadt übersetzt einen seinerzeit <rs type="person"><!--TODO ref eintragen-->Cyrill von Alexandria</rs> zugeschriebenen Text. S. <ref type="medieval" cRef="Origines!In Leviticum homilia 2">Origines, In Leviticum homilia 2</ref>: „Sed quid praecipue in huiusmodi sacerdote mirandum est? non ut non peccet, quod
-                                    fieri non potest, sed ut agnoscat et intelligat peccatum suum. Nunquam enim se
-                                    emendat, qui pecasse se non putat. Simul quia et facilius potest indulgere
-                                    peccantibus, is qui alicuius infirmitatis suae conscientiae remordetur.“ (<bibl>PG 12, 415C</bibl>). Vgl. Eximii patris Cyrilli Alexandrini commentarii in Leviticum sexdecim
-                                    libris digesti, Paris: Wolfgang Hopyl, 1514, fol. 5<hi rend="super">v</hi>: „Sed quid precipue in huiusmodi sacerdote mirandum est? Non ut non peccet/ quod
-                                    fieri potest: sed ut agnoscat et intelligat peccatum suum. Nunquam enim emendat: qui
-                                    se pecasse non putat, simul quia et facilius potest indulgere peccantibus: is qui
-                                    alicuius infirmitatis conscientie sue remordetur.“</note>
-            </x:expect>
-        </x:scenario>
-        <x:scenario label="w:i und w:vertAlign">
-            <x:context>
-                <w:endnoteReference w:id="31" />
-                <w:endnotes>
-                    <w:endnote w:id="31">
-                        <w:p w:rsidR="00B71AA3" w:rsidRPr="004812BE" w:rsidRDefault="00B71AA3" w:rsidP="00D05E63">
-                            <w:pPr>
-                                <w:pStyle w:val="Funotentext"/>
-                                <w:rPr>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r>
-                                <w:rPr>
-                                    <w:rStyle w:val="Funotenzeichen"/>
-                                </w:rPr>
-                                <w:footnoteRef/>
-                            </w:r>
-                            <w:r w:rsidRPr="004812BE">
-                                <w:rPr>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> Eckium </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="004812BE">
-                                <w:rPr>
-                                    <w:i/>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t>D, E</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="004812BE">
-                                <w:rPr>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">; Eccium, </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="004812BE">
-                                <w:rPr>
-                                    <w:i/>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">F, H, </w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="004812BE">
-                                <w:rPr>
-                                    <w:i/>
-                                    <w:highlight w:val="yellow"/>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t>G</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="004812BE">
-                                <w:rPr>
-                                    <w:i/>
-                                    <w:highlight w:val="yellow"/>
-                                    <w:vertAlign w:val="subscript"/>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t>1</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="004812BE">
-                                <w:rPr>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t>.</w:t>
-                            </w:r>
-                        </w:p>
-                    </w:endnote>
-                </w:endnotes>
-            </x:context>
-            <x:expect label="beides umgesetzt">
-                <note type="footnote">Eckium <hi style="font-style: italic;">D, E</hi>; Eccium, <hi style="font-style: italic;">F, H, </hi>
-                    <hi style="font-style: italic;">G</hi><hi rend="sub"><hi style="font-style: italic;">1</hi></hi>.</note>
-            </x:expect>
-        </x:scenario>
-    </x:scenario>
-    
-    <x:scenario label="Verweise">
-        <x:scenario label="Zielmarke erstellen">
+    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+    xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:hab="http://diglib.hab.de"
+    stylesheet="wtotei-trans.xsl" xslt-version="3.0" preserve-space="no">
+    <x:scenario label="normaler Absatz">
+        <x:scenario label="mit Leerzeilen">
             <x:context>
                 <w:body>
                     <w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53"
@@ -1152,535 +36,202 @@
                             </w:rPr>
                         </w:pPr>
                     </w:p>
-                    <w:p w:rsidR="00F111D2" w:rsidRPr="00F111D2" w:rsidRDefault="00F111D2" w:rsidP="00F111D2"><w:pPr><w:pStyle w:val="KSText"/><w:spacing w:line="360" w:lineRule="auto"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="it-IT"/></w:rPr></w:pPr><w:r w:rsidRPr="00F111D2"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="it-IT"/></w:rPr><w:t>Lex factorum</w:t></w:r><w:bookmarkStart w:id="0" w:name="_Ref495566379"/><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="Endnotenzeichen"/><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr><w:endnoteReference w:id="2"/></w:r><w:bookmarkEnd w:id="0"/><w:r w:rsidRPr="00F111D2"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="it-IT"/></w:rPr><w:t xml:space="preserve"> non in solo iudaismo</w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="Endnotenzeichen"/><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr><w:endnoteReference w:id="3"/></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="it-IT"/></w:rPr><w:t xml:space="preserve"> Existit.</w:t></w:r></w:p>
+                    <w:p w14:paraId="4EB56B69" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                        w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00E46B53">
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                            <w:t>Disses buchlin beschleust durch heylige schrifft/</w:t>
+                        </w:r>
+                    </w:p>
+                    <w:p w14:paraId="20E66C98" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                        w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00E46B53">
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                            <w:t>das Bepstliche heylickeit altzu viel yrrenn/</w:t>
+                        </w:r>
+                    </w:p>
+                    <w:p w14:paraId="42E0C7B4" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                        w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00E46B53">
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                            <w:t>sundigen/ unnd unrecht thun kan.</w:t>
+                        </w:r>
+                    </w:p>
+                    <w:p w14:paraId="445A1EFB" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                        w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00E46B53">
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                            <w:t>Wer das nit glaubt/ der ist</w:t>
+                        </w:r>
+                    </w:p>
+                    <w:p w14:paraId="50634DD0" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                        w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00E46B53">
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                            <w:t>Ein boszer unchrist.</w:t>
+                        </w:r>
+                        <w:r w:rsidRPr="00E46B53">
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                            <w:sym w:font="Symbol" w:char="F05E"/>
+                        </w:r>
+                    </w:p>
                 </w:body>
-                <w:endnotes>
-                    <w:endnote w:id="2"><w:p w:rsidR="00F111D2" w:rsidRPr="00367BD8" w:rsidRDefault="00F111D2" w:rsidP="00F111D2"><w:pPr><w:pStyle w:val="Endnotentext"/><w:rPr><w:lang w:val="fr-FR"/></w:rPr></w:pPr><w:r><w:rPr><w:rStyle w:val="Endnotenzeichen"/></w:rPr><w:endnoteRef/></w:r><w:r><w:t xml:space="preserve"> Der Begrifflichkeit der Thesenreihe liegt </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="KSBibelstelle"/></w:rPr><w:t>Röm 3,27-30</w:t></w:r><w:r><w:t xml:space="preserve"> zu Grunde: „(27) Ubi est ergo gloriatio tua? </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:lang w:val="it-IT"/></w:rPr><w:t xml:space="preserve">Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium? </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">Immo et gentium. </w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>(3</w:t></w:r><w:r w:rsidRPr="00C264D0"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">0) </w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">Quoniam </w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">quidem </w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>unus e</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>s</w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>t Deus, qui justificat circumci</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>s</w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>ionem ex fide, et praeputium per fidem.</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>"</w:t></w:r></w:p></w:endnote>
-                    <w:endnote w:id="3"><w:p w:rsidR="00F111D2" w:rsidRPr="00C264D0" w:rsidRDefault="00F111D2" w:rsidP="00F111D2"><w:pPr><w:pStyle w:val="Endnotentext"/><w:rPr><w:lang w:val="sv-SE"/></w:rPr></w:pPr><w:r><w:rPr><w:rStyle w:val="Endnotenzeichen"/></w:rPr><w:endnoteRef/></w:r><w:r><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t xml:space="preserve"> Vgl. </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="KSBibelstelle"/></w:rPr><w:t>Röm 3,29</w:t></w:r><w:r w:rsidRPr="00C264D0"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t xml:space="preserve"> (s. o. Anm. </w:t></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="begin"/></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:instrText xml:space="preserve"> NOTEREF _Ref495566379 \h </w:instrText></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="separate"/></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t>2</w:t></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="end"/></w:r><w:r><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t>).</w:t></w:r></w:p></w:endnote>
-                </w:endnotes>
             </x:context>
-            <x:expect label="hab:bm">
+            <x:expect label="div">
                 <div>
-                <p><lb/>Lex factorum<hab:bm name="_Ref495566379" /><note type="footnote">Der Begrifflichkeit der Thesenreihe liegt <ref type="biblical">Röm 3,27-30</ref> zu Grunde: „(27) Ubi est ergo gloriatio tua? Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium? Immo et gentium. (30) Quoniam quidem unus est Deus, qui justificat circumcisionem ex fide, et praeputium per fidem."</note> non in solo iudaismo<note type="footnote">Vgl. <ref type="biblical">Röm 3,29</ref> (s. o. Anm. <hab:mark xmlns:hab="http://diglib.hab.de" ref="NOTEREF _Ref495566379 \h"/>2<hab:mark xmlns:hab="http://diglib.hab.de"/>).</note> Existit.</p>
+                    <p>
+                        <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                            <w:pPr>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                            </w:pPr>
+                        </w:p>
+                        <w:p w14:paraId="4EB56B69" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                            <w:pPr>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r w:rsidRPr="00E46B53">
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                                <w:t>Disses buchlin beschleust durch heylige schrifft/</w:t>
+                            </w:r>
+                        </w:p>
+                        <w:p w14:paraId="20E66C98" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                            <w:pPr>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r w:rsidRPr="00E46B53">
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                                <w:t>das Bepstliche heylickeit altzu viel yrrenn/</w:t>
+                            </w:r>
+                        </w:p>
+                        <w:p w14:paraId="42E0C7B4" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                            <w:pPr>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r w:rsidRPr="00E46B53">
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                                <w:t>sundigen/ unnd unrecht thun kan.</w:t>
+                            </w:r>
+                        </w:p>
+                        <w:p w14:paraId="445A1EFB" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                            <w:pPr>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r w:rsidRPr="00E46B53">
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                                <w:t>Wer das nit glaubt/ der ist</w:t>
+                            </w:r>
+                        </w:p>
+                        <w:p w14:paraId="50634DD0" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                            <w:pPr>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r w:rsidRPr="00E46B53">
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                                <w:t>Ein boszer unchrist.</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00E46B53">
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                                <w:sym w:font="Symbol" w:char="F05E"/>
+                            </w:r>
+                        </w:p></p>
                 </div>
             </x:expect>
         </x:scenario>
-        
-    </x:scenario>
-    
-    <x:scenario label="listen">
-        <x:scenario label="mit großer röm. Zählung">
-            <x:context>
-                <w:p w:rsidR="00FE24A7" w:rsidRPr="00B10639" w:rsidRDefault="00FE24A7" w:rsidP="00B10639">
-                    <w:pPr>
-                        <w:pStyle w:val="Listenabsatz"/>
-                        <w:numPr>
-                            <w:ilvl w:val="0"/>
-                            <w:numId w:val="3"/>
-                        </w:numPr>
-                        <w:spacing w:line="360" w:lineRule="auto"/>
-                        <w:rPr>
-                            <w:lang w:val="it-IT"/>
-                        </w:rPr>
-                    </w:pPr>
-                    <w:r w:rsidRPr="00B10639">
-                        <w:rPr>
-                            <w:lang w:val="it-IT"/>
-                        </w:rPr>
-                        <w:t xml:space="preserve"> Multi sunt fures/ qui tamen nihil alieni unquam domino invito abstulerunt</w:t>
-                    </w:r>
-                    <w:r w:rsidRPr="00B10639">
-                        <w:rPr>
-                            <w:lang w:val="it-IT"/>
-                        </w:rPr>
-                        <w:t>.</w:t>
-                    </w:r>
-                </w:p>
-                <w:numbering mc:Ignorable="w14 w15 wp14"
-                    xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
-                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                    xmlns:o="urn:schemas-microsoft-com:office:office"
-                    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-                    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml"
-                    xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
-                    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
-                    xmlns:w10="urn:schemas-microsoft-com:office:word"
-                    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-                    xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-                    xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
-                    xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
-                    xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
-                    xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
-                    xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
-                    <w:abstractNum w:abstractNumId="0" w15:restartNumberingAfterBreak="0">
-                        <w:nsid w:val="179D0E78"/>
-                        <w:multiLevelType w:val="hybridMultilevel"/>
-                        <w:tmpl w:val="67021DC8"/>
-                        <w:lvl w:ilvl="0" w:tplc="04070013">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="upperRoman"/>
-                            <w:lvlText w:val="%1."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="720" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="1" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%2."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="1440" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="2" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%3."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="2160" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="3" w:tplc="0476000F" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="decimal"/>
-                            <w:lvlText w:val="%4."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="2880" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="4" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%5."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="3600" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="5" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%6."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="4320" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="6" w:tplc="0476000F" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="decimal"/>
-                            <w:lvlText w:val="%7."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="5040" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="7" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%8."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="5760" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="8" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%9."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="6480" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                    </w:abstractNum>
-                    <w:num w:numId="3">
-                        <w:abstractNumId w:val="0"/>
-                    </w:num>
-                </w:numbering>
-            </x:context>
-            <x:expect label="I.">
-                <list>
-                    <label>I.</label>
-                    <item> Multi sunt fures/ qui tamen nihil alieni unquam domino invito abstulerunt.</item>
-                </list>
-            </x:expect>
-        </x:scenario>
-        <x:scenario label="mit normaler Zählung">
-            <x:context>
-                <w:p w:rsidR="00FE24A7" w:rsidRPr="00B10639" w:rsidRDefault="00FE24A7" w:rsidP="00B10639">
-                    <w:pPr>
-                        <w:pStyle w:val="Listenabsatz"/>
-                        <w:numPr>
-                            <w:ilvl w:val="0"/>
-                            <w:numId w:val="3"/>
-                        </w:numPr>
-                        <w:spacing w:line="360" w:lineRule="auto"/>
-                        <w:rPr>
-                            <w:lang w:val="it-IT"/>
-                        </w:rPr>
-                    </w:pPr>
-                    <w:r w:rsidRPr="00B10639">
-                        <w:rPr>
-                            <w:lang w:val="it-IT"/>
-                        </w:rPr>
-                        <w:t xml:space="preserve"> Multi sunt fures/ qui tamen nihil alieni unquam domino invito abstulerunt</w:t>
-                    </w:r>
-                    <w:r w:rsidRPr="00B10639">
-                        <w:rPr>
-                            <w:lang w:val="it-IT"/>
-                        </w:rPr>
-                        <w:t>.</w:t>
-                    </w:r>
-                </w:p>
-            </x:context>
-            <x:expect label="1.">
-                <list>
-                    <label>1.</label>
-                    <item> Multi sunt fures/ qui tamen nihil alieni unquam domino invito abstulerunt.</item>
-                </list>
-            </x:expect>
-        </x:scenario>
-        <x:scenario label="korrigierte Zählung">
-            <x:context>
-                <w:p w:rsidR="00FE24A7" w:rsidRPr="00E5383B" w:rsidRDefault="00FE24A7" w:rsidP="00B10639">
-                    <w:pPr>
-                        <w:pStyle w:val="Listenabsatz"/>
-                        <w:numPr>
-                            <w:ilvl w:val="0"/>
-                            <w:numId w:val="3"/>
-                        </w:numPr>
-                        <w:spacing w:line="360" w:lineRule="auto"/>
-                        <w:rPr>
-                            <w:lang w:val="fr-FR"/>
-                        </w:rPr>
-                    </w:pPr>
-                    <w:r w:rsidRPr="00D03717">
-                        <w:rPr>
-                            <w:rStyle w:val="KSkorrigierteThesennummer"/>
-                            <w:lang w:val="fr-FR"/>
-                        </w:rPr>
-                        <w:t>iiij</w:t>
-                    </w:r>
-                    <w:r w:rsidRPr="00E5383B">
-                        <w:rPr>
-                            <w:lang w:val="fr-FR"/>
-                        </w:rPr>
-                        <w:t xml:space="preserve"> Que lex/ et si negativa esse censeatur/ non tamen impletur absque illa affirmativa/ scilicet Quecunque vultis ut vobis faciant homines/ et vos facite illis</w:t>
-                    </w:r>
-                    <w:r w:rsidRPr="00E5383B">
-                        <w:rPr>
-                            <w:lang w:val="fr-FR"/>
-                        </w:rPr>
-                        <w:t>.</w:t>
-                    </w:r>
-                </w:p>
-                <w:numbering mc:Ignorable="w14 w15 wp14"
-                    xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
-                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                    xmlns:o="urn:schemas-microsoft-com:office:office"
-                    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-                    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml"
-                    xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
-                    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
-                    xmlns:w10="urn:schemas-microsoft-com:office:word"
-                    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-                    xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-                    xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
-                    xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
-                    xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
-                    xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
-                    xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape">
-                    <w:abstractNum w:abstractNumId="0" w15:restartNumberingAfterBreak="0">
-                        <w:nsid w:val="179D0E78"/>
-                        <w:multiLevelType w:val="hybridMultilevel"/>
-                        <w:tmpl w:val="67021DC8"/>
-                        <w:lvl w:ilvl="0" w:tplc="04070013">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="upperRoman"/>
-                            <w:lvlText w:val="%1."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="720" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="1" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%2."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="1440" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="2" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%3."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="2160" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="3" w:tplc="0476000F" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="decimal"/>
-                            <w:lvlText w:val="%4."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="2880" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="4" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%5."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="3600" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="5" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%6."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="4320" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="6" w:tplc="0476000F" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="decimal"/>
-                            <w:lvlText w:val="%7."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="5040" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="7" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%8."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="5760" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="8" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%9."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="6480" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                    </w:abstractNum>
-                    <w:abstractNum w:abstractNumId="1" w15:restartNumberingAfterBreak="0">
-                        <w:nsid w:val="28561AF3"/>
-                        <w:multiLevelType w:val="hybridMultilevel"/>
-                        <w:tmpl w:val="332682C2"/>
-                        <w:lvl w:ilvl="0" w:tplc="04070013">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="upperRoman"/>
-                            <w:lvlText w:val="%1."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="360" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="1" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%2."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="1080" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="2" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%3."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="1800" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="3" w:tplc="0476000F" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="decimal"/>
-                            <w:lvlText w:val="%4."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="2520" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="4" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%5."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="3240" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="5" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%6."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="3960" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="6" w:tplc="0476000F" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="decimal"/>
-                            <w:lvlText w:val="%7."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="4680" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="7" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%8."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="5400" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="8" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%9."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="6120" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                    </w:abstractNum>
-                    <w:abstractNum w:abstractNumId="2" w15:restartNumberingAfterBreak="0">
-                        <w:nsid w:val="4BF23588"/>
-                        <w:multiLevelType w:val="hybridMultilevel"/>
-                        <w:tmpl w:val="2FBEE660"/>
-                        <w:lvl w:ilvl="0" w:tplc="726C204A">
-                            <w:start w:val="2"/>
-                            <w:numFmt w:val="upperRoman"/>
-                            <w:lvlText w:val="%1."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="502" w:hanging="360"/>
-                            </w:pPr>
-                            <w:rPr>
-                                <w:rFonts w:hint="default"/>
-                            </w:rPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="1" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%2."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="1440" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="2" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%3."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="2160" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="3" w:tplc="0476000F" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="decimal"/>
-                            <w:lvlText w:val="%4."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="2880" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="4" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%5."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="3600" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="5" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%6."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="4320" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="6" w:tplc="0476000F" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="decimal"/>
-                            <w:lvlText w:val="%7."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="5040" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="7" w:tplc="04760019" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerLetter"/>
-                            <w:lvlText w:val="%8."/>
-                            <w:lvlJc w:val="left"/>
-                            <w:pPr>
-                                <w:ind w:left="5760" w:hanging="360"/>
-                            </w:pPr>
-                        </w:lvl>
-                        <w:lvl w:ilvl="8" w:tplc="0476001B" w:tentative="1">
-                            <w:start w:val="1"/>
-                            <w:numFmt w:val="lowerRoman"/>
-                            <w:lvlText w:val="%9."/>
-                            <w:lvlJc w:val="right"/>
-                            <w:pPr>
-                                <w:ind w:left="6480" w:hanging="180"/>
-                            </w:pPr>
-                        </w:lvl>
-                    </w:abstractNum>
-                    <w:num w:numId="1">
-                        <w:abstractNumId w:val="2"/>
-                    </w:num>
-                    <w:num w:numId="2">
-                        <w:abstractNumId w:val="1"/>
-                    </w:num>
-                    <w:num w:numId="3">
-                        <w:abstractNumId w:val="0"/>
-                    </w:num>
-                </w:numbering>
-            </x:context>
-            <x:expect label="in label positioniert">
-                <list>
-                    <label><app><lem>I.</lem><rdg>iiij</rdg></app></label>
-                    <item> Que lex/ et si negativa esse censeatur/ non tamen impletur absque illa affirmativa/ scilicet Quecunque vultis ut vobis faciant homines/ et vos facite illis.</item>
-                </list>
-            </x:expect>
-        </x:scenario>
-    </x:scenario>
-    
-    <x:scenario label="Sonderkodierungen">
-        <x:scenario label="Buchtitel">
+        <x:scenario label="Endzeichen löschen">
             <x:context>
                 <w:body>
-                    <w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53" w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
+                    <w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53"
+                        w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
                         <w:pPr>
                             <w:pStyle w:val="berschrift1"/>
                             <w:rPr>
@@ -1696,218 +247,73 @@
                             <w:t>Text</w:t>
                         </w:r>
                     </w:p>
-                    <w:p w14:paraId="3F1DBF0A" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00F4242F" w:rsidRDefault="00F62B33" w:rsidP="00F4242F"/>
-                    <w:p w14:paraId="7336C6BC" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00C410E6" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
+                    <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                        w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
                         <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rStyle w:val="Seitenzahl"/>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00C410E6">
-                            <w:rPr>
-                                <w:rStyle w:val="Seitenzahl"/>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                            <w:t>[A1r]</w:t>
-                        </w:r>
-                    </w:p>
-                    <w:p w14:paraId="17730DEA" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00AB11DC" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00AB11DC">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                            <w:t>Von Bepstlicher heylickeit:</w:t>
-                        </w:r>
-                    </w:p>
-                    <w:p w14:paraId="33E987F9" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00AB11DC" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00AB11DC">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                            <w:t>Andres Bodenstein von</w:t>
-                        </w:r>
-                    </w:p>
-                    <w:p w14:paraId="21123D9E" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00AB11DC" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00AB11DC">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                            <w:t>Carolstat Doctor.</w:t>
-                        </w:r>
-                        <w:r w:rsidRPr="00C410E6">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                            <w:sym w:font="Symbol" w:char="F05E"/>
-                        </w:r>
-                    </w:p>
-                    <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00AB11DC" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
                             <w:rPr>
                                 <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
                                 <w:lang w:val="de-DE"/>
                             </w:rPr>
                         </w:pPr>
                     </w:p>
-                    <w:p w14:paraId="4EB56B69" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00AB11DC" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
+                    <w:p w:rsidR="00FE24A7" w:rsidRPr="00FE4F55" w:rsidRDefault="00FE24A7" w:rsidP="00FE4F55">
                         <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
+                            <w:spacing w:line="360" w:lineRule="auto"/>
+                            <w:ind w:left="360"/>
+                            <w:jc w:val="center"/>
                             <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
+                                <w:lang w:val="it-IT"/>
                             </w:rPr>
                         </w:pPr>
-                        <w:r w:rsidRPr="00AB11DC">
+                        <w:r w:rsidRPr="00FE4F55">
                             <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
+                                <w:lang w:val="it-IT"/>
                             </w:rPr>
-                            <w:t>Disses buchlin beschleust durch heylige schrifft/</w:t>
+                            <w:t>Christus in eternum regnat.</w:t>
                         </w:r>
-                    </w:p>
-                    <w:p w14:paraId="20E66C98" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00AB11DC" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
+                        <w:r w:rsidR="00F56B88">
                             <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
+                                <w:lang w:val="it-IT"/>
                             </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00AB11DC">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                            <w:t>das Bepstliche heylickeit altzu viel yrrenn/</w:t>
-                        </w:r>
-                    </w:p>
-                    <w:p w14:paraId="42E0C7B4" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00AB11DC" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00AB11DC">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                            <w:t>sundigen/ unnd unrecht thun kan.</w:t>
-                        </w:r>
-                    </w:p>
-                    <w:p w14:paraId="445A1EFB" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00AB11DC" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00AB11DC">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                            <w:t>Wer das nit glaubt/ der ist</w:t>
-                        </w:r>
-                    </w:p>
-                    <w:p w14:paraId="50634DD0" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00C410E6" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00C410E6">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                            <w:t>Ein boszer unchrist.</w:t>
-                        </w:r>
-                        <w:r w:rsidRPr="00C410E6">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                            <w:sym w:font="Symbol" w:char="F05E"/>
-                        </w:r>
-                    </w:p>
-                    <w:p w14:paraId="0CACFB1C" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00C410E6" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                        </w:pPr>
-                    </w:p>
-                    <w:p w14:paraId="632A0CC7" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00C410E6" w:rsidRDefault="00C526B3" w:rsidP="00C410E6">
-                        <w:pPr>
-                            <w:pStyle w:val="KSBuchtitel"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00C410E6">
-                            <w:rPr>
-                                <w:rStyle w:val="KSOrt"/>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                            <w:t>Wittemberg</w:t>
-                        </w:r>
-                        <w:r w:rsidRPr="00C410E6">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                            <w:t>.</w:t>
-                        </w:r>
-                        <w:r w:rsidRPr="00C410E6">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                            </w:rPr>
-                            <w:sym w:font="Symbol" w:char="F05E"/>
+                            <w:t></w:t>
                         </w:r>
                     </w:p>
                 </w:body>
             </x:context>
-            <x:expect label="titlePart"><div><titlePart rendition="#l">
-               <pb n="[A1r]"/>
-               <lb/>Von Bepstlicher heylickeit:
-               <lb/>Andres Bodenstein von
-               <lb/>Carolstat Doctor.</titlePart><titlePart rendition="#l">
-               <lb/>Disses buchlin beschleust durch heylige schrifft/
-               <lb/>das Bepstliche heylickeit altzu viel yrrenn/
-               <lb/>sundigen/ unnd unrecht thun kan.
-               <lb/>Wer das nit glaubt/ der ist
-               <lb/>Ein boszer unchrist.</titlePart><titlePart rendition="#l">
-               <lb/><rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</titlePart></div>
+            <x:expect label="Text ohne F05E">
+                <div>
+                    <p><w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+                        w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                                <w:lang w:val="de-DE"/>
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                        <w:p w:rsidR="00FE24A7" w:rsidRPr="00FE4F55" w:rsidRDefault="00FE24A7" w:rsidP="00FE4F55">
+                            <w:pPr>
+                                <w:spacing w:line="360" w:lineRule="auto"/>
+                                <w:ind w:left="360"/>
+                                <w:jc w:val="center"/>
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r w:rsidRPr="00FE4F55">
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t>Christus in eternum regnat.</w:t>
+                            </w:r>
+                            <w:r w:rsidR="00F56B88">
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t></w:t>
+                            </w:r>
+                        </w:p></p>
+                </div>
             </x:expect>
         </x:scenario>
     </x:scenario>
