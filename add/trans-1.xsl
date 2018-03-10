@@ -11,7 +11,7 @@
     
     <xsl:include href="styles-inc.xsl"/>
     
-    <xsl:output indent="yes"/>
+<!--    <xsl:output indent="yes"/>-->
     
     <xsl:template match="tei:*">
         <xsl:element name="{local-name()}">
@@ -29,7 +29,7 @@
         <note place="margin"><xsl:apply-templates select="w:r" /></note>
     </xsl:template>
     
-    <xsl:template match="w:p[descendant::w:numPr][position() &gt; 1]"/>
+<!--    <xsl:template match="w:p[descendant::w:numPr][position() &gt; 1]"/>-->
     <xsl:template match="tei:p[descendant::w:numPr]">
         <list>
             <xsl:apply-templates select="w:p[descendant::w:numPr]"/>
@@ -105,7 +105,7 @@
                                 <pb n="{regex-group(1)}" />
                             </xsl:matching-substring>
                             <xsl:non-matching-substring>
-                                <lb /><xsl:value-of select="wdb:substring-before-if-ends(., '')"/>
+                                <xsl:value-of select="wdb:substring-before-if-ends(., '')"/>
                             </xsl:non-matching-substring>
                         </xsl:analyze-string>
                     </xsl:when>
@@ -116,6 +116,7 @@
             </xsl:for-each>
         </xsl:variable>
         
+        <lb />
         <xsl:choose>
             <xsl:when test="$relind castable as xs:integer and  $relind > 0">
                 <ab style="centre">
@@ -242,9 +243,9 @@
         </ref>
     </xsl:template>
     
-    <xsl:template match="w:r[not(w:rStyle or descendant::w:footnoteReference or descendant::w:endnoteReference or descendant::w:i)]">
+    <!--<xsl:template match="w:r[not(w:rStyle or descendant::w:footnoteReference or descendant::w:endnoteReference or descendant::w:i)]">
         <xsl:apply-templates select="w:t" />
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="text() | @*">
         <xsl:copy>
