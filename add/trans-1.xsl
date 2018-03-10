@@ -11,7 +11,7 @@
     
     <xsl:include href="styles-inc.xsl"/>
     
-<!--    <xsl:output indent="yes"/>-->
+    <xsl:output indent="yes"/>
     
     <xsl:template match="tei:*">
         <xsl:element name="{local-name()}">
