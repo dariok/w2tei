@@ -174,4 +174,16 @@
 			</p>
 		</x:expect>
 	</x:scenario>
+  <x:scenario label="bibl mit abbr eränzen">
+    <x:context>
+      <note type="footnote">Siehe
+        z.B. <bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+          >r</hi></bibl>.</note>
+    </x:context>
+    <x:expect label="@ref">
+      <note type="footnote">Siehe
+        z.B. <bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+          >r</hi></bibl>.</note>
+    </x:expect>
+  </x:scenario>
 </x:description>

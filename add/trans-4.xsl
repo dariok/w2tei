@@ -29,7 +29,8 @@
 			<xsl:attribute name="ref">
 				<xsl:value-of select="'#'||$entry[1]/@xml:id"/>
 			</xsl:attribute>
-			<xsl:value-of select="substring-after(., normalize-space($entry[1]/tei:abbr))"/>
+			<xsl:value-of select="substring-after(text()[1], normalize-space($entry[1]/tei:abbr))"/>
+		  <xsl:sequence select="text()[1]/following-sibling::node()" />
 		</bibl>
 	</xsl:template>
 	
