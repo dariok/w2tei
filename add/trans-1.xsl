@@ -11,7 +11,7 @@
     
     <xsl:include href="styles-inc.xsl"/>
     
-    <xsl:output indent="yes"/>
+<!--    <xsl:output indent="yes"/>-->
     
     <xsl:template match="tei:*">
         <xsl:element name="{local-name()}">
@@ -74,10 +74,21 @@
                     <xsl:text>.</xsl:text>
                 </xsl:otherwise>
             </xsl:choose>
+        	<xsl:if test="w:r[1]/w:footnoteReference and wdb:starts(., ' ')">
+        		<xsl:apply-templates select="w:r[1]"/>
+        	</xsl:if>
         </label>
         <item>
-            <xsl:apply-templates select="w:r | following-sibling::w:p[not(descendant::w:numPr)
-                and $myID = generate-id(preceding-sibling::w:p[descendant::w:numPr][1])]" />
+        	<xsl:choose>
+        		<xsl:when test="w:r[1]/w:footnoteReference">
+        			<xsl:apply-templates select="w:r[position() &gt; 1] | following-sibling::w:p[not(descendant::w:numPr)
+        				and $myID = generate-id(preceding-sibling::w:p[descendant::w:numPr][1])]" />
+        		</xsl:when>
+        		<xsl:otherwise>
+        			<xsl:apply-templates select="w:r | following-sibling::w:p[not(descendant::w:numPr)
+        				and $myID = generate-id(preceding-sibling::w:p[descendant::w:numPr][1])]" />
+        		</xsl:otherwise>
+        	</xsl:choose>
         </item>
     </xsl:template>
     <xsl:template match="w:r[wdb:is(., 'KSkorrigierteThesennummer', 'r')]" />

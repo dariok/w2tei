@@ -1533,6 +1533,207 @@
                 </list>
             </x:expect>
         </x:scenario>
+    	<x:scenario label="Anm. z. Nummer">
+    		<x:context>
+    			<tei:p>
+    				<w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="001969BD" w:rsidRDefault="00D05E63" w:rsidP="001969BD">
+    					<w:pPr>
+    						<w:pStyle w:val="KSText"/>
+    						<w:numPr>
+    							<w:ilvl w:val="0"/>
+    							<w:numId w:val="1"/>
+    						</w:numPr>
+    						<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+    						<w:contextualSpacing/>
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    					</w:pPr>
+    					<w:r>
+    						<w:rPr>
+    							<w:rStyle w:val="Funotenzeichen"/>
+    							<w:lang w:val="it-IT"/>
+    						</w:rPr>
+    						<w:footnoteReference w:id="33"/>
+    					</w:r>
+    					<w:r w:rsidR="001969BD" w:rsidRPr="001969BD">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t xml:space="preserve"> </w:t>
+    					</w:r>
+    					<w:r w:rsidRPr="001969BD">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t xml:space="preserve">Cum D'ominus' </w:t>
+    					</w:r>
+    					<w:r w:rsidRPr="004812BE">
+    						<w:rPr>
+    							<w:rStyle w:val="KSPerson"/>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t>Ioan'nes'</w:t>
+    					</w:r>
+    					<w:r w:rsidRPr="001969BD">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t xml:space="preserve"> inficiatur</w:t>
+    					</w:r>
+    					<w:r>
+    						<w:rPr>
+    							<w:rStyle w:val="Funotenzeichen"/>
+    							<w:lang w:val="it-IT"/>
+    						</w:rPr>
+    						<w:footnoteReference w:id="34"/>
+    					</w:r>
+    					<w:r w:rsidRPr="001969BD">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t xml:space="preserve"> omnem omnium fidelium vitam esse</w:t>
+    					</w:r>
+    				</w:p><w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="009F6D59" w:rsidRDefault="00D05E63" w:rsidP="001969BD">
+    					<w:pPr>
+    						<w:pStyle w:val="KSText"/>
+    						<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+    						<w:ind w:left="720"/>
+    						<w:contextualSpacing/>
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    					</w:pPr>
+    					<w:r w:rsidRPr="009F6D59">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t>poenitentiam, aut poenitudinis indigam.</w:t>
+    					</w:r>
+    					<w:r w:rsidR="00900DDA">
+    						<w:rPr>
+    							<w:rStyle w:val="Endnotenzeichen"/>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:endnoteReference w:id="51"/>
+    					</w:r>
+    					<w:r w:rsidRPr="009F6D59">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t xml:space="preserve"> Iudaeus est, sub</w:t>
+    					</w:r>
+    				</w:p><w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="009F6D59" w:rsidRDefault="00D05E63" w:rsidP="001969BD">
+    					<w:pPr>
+    						<w:pStyle w:val="KSText"/>
+    						<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+    						<w:ind w:left="720"/>
+    						<w:contextualSpacing/>
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    					</w:pPr>
+    					<w:r w:rsidRPr="009F6D59">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t>Christiana pelle, occlamans, si iustus dei filius est?</w:t>
+    					</w:r>
+    					<w:r>
+    						<w:rPr>
+    							<w:rStyle w:val="Funotenzeichen"/>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:footnoteReference w:id="35"/>
+    					</w:r>
+    					<w:r w:rsidRPr="009F6D59">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t xml:space="preserve"> descen-</w:t>
+    					</w:r>
+    				</w:p><w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="009F6D59" w:rsidRDefault="00D05E63" w:rsidP="001969BD">
+    					<w:pPr>
+    						<w:pStyle w:val="KSText"/>
+    						<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+    						<w:ind w:left="720"/>
+    						<w:contextualSpacing/>
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    					</w:pPr>
+    					<w:r w:rsidRPr="009F6D59">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t>dat de Cruce</w:t>
+    					</w:r>
+    					<w:r w:rsidR="004537A7">
+    						<w:rPr>
+    							<w:rStyle w:val="Endnotenzeichen"/>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:endnoteReference w:id="52"/>
+    					</w:r>
+    					<w:r w:rsidR="004537A7" w:rsidRPr="009F6D59">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t>,</w:t>
+    					</w:r>
+    					<w:r w:rsidRPr="009F6D59">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t xml:space="preserve"> nescitque hanc vitam, diem crucis perferendae.</w:t>
+    					</w:r>
+    					<w:r w:rsidR="00900DDA">
+    						<w:rPr>
+    							<w:rStyle w:val="Endnotenzeichen"/>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:endnoteReference w:id="53"/>
+    					</w:r>
+    					<w:r w:rsidRPr="009F6D59">
+    						<w:rPr>
+    							<w:lang w:val="fr-FR"/>
+    						</w:rPr>
+    						<w:t xml:space="preserve"> </w:t>
+    					</w:r>
+    				</w:p>
+    			</tei:p>
+    			<w:footnotes>
+    				<w:footnote w:id="33">
+    					<w:p w:rsidR="00B71AA3" w:rsidRPr="00AA6FB8" w:rsidRDefault="00B71AA3" w:rsidP="00D05E63">
+    						<w:pPr>
+    							<w:pStyle w:val="Funotentext"/>
+    						</w:pPr>
+    						<w:r w:rsidRPr="00AA6FB8">
+    							<w:rPr>
+    								<w:rStyle w:val="Funotenzeichen"/>
+    							</w:rPr>
+    							<w:footnoteRef/>
+    						</w:r>
+    						<w:r w:rsidRPr="00AA6FB8">
+    							<w:t xml:space="preserve"> </w:t>
+    						</w:r>
+    						<w:r w:rsidRPr="004537A7">
+    							<w:rPr>
+    								<w:i/>
+    							</w:rPr>
+    							<w:t>in arabischen Ziffern in B, C.</w:t>
+    						</w:r>
+    					</w:p>
+    				</w:footnote>
+    			</w:footnotes>
+    		</x:context>
+    		<x:expect label="Anm. in label">
+    			<tei:list>
+    				<label>1.<note type="crit_app"><hi style="font-style: italic;">in arabischen Ziffern in B, C.</hi></note></label>
+    				<item> Cum D'ominus' <rs type="person"><!--TODO ref eintragen-->Ioan'nes'</rs> inficiatur<note type="crit_app" /> omnem omnium fidelium vitam esse<lb />poenitentiam, aut poenitudinis indigam.<note type="footnote" /> Iudaeus est, sub<lb />Christiana pelle, occlamans, si iustus dei filius est?<note type="crit_app" /> descen-<lb />dat de Cruce<note type="footnote" />, nescitque hanc vitam, diem crucis perferendae.<note type="footnote" /></item>
+    			</tei:list>
+    		</x:expect>
+    	</x:scenario>
     </x:scenario>
     
     <x:scenario label="Sonderkodierungen">

@@ -77,7 +77,9 @@
 	</xsl:template>
 	
 	<xsl:template match="text()[parent::tei:note[@type='crit_app'] or parent::tei:span]" >
-		<orig><xsl:value-of select="."/></orig>
+		<xsl:if test="normalize-space() != ''">
+			<orig><xsl:value-of select="."/></orig>
+		</xsl:if>
 	</xsl:template>
 	<xsl:template match="tei:hi[@style='font-style: italic;'][parent::tei:note[@type='crit_app']
 		or parent::tei:span]" >
