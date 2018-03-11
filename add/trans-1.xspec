@@ -930,6 +930,79 @@
                     <hi style="font-style: italic;">G</hi><hi style="font-style: italic;"><hi rend="sub">1</hi></hi>.</note>
             </x:expect>
         </x:scenario>
+        <x:scenario label="bibl mit r/v">
+            <x:context>
+                <w:endnoteReference w:id="10" />
+                <w:endnotes>
+                    <w:endnote w:id="10">
+                        <w:p w:rsidR="00B71AA3" w:rsidRPr="00A110BC" w:rsidRDefault="00B71AA3">
+                            <w:pPr>
+                                <w:pStyle w:val="Endnotentext"/>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r w:rsidRPr="0003424B">
+                                <w:rPr>
+                                    <w:rStyle w:val="Endnotenzeichen"/>
+                                    <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                                </w:rPr>
+                                <w:endnoteRef/>
+                            </w:r>
+                            <w:r w:rsidRPr="0003424B">
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve"> Siehe z.B. </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="003D4756">
+                                <w:rPr>
+                                    <w:rStyle w:val="KSbibliographischeAngabe"/>
+                                    <w:lang w:val="de-DE"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">Eck, Disputatio et excusatio (1519), fol. </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00A110BC">
+                                <w:rPr>
+                                    <w:rStyle w:val="KSbibliographischeAngabe"/>
+                                </w:rPr>
+                                <w:t>A2</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00A110BC">
+                                <w:rPr>
+                                    <w:rStyle w:val="KSbibliographischeAngabe"/>
+                                    <w:vertAlign w:val="superscript"/>
+                                </w:rPr>
+                                <w:t>v</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00A110BC">
+                                <w:rPr>
+                                    <w:rStyle w:val="KSbibliographischeAngabe"/>
+                                </w:rPr>
+                                <w:t>-A3</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00A110BC">
+                                <w:rPr>
+                                    <w:rStyle w:val="KSbibliographischeAngabe"/>
+                                    <w:vertAlign w:val="superscript"/>
+                                </w:rPr>
+                                <w:t>r</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00A110BC">
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                                </w:rPr>
+                                <w:t>.</w:t>
+                            </w:r>
+                        </w:p>
+                    </w:endnote>
+                </w:endnotes>
+            </x:context>
+            <x:expect label="hocgestellt">
+                <note type="footnote">Siehe z.B. <bibl>Eck, Disputatio et excusatio (1519), fol. A2<hi rend="super">v</hi>-A3<hi rend="super">r</hi></bibl>.</note>
+            </x:expect>
+        </x:scenario>
     </x:scenario>
     
     <x:scenario label="Verweise">
@@ -1970,5 +2043,107 @@
                <lb/><rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</titlePart></div>
             </x:expect>
         </x:scenario>
+        <!--<x:scenario label="krit. Anm. üb. mehrere Wörter">
+            <x:context>
+                <p>
+                    <w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="00FC4264" w:rsidRDefault="00D05E63" w:rsidP="004313F3">
+                        <w:pPr>
+                            <w:pStyle w:val="KSText"/>
+                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                            <w:contextualSpacing/>
+                            <w:rPr>
+                                <w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="009F6D59">
+                            <w:rPr>
+                                <w:lang w:val="fr-FR"/>
+                            </w:rPr>
+                            <w:t xml:space="preserve">hactenus ecclesiam defendit, et quis te vita defuncto </w:t>
+                        </w:r>
+                        <w:r w:rsidRPr="00FC4264">
+                            <w:rPr>
+                                <w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"/>
+                            </w:rPr>
+                            <w:t xml:space="preserve">tuebitur? </w:t>
+                        </w:r>
+                    </w:p>
+                    <w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="009F6D59" w:rsidRDefault="00D05E63" w:rsidP="004313F3">
+                        <w:pPr>
+                            <w:pStyle w:val="KSText"/>
+                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                            <w:contextualSpacing/>
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="00FC4264">
+                            <w:rPr>
+                                <w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"/>
+                            </w:rPr>
+                            <w:t>quod</w:t>
+                        </w:r>
+                        <w:r>
+                            <w:rPr>
+                                <w:rStyle w:val="Funotenzeichen"/>
+                                <w:lang w:val="fr-FR"/>
+                            </w:rPr>
+                            <w:footnoteReference w:id="26"/>
+                        </w:r>
+                        <w:r w:rsidRPr="009F6D59">
+                            <w:rPr>
+                                <w:lang w:val="en-US"/>
+                            </w:rPr>
+                            <w:t xml:space="preserve"> vix audent Imperatores mundi, audacter subit audaculus</w:t>
+                        </w:r>
+                    </w:p>
+                </p>
+                <w:footnotes>
+                    <w:footnote w:id="26">
+                        <w:p w:rsidR="00B71AA3" w:rsidRPr="00A121BE" w:rsidRDefault="00B71AA3" w:rsidP="00D05E63">
+                            <w:pPr>
+                                <w:pStyle w:val="Funotentext"/>
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r>
+                                <w:rPr>
+                                    <w:rStyle w:val="Funotenzeichen"/>
+                                </w:rPr>
+                                <w:footnoteRef/>
+                            </w:r>
+                            <w:r w:rsidRPr="00A121BE">
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve"> tuebituro quod </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00A121BE">
+                                <w:rPr>
+                                    <w:i/>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t>B, C</w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00A121BE">
+                                <w:rPr>
+                                    <w:lang w:val="it-IT"/>
+                                </w:rPr>
+                                <w:t>.</w:t>
+                            </w:r>
+                        </w:p>
+                    </w:footnote>
+                </w:footnotes>
+            </x:context>
+            <x:expect label="längeres App">
+                <p>
+                    <lb />hactenus ecclesiam defendit, et quis te vita defuncto <app>
+                        <lem wit="#A">tuebitur? <lb/>quod</lem>
+                        <rdg wit="#B #C">tuebituro quod</rdg>
+                    </app> vix audent Imperatores mundi, audacter subit audaculus
+                </p>
+            </x:expect>
+        </x:scenario>-->
     </x:scenario>
 </x:description>

@@ -223,7 +223,9 @@
     <xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
         <xsl:variable name="me" select="." />
         <bibl>
-            <xsl:apply-templates select="w:t | following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]/w:t" />
+            <xsl:apply-templates select="w:t" />
+            <xsl:apply-templates select="following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]"
+              mode="eval"/>
         </bibl>
     </xsl:template>
     <xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
