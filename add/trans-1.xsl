@@ -204,6 +204,7 @@
     
     <!-- RS -->
     <xsl:template match="w:r[wdb:is(., 'KSOrt', 'r')]">
+      <xsl:text> </xsl:text>
         <rs type="place">
             <xsl:comment>TODO ref eintragen</xsl:comment>
             <xsl:apply-templates select="w:t"/>
@@ -211,6 +212,7 @@
     </xsl:template>
     
     <xsl:template match="w:r[wdb:is(., 'KSPerson', 'r')]">
+      <xsl:text> </xsl:text>
         <rs type="person">
             <xsl:comment>TODO ref eintragen</xsl:comment>
             <xsl:apply-templates select="w:t"/>
