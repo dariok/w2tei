@@ -62,48 +62,6 @@
     </xsl:template>
     <!-- Ende Styles -->
     
-    <!-- neu 2017-10-15 DK -->
-    <xsl:template match="w:p[wdb:is(., 'KSZitatblock')]">
-        <cit>
-            <quote>
-                <xsl:apply-templates select="w:r[not(wdb:is(., 'KSbibliographischeAngabe', 'r')
-                    or wdb:is(., 'EndnoteReference', 'r'))]"/>
-            </quote>
-            <xsl:apply-templates select="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r')
-                or wdb:is(., 'EndnoteReference', 'r')]"/>
-        </cit>
-    </xsl:template>
-    <xsl:template match="w:br[ancestor::w:p[wdb:is(., 'KSZitatblock')]]">
-        <lb/>
-    </xsl:template>
-    
-    <!-- Fuß-/Endnoten -->
-    <xsl:template match="w:r[w:endnoteReference]">
-        <xsl:apply-templates select="w:endnoteReference" />
-    </xsl:template>
-    <!-- (auch) zur einfacheren Verarbeitung im XSpec; 2017-10-31 DK -->
-    <xsl:template match="w:endnotes" />
-    <!-- neu 2017-08-07 DK -->
-    <xsl:template match="w:endnoteReference">
-        <xsl:variable name="wid" select="@w:id"/>
-        <xsl:variable name="temp">
-            <xsl:apply-templates select="//w:endnote[@w:id = $wid]/w:p/w:r" />
-        </xsl:variable>
-        <note type="footnote">
-            <xsl:for-each select="$temp/node()">
-                <xsl:choose>
-                    <xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
-                        <xsl:value-of select="substring(., 2)" />
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:copy-of select="." />
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:for-each>
-        </note>
-    </xsl:template>
-    <!-- ENDE Fuß-/Endnoten -->
-    
     <!-- normalize -->
     <xsl:template match="node()" mode="normalize">
         <xsl:choose>
