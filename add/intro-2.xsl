@@ -8,6 +8,11 @@
   version="3.0">
   <xsl:include href="styles-inc.xsl"/>
   
+  <xsl:template match="/">
+    <xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
+    <xsl:apply-templates select="node()" />
+  </xsl:template>
+  
   <xsl:template match="text()">
     <xsl:analyze-string select="." regex="[„“]([^”^“^&quot;]*)[”“&quot;]">
       <xsl:matching-substring>
