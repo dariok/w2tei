@@ -43,4 +43,24 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="bibl">
+    <x:context>
+      <listBibl>
+        <bibl>
+          Kolde, Disputationsthesen, 471, Nr. XXII
+        </bibl>
+        <bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+          >r</hi> und passim
+        </bibl>
+      </listBibl>
+    </x:context>
+    <x:expect label="bibl mit ref">
+      <listBibl>
+        <bibl ref="#kolde_disputationsthesen_1890">, 471, Nr. XXII</bibl>
+        <bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+          >r</hi> und passim</bibl>
+      </listBibl>
+    </x:expect>
+  </x:scenario>
 </x:description>

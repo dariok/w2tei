@@ -21,18 +21,35 @@
 		</ref>
 	</xsl:template>
 	
-	<xsl:template match="tei:bibl">
-		<bibl>
-			<xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
-			<xsl:variable name="self" select="normalize-space()" />
-			<xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
-			<xsl:attribute name="ref">
-				<xsl:value-of select="'#'||$entry[1]/@xml:id"/>
-			</xsl:attribute>
-			<xsl:value-of select="substring-after(text()[1], normalize-space($entry[1]/tei:abbr))"/>
-		  <xsl:sequence select="text()[1]/following-sibling::node()" />
-		</bibl>
-	</xsl:template>
+  <xsl:template match="tei:bibl">
+    <bibl>
+      <xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
+      <xsl:variable name="self" select="normalize-space()" />
+      <xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
+      <xsl:attribute name="ref">
+        <xsl:value-of select="'#'||$entry[1]/@xml:id"/>
+      </xsl:attribute>
+      <xsl:value-of select="normalize-space(substring-after(text()[1], normalize-space($entry[1]/tei:abbr)))"/>
+      <xsl:sequence select="node()[not(position() = 1 or position()=last())]" />
+      <xsl:choose>
+        <xsl:when test="count(node()) = 1" />
+        <xsl:when test="node()[last()][self::text()]">
+          <xsl:variable name="text" select="text()[last()]"/>
+          <xsl:choose>
+            <xsl:when test="starts-with($text, ' ')">
+              <xsl:value-of select="' '||normalize-space($text)"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="normalize-space($text)"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:sequence select="node()[last()]" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </bibl>
+  </xsl:template>
 	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type = 'crit_app']]]">
 		<xsl:variable name="last" select="tokenize(., ' ')[last()]"/>
