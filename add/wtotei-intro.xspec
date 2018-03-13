@@ -200,6 +200,52 @@
 				<date when="1519-03" cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">1519, Ende März?</date>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="Ort unbek. und Datum teilw.">
+			<x:context mode="date">
+				<w:p w:rsidR="0069721C" w:rsidRPr="0069721C" w:rsidRDefault="0069721C" w:rsidP="0019425C">
+					<w:pPr>
+						<w:pStyle w:val="KSEE-Titel"/>
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="0069721C">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t>[Wittenberg],</w:t>
+					</w:r>
+					<w:r w:rsidR="00CF4F76">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> 1519</w:t>
+					</w:r>
+					<w:r w:rsidRPr="0069721C">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t>, [</w:t>
+					</w:r>
+					<w:r w:rsidR="00E516D3">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t>Anfang</w:t>
+					</w:r>
+					<w:r w:rsidRPr="0069721C">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Februar]</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label=".">
+				<placeName cert="unknown">Wittenberg</placeName>
+				<date when="1519-02">1519, <supplied>Anfang Februar</supplied></date>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="Ü2">
 		<x:scenario label="Beispiel 1">
