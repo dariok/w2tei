@@ -46,6 +46,9 @@
             <xsl:if test="wdb:is(., 'KSSchluformeln') or wdb:is(., 'KSBuchtitel')">
                 <xsl:attribute name="rendition">
                     <xsl:choose>
+                        <xsl:when test="descendant::w:jc[@w:val='center']">
+                            <xsl:text>#c</xsl:text>
+                        </xsl:when>
                         <xsl:when test="not(descendant::w:ind)">
                             <xsl:text>#l</xsl:text>
                         </xsl:when>
