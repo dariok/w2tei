@@ -4,6 +4,8 @@
     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
     xmlns:wdb="https://github.com/dariok/wdbplus"
     xmlns:hab="http://diglib.hab.de"
+    xmlns:rel="http://schemas.openxmlformats.org/package/2006/relationships"
+    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
     xmlns="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all"
     version="3.0">
@@ -90,13 +92,13 @@
     <xsl:template match="w:endnoteReference">
         <xsl:variable name="wid" select="@w:id"/>
         <xsl:variable name="temp">
-            <xsl:apply-templates select="//w:endnote[@w:id = $wid]//w:r"/>
+            <xsl:apply-templates select="//w:endnote[@w:id = $wid]//w:p"/>
         </xsl:variable>
         <note type="footnote">
             <xsl:for-each select="$temp/node()">
                 <xsl:choose>
                     <xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
-                        <xsl:value-of select="substring(., 2)"/>
+ Nr. 
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:copy-of select="."/>
@@ -104,6 +106,9 @@
                 </xsl:choose>
             </xsl:for-each>
         </note>
+    </xsl:template>
+    <xsl:template match="w:endnote/w:p">
+        <xsl:apply-templates select="w:r | w:hyperlink" />
     </xsl:template>
     <!-- ENDE Fuß-/Endnoten -->
     
@@ -124,6 +129,15 @@
         </rs>
     </xsl:template>
     <!-- Ende RS -->
+    
+    <!-- Hyperlinks -->
+    <xsl:template match="w:hyperlink">
+        <xsl:variable name="targetID" select="@r:id"/>
+        <xsl:variable name="target" select="//rel:Relationship[@Id = $targetID]/@Target"/>
+        <ptr type="digitalisat" target="{$target}">
+            <xsl:apply-templates select="w:r" />
+        </ptr>
+    </xsl:template>
     <!-- Ende Styles -->
     
     <!-- normalize -->

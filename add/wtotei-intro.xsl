@@ -633,6 +633,22 @@
 		</bibl>
 	</xsl:template>
 	
+	<!-- Verweise -->
+	<xsl:template match="w:bookmarkStart">
+		<xsl:if test="not(@name = '_GoBack')">
+			<hab:bm name="{@w:name}"/>
+		</xsl:if>
+	</xsl:template>
+	<xsl:template match="w:r[w:fldChar]">
+		<xsl:if test="not(w:fldChar/@w:fldCharType='separate')">
+			<hab:mark>
+				<xsl:if test="w:fldChar/@w:fldCharType='begin'">
+					<xsl:attribute name="ref" select="normalize-space(following-sibling::w:r[1]/w:instrText)"/>
+				</xsl:if>
+			</hab:mark>
+		</xsl:if>
+	</xsl:template>
+	
 	<xsl:function name="hab:isSigle" as="xs:boolean">
 		<xsl:param name="context" as="node()" />
 		<xsl:value-of select="wdb:is($context/descendant-or-self::w:r, 'KSSigle', 'r')"/>
