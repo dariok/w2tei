@@ -57,14 +57,7 @@
 				<item>Lex<del> factorum</del> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <hi style="font-style: italic;">factorum</hi> mit <hi style="font-style: italic;">operum</hi> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical" cRef="Rm 3,27f">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
 			</x:expect>
 		</x:scenario>
-		<x:scenario label="rdg mit Kommentar">
-			<x:context>
-				<p>legatione altarium<note type="crit_app">A;<orig> altatium </orig>B, von Gottschalk verbessert</note>/ et</p>
-			</x:context>
-			<x:expect label="comment">
-				<p>legatione <app><lem wit="#A">altarium</lem><rdg wit="#B">altatium<note type="comment">von Gottschalk verbessert</note></rdg></app>/ et</p>
-			</x:expect>
-		</x:scenario>
+
 		<x:scenario label="mehrere Zeugen im rdg">
 			<x:context>
 				<p>
@@ -131,6 +124,20 @@
 					</app><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
 					</item>
 				</tei:list>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="rdg mit Kommentar">
+			<x:context>
+				<p>et<note type="crit_app"><orig> er </orig>B;<orig> ex </orig>C <note type="comment">mit hsl. Korrektur <orig>et</orig></note></note>
+				</p>
+			</x:context>
+			<x:expect label="comment mit orig im rdf">
+				<p>
+					<app>
+						<lem wit="#A">et</lem>
+						<rdg wit="#B">er</rdg>
+						<rdg wit="#C">ex<note type="comment">mit hsl. Korrektur <orig>et</orig></note></rdg></app>
+				</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>

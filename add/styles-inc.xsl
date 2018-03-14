@@ -19,7 +19,8 @@
         and not(descendant::w:vertAlign or wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
         <hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
     </xsl:template>
-    <xsl:template match="w:r[descendant::w:i[@w:val=0] and not(wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
+    <xsl:template match="w:r[descendant::w:i[@w:val=0] and not(wdb:is(., 'KSbibliographischeAngabe', 'r')
+        or wdb:is(., 'KSKommentar', 'r'))]">
         <xsl:apply-templates select="w:t" />
     </xsl:template>
     
@@ -184,6 +185,6 @@
     <xsl:function name="hab:isSem" as="xs:boolean">
         <xsl:param name="context" as="node()" />
         <xsl:value-of select="matches($context//w:rStyle/@w:val,
-            'KSOrt|KSPerson|KSbibliographischeAngabe|KSBibelstelle|KSAutorenstelle|KSkorrigierteThesennummer|KSkritischeAnmerkungbermehrereWrter')"/>
+            'KSOrt|KSPerson|KSbibliographischeAngabe|KSBibelstelle|KSAutorenstelle|KSkorrigierteThesennummer|KSkritischeAnmerkungbermehrereWrter|KSKommentar')"/>
     </xsl:function>
 </xsl:stylesheet>

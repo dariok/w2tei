@@ -93,7 +93,8 @@
     </xsl:template>
     <xsl:template match="w:r[wdb:is(., 'KSkorrigierteThesennummer', 'r')]" />
     
-    <xsl:template match="w:p[w:r and not(wdb:is(., 'KSMarginalie', 'p') or descendant::w:numPr)]">
+    <xsl:template match="w:p[w:r and not(wdb:is(., 'KSMarginalie', 'p') or descendant::w:numPr
+        or parent::w:endnote)]">
         <!--<xsl:param name="parind" select="xs:integer(0)"/>-->
         <xsl:variable name="parind" select="descendant::w:ind/@w:left"/>
         <xsl:variable name="relind">
@@ -199,6 +200,15 @@
         and following-sibling::w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
         and preceding-sibling::w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
         <xsl:apply-templates select="w:t"/>
+    </xsl:template>
+    
+    <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')]">
+        <note type="comment">
+            <xsl:apply-templates select="w:t"/>
+        </note>
+    </xsl:template>
+    <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and descendant::w:i/@w:val='0']">
+         <note type="comment"><orig><xsl:apply-templates select="w:t"/></orig></note>
     </xsl:template>
     <!-- ENDE kritische Anmerkungen -->
     

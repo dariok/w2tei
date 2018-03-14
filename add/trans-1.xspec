@@ -2043,6 +2043,116 @@
                <lb/><rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</titlePart></div>
             </x:expect>
         </x:scenario>
+        <x:scenario label="Kommentar in rdg">
+            <x:context>
+                <div>
+                    <w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="009F6D59" w:rsidRDefault="00D05E63" w:rsidP="004313F3">
+                        <w:pPr>
+                            <w:pStyle w:val="KSText"/>
+                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                            <w:contextualSpacing/>
+                            <w:rPr>
+                                <w:lang w:val="fr-FR"/>
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r w:rsidRPr="009F6D59">
+                            <w:rPr>
+                                <w:lang w:val="fr-FR"/>
+                            </w:rPr>
+                            <w:t>lans, et</w:t>
+                        </w:r>
+                        <w:r>
+                            <w:rPr>
+                                <w:rStyle w:val="Funotenzeichen"/>
+                                <w:lang w:val="fr-FR"/>
+                            </w:rPr>
+                            <w:footnoteReference w:id="13"/>
+                        </w:r>
+                        <w:r w:rsidRPr="009F6D59">
+                            <w:rPr>
+                                <w:lang w:val="fr-FR"/>
+                            </w:rPr>
+                            <w:t xml:space="preserve"> magistratum inquietans, causam edicto dedit, ne sine de-</w:t>
+                        </w:r>
+                    </w:p>
+                </div>
+                <w:footnotes>
+                    <w:footnote w:id="13">
+                        <w:p w:rsidR="00B71AA3" w:rsidRPr="00E47409" w:rsidRDefault="00B71AA3" w:rsidP="00D05E63">
+                            <w:pPr>
+                                <w:pStyle w:val="Funotentext"/>
+                                <w:rPr>
+                                    <w:rStyle w:val="KSKommentar"/>
+                                </w:rPr>
+                            </w:pPr>
+                            <w:r>
+                                <w:rPr>
+                                    <w:rStyle w:val="Funotenzeichen"/>
+                                </w:rPr>
+                                <w:footnoteRef/>
+                            </w:r>
+                            <w:r w:rsidRPr="00754E82">
+                                <w:t xml:space="preserve"> </w:t>
+                            </w:r>
+                            <w:r>
+                                <w:t xml:space="preserve">er </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00D05E63">
+                                <w:rPr>
+                                    <w:i/>
+                                </w:rPr>
+                                <w:t>B</w:t>
+                            </w:r>
+                            <w:bookmarkStart w:id="2" w:name="_GoBack"/>
+                            <w:r w:rsidRPr="00276A47">
+                                <w:rPr>
+                                    <w:i/>
+                                </w:rPr>
+                                <w:t>;</w:t>
+                            </w:r>
+                            <w:bookmarkEnd w:id="2"/>
+                            <w:r>
+                                <w:t xml:space="preserve"> ex </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00D05E63">
+                                <w:rPr>
+                                    <w:i/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">C </w:t>
+                            </w:r>
+                            <w:r w:rsidR="00E47409">
+                                <w:rPr>
+                                    <w:rStyle w:val="KSKommentar"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">mit hsl. Korrektur </w:t>
+                            </w:r>
+                            <w:r w:rsidRPr="00E47409">
+                                <w:rPr>
+                                    <w:rStyle w:val="KSKommentar"/>
+                                    <w:i w:val="0"/>
+                                </w:rPr>
+                                <w:t>et</w:t>
+                            </w:r>
+                        </w:p>
+                    </w:footnote>
+                </w:footnotes>
+            </x:context>
+            <x:expect label="2 note comment">
+                <div xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                    xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                    xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:hab="http://diglib.hab.de">
+                    <lb />lans, et<note type="crit_app"> er <hi style="font-style: italic;">B</hi>
+                        <hi style="font-style: italic;">;</hi> ex <hi style="font-style: italic;">C </hi>
+                        <note type="comment">mit hsl. Korrektur </note>
+                        <note type="comment">
+                            <orig>et</orig>
+                        </note>
+                    </note> magistratum inquietans, causam edicto dedit, ne sine de-</div>
+            </x:expect>
+        </x:scenario>
         <!--<x:scenario label="krit. Anm. üb. mehrere Wörter">
             <x:context>
                 <p>

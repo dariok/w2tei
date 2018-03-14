@@ -181,28 +181,30 @@
 		    <xsl:when test="normalize-space() = '.' and normalize-space(following-sibling::text()) = ''"/>
 			<xsl:when test="following-sibling::node()[self::text()]">
 			    <xsl:variable name="myId" select="generate-id()"/>
-			    <xsl:variable name="val" select="normalize-space(string-join(following-sibling::node()[not(self::tei:orig)
+			    <xsl:variable name="val" select="normalize-space(string-join(following-sibling::node()[not(self::tei:orig
+			    	or self::tei:note)
 			            and generate-id(preceding-sibling::tei:orig[1]) = $myId]))"/>
 				<rdg>
 				    <xsl:attribute name="wit">
 				        <xsl:variable name="wits">
 				            <xsl:for-each select="tokenize($val, ',')">
-				                <xsl:if test="string-length(normalize-space()) &lt; 5">
+<!--				                <xsl:if test="string-length(normalize-space()) &lt; 5">-->
     				                <xsl:value-of
     				                    select="'#'||normalize-space(wdb:substring-before(wdb:substring-before(., ';'), '.'))||' '"/>
-				                </xsl:if>
+				                <!--</xsl:if>-->
 				            </xsl:for-each>
 				        </xsl:variable>
 				        <xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
 				    </xsl:attribute>
 					<xsl:value-of select="normalize-space()"/>
-				    <xsl:for-each select="tokenize($val, ',')">
+				    <!--<xsl:for-each select="tokenize($val, ',')">
 				    	<xsl:if test="string-length(normalize-space()) &gt; 4">
 				            <note type="comment">
 				                <xsl:value-of select="normalize-space(wdb:substring-before(., ';'))"/>
 				            </note>
 				        </xsl:if>
-				    </xsl:for-each>
+				    </xsl:for-each>-->
+					<xsl:sequence select="following-sibling::*[1][self::tei:note]"/>
 				</rdg>
 			</xsl:when>
 			<xsl:otherwise>
@@ -211,6 +213,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	<xsl:template match="tei:note[@type='comment']"/>
 	
 	<xsl:template match="text()[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]
 		and following-sibling::tei:span]">

@@ -76,6 +76,13 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	
+	<xsl:template match="tei:note[@type='comment' and preceding-sibling::tei:note]"/>
+	<xsl:template match="tei:note[@type='comment' and not(preceding-sibling::tei:note)]">
+		<note type="comment">
+			<xsl:sequence select="node() | following-sibling::tei:note/node()" />
+		</note>
+	</xsl:template>
+	
 	<xsl:template match="text()[parent::tei:note[@type='crit_app'] or parent::tei:span]" >
 		<xsl:if test="normalize-space() != ''">
 			<orig><xsl:value-of select="."/></orig>

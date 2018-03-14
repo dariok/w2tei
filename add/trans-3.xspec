@@ -90,4 +90,17 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+
+	<x:scenario label="rdg mit kommentar">
+		<x:context>
+			<note type="crit_app"> er <hi style="font-style: italic;">B</hi><hi
+				style="font-style: italic;">;</hi> ex <hi style="font-style: italic;">C </hi><note type="comment">mit hsl.
+					Korrektur </note><note type="comment"><orig>et</orig></note></note>
+		</x:context>
+		<x:expect label="zusammengezogen">
+			<note type="crit_app">
+				<orig> er </orig>B;<orig> ex </orig>C <note type="comment">mit hsl.
+					Korrektur <orig>et</orig></note></note>
+		</x:expect>
+	</x:scenario>
 </x:description>
