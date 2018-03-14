@@ -559,53 +559,6 @@
 				</xsl:for-each>
 			</biblScope>
 		</xsl:if>
-		
-		<!--<xsl:analyze-string select="$imprintText"
-			regex="(.*): ([^,]*), ([^,]*),? ?(.*)??">
-			<xsl:matching-substring>
-				<imprint>
-					<pubPlace>
-						<xsl:if test="starts-with(regex-group(1), '[')">
-							<xsl:attribute name="cert">unknown</xsl:attribute>
-						</xsl:if>
-						<rs type="place">
-							<xsl:value-of select="hab:rmSquare(regex-group(1))"/>
-						</rs>
-					</pubPlace>
-					<publisher>
-						<xsl:if test="starts-with(regex-group(2), '[')">
-							<xsl:attribute name="cert">unknown</xsl:attribute>
-						</xsl:if>
-						<rs type="person">
-							<xsl:value-of select="hab:rmSquare(regex-group(2))"/>
-						</rs>
-					</publisher>
-					<xsl:variable name="dWhen">
-						<xsl:choose>
-							<xsl:when test="ends-with(hab:rmSquare(regex-group(3)), '.')">
-								<xsl:value-of select="substring-before(hab:rmSquare(regex-group(3)), '.')" />
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:value-of select="hab:rmSquare(regex-group(3))" />
-							</xsl:otherwise>
-						</xsl:choose>
-					</xsl:variable>
-					<date when="{$dWhen}">
-						<xsl:if test="ends-with(regex-group(3), ']')">
-							<xsl:attribute name="cert">unknown</xsl:attribute>
-						</xsl:if>
-						<xsl:value-of select="$dWhen"/>
-					</date>
-				</imprint>
-				<extent><xsl:apply-templates select="$context/following-sibling::w:p[1]/w:r"/></extent>
-				<xsl:if test="regex-group(4)">
-					<biblScope><xsl:apply-templates select="normalize-space(regex-group(4))" /></biblScope>
-				</xsl:if>
-			</xsl:matching-substring>
-			<xsl:non-matching-substring>
-				<xsl:copy-of select="." />
-			</xsl:non-matching-substring>
-		</xsl:analyze-string>-->
 	</xsl:template>
 	
 	<!-- leere p abfangen; 2017-10-24 DK -->

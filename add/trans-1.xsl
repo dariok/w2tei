@@ -202,23 +202,6 @@
     </xsl:template>
     <!-- ENDE kritische Anmerkungen -->
     
-    <!-- RS -->
-    <xsl:template match="w:r[wdb:is(., 'KSOrt', 'r')]">
-      <xsl:text> </xsl:text>
-        <rs type="place">
-            <xsl:comment>TODO ref eintragen</xsl:comment>
-            <xsl:apply-templates select="w:t"/>
-        </rs>
-    </xsl:template>
-    
-    <xsl:template match="w:r[wdb:is(., 'KSPerson', 'r')]">
-      <xsl:text> </xsl:text>
-        <rs type="person">
-            <xsl:comment>TODO ref eintragen</xsl:comment>
-            <xsl:apply-templates select="w:t"/>
-        </rs>
-    </xsl:template>
-    
     <!-- neu 2017-12-08 DK -->
     <xsl:template match="w:r[wdb:is(., 'KSBibelstelle', 'r')]">
         <xsl:choose>
