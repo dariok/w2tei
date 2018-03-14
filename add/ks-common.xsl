@@ -4,7 +4,9 @@
     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:hab="http://diglib.hab.de"
     xmlns:wdb="https://github.com/dariok/wdbplus" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all"
     version="3.0">
+    
     <xsl:include href="styles-inc.xsl"/>
+    
     <xsl:variable name="fline">
         <xsl:value-of select="wdb:string(//w:body/w:p[1])"/>
     </xsl:variable>
@@ -279,6 +281,7 @@
     <!-- Texte aus dem Header nicht ausgeben; 2017-05-151 DK -->
     <xsl:template match="w:p[wdb:is(., 'KSEE-Titel')]"/>
     <!-- ENDE Kopf-Zeug -->
+    
     <!-- neu 2017-10-15 DK -->
     <xsl:template match="w:p[wdb:is(., 'KSZitatblock')]">
         <cit>
@@ -291,30 +294,4 @@
     <xsl:template match="w:br[ancestor::w:p[wdb:is(., 'KSZitatblock')]]">
         <xsl:text>$</xsl:text>
     </xsl:template>
-    <!-- Fuß-/Endnoten -->
-    <xsl:template match="w:r[w:endnoteReference]">
-        <xsl:apply-templates select="w:endnoteReference"/>
-    </xsl:template>
-    <!-- (auch) zur einfacheren Verarbeitung im XSpec; 2017-10-31 DK -->
-    <xsl:template match="w:endnotes"/>
-    <!-- neu 2017-08-07 DK -->
-    <xsl:template match="w:endnoteReference">
-        <xsl:variable name="wid" select="@w:id"/>
-        <xsl:variable name="temp">
-            <xsl:apply-templates select="//w:endnote[@w:id = $wid]/w:p/w:r"/>
-        </xsl:variable>
-        <note type="footnote">
-            <xsl:for-each select="$temp/node()">
-                <xsl:choose>
-                    <xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
-                        <xsl:value-of select="substring(., 2)"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:copy-of select="."/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:for-each>
-        </note>
-    </xsl:template>
-    <!-- ENDE Fuß-/Endnoten -->
 </xsl:stylesheet>

@@ -219,22 +219,6 @@
         </rs>
     </xsl:template>
     
-    <!-- neu 2017-12-06 DK -->
-    <xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
-        not(wdb:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
-    <xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
-        <xsl:variable name="me" select="." />
-        <bibl>
-            <xsl:apply-templates select="w:t" />
-            <xsl:apply-templates select="following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]"
-              mode="eval"/>
-        </bibl>
-    </xsl:template>
-    <xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
-        not(descendant::w:vertAlign or descendant::w:i)]" mode="eval">
-        <xsl:apply-templates select="w:t" />
-    </xsl:template>
-    
     <!-- neu 2017-12-08 DK -->
     <xsl:template match="w:r[wdb:is(., 'KSBibelstelle', 'r')]">
         <xsl:choose>

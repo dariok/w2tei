@@ -60,6 +60,52 @@
         or w:endnoteReference or w:footnoteReference or hab:isSem(.))]" mode="eval">
         <xsl:apply-templates select="w:t | w:br" />
     </xsl:template>
+    
+    <!-- Bibliographisches -->
+    <xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
+        not(wdb:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
+    <xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
+        <xsl:variable name="me" select="." />
+        <bibl>
+            <xsl:apply-templates select="w:t" />
+            <xsl:apply-templates select="following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]"
+                mode="eval"/>
+        </bibl>
+    </xsl:template>
+    <xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
+        not(descendant::w:vertAlign or descendant::w:i)]" mode="eval">
+        <xsl:apply-templates select="w:t" />
+    </xsl:template>
+    <!-- Ende Bibliographisches -->
+    
+    <!-- Fuß-/Endnoten -->
+    <xsl:template match="w:r[w:endnoteReference]">
+        <xsl:apply-templates select="w:endnoteReference"/>
+    </xsl:template>
+    
+    <!-- (auch) zur einfacheren Verarbeitung im XSpec; 2017-10-31 DK -->
+    <xsl:template match="w:endnotes"/>
+    
+    <!-- neu 2017-08-07 DK -->
+    <xsl:template match="w:endnoteReference">
+        <xsl:variable name="wid" select="@w:id"/>
+        <xsl:variable name="temp">
+            <xsl:apply-templates select="//w:endnote[@w:id = $wid]//w:r"/>
+        </xsl:variable>
+        <note type="footnote">
+            <xsl:for-each select="$temp/node()">
+                <xsl:choose>
+                    <xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
+                        <xsl:value-of select="substring(., 2)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:copy-of select="."/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+        </note>
+    </xsl:template>
+    <!-- ENDE Fuß-/Endnoten -->
     <!-- Ende Styles -->
     
     <!-- normalize -->

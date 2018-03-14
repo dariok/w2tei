@@ -7,7 +7,9 @@
   xmlns="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="xs math"
   version="3.0">
+  
   <xsl:include href="styles-inc.xsl"/>
+  <xsl:include href="bibl.xsl"/>
   
   <xsl:template match="/">
     <xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
@@ -39,7 +41,7 @@
     </xsl:analyze-string>
   </xsl:template>
   
-  <xsl:template match="tei:bibl">
+ <!-- <xsl:template match="tei:bibl">
     <bibl>
       <xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
       <xsl:variable name="self" select="normalize-space()" />
@@ -47,7 +49,7 @@
       <xsl:attribute name="ref">
         <xsl:value-of select="'#'||$entry[1]/@xml:id"/>
       </xsl:attribute>
-      <xsl:value-of select="normalize-space(substring-after(text()[1], normalize-space($entry[1]/tei:abbr)))"/>
+      <xsl:value-of select="substring-after(text()[1], normalize-space($entry[1]/tei:abbr))"/>
       <xsl:sequence select="node()[not(position() = 1 or position()=last())]" />
       <xsl:choose>
         <xsl:when test="count(node()) = 1" />
@@ -67,7 +69,7 @@
         </xsl:otherwise>
       </xsl:choose>
     </bibl>
-  </xsl:template>
+  </xsl:template>-->
   
   <xsl:template match="* | @* | comment()">
     <xsl:copy>
