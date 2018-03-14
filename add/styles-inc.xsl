@@ -98,7 +98,7 @@
             <xsl:for-each select="$temp/node()">
                 <xsl:choose>
                     <xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
- Nr. 
+                        <xsl:value-of select="substring(., 2)"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:copy-of select="."/>
