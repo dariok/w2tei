@@ -231,6 +231,7 @@
                 <xsl:text>!</xsl:text>
                 <xsl:value-of select="normalize-space(substring-after(w:t, ','))" />
             </xsl:attribute>
+            <xsl:comment>TODO: cRef prüfen!</xsl:comment>
             <xsl:apply-templates select="w:t" />
         </ref>
     </xsl:template>
