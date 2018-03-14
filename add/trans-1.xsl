@@ -94,7 +94,7 @@
     <xsl:template match="w:r[wdb:is(., 'KSkorrigierteThesennummer', 'r')]" />
     
     <xsl:template match="w:p[w:r and not(wdb:is(., 'KSMarginalie', 'p') or descendant::w:numPr
-        or parent::w:endnote)]">
+        or ancestor::w:endnote or ancestor::w:footnote)]">
         <!--<xsl:param name="parind" select="xs:integer(0)"/>-->
         <xsl:variable name="parind" select="descendant::w:ind/@w:left"/>
         <xsl:variable name="relind">
