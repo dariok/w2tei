@@ -4,7 +4,7 @@
   xmlns:math="http://www.w3.org/2005/xpath-functions/math"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns="http://www.tei-c.org/ns/1.0"
-  exclude-result-prefixes="xs math"
+  exclude-result-prefixes="#all"
   version="3.0">
   <xsl:template match="tei:bibl">
     <bibl>
@@ -14,7 +14,17 @@
       <xsl:attribute name="ref">
         <xsl:value-of select="'#'||$entry[1]/@xml:id"/>
       </xsl:attribute>
-      <xsl:value-of select="normalize-space(substring-after(text()[1], normalize-space($entry[1]/tei:abbr)))"/>
+      <xsl:variable name="start">
+        <xsl:value-of select="substring-after(text()[1], normalize-space($entry[1]/tei:abbr))"/>
+      </xsl:variable>
+      <xsl:choose>
+        <xsl:when test="starts-with($start, ' ')">
+          <xsl:value-of select="' '||normalize-space($start)"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="normalize-space($start)"/>
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:sequence select="node()[not(position() = 1 or position()=last())]" />
       <xsl:choose>
         <xsl:when test="count(node()) = 1" />
