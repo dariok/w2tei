@@ -153,6 +153,11 @@
 							<xsl:apply-templates select="$struct[last()]/following-sibling::w:p
 								intersect $struct[last()]/following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p"/>
 						</xsl:when>
+						<xsl:when test="$struct[last()]/following-sibling::w:p[not(hab:isHead(., '1'))
+							and count(preceding-sibling::w:p[hab:isHead(., '1')]) = 1]">
+							<xsl:apply-templates select="$struct[last()]/following-sibling::w:p[not(hab:isHead(., '1'))
+								and count(preceding-sibling::w:p[hab:isHead(., '1')]) = 1]" />
+						</xsl:when>
 						<xsl:otherwise>
 							<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
 								$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)[not(

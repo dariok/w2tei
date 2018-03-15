@@ -159,7 +159,7 @@
         <xsl:param name="input" />
         <xsl:choose>
             <xsl:when test="contains($input, '[')">
-                <xsl:analyze-string select="normalize-space($input)" regex="\[?([^\]]+)\]?\.?">
+                <xsl:analyze-string select="normalize-space($input)" regex="\[([^\]]+)\]?">
                     <xsl:matching-substring>
                         <xsl:value-of select="normalize-space(regex-group(1))"/>
                     </xsl:matching-substring>
