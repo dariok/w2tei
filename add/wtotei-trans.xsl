@@ -80,7 +80,8 @@
     </xd:doc>
     <xsl:function name="hab:isP" as="xs:boolean">
         <xsl:param name="context"/>
-        <xsl:sequence select="if($context//w:sym/@w:char='F05E' or $context//w:t[contains(., '')])
+        <xsl:sequence select="if($context//w:sym/@w:char='F05E' or $context//w:t[contains(., '')]
+            or $context//w:t[contains(., '⏊')])
             then true() else false()"/>
     </xsl:function>
   
