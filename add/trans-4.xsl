@@ -141,11 +141,19 @@
                 </del>
             </xsl:when>
             <xsl:when test="./node()[1][self::text()[ends-with(., ';')]]">
-                <xsl:variable name="witA">
-                    <xsl:value-of select="wdb:substring-before-if-ends(./text()[1], ';')"/>
-                </xsl:variable>
+            	<xsl:variable name="witA">
+            		<xsl:variable name="wits">
+            			<xsl:for-each select="tokenize(wdb:substring-before-if-ends(text()[1], ';'), ',')">
+            				<xsl:if test="string-length(.) &lt; 5">
+            					<xsl:value-of
+            						select="'#'||normalize-space(wdb:substring-before(wdb:substring-before(., ';'), '.'))||' '"/>
+            				</xsl:if>
+            			</xsl:for-each>
+            		</xsl:variable>
+            		<xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
+            	</xsl:variable>
                 <app>
-                    <lem wit="#{$witA}"/>
+                    <lem wit="{$witA}"/>
                     <xsl:apply-templates select="./tei:orig" />
                 </app>
             </xsl:when>
