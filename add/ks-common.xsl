@@ -114,7 +114,7 @@
                     </publicationStmt>
                     <sourceDesc>
                         <p>born digital</p>
-                        <xsl:if test="//w:p[hab:isHead(., 1)][1]//w:t = 'Referenz'">
+                        <xsl:if test="//w:p[hab:isHead(., 1) and wdb:contains(., 'Referenz')]">
                             <msDesc>
                                 <physDesc>
                                     <objectDesc form="codex_lost"/>
