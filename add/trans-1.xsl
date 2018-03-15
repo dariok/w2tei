@@ -51,6 +51,9 @@
                                 <xsl:when test="$style = 'upperRoman'">
                                     <xsl:number count="w:p[descendant::w:numPr]" format="I" />
                                 </xsl:when>
+                                <xsl:when test="$style = 'lowerRoman'">
+                                    <xsl:number count="w:p[descendant::w:numPr]" format="i" />
+                                </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:number count="w:p[descendant::w:numPr]" />
                                 </xsl:otherwise>
@@ -66,6 +69,9 @@
                     <xsl:choose>
                         <xsl:when test="$style = 'upperRoman'">
                             <xsl:number count="w:p[descendant::w:numPr]" format="I" />
+                        </xsl:when>
+                        <xsl:when test="$style = 'lowerRoman'">
+                            <xsl:number count="w:p[descendant::w:numPr]" format="i" />
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:number count="w:p[descendant::w:numPr]" />
