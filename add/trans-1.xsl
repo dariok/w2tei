@@ -117,7 +117,17 @@
                                 <pb n="{regex-group(1)}" />
                             </xsl:matching-substring>
                             <xsl:non-matching-substring>
-                                <xsl:value-of select="wdb:substring-before-if-ends(., '')"/>
+                                <xsl:choose>
+                                    <xsl:when test="ends-with(., '')">
+                                        <xsl:value-of select="wdb:substring-before-if-ends(., '')"/>
+                                    </xsl:when>
+                                    <xsl:when test="ends-with(., '⏊')">
+                                        <xsl:value-of select="wdb:substring-before-if-ends(., '⏊')"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="."/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </xsl:non-matching-substring>
                         </xsl:analyze-string>
                     </xsl:when>
