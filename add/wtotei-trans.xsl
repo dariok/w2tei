@@ -38,6 +38,7 @@
                 <xsl:when test="wdb:is(., 'KSSchluformeln')">closer</xsl:when>
                 <xsl:when test="wdb:is(., 'KSBuchtitel')">titlePart</xsl:when>
                 <xsl:when test="wdb:is(., 'KSZwischenberschrift', 'p')">head</xsl:when>
+                <xsl:when test="wdb:is(., 'KSlistWit', 'p')">listWit</xsl:when>
                 <xsl:otherwise>p</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>

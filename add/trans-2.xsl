@@ -41,11 +41,20 @@
 	<xsl:template match="tei:sourceDesc">
 		<sourceDesc>
 			<listWit>
-				<witness xml:id="A" />
+				<witness xml:id="A">A</witness>
+				<xsl:for-each select="//tei:listWit/*">
+					<witness>
+						<xsl:attribute name="xml:id" select="." />
+						<xsl:value-of select="."/>
+					</witness>
+				</xsl:for-each>
 			</listWit>
 			<xsl:comment>TODO witness eintragen</xsl:comment>
 		</sourceDesc>
 	</xsl:template>
+	
+	<xsl:template match="tei:listWit"/>
+	
 	<xsl:template match="tei:author">
 		<editor><xsl:apply-templates /></editor>
 	</xsl:template>

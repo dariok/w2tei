@@ -250,6 +250,12 @@
         <xsl:apply-templates select="w:t" />
     </xsl:template>-->
     
+    <xsl:template match="w:p[wdb:is(., 'KSlistWit', 'p')]">
+        <xsl:variable name="text"><xsl:apply-templates select="w:r"/></xsl:variable>
+        <xsl:variable name="value" select="wdb:substring-before-if-ends($text, '')"/>
+        <witness><xsl:value-of select="$value"/></witness>
+    </xsl:template>
+    
     <xsl:template match="text() | @*">
         <xsl:copy>
             <xsl:apply-templates />
