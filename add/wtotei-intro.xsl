@@ -454,7 +454,7 @@
 					<p><ptr type="digitalisat" target="{$link}"/></p>
 				</xsl:if>
 				<xsl:apply-templates select="following-sibling::w:p[not(wdb:starts(., 'Edition') or wdb:starts(., 'Literatur'))
-					and following-sibling::w:p[hab:isHead(., 1)]
+					and following-sibling::w:p[hab:isHead(., 1)] and not(preceding-sibling::w:p[wdb:starts(., 'Literatur')])
 					and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>
 			</physDesc>
 		</msDesc>
@@ -563,8 +563,8 @@
 	
 	<!-- leere p abfangen; 2017-10-24 DK -->
 	<xsl:template match="w:p[not(descendant::w:t) or string-length(wdb:string(.)) &lt; 5]" />
-	<xsl:template match="w:p[(not(descendant::w:pStyle)
-		or wdb:is(., 'KSText')) and not(hab:isSigle(.) or wdb:starts(., 'Edition') or
+	<xsl:template match="w:p[(not(descendant::w:pStyle or ancestor-or-self::w:endnote)
+		or wdb:is(., 'KSText') ) and not(hab:isSigle(.) or wdb:starts(., 'Edition') or
 		wdb:starts(., 'Literatur')) and descendant::w:t and string-length(wdb:string(.)) &gt; 5]">
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
 		<p><xsl:apply-templates select="w:r" /></p>
