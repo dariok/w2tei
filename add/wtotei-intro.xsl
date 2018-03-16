@@ -453,7 +453,7 @@
 					</xsl:choose>
 				</idno>
 			</msIdentifier>
-			<xsl:if test="$md3/node()">
+			<xsl:if test="not($md3/hab:c) or $md3/hab:c[1]/preceding-sibling::node()">
 				<msContents>
 					<msItem>
 						<locus>
