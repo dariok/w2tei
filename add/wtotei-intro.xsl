@@ -394,7 +394,14 @@
 				<repository><xsl:apply-templates select="$md/hab:b[1]/preceding::node()" mode="normalize" /></repository>
 				<idno type="signatur">
 					<xsl:variable name="te">
-						<xsl:apply-templates select="$md/hab:b[2]/preceding-sibling::node() intersect $md/hab:b[1]/following-sibling::node()" />
+						<xsl:choose>
+							<xsl:when test="$md/hab:b[2]">
+								<xsl:apply-templates select="$md/hab:b[2]/preceding-sibling::node() intersect $md/hab:b[1]/following-sibling::node()" />
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:apply-templates select="$md/hab:b[1]/following-sibling::node()" />
+							</xsl:otherwise>
+						</xsl:choose>
 					</xsl:variable>
 					<xsl:choose>
 						<xsl:when test="contains($te, '(') and contains($te, ')')">
