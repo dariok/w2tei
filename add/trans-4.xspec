@@ -169,17 +169,38 @@
 	</x:scenario>
 	
 	<x:scenario label="span/anchor">
-		<x:context>
-			<p>
-				<lb/>und <anchor type="crit_app" xml:id="s1"/>textualis logicis und physicis<anchor type="crit_app" xml:id="s1e"/><span type="crit_app" from="#s1" to="#s1e"><orig>Textual Logica und Physica
-			</orig>EA</span> gnug
-			</p>
-		</x:context>
-		<x:expect label="span vor anchor">
-			<p>
-				<lb/>und <app><lem wit="#A">textualis logicis und physicis</lem><rdg wit="#EA">Textual Logica und Physica</rdg></app> gnug
-			</p>
-		</x:expect>
+		<x:scenario label="einfach">
+			<x:context>
+				<p>
+					<lb/>und <anchor type="crit_app" xml:id="s1"/>textualis logicis und physicis<anchor type="crit_app" xml:id="s1e"/><span type="crit_app" from="#s1" to="#s1e"><orig>Textual Logica und Physica
+				</orig>EA</span> gnug
+				</p>
+			</x:context>
+			<x:expect label="span vor anchor">
+				<p>
+					<lb/>und <app><lem wit="#A">textualis logicis und physicis</lem><rdg wit="#EA">Textual Logica und Physica</rdg></app> gnug
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="mit lb">
+			<x:context>
+				<p>
+					<lb></lb>hactenus ecclesiam defendit, et quis te vita defuncto <anchor type="crit_app" xml:id="s1"
+						></anchor>tuebitur? $ quod<anchor type="crit_app" xml:id="s1e"></anchor><span type="crit_app" from="#s1"
+							to="#s1e"><orig> tuebituro quod </orig>B, C</span> vix audent Imperatores
+					mundi, audacter subit audaculus
+					<lb></lb>imperator Theologorum. Si mihi D<ex>ominus</ex>
+				</p>
+			</x:context>
+			<x:expect label="app lem rdg">
+				<p>
+					<lb></lb>hactenus ecclesiam defendit, et quis te vita defuncto <app><lem wit="#A">tuebitur? <lb/> quod</lem>
+						<rdg wit="#B #C">tuebituro quod</rdg></app> vix audent Imperatores
+					mundi, audacter subit audaculus
+					<lb></lb>imperator Theologorum. Si mihi <expan>D<ex>ominus</ex></expan>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
   <x:scenario label="bibl mit abbr eränzen">
     <x:context>

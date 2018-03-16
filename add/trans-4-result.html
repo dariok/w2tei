@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for C:/Users/kampkaspar/workspace/W2TEI/add/trans-4.xsl (passed:13 / pending:0 / failed:0 / total:13)</title>
+      <title>Test Report for C:/Users/kampkaspar/workspace/W2TEI/add/trans-4.xsl (passed:13 / pending:0 / failed:1 / total:14)</title>
       <link rel="stylesheet" type="text/css" href="file:/C:/Users/kampkaspar/.p2/pool/plugins/com.oxygenxml.editor_19.1.0.v2018022209/frameworks/xspec/src/reporter/test-report.css" />
    </head>
    <body>
       <h1>Test Report</h1>
       <p xmlns:oxy="http://www.oxygenxml.com/xslt/xspec">Stylesheet: <a href="file:/C:/Users/kampkaspar/workspace/W2TEI/add/trans-4.xsl">C:/Users/kampkaspar/workspace/W2TEI/add/trans-4.xsl</a></p>
-      <p xmlns:oxy="http://www.oxygenxml.com/xslt/xspec">Tested: 14 März 2018 at 21:52</p>
+      <p xmlns:oxy="http://www.oxygenxml.com/xslt/xspec">Tested: 16 März 2018 at 19:23</p>
       <h2 xmlns:oxy="http://www.oxygenxml.com/xslt/xspec">Contents</h2>
       <table xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" class="xspec">
          <col width="80%" />
@@ -20,16 +20,16 @@
                <th></th>
                <th class="result">passed:13</th>
                <th class="result">pending:0</th>
-               <th class="result">failed:0</th>
-               <th class="result">total:13</th>
+               <th class="result">failed:1</th>
+               <th class="result">total:14</th>
             </tr>
          </thead>
          <tbody>
-            <tr class="successful">
+            <tr class="failed">
                <th><a href="#d4e4">krit. Anmerkungen</a></th>
-               <th class="result">9</th>
+               <th class="result">8</th>
                <th class="result">0</th>
-               <th class="result">0</th>
+               <th class="result">1</th>
                <th class="result">9</th>
             </tr>
             <tr class="successful">
@@ -48,13 +48,13 @@
             </tr>
             <tr class="successful">
                <th><a href="#d4e1293">span/anchor</a></th>
-               <th class="result">1</th>
+               <th class="result">2</th>
                <th class="result">0</th>
                <th class="result">0</th>
-               <th class="result">1</th>
+               <th class="result">2</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d4e1357">bibl mit abbr eränzen</a></th>
+               <th><a href="#d4e1453">bibl mit abbr eränzen</a></th>
                <th class="result">1</th>
                <th class="result">0</th>
                <th class="result">0</th>
@@ -63,14 +63,14 @@
          </tbody>
       </table>
       <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e4">
-         <h2 class="successful">krit. Anmerkungen<span class="scenario-totals">passed:9 / pending:0 / failed:0 / total:9</span></h2>
+         <h2 class="successful">krit. Anmerkungen<span class="scenario-totals">passed:8 / pending:0 / failed:1 / total:9</span></h2>
          <table class="xspec" id="t-d4e4">
             <col width="80%" />
             <col width="20%" />
             <tbody>
                <tr class="successful">
                   <th>krit. Anmerkungen</th>
-                  <th>passed:9 / pending:0 / failed:0 / total:9</th>
+                  <th>passed:8 / pending:0 / failed:1 / total:9</th>
                </tr>
                <tr class="successful">
                   <th>einmal vom Editor verbessert für</th>
@@ -96,13 +96,13 @@
                   <td>lem, 2rdg</td>
                   <td>Success</td>
                </tr>
-               <tr class="successful">
-                  <th>orig im Text herstellen</th>
-                  <th>passed:1 / pending:0 / failed:0 / total:1</th>
+               <tr class="failed">
+                  <th><a href="#d4e241">orig im Text herstellen</a></th>
+                  <th>passed:0 / pending:0 / failed:1 / total:1</th>
                </tr>
-               <tr class="successful">
-                  <td>orig</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#d4e394">orig</a></td>
+                  <td>Failure</td>
                </tr>
                <tr class="successful">
                   <th>danach gestrichen</th>
@@ -146,6 +146,46 @@
                </tr>
             </tbody>
          </table>
+         <h3 id="d4e241">krit. Anmerkungen orig im Text herstellen</h3>
+         <h4 id="d4e394">orig</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">item</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:wdb="https://github.com/dariok/wdbplus"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Lex factorum dicitur. sicut lucus a </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">choice</span>&gt;
+      &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">sic</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucando:</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">note</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="comment"&gt;
+            &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">bibl</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Kolde, 471</span>&lt;/bibl&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">, ändert stillschweigend in</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">orig</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> non lucendo.</span>&lt;/orig&gt;
+         &lt;/note&gt;
+      &lt;/sic&gt;
+      &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">corr</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucendo:</span>&lt;/corr&gt;
+   &lt;/choice&gt;
+   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">note</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="footnote"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Hinter </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucus a lucendo</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> steht die etymologische Herleitung des Wortes </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">l</span>&lt;/hi&gt;
+      &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">ucus</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (Wald) von </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucere</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (leuchten), die u. a. </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">rs</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="person"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Quint.</span>&lt;/rs&gt;
+      &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">ref</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="medieval"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> inst. orat. </span>&lt;/ref&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">1,6,34 wiedergibt: </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">etiamne a contrariis aliqua sinemus trahi, ut ‘lucus‘, quia umbra opacus parum luceat […]?</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">bibl</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">ref</span>="#neuber_fremdheit_2000"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Winterbottom, Quintiliani, Bd. 1, 47,8f</span>&lt;/bibl&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">.) Diese volksetymologische Ableitung einer Wortbedeutung (</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucus</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> / dunkler Wald) vom Gegenteil </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">(lucere</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> / hell leuchten), enthält einen logischen Widerspruch. Was </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">rs</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="person"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Karlstadt</span>&lt;/rs&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> meint, wenn er die Phrase </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lex factorum</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> mit der Herleitung </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucus a lucendo</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> vergleicht, ergibt sich in Verbindung mit These 6 und 7: Die Formulierung </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Gesetz der Taten</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> enthält insofern einen inneren Widerspruch, als die guten Taten bzw. Werke von jenem Gesetz eben nicht bewirkt werden, sondern vom </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Gesetz des Glaubens</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (Th. 7), weshalb dieses auch als ein </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">geistliches Gesetz der Taten</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (Th. 6) bezeichnet werden könne.</span>&lt;/note&gt;
+&lt;/item&gt;</pre></td>
+                  <td><pre>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">item</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:wdb="https://github.com/dariok/wdbplus"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Lex factorum dicitur. sicut lucus a </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">choice</span>&gt;
+      &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">sic</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucando:</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">note</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="comment"&gt;
+            &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">bibl</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Kolde, 471</span>&lt;/bibl&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">, ändert stillschweigend in</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">orig</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> non lucendo.</span>&lt;/orig&gt;
+         &lt;/note&gt;
+      &lt;/sic&gt;
+      &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">corr</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucendo:</span>&lt;/corr&gt;
+   &lt;/choice&gt;
+   &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">note</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="footnote"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Hinter </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucus a lucendo</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> steht die etymologische Herleitung des Wortes </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">l</span>&lt;/hi&gt;
+      &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">ucus</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (Wald) von </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucere</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (leuchten), die u. a. </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">rs</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="person"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Quint.</span>&lt;/rs&gt;
+      &lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">ref</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="medieval"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> inst. orat. </span>&lt;/ref&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">1,6,34 wiedergibt: </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">etiamne a contrariis aliqua sinemus trahi, ut ‘lucus‘, quia umbra opacus parum luceat […]?</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">bibl</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="diff">ref</span>="#"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Winterbottom, Quintiliani, Bd. 1, 47,8f</span>&lt;/bibl&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">.) Diese volksetymologische Ableitung einer Wortbedeutung (</span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucus</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> / dunkler Wald) vom Gegenteil </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">hi</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">style</span>="font-style: italic;"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">(lucere</span>&lt;/hi&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> / hell leuchten), enthält einen logischen Widerspruch. Was </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">rs</span> <span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">type</span>="person"&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Karlstadt</span>&lt;/rs&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> meint, wenn er die Phrase </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lex factorum</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> mit der Herleitung </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">lucus a lucendo</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> vergleicht, ergibt sich in Verbindung mit These 6 und 7: Die Formulierung </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Gesetz der Taten</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> enthält insofern einen inneren Widerspruch, als die guten Taten bzw. Werke von jenem Gesetz eben nicht bewirkt werden, sondern vom </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">Gesetz des Glaubens</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (Th. 7), weshalb dieses auch als ein </span>&lt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">quote</span>&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same">geistliches Gesetz der Taten</span>&lt;/quote&gt;<span xmlns:x="http://www.jenitennison.com/xslt/xspec" xmlns:pkg="http://expath.org/ns/pkg" class="same"> (Th. 6) bezeichnet werden könne.</span>&lt;/note&gt;
+&lt;/item&gt;</pre></td>
+               </tr>
+            </tbody>
+         </table>
       </div>
       <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e1167">
          <h2 class="successful">text vor krit. FN<span class="scenario-totals">passed:1 / pending:0 / failed:0 / total:1</span></h2>
@@ -182,25 +222,37 @@
          </table>
       </div>
       <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e1293">
-         <h2 class="successful">span/anchor<span class="scenario-totals">passed:1 / pending:0 / failed:0 / total:1</span></h2>
+         <h2 class="successful">span/anchor<span class="scenario-totals">passed:2 / pending:0 / failed:0 / total:2</span></h2>
          <table class="xspec" id="t-d4e1293">
             <col width="80%" />
             <col width="20%" />
             <tbody>
                <tr class="successful">
                   <th>span/anchor</th>
+                  <th>passed:2 / pending:0 / failed:0 / total:2</th>
+               </tr>
+               <tr class="successful">
+                  <th>einfach</th>
                   <th>passed:1 / pending:0 / failed:0 / total:1</th>
                </tr>
                <tr class="successful">
                   <td>span vor anchor</td>
                   <td>Success</td>
                </tr>
+               <tr class="successful">
+                  <th>mit lb</th>
+                  <th>passed:1 / pending:0 / failed:0 / total:1</th>
+               </tr>
+               <tr class="successful">
+                  <td>app lem rdg</td>
+                  <td>Success</td>
+               </tr>
             </tbody>
          </table>
       </div>
-      <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e1357">
+      <div xmlns:oxy="http://www.oxygenxml.com/xslt/xspec" id="d4e1453">
          <h2 class="successful">bibl mit abbr eränzen<span class="scenario-totals">passed:1 / pending:0 / failed:0 / total:1</span></h2>
-         <table class="xspec" id="t-d4e1357">
+         <table class="xspec" id="t-d4e1453">
             <col width="80%" />
             <col width="20%" />
             <tbody>

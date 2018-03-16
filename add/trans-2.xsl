@@ -218,6 +218,7 @@
 			<xsl:when test="preceding-sibling::*[1][self::tei:anchor]">
 				<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])" />
 				<span type="crit_app" from="{'#s'||$num}" to="{'#s'||$num||'e'}">
+<!--					<xsl:comment>TODO ggf. bessere Kodierung</xsl:comment>-->
 					<xsl:apply-templates />
 				</span>
 			</xsl:when>

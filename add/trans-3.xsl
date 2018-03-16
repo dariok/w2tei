@@ -19,6 +19,10 @@
 		</xsl:element>
 	</xsl:template>-->
 	
+	<xsl:template match="tei:lb[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]]">
+		<xsl:text> $ </xsl:text>
+	</xsl:template>
+	
 	<xsl:template match="text()">
 		<xsl:analyze-string select="." regex="&lt;.+&gt;">
 			<xsl:matching-substring>

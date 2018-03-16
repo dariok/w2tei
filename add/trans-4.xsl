@@ -283,7 +283,14 @@
 			</xsl:when>-->
 			<xsl:when test="$span/node()[1][self::tei:orig]">
 				<app>
-					<lem wit="#A"><xsl:value-of select="."/></lem>
+					<lem wit="#A">
+						<xsl:analyze-string select="." regex="(\$)">
+							<xsl:matching-substring><lb/></xsl:matching-substring>
+							<xsl:non-matching-substring>
+								<xsl:value-of select="."/>
+							</xsl:non-matching-substring>
+						</xsl:analyze-string>
+					</lem>
 					<xsl:apply-templates select="$span/tei:orig" />
 				</app>
 			</xsl:when>
