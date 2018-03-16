@@ -4,6 +4,7 @@
 	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
 	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
+	xmlns:hab="http://diglib.hab.de"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	stylesheet="wtotei-intro.xsl" xslt-version="3.0"
 	preserve-space="no">
@@ -15218,5 +15219,87 @@
 				</item>
 			</x:expect>
 		</x:scenario>
+	</x:scenario>
+	<x:scenario label="Fußnoten-Verweise">
+		<x:context>
+			<w:p w:rsidR="005E2CC1" w:rsidRPr="00D45477" w:rsidRDefault="005E2CC1" w:rsidP="001F6631">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+					<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+					<w:rPr>
+						<w:rFonts w:cs="Times New Roman"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="001F6631">
+					<w:rPr>
+						<w:rFonts w:cs="Times New Roman"/>
+					</w:rPr>
+					<w:t>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.</w:t>
+				</w:r>
+				<w:bookmarkStart w:id="4" w:name="_Ref506220014"/>
+				<w:r>
+					<w:rPr>
+						<w:rStyle w:val="Endnotenzeichen"/>
+						<w:rFonts w:cs="Times New Roman"/>
+					</w:rPr>
+					<w:endnoteReference w:id="4"/>
+				</w:r>
+				<w:bookmarkEnd w:id="4"/>
+			</w:p>
+			<w:endnotes>
+				<w:endnote w:id="4">
+					<w:p w:rsidR="005E2CC1" w:rsidRDefault="005E2CC1">
+						<w:pPr>
+							<w:pStyle w:val="Endnotentext"/>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="Endnotenzeichen"/>
+							</w:rPr>
+							<w:endnoteRef/>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve"> Genaue Beschreibung in </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00843B08">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Dommer</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00843B08">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, Lutherdrucke, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00843B08">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Orn</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00843B08">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>. 90</w:t>
+						</w:r>
+						<w:r>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+				</w:endnote>
+			</w:endnotes>
+		</x:context>
+		<x:expect label="hab:bm">
+			<p>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.<hab:bm name="_Ref506220014"/>
+				<note type="footnote">Genaue Beschreibung in <bibl>Dommer, Lutherdrucke, Orn. 90</bibl>.</note>
+			</p>
+		</x:expect>
 	</x:scenario>
 </x:description>

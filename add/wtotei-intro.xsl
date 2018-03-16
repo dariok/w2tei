@@ -610,7 +610,7 @@
 		or wdb:is(., 'KSText') ) and not(hab:isSigle(.) or wdb:starts(., 'Edition') or
 		wdb:starts(., 'Literatur')) and descendant::w:t and string-length(wdb:string(.)) &gt; 5]">
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
-		<p><xsl:apply-templates select="w:r" /></p>
+		<p><xsl:apply-templates select="w:r | w:bookmarkStart" /></p>
 	</xsl:template>
 	
 	<!-- neu 2017-06-11 DK -->
