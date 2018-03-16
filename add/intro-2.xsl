@@ -54,6 +54,14 @@
     </xsl:choose>
   </xsl:template>
   
+  <xsl:template match="tei:rs">
+    <!-- TODO ref aus Register auslesen -->
+    <xsl:sequence select="."/>
+    <xsl:if test="following-sibling::node()[1][self::tei:rs]">
+      <xsl:text> </xsl:text>
+    </xsl:if>
+  </xsl:template>
+  
   <xsl:template match="* | @* | comment()">
     <xsl:copy>
       <xsl:apply-templates select="node() | @*" />

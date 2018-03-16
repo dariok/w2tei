@@ -119,9 +119,6 @@
             <xsl:comment>TODO ref eintragen</xsl:comment>
             <xsl:apply-templates select="w:t"/>
         </rs>
-        <xsl:if test="following-sibling::node()[1][self::tei:rs]">
-            <xsl:text> </xsl:text>
-        </xsl:if>
     </xsl:template>
     
     <xsl:template match="w:r[wdb:is(., 'KSPerson', 'r')]">
@@ -129,9 +126,6 @@
             <xsl:comment>TODO ref eintragen</xsl:comment>
             <xsl:apply-templates select="w:t"/>
         </rs>
-        <xsl:if test="following-sibling::node()[1][self::tei:rs]">
-            <xsl:text> </xsl:text>
-        </xsl:if>
     </xsl:template>
     <!-- Ende RS -->
     

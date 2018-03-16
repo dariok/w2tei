@@ -37,6 +37,14 @@
 		</xsl:analyze-string>
 	</xsl:template>
 	
+	<xsl:template match="tei:rs">
+		<!-- TODO ref aus Register auslesen -->
+		<xsl:sequence select="."/>
+		<xsl:if test="following-sibling::node()[1][self::tei:rs]">
+			<xsl:text> </xsl:text>
+		</xsl:if>
+	</xsl:template>
+	
 	<xsl:template match="tei:ref[@type='biblical' and not(preceding-sibling::node()[1][self::tei:ref[@type='biblical']])]">
 		<xsl:variable name="myId" select="generate-id()" />
 		<ref type="{@type}"><xsl:sequence select="text()
