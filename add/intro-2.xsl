@@ -18,7 +18,7 @@
   </xsl:template>
   
   <xsl:template match="text()[not(preceding-sibling::*[1][self::hab:mark[@ref]])]">
-    <xsl:analyze-string select="." regex="[„“]([^”^“^&quot;]*)[”“&quot;]">
+    <xsl:analyze-string select="." regex="[„“&quot;»«]([^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
       <xsl:matching-substring>
         <quote>
           <xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.\.\.\]">
