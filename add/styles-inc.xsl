@@ -16,7 +16,7 @@
     <!-- Styles -->
     <!-- kursiv -->
     <xsl:template match="w:r[descendant::w:i[not(@w:val=0)]
-        and not(descendant::w:vertAlign or wdb:is(., 'KSbibliographischeAngabe', 'r'))]">
+        and not(descendant::w:vertAlign or wdb:is(., 'KSbibliographischeAngabe', 'r') or wdb:is(., 'KSKommentar', 'r'))]">
         <hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
     </xsl:template>
     <xsl:template match="w:r[descendant::w:i[@w:val=0] and not(wdb:is(., 'KSbibliographischeAngabe', 'r')
