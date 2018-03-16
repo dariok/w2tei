@@ -14027,7 +14027,7 @@
 							<w:t>.</w:t>
 						</w:r>
 					</w:p>
-					<!--<w:p w:rsidR="003A7BB3" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">
+					<w:p w:rsidR="003A7BB3" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">
 						<w:pPr>
 							<w:pStyle w:val="KSberschrift1"/>
 							<w:numPr>
@@ -14045,7 +14045,7 @@
 							</w:rPr>
 							<w:t>Entstehung und Inhalt</w:t>
 						</w:r>
-					</w:p>-->
+					</w:p>
 				</w:body>
 			</x:context>
 			<x:expect label="2 bibl und ein p">
@@ -14151,6 +14151,7 @@
 						<bibl>Barge, Karlstadt 1, 168–172</bibl>
 					</listBibl>
 				</div>
+				<div type="contents" />	
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="verschiedene Drucksignaturen">

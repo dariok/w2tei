@@ -74,6 +74,7 @@
 	</xsl:template>
 	
 	<xsl:template match="w:p[hab:isSigle(.) and wdb:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Früh')]">
+		<xsl:variable name="myId" select="generate-id()"/>
 		<xsl:variable name="end"
 			select="following-sibling::w:p[wdb:starts(., 'Bibliographische')][1]" />
 		<xsl:variable name="struct" select="current() | 
@@ -147,8 +148,14 @@
 							</bibl>
 						</xsl:for-each>
 					</listBibl>
+					<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
+						$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)
+						[not(wdb:starts(., 'Edition') or wdb:starts(., 'Literatur') or hab:isHead(., '1')
+						or hab:isSigle(.))
+						and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>
+					
 					<!-- auch dann ausgeben, wenn die Anmerkung hinter dem letzten Exemplar steht -->
-					<xsl:choose>
+					<!--<xsl:choose>
 						<xsl:when test="$struct[last()]/following-sibling::w:p[hab:isSigle(.)]">
 							<xsl:apply-templates select="$struct[last()]/following-sibling::w:p
 								intersect $struct[last()]/following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p"/>
@@ -164,7 +171,7 @@
 								wdb:starts(., 'Edition') or wdb:starts(., 'Literatur')
 								or wdb:is(., 'KSText', 'p'))]"/>
 						</xsl:otherwise>
-					</xsl:choose>
+					</xsl:choose>-->
 				</note>
 			</xsl:if>
 		</biblStruct>
@@ -356,25 +363,49 @@
 				</xsl:for-each>
 			</xsl:variable>
 			<xsl:variable name="md3">
-				<xsl:if test="$md/hab:b[2]">
-					<xsl:for-each select="$md/hab:b[2]/following-sibling::node()">
-						<xsl:choose>
-							<xsl:when test="self::text()">
-								<xsl:analyze-string select="." regex="\(|\)">
-									<xsl:matching-substring>
-										<hab:c/>
-									</xsl:matching-substring>
-									<xsl:non-matching-substring>
-										<xsl:value-of select="."/>
-									</xsl:non-matching-substring>
-								</xsl:analyze-string>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:sequence select="."/>
-							</xsl:otherwise>
-						</xsl:choose>
-					</xsl:for-each>
-				</xsl:if>
+				<xsl:choose>
+					<xsl:when test="$md/hab:b[2]">
+						<xsl:for-each select="$md/hab:b[2]/following-sibling::node()">
+							<xsl:choose>
+								<xsl:when test="self::text()">
+									<xsl:analyze-string select="." regex="\(|\)">
+										<xsl:matching-substring>
+											<hab:c/>
+										</xsl:matching-substring>
+										<xsl:non-matching-substring>
+											<xsl:value-of select="."/>
+										</xsl:non-matching-substring>
+									</xsl:analyze-string>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:sequence select="."/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</xsl:for-each>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:variable name="val">
+							<xsl:for-each select="$md/hab:b/following-sibling::node()">
+								<xsl:choose>
+									<xsl:when test="self::text()">
+										<xsl:analyze-string select="." regex="\(|\)">
+											<xsl:matching-substring>
+												<hab:c/>
+											</xsl:matching-substring>
+											<xsl:non-matching-substring>
+												<xsl:value-of select="."/>
+											</xsl:non-matching-substring>
+										</xsl:analyze-string>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:sequence select="."/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</xsl:for-each>
+						</xsl:variable>
+						<xsl:sequence select="$val/hab:c | $val/hab:c/following-sibling::node()" />
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:variable>
 			<xsl:variable name="si"
 				select="wdb:string(w:r[hab:isSigle(.)])" />
