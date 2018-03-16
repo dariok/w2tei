@@ -136,6 +136,30 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="mit pb und note">
+			<x:context>
+				<p>
+					<lb></lb>ducit, ut suspicentur nos discrepare in re notissima, sicubi vero
+					<lb></lb>negocii cardo versatur, illic quam est imbellis quam mollis et penetra-<pb n="[A2r]"></pb>
+					<lb></lb>bilis.<note type="footnote">Eine ähnliche Argumentation sowie die Gegenüberstellung von wahren (den
+						Wittenbergern) und falschen (<rs type="person"><!--TODO ref eintragen-->Eck</rs>) Verteidigern der göttliche
+						Lehre findet sich auch in: <rs type="person"><!--TODO ref eintragen-->Karlstadt</rs> an <rs type="person"
+							><!--TODO ref eintragen-->Eck</rs>, 22.5.1519 (KGK II, EE 99##)</note> Nihil magis pugil gloriosus ambit,
+					quam gloriolam apud erudi-
+					<lb></lb>tulos et illiteratos aucupari, quando laudis tam est avidus, ut nil
+				</p>
+			</x:context>
+			<x:expect label="w mit note danach">
+				<p>
+					<lb></lb>ducit, ut suspicentur nos discrepare in re notissima, sicubi vero
+					<lb></lb>negocii cardo versatur, illic quam est imbellis quam mollis et <w>penetra<pb n="[A2r]" break="no"/><lb break="no"/>bilis.</w><note
+						type="footnote">Eine ähnliche Argumentation sowie die Gegenüberstellung von wahren (den
+						Wittenbergern) und falschen (<rs type="person"><!--TODO ref eintragen-->Eck</rs>) Verteidigern der göttliche
+						Lehre findet sich auch in: <rs type="person"><!--TODO ref eintragen-->Karlstadt</rs> an <rs type="person"
+							><!--TODO ref eintragen-->Eck</rs>, 22.5.1519 (KGK II, EE 99##)</note> Nihil magis pugil gloriosus ambit, quam gloriolam apud <w>erudi<lb break="no"/>tulos</w> et illiteratos aucupari, quando laudis tam est avidus, ut nil
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="quote">
 		<x:context>

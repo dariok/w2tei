@@ -83,8 +83,9 @@
 	                <pb break="no" n="{preceding-sibling::tei:pb[1]/@n}" />
 	                <lb break="no" />
 	                <xsl:value-of select="wdb:substring-before(following-sibling::text()[1], ' ')" />
-	            </w>
-	            <xsl:text> </xsl:text>
+	            </w><xsl:if test="contains(following-sibling::text()[1], ' ')">
+	            	<xsl:text> </xsl:text>
+	            </xsl:if>
 	        </xsl:when>
 	    	<xsl:when test="following-sibling::node()[1][self::tei:pb]
 	    		and ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
@@ -235,12 +236,15 @@
 				<xsl:variable name="mid" select="substring-after(., ' ')" />
 				<xsl:value-of select="wdb:substring-before-last($mid, ' ')" />
 			</xsl:when>
-		    <!--<xsl:when test="preceding-sibling::tei:lb[1]/preceding-sibling::*[1][self::tei:pb]
+		    <xsl:when test="preceding-sibling::tei:lb[1]/preceding-sibling::*[1][self::tei:pb]
 		        and ends-with(normalize-space(preceding-sibling::tei:pb[1]/preceding-sibling::text()[1]), '-')
 		        and ends-with(normalize-space(), '-')">
+		    	<xsl:if test="preceding-sibling::node()[1][self::tei:note]">
+		    		<xsl:text> </xsl:text>
+		    	</xsl:if>
 		        <xsl:variable name="mid" select="substring-after(., ' ')" />
 		        <xsl:value-of select="wdb:substring-before-last($mid, ' ')" />
-		    </xsl:when>-->
+		    </xsl:when>
 			<xsl:when test="ends-with(normalize-space(), '-')
 			    and following-sibling::node()[1][self::tei:lb or self::tei:pb]">
 				<xsl:value-of select="wdb:substring-before-last(., ' ')" />
