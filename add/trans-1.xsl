@@ -174,6 +174,21 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template match="w:r[wdb:is(., 'KSEEVerweis', 'r')]">
+        <ptr type="wdb">
+            <xsl:choose>
+                <xsl:when test="contains(., 'II')">
+                    <xsl:comment> TODO verlinken</xsl:comment>
+                    <xsl:apply-templates select="w:t" />
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:comment> TODO verlinken</xsl:comment>
+                    <xsl:apply-templates select="w:t" />
+                </xsl:otherwise>
+            </xsl:choose>
+        </ptr>
+    </xsl:template>
+    
     <!-- kritische Anmerkungen -->
     <xsl:template match="w:r[descendant::w:footnoteReference]">
         <note type="crit_app">
