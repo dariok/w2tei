@@ -302,8 +302,9 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	<xsl:template match="tei:span" />
-	<xsl:template match="tei:anchor" />
+	<xsl:template match="tei:span[preceding-sibling::*[2][self::tei:anchor]]" />
+	<xsl:template match="tei:anchor[following-sibling::*[1][self::tei:anchor]]" />
+	<xsl:template match="tei:anchor[preceding-sibling::*[1][self::tei:anchor]]" />
 	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:ex]]">
 		<xsl:variable name="first" select="wdb:substring-before-last(., ' ')"/>
