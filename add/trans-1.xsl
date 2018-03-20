@@ -238,7 +238,8 @@
     </xsl:template>
     <xsl:template match="w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
         and following::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
-        and preceding::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
+        and preceding::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
+        and not(w:footnoteReference)]">
         <xsl:apply-templates select="w:t"/>
     </xsl:template>
     
