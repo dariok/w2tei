@@ -230,6 +230,18 @@
 		</xsl:choose>
 	</xsl:template>
 	
+	<!-- Paraphrase -->
+	<xsl:template match="hab:para[@place='start']">
+		<xsl:variable name="myId" select="generate-id()"/>
+		<xsl:variable name="endId" select="generate-id(following-sibling::hab:para[@place='end'][1])"/>
+		<seg type="paraphrase">
+			<xsl:apply-templates
+				select="following-sibling::node()[generate-id(preceding-sibling::hab:para[1]) = $myId
+				and generate-id(following-sibling::hab:para[1]) = $endId]"/>
+		</seg>
+	</xsl:template>
+	<xsl:template match="hab:para[@place = 'end']" />
+	
 	<xsl:template match="text()[not(ancestor::tei:note)]">
 		<xsl:choose>
 			<xsl:when test="ends-with(normalize-space(), '-')

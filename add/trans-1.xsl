@@ -174,6 +174,7 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- EE-Verweis -->
     <xsl:template match="w:r[wdb:is(., 'KSEEVerweis', 'r')]">
         <ptr type="wdb">
             <xsl:choose>
@@ -187,6 +188,14 @@
                 </xsl:otherwise>
             </xsl:choose>
         </ptr>
+    </xsl:template>
+    
+    <!-- Langes Zitat bzw. Paraphrase -->
+    <xsl:template match="w:r[wdb:isFirst(., 'KSQuote', 'r')]">
+        <hab:para place="start"/>
+    </xsl:template>
+    <xsl:template match="w:r[wdb:is(., 'KSQuote', 'r') and following::w:r[1][not(wdb:is(., 'KSQuote', 'r'))]]">
+        <hab:para place="end" />
     </xsl:template>
     
     <!-- kritische Anmerkungen -->
