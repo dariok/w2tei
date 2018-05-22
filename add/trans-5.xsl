@@ -58,9 +58,20 @@
     </xsl:element>
   </xsl:template>
   
-  <xsl:template match="node() | @*">
+  <xsl:template match="* | @* | comment() | processing-instruction()">
     <xsl:copy>
       <xsl:apply-templates select="node() | @*"/>
     </xsl:copy>
+  </xsl:template>
+  
+  <xsl:template match="text()">
+    <xsl:analyze-string select="." regex="([\d\sr])-([\d\sv])">
+      <xsl:matching-substring>
+        <xsl:value-of select="regex-group(1) || '–' || regex-group(2)"/>
+      </xsl:matching-substring>
+      <xsl:non-matching-substring>
+        <xsl:value-of select="."/>
+      </xsl:non-matching-substring>
+    </xsl:analyze-string>
   </xsl:template>
 </xsl:stylesheet>
