@@ -41,11 +41,20 @@
 	<xsl:template match="tei:sourceDesc">
 		<sourceDesc>
 			<listWit>
-				<witness xml:id="A" />
+				<witness xml:id="A">A</witness>
+				<xsl:for-each select="//tei:listWit/*">
+					<witness>
+						<xsl:attribute name="xml:id" select="." />
+						<xsl:value-of select="."/>
+					</witness>
+				</xsl:for-each>
 			</listWit>
 			<xsl:comment>TODO witness eintragen</xsl:comment>
 		</sourceDesc>
 	</xsl:template>
+	
+	<xsl:template match="tei:listWit"/>
+	
 	<xsl:template match="tei:author">
 		<editor><xsl:apply-templates /></editor>
 	</xsl:template>
@@ -74,9 +83,21 @@
 	                <pb break="no" n="{preceding-sibling::tei:pb[1]/@n}" />
 	                <lb break="no" />
 	                <xsl:value-of select="wdb:substring-before(following-sibling::text()[1], ' ')" />
-	            </w>
-	            <xsl:text> </xsl:text>
+	            </w><xsl:if test="contains(following-sibling::text()[1], ' ')">
+	            	<xsl:text> </xsl:text>
+	            </xsl:if>
 	        </xsl:when>
+	    	<xsl:when test="following-sibling::node()[1][self::tei:pb]
+	    		and ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
+    			<xsl:text> </xsl:text>
+	    		<w>
+	    			<xsl:value-of select="wdb:substring-before(wdb:substring-after-last(normalize-space(
+	    				preceding-sibling::text()[1]), ' '), '-')" />
+    				<xsl:sequence select="following-sibling::tei:pb[1]" />
+	    			<lb break="no" />
+	    			<xsl:value-of select="wdb:substring-before(following-sibling::text()[1], ' ')" />
+	    		</w>
+	    	</xsl:when>
 			<xsl:when test="preceding-sibling::*[1][self::tei:note]
 				and ends-with(preceding-sibling::tei:note[1]/preceding-sibling::text()[1], '-')">
 				<xsl:text> </xsl:text>
@@ -159,7 +180,7 @@
 	</xsl:template>
 	
 	<xsl:template match="tei:note[@type = 'footnote']/text()[not(preceding-sibling::*[1][self::hab:mark])]">
-		<xsl:analyze-string select="." regex="[„“]([^”^“^&quot;]*)[”“&quot;]">
+		<xsl:analyze-string select="." regex="[„“&quot;»«]([^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
 			<xsl:matching-substring>
 				<quote>
 					<xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.\.\.\]">
@@ -194,9 +215,10 @@
 	</xsl:template>
 	<xsl:template match="tei:note[@type = 'crit_app']">
 		<xsl:choose>
-			<xsl:when test="preceding-sibling::*[1][self::tei:anchor]">
+			<xsl:when test="preceding-sibling::*[1][self::tei:anchor[@ref='se']]">
 				<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])" />
 				<span type="crit_app" from="{'#s'||$num}" to="{'#s'||$num||'e'}">
+<!--					<xsl:comment>TODO ggf. bessere Kodierung</xsl:comment>-->
 					<xsl:apply-templates />
 				</span>
 			</xsl:when>
@@ -208,6 +230,18 @@
 		</xsl:choose>
 	</xsl:template>
 	
+	<!-- Paraphrase -->
+	<xsl:template match="hab:para[@place='start']">
+		<xsl:variable name="myId" select="generate-id()"/>
+		<xsl:variable name="endId" select="generate-id(following-sibling::hab:para[@place='end'][1])"/>
+		<seg type="paraphrase">
+			<xsl:apply-templates
+				select="following-sibling::node()[generate-id(preceding-sibling::hab:para[1]) = $myId
+				and generate-id(following-sibling::hab:para[1]) = $endId]"/>
+		</seg>
+	</xsl:template>
+	<xsl:template match="hab:para[@place = 'end']" />
+	
 	<xsl:template match="text()[not(ancestor::tei:note)]">
 		<xsl:choose>
 			<xsl:when test="ends-with(normalize-space(), '-')
@@ -218,12 +252,25 @@
 		    <xsl:when test="preceding-sibling::tei:lb[1]/preceding-sibling::*[1][self::tei:pb]
 		        and ends-with(normalize-space(preceding-sibling::tei:pb[1]/preceding-sibling::text()[1]), '-')
 		        and ends-with(normalize-space(), '-')">
+		    	<xsl:if test="preceding-sibling::node()[1][self::tei:note]">
+		    		<xsl:text> </xsl:text>
+		    	</xsl:if>
 		        <xsl:variable name="mid" select="substring-after(., ' ')" />
 		        <xsl:value-of select="wdb:substring-before-last($mid, ' ')" />
 		    </xsl:when>
 			<xsl:when test="ends-with(normalize-space(), '-')
 			    and following-sibling::node()[1][self::tei:lb or self::tei:pb]">
 				<xsl:value-of select="wdb:substring-before-last(., ' ')" />
+			</xsl:when>
+			<xsl:when test="preceding-sibling::*[1][self::tei:pb]
+				and ends-with(normalize-space(preceding-sibling::text()[1]), '-')
+				and ends-with(normalize-space(), '-')">
+				<xsl:variable name="mid" select="substring-after(., ' ')" />
+				<xsl:value-of select="wdb:substring-before-last($mid, ' ')" />
+			</xsl:when>
+			<xsl:when test="preceding-sibling::*[1][self::tei:pb]
+				and ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
+				<xsl:variable name="mid" select="substring-after(., ' ')" />
 			</xsl:when>
 			<xsl:when test="ends-with(normalize-space(), '-') and following-sibling::*[1][self::tei:note]">
 				<xsl:value-of select="wdb:substring-before-last(., ' ')" />

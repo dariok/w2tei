@@ -9,6 +9,7 @@
 <!--	<xsl:output indent="true"/>-->
 	
 	<xsl:include href="../string-pack.xsl"/>
+	<xsl:include href="bibl.xsl"/>
 	
 	<xsl:template match="/">
 		<xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
@@ -20,36 +21,6 @@
 			<xsl:value-of select="."/>
 		</ref>
 	</xsl:template>
-	
-  <xsl:template match="tei:bibl">
-    <bibl>
-      <xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
-      <xsl:variable name="self" select="normalize-space()" />
-      <xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
-      <xsl:attribute name="ref">
-        <xsl:value-of select="'#'||$entry[1]/@xml:id"/>
-      </xsl:attribute>
-      <xsl:value-of select="normalize-space(substring-after(text()[1], normalize-space($entry[1]/tei:abbr)))"/>
-      <xsl:sequence select="node()[not(position() = 1 or position()=last())]" />
-      <xsl:choose>
-        <xsl:when test="count(node()) = 1" />
-        <xsl:when test="node()[last()][self::text()]">
-          <xsl:variable name="text" select="text()[last()]"/>
-          <xsl:choose>
-            <xsl:when test="starts-with($text, ' ')">
-              <xsl:value-of select="' '||normalize-space($text)"/>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="normalize-space($text)"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:sequence select="node()[last()]" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </bibl>
-  </xsl:template>
 	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type = 'crit_app']]]">
 		<xsl:variable name="last" select="tokenize(., ' ')[last()]"/>
@@ -170,11 +141,19 @@
                 </del>
             </xsl:when>
             <xsl:when test="./node()[1][self::text()[ends-with(., ';')]]">
-                <xsl:variable name="witA">
-                    <xsl:value-of select="wdb:substring-before-if-ends(./text()[1], ';')"/>
-                </xsl:variable>
+            	<xsl:variable name="witA">
+            		<xsl:variable name="wits">
+            			<xsl:for-each select="tokenize(wdb:substring-before-if-ends(text()[1], ';'), ',')">
+            				<xsl:if test="string-length(.) &lt; 5">
+            					<xsl:value-of
+            						select="'#'||normalize-space(wdb:substring-before(wdb:substring-before(., ';'), '.'))||' '"/>
+            				</xsl:if>
+            			</xsl:for-each>
+            		</xsl:variable>
+            		<xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
+            	</xsl:variable>
                 <app>
-                    <lem wit="#{$witA}"/>
+                    <lem wit="{$witA}"/>
                     <xsl:apply-templates select="./tei:orig" />
                 </app>
             </xsl:when>
@@ -210,28 +189,30 @@
 		    <xsl:when test="normalize-space() = '.' and normalize-space(following-sibling::text()) = ''"/>
 			<xsl:when test="following-sibling::node()[self::text()]">
 			    <xsl:variable name="myId" select="generate-id()"/>
-			    <xsl:variable name="val" select="normalize-space(string-join(following-sibling::node()[not(self::tei:orig)
+			    <xsl:variable name="val" select="normalize-space(string-join(following-sibling::node()[not(self::tei:orig
+			    	or self::tei:note)
 			            and generate-id(preceding-sibling::tei:orig[1]) = $myId]))"/>
 				<rdg>
 				    <xsl:attribute name="wit">
 				        <xsl:variable name="wits">
 				            <xsl:for-each select="tokenize($val, ',')">
-				                <xsl:if test="string-length(normalize-space()) &lt; 5">
+<!--				                <xsl:if test="string-length(normalize-space()) &lt; 5">-->
     				                <xsl:value-of
     				                    select="'#'||normalize-space(wdb:substring-before(wdb:substring-before(., ';'), '.'))||' '"/>
-				                </xsl:if>
+				                <!--</xsl:if>-->
 				            </xsl:for-each>
 				        </xsl:variable>
 				        <xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
 				    </xsl:attribute>
 					<xsl:value-of select="normalize-space()"/>
-				    <xsl:for-each select="tokenize($val, ',')">
+				    <!--<xsl:for-each select="tokenize($val, ',')">
 				    	<xsl:if test="string-length(normalize-space()) &gt; 4">
 				            <note type="comment">
 				                <xsl:value-of select="normalize-space(wdb:substring-before(., ';'))"/>
 				            </note>
 				        </xsl:if>
-				    </xsl:for-each>
+				    </xsl:for-each>-->
+					<xsl:sequence select="following-sibling::*[1][self::tei:note]"/>
 				</rdg>
 			</xsl:when>
 			<xsl:otherwise>
@@ -240,6 +221,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	<xsl:template match="tei:note[@type='comment']"/>
 	
 	<xsl:template match="text()[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]
 		and following-sibling::tei:span]">
@@ -301,7 +283,14 @@
 			</xsl:when>-->
 			<xsl:when test="$span/node()[1][self::tei:orig]">
 				<app>
-					<lem wit="#A"><xsl:value-of select="."/></lem>
+					<lem wit="#A">
+						<xsl:analyze-string select="." regex="(\$)">
+							<xsl:matching-substring><lb/></xsl:matching-substring>
+							<xsl:non-matching-substring>
+								<xsl:value-of select="."/>
+							</xsl:non-matching-substring>
+						</xsl:analyze-string>
+					</lem>
 					<xsl:apply-templates select="$span/tei:orig" />
 				</app>
 			</xsl:when>
@@ -313,8 +302,9 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	<xsl:template match="tei:span" />
-	<xsl:template match="tei:anchor" />
+	<xsl:template match="tei:span[preceding-sibling::*[2][self::tei:anchor]]" />
+	<xsl:template match="tei:anchor[following-sibling::*[1][self::tei:anchor]]" />
+	<xsl:template match="tei:anchor[preceding-sibling::*[1][self::tei:anchor]]" />
 	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:ex]]">
 		<xsl:variable name="first" select="wdb:substring-before-last(., ' ')"/>

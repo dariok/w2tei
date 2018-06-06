@@ -38,6 +38,7 @@
                 <xsl:when test="wdb:is(., 'KSSchluformeln')">closer</xsl:when>
                 <xsl:when test="wdb:is(., 'KSBuchtitel')">titlePart</xsl:when>
                 <xsl:when test="wdb:is(., 'KSZwischenberschrift', 'p')">head</xsl:when>
+                <xsl:when test="wdb:is(., 'KSlistWit', 'p')">listWit</xsl:when>
                 <xsl:otherwise>p</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -46,6 +47,9 @@
             <xsl:if test="wdb:is(., 'KSSchluformeln') or wdb:is(., 'KSBuchtitel')">
                 <xsl:attribute name="rendition">
                     <xsl:choose>
+                        <xsl:when test="descendant::w:jc[@w:val='center']">
+                            <xsl:text>#c</xsl:text>
+                        </xsl:when>
                         <xsl:when test="not(descendant::w:ind)">
                             <xsl:text>#l</xsl:text>
                         </xsl:when>
@@ -77,7 +81,8 @@
     </xd:doc>
     <xsl:function name="hab:isP" as="xs:boolean">
         <xsl:param name="context"/>
-        <xsl:sequence select="if($context//w:sym/@w:char='F05E' or $context//w:t[contains(., '')])
+        <xsl:sequence select="if($context//w:sym/@w:char='F05E' or $context//w:t[contains(., '')]
+            or $context//w:t[contains(., '⏊')])
             then true() else false()"/>
     </xsl:function>
   

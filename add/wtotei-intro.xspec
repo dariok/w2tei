@@ -4,6 +4,7 @@
 	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
 	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
+	xmlns:hab="http://diglib.hab.de"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	stylesheet="wtotei-intro.xsl" xslt-version="3.0"
 	preserve-space="no">
@@ -198,6 +199,52 @@
 			</x:context>
 			<x:expect label="nur Datum in Klammern">
 				<date when="1519-03" cert="unknown" xmlns="http://www.tei-c.org/ns/1.0">1519, Ende März?</date>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="Ort unbek. und Datum teilw.">
+			<x:context mode="date">
+				<w:p w:rsidR="0069721C" w:rsidRPr="0069721C" w:rsidRDefault="0069721C" w:rsidP="0019425C">
+					<w:pPr>
+						<w:pStyle w:val="KSEE-Titel"/>
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="0069721C">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t>[Wittenberg],</w:t>
+					</w:r>
+					<w:r w:rsidR="00CF4F76">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> 1519</w:t>
+					</w:r>
+					<w:r w:rsidRPr="0069721C">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t>, [</w:t>
+					</w:r>
+					<w:r w:rsidR="00E516D3">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t>Anfang</w:t>
+					</w:r>
+					<w:r w:rsidRPr="0069721C">
+						<w:rPr>
+							<w:rFonts w:eastAsia="Times New Roman"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> Februar]</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label=".">
+				<placeName cert="unknown">Wittenberg</placeName>
+				<date when="1519-02">1519, <supplied>Anfang Februar</supplied></date>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
@@ -13981,7 +14028,7 @@
 							<w:t>.</w:t>
 						</w:r>
 					</w:p>
-					<!--<w:p w:rsidR="003A7BB3" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">
+					<w:p w:rsidR="003A7BB3" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">
 						<w:pPr>
 							<w:pStyle w:val="KSberschrift1"/>
 							<w:numPr>
@@ -13999,7 +14046,7 @@
 							</w:rPr>
 							<w:t>Entstehung und Inhalt</w:t>
 						</w:r>
-					</w:p>-->
+					</w:p>
 				</w:body>
 			</x:context>
 			<x:expect label="2 bibl und ein p">
@@ -14105,6 +14152,7 @@
 						<bibl>Barge, Karlstadt 1, 168–172</bibl>
 					</listBibl>
 				</div>
+				<div type="contents" />	
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="verschiedene Drucksignaturen">
@@ -15171,5 +15219,87 @@
 				</item>
 			</x:expect>
 		</x:scenario>
+	</x:scenario>
+	<x:scenario label="Fußnoten-Verweise">
+		<x:context>
+			<w:p w:rsidR="005E2CC1" w:rsidRPr="00D45477" w:rsidRDefault="005E2CC1" w:rsidP="001F6631">
+				<w:pPr>
+					<w:pStyle w:val="KSText"/>
+					<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+					<w:rPr>
+						<w:rFonts w:cs="Times New Roman"/>
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="001F6631">
+					<w:rPr>
+						<w:rFonts w:cs="Times New Roman"/>
+					</w:rPr>
+					<w:t>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.</w:t>
+				</w:r>
+				<w:bookmarkStart w:id="4" w:name="_Ref506220014"/>
+				<w:r>
+					<w:rPr>
+						<w:rStyle w:val="Endnotenzeichen"/>
+						<w:rFonts w:cs="Times New Roman"/>
+					</w:rPr>
+					<w:endnoteReference w:id="4"/>
+				</w:r>
+				<w:bookmarkEnd w:id="4"/>
+			</w:p>
+			<w:endnotes>
+				<w:endnote w:id="4">
+					<w:p w:rsidR="005E2CC1" w:rsidRDefault="005E2CC1">
+						<w:pPr>
+							<w:pStyle w:val="Endnotentext"/>
+						</w:pPr>
+						<w:r>
+							<w:rPr>
+								<w:rStyle w:val="Endnotenzeichen"/>
+							</w:rPr>
+							<w:endnoteRef/>
+						</w:r>
+						<w:r>
+							<w:t xml:space="preserve"> Genaue Beschreibung in </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00843B08">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Dommer</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00843B08">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t xml:space="preserve">, Lutherdrucke, </w:t>
+						</w:r>
+						<w:proofErr w:type="spellStart"/>
+						<w:r w:rsidRPr="00843B08">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>Orn</w:t>
+						</w:r>
+						<w:proofErr w:type="spellEnd"/>
+						<w:r w:rsidRPr="00843B08">
+							<w:rPr>
+								<w:rStyle w:val="KSbibliographischeAngabe"/>
+							</w:rPr>
+							<w:t>. 90</w:t>
+						</w:r>
+						<w:r>
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+				</w:endnote>
+			</w:endnotes>
+		</x:context>
+		<x:expect label="hab:bm">
+			<p>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.<hab:bm name="_Ref506220014"/>
+				<note type="footnote">Genaue Beschreibung in <bibl>Dommer, Lutherdrucke, Orn. 90</bibl>.</note>
+			</p>
+		</x:expect>
 	</x:scenario>
 </x:description>

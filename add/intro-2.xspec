@@ -63,4 +63,103 @@
       </listBibl>
     </x:expect>
   </x:scenario>
+
+  <x:scenario label="Alle Bestandteile">
+    <x:context>
+      <biblStruct type="imprint" xml:id="B">
+        <analytic>
+          <author>Luther, Martin</author>
+          <title>Eruditiſſimo viro Et pꝛeﬅātiſſi⸗‖mo.D.Andree Bodenſtein Carlſtadio ſyncerioꝛis Theo⸗‖logie aſſertoꝛi facile primario . Archidiacono Vuittē=‖bergen̄.p̄ceptoꝛi ac maioꝛi ſuo in chr̄o Mar.Lu. Au. ‖</title>
+        </analytic>
+        <monogr>
+          <author>Eck, Johannes; Luther, Martin</author>
+          <title>Diſputatio do⸗‖mini Johannis Eccij et ‖ Pa. Martini Luther in ‖ ﬅudio Lipſenſi futura. ‖ [H] ‖ [TE]</title>
+          <imprint>
+            <pubPlace cert="unknown">
+              <rs type="place">Leipzig</rs>
+            </pubPlace>
+            <publisher cert="unknown">
+              <rs type="person">Martin Landsberg</rs>
+            </publisher>
+            <date when="1519">1519</date>
+          </imprint>
+          <extent>4°, 4 Bl., A<hi rend="super">4</hi>. — H, TE.</extent>
+          <biblScope>fol. A3<hi rend="super">r</hi>‒A4<hi rend="super">r</hi>.</biblScope>
+        </monogr>
+        <idno type="siglum">B</idno>
+        <note type="copies">
+          <list>
+            <item n="editionsvorlage">
+              <label>[B<hi xmlns:hab="http://diglib.hab.de" rend="sub">1</hi>] ThULB Jena</label>
+              <idno type="signatur">Th 685</idno>
+              <ptr xmlns:hab="http://diglib.hab.de"
+                type="digitalisat"
+                target="http://archive.thulb.uni-jena.de/hisbest/rsc/viewer/HisBest_derivate_00003150/Wartburg_LS_0023_0009.tif"/>
+            </item>
+            <item>
+              <label>[B<hi xmlns:hab="http://diglib.hab.de" rend="sub">2</hi>] Bodleian Library Oxford</label>
+              <idno type="signatur">Tr. Luth. 86 (21)</idno>
+              <note xmlns:hab="http://diglib.hab.de">mit Druckvarianten</note>
+            </item>
+          </list>
+        </note>
+        <note type="references">
+          <listBibl>
+            <bibl>Benzing, Lutherbibliographie, Nr. 348.</bibl>
+            <bibl>VD 16 E 317.</bibl>
+          </listBibl>
+          <p>Vier unterschiedliche Zierleisten mit Pflanzenmotiven, Banderole und Genien<note type="footnote">Vgl. <bibl>Dommer, Lutherdrucke, Orn. 96</bibl>.</note>. Holzschnitt in der Mitte: Johannes der Täufer mit einer Tierhaut bekleidet, tragend ein Lamm mit Kreuzfahne auf einem Buch.<note type="footnote">Vgl. <bibl>Heyer, Lutherdrucke, 472 (Orn. 15)</bibl>.</note> 
+          </p>
+        </note>
+      </biblStruct>
+    </x:context>
+    <x:expect label="korrekt übernehmen">
+      <biblStruct type="imprint" xml:id="B">
+        <analytic>
+          <author>Luther, Martin</author>
+          <title>Eruditiſſimo viro Et pꝛeﬅātiſſi⸗‖mo.D.Andree Bodenſtein Carlſtadio ſyncerioꝛis Theo⸗‖logie aſſertoꝛi facile primario . Archidiacono Vuittē=‖bergen̄.p̄ceptoꝛi ac maioꝛi ſuo in chr̄o Mar.Lu. Au. ‖</title>
+        </analytic>
+        <monogr>
+          <author>Eck, Johannes; Luther, Martin</author>
+          <title>Diſputatio do⸗‖mini Johannis Eccij et ‖ Pa. Martini Luther in ‖ ﬅudio Lipſenſi futura. ‖ [H] ‖ [TE]</title>
+          <imprint>
+            <pubPlace cert="unknown">
+              <rs type="place">Leipzig</rs>
+            </pubPlace>
+            <publisher cert="unknown">
+              <rs type="person">Martin Landsberg</rs>
+            </publisher>
+            <date when="1519">1519</date>
+          </imprint>
+          <extent>4°, 4 Bl., A<hi rend="super">4</hi>. — H, TE.</extent>
+          <biblScope>fol. A3<hi rend="super">r</hi>‒A4<hi rend="super">r</hi>.</biblScope>
+        </monogr>
+        <idno type="siglum">B</idno>
+        <note type="copies">
+          <list>
+            <item n="editionsvorlage">
+              <label>[B<hi xmlns:hab="http://diglib.hab.de" rend="sub">1</hi>] ThULB Jena</label>
+              <idno type="signatur">Th 685</idno>
+              <ptr xmlns:hab="http://diglib.hab.de"
+                type="digitalisat"
+                target="http://archive.thulb.uni-jena.de/hisbest/rsc/viewer/HisBest_derivate_00003150/Wartburg_LS_0023_0009.tif"/>
+            </item>
+            <item>
+              <label>[B<hi xmlns:hab="http://diglib.hab.de" rend="sub">2</hi>] Bodleian Library Oxford</label>
+              <idno type="signatur">Tr. Luth. 86 (21)</idno>
+              <note xmlns:hab="http://diglib.hab.de">mit Druckvarianten</note>
+            </item>
+          </list>
+        </note>
+        <note type="references">
+          <listBibl>
+            <bibl ref="#benzing_lutherbibliographie_1966">, Nr. 348.</bibl>
+            <bibl ref="#vd16"> E 317.</bibl>
+          </listBibl>
+          <p>Vier unterschiedliche Zierleisten mit Pflanzenmotiven, Banderole und Genien<note type="footnote">Vgl. <bibl ref="#">Dommer, Lutherdrucke, Orn. 96</bibl>.</note>. Holzschnitt in der Mitte: Johannes der Täufer mit einer Tierhaut bekleidet, tragend ein Lamm mit Kreuzfahne auf einem Buch.<note type="footnote">Vgl. <bibl ref="#">Heyer, Lutherdrucke, 472 (Orn. 15)</bibl>.</note> 
+          </p>
+        </note>
+      </biblStruct>
+    </x:expect>
+  </x:scenario>
 </x:description>

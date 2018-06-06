@@ -4,18 +4,21 @@
   xmlns:math="http://www.w3.org/2005/xpath-functions/math"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns:wdb="https://github.com/dariok/wdbplus"
+  xmlns:hab="http://diglib.hab.de"
   xmlns="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="xs math"
   version="3.0">
+  
   <xsl:include href="styles-inc.xsl"/>
+  <xsl:include href="bibl.xsl"/>
   
   <xsl:template match="/">
     <xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
     <xsl:apply-templates select="node()" />
   </xsl:template>
   
-  <xsl:template match="text()">
-    <xsl:analyze-string select="." regex="[„“]([^”^“^&quot;]*)[”“&quot;]">
+  <xsl:template match="text()[not(preceding-sibling::*[1][self::hab:mark[@ref]])]">
+    <xsl:analyze-string select="." regex="[„“&quot;»«]([^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
       <xsl:matching-substring>
         <quote>
           <xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.\.\.\]">
@@ -39,34 +42,24 @@
     </xsl:analyze-string>
   </xsl:template>
   
-  <xsl:template match="tei:bibl">
-    <bibl>
-      <xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
-      <xsl:variable name="self" select="normalize-space()" />
-      <xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
-      <xsl:attribute name="ref">
-        <xsl:value-of select="'#'||$entry[1]/@xml:id"/>
-      </xsl:attribute>
-      <xsl:value-of select="normalize-space(substring-after(text()[1], normalize-space($entry[1]/tei:abbr)))"/>
-      <xsl:sequence select="node()[not(position() = 1 or position()=last())]" />
-      <xsl:choose>
-        <xsl:when test="count(node()) = 1" />
-        <xsl:when test="node()[last()][self::text()]">
-          <xsl:variable name="text" select="text()[last()]"/>
-          <xsl:choose>
-            <xsl:when test="starts-with($text, ' ')">
-              <xsl:value-of select="' '||normalize-space($text)"/>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="normalize-space($text)"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:sequence select="node()[last()]" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </bibl>
+  <xsl:template match="hab:mark[not(@ref)]" />
+  <xsl:template match="text()[preceding-sibling::*[1][self::hab:mark[@ref]]]" />
+  <xsl:template match="hab:mark[@ref]">
+    <xsl:variable name="ref" select="substring-before(substring-after(@ref, 'REF '), ' ')" />
+    <xsl:variable name="target" select="//hab:bm[@name = $ref]/following-sibling::*[1]" />
+    <xsl:choose>
+      <xsl:when test="$target/@type='footnote'">
+        <ptr type="wdb" target="#n{count($target/preceding::hab:bm)}" />
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="tei:rs">
+    <!-- TODO ref aus Register auslesen -->
+    <xsl:sequence select="."/>
+    <xsl:if test="following-sibling::node()[1][self::tei:rs]">
+      <xsl:text> </xsl:text>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="* | @* | comment()">

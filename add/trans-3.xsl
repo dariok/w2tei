@@ -19,6 +19,10 @@
 		</xsl:element>
 	</xsl:template>-->
 	
+	<xsl:template match="tei:lb[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]]">
+		<xsl:text> $ </xsl:text>
+	</xsl:template>
+	
 	<xsl:template match="text()">
 		<xsl:analyze-string select="." regex="&lt;.+&gt;">
 			<xsl:matching-substring>
@@ -35,6 +39,14 @@
 				</xsl:analyze-string>
 			</xsl:non-matching-substring>
 		</xsl:analyze-string>
+	</xsl:template>
+	
+	<xsl:template match="tei:rs">
+		<!-- TODO ref aus Register auslesen -->
+		<xsl:sequence select="."/>
+		<xsl:if test="following-sibling::node()[1][self::tei:rs]">
+			<xsl:text> </xsl:text>
+		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template match="tei:ref[@type='biblical' and not(preceding-sibling::node()[1][self::tei:ref[@type='biblical']])]">
@@ -74,6 +86,13 @@
 		mode="content">
 		<xsl:text> </xsl:text>
 		<xsl:apply-templates />
+	</xsl:template>
+	
+	<xsl:template match="tei:note[@type='comment' and preceding-sibling::tei:note]"/>
+	<xsl:template match="tei:note[@type='comment' and not(preceding-sibling::tei:note)]">
+		<note type="comment">
+			<xsl:sequence select="node() | following-sibling::tei:note/node()" />
+		</note>
 	</xsl:template>
 	
 	<xsl:template match="text()[parent::tei:note[@type='crit_app'] or parent::tei:span]" >
