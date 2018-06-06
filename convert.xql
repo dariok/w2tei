@@ -20,7 +20,7 @@ declare option exist:serialize "method=html5 media-type=text/html";
 						{
 							for $file in doc('adds.xml')//entry
 								return
-									<option value="{$file/@file}">{$file/@label}</option>
+									<option value="{$file/@file}">{xs:string($file/@label)}</option>
 						}
 					</select>
 				</fieldset>
