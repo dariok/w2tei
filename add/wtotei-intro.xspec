@@ -11230,7 +11230,7 @@
 								ausführlichen Brief (EE 90 [= Nr. 113]). Darin erwähnt Karlstadt, dass er „nuper in Concione quadam“ [neulich in einer gewissen Predigt] diese Thematik reflektiert habe, und dem Drucker eine Schrift „zugeschoben“ habe, die das Thema behandelt.</p></div>
 			</x:expect>
 		</x:scenario>
-		<x:scenario label="EE 110: Druck mit Kokmmentar">
+		<x:scenario label="EE 110: Druck mit Kommentar">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="00CE2F47" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">

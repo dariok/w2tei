@@ -94,7 +94,7 @@
 			</xsl:variable>
 			<xsl:for-each select="$idTemp/node()">
 				<xsl:choose>
-					<xsl:when test=". instance of text() and position() = 1 and ends-with(., ':]')">
+					<xsl:when test=". instance of text() and position() = 1 and ends-with(normalize-space(), ':]')">
 						<xsl:value-of select="substring-before(substring-after(., '['), ':]')"/>
 					</xsl:when>
 					<xsl:when test=". instance of text() and position() = 1">
