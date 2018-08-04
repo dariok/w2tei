@@ -10,6 +10,7 @@
 	exclude-result-prefixes="#all" version="3.0">
 	<!-- neu für Projekt Rist, 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	<!-- übernommen für Karlstadt Einleitungen; 2017-05-03 DK -->
+	<!-- Bearbeiter ab 2018-08-01: DK kampkaspar@baukast.digital -->
 	
 	<xsl:include href="ks-common.xsl" />
 	
@@ -80,15 +81,33 @@
 		<xsl:variable name="struct" select="current() | 
 			current()/following::w:p intersect $end/preceding::w:p | $end" />
 		<xsl:variable name="idNo">
-			<xsl:analyze-string select="wdb:string(w:r[hab:isSigle(.)])"
+			<!-- vorher vmtl. um zu lange Markierungen abzufangen -->
+			<!--<xsl:analyze-string select="wdb:string(w:r[hab:isSigle(.)])"
 				regex="\[(\w+).?\]">
 				<xsl:matching-substring>
 					<xsl:value-of select="regex-group(1)"/>
 				</xsl:matching-substring>
-			</xsl:analyze-string>
+			</xsl:analyze-string>-->
+			<!-- neu 2018-08-04 DK -->
+			<xsl:variable name="idTemp">
+				<xsl:apply-templates select="w:r[hab:isSigle(.)]" />
+			</xsl:variable>
+			<xsl:for-each select="$idTemp/node()">
+				<xsl:choose>
+					<xsl:when test=". instance of text() and position() = 1">
+						<xsl:value-of select="substring-after(., '[')"/>
+					</xsl:when>
+					<xsl:when test=". instance of text() and position() = last()">
+						<xsl:value-of select="substring-before(., ':')"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:sequence select="."></xsl:sequence>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>
 		</xsl:variable>
 		<biblStruct type="imprint">
-			<xsl:attribute name="xml:id" select="$idNo" />
+			<xsl:attribute name="xml:id" select="normalize-space($idNo)" />
 			<xsl:variable name="elem">
 				<xsl:choose>
 					<xsl:when test="following-sibling::w:p[2][wdb:starts(., 'in')]">
@@ -129,7 +148,7 @@
 						</xsl:call-template>
 					</monogr>
 				</xsl:if>
-				<idno type="siglum"><xsl:value-of select="$idNo" /></idno>
+				<idno type="siglum"><xsl:sequence select="$idNo" /></idno>
 				<note type="copies">
 					<list>
 						<xsl:apply-templates select="$struct[wdb:starts(., 'Editionsv')
