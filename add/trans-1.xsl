@@ -35,6 +35,15 @@
             <xsl:apply-templates select="w:p[descendant::w:numPr]"/>
         </list>
     </xsl:template>
+    
+    <!--<xsl:template match="tei:p">
+        <xsl:text>
+    </xsl:text>
+        <p>
+            <xsl:apply-templates select="@*|node()" />
+        </p>
+    </xsl:template>-->
+    
     <xsl:template match="w:p[descendant::w:numPr]">
         <xsl:variable name="numId" select="descendant::w:numPr/w:numId/@w:val"/>
         <xsl:variable name="ilvl" select="descendant::w:numPr/w:ilvl/@w:val"/>
@@ -229,10 +238,23 @@
         <xsl:apply-templates select="w:t | w:footnoteReference | w:endnoteReference"/>
     </xsl:template>
     
-    <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')]">
+    <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
+        and not(descendant::w:vertAlign)]">
         <note type="comment">
             <xsl:apply-templates select="w:t"/>
         </note>
+    </xsl:template>
+    <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
+        and descendant::w:vertAlign]">
+        <hi>
+            <xsl:attribute name="rend">
+                <xsl:choose>
+                    <xsl:when test="descendant::w:vertAlign/@w:val='subscript'">sub</xsl:when>
+                    <xsl:otherwise>super</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:apply-templates select="w:t"/>
+        </hi>
     </xsl:template>
     <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and descendant::w:i/@w:val='0']">
          <note type="comment"><orig><xsl:apply-templates select="w:t"/></orig></note>

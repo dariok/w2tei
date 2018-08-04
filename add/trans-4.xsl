@@ -37,7 +37,7 @@
 		</xsl:if>
 		
 		<xsl:choose>
-			<xsl:when test="starts-with($note, 'folgt')">
+			<xsl:when test="starts-with($note, 'folgt') and $note/tei:orig">
 				<xsl:variable name="wit" select="normalize-space($note/tei:orig/following-sibling::text())"/>
 				<xsl:variable name="val" select="normalize-space($note/tei:orig)"/>
 				<xsl:value-of select="$last"/>
