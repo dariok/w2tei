@@ -99,7 +99,7 @@
 		</x:context>
 		<x:expect label="zusammengezogen">
 			<note type="crit_app">
-				<orig> er </orig>B;<orig> ex </orig>C <note type="comment">mit hsl.
+				 <orig>er</orig> B; <orig>ex</orig> C <note type="comment">mit hsl.
 					Korrektur <orig>et</orig></note></note>
 		</x:expect>
 	</x:scenario>

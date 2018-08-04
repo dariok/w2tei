@@ -270,7 +270,7 @@
 			</xsl:when>
 			<xsl:when test="preceding-sibling::*[1][self::tei:pb]
 				and ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
-				<xsl:variable name="mid" select="substring-after(., ' ')" />
+				<!--<xsl:variable name="mid" select="substring-after(., ' ')" />-->
 			</xsl:when>
 			<xsl:when test="ends-with(normalize-space(), '-') and following-sibling::*[1][self::tei:note]">
 				<xsl:value-of select="wdb:substring-before-last(., ' ')" />
