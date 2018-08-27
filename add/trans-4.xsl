@@ -321,7 +321,11 @@
 		or (preceding-sibling::*[2][self::tei:w] and preceding-sibling::*[3][self::tei:anchor])]" />
 	<xsl:template match="tei:span">
 		<span>
-			<xsl:apply-templates select="@* | tei:orig" />
+			<xsl:apply-templates select="@*" />
+			<xsl:choose>
+				<xsl:when test="tei:orig"><xsl:apply-templates select="tei:org"/></xsl:when>
+				<xsl:otherwise><xsl:apply-templates /></xsl:otherwise>
+			</xsl:choose>
 		</span>
 	</xsl:template>
 	
