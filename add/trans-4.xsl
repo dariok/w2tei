@@ -237,7 +237,7 @@
 	</xsl:template>
 	<xsl:template match="tei:note[@type='comment']"/>
 	
-	<xsl:template match="text()[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]
+	<xsl:template match="text()[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[not(self::tei:w)][1][self::tei:anchor]
 		and following-sibling::tei:span]">
 		<xsl:variable name="span" select="following-sibling::tei:span[1]"/>
 		
@@ -304,6 +304,7 @@
 								<xsl:value-of select="."/>
 							</xsl:non-matching-substring>
 						</xsl:analyze-string>
+						<xsl:sequence select="following-sibling::node()[1][self::tei:w]" />
 					</lem>
 					<xsl:apply-templates select="$span/tei:orig" />
 				</app>
@@ -316,9 +317,14 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	<xsl:template match="tei:span[preceding-sibling::*[2][self::tei:anchor]]" />
-	<xsl:template match="tei:anchor[following-sibling::*[1][self::tei:anchor]]" />
-	<xsl:template match="tei:anchor[preceding-sibling::*[1][self::tei:anchor]]" />
+	<xsl:template match="tei:span[preceding-sibling::*[2][self::tei:anchor]
+		or (preceding-sibling::*[2][self::tei:w] and preceding-sibling::*[3][self::tei:anchor])]" />
+	<xsl:template match="tei:anchor[following-sibling::*[1][self::tei:anchor]
+		or (following-sibling::*[1][self::tei:w] and following-sibling::*[2][self::tei:anchor])]" />
+	<xsl:template match="tei:anchor[preceding-sibling::*[1][self::tei:anchor]
+		or (preceding-sibling::*[1][self::tei:w] and preceding-sibling::*[2][self::tei:anchor])]" />
+	<xsl:template match="tei:w[preceding-sibling::*[1][self::tei:anchor]
+		and following-sibling::*[1][self::tei:anchor]]" />
 	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:ex]]">
 		<xsl:variable name="first" select="wdb:substring-before-last(., ' ')"/>
