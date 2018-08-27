@@ -319,6 +319,12 @@
 	</xsl:template>
 	<xsl:template match="tei:span[preceding-sibling::*[2][self::tei:anchor]
 		or (preceding-sibling::*[2][self::tei:w] and preceding-sibling::*[3][self::tei:anchor])]" />
+	<xsl:template match="tei:span">
+		<span>
+			<xsl:apply-templates select="@* | tei:orig" />
+		</span>
+	</xsl:template>
+	
 	<xsl:template match="tei:anchor[following-sibling::*[1][self::tei:anchor]
 		or (following-sibling::*[1][self::tei:w] and following-sibling::*[2][self::tei:anchor])]" />
 	<xsl:template match="tei:anchor[preceding-sibling::*[1][self::tei:anchor]
