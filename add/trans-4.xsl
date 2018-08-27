@@ -193,18 +193,32 @@
 			    	or self::tei:note)
 			            and generate-id(preceding-sibling::tei:orig[1]) = $myId]))"/>
 				<rdg>
+					<xsl:variable name="vals" select="tokenize($val, ' ')" />
+					<xsl:if test="count($vals[string-length() &lt; 5]) &gt; 0">
 				    <xsl:attribute name="wit">
 				        <xsl:variable name="wits">
-				            <xsl:for-each select="tokenize($val, ',')">
-<!--				                <xsl:if test="string-length(normalize-space()) &lt; 5">-->
+				        	<xsl:for-each select="$vals[string-length() &lt; 5]">
+				                <xsl:if test="string-length(normalize-space()) &lt; 5">
     				                <xsl:value-of
-    				                    select="'#'||normalize-space(wdb:substring-before(wdb:substring-before(., ';'), '.'))||' '"/>
-				                <!--</xsl:if>-->
+    				                    select="'#'||normalize-space(wdb:substring-before(translate(., ',;', ''), '.'))||' '"/>
+				                </xsl:if>
 				            </xsl:for-each>
 				        </xsl:variable>
 				        <xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
 				    </xsl:attribute>
-					<xsl:value-of select="normalize-space()"/>
+					</xsl:if>
+					<xsl:if test="count($vals[string-length() &gt; 5]) &gt; 0">
+						<xsl:attribute name="rend">
+							<xsl:for-each select="$vals[string-length() &gt; 5]">
+								<xsl:value-of select="normalize-space(wdb:substring-before-if-ends(., ';'))"/>
+								<xsl:if test="not(position() = last())"><xsl:text> </xsl:text></xsl:if>
+							</xsl:for-each>
+						</xsl:attribute>
+					</xsl:if>
+					<xsl:choose>
+						<xsl:when test="normalize-space() = '@'" />
+						<xsl:otherwise><xsl:value-of select="normalize-space()"/></xsl:otherwise>
+					</xsl:choose>
 				    <!--<xsl:for-each select="tokenize($val, ',')">
 				    	<xsl:if test="string-length(normalize-space()) &gt; 4">
 				            <note type="comment">
@@ -281,7 +295,7 @@
 					</xsl:choose>
 				</app>
 			</xsl:when>-->
-			<xsl:when test="$span/node()[1][self::tei:orig]">
+			<xsl:when test="$span/node()[not(normalize-space() = '')][1][self::tei:orig]">
 				<app>
 					<lem wit="#A">
 						<xsl:analyze-string select="." regex="(\$)">

@@ -142,6 +142,61 @@
 		</x:scenario>
 	</x:scenario>
 	
+	<x:scenario label="komplexere rdg">
+		<x:context>
+			<p><lb/><anchor type="crit_app" xml:id="s12"/>Scopus Disputationis.<anchor type="crit_app"
+				xml:id="s12e"/><span type="crit_app" from="#s12" to="#s12e">fehlt a<hi rend="sub">1</hi>
+					<orig>;</orig> linksbündig hinzugefügt a<hi rend="sub">2</hi>
+				</span><anchor type="crit_app" xml:id="s13"/> Liberum arbitrium.<anchor type="crit_app"
+					xml:id="s13e"/><span type="crit_app" from="#s13" to="#s13e">
+						<orig>Liberum arbitrium</orig> A<hi rend="sub">5</hi>; <orig>lberum ar</orig> a<hi
+							rend="sub">1</hi>; <orig>@</orig> korrigiert a<hi rend="sub">2</hi>;
+						<orig>Eckius &lt;contra?&gt; 11 conclusio&lt;nem&gt; doc Corol&lt;ostadii&gt; de libero
+							arbitrio</orig> a<hi rend="sub">2</hi> AuRd-Gl; <orig>2 hora</orig> A<hi rend="sub"
+								>5Lp</hi> InRd-Gl </span>
+			</p>
+			<p><lb/><anchor type="crit_app" xml:id="s15"/>Con<ex>tra</ex> XI.<anchor type="crit_app"
+				xml:id="s15e"/><note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n2"
+				/>.</note><note type="crit_app">
+					<orig>contra 11</orig> a<hi rend="sub">1</hi> zentriert; <orig>questio 14</orig> A<hi
+						rend="sub">5Lp</hi> AuRd-Gl</note> risit<note type="crit_app">fehlt a<hi rend="sub"
+							>1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes,
+								das des Druckes zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte –
+								registriert. Diese Anmerkung, die ein Einzelnfall auch im Druck ist, fehlt in dem
+								Freiberger Manuskript. </note></p>
+		</x:context>
+		<x:expect label="langer Text nicht in @wit">
+			<p>
+			<lb/>
+			<anchor type="crit_app" xml:id="s12"/>Scopus Disputationis.<anchor type="crit_app"
+				xml:id="s12e"/><span type="crit_app" from="#s12" to="#s12e">fehlt a<hi rend="sub">1</hi>
+					<orig>;</orig> linksbündig hinzugefügt a<hi rend="sub">2</hi></span>
+				<app>
+					<lem wit="#A"> Liberum arbitrium.</lem>
+					<rdg wit="#A5">Liberum arbitrium</rdg>
+					<rdg wit="#a1">lberum ar</rdg>
+					<rdg wit="#a2"
+						rend="korrigiert" />
+					<rdg wit="#a2"
+						rend="AuRd-Gl">Eckius &lt;contra?&gt; 11 conclusio&lt;nem&gt; doc Corol&lt;ostadii&gt; de libero arbitrio</rdg>
+							<rdg wit="#A5Lp"
+								rend="InRd-Gl">2 hora</rdg>
+				</app> </p>
+			<p>
+				<lb/>
+				<anchor type="crit_app" xml:id="s15"/><expan>Con<ex>tra</ex></expan> XI.<anchor type="crit_app"
+					xml:id="s15e"/><note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n2"/>.</note><app>
+					<lem wit="#A"/>
+						<rdg wit="#a1" rend="zentriert">contra 11</rdg>
+						<rdg wit="#A5Lp" rend="AuRd-Gl">questio 14</rdg>
+				</app>   risit<note type="crit_app">fehlt a<hi rend="sub">1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes,
+								das des Druckes zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte –
+								registriert. Diese Anmerkung, die ein Einzelnfall auch im Druck ist, fehlt in dem
+								Freiberger Manuskript. </note>
+			</p>
+		</x:expect>
+	</x:scenario>
+	
 	<x:scenario label="text vor krit. FN">
 		<x:context>
 			<p>
