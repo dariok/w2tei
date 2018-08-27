@@ -323,7 +323,7 @@
 		<span>
 			<xsl:apply-templates select="@*" />
 			<xsl:choose>
-				<xsl:when test="tei:orig"><xsl:apply-templates select="tei:org"/></xsl:when>
+				<xsl:when test="tei:orig"><xsl:apply-templates select="node()[not(preceding-sibling::tei:orig)] | tei:orig"/></xsl:when>
 				<xsl:otherwise><xsl:apply-templates /></xsl:otherwise>
 			</xsl:choose>
 		</span>
