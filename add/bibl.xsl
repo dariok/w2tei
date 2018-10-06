@@ -25,7 +25,14 @@
           <xsl:value-of select="normalize-space($start)"/>
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:sequence select="node()[not(position() = 1 or position()=last())]" />
+    	<xsl:choose>
+    		<xsl:when test="string-length($start) = 0">
+    			<xsl:sequence select="node()[not(position() = 1 or position()=last() or self::tei:hi[@rend = 'super'])]" />
+    		</xsl:when>
+    		<xsl:otherwise>
+    			<xsl:sequence select="node()[not(position() = 1 or position()=last())]" />
+    		</xsl:otherwise>
+    	</xsl:choose>
       <xsl:choose>
         <xsl:when test="count(node()) = 1" />
         <xsl:when test="node()[last()][self::text()]">
