@@ -136,22 +136,42 @@
 	                <xsl:text> </xsl:text>
 	            </xsl:if>
 	        </xsl:when>
+			<xsl:when test="preceding-sibling::*[1][self::tei:note[@place]]
+				and preceding-sibling::*[2][self::tei:rs][ends-with(., '-')]
+				and following-sibling::*[1][self::tei:rs]">
+				<rs>
+					<xsl:apply-templates select="preceding-sibling::tei:rs[1]/@type" />
+					<xsl:value-of select="substring-before(preceding-sibling::tei:rs[1], '-')" />
+					<xsl:sequence select="preceding-sibling::tei:note[1]" />
+					<xsl:sequence select="." />
+					<xsl:value-of select="following-sibling::tei:rs[1]" />
+				</rs>
+			</xsl:when>
 			<xsl:otherwise>
 				<lb/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
     
-    <xsl:template match="tei:rs[ends-with(., '-') and following-sibling::*[1][self::tei:lb]
-        and following-sibling::*[2][self::tei:rs]]"/>
-    <xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:lb]
-        and preceding-sibling::*[2][self::tei:rs[ends-with(., '-')]]]" />
+	<xsl:template match="tei:rs[ends-with(., '-')
+		and following-sibling::*[1][self::tei:lb]
+		and following-sibling::*[2][self::tei:rs]]"/>
+	<xsl:template match="tei:rs[ends-with(., '-')
+		and following-sibling::*[1][self::tei:note[@place]]
+		and following-sibling::*[2][self::tei:lb]
+		and following-sibling::*[3][self::tei:rs]]"/>
+	<xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:lb]
+		and preceding-sibling::*[2][self::tei:rs[ends-with(., '-')]]]" />
+	<xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:lb]
+		and preceding-sibling::*[2][self::tei:note[@place]]
+		and preceding-sibling::*[3][self::tei:rs[ends-with(., '-')]]]" />
     
     <xsl:template match="tei:pb[ends-with(normalize-space(preceding-sibling::text()[1]), '-')]" />
 	
 	<xsl:template match="tei:note[@place]">
 		<xsl:choose>
 			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::text()[1], '-')"/>
+			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::node()[1][self::tei:rs], '-')"/>
 			<xsl:otherwise>
 				<xsl:sequence select="." />
 			</xsl:otherwise>
