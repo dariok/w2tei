@@ -88,10 +88,19 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	
-	<xsl:template match="tei:note[@type='comment' and preceding-sibling::tei:note]"/>
+	<xsl:template match="tei:note[@type='comment' and preceding-sibling::node()[1][self::tei:note]]"/>
 	<xsl:template match="tei:note[@type='comment' and not(preceding-sibling::tei:note)]">
 		<note type="comment">
-			<xsl:sequence select="node() | following-sibling::tei:note/node()" />
+			<xsl:sequence select="node()" />
+			<xsl:choose>
+				<xsl:when test="following-sibling::*[not(self::tei:note)]">
+					<xsl:sequence select="following-sibling::tei:note/node()
+						intersect following-sibling::tei:*[not(self::tei:note)]/preceding-sibling::*" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:sequence select="following-sibling::tei:note/node()" />
+				</xsl:otherwise>
+			</xsl:choose>
 		</note>
 	</xsl:template>
 	
@@ -106,7 +115,14 @@
 	</xsl:template>
 	<xsl:template match="tei:hi[@style='font-style: italic;'][parent::tei:note[@type='crit_app']
 		or parent::tei:span]" >
-		<xsl:apply-templates />
+		<xsl:choose>
+			<xsl:when test="normalize-space() = ''">
+				<xsl:text> </xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<!--<xsl:template match="tei:anchor[not(ends-with(@xml:id, 'e'))]">

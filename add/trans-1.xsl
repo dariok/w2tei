@@ -20,7 +20,7 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="w:footnotes | w:endnotes | w:numbering | w:comments" />
+    <xsl:template match="w:footnotes | w:numbering | w:comments" />
     
     <xsl:template match="w:p[not(w:r)]" />
     
@@ -207,10 +207,12 @@
         <hab:para place="end" />
     </xsl:template>
     
-    <!-- kritische Anmerkungen -->
-    <xsl:template match="w:r[descendant::w:footnoteReference]">
-        <xsl:apply-templates select="w:footnoteReference" />
-    </xsl:template>
+	<!-- kritische Anmerkungen -->
+	<xsl:template match="w:r[descendant::w:footnoteReference
+		and not(wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))]">
+		<xsl:apply-templates select="w:footnoteReference" />
+	</xsl:template>
+	
     <xsl:template match="w:footnoteReference">
         <note type="crit_app">
             <xsl:variable name="wid" select="@w:id"/>
@@ -232,11 +234,12 @@
         <anchor type="crit_app" ref="se" />
     </xsl:template>
     <!-- es kommen krit. oder Sachanmerkungen innerhalb dieses Teils vor -->
-    <xsl:template match="w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
-        and following::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
-        and preceding::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
-        <xsl:apply-templates select="w:t | w:footnoteReference | w:endnoteReference"/>
-    </xsl:template>
+	<xsl:template match="w:r[not(wdb:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))
+		and wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
+		and following::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
+		and preceding::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
+		<xsl:apply-templates select="w:t | w:footnoteReference | w:endnoteReference"/>
+	</xsl:template>
     
     <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
         and not(descendant::w:vertAlign)]">

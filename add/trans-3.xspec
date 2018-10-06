@@ -90,17 +90,63 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
-
-	<x:scenario label="rdg mit kommentar">
-		<x:context>
-			<note type="crit_app"> er <hi style="font-style: italic;">B</hi><hi
-				style="font-style: italic;">;</hi> ex <hi style="font-style: italic;">C </hi><note type="comment">mit hsl.
-					Korrektur </note><note type="comment"><orig>et</orig></note></note>
-		</x:context>
-		<x:expect label="zusammengezogen">
-			<note type="crit_app">
-				 <orig>er</orig> B; <orig>ex</orig> C <note type="comment">mit hsl.
-					Korrektur <orig>et</orig></note></note>
-		</x:expect>
+	
+	<x:scenario label="rdg">
+		<x:scenario label="... mit kommentar">
+			<x:context>
+				<note type="crit_app"> er <hi style="font-style: italic;">B</hi><hi
+					style="font-style: italic;">;</hi> ex <hi style="font-style: italic;">C </hi><note type="comment">mit hsl.
+						Korrektur </note><note type="comment"><orig>et</orig></note></note>
+			</x:context>
+			<x:expect label="zusammengezogen">
+				<note type="crit_app">
+					<orig>er</orig> B; <orig>ex</orig> C <note type="comment">mit hsl.
+						Korrektur <orig>et</orig></note></note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="... mit mehreren Kommentaren">
+			<x:context>
+				<span type="crit_app" from="#s2" to="#s2e"> 
+					<hi style="font-style: italic;">A</hi>
+					<hi style="font-style: italic;">
+						<hi rend="sub">1-4</hi>
+					</hi>
+					<hi style="font-style: italic;">;</hi> XXvii die Junii hora secunda 1519 <hi style="font-style: italic;">A</hi>
+					<hi style="font-style: italic;">
+						<hi rend="sub">5</hi>
+					</hi>
+					<hi style="font-style: italic;">;</hi>
+					<hi style="font-style: italic;"> </hi>Egregius Doctor carolstadius<hi style="font-style: italic;"> a</hi>
+					<hi style="font-style: italic;">
+						<hi rend="sub">1</hi>
+					</hi>
+					<hi style="font-style: italic;">;</hi> Anno 1519<hi style="font-style: italic;"> </hi>
+					<hi style="font-style: italic;">hinzugefügt </hi>
+					<hi style="font-style: italic;">a</hi>
+					<hi style="font-style: italic;">
+						<hi rend="sub">3</hi>
+					</hi>
+					<hi style="font-style: italic;">;</hi>
+					<hi style="font-style: italic;"> </hi>27 die Juni&lt;i&gt;<hi style="font-style: italic;"> </hi>
+					<hi style="font-style: italic;">a</hi>
+					<hi style="font-style: italic;">
+						<hi rend="sub">3</hi>
+					</hi>
+					<hi style="font-style: italic;"> </hi>
+					<note type="comment">AuRd-Gl</note>
+					<hi style="font-style: italic;">;</hi> hora s&lt;ecunda&gt; <hi style="font-style: italic;">a</hi>
+					<hi style="font-style: italic;">
+						<hi rend="sub">2</hi>
+					</hi>
+					<hi style="font-style: italic;"> </hi>
+					<note type="comment">AuRd-Gl</note>
+				</span>
+			</x:context>
+			<x:expect label="je einmal AuRd-Gl">
+				<span type="crit_app" from="#s2" to="#s2e">A<hi rend="sub">1-4</hi>; <orig>XXvii die Junii hora secunda 1519</orig> A<hi rend="sub">5</hi>;  <orig>Egregius Doctor carolstadius</orig> a<hi rend="sub">1</hi>; <orig>Anno 1519</orig> hinzugefügt a<hi rend="sub">3</hi>;  <orig>27 die Juni&lt;i&gt;</orig> a<hi rend="sub">3</hi>
+					<note type="comment">AuRd-Gl</note>; <orig>hora s&lt;ecunda&gt;</orig> a<hi rend="sub">2</hi>
+					<note type="comment">AuRd-Gl</note></span>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>
