@@ -176,4 +176,13 @@
       </biblStruct>
     </x:expect>
   </x:scenario>
+	
+	<x:scenario label="rs">
+		<x:context>
+			<note type="footnote">Vgl. den Brief an <rs type="person"><!--TODO ref eintragen-->Johann</rs><rs type="person"><!--TODO ref eintragen-->es</rs><rs type="person"><!--TODO ref eintragen--> Lang</rs> vom 26.10.1516 (<bibl>WA 1, 73,27f. Nr. 28</bibl>; <bibl>Walch<hi rend="super">2</hi> 21, 561</bibl>).</note>
+		</x:context>
+		<x:expect label="Johannes Lang zusammengezogen">
+			<note type="footnote">Vgl. den Brief an <rs type="person">Johannes  Lang</rs> vom 26.10.1516 (<bibl ref="#wa"> 1, 73,27f. Nr. 28</bibl>; <bibl ref="#walch2_1986"> 21, 561</bibl>).</note>
+		</x:expect>
+	</x:scenario>
 </x:description>

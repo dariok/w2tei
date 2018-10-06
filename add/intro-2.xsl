@@ -6,7 +6,7 @@
   xmlns:wdb="https://github.com/dariok/wdbplus"
   xmlns:hab="http://diglib.hab.de"
   xmlns="http://www.tei-c.org/ns/1.0"
-  exclude-result-prefixes="xs math"
+  exclude-result-prefixes="#all"
   version="3.0">
   
   <xsl:include href="styles-inc.xsl"/>
@@ -56,10 +56,20 @@
   
   <xsl:template match="tei:rs">
     <!-- TODO ref aus Register auslesen -->
-    <xsl:sequence select="."/>
-    <xsl:if test="following-sibling::node()[1][self::tei:rs]">
-      <xsl:text> </xsl:text>
-    </xsl:if>
+  	<xsl:choose>
+  		<xsl:when test="preceding-sibling::node()[1][self::tei:rs]" />
+  		<xsl:when test = "following-sibling::node()[1][self::tei:rs]">
+  			<rs>
+  				<xsl:sequence select="@type" />
+  				<xsl:value-of select="."/>
+  				<xsl:value-of select="following-sibling::tei:rs intersect
+  					following-sibling::node()[not(self::tei:rs)][1]/preceding-sibling::node()"/>
+  			</rs>
+  		</xsl:when>
+  		<xsl:otherwise>
+  			<xsl:sequence select="."/>
+  		</xsl:otherwise>
+  	</xsl:choose>
   </xsl:template>
   
   <xsl:template match="* | @* | comment()">
