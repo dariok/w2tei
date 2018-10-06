@@ -74,6 +74,14 @@
 				<lb/>heldet. Nu die weil er die schrifft gar umb keret/ so sollen
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="geteiltes rs">
+			<x:context>
+				<p>dehinc Quod b'eatus' <rs type="person"><!--TODO ref eintragen-->Hiero</rs><rs type="person"><!--TODO ref eintragen-->'</rs><rs type="person">ny</rs><rs type="person"><!--TODO ref eintragen-->mus</rs><rs type="person"><!--TODO ref eintragen-->'</rs> ad</p>
+			</x:context>
+			<x:expect label="ein rs">
+				<p>dehinc Quod b<ex>eatus</ex> <rs type="person">Hiero'nymus'</rs> ad</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="Ersetzungen">

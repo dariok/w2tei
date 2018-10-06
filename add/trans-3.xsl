@@ -43,11 +43,12 @@
 	
 	<xsl:template match="tei:rs">
 		<!-- TODO ref aus Register auslesen -->
-		<xsl:sequence select="."/>
-		<xsl:if test="following-sibling::node()[1][self::tei:rs]">
-			<xsl:text> </xsl:text>
-		</xsl:if>
+		<rs type="{@type}">
+			<xsl:value-of select="normalize-space() || string-join(following-sibling::tei:rs intersect
+				following-sibling::text()[1]/preceding-sibling::tei:rs, '')" />
+		</rs>
 	</xsl:template>
+	<xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:rs]]" />
 	
 	<xsl:template match="tei:ref[@type='biblical' and not(preceding-sibling::node()[1][self::tei:ref[@type='biblical']])]">
 		<xsl:variable name="myId" select="generate-id()" />
