@@ -223,21 +223,30 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
-	
-	<x:scenario label="Worttrennung">
-		<x:context>
-			<p>
-				<lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
-				<lb/>befelh gottis/ der genugsamlich in heyliger schrifft an-
-				<lb/>getzeigt und begriffen.
-			</p>
-		</x:context>
-		<x:expect label="w mit lb">
-			<p>
-				<lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
-				<lb/>befelh gottis/ der genugsamlich in heyliger schrifft <w>an<lb break="no"/>getzeigt</w> und begriffen.
-			</p>
-		</x:expect>
+	<x:scenario label="Trennungen">
+		<x:scenario label="Worttrennung">
+			<x:context>
+				<p>
+					<lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
+					<lb/>befelh gottis/ der genugsamlich in heyliger schrifft an-
+					<lb/>getzeigt und begriffen.
+				</p>
+			</x:context>
+			<x:expect label="w mit lb">
+				<p>
+					<lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
+					<lb/>befelh gottis/ der genugsamlich in heyliger schrifft <w>an<lb break="no"/>getzeigt</w> und begriffen.
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="trennung mit Marginalie">
+			<x:context>
+				<p>istis: or-<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb/>natissimi viri:</p>
+			</x:context>
+			<x:expect label="w mit Marginalien drin">
+				<p>istis: <w>or<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb break="no"/>natissimi</w> viri:</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="Absätze">

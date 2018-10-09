@@ -172,7 +172,7 @@
 		<xsl:variable name="inter" select="following-sibling::text() intersect
 			following-sibling::tei:lb[1]/preceding-sibling::node()"/>
 		<xsl:choose>
-			<xsl:when test="count($inter) = 0" />
+			<xsl:when test="ends-with(preceding-sibling::text()[1], '-') and count($inter) = 0" />
 			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::text()[1], '-')"/>
 			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::node()[1][self::tei:rs], '-')"/>
 			<xsl:otherwise>
