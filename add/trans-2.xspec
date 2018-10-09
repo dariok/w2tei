@@ -120,7 +120,7 @@
 				<p>
 					<lb/>als ketzerisch vordampt/<note type="footnote">Zur Verurteilung der Lehre Luthers durch die theologische Fakutät Löwen, unter deren Artikeln sich auch vier Sätze Karlstadts aus den <hi style="font-style: italic;">Apologeticae Conclusiones</hi> finden, vgl. KGK II, EE 116 und EE 128.</note> und mich doch nit dartzu <w>be<lb break="no"/>ruffen/</w> in yhren schulen <rs type="person"><!--TODO ref eintragen-->Thomas Aquinas</rs>/ <rs type="person"><!--TODO ref eintragen--><w>Bonaven<lb break="no"/>turas</w></rs>/ <rs type="person"><!--TODO ref eintragen-->Scotos</rs>/ und <rs type="person"><!--TODO ref eintragen-->Capricornos</rs>/ die vormengter
 					<lb/>schrifften weebel und hauptleut seind/ mit hoher <w>emsi<lb break="no"/>ckeit</w> leszen und verteydigen/ kan ich sie/ und yhrer <w>gley<lb break="no"/>chen/</w> auch nit leyden. </p><p>
-					<lb/>Zu dem vierten/ hab ich zuvor/ das <rs type="person"><!--TODO ref eintragen--><w>Bapst Innocen<lb break="no"/>tius</w></rs> geschrieben/ keiner magk ein ketzer gehalten werden/
+					<lb/>Zu dem vierten/ hab ich zuvor/ das <rs type="person"><!--TODO ref eintragen-->Bapst <w>Innocen<lb break="no"/>tius</w></rs> geschrieben/ keiner magk ein ketzer gehalten werden/
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -245,6 +245,14 @@
 			</x:context>
 			<x:expect label="w mit Marginalien drin">
 				<p>istis: <w>or<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb break="no"/>natissimi</w> viri:</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="Trennung in rs mit Teilen vor und dahinter">
+			<x:context>
+				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium sanc-</rs><lb/><rs type="place"><!--TODO ref eintragen-->torum Wittenbergen’sium‘</rs> ordinariis</p>
+			</x:context>
+			<x:expect label="rs mit drei Wörtern und einem Umbruch">
+				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium <w>sanc<lb break="no"/>torum</w> Wittenbergen’sium‘</rs>  ordinariis</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
