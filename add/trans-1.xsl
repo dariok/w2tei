@@ -90,7 +90,7 @@
                     <xsl:text>.</xsl:text>
                 </xsl:otherwise>
             </xsl:choose>
-        	<xsl:if test="w:r[1]/w:footnoteReference and xstring:starts(., ' ')">
+        	<xsl:if test="w:r[1]/w:footnoteReference and wdb:starts(., ' ')">
         		<xsl:apply-templates select="w:r[1]"/>
         	</xsl:if>
         </label>
