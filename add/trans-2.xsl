@@ -103,7 +103,7 @@
 				<xsl:text> </xsl:text>
 				<w>
 					<xsl:value-of select="wdb:substring-before(wdb:substring-after-last(preceding-sibling::text()[1], ' '), '-')" />
-					<xsl:sequence select="preceding-sibling::tei:note[1]" />
+					<xsl:sequence select="preceding-sibling::tei:note intersect preceding-sibling::text()[1]/following-sibling::*" />
 					<lb break="no" />
 					<xsl:value-of select="wdb:substring-before(following-sibling::text()[1], ' ')" />
 				</w>
@@ -169,7 +169,10 @@
     <xsl:template match="tei:pb[ends-with(normalize-space(preceding-sibling::text()[1]), '-')]" />
 	
 	<xsl:template match="tei:note[@place]">
+		<xsl:variable name="inter" select="following-sibling::text() intersect
+			following-sibling::tei:lb[1]/preceding-sibling::node()"/>
 		<xsl:choose>
+			<xsl:when test="count($inter) = 0" />
 			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::text()[1], '-')"/>
 			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::node()[1][self::tei:rs], '-')"/>
 			<xsl:otherwise>
