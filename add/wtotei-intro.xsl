@@ -6,6 +6,7 @@
 	xmlns:hab="http://diglib.hab.de"
 	xmlns:xi="http://www.w3.org/2001/XInclude"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
+	xmlns:xstring="https://github.com/dariok/XStringUtils"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="3.0">
 	<!-- neu für Projekt Rist, 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
@@ -256,7 +257,7 @@
 					<xsl:for-each select="$anmerkung/node()">
 						<xsl:choose>
 							<xsl:when test="self::text()">
-								<xsl:value-of select="wdb:substring-before-if-ends(wdb:substring-after-if-starts(current(), '('), ')')"/>
+								<xsl:value-of select="xstring:substring-before-if-ends(xstring:substring-after-if-starts(current(), '('), ')')"/>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:copy-of select="."/>
@@ -295,7 +296,7 @@
 					<xsl:for-each select="$temp/node()[following-sibling::*:idno]">
 						<xsl:choose>
 							<xsl:when test="self::text()">
-								<xsl:value-of select="normalize-space(wdb:substring-after(current(), ':'))"/>
+								<xsl:value-of select="normalize-space(xstring:substring-after(current(), ':'))"/>
 							</xsl:when>
 							<xsl:when test="self::hab:br" />
 							<xsl:otherwise>
@@ -432,7 +433,7 @@
 			<xsl:variable name="si"
 				select="wdb:string(w:r[hab:isSigle(.)])" />
 			<xsl:variable name="sigle">
-				<xsl:value-of select="wdb:substring-before(hab:rmSquare($si), ':')"/>
+				<xsl:value-of select="xstring:substring-before(hab:rmSquare($si), ':')"/>
 			</xsl:variable>
 			<xsl:if test="string-length($si) &gt; 1">
 				<!-- Fälle besser behandeln; 2017-10-12 -->
@@ -615,7 +616,7 @@
 				<xsl:for-each select="$imp/node()[preceding-sibling::hab:odj]">
 					<xsl:choose>
 						<xsl:when test="position() = 1 and self::text()">
-							<xsl:value-of select="wdb:substring-after(., ', ')"/>
+							<xsl:value-of select="xstring:substring-after(., ', ')"/>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:copy-of select="."/>
@@ -646,7 +647,7 @@
 			<xsl:apply-templates select="wdb:string(//w:comment[@w:id=$coID])"/>
 		</xsl:variable>
 		<xsl:if test="contains($text, 'http')">
-			<ptr type="digitalisat" target="{'http'||wdb:substring-after($text, 'http')}" />
+			<ptr type="digitalisat" target="{'http'||xstring:substring-after($text, 'http')}" />
 		</xsl:if>
 	</xsl:template>
 	<xsl:template match="w:commentRangeEnd" mode="exemplar">
