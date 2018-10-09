@@ -165,7 +165,7 @@
 				<p>essem <rs type="place">Augu-</rs><note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/><rs type="place">stae</rs>, patiebar</p>
 			</x:context>
 			<x:expect label="ein rs mit Marginalie">
-				<p>essem <rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/>stae</rs>, patiebar</p>
+				<p>essem <rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb break="no"/>stae</rs>, patiebar</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>

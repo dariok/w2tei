@@ -155,7 +155,7 @@
 					<xsl:apply-templates select="preceding-sibling::tei:rs[1]/@type" />
 					<xsl:value-of select="substring-before(preceding-sibling::tei:rs[1], '-')" />
 					<xsl:sequence select="preceding-sibling::tei:note[1]" />
-					<xsl:sequence select="." />
+					<lb break="no" />
 					<xsl:value-of select="following-sibling::tei:rs[1]" />
 				</rs>
 			</xsl:when>
