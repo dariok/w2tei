@@ -4,6 +4,7 @@
     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
     xmlns:hab="http://diglib.hab.de"
     xmlns:wdb="https://github.com/dariok/wdbplus"
+    xmlns:xstring="https://github.com/dariok/XStringUtils"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.tei-c.org/ns/1.0"
@@ -89,7 +90,7 @@
                     <xsl:text>.</xsl:text>
                 </xsl:otherwise>
             </xsl:choose>
-        	<xsl:if test="w:r[1]/w:footnoteReference and wdb:starts(., ' ')">
+        	<xsl:if test="w:r[1]/w:footnoteReference and xstring:starts(., ' ')">
         		<xsl:apply-templates select="w:r[1]"/>
         	</xsl:if>
         </label>
@@ -134,10 +135,10 @@
                             <xsl:non-matching-substring>
                                 <xsl:choose>
                                     <xsl:when test="ends-with(., '')">
-                                        <xsl:value-of select="wdb:substring-before-if-ends(., '')"/>
+                                        <xsl:value-of select="xstring:substring-before-if-ends(., '')"/>
                                     </xsl:when>
                                     <xsl:when test="ends-with(., '⏊')">
-                                        <xsl:value-of select="wdb:substring-before-if-ends(., '⏊')"/>
+                                        <xsl:value-of select="xstring:substring-before-if-ends(., '⏊')"/>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:value-of select="."/>
@@ -294,7 +295,7 @@
     
     <xsl:template match="w:p[wdb:is(., 'KSlistWit', 'p')]">
         <xsl:variable name="text"><xsl:apply-templates select="w:r"/></xsl:variable>
-        <xsl:variable name="value" select="wdb:substring-before-if-ends($text, '')"/>
+        <xsl:variable name="value" select="xstring:substring-before-if-ends($text, '')"/>
         <witness><xsl:value-of select="$value"/></witness>
     </xsl:template>
     

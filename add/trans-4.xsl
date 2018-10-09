@@ -3,6 +3,7 @@
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
+	xmlns:xstring="https://github.com/dariok/XStringUtils"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="3.0">
 	
@@ -24,7 +25,7 @@
 	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type = 'crit_app']]]">
 		<xsl:variable name="last" select="tokenize(., ' ')[last()]"/>
-		<xsl:variable name="front" select="wdb:substring-before-last(., ' ')"/>
+		<xsl:variable name="front" select="xstring:substring-before-last(., ' ')"/>
 		<xsl:variable name="note" select="following-sibling::tei:note[1]"/>
 		
 		<xsl:if test="starts-with(., ' ')">
@@ -67,18 +68,18 @@
 			</xsl:when>
 			<xsl:when test="$note/node()[1][self::text()[ends-with(., ';')]]">
 				<!--<xsl:variable name="witA">
-					<xsl:value-of select="wdb:substring-before-if-ends($note/text()[1], ';')"/>
+					<xsl:value-of select="xstring:substring-before-if-ends($note/text()[1], ';')"/>
 				</xsl:variable>-->
 				<xsl:variable name="witA">
 					<xsl:variable name="wits">
-						<xsl:for-each select="tokenize(wdb:substring-before-if-ends($note/text()[1], ';'), ',')">
+						<xsl:for-each select="tokenize(xstring:substring-before-if-ends($note/text()[1], ';'), ',')">
 							<xsl:if test="string-length(.) &lt; 5">
 								<xsl:value-of
-									select="'#'||normalize-space(wdb:substring-before(wdb:substring-before(., ';'), '.'))||' '"/>
+									select="'#'||normalize-space(xstring:substring-before(xstring:substring-before(., ';'), '.'))||' '"/>
 							</xsl:if>
 						</xsl:for-each>
 					</xsl:variable>
-					<xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
+					<xsl:value-of select="normalize-space(xstring:substring-before-if-ends($wits, ';'))"/>
 				</xsl:variable>
 				<app>
 					<lem wit="{$witA}"><xsl:value-of select="$last"/></lem>
@@ -143,14 +144,14 @@
             <xsl:when test="./node()[1][self::text()[ends-with(., ';')]]">
             	<xsl:variable name="witA">
             		<xsl:variable name="wits">
-            			<xsl:for-each select="tokenize(wdb:substring-before-if-ends(text()[1], ';'), ',')">
+            			<xsl:for-each select="tokenize(xstring:substring-before-if-ends(text()[1], ';'), ',')">
             				<xsl:if test="string-length(.) &lt; 5">
             					<xsl:value-of
-            						select="'#'||normalize-space(wdb:substring-before(wdb:substring-before(., ';'), '.'))||' '"/>
+            						select="'#'||normalize-space(xstring:substring-before(xstring:substring-before(., ';'), '.'))||' '"/>
             				</xsl:if>
             			</xsl:for-each>
             		</xsl:variable>
-            		<xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
+            		<xsl:value-of select="normalize-space(xstring:substring-before-if-ends($wits, ';'))"/>
             	</xsl:variable>
                 <app>
                     <lem wit="{$witA}"/>
@@ -200,17 +201,17 @@
 				        	<xsl:for-each select="$vals[string-length() &lt; 5]">
 				                <xsl:if test="string-length(normalize-space()) &lt; 5">
     				                <xsl:value-of
-    				                    select="'#'||normalize-space(wdb:substring-before(translate(., ',;', ''), '.'))||' '"/>
+    				                    select="'#'||normalize-space(xstring:substring-before(translate(., ',;', ''), '.'))||' '"/>
 				                </xsl:if>
 				            </xsl:for-each>
 				        </xsl:variable>
-				        <xsl:value-of select="normalize-space(wdb:substring-before-if-ends($wits, ';'))"/>
+				        <xsl:value-of select="normalize-space(xstring:substring-before-if-ends($wits, ';'))"/>
 				    </xsl:attribute>
 					</xsl:if>
 					<xsl:if test="count($vals[string-length() &gt; 5]) &gt; 0">
 						<xsl:attribute name="rend">
 							<xsl:for-each select="$vals[string-length() &gt; 5]">
-								<xsl:value-of select="normalize-space(wdb:substring-before-if-ends(., ';'))"/>
+								<xsl:value-of select="normalize-space(xstring:substring-before-if-ends(., ';'))"/>
 								<xsl:if test="not(position() = last())"><xsl:text> </xsl:text></xsl:if>
 							</xsl:for-each>
 						</xsl:attribute>
@@ -222,7 +223,7 @@
 				    <!--<xsl:for-each select="tokenize($val, ',')">
 				    	<xsl:if test="string-length(normalize-space()) &gt; 4">
 				            <note type="comment">
-				                <xsl:value-of select="normalize-space(wdb:substring-before(., ';'))"/>
+				                <xsl:value-of select="normalize-space(xstring:substring-before(., ';'))"/>
 				            </note>
 				        </xsl:if>
 				    </xsl:for-each>-->
@@ -275,10 +276,10 @@
 				<!-\- TODO später für mehrere rdg anpassen -\->
 				<xsl:variable name="textB" select="normalize-space($note/tei:orig[1]/following-sibling::node())"/>
 				<xsl:variable name="witA">
-					<xsl:value-of select="wdb:substring-before-if-ends($note/text()[1], ';')"/>
+					<xsl:value-of select="xstring:substring-before-if-ends($note/text()[1], ';')"/>
 				</xsl:variable>
 				<xsl:variable name="witB">
-					<xsl:value-of select="wdb:substring-before($textB, ',')"/>
+					<xsl:value-of select="xstring:substring-before($textB, ',')"/>
 				</xsl:variable>
 				<app>
 					<lem wit="#{$witA}"><xsl:value-of select="$last"/></lem>
@@ -337,8 +338,8 @@
 		and following-sibling::*[1][self::tei:anchor]]" />
 	
 	<xsl:template match="text()[following-sibling::node()[1][self::tei:ex]]">
-		<xsl:variable name="first" select="wdb:substring-before-last(., ' ')"/>
-		<xsl:variable name="before" select="wdb:substring-after-last(., ' ')"/>
+		<xsl:variable name="first" select="xstring:substring-before-last(., ' ')"/>
+		<xsl:variable name="before" select="xstring:substring-after-last(., ' ')"/>
 		<xsl:variable name="ex" select="following-sibling::tei:ex[1]"/>
 		
 		<xsl:value-of select="$first"/>

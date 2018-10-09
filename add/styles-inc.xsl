@@ -3,6 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
     xmlns:wdb="https://github.com/dariok/wdbplus"
+    xmlns:xstring="https://github.com/dariok/XStringUtils"
     xmlns:hab="http://diglib.hab.de"
     xmlns:rel="http://schemas.openxmlformats.org/package/2006/relationships"
     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
@@ -146,7 +147,7 @@
                 <xsl:value-of select="normalize-space()"/>
             </xsl:when>
             <xsl:when test="self::text() and not(following-sibling::node())">
-                <xsl:value-of select="normalize-space(wdb:substring-before-if-ends(., '.'))"/>
+                <xsl:value-of select="normalize-space(xstring:substring-before-if-ends(., '.'))"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:sequence select="." />
