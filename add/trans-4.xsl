@@ -63,7 +63,7 @@
 				<xsl:value-of select="$last"/>
 				<del>
 					<xsl:text> </xsl:text>
-					<xsl:value-of select="normalize-space($note/tei:orig)"/>
+					<xsl:value-of select="normalize-space($note/tei:orig[1])"/>
 				</del>
 			</xsl:when>
 			<xsl:when test="$note/node()[1][self::text()[ends-with(., ';')]]">
@@ -92,9 +92,9 @@
 					<xsl:when test="starts-with(normalize-space(($note/tei:orig/following-sibling::text())[1]), 'vermutet')">
 						<xsl:value-of select="$last"/>
 						<note type="crit_app">
-							<orig><xsl:value-of select="normalize-space($note/tei:orig)"/></orig>
+							<orig><xsl:value-of select="normalize-space($note/tei:orig[1])"/></orig>
 							<xsl:text> </xsl:text>
-							<xsl:value-of select="normalize-space($note/tei:orig/following-sibling::text())"/>
+							<xsl:value-of select="normalize-space($note/tei:orig/following-sibling::text()[1])"/>
 						</note>
 					</xsl:when>
 					<xsl:otherwise>

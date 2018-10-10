@@ -57,7 +57,6 @@
 				<item>Lex<del> factorum</del> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <hi style="font-style: italic;">factorum</hi> mit <hi style="font-style: italic;">operum</hi> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical" cRef="Rm 3,27f">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
 			</x:expect>
 		</x:scenario>
-
 		<x:scenario label="mehrere Zeugen im rdg">
 			<x:context>
 				<p>
@@ -254,6 +253,18 @@
 					mundi, audacter subit audaculus
 					<lb></lb>imperator Theologorum. Si mihi <expan>D<ex>ominus</ex></expan>
 				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="span mit vielen rdg (ex: LD)">
+			<x:context>
+				<p>hec talenta b<ex>eatus</ex> quoque <rs type="person"><!--TODO ref nachtragen-->Hila'rius'</rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <anchor type="crit_app" xml:id="s29"/>de .3. ergo. diximus.<anchor type="crit_app" xml:id="s29e"/>
+					<span type="crit_app" from="#s29" to="#s29e"> <orig>4to</orig> a<hi rend="sub">1</hi>; <orig>Ad 4tum</orig> a<hi rend="sub">2</hi> AuRd-Gl;  <orig>Ad quartum &lt;..&gt; 4°</orig> A<hi rend="sub">5Lp</hi> AuRd-Gl </span> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
+					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
+			</x:context>
+			<x:expect label="lem/rdg">
+				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen-->Hila'rius'</rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <app><lem wit="#A">de .3. ergo. diximus.</lem>
+					<rdg wit="#a1">4to</rdg> <rdg wit="#a2" rend="AuRd-Gl">Ad 4tum</rdg> <rdg wit="#A5Lp" rend="AuRd-Gl">Ad quartum &lt;..&gt; 4°</rdg></app> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
+					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
