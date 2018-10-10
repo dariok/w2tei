@@ -39,8 +39,8 @@
 		
 		<xsl:choose>
 			<xsl:when test="starts-with($note, 'folgt') and $note/tei:orig">
-				<xsl:variable name="wit" select="normalize-space($note/tei:orig/following-sibling::text())"/>
-				<xsl:variable name="val" select="normalize-space($note/tei:orig)"/>
+				<xsl:variable name="wit" select="normalize-space(($note/tei:orig/following-sibling::text())[1])"/>
+				<xsl:variable name="val" select="normalize-space($note/tei:orig[1])"/>
 				<xsl:value-of select="$last"/>
 				<add wit="{'#'||$wit}">
 					<xsl:value-of select="$val"/>
@@ -187,12 +187,12 @@
 	
 	<xsl:template match="tei:orig">
 		<xsl:choose>
-		    <xsl:when test="normalize-space() = '.' and normalize-space(following-sibling::text()) = ''"/>
+			<xsl:when test="normalize-space() = '.' and normalize-space(following-sibling::text()) = ''"/>
 			<xsl:when test="following-sibling::node()[self::text()]">
-			    <xsl:variable name="myId" select="generate-id()"/>
-			    <xsl:variable name="val" select="normalize-space(string-join(following-sibling::node()[not(self::tei:orig
-			    	or self::tei:note)
-			            and generate-id(preceding-sibling::tei:orig[1]) = $myId]))"/>
+				<xsl:variable name="myId" select="generate-id()"/>
+				<xsl:variable name="val" select="normalize-space(string-join(following-sibling::node()[not(self::tei:orig
+					or self::tei:note)
+					and generate-id(preceding-sibling::tei:orig[1]) = $myId]))"/>
 				<rdg>
 					<xsl:variable name="vals" select="tokenize($val, ' ')" />
 					<xsl:if test="count($vals[string-length() &lt; 5]) &gt; 0">
