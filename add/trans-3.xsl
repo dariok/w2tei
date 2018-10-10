@@ -136,6 +136,14 @@
 	</xsl:template>
 	<xsl:template match="tei:span" />-->
 	
+	<xsl:template match="tei:p">
+		<xsl:text>
+				</xsl:text>
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
+	</xsl:template>
+	
 	<xsl:template match="@* | * | comment()">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()" />
