@@ -19,9 +19,9 @@
 		</xsl:element>
 	</xsl:template>-->
 	
-	<xsl:template match="tei:lb[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]]">
+	<!--<xsl:template match="tei:lb[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]]">
 		<xsl:text> $ </xsl:text>
-	</xsl:template>
+	</xsl:template>-->
 	
 	<xsl:template match="text()">
 		<xsl:analyze-string select="." regex="&lt;.+&gt;">
@@ -142,6 +142,15 @@
 		<xsl:copy>
 			<xsl:apply-templates />
 		</xsl:copy>
+	</xsl:template>
+	
+	<xsl:template match="tei:note[@type = 'footnote']/tei:hi[preceding-sibling::node()[1][self::tei:hi]]"/>
+		
+	<xsl:template match="tei:note[@type = 'footnote']/tei:hi[not(preceding-sibling::node()[1][self::tei:hi])]">
+		<hi style="{@style}">
+			<xsl:value-of select="string-join(.
+				| following-sibling::tei:hi intersect following-sibling::node()[not(self::tei:hi)][1]/preceding-sibling::*, '')"/>
+		</hi>
 	</xsl:template>
 	
 	<xsl:template match="@* | * | comment()">
