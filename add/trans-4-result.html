@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for home/dario/git/w2tei/add/trans-4.xsl (passed: 16 / pending: 0 / failed: 1 / total: 17)</title>
+      <title>Test Report for home/dario/git/w2tei/add/trans-4.xsl (passed: 16 / pending: 0 / failed: 2 / total: 18)</title>
       <link rel="stylesheet" type="text/css" href="file:/home/dario/.p2/pool/plugins/com.oxygenxml.editor_20.1.0.v2018080903/frameworks/xspec/src/reporter/test-report.css" />
    </head>
    <body>
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/trans-4.xsl">home/dario/git/w2tei/add/trans-4.xsl</a></p>
-      <p>Tested: 11 October 2018 at 18:14</p>
+      <p>Tested: 11 October 2018 at 19:07</p>
       <h2>Contents</h2>
       <table class="xspec">
          <col width="75%" />
@@ -20,8 +20,8 @@
                <th></th>
                <th class="totals">passed: 16</th>
                <th class="totals">pending: 0</th>
-               <th class="totals">failed: 1</th>
-               <th class="totals">total: 17</th>
+               <th class="totals">failed: 2</th>
+               <th class="totals">total: 18</th>
             </tr>
          </thead>
          <tbody>
@@ -69,6 +69,13 @@
             </tr>
             <tr class="failed">
                <th><a href="#d3e1967">krit. und FN gemischt</a></th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
+               <th class="totals">1</th>
+               <th class="totals">1</th>
+            </tr>
+            <tr class="failed">
+               <th><a href="#d3e2098">collectanea aus LD</a></th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
@@ -328,10 +335,65 @@
      <span class="same">to</span>="#s2e"&gt;
       &lt;<span class="same">rdg</span> <span class="same">wit</span>="#B"&gt;<span class="same">Protestatio D'omini' doctoris Carolostadii per respondentem sibi a latere</span>&lt;/rdg&gt;
       &lt;<span class="same">rdg</span> <span class="same">wit</span>="#a1" /&gt;
-      &lt;<span class="diff">rdg</span> <span class="same">wit</span>="#a2"
-           <span class="diff">rend</span>="AuRd-Gl"&gt;<span class="same">Protestatio Carolostad&lt;ius&gt;</span>&lt;/rdg&gt;
+      &lt;<span class="diff">rdg</span> <span class="same">wit</span>="#a2"&gt;<span class="same">Protestatio Carolostad&lt;ius&gt;</span>&lt;<span class="diff">note</span> <span class="diff">type</span>="comment"&gt;<span class="diff">AuRd-Gl</span>&lt;/note&gt;
+      &lt;/rdg&gt;
    &lt;/span&gt;
 &lt;/p&gt;</pre></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div id="d3e2098">
+         <h2 class="successful">collectanea aus LD<span class="scenario-totals">passed: 0 / pending: 0 / failed: 1 / total: 1</span></h2>
+         <table class="xspec" id="t-d3e2098">
+            <col width="75%" />
+            <col width="25%" />
+            <tbody>
+               <tr class="successful">
+                  <th>collectanea aus LD</th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
+               </tr>
+               <tr class="failed">
+                  <th><a href="#d3e2103">s115</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
+               </tr>
+               <tr class="failed">
+                  <td><a href="#d3e2164">guten anchor</a></td>
+                  <td>Failure</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 id="d3e2103">collectanea aus LD s115</h3>
+         <h4 id="d3e2164">guten anchor</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span class="diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:wdb="https://github.com/dariok/wdbplus"&gt;<span class="same">ob</span>&lt;<span class="same">lb</span> /&gt;<span class="same">inductas </span>&lt;<span class="diff">anchor</span> <span class="diff">type</span>="crit_app"
+     <span class="diff">xml:id</span>="s117" /&gt;<span class="diff">per </span>&lt;<span class="diff">expan</span>&gt;<span class="diff">Cypri</span>&lt;<span class="diff">ex</span>&gt;<span class="diff">anum</span>&lt;/ex&gt;
+   &lt;/expan&gt;
+   &lt;<span class="diff">anchor</span> <span class="diff">type</span>="crit_app"
+     <span class="diff">xml:id</span>="s117e" /&gt;
+   &lt;<span class="diff">span</span> <span class="diff">type</span>="crit_app"
+     <span class="diff">from</span>="#s117"
+     <span class="diff">to</span>="#s117e"&gt;
+      &lt;<span class="diff">rdg</span> <span class="diff">wit</span>="#a1"&gt;<span class="diff">Cypriani</span>&lt;/rdg&gt;
+   &lt;/span&gt;<span class="diff"> auctoritates</span>&lt;<span class="diff">supplied</span>&gt;<span class="diff">.</span>&lt;/supplied&gt;<span class="diff">
+					ex .2.</span>&lt;/p&gt;</pre></td>
+                  <td><pre>&lt;<span class="diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:wdb="https://github.com/dariok/wdbplus"&gt;<span class="same">ob</span>&lt;<span class="same">lb</span> /&gt;<span class="same">inductas </span>&lt;<span class="diff">app</span>&gt;
+      &lt;<span class="diff">lem</span>&gt;<span class="diff">per Cypri</span>&lt;<span class="diff">ex</span>&gt;<span class="diff">anum</span>&lt;/ex&gt;
+      &lt;/lem&gt;
+      &lt;<span class="diff">rdg</span> <span class="diff">with</span>="#a1"&gt;<span class="diff">Cypriani</span>&lt;/rdg&gt;
+   &lt;/app&gt;<span class="diff"> auctoritates</span>&lt;<span class="diff">supplied</span>&gt;<span class="diff">.</span>&lt;/supplied&gt;<span class="diff"> ex .2.</span>&lt;/p&gt;</pre></td>
                </tr>
             </tbody>
          </table>

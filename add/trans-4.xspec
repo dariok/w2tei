@@ -301,7 +301,26 @@
 						type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
 						<rdg wit="#B">Protestatio D'omini' doctoris Carolostadii per respondentem sibi a latere</rdg>
 						<rdg wit="#a1" />
-						<rdg wit="#a2" rend="AuRd-Gl">Protestatio Carolostad&lt;ius&gt;</rdg></span></p>
+							<rdg wit="#a2">Protestatio Carolostad&lt;ius&gt;<note type="comment">AuRd-Gl</note></rdg></span></p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
+	<x:scenario label="collectanea aus LD">
+		<x:scenario label="s115">
+			<x:context>
+				<p>ob<lb/>inductas <anchor
+					type="crit_app" xml:id="s117"/>per Cypri<ex>anum</ex><anchor type="crit_app"
+						xml:id="s117e"/><span type="crit_app" from="#s117" to="#s117e">
+							<orig>Cypriani</orig> a<hi rend="sub">1</hi></span> auctoritates<supplied>.</supplied>
+					ex .2.</p>
+			</x:context>
+			<x:expect label="guten anchor">
+				<p>ob<lb/>inductas <app>
+					<lem>per Cypri<ex>anum</ex></lem>
+					<rdg with="#a1">Cypriani</rdg>
+				</app> auctoritates<supplied>.</supplied>
+					ex .2.</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
