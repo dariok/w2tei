@@ -3,7 +3,7 @@
     xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
     xmlns:hab="http://diglib.hab.de"
-    xmlns:wdb="https://github.com/dariok/wdbplus"
+    xmlns:wt="https://github.com/dariok/w2tei"
     xmlns:xstring="https://github.com/dariok/XStringUtils"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
@@ -26,7 +26,7 @@
     <xsl:template match="w:p[not(w:r)]" />
     
     <!-- Marginalie -->
-    <xsl:template match="w:p[wdb:is(., 'KSMarginalie', 'p')]">
+    <xsl:template match="w:p[wt:is(., 'KSMarginalie', 'p')]">
         <note place="margin"><xsl:apply-templates select="w:r" /></note>
     </xsl:template>
     
@@ -54,7 +54,7 @@
         
         <label>
             <xsl:choose>
-                <xsl:when test="wdb:is(w:r[1], 'KSkorrigierteThesennummer', 'r')">
+                <xsl:when test="wt:is(w:r[1], 'KSkorrigierteThesennummer', 'r')">
                     <app>
                         <lem>
                             <xsl:choose>
@@ -90,7 +90,7 @@
                     <xsl:text>.</xsl:text>
                 </xsl:otherwise>
             </xsl:choose>
-        	<xsl:if test="w:r[1]/w:footnoteReference and wdb:starts(., ' ')">
+        	<xsl:if test="w:r[1]/w:footnoteReference and wt:starts(., ' ')">
         		<xsl:apply-templates select="w:r[1]"/>
         	</xsl:if>
         </label>
@@ -107,9 +107,9 @@
         	</xsl:choose>
         </item>
     </xsl:template>
-    <xsl:template match="w:r[wdb:is(., 'KSkorrigierteThesennummer', 'r')]" />
+    <xsl:template match="w:r[wt:is(., 'KSkorrigierteThesennummer', 'r')]" />
     
-    <xsl:template match="w:p[w:r and not(wdb:is(., 'KSMarginalie', 'p') or descendant::w:numPr
+    <xsl:template match="w:p[w:r and not(wt:is(., 'KSMarginalie', 'p') or descendant::w:numPr
         or ancestor::w:endnote or ancestor::w:footnote)]">
         <!--<xsl:param name="parind" select="xs:integer(0)"/>-->
         <xsl:variable name="parind" select="descendant::w:ind/@w:left"/>
@@ -185,7 +185,7 @@
     </xsl:template>
     
     <!-- EE-Verweis -->
-    <xsl:template match="w:r[wdb:is(., 'KSEEVerweis', 'r')]">
+    <xsl:template match="w:r[wt:is(., 'KSEEVerweis', 'r')]">
         <ptr type="wdb">
             <xsl:choose>
                 <xsl:when test="contains(., 'II')">
@@ -201,16 +201,16 @@
     </xsl:template>
     
     <!-- Langes Zitat bzw. Paraphrase -->
-    <xsl:template match="w:r[wdb:isFirst(., 'KSQuote', 'r')]">
+    <xsl:template match="w:r[wt:isFirst(., 'KSQuote', 'r')]">
         <hab:para place="start"/>
     </xsl:template>
-    <xsl:template match="w:r[wdb:is(., 'KSQuote', 'r') and following::w:r[1][not(wdb:is(., 'KSQuote', 'r'))]]">
+    <xsl:template match="w:r[wt:is(., 'KSQuote', 'r') and following::w:r[1][not(wt:is(., 'KSQuote', 'r'))]]">
         <hab:para place="end" />
     </xsl:template>
     
 	<!-- kritische Anmerkungen -->
 	<xsl:template match="w:r[descendant::w:footnoteReference
-		and not(wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))]">
+		and not(wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))]">
 		<xsl:apply-templates select="w:footnoteReference" />
 	</xsl:template>
 	
@@ -221,34 +221,34 @@
         </note>
     </xsl:template>
     
-    <xsl:template match="w:r[wdb:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
-        and following::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
+    <xsl:template match="w:r[wt:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
+        and following::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
         <anchor type="crit_app" ref="s"/>
         <xsl:apply-templates select="w:t" />
     </xsl:template>
-    <xsl:template match="w:r[wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r') and
-        not(following::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])]">
-        <xsl:if test="not(preceding::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])">
+    <xsl:template match="w:r[wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r') and
+        not(following::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])]">
+        <xsl:if test="not(preceding::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])">
             <anchor type="crit_app" ref="s" />
         </xsl:if>
         <xsl:apply-templates select="w:t" />
         <anchor type="crit_app" ref="se" />
     </xsl:template>
     <!-- es kommen krit. oder Sachanmerkungen innerhalb dieses Teils vor -->
-	<xsl:template match="w:r[not(wdb:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))
-		and wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
-		and following::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
-		and preceding::w:r[1][wdb:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
+	<xsl:template match="w:r[not(wt:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))
+		and wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
+		and following::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
+		and preceding::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
 		<xsl:apply-templates select="w:t | w:footnoteReference | w:endnoteReference"/>
 	</xsl:template>
     
-    <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
+    <xsl:template match="w:r[wt:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
         and not(descendant::w:vertAlign)]">
         <note type="comment">
             <xsl:apply-templates select="w:t"/>
         </note>
     </xsl:template>
-    <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
+    <xsl:template match="w:r[wt:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
         and descendant::w:vertAlign]">
         <hi>
             <xsl:attribute name="rend">
@@ -260,13 +260,13 @@
             <xsl:apply-templates select="w:t"/>
         </hi>
     </xsl:template>
-    <xsl:template match="w:r[wdb:is(., 'KSKommentar', 'r') and descendant::w:i/@w:val='0']">
+    <xsl:template match="w:r[wt:is(., 'KSKommentar', 'r') and descendant::w:i/@w:val='0']">
          <note type="comment"><orig><xsl:apply-templates select="w:t"/></orig></note>
     </xsl:template>
     <!-- ENDE kritische Anmerkungen -->
     
     <!-- neu 2017-12-08 DK -->
-    <xsl:template match="w:r[wdb:is(., 'KSBibelstelle', 'r')]">
+    <xsl:template match="w:r[wt:is(., 'KSBibelstelle', 'r')]">
         <xsl:choose>
             <xsl:when test="ends-with(w:t, 'Vg')">
                 <ref type="biblical"><xsl:value-of select="substring-before(w:t, ' Vg')"/></ref> Vg
@@ -277,7 +277,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="w:r[wdb:is(., 'KSAutorenstelle', 'r')]">
+    <xsl:template match="w:r[wt:is(., 'KSAutorenstelle', 'r')]">
         <ref type="medieval">
             <xsl:attribute name="cRef">
                 <xsl:value-of select="substring-before(w:t, ',')" />
@@ -293,7 +293,7 @@
         <xsl:apply-templates select="w:t" />
     </xsl:template>-->
     
-    <xsl:template match="w:p[wdb:is(., 'KSlistWit', 'p')]">
+    <xsl:template match="w:p[wt:is(., 'KSlistWit', 'p')]">
         <xsl:variable name="text"><xsl:apply-templates select="w:r"/></xsl:variable>
         <xsl:variable name="value" select="xstring:substring-before-if-ends($text, '')"/>
         <witness><xsl:value-of select="$value"/></witness>
