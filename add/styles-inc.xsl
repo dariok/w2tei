@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-    xmlns:wdb="https://github.com/dariok/wdbplus"
+    xmlns:wt="https://github.com/dariok/w2tei"
     xmlns:xstring="https://github.com/dariok/XStringUtils"
     xmlns:hab="http://diglib.hab.de"
     xmlns:rel="http://schemas.openxmlformats.org/package/2006/relationships"
@@ -17,11 +17,11 @@
     <!-- Styles -->
     <!-- kursiv -->
     <xsl:template match="w:r[descendant::w:i[not(@w:val=0)]
-        and not(descendant::w:vertAlign or wdb:is(., 'KSbibliographischeAngabe', 'r') or wdb:is(., 'KSKommentar', 'r'))]">
+        and not(descendant::w:vertAlign or wt:is(., 'KSbibliographischeAngabe', 'r') or wt:is(., 'KSKommentar', 'r'))]">
         <hi style="font-style: italic;"><xsl:apply-templates select="w:t" /></hi>
     </xsl:template>
-    <xsl:template match="w:r[descendant::w:i[@w:val=0] and not(wdb:is(., 'KSbibliographischeAngabe', 'r')
-        or wdb:is(., 'KSKommentar', 'r'))]">
+    <xsl:template match="w:r[descendant::w:i[@w:val=0] and not(wt:is(., 'KSbibliographischeAngabe', 'r')
+        or wt:is(., 'KSKommentar', 'r'))]">
         <xsl:apply-templates select="w:t" />
     </xsl:template>
     
@@ -66,17 +66,17 @@
     </xsl:template>
     
     <!-- Bibliographisches -->
-    <xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
-        not(wdb:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
-    <xsl:template match="w:r[wdb:isFirst(., 'KSbibliographischeAngabe', 'r')]">
+    <xsl:template match="w:r[wt:is(., 'KSbibliographischeAngabe', 'r') and
+        not(wt:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
+    <xsl:template match="w:r[wt:isFirst(., 'KSbibliographischeAngabe', 'r')]">
         <xsl:variable name="me" select="." />
         <bibl>
             <xsl:apply-templates select="w:t" />
-            <xsl:apply-templates select="following-sibling::w:r[wdb:followMe(., $me, 'KSbibliographischeAngabe', 'r')]"
+            <xsl:apply-templates select="following-sibling::w:r[wt:followMe(., $me, 'KSbibliographischeAngabe', 'r')]"
                 mode="eval"/>
         </bibl>
     </xsl:template>
-    <xsl:template match="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') and
+    <xsl:template match="w:r[wt:is(., 'KSbibliographischeAngabe', 'r') and
         not(descendant::w:vertAlign or descendant::w:i)]" mode="eval">
         <xsl:apply-templates select="w:t" />
     </xsl:template>
@@ -115,14 +115,14 @@
     <!-- ENDE Fuß-/Endnoten -->
     
     <!-- RS -->
-    <xsl:template match="w:r[wdb:is(., 'KSOrt', 'r')]">
+    <xsl:template match="w:r[wt:is(., 'KSOrt', 'r')]">
         <rs type="place">
             <xsl:comment>TODO ref eintragen</xsl:comment>
             <xsl:apply-templates select="w:t"/>
         </rs>
     </xsl:template>
     
-    <xsl:template match="w:r[wdb:is(., 'KSPerson', 'r')]">
+    <xsl:template match="w:r[wt:is(., 'KSPerson', 'r')]">
         <rs type="person">
             <xsl:comment>TODO ref eintragen</xsl:comment>
             <xsl:apply-templates select="w:t"/>
@@ -178,7 +178,7 @@
     <xsl:function name="hab:isHead" as="xs:boolean">
         <xsl:param name="context" as="node()" />
         <xsl:param name="num"/>
-        <xsl:value-of select="wdb:is($context, 'KSberschrift'||$num)"/>
+        <xsl:value-of select="wt:is($context, 'KSberschrift'||$num)"/>
     </xsl:function>
     
     <xsl:function name="hab:isSem" as="xs:boolean">
