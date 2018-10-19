@@ -79,7 +79,7 @@
 				<p>dehinc Quod b'eatus' <rs type="person"><!--TODO ref eintragen-->Hiero</rs><rs type="person"><!--TODO ref eintragen-->'</rs><rs type="person">ny</rs><rs type="person"><!--TODO ref eintragen-->mus</rs><rs type="person"><!--TODO ref eintragen-->'</rs> ad</p>
 			</x:context>
 			<x:expect label="ein rs" xml:space="preserve">
-				<p>dehinc Quod b<ex>eatus</ex> <rs type="person"><!--TODO ref nachtragen-->Hiero'nymus'</rs> ad</p></x:expect>
+				<p>dehinc Quod b'eatus' <rs type="person"><!--TODO ref nachtragen-->Hiero'nymus'</rs> ad</p></x:expect>
 		</x:scenario>
 		<x:scenario label="rs vorher zusammengezogen">
 			<x:context>
@@ -98,16 +98,7 @@
 		</x:scenario>
 	</x:scenario>
 	
-	<x:scenario label="Ersetzungen">
-		<x:scenario label="Expansionen">
-			<x:context>
-				<p>
-					<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf'urstlich' g'naden'</p>
-			</x:context>
-			<x:expect label="ex" xml:space="preserve">
-				<p><lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf<ex>urstlich</ex> g<ex>naden</ex></p></x:expect>
-		</x:scenario>
-	</x:scenario>
+	
 	
 	<x:scenario label="rdg">
 		<x:scenario label="... mit kommentar">

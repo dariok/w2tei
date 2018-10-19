@@ -13,34 +13,6 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	
-	<!--<xsl:template match="tei:*">
-		<xsl:element name="{name()}">
-			<xsl:apply-templates select="@* | node()" />
-		</xsl:element>
-	</xsl:template>-->
-	
-	<!--<xsl:template match="tei:lb[preceding-sibling::*[1][self::tei:anchor] and following-sibling::*[1][self::tei:anchor]]">
-		<xsl:text> $ </xsl:text>
-	</xsl:template>-->
-	
-	<xsl:template match="text()">
-		<xsl:analyze-string select="." regex="&lt;.+&gt;">
-			<xsl:matching-substring>
-				<supplied><xsl:value-of select="substring(substring-before(., '&gt;'), 2)"/></supplied>
-			</xsl:matching-substring>
-			<xsl:non-matching-substring>
-				<xsl:analyze-string select="." regex="'.+?'">
-					<xsl:matching-substring>
-						<ex><xsl:value-of select="substring(substring(., 2), 1, string-length(.)-2)"/></ex>
-					</xsl:matching-substring>
-					<xsl:non-matching-substring>
-						<xsl:value-of select="."/>
-					</xsl:non-matching-substring>
-				</xsl:analyze-string>
-			</xsl:non-matching-substring>
-		</xsl:analyze-string>
-	</xsl:template>
-	
 	<xsl:template match="tei:rs">
 		<!-- TODO ref aus Register auslesen -->
 		<rs type="{@type}">
@@ -128,13 +100,6 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	
-	<!--<xsl:template match="tei:anchor[not(ends-with(@xml:id, 'e'))]">
-		<xsl:variable name="id" select="'#'||@xml:id" />
-		<xsl:sequence select="//tei:span[@from=$id]"/>
-		<xsl:sequence select="." />
-	</xsl:template>
-	<xsl:template match="tei:span" />-->
 	
 	<xsl:template match="tei:p">
 		<xsl:text>
