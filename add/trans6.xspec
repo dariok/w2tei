@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+	xmlns="http://www.tei-c.org/ns/1.0"
+	stylesheet="trans-5.xsl">
+	<x:scenario label="Expansionen">
+		<x:context>
+			<p>
+				<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf<ex>urstlich</ex> g<ex>naden</ex>
+			</p>
+		</x:context>
+		<x:expect label="expan/ex">
+			<p>
+				<lb/>Durchleuchtigster Hochgebornner Churfurst. euern <expan>churf<ex>urstlich</ex></expan> <expan>g<ex>naden</ex></expan>
+			</p>
+		</x:expect>
+	</x:scenario>
+</x:description>
