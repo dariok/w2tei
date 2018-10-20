@@ -46,9 +46,24 @@
 		
 		<xsl:choose>
 			<xsl:when test="starts-with($note, 'folgt') and $note/tei:orig">
+				<!-- TODO: folgt mit mehreren wit? -->
 				<xsl:variable name="wit" select="normalize-space($note/tei:orig/following-sibling::text())"/>
 				<xsl:sequence select="$text" /><add wit="#{$wit}"><xsl:apply-templates select="$note/tei:orig" mode="norm"/></add>
 			</xsl:when>
+			<xsl:otherwise>
+				<xsl:choose>
+					<xsl:when test="$note[self::tei:note]">
+						<xsl:sequence select="$text" />
+						<xsl:sequence select="$note" />
+					</xsl:when>
+					<xsl:otherwise>
+						<anchor xml:id="{substring-after($note/@from, '#')}" type="crit_app" />
+						<xsl:sequence select="$text" />
+						<anchor xml:id="{substring-after($note/@to, '#')}" type="crit_app" />
+						<xsl:sequence select="$note" />
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 	
