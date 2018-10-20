@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns="http://www.tei-c.org/ns/1.0"
+	xmlns:wdb="https://github.com/dariok/wdbplus"
 	stylesheet="trans5.xsl">
 	<x:scenario label="krit. Anmerkungen">
 		<x:scenario label="einmal vom Editor verbessert für">
@@ -41,15 +42,15 @@
 		</x:scenario>
 		<x:scenario label="orig im Text herstellen">
 			<x:context>
-				<item>Lex factorum dicitur. sicut lucus a lucendo:<note type="crit_app">Vom Editor verbessert für<orig> lucando: </orig><bibl>Kolde, 471</bibl>, ändert stillschweigend in<orig> non lucendo.</orig></note><note type="footnote">Hinter <quote>lucus a lucendo</quote> steht die etymologische Herleitung des Wortes <hi style="font-style: italic;">l</hi><hi style="font-style: italic;">ucus</hi> (Wald) von <hi style="font-style: italic;">lucere</hi> (leuchten), die u. a. <rs type="person">Quint.</rs><ref type="medieval"> inst. orat. </ref>1,6,34 wiedergibt: <quote>etiamne a contrariis aliqua sinemus trahi, ut ‘lucus‘, quia umbra opacus parum luceat […]?</quote> (<bibl>Winterbottom, Quintiliani, Bd. 1, 47,8f</bibl>.) Diese volksetymologische Ableitung einer Wortbedeutung (<hi style="font-style: italic;">lucus</hi> / dunkler Wald) vom Gegenteil <hi style="font-style: italic;">(lucere</hi> / hell leuchten), enthält einen logischen Widerspruch. Was <rs type="person">Karlstadt</rs> meint, wenn er die Phrase <quote>lex factorum</quote> mit der Herleitung <quote>lucus a lucendo</quote> vergleicht, ergibt sich in Verbindung mit These 6 und 7: Die Formulierung <quote>Gesetz der Taten</quote> enthält insofern einen inneren Widerspruch, als die guten Taten bzw. Werke von jenem Gesetz eben nicht bewirkt werden, sondern vom <quote>Gesetz des Glaubens</quote> (Th. 7), weshalb dieses auch als ein <quote>geistliches Gesetz der Taten</quote> (Th. 6) bezeichnet werden könne.</note></item>
+				<item>Lex factorum dicitur. sicut lucus a lucendo:<note type="crit_app">Vom Editor verbessert für<orig> lucando: </orig><bibl>Kolde, 471</bibl>, ändert stillschweigend in<orig> non lucendo.</orig></note><note type="footnote">Hinter <quote>lucus a lucendo</quote> steht die etymologische Herleitung des Wortes <hi style="font-style: italic;">lucus</hi> (Wald) von <hi style="font-style: italic;">lucere</hi> (leuchten), die u. a. <rs type="person">Quint.</rs><ref type="medieval"> inst. orat. </ref>1,6,34 wiedergibt: <quote>etiamne a contrariis aliqua sinemus trahi, ut ‘lucus‘, quia umbra opacus parum luceat […]?</quote> (<bibl ref="#">Winterbottom, Quintiliani, Bd. 1, 47,8f</bibl>.) Diese volksetymologische Ableitung einer Wortbedeutung (<hi style="font-style: italic;">lucus</hi> / dunkler Wald) vom Gegenteil <hi style="font-style: italic;">(lucere</hi> / hell leuchten), enthält einen logischen Widerspruch. Was <rs type="person">Karlstadt</rs> meint, wenn er die Phrase <quote>lex factorum</quote> mit der Herleitung <quote>lucus a lucendo</quote> vergleicht, ergibt sich in Verbindung mit These 6 und 7: Die Formulierung <quote>Gesetz der Taten</quote> enthält insofern einen inneren Widerspruch, als die guten Taten bzw. Werke von jenem Gesetz eben nicht bewirkt werden, sondern vom <quote>Gesetz des Glaubens</quote> (Th. 7), weshalb dieses auch als ein <quote>geistliches Gesetz der Taten</quote> (Th. 6) bezeichnet werden könne.</note></item>
 			</x:context>
 			<x:expect label="orig">
-				<item>Lex factorum dicitur. sicut lucus a <choice><sic>lucando:<note type="comment"><bibl>Kolde, 471</bibl>, ändert stillschweigend in<orig> non lucendo.</orig></note></sic><corr>lucendo:</corr></choice><note type="footnote">Hinter <quote>lucus a lucendo</quote> steht die etymologische Herleitung des Wortes <term type="term">l</term><term type="term">ucus</term> (Wald) von <term type="term">lucere</term> (leuchten), die u. a. <rs type="person">Quint.</rs><ref type="medieval"> inst. orat. </ref>1,6,34 wiedergibt: <quote>etiamne a contrariis aliqua sinemus trahi, ut ‘lucus‘, quia umbra opacus parum luceat […]?</quote> (<bibl ref="#">Winterbottom, Quintiliani, Bd. 1, 47,8f</bibl>.) Diese volksetymologische Ableitung einer Wortbedeutung (<term type="term">lucus</term> / dunkler Wald) vom Gegenteil <term type="term">(lucere</term> / hell leuchten), enthält einen logischen Widerspruch. Was <rs type="person">Karlstadt</rs> meint, wenn er die Phrase <quote>lex factorum</quote> mit der Herleitung <quote>lucus a lucendo</quote> vergleicht, ergibt sich in Verbindung mit These 6 und 7: Die Formulierung <quote>Gesetz der Taten</quote> enthält insofern einen inneren Widerspruch, als die guten Taten bzw. Werke von jenem Gesetz eben nicht bewirkt werden, sondern vom <quote>Gesetz des Glaubens</quote> (Th. 7), weshalb dieses auch als ein <quote>geistliches Gesetz der Taten</quote> (Th. 6) bezeichnet werden könne.</note></item>
+				<item>Lex factorum dicitur. sicut lucus a <choice><sic>lucando:<note type="comment"><bibl>Kolde, 471</bibl>, ändert stillschweigend in<orig> non lucendo.</orig></note></sic><corr>lucendo:</corr></choice><note type="footnote">Hinter <quote>lucus a lucendo</quote> steht die etymologische Herleitung des Wortes <term type="term">lucus</term> (Wald) von <term type="term">lucere</term> (leuchten), die u. a. <rs type="person">Quint.</rs><ref type="medieval"> inst. orat. </ref>1,6,34 wiedergibt: <quote>etiamne a contrariis aliqua sinemus trahi, ut ‘lucus‘, quia umbra opacus parum luceat […]?</quote> (<bibl ref="#">Winterbottom, Quintiliani, Bd. 1, 47,8f</bibl>.) Diese volksetymologische Ableitung einer Wortbedeutung (<term type="term">lucus</term> / dunkler Wald) vom Gegenteil <term type="term">(lucere</term> / hell leuchten), enthält einen logischen Widerspruch. Was <rs type="person">Karlstadt</rs> meint, wenn er die Phrase <quote>lex factorum</quote> mit der Herleitung <quote>lucus a lucendo</quote> vergleicht, ergibt sich in Verbindung mit These 6 und 7: Die Formulierung <quote>Gesetz der Taten</quote> enthält insofern einen inneren Widerspruch, als die guten Taten bzw. Werke von jenem Gesetz eben nicht bewirkt werden, sondern vom <quote>Gesetz des Glaubens</quote> (Th. 7), weshalb dieses auch als ein <quote>geistliches Gesetz der Taten</quote> (Th. 6) bezeichnet werden könne.</note></item>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="danach gestrichen">
 			<x:context>
-				<item>Lex<note type="crit_app">Danach gestrichen<orig> factorum</orig></note> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <hi style="font-style: italic;">factorum</hi> mit <hi style="font-style: italic;">operum</hi> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
+				<item>Lex<note type="crit_app">Danach gestrichen<orig> factorum</orig></note> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <hi style="font-style: italic;">factorum</hi> mit <hi style="font-style: italic;">operum</hi> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical" cRef="Rm 3,27f">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
 			</x:context>
 			<x:expect label="del mit Leerzeichen vorne">
 				<item>Lex<del> factorum</del> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <term type="term">factorum</term> mit <term type="term">operum</term> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical" cRef="Rm 3,27f">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
@@ -76,15 +77,15 @@
 				<list>
 					<label>I.<note type="crit_app">in arabischen Ziffern in B, C.</note>
 					</label>
-					<item> Cum D'ominus' <rs type="person"><!--TODO ref eintragen-->Ioan'nes'</rs> d inficiatur<note type="crit_app"><orig> iuficiatur </orig>B.</note> omnem omnium fidelium vitam esse<lb/>poenitentiam, aut poenitudinis indigam.<note type="footnote">Vgl. KGK I.2, Nr. 88, S. 879, Z. 22-31 und KGK I.2, Nr. 90, S. 910, Z. 3-7.</note> Iudaeus est, sub<lb/>Christiana pelle, occlamans, si iustus dei filius est?<note type="crit_app">A, B;<orig> est, </orig>D;<orig> est: </orig>C, E, F, H, G</note>  <w>descen<lb break="no"/>dat</w> de Cruce<note type="footnote">Vgl. <ref type="biblical">Mt 27,41-43</ref>.</note>, nescitque hanc vitam, diem crucis perferendae.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 929, Z. 21-S. 931, Z. 27.</note> 
+					<item> Cum <expan>D<ex>ominus</ex></expan> <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> d inficiatur<note type="crit_app"><orig> iuficiatur </orig>B.</note> omnem omnium fidelium vitam esse<lb/>poenitentiam, aut poenitudinis indigam.<note type="footnote">Vgl. KGK I.2, Nr. 88, S. 879, Z. 22-31 und KGK I.2, Nr. 90, S. 910, Z. 3-7.</note> Iudaeus est, sub<lb/>Christiana pelle, occlamans, si iustus dei filius est?<note type="crit_app">A, B;<orig> est, </orig>D;<orig> est: </orig>C, E, F, H, G</note>  <w>descen<lb break="no"/>dat</w> de Cruce<note type="footnote">Vgl. <ref type="biblical" cRef="Mt 27,41-43">Mt 27,41-43</ref>.</note>, nescitque hanc vitam, diem crucis perferendae.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 929, Z. 21-S. 931, Z. 27.</note> 
 					</item>
 				</list>
 			</x:context>
 			<x:expect label="1. crit_app ident. übernommen">
 				<list>
 					<label>I.<note type="crit_app">in arabischen Ziffern in B, C.</note></label>
-					<item> Cum <expan>D'ominus'</expan>
-						<rs type="person"><!--TODO ref eintragen--><expan>Ioan'nes'</expan></rs>  d <app>
+					<item> Cum <expan>D<ex>ominus</ex></expan>
+						<rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs>  d <app>
 							<lem wit="#A">inficiatur</lem>
 							<rdg wit="#B">iuficiatur</rdg></app> omnem omnium fidelium vitam esse<lb/>poenitentiam, aut poenitudinis indigam.<note type="footnote">Vgl. KGK I.2, Nr. 88, S. 879, Z. 22-31 und KGK I.2, Nr. 90, S. 910, Z. 3-7.</note> Iudaeus est, sub<lb/>Christiana pelle, occlamans, si iustus dei filius <app>
 								<lem wit="#A #B">est?</lem>
@@ -97,22 +98,22 @@
 		</x:scenario>
 		<x:scenario label="mit tiefgest.">
 			<x:context>
-				<tei:list>
+				<list>
 					<label>V.<note type="crit_app"><orig> V┐ </orig>F, G<hi rend="sub">1</hi>, H.</note>
 					</label>
-					<item> Dominus <rs type="person"><!--TODO ref eintragen-->Ioan'nes'</rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque anathemate<note type="crit_app"><orig> ʔ.iathemate </orig>F.</note> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note>  <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam defendet?<note type="crit_app"><orig> defendet: </orig>C.</note><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
+					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque anathemate<note type="crit_app"><orig> ʔ.iathemate </orig>F.</note> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note>  <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam defendet?<note type="crit_app"><orig> defendet: </orig>C.</note><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
 					</item>
-				</tei:list>
+				</list>
 			</x:context>
 			<x:expect label="G_1">
-				<tei:list>
+				<list>
 					<label>
 						<app>
 							<lem wit="#A">V.</lem>
 							<rdg wit="#F #G1 #H">V┐</rdg>
 						</app>
 					</label>
-					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan'nes'</expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque <app>
+					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque <app>
 						<lem wit="#A">anathemate</lem>
 						<rdg wit="#F">ʔ.iathemate</rdg>
 					</app> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note>  <w>Excom<lb break="no"/>municatus</w>  autem quomodo ecclesiam <app>
@@ -120,7 +121,7 @@
 						<rdg wit="#C">defendet:</rdg>
 					</app><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
 					</item>
-				</tei:list>
+				</list>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="rdg mit Kommentar">
@@ -152,7 +153,7 @@
 							arbitrio</orig> a<hi rend="sub">2</hi> AuRd-Gl; <orig>2 hora</orig> A<hi rend="sub"
 								>5Lp</hi> InRd-Gl </span>
 			</p>
-			<p><lb/><anchor type="crit_app" xml:id="s15"/>Con'tra' XI.<anchor type="crit_app"
+			<p><lb/><anchor type="crit_app" xml:id="s15"/><expan>Con<ex>tra</ex></expan> XI.<anchor type="crit_app"
 				xml:id="s15e"/><note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n2"
 				/>.</note><note type="crit_app">
 					<orig>contra 11</orig> a<hi rend="sub">1</hi> zentriert; <orig>questio 14</orig> A<hi
@@ -181,15 +182,15 @@
 				</app> </p>
 			<p>
 				<lb/>
-				<anchor type="crit_app" xml:id="s15"/><expan>Con'tra'</expan> XI.<anchor type="crit_app"
+				<anchor type="crit_app" xml:id="s15"/><expan>Con<ex>tra</ex></expan> XI.<anchor type="crit_app"
 					xml:id="s15e"/><note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n2"/>.</note><app>
 						<lem wit="#A"/>
 						<rdg wit="#a1" rend="zentriert">contra 11</rdg>
 						<rdg wit="#A5Lp" rend="AuRd-Gl">questio 14</rdg>
 					</app>   risit<note type="crit_app">fehlt a<hi rend="sub">1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes,
-						das des Druckes zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte –
-						registriert. Diese Anmerkung, die ein Einzelnfall auch im Druck ist, fehlt in dem
-						Freiberger Manuskript. </note>
+								das des Druckes zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte –
+								registriert. Diese Anmerkung, die ein Einzelnfall auch im Druck ist, fehlt in dem
+								Freiberger Manuskript. </note>
 			</p>
 		</x:expect>
 	</x:scenario>
@@ -228,7 +229,7 @@
 						></anchor>tuebitur? $ quod<anchor type="crit_app" xml:id="s1e"></anchor><span type="crit_app" from="#s1"
 							to="#s1e"><orig> tuebituro quod </orig>B, C</span> vix audent Imperatores
 					mundi, audacter subit audaculus
-					<lb></lb>imperator Theologorum. Si mihi D'ominus'
+					<lb></lb>imperator Theologorum. Si mihi <expan>D<ex>ominus</ex></expan>
 				</p>
 			</x:context>
 			<x:expect label="app lem rdg">
@@ -236,18 +237,18 @@
 					<lb></lb>hactenus ecclesiam defendit, et quis te vita defuncto <app><lem wit="#A">tuebitur? <lb/> quod</lem>
 						<rdg wit="#B #C">tuebituro quod</rdg></app> vix audent Imperatores
 					mundi, audacter subit audaculus
-					<lb></lb>imperator Theologorum. Si mihi <expan>D'ominus'</expan>
+					<lb></lb>imperator Theologorum. Si mihi <expan>D<ex>ominus</ex></expan>
 				</p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="span mit vielen rdg (ex: LD)">
 			<x:context>
-				<p>hec talenta b'eatus' quoque <rs type="person"><!--TODO ref nachtragen-->Hila'rius'</rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <anchor type="crit_app" xml:id="s29"/>de .3. ergo. diximus.<anchor type="crit_app" xml:id="s29e"/>
+				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen--><expan>Hila<ex>rius</ex></expan></rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <anchor type="crit_app" xml:id="s29"/>de .3. ergo. diximus.<anchor type="crit_app" xml:id="s29e"/>
 					<span type="crit_app" from="#s29" to="#s29e"> <orig>4to</orig> a<hi rend="sub">1</hi>; <orig>Ad 4tum</orig> a<hi rend="sub">2</hi> AuRd-Gl;  <orig>Ad quartum &lt;..&gt; 4°</orig> A<hi rend="sub">5Lp</hi> AuRd-Gl </span> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
 					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
 			</x:context>
 			<x:expect label="lem/rdg">
-				<p>hec talenta <expan>b'eatus'</expan> quoque <rs type="person"><!--TODO ref nachtragen-->Hila'rius'</rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <app><lem wit="#A">de .3. ergo. diximus.</lem>
+				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen--><expan>Hila<ex>rius</ex></expan></rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <app><lem wit="#A">de .3. ergo. diximus.</lem>
 					<rdg wit="#a1">4to</rdg> <rdg wit="#a2" rend="AuRd-Gl">Ad 4tum</rdg> <rdg wit="#A5Lp" rend="AuRd-Gl">Ad quartum &lt;..&gt; 4°</rdg></app> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
 					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
 			</x:expect>
@@ -262,8 +263,8 @@
 					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
 						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
 							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
-								<orig>Protestatio D'omini' doctoris Carolostadii per respondentem sibi a latere</orig>
-								B; <orig>@</orig> fehlt a<hi rend="sub">1</hi>; <orig>Protestatio Carolostad&lt;ius&gt;</orig>
+								<orig>Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</orig>
+								B<wdb:marker /> <orig>@</orig> fehlt a<hi rend="sub">1</hi><wdb:marker/> <orig>Protestatio Carolostad&lt;ius&gt;</orig>
 								a<hi rend="sub">2 </hi><note type="comment">AuRd-Gl</note></span></p>
 			</x:context>
 			<x:expect label="geordneter content">
@@ -272,7 +273,7 @@
 					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
 						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
 							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
-								<rdg wit="#B">Protestatio D'omini' doctoris Carolostadii per respondentem sibi a latere</rdg>
+								<rdg wit="#B">Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</rdg>
 								<rdg wit="#a1" />
 								<rdg wit="#a2">Protestatio Carolostad&lt;ius&gt;<note type="comment">AuRd-Gl</note></rdg></span></p>
 			</x:expect>
@@ -283,15 +284,15 @@
 		<x:scenario label="s115">
 			<x:context>
 				<p>ob<lb/>inductas <anchor
-					type="crit_app" xml:id="s117"/>per Cypri'anum'<anchor type="crit_app"
+					type="crit_app" xml:id="s117"/>per <expan>Cypri<ex>anum</ex></expan><anchor type="crit_app"
 						xml:id="s117e"/><span type="crit_app" from="#s117" to="#s117e">
 							<orig>Cypriani</orig> a<hi rend="sub">1</hi></span> auctoritates<supplied>.</supplied>
 					ex .2.</p>
 			</x:context>
 			<x:expect label="guten anchor">
 				<p>ob<lb/>inductas <app>
-					<lem>per Cypri'anum'</lem>
-					<rdg with="#a1">Cypriani</rdg>
+					<lem>per <expan>Cypri<ex>anum</ex></expan></lem>
+					<rdg wit="#a1">Cypriani</rdg>
 				</app> auctoritates<supplied>.</supplied>
 					ex .2.</p>
 			</x:expect>
