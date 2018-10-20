@@ -77,7 +77,7 @@
 				<list>
 					<label>I.<note type="crit_app">in arabischen Ziffern in B, C.</note>
 					</label>
-					<item> Cum <expan>D<ex>ominus</ex></expan> <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> d inficiatur<note type="crit_app"><orig> iuficiatur </orig>B.</note> omnem omnium fidelium vitam esse<lb/>poenitentiam, aut poenitudinis indigam.<note type="footnote">Vgl. KGK I.2, Nr. 88, S. 879, Z. 22-31 und KGK I.2, Nr. 90, S. 910, Z. 3-7.</note> Iudaeus est, sub<lb/>Christiana pelle, occlamans, si iustus dei filius est?<note type="crit_app">A, B;<orig> est, </orig>D;<orig> est: </orig>C, E, F, H, G</note>  <w>descen<lb break="no"/>dat</w> de Cruce<note type="footnote">Vgl. <ref type="biblical" cRef="Mt 27,41-43">Mt 27,41-43</ref>.</note>, nescitque hanc vitam, diem crucis perferendae.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 929, Z. 21-S. 931, Z. 27.</note> 
+					<item> Cum <expan>D<ex>ominus</ex></expan> <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> d inficiatur<note type="crit_app"><orig> iuficiatur </orig>B.</note> omnem omnium fidelium vitam esse<lb/>poenitentiam, aut poenitudinis indigam.<note type="footnote">Vgl. KGK I.2, Nr. 88, S. 879, Z. 22-31 und KGK I.2, Nr. 90, S. 910, Z. 3-7.</note> Iudaeus est, sub<lb/>Christiana pelle, occlamans, si iustus dei filius est?<note type="crit_app">A, B;<orig> est, </orig>D;<orig> est: </orig>C, E, F, H, G</note> <w>descen<lb break="no"/>dat</w> de Cruce<note type="footnote">Vgl. <ref type="biblical" cRef="Mt 27,41-43">Mt 27,41-43</ref>.</note>, nescitque hanc vitam, diem crucis perferendae.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 929, Z. 21-S. 931, Z. 27.</note> 
 					</item>
 				</list>
 			</x:context>
@@ -85,7 +85,7 @@
 				<list>
 					<label>I.<note type="crit_app">in arabischen Ziffern in B, C.</note></label>
 					<item> Cum <expan>D<ex>ominus</ex></expan>
-						<rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs>  d <app>
+						<rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> d <app>
 							<lem wit="#A">inficiatur</lem>
 							<rdg wit="#B">iuficiatur</rdg></app> omnem omnium fidelium vitam esse<lb/>poenitentiam, aut poenitudinis indigam.<note type="footnote">Vgl. KGK I.2, Nr. 88, S. 879, Z. 22-31 und KGK I.2, Nr. 90, S. 910, Z. 3-7.</note> Iudaeus est, sub<lb/>Christiana pelle, occlamans, si iustus dei filius <app>
 								<lem wit="#A #B">est?</lem>
@@ -101,7 +101,7 @@
 				<list>
 					<label>V.<note type="crit_app"><orig> V┐ </orig>F, G<hi rend="sub">1</hi>, H.</note>
 					</label>
-					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque anathemate<note type="crit_app"><orig> ʔ.iathemate </orig>F.</note> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note>  <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam defendet?<note type="crit_app"><orig> defendet: </orig>C.</note><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
+					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque anathemate<note type="crit_app"><orig> ʔ.iathemate </orig>F.</note> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note> <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam defendet?<note type="crit_app"><orig> defendet: </orig>C.</note><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
 					</item>
 				</list>
 			</x:context>
@@ -116,7 +116,7 @@
 					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque <app>
 						<lem wit="#A">anathemate</lem>
 						<rdg wit="#F">ʔ.iathemate</rdg>
-					</app> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note>  <w>Excom<lb break="no"/>municatus</w>  autem quomodo ecclesiam <app>
+					</app> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note> <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam <app>
 						<lem wit="#A">defendet?</lem>
 						<rdg wit="#C">defendet:</rdg>
 					</app><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
@@ -187,7 +187,7 @@
 						<lem wit="#A"/>
 						<rdg wit="#a1" rend="zentriert">contra 11</rdg>
 						<rdg wit="#A5Lp" rend="AuRd-Gl">questio 14</rdg>
-					</app>   risit<note type="crit_app">fehlt a<hi rend="sub">1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes,
+					</app>  risit<note type="crit_app">fehlt a<hi rend="sub">1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes,
 								das des Druckes zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte –
 								registriert. Diese Anmerkung, die ein Einzelnfall auch im Druck ist, fehlt in dem
 								Freiberger Manuskript. </note>
@@ -195,15 +195,15 @@
 		</x:expect>
 	</x:scenario>
 	
-	<x:scenario label="text vor krit. FN">
+	<x:scenario label="text vor krit. FN – „folgt“">
 		<x:context>
 			<p>
-				<w>ful<lb break="no"/>ten.</w> Wie sie<note type="crit_app">folgt<orig> auch </orig>a</note> entlich heylig
+				<w>ful<lb break="no"/>ten.</w> Wie sie<note type="crit_app">folgt<orig> auch </orig>a</note> entlich heylig<note type="crit_app">folgt<orig> <expan>D<ex>octo</ex>r</expan> </orig>b</note>
 			</p>
 		</x:context>
-		<x:expect label="Spatium">
+		<x:expect label="Spatium; add mit wit">
 			<p>
-				<w>ful<lb break="no"/>ten.</w>  Wie sie<add wit="#a">auch</add> entlich heylig
+				<w>ful<lb break="no"/>ten.</w> Wie sie<add wit="#a">auch</add> entlich heylig<add wit="#b"><expan>D<ex>octo</ex>r</expan></add>
 			</p>
 		</x:expect>
 	</x:scenario>
@@ -244,7 +244,7 @@
 		<x:scenario label="span mit vielen rdg (ex: LD)">
 			<x:context>
 				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen--><expan>Hila<ex>rius</ex></expan></rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <anchor type="crit_app" xml:id="s29"/>de .3. ergo. diximus.<anchor type="crit_app" xml:id="s29e"/>
-					<span type="crit_app" from="#s29" to="#s29e"> <orig>4to</orig> a<hi rend="sub">1</hi>; <orig>Ad 4tum</orig> a<hi rend="sub">2</hi> AuRd-Gl;  <orig>Ad quartum &lt;..&gt; 4°</orig> A<hi rend="sub">5Lp</hi> AuRd-Gl </span> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
+					<span type="crit_app" from="#s29" to="#s29e"> <orig>4to</orig> a<hi rend="sub">1</hi>; <orig>Ad 4tum</orig> a<hi rend="sub">2</hi> AuRd-Gl; <orig>Ad quartum &lt;..&gt; 4°</orig> A<hi rend="sub">5Lp</hi> AuRd-Gl </span> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
 					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
 			</x:context>
 			<x:expect label="lem/rdg">
