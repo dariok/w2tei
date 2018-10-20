@@ -11,21 +11,44 @@
 				<p>
 					<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf'urstlich' g'naden'</p>
 			</x:context>
-			<x:expect label="ex" xml:space="preserve">
-				<p><lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf<ex>urstlich</ex> g<ex>naden</ex></p></x:expect>
+			<x:expect label="ex">
+				<p><lb/>Durchleuchtigster Hochgebornner Churfurst. euern <expan>churf<ex>urstlich</ex></expan> <expan>g<ex>naden</ex></expan></p></x:expect>
 		</x:scenario>
 	</x:scenario>
 	
-  <x:scenario label="bibl mit abbr eränzen">
-    <x:context>
-      <note type="footnote">Siehe
-        z.B. <bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-          >r</hi></bibl>.</note>
-    </x:context>
-    <x:expect label="@ref">
-      <note type="footnote">Siehe
-        z.B. <bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-          >r</hi></bibl>.</note>
-    </x:expect>
-  </x:scenario>
+	<x:scenario label="bibl mit abbr eränzen">
+		<x:context>
+			<note type="footnote">Siehe z.B. <bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+			>r</hi></bibl>.</note>
+		</x:context>
+		<x:expect label="@ref">
+			<note type="footnote">Siehe z.B. <bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+			>r</hi></bibl>.</note>
+		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="krit. und FN gemischt">
+		<x:scenario label="103, p6">
+			<x:context>
+				<p><lb/><anchor type="crit_app" xml:id="s2"/>Protestatio<note type="footnote" xml:id="n2"
+					>Hier im Sinn von <hi style="font-style: italic;">Bedingung</hi>, als vorsorglichen
+					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
+						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
+							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
+								<orig>Protestatio D'omini' doctoris Carolostadii per respondentem sibi a latere</orig>
+								B; <orig>@</orig> fehlt a<hi rend="sub">1</hi>; <orig>Protestatio Carolostad&lt;ius&gt;</orig>
+								a<hi rend="sub">2 </hi><note type="comment">AuRd-Gl</note></span></p>
+			</x:context>
+			<x:expect label="geordneter content">
+				<p><lb/><anchor type="crit_app" xml:id="s2"/>Protestatio<note type="footnote" xml:id="n2"
+					>Hier im Sinn von <hi style="font-style: italic;">Bedingung</hi>, als vorsorglichen
+					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
+						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
+							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
+								<orig>Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</orig>
+								B<wdb:marker/> <orig>@</orig> fehlt a<hi rend="sub">1</hi><wdb:marker /> <orig>Protestatio Carolostad<supplied>ius</supplied></orig>
+								a<hi rend="sub">2 </hi><note type="comment">AuRd-Gl</note></span></p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
