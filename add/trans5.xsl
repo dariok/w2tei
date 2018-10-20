@@ -50,6 +50,17 @@
 				<xsl:variable name="wit" select="normalize-space($note/tei:orig/following-sibling::text())"/>
 				<xsl:sequence select="$text" /><add wit="#{$wit}"><xsl:apply-templates select="$note/tei:orig" mode="norm"/></add>
 			</xsl:when>
+			<xsl:when test="matches(lower-case($note), 'vo. editor verbessert')">
+				<choice>
+					<sic>
+						<xsl:apply-templates select="$note/tei:orig[1]" mode="norm" />
+						<xsl:if test="$note/tei:orig[1]/following-sibling::node()[not(normalize-space()='')]">
+							<note type="comment"><xsl:sequence select="$note/tei:orig[1]/following-sibling::node()" /></note>
+						</xsl:if>
+					</sic>
+					<corr><xsl:sequence select="$text" /></corr>
+				</choice>
+			</xsl:when>
 			<xsl:otherwise>
 				<xsl:choose>
 					<xsl:when test="$note[self::tei:note]">
