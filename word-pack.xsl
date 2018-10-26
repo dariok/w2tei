@@ -179,11 +179,12 @@
 		<xsl:choose>
 			<xsl:when test="$pr = 'p'">
 				<xsl:sequence select="wt:is($context, $test, $pr)
-					and not(wt:is($context/preceding-sibling::w:p[1], $test, $pr))" />
+					and not(wt:is($context/preceding-sibling::w:p[1], $test, 'p'))" />
 			</xsl:when>
 			<xsl:when test="$pr = 'r'">
 				<xsl:sequence select="wt:is($context, $test, $pr)
-					and not(wt:is($context/preceding-sibling::w:r[1], $test, $pr))" />
+					and not(wt:is($context/preceding-sibling::w:r[1], $test, 'r')
+					or wt:is($context/parent::w:p/preceding-sibling::w:p[1]/w:r[last()], $test, 'r'))" />
 			</xsl:when>
 			<xsl:otherwise><xsl:sequence select="false()"/></xsl:otherwise>
 		</xsl:choose>

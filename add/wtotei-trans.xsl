@@ -19,29 +19,33 @@
     </xsl:template>
     
     <!-- Paragraphen -->
-    <xsl:template match="w:p[hab:isDiv(.)]">
-        <xsl:variable name="myId" select="generate-id()"/>
-        <div>
-            <xsl:apply-templates select="following-sibling::w:p[(hab:isP(.))
-                and generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />
-        </div>
-    </xsl:template>
+	<xsl:template match="w:p[hab:isDiv(.)]">
+		<xsl:variable name="myId" select="generate-id()"/>
+		<xsl:text>
+			</xsl:text>
+		<div>
+			<xsl:apply-templates select="following-sibling::w:p[(hab:isP(.))
+				and generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />
+		</div>
+	</xsl:template>
     
     <xsl:template match="w:p[wt:is(., 'berschrift1')]" />
     
-    <xsl:template match="w:p[hab:isP(.)]">
-        <xsl:variable name="myId" select="generate-id()"/>
-        <xsl:variable name="name">
-            <xsl:choose>
-                <xsl:when test="wt:is(., 'KSWidmung') or wt:is(., 'KSAnrede')">salute</xsl:when>
-                <xsl:when test="wt:is(., 'KSAdresse')">opener</xsl:when>
-                <xsl:when test="wt:is(., 'KSSchluformeln')">closer</xsl:when>
-                <xsl:when test="wt:is(., 'KSBuchtitel')">titlePart</xsl:when>
-                <xsl:when test="wt:is(., 'KSZwischenberschrift', 'p')">head</xsl:when>
-                <xsl:when test="wt:is(., 'KSlistWit', 'p')">listWit</xsl:when>
-                <xsl:otherwise>p</xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
+	<xsl:template match="w:p[hab:isP(.)]">
+		<xsl:variable name="myId" select="generate-id()"/>
+		<xsl:variable name="name">
+			<xsl:choose>
+				<xsl:when test="wt:is(., 'KSWidmung') or wt:is(., 'KSAnrede')">salute</xsl:when>
+				<xsl:when test="wt:is(., 'KSAdresse')">opener</xsl:when>
+				<xsl:when test="wt:is(., 'KSSchluformeln')">closer</xsl:when>
+				<xsl:when test="wt:is(., 'KSBuchtitel')">titlePart</xsl:when>
+				<xsl:when test="wt:is(., 'KSZwischenberschrift', 'p')">head</xsl:when>
+				<xsl:when test="wt:is(., 'KSlistWit', 'p')">listWit</xsl:when>
+				<xsl:otherwise>p</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:text>
+				</xsl:text>
         <xsl:element name="{$name}">
             <!-- TODO später auch für Anreden und ggf. Buchtitle -->
             <xsl:if test="wt:is(., 'KSSchluformeln') or wt:is(., 'KSBuchtitel')">
@@ -74,6 +78,21 @@
             <xsl:sequence select="." />
         </xsl:element>
     </xsl:template>
+	
+	<xsl:template match="w:endnote">
+		<xsl:text>
+			</xsl:text>
+		<w:endnote>
+			<xsl:sequence select="node()" />
+		</w:endnote>
+	</xsl:template>
+	<xsl:template match="w:footnote">
+		<xsl:text>
+			</xsl:text>
+		<w:footnote>
+			<xsl:sequence select="node()" />
+		</w:footnote>
+	</xsl:template>
     
     <!-- Funktionen -->
     <xd:doc>
