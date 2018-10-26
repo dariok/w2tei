@@ -61,6 +61,8 @@
 	</xsl:template>
 	
 	<xsl:template match="tei:p">
+		<xsl:text>
+				</xsl:text>
 		<p>
 			<xsl:apply-templates select="node()" />
 		</p>

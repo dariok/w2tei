@@ -23,9 +23,8 @@
 					<lb/>und schreyben den bapst einen got aller menschen.
 				</p>
 			</x:context>
-			<x:expect label="aller Text und w">
-				<p>
-					<lb/>Viel gelarten und ungelarten/ gestrenger her und
+			<x:expect label="aller Text und w" xml:space="preserve">
+				<p><lb/>Viel gelarten und ungelarten/ gestrenger her und
 					<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
 					<lb/>heylig mache/ und umbkere/ das erwelter und <w>bestetig<lb break="no"/>ter</w> Bapst/ in keinen weg yrren und sundigen/ auch <w>nie<lb break="no"/>mants</w> gewalt odder unrecht thun kan/ unnd sprechen/
 					<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
@@ -35,8 +34,7 @@
 					<lb/>vorfuren und betriegen/ darumb man auch den <w>vorstor<lb break="no"/>ben</w> Bepsten/ kein seel Messe nach halten sol/ und weysz
 					<lb/>nicht was sie ausz dem Bapst machen/ dan sie setzenn
 					<lb/>und schreyben den bapst einen got aller menschen.
-				</p>
-			</x:expect>
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="mit FN">
 			<x:context>
@@ -49,14 +47,12 @@
 					<lb/>len gutten ubungen und wercken yhm widder sei/ und
 				</p>
 			</x:context>
-			<x:expect label="w mit lb und korrekte Spatien">
-				<p>
-					<lb/>gewest/ der bekant offentlich/ das sein fleisch unheylig/ <w>sun<lb break="no"/>dig/</w> und ein mutter aller boszheiten ist.<note type="footnote">Vgl. <ref type="biblical">Röm 7,5</ref> Vg
+			<x:expect label="w mit lb und korrekte Spatien" xml:space="preserve">
+				<p><lb/>gewest/ der bekant offentlich/ das sein fleisch unheylig/ <w>sun<lb break="no"/>dig/</w> und ein mutter aller boszheiten ist.<note type="footnote">Vgl. <ref type="biblical">Röm 7,5</ref> Vg
 						<quote>Cum enim essemus in carne, passiones peccatorum, quæ per legem erant, operabantur
 						in membris nostris, ut fructificarent morti.</quote>; <ref type="biblical">ebd., 7,25</ref> Vg
 						<quote>gratia Dei per Iesum Christum Dominum nostrum. Igitur ego ipse mente servio legi Dei/ carne autem, legi peccati.</quote></note> Item/ das in <w>al<lb break="no"/>len</w> gutten ubungen und wercken yhm widder sei/ und
-				</p>
-			</x:expect>
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="mit Marginalie">
 			<x:context>
@@ -65,11 +61,9 @@
 					<lb/>der ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
 				</p>
 			</x:context>
-			<x:expect label="w und Marginalie drin">
-				<p>
-					<lb/>Dan wie heylig der mensch auff erdtreich wurt <w>od<note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note><lb break="no"/>der</w> ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
-				</p>
-			</x:expect>
+			<x:expect label="w und Marginalie drin" xml:space="preserve">
+				<p><lb/>Dan wie heylig der mensch auff erdtreich wurt <w>od<note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note><lb break="no"/>der</w> ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="FN vor nächstem Wort">
 			<x:context>
@@ -80,13 +74,11 @@
 						dedit quid dicam et quid loquar“. </note> Nu die weil Christus sein wort/ in den gotlichenn
 				</p>
 			</x:context>
-			<x:expect label="ganzes Wort im w">
-				<p>
-					<lb/>nit von mir selber/ szonder wie mir mein vatter <w>befoh<lb break="no"/>len.</w><note type="footnote">Vgl. <ref type="biblical">Joh 12,49</ref> Vg
+			<x:expect label="ganzes Wort im w" xml:space="preserve">
+				<p><lb/>nit von mir selber/ szonder wie mir mein vatter <w>befoh<lb break="no"/>len.</w><note type="footnote">Vgl. <ref type="biblical">Joh 12,49</ref> Vg
 						<quote>quia ego ex me ipso non sum locutus sed qui misit me Pater ipse mihi mandatum
 						dedit quid dicam et quid loquar</quote>. </note> Nu die weil Christus sein wort/ in den gotlichenn
-				</p>
-			</x:expect>
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="mit pb">
 			<x:context>
@@ -97,11 +89,9 @@
 					<lb/>nung und glauben/ aber nit ym wesen und werck.
 				</p>
 			</x:context>
-			<x:expect label="w">
-				<p>
-					<lb/>und altem weszen/ wir hoffen alhie/ das unser <w>ungefol<pb n="[A3r]" break="no" /><lb break="no" />giger</w> leyp erlost werd/ und haben die erlosung in <w>hoffe<lb break="no"/>nung</w> und glauben/ aber nit ym wesen und werck.
-				</p>
-			</x:expect>
+			<x:expect label="w" xml:space="preserve">
+				<p><lb/>und altem weszen/ wir hoffen alhie/ das unser <w>ungefol<pb n="[A3r]" break="no" /><lb break="no" />giger</w> leyp erlost werd/ und haben die erlosung in <w>hoffe<lb break="no"/>nung</w> und glauben/ aber nit ym wesen und werck.
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="mit rs">
 			<x:context>
@@ -116,13 +106,11 @@
 					<lb/><rs type="person"><!--TODO ref eintragen-->tius </rs>geschrieben/ keiner magk ein ketzer gehalten werden/
 				</p>
 			</x:context>
-			<x:expect label="rs mit w">
-				<p>
-					<lb/>als ketzerisch vordampt/<note type="footnote">Zur Verurteilung der Lehre Luthers durch die theologische Fakutät Löwen, unter deren Artikeln sich auch vier Sätze Karlstadts aus den <hi style="font-style: italic;">Apologeticae Conclusiones</hi> finden, vgl. KGK II, EE 116 und EE 128.</note> und mich doch nit dartzu <w>be<lb break="no"/>ruffen/</w> in yhren schulen <rs type="person"><!--TODO ref eintragen-->Thomas Aquinas</rs>/ <rs type="person"><!--TODO ref eintragen--><w>Bonaven<lb break="no"/>turas</w></rs>/ <rs type="person"><!--TODO ref eintragen-->Scotos</rs>/ und <rs type="person"><!--TODO ref eintragen-->Capricornos</rs>/ die vormengter
-					<lb/>schrifften weebel und hauptleut seind/ mit hoher <w>emsi<lb break="no"/>ckeit</w> leszen und verteydigen/ kan ich sie/ und yhrer <w>gley<lb break="no"/>chen/</w> auch nit leyden. </p><p>
-					<lb/>Zu dem vierten/ hab ich zuvor/ das <rs type="person"><!--TODO ref eintragen-->Bapst <w>Innocen<lb break="no"/>tius</w></rs> geschrieben/ keiner magk ein ketzer gehalten werden/
-				</p>
-			</x:expect>
+			<x:expect label="rs mit w" xml:space="preserve">
+				<p><lb/>als ketzerisch vordampt/<note type="footnote">Zur Verurteilung der Lehre Luthers durch die theologische Fakutät Löwen, unter deren Artikeln sich auch vier Sätze Karlstadts aus den <hi style="font-style: italic;">Apologeticae Conclusiones</hi> finden, vgl. KGK II, EE 116 und EE 128.</note> und mich doch nit dartzu <w>be<lb break="no"/>ruffen/</w> in yhren schulen <rs type="person"><!--TODO ref eintragen-->Thomas Aquinas</rs>/ <rs type="person"><!--TODO ref eintragen--><w>Bonaven<lb break="no"/>turas</w></rs>/ <rs type="person"><!--TODO ref eintragen-->Scotos</rs>/ und <rs type="person"><!--TODO ref eintragen-->Capricornos</rs>/ die vormengter
+					<lb/>schrifften weebel und hauptleut seind/ mit hoher <w>emsi<lb break="no"/>ckeit</w> leszen und verteydigen/ kan ich sie/ und yhrer <w>gley<lb break="no"/>chen/</w> auch nit leyden. </p>
+				<p><lb/>Zu dem vierten/ hab ich zuvor/ das <rs type="person"><!--TODO ref eintragen-->Bapst <w>Innocen<lb break="no"/>tius</w></rs> geschrieben/ keiner magk ein ketzer gehalten werden/
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="pb2">
 			<x:context>
@@ -130,11 +118,9 @@
 					<lb/>negocii cardo versatur, illic quam est imbellis quam mollis et penetra-<lb/><pb n="[A2r]"/>bilis.<note type="footnote">Eine ähnliche Argumentation sowie die Gegenüberstellung von wahren (den Wittenbergern) und falschen ( <rs type="person"><!--TODO ref eintragen-->Eck</rs>) Verteidigern der göttliche Lehre findet sich auch in:  <rs type="person"><!--TODO ref eintragen-->Karlstadt</rs> an  <rs type="person"><!--TODO ref eintragen-->Eck</rs>, 22.5.1519 (KGK II, EE 99##)</note> Nihil magis pugil gloriosus ambit, quam gloriolam apud erudi-<lb/>tulos et illiteratos aucupari, quando laudis tam est avidus, ut nil
 				</p>
 			</x:context>
-			<x:expect label="2* pb">
-				<p>
-					<lb/>negocii cardo versatur, illic quam est imbellis quam mollis et <w>penetra<pb n="[A2r]"/><lb break="no"/>bilis.</w><note type="footnote">Eine ähnliche Argumentation sowie die Gegenüberstellung von wahren (den Wittenbergern) und falschen ( <rs type="person"><!--TODO ref eintragen-->Eck</rs>) Verteidigern der göttliche Lehre findet sich auch in:  <rs type="person"><!--TODO ref eintragen-->Karlstadt</rs> an  <rs type="person"><!--TODO ref eintragen-->Eck</rs>, 22.5.1519 (KGK II, EE 99##)</note> Nihil magis pugil gloriosus ambit, quam gloriolam apud <w>erudi<lb break="no"/>tulos</w> et illiteratos aucupari, quando laudis tam est avidus, ut nil
-				</p>
-			</x:expect>
+			<x:expect label="2* pb" xml:space="preserve">
+				<p><lb/>negocii cardo versatur, illic quam est imbellis quam mollis et <w>penetra<pb n="[A2r]"/><lb break="no"/>bilis.</w><note type="footnote">Eine ähnliche Argumentation sowie die Gegenüberstellung von wahren (den Wittenbergern) und falschen ( <rs type="person"><!--TODO ref eintragen-->Eck</rs>) Verteidigern der göttliche Lehre findet sich auch in:  <rs type="person"><!--TODO ref eintragen-->Karlstadt</rs> an  <rs type="person"><!--TODO ref eintragen-->Eck</rs>, 22.5.1519 (KGK II, EE 99##)</note> Nihil magis pugil gloriosus ambit, quam gloriolam apud <w>erudi<lb break="no"/>tulos</w> et illiteratos aucupari, quando laudis tam est avidus, ut nil
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="mit pb und note">
 			<x:context>
@@ -149,37 +135,33 @@
 					<lb></lb>tulos et illiteratos aucupari, quando laudis tam est avidus, ut nil
 				</p>
 			</x:context>
-			<x:expect label="w mit note danach">
-				<p>
-					<lb></lb>ducit, ut suspicentur nos discrepare in re notissima, sicubi vero
+			<x:expect label="w mit note danach" xml:space="preserve">
+				<p><lb></lb>ducit, ut suspicentur nos discrepare in re notissima, sicubi vero
 					<lb></lb>negocii cardo versatur, illic quam est imbellis quam mollis et <w>penetra<pb n="[A2r]" break="no"/><lb break="no"/>bilis.</w><note
 						type="footnote">Eine ähnliche Argumentation sowie die Gegenüberstellung von wahren (den
 						Wittenbergern) und falschen (<rs type="person"><!--TODO ref eintragen-->Eck</rs>) Verteidigern der göttliche
 						Lehre findet sich auch in: <rs type="person"><!--TODO ref eintragen-->Karlstadt</rs> an <rs type="person"
 							><!--TODO ref eintragen-->Eck</rs>, 22.5.1519 (KGK II, EE 99##)</note> Nihil magis pugil gloriosus ambit, quam gloriolam apud <w>erudi<lb break="no"/>tulos</w> et illiteratos aucupari, quando laudis tam est avidus, ut nil
-				</p>
-			</x:expect>
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="... mit geteiltem rs und Marginalie">
 			<x:context>
 				<p>essem <rs type="place">Augu-</rs><note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/><rs type="place">stae</rs>, patiebar</p>
 			</x:context>
-			<x:expect label="ein rs mit Marginalie">
-				<p>essem <rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb break="no"/>stae</rs>, patiebar</p>
-			</x:expect>
+			<x:expect label="ein rs mit Marginalie" xml:space="preserve">
+				<p>essem <rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"><hi style="font-style: italic;">fehlt B, C</hi></note></note><lb break="no"/>stae</rs>, patiebar</p></x:expect>
 		</x:scenario>
 	</x:scenario>
+	
 	<x:scenario label="quote">
 		<x:context>
 			<p>
 				<lb/>che kloster erbauten. Wie sie auch yhre keesz secke<note type="footnote"><bibl>DWb 11, 257</bibl>: „Käsesack: sack in den der quark gethan wird, wenn er unter die presse kommt“.</note> ful-
 			</p>
 		</x:context>
-		<x:expect label="Umsetzung mit quote">
-			<p>
-				<lb/>che kloster erbauten. Wie sie auch yhre keesz secke<note type="footnote"><bibl>DWb 11, 257</bibl>: <quote>Käsesack: sack in den der quark gethan wird, wenn er unter die presse kommt</quote>.</note> ful-
-			</p>
-		</x:expect>
+		<x:expect label="Umsetzung mit quote" xml:space="preserve">
+				<p><lb/>che kloster erbauten. Wie sie auch yhre keesz secke<note type="footnote"><bibl>DWb 11, 257</bibl>: <quote>Käsesack: sack in den der quark gethan wird, wenn er unter die presse kommt</quote>.</note> ful-
+			</p></x:expect>
 		<x:scenario label="mehrere quote in FN">
 			<x:context>
 				<lb/>iiii.<note type="footnote">Vgl. <ref type="biblical">Eph 4,22-24</ref> Vg
@@ -223,6 +205,7 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
 	<x:scenario label="Trennungen">
 		<x:scenario label="Worttrennung">
 			<x:context>
@@ -232,28 +215,24 @@
 					<lb/>getzeigt und begriffen.
 				</p>
 			</x:context>
-			<x:expect label="w mit lb">
-				<p>
-					<lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
+			<x:expect label="w mit lb" xml:space="preserve">
+				<p><lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
 					<lb/>befelh gottis/ der genugsamlich in heyliger schrifft <w>an<lb break="no"/>getzeigt</w> und begriffen.
-				</p>
-			</x:expect>
+				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="trennung mit Marginalie">
 			<x:context>
 				<p>istis: or-<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb/>natissimi viri:</p>
 			</x:context>
-			<x:expect label="w mit Marginalien drin">
-				<p>istis: <w>or<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb break="no"/>natissimi</w> viri:</p>
-			</x:expect>
+			<x:expect label="w mit Marginalien drin" xml:space="preserve">
+				<p>istis: <w>or<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb break="no"/>natissimi</w> viri:</p></x:expect>
 		</x:scenario>
 		<x:scenario label="Trennung in rs mit Teilen vor und dahinter">
 			<x:context>
 				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium sanc-</rs><lb/><rs type="place"><!--TODO ref eintragen-->torum Wittenbergen’sium‘</rs> ordinariis</p>
 			</x:context>
-			<x:expect label="rs mit drei Wörtern und einem Umbruch">
-				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium <w>sanc<lb break="no"/>torum</w> Wittenbergen’sium‘</rs>  ordinariis</p>
-			</x:expect>
+			<x:expect label="rs mit drei Wörtern und einem Umbruch" xml:space="preserve">
+				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium <w>sanc<lb break="no"/>torum</w> Wittenbergen’sium‘</rs>  ordinariis</p></x:expect>
 		</x:scenario>
 	</x:scenario>
 	
@@ -280,9 +259,8 @@
 						Die Symbolisierung Judas durch einen Löwen findet sich in <ref type="biblical">1.Mose 49,9</ref>. Karlstadt nutzt die Synonymität mit dem Namen Papst <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> Zugleich verbindet er diese Textstelle mit <ref type="biblical">Offb 3,7</ref> Vg
 						„qui aperit et nemo cludit, et cludit et nemo aperit.“</note></p>
 			</x:context>
-			<x:expect label="identisch, zwei quote aufgelöst,mehrere Trennungen">
-				<p>
-					<lb/>Viel gelarten und ungelarten/ gestrenger her und
+			<x:expect label="identisch, zwei quote aufgelöst,mehrere Trennungen" xml:space="preserve">
+				<p><lb/>Viel gelarten und ungelarten/ gestrenger her und
 					<lb/>gonner/ sagen/ das Bepstliche heylickeit/ einenn/ alszo
 					<lb/>heylig mache/ und umbkere/ das erwelter und <w>bestetig<lb break="no"/>ter</w> Bapst/ in keinen weg yrren und sundigen/ auch <w>nie<lb break="no"/>mants</w> gewalt odder unrecht thun kan/ unnd sprechen/
 					<lb/>Ap gleich der heylig vatter Bapst/ einen/ an leyp odder
@@ -296,8 +274,7 @@
 						<quote>Ecce vicit leo de tribu Iuda radix David/ aperire librum <gap />.</quote> Die Wurzel Jesse, das Stammgeschlecht <rs type="person"><!--TODO ref eintragen-->Davids</rs>, aus der der Messias entstammt, geht zurück auf <ref type="biblical">Jes 11,1-10</ref>. Aus ihr bezog sich die heilsgeschichtliche Legitimation der gegenwärtigen
 						Kirche, die sich im Glauben in apostolischer und ungebrochener Kontinuität verstand.
 						Die Symbolisierung Judas durch einen Löwen findet sich in <ref type="biblical">1.Mose 49,9</ref>. Karlstadt nutzt die Synonymität mit dem Namen Papst <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> Zugleich verbindet er diese Textstelle mit <ref type="biblical">Offb 3,7</ref> Vg
-						<quote>qui aperit et nemo cludit, et cludit et nemo aperit.</quote></note></p>
-			</x:expect>
+						<quote>qui aperit et nemo cludit, et cludit et nemo aperit.</quote></note></p></x:expect>
 		</x:scenario>
 	</x:scenario>
 	
