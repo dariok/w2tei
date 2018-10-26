@@ -2,7 +2,24 @@
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	xmlns:wdb="https://github.com/dariok/wdbplus"
-	stylesheet="trans5.xsl">
+	stylesheet="trans-5.xsl">
+	
+	<x:scenario label="T1: folgt">
+		<x:scenario label="T1.1: LD, 2 verschiedene">
+			<x:context>
+				<p>
+					<lb/>Nam secundum <rs type="person"><!--TODO ref nachtragen--><expan>Aposto<ex>lum</ex></expan></rs> per unum hominem intravit peccatum<note type="crit_app">folgt <orig>in mundum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>in mundum</orig> am Rand hinzugefügt A<hi rend="sub">5Lp</hi> </note> in omnes homines<note type="footnote">Vgl. <ref type="biblical" cRef="Rm 5,12">Röm 5,12</ref>.</note> Sicut
+				</p>
+			</x:context>
+			<x:expect label="2 add">
+				<p>
+					<lb/>Nam secundum <rs type="person"><!--TODO ref nachtragen--><expan>Aposto<ex>lum</ex></expan></rs> per unum hominem intravit peccatum<add wit="#a1">in mundum</add><add place="margin" wit="#A5Lp">in mundum</add> in omnes homines<note type="footnote">Vgl. <ref type="biblical" cRef="Rm 5,12">Röm 5,12</ref>.</note> Sicut
+				</p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
+	<x:pending>
 	<x:scenario label="krit. Anmerkungen">
 		<x:scenario label="einmal vom Editor verbessert für">
 			<x:context>
@@ -298,4 +315,5 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	</x:pending>
 </x:description>
