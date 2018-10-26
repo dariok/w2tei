@@ -3,7 +3,7 @@
     xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
     xmlns:hab="http://diglib.hab.de"
-    xmlns:wdb="https://github.com/dariok/wdbplus"
+    xmlns:wt="https://github.com/dariok/w2tei"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xmlns="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all" version="3.0">
@@ -14,7 +14,7 @@
     
     <xsl:template match="w:body">
         <xsl:apply-templates
-          select="w:p[wdb:is(., 'berschrift1')]/following-sibling::w:p[hab:isDiv(.)]"/>
+          select="w:p[wt:is(., 'berschrift1')]/following-sibling::w:p[hab:isDiv(.)]"/>
         <xsl:sequence select="parent::w:document/following-sibling::w:*"/>
     </xsl:template>
     
@@ -27,24 +27,24 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="w:p[wdb:is(., 'berschrift1')]" />
+    <xsl:template match="w:p[wt:is(., 'berschrift1')]" />
     
     <xsl:template match="w:p[hab:isP(.)]">
         <xsl:variable name="myId" select="generate-id()"/>
         <xsl:variable name="name">
             <xsl:choose>
-                <xsl:when test="wdb:is(., 'KSWidmung') or wdb:is(., 'KSAnrede')">salute</xsl:when>
-                <xsl:when test="wdb:is(., 'KSAdresse')">opener</xsl:when>
-                <xsl:when test="wdb:is(., 'KSSchluformeln')">closer</xsl:when>
-                <xsl:when test="wdb:is(., 'KSBuchtitel')">titlePart</xsl:when>
-                <xsl:when test="wdb:is(., 'KSZwischenberschrift', 'p')">head</xsl:when>
-                <xsl:when test="wdb:is(., 'KSlistWit', 'p')">listWit</xsl:when>
+                <xsl:when test="wt:is(., 'KSWidmung') or wt:is(., 'KSAnrede')">salute</xsl:when>
+                <xsl:when test="wt:is(., 'KSAdresse')">opener</xsl:when>
+                <xsl:when test="wt:is(., 'KSSchluformeln')">closer</xsl:when>
+                <xsl:when test="wt:is(., 'KSBuchtitel')">titlePart</xsl:when>
+                <xsl:when test="wt:is(., 'KSZwischenberschrift', 'p')">head</xsl:when>
+                <xsl:when test="wt:is(., 'KSlistWit', 'p')">listWit</xsl:when>
                 <xsl:otherwise>p</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:element name="{$name}">
             <!-- TODO später auch für Anreden und ggf. Buchtitle -->
-            <xsl:if test="wdb:is(., 'KSSchluformeln') or wdb:is(., 'KSBuchtitel')">
+            <xsl:if test="wt:is(., 'KSSchluformeln') or wt:is(., 'KSBuchtitel')">
                 <xsl:attribute name="rendition">
                     <xsl:choose>
                         <xsl:when test="descendant::w:jc[@w:val='center']">
@@ -66,10 +66,10 @@
                     </xsl:choose>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:if test="wdb:is(., 'KSZwischenberschrift2', 'p')">
+            <xsl:if test="wt:is(., 'KSZwischenberschrift2', 'p')">
                 <xsl:attribute name="type">subheading</xsl:attribute>
             </xsl:if>
-            <xsl:sequence select="preceding-sibling::w:p[not(hab:isP(.)or wdb:is(., 'KSEE-Titel')or wdb:is(., 'berschrift1'))
+            <xsl:sequence select="preceding-sibling::w:p[not(hab:isP(.)or wt:is(., 'KSEE-Titel')or wt:is(., 'berschrift1'))
                 and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]"/>
             <xsl:sequence select="." />
         </xsl:element>
@@ -96,7 +96,7 @@
   
     <xsl:function name="hab:isStruct" as="xs:boolean">
         <xsl:param name="context" />
-        <xsl:sequence select="hab:isP($context) or wdb:is($context, 'KSEE-Titel')
-            or wdb:is($context, 'berschrift1') or wdb:is($context, 'KSZwischenberschrift')" />
+        <xsl:sequence select="hab:isP($context) or wt:is($context, 'KSEE-Titel')
+            or wt:is($context, 'berschrift1') or wt:is($context, 'KSZwischenberschrift')" />
     </xsl:function>
 </xsl:stylesheet>

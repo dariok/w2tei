@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math"
-    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:hab="http://diglib.hab.de"
-    xmlns:wdb="https://github.com/dariok/wdbplus" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all"
+    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    xmlns:hab="http://diglib.hab.de"
+    xmlns:wt="https://github.com/dariok/w2tei"
+    xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all"
     version="3.0">
     
     <xsl:include href="styles-inc.xsl"/>
     
     <xsl:variable name="fline">
-        <xsl:value-of select="wdb:string(//w:body/w:p[1])"/>
+        <xsl:value-of select="wt:string(//w:body/w:p[1])"/>
     </xsl:variable>
     <xsl:variable name="nr">
         <xsl:value-of select="normalize-space(hab:rmSquare(substring-after($fline, 'Nr.')))"/>
@@ -33,7 +35,7 @@
             n="{$nr}">
             <xsl:attribute name="xml:id">
                 <xsl:choose>
-                    <xsl:when test="wdb:string(//w:body/w:p[wdb:is(., 'berschrift1')]) = 'Text'">
+                    <xsl:when test="wt:string(//w:body/w:p[wt:is(., 'berschrift1')]) = 'Text'">
                         <xsl:value-of select="concat('edoc_ed000240_', $ee, '_transcript')"/>
                     </xsl:when>
                     <xsl:otherwise>
@@ -45,8 +47,8 @@
                 <fileDesc>
                     <titleStmt>
                         <title>
-                            <xsl:apply-templates select="//w:p[wdb:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle"/>
-                            <xsl:apply-templates select="//w:p[wdb:is(., 'KSEE-Titel')][3]" mode="date"/>
+                            <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle"/>
+                            <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel')][3]" mode="date"/>
                         </title>
                         <!-- Kurztitel erzeugen; 2017-08-07 DK -->
                         <title type="short">
@@ -54,7 +56,7 @@
                                 <xsl:text>Verschollen: </xsl:text>
                             </xsl:if>
                             <xsl:variable name="title">
-                                <xsl:apply-templates select="//w:p[wdb:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle"/>
+                                <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle"/>
                             </xsl:variable>
                             <!--<xsl:choose>
                                 <xsl:when test="$title/*:lb">
@@ -76,7 +78,7 @@
                             </xsl:for-each>
                             <xsl:choose>
                                 <xsl:when
-                                    test="//w:p[hab:isHead(., 1)][1]//w:t = 'Referenz' or ends-with(wdb:string(//w:p[wdb:is(., 'KSEE-Titel')][3]), ']')">
+                                    test="//w:p[hab:isHead(., 1)][1]//w:t = 'Referenz' or ends-with(wt:string(//w:p[wt:is(., 'KSEE-Titel')][3]), ']')">
                                     <xsl:text> [</xsl:text>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -84,12 +86,12 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:variable name="dpline">
-                                <xsl:apply-templates select="//w:p[wdb:is(., 'KSEE-Titel')][3]" mode="date"/>
+                                <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel')][3]" mode="date"/>
                             </xsl:variable>
                             <xsl:apply-templates select="$dpline/*:date" mode="header"/>
                             <xsl:choose>
                                 <xsl:when
-                                    test="//w:p[hab:isHead(., 1)][1]//w:t = 'Referenz' or ends-with(wdb:string(//w:p[wdb:is(., 'KSEE-Titel')][3]), ']')">
+                                    test="//w:p[hab:isHead(., 1)][1]//w:t = 'Referenz' or ends-with(wt:string(//w:p[wt:is(., 'KSEE-Titel')][3]), ']')">
                                     <xsl:text>]</xsl:text>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -97,7 +99,7 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </title>
-                        <xsl:apply-templates select="//w:p[wdb:is(., 'KSEE-Titel') and wdb:starts(., 'Bearb')]"
+                        <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel') and wt:starts(., 'Bearb')]"
                             mode="head"/>
                     </titleStmt>
                     <publicationStmt>
@@ -114,7 +116,7 @@
                     </publicationStmt>
                     <sourceDesc>
                         <p>born digital</p>
-                        <xsl:if test="//w:p[hab:isHead(., 1) and wdb:contains(., 'Referenz')]">
+                        <xsl:if test="//w:p[hab:isHead(., 1) and wt:contains(., 'Referenz')]">
                             <msDesc>
                                 <physDesc>
                                     <objectDesc form="codex_lost"/>
@@ -143,8 +145,8 @@
     <!-- Ende root -->
     <!-- Kopf-Zeug -->
     <!-- Bearbeiter/Autor; 2017-05-03 DK -->
-    <xsl:template match="w:p[wdb:is(., 'KSEE-Titel') and wdb:starts(., 'Bearb')]" mode="head">
-        <xsl:variable name="aut" select="substring-after(wdb:string(.), 'von')"/>
+    <xsl:template match="w:p[wt:is(., 'KSEE-Titel') and wt:starts(., 'Bearb')]" mode="head">
+        <xsl:variable name="aut" select="substring-after(wt:string(.), 'von')"/>
         <xsl:analyze-string select="$aut" regex="(,|und)">
             <xsl:non-matching-substring>
                 <author>
@@ -153,8 +155,8 @@
             </xsl:non-matching-substring>
         </xsl:analyze-string>
     </xsl:template>
-    <xsl:template match="w:p[wdb:is(., 'KSEE-Titel')]" mode="date">
-        <xsl:variable name="pdline" select="wdb:string(.)"/>
+    <xsl:template match="w:p[wt:is(., 'KSEE-Titel')]" mode="date">
+        <xsl:variable name="pdline" select="wt:string(.)"/>
         <!-- RegEx aktualisiert; hoffentlich geht das auf eXist...; 2017-08-07 DK -->
         <xsl:analyze-string select="normalize-space($pdline)" regex="(?:([\[\]A-Za-z ]+), )?([\[\]\w\sä\?,\./]+)">
             <xsl:matching-substring>
@@ -279,19 +281,19 @@
         </xsl:analyze-string>
     </xsl:template>
     <!-- Texte aus dem Header nicht ausgeben; 2017-05-151 DK -->
-    <xsl:template match="w:p[wdb:is(., 'KSEE-Titel')]"/>
+    <xsl:template match="w:p[wt:is(., 'KSEE-Titel')]"/>
     <!-- ENDE Kopf-Zeug -->
     
     <!-- neu 2017-10-15 DK -->
-    <xsl:template match="w:p[wdb:is(., 'KSZitatblock')]">
+    <xsl:template match="w:p[wt:is(., 'KSZitatblock')]">
         <cit>
             <xsl:apply-templates
-                select="w:r[not(wdb:is(., 'KSbibliographischeAngabe', 'r') or wdb:is(., 'EndnoteReference', 'r'))]"/>
+                select="w:r[not(wt:is(., 'KSbibliographischeAngabe', 'r') or wt:is(., 'EndnoteReference', 'r'))]"/>
             <xsl:apply-templates
-                select="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r') or wdb:is(., 'EndnoteReference', 'r')]"/>
+                select="w:r[wt:is(., 'KSbibliographischeAngabe', 'r') or wt:is(., 'EndnoteReference', 'r')]"/>
         </cit>
     </xsl:template>
-    <xsl:template match="w:br[ancestor::w:p[wdb:is(., 'KSZitatblock')]]">
+    <xsl:template match="w:br[ancestor::w:p[wt:is(., 'KSZitatblock')]]">
         <xsl:text>$</xsl:text>
     </xsl:template>
 </xsl:stylesheet>
