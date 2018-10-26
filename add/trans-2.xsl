@@ -60,14 +60,6 @@
 		<editor><xsl:apply-templates /></editor>
 	</xsl:template>
 	
-	<xsl:template match="tei:p">
-		<xsl:text>
-				</xsl:text>
-		<p>
-			<xsl:apply-templates select="node()" />
-		</p>
-	</xsl:template>
-	
 	<xsl:template match="tei:salute">
 		<salute>
 			<xsl:apply-templates select="node()" />

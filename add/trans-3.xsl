@@ -114,8 +114,8 @@
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="tei:p/tei:lb">
-		<xsl:text>
-					</xsl:text>
+		<!--<xsl:text>
+					</xsl:text>-->
 		<lb />
 	</xsl:template>
 	
