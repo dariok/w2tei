@@ -13,13 +13,12 @@
     <xsl:include href="styles-inc.xsl"/>
     
 <!--    <xsl:output indent="yes"/>-->
-    
-    <xsl:template match="tei:*">
-        <xsl:element name="{local-name()}">
-            <xsl:apply-templates select="@*"/>
-            <xsl:apply-templates />
-        </xsl:element>
-    </xsl:template>
+
+	<xsl:template match="tei:*">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()" />
+		</xsl:copy>
+	</xsl:template>
     
     <xsl:template match="w:footnotes | w:numbering | w:comments" />
     
@@ -153,7 +152,8 @@
                 </xsl:choose>
             </xsl:for-each>
         </xsl:variable>
-        
+    	<xsl:text>
+					</xsl:text>
         <lb />
         <xsl:choose>
             <xsl:when test="$relind castable as xs:integer and  $relind > 0">
@@ -226,14 +226,16 @@
         <anchor type="crit_app" ref="s"/>
         <xsl:apply-templates select="w:t" />
     </xsl:template>
-    <xsl:template match="w:r[wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r') and
-        not(following::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])]">
-        <xsl:if test="not(preceding::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])">
-            <anchor type="crit_app" ref="s" />
-        </xsl:if>
-        <xsl:apply-templates select="w:t" />
-        <anchor type="crit_app" ref="se" />
-    </xsl:template>
+	<xsl:template match="w:r[wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
+		and not(following::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])
+		and not(ancestor::w:footnote)]">
+		<xsl:if test="not(preceding::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')])">
+			<anchor type="crit_app" ref="s" />
+		</xsl:if>
+		<xsl:apply-templates select="w:t" />
+		<anchor type="crit_app" ref="se" />
+	</xsl:template>
+	
     <!-- es kommen krit. oder Sachanmerkungen innerhalb dieses Teils vor -->
 	<xsl:template match="w:r[not(wt:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))
 		and wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')

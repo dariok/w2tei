@@ -6,8 +6,8 @@
   xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
   xmlns:hab="http://diglib.hab.de"
   stylesheet="trans-1.xsl" xslt-version="3.0" preserve-space="no">
-  
-    <x:scenario label="Fußnoten">
+	
+	<x:scenario label="Fußnoten">
         <x:scenario label="mit Kursiven">
             <x:context>
                 <w:endnoteReference w:id="11" />
@@ -1003,7 +1003,200 @@
                 <note type="footnote">Siehe z.B. <bibl>Eck, Disputatio et excusatio (1519), fol. A2<hi rend="super">v</hi>-A3<hi rend="super">r</hi></bibl>.</note>
             </x:expect>
         </x:scenario>
-    </x:scenario>
+		<x:scenario label="falsche Markierung in FN-Text">
+			<x:context>
+				<p>
+					<w:p
+						xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+						xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+						xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+						xmlns:o="urn:schemas-microsoft-com:office:office"
+						xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+						xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+						xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+						xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+						xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+						xmlns:v="urn:schemas-microsoft-com:vml"
+						xmlns:w10="urn:schemas-microsoft-com:office:word"
+						xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+						xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+						xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+						xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+						w:rsidR="00AE5FAE" w:rsidRPr="00477C42" w:rsidRDefault="00AE5FAE" w:rsidP="00AE5FAE"
+						><w:pPr><w:pStyle w:val="KSText"/><w:rPr><w:rFonts w:ascii="Times New Roman"
+							w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="20"/><w:szCs
+								w:val="20"/><w:lang w:val="la-Latn"/></w:rPr></w:pPr><w:r w:rsidRPr="00477C42"
+									><w:rPr><w:rStyle w:val="KSZitatimTextquote"/><w:sz w:val="20"/><w:szCs w:val="20"
+									/></w:rPr><w:t>facit peccatum servus est peccati</w:t></w:r><w:r w:rsidR="00C34FCE"
+										w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="Endnotenzeichen"/><w:rFonts
+											w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz
+												w:val="20"/><w:szCs w:val="20"/><w:lang w:val="la-Latn"
+												/></w:rPr><w:endnoteReference w:id="40"/></w:r><w:r w:rsidRPr="00477C42"
+													><w:rPr><w:rStyle w:val="KSZitatimTextquote"/><w:sz w:val="20"/><w:szCs w:val="20"
+													/></w:rPr><w:t xml:space="preserve"> etc</w:t></w:r><w:r w:rsidRPr="00477C42"
+														><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+															w:cs="Times New Roman"/><w:sz w:val="20"/><w:szCs w:val="20"/><w:lang
+																w:val="la-Latn"/></w:rPr><w:t>.</w:t></w:r><w:r w:rsidR="00C34FCE"
+																	w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="Endnotenzeichen"/><w:rFonts
+																		w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz
+																			w:val="20"/><w:szCs w:val="20"/><w:lang w:val="la-Latn"
+																			/></w:rPr><w:endnoteReference w:id="41"/></w:r><w:r w:rsidR="0037049D"
+																				w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="Funotenzeichen"/><w:rFonts
+																					w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz
+																						w:val="20"/><w:szCs w:val="20"/><w:lang w:val="la-Latn"
+																						/></w:rPr><w:footnoteReference w:id="91"/></w:r><w:r w:rsidRPr="00477C42"
+																							><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+																								w:cs="Times New Roman"/><w:sz w:val="20"/><w:szCs w:val="20"/><w:lang
+																									w:val="la-Latn"/></w:rPr><w:t xml:space="preserve"> </w:t></w:r><w:r
+																										w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"
+																										/><w:sz w:val="20"/><w:szCs w:val="20"
+																										/></w:rPr><w:t xml:space="preserve">Ad </w:t></w:r><w:r w:rsidRPr="00F337F5"
+																											><w:rPr><w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"/><w:sz w:val="20"
+																											/><w:szCs w:val="20"/><w:highlight w:val="cyan"
+																											/></w:rPr><w:t>Hiero</w:t></w:r><w:r w:rsidR="0089168E" w:rsidRPr="00F337F5"
+																												><w:rPr><w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"/><w:sz w:val="20"
+																												/><w:szCs w:val="20"/><w:highlight w:val="cyan"/></w:rPr><w:t>'</w:t></w:r><w:r
+																													w:rsidRPr="00F337F5"><w:rPr><w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"
+																													/><w:sz w:val="20"/><w:szCs w:val="20"/><w:highlight w:val="cyan"
+																													/></w:rPr><w:t>nymum</w:t></w:r><w:r w:rsidR="0089168E" w:rsidRPr="00477C42"
+																														><w:rPr><w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"/><w:sz w:val="20"
+																														/><w:szCs w:val="20"/></w:rPr><w:t>'</w:t></w:r><w:r w:rsidR="00466775"
+																															w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="Funotenzeichen"/><w:rFonts
+																																w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz
+																																	w:val="20"/><w:szCs w:val="20"/><w:lang w:val="la-Latn"
+																																	/></w:rPr><w:footnoteReference w:id="92"/></w:r><w:r w:rsidR="00C34FCE"
+																																		w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="Endnotenzeichen"/><w:rFonts
+																																			w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz
+																																				w:val="20"/><w:szCs w:val="20"/><w:lang w:val="la-Latn"
+																																				/></w:rPr><w:endnoteReference w:id="42"/></w:r><w:r w:rsidRPr="00477C42"
+																																					><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+																																						w:cs="Times New Roman"/><w:sz w:val="20"/><w:szCs w:val="20"/><w:lang
+																																							w:val="la-Latn"/></w:rPr><w:t xml:space="preserve"> dico. quod </w:t></w:r><w:r
+																																								w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="KSPerson"/><w:rFonts
+																																									w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz
+																																										w:val="20"/><w:szCs w:val="20"/><w:lang w:val="la-Latn"
+																																										/></w:rPr><w:t>Hiero</w:t></w:r><w:r w:rsidR="0089168E" w:rsidRPr="00477C42"
+																																											><w:rPr><w:rStyle w:val="KSPerson"/><w:rFonts w:ascii="Times New Roman"
+																																												w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="20"/><w:szCs
+																																													w:val="20"/><w:lang w:val="la-Latn"/></w:rPr><w:t>'</w:t></w:r><w:r
+																																														w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="KSPerson"/><w:rFonts
+																																															w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz
+																																																w:val="20"/><w:szCs w:val="20"/><w:lang w:val="la-Latn"
+																																																/></w:rPr><w:t>nymus</w:t></w:r><w:r w:rsidR="0089168E" w:rsidRPr="00477C42"
+																																																	><w:rPr><w:rStyle w:val="KSPerson"/><w:rFonts w:ascii="Times New Roman"
+																																																		w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="20"/><w:szCs
+																																																			w:val="20"/><w:lang w:val="la-Latn"/></w:rPr><w:t>'</w:t></w:r><w:r
+																																																				w:rsidRPr="00477C42"><w:rPr><w:rFonts w:ascii="Times New Roman"
+																																																					w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="20"/><w:szCs
+																																																						w:val="20"/><w:lang w:val="la-Latn"
+																																																						/></w:rPr><w:t xml:space="preserve"> numquam tam rudis</w:t></w:r><w:r
+																																																							w:rsidR="00466775" w:rsidRPr="00477C42"><w:rPr><w:rStyle w:val="Funotenzeichen"
+																																																							/><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+																																																								w:cs="Times New Roman"/><w:sz w:val="20"/><w:szCs w:val="20"/><w:lang
+																																																									w:val="la-Latn"/></w:rPr><w:footnoteReference w:id="93"/></w:r></w:p>
+				</p>
+				<w:footnotes>
+					<w:footnote w:id="92">
+						<w:p w:rsidR="00DA6955" w:rsidRPr="00466775" w:rsidRDefault="00DA6955">
+							<w:pPr>
+								<w:pStyle w:val="Funotentext"/>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rStyle w:val="Funotenzeichen"/>
+								</w:rPr>
+								<w:footnoteRef/>
+							</w:r>
+							<w:r>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r w:rsidRPr="002210B9">
+								<w:rPr>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>Ad Hiero</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00466775">
+								<w:rPr>
+									<w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"/>
+								</w:rPr>
+								<w:t>'</w:t>
+							</w:r>
+							<w:r w:rsidRPr="002210B9">
+								<w:rPr>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>nymum</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00466775">
+								<w:rPr>
+									<w:rStyle w:val="KSkritischeAnmerkungbermehrereWrter"/>
+								</w:rPr>
+								<w:t>'</w:t>
+							</w:r>
+							<w:r w:rsidRPr="002210B9">
+								<w:rPr>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r w:rsidRPr="002210B9">
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>a</w:t>
+							</w:r>
+							<w:r w:rsidRPr="002210B9">
+								<w:rPr>
+									<w:i/>
+									<w:vertAlign w:val="subscript"/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>2</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r w:rsidRPr="002210B9">
+								<w:rPr>
+									<w:i/>
+									<w:vertAlign w:val="subscript"/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r w:rsidRPr="002210B9">
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>Au</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t>Rd-Gl</w:t>
+							</w:r>
+							<w:r w:rsidRPr="002210B9">
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="en-GB"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+						</w:p>
+					</w:footnote>
+				</w:footnotes>
+			</x:context>
+		</x:scenario>
+	</x:scenario>
     
     <x:scenario label="Verweise">
         <x:scenario label="Zielmarke erstellen">
@@ -1800,12 +1993,10 @@
     				</w:footnote>
     			</w:footnotes>
     		</x:context>
-    		<x:expect label="Anm. in label">
-    			<tei:list>
-    				<label>1.<note type="crit_app"><hi style="font-style: italic;">in arabischen Ziffern in B, C.</hi></note></label>
-    				<item> Cum D'ominus' <rs type="person"><!--TODO ref eintragen-->Ioan'nes'</rs> inficiatur<note type="crit_app" /> omnem omnium fidelium vitam esse<lb />poenitentiam, aut poenitudinis indigam.<note type="footnote" /> Iudaeus est, sub<lb />Christiana pelle, occlamans, si iustus dei filius est?<note type="crit_app" /> descen-<lb />dat de Cruce<note type="footnote" />, nescitque hanc vitam, diem crucis perferendae.<note type="footnote" /></item>
-    			</tei:list>
-    		</x:expect>
+    		<x:expect label="Anm. in label" xml:space="preserve"><list><label>1.<note type="crit_app"> <hi style="font-style: italic;">in arabischen Ziffern in B, C.</hi></note></label><item> Cum D'ominus' <rs type="person"><!--TODO ref eintragen-->Ioan'nes'</rs> inficiatur<note type="crit_app" /> omnem omnium fidelium vitam esse
+					<lb />poenitentiam, aut poenitudinis indigam.<note type="footnote" /> Iudaeus est, sub
+					<lb />Christiana pelle, occlamans, si iustus dei filius est?<note type="crit_app" /> descen-
+					<lb />dat de Cruce<note type="footnote" />, nescitque hanc vitam, diem crucis perferendae.<note type="footnote" /></item></list></x:expect>
     	</x:scenario>
     </x:scenario>
     
@@ -2033,15 +2224,19 @@
             			</titlePart>
             		</div>
             </x:context>
-            <x:expect label="titlePart"><div><titlePart rendition="#l">
-            	<lb/>
-               <pb n="[A1r]"/>
-               <lb/>Von Bepstlicher heylickeit:<lb/>Andres Bodenstein von<lb/>Carolstat Doctor.</titlePart>
-            	<titlePart rendition="#l">
-            		<lb/>Disses buchlin beschleust durch heylige schrifft/<lb/>das Bepstliche heylickeit altzu viel yrrenn/<lb/>sundigen/ unnd unrecht thun kan.<lb/>Wer das nit glaubt/ der ist<lb/>Ein boszer unchrist.</titlePart>
-            	<titlePart rendition="#l">
-               <lb/><rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</titlePart></div>
-            </x:expect>
+			<x:expect label="titlePart" xml:space="preserve"><div><titlePart rendition="#l">
+					<lb/><pb n="[A1r]"/>
+					<lb/>Von Bepstlicher heylickeit:
+					<lb/>Andres Bodenstein von
+					<lb/>Carolstat Doctor.</titlePart>
+				<titlePart rendition="#l">
+					<lb/>Disses buchlin beschleust durch heylige schrifft/
+					<lb/>das Bepstliche heylickeit altzu viel yrrenn/
+					<lb/>sundigen/ unnd unrecht thun kan.
+					<lb/>Wer das nit glaubt/ der ist
+					<lb/>Ein boszer unchrist.</titlePart>
+				<titlePart rendition="#l">
+					<lb/><rs type="place"><!--TODO ref eintragen-->Wittemberg</rs>.</titlePart></div></x:expect>
         </x:scenario>
         <x:scenario label="Kommentar in rdg">
             <x:context>
@@ -2258,8 +2453,8 @@
 
     </x:scenario>
     
-    <x:scenario label="lange krit. Anm.">
-        <x:scenario label="einfach">
+	<x:scenario label="T5: lange krit. Anm.">
+		<x:scenario label="T5.1: einfach">
         <x:context>
             <p>
                 <w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="00FC4264" w:rsidRDefault="00D05E63" w:rsidP="004313F3">
@@ -2346,13 +2541,10 @@
                 </w:footnote>
             </w:footnotes>
         </x:context>
-        <x:expect label="2 anchor">
-            <p>
-                <lb></lb>hactenus ecclesiam defendit, et quis te vita defuncto <anchor type="crit_app" ref="s"
-                    ></anchor>tuebitur? <lb></lb>quod<anchor type="crit_app" ref="se"></anchor><note
-                    type="crit_app"> tuebituro quod <hi style="font-style: italic;">B, C</hi></note> vix audent Imperatores mundi, audacter subit audaculus</p>
-        </x:expect>
-        </x:scenario>
+			<x:expect label="2 anchor" xml:space="preserve"><p>
+					<lb/>hactenus ecclesiam defendit, et quis te vita defuncto <anchor type="crit_app" ref="s"></anchor>tuebitur? 
+					<lb/>quod<anchor type="crit_app" ref="se"></anchor><note type="crit_app"> tuebituro quod <hi style="font-style: italic;">B, C</hi></note> vix audent Imperatores mundi, audacter subit audaculus</p></x:expect>
+		</x:scenario>
         <x:scenario label="mit Anmerkungen innerhalb">
             <x:context>
                 <p>
