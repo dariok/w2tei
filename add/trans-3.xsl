@@ -101,12 +101,22 @@
 		</xsl:choose>
 	</xsl:template>
 	
-	<xsl:template match="tei:p">
+	<xsl:template match="tei:div">
 		<xsl:text>
-				</xsl:text>
+			</xsl:text>
 		<xsl:copy>
 			<xsl:apply-templates />
 		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="tei:p">
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="tei:p/tei:lb">
+		<xsl:text>
+					</xsl:text>
+		<lb />
 	</xsl:template>
 	
 	<xsl:template match="tei:note[@type = 'footnote']/tei:hi[preceding-sibling::node()[1][self::tei:hi]]"/>
