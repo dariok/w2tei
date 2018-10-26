@@ -5,6 +5,11 @@
   xmlns="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="#all"
   version="3.0">
+	
+	<xsl:template match="/">
+		<xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
+		<xsl:apply-templates select="node()" />
+	</xsl:template>
   
   <xsl:template match="tei:*">
     <xsl:variable name="num">
