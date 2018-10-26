@@ -238,8 +238,9 @@
 	<xsl:template match="w:r[not(wt:isFirst(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))
 		and wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
 		and following::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
-		and preceding::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]]">
-		<xsl:apply-templates select="w:t | w:footnoteReference | w:endnoteReference"/>
+		and preceding::w:r[1][wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')]
+		and not(w:endnoteReference)]">
+		<xsl:apply-templates select="w:t | w:footnoteReference"/>
 	</xsl:template>
     
     <xsl:template match="w:r[wt:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
