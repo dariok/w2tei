@@ -11,7 +11,11 @@
 	
 	<xsl:include href="../string-pack.xsl" />
 	
-	<xsl:template match="tei:note[@type = 'crit_app']">
+	<xsl:template match="tei:note[@type = 'crit_app'
+		and not(preceding-sibling::tei:anchor and following-sibling::tei:anchor)]">
+		<xsl:apply-templates select="." mode="eval" />
+	</xsl:template>
+	<xsl:template match="tei:note[@type = 'crit_app']" mode="eval">
 		<xsl:variable name="text">
 			<xsl:choose>
 				<xsl:when test="preceding-sibling::node()[1][self::text()]">
@@ -37,7 +41,7 @@
 		<xsl:choose>
 			<xsl:when test="following-sibling::tei:anchor/@xml:id = $pre||'e'" />
 			<xsl:otherwise>
-				<xsl:sequence select="."/>
+				<xsl:apply-templates select="." mode="eval"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -75,10 +79,14 @@
 						</xsl:when>
 						<xsl:when test="string-length($inter) &lt; 3">
 							<xsl:variable name="wit">
-								<xsl:value-of select="normalize-space(current()//tei:orig/following-sibling::text()[1])"/>
-								<xsl:value-of select="normalize-space(current()//tei:hi)"/>
+								<xsl:for-each select="tokenize(string-join(current()/tei:orig[last()]/following-sibling::node(), ''), ',')">
+									<xsl:value-of select="'#' || normalize-space()"/>
+									<xsl:if test="not(position() = last())">
+										<xsl:text> </xsl:text>
+									</xsl:if>
+								</xsl:for-each>
 							</xsl:variable>
-							<add wit="#{$wit}"><xsl:apply-templates select="current()/tei:orig" mode="norm"/></add>
+							<add wit="{$wit}"><xsl:apply-templates select="current()/tei:orig" mode="norm"/></add>
 						</xsl:when>
 						<xsl:otherwise>YYYY</xsl:otherwise>
 					</xsl:choose>

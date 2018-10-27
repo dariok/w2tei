@@ -25,6 +25,14 @@
 				<p><lb/>Deinde quod mea conclusio septima<add wit="#a1">in ordine</add> clare hoc proponit ista scilicet errat</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.3: mehrere Zeugen">
+			<x:context>
+				<p>Non<note type="crit_app">folgt  <orig>enim</orig> a<hi rend="sub">1</hi>, A<hi rend="sub">4</hi><hi rend="sub">-5</hi></note></p>
+			</x:context>
+			<x:expect label="wit mit mehreren Einträgen">
+				<p> Non<add wit="#a1 #A4-5">enim</add></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:pending>
