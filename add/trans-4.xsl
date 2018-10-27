@@ -12,8 +12,6 @@
 	<xsl:include href="../string-pack.xsl"/>
 	<xsl:include href="bibl.xsl"/>
 	
-
-	
 	<xsl:template match="tei:ref[@type='biblical']">
 		<ref type="biblical" cRef="{normalize-space(replace(., 'ö', ''))}">
 			<xsl:value-of select="."/>

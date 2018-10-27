@@ -62,22 +62,25 @@
 			<xsl:when test="starts-with(normalize-space($note), 'folgt') and $note//tei:orig">
 				<xsl:sequence select="$text" />
 				<xsl:for-each select="$wits/*">
-					<xsl:variable name="inter" select="normalize-space(current()//tei:orig/following-sibling::text()[1])"/>
+					<xsl:variable name="inter" select="normalize-space(current()//tei:orig[last()]/following-sibling::text()[1])"/>
 					<xsl:choose>
 						<xsl:when test="starts-with($inter, 'am Rand hinzugefügt')">
 							<xsl:variable name="wit">
 								<xsl:value-of select="substring-after($inter, 'fügt ')"/>
 								<xsl:value-of select="normalize-space(current()//tei:hi)"/>
 							</xsl:variable>
-							<add wit="#{$wit}" place="margin"><xsl:apply-templates select="current()/tei:orig" mode="norm"/></add>
+							<add wit="#{$wit}" place="margin"><xsl:apply-templates select="current()/tei:orig 
+								| current()/text()[preceding-sibling::*[1][self::tei:orig]
+								and following-sibling::*[1][self::tei:orig]]" mode="norm"/></add>
 						</xsl:when>
-						<xsl:otherwise>
+						<xsl:when test="string-length($inter) &lt; 3">
 							<xsl:variable name="wit">
 								<xsl:value-of select="normalize-space(current()//tei:orig/following-sibling::text()[1])"/>
 								<xsl:value-of select="normalize-space(current()//tei:hi)"/>
 							</xsl:variable>
 							<add wit="#{$wit}"><xsl:apply-templates select="current()/tei:orig" mode="norm"/></add>
-						</xsl:otherwise>
+						</xsl:when>
+						<xsl:otherwise>YYYY</xsl:otherwise>
 					</xsl:choose>
 				</xsl:for-each>
 			</xsl:when>
@@ -123,6 +126,9 @@
 			<xsl:when test="count(node()) = 1" />
 			<xsl:otherwise><xsl:sequence select="node()[last()]"></xsl:sequence></xsl:otherwise>
 		</xsl:choose>
+		<xsl:if test="following-sibling::*[1][self::tei:orig]">
+			<xsl:text> </xsl:text>
+		</xsl:if>
 	</xsl:template>
 	
 	<!--<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type = 'crit_app']]]">
@@ -441,6 +447,13 @@
 	
 	<xsl:template match="tei:note[@type = 'footnote']/tei:hi[contains(@style, 'italic')]">
 		<term type="term"><xsl:apply-templates /></term>
+	</xsl:template>
+	
+	<xsl:template match="text()" mode="norm">
+		<xsl:choose>
+			<xsl:when test="normalize-space() = ''"><xsl:text> </xsl:text></xsl:when>
+			<xsl:otherwise><xsl:value-of select="normalize-space()"/></xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<xsl:template match="@* | node()">

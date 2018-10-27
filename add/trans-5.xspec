@@ -17,6 +17,14 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.2: 2 orig">
+			<x:context>
+				<p><lb/>Deinde quod mea conclusio septima<note type="crit_app">folgt  <orig>in</orig>  <orig>ordine</orig> a<hi rend="sub">1</hi></note> clare hoc proponit ista scilicet errat</p>
+			</x:context>
+			<x:expect label="ein add">
+				<p><lb/>Deinde quod mea conclusio septima<add wit="#a1">in ordine</add> clare hoc proponit ista scilicet errat</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:pending>
