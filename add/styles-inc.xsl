@@ -30,17 +30,24 @@
         or w:footnoteReference or hab:isSem(.))]">
         <xsl:apply-templates select="." mode="eval" />
     </xsl:template>
-    <xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]" mode="eval">
-        <hi>
-            <xsl:attribute name="rend">
-                <xsl:choose>
-                    <xsl:when test="w:rPr/w:vertAlign/@w:val='superscript'">super</xsl:when>
-                    <xsl:otherwise>sub</xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
-            <xsl:apply-templates select="w:t" />
-        </hi>
-    </xsl:template>
+	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]" mode="eval">
+		<xsl:choose>
+			<xsl:when test="w:rPr/w:vertAlign/@w:val = ('super', 'subscript')">
+				<hi>
+					<xsl:attribute name="rend">
+						<xsl:choose>
+							<xsl:when test="w:rPr/w:vertAlign/@w:val='superscript'">super</xsl:when>
+							<xsl:otherwise>sub</xsl:otherwise>
+						</xsl:choose>
+					</xsl:attribute>
+					<xsl:apply-templates select="w:t" />
+				</hi>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="w:t" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
     
     <xsl:template match="w:r[descendant::w:vertAlign and descendant::w:i[not(@w:val=0)]]">
         <hi style="font-style: italic;">
