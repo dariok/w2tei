@@ -51,6 +51,39 @@
 		</x:scenario>
 	</x:scenario>
 	
+	<x:scenario label="T2: app/lem/rdg">
+		<x:context>
+			<p>sanctissimum<note type="crit_app"> <orig>sactissimum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>sanctissimum</orig> a<hi rend="sub">2</hi> <note type="comment">korrigiert</note></note> in</p>
+		</x:context>
+		<x:expect label="letzes rdg mit note">
+			<p><app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in</p>
+		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="gemischte">
+		<x:scenario label="rdg mit Hinzufügungen">
+			<x:context>
+				<p>meritorium A quo<note type="crit_app"> <orig>ad hoc</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  durchgestrichen  <orig>ut <gap/></orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> folgt  <orig>aii</orig> a<hi rend="sub">1</hi></note> dependent</p>
+			</x:context>
+			<x:expect label="app?">
+				<p>meritorium A <app>
+					<lem>quo</lem>
+					<rdg wit="#a1">ad hoc</rdg>
+					<rdg wit="#a1"><del>ut <gap /></del></rdg>
+					<rdg wit="#a1">aii</rdg>
+				</app> dependent</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="mehrere note incl. comment">
+			<x:context>
+				<p>est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> sanctissimum<note type="crit_app"> <orig>sactissimum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>sanctissimum</orig> a<hi rend="sub">2</hi> <note type="comment">korrigiert</note></note> in Christo</p>
+			</x:context>
+			<x:expect label="gemischt">
+				<p>est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> <app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in Christo</p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
 	<x:pending>
 	<x:scenario label="krit. Anmerkungen">
 		<x:scenario label="einmal vom Editor verbessert für">
