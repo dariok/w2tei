@@ -160,8 +160,7 @@
 					</xsl:when>
 				</xsl:choose>
 			</xsl:when>
-			<xsl:when test="contains(., 'hinzugefügt') and tei:orig
-				and normalize-space(text()[last()]) = ''">
+			<xsl:when test="contains(., 'hinzugefügt')">
 				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(normalize-space(), 'fügt')))" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
@@ -187,9 +186,17 @@
 							<xsl:attribute name="place">InRd-Gl</xsl:attribute>
 						</xsl:when>
 					</xsl:choose>
-					<xsl:apply-templates select="tei:orig 
-					| text()[preceding-sibling::*[1][self::tei:orig]
-						and following-sibling::*[1][self::tei:orig]]" mode="norm"/></add>
+					<xsl:choose>
+						<xsl:when test="tei:orig">
+							<xsl:apply-templates select="tei:orig 
+								| text()[preceding-sibling::*[1][self::tei:orig]
+								and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="$text"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</add>
 			</xsl:when>
 			<xsl:when test="matches(., 'vo. .ditor verbessert')">
 				<choice>
