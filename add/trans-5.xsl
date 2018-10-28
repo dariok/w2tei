@@ -87,19 +87,30 @@
 				
 				<xsl:variable name="inter" select="normalize-space(tei:orig[last()]/following-sibling::text()[1])"/>
 				<xsl:choose>
-						<xsl:when test="string-length($inter) &lt; 3">
-							<xsl:variable name="wit">
-								<xsl:for-each select="tokenize(string-join(current()/tei:orig[last()]/following-sibling::node(), ''), ',')">
-									<xsl:value-of select="'#' || normalize-space()"/>
-									<xsl:if test="not(position() = last())">
-										<xsl:text> </xsl:text>
-									</xsl:if>
-								</xsl:for-each>
-							</xsl:variable>
-							<add wit="{$wit}"><xsl:apply-templates select="current()/tei:orig" mode="norm"/></add>
-						</xsl:when>
-						<xsl:otherwise>YYYY</xsl:otherwise>
-					</xsl:choose>
+					<xsl:when test="string-length($inter) &lt; 3">
+						<xsl:variable name="wit">
+							<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node(), ''), ',')">
+								<xsl:value-of select="'#' || normalize-space()"/>
+								<xsl:if test="not(position() = last())">
+									<xsl:text> </xsl:text>
+								</xsl:if>
+							</xsl:for-each>
+						</xsl:variable>
+						<add wit="{$wit}"><xsl:apply-templates select="tei:orig" mode="norm"/></add>
+					</xsl:when>
+					<xsl:when test="contains($inter, 'durchgestrichen')">
+						<xsl:variable name="wit">
+							<xsl:for-each select="tokenize(substring-after(string-join(tei:orig[last()]/following-sibling::node(), ''), 'chen '), ',')">
+								<xsl:value-of select="'#' || normalize-space()"/>
+								<xsl:if test="not(position() = last())">
+									<xsl:text> </xsl:text>
+								</xsl:if>
+							</xsl:for-each>
+						</xsl:variable>
+						<add wit="{$wit}"><del><xsl:apply-templates select="tei:orig" mode="norm"/></del></add>
+					</xsl:when>
+					<xsl:otherwise>YYYY</xsl:otherwise>
+				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="contains(., 'am Rand hinzugefügt')
 				and normalize-space(text()[last()]) = ''">

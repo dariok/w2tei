@@ -41,6 +41,14 @@
 				<p>primum<note type="crit_app">folgt  <orig>tunc</orig> und ein Wort durchgestrichen a<hi rend="sub">1</hi></note> concordamus</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.5: folgt durchgestrichen">
+			<x:context>
+				<p>unde ex<note type="crit_app">folgt  <orig>materia</orig> durchgestrichen a<hi rend="sub">1</hi></note> causa</p>
+			</x:context>
+			<x:expect label="add/del">
+				<p>unde ex<add wit="#a1"><del>materia</del></add> causa</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:pending>
