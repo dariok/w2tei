@@ -26,10 +26,24 @@
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:call-template name="critapp">
-			<xsl:with-param name="note" select="." />
-			<xsl:with-param name="text" select="$text" />
-		</xsl:call-template>
+		<xsl:variable name="content">
+			<xsl:call-template name="critapp">
+				<xsl:with-param name="note" select="." />
+				<xsl:with-param name="text" select="$text" />
+			</xsl:call-template>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="preceding-sibling::node()[1][self::tei:*]">
+				<xsl:variable name="pre" select="preceding-sibling::node()[1][self::tei:*]"/>
+				<xsl:element name="{local-name($pre)}">
+					<xsl:apply-templates select="$pre/@*" />
+					<xsl:sequence select="$content" />
+				</xsl:element>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:sequence select="$content" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	<!--<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
 		<xsl:value-of select="xstring:substring-before-last(., ' ') || ' '" />
@@ -52,6 +66,7 @@
 			<xsl:when test="@type = 'footnote'">
 				<xsl:sequence select="." />
 			</xsl:when>
+			<xsl:when test="self::tei:rs[not(contains(., ' '))]"/>
 			<xsl:otherwise>
 				<xsl:apply-templates select="." mode="eval"/>
 			</xsl:otherwise>
@@ -89,7 +104,7 @@
 			</xsl:when>
 			<xsl:when test="$cont/*[1][self::tei:rdg]">
 				<app>
-					<lem><xsl:sequence select="$text" /></lem>
+					<lem><xsl:value-of select="$text" /></lem>
 					<xsl:for-each select="$cont/*">
 						<xsl:choose>
 							<xsl:when test="self::tei:rdg">
