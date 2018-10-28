@@ -96,7 +96,11 @@
 								<xsl:sequence select="."/>
 							</xsl:when>
 							<xsl:otherwise>
-								<rdg wit="{@wit}"><xsl:sequence select="." /></rdg>
+								<rdg wit="{@wit}">
+									<xsl:copy>
+										<xsl:apply-templates />
+									</xsl:copy>
+								</rdg>
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:for-each>
@@ -160,6 +164,29 @@
 					<corr><xsl:sequence select="$text" /></corr>
 				</choice>
 			</xsl:when>
+			<xsl:when test="matches(., '^\w* *\w*gestrichen')">
+				<xsl:variable name="wit">
+					<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], ''), ',')">
+						<xsl:value-of select="'#' || normalize-space()"/>
+						<xsl:if test="not(position() = last())">
+							<xsl:text> </xsl:text>
+						</xsl:if>
+					</xsl:for-each>
+				</xsl:variable>
+				<del wit="{$wit}">
+					<xsl:choose>
+						<xsl:when test="starts-with(., 'davor')">
+							<xsl:attribute name="place" select="'before'" />
+						</xsl:when>
+						<xsl:when test="starts-with(., 'danach')">
+							<xsl:attribute name="place" select="'after'" />
+						</xsl:when>
+					</xsl:choose>
+					<xsl:apply-templates select="tei:orig 
+						| text()[preceding-sibling::*[1][self::tei:orig]
+						and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
+				</del>
+			</xsl:when>
 			<xsl:when test="tei:orig">
 				<xsl:variable name="wit">
 					<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], ''), ',')">
@@ -174,6 +201,19 @@
 					and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
 					<xsl:sequence select="tei:note" />
 				</rdg>
+			</xsl:when>
+			<xsl:when test="starts-with(normalize-space(), 'fehlt')">
+				<xsl:variable name="wit">
+					<xsl:for-each select="tokenize(normalize-space(), ' ')">
+						<xsl:if test="position() > 1">
+							<xsl:value-of select="'#' || normalize-space()"/>
+							<xsl:if test="not(position() = last())">
+								<xsl:text> </xsl:text>
+							</xsl:if>
+						</xsl:if>
+					</xsl:for-each>
+				</xsl:variable>
+				<rdg wit="{$wit}" />
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:text>XXX</xsl:text>

@@ -60,6 +60,15 @@
 		</x:expect>
 	</x:scenario>
 	
+	<x:scenario label="T3: fehlt">
+		<x:context>
+			<p>boni consulas.<note type="crit_app">fehlt a<hi rend="sub">1</hi></note></p>
+		</x:context>
+		<x:expect label="del">
+			<p>boni <app><lem>consulas.</lem><rdg wit="#a1"/></app></p>
+		</x:expect>
+	</x:scenario>
+	
 	<x:scenario label="gemischte">
 		<x:scenario label="rdg mit Hinzufügungen">
 			<x:context>
@@ -70,7 +79,7 @@
 					<lem>quo</lem>
 					<rdg wit="#a1">ad hoc</rdg>
 					<rdg wit="#a1"><del>ut <gap /></del></rdg>
-					<rdg wit="#a1">aii</rdg>
+					<rdg wit="#a1"><add>aii</add></rdg>
 				</app> dependent</p>
 			</x:expect>
 		</x:scenario>
