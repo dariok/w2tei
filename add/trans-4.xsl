@@ -19,9 +19,12 @@
 	</xsl:template>
 	
 	<xsl:template match="text()[not(parent::tei:note[@type='crit_app'] or parent::tei:span)]">
-		<xsl:analyze-string select="." regex="&lt;.+&gt;">
+		<xsl:analyze-string select="." regex="&lt;.+?&gt;">
 			<xsl:matching-substring>
-				<supplied><xsl:value-of select="substring(substring-before(., '&gt;'), 2)"/></supplied>
+				<xsl:choose>
+					<xsl:when test=". = '&lt;...&gt;'"><gap/></xsl:when>
+					<xsl:otherwise><supplied><xsl:value-of select="substring(substring-before(., '&gt;'), 2)"/></supplied></xsl:otherwise>
+				</xsl:choose>
 			</xsl:matching-substring>
 			<xsl:non-matching-substring>
 				<xsl:analyze-string select="." regex="\w+'.+?'\w?">

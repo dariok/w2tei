@@ -5,7 +5,7 @@
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xslt-version="3.0">
 	
-	<x:scenario label="Ersetzungen">
+	<x:scenario label="T1: Ersetzungen">
 		<x:scenario label="Expansionen">
 			<x:context>
 				<p>
@@ -13,6 +13,14 @@
 			</x:context>
 			<x:expect label="ex">
 				<p><lb/>Durchleuchtigster Hochgebornner Churfurst. euern <expan>churf<ex>urstlich</ex></expan> <expan>g<ex>naden</ex></expan></p></x:expect>
+		</x:scenario>
+		<x:scenario label="T1.2: supplied und gap">
+			<x:context>
+				<p> etwas Text ut &lt;...&gt; et&lt;si&gt;</p>
+			</x:context>
+			<x:expect label="gap ... supplied">
+				<p> etwas Text ut <gap/> et<supplied>si</supplied></p>
+			</x:expect>
 		</x:scenario>
 	</x:scenario>
 	
