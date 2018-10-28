@@ -31,15 +31,24 @@
 			<xsl:with-param name="text" select="$text" />
 		</xsl:call-template>
 	</xsl:template>
-	<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
+	<!--<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
 		<xsl:value-of select="xstring:substring-before-last(., ' ') || ' '" />
-	</xsl:template>
+	</xsl:template>-->
 	
 	<xsl:template match="tei:anchor" />
-	<xsl:template match="node()[preceding-sibling::tei:anchor and following-sibling::tei:anchor]">
+	
+	<xsl:template match="node()[(preceding-sibling::tei:anchor and following-sibling::tei:anchor)
+		or following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
 		<xsl:variable name="pre" select="preceding-sibling::tei:anchor[1]/@xml:id"/>
 		<xsl:choose>
 			<xsl:when test="following-sibling::tei:anchor/@xml:id = $pre||'e'" />
+			<xsl:when test="self::text() and following-sibling::*[1][self::tei:note]">
+				<xsl:choose>
+					<xsl:when test="contains(., ' ')">
+						<xsl:value-of select="xstring:substring-before-last(., ' ') || ' '" />
+					</xsl:when>
+				</xsl:choose>
+			</xsl:when>
 			<xsl:otherwise>
 				<xsl:apply-templates select="." mode="eval"/>
 			</xsl:otherwise>
@@ -59,24 +68,25 @@
 		
 		<xsl:variable name="wits">
 			<xsl:for-each-group select="$note/node()" group-starting-with="wdb:marker">
-				<wdb:wit><xsl:apply-templates select="current-group()[position() > 1]" /></wdb:wit>
+				<wdb:wit><xsl:sequence select="current-group()" /></wdb:wit>
 			</xsl:for-each-group>
 		</xsl:variable>
+		<xsl:variable name="cont">
+			<xsl:apply-templates select="$wits">
+				<xsl:with-param name="text" select="$text" />
+			</xsl:apply-templates>
+		</xsl:variable>
+		<xsl:sequence select="$cont" />
+	</xsl:template>
+	
+	<xsl:template match="wdb:wit">
+		<xsl:param name="text" />
 		<xsl:choose>
-			<xsl:when test="starts-with(normalize-space($note), 'folgt') and $note//tei:orig">
+			<xsl:when test="starts-with(normalize-space(), 'folgt') and tei:orig">
 				<xsl:sequence select="$text" />
-				<xsl:for-each select="$wits/*">
-					<xsl:variable name="inter" select="normalize-space(current()//tei:orig[last()]/following-sibling::text()[1])"/>
-					<xsl:choose>
-						<xsl:when test="starts-with($inter, 'am Rand hinzugefügt')">
-							<xsl:variable name="wit">
-								<xsl:value-of select="substring-after($inter, 'fügt ')"/>
-								<xsl:value-of select="normalize-space(current()//tei:hi)"/>
-							</xsl:variable>
-							<add wit="#{$wit}" place="margin"><xsl:apply-templates select="current()/tei:orig 
-								| current()/text()[preceding-sibling::*[1][self::tei:orig]
-								and following-sibling::*[1][self::tei:orig]]" mode="norm"/></add>
-						</xsl:when>
+				
+				<xsl:variable name="inter" select="normalize-space(tei:orig[last()]/following-sibling::text()[1])"/>
+				<xsl:choose>
 						<xsl:when test="string-length($inter) &lt; 3">
 							<xsl:variable name="wit">
 								<xsl:for-each select="tokenize(string-join(current()/tei:orig[last()]/following-sibling::node(), ''), ',')">
@@ -90,7 +100,14 @@
 						</xsl:when>
 						<xsl:otherwise>YYYY</xsl:otherwise>
 					</xsl:choose>
-				</xsl:for-each>
+			</xsl:when>
+			<xsl:when test="contains(., 'am Rand hinzugefügt')
+				and normalize-space(text()[last()]) = ''">
+				<xsl:variable name="wit" select="normalize-space(substring-after(normalize-space(), 'fügt'))" />
+				
+				<add wit="#{$wit}" place="margin"><xsl:apply-templates select="current()/tei:orig 
+					| current()/text()[preceding-sibling::*[1][self::tei:orig]
+					and following-sibling::*[1][self::tei:orig]]" mode="norm"/></add>
 			</xsl:when>
 			<!--<xsl:when test="matches(lower-case($note), 'vo. editor verbessert')">
 				<choice>

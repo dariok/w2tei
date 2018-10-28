@@ -6,12 +6,12 @@
 	
 	<x:scenario label="T1: folgt">
 		<x:scenario label="T1.1: LD, 2 verschiedene">
-			<x:context>
+			<x:context xml:space="preserve">
 				<p>
 					<lb/>Nam secundum <rs type="person"><!--TODO ref nachtragen--><expan>Aposto<ex>lum</ex></expan></rs> per unum hominem intravit peccatum<note type="crit_app">folgt <orig>in mundum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>in mundum</orig> am Rand hinzugefügt A<hi rend="sub">5Lp</hi> </note> in omnes homines<note type="footnote">Vgl. <ref type="biblical" cRef="Rm 5,12">Röm 5,12</ref>.</note> Sicut
 				</p>
 			</x:context>
-			<x:expect label="2 add">
+			<x:expect label="2 add" xml:space="preserve">
 				<p>
 					<lb/>Nam secundum <rs type="person"><!--TODO ref nachtragen--><expan>Aposto<ex>lum</ex></expan></rs> per unum hominem intravit peccatum<add wit="#a1">in mundum</add><add place="margin" wit="#A5Lp">in mundum</add> in omnes homines<note type="footnote">Vgl. <ref type="biblical" cRef="Rm 5,12">Röm 5,12</ref>.</note> Sicut
 				</p>
@@ -30,7 +30,15 @@
 				<p>Non<note type="crit_app">folgt  <orig>enim</orig> a<hi rend="sub">1</hi>, A<hi rend="sub">4</hi><hi rend="sub">-5</hi></note></p>
 			</x:context>
 			<x:expect label="wit mit mehreren Einträgen">
-				<p> Non<add wit="#a1 #A4-5">enim</add></p>
+				<p>Non<add wit="#a1 #A4-5">enim</add></p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.4: nicht umsetzbar">
+			<x:context>
+				<p>primum<note type="crit_app">folgt  <orig>tunc</orig> und ein Wort durchgestrichen a<hi rend="sub">1</hi></note> concordamus</p>
+			</x:context>
+			<x:expect label="note">
+				<p>primum<note type="crit_app">folgt  <orig>tunc</orig> und ein Wort durchgestrichen a<hi rend="sub">1</hi></note> concordamus</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
