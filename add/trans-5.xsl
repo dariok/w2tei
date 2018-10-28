@@ -76,7 +76,16 @@
 				<xsl:with-param name="text" select="$text" />
 			</xsl:apply-templates>
 		</xsl:variable>
-		<xsl:sequence select="$cont" />
+		<xsl:choose>
+			<xsl:when test="$cont = () or not($cont/*)">
+				<xsl:sequence select="$text" />
+				<xsl:sequence select="$note" />
+			</xsl:when>
+			<!-- TODO ausbauen -->
+			<xsl:otherwise>
+				<xsl:sequence select="$cont" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<xsl:template match="wdb:wit">
@@ -98,7 +107,7 @@
 						</xsl:variable>
 						<add wit="{$wit}"><xsl:apply-templates select="tei:orig" mode="norm"/></add>
 					</xsl:when>
-					<xsl:when test="contains($inter, 'durchgestrichen')">
+					<xsl:when test="starts-with($inter, 'durchgestrichen')">
 						<xsl:variable name="wit">
 							<xsl:for-each select="tokenize(substring-after(string-join(tei:orig[last()]/following-sibling::node(), ''), 'chen '), ',')">
 								<xsl:value-of select="'#' || normalize-space()"/>
@@ -109,7 +118,6 @@
 						</xsl:variable>
 						<add wit="{$wit}"><del><xsl:apply-templates select="tei:orig" mode="norm"/></del></add>
 					</xsl:when>
-					<xsl:otherwise>YYYY</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="contains(., 'am Rand hinzugefügt')
