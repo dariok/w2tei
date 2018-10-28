@@ -91,6 +91,16 @@
 				<p>est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> <app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in Christo</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="mehrere in Marginaline">
+			<x:context>
+				<p><note place="margin">Ad hec dixit <rs type="person"><!--TODO ref nachtragen-->Eccius</rs><note type="crit_app"> <orig>Eckius</orig> A<hi rend="sub">5</hi></note>  se legisse  antequam Theognis  nasceretur<note type="crit_app">hinzugefügt a<hi rend="sub">3</hi> AuRd-Gl</note><note type="footnote">Vermutlich hat <rs type="person"><!--TODO ref nachtragen-->Karlstadt</rs> dieses Zitat <ref type="medieval">Gell. 1,3,18-19</ref> entnommen. Später finded es sich auch bei <rs type="person"><!--TODO ref nachtragen-->Erasmus</rs>, <hi style="font-style: italic;">Adagia</hi>, letzte Ausgabe (1533): <ref type="medieval">Erasmus, Adag. 3300</ref>: »Hoc noveram priusquam« (<bibl ref="#asd_1969"> II-7, 183f.</bibl>).</note></note>
+					<lb/>Secundo</p>
+			</x:context>
+			<x:expect label="add">
+				<p><note place="margin">Ad hec dixit <app><lem><rs type="person"><!--TODO ref nachtragen-->Eccius</rs></lem><rdg wit="#A5">Eckius</rdg></app>  se legisse  antequam Theognis  <add wit="#a3" place="AuRd-Gl">nasceretur</add><note type="footnote">Vermutlich hat <rs type="person"><!--TODO ref nachtragen-->Karlstadt</rs> dieses Zitat <ref type="medieval">Gell. 1,3,18-19</ref> entnommen. Später finded es sich auch bei <rs type="person"><!--TODO ref nachtragen-->Erasmus</rs>, <hi style="font-style: italic;">Adagia</hi>, letzte Ausgabe (1533): <ref type="medieval">Erasmus, Adag. 3300</ref>: »Hoc noveram priusquam« (<bibl ref="#asd_1969"> II-7, 183f.</bibl>).</note></note>
+					<lb/>Secundo</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:pending>

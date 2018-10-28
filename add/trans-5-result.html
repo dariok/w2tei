@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for home/dario/git/w2tei/add/trans-5.xsl (passed: 7 / pending: 16 / failed: 2 / total: 25)</title>
+      <title>Test Report for home/dario/git/w2tei/add/trans-5.xsl (passed: 7 / pending: 16 / failed: 3 / total: 26)</title>
       <link rel="stylesheet" type="text/css" href="file:/home/dario/.p2/pool/plugins/com.oxygenxml.editor_20.1.0.v2018080903/frameworks/xspec/src/reporter/test-report.css" />
    </head>
    <body>
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/trans-5.xsl">home/dario/git/w2tei/add/trans-5.xsl</a></p>
-      <p>Tested: 28 October 2018 at 22:32</p>
+      <p>Tested: 28 October 2018 at 23:16</p>
       <h2>Contents</h2>
       <table class="xspec">
          <col width="75%" />
@@ -20,8 +20,8 @@
                <th></th>
                <th class="totals">passed: 7</th>
                <th class="totals">pending: 16</th>
-               <th class="totals">failed: 2</th>
-               <th class="totals">total: 25</th>
+               <th class="totals">failed: 3</th>
+               <th class="totals">total: 26</th>
             </tr>
          </thead>
          <tbody>
@@ -50,46 +50,46 @@
                <th><a href="#d3e477">gemischte</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
-               <th class="totals">1</th>
                <th class="totals">2</th>
+               <th class="totals">3</th>
             </tr>
             <tr class="pending">
-               <th><a href="#d3e680">krit. Anmerkungen</a></th>
+               <th><a href="#d3e845">krit. Anmerkungen</a></th>
                <th class="totals">0</th>
                <th class="totals">9</th>
                <th class="totals">0</th>
                <th class="totals">9</th>
             </tr>
             <tr class="pending">
-               <th><a href="#d3e1136">komplexere rdg</a></th>
+               <th><a href="#d3e1301">komplexere rdg</a></th>
                <th class="totals">0</th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="pending">
-               <th><a href="#d3e1267">text vor krit. FN – „folgt“</a></th>
+               <th><a href="#d3e1432">text vor krit. FN – „folgt“</a></th>
                <th class="totals">0</th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="pending">
-               <th><a href="#d3e1308">span/anchor</a></th>
+               <th><a href="#d3e1473">span/anchor</a></th>
                <th class="totals">0</th>
                <th class="totals">3</th>
                <th class="totals">0</th>
                <th class="totals">3</th>
             </tr>
             <tr class="pending">
-               <th><a href="#d3e1465">krit. und FN gemischt</a></th>
+               <th><a href="#d3e1630">krit. und FN gemischt</a></th>
                <th class="totals">0</th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="pending">
-               <th><a href="#d3e1537">collectanea aus LD</a></th>
+               <th><a href="#d3e1702">collectanea aus LD</a></th>
                <th class="totals">0</th>
                <th class="totals">1</th>
                <th class="totals">0</th>
@@ -204,14 +204,14 @@
          </table>
       </div>
       <div id="d3e477">
-         <h2 class="successful">gemischte<span class="scenario-totals">passed: 1 / pending: 0 / failed: 1 / total: 2</span></h2>
+         <h2 class="successful">gemischte<span class="scenario-totals">passed: 1 / pending: 0 / failed: 2 / total: 3</span></h2>
          <table class="xspec" id="t-d3e477">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
                   <th>gemischte</th>
-                  <th>passed: 1 / pending: 0 / failed: 1 / total: 2</th>
+                  <th>passed: 1 / pending: 0 / failed: 2 / total: 3</th>
                </tr>
                <tr class="successful">
                   <th>rdg mit Hinzufügungen</th>
@@ -227,6 +227,14 @@
                </tr>
                <tr class="failed">
                   <td><a href="#d3e645">gemischt</a></td>
+                  <td>Failure</td>
+               </tr>
+               <tr class="failed">
+                  <th><a href="#d3e679">mehrere in Marginaline</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
+               </tr>
+               <tr class="failed">
+                  <td><a href="#d3e786">add</a></td>
                   <td>Failure</td>
                </tr>
             </tbody>
@@ -258,6 +266,42 @@
       &lt;<span class="diff">rdg</span> <span class="diff">wit</span>="#a2"&gt;<span class="diff">sanctissimum</span>&lt;<span class="diff">note</span> <span class="diff">type</span>="comment"&gt;<span class="diff">korrigiert</span>&lt;/note&gt;
       &lt;/rdg&gt;
    &lt;/app&gt;<span class="diff"> in Christo</span>&lt;/p&gt;</pre></td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 id="d3e679">gemischte mehrere in Marginaline</h3>
+         <h4 id="d3e786">add</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span class="diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="diff">note</span> <span class="same">place</span>="margin"&gt;<span class="diff">Ad hec dixit Eccius</span>&lt;<span class="same">app</span>&gt;
+         &lt;<span class="same">lem</span>&gt;
+            &lt;<span class="same">rs</span> <span class="same">type</span>="person"&gt;<span class="same">&lt;--TODO ref nachtragen--&gt;</span><span class="same">Eccius</span>&lt;/rs&gt;
+         &lt;/lem&gt;
+         &lt;<span class="same">rdg</span> <span class="same">wit</span>="#A5"&gt;<span class="same">Eckius</span>&lt;/rdg&gt;
+      &lt;/app&gt;<span class="diff"> se legisse antequam Theognis XXX</span>&lt;<span class="diff">note</span> <span class="diff">type</span>="footnote"&gt;<span class="diff">Vermutlich hat </span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="person"&gt;<span class="diff">&lt;--TODO ref nachtragen--&gt;</span><span class="diff">Karlstadt</span>&lt;/rs&gt;<span class="diff"> dieses Zitat </span>&lt;<span class="diff">ref</span> <span class="diff">type</span>="medieval"&gt;<span class="diff">Gell. 1,3,18-19</span>&lt;/ref&gt;<span class="diff"> entnommen. Später finded es sich auch bei </span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="person"&gt;<span class="diff">&lt;--TODO ref nachtragen--&gt;</span><span class="diff">Erasmus</span>&lt;/rs&gt;<span class="diff">, </span>&lt;<span class="diff">term</span> <span class="diff">type</span>="term"&gt;<span class="diff">Adagia</span>&lt;/term&gt;<span class="diff">, letzte Ausgabe (1533): </span>&lt;<span class="diff">ref</span> <span class="diff">type</span>="medieval"&gt;<span class="diff">Erasmus, Adag. 3300</span>&lt;/ref&gt;<span class="diff">: »Hoc noveram priusquam« (</span>&lt;<span class="diff">bibl</span> <span class="diff">ref</span>="#asd_1969"&gt;<span class="diff"> II-7, 183f.</span>&lt;/bibl&gt;<span class="diff">).</span>&lt;/note&gt;
+   &lt;/note&gt;
+   &lt;<span class="same">lb</span> /&gt;<span class="same">Secundo</span>&lt;/p&gt;</pre></td>
+                  <td><pre>&lt;<span class="diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="diff">note</span> <span class="same">place</span>="margin"&gt;<span class="diff">Ad hec dixit </span>&lt;<span class="same">app</span>&gt;
+         &lt;<span class="same">lem</span>&gt;
+            &lt;<span class="same">rs</span> <span class="same">type</span>="person"&gt;<span class="same">&lt;--TODO ref nachtragen--&gt;</span><span class="same">Eccius</span>&lt;/rs&gt;
+         &lt;/lem&gt;
+         &lt;<span class="same">rdg</span> <span class="same">wit</span>="#A5"&gt;<span class="same">Eckius</span>&lt;/rdg&gt;
+      &lt;/app&gt;<span class="diff">  se legisse  antequam Theognis  </span>&lt;<span class="diff">add</span> <span class="diff">wit</span>="#a3"
+           <span class="diff">place</span>="AuRd-Gl"&gt;<span class="diff">nasceretur</span>&lt;/add&gt;
+      &lt;<span class="diff">note</span> <span class="diff">type</span>="footnote"&gt;<span class="diff">Vermutlich hat </span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="person"&gt;<span class="diff">&lt;--TODO ref nachtragen--&gt;</span><span class="diff">Karlstadt</span>&lt;/rs&gt;<span class="diff"> dieses Zitat </span>&lt;<span class="diff">ref</span> <span class="diff">type</span>="medieval"&gt;<span class="diff">Gell. 1,3,18-19</span>&lt;/ref&gt;<span class="diff"> entnommen. Später finded es sich auch bei </span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="person"&gt;<span class="diff">&lt;--TODO ref nachtragen--&gt;</span><span class="diff">Erasmus</span>&lt;/rs&gt;<span class="diff">, </span>&lt;<span class="diff">hi</span> <span class="diff">style</span>="font-style: italic;"&gt;<span class="diff">Adagia</span>&lt;/hi&gt;<span class="diff">, letzte Ausgabe (1533): </span>&lt;<span class="diff">ref</span> <span class="diff">type</span>="medieval"&gt;<span class="diff">Erasmus, Adag. 3300</span>&lt;/ref&gt;<span class="diff">: »Hoc noveram priusquam« (</span>&lt;<span class="diff">bibl</span> <span class="diff">ref</span>="#asd_1969"&gt;<span class="diff"> II-7, 183f.</span>&lt;/bibl&gt;<span class="diff">).</span>&lt;/note&gt;
+   &lt;/note&gt;
+   &lt;<span class="same">lb</span> /&gt;<span class="same">Secundo</span>&lt;/p&gt;</pre></td>
                </tr>
             </tbody>
          </table>

@@ -145,11 +145,34 @@
 					</xsl:when>
 				</xsl:choose>
 			</xsl:when>
-			<xsl:when test="contains(., 'am Rand hinzugefügt') and tei:orig
+			<xsl:when test="contains(., 'hinzugefügt') and tei:orig
 				and normalize-space(text()[last()]) = ''">
-				<xsl:variable name="wit" select="normalize-space(substring-after(normalize-space(), 'fügt'))" />
+				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(normalize-space(), 'fügt')))" />
+				<xsl:variable name="wit">
+					<xsl:for-each select="$tok">
+						<xsl:choose>
+							<xsl:when test="matches(., '.+Gl')" />
+							<xsl:otherwise>
+								<xsl:value-of select="'#'||."/>
+								<xsl:text> </xsl:text>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+				</xsl:variable>
 				
-				<add wit="#{$wit}" place="margin"><xsl:apply-templates select="tei:orig 
+				<add wit="{normalize-space($wit)}">
+					<xsl:choose>
+						<xsl:when test="contains(normalize-space(), 'am Rand')">
+							<xsl:attribute name="place">margin</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="ends-with(normalize-space(), 'AuRd-Gl')">
+							<xsl:attribute name="place">AuRd-Gl</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="ends-with(normalize-space(), 'InRd-Gl')">
+							<xsl:attribute name="place">InRd-Gl</xsl:attribute>
+						</xsl:when>
+					</xsl:choose>
+					<xsl:apply-templates select="tei:orig 
 					| text()[preceding-sibling::*[1][self::tei:orig]
 						and following-sibling::*[1][self::tei:orig]]" mode="norm"/></add>
 			</xsl:when>
