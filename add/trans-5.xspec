@@ -49,6 +49,22 @@
 				<p>unde ex<add wit="#a1"><del>materia</del></add> causa</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.6: folgt als Lauftext">
+			<x:context>
+				<p>que est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> sanctissimum</p>
+			</x:context>
+			<x:expect label="Volltext">
+				<p>que est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> sanctissimum</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.7: nur teils umsetzbare note">
+			<x:context>
+				<p><lb/>quia voluntas<note type="crit_app"> <orig>quomodo voluntas sit domina famula</orig> a<hi rend="sub">2</hi> AuRd-Gl</note> sit domina actuum. comparando ad actus inferiores. et tamen sit famula <w>com<lb break="no"/>perando</w> ad Christum<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> am Rand hinzugefügt <orig>Christum</orig> a<hi rend="sub">3</hi>(?)</note> in ea<note type="crit_app"> <orig>eo</orig> a<hi rend="sub">1</hi></note> regnantem.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 964 Z. 15-18</note> adhuc tamen ut videretur aliquid mihi impingere<note type="crit_app"> <orig>mihi aliquid impendere</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> korrigiert in  <orig>impingere</orig> a<hi rend="sub">3</hi>(?)</note></p>
+			</x:context>
+			<x:expect label="ursprüngl. note">
+				<p><lb/>quia <app><lem>voluntas</lem><rdg wit="#a2" place="AuRd-Gl">quomodo voluntas sit domina famula</rdg></app> sit domina actuum. comparando ad actus inferiores. et tamen sit famula <w>com<lb break="no"/>perando</w> ad Christum<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi>;  am Rand hinzugefügt <orig>Christum</orig> a<hi rend="sub">3</hi>(?)</note> in <app><lem>ea</lem><rdg wit="#a1">eo</rdg></app> regnantem.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 964 Z. 15-18</note> adhuc tamen ut videretur aliquid mihi <app><lem>impingere</lem><rdg wit="#a1">mihi aliquid impendere</rdg><rdg wit="#a3(?)" cause="correction">impingere</rdg></app></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T2: app/lem/rdg">
@@ -58,6 +74,14 @@
 		<x:expect label="letzes rdg mit note">
 			<p><app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in</p>
 		</x:expect>
+		<x:scenario label="vorher rs mit mehreren Wörtern">
+			<x:context>
+				<p>ad <rs type="person"><!--TODO ref nachtragen--><expan>D<ex>ominum</ex></expan> Eccium</rs><note type="crit_app"> <orig>Eckium</orig> A<hi rend="sub">5</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>Ecckium</orig> a<hi rend="sub">1</hi></note></p>
+			</x:context>
+			<x:expect label="2rs?">
+				<p>ad <rs type="person"><expan>D<ex>ominum</ex></expan> Eccium</rs><note type="crit_app"> <rdg wit="#A5">Eckium</rdg>  <orig>Ecckium</orig> a<hi rend="sub">1</hi></note></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T3: fehlt">
@@ -67,6 +91,23 @@
 		<x:expect label="del">
 			<p>boni <app><lem>consulas.</lem><rdg wit="#a1"/></app></p>
 		</x:expect>
+	</x:scenario>
+	
+	<x:scenario label="T4: gestrichen"></x:scenario>
+	
+	<x:scenario label="T5: vom Editor verbessert">
+		<x:scenario label="T5.1: einmal vom Editor verbessert für">
+			<x:context>
+				<p>
+					<lb/>auszlegen/ unnd<note type="crit_app">vom Editor verbessert für<orig> unud</orig></note> durch die schrifft beweyszen/ Das alle
+				</p>
+			</x:context>
+			<x:expect label="sic und corr">
+				<p>
+					<lb/>auszlegen/ <choice><sic>unud</sic><corr>unnd</corr></choice> durch die schrifft beweyszen/ Das alle
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="gemischte">
@@ -105,18 +146,7 @@
 	
 	<x:pending>
 	<x:scenario label="krit. Anmerkungen">
-		<x:scenario label="einmal vom Editor verbessert für">
-			<x:context>
-				<p>
-					<lb/>auszlegen/ unnd<note type="crit_app">vom Editor verbessert für<orig> unud</orig></note> durch die schrifft beweyszen/ Das alle
-				</p>
-			</x:context>
-			<x:expect label="sic und corr">
-				<p>
-					<lb/>auszlegen/ <choice><sic>unud</sic><corr>unnd</corr></choice> durch die schrifft beweyszen/ Das alle
-				</p>
-			</x:expect>
-		</x:scenario>
+		
 		<x:scenario label="lem und rdg">
 			<x:context>
 				<p>

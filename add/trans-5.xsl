@@ -86,7 +86,7 @@
 		
 		<xsl:variable name="wits">
 			<xsl:for-each-group select="$note/node()" group-starting-with="wdb:marker">
-				<wdb:wit><xsl:sequence select="current-group()" /></wdb:wit>
+				<wdb:wit><xsl:apply-templates select="current-group()[not(self::wdb:marker)]" /></wdb:wit>
 			</xsl:for-each-group>
 		</xsl:variable>
 		<xsl:variable name="cont">
@@ -95,10 +95,13 @@
 			</xsl:apply-templates>
 		</xsl:variable>
 		<xsl:choose>
-			<!--<xsl:when test="$cont = () or not($cont/*)">
+			<xsl:when test="$cont/*[self::wdb:note]">
 				<xsl:sequence select="$text" />
-				<xsl:sequence select="$note" />
-			</xsl:when>-->
+				<xsl:element name="{local-name($note)}">
+					<xsl:attribute name="type" select="'crit_app'" />
+					<xsl:apply-templates select="$note/node()" />
+				</xsl:element>
+			</xsl:when>
 			<xsl:when test="count($cont/*) = count($cont/tei:add)">
 				<xsl:sequence select="$cont" />
 			</xsl:when>
@@ -131,11 +134,14 @@
 	<xsl:template match="wdb:wit">
 		<xsl:param name="text" />
 		<xsl:choose>
-			<xsl:when test="starts-with(normalize-space(), 'folgt') and tei:orig">
+			<xsl:when test="starts-with(normalize-space(), 'folgt')">
 				<xsl:sequence select="$text" />
 				
 				<xsl:variable name="inter" select="normalize-space(tei:orig[last()]/following-sibling::text()[1])"/>
 				<xsl:choose>
+					<xsl:when test="not(tei:orig)">
+						<wdb:note><xsl:sequence select="node()" /></wdb:note>
+					</xsl:when>
 					<xsl:when test="string-length($inter) &lt; 3">
 						<xsl:variable name="wit">
 							<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node(), ''), ',')">
@@ -158,6 +164,9 @@
 						</xsl:variable>
 						<add wit="{$wit}"><del><xsl:apply-templates select="tei:orig" mode="norm"/></del></add>
 					</xsl:when>
+					<xsl:otherwise>
+						<wdb:note><xsl:sequence select="node()" /></wdb:note>
+					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="contains(., 'hinzugefügt')">
@@ -233,7 +242,7 @@
 				</del>
 			</xsl:when>
 			<xsl:when test="tei:orig">
-				<xsl:variable name="wit">
+				<!--<xsl:variable name="wit">
 					<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], ''), ',')">
 						<xsl:value-of select="'#' || normalize-space()"/>
 						<xsl:if test="not(position() = last())">
@@ -245,6 +254,45 @@
 					| text()[preceding-sibling::*[1][self::tei:orig]
 					and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
 					<xsl:sequence select="tei:note" />
+				</rdg>-->
+				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node(), '')))" />
+				<xsl:variable name="wit">
+					<xsl:for-each select="$tok">
+						<xsl:choose>
+							<xsl:when test="matches(., '.+Gl')" />
+							<xsl:otherwise>
+								<xsl:value-of select="'#'||."/>
+								<xsl:text> </xsl:text>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+				</xsl:variable>
+				
+				<rdg wit="{normalize-space($wit)}">
+					<xsl:if test="starts-with(normalize-space(), 'korrigiert')">
+						<xsl:attribute name="cause">correction</xsl:attribute>
+					</xsl:if>
+					<xsl:choose>
+						<xsl:when test="contains(normalize-space(), 'am Rand')">
+							<xsl:attribute name="place">margin</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="ends-with(normalize-space(), 'AuRd-Gl')">
+							<xsl:attribute name="place">AuRd-Gl</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="ends-with(normalize-space(), 'InRd-Gl')">
+							<xsl:attribute name="place">InRd-Gl</xsl:attribute>
+						</xsl:when>
+					</xsl:choose>
+					<xsl:choose>
+						<xsl:when test="tei:orig">
+							<xsl:apply-templates select="tei:orig 
+								| text()[preceding-sibling::*[1][self::tei:orig]
+								and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="$text"/>
+						</xsl:otherwise>
+					</xsl:choose>
 				</rdg>
 			</xsl:when>
 			<xsl:when test="starts-with(normalize-space(), 'fehlt')">
@@ -282,6 +330,13 @@
 		<xsl:if test="following-sibling::*[1][self::tei:orig]">
 			<xsl:text> </xsl:text>
 		</xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="wdb:marker">
+		<xsl:text>; </xsl:text>
+	</xsl:template>
+	<xsl:template match="wdb:note">
+		<xsl:apply-templates />
 	</xsl:template>
 	
 	<!--<xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type = 'crit_app']]]">
