@@ -124,6 +124,25 @@
 					</xsl:for-each>
 				</app>
 			</xsl:when>
+			<xsl:when test="$cont/*[1][self::tei:lem]">
+				<app>
+					<xsl:sequence select="$cont/*[1]" />
+					<xsl:for-each select="$cont/*[position() > 1]">
+						<xsl:choose>
+							<xsl:when test="self::tei:rdg">
+								<xsl:sequence select="."/>
+							</xsl:when>
+							<xsl:otherwise>
+								<rdg wit="{@wit}">
+									<xsl:copy>
+										<xsl:apply-templates select="node() | @place | @cause"/>
+									</xsl:copy>
+								</rdg>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+				</app>
+			</xsl:when>
 			<!-- TODO ausbauen -->
 			<xsl:otherwise>
 				<xsl:sequence select="$cont" />
@@ -193,6 +212,9 @@
 						</xsl:when>
 						<xsl:when test="ends-with(normalize-space(), 'InRd-Gl')">
 							<xsl:attribute name="place">InRd-Gl</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="contains(normalize-space(), 'über der Zeile')">
+							<xsl:attribute name="place">supralinear</xsl:attribute>
 						</xsl:when>
 					</xsl:choose>
 					<xsl:choose>
@@ -269,9 +291,14 @@
 				</xsl:variable>
 				
 				<rdg wit="{normalize-space($wit)}">
-					<xsl:if test="starts-with(normalize-space(), 'korrigiert')">
-						<xsl:attribute name="cause">correction</xsl:attribute>
-					</xsl:if>
+					<xsl:choose>
+						<xsl:when test="starts-with(normalize-space(), 'hsl. korrigiert')">
+							<xsl:attribute name="cause">manualCorrection</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="starts-with(normalize-space(), 'korrigiert')">
+							<xsl:attribute name="cause">correction</xsl:attribute>
+						</xsl:when>
+					</xsl:choose>
 					<xsl:choose>
 						<xsl:when test="contains(normalize-space(), 'am Rand')">
 							<xsl:attribute name="place">margin</xsl:attribute>
@@ -307,6 +334,17 @@
 					</xsl:for-each>
 				</xsl:variable>
 				<rdg wit="{$wit}" />
+			</xsl:when>
+			<xsl:when test="(string-length(normalize-space(text()[1])) &lt; 3
+				or contains(text()[1], ',')
+				or tei:hi[@rend='sub'])
+				and not(tei:*[last()]/following-sibling::text()[normalize-space() != ''])">
+				<xsl:variable name="wit">
+					<xsl:for-each select="tokenize(normalize-space(), ',')">
+						<xsl:value-of select="'#'||."/>
+					</xsl:for-each>
+				</xsl:variable>
+				<lem wit="{$wit}"><xsl:sequence select="$text" /></lem>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:text>XXX</xsl:text>

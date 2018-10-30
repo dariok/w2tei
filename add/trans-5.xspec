@@ -110,8 +110,8 @@
 		</x:scenario>
 	</x:scenario>
 	
-	<x:scenario label="gemischte">
-		<x:scenario label="rdg mit Hinzufügungen">
+	<x:scenario label="T6: gemischte">
+		<x:scenario label="T6.1: rdg mit Hinzufügungen">
 			<x:context>
 				<p>meritorium A quo<note type="crit_app"> <orig>ad hoc</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  durchgestrichen  <orig>ut <gap/></orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> folgt  <orig>aii</orig> a<hi rend="sub">1</hi></note> dependent</p>
 			</x:context>
@@ -124,7 +124,7 @@
 				</app> dependent</p>
 			</x:expect>
 		</x:scenario>
-		<x:scenario label="mehrere note incl. comment">
+		<x:scenario label="T6.2: mehrere note incl. comment">
 			<x:context>
 				<p>est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> sanctissimum<note type="crit_app"> <orig>sactissimum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>sanctissimum</orig> a<hi rend="sub">2</hi> <note type="comment">korrigiert</note></note> in Christo</p>
 			</x:context>
@@ -132,7 +132,7 @@
 				<p>est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> <app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in Christo</p>
 			</x:expect>
 		</x:scenario>
-		<x:scenario label="mehrere in Marginaline">
+		<x:scenario label="T6.3: mehrere in Marginaline">
 			<x:context>
 				<p><note place="margin">Ad hec dixit <rs type="person"><!--TODO ref nachtragen-->Eccius</rs><note type="crit_app"> <orig>Eckius</orig> A<hi rend="sub">5</hi></note>  se legisse  antequam Theognis  nasceretur<note type="crit_app">hinzugefügt a<hi rend="sub">3</hi> AuRd-Gl</note><note type="footnote">Vermutlich hat <rs type="person"><!--TODO ref nachtragen-->Karlstadt</rs> dieses Zitat <ref type="medieval">Gell. 1,3,18-19</ref> entnommen. Später finded es sich auch bei <rs type="person"><!--TODO ref nachtragen-->Erasmus</rs>, <hi style="font-style: italic;">Adagia</hi>, letzte Ausgabe (1533): <ref type="medieval">Erasmus, Adag. 3300</ref>: »Hoc noveram priusquam« (<bibl ref="#asd_1969"> II-7, 183f.</bibl>).</note></note>
 					<lb/>Secundo</p>
@@ -140,6 +140,14 @@
 			<x:expect label="add">
 				<p><note place="margin">Ad hec dixit <rs type="person"><app><lem>Eccius</lem><rdg wit="#A5">Eckius</rdg></app></rs> se legisse antequam Theognis <add wit="#a3" place="AuRd-Gl">nasceretur</add><note type="footnote">Vermutlich hat <rs type="person"><!--TODO ref nachtragen-->Karlstadt</rs> dieses Zitat <ref type="medieval">Gell. 1,3,18-19</ref> entnommen. Später finded es sich auch bei <rs type="person"><!--TODO ref nachtragen-->Erasmus</rs>, <term type="term">Adagia</term>, letzte Ausgabe (1533): <ref type="medieval">Erasmus, Adag. 3300</ref>: »Hoc noveram priusquam« (<bibl ref="#asd_1969"> II-7, 183f.</bibl>).</note></note>
 					<lb/>Secundo</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T6.4: mehrere rdg und manuelles">
+			<x:context>
+				<p>Nam per<note type="crit_app"> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>super</orig> über der Zeilehinzugefügt a<hi rend="sub">3</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>super</orig> A<hi rend="sub">1-5</hi> <wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>hsl. korrigiert in  <orig>per</orig> A<hi rend="sub">5Lp</hi></note> hec talenta</p>
+			</x:context>
+			<x:expect label=".">
+				<p>Nam <app><lem wit="#a1">per</lem><rdg wit="#a3"><add place="supralinear">super</add></rdg><rdg wit="#A1-5">super</rdg><rdg wit="#A5Lp" cause="manualCorrection">per</rdg></app> hec talenta</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
