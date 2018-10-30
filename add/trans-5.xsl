@@ -277,7 +277,7 @@
 					and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
 					<xsl:sequence select="tei:note" />
 				</rdg>-->
-				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node(), '')))" />
+				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')))" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
 						<xsl:choose>
@@ -320,6 +320,7 @@
 							<xsl:value-of select="$text"/>
 						</xsl:otherwise>
 					</xsl:choose>
+					<xsl:sequence select="tei:note" />
 				</rdg>
 			</xsl:when>
 			<xsl:when test="starts-with(normalize-space(), 'fehlt')">

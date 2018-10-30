@@ -68,13 +68,15 @@
 	</x:scenario>
 	
 	<x:scenario label="T2: app/lem/rdg">
-		<x:context>
-			<p>sanctissimum<note type="crit_app"> <orig>sactissimum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>sanctissimum</orig> a<hi rend="sub">2</hi> <note type="comment">korrigiert</note></note> in</p>
-		</x:context>
-		<x:expect label="letzes rdg mit note">
-			<p><app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in</p>
-		</x:expect>
-		<x:scenario label="vorher rs mit mehreren Wörtern">
+		<x:scenario label="T2.1">
+			<x:context>
+				<p>sanctissimum<note type="crit_app"> <orig>sactissimum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>sanctissimum</orig> a<hi rend="sub">2</hi> <note type="comment">korrigiert</note></note> in</p>
+			</x:context>
+			<x:expect label="letzes rdg mit note">
+				<p><app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T2.2: vorher rs mit mehreren Wörtern">
 			<x:context>
 				<p>ad <rs type="person"><!--TODO ref nachtragen--><expan>D<ex>ominum</ex></expan> Eccium</rs><note type="crit_app"> <orig>Eckium</orig> A<hi rend="sub">5</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>Ecckium</orig> a<hi rend="sub">1</hi></note></p>
 			</x:context>
