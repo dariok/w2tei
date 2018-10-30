@@ -21,8 +21,8 @@
 				<xsl:when test="preceding-sibling::node()[1][self::text()]">
 					<xsl:value-of select="xstring:substring-after-last(preceding-sibling::text()[1], ' ')" />
 				</xsl:when>
-				<xsl:when test="preceding-sibling::tei:*[not(contains(., ' '))]">
-					<xsl:sequence select="preceding-sibling::*[1]" />
+				<xsl:when test="preceding-sibling::tei:*/node()[last()][self::text()]">
+					<xsl:value-of select="xstring:substring-after-last(preceding-sibling::*[1]/text()[last()], ' ')" />
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
@@ -34,9 +34,15 @@
 		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test="preceding-sibling::node()[1][self::tei:*]">
-				<xsl:variable name="pre" select="preceding-sibling::node()[1][self::tei:*]"/>
+				<xsl:variable name="pre" select="preceding-sibling::*[1]"/>
 				<xsl:element name="{local-name($pre)}">
 					<xsl:apply-templates select="$pre/@*" />
+					<xsl:choose>
+						<xsl:when test="$pre/node()[last()][self::text()]">
+							<xsl:sequence select="$pre/node()[not(position() = last())]" />
+							<xsl:value-of select="xstring:substring-before-last($pre/text()[last()], ' ')"/>
+						</xsl:when>
+					</xsl:choose>
 					<xsl:sequence select="$content" />
 				</xsl:element>
 			</xsl:when>
@@ -66,7 +72,7 @@
 			<xsl:when test="@type = 'footnote'">
 				<xsl:sequence select="." />
 			</xsl:when>
-			<xsl:when test="self::tei:rs[not(contains(., ' '))]"/>
+			<xsl:when test="self::tei:rs"/>
 			<xsl:otherwise>
 				<xsl:apply-templates select="." mode="eval"/>
 			</xsl:otherwise>
