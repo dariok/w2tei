@@ -62,6 +62,10 @@
       <xsl:apply-templates select="@* | node()" />
     </xsl:element>
   </xsl:template>
+	
+	<xsl:template match="tei:note[@type = 'footnote']/tei:hi[contains(@style, 'italic')]">
+		<term type="term"><xsl:apply-templates /></term>
+	</xsl:template>
   
   <xsl:template match="* | @* | comment() | processing-instruction()">
     <xsl:copy>

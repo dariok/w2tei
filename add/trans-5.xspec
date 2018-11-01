@@ -65,6 +65,18 @@
 				<p><lb/>quia <app><lem>voluntas</lem><rdg wit="#a2" place="AuRd-Gl">quomodo voluntas sit domina famula</rdg></app> sit domina actuum. comparando ad actus inferiores. et tamen sit famula <w>com<lb break="no"/>perando</w> ad Christum<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi>;  am Rand hinzugefügt <orig>Christum</orig> a<hi rend="sub">3</hi>(?)</note> in <app><lem>ea</lem><rdg wit="#a1">eo</rdg></app> regnantem.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 964 Z. 15-18</note> adhuc tamen ut videretur aliquid mihi <app><lem>impingere</lem><rdg wit="#a1">mihi aliquid impendere</rdg><rdg wit="#a3(?)" cause="correction">impingere</rdg></app></p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.8: text vor krit. FN – „folgt“">
+			<x:context>
+				<p>
+					<w>ful<lb break="no"/>ten.</w> Wie sie<note type="crit_app">folgt<orig> auch </orig>a</note> entlich heylig<note type="crit_app">folgt<orig> <expan>D<ex>octo</ex>r</expan> </orig>b</note>
+				</p>
+			</x:context>
+			<x:expect label="Spatium; add mit wit">
+				<p>
+					<w>ful<lb break="no"/>ten.</w> Wie sie<add wit="#a">auch</add> entlich heylig<add wit="#b"><expan>D<ex>octo</ex>r</expan></add>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T2: app/lem/rdg">
@@ -215,6 +227,34 @@
 									<rdg wit="#a1" /></app><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </note></p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T2.9: mit lb im Lemma">
+			<x:context>
+				<p>
+					<lb/>hactenus ecclesiam defendit, et quis te vita defuncto <anchor type="crit_app" xml:id="s1"/>tuebitur? 
+					<lb/>quod<anchor type="crit_app" xml:id="s1e"/><span type="crit_app" from="#s1" to="#s1e"> <orig>tuebituro quod</orig> B, C.</span> vix audent Imperatores mundi, audacter subit audaculus
+					<lb/>imperator Theologorum. Si mihi <expan>D<ex>ominus</ex></expan> <rs type="person"><!--TODO ref nachtragen-->Ioannes</rs> persuadere vales,
+				</p>
+			</x:context>
+			<x:expect label="lem mit lb">
+				<p>
+					<lb/>hactenus ecclesiam defendit, et quis te vita defuncto <app><lem>tuebitur? 
+					<lb/>quod</lem><rdg wit="#B #C">tuebituro quod</rdg></app> vix audent Imperatores mundi, audacter subit audaculus
+					<lb/>imperator Theologorum. Si mihi <expan>D<ex>ominus</ex></expan> <rs type="person"><!--TODO ref nachtragen-->Ioannes</rs> persuadere vales,
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T2.10: span mit vielen rdg (ex: LD)">
+			<x:context>
+				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen--><expan>Hila<ex>rius</ex></expan></rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <anchor type="crit_app" xml:id="s29"/>de .3. ergo. diximus.<anchor type="crit_app" xml:id="s29e"/>
+					<span type="crit_app" from="#s29" to="#s29e"> <orig>4to</orig> a<hi rend="sub">1</hi><wdb:marker/> <orig>Ad 4tum</orig> a<hi rend="sub">2</hi> AuRd-Gl<wdb:marker/> <orig>Ad quartum &lt;..&gt; 4°</orig> A<hi rend="sub">5Lp</hi> AuRd-Gl </span> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
+					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
+			</x:context>
+			<x:expect label="lem/rdg">
+				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen--><expan>Hila<ex>rius</ex></expan></rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <app><lem>de .3. ergo. diximus.</lem>
+					<rdg wit="#a1">4to</rdg> <rdg wit="#a2" place="AuRd-Gl">Ad 4tum</rdg> <rdg wit="#A5Lp" place="AuRd-Gl">Ad quartum &lt;..&gt; 4°</rdg></app> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
+					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T3: fehlt">
@@ -232,7 +272,7 @@
 				<item>Lex<note type="crit_app">Danach gestrichen<orig> factorum</orig></note> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <hi style="font-style: italic;">factorum</hi> mit <hi style="font-style: italic;">operum</hi> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical" cRef="Rm 3,27f">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
 			</x:context>
 			<x:expect label="del mit @place='after'">
-				<item>Lex<del place="after">factorum</del> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <term type="term">factorum</term> mit <term type="term">operum</term> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical" cRef="Rm 3,27f">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
+				<item>Lex<del place="after">factorum</del> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <hi style="font-style: italic;">factorum</hi> mit <hi style="font-style: italic;">operum</hi> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical" cRef="Rm 3,27f">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
@@ -278,14 +318,11 @@
 				<item>Lex factorum dicitur. sicut lucus a <choice><sic>lucando:<note type="comment">Kolde, Disputationsthesen, 471, ändert stillschweigend in
 						<orig>non lucendo.</orig></note></sic><corr>lucendo:</corr></choice><note
 							type="footnote">Hinter <quote>lucus a lucendo</quote> steht die etymologische
-							Herleitung des Wortes <term type="term">lucus</term> (Wald) von <term
-								type="term">lucere</term> (leuchten), die u. a. <rs type="person"
+							Herleitung des Wortes <hi style="font-style: italic;">lucus</hi> (Wald) von <hi style="font-style: italic;">lucere</hi> (leuchten), die u. a. <rs type="person"
 									><!--TODO ref nachtragen-->Quint.</rs><ref type="medieval"> inst. orat. </ref>1,6,34
 							wiedergibt: <quote>etiamne a contrariis aliqua sinemus trahi, ut ‘lucus‘, quia umbra
 								opacus parum luceat […]?</quote> (<bibl ref="#">Winterbottom, Quintiliani, Bd. 1,
-									47,8f</bibl>.) Diese volksetymologische Ableitung einer Wortbedeutung (<term
-										type="term">lucus</term> / dunkler Wald) vom Gegenteil <term
-										type="term">(lucere</term> / hell leuchten), enthält einen logischen
+									47,8f</bibl>.) Diese volksetymologische Ableitung einer Wortbedeutung (<hi style="font-style: italic;">lucus</hi> / dunkler Wald) vom Gegenteil <hi style="font-style: italic;">(lucere</hi> / hell leuchten), enthält einen logischen
 							Widerspruch. Was <rs type="person"><!--TODO ref nachtragen-->Karlstadt</rs> meint,
 							wenn er die Phrase <quote>lex factorum</quote> mit der Herleitung <quote>lucus a
 								lucendo</quote> vergleicht, ergibt sich in Verbindung mit These 6 und 7: Die
@@ -326,7 +363,7 @@
 					<lb/>Secundo</p>
 			</x:context>
 			<x:expect label="add">
-				<p><note place="margin">Ad hec dixit <rs type="person"><!--TODO ref nachtragen--><app><lem>Eccius</lem><rdg wit="#A5">Eckius</rdg></app></rs> se legisse antequam Theognis <add wit="#a3" place="AuRd-Gl">nasceretur</add><note type="footnote">Vermutlich hat <rs type="person"><!--TODO ref nachtragen-->Karlstadt</rs> dieses Zitat <ref type="medieval">Gell. 1,3,18-19</ref> entnommen. Später finded es sich auch bei <rs type="person"><!--TODO ref nachtragen-->Erasmus</rs>, <term type="term">Adagia</term>, letzte Ausgabe (1533): <ref type="medieval">Erasmus, Adag. 3300</ref>: »Hoc noveram priusquam« (<bibl ref="#asd_1969"> II-7, 183f.</bibl>).</note></note>
+				<p><note place="margin">Ad hec dixit <rs type="person"><!--TODO ref nachtragen--><app><lem>Eccius</lem><rdg wit="#A5">Eckius</rdg></app></rs> se legisse antequam Theognis <add wit="#a3" place="AuRd-Gl">nasceretur</add><note type="footnote">Vermutlich hat <rs type="person"><!--TODO ref nachtragen-->Karlstadt</rs> dieses Zitat <ref type="medieval">Gell. 1,3,18-19</ref> entnommen. Später finded es sich auch bei <rs type="person"><!--TODO ref nachtragen-->Erasmus</rs>, <hi style="font-style: italic;">Adagia</hi>, letzte Ausgabe (1533): <ref type="medieval">Erasmus, Adag. 3300</ref>: »Hoc noveram priusquam« (<bibl ref="#asd_1969"> II-7, 183f.</bibl>).</note></note>
 					<lb/>Secundo</p>
 			</x:expect>
 		</x:scenario>
@@ -336,6 +373,27 @@
 			</x:context>
 			<x:expect label=".">
 				<p>Nam <app><lem wit="#a1">per</lem><rdg wit="#a3"><add place="supralinear">super</add></rdg><rdg wit="#A1-5">super</rdg><rdg wit="#A5Lp" cause="manualCorrection">per</rdg></app> hec talenta</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T6.5: FN zwischen anchor">
+			<x:context>
+				<p><lb/><anchor type="crit_app" xml:id="s2"/>Protestatio<note type="footnote" xml:id="n2"
+					>Hier im Sinn von <hi style="font-style: italic;">Bedingung</hi>, als vorsorglichen
+					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
+						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
+							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
+								<orig>Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</orig>
+								B<wdb:marker /> fehlt a<hi rend="sub">1</hi><wdb:marker/> <orig>Protestatio Carolostad<supplied>ius</supplied></orig>
+								a<hi rend="sub">2 </hi>AuRd-Gl</span></p>
+			</x:context>
+			<x:expect label="geordneter content">
+				<p><lb/><app><lem>Protestatio<note type="footnote" xml:id="n2"
+					>Hier im Sinn von <hi style="font-style: italic;">Bedingung</hi>, als vorsorglichen
+					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
+						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere</lem>
+								<rdg wit="#B">Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</rdg>
+								<rdg wit="#a1" />
+								<rdg wit="#a2" place="AuRd-Gl">Protestatio Carolostad<supplied>ius</supplied></rdg></app></p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
@@ -372,89 +430,15 @@
 	
 		
 	
-	<x:scenario label="text vor krit. FN – „folgt“">
-		<x:context>
-			<p>
-				<w>ful<lb break="no"/>ten.</w> Wie sie<note type="crit_app">folgt<orig> auch </orig>a</note> entlich heylig<note type="crit_app">folgt<orig> <expan>D<ex>octo</ex>r</expan> </orig>b</note>
-			</p>
-		</x:context>
-		<x:expect label="Spatium; add mit wit">
-			<p>
-				<w>ful<lb break="no"/>ten.</w> Wie sie<add wit="#a">auch</add> entlich heylig<add wit="#b"><expan>D<ex>octo</ex>r</expan></add>
-			</p>
-		</x:expect>
-	</x:scenario>
+	
 	
 	<x:scenario label="span/anchor">
-		<x:scenario label="einfach">
-			<x:context>
-				<p>
-					<lb/>und <anchor type="crit_app" xml:id="s1"/>textualis logicis und physicis<anchor type="crit_app" xml:id="s1e"/><span type="crit_app" from="#s1" to="#s1e"><orig>Textual Logica und Physica
-					</orig>EA</span> gnug
-				</p>
-			</x:context>
-			<x:expect label="span vor anchor">
-				<p>
-					<lb/>und <app><lem wit="#A">textualis logicis und physicis</lem><rdg wit="#EA">Textual Logica und Physica</rdg></app> gnug
-				</p>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="mit lb">
-			<x:context>
-				<p>
-					<lb></lb>hactenus ecclesiam defendit, et quis te vita defuncto <anchor type="crit_app" xml:id="s1"
-						></anchor>tuebitur? $ quod<anchor type="crit_app" xml:id="s1e"></anchor><span type="crit_app" from="#s1"
-							to="#s1e"><orig> tuebituro quod </orig>B, C</span> vix audent Imperatores
-					mundi, audacter subit audaculus
-					<lb></lb>imperator Theologorum. Si mihi <expan>D<ex>ominus</ex></expan>
-				</p>
-			</x:context>
-			<x:expect label="app lem rdg">
-				<p>
-					<lb></lb>hactenus ecclesiam defendit, et quis te vita defuncto <app><lem wit="#A">tuebitur? <lb/> quod</lem>
-						<rdg wit="#B #C">tuebituro quod</rdg></app> vix audent Imperatores
-					mundi, audacter subit audaculus
-					<lb></lb>imperator Theologorum. Si mihi <expan>D<ex>ominus</ex></expan>
-				</p>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="span mit vielen rdg (ex: LD)">
-			<x:context>
-				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen--><expan>Hila<ex>rius</ex></expan></rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <anchor type="crit_app" xml:id="s29"/>de .3. ergo. diximus.<anchor type="crit_app" xml:id="s29e"/>
-					<span type="crit_app" from="#s29" to="#s29e"> <orig>4to</orig> a<hi rend="sub">1</hi><wdb:marker/> <orig>Ad 4tum</orig> a<hi rend="sub">2</hi> AuRd-Gl<wdb:marker/> <orig>Ad quartum &lt;..&gt; 4°</orig> A<hi rend="sub">5Lp</hi> AuRd-Gl </span> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
-					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
-			</x:context>
-			<x:expect label="lem/rdg">
-				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen--><expan>Hila<ex>rius</ex></expan></rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <app><lem wit="#A">de .3. ergo. diximus.</lem>
-					<rdg wit="#a1">4to</rdg> <rdg wit="#a2" rend="AuRd-Gl">Ad 4tum</rdg> <rdg wit="#A5Lp" rend="AuRd-Gl">Ad quartum &lt;..&gt; 4°</rdg></app> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
-					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
-			</x:expect>
-		</x:scenario>
+		
+		
 	</x:scenario>
 	
 	<x:scenario label="krit. und FN gemischt">
-		<x:scenario label="103, p6">
-			<x:context>
-				<p><lb/><anchor type="crit_app" xml:id="s2"/>Protestatio<note type="footnote" xml:id="n2"
-					>Hier im Sinn von <hi style="font-style: italic;">Bedingung</hi>, als vorsorglichen
-					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
-						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
-							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
-								<orig>Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</orig>
-								B<wdb:marker /> <orig>@</orig> fehlt a<hi rend="sub">1</hi><wdb:marker/> <orig>Protestatio Carolostad&lt;ius&gt;</orig>
-								a<hi rend="sub">2 </hi><note type="comment">AuRd-Gl</note></span></p>
-			</x:context>
-			<x:expect label="geordneter content">
-				<p><lb/><anchor type="crit_app" xml:id="s2"/>Protestatio<note type="footnote" xml:id="n2"
-					>Hier im Sinn von <term type="term">Bedingung</term>, als vorsorglichen
-					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
-						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
-							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
-								<rdg wit="#B">Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</rdg>
-								<rdg wit="#a1" />
-								<rdg wit="#a2">Protestatio Carolostad&lt;ius&gt;<note type="comment">AuRd-Gl</note></rdg></span></p>
-			</x:expect>
-		</x:scenario>
+		
 	</x:scenario>
 	
 	<x:scenario label="collectanea aus LD">
