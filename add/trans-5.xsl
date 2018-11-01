@@ -251,17 +251,21 @@
 				</choice>
 			</xsl:when>
 			<xsl:when test="matches(., '^\w* *\w*gestrichen')">
+				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')), ' ')" />
 				<xsl:variable name="wit">
-					<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], ''), ',')">
-						<xsl:value-of select="'#' || normalize-space()"/>
-						<xsl:if test="not(position() = last())">
-							<xsl:text> </xsl:text>
-						</xsl:if>
+					<xsl:for-each select="$tok">
+						<xsl:choose>
+							<xsl:when test="matches(., '.+Gl')" />
+							<xsl:otherwise>
+								<xsl:value-of select="'#'||normalize-space(xstring:substring-before(., ','))"/>
+								<xsl:text> </xsl:text>
+							</xsl:otherwise>
+						</xsl:choose>
 					</xsl:for-each>
 				</xsl:variable>
 				<del>
 					<xsl:if test="normalize-space($wit) != ''">
-						<xsl:attribute name="wit" select="$wit" />
+						<xsl:attribute name="wit" select="normalize-space($wit)" />
 					</xsl:if>
 					<xsl:choose>
 						<xsl:when test="matches(., '[dD]avor')">
@@ -290,13 +294,13 @@
 					and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
 					<xsl:sequence select="tei:note" />
 				</rdg>-->
-				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')))" />
+				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
 						<xsl:choose>
 							<xsl:when test="matches(., '.+Gl')" />
 							<xsl:otherwise>
-								<xsl:value-of select="'#'||."/>
+								<xsl:value-of select="'#'||normalize-space(xstring:substring-before(., ','))"/>
 								<xsl:text> </xsl:text>
 							</xsl:otherwise>
 						</xsl:choose>

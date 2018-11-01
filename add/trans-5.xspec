@@ -108,6 +108,22 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T2.5: mehrere Zeugen im rdg">
+			<x:context>
+				<p>
+					<lb/>Ad stupeum pensum sophistarum haud stupescam. 
+					<lb/>nis disputata, contra antiquiorem veritatem<note type="crit_app"><orig>veriratem </orig>F, G<hi rend="sub">1</hi>, H</note> producens, novum
+					<lb/>ius consuetudinis et praescriptionis adinvenit haud priori
+				</p>
+			</x:context>
+			<x:expect label="wit mit mehreren">
+				<p>
+					<lb/>Ad stupeum pensum sophistarum haud stupescam. 
+					<lb/>nis disputata, contra antiquiorem <app><lem>veritatem</lem><rdg wit="#F #G1 #H">veriratem</rdg></app> producens, novum
+					<lb/>ius consuetudinis et praescriptionis adinvenit haud priori
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T3: fehlt">
@@ -239,22 +255,7 @@
 		
 		
 		
-		<x:scenario label="mehrere Zeugen im rdg">
-			<x:context>
-				<p>
-					<lb/>Ad stupeum pensum sophistarum haud stupescam. 
-					<lb/>nis disputata, contra antiquiorem veritatem<note type="crit_app"><orig>veriratem </orig>F, G<hi rend="sub">1</hi>, H</note> producens, novum
-					<lb/>ius consuetudinis et praescriptionis adinvenit haud priori
-				</p>
-			</x:context>
-			<x:expect label="wit mit mehreren">
-				<p>
-					<lb/>Ad stupeum pensum sophistarum haud stupescam. 
-					<lb/>nis disputata, contra antiquiorem <app><lem wit="#A">veritatem</lem><rdg wit="#F #G1 #H">veriratem</rdg></app> producens, novum
-					<lb/>ius consuetudinis et praescriptionis adinvenit haud priori
-				</p>
-			</x:expect>
-		</x:scenario>
+		
 		<x:scenario label="beibehalten, wenn keine Phrase">
 			<x:context>
 				<list>
