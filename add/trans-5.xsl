@@ -235,7 +235,7 @@
 					</xsl:choose>
 				</add>
 			</xsl:when>
-			<xsl:when test="matches(., 'vo. .ditor verbessert')">
+			<xsl:when test="matches(., '[vV]o.\s+.ditor\s+verbessert')">
 				<choice>
 					<sic>
 						<xsl:apply-templates select="tei:orig 
