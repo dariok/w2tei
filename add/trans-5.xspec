@@ -124,6 +124,97 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T2.6: mit Sonderzeichen etc.">
+			<x:context>
+				<list>
+					<label>V.<note type="crit_app"><orig> V┐ </orig>F, G<hi rend="sub">1</hi>, H.</note>
+					</label>
+					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque anathemate<note type="crit_app"><orig> ʔ.iathemate </orig>F.</note> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note> <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam defendet?<note type="crit_app"><orig> defendet: </orig>C.</note><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
+					</item>
+				</list>
+			</x:context>
+			<x:expect label="G_1">
+				<list>
+					<label>
+						<app>
+							<lem>V.</lem>
+							<rdg wit="#F #G1 #H">V┐</rdg>
+						</app>
+					</label>
+					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque <app>
+						<lem>anathemate</lem>
+						<rdg wit="#F">ʔ.iathemate</rdg>
+					</app> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note> <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam <app>
+						<lem>defendet?</lem>
+						<rdg wit="#C">defendet:</rdg>
+					</app><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
+					</item>
+				</list>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T2.7: rdg mit Kommentar">
+			<x:context>
+				<p>et<note type="crit_app"><orig> er </orig>B<wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/><orig> ex </orig>C <note type="comment">mit hsl. Korrektur <orig>et</orig></note></note>
+				</p>
+			</x:context>
+			<x:expect label="comment mit orig im rdf">
+				<p>
+					<app>
+						<lem>et</lem>
+						<rdg wit="#B">er</rdg>
+						<rdg wit="#C">ex<note type="comment">mit hsl. Korrektur <orig>et</orig></note></rdg></app>
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T2.8: komplexere rdg">
+			<x:context>
+				<head>
+					<lb/><anchor type="crit_app" xml:id="s10"/>Scopus Disputationis.<anchor type="crit_app"
+						xml:id="s10e"/><span type="crit_app" from="#s10" to="#s10e">fehlt a<hi rend="sub"
+							>1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>linksbündig
+							hinzugefügt a<hi rend="sub">2</hi></span><anchor type="crit_app" xml:id="s11"/> Liberum arbitrium.<anchor
+								type="crit_app" xml:id="s11e"/><span type="crit_app" from="#s11"
+						to="#s11e">
+						<orig>Liberum arbitrium</orig> A<hi rend="sub">5</hi><wdb:marker
+							xmlns:wdb="https://github.com/dariok/wdbplus"/>
+						<orig>lberum ar</orig> a<hi rend="sub">1</hi><wdb:marker
+							xmlns:wdb="https://github.com/dariok/wdbplus"/> korrigiert in <orig>liberum
+								arbitrium</orig> a<hi rend="sub">2</hi><wdb:marker
+									xmlns:wdb="https://github.com/dariok/wdbplus"/>
+						<orig>Eckius <supplied>contra?</supplied> 11 conclusio<supplied>nem</supplied> doc
+							Corol<supplied>ostadii</supplied> de libero arbitrio</orig> a<hi rend="sub">2</hi>
+						AuRd-Gl<wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>
+						<orig>2 hora</orig> A<hi rend="sub">5Lp</hi> InRd-Gl </span>
+				</head>
+				<head>
+					<lb/>&lt;<rs type="person"><!--TODO ref nachtragen-->Eccius</rs>&gt;</head>
+				<p>
+					<lb/><anchor type="crit_app" xml:id="s12"/><expan>Con<ex>tra</ex></expan> XI.<anchor type="crit_app" xml:id="s12e"/><note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n3"/>.</note><span type="crit_app" from="#s12" to="#s12e"> <orig>contra 11</orig> zentriert a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>questio 14</orig> A<hi rend="sub">5Lp</hi> AuRd-Gl</span>  risit<note type="crit_app">fehlt a<hi rend="sub">1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </note></p>
+			</x:context>
+			<x:expect label="langer Text nicht in @wit">
+				<head>
+					<lb/><app><lem>Scopus Disputationis.</lem>
+						<rdg wit="#a1" />
+						<rdg wit="#a2"><add place="left">Scopus Disputationis.</add></rdg></app><app>
+						<lem> Liberum arbitrium.</lem>
+						<rdg wit="#A5">Liberum arbitrium</rdg>
+						<rdg wit="#a1">lberum ar</rdg>
+						<rdg cause="correction" wit="#a2">liberum arbitrium</rdg>
+						<rdg wit="#a2" place="AuRd-Gl">Eckius <supplied>contra?</supplied> 11 conclusio<supplied>nem</supplied> doc
+							Corol<supplied>ostadii</supplied> de libero arbitrio</rdg>
+						<rdg wit="#A5Lp" place="InRd-Gl">2 hora</rdg></app>
+				</head>
+				<head>
+					<lb/>&lt;<rs type="person"><!--TODO ref nachtragen-->Eccius</rs>&gt;</head>
+				<p>
+					<lb/><app><lem><expan>Con<ex>tra</ex></expan> XI.</lem>
+						<rdg wit="#a1" place="centre">contra 11</rdg>
+						<rdg wit="#A5Lp" place="AuRd-Gl">questio 14</rdg></app><note type="footnote">Vgl. Anm. <ptr type="wdb"
+								target="#n3"/>.</note>
+					<app><lem>risit</lem>
+									<rdg wit="#a1" /></app><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </note></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T3: fehlt">
@@ -277,110 +368,9 @@
 	</x:scenario>
 	
 	<x:pending>
-	<x:scenario label="krit. Anmerkungen">
-		
-		
-		
-		
-		
-		<x:scenario label="mit tiefgest.">
-			<x:context>
-				<list>
-					<label>V.<note type="crit_app"><orig> V┐ </orig>F, G<hi rend="sub">1</hi>, H.</note>
-					</label>
-					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque anathemate<note type="crit_app"><orig> ʔ.iathemate </orig>F.</note> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note> <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam defendet?<note type="crit_app"><orig> defendet: </orig>C.</note><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
-					</item>
-				</list>
-			</x:context>
-			<x:expect label="G_1">
-				<list>
-					<label>
-						<app>
-							<lem wit="#A">V.</lem>
-							<rdg wit="#F #G1 #H">V┐</rdg>
-						</app>
-					</label>
-					<item> Dominus <rs type="person"><!--TODO ref eintragen--><expan>Ioan<ex>nes</ex></expan></rs> Omnes iustos poenitere audacter negans, negat<lb/>quod confitetur ecclesia: est quoque <app>
-						<lem wit="#A">anathemate</lem>
-						<rdg wit="#F">ʔ.iathemate</rdg>
-					</app> percussus,<lb/>asseverans iustos viae: non esse peccatores proprie.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 882, Z. 1-8 und KGK I.2, Nr. 90, S. 917, Z. 1-7 und S. 923, Z. 19-23.</note> <w>Excom<lb break="no"/>municatus</w> autem quomodo ecclesiam <app>
-						<lem wit="#A">defendet?</lem>
-						<rdg wit="#C">defendet:</rdg>
-					</app><note type="footnote">Vgl. KGK I.2, Nr. 90, S. 963, Z. 11-15.</note>
-					</item>
-				</list>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="rdg mit Kommentar">
-			<x:context>
-				<p>et<note type="crit_app"><orig> er </orig>B<wdb:marker/><orig> ex </orig>C <note type="comment">mit hsl. Korrektur <orig>et</orig></note></note>
-				</p>
-			</x:context>
-			<x:expect label="comment mit orig im rdf">
-				<p>
-					<app>
-						<lem wit="#A">et</lem>
-						<rdg wit="#B">er</rdg>
-						<rdg wit="#C">ex<note type="comment">mit hsl. Korrektur <orig>et</orig></note></rdg></app>
-				</p>
-			</x:expect>
-		</x:scenario>
-	</x:scenario>
 	
-	<x:scenario label="komplexere rdg">
-		<x:context>
-			<p><lb/><anchor type="crit_app" xml:id="s12"/>Scopus Disputationis.<anchor type="crit_app"
-				xml:id="s12e"/><span type="crit_app" from="#s12" to="#s12e">fehlt a<hi rend="sub">1</hi>
-					<orig>;</orig> linksbündig hinzugefügt a<hi rend="sub">2</hi>
-				</span><anchor type="crit_app" xml:id="s13"/> Liberum arbitrium.<anchor type="crit_app"
-					xml:id="s13e"/><span type="crit_app" from="#s13" to="#s13e">
-						<orig>Liberum arbitrium</orig> A<hi rend="sub">5</hi><wdb:marker/> <orig>lberum ar</orig> a<hi
-							rend="sub">1</hi><wdb:marker/> <orig>@</orig> korrigiert a<hi rend="sub">2</hi><wdb:marker />
-						<orig>Eckius &lt;contra?&gt; 11 conclusio&lt;nem&gt; doc Corol&lt;ostadii&gt; de libero
-							arbitrio</orig> a<hi rend="sub">2</hi> AuRd-Gl<wdb:marker /> <orig>2 hora</orig> A<hi rend="sub"
-								>5Lp</hi> InRd-Gl </span>
-			</p>
-			<p><lb/><anchor type="crit_app" xml:id="s15"/><expan>Con<ex>tra</ex></expan> XI.<anchor type="crit_app"
-				xml:id="s15e"/><note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n2"
-				/>.</note><note type="crit_app">
-					<orig>contra 11</orig> a<hi rend="sub">1</hi> zentriert<wdb:marker/> <orig>questio 14</orig> A<hi
-						rend="sub">5Lp</hi> AuRd-Gl</note> risit<note type="crit_app">fehlt a<hi rend="sub"
-							>1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes,
-								das des Druckes zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte –
-								registriert. Diese Anmerkung, die ein Einzelnfall auch im Druck ist, fehlt in dem
-								Freiberger Manuskript. </note></p>
-		</x:context>
-		<x:expect label="langer Text nicht in @wit">
-			<p>
-				<lb/>
-				<anchor type="crit_app" xml:id="s12"/>Scopus Disputationis.<anchor type="crit_app"
-					xml:id="s12e"/><span type="crit_app" from="#s12" to="#s12e">fehlt a<hi rend="sub">1</hi>
-						<orig>;</orig> linksbündig hinzugefügt a<hi rend="sub">2</hi></span>
-				<app>
-					<lem wit="#A"> Liberum arbitrium.</lem>
-					<rdg wit="#A5">Liberum arbitrium</rdg>
-					<rdg wit="#a1">lberum ar</rdg>
-					<rdg wit="#a2"
-						rend="korrigiert" />
-					<rdg wit="#a2"
-						rend="AuRd-Gl">Eckius &lt;contra?&gt; 11 conclusio&lt;nem&gt; doc Corol&lt;ostadii&gt; de libero arbitrio</rdg>
-					<rdg wit="#A5Lp"
-						rend="InRd-Gl">2 hora</rdg>
-				</app> </p>
-			<p>
-				<lb/>
-				<anchor type="crit_app" xml:id="s15"/><expan>Con<ex>tra</ex></expan> XI.<anchor type="crit_app"
-					xml:id="s15e"/><note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n2"/>.</note><app>
-						<lem wit="#A"/>
-						<rdg wit="#a1" rend="zentriert">contra 11</rdg>
-						<rdg wit="#A5Lp" rend="AuRd-Gl">questio 14</rdg>
-					</app>  risit<note type="crit_app">fehlt a<hi rend="sub">1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes,
-								das des Druckes zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte –
-								registriert. Diese Anmerkung, die ein Einzelnfall auch im Druck ist, fehlt in dem
-								Freiberger Manuskript. </note>
-			</p>
-		</x:expect>
-	</x:scenario>
+	
+		
 	
 	<x:scenario label="text vor krit. FN – „folgt“">
 		<x:context>

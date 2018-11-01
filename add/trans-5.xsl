@@ -56,8 +56,11 @@
 	</xsl:template>-->
 	
 	<xsl:template match="tei:anchor" />
+	<xsl:template match="tei:note[@type = 'footnote'
+		and preceding-sibling::*[1][self::tei:anchor[ends-with(@xml:id, 'e')]]
+		and following-sibling::*[1][self::tei:span]]" />
 	
-	<xsl:template match="node()[(preceding-sibling::tei:anchor and following-sibling::tei:anchor)
+	<xsl:template match="node()[not(self::tei:span)][(preceding-sibling::tei:anchor and following-sibling::tei:anchor)
 		or following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
 		<xsl:variable name="pre" select="preceding-sibling::tei:anchor[1]/@xml:id"/>
 		<xsl:choose>
@@ -79,11 +82,28 @@
 		</xsl:choose>
 	</xsl:template>
 	<xsl:template match="tei:span">
-		<xsl:call-template name="critapp">
-			<xsl:with-param name="text" select="id(substring-after(@from, '#'))/following-sibling::node()
-				intersect id(substring-after(@to, '#'))/preceding-sibling::node()" />
-			<xsl:with-param name="note" select="." />
-		</xsl:call-template>
+		<xsl:variable name="content">
+			<xsl:call-template name="critapp">
+				<xsl:with-param name="text" select="id(substring-after(@from, '#'))/following-sibling::node()
+					intersect id(substring-after(@to, '#'))/preceding-sibling::node()" />
+				<xsl:with-param name="note" select="." />
+			</xsl:call-template>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="preceding-sibling::*[1][self::tei:note[@type = 'footnote']] and $content/*[1][self::tei:*]">
+				<xsl:sequence select="$content" />
+				<xsl:sequence select="preceding-sibling::*[1]" />
+			</xsl:when>
+			<xsl:when test="$content/*[1][self::tei:*]">
+				<xsl:sequence select="$content" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:sequence select="id(substring-after(@from, '#'))" />
+				<xsl:sequence select="preceding-sibling::node() intersect
+					id(substring-after(@from, '#'))/following-sibling::node()" />
+				<xsl:sequence select="$content" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<xsl:template name="critapp">
@@ -113,7 +133,7 @@
 			</xsl:when>
 			<xsl:when test="$cont/*[1][self::tei:rdg]">
 				<app>
-					<lem><xsl:value-of select="$text" /></lem>
+					<lem><xsl:sequence select="$text" /></lem>
 					<xsl:for-each select="$cont/*">
 						<xsl:choose>
 							<xsl:when test="self::tei:rdg">
@@ -122,7 +142,7 @@
 							<xsl:otherwise>
 								<rdg wit="{@wit}">
 									<xsl:copy>
-										<xsl:apply-templates />
+										<xsl:apply-templates select="node() | @place | @cause"/>
 									</xsl:copy>
 								</rdg>
 							</xsl:otherwise>
@@ -227,6 +247,12 @@
 						<xsl:when test="contains(normalize-space(), 'über der Zeile')">
 							<xsl:attribute name="place">supralinear</xsl:attribute>
 						</xsl:when>
+						<xsl:when test="contains(normalize-space(), 'linksbündig')">
+							<xsl:attribute name="place">left</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="contains(normalize-space(), 'zentriert')">
+							<xsl:attribute name="place">centre</xsl:attribute>
+						</xsl:when>
 					</xsl:choose>
 					<xsl:choose>
 						<xsl:when test="tei:orig">
@@ -282,24 +308,11 @@
 				</del>
 			</xsl:when>
 			<xsl:when test="tei:orig">
-				<!--<xsl:variable name="wit">
-					<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], ''), ',')">
-						<xsl:value-of select="'#' || normalize-space()"/>
-						<xsl:if test="not(position() = last())">
-							<xsl:text> </xsl:text>
-						</xsl:if>
-					</xsl:for-each>
-				</xsl:variable>
-				<rdg wit="{$wit}"><xsl:apply-templates select="tei:orig 
-					| text()[preceding-sibling::*[1][self::tei:orig]
-					and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
-					<xsl:sequence select="tei:note" />
-				</rdg>-->
 				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
 						<xsl:choose>
-							<xsl:when test="matches(., '.+Gl')" />
+							<xsl:when test="string-length() > 5" />
 							<xsl:otherwise>
 								<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
 								<xsl:text> </xsl:text>
@@ -326,6 +339,15 @@
 						</xsl:when>
 						<xsl:when test="ends-with(normalize-space(), 'InRd-Gl')">
 							<xsl:attribute name="place">InRd-Gl</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="contains(normalize-space(), 'über der Zeile')">
+							<xsl:attribute name="place">supralinear</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="contains(normalize-space(), 'linksbündig')">
+							<xsl:attribute name="place">left</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="contains(normalize-space(), 'zentriert')">
+							<xsl:attribute name="place">centre</xsl:attribute>
 						</xsl:when>
 					</xsl:choose>
 					<xsl:choose>
