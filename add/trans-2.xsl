@@ -244,7 +244,9 @@
 	</xsl:template>
 	<xsl:template match="tei:note[@type = 'crit_app']">
 		<xsl:choose>
-			<xsl:when test="preceding-sibling::*[1][self::tei:anchor[@ref='se']]">
+			<xsl:when test="preceding-sibling::*[1][self::tei:anchor[@ref='se']]
+				or (preceding-sibling::*[1][self::tei:note[@type = 'footnote']]
+				and preceding-sibling::*[2][self::tei:anchor[@ref = 'se']])">
 				<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])" />
 				<span type="crit_app" from="{'#s'||$num}" to="{'#s'||$num||'e'}">
 <!--					<xsl:comment>TODO ggf. bessere Kodierung</xsl:comment>-->
