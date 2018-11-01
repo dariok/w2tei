@@ -59,4 +59,17 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T4: orig zusammenziehen">
+		<x:context>
+			<note type="comment">Kolde, Disputationsthesen, 471, ändert stillschweigend in
+				<orig>non </orig><orig>lucendo</orig><orig>.</orig> sowie
+				<orig>non </orig><orig>lucendo</orig><orig>.</orig></note>
+		</x:context>
+		<x:expect label="ein orig">
+			<note type="comment">Kolde, Disputationsthesen, 471, ändert stillschweigend in
+				<orig>non lucendo.</orig> sowie
+				<orig>non lucendo.</orig></note>
+		</x:expect>
+	</x:scenario>
 </x:description>

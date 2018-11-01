@@ -56,6 +56,16 @@
 		</xsl:analyze-string>
 	</xsl:template>
 	
+	<xsl:template match="tei:orig[preceding-sibling::node()[1][self::tei:orig]]" />
+	<xsl:template match="tei:orig[not(preceding-sibling::node()[1][self::tei:orig])]">
+		<xsl:variable name="my" select="generate-id()"/>
+		<orig>
+			<xsl:apply-templates select="node()" />
+			<xsl:apply-templates select="following-sibling::tei:orig[preceding-sibling::node()[1][self::tei:orig]
+					and generate-id(preceding-sibling::tei:orig[not(preceding-sibling::node()[1][self::tei:orig])][1]) = $my]/node()"/>
+		</orig>
+	</xsl:template>
+	
 	<xsl:template match="@* | * | comment()">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()"/>
