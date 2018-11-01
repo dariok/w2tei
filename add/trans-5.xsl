@@ -21,7 +21,7 @@
 				<xsl:when test="preceding-sibling::node()[1][self::text()]">
 					<xsl:value-of select="xstring:substring-after-last(preceding-sibling::text()[1], ' ')" />
 				</xsl:when>
-				<xsl:when test="preceding-sibling::tei:*/node()[last()][self::text()]">
+				<xsl:when test="preceding-sibling::tei:*[1]/node()[last()][self::text()]">
 					<xsl:value-of select="xstring:substring-after-last(preceding-sibling::*[1]/text()[last()], ' ')" />
 				</xsl:when>
 			</xsl:choose>
@@ -361,12 +361,17 @@
 	
 	<xsl:template match="tei:orig" mode="norm">
 		<xsl:choose>
-			<xsl:when test="node()[1][self::text()][starts-with(., ' ')]"><xsl:value-of select="normalize-space(text()[1])"/></xsl:when>
+			<xsl:when test="count(node()) = 1 and text()">
+				<xsl:value-of select="normalize-space()"/>
+			</xsl:when>
+			<xsl:when test="node()[1][self::text()][starts-with(., ' ')]">
+				<xsl:value-of select="normalize-space(text()[1])"/>
+			</xsl:when>
 			<xsl:otherwise><xsl:sequence select="node()[1]" /></xsl:otherwise>
 		</xsl:choose>
 		<xsl:sequence select="node()[preceding-sibling::node() and following-sibling::node()[1]]" />
 		<xsl:choose>
-			<xsl:when test="count(node()) > 1 and node()[position()=last()][self::text()][ends-with(., ' ')]">
+			<xsl:when test="count(node()) > 1 and node()[last()][self::text()][ends-with(., ' ')]">
 				<xsl:value-of select="normalize-space(text()[last()])"/>
 			</xsl:when>
 			<xsl:when test="count(node()) = 1" />
