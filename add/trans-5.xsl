@@ -149,6 +149,10 @@
 					</xsl:for-each>
 				</app>
 			</xsl:when>
+			<xsl:when test="$cont/*[1][self::tei:del]">
+				<xsl:sequence select="$text" />
+				<xsl:sequence select="$cont" />
+			</xsl:when>
 			<!-- TODO ausbauen -->
 			<xsl:otherwise>
 				<xsl:sequence select="$cont" />
@@ -255,12 +259,15 @@
 						</xsl:if>
 					</xsl:for-each>
 				</xsl:variable>
-				<del wit="{$wit}">
+				<del>
+					<xsl:if test="normalize-space($wit) != ''">
+						<xsl:attribute name="wit" select="$wit" />
+					</xsl:if>
 					<xsl:choose>
-						<xsl:when test="starts-with(., 'davor')">
+						<xsl:when test="matches(., '[dD]avor')">
 							<xsl:attribute name="place" select="'before'" />
 						</xsl:when>
-						<xsl:when test="starts-with(., 'danach')">
+						<xsl:when test="matches(., '[dD]anach')">
 							<xsl:attribute name="place" select="'after'" />
 						</xsl:when>
 					</xsl:choose>
