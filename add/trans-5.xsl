@@ -155,6 +155,7 @@
 			</xsl:when>
 			<!-- TODO ausbauen -->
 			<xsl:otherwise>
+				<!--<xsl:sequence select="$text" />-->
 				<xsl:sequence select="$cont" />
 			</xsl:otherwise>
 		</xsl:choose>
@@ -257,7 +258,7 @@
 						<xsl:choose>
 							<xsl:when test="matches(., '.+Gl')" />
 							<xsl:otherwise>
-								<xsl:value-of select="'#'||normalize-space(xstring:substring-before(., ','))"/>
+								<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
 								<xsl:text> </xsl:text>
 							</xsl:otherwise>
 						</xsl:choose>
@@ -300,7 +301,7 @@
 						<xsl:choose>
 							<xsl:when test="matches(., '.+Gl')" />
 							<xsl:otherwise>
-								<xsl:value-of select="'#'||normalize-space(xstring:substring-before(., ','))"/>
+								<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
 								<xsl:text> </xsl:text>
 							</xsl:otherwise>
 						</xsl:choose>
@@ -356,16 +357,18 @@
 			<xsl:when test="(string-length(normalize-space(text()[1])) &lt; 3
 				or contains(text()[1], ',')
 				or tei:hi[@rend='sub'])
+				and string-length(normalize-space(text()[1])) &lt; 10
 				and not(tei:*[last()]/following-sibling::text()[normalize-space() != ''])">
 				<xsl:variable name="wit">
 					<xsl:for-each select="tokenize(normalize-space(), ',')">
-						<xsl:value-of select="'#'||."/>
+						<xsl:value-of select="'#'||normalize-space(translate(., ',.', '')) || ' '"/>
 					</xsl:for-each>
 				</xsl:variable>
-				<lem wit="{$wit}"><xsl:sequence select="$text" /></lem>
+				<lem wit="{normalize-space($wit)}"><xsl:sequence select="$text" /></lem>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:text>XXX</xsl:text>
+				<!--<xsl:text>XXX</xsl:text>-->
+				<wdb:note><xsl:sequence select="node()" /></wdb:note>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
