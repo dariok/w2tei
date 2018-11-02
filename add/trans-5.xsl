@@ -220,13 +220,13 @@
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="contains(., 'hinzugefügt')">
-				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(normalize-space(), 'fügt')))" />
+				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(normalize-space(), 'fügt')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
 						<xsl:choose>
-							<xsl:when test="matches(., '.+Gl')" />
+							<xsl:when test="string-length() > 5" />
 							<xsl:otherwise>
-								<xsl:value-of select="'#'||."/>
+								<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
 								<xsl:text> </xsl:text>
 							</xsl:otherwise>
 						</xsl:choose>
@@ -282,7 +282,7 @@
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
 						<xsl:choose>
-							<xsl:when test="matches(., '.+Gl')" />
+							<xsl:when test="string-length() > 5" />
 							<xsl:otherwise>
 								<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
 								<xsl:text> </xsl:text>
