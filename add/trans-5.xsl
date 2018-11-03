@@ -220,7 +220,7 @@
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="contains(., 'hinzugefügt')">
-				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(normalize-space(), 'fügt')), ' ')" />
+				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(string-join(node()[not(self::tei:note)], ''), 'fügt')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
 						<xsl:choose>

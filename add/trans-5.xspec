@@ -412,6 +412,14 @@
 					ex .2.</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T6.7: gemischte mit rdg und add">
+			<x:context>
+				<p><w>Ca<lb break="no"/>tholica</w> <anchor type="crit_app" xml:id="s3"/>ad latum digitum<anchor type="crit_app" xml:id="s3e"/><span type="crit_app" from="#s3" to="#s3e"> <orig>ac pontificum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>potestate</orig> hinzugefügta<hi rend="sub">1</hi> <note type="comment">über der Zeile</note><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>in impressis exemplaribus ad latum d<supplied>igitum</supplied></orig> a<hi rend="sub">3</hi> AuRd-Gl</span> nos velle</p>
+			</x:context>
+			<x:expect label="add mit place">
+				<p><w>Ca<lb break="no"/>tholica</w> <app><lem>ad latum digitum</lem><rdg wit="#a1">ac pontificum</rdg><rdg wit="#a1"><add place="supralinear">potestate</add></rdg><rdg wit="#a3" rend="AuRd-Gl">in impressis exemplaribus ad latum d<supplied>igitum</supplied></rdg></app> nos velle</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T7: nicht umsetzbare">
