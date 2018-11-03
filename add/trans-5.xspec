@@ -448,4 +448,15 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T8: Elemente vorher">
+		<x:scenario label="T8.1: w als Lemma">
+			<x:context>
+				<p> <w>ha<lb break="no"/>bere</w><note type="crit_app"> <orig>haberi</orig> B</note> volumus<supplied>.</supplied></p>
+			</x:context>
+			<x:expect label="w in lem">
+				<p> <w><app><lem>ha<lb break="no"/>bere</lem><rdg wit="#B">haberi</rdg></app></w> volumus<supplied>.</supplied></p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>

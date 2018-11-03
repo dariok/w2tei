@@ -18,6 +18,9 @@
 	<xsl:template match="tei:note[@type = 'crit_app']" mode="eval">
 		<xsl:variable name="text">
 			<xsl:choose>
+				<xsl:when test="preceding-sibling::node()[1][self::tei:w]">
+					<xsl:sequence select="preceding-sibling::tei:w[1]/node()" />
+				</xsl:when>
 				<xsl:when test="preceding-sibling::node()[1][self::text()]">
 					<xsl:value-of select="xstring:substring-after-last(preceding-sibling::text()[1], ' ')" />
 				</xsl:when>
@@ -38,6 +41,7 @@
 				<xsl:element name="{local-name($pre)}">
 					<xsl:apply-templates select="$pre/@*" />
 					<xsl:choose>
+						<xsl:when test="$pre[self::tei:w]"/>
 						<xsl:when test="$pre/node()[last()][self::text()]">
 							<xsl:sequence select="$pre/node()[not(position() = last())]" />
 							<xsl:value-of select="xstring:substring-before-last($pre/text()[last()], ' ')"/>
@@ -75,7 +79,7 @@
 			<xsl:when test="@type = 'footnote'">
 				<xsl:sequence select="." />
 			</xsl:when>
-			<xsl:when test="self::tei:rs"/>
+			<xsl:when test="self::tei:rs or self::tei:w"/>
 			<xsl:otherwise>
 				<xsl:apply-templates select="." mode="eval"/>
 			</xsl:otherwise>
