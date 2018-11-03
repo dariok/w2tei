@@ -142,7 +142,7 @@
 							<xsl:otherwise>
 								<rdg wit="{@wit}">
 									<xsl:copy>
-										<xsl:apply-templates select="node() | @place | @cause"/>
+										<xsl:apply-templates select="node() | @place | @rend | @cause"/>
 									</xsl:copy>
 								</rdg>
 							</xsl:otherwise>
@@ -161,7 +161,7 @@
 							<xsl:otherwise>
 								<rdg wit="{@wit}">
 									<xsl:copy>
-										<xsl:apply-templates select="node() | @place | @cause"/>
+										<xsl:apply-templates select="node() | @place | @rend | @cause"/>
 									</xsl:copy>
 								</rdg>
 							</xsl:otherwise>
@@ -332,22 +332,22 @@
 					</xsl:choose>
 					<xsl:choose>
 						<xsl:when test="contains(normalize-space(), 'am Rand')">
-							<xsl:attribute name="place">margin</xsl:attribute>
+							<xsl:attribute name="rend">margin</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="ends-with(normalize-space(), 'AuRd-Gl')">
-							<xsl:attribute name="place">AuRd-Gl</xsl:attribute>
+							<xsl:attribute name="rend">AuRd-Gl</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="ends-with(normalize-space(), 'InRd-Gl')">
-							<xsl:attribute name="place">InRd-Gl</xsl:attribute>
+							<xsl:attribute name="rend">InRd-Gl</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="contains(normalize-space(), 'über der Zeile')">
-							<xsl:attribute name="place">supralinear</xsl:attribute>
+							<xsl:attribute name="rend">supralinear</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="contains(normalize-space(), 'linksbündig')">
-							<xsl:attribute name="place">left</xsl:attribute>
+							<xsl:attribute name="rend">left</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="contains(normalize-space(), 'zentriert')">
-							<xsl:attribute name="place">centre</xsl:attribute>
+							<xsl:attribute name="rend">centre</xsl:attribute>
 						</xsl:when>
 					</xsl:choose>
 					<xsl:choose>

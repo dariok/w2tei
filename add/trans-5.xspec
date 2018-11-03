@@ -62,7 +62,7 @@
 				<p><lb/>quia voluntas<note type="crit_app"> <orig>quomodo voluntas sit domina famula</orig> a<hi rend="sub">2</hi> AuRd-Gl</note> sit domina actuum. comparando ad actus inferiores. et tamen sit famula <w>com<lb break="no"/>perando</w> ad Christum<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> am Rand hinzugefügt <orig>Christum</orig> a<hi rend="sub">3</hi>(?)</note> in ea<note type="crit_app"> <orig>eo</orig> a<hi rend="sub">1</hi></note> regnantem.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 964 Z. 15-18</note> adhuc tamen ut videretur aliquid mihi impingere<note type="crit_app"> <orig>mihi aliquid impendere</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> korrigiert in  <orig>impingere</orig> a<hi rend="sub">3</hi>(?)</note></p>
 			</x:context>
 			<x:expect label="ursprüngl. note">
-				<p><lb/>quia <app><lem>voluntas</lem><rdg wit="#a2" place="AuRd-Gl">quomodo voluntas sit domina famula</rdg></app> sit domina actuum. comparando ad actus inferiores. et tamen sit famula <w>com<lb break="no"/>perando</w> ad Christum<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi>;  am Rand hinzugefügt <orig>Christum</orig> a<hi rend="sub">3</hi>(?)</note> in <app><lem>ea</lem><rdg wit="#a1">eo</rdg></app> regnantem.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 964 Z. 15-18</note> adhuc tamen ut videretur aliquid mihi <app><lem>impingere</lem><rdg wit="#a1">mihi aliquid impendere</rdg><rdg wit="#a3(?)" cause="correction">impingere</rdg></app></p>
+				<p><lb/>quia <app><lem>voluntas</lem><rdg wit="#a2" rend="AuRd-Gl">quomodo voluntas sit domina famula</rdg></app> sit domina actuum. comparando ad actus inferiores. et tamen sit famula <w>com<lb break="no"/>perando</w> ad Christum<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi>;  am Rand hinzugefügt <orig>Christum</orig> a<hi rend="sub">3</hi>(?)</note> in <app><lem>ea</lem><rdg wit="#a1">eo</rdg></app> regnantem.<note type="footnote">Vgl. KGK I.2, Nr. 90, S. 964 Z. 15-18</note> adhuc tamen ut videretur aliquid mihi <app><lem>impingere</lem><rdg wit="#a1">mihi aliquid impendere</rdg><rdg wit="#a3(?)" cause="correction">impingere</rdg></app></p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T1.8: text vor krit. FN – „folgt“">
@@ -212,16 +212,16 @@
 						<rdg wit="#A5">Liberum arbitrium</rdg>
 						<rdg wit="#a1">lberum ar</rdg>
 						<rdg cause="correction" wit="#a2">liberum arbitrium</rdg>
-						<rdg wit="#a2" place="AuRd-Gl">Eckius <supplied>contra?</supplied> 11 conclusio<supplied>nem</supplied> doc
+						<rdg wit="#a2" rend="AuRd-Gl">Eckius <supplied>contra?</supplied> 11 conclusio<supplied>nem</supplied> doc
 							Corol<supplied>ostadii</supplied> de libero arbitrio</rdg>
-						<rdg wit="#A5Lp" place="InRd-Gl">2 hora</rdg></app>
+						<rdg wit="#A5Lp" rend="InRd-Gl">2 hora</rdg></app>
 				</head>
 				<head>
 					<lb/>&lt;<rs type="person"><!--TODO ref nachtragen-->Eccius</rs>&gt;</head>
 				<p>
 					<lb/><app><lem><expan>Con<ex>tra</ex></expan> XI.</lem>
-						<rdg wit="#a1" place="centre">contra 11</rdg>
-						<rdg wit="#A5Lp" place="AuRd-Gl">questio 14</rdg></app><note type="footnote">Vgl. Anm. <ptr type="wdb"
+						<rdg wit="#a1" rend="centre">contra 11</rdg>
+						<rdg wit="#A5Lp" rend="AuRd-Gl">questio 14</rdg></app><note type="footnote">Vgl. Anm. <ptr type="wdb"
 								target="#n3"/>.</note>
 					<app><lem>risit</lem>
 									<rdg wit="#a1" /></app><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </note></p>
@@ -251,7 +251,7 @@
 			</x:context>
 			<x:expect label="lem/rdg">
 				<p>hec talenta <expan>b<ex>eatus</ex></expan> quoque <rs type="person"><!--TODO ref nachtragen--><expan>Hila<ex>rius</ex></expan></rs> testatur intelligi <lb/>merita iustorum.<note type="footnote">Vgl. Hil. in Matth. 27,6-9, hier vor allem 27,7: <quote>Cui quinque talenta. - Sed servus ille, qui quinque talenta accepit, populus ex lege credentium est: ex qua profectus, meritum ipsius recte probeque perfuncta evangelicae fidei operatione duplicavit. In ratione autem ponenda iudicii examen est, quo coelestis verbi usus, et reditus dispensati talenti postulatur.</quote> (PL 9, 1061f. hier vor allem 1061).</note> <app><lem>de .3. ergo. diximus.</lem>
-					<rdg wit="#a1">4to</rdg> <rdg wit="#a2" place="AuRd-Gl">Ad 4tum</rdg> <rdg wit="#A5Lp" place="AuRd-Gl">Ad quartum &lt;..&gt; 4°</rdg></app> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
+					<rdg wit="#a1">4to</rdg> <rdg wit="#a2" rend="AuRd-Gl">Ad 4tum</rdg> <rdg wit="#A5Lp" rend="AuRd-Gl">Ad quartum &lt;..&gt; 4°</rdg></app> <rs type="person"><!--TODO ref nachtragen-->Augustinum</rs>
 					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
 			</x:expect>
 		</x:scenario>
@@ -393,7 +393,7 @@
 						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere</lem>
 								<rdg wit="#B">Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</rdg>
 								<rdg wit="#a1" />
-								<rdg wit="#a2" place="AuRd-Gl">Protestatio Carolostad<supplied>ius</supplied></rdg></app></p>
+								<rdg wit="#a2" rend="AuRd-Gl">Protestatio Carolostad<supplied>ius</supplied></rdg></app></p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T6.6: Trennung vor, Expansion zwischen anchor">
