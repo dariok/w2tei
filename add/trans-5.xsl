@@ -177,7 +177,27 @@
 				<xsl:sequence select="$text" />
 				<xsl:sequence select="$cont" />
 			</xsl:when>
-			<!-- TODO ausbauen -->
+			<xsl:when test="$cont/tei:choice and $cont/tei:rdg">
+				<app>
+					<lem>
+						<xsl:sequence select="$cont/tei:choice" />
+					</lem>
+					<xsl:for-each select="$cont/tei:*[not(self::tei:choice)]">
+						<xsl:choose>
+							<xsl:when test="self::tei:rdg">
+								<xsl:sequence select="."/>
+							</xsl:when>
+							<xsl:otherwise>
+								<rdg wit="{@wit}">
+									<xsl:copy>
+										<xsl:apply-templates select="node() | @place | @rend | @cause"/>
+									</xsl:copy>
+								</rdg>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+				</app>
+			</xsl:when>
 			<xsl:otherwise>
 				<!--<xsl:sequence select="$text" />-->
 				<xsl:sequence select="$cont" />

@@ -420,6 +420,16 @@
 				<p><w>Ca<lb break="no"/>tholica</w> <app><lem>ad latum digitum</lem><rdg wit="#a1">ac pontificum</rdg><rdg wit="#a1"><add place="supralinear">potestate</add></rdg><rdg wit="#a3" rend="AuRd-Gl">in impressis exemplaribus ad latum d<supplied>igitum</supplied></rdg></app> nos velle</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T6.8: choice in lem produzieren">
+			<x:context>
+				<p>propositio 7.<note type="crit_app">vom Editor verbessert für <orig>14</orig><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>11</orig> über der Zeile hinzugefügt a<hi rend="sub">1 </hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>7</orig> a<hi rend="sub">3</hi> InRd-Gl</note></p>
+			</x:context>
+			<x:expect label="app/lem/choice/sic">
+				<p>propositio <app><lem><choice><sic>14</sic><corr>7.</corr></choice></lem> <rdg wit="#a1"><add
+					place="supralinear">11</add></rdg><rdg wit="#a3" rend="InRd-Gl">7</rdg></app>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T7: nicht umsetzbare">
