@@ -135,25 +135,6 @@
 			<xsl:when test="count($cont/*) = count($cont/tei:add)">
 				<xsl:sequence select="$cont" />
 			</xsl:when>
-			<xsl:when test="$cont/*[1][self::tei:rdg]">
-				<app>
-					<lem><xsl:sequence select="$text" /></lem>
-					<xsl:for-each select="$cont/*">
-						<xsl:choose>
-							<xsl:when test="self::tei:rdg">
-								<xsl:sequence select="."/>
-							</xsl:when>
-							<xsl:otherwise>
-								<rdg wit="{@wit}">
-									<xsl:copy>
-										<xsl:apply-templates select="node() | @place | @rend | @cause"/>
-									</xsl:copy>
-								</rdg>
-							</xsl:otherwise>
-						</xsl:choose>
-					</xsl:for-each>
-				</app>
-			</xsl:when>
 			<xsl:when test="$cont/*[1][self::tei:lem]">
 				<app>
 					<xsl:sequence select="$cont/*[1]" />
@@ -173,7 +154,7 @@
 					</xsl:for-each>
 				</app>
 			</xsl:when>
-			<xsl:when test="$cont/*[1][self::tei:del]">
+			<xsl:when test="$cont/*[1][self::tei:del] and not($cont/tei:rdg)">
 				<xsl:sequence select="$text" />
 				<xsl:sequence select="$cont" />
 			</xsl:when>
@@ -183,6 +164,25 @@
 						<xsl:sequence select="$cont/tei:choice" />
 					</lem>
 					<xsl:for-each select="$cont/tei:*[not(self::tei:choice)]">
+						<xsl:choose>
+							<xsl:when test="self::tei:rdg">
+								<xsl:sequence select="."/>
+							</xsl:when>
+							<xsl:otherwise>
+								<rdg wit="{@wit}">
+									<xsl:copy>
+										<xsl:apply-templates select="node() | @place | @rend | @cause"/>
+									</xsl:copy>
+								</rdg>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+				</app>
+			</xsl:when>
+			<xsl:when test="$cont/tei:rdg">
+				<app>
+					<lem><xsl:sequence select="$text" /></lem>
+					<xsl:for-each select="$cont/*">
 						<xsl:choose>
 							<xsl:when test="self::tei:rdg">
 								<xsl:sequence select="."/>

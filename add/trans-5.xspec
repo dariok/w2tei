@@ -430,6 +430,15 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T6.9: ">
+			<x:context>
+				<p>oppositum sit<note type="crit_app">durchgestrichen  <orig>quam</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>sum</orig> über der Zeile hinzugefügt a<hi rend="sub">3 </hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> korrigiert in  <orig>sit</orig> a<hi rend="sub">2</hi></note> plane</p>
+			</x:context>
+			<x:expect label="eine krit. Anm.">
+				<p>oppositum <app><lem>sit</lem><rdg wit="#a1"><del>quam</del></rdg><rdg wit="#a3"><add
+					place="supralinear">sum</add></rdg><rdg cause="correction" wit="#a2">sit</rdg></app> plane</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T7: nicht umsetzbare">
