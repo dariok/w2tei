@@ -253,6 +253,7 @@
     </xsl:template>
     <xsl:template match="w:r[wt:is(., 'KSKommentar', 'r') and not(descendant::w:i/@w:val='0')
         and descendant::w:vertAlign]">
+    	<note type="comment">
         <hi>
             <xsl:attribute name="rend">
                 <xsl:choose>
@@ -262,6 +263,7 @@
             </xsl:attribute>
             <xsl:apply-templates select="w:t"/>
         </hi>
+    	</note>
     </xsl:template>
     <xsl:template match="w:r[wt:is(., 'KSKommentar', 'r') and descendant::w:i/@w:val='0']">
          <note type="comment"><orig><xsl:apply-templates select="w:t"/></orig></note>

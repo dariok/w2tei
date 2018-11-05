@@ -1196,6 +1196,123 @@
 				</w:footnotes>
 			</x:context>
 		</x:scenario>
+		<x:scenario label="KS_Kommentar mit vertAlign">
+			<x:context>
+				<w:footnoteReference w:id="824" />
+					<w:footnotes>
+					<w:footnote w:id="824">
+						<w:p w:rsidR="00DA6955" w:rsidRPr="004C2B4F" w:rsidRDefault="00DA6955">
+							<w:pPr>
+								<w:pStyle w:val="Funotentext"/>
+								<w:rPr>
+									<w:lang w:val="it-IT"/>
+								</w:rPr>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rStyle w:val="Funotenzeichen"/>
+								</w:rPr>
+								<w:footnoteRef/>
+							</w:r>
+							<w:r>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t>v</w:t>
+							</w:r>
+							<w:r w:rsidRPr="0060127B">
+								<w:rPr>
+									<w:i/>
+								</w:rPr>
+								<w:t>om Editor verbessert</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r w:rsidRPr="0060127B">
+								<w:rPr>
+									<w:i/>
+								</w:rPr>
+								<w:t>für</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00F4163E">
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:r w:rsidRPr="004C2B4F">
+								<w:rPr>
+									<w:lang w:val="it-IT"/>
+								</w:rPr>
+								<w:t xml:space="preserve">documentis </w:t>
+							</w:r>
+							<w:r w:rsidRPr="00F4163E">
+								<w:t xml:space="preserve">43 </w:t>
+							</w:r>
+							<w:r w:rsidRPr="004C2B4F">
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="it-IT"/>
+								</w:rPr>
+								<w:t>a</w:t>
+							</w:r>
+							<w:r w:rsidRPr="004C2B4F">
+								<w:rPr>
+									<w:i/>
+									<w:vertAlign w:val="subscript"/>
+									<w:lang w:val="it-IT"/>
+								</w:rPr>
+								<w:t>1</w:t>
+							</w:r>
+							<w:r w:rsidRPr="004C2B4F">
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="it-IT"/>
+								</w:rPr>
+								<w:t>, A</w:t>
+							</w:r>
+							<w:r w:rsidRPr="004C2B4F">
+								<w:rPr>
+									<w:i/>
+									<w:vertAlign w:val="subscript"/>
+									<w:lang w:val="it-IT"/>
+								</w:rPr>
+								<w:t>1-5</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00EA6970">
+								<w:rPr>
+									<w:i/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+								<w:t xml:space="preserve"> </w:t>
+							</w:r>
+							<w:bookmarkStart w:id="70" w:name="_GoBack"/>
+							<w:r w:rsidRPr="00343730">
+								<w:rPr>
+									<w:rStyle w:val="KSKommentar"/>
+								</w:rPr>
+								<w:t>– im Anschluss an hsl. Korrektur in A</w:t>
+							</w:r>
+							<w:r w:rsidRPr="00343730">
+								<w:rPr>
+									<w:rStyle w:val="KSKommentar"/>
+									<w:vertAlign w:val="subscript"/>
+								</w:rPr>
+								<w:t>5Lp</w:t>
+							</w:r>
+						</w:p>
+						<w:bookmarkEnd w:id="70"/>
+					</w:footnote>
+				</w:footnotes>
+			</x:context>
+			<x:expect label="hi in comment" xml:space="preserve"><note type="crit_app"> <hi style="font-style: italic;">v</hi><hi style="font-style: italic;">om Editor verbessert</hi><hi style="font-style: italic;"> </hi><hi style="font-style: italic;">für</hi> documentis 43 <hi style="font-style: italic;">a</hi><hi style="font-style: italic;"><hi rend="sub">1</hi></hi><hi style="font-style: italic;">, A</hi><hi style="font-style: italic;"><hi rend="sub">1-5</hi></hi><hi style="font-style: italic;"> </hi><note type="comment">– im Anschluss an hsl. Korrektur in A</note><note type="comment"><hi rend="sub">5Lp</hi></note></note></x:expect>
+		</x:scenario>
 	</x:scenario>
     
     <x:scenario label="Verweise">
