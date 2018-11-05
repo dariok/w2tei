@@ -71,4 +71,23 @@
 			<xsl:sequence select="node()[not(self::comment())]" />
 		</rs>
 	</xsl:template>
+	
+	<xsl:template match="tei:rs[@type = 'place']">
+		<rs type="place">
+			<xsl:variable name="register" select="doc('../../register/ortsregister.xml')" />
+			<xsl:variable name="self" select="normalize-space()" />
+			<xsl:variable name="entry" select="$register//tei:place[tei:placeName[@type ='vorl' and contains(., $self)]]"/>
+			<xsl:choose>
+				<xsl:when test="count($entry) > 0">
+					<xsl:attribute name="ref">
+						<xsl:value-of select="'#'||$entry[1]/@xml:id"/>
+					</xsl:attribute>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:comment>TODO ref eintragen!</xsl:comment>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:sequence select="node()[not(self::comment())]" />
+		</rs>
+	</xsl:template>
 </xsl:stylesheet>
