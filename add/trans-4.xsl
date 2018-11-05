@@ -10,7 +10,7 @@
 <!--	<xsl:output indent="true"/>-->
 	
 	<xsl:include href="../string-pack.xsl"/>
-	<xsl:include href="bibl.xsl#4"/>
+	<xsl:include href="bibl.xsl#5"/>
 	
 	<xsl:template match="tei:ref[@type='biblical']">
 		<ref type="biblical" cRef="{normalize-space(replace(., 'ö', ''))}">

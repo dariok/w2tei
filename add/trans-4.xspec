@@ -44,6 +44,14 @@
 				<rs type="person" ref="#eck_johannes">Iohannem Eckium</rs>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="Orte">
+			<x:context>
+				<rs type="place"><!--TODO ref eintragen-->Lipsiae</rs>
+			</x:context>
+			<x:expect label="@ref">
+				<rs type="place" ref="#leipzig">Lipsiae</rs>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="krit. und FN gemischt">
