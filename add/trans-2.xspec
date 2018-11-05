@@ -316,6 +316,14 @@
 				</note>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="comment">
+			<x:context>
+				<note type="crit_app"> <hi style="font-style: italic;">v</hi><hi style="font-style: italic;">om Editor verbessert</hi><hi style="font-style: italic;"> </hi><hi style="font-style: italic;">für</hi> documentis 43 <hi style="font-style: italic;">a</hi><hi style="font-style: italic;"><hi rend="sub">1</hi></hi><hi style="font-style: italic;">, A</hi><hi style="font-style: italic;"><hi rend="sub">1-5</hi></hi><hi style="font-style: italic;"> </hi><note type="comment">– im Anschluss an hsl. Korrektur in A</note><note type="comment"><hi rend="sub">5Lp</hi></note></note>
+			</x:context>
+			<x:expect label="ein comment">
+				<note type="crit_app"> <hi style="font-style: italic;">v</hi><hi style="font-style: italic;">om Editor verbessert</hi><hi style="font-style: italic;"> </hi><hi style="font-style: italic;">für</hi> documentis 43 <hi style="font-style: italic;">a</hi><hi style="font-style: italic;"><hi rend="sub">1</hi></hi><hi style="font-style: italic;">, A</hi><hi style="font-style: italic;"><hi rend="sub">1-5</hi></hi><hi style="font-style: italic;"> </hi><note type="comment">– im Anschluss an hsl. Korrektur in A<hi rend="sub">5Lp</hi></note></note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="Verweise">
@@ -416,4 +424,5 @@
             </text>
         </x:expect>
     </x:scenario>
+
 </x:description>

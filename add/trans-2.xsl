@@ -314,7 +314,25 @@
 				<xsl:value-of select="." />
 			</xsl:otherwise>
 		</xsl:choose>
-	</xsl:template>	
+	</xsl:template>
+	
+	<!-- note type comment zusammenziehen – entsteht, wenn z.B. eine Hoch-/Tiefstellung enthalten ist -->
+	<!-- note comment kommt an dieser Stelle nur innerhalb einer note type crit_app vor -->
+	<xsl:template match="tei:note[@type='comment' and preceding-sibling::node()[1][self::tei:note]]" />
+	<xsl:template match="tei:note[@type='comment' and not(preceding-sibling::node()[1][self::tei:note])]">
+		<note type="comment">
+			<xsl:choose>
+				<xsl:when test="following-sibling::node()[not(self::tei:note)]">
+					<xsl:sequence select="node()
+						| (following-sibling::tei:note intersect following-sibling::node()[not(self::tei:note)][1]/preceding-sibling::*)/node()" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:sequence select="node() | following-sibling::*/node()" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</note>
+	</xsl:template>
+	
 	
 	<xsl:template match="@*|*|comment()">
 		<xsl:copy>
