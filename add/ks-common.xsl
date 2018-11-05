@@ -9,8 +9,8 @@
     
     <xsl:include href="styles-inc.xsl"/>
     
-    <xsl:variable name="fline">
-        <xsl:value-of select="wt:string(//w:body/w:p[1])"/>
+    <xsl:variable name="fline" as="xs:string">
+        <xsl:value-of select="wt:string(/*/w:document/w:body/w:p[1])"/>
     </xsl:variable>
     <xsl:variable name="nr">
         <xsl:value-of select="normalize-space(hab:rmSquare(substring-after($fline, 'Nr.')))"/>
