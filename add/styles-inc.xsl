@@ -32,7 +32,7 @@
     </xsl:template>
 	<xsl:template match="w:r[descendant::w:vertAlign and not(w:endnoteReference or w:footnoteReference)]" mode="eval">
 		<xsl:choose>
-			<xsl:when test="w:rPr/w:vertAlign/@w:val = ('super', 'subscript')">
+			<xsl:when test="w:rPr/w:vertAlign/@w:val = ('super', 'superscript', 'subscript')">
 				<hi>
 					<xsl:attribute name="rend">
 						<xsl:choose>
