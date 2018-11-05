@@ -5,7 +5,7 @@
 	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
 	xmlns:hab="http://diglib.hab.de"
 	xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:wdb="https://github.com/dariok/wdbplus"
+	xmlns:wt="https://github.com/dariok/w2tei"
 	xmlns:xstring="https://github.com/dariok/XStringUtils"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="3.0">
@@ -38,10 +38,10 @@
 		<div>
 			<xsl:attribute name="type">
 				<xsl:choose>
-					<xsl:when test="wdb:starts(., 'Überlieferung')">history_of_the_work</xsl:when>
-					<xsl:when test="wdb:starts(., 'Entstehung und Inhalt')">contents</xsl:when>
-					<xsl:when test="wdb:starts(., 'Referenz')">reference</xsl:when>
-					<xsl:when test="wdb:starts(., 'Inhaltliche Hinweise')">evidence</xsl:when>
+					<xsl:when test="wt:starts(., 'Überlieferung')">history_of_the_work</xsl:when>
+					<xsl:when test="wt:starts(., 'Entstehung und Inhalt')">contents</xsl:when>
+					<xsl:when test="wt:starts(., 'Referenz')">reference</xsl:when>
+					<xsl:when test="wt:starts(., 'Inhaltliche Hinweise')">evidence</xsl:when>
 				</xsl:choose>
 			</xsl:attribute>
 			
@@ -58,9 +58,9 @@
 				<xsl:otherwise>
 					<xsl:apply-templates select="following-sibling::w:p[hab:isHead(., 2)]"/>
 					<xsl:apply-templates select="following-sibling::w:p[not(following-sibling::w:p[hab:isSigle(.)])
-						and (wdb:starts(., 'Edition') or wdb:starts(., 'Literatur')) and not(wdb:starts(., 'Editionsvorlage'))]"/>
-					<xsl:apply-templates select="following-sibling::w:p[wdb:is(., 'KSText', 'p') and
-						following-sibling::w:p[hab:isHead(., 1)] and preceding-sibling::w:p[wdb:starts(., 'Literatur')]]"/>
+						and (wt:starts(., 'Edition') or wt:starts(., 'Literatur')) and not(wt:starts(., 'Editionsvorlage'))]"/>
+					<xsl:apply-templates select="following-sibling::w:p[wt:is(., 'KSText', 'p') and
+						following-sibling::w:p[hab:isHead(., 1)] and preceding-sibling::w:p[wt:starts(., 'Literatur')]]"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</div>
@@ -75,15 +75,15 @@
 		</listBibl>
 	</xsl:template>
 	
-	<xsl:template match="w:p[hab:isSigle(.) and wdb:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Früh')]">
+	<xsl:template match="w:p[hab:isSigle(.) and wt:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Früh')]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<xsl:variable name="end"
-			select="following-sibling::w:p[wdb:starts(., 'Bibliographische')][1]" />
+			select="following-sibling::w:p[wt:starts(., 'Bibliographische')][1]" />
 		<xsl:variable name="struct" select="current() | 
 			current()/following::w:p intersect $end/preceding::w:p | $end" />
 		<xsl:variable name="idNo">
 			<!-- vorher vmtl. um zu lange Markierungen abzufangen -->
-			<!--<xsl:analyze-string select="wdb:string(w:r[hab:isSigle(.)])"
+			<!--<xsl:analyze-string select="wt:string(w:r[hab:isSigle(.)])"
 				regex="\[(\w+).?\]">
 				<xsl:matching-substring>
 					<xsl:value-of select="regex-group(1)"/>
@@ -114,7 +114,7 @@
 			<xsl:attribute name="xml:id" select="normalize-space($idNo)" />
 			<xsl:variable name="elem">
 				<xsl:choose>
-					<xsl:when test="following-sibling::w:p[2][wdb:starts(., 'in')]">
+					<xsl:when test="following-sibling::w:p[2][wt:starts(., 'in')]">
 						<xsl:text>analytic</xsl:text>
 					</xsl:when>
 					<xsl:otherwise>monogr</xsl:otherwise>
@@ -155,14 +155,14 @@
 				<idno type="siglum"><xsl:sequence select="$idNo" /></idno>
 				<note type="copies">
 					<list>
-						<xsl:apply-templates select="$struct[wdb:starts(., 'Editionsv')
-							or wdb:starts(., 'Weitere')]" mode="item" />
+						<xsl:apply-templates select="$struct[wt:starts(., 'Editionsv')
+							or wt:starts(., 'Weitere')]" mode="item" />
 					</list>
 				</note>
 				<note type="references">
 					<listBibl>
 						<xsl:variable name="weitere">
-							<xsl:apply-templates select="$struct[wdb:starts(., 'Bibliographische')]//w:r" />
+							<xsl:apply-templates select="$struct[wt:starts(., 'Bibliographische')]//w:r" />
 						</xsl:variable>
 						<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
 							<bibl>
@@ -173,7 +173,7 @@
 					</listBibl>
 					<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
 						$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)
-						[not(wdb:starts(., 'Edition') or wdb:starts(., 'Literatur') or hab:isHead(., '1')
+						[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur') or hab:isHead(., '1')
 						or hab:isSigle(.))
 						and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>
 					
@@ -191,8 +191,8 @@
 						<xsl:otherwise>
 							<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
 								$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)[not(
-								wdb:starts(., 'Edition') or wdb:starts(., 'Literatur')
-								or wdb:is(., 'KSText', 'p'))]"/>
+								wt:starts(., 'Edition') or wt:starts(., 'Literatur')
+								or wt:is(., 'KSText', 'p'))]"/>
 						</xsl:otherwise>
 					</xsl:choose>-->
 				</note>
@@ -207,7 +207,7 @@
 					<item n="editionsvorlage">
 						<xsl:variable name="temp">
 							<hab:t>
-								<xsl:apply-templates select="w:r[wdb:contains(preceding-sibling::w:r, 'vorlage')]
+								<xsl:apply-templates select="w:r[wt:contains(preceding-sibling::w:r, 'vorlage')]
 									| w:commentRangeEnd" mode="item"/>
 							</hab:t>
 						</xsl:variable>
@@ -216,10 +216,10 @@
 				</xsl:when>
 				<xsl:otherwise>
 					<!-- leere Exemplarangaben abfangen; 2017-10-24 DK -->
-					<xsl:if test="w:r[wdb:contains(., 'plare')] and string-length(wdb:string(.)) &gt; 20">
+					<xsl:if test="w:r[wt:contains(., 'plare')] and string-length(wt:string(.)) &gt; 20">
 						<xsl:variable name="t1">
 							<hab:t>
-								<xsl:apply-templates select="w:r[wdb:contains(preceding-sibling::w:r, 'plare')]
+								<xsl:apply-templates select="w:r[wt:contains(preceding-sibling::w:r, 'plare')]
 									| w:commentRangeEnd" mode="item"/>
 							</hab:t>
 						</xsl:variable>
@@ -243,16 +243,16 @@
 	<!-- Angaben zu Exemplaren; 2017-10-28 DK -->
 	<xsl:template match="w:r | w:commentRangeEnd" mode="item">
 		<xsl:choose>
-			<xsl:when test="wdb:is(., 'KSAnmerkunginberlieferung', 'r')
-				and not(wdb:isFirst(., 'KSAnmerkunginberlieferung', 'r'))"/>
-			<xsl:when test="wdb:is(., 'KSAnmerkunginberlieferung', 'r')
-				and wdb:isFirst(., 'KSAnmerkunginberlieferung', 'r')">
+			<xsl:when test="wt:is(., 'KSAnmerkunginberlieferung', 'r')
+				and not(wt:isFirst(., 'KSAnmerkunginberlieferung', 'r'))"/>
+			<xsl:when test="wt:is(., 'KSAnmerkunginberlieferung', 'r')
+				and wt:isFirst(., 'KSAnmerkunginberlieferung', 'r')">
 				<note>
 					<xsl:variable name="myId" select="generate-id()" />
 					<xsl:variable name="anmerkung">
 						<xsl:variable name="me" select="." />
 						<xsl:apply-templates select=". |
-							following-sibling::w:r[wdb:followMe(., $me, 'KSAnmerkunginberlieferung', 'r')]" />
+							following-sibling::w:r[wt:followMe(., $me, 'KSAnmerkunginberlieferung', 'r')]" />
 					</xsl:variable>
 					<xsl:for-each select="$anmerkung/node()">
 						<xsl:choose>
@@ -360,7 +360,7 @@
 	<!-- ENDE Exemplare trennen -->
 	
 	<xsl:template match="w:p[hab:isSigle(.)
-		and wdb:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Hand')]">
+		and wt:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Hand')]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<msDesc>
 			<xsl:variable name="desc">
@@ -431,7 +431,7 @@
 				</xsl:choose>
 			</xsl:variable>
 			<xsl:variable name="si"
-				select="wdb:string(w:r[hab:isSigle(.)])" />
+				select="wt:string(w:r[hab:isSigle(.)])" />
 			<xsl:variable name="sigle">
 				<xsl:value-of select="xstring:substring-before(hab:rmSquare($si), ':')"/>
 			</xsl:variable>
@@ -519,26 +519,26 @@
 					</xsl:variable>
 					<p><ptr type="digitalisat" target="{$link}"/></p>
 				</xsl:if>
-				<xsl:apply-templates select="following-sibling::w:p[not(wdb:starts(., 'Edition') or wdb:starts(., 'Literatur'))
-					and following-sibling::w:p[hab:isHead(., 1)] and not(preceding-sibling::w:p[wdb:starts(., 'Literatur')])
+				<xsl:apply-templates select="following-sibling::w:p[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur'))
+					and following-sibling::w:p[hab:isHead(., 1)] and not(preceding-sibling::w:p[wt:starts(., 'Literatur')])
 					and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>
 			</physDesc>
 		</msDesc>
 	</xsl:template>
 	
-	<xsl:template match="w:p[wdb:starts(., 'Edition') or wdb:starts(., 'Literatur')]">
+	<xsl:template match="w:p[wt:starts(., 'Edition') or wt:starts(., 'Literatur')]">
 		<listBibl>
 			<xsl:attribute name="type">
 				<xsl:choose>
-					<xsl:when test="wdb:starts(., 'Edi')">editions</xsl:when>
+					<xsl:when test="wt:starts(., 'Edi')">editions</xsl:when>
 					<xsl:otherwise>literatur</xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
-			<xsl:if test="preceding-sibling::w:p[1][wdb:starts(., 'Beilage')]">
+			<xsl:if test="preceding-sibling::w:p[1][wt:starts(., 'Beilage')]">
 				<head><xsl:apply-templates select="preceding-sibling::w:p[1]/w:r"/></head>
 			</xsl:if>
-			<xsl:apply-templates select="w:r[wdb:is(., 'KSbibliographischeAngabe', 'r')
-				and not(preceding-sibling::w:r[1][wdb:is(., 'KSbibliographischeAngabe', 'r')])]" mode="bibl" />
+			<xsl:apply-templates select="w:r[wt:is(., 'KSbibliographischeAngabe', 'r')
+				and not(preceding-sibling::w:r[1][wt:is(., 'KSbibliographischeAngabe', 'r')])]" mode="bibl" />
 				<!--and preceding-sibling::w:r[1][not(descendant::w:rStyle[@w:val='KSbibliographischeAngabe']
 				or descendant::w:rStyle[@w:val='Kommentarzeichen']
 				or descendant::w:commentReference)]]" mode="bibl"/>-->
@@ -628,10 +628,10 @@
 	</xsl:template>
 	
 	<!-- leere p abfangen; 2017-10-24 DK -->
-	<xsl:template match="w:p[not(descendant::w:t) or string-length(wdb:string(.)) &lt; 5]" />
+	<xsl:template match="w:p[not(descendant::w:t) or string-length(wt:string(.)) &lt; 5]" />
 	<xsl:template match="w:p[(not(descendant::w:pStyle or ancestor-or-self::w:endnote)
-		or wdb:is(., 'KSText') ) and not(hab:isSigle(.) or wdb:starts(., 'Edition') or
-		wdb:starts(., 'Literatur')) and descendant::w:t and string-length(wdb:string(.)) &gt; 5]">
+		or wt:is(., 'KSText') ) and not(hab:isSigle(.) or wt:starts(., 'Edition') or
+		wt:starts(., 'Literatur')) and descendant::w:t and string-length(wt:string(.)) &gt; 5]">
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
 		<p><xsl:apply-templates select="w:r | w:bookmarkStart" /></p>
 	</xsl:template>
@@ -644,7 +644,7 @@
 	<xsl:template match="w:commentRangeEnd">
 		<xsl:variable name="coID" select="@w:id" />
 		<xsl:variable name="text">
-			<xsl:apply-templates select="wdb:string(//w:comment[@w:id=$coID])"/>
+			<xsl:apply-templates select="wt:string(//w:comment[@w:id=$coID])"/>
 		</xsl:variable>
 		<xsl:if test="contains($text, 'http')">
 			<ptr type="digitalisat" target="{'http'||xstring:substring-after($text, 'http')}" />
@@ -665,18 +665,18 @@
 	
 	<xsl:template match="w:r" mode="bibl">
 		<xsl:variable name="me" select="generate-id()" />
-		<xsl:variable name="next" select="following-sibling::w:r[wdb:is(., 'KSbibliographischeAngabe', 'r')
-			and not(preceding-sibling::w:r[1][wdb:is(., 'KSbibliographischeAngabe', 'r')])][1]" />
+		<xsl:variable name="next" select="following-sibling::w:r[wt:is(., 'KSbibliographischeAngabe', 'r')
+			and not(preceding-sibling::w:r[1][wt:is(., 'KSbibliographischeAngabe', 'r')])][1]" />
 		<bibl>
 			<xsl:choose>
 				<xsl:when test="$next">
 					<xsl:apply-templates select=". |
-						following-sibling::w:r[wdb:is(., 'KSbibliographischeAngabe', 'r')]
+						following-sibling::w:r[wt:is(., 'KSbibliographischeAngabe', 'r')]
 							intersect $next/preceding-sibling::w:r" mode="eval" />
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:apply-templates select=". |
-						following-sibling::w:r[wdb:is(., 'KSbibliographischeAngabe', 'r')]" mode="eval" />
+						following-sibling::w:r[wt:is(., 'KSbibliographischeAngabe', 'r')]" mode="eval" />
 				</xsl:otherwise>
 			</xsl:choose>
 			
@@ -717,6 +717,6 @@
 	
 	<xsl:function name="hab:isSigle" as="xs:boolean">
 		<xsl:param name="context" as="node()" />
-		<xsl:value-of select="wdb:is($context/descendant-or-self::w:r, 'KSSigle', 'r')"/>
+		<xsl:value-of select="wt:is($context/descendant-or-self::w:r, 'KSSigle', 'r')"/>
 	</xsl:function>
 </xsl:stylesheet>
