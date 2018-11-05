@@ -52,4 +52,16 @@
       </xsl:choose>
     </bibl>
   </xsl:template>
+	
+	<xsl:template match="tei:rs[@type = 'person']">
+		<rs type="person">
+			<xsl:variable name="register" select="doc('http://dev2.hab.de/edoc/ed000240/register/personenregister.xml')" />
+			<xsl:variable name="self" select="normalize-space()" />
+			<xsl:variable name="entry" select="$register//tei:person[tei:persName[@type ='vorl' and contains(., $self)]]"/>
+			<xsl:attribute name="ref">
+				<xsl:value-of select="'#'||$entry[1]/@xml:id"/>
+			</xsl:attribute>
+			<xsl:sequence select="node()[not(self::comment())]" />
+		</rs>
+	</xsl:template>
 </xsl:stylesheet>

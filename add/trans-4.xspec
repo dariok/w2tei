@@ -35,6 +35,17 @@
 		</x:expect>
 	</x:scenario>
 	
+	<x:scenario label="rs mit ref ergänzen">
+		<x:scenario label="Personen">
+			<x:context>
+				<rs type="person">Iohannem Eckium</rs>
+			</x:context>
+			<x:expect label="@ref">
+				<rs type="person" ref="#eck_johannes">Iohannem Eckium</rs>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
 	<x:scenario label="krit. und FN gemischt">
 		<x:scenario label="103, p6">
 			<x:context>
