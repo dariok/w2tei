@@ -333,6 +333,18 @@
 							könne.</note></item>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T5.3: Korrektur mit Kommentar">
+			<x:context>
+				<p>
+					<anchor type="crit_app" xml:id="s116"/>dogmatibus c. 44.<anchor type="crit_app" xml:id="s116e"/><span type="crit_app" from="#s116" to="#s116e">vom Editor verbessert für <orig>documentis 43</orig> a<hi rend="sub">1</hi>, A<hi rend="sub">1-5</hi> <note type="comment">– im Anschluss an hsl. Korrektur in A<hi rend="sub">5Lp</hi></note></span>
+				</p>
+			</x:context>
+			<x:expect label="sic mit comment">
+				<p>
+					<choice><sic wit="#a1 #A1-5">documentis 43<note type="comment">– im Anschluss an hsl. Korrektur in A<hi rend="sub">5Lp</hi></note></sic><corr>dogmatibus c. 44.</corr></choice>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T6: gemischte">

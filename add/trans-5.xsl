@@ -291,8 +291,23 @@
 				</add>
 			</xsl:when>
 			<xsl:when test="matches(., '[vV]o.\s+.ditor\s+verbessert')">
+				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')), ' ')" />
+				<xsl:variable name="wit">
+					<xsl:for-each select="$tok">
+						<xsl:choose>
+							<xsl:when test="string-length() > 5" />
+							<xsl:otherwise>
+								<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
+								<xsl:text> </xsl:text>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:for-each>
+				</xsl:variable>
 				<choice>
 					<sic>
+						<xsl:if test="$wit != ''">
+							<xsl:attribute name="wit" select="normalize-space($wit)" />
+						</xsl:if>
 						<xsl:apply-templates select="tei:orig 
 							| text()[preceding-sibling::*[1][self::tei:orig]
 								and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
