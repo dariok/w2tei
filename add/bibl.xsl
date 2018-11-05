@@ -8,7 +8,7 @@
   version="3.0">
   <xsl:template match="tei:bibl">
     <bibl>
-      <xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/ed000240/register/bibliography.xml')" />
+      <xsl:variable name="bibliography" select="doc('../../register/bibliography.xml')" />
       <xsl:variable name="self" select="normalize-space()" />
       <xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
       <xsl:attribute name="ref">
@@ -55,12 +55,19 @@
 	
 	<xsl:template match="tei:rs[@type = 'person']">
 		<rs type="person">
-			<xsl:variable name="register" select="doc('http://dev2.hab.de/edoc/ed000240/register/personenregister.xml')" />
+			<xsl:variable name="register" select="doc('../../register/personenregister.xml')" />
 			<xsl:variable name="self" select="normalize-space()" />
 			<xsl:variable name="entry" select="$register//tei:person[tei:persName[@type ='vorl' and contains(., $self)]]"/>
-			<xsl:attribute name="ref">
-				<xsl:value-of select="'#'||$entry[1]/@xml:id"/>
-			</xsl:attribute>
+			<xsl:choose>
+				<xsl:when test="count($entry) > 0">
+					<xsl:attribute name="ref">
+						<xsl:value-of select="'#'||$entry[1]/@xml:id"/>
+					</xsl:attribute>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:comment>TODO ref eintragen!</xsl:comment>
+				</xsl:otherwise>
+			</xsl:choose>
 			<xsl:sequence select="node()[not(self::comment())]" />
 		</rs>
 	</xsl:template>

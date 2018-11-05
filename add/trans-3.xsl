@@ -14,13 +14,9 @@
 	</xsl:template>
 	
 	<xsl:template match="tei:rs">
-		<!-- TODO ref aus Register auslesen -->
 		<rs type="{@type}">
-			<xsl:comment>TODO ref nachtragen</xsl:comment>
 			<xsl:sequence select="node()[not(self::comment())] | (following-sibling::tei:rs intersect
 				following-sibling::text()[1]/preceding-sibling::tei:rs)/node()[not(self::comment())]" />
-			<!--<xsl:value-of select="normalize-space() || string-join(following-sibling::tei:rs intersect
-				following-sibling::text()[1]/preceding-sibling::tei:rs, '')" />-->
 		</rs>
 	</xsl:template>
 	<xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:rs]]" />
