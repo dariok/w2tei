@@ -77,13 +77,18 @@
 	</xsl:template>
 	
 	<xsl:template match="text()[parent::tei:note[@type='crit_app'] or parent::tei:span]" >
-		<xsl:if test="normalize-space() != ''">
-			<xsl:text> </xsl:text>
-			<orig><xsl:value-of select="normalize-space()"/></orig>
-			<xsl:if test="ends-with(., ' ')">
+		<xsl:choose>
+			<xsl:when test="normalize-space() != ''">
 				<xsl:text> </xsl:text>
-			</xsl:if>
-		</xsl:if>
+				<orig><xsl:value-of select="normalize-space()"/></orig>
+				<xsl:if test="ends-with(., ' ')">
+					<xsl:text> </xsl:text>
+				</xsl:if>
+			</xsl:when>
+			<xsl:when test="following-sibling::tei:hi and preceding-sibling::tei:hi">
+				<xsl:text> </xsl:text>
+			</xsl:when>
+		</xsl:choose>
 	</xsl:template>
 	<xsl:template match="tei:hi[@style='font-style: italic;'][parent::tei:note[@type='crit_app']
 		or parent::tei:span]" >

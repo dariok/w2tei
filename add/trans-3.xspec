@@ -79,15 +79,15 @@
 				<p>dehinc Quod b'eatus' <rs type="person"><!--TODO ref eintragen-->Hiero</rs><rs type="person"><!--TODO ref eintragen-->'</rs><rs type="person">ny</rs><rs type="person"><!--TODO ref eintragen-->mus</rs><rs type="person"><!--TODO ref eintragen-->'</rs> ad</p>
 			</x:context>
 			<x:expect label="ein rs" xml:space="preserve">
-				<p>dehinc Quod b'eatus' <rs type="person"><!--TODO ref nachtragen-->Hiero'nymus'</rs> ad</p>
+				<p>dehinc Quod b'eatus' <rs type="person">Hiero'nymus'</rs> ad</p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="rs vorher zusammengezogen">
 			<x:context xml:space="preserve">
-				<p><rs type="place">Augu<note place="margin"><rs type="person"><!--TODO ref eintragen-->Caietanus</rs> satis benignus <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> paedagogus <rs type="place"><!--TODO ref eintragen-->Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/>stae</rs></p>
+				<p><rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/>stae</rs></p>
 			</x:context>
 			<x:expect label="unverändert" xml:space="preserve">
-				<p><rs type="place"><!--TODO ref nachtragen-->Augu<note place="margin"><rs type="person"><!--TODO ref eintragen-->Caietanus</rs> satis benignus <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> paedagogus <rs type="place"><!--TODO ref eintragen-->Augustae</rs>.<note type="crit_app"><hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/>stae</rs></p>
+				<p><rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"><hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/>stae</rs></p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="hi">
@@ -98,9 +98,15 @@
 				<note type="footnote" xml:id="n2">Wortes <hi style="font-style: italic;">lucus</hi> (Wald)</note>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.8: hi mit Leerzeichen dazwischen">
+			<x:context xml:space="preserve">
+				<note type="crit_app"> <hi style="font-style: italic;">hinzugefügt</hi> <hi style="font-style: italic;">am Rand</hi></note>
+			</x:context>
+			<x:expect label="Leerzeichen in der Mitte" xml:space="preserve">
+				<note type="crit_app">hinzugefügt am Rand</note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
-	
-	
 	
 	<x:scenario label="rdg">
 		<x:scenario label="... mit kommentar">
