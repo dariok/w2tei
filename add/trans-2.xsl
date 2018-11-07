@@ -39,7 +39,7 @@
 			<xsl:apply-templates select="node()" />
 		</teiHeader>
 	</xsl:template>
-	<xsl:template match="tei:sourceDesc">
+	<!--<xsl:template match="tei:sourceDesc">
 		<sourceDesc>
 			<listWit>
 				<witness xml:id="A">A</witness>
@@ -52,7 +52,7 @@
 			</listWit>
 			<xsl:comment>TODO witness eintragen</xsl:comment>
 		</sourceDesc>
-	</xsl:template>
+	</xsl:template>-->
 	
 	<xsl:template match="tei:listWit"/>
 	
