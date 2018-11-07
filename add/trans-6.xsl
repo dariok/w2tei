@@ -121,8 +121,9 @@
 					<xsl:for-each select="distinct-values($wits)">
 						<xsl:text>
 					</xsl:text>
-						<witness xml:id="{substring-after(., '#')}"
-							corresp="{$val || '_introduction.xml' || .}" />
+						<witness corresp="{$val || '_introduction.xml' || .}">
+							<xsl:attribute name="xml:id" select="substring-after(., '#')" />
+						</witness>
 					</xsl:for-each>
 				</listWit>
 			</xsl:if>
