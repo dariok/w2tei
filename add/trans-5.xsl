@@ -225,7 +225,12 @@
 								</xsl:if>
 							</xsl:for-each>
 						</xsl:variable>
-						<add wit="{$wit}"><xsl:apply-templates select="tei:orig" mode="norm"/></add>
+						<add>
+							<xsl:if test="string-length($wit) > 0">
+								<xsl:attribute name="wit" select="normalize-space($wit)" />
+							</xsl:if>
+							<xsl:apply-templates select="tei:orig" mode="norm"/>
+						</add>
 					</xsl:when>
 					<xsl:when test="starts-with($inter, 'durchgestrichen')">
 						<xsl:variable name="wit">
@@ -236,7 +241,12 @@
 								</xsl:if>
 							</xsl:for-each>
 						</xsl:variable>
-						<add wit="{$wit}"><del><xsl:apply-templates select="tei:orig" mode="norm"/></del></add>
+						<add>
+							<xsl:if test="string-length($wit) > 0">
+								<xsl:attribute name="wit" select="normalize-space($wit)" />
+							</xsl:if>
+							<del><xsl:apply-templates select="tei:orig" mode="norm"/></del>
+						</add>
 					</xsl:when>
 					<xsl:otherwise>
 						<wdb:note><xsl:sequence select="node()" /></wdb:note>
