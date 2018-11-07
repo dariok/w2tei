@@ -244,11 +244,18 @@
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="contains(., 'hinzugefügt')">
+				<xsl:variable name="norm" select="normalize-space()" />
 				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(string-join(node()[not(self::tei:note)], ''), 'fügt')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
 						<xsl:choose>
 							<xsl:when test="string-length() > 5" />
+							<xsl:when test="contains($norm, 'am Rand')">
+								<xsl:if test="not(.='am' or .='Rand')">
+									<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
+									<xsl:text> </xsl:text>
+								</xsl:if>
+							</xsl:when>
 							<xsl:otherwise>
 								<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
 								<xsl:text> </xsl:text>
@@ -257,7 +264,10 @@
 					</xsl:for-each>
 				</xsl:variable>
 				
-				<add wit="{normalize-space($wit)}">
+				<add>
+					<xsl:if test="string-length($wit) > 0">
+						<xsl:attribute name="wit" select="normalize-space($wit)" />
+					</xsl:if>
 					<xsl:choose>
 						<xsl:when test="contains(normalize-space(), 'am Rand')">
 							<xsl:attribute name="place">margin</xsl:attribute>

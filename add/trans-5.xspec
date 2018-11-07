@@ -336,12 +336,12 @@
 		<x:scenario label="T5.3: Korrektur mit Kommentar">
 			<x:context>
 				<p>
-					<anchor type="crit_app" xml:id="s116"/>dogmatibus c. 44.<anchor type="crit_app" xml:id="s116e"/><span type="crit_app" from="#s116" to="#s116e">vom Editor verbessert für <orig>documentis 43</orig> a<hi rend="sub">1</hi>, A<hi rend="sub">1-5</hi> <note type="comment">– im Anschluss an hsl. Korrektur in A<hi rend="sub">5Lp</hi></note></span>
+					<lb/><anchor type="crit_app" xml:id="s116"/>dogmatibus c. 44.<anchor type="crit_app" xml:id="s116e"/><span type="crit_app" from="#s116" to="#s116e">vom Editor verbessert für <orig>documentis 43</orig> a<hi rend="sub">1</hi>, A<hi rend="sub">1-5</hi> <note type="comment">– im Anschluss an hsl. Korrektur in A<hi rend="sub">5Lp</hi></note></span>
 				</p>
 			</x:context>
 			<x:expect label="sic mit comment">
 				<p>
-					<choice><sic wit="#a1 #A1-5">documentis 43<note type="comment">– im Anschluss an hsl. Korrektur in A<hi rend="sub">5Lp</hi></note></sic><corr>dogmatibus c. 44.</corr></choice>
+					<lb/><choice><sic wit="#a1 #A1-5">documentis 43<note type="comment">– im Anschluss an hsl. Korrektur in A<hi rend="sub">5Lp</hi></note></sic><corr>dogmatibus c. 44.</corr></choice>
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -487,6 +487,17 @@
 			</x:context>
 			<x:expect label="w in lem">
 				<p> <w><app><lem>ha<lb break="no"/>bere</lem><rdg wit="#B">haberi</rdg></app></w> volumus<supplied>.</supplied></p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
+	<x:scenario label="T9: add">
+		<x:scenario label="T9.1: in Vorlage hinzugefügt">
+			<x:context>
+				<p><lb/>Doctor<note type="crit_app">hinzugefügt am Rand</note> zuhalten</p>
+			</x:context>
+			<x:expect label="add">
+				<p><lb/><add place="margin">Doctor</add> zuhalten</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
