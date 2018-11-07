@@ -64,7 +64,9 @@
 		and preceding-sibling::*[1][self::tei:anchor[ends-with(@xml:id, 'e')]]
 		and following-sibling::*[1][self::tei:span]]" />
 	
-	<xsl:template match="node()[not(self::tei:span)][(preceding-sibling::tei:anchor and following-sibling::tei:anchor)
+	<xsl:template match="node()[not(self::tei:span)][(
+		preceding-sibling::tei:anchor[1][not(ends-with(@xml:id, 'e'))]
+		and following-sibling::tei:anchor[1][ends-with(@xml:id, 'e')])
 		or following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
 		<xsl:variable name="pre" select="preceding-sibling::tei:anchor[1]/@xml:id"/>
 		<xsl:choose>

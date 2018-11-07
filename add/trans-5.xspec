@@ -501,4 +501,19 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T10: Normalfall">
+		<x:scenario label="T10.1: rs zwischen anchor Ende und Anfang">
+			<x:context>
+				<p><anchor type="crit_app" xml:id="s1"/> Doctor Archidiacon<anchor type="crit_app" xml:id="s1e"/><span from="#s1" to="#s1e" type="crit_app">am Rand hinzugefügt</span><note type="footnote">Seit 1510 war <rs type="person"><!--TODO ref eintragen!-->Karlstadt</rs> Archidiakon am <rs type="place"><!--TODO ref eintragen!-->Wittenberger Allerheiligenstift</rs>. Vgl. KGK I.1, Nr. 49, S. 437 Anm. 5.</note>
+					<lb/>angesuecht<note type="footnote">Siehe EE100.</note>, unnd mit vleyß unnderthenigklich gepeten hat, Ine sampt denIhenen, 
+					<lb/>so er mit sich, auff schirstkunfftige<note type="footnote">nächstkommend; vgl. <bibl ref="#grimm_woerterbuch_1854"> 9, 19-21</bibl> (schier).</note> Disputacion, welhe Er zu <rs type="place"><!--TODO ref eintragen!-->Leiptzk</rs>, wyder<note type="crit_app">folgt gestriche <orig>doctor <gap/> Eck</orig></note> her<note type="crit_app">über der Zeile hinzugefügt</note> <anchor type="crit_app" xml:id="s2"/>Iohann Eckius<anchor type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">am Rand hinzugefügt</span> </p>
+			</x:context>
+			<x:expect label="rs beibehalten">
+				<p><add place="margin"> Doctor Archidiacon</add><note type="footnote">Seit 1510 war <rs type="person"><!--TODO ref eintragen!-->Karlstadt</rs> Archidiakon am <rs type="place"><!--TODO ref eintragen!-->Wittenberger Allerheiligenstift</rs>. Vgl. KGK I.1, Nr. 49, S. 437 Anm. 5.</note>
+					<lb/>angesuecht<note type="footnote">Siehe EE100.</note>, unnd mit vleyß unnderthenigklich gepeten hat, Ine sampt denIhenen, 
+					<lb/>so er mit sich, auff schirstkunfftige<note type="footnote">nächstkommend; vgl. <bibl ref="#grimm_woerterbuch_1854"> 9, 19-21</bibl> (schier).</note> Disputacion, welhe Er zu <rs type="place"><!--TODO ref eintragen!-->Leiptzk</rs>, wyder<add><del>doctor <gap/> Eck</del></add> <add place="supralinear">her</add> <add place="margin">Iohann Eckius</add></p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
