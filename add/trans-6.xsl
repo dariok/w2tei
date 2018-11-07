@@ -10,6 +10,36 @@
 		<xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
 		<xsl:apply-templates select="node()" />
 	</xsl:template>
+	
+	<!-- pretty print -->
+	<xsl:template match="tei:teiHeader | tei:text">
+		<xsl:text>
+	</xsl:text>
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="tei:teiHeader/* | tei:text/*">
+		<xsl:text>
+		</xsl:text>
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="tei:teiHeader/*/*[not(self::tei:sourceDesc)]">
+		<xsl:text>
+			</xsl:text>
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="tei:teiHeader/*/*/*">
+		<xsl:text>
+				</xsl:text>
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
+	</xsl:template>
   
   <xsl:template match="tei:*">
     <xsl:variable name="num">
@@ -55,7 +85,7 @@
         </xsl:when>
       </xsl:choose>
     </xsl:variable>
-    <xsl:element name="{local-name()}">
+  	<xsl:element name="{local-name()}">
       <xsl:if test="not(@xml:id) and string-length($num) &gt; 0">
         <xsl:attribute name="xml:id" select="$num" />
       </xsl:if>
@@ -72,6 +102,32 @@
       <xsl:apply-templates select="node() | @*"/>
     </xsl:copy>
   </xsl:template>
+	
+	<xsl:template match="tei:sourceDesc">
+		<xsl:text>
+			</xsl:text>
+		<sourceDesc>
+			<xsl:apply-templates select="*[not(self::tei:listWit)]" />
+			<xsl:variable name="val" select="substring-after(substring-before(/tei:TEI/@xml:id, '_tr'), '240_')"/>
+			<xsl:if test="//@wit">
+				<xsl:text>
+				</xsl:text>
+				<listWit>
+					<xsl:variable name="wits" as="xs:string+">
+						<xsl:for-each select="//@wit">
+							<xsl:sequence select="tokenize(., ' ')" />	
+						</xsl:for-each>
+					</xsl:variable>
+					<xsl:for-each select="distinct-values($wits)">
+						<xsl:text>
+					</xsl:text>
+						<witness xml:id="{substring-after(., '#')}"
+							corresp="{$val || '_introduction.xml' || .}" />
+					</xsl:for-each>
+				</listWit>
+			</xsl:if>
+		</sourceDesc>
+	</xsl:template>
   
   <xsl:template match="text()">
     <xsl:analyze-string select="." regex="([\d\sr])-([\d\sv])">
