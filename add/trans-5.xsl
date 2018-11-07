@@ -12,7 +12,8 @@
 	<xsl:include href="../string-pack.xsl" />
 	
 	<xsl:template match="tei:note[@type = 'crit_app'
-		and not(preceding-sibling::tei:anchor and following-sibling::tei:anchor)]">
+		and not(preceding-sibling::tei:anchor[1][not(ends-with(@xml:id, 'e'))]
+		and following-sibling::tei:anchor[1][ends-with(@xml:id, 'e')])]">
 		<xsl:apply-templates select="." mode="eval" />
 	</xsl:template>
 	<xsl:template match="tei:note[@type = 'crit_app']" mode="eval">
@@ -218,6 +219,23 @@
 					<xsl:when test="not(tei:orig)">
 						<wdb:note><xsl:sequence select="node()" /></wdb:note>
 					</xsl:when>
+					<xsl:when test="starts-with($inter, 'gestrichen') or starts-with($inter, 'durchgestrichen')
+						or starts-with(substring-after(., 'folgt '), 'gestr') or starts-with(substring-after(., 'folgt '), 'durchgestr')">
+						<xsl:variable name="wit">
+							<xsl:for-each select="tokenize(substring-after(string-join(tei:orig[last()]/following-sibling::node(), ''), 'chen '), ',')">
+								<xsl:value-of select="'#' || normalize-space()"/>
+								<xsl:if test="not(position() = last())">
+									<xsl:text> </xsl:text>
+								</xsl:if>
+							</xsl:for-each>
+						</xsl:variable>
+						<add>
+							<xsl:if test="string-length($wit) > 0">
+								<xsl:attribute name="wit" select="normalize-space($wit)" />
+							</xsl:if>
+							<del><xsl:apply-templates select="tei:orig" mode="norm"/></del>
+						</add>
+					</xsl:when>
 					<xsl:when test="string-length($inter) &lt; 3">
 						<xsl:variable name="wit">
 							<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node(), ''), ',')">
@@ -232,22 +250,6 @@
 								<xsl:attribute name="wit" select="normalize-space($wit)" />
 							</xsl:if>
 							<xsl:apply-templates select="tei:orig" mode="norm"/>
-						</add>
-					</xsl:when>
-					<xsl:when test="starts-with($inter, 'durchgestrichen')">
-						<xsl:variable name="wit">
-							<xsl:for-each select="tokenize(substring-after(string-join(tei:orig[last()]/following-sibling::node(), ''), 'chen '), ',')">
-								<xsl:value-of select="'#' || normalize-space()"/>
-								<xsl:if test="not(position() = last())">
-									<xsl:text> </xsl:text>
-								</xsl:if>
-							</xsl:for-each>
-						</xsl:variable>
-						<add>
-							<xsl:if test="string-length($wit) > 0">
-								<xsl:attribute name="wit" select="normalize-space($wit)" />
-							</xsl:if>
-							<del><xsl:apply-templates select="tei:orig" mode="norm"/></del>
 						</add>
 					</xsl:when>
 					<xsl:otherwise>
