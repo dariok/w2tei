@@ -16,28 +16,28 @@
 		<xsl:text>
 	</xsl:text>
 		<xsl:copy>
-			<xsl:apply-templates />
+			<xsl:apply-templates select="@* | node()"/>
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="tei:teiHeader/* | tei:text/*">
 		<xsl:text>
 		</xsl:text>
 		<xsl:copy>
-			<xsl:apply-templates />
+			<xsl:apply-templates select="@* | node()"/>
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="tei:teiHeader/*/*[not(self::tei:sourceDesc)]">
 		<xsl:text>
 			</xsl:text>
 		<xsl:copy>
-			<xsl:apply-templates />
+			<xsl:apply-templates select="@* | node()"/>
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="tei:teiHeader/*/*/*">
 		<xsl:text>
 				</xsl:text>
 		<xsl:copy>
-			<xsl:apply-templates />
+			<xsl:apply-templates select="@* | node()"/>
 		</xsl:copy>
 	</xsl:template>
   
