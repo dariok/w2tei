@@ -265,6 +265,14 @@
 			<p>boni <app><lem>consulas.</lem><rdg wit="#a1"/></app></p>
 		</x:expect>
 	</x:scenario>
+	<x:scenario label="T3.2:">
+		<x:context>
+			<p>IHESUS.<note type="crit_app">fehlt B<hi rend="sub">1</hi>, B<hi rend="sub">2</hi>, C, D, E, F</note></p>
+		</x:context>
+		<x:expect label="kein Komma">
+			<p><app><lem>IHESUS.</lem><rdg wit="#B1 #B2 #C #D #E #F" /></app></p>
+		</x:expect>
+	</x:scenario>
 	
 	<x:scenario label="T4: gestrichen">
 		<x:scenario label="T4.1: danach gestrichen">

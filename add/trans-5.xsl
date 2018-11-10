@@ -428,7 +428,7 @@
 			</xsl:when>
 			<xsl:when test="starts-with(normalize-space(), 'fehlt')">
 				<xsl:variable name="wit">
-					<xsl:for-each select="tokenize(normalize-space(), ' ')">
+					<xsl:for-each select="tokenize(normalize-space(translate(., ',.', '')), ' ')">
 						<xsl:if test="position() > 1">
 							<xsl:value-of select="'#' || normalize-space()"/>
 							<xsl:if test="not(position() = last())">
