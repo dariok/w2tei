@@ -14,7 +14,7 @@
     
     <xsl:template match="w:body">
         <xsl:apply-templates
-          select="w:p[wt:is(., 'berschrift1')]/following-sibling::w:p[hab:isDiv(.)]"/>
+          select="w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1')]/following-sibling::w:p[hab:isDiv(.)]"/>
         <xsl:sequence select="parent::w:document/following-sibling::w:*"/>
     </xsl:template>
     
