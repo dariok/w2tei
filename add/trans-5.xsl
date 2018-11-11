@@ -37,6 +37,9 @@
 			</xsl:call-template>
 		</xsl:variable>
 		<xsl:choose>
+			<xsl:when test="preceding-sibling::node()[1][self::tei:note]">
+				<note type="crit_app"><xsl:apply-templates select="node()" /></note>
+			</xsl:when>
 			<xsl:when test="preceding-sibling::node()[1][self::tei:*]">
 				<xsl:variable name="pre" select="preceding-sibling::*[1]"/>
 				<xsl:element name="{local-name($pre)}">
