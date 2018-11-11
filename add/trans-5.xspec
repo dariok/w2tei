@@ -486,6 +486,14 @@
 				</list>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T7.2: freier Text nach Witness in rdg">
+			<x:context>
+				<p>qua <w>mag<lb break="no"/>nificis</w><note type="crit_app">E, F Marginalie <orig>: Eccius oblique in Lutherium scripsit</orig></note></p>
+			</x:context>
+			<x:expect label="note">
+				<p>qua <w>mag<lb break="no"/>nificis<note type="crit_app">E, F Marginalie <orig>: Eccius oblique in Lutherium scripsit</orig></note></w></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T8: Elemente vorher">

@@ -384,47 +384,54 @@
 					</xsl:for-each>
 				</xsl:variable>
 				
-				<rdg wit="{normalize-space($wit)}">
-					<xsl:choose>
-						<xsl:when test="starts-with(normalize-space(), 'hsl. korrigiert')">
-							<xsl:attribute name="cause">manualCorrection</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="starts-with(normalize-space(), 'korrigiert')">
-							<xsl:attribute name="cause">correction</xsl:attribute>
-						</xsl:when>
-					</xsl:choose>
-					<xsl:choose>
-						<xsl:when test="contains(normalize-space(), 'am Rand')">
-							<xsl:attribute name="rend">margin</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="ends-with(normalize-space(), 'AuRd-Gl')">
-							<xsl:attribute name="rend">AuRd-Gl</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="ends-with(normalize-space(), 'InRd-Gl')">
-							<xsl:attribute name="rend">InRd-Gl</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="contains(normalize-space(), 'über der Zeile')">
-							<xsl:attribute name="rend">supralinear</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="contains(normalize-space(), 'linksbündig')">
-							<xsl:attribute name="rend">left</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="contains(normalize-space(), 'zentriert')">
-							<xsl:attribute name="rend">centre</xsl:attribute>
-						</xsl:when>
-					</xsl:choose>
-					<xsl:choose>
-						<xsl:when test="tei:orig">
-							<xsl:apply-templates select="tei:orig 
-								| text()[preceding-sibling::*[1][self::tei:orig]
-								and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="$text"/>
-						</xsl:otherwise>
-					</xsl:choose>
-					<xsl:sequence select="tei:note" />
-				</rdg>
+				<xsl:choose>
+					<xsl:when test="$wit = ''">
+						<wdb:note><xsl:sequence select="node()" /></wdb:note>
+					</xsl:when>
+					<xsl:otherwise>
+						<rdg wit="{normalize-space($wit)}">
+							<xsl:choose>
+								<xsl:when test="starts-with(normalize-space(), 'hsl. korrigiert')">
+									<xsl:attribute name="cause">manualCorrection</xsl:attribute>
+								</xsl:when>
+								<xsl:when test="starts-with(normalize-space(), 'korrigiert')">
+									<xsl:attribute name="cause">correction</xsl:attribute>
+								</xsl:when>
+							</xsl:choose>
+							<xsl:choose>
+								<xsl:when test="contains(normalize-space(), 'am Rand')">
+									<xsl:attribute name="rend">margin</xsl:attribute>
+								</xsl:when>
+								<xsl:when test="ends-with(normalize-space(), 'AuRd-Gl')">
+									<xsl:attribute name="rend">AuRd-Gl</xsl:attribute>
+								</xsl:when>
+								<xsl:when test="ends-with(normalize-space(), 'InRd-Gl')">
+									<xsl:attribute name="rend">InRd-Gl</xsl:attribute>
+								</xsl:when>
+								<xsl:when test="contains(normalize-space(), 'über der Zeile')">
+									<xsl:attribute name="rend">supralinear</xsl:attribute>
+								</xsl:when>
+								<xsl:when test="contains(normalize-space(), 'linksbündig')">
+									<xsl:attribute name="rend">left</xsl:attribute>
+								</xsl:when>
+								<xsl:when test="contains(normalize-space(), 'zentriert')">
+									<xsl:attribute name="rend">centre</xsl:attribute>
+								</xsl:when>
+							</xsl:choose>
+							<xsl:choose>
+								<xsl:when test="tei:orig">
+									<xsl:apply-templates select="tei:orig 
+										| text()[preceding-sibling::*[1][self::tei:orig]
+										and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="$text"/>
+								</xsl:otherwise>
+							</xsl:choose>
+							<xsl:sequence select="tei:note" />
+						</rdg>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="starts-with(normalize-space(), 'fehlt')">
 				<xsl:variable name="wit">
