@@ -35,7 +35,7 @@
             n="{$nr}">
             <xsl:attribute name="xml:id">
                 <xsl:choose>
-                    <xsl:when test="wt:string(//w:body/w:p[wt:is(., 'berschrift1')]) = 'Text'">
+                    <xsl:when test="//w:footnotes">
                         <xsl:value-of select="concat('edoc_ed000240_', $ee, '_transcript')"/>
                     </xsl:when>
                     <xsl:otherwise>
