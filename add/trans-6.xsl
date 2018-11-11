@@ -118,7 +118,7 @@
 							<xsl:sequence select="tokenize(., ' ')" />	
 						</xsl:for-each>
 					</xsl:variable>
-					<xsl:for-each select="distinct-values($wits)">
+					<xsl:for-each select="distinct-values($wits)[not(. = '#')]">
 						<xsl:text>
 					</xsl:text>
 						<witness corresp="{$val || '_introduction.xml' || .}">
