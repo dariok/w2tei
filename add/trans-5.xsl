@@ -108,9 +108,13 @@
 				<xsl:sequence select="preceding-sibling::*[1]" />
 			</xsl:when>
 			<xsl:when test="$content/*[last()][self::tei:span]">
-				<anchor type="crit_app" xml:id="{substring-after(@from, '#')}" />
+				<anchor type="crit_app">
+					<xsl:attribute name="xml:id" select="substring-after(@from, '#')" />
+				</anchor>
 				<xsl:sequence select="$content/node()[not(position() = last())]" />
-				<anchor type="crit_app" xml:id="{substring-after(@to, '#')}" />
+				<anchor type="crit_app">
+					<xsl:attribute name="xml:id" select="substring-after(@to, '#')" />
+				</anchor>
 				<xsl:sequence select="$content/tei:span" />
 			</xsl:when>
 			<xsl:when test="$content/*[1][self::tei:*]">
