@@ -49,6 +49,9 @@
 						<xsl:when test="$pre/node()[last()][self::text()]">
 							<xsl:sequence select="$pre/node()[not(position() = last())]" />
 							<xsl:value-of select="xstring:substring-before-last($pre/text()[last()], ' ')"/>
+							<xsl:if test="count(tokenize($pre/text()[last()], ' ')) > 1">
+								<xsl:text> </xsl:text>
+							</xsl:if>
 						</xsl:when>
 					</xsl:choose>
 					<xsl:sequence select="$content" />
