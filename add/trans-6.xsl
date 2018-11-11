@@ -136,7 +136,19 @@
         <xsl:value-of select="regex-group(1) || '–' || regex-group(2)"/>
       </xsl:matching-substring>
       <xsl:non-matching-substring>
-        <xsl:value-of select="."/>
+        <xsl:analyze-string select="." regex="\w+'.+?'\w?">
+          <xsl:matching-substring>
+            <expan>
+              <xsl:analyze-string select="." regex="'.+'">
+                <xsl:matching-substring><ex><xsl:value-of select="substring(substring(., 2), 1, string-length(.)-2)"/></ex></xsl:matching-substring>
+                <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
+              </xsl:analyze-string>
+            </expan>
+          </xsl:matching-substring>
+          <xsl:non-matching-substring>
+            <xsl:value-of select="."/>
+          </xsl:non-matching-substring>
+        </xsl:analyze-string>
       </xsl:non-matching-substring>
     </xsl:analyze-string>
   </xsl:template>

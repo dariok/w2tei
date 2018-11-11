@@ -2,17 +2,13 @@
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	stylesheet="trans-6.xsl">
-	<x:scenario label="Expansionen" pending="true">
+	<x:scenario label="Expansionen">
 		<x:context>
 			<p>
-				<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf'urstlich' g'naden'
-			</p>
+				<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf'urstlich' g'naden'</p>
 		</x:context>
-		<x:expect label="expan/ex">
-			<p>
-				<lb/>Durchleuchtigster Hochgebornner Churfurst. euern <expan>churf<ex>urstlich</ex></expan> <expan>g<ex>naden</ex></expan>
-			</p>
-		</x:expect>
+		<x:expect label="expan/ex" xml:space="preserve"><p xml:id="p1">
+				<lb xml:id="z1"/>Durchleuchtigster Hochgebornner Churfurst. euern <expan>churf<ex>urstlich</ex></expan> <expan>g<ex>naden</ex></expan></p></x:expect>
 	</x:scenario>
 	
 	<x:scenario label="listWit">

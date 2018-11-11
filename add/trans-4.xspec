@@ -12,7 +12,7 @@
 					<lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf'urstlich' g'naden'</p>
 			</x:context>
 			<x:expect label="ex">
-				<p><lb/>Durchleuchtigster Hochgebornner Churfurst. euern <expan>churf<ex>urstlich</ex></expan> <expan>g<ex>naden</ex></expan></p></x:expect>
+				<p><lb/>Durchleuchtigster Hochgebornner Churfurst. euern churf'urstlich' g'naden'</p></x:expect>
 		</x:scenario>
 		<x:scenario label="T1.2: supplied und gap">
 			<x:context>
@@ -72,7 +72,7 @@
 					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
 						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
 							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
-								<orig>Protestatio <expan>D<ex>omini</ex></expan> doctoris Carolostadii per respondentem sibi a latere</orig>
+								<orig>Protestatio D'omini' doctoris Carolostadii per respondentem sibi a latere</orig>
 								B<wdb:marker/> <orig>@</orig> fehlt a<hi rend="sub">1</hi><wdb:marker /> <orig>Protestatio Carolostad<supplied>ius</supplied></orig>
 								a<hi rend="sub">2 </hi><note type="comment">AuRd-Gl</note></span></p>
 			</x:expect>
