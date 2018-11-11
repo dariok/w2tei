@@ -107,6 +107,12 @@
 				<xsl:sequence select="$content" />
 				<xsl:sequence select="preceding-sibling::*[1]" />
 			</xsl:when>
+			<xsl:when test="$content/*[last()][self::tei:span]">
+				<anchor type="crit_app" xml:id="{substring-after(@from, '#')}" />
+				<xsl:sequence select="$content/node()[not(position() = last())]" />
+				<anchor type="crit_app" xml:id="{substring-after(@to, '#')}" />
+				<xsl:sequence select="$content/tei:span" />
+			</xsl:when>
 			<xsl:when test="$content/*[1][self::tei:*]">
 				<xsl:sequence select="$content" />
 			</xsl:when>
@@ -138,6 +144,7 @@
 				<xsl:sequence select="$text" />
 				<xsl:element name="{local-name($note)}">
 					<xsl:attribute name="type" select="'crit_app'" />
+					<xsl:apply-templates select="@from |@to" />
 					<xsl:apply-templates select="$note/node()" />
 				</xsl:element>
 			</xsl:when>
@@ -391,7 +398,7 @@
 				</xsl:variable>
 				
 				<xsl:choose>
-					<xsl:when test="$wit = ''">
+					<xsl:when test="$wit = '' or count(tokenize(normalize-space(tei:orig[1]/preceding-sibling::text()), ' ')) > 3">
 						<wdb:note><xsl:sequence select="node()" /></wdb:note>
 					</xsl:when>
 					<xsl:otherwise>
