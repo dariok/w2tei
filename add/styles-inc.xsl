@@ -94,8 +94,6 @@
         <xsl:apply-templates select="w:endnoteReference"/>
     </xsl:template>
     
-    <!-- (auch) zur einfacheren Verarbeitung im XSpec; 2017-10-31 DK -->
-    <xsl:template match="w:endnotes"/>
     
     <!-- neu 2017-08-07 DK -->
     <xsl:template match="w:endnoteReference">

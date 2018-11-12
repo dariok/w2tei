@@ -15,8 +15,17 @@
 	
 	<xsl:template match="tei:rs">
 		<rs type="{@type}">
-			<xsl:sequence select="node()[not(self::comment())] | (following-sibling::tei:rs intersect
-				following-sibling::text()[1]/preceding-sibling::tei:rs)/node()[not(self::comment())]" />
+			<xsl:choose>
+				<xsl:when test="following-sibling::node()[not(self::tei:rs)]">
+					<xsl:sequence select="node()[not(self::comment())]
+						| (following-sibling::tei:rs intersect
+						following-sibling::text()[1]/preceding-sibling::tei:rs)/node()[not(self::comment())]" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:sequence select="node()[not(self::comment())]
+						| following-sibling::tei:rs/node()" />
+				</xsl:otherwise>
+			</xsl:choose>
 		</rs>
 	</xsl:template>
 	<xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:rs]]" />

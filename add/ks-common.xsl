@@ -296,4 +296,10 @@
     <xsl:template match="w:br[ancestor::w:p[wt:is(., 'KSZitatblock')]]">
         <xsl:text>$</xsl:text>
     </xsl:template>
+	
+	<xsl:template match="w:endnotes | w:footnotes">
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
+	</xsl:template>
 </xsl:stylesheet>

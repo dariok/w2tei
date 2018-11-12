@@ -15,10 +15,11 @@
     <xsl:template match="w:body">
         <xsl:apply-templates
           select="w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1')]/following-sibling::w:p[hab:isDiv(.)]"/>
-        <xsl:sequence select="parent::w:document/following-sibling::w:*"/>
+        <xsl:apply-templates select="parent::w:document/following-sibling::w:*"/>
     </xsl:template>
     
     <!-- Paragraphen -->
+	<xsl:template match="w:proofErr" />
 	<xsl:template match="w:p[hab:isDiv(.)]">
 		<xsl:variable name="myId" select="generate-id()"/>
 		<xsl:text>
@@ -80,17 +81,18 @@
     </xsl:template>
 	
 	<xsl:template match="w:endnote">
-		<xsl:text>
-			</xsl:text>
 		<w:endnote>
-			<xsl:sequence select="node()" />
+			<xsl:sequence select="@*" />
+			<w:p>
+				<xsl:sequence select="w:p/node()[not(self::w:proofErr)]" />
+			</w:p>
 		</w:endnote>
 	</xsl:template>
 	<xsl:template match="w:footnote">
 		<xsl:text>
 			</xsl:text>
 		<w:footnote>
-			<xsl:sequence select="node()" />
+			<xsl:sequence select="@* | node()" />
 		</w:footnote>
 	</xsl:template>
     
