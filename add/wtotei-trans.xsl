@@ -14,7 +14,7 @@
     
     <xsl:template match="w:body">
         <xsl:apply-templates
-          select="w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1')]/following-sibling::w:p[hab:isDiv(.)]"/>
+          select="w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1')]/following-sibling::w:p[hab:isDiv(.)]"/>
         <xsl:apply-templates select="parent::w:document/following-sibling::w:*"/>
     </xsl:template>
     
@@ -30,7 +30,7 @@
 		</div>
 	</xsl:template>
     
-    <xsl:template match="w:p[wt:is(., 'berschrift1')]" />
+	<xsl:template match="w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1')]" />
     
 	<xsl:template match="w:p[hab:isP(.)]">
 		<xsl:variable name="myId" select="generate-id()"/>
@@ -76,7 +76,7 @@
 			</xsl:if>
 			<xsl:sequence select="preceding-sibling::w:p[not(hab:isP(.)
 				or wt:is(., 'KSEE-Titel') or wt:is(., 'KSEETitel')
-				or wt:is(., 'berschrift1') or wt:is(., 'Heading1'))
+				or wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1'))
 				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]"/>
 			<xsl:sequence select="." />
 		</xsl:element>
@@ -120,6 +120,7 @@
     <xsl:function name="hab:isStruct" as="xs:boolean">
         <xsl:param name="context" />
         <xsl:sequence select="hab:isP($context) or wt:is($context, 'KSEE-Titel')
-            or wt:is($context, 'berschrift1') or wt:is($context, 'KSZwischenberschrift')" />
+            or wt:is($context, 'berschrift1') or wt:is($context, 'Heading1')
+            or wt:is($context, 'Titolo1') or wt:is($context, 'KSZwischenberschrift')" />
     </xsl:function>
 </xsl:stylesheet>
