@@ -35,7 +35,7 @@
             n="{$nr}">
             <xsl:attribute name="xml:id">
                 <xsl:choose>
-                    <xsl:when test="//w:footnotes[xs:integer(@w:id) > 0]">
+                    <xsl:when test="//w:footnote[descendant::w:t]">
                         <xsl:value-of select="concat('edoc_ed000240_', $ee, '_transcript')"/>
                     </xsl:when>
                     <xsl:otherwise>
