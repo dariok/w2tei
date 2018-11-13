@@ -20,7 +20,7 @@
 		</xsl:copy>
 	</xsl:template>
     
-    <xsl:template match="w:footnotes | w:numbering | w:comments" />
+    <xsl:template match="w:endnotes | w:footnotes | w:numbering | w:comments" />
     
     <xsl:template match="w:p[not(w:r)]" />
     
