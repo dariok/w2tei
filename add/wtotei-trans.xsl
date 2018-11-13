@@ -47,38 +47,40 @@
 		</xsl:variable>
 		<xsl:text>
 				</xsl:text>
-        <xsl:element name="{$name}">
-            <!-- TODO später auch für Anreden und ggf. Buchtitle -->
-            <xsl:if test="wt:is(., 'KSSchluformeln') or wt:is(., 'KSBuchtitel')">
-                <xsl:attribute name="rendition">
-                    <xsl:choose>
-                        <xsl:when test="descendant::w:jc[@w:val='center']">
-                            <xsl:text>#c</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="not(descendant::w:ind)">
-                            <xsl:text>#l</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="descendant::w:ind/@w:left &lt; 2000">
-                            <xsl:text>#l</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="descendant::w:ind/@w:left &lt; 4900">
-                            <xsl:text>#c</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="descendant::w:ind/@w:left &lt; 6400">
-                            <xsl:text>#r</xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>#rc</xsl:otherwise>
-                    </xsl:choose>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="wt:is(., 'KSZwischenberschrift2', 'p')">
-                <xsl:attribute name="type">subheading</xsl:attribute>
-            </xsl:if>
-            <xsl:sequence select="preceding-sibling::w:p[not(hab:isP(.)or wt:is(., 'KSEE-Titel')or wt:is(., 'berschrift1'))
-                and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]"/>
-            <xsl:sequence select="." />
-        </xsl:element>
-    </xsl:template>
+		<xsl:element name="{$name}">
+			<!-- TODO später auch für Anreden und ggf. Buchtitle -->
+			<xsl:if test="wt:is(., 'KSSchluformeln') or wt:is(., 'KSBuchtitel')">
+				<xsl:attribute name="rendition">
+					<xsl:choose>
+						<xsl:when test="descendant::w:jc[@w:val='center']">
+							<xsl:text>#c</xsl:text>
+						</xsl:when>
+						<xsl:when test="not(descendant::w:ind)">
+							<xsl:text>#l</xsl:text>
+						</xsl:when>
+						<xsl:when test="descendant::w:ind/@w:left &lt; 2000">
+							<xsl:text>#l</xsl:text>
+						</xsl:when>
+						<xsl:when test="descendant::w:ind/@w:left &lt; 4900">
+							<xsl:text>#c</xsl:text>
+						</xsl:when>
+						<xsl:when test="descendant::w:ind/@w:left &lt; 6400">
+							<xsl:text>#r</xsl:text>
+						</xsl:when>
+						<xsl:otherwise>#rc</xsl:otherwise>
+					</xsl:choose>
+				</xsl:attribute>
+			</xsl:if>
+			<xsl:if test="wt:is(., 'KSZwischenberschrift2', 'p')">
+				<xsl:attribute name="type">subheading</xsl:attribute>
+			</xsl:if>
+			<xsl:sequence select="preceding-sibling::w:p[not(hab:isP(.)
+				or wt:is(., 'KSEE-Titel') or wt:is(., 'KSEETitel')
+				or wt:is(., 'berschrift1') or wt:is(., 'Heading1'))
+				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]"/>
+			<xsl:sequence select="." />
+		</xsl:element>
+	</xsl:template>
 	
 	<xsl:template match="w:endnote">
 		<w:endnote>
@@ -112,7 +114,7 @@
     </xd:doc>
     <xsl:function name="hab:isDiv" as="xs:boolean">
         <xsl:param name="context" />
-        <xsl:sequence select="if($context//w:t or $context//w:pStyle) then false() else true()" />
+        <xsl:sequence select="if($context//w:t or ($context//w:pStyle and $context//w:t)) then false() else true()" />
     </xsl:function>
   
     <xsl:function name="hab:isStruct" as="xs:boolean">
