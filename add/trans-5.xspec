@@ -305,6 +305,17 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T4.3: hinzugefügt und gestrichen">
+			<x:context>
+				<p>
+					quod<note type="crit_app"> <orig>quibus</orig> A<hi rend="sub">1-5</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> durchgestrichen und am Rand hsl. hinzugefügt  <orig>quod</orig> A<hi rend="sub">5Lp</hi></note>
+				</p>
+			</x:context>
+			<x:expect label="unverändert">
+				<p>quod<note type="crit_app"> <orig>quibus</orig> A<hi rend="sub">1-5</hi>;  durchgestrichen und am Rand hsl. hinzugefügt  <orig>quod</orig> A<hi rend="sub">5Lp</hi></note>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T5: Korrekturen">

@@ -277,6 +277,7 @@
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="contains(., 'hinzugefügt')
+				and not(contains(., 'gestrichen'))
 				and not(tei:orig[1]/following-sibling::node()[1][self::text()]
 				and tei:orig/following-sibling::tei:orig)">
 				<xsl:variable name="norm" select="normalize-space()" />
