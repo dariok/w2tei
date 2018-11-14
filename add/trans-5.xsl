@@ -277,7 +277,8 @@
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="contains(., 'hinzugefügt')
-				and not(count(tei:orig) > 1)">
+				and not(tei:orig[1]/following-sibling::node()[1][self::text()]
+				and tei:orig/following-sibling::tei:orig)">
 				<xsl:variable name="norm" select="normalize-space()" />
 				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(string-join(node()[not(self::tei:note)], ''), 'fügt')), ' ')" />
 				<xsl:variable name="wit">
@@ -475,11 +476,13 @@
 				</xsl:variable>
 				<rdg wit="{$wit}" />
 			</xsl:when>
-			<xsl:when test="(string-length(normalize-space(text()[1])) &lt; 3
+			<xsl:when test="((string-length(normalize-space(text()[1])) &lt; 3
+				and normalize-space(text()[1]) != '')
 				or contains(text()[1], ',')
 				or tei:hi[@rend='sub'])
 				and string-length(normalize-space(text()[1])) &lt; 10
-				and not(tei:*[last()]/following-sibling::text()[normalize-space() != ''])">
+				and not(tei:*[last()]/following-sibling::text()[normalize-space() != ''])
+				and not(count(tei:orig) > 1)">
 				<xsl:variable name="wit">
 					<xsl:for-each select="tokenize(normalize-space(), ',')">
 						<xsl:value-of select="'#'||normalize-space(translate(., ',.', '')) || ' '"/>

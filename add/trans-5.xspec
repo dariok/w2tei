@@ -364,6 +364,17 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T5.4: hsl. Korrektur in Quelle">
+			<x:context>
+				<p>
+					Ego<note type="crit_app"> <orig>Dico</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>Ego</orig> hsl. am Rand ersetzt durch <orig>de</orig> A<hi rend="sub">5Lp</hi></note>
+				</p>
+			</x:context>
+			<x:expect label="rdg corr">
+				<p>Ego<note type="crit_app"> <orig>Dico</orig> a<hi rend="sub">1</hi>; <orig>Ego</orig> hsl. am Rand ersetzt durch <orig>de</orig> A<hi rend="sub">5Lp</hi></note>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T6: gemischte">
