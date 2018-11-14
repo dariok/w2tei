@@ -248,7 +248,7 @@
 						</xsl:variable>
 						<add>
 							<xsl:if test="string-length($wit) > 0">
-								<xsl:attribute name="wit" select="normalize-space($wit)" />
+								<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
 							</xsl:if>
 							<del><xsl:apply-templates select="tei:orig" mode="norm"/></del>
 						</add>
@@ -264,7 +264,7 @@
 						</xsl:variable>
 						<add>
 							<xsl:if test="string-length($wit) > 0">
-								<xsl:attribute name="wit" select="normalize-space($wit)" />
+								<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
 							</xsl:if>
 							<xsl:apply-templates select="tei:orig" mode="norm"/>
 						</add>
@@ -297,7 +297,7 @@
 				
 				<add>
 					<xsl:if test="string-length($wit) > 0">
-						<xsl:attribute name="wit" select="normalize-space($wit)" />
+						<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
 					</xsl:if>
 					<xsl:choose>
 						<xsl:when test="contains(normalize-space(), 'am Rand')">
@@ -346,8 +346,8 @@
 				</xsl:variable>
 				<choice>
 					<sic>
-						<xsl:if test="$wit != ''">
-							<xsl:attribute name="wit" select="normalize-space($wit)" />
+						<xsl:if test="string-length($wit) > 0">
+							<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
 						</xsl:if>
 						<xsl:apply-templates select="tei:orig 
 							| text()[preceding-sibling::*[1][self::tei:orig]
@@ -371,8 +371,8 @@
 					</xsl:for-each>
 				</xsl:variable>
 				<del>
-					<xsl:if test="normalize-space($wit) != ''">
-						<xsl:attribute name="wit" select="normalize-space($wit)" />
+					<xsl:if test="string-length($wit) > 0">
+						<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
 					</xsl:if>
 					<xsl:choose>
 						<xsl:when test="matches(., '[dD]avor')">
@@ -406,7 +406,10 @@
 						<wdb:note><xsl:sequence select="node()" /></wdb:note>
 					</xsl:when>
 					<xsl:otherwise>
-						<rdg wit="{normalize-space($wit)}">
+						<rdg>
+							<xsl:if test="string-length($wit) > 0">
+								<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
+							</xsl:if>
 							<xsl:choose>
 								<xsl:when test="starts-with(normalize-space(), 'hsl. korrigiert')">
 									<xsl:attribute name="cause">manualCorrection</xsl:attribute>
@@ -473,7 +476,12 @@
 						<xsl:value-of select="'#'||normalize-space(translate(., ',.', '')) || ' '"/>
 					</xsl:for-each>
 				</xsl:variable>
-				<lem wit="{normalize-space($wit)}"><xsl:sequence select="$text" /></lem>
+				<lem>
+					<xsl:if test="string-length($wit) > 0">
+						<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
+					</xsl:if>
+					<xsl:sequence select="$text" />
+				</lem>
 			</xsl:when>
 			<xsl:otherwise>
 				<!--<xsl:text>XXX</xsl:text>-->
