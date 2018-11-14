@@ -294,6 +294,17 @@
 				<item>Lex<del place="after">factorum</del> fidei bonorum operum et factorum<note type="footnote">Die Gleichsetzung von <hi style="font-style: italic;">factorum</hi> mit <hi style="font-style: italic;">operum</hi> hat <rs type="person">Karlstadt</rs> aus <ref type="medieval">Aug. spir. et litt.</ref> 13,21 (s. o. Anm. <ptr type="wdb" target="#n2"/>) entnommen. Vgl. auch <ref type="biblical" cRef="Rm 3,27f">Röm 3,27f</ref>. (s. o. Anm. <ptr type="wdb" target="#n1"/>).</note> est genitrix. non tamen dicitur factorum licet eiusmodi censeri possit:</item>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T4.2: gestrichen mit mehr Text dazu">
+			<x:context>
+				<p>
+					opus bonum.<note type="crit_app">durchgestrichen und  <orig>opus bonum</orig> über der Zeile hinzugefüt A<hi rend="sub">5Lp</hi></note>
+				</p>
+			</x:context>
+			<x:expect label="unverändert">
+				<p>opus bonum.<note type="crit_app">durchgestrichen und  <orig>opus bonum</orig> über der Zeile hinzugefüt A<hi rend="sub">5Lp</hi></note>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T5: Korrekturen">

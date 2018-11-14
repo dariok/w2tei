@@ -361,7 +361,8 @@
 					<corr><xsl:sequence select="$text" /></corr>
 				</choice>
 			</xsl:when>
-			<xsl:when test="matches(., '^\w* *\w*gestrichen')">
+			<xsl:when test="matches(., '^\w* *\w*gestrichen')
+				and not(contains(., 'über') or contains(., 'Rand') or contains(., 'Zeile'))">
 				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
@@ -410,7 +411,9 @@
 				</xsl:variable>
 				
 				<xsl:choose>
-					<xsl:when test="$wit = '' or count(tokenize(normalize-space(tei:orig[1]/preceding-sibling::text()), ' ')) > 3">
+					<xsl:when test="$wit = ''
+						or count(tokenize(normalize-space(tei:orig[1]/preceding-sibling::text()), ' ')) > 3
+						or (contains(., 'gestrichen') and contains(., 'hinzu'))">
 						<wdb:note>
 							<xsl:sequence select="node()" />
 						</wdb:note>
