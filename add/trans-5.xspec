@@ -608,6 +608,21 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T9.3: schwieriger Text im orig">
+			<x:context>
+				<p>
+					Et<note type="crit_app"> <orig>Pro secundo Et</orig> a<hi rend="sub">1</hi><wdb:marker
+						xmlns:wdb="https://github.com/dariok/wdbplus"/> am Rand hsl. hinzugefügt <orig>Pro 2°</orig> A<hi
+						rend="sub">5Lp</hi></note>
+				</p>
+			</x:context>
+			<x:expect label="nicht zuviel im wit">
+				<p>
+					<app><lem>Et</lem><rdg wit="#a1">Pro secundo Et</rdg><rdg wit="#A5Lp"><add
+						place="margin">Pro 2°</add></rdg></app>
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T10: Normalfall">

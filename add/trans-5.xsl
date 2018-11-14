@@ -281,7 +281,9 @@
 				and not(tei:orig[1]/following-sibling::node()[1][self::text()]
 				and tei:orig/following-sibling::tei:orig)">
 				<xsl:variable name="norm" select="normalize-space()" />
-				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(string-join(node()[not(self::tei:note)], ''), 'fügt')), ' ')" />
+				<xsl:variable name="tok"
+					select="tokenize(normalize-space(substring-after(string-join(node()[not(self::tei:note or
+					self::tei:orig)], ''), 'fügt')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
 						<xsl:choose>
@@ -363,7 +365,8 @@
 				</choice>
 			</xsl:when>
 			<xsl:when test="matches(., '^\w* *\w*gestrichen')
-				and not(contains(., 'über') or contains(., 'Rand') or contains(., 'Zeile'))">
+				and not(contains(., 'über') or contains(., 'Rand') or contains(., 'Zeile')
+				or contains(., 'hinzu'))">
 				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
