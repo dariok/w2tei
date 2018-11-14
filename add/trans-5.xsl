@@ -255,7 +255,8 @@
 					</xsl:when>
 					<xsl:when test="string-length($inter) &lt; 3">
 						<xsl:variable name="wit">
-							<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node(), ''), ',')">
+							<xsl:for-each
+								select="tokenize(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], ''), ',')">
 								<xsl:value-of select="'#' || normalize-space()"/>
 								<xsl:if test="not(position() = last())">
 									<xsl:text> </xsl:text>
@@ -267,6 +268,7 @@
 								<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
 							</xsl:if>
 							<xsl:apply-templates select="tei:orig" mode="norm"/>
+							<xsl:apply-templates select="tei:note" />
 						</add>
 					</xsl:when>
 					<xsl:otherwise>
@@ -393,6 +395,10 @@
 					<xsl:for-each select="$tok">
 						<xsl:choose>
 							<xsl:when test="string-length() > 5" />
+							<xsl:when test="matches(normalize-space(), '^\d')">
+								<xsl:value-of select="'#ZZ'||normalize-space(translate(., ',.', ''))"/>
+								<xsl:text> </xsl:text>
+							</xsl:when>
 							<xsl:otherwise>
 								<xsl:value-of select="'#'||normalize-space(translate(., ',.', ''))"/>
 								<xsl:text> </xsl:text>
@@ -403,7 +409,9 @@
 				
 				<xsl:choose>
 					<xsl:when test="$wit = '' or count(tokenize(normalize-space(tei:orig[1]/preceding-sibling::text()), ' ')) > 3">
-						<wdb:note><xsl:sequence select="node()" /></wdb:note>
+						<wdb:note>
+							<xsl:sequence select="node()" />
+						</wdb:note>
 					</xsl:when>
 					<xsl:otherwise>
 						<rdg>

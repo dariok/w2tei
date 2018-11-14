@@ -77,6 +77,17 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.9: mit note">
+			<x:context>
+				<p>
+					iuditio iusto<note type="crit_app">folgt  <orig>f</orig> a<hi rend="sub">1</hi> <note type="comment">gestrichen</note> </note> factus
+				</p>
+			</x:context>
+			<x:expect label="note übernommen, nicht in @wit">
+				<p>iuditio iusto<add wit="#a1">f<note type="comment">gestrichen</note></add> factus
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T2: app/lem/rdg">
