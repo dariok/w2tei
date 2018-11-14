@@ -555,6 +555,26 @@
 				<p><lb/><add place="margin">Doctor</add> zuhalten</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T9.2: hinzugefügt mit zusätzlichem Text und orig">
+			<x:context>
+				<p>
+					<anchor type="crit_app" xml:id="s22"/>diversis
+					<lb/>temporibus<anchor type="crit_app" xml:id="s22e"/><span type="crit_app" from="#s22"
+						to="#s22e"> <orig>diversis diversis et</orig> a<hi rend="sub">1</hi><wdb:marker
+							xmlns:wdb="https://github.com/dariok/wdbplus"/> hinzugefügt  <orig>precepta</orig> über das zweite <orig>diversis</orig> a<hi rend="sub">2</hi><wdb:marker
+							xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>temporibus</orig> nach dem ersten <orig>diversis</orig> am Rand hinzugefügt a<hi
+							rend="sub">3</hi></span> varia
+				</p>
+			</x:context>
+			<x:expect label="span mit ;">
+				<p>
+					<anchor type="crit_app" xml:id="s22"/>diversis
+					<lb/>temporibus<anchor type="crit_app" xml:id="s22e"/><span type="crit_app" from="#s22"
+						to="#s22e"> <orig>diversis diversis et</orig> a<hi rend="sub">1</hi>;  hinzugefügt  <orig>precepta</orig> über das zweite <orig>diversis</orig> a<hi
+						rend="sub">2</hi>; <orig>temporibus</orig> nach dem ersten <orig>diversis</orig> am Rand hinzugefügt a<hi rend="sub">3</hi></span> varia
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T10: Normalfall">

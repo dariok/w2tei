@@ -276,7 +276,8 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
-			<xsl:when test="contains(., 'hinzugefügt')">
+			<xsl:when test="contains(., 'hinzugefügt')
+				and not(count(tei:orig) > 1)">
 				<xsl:variable name="norm" select="normalize-space()" />
 				<xsl:variable name="tok" select="tokenize(normalize-space(substring-after(string-join(node()[not(self::tei:note)], ''), 'fügt')), ' ')" />
 				<xsl:variable name="wit">
@@ -389,7 +390,7 @@
 						and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
 				</del>
 			</xsl:when>
-			<xsl:when test="tei:orig">
+			<xsl:when test="count(tei:orig) = 1">
 				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')), ' ')" />
 				<xsl:variable name="wit">
 					<xsl:for-each select="$tok">
