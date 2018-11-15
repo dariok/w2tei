@@ -35,6 +35,8 @@
 	
 	<!-- Grobgliederung; 2017-06-05 DK -->
 	<xsl:template match="w:p[hab:isHead(., 1)]">
+		<xsl:text>
+			</xsl:text>
 		<div>
 			<xsl:attribute name="type">
 				<xsl:choose>
@@ -69,6 +71,8 @@
 	<!-- Untergliederung im 1. div; 2017-06-05 DK -->
 	<xsl:template match="w:p[hab:isHead(., 2) and descendant::w:t]">
 		<xsl:variable name="myId" select="generate-id()" />
+		<xsl:text>
+				</xsl:text>
 		<listBibl type="sigla">
 			<xsl:apply-templates select="following-sibling::w:p[hab:isSigle(.)
 				and generate-id(preceding-sibling::w:p[hab:isHead(., 2)][1]) = $myId]"/>
@@ -110,6 +114,8 @@
 				</xsl:choose>
 			</xsl:for-each>
 		</xsl:variable>
+		<xsl:text>
+					</xsl:text>
 		<biblStruct type="imprint">
 			<xsl:attribute name="xml:id" select="normalize-space($idNo)" />
 			<xsl:variable name="elem">
@@ -173,7 +179,7 @@
 					</listBibl>
 					<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
 						$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)
-						[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur') or hab:isHead(., '1')
+						[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur') or wt:starts(., 'Handschriften') or hab:isHead(., '1')
 						or hab:isSigle(.))
 						and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>
 					
@@ -362,6 +368,8 @@
 	<xsl:template match="w:p[hab:isSigle(.)
 		and wt:starts(preceding-sibling::w:p[hab:isHead(., 2)][1], 'Hand')]">
 		<xsl:variable name="myId" select="generate-id()"/>
+		<xsl:text>
+				</xsl:text>
 		<msDesc>
 			<xsl:variable name="desc">
 				<xsl:apply-templates select="w:r[not(hab:isSigle(.))]" mode="eval" />
@@ -633,6 +641,8 @@
 		or wt:is(., 'KSText') ) and not(hab:isSigle(.) or wt:starts(., 'Edition') or
 		wt:starts(., 'Literatur')) and descendant::w:t and string-length(wt:string(.)) &gt; 5]">
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
+		<xsl:text>
+				</xsl:text>
 		<p><xsl:apply-templates select="w:r | w:bookmarkStart" /></p>
 	</xsl:template>
 	
@@ -714,6 +724,8 @@
 			</hab:mark>
 		</xsl:if>
 	</xsl:template>
+	
+	<xsl:template match="w:endnotes" />
 	
 	<xsl:function name="hab:isSigle" as="xs:boolean">
 		<xsl:param name="context" as="node()" />

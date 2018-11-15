@@ -248,8 +248,8 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
-	<x:scenario label="Ü2">
-		<x:scenario label="Beispiel 1">
+	<x:scenario label="T3: Ü2">
+		<x:scenario label="T3.1: Beispiel 1">
 		<x:context>
 			<w:body>
 				<w:p w:rsidR="003E79AF" w:rsidRDefault="003E79AF" w:rsidP="003E79AF">
@@ -1411,131 +1411,19 @@
 			</w:body>
 		</x:context>
 		<!--<x:scenario label="Frühdrucke">-->
-		<x:expect label="listBibl">
+		<x:expect label="listBibl" xml:space="preserve">
 			<div xmlns="http://www.tei-c.org/ns/1.0" type="history_of_the_work">
 				<listBibl type="sigla">
-					<biblStruct type="imprint" xml:id="C">
-						<monogr>
-							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖ tuende. ‖ [TE]</title>
-							<imprint>
-								<pubPlace cert="unknown">
-									<rs type="place">Breslau</rs>
-								</pubPlace>
-								<publisher cert="unknown">
-									<rs type="person">Adam Dyon</rs>
-								</publisher>
-								<date when="1519">1519</date>
-							</imprint>
-							<extent>4°, 4 Bl., Titelbl., A2-A4.</extent>
-						</monogr>
-						<idno type="siglum">C</idno>
-						<note type="copies">
-							<list>
-								<item n="editionsvorlage">
-									<label>BU Wrocław</label>
-									<idno type="signatur">Mf 4956.</idno>
-								</item>
-							</list>
-						</note>
-						<note type="references">
-							<listBibl>
-								<bibl>VD 16 B 6127.</bibl>
-								<bibl>Freys/Barge, Verzeichnis, Nr. 18.</bibl>
-								<bibl>Zorzin, Flugschriftenautor, 13C.</bibl>
-							</listBibl>
-						</note>
-					</biblStruct>
-					<biblStruct type="imprint" xml:id="D">
-						<analytic>
-							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title>
-						</analytic>
-						<monogr>
-							<title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖ Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij ,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ Caroloﬅadij,theologicæ. ‖  ... ‖ [TE]</title>
-							<imprint>
-								<pubPlace cert="unknown">
-									<rs type="place">Leipzig</rs>
-								</pubPlace>
-								<publisher cert="unknown">
-									<rs type="person">Melchior Lotter d. Ä</rs>
-								</publisher>
-								<date when="1519" cert="unknown">1519</date>
-							</imprint>
-							<extent>4°, 6 Bl., Titelbl., A2-A6, Sig. A2<hi rend="super">r</hi>, A3<hi rend="super"
-									>r</hi>.</extent>
-							<biblScope>fol. A5<hi rend="super">v</hi>‒A6<hi rend="super">r</hi>.</biblScope>
-						</monogr>
-						<idno type="siglum">D</idno>
-						<note type="copies">
-							<list>
-								<item n="editionsvorlage">
-									<label>ÖNB Wien</label>
-									<idno type="signatur">11.J.64.</idno>
-									<ptr type="digitalisat"
-										target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/>
-								</item>
-								<item>
-									<label>HAB Wolfenbüttel</label>
-									<idno type="signatur">H 54.4° Helmst. (2).</idno>
-								</item>
-							</list>
-						</note>
-						<note type="references">
-							<listBibl>
-								<bibl>VD 16 E 2832.</bibl>
-								<bibl>Freys/Barge, Verzeichnis, Nr. 19.</bibl>
-								<bibl>Zorzin, Flugschriftenautor, 13aA.</bibl>
-							</listBibl>
-						</note>
-					</biblStruct>
-					<biblStruct type="imprint" xml:id="B">
-						<monogr>
-							<author>Karlstadt, Andreas Bodenstein von</author>
-							<title>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij tuende. ‖ [TE]</title>
-							<imprint>
-								<pubPlace cert="unknown">
-									<rs type="place">Leipzig</rs>
-								</pubPlace>
-								<publisher cert="unknown">
-									<rs type="person">Martin Landsberg</rs>
-								</publisher>
-								<date when="1519">1519</date>
-							</imprint>
-							<extent>4°, 4 Bl., Titelbl., A2-A4, Sign. A2<hi rend="super">r</hi>, A3<hi
-									rend="super">r</hi>.</extent>
-						</monogr>
-						<idno type="siglum">B</idno>
-						<note type="copies">
-							<list>
-								<item n="editionsvorlage">
-									<label>HAB Wolfenbüttel</label>
-									<idno type="signatur">H: H 55.4° Helmst. (6)</idno>
-									<ptr type="digitalisat"
-										target="http://diglib.hab.de/drucke/h-55-4f-helmst-6s/start.htm"/>
-								</item>
-								<item>
-									<label>BSB München</label>
-									<idno type="signatur">Rar. 1953#Beibd.1</idno>
-									<ptr type="digitalisat"
-										target="http://daten.digitale-sammlungen.de/~db/0002/bsb00025776/images/"/>
-								</item>
-							</list>
-						</note>
-						<note type="references">
-							<listBibl>
-								<bibl>VD 16 B 6128.</bibl>
-								<bibl>Freys/Barge, Verzeichnis, Nr. 17.</bibl>
-								<bibl>Zorzin, Flugschriftenautor, 13B.</bibl>
-							</listBibl>
-						</note>
-					</biblStruct>
-				</listBibl>
-			</div>
-		</x:expect>
+					<biblStruct type="imprint" xml:id="C"><monogr><author>Karlstadt, Andreas Bodenstein von</author><title>COncluſiōes ‖ Caroloﬅady contra D. ‖ Johānem Eccum Lip⸗‖ſie xxvij Junij ‖ tuende. ‖ [TE]</title><imprint><pubPlace cert="unknown"><rs type="place">Breslau</rs></pubPlace><publisher cert="unknown"><rs type="person">Adam Dyon</rs></publisher><date when="1519">1519</date></imprint><extent>4°, 4 Bl., Titelbl., A2-A4.</extent></monogr><idno type="siglum">C</idno><note type="copies"><list><item n="editionsvorlage"><label>BU Wrocław</label><idno type="signatur">Mf 4956.</idno></item></list></note><note type="references"><listBibl><bibl>VD 16 B 6127.</bibl><bibl>Freys/Barge, Verzeichnis, Nr. 18.</bibl><bibl>Zorzin, Flugschriftenautor, 13C.</bibl></listBibl></note></biblStruct>
+					<biblStruct type="imprint" xml:id="D"><analytic><author>Karlstadt, Andreas Bodenstein von</author><title>Subſcriptas Concluſiones, Andreas Caroloﬅadius, ad‖uersus dominū Ioannem Eckium defendet Lipsiæ, ‖ die xxvij Iunij.M.D.XIX. ‖</title></analytic><monogr><title>Contenta in hoc Libello. ‖ Eraſmi Roterodami Epiſtola,ad illuſtriſs, ‖ Principē ac Ducē Saxoniæ &amp;c. Fridericū. ‖ Poſitiones Ioannis Eckij ,ſcholasticæ. ‖ Poſitiones Martini Lutherij theologicæ. ‖ Cōcluſiōes Andreæ Caroloﬅadij,theologicæ. ‖  ... ‖ [TE]</title><imprint><pubPlace cert="unknown"><rs type="place">Leipzig</rs></pubPlace><publisher cert="unknown"><rs type="person">Melchior Lotter d. Ä</rs></publisher><date when="1519" cert="unknown">1519</date></imprint><extent>4°, 6 Bl., Titelbl., A2-A6, Sig. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>.</extent><biblScope>fol. A5<hi rend="super">v</hi>‒A6<hi rend="super">r</hi>.</biblScope></monogr><idno type="siglum">D</idno><note type="copies"><list><item n="editionsvorlage"><label>ÖNB Wien</label><idno type="signatur">11.J.64.</idno><ptr type="digitalisat" target="http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ222271808"/></item><item><label>HAB Wolfenbüttel</label><idno type="signatur">H 54.4° Helmst. (2).</idno></item></list></note><note type="references"><listBibl><bibl>VD 16 E 2832.</bibl><bibl>Freys/Barge, Verzeichnis, Nr. 19.</bibl><bibl>Zorzin, Flugschriftenautor, 13aA.</bibl></listBibl></note></biblStruct>
+					<biblStruct type="imprint" xml:id="B"><monogr><author>Karlstadt, Andreas Bodenstein von</author><title
+						>Concluſiones ca‖roloﬅadij contra D. ‖ Johānem Eccum ‖ Lipſie xxvij Ju⸗‖nij tuende. ‖ [TE]</title
+						><imprint><pubPlace cert="unknown"><rs type="place">Leipzig</rs></pubPlace><publisher cert="unknown"><rs type="person">Martin Landsberg</rs></publisher><date when="1519">1519</date></imprint><extent>4°, 4 Bl., Titelbl., A2-A4, Sign. A2<hi rend="super">r</hi>, A3<hi rend="super">r</hi>.</extent></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"><label>HAB Wolfenbüttel</label><idno type="signatur">H: H 55.4° Helmst. (6)</idno><ptr type="digitalisat" target="http://diglib.hab.de/drucke/h-55-4f-helmst-6s/start.htm"/></item><item><label>BSB München</label><idno type="signatur">Rar. 1953#Beibd.1</idno><ptr type="digitalisat"
+						target="http://daten.digitale-sammlungen.de/~db/0002/bsb00025776/images/"/></item></list></note><note type="references"><listBibl><bibl>VD 16 B 6128.</bibl><bibl>Freys/Barge, Verzeichnis, Nr. 17.</bibl><bibl>Zorzin, Flugschriftenautor, 13B.</bibl></listBibl></note></biblStruct
+					></listBibl></div></x:expect>
 		<!--</x:scenario>-->
 	</x:scenario>
-		<x:scenario label="EE 132a">
+		<x:scenario label="T3.2: EE 132a">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="00703482">
@@ -1661,8 +1549,7 @@
 							<w:pStyle w:val="KSText"/>
 						</w:pPr>
 						<w:r w:rsidRPr="00273C38">
-							<w:t>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.
-								a</w:t>
+							<w:t>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a</w:t>
 						</w:r>
 						<w:r w:rsidR="002D1EC0" w:rsidRPr="00273C38">
 							<w:t>.</w:t>
@@ -2262,91 +2149,48 @@
 							<w:t>.</w:t>
 						</w:r>
 					</w:p>
+					<w:endnotes>
+						<w:endnote w:id="2">
+							<w:p w:rsidR="002D1EC0" w:rsidRDefault="002D1EC0" w:rsidP="002D1EC0">
+								<w:pPr>
+									<w:pStyle w:val="EndnoteText"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="EndnoteReference"/>
+									</w:rPr>
+									<w:endnoteRef/>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> Zu Gottschalk s. KGK I.1, Nr. 26, S. 366 und Nr. 58, S. 489.</w:t>
+								</w:r>
+							</w:p>
+						</w:endnote>
+						<w:endnote w:id="3">
+							<w:p w:rsidR="002D1EC0" w:rsidRDefault="002D1EC0" w:rsidP="002D1EC0">
+								<w:pPr>
+									<w:pStyle w:val="EndnoteText"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="EndnoteReference"/>
+									</w:rPr>
+									<w:endnoteRef/>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> Zu weiteren bibliographische Daten s. KGK I.1, Nr. 58, S. 489.</w:t>
+								</w:r>
+							</w:p>
+						</w:endnote>
+					</w:endnotes>
 				</w:body>
-				<w:endnotes>
-					<w:endnote w:id="2">
-						<w:p w:rsidR="002D1EC0" w:rsidRDefault="002D1EC0" w:rsidP="002D1EC0">
-							<w:pPr>
-								<w:pStyle w:val="EndnoteText"/>
-							</w:pPr>
-							<w:r>
-								<w:rPr>
-									<w:rStyle w:val="EndnoteReference"/>
-								</w:rPr>
-								<w:endnoteRef/>
-							</w:r>
-							<w:r>
-								<w:t xml:space="preserve"> Zu Gottschalk s. KGK I.1, Nr. 26, S. 366 und Nr. 58, S. 489.</w:t>
-							</w:r>
-						</w:p>
-					</w:endnote>
-					<w:endnote w:id="3">
-						<w:p w:rsidR="002D1EC0" w:rsidRDefault="002D1EC0" w:rsidP="002D1EC0">
-							<w:pPr>
-								<w:pStyle w:val="EndnoteText"/>
-							</w:pPr>
-							<w:r>
-								<w:rPr>
-									<w:rStyle w:val="EndnoteReference"/>
-								</w:rPr>
-								<w:endnoteRef/>
-							</w:r>
-							<w:r>
-								<w:t xml:space="preserve"> Zu weiteren bibliographische Daten s. KGK I.1, Nr. 58, S. 489.</w:t>
-							</w:r>
-						</w:p>
-					</w:endnote>
-				</w:endnotes>
 			</x:context>
-			<x:expect label="Ausgabe inkl. FN in Anm. und Nachweisen">
-				<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
-					<listBibl type="sigla">
-						<biblStruct type="imprint" xml:id="B">
-							<analytic>
-								<author>Karlstadt, Andreas Bodenstein von</author>
-								<title>Concluſiones duodecim de Legis non fur⸗║tum facies,impletione &amp; teﬅamentorum lega⸗║tione altatium, &amp; miſſarum fundatione.</title>
-							</analytic>
-							<monogr>
-								<author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.
-								a.</author>
-								<title>INSIGNIVM THEOLOGORVM ║ Domini MartiniLutheri, dominiAndree ║ Baroloﬅadij , Philippi melan║thonis &amp; aliorum ║ conclu⸗║ſiones varię, pro diuinæ gratiæ defenſione ║ ac commendatione,contra ſco║laﬅicos &amp; pelagianos ║ diſputate ║ in præ⸗║clara academia. ║ Vvittembergenſi. ║ Lege leor &amp; afficieris verſafacie catalogum ║ inuenies.</title>
-								<imprint>
-									<pubPlace cert="unknown">
-										<rs type="place">Paris</rs>
-									</pubPlace>
-									<publisher cert="unknown">
-										<rs type="person">Pierre Vidoué</rs>
-									</publisher>
-									<date when="1521?" cert="unknown">1521?</date>
-								</imprint>
-								<extent>4°, 18 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>, D<hi rend="super">6</hi>.</extent>
-								<biblScope>fol. D4<hi rend="super">r–v</hi>.</biblScope>
-							</monogr>
-							<idno type="siglum">B</idno>
-							<note type="copies">
-								<list>
-									<item n="editionsvorlage">
-										<label>HAB Wolfenbüttel</label>
-										<idno type="signatur">M: Li 5530 Slg. Hardt (38, 662)</idno>
-										<note xmlns:hab="http://diglib.hab.de">Einziges bekanntes Exemplar; Provenienz: Heino Gottschalk, Abt des Benediktinerklosters Oldenstadt bei Uelzen<note type="footnote">Zu Gottschalk s. KGK I.1, Nr. 26, S. 366 und Nr. 58, S. 489.</note>, mit dessen handschriftlichen Korrekturen<note type="footnote">Zu weiteren bibliographische Daten s. KGK I.1, Nr. 58, S. 489.</note>
-										</note>
-									</item>
-								</list>
-							</note>
-							<note type="references">
-								<listBibl>
-									<bibl>Benzing/Claus, Lutherbibliographie, Nr. 86</bibl>
-									<bibl>Brieger, Thesen, 480.</bibl>
-									<bibl>Hammer, Militia Franciscana 1,55.</bibl>
-									<bibl>Moreau, Inventaire 2, Nr. 2406.</bibl>
-								</listBibl>
-							</note>
-						</biblStruct>
-					</listBibl>
-				</div>
-			</x:expect>
+			<x:expect label="Ausgabe inkl. FN in Anm. und Nachweisen" xml:space="preserve">
+			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
+				<listBibl type="sigla">
+					<biblStruct type="imprint" xml:id="B"><analytic><author>Karlstadt, Andreas Bodenstein von</author><title>Concluſiones duodecim de Legis non fur⸗║tum facies,impletione &amp; teﬅamentorum lega⸗║tione altatium, &amp; miſſarum fundatione.</title></analytic><monogr><author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author><title>INSIGNIVM THEOLOGORVM ║ Domini MartiniLutheri, dominiAndree ║ Baroloﬅadij , Philippi melan║thonis &amp; aliorum ║ conclu⸗║ſiones varię, pro diuinæ gratiæ defenſione ║ ac commendatione,contra ſco║laﬅicos &amp; pelagianos ║ diſputate ║ in præ⸗║clara academia. ║ Vvittembergenſi. ║ Lege leor &amp; afficieris verſafacie catalogum ║ inuenies.</title><imprint><pubPlace cert="unknown"><rs type="place">Paris</rs></pubPlace><publisher cert="unknown"><rs type="person">Pierre Vidoué</rs></publisher><date when="1521?" cert="unknown">1521?</date></imprint><extent>4°, 18 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>, D<hi rend="super">6</hi>.</extent><biblScope>fol. D4<hi rend="super">r–v</hi>.</biblScope></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"><label>HAB Wolfenbüttel</label><idno type="signatur">M: Li 5530 Slg. Hardt (38, 662)</idno><note xmlns:hab="http://diglib.hab.de">Einziges bekanntes Exemplar; Provenienz: Heino Gottschalk, Abt des Benediktinerklosters Oldenstadt bei Uelzen<note type="footnote">Zu Gottschalk s. KGK I.1, Nr. 26, S. 366 und Nr. 58, S. 489.</note>, mit dessen handschriftlichen Korrekturen<note type="footnote">Zu weiteren bibliographische Daten s. KGK I.1, Nr. 58, S. 489.</note></note></item></list></note><note type="references"><listBibl><bibl>Benzing/Claus, Lutherbibliographie, Nr. 86</bibl><bibl>Brieger, Thesen, 480.</bibl><bibl>Hammer, Militia Franciscana 1,55.</bibl><bibl>Moreau, Inventaire 2, Nr. 2406.</bibl></listBibl></note></biblStruct></listBibl></div></x:expect>
 		</x:scenario>
-		<x:scenario label="EE 107">
+		<x:scenario label="T3.3: EE 107">
 			<x:context>
 				<w:body>
 					<w:p w14:paraId="1688D78F" w14:textId="77777777" w:rsidR="0010182F"
@@ -2681,47 +2525,17 @@
 					</w:p>
 				</w:body>
 			</x:context>
-			<x:expect label=".">
-				<div xmlns="http://www.tei-c.org/ns/1.0"
-					xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-					xmlns:tei="http://www.tei-c.org/ns/1.0"
-					type="history_of_the_work">
-					<listBibl type="sigla">
-						<msDesc xml:id="a">
-							<msIdentifier>
-								<altIdentifier type="siglum">
-									<idno>a</idno>
-								</altIdentifier>
-								<repository>FB Gotha</repository>
-								<idno type="signatur">Chart. A 379</idno>
-							</msIdentifier>
-							<msContents>
-								<msItem>
-									<locus>fol. 7r-v</locus>
-								</msItem>
-							</msContents>
-							<physDesc>
-								<p />
-								<handDesc>
-									<handNote>Autograph</handNote>
-								</handDesc>
-							</physDesc>
-						</msDesc>
-					</listBibl>
-					<listBibl type="editions">
-						<bibl>WA.B 1, 501‒502, Nr. 193</bibl>
-						<bibl>Walch<hi rend="super">2</hi> 15, Sp. 1306‒1307</bibl>
-					</listBibl>
-					<listBibl type="literatur">
-						<bibl>Barge, Karlstadt 1, 168‒169</bibl>
-						<bibl>Brecht, Luther 1, 307‒312</bibl>
-					</listBibl>
-				</div>
-			</x:expect>
+			<x:expect label="." xml:space="preserve">
+			<div xmlns="http://www.tei-c.org/ns/1.0"
+				xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+				xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+				xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+				xmlns:tei="http://www.tei-c.org/ns/1.0"
+				type="history_of_the_work">
+				<listBibl type="sigla">
+					<msDesc xml:id="a"><msIdentifier><altIdentifier type="siglum"><idno>a</idno></altIdentifier><repository>FB Gotha</repository><idno type="signatur">Chart. A 379</idno></msIdentifier><msContents><msItem><locus>fol. 7r-v</locus></msItem></msContents><physDesc><p /><handDesc><handNote>Autograph</handNote></handDesc></physDesc></msDesc></listBibl><listBibl type="editions"><bibl>WA.B 1, 501‒502, Nr. 193</bibl><bibl>Walch<hi rend="super">2</hi> 15, Sp. 1306‒1307</bibl></listBibl><listBibl type="literatur"><bibl>Barge, Karlstadt 1, 168‒169</bibl><bibl>Brecht, Luther 1, 307‒312</bibl></listBibl></div></x:expect>
 		</x:scenario>
-		<x:scenario label="EE 138 = 168">
+		<x:scenario label="T3.4: EE 138 = 168">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="0010182F" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="0010182F">
@@ -6746,111 +6560,16 @@
 					</w:sectPr>
 				</w:body>
 			</x:context>
-			<x:expect label=".">
-				<div type="history_of_the_work">
-					<listBibl type="sigla">
-						<biblStruct type="imprint" xml:id="A">
-							<analytic>
-								<author>Karlstadt, Andreas Bodenstein von</author>
-								<title>Trigintatres conclusiones:de tribulatio=║nis et predestinationis Materia.D.A.C.</title>
-							</analytic>
-							<monogr>
-								<author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author>
-								<title>¶Jnſignium theologorū ║ Domini Martini Luthe=║ri/domini Andree Caroloſtadij/║ Philippi Melanthonis et ║aliorū/ cōcluſiōes | varie/ ꝓ diui║ne gratie | defenſione ac cōmendatione:contra ſcola║ſticos et pelagianos:diſputate ║ in preclara academia | Vvittenbergenſi. ║ ✠ ║ ¶Lege lector et afficieris/ verſa facie/ ║ catalogum inuenies. ║ [TE]</title>
-								<imprint>
-									<pubPlace cert="unknown">
-										<rs type="place">Leiden</rs>
-									</pubPlace>
-									<publisher cert="unknown">
-										<rs type="person">Jan Seversz</rs>
-									</publisher>
-									<date when="1520/21" cert="unknown">1520/21</date>
-								</imprint>
-								<extent>4˚, 12 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>. Pag.: 2 (fol. A<hi rend="super">1v</hi>) – 24 (fol. C<hi rend="super">4v</hi>).</extent>
-								<biblScope>fol. C1<hi rend="super">v</hi>– C2<hi rend="super">v</hi>.</biblScope>
-							</monogr>
-							<idno type="siglum">A</idno>
-							<note type="copies">
-								<list>
-									<item n="editionsvorlage">
-										<label>Biblioteca della Fondazione Centro culturale valdese, Torre Pellice</label>
-										<idno type="signatur">A. III. 12.64.</idno>
-									</item>
-									<item>
-										<label>Det Kongelige Bibliotek, Kopenhagen</label>
-										<idno type="signatur">24,35.</idno>
-									</item>
-									<item>
-										<label>Bodleian Library Oxford</label>
-										<idno type="signatur">Tr.Luth. 39 (195).</idno>
-									</item>
-								</list>
-							</note>
-							<note type="references">
-								<listBibl>
-									<bibl>Benzing/Claus, Lutherbibliographie 1, Nr. 85.</bibl>
-									<bibl>Nijhoff/Kronenberg, Nr. 4516.</bibl>
-									<bibl>Zorzin, Flugschriftenautor, Nr. 29A.</bibl>
-									<bibl>Lenardo, Catalogo, Nr. 18 (mit der Druckangabe: „Antwerpen, Wilem Vorsterman, 1521?“).</bibl>
-								</listBibl>
-							</note>
-						</biblStruct>
-						<biblStruct type="imprint" xml:id="B">
-							<analytic>
-								<author>Karlstadt, Andreas Bodenstein von</author>
-								<title>Triginta tres concluſiones: de tribulatio=║nis et prędeſtinationis Materia.D.A.C.</title>
-							</analytic>
-							<monogr>
-								<author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author>
-								<title>INSIGNIVM THEOLOGORVM ║ Domini Martini Lutheri,domini Andree ║ Baroloſtadij , Philippi melan║thonis &amp; aliorum ║ conclu=║ſiones varię, pro diuinæ gratiæ defensione ║ ac commendatione,contra sco║lasticos &amp; pelagianos ║ disputate in præ=║clara  academia. ║ Vvittembergensi. ║ Lege lector &amp; afficieris versafacie catalogum ║ inuenies. ║</title>
-								<imprint>
-									<pubPlace cert="unknown">
-										<rs type="place">Paris</rs>
-									</pubPlace>
-									<publisher cert="unknown">
-										<rs type="person">Pierre Vidoué</rs>
-									</publisher>
-									<date when="nach 1520" cert="unknown">nach 1520</date>
-								</imprint>
-								<extent>4°, 18 Bl., A<hi rend="super">4</hi>–D<hi rend="super">4</hi>, E<hi rend="super">2</hi>.</extent>
-								<biblScope>fol. D1<hi rend="super">v</hi>–D3<hi rend="super">r</hi>.</biblScope>
-							</monogr>
-							<idno type="siglum">B</idno>
-							<note type="copies">
-								<list>
-									<item n="editionsvorlage">
-										<label>HAB Wolfenbüttel</label>
-										<idno type="signatur">M: Li 5530 Slg. Hardt (38, 662).</idno>
-									</item>
-								</list>
-							</note>
-							<note type="references">
-								<listBibl>
-									<bibl>Riederer, Versuch, Nr. 17.</bibl>
-									<bibl>Benzing, Lutherbibliographie 1, Nr. 86.</bibl>
-									<bibl>Moreau, Inventaire 2, Nr. 2460.</bibl>
-									<bibl>Zorzin, Flugschriftenautor, Nr. 29B.</bibl>
-								</listBibl>
-							</note>
-						</biblStruct>
-					</listBibl>
-					<listBibl type="editions">
-						<bibl>Riederer, Disputationen, 66.</bibl>
-						<bibl>Brieger, Thesen, 481–483</bibl>
-					</listBibl>
-					<listBibl type="literatur">
-						<bibl>Jäger, Carlstadt, 172</bibl>
-						<bibl>Fischer, Beichte, 136</bibl>
-						<bibl>Barge, Karlstadt 1, 246-248; 331; 474f.</bibl>
-						<bibl>Bubenheimer, Reliquienfest, Anhang 1 Anm. 200</bibl>
-					</listBibl>
-				</div>
-				<div type="contents">
-					<p>Laut Widmungsvorrede der „Loci tres“ (KGK 139-2) ist die vorliegende Thesenreihe bereits Ende 1520 entstanden und disputiert worden: „Conclusiones igitur anno XX disceptatas mitto […].“ Inhaltlich besteht eine große Nähe zu KGK 127 und 131.</p>
-				</div>
-			</x:expect>
+			<x:expect label="." xml:space="preserve">
+			<div type="history_of_the_work">
+				<listBibl type="sigla">
+					<biblStruct type="imprint" xml:id="A"><analytic><author>Karlstadt, Andreas Bodenstein von</author><title>Trigintatres conclusiones:de tribulatio=║nis et predestinationis Materia.D.A.C.</title></analytic><monogr><author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author><title>¶Jnſignium theologorū ║ Domini Martini Luthe=║ri/domini Andree Caroloſtadij/║ Philippi Melanthonis et ║aliorū/ cōcluſiōes | varie/ ꝓ diui║ne gratie | defenſione ac cōmendatione:contra ſcola║ſticos et pelagianos:diſputate ║ in preclara academia | Vvittenbergenſi. ║ ✠ ║ ¶Lege lector et afficieris/ verſa facie/ ║ catalogum inuenies. ║ [TE]</title><imprint><pubPlace cert="unknown"><rs type="place">Leiden</rs></pubPlace><publisher cert="unknown"><rs type="person">Jan Seversz</rs></publisher><date when="1520/21" cert="unknown">1520/21</date></imprint><extent>4˚, 12 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>. Pag.: 2 (fol. A<hi rend="super">1v</hi>) – 24 (fol. C<hi rend="super">4v</hi>).</extent><biblScope>fol. C1<hi rend="super">v</hi>– C2<hi rend="super">v</hi>.</biblScope></monogr><idno type="siglum">A</idno><note type="copies"><list><item n="editionsvorlage"><label>Biblioteca della Fondazione Centro culturale valdese, Torre Pellice</label><idno type="signatur">A. III. 12.64.</idno></item><item><label>Det Kongelige Bibliotek, Kopenhagen</label><idno type="signatur">24,35.</idno></item><item><label>Bodleian Library Oxford</label><idno type="signatur">Tr.Luth. 39 (195).</idno></item></list></note><note type="references"><listBibl><bibl>Benzing/Claus, Lutherbibliographie 1, Nr. 85.</bibl><bibl>Nijhoff/Kronenberg, Nr. 4516.</bibl><bibl>Zorzin, Flugschriftenautor, Nr. 29A.</bibl><bibl>Lenardo, Catalogo, Nr. 18 (mit der Druckangabe: „Antwerpen, Wilem Vorsterman, 1521?“).</bibl></listBibl></note></biblStruct>
+					<biblStruct type="imprint" xml:id="B"><analytic><author>Karlstadt, Andreas Bodenstein von</author><title>Triginta tres concluſiones: de tribulatio=║nis et prędeſtinationis Materia.D.A.C.</title></analytic><monogr><author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author><title>INSIGNIVM THEOLOGORVM ║ Domini Martini Lutheri,domini Andree ║ Baroloſtadij , Philippi melan║thonis &amp; aliorum ║ conclu=║ſiones varię, pro diuinæ gratiæ defensione ║ ac commendatione,contra sco║lasticos &amp; pelagianos ║ disputate in præ=║clara  academia. ║ Vvittembergensi. ║ Lege lector &amp; afficieris versafacie catalogum ║ inuenies. ║</title><imprint><pubPlace cert="unknown"><rs type="place">Paris</rs></pubPlace><publisher cert="unknown"><rs type="person">Pierre Vidoué</rs></publisher><date when="nach 1520" cert="unknown">nach 1520</date></imprint><extent>4°, 18 Bl., A<hi rend="super">4</hi>–D<hi rend="super">4</hi>, E<hi rend="super">2</hi>.</extent><biblScope>fol. D1<hi rend="super">v</hi>–D3<hi rend="super">r</hi>.</biblScope></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"><label>HAB Wolfenbüttel</label><idno type="signatur">M: Li 5530 Slg. Hardt (38, 662).</idno></item></list></note><note type="references"><listBibl><bibl>Riederer, Versuch, Nr. 17.</bibl><bibl>Benzing, Lutherbibliographie 1, Nr. 86.</bibl><bibl>Moreau, Inventaire 2, Nr. 2460.</bibl><bibl>Zorzin, Flugschriftenautor, Nr. 29B.</bibl></listBibl></note></biblStruct></listBibl><listBibl type="editions"><bibl>Riederer, Disputationen, 66.</bibl><bibl>Brieger, Thesen, 481–483</bibl></listBibl><listBibl type="literatur"><bibl>Jäger, Carlstadt, 172</bibl><bibl>Fischer, Beichte, 136</bibl><bibl>Barge, Karlstadt 1, 246-248; 331; 474f.</bibl><bibl>Bubenheimer, Reliquienfest, Anhang 1 Anm. 200</bibl></listBibl>				</div>
+			<div type="contents">
+				<p>Laut Widmungsvorrede der „Loci tres“ (KGK 139-2) ist die vorliegende Thesenreihe bereits Ende 1520 entstanden und disputiert worden: „Conclusiones igitur anno XX disceptatas mitto […].“ Inhaltlich besteht eine große Nähe zu KGK 127 und 131.</p>
+			</div></x:expect>
 		</x:scenario>
-		<x:scenario label="EE 081 = KGK 136">
+		<x:scenario label="T3.5: EE 081 = KGK 136">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="003E79AF" w:rsidRDefault="003E79AF" w:rsidP="003E79AF">
@@ -8765,45 +8484,14 @@
 					</w:p>
 				</w:body>
 			</x:context>
-			<x:expect label=".">
-				<div type="history_of_the_work">
-					<listBibl type="sigla">
-						<biblStruct type="imprint" xml:id="F">
-							<monogr>
-								<author>Luther, Martin</author>
-								<title>INEPISTOLAMPAV║LI AD GALATAS, ║ F.MARTINI LV=║THERI AVGV=║STINIANI, ║ COMMEN║TARI=║VS. ║ LIBER AD LECTOREM. ║ Plus,ſatis,eſt actum:ſano modo iudice:ſanum ║ Ad ſtomachum facio,cætera turba,vale. ║ Si ſophiæ pupis,mundi dominiſque placerem, ║ Certum eſt,me domino diſplicuiſſe meo. ║ Prima mihi laus eſt , nullis mea ſacra probari, ║ Qui temere a ſacra relligione, tument. ║ Cætera turba, vale , ſola eſt mihi ſpeſque ſaluſque ║ Vel ſoli CHRISTO ,me placuiſſe , VALE. ║ CVM PRIVILEGIO. ║ Nolite timere deos alienos,quia oues ║ meæ,vocem meam audiunt. ║ [TE]</title>
-								<imprint>
-									<pubPlace cert="unknown">
-										<rs type="place">Leipzig</rs>
-									</pubPlace>
-									<publisher>
-										<rs type="person">Melchior Lotter</rs>
-									</publisher>
-									<date when="1519" cert="unknown">1519</date>
-								</imprint>
-								<extent>4°, 82 Bl., A<hi rend="super">6</hi>–Q<hi rend="super">6</hi> (A6<hi rend="super">v </hi>und Q6<hi rend="super">r-v</hi> leer). Fol.: I (fol. B1<hi rend="super">r</hi>) – LXXV (fol. Q5<hi rend="super">r</hi>). – TE.</extent>
-								<biblScope>fol. A2<hi rend="super">r</hi>–A5<hi rend="super">v</hi>.</biblScope>
-							</monogr>
-							<idno type="siglum">F</idno>
-							<note type="copies">
-								<list>
-									<item n="editionsvorlage">Kein Exemplar überliefert, ehemals Sammlung Knaackes</item>
-								</list>
-							</note>
-							<note type="references">
-								<listBibl>
-									<bibl>Benzing/Claus, Lutherbibliographie, Nr. 420.</bibl>
-									<bibl>VD 16 B 5066.</bibl>
-								</listBibl>
-								<p>Titel folgt Druck E, Titelrückseite und fol. A6<hi rend="super">r</hi> dagegen C.</p>
-							</note>
-						</biblStruct>
-					</listBibl>
-				</div>
-				<div type="contents"></div>
-			</x:expect>
+			<x:expect label="." xml:space="preserve">
+			<div type="history_of_the_work">
+				<listBibl type="sigla">
+					<biblStruct type="imprint" xml:id="F"><monogr><author>Luther, Martin</author><title>INEPISTOLAMPAV║LI AD GALATAS, ║ F.MARTINI LV=║THERI AVGV=║STINIANI, ║ COMMEN║TARI=║VS. ║ LIBER AD LECTOREM. ║ Plus,ſatis,eſt actum:ſano modo iudice:ſanum ║ Ad ſtomachum facio,cætera turba,vale. ║ Si ſophiæ pupis,mundi dominiſque placerem, ║ Certum eſt,me domino diſplicuiſſe meo. ║ Prima mihi laus eſt , nullis mea ſacra probari, ║ Qui temere a ſacra relligione, tument. ║ Cætera turba, vale , ſola eſt mihi ſpeſque ſaluſque ║ Vel ſoli CHRISTO ,me placuiſſe , VALE. ║ CVM PRIVILEGIO. ║ Nolite timere deos alienos,quia oues ║ meæ,vocem meam audiunt. ║ [TE]</title><imprint><pubPlace cert="unknown"><rs type="place">Leipzig</rs></pubPlace><publisher><rs type="person">Melchior Lotter</rs></publisher><date when="1519" cert="unknown">1519</date></imprint><extent>4°, 82 Bl., A<hi rend="super">6</hi>–Q<hi rend="super">6</hi> (A6<hi rend="super">v </hi>und Q6<hi rend="super">r-v</hi> leer). Fol.: I (fol. B1<hi rend="super">r</hi>) – LXXV (fol. Q5<hi rend="super">r</hi>). – TE.</extent><biblScope>fol. A2<hi rend="super">r</hi>–A5<hi rend="super">v</hi>.</biblScope></monogr><idno type="siglum">F</idno><note type="copies"><list><item n="editionsvorlage">Kein Exemplar überliefert, ehemals Sammlung Knaackes</item></list></note><note type="references"><listBibl><bibl>Benzing/Claus, Lutherbibliographie, Nr. 420.</bibl><bibl>VD 16 B 5066.</bibl></listBibl><p>Titel folgt Druck E, Titelrückseite und fol. A6<hi rend="super">r</hi> dagegen C.</p></note></biblStruct>	</listBibl>
+			</div>
+			<div type="contents"></div></x:expect>
 		</x:scenario>
-		<x:scenario label="EE 101">
+		<x:scenario label="T3.6: EE 101">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="004C6DB6" w:rsidRPr="004C6DB6" w:rsidRDefault="004C6DB6" w:rsidP="001B01E0">
@@ -8937,33 +8625,12 @@
 					</w:p>
 				</w:body>
 			</x:context>
-			<x:expect label="Hochstellung in fol.-Angabe">
-				<div type="history_of_the_work">
-					<listBibl type="sigla">
-						<msDesc xml:id="a">
-							<msIdentifier>
-								<altIdentifier type="siglum">
-									<idno>a</idno>
-								</altIdentifier>
-								<repository>Sächsisches Staatsarchiv Hauptstaatsarchiv Dresden</repository>
-								<idno type="signatur">10024 Geheimer Rat</idno>
-							</msIdentifier>
-							<msContents>
-								<msItem>
-									<locus>fol. 48<hi rend="super">a</hi><hi rend="super">/b</hi></locus>
-								</msItem>
-							</msContents>
-							<physDesc>
-								<handDesc>
-									<handNote>Stempel, nach alter handschriftlicher Foliierung fol. 33<hi rend="super">a/b</hi></handNote>
-								</handDesc>
-							</physDesc>
-						</msDesc>
-					</listBibl>
-				</div>
-			</x:expect>
+			<x:expect label="Hochstellung in fol.-Angabe" xml:space="preserve">
+			<div type="history_of_the_work">
+				<listBibl type="sigla">
+					<msDesc xml:id="a"><msIdentifier><altIdentifier type="siglum"><idno>a</idno></altIdentifier><repository>Sächsisches Staatsarchiv Hauptstaatsarchiv Dresden</repository><idno type="signatur">10024 Geheimer Rat</idno></msIdentifier><msContents><msItem><locus>fol. 48<hi rend="super">a</hi><hi rend="super">/b</hi></locus></msItem></msContents><physDesc><handDesc><handNote>Stempel, nach alter handschriftlicher Foliierung fol. 33<hi rend="super">a/b</hi></handNote></handDesc></physDesc></msDesc></listBibl></div></x:expect>
 		</x:scenario>
-		<x:scenario label="EE092, H">
+		<x:scenario label="T3.7: EE092, H">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
@@ -10265,98 +9932,22 @@
 					</w:p>
 				</w:body>
 			</x:context>
-			<x:expect label="zusammengesetzte, passende Anmerkungen">
-				<div xmlns:pkg="http://expath.org/ns/pkg"
-					xmlns:impl="urn:x-xspec:compile:xslt:impl"
-					xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-					xmlns:tei="http://www.tei-c.org/ns/1.0"
-					xmlns="http://www.tei-c.org/ns/1.0"
-					type="history_of_the_work">
-					<listBibl type="sigla">
-						<biblStruct type="imprint"
-							xml:id="H">
-							<analytic>
-								<author>Karlstadt, Andreas Bodenstein von</author>
-								<title>Subſcriptas Concluſiones,Andreas Caroloﬅadius,aduersus domi⸗‖num Ioannem Eccium defendet Lipsiæ ,die xxvij. ‖ Iunij.M.D.XIX. ‖</title>
-							</analytic>
-							<monogr>
-								<author>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</author>
-								<title>Diſputatio ‖ excellentium.D.doctorū Iohannis Eccij &amp; ‖ Andreę Caroloﬅadij q̄ cepta eſt Lipsię ‖ XXVII.Iunij.AN.M.D.XIX. ‖ Diſputatio ſecunda.D.Doorū Iohānis ‖ Eccij &amp; Andreę Caroloﬅadij q̄ cepit ‖ XV.Iulij. ‖ Diſputatio eiuſdem.D.Iohannis Eccij &amp; ‖ D.Martini Lutheri Auguﬅiniani q̄ ǁ cepit.IIII.Iulij. ‖ </title>
-								<imprint>
-									<pubPlace cert="unknown">
-										<rs type="place">Erfurt</rs>
-									</pubPlace>
-									<publisher cert="unknown">
-										<rs type="person">Matthes Maler</rs>
-									</publisher>
-									<date when="1519"
-										cert="unknown">1519</date>
-								</imprint>
-								<extent>4°, 62 Bl., A<hi rend="super">6</hi>, B<hi rend="super">4</hi>‒P<hi rend="super">4</hi>.</extent>
-								<biblScope>fol. A1<hi rend="super">v</hi>‒D4<hi rend="super">v</hi> und P3<hi rend="super">v</hi>‒P4<hi rend="super">r</hi>.</biblScope>
-							</monogr>
-							<idno type="siglum">H</idno>
-							<note type="copies">
-								<list>
-									<item n="editionsvorlage">
-										<label>HAB Wolfenbüttel</label>
-										<idno type="signatur">H: H 65.4° Helmst. (4).</idno>
-									</item>
-									<item>
-										<label>MKB Goslar</label>
-										<idno type="signatur">349,4</idno>
-										<note xmlns:hab="http://diglib.hab.de">aus dem Besitz von Andreas Gronewalt</note>
-									</item>
-									<item>
-										<label>UB Leipzig</label>
-										<idno type="signatur">Libri.sep.2379</idno>
-										<note xmlns:hab="http://diglib.hab.de">auf dem Titelblatt, Widmung an Georg Spalatin von der Hand Johannes Langs</note>
-									</item>
-									<item>
-										<label>ULB Münster</label>
-										<idno type="signatur">COLL.ERH. 313.</idno>
-									</item>
-									<item>
-										<label>BSB München</label>
-										<idno type="signatur">Res/4 H.ref. 258.</idno>
-									</item>
-									<item>
-										<label>UB Paderborn</label>
-										<idno type="signatur">Erzbischöfliche Akademische Bibliothek Th. 6116(19)</idno>
-										<note xmlns:hab="http://diglib.hab.de">aus dem Besitz von Otto Beckmann</note>
-									</item>
-									<item>
-										<label>ÖNB Wien</label>
-										<idno type="signatur">*35.R.200.</idno>
-									</item>
-								</list>
-							</note>
-							<note type="references">
-								<listBibl>
-									<bibl>Freys/Barge, Verzeichnis, Nr. 23.</bibl>
-									<bibl>Benzing, Lutherbibliographie, Nr. 407.</bibl>
-									<bibl>Zorzin, Flugschriftenautor, 15.</bibl>
-									<bibl>VD16 E 320.</bibl>
-								</listBibl>
-							</note>
-						</biblStruct>
-					</listBibl>
-					<listBibl type="editions">
-						<bibl>Löscher, Reformations-Acta 3, 284‒291</bibl>
-						<bibl>Eck, Briefwechsel, Nr. 84 (nur Karlstadts Brief an Eck)</bibl>
-						<bibl>Walch<hi rend="super">2</hi> 15, Sp. 825‒830</bibl>
-					</listBibl>
-					<listBibl type="literatur">
-						<bibl>Barge, Karlstadt 1, 144‒146</bibl>
-					</listBibl>
-				</div>
-			</x:expect>
-		</x:scenario>
+			<x:expect label="zusammengesetzte, passende Anmerkungen" xml:space="preserve">
+			<div xmlns:pkg="http://expath.org/ns/pkg"
+				xmlns:impl="urn:x-xspec:compile:xslt:impl"
+				xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+				xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+				xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+				xmlns:tei="http://www.tei-c.org/ns/1.0"
+				xmlns="http://www.tei-c.org/ns/1.0"
+				type="history_of_the_work">
+				<listBibl type="sigla">
+					<biblStruct type="imprint" xml:id="H"><analytic><author>Karlstadt, Andreas Bodenstein von</author><title
+>Subſcriptas Concluſiones,Andreas Caroloﬅadius,aduersus domi⸗‖num Ioannem Eccium defendet Lipsiæ ,die xxvij. ‖ Iunij.M.D.XIX. ‖</title></analytic><monogr><author>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</author><title>Diſputatio ‖ excellentium.D.doctorū Iohannis Eccij &amp; ‖ Andreę Caroloﬅadij q̄ cepta eſt Lipsię ‖ XXVII.Iunij.AN.M.D.XIX. ‖ Diſputatio ſecunda.D.Doorū Iohānis ‖ Eccij &amp; Andreę Caroloﬅadij q̄ cepit ‖ XV.Iulij. ‖ Diſputatio eiuſdem.D.Iohannis Eccij &amp; ‖ D.Martini Lutheri Auguﬅiniani q̄ ǁ cepit.IIII.Iulij. ‖ </title><imprint><pubPlace cert="unknown"><rs type="place">Erfurt</rs></pubPlace><publisher cert="unknown"><rs type="person">Matthes Maler</rs></publisher><date when="1519" cert="unknown">1519</date></imprint><extent>4°, 62 Bl., A<hi rend="super">6</hi>, B<hi rend="super">4</hi>‒P<hi rend="super">4</hi>.</extent><biblScope>fol. A1<hi rend="super">v</hi>‒D4<hi rend="super">v</hi> und P3<hi rend="super">v</hi>‒P4<hi rend="super">r</hi>.</biblScope></monogr><idno type="siglum">H</idno><note type="copies"><list><item n="editionsvorlage"><label>HAB Wolfenbüttel</label><idno type="signatur">H: H 65.4° Helmst. (4).</idno></item><item><label>MKB Goslar</label><idno type="signatur">349,4</idno><note xmlns:hab="http://diglib.hab.de">aus dem Besitz von Andreas Gronewalt</note></item><item><label>UB Leipzig</label><idno type="signatur">Libri.sep.2379</idno><note xmlns:hab="http://diglib.hab.de">auf dem Titelblatt, Widmung an Georg Spalatin von der Hand Johannes Langs</note></item><item><label>ULB Münster</label><idno type="signatur">COLL.ERH. 313.</idno></item><item><label>BSB München</label><idno type="signatur">Res/4 H.ref. 258.</idno></item><item><label>UB Paderborn</label><idno type="signatur">Erzbischöfliche Akademische Bibliothek Th. 6116(19)</idno><note xmlns:hab="http://diglib.hab.de">aus dem Besitz von Otto Beckmann</note></item><item><label>ÖNB Wien</label><idno type="signatur">*35.R.200.</idno></item></list></note><note type="references"><listBibl><bibl>Freys/Barge, Verzeichnis, Nr. 23.</bibl><bibl>Benzing, Lutherbibliographie, Nr. 407.</bibl><bibl>Zorzin, Flugschriftenautor, 15.</bibl><bibl>VD16 E 320.</bibl></listBibl></note></biblStruct></listBibl>
+				<listBibl type="editions"><bibl>Löscher, Reformations-Acta 3, 284‒291</bibl><bibl>Eck, Briefwechsel, Nr. 84 (nur Karlstadts Brief an Eck)</bibl><bibl>Walch<hi rend="super">2</hi> 15, Sp. 825‒830</bibl></listBibl><listBibl type="literatur"><bibl>Barge, Karlstadt 1, 144‒146</bibl></listBibl></div></x:expect>		</x:scenario>
 	</x:scenario>
-	<x:scenario label="ms">
-		<x:scenario label="EE 100">
+	<x:scenario label="T4: ms">
+		<x:scenario label="T4.1: EE 100">
 		<x:context>
 			<w:body>
 				<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="00703482">
@@ -10430,37 +10021,16 @@
 				</w:p>
 			</w:body>
 		</x:context>
-		<x:expect label="formatiert">
+		<x:expect label="formatiert" xml:space="preserve">
 			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
 				<listBibl xmlns:pkg="http://expath.org/ns/pkg" xmlns:impl="urn:x-xspec:compile:xslt:impl"
 					xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
 					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 					xmlns:tei="http://www.tei-c.org/ns/1.0" type="sigla">
-					<msDesc xml:id="A">
-						<msIdentifier>
-							<altIdentifier type="siglum">
-								<idno>A</idno>
-							</altIdentifier>
-							<repository>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden</repository>
-							<idno type="signatur">10004 Kopiale, Nr. 129</idno>
-						</msIdentifier>
-						<msContents>
-							<msItem>
-								<locus>Bl. 12a/b</locus>
-							</msItem>
-						</msContents>
-						<physDesc>
-							<handDesc>
-								<handNote>Stempel, nach alter handschriftlicher Foliierung Bl. 6a/b</handNote>
-							</handDesc>
-						</physDesc>
-					</msDesc>
-				</listBibl>
-			</div>
-		</x:expect>
+<msDesc xml:id="A"><msIdentifier><altIdentifier type="siglum"><idno>A</idno></altIdentifier><repository>Sächsisches Staatsarchiv, Hauptstaatsarchiv Dresden</repository><idno type="signatur">10004 Kopiale, Nr. 129</idno></msIdentifier><msContents><msItem><locus>Bl. 12a/b</locus></msItem></msContents><physDesc><handDesc><handNote>Stempel, nach alter handschriftlicher Foliierung Bl. 6a/b</handNote></handDesc></physDesc></msDesc></listBibl></div></x:expect>
 		</x:scenario>
-		<x:scenario label="EE 107">
+		<x:scenario label="T4.2: EE 107">
 			<x:context>
 				<w:body>
 					<w:p w14:paraId="1688D78F" w14:textId="77777777" w:rsidR="0010182F"
@@ -10823,48 +10393,17 @@
 					</w:comment>
 				</w:comments>
 			</x:context>
-			<x:expect label="Link zum Digitalisat">
-				<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
-					<listBibl type="sigla">
-						<msDesc xml:id="a">
-							<msIdentifier>
-								<altIdentifier type="siglum">
-									<idno>a</idno>
-								</altIdentifier>
-								<repository>FB Gotha</repository>
-								<idno type="signatur">Chart. A 379</idno>
-							</msIdentifier>
-							<msContents>
-								<msItem>
-									<locus>fol. 7r-v</locus>
-								</msItem>
-							</msContents>
-							<physDesc>
-								<p>
-									<ptr type="digitalisat"
-										target="https://archive.thulb.uni-jena.de/ufb/receive/ufb_cbu_00005372"/>
-								</p>
-								<handDesc>
-									<handNote>Autograph</handNote>
-								</handDesc>
-							</physDesc>
-						</msDesc>
-					</listBibl>
-					<listBibl type="editions">
-						<bibl>WA.B 1, 501‒502, Nr. 193</bibl>
-						<bibl>Walch<hi rend="super">2</hi> 15, Sp. 1306‒1307</bibl>
-					</listBibl>
-					<listBibl type="literatur">
-						<bibl>Barge, Karlstadt 1, 168‒169</bibl>
-						<bibl>Brecht, Luther 1, 307‒312</bibl>
-					</listBibl>
-				</div>
-			</x:expect>
+			<x:expect label="Link zum Digitalisat" xml:space="preserve">
+			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
+				<listBibl type="sigla">
+					<msDesc xml:id="a"><msIdentifier><altIdentifier type="siglum"><idno>a</idno></altIdentifier><repository>FB Gotha</repository><idno type="signatur">Chart. A 379</idno></msIdentifier><msContents><msItem><locus>fol. 7r-v</locus></msItem></msContents><physDesc><p
+					><ptr type="digitalisat" target="https://archive.thulb.uni-jena.de/ufb/receive/ufb_cbu_00005372"/></p><handDesc><handNote>Autograph</handNote></handDesc></physDesc></msDesc></listBibl>
+				<listBibl type="editions"><bibl>WA.B 1, 501‒502, Nr. 193</bibl><bibl>Walch<hi rend="super">2</hi> 15, Sp. 1306‒1307</bibl></listBibl><listBibl type="literatur"><bibl>Barge, Karlstadt 1, 168‒169</bibl><bibl>Brecht, Luther 1, 307‒312</bibl></listBibl></div></x:expect>
 		</x:scenario>
 	</x:scenario>
 	<!-- neu ab 2017-08-08 DK -->
-	<x:scenario label="Ausgabe ab 1. Überschrift">
-		<x:scenario label="verschollene mit Referenz (k. Sigle, 1 Abs., Lit.) o. Hinw.">
+	<x:scenario label="T5: Ausgabe ab 1. Überschrift">
+		<x:scenario label="T5.1: verschollene mit Referenz (k. Sigle, 1 Abs., Lit.) o. Hinw.">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="004C6DB6" w:rsidRDefault="00061D06" w:rsidP="00C87A59">
@@ -10943,21 +10482,15 @@
 					</w:p>
 				</w:body>
 			</x:context>
-			<x:expect label="p mit Text und listBibl">
-				<div xmlns="http://www.tei-c.org/ns/1.0"
-					xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-					xmlns:tei="http://www.tei-c.org/ns/1.0" type="reference">
-					<p>Brief Karlstadts vom 3. April 1519 an Spalatin: <hi style="font-style: italic;">„Praeter illa putavi nuper in Concione quadam“; „Ego typographo humeros hos supposui.“ </hi>(EE 90 [=Nr. 113]).</p>
-					<listBibl type="literatur">
-						<bibl>Bubenheimer, Karlstadt liest Tauler</bibl>
-						<bibl>Zorzin, Flugschriftenautor, 225.</bibl>
-					</listBibl>
-				</div>
-			</x:expect>
+			<x:expect label="p mit Text und listBibl" xml:space="preserve">
+			<div xmlns="http://www.tei-c.org/ns/1.0"
+				xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+				xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+				xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+				xmlns:tei="http://www.tei-c.org/ns/1.0" type="reference">
+				<p>Brief Karlstadts vom 3. April 1519 an Spalatin: <hi style="font-style: italic;">„Praeter illa putavi nuper in Concione quadam“; „Ego typographo humeros hos supposui.“ </hi>(EE 90 [=Nr. 113]).</p><listBibl type="literatur"><bibl>Bubenheimer, Karlstadt liest Tauler</bibl><bibl>Zorzin, Flugschriftenautor, 225.</bibl></listBibl></div></x:expect>
 		</x:scenario>
-		<x:scenario label="verschollene mit Referenz (k. Sigle, 2 Abs., k. Lit.) o. Hinw.">
+		<x:scenario label="T5.2: verschollene mit Referenz (k. Sigle, 2 Abs., k. Lit.) o. Hinw.">
 			<x:context>
 				<w:body>
 					<w:p w14:paraId="0FB06673" w14:textId="50695BB9" w:rsidR="00CE2F47"
@@ -11006,19 +10539,17 @@
 					</w:p>
 				</w:body>
 			</x:context>
-			<x:expect label="2 Absätze">
-				<div type="reference" xmlns="http://www.tei-c.org/ns/1.0">
-					<p>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den
+			<x:expect label="2 Absätze" xml:space="preserve">
+			<div type="reference" xmlns="http://www.tei-c.org/ns/1.0">
+				<p>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den
 						dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“ hinterlassen
 						hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin keine
 						Rückmeldung erhalten; er erwähnt ihn und schreibt Spalatin erneut am 6. Mai.</p>
-					<p>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.)
+				<p>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.)
 						der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6. Mai eine
-						(verschollene) Antwort darauf von Karlstadts (EE 93B).</p>
-				</div>
-			</x:expect>
+						(verschollene) Antwort darauf von Karlstadts (EE 93B).</p></div></x:expect>
 		</x:scenario>
-		<x:scenario label="versch. m. Referenz (k. Sigle, 1 Abs., Lit) und Hinweisen">
+		<x:scenario label="T5.3: versch. m. Referenz (k. Sigle, 1 Abs., Lit) und Hinweisen">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="00061D06" w:rsidRPr="0049423F" w:rsidRDefault="00061D06" w:rsidP="00BA7CCD">
@@ -11221,16 +10752,16 @@
 					</w:sectPr>
 				</w:body>
 			</x:context>
-			<x:expect label="1. div mit. Text und Lit. o. Sigle; 2. div mit Text">
-				<div type="reference" xmlns="http://www.tei-c.org/ns/1.0"><p>Brief Karlstadts vom 3. April 1519 an Spalatin: „Praeter illa putavi nuper in
-								Concione quadam“; „Ego typographo humeros hos supposui.“ (EE 90 [=Nr. 113]).</p>
-					<listBibl type="literatur"><bibl>Bubenheimer, Karlstadt liest Tauler</bibl><bibl>Zorzin, Flugschriftenautor, 225.</bibl></listBibl></div>
-				<div type="evidence" xmlns="http://www.tei-c.org/ns/1.0"><p>Auf Spalatins Frage, ob kirchliche Vorschriften in gleichem Maße verpflichtend
+			<x:expect label="1. div mit. Text und Lit. o. Sigle; 2. div mit Text" xml:space="preserve">
+			<div type="reference" xmlns="http://www.tei-c.org/ns/1.0">
+				<p>Brief Karlstadts vom 3. April 1519 an Spalatin: „Praeter illa putavi nuper in
+								Concione quadam“; „Ego typographo humeros hos supposui.“ (EE 90 [=Nr. 113]).</p><listBibl type="literatur"><bibl>Bubenheimer, Karlstadt liest Tauler</bibl><bibl>Zorzin, Flugschriftenautor, 225.</bibl></listBibl></div>
+			<div type="evidence" xmlns="http://www.tei-c.org/ns/1.0">
+				<p>Auf Spalatins Frage, ob kirchliche Vorschriften in gleichem Maße verpflichtend
 								seien wie göttliche Gebote, antwortete ihm Karlstadt Ende März 1519 in einem
-								ausführlichen Brief (EE 90 [= Nr. 113]). Darin erwähnt Karlstadt, dass er „nuper in Concione quadam“ [neulich in einer gewissen Predigt] diese Thematik reflektiert habe, und dem Drucker eine Schrift „zugeschoben“ habe, die das Thema behandelt.</p></div>
-			</x:expect>
+								ausführlichen Brief (EE 90 [= Nr. 113]). Darin erwähnt Karlstadt, dass er „nuper in Concione quadam“ [neulich in einer gewissen Predigt] diese Thematik reflektiert habe, und dem Drucker eine Schrift „zugeschoben“ habe, die das Thema behandelt.</p></div></x:expect>
 		</x:scenario>
-		<x:scenario label="EE 110: Druck mit Kommentar">
+		<x:scenario label="T5.4: EE 110: Druck mit Kommentar">
 			<x:context>
 				<w:body>
 					<w:p w:rsidR="00CE2F47" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">
@@ -14049,111 +13580,15 @@
 					</w:p>
 				</w:body>
 			</x:context>
-			<x:expect label="2 bibl und ein p">
-				<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
-					<listBibl type="sigla">
-						<biblStruct type="imprint" xml:id="A">
-							<monogr>
-								<author>Karlstadt, Andreas Bodenstein von</author>
-								<title>EPISTOLA ANDREĘ CAROLOSTADII ║ ADVERSVS INEPTAM ET RIDI/║CVLAM INVENTIONEM IO/ ║ ANNIS ECKII ARGVTATO ║ RIS, QVI DIXIT,LIP/║SIAE, CVM VR/║GERET/║VR. ║ OPVS BONVM ESSE A DEO TOTVM, ║ SED NON TOTALITER. ║ ... ║ [Am Ende:] IMPRESSVM VVITTENBERGAE ║ PER IOAN: GRVNENBERGIVM. ║ ANNO SALVTIS M. D. XIX. ║</title>
-								<imprint>
-									<pubPlace>
-										<rs type="place">Wittenberg</rs>
-									</pubPlace>
-									<publisher>
-										<rs type="person">Johannes Rhau-Grunenberg</rs>
-									</publisher>
-									<date when="1519">1519</date>
-								</imprint>
-								<extent>4°, 18 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>, D<hi rend="super">6</hi>.</extent>
-							</monogr>
-							<idno type="siglum">A</idno>
-							<note type="copies">
-								<list>
-									<item n="editionsvorlage"><label>[A<hi
-										rend="sub">L</hi>] UB Leipzig</label>
-										<idno type="signatur">Lib.sep.1960at.</idno>
-									</item>
-									<item>
-										<label>[A<hi rend="sub">Br</hi>] KB St. Gotthardt Brandenburg</label>
-										<idno type="signatur">B 4, 14, 6.</idno>
-									</item>
-									<item>
-										<label>[A<hi rend="sub">1</hi>] Concordia Seminary St. Louis</label>
-										<idno type="signatur">L 270.6 K (3).</idno>
-									</item>
-									<item>
-										<label>[A<hi rend="sub">3</hi>] BPS Wittenberg</label>
-										<idno type="signatur">LC 708,6.</idno>
-									</item>
-									<item>
-										<label>[A<hi rend="sub">2</hi> <hi rend="sub">-Wo</hi>] HAB Wolfenbüttel</label>
-										<idno type="signatur">A: 112.4 Theol. (16).</idno>
-									</item>
-									<item>
-										<label>[A<hi rend="sub">3</hi> <hi rend="sub">-Wo</hi>] Ebd.</label>
-										<idno type="signatur">H: 55.4 Helmst. (3)</idno>
-									</item>
-								</list>
-							</note>
-							<note type="references">
-								<listBibl>
-									<bibl>Riederer, Versuch, Nr. 16.</bibl>
-									<bibl>Freys/Barge, Verzeichnis, Nr. 24.</bibl>
-									<bibl>Zorzin, Flugschriftenautor, Nr. 14A.</bibl>
-									<bibl>VD 16 B 6154.</bibl>
-								</listBibl>
-								<p>Die Exemplare aus Leipzig und Brandenburg enthalten handschriftliche Korrekturen und autographe Widmungen an Georg Spalatin (A<hi rend="sub">L</hi>: „D. Georgio Spalatino patrono optimo | A Carolo. D D“) bzw. Heinrich Tulken (A<hi rend="sub" >BR</hi>: „Charissimo fratri Hermanno Tulichio | homini eruditionis multę | et exussi
-								iudicij | Andreas Carolo | D D“). Der Druck ist in vier Varianten ausgegangen, die Korrekturen erfolgten augenscheinlich im Satz. A<hi rend="sub" >1</hi> ist ein fehlerhafter Druck. Fol. A1<hi rend="super">v</hi> Z. 9 setzt ein mit ausgelassenem Buchstaben: „olostadius”; fol. A1<hi rend="super">v</hi> Z. 22 wurde die Wendung nicht in den Genetiv Plural gesetzt: „arbitror ꝓnūctiationē”. Die Blattsignatur von fol. D2<hi rend="super">r</hi> fehlt. Das einzig bekannte Exemplar dieses Typs befindet sich in St. Louis (A<hi rend="sub">1</hi>), dessen Titelblatt eine handschriftliche Widmung an Paul Lindenau aufweist. Bei Typ A<hi rend="sub">2</hi> ist der erste Fehler auf fol. A1<hi rend="super">v</hi> korrigiert, der zweite in „arbitror, ꝓnūctiationē” verschlimmbessert, die Blattsignatur „Dij“ wurde noch nicht gesetzt (das erste Wolfenbütteler Exemplar). Typ A<hi rend="sub">3</hi> verbessert beide Fehler auf fol. A1v, doch noch immer fehlt die Blattsignatur „Dij“. Der verbesserte Druck A, dem die Edition folgt und dem sowohl das Leipziger (A<hi rend="sub">L</hi>) als auch das Brandenburger Exemplar (A<hi rend="sub">L</hi>) zugehört, korrigiert diese Druckfehler: fol. A1<hi rend="super">v</hi> Z. 9: “rolostadius”; A1<hi rend="super">v</hi> Z. 22: “arbitrorū ꝓnūctiationē”; die Blattsignatur „Dij“ ist gesetzt. Zudem ist Zeile 9 auf fol. A1<hi rend="super">v</hi> gegenüber Typ A<hi rend="sub">1</hi> leicht nach rechts verschoben. Beide Wolfenbütteler Exemplare sind reich glossiert; das dem Typus A<hi rend="sub">3</hi> zugehörige trägt eine handschriftliche Widmung an Magister Balthasar (Predicator).</p> 							</note>
-						</biblStruct>
-						<biblStruct type="imprint" xml:id="B">
-							<monogr>
-								<author>Karlstadt, Andreas Bodenstein von</author>
- 								<title>Epistola ║ Andree Carolo=║STADII ADVER=║sus ineptam &amp; ri=║diculā inuen=║tionem ║ Ioannis Eckij ║ argutatoris, qui dix║it Lipsiae, cū vrgeretur ║ ¶ Opus bonum esse a deo ║ totum , sed non ║ totaliter. ║ [TE]</title>
-								<imprint>
-									<pubPlace cert="unknown">
-										<rs type="place">Leipzig</rs>
-									</pubPlace>
-									<publisher cert="unknown">
-										<rs type="person">Valentin Schumann</rs>
-									</publisher>
-									<date when="1519" cert="unknown">1519</date>
-								</imprint>
-								<extent>4°, 16 Bl., A<hi rend="super">6</hi>, B<hi rend="super">4</hi>, C<hi rend="super">6</hi> (fol. C<hi rend="super">6</hi> leer). – TE.</extent>
-							</monogr>
-							<idno type="siglum">B</idno>
-							<note type="copies">
-								<list>
-									<item n="editionsvorlage">
-										<label>HAB Wolfenbüttel</label>
-										<idno type="signatur">H: Yv 143.8 Helmst. (5).</idno>
-									</item>
-									<item>
-										<label>BSB München</label>
-										<idno type="signatur">Res/4 Polem. 3340,18</idno>
-									</item>
-									<item>
-										<label>ÖNB Wien</label>
-										<idno type="signatur">20.Dd.1237.</idno>
-									</item>
-								</list>
-							</note>
-							<note type="references">
-								<listBibl>
-									<bibl>Freys/Barge, Verzeichnis, Nr. 25.</bibl>
-									<bibl>Zorzin, Flugschriftenautor, Nr. 14B.</bibl>
-									<bibl>VD 16 B 6153.</bibl>
-								</listBibl>
-							</note>
-						</biblStruct>
-					</listBibl>
-					<listBibl type="literatur">
-						<bibl>Jäger, Carlstadt, 59f.</bibl>
-						<bibl>Barge, Karlstadt 1, 168–172</bibl>
-					</listBibl>
-				</div>
-				<div type="contents" />	
-			</x:expect>
+			<x:expect label="2 bibl und ein p" xml:space="preserve">
+			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
+				<listBibl type="sigla">
+					<biblStruct type="imprint" xml:id="A"><monogr><author>Karlstadt, Andreas Bodenstein von</author><title>EPISTOLA ANDREĘ CAROLOSTADII ║ ADVERSVS INEPTAM ET RIDI/║CVLAM INVENTIONEM IO/ ║ ANNIS ECKII ARGVTATO ║ RIS, QVI DIXIT,LIP/║SIAE, CVM VR/║GERET/║VR. ║ OPVS BONVM ESSE A DEO TOTVM, ║ SED NON TOTALITER. ║ ... ║ [Am Ende:] IMPRESSVM VVITTENBERGAE ║ PER IOAN: GRVNENBERGIVM. ║ ANNO SALVTIS M. D. XIX. ║</title><imprint><pubPlace><rs type="place">Wittenberg</rs></pubPlace><publisher><rs type="person">Johannes Rhau-Grunenberg</rs></publisher><date when="1519">1519</date></imprint><extent>4°, 18 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>, D<hi rend="super">6</hi>.</extent></monogr><idno type="siglum">A</idno><note type="copies"><list><item n="editionsvorlage"><label
+						>[A<hi rend="sub">L</hi>] UB Leipzig</label><idno type="signatur">Lib.sep.1960at.</idno></item><item><label>[A<hi rend="sub">Br</hi>] KB St. Gotthardt Brandenburg</label><idno type="signatur">B 4, 14, 6.</idno></item><item><label>[A<hi rend="sub">1</hi>] Concordia Seminary St. Louis</label><idno type="signatur">L 270.6 K (3).</idno></item><item><label>[A<hi rend="sub">3</hi>] BPS Wittenberg</label><idno type="signatur">LC 708,6.</idno></item><item><label>[A<hi rend="sub">2</hi><hi rend="sub">-Wo</hi>] HAB Wolfenbüttel</label><idno type="signatur">A: 112.4 Theol. (16).</idno></item><item><label>[A<hi rend="sub">3</hi><hi rend="sub">-Wo</hi>] Ebd.</label><idno type="signatur">H: 55.4 Helmst. (3)</idno></item></list></note><note type="references"><listBibl><bibl>Riederer, Versuch, Nr. 16.</bibl><bibl>Freys/Barge, Verzeichnis, Nr. 24.</bibl><bibl>Zorzin, Flugschriftenautor, Nr. 14A.</bibl><bibl>VD 16 B 6154.</bibl></listBibl>
+				<p>Die Exemplare aus Leipzig und Brandenburg enthalten handschriftliche Korrekturen und autographe Widmungen an Georg Spalatin (A<hi rend="sub">L</hi>: „D. Georgio Spalatino patrono optimo | A Carolo. D D“) bzw. Heinrich Tulken (A<hi rend="sub" >BR</hi>: „Charissimo fratri Hermanno Tulichio | homini eruditionis multę | et exussi
+								iudicij | Andreas Carolo | D D“). Der Druck ist in vier Varianten ausgegangen, die Korrekturen erfolgten augenscheinlich im Satz. A<hi rend="sub" >1</hi> ist ein fehlerhafter Druck. Fol. A1<hi rend="super">v</hi> Z. 9 setzt ein mit ausgelassenem Buchstaben: „olostadius”; fol. A1<hi rend="super">v</hi> Z. 22 wurde die Wendung nicht in den Genetiv Plural gesetzt: „arbitror ꝓnūctiationē”. Die Blattsignatur von fol. D2<hi rend="super">r</hi> fehlt. Das einzig bekannte Exemplar dieses Typs befindet sich in St. Louis (A<hi rend="sub">1</hi>), dessen Titelblatt eine handschriftliche Widmung an Paul Lindenau aufweist. Bei Typ A<hi rend="sub">2</hi> ist der erste Fehler auf fol. A1<hi rend="super">v</hi> korrigiert, der zweite in „arbitror, ꝓnūctiationē” verschlimmbessert, die Blattsignatur „Dij“ wurde noch nicht gesetzt (das erste Wolfenbütteler Exemplar). Typ A<hi rend="sub">3</hi> verbessert beide Fehler auf fol. A1v, doch noch immer fehlt die Blattsignatur „Dij“. Der verbesserte Druck A, dem die Edition folgt und dem sowohl das Leipziger (A<hi rend="sub">L</hi>) als auch das Brandenburger Exemplar (A<hi rend="sub">L</hi>) zugehört, korrigiert diese Druckfehler: fol. A1<hi rend="super">v</hi> Z. 9: “rolostadius”; A1<hi rend="super">v</hi> Z. 22: “arbitrorū ꝓnūctiationē”; die Blattsignatur „Dij“ ist gesetzt. Zudem ist Zeile 9 auf fol. A1<hi rend="super">v</hi> gegenüber Typ A<hi rend="sub">1</hi> leicht nach rechts verschoben. Beide Wolfenbütteler Exemplare sind reich glossiert; das dem Typus A<hi rend="sub">3</hi> zugehörige trägt eine handschriftliche Widmung an Magister Balthasar (Predicator).</p></note></biblStruct>
+					<biblStruct type="imprint" xml:id="B"><monogr><author>Karlstadt, Andreas Bodenstein von</author><title>Epistola ║ Andree Carolo=║STADII ADVER=║sus ineptam &amp; ri=║diculā inuen=║tionem ║ Ioannis Eckij ║ argutatoris, qui dix║it Lipsiae, cū vrgeretur ║ ¶ Opus bonum esse a deo ║ totum , sed non ║ totaliter. ║ [TE]</title><imprint><pubPlace cert="unknown"><rs type="place">Leipzig</rs></pubPlace><publisher cert="unknown"><rs type="person">Valentin Schumann</rs></publisher><date when="1519" cert="unknown">1519</date></imprint><extent>4°, 16 Bl., A<hi rend="super">6</hi>, B<hi rend="super">4</hi>, C<hi rend="super">6</hi> (fol. C<hi rend="super">6</hi> leer). – TE.</extent></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"><label>HAB Wolfenbüttel</label><idno type="signatur">H: Yv 143.8 Helmst. (5).</idno></item><item><label>BSB München</label><idno type="signatur">Res/4 Polem. 3340,18</idno></item><item><label>ÖNB Wien</label><idno type="signatur">20.Dd.1237.</idno></item></list></note><note type="references"><listBibl><bibl>Freys/Barge, Verzeichnis, Nr. 25.</bibl><bibl>Zorzin, Flugschriftenautor, Nr. 14B.</bibl><bibl>VD 16 B 6153.</bibl></listBibl></note></biblStruct></listBibl><listBibl type="literatur"><bibl>Jäger, Carlstadt, 59f.</bibl><bibl>Barge, Karlstadt 1, 168–172</bibl></listBibl></div>
+			<div type="contents" /></x:expect>
 		</x:scenario>
 		<x:scenario label="verschiedene Drucksignaturen">
 			<x:context mode="item">
@@ -15220,86 +14655,1288 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
-	<x:scenario label="Fußnoten-Verweise">
+	<x:scenario label="T6: Fußnoten-Verweise">
+		<x:scenario label="T6.1: einfach">
+			<x:context>
+				<w:p w:rsidR="005E2CC1" w:rsidRPr="00D45477" w:rsidRDefault="005E2CC1" w:rsidP="001F6631">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+						<w:rPr>
+							<w:rFonts w:cs="Times New Roman"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r w:rsidRPr="001F6631">
+						<w:rPr>
+							<w:rFonts w:cs="Times New Roman"/>
+						</w:rPr>
+						<w:t>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.</w:t>
+					</w:r>
+					<w:bookmarkStart w:id="4" w:name="_Ref506220014"/>
+					<w:r>
+						<w:rPr>
+							<w:rStyle w:val="Endnotenzeichen"/>
+							<w:rFonts w:cs="Times New Roman"/>
+						</w:rPr>
+						<w:endnoteReference w:id="4"/>
+					</w:r>
+					<w:bookmarkEnd w:id="4"/>
+				</w:p>
+				<w:endnotes>
+					<w:endnote w:id="4">
+						<w:p w:rsidR="005E2CC1" w:rsidRDefault="005E2CC1">
+							<w:pPr>
+								<w:pStyle w:val="Endnotentext"/>
+							</w:pPr>
+							<w:r>
+								<w:rPr>
+									<w:rStyle w:val="Endnotenzeichen"/>
+								</w:rPr>
+								<w:endnoteRef/>
+							</w:r>
+							<w:r>
+								<w:t xml:space="preserve"> Genaue Beschreibung in </w:t>
+							</w:r>
+							<w:proofErr w:type="spellStart"/>
+							<w:r w:rsidRPr="00843B08">
+								<w:rPr>
+									<w:rStyle w:val="KSbibliographischeAngabe"/>
+								</w:rPr>
+								<w:t>Dommer</w:t>
+							</w:r>
+							<w:proofErr w:type="spellEnd"/>
+							<w:r w:rsidRPr="00843B08">
+								<w:rPr>
+									<w:rStyle w:val="KSbibliographischeAngabe"/>
+								</w:rPr>
+								<w:t xml:space="preserve">, Lutherdrucke, </w:t>
+							</w:r>
+							<w:proofErr w:type="spellStart"/>
+							<w:r w:rsidRPr="00843B08">
+								<w:rPr>
+									<w:rStyle w:val="KSbibliographischeAngabe"/>
+								</w:rPr>
+								<w:t>Orn</w:t>
+							</w:r>
+							<w:proofErr w:type="spellEnd"/>
+							<w:r w:rsidRPr="00843B08">
+								<w:rPr>
+									<w:rStyle w:val="KSbibliographischeAngabe"/>
+								</w:rPr>
+								<w:t>. 90</w:t>
+							</w:r>
+							<w:r>
+								<w:t>.</w:t>
+							</w:r>
+						</w:p>
+					</w:endnote>
+				</w:endnotes>
+			</x:context>
+			<x:expect label="hab:bm" xml:space="preserve">
+				<p>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.<hab:bm name="_Ref506220014"/><note type="footnote">Genaue Beschreibung in <bibl>Dommer, Lutherdrucke, Orn. 90</bibl>.</note></p></x:expect>
+		</x:scenario>
+	</x:scenario>
+	<x:scenario label="T7: Druck und Handschrift">
 		<x:context>
-			<w:p w:rsidR="005E2CC1" w:rsidRPr="00D45477" w:rsidRDefault="005E2CC1" w:rsidP="001F6631">
+			<w:body>
+			<w:p w14:paraId="14C21D64" w14:textId="77777777" w:rsidR="00CE2F47" w:rsidRPr="00143D83"
+				w:rsidRDefault="004C6DB6" w:rsidP="003866C0">
 				<w:pPr>
-					<w:pStyle w:val="KSText"/>
-					<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+					<w:pStyle w:val="KSberschrift1" />
+				</w:pPr>
+				<w:r w:rsidRPr="003866C0">
+					<w:t>Überlieferung</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="75EE37AD" w14:textId="77777777" w:rsidR="00FC175D" w:rsidRPr="00143D83"
+				w:rsidRDefault="004C6DB6" w:rsidP="00E03EFB">
+				<w:pPr>
+					<w:pStyle w:val="KSberschrift2" />
 					<w:rPr>
-						<w:rFonts w:cs="Times New Roman"/>
+						<w:rFonts w:eastAsiaTheme="minorHAnsi" w:cs="Times New Roman" />
+						<w:b />
+						<w:i w:val="0" />
+						<w:szCs w:val="22" />
 					</w:rPr>
 				</w:pPr>
-				<w:r w:rsidRPr="001F6631">
-					<w:rPr>
-						<w:rFonts w:cs="Times New Roman"/>
-					</w:rPr>
-					<w:t>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.</w:t>
+				<w:r w:rsidRPr="00143D83">
+					<w:t>Frühdrucke</w:t>
 				</w:r>
-				<w:bookmarkStart w:id="4" w:name="_Ref506220014"/>
-				<w:r>
-					<w:rPr>
-						<w:rStyle w:val="Endnotenzeichen"/>
-						<w:rFonts w:cs="Times New Roman"/>
-					</w:rPr>
-					<w:endnoteReference w:id="4"/>
-				</w:r>
-				<w:bookmarkEnd w:id="4"/>
 			</w:p>
-			<w:endnotes>
-				<w:endnote w:id="4">
-					<w:p w:rsidR="005E2CC1" w:rsidRDefault="005E2CC1">
-						<w:pPr>
-							<w:pStyle w:val="Endnotentext"/>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rStyle w:val="Endnotenzeichen"/>
-							</w:rPr>
-							<w:endnoteRef/>
-						</w:r>
-						<w:r>
-							<w:t xml:space="preserve"> Genaue Beschreibung in </w:t>
-						</w:r>
-						<w:proofErr w:type="spellStart"/>
-						<w:r w:rsidRPr="00843B08">
-							<w:rPr>
-								<w:rStyle w:val="KSbibliographischeAngabe"/>
-							</w:rPr>
-							<w:t>Dommer</w:t>
-						</w:r>
-						<w:proofErr w:type="spellEnd"/>
-						<w:r w:rsidRPr="00843B08">
-							<w:rPr>
-								<w:rStyle w:val="KSbibliographischeAngabe"/>
-							</w:rPr>
-							<w:t xml:space="preserve">, Lutherdrucke, </w:t>
-						</w:r>
-						<w:proofErr w:type="spellStart"/>
-						<w:r w:rsidRPr="00843B08">
-							<w:rPr>
-								<w:rStyle w:val="KSbibliographischeAngabe"/>
-							</w:rPr>
-							<w:t>Orn</w:t>
-						</w:r>
-						<w:proofErr w:type="spellEnd"/>
-						<w:r w:rsidRPr="00843B08">
-							<w:rPr>
-								<w:rStyle w:val="KSbibliographischeAngabe"/>
-							</w:rPr>
-							<w:t>. 90</w:t>
-						</w:r>
-						<w:r>
-							<w:t>.</w:t>
-						</w:r>
-					</w:p>
-				</w:endnote>
-			</w:endnotes>
+			<w:p w14:paraId="2DE7ED46" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00E20E62"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rStyle w:val="KSSigle" />
+					</w:rPr>
+					<w:t xml:space="preserve"> [B:]</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> Andreas Bodenstein von</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="35866601" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00E20E62"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve">PROTESTATIO </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>D.dooris</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>Carolo</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rFonts w:cs="Arial Unicode MS" />
+					</w:rPr>
+					<w:t>ﬅ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>adii</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> per </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rFonts w:cs="Junicode" />
+					</w:rPr>
+					<w:t>‖</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>re</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rFonts w:cs="Junicode" />
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>pondentem</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rFonts w:cs="Junicode" />
+					</w:rPr>
+					<w:t>ſ</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>ibi</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> a </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>latere</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="00040A76" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00E20E62"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>in:</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="3611F908" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00E20E62"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="6A8B692B" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00E20E62"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>Diſputatio</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>inter</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>Egre‖gios</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> &amp; </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>præclaros</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>viros</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>ac</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>doores</w:t>
+				</w:r>
+				<w:proofErr w:type="gramStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>,Ioannem</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:proofErr w:type="gramEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>Ecciu</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> &amp; </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>Mar‖tinum</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>Lutherum</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> in </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rFonts w:cs="Times New Roman" />
+					</w:rPr>
+					<w:t></w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>ſentia</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>notariorum</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>habita</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> ‖</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="014E8658" w14:textId="356040AE" w:rsidR="00C85E39" w:rsidRPr="00B418A7"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>[Paris]: [</w:t>
+				</w:r>
+				<w:r w:rsidR="00E20E62" w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Jodocus Badius</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>], [1520], fol. a1</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:vertAlign w:val="superscript" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>r‒v</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="3C848AC7" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00B418A7"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+				</w:pPr>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>4°, 92 Bl., a</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:vertAlign w:val="superscript" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>8</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>‒l</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:vertAlign w:val="superscript" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>8</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>, m</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:vertAlign w:val="superscript" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>4</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00B418A7">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="43CCBF99" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00264841"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+				</w:pPr>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:i />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Editionsvorlag</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>e</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">: BNF </w:t>
+				</w:r>
+				<w:proofErr w:type="gramStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Paris ,</w:t>
+				</w:r>
+				<w:proofErr w:type="gramEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve"> D‒5832. </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="20DF2494" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00264841"
+				w:rsidRDefault="00C85E39" w:rsidP="00EB78BF">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+				</w:pPr>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:i />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Weitere</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:i />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:i />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Exemplare</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">: BNF </w:t>
+				</w:r>
+				<w:proofErr w:type="gramStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Paris ,</w:t>
+				</w:r>
+				<w:proofErr w:type="gramEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve"> RES P‒R‒908 (2)</w:t>
+				</w:r>
+				<w:commentRangeStart w:id="9" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rFonts w:cs="Times New Roman" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>.</w:t>
+				</w:r>
+				<w:commentRangeEnd w:id="9" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rStyle w:val="Rimandocommento" />
+					</w:rPr>
+					<w:commentReference w:id="9" />
+				</w:r>
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="2B8B0CFF" w14:textId="489E2029" w:rsidR="00C85E39" w:rsidRPr="00264841"
+				w:rsidRDefault="00C85E39" w:rsidP="00EA5E29">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+				</w:pPr>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Bibliographische</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Nachweise</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">: </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Claus/</w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Pegg</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">, </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Ergänzungen</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">, </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Nr</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>. 407a</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">. — </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Zorzin</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">, </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Flugschriftenautor</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">, </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidR="00E20E62" w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>Nr</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidR="00E20E62" w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t xml:space="preserve">. </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>15a</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00264841">
+					<w:rPr>
+						<w:lang w:val="en-GB" />
+					</w:rPr>
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="107E5434" w14:textId="5BFFEECC" w:rsidR="00C85E39" w:rsidRPr="00DB3817"
+				w:rsidRDefault="00C85E39" w:rsidP="00EA5E29">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve">Der ungefähr Anfang Januar 1520 </w:t>
+				</w:r>
+				<w:r w:rsidR="00E20E62" w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve">von </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidR="00E20E62" w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>Jodocus</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidR="00E20E62" w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidR="00E20E62" w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>Badius</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> herausgegebene Band </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:highlight w:val="magenta" />
+					</w:rPr>
+					<w:t>trägt</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> kein Titelblatt und enthält nach einer kurzen Einleitung die </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:i />
+					</w:rPr>
+					<w:t>Protestatio</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> der drei Autoren; es folgen die – hier nicht edierte – Disputation von </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>Eck</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> und </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>Luther</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> und, am Schluss, die offiziellen </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:lastRenderedPageBreak />
+					<w:t>Deklaratione</w:t>
+				</w:r>
+				<w:r w:rsidR="00C52C12" w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve">n der zwei Notare, </w:t>
+				</w:r>
+				<w:r w:rsidR="00C52C12" w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t xml:space="preserve">Johannes </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidR="00C52C12" w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>Gra</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>mann</w:t>
+				</w:r>
+				<w:bookmarkStart w:id="10" w:name="_Ref528864028" />
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rStyle w:val="Rimandonotadichiusura" />
+					</w:rPr>
+					<w:endnoteReference w:id="28" />
+				</w:r>
+				<w:bookmarkEnd w:id="10" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> und </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>Franciscus Richter</w:t>
+				</w:r>
+				<w:bookmarkStart w:id="11" w:name="_Ref528864074" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rStyle w:val="Rimandonotadichiusura" />
+					</w:rPr>
+					<w:endnoteReference w:id="29" />
+				</w:r>
+				<w:bookmarkEnd w:id="11" />
+				<w:r w:rsidRPr="00E20E62">
+					<w:t>, die das herausgegebene Teilprotokoll beglaubigten.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:rPr>
+						<w:rStyle w:val="Rimandonotadichiusura" />
+					</w:rPr>
+					<w:endnoteReference w:id="30" />
+				</w:r>
+				<w:r w:rsidRPr="00E20E62">
+					<w:t xml:space="preserve"> Aus dieser Vorlage wird in der vorliegenden </w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB3817">
+					<w:t xml:space="preserve">Edition nur die </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00DB3817">
+					<w:rPr>
+						<w:i />
+					</w:rPr>
+					<w:t>Protestatio</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00DB3817">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="00DB7331">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>Karlstadts</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="00DB3817">
+					<w:t xml:space="preserve"> berücksichtigt.</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB3817">
+					<w:rPr>
+						<w:rStyle w:val="Rimandonotadichiusura" />
+					</w:rPr>
+					<w:endnoteReference w:id="31" />
+				</w:r>
+				<w:r w:rsidRPr="00DB3817">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="5970FFE4" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00DB3817"
+				w:rsidRDefault="00C85E39" w:rsidP="00584335">
+				<w:pPr>
+					<w:pStyle w:val="KSberschrift2" />
+				</w:pPr>
+				<w:r w:rsidRPr="00DB3817">
+					<w:t>Handschriften</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="5F15C616" w14:textId="597731A2" w:rsidR="00C85E39" w:rsidRPr="00DB3817"
+				w:rsidRDefault="00C85E39" w:rsidP="00AB5BC5">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="00DB3817">
+					<w:rPr>
+						<w:rStyle w:val="KSSigle" />
+					</w:rPr>
+					<w:t>[a:]</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB3817">
+					<w:t xml:space="preserve"> Andreas-Möller-Bibliothek des Geschwister-Scholl-Gymnasium</w:t>
+				</w:r>
+				<w:r w:rsidRPr="00DB3817">
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="45A7BDEE" w14:textId="23C08E27" w:rsidR="00C85E39" w:rsidRPr="008231EE"
+				w:rsidRDefault="00C85E39" w:rsidP="00BE6302">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="008231EE">
+					<w:lastRenderedPageBreak />
+					<w:t>Vergleicht man nun die aus den handschriftlichen Quellen (Freiberger Manuskript und
+						handschriftliche Eintragungen in A</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:vertAlign w:val="subscript" />
+					</w:rPr>
+					<w:t>5Lp</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">) gewonnenen Erkenntnisse mit dem Erfurter Druck, so </w:t>
+				</w:r>
+				<w:r w:rsidR="0065626B" w:rsidRPr="008231EE">
+					<w:t>erscheint es in der Tat naheliegend</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">, dass A kaum das von den Notaren erstellte und kollationierte offizielle Protokoll zur Vorlage gehabt haben konnte. Dies </w:t>
+				</w:r>
+				<w:r w:rsidR="0065626B" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">ist </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">nicht nur </w:t>
+				</w:r>
+				<w:r w:rsidR="0065626B" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">durch die vom </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">Herausgeber des Druckes hinzugefügten, hauptsächlich in der dritten Person verfassten Zusammenfassungen und Berichten über die Geschehnisse während der Disputation </w:t>
+				</w:r>
+				<w:r w:rsidR="00FA1DB9" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">zu begründen </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t>(im Manuskript fehlen diese, sie wurden in A</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:vertAlign w:val="subscript" />
+					</w:rPr>
+					<w:t>5Lp</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve"> korrekt als </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:i />
+					</w:rPr>
+					<w:t>Additio</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve"> im Vergleich zu den notariellen Protokollen gekennzeichnet)</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="Rimandonotadichiusura" />
+					</w:rPr>
+					<w:endnoteReference w:id="95" />
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">, sondern auch und vor allem </w:t>
+				</w:r>
+				<w:r w:rsidR="0065626B" w:rsidRPr="008231EE">
+					<w:t>durch die</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve"> fehlenden Textpassagen – vor allem Zeitangaben</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="Rimandonotadichiusura" />
+					</w:rPr>
+					<w:endnoteReference w:id="96" />
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve"> –, die in einem amtlichen Protokoll </w:t>
+				</w:r>
+				<w:r w:rsidR="0065626B" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">eigentlich </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">unabdingbar sind. Dennoch zeigt der Erfurter Druck eine substantielle Übereinstimmung mit den handschriftlichen Quellen, wie auch der ehemalige Notar </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008F0C92">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t xml:space="preserve">Johannes </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="008F0C92">
+					<w:rPr>
+						<w:rStyle w:val="KSPerson" />
+					</w:rPr>
+					<w:t>Graumann</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve"> in seinem Exemplar des Druckes notierte</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="Rimandonotadichiusura" />
+					</w:rPr>
+					<w:endnoteReference w:id="97" />
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">. Die Abweichungen </w:t>
+				</w:r>
+				<w:r w:rsidR="008231EE" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">sind </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">nicht so relevant, dass </w:t>
+				</w:r>
+				<w:r w:rsidR="00FA1DB9" w:rsidRPr="008231EE">
+					<w:t>man vermuten könnte</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">, A greife auf eine Vorlage zurück, die von den während der Disputation angefertigten Niederschriften vollständig unabhängig sei. Es ist </w:t>
+				</w:r>
+				<w:r w:rsidR="00FA1DB9" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">vielmehr </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">anzunehmen, dass A auf einer während der Disputation </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:i />
+					</w:rPr>
+					<w:t xml:space="preserve">in </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:i />
+					</w:rPr>
+					<w:t>dictando</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve"> angefertigten Niederschrift beruht, ähnlich wie das Freiberger Manuskript, das </w:t>
+				</w:r>
+				<w:r w:rsidR="008231EE" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">allerdings </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">als Vorlage für A ausgeschlossen werden </w:t>
+				</w:r>
+				<w:r w:rsidR="008231EE" w:rsidRPr="008231EE">
+					<w:t>muss</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">. Ob </w:t>
+				</w:r>
+				<w:r w:rsidR="008231EE" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">dem </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t>Herausgeber des Erfurter Druckes eines der noch nicht kollationierten Hörprotokolle
+						oder – wie einige Marginalien mit teilweise spöttischen Kommentaren vermuten lassen
+						könnten</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="Rimandonotadichiusura" />
+					</w:rPr>
+					<w:endnoteReference w:id="98" />
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve"> – eine private Niederschrift der Leipziger Disputation zur Verfügung </w:t>
+				</w:r>
+				<w:r w:rsidR="008231EE" w:rsidRPr="008231EE">
+					<w:t>stand</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">, kann hier nicht näher belegt werden. </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="4F2E1DA4" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="008231EE"
+				w:rsidRDefault="00C85E39" w:rsidP="003130BB">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+			</w:p>
+			<w:p w14:paraId="3733EFAD" w14:textId="18101193" w:rsidR="00C85E39" w:rsidRPr="008231EE"
+				w:rsidRDefault="00C85E39" w:rsidP="003130BB">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">Edition: </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>Löscher, Reformations-Acta 3, 289‒330 und 479‒507</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t>. —</w:t>
+				</w:r>
+				<w:r w:rsidR="008F0C92">
+					<w:t xml:space="preserve"> </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t xml:space="preserve">Seitz, </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>Disputatio</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidR="001658E5">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>, 14–54 und 219–245</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">. </w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="5E7E842E" w14:textId="05FFC450" w:rsidR="00C85E39" w:rsidRPr="008231EE"
+				w:rsidRDefault="00C85E39" w:rsidP="00BA2F53">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+				</w:pPr>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">Literatur: </w:t>
+				</w:r>
+				<w:proofErr w:type="spellStart" />
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>Barge</w:t>
+				</w:r>
+				<w:proofErr w:type="spellEnd" />
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>, Karlstadt 1, 133‒180</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">. — </w:t>
+				</w:r>
+				<w:r w:rsidR="008F0C92" w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>WA 2, 25</w:t>
+				</w:r>
+				<w:r w:rsidR="008F0C92">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>0</w:t>
+				</w:r>
+				<w:r w:rsidR="008F0C92" w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>‒</w:t>
+				</w:r>
+				<w:r w:rsidR="008F0C92">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>253</w:t>
+				</w:r>
+				<w:r w:rsidR="008F0C92" w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">. — </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>WA 59, 427‒432</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">. — </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>Brecht, Luther 1, 285-311</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t xml:space="preserve">. — </w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:rPr>
+						<w:rStyle w:val="KSbibliographischeAngabe" />
+					</w:rPr>
+					<w:t>Hein/Kohnle, Leipziger Disputation</w:t>
+				</w:r>
+				<w:r w:rsidRPr="008231EE">
+					<w:t>.</w:t>
+				</w:r>
+			</w:p>
+			<w:p w14:paraId="36A1CBBA" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00F36B10"
+				w:rsidRDefault="00C85E39" w:rsidP="00BA2F53">
+				<w:pPr>
+					<w:pStyle w:val="KSText" />
+					<w:rPr>
+						<w:highlight w:val="green" />
+					</w:rPr>
+				</w:pPr>
+			</w:p>
+			<w:p w14:paraId="78117170" w14:textId="77777777" w:rsidR="00C85E39" w:rsidRPr="00804D5D"
+				w:rsidRDefault="00C85E39" w:rsidP="00BA2F53">
+				<w:pPr>
+					<w:pStyle w:val="KSberschrift1" />
+				</w:pPr>
+				<w:r w:rsidRPr="00804D5D">
+					<w:t>Entstehung und Inhalt</w:t>
+				</w:r>
+			</w:p></w:body>
 		</x:context>
-		<x:expect label="hab:bm">
-			<p>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.<hab:bm name="_Ref506220014"/>
-				<note type="footnote">Genaue Beschreibung in <bibl>Dommer, Lutherdrucke, Orn. 90</bibl>.</note>
-			</p>
-		</x:expect>
+		<x:expect label="." xml:space="preserve">
+			<div type="history_of_the_work">
+				<listBibl type="sigla">
+					<biblStruct type="imprint" xml:id="B"><analytic><author>Andreas Bodenstein von</author><title
+						>PROTESTATIO D.dooris Caroloﬅadii per ‖ reſpondentem ſibi a latere.</title></analytic><monogr><author
+						>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</author><title
+						>Diſputatio inter Egre‖gios &amp; præclaros viros ac doores,Ioannem Ecciu &amp; Mar‖tinum Lutherum in ſentia notariorum habita ‖</title><imprint><pubPlace cert="unknown"><rs type="place">Paris</rs></pubPlace><publisher cert="unknown"><rs type="person">Jodocus Badius</rs></publisher><date when="1520" cert="unknown">1520</date></imprint><extent>4°, 92 Bl., a<hi rend="super">8</hi>‒l<hi rend="super">8</hi>, m<hi rend="super">4</hi>.</extent><biblScope>fol. a1<hi rend="super">r‒v</hi>.</biblScope></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"><label>BNF Paris</label><idno type="signatur">D‒5832.</idno></item><item><label>BNF Paris</label><idno type="signatur">RES P‒R‒908 (2).</idno></item></list></note><note type="references"><listBibl><bibl>Claus/Pegg, Ergänzungen, Nr. 407a.</bibl><bibl>Zorzin, Flugschriftenautor, Nr. 15a.</bibl></listBibl>
+				<p>Der ungefähr Anfang Januar 1520 von <rs type="person"><!--TODO ref eintragen-->Jodocus</rs><rs type="person"
+					><!--TODO ref eintragen--> </rs><rs type="person"><!--TODO ref eintragen-->Badius</rs> herausgegebene Band trägt kein Titelblatt und enthält nach einer kurzen Einleitung die <hi style="font-style: italic;">Protestatio</hi> der drei Autoren; es folgen die – hier nicht edierte – Disputation von <rs type="person"
+					><!--TODO ref eintragen-->Eck</rs> und <rs type="person"><!--TODO ref eintragen-->Luther</rs> und, am Schluss, die offiziellen Deklarationen der zwei Notare, <rs type="person"
+					><!--TODO ref eintragen-->Johannes </rs><rs type="person"><!--TODO ref eintragen-->Gra</rs><rs type="person"
+					><!--TODO ref eintragen-->mann</rs><hab:bm name="_Ref528864028" /><note type="footnote" /> und <rs type="person"
+					><!--TODO ref eintragen-->Franciscus Richter</rs><hab:bm name="_Ref528864074" /><note type="footnote" />, die das herausgegebene Teilprotokoll beglaubigten.<note type="footnote" /> Aus dieser Vorlage wird in der vorliegenden Edition nur die <hi style="font-style: italic;">Protestatio</hi> <rs type="person"
+					><!--TODO ref eintragen-->Karlstadts</rs> berücksichtigt.<note type="footnote" /> </p></note></biblStruct></listBibl>
+				<listBibl type="sigla">
+					<msDesc xml:id="a"><msIdentifier><altIdentifier type="siglum"><idno>a</idno></altIdentifier><repository 
+					/><idno type="signatur" /></msIdentifier><msContents><msItem><locus /></msItem></msContents><physDesc>
+				<p>Vergleicht man nun die aus den handschriftlichen Quellen (Freiberger Manuskript und
+						handschriftliche Eintragungen in A<hi rend="sub">5Lp</hi>) gewonnenen Erkenntnisse mit dem Erfurter Druck, so erscheint es in der Tat naheliegend, dass A kaum das von den Notaren erstellte und kollationierte offizielle Protokoll zur Vorlage gehabt haben konnte. Dies ist nicht nur durch die vom Herausgeber des Druckes hinzugefügten, hauptsächlich in der dritten Person verfassten Zusammenfassungen und Berichten über die Geschehnisse während der Disputation zu begründen (im Manuskript fehlen diese, sie wurden in A<hi rend="sub">5Lp</hi> korrekt als <hi style="font-style: italic;">Additio</hi> im Vergleich zu den notariellen Protokollen gekennzeichnet)<note type="footnote" />, sondern auch und vor allem durch die fehlenden Textpassagen – vor allem Zeitangaben<note type="footnote" /> –, die in einem amtlichen Protokoll eigentlich unabdingbar sind. Dennoch zeigt der Erfurter Druck eine substantielle Übereinstimmung mit den handschriftlichen Quellen, wie auch der ehemalige Notar <rs type="person"
+					><!--TODO ref eintragen-->Johannes </rs><rs type="person"><!--TODO ref eintragen-->Graumann</rs> in seinem Exemplar des Druckes notierte<note type="footnote" />. Die Abweichungen sind nicht so relevant, dass man vermuten könnte, A greife auf eine Vorlage zurück, die von den während der Disputation angefertigten Niederschriften vollständig unabhängig sei. Es ist vielmehr anzunehmen, dass A auf einer während der Disputation <hi style="font-style: italic;">in </hi
+					><hi style="font-style: italic;">dictando</hi> angefertigten Niederschrift beruht, ähnlich wie das Freiberger Manuskript, das allerdings als Vorlage für A ausgeschlossen werden muss. Ob dem Herausgeber des Erfurter Druckes eines der noch nicht kollationierten Hörprotokolle
+						oder – wie einige Marginalien mit teilweise spöttischen Kommentaren vermuten lassen
+						könnten<note type="footnote" /> – eine private Niederschrift der Leipziger Disputation zur Verfügung stand, kann hier nicht näher belegt werden. </p></physDesc></msDesc
+					></listBibl><listBibl type="editions"><bibl>Löscher, Reformations-Acta 3, 289‒330 und 479‒507</bibl><bibl
+					>Seitz, Disputatio, 14–54 und 219–245</bibl></listBibl><listBibl type="literatur"><bibl
+					>Barge, Karlstadt 1, 133‒180</bibl><bibl>WA 2, 250‒253</bibl><bibl>WA 59, 427‒432</bibl><bibl
+					>Brecht, Luther 1, 285-311</bibl><bibl>Hein/Kohnle, Leipziger Disputation</bibl></listBibl></div>
+			<div type="contents"/></x:expect>
 	</x:scenario>
 </x:description>
