@@ -2188,7 +2188,20 @@
 			<x:expect label="Ausgabe inkl. FN in Anm. und Nachweisen" xml:space="preserve">
 			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
 				<listBibl type="sigla">
-					<biblStruct type="imprint" xml:id="B"><analytic><author>Karlstadt, Andreas Bodenstein von</author><title>Concluſiones duodecim de Legis non fur⸗║tum facies,impletione &amp; teﬅamentorum lega⸗║tione altatium, &amp; miſſarum fundatione.</title></analytic><monogr><author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author><title>INSIGNIVM THEOLOGORVM ║ Domini MartiniLutheri, dominiAndree ║ Baroloﬅadij , Philippi melan║thonis &amp; aliorum ║ conclu⸗║ſiones varię, pro diuinæ gratiæ defenſione ║ ac commendatione,contra ſco║laﬅicos &amp; pelagianos ║ diſputate ║ in præ⸗║clara academia. ║ Vvittembergenſi. ║ Lege leor &amp; afficieris verſafacie catalogum ║ inuenies.</title><imprint><pubPlace cert="unknown"><rs type="place">Paris</rs></pubPlace><publisher cert="unknown"><rs type="person">Pierre Vidoué</rs></publisher><date when="1521?" cert="unknown">1521?</date></imprint><extent>4°, 18 Bl., A<hi rend="super">4</hi>–C<hi rend="super">4</hi>, D<hi rend="super">6</hi>.</extent><biblScope>fol. D4<hi rend="super">r–v</hi>.</biblScope></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"><label>HAB Wolfenbüttel</label><idno type="signatur">M: Li 5530 Slg. Hardt (38, 662)</idno><note xmlns:hab="http://diglib.hab.de">Einziges bekanntes Exemplar; Provenienz: Heino Gottschalk, Abt des Benediktinerklosters Oldenstadt bei Uelzen<note type="footnote">Zu Gottschalk s. KGK I.1, Nr. 26, S. 366 und Nr. 58, S. 489.</note>, mit dessen handschriftlichen Korrekturen<note type="footnote">Zu weiteren bibliographische Daten s. KGK I.1, Nr. 58, S. 489.</note></note></item></list></note><note type="references"><listBibl><bibl>Benzing/Claus, Lutherbibliographie, Nr. 86</bibl><bibl>Brieger, Thesen, 480.</bibl><bibl>Hammer, Militia Franciscana 1,55.</bibl><bibl>Moreau, Inventaire 2, Nr. 2406.</bibl></listBibl></note></biblStruct></listBibl></div></x:expect>
+					<biblStruct type="imprint" xml:id="B"><analytic><author>Karlstadt, Andreas Bodenstein von</author><title
+						>Concluſiones duodecim de Legis non fur⸗║tum facies,impletione &amp; teﬅamentorum lega⸗║tione altatium, &amp; miſſarum fundatione.</title
+						></analytic><monogr><author>Luther, Martin; Karlstadt, Andreas Bodenstein von; Melanchthon, Philipp u.a.</author
+						><title>INSIGNIVM THEOLOGORVM ║ Domini MartiniLutheri, dominiAndree ║ Baroloﬅadij , Philippi melan║thonis &amp; aliorum ║ conclu⸗║ſiones varię, pro diuinæ gratiæ defenſione ║ ac commendatione,contra ſco║laﬅicos &amp; pelagianos ║ diſputate ║ in præ⸗║clara academia. ║ Vvittembergenſi. ║ Lege leor &amp; afficieris verſafacie catalogum ║ inuenies.</title
+						><imprint><pubPlace cert="unknown"><rs type="place">Paris</rs></pubPlace><publisher cert="unknown"><rs type="person"
+						>Pierre Vidoué</rs></publisher><date when="1521?" cert="unknown">1521?</date></imprint><extent>4°, 18 Bl., A<hi rend="super"
+						>4</hi>–C<hi rend="super">4</hi>, D<hi rend="super">6</hi>.</extent><biblScope>fol. D4<hi rend="super"
+						>r–v</hi>.</biblScope></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"
+						><label>HAB Wolfenbüttel</label><idno type="signatur">M: Li 5530 Slg. Hardt (38, 662)</idno><note xmlns:hab="http://diglib.hab.de"
+						>Einziges bekanntes Exemplar; Provenienz: Heino Gottschalk, Abt des Benediktinerklosters Oldenstadt bei Uelzen<note type="footnote"
+						xml:id="n2">Zu Gottschalk s. KGK I.1, Nr. 26, S. 366 und Nr. 58, S. 489.</note>, mit dessen handschriftlichen Korrekturen<note type="footnote"
+						xml:id="n3">Zu weiteren bibliographische Daten s. KGK I.1, Nr. 58, S. 489.</note></note></item></list></note><note type="references"
+						><listBibl><bibl>Benzing/Claus, Lutherbibliographie, Nr. 86</bibl><bibl>Brieger, Thesen, 480.</bibl><bibl>Hammer, Militia Franciscana 1,55.</bibl
+						><bibl>Moreau, Inventaire 2, Nr. 2406.</bibl></listBibl></note></biblStruct></listBibl></div></x:expect>
 		</x:scenario>
 		<x:scenario label="T3.3: EE 107">
 			<x:context>
@@ -14733,7 +14746,8 @@
 				</w:endnotes>
 			</x:context>
 			<x:expect label="hab:bm" xml:space="preserve">
-				<p>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.<hab:bm name="_Ref506220014"/><note type="footnote">Genaue Beschreibung in <bibl>Dommer, Lutherdrucke, Orn. 90</bibl>.</note></p></x:expect>
+				<p>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.<hab:bm
+					name="_Ref506220014"/><note type="footnote" xml:id="n4">Genaue Beschreibung in <bibl>Dommer, Lutherdrucke, Orn. 90</bibl>.</note></p></x:expect>
 		</x:scenario>
 	</x:scenario>
 	<x:scenario label="T7: Druck und Handschrift">
@@ -15921,18 +15935,22 @@
 					><!--TODO ref eintragen--> </rs><rs type="person"><!--TODO ref eintragen-->Badius</rs> herausgegebene Band trägt kein Titelblatt und enthält nach einer kurzen Einleitung die <hi style="font-style: italic;">Protestatio</hi> der drei Autoren; es folgen die – hier nicht edierte – Disputation von <rs type="person"
 					><!--TODO ref eintragen-->Eck</rs> und <rs type="person"><!--TODO ref eintragen-->Luther</rs> und, am Schluss, die offiziellen Deklarationen der zwei Notare, <rs type="person"
 					><!--TODO ref eintragen-->Johannes </rs><rs type="person"><!--TODO ref eintragen-->Gra</rs><rs type="person"
-					><!--TODO ref eintragen-->mann</rs><hab:bm name="_Ref528864028" /><note type="footnote" /> und <rs type="person"
-					><!--TODO ref eintragen-->Franciscus Richter</rs><hab:bm name="_Ref528864074" /><note type="footnote" />, die das herausgegebene Teilprotokoll beglaubigten.<note type="footnote" /> Aus dieser Vorlage wird in der vorliegenden Edition nur die <hi style="font-style: italic;">Protestatio</hi> <rs type="person"
-					><!--TODO ref eintragen-->Karlstadts</rs> berücksichtigt.<note type="footnote" /> </p></note></biblStruct></listBibl>
+					><!--TODO ref eintragen-->mann</rs><hab:bm name="_Ref528864028" /><note type="footnote" xml:id="n28"/> und <rs type="person"
+					><!--TODO ref eintragen-->Franciscus Richter</rs><hab:bm name="_Ref528864074" /><note type="footnote" xml:id="n29"
+					/>, die das herausgegebene Teilprotokoll beglaubigten.<note type="footnote" xml:id="n30"/> Aus dieser Vorlage wird in der vorliegenden Edition nur die <hi style="font-style: italic;">Protestatio</hi> <rs type="person"
+					><!--TODO ref eintragen-->Karlstadts</rs> berücksichtigt.<note type="footnote" xml:id="n31" /> </p></note></biblStruct></listBibl>
 				<listBibl type="sigla">
 					<msDesc xml:id="a"><msIdentifier><altIdentifier type="siglum"><idno>a</idno></altIdentifier><repository 
 					/><idno type="signatur" /></msIdentifier><msContents><msItem><locus /></msItem></msContents><physDesc>
 				<p>Vergleicht man nun die aus den handschriftlichen Quellen (Freiberger Manuskript und
-						handschriftliche Eintragungen in A<hi rend="sub">5Lp</hi>) gewonnenen Erkenntnisse mit dem Erfurter Druck, so erscheint es in der Tat naheliegend, dass A kaum das von den Notaren erstellte und kollationierte offizielle Protokoll zur Vorlage gehabt haben konnte. Dies ist nicht nur durch die vom Herausgeber des Druckes hinzugefügten, hauptsächlich in der dritten Person verfassten Zusammenfassungen und Berichten über die Geschehnisse während der Disputation zu begründen (im Manuskript fehlen diese, sie wurden in A<hi rend="sub">5Lp</hi> korrekt als <hi style="font-style: italic;">Additio</hi> im Vergleich zu den notariellen Protokollen gekennzeichnet)<note type="footnote" />, sondern auch und vor allem durch die fehlenden Textpassagen – vor allem Zeitangaben<note type="footnote" /> –, die in einem amtlichen Protokoll eigentlich unabdingbar sind. Dennoch zeigt der Erfurter Druck eine substantielle Übereinstimmung mit den handschriftlichen Quellen, wie auch der ehemalige Notar <rs type="person"
-					><!--TODO ref eintragen-->Johannes </rs><rs type="person"><!--TODO ref eintragen-->Graumann</rs> in seinem Exemplar des Druckes notierte<note type="footnote" />. Die Abweichungen sind nicht so relevant, dass man vermuten könnte, A greife auf eine Vorlage zurück, die von den während der Disputation angefertigten Niederschriften vollständig unabhängig sei. Es ist vielmehr anzunehmen, dass A auf einer während der Disputation <hi style="font-style: italic;">in </hi
+						handschriftliche Eintragungen in A<hi rend="sub">5Lp</hi>) gewonnenen Erkenntnisse mit dem Erfurter Druck, so erscheint es in der Tat naheliegend, dass A kaum das von den Notaren erstellte und kollationierte offizielle Protokoll zur Vorlage gehabt haben konnte. Dies ist nicht nur durch die vom Herausgeber des Druckes hinzugefügten, hauptsächlich in der dritten Person verfassten Zusammenfassungen und Berichten über die Geschehnisse während der Disputation zu begründen (im Manuskript fehlen diese, sie wurden in A<hi rend="sub">5Lp</hi> korrekt als <hi style="font-style: italic;">Additio</hi> im Vergleich zu den notariellen Protokollen gekennzeichnet)<note type="footnote"
+						xml:id="n95"/>, sondern auch und vor allem durch die fehlenden Textpassagen – vor allem Zeitangaben<note type="footnote"
+						xml:id="n96"/> –, die in einem amtlichen Protokoll eigentlich unabdingbar sind. Dennoch zeigt der Erfurter Druck eine substantielle Übereinstimmung mit den handschriftlichen Quellen, wie auch der ehemalige Notar <rs type="person"
+					><!--TODO ref eintragen-->Johannes </rs><rs type="person"><!--TODO ref eintragen-->Graumann</rs> in seinem Exemplar des Druckes notierte<note type="footnote"
+				xml:id="n97"	/>. Die Abweichungen sind nicht so relevant, dass man vermuten könnte, A greife auf eine Vorlage zurück, die von den während der Disputation angefertigten Niederschriften vollständig unabhängig sei. Es ist vielmehr anzunehmen, dass A auf einer während der Disputation <hi style="font-style: italic;">in </hi
 					><hi style="font-style: italic;">dictando</hi> angefertigten Niederschrift beruht, ähnlich wie das Freiberger Manuskript, das allerdings als Vorlage für A ausgeschlossen werden muss. Ob dem Herausgeber des Erfurter Druckes eines der noch nicht kollationierten Hörprotokolle
 						oder – wie einige Marginalien mit teilweise spöttischen Kommentaren vermuten lassen
-						könnten<note type="footnote" /> – eine private Niederschrift der Leipziger Disputation zur Verfügung stand, kann hier nicht näher belegt werden. </p></physDesc></msDesc
+						könnten<note type="footnote"  xml:id="n98"/> – eine private Niederschrift der Leipziger Disputation zur Verfügung stand, kann hier nicht näher belegt werden. </p></physDesc></msDesc
 					></listBibl><listBibl type="editions"><bibl>Löscher, Reformations-Acta 3, 289‒330 und 479‒507</bibl><bibl
 					>Seitz, Disputatio, 14–54 und 219–245</bibl></listBibl><listBibl type="literatur"><bibl
 					>Barge, Karlstadt 1, 133‒180</bibl><bibl>WA 2, 250‒253</bibl><bibl>WA 59, 427‒432</bibl><bibl

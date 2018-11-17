@@ -42,6 +42,7 @@
     </xsl:analyze-string>
   </xsl:template>
   
+  <xsl:template match="hab:bm" />
   <xsl:template match="hab:mark[not(@ref)]" />
   <xsl:template match="text()[preceding-sibling::*[1][self::hab:mark[@ref]]]" />
   <xsl:template match="hab:mark[@ref]">
@@ -49,7 +50,7 @@
     <xsl:variable name="target" select="//hab:bm[@name = $ref]/following-sibling::*[1]" />
     <xsl:choose>
       <xsl:when test="$target/@type='footnote'">
-        <ptr type="wdb" target="#n{count($target/preceding::hab:bm)}" />
+        <ptr type="wdb" target="#{$target/@xml:id}" />
       </xsl:when>
     </xsl:choose>
   </xsl:template>

@@ -102,6 +102,7 @@
             <xsl:apply-templates select="//w:endnote[@w:id = $wid]//w:p"/>
         </xsl:variable>
         <note type="footnote">
+        	<xsl:attribute name="xml:id" select="'n'||$wid" />
             <xsl:for-each select="$temp/node()">
                 <xsl:choose>
                     <xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
