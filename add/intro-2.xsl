@@ -55,40 +55,6 @@
     </xsl:choose>
   </xsl:template>
   
-  <!--<xsl:template match="tei:rs">
-    <!-\- TODO ref aus Register auslesen -\->
-  	<xsl:choose>
-  		<xsl:when test="preceding-sibling::node()[1][self::tei:rs]" />
-  		<xsl:when test = "following-sibling::node()[1][self::tei:rs]">
-  			<rs>
-  				<xsl:sequence select="@type" />
-  				<xsl:value-of select="."/>
-  				<xsl:value-of select="following-sibling::tei:rs intersect
-  					following-sibling::node()[not(self::tei:rs)][1]/preceding-sibling::node()"/>
-  			</rs>
-  		</xsl:when>
-  		<xsl:otherwise>
-  			<xsl:sequence select="."/>
-  		</xsl:otherwise>
-  	</xsl:choose>
-  </xsl:template>-->
-	<xsl:template match="tei:rs[not(preceding-sibling::node()[1][self::tei:rs])]">
-		<rs type="{@type}">
-			<xsl:choose>
-				<xsl:when test="following-sibling::node()[not(self::tei:rs)]">
-					<xsl:sequence select="node()[not(self::comment())]
-						| (following-sibling::tei:rs intersect
-						following-sibling::text()[1]/preceding-sibling::tei:rs)/text()" />
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:sequence select="node()[not(self::comment())]
-						| following-sibling::tei:rs/node()" />
-				</xsl:otherwise>
-			</xsl:choose>
-		</rs>
-	</xsl:template>
-	<xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:rs]]" />
-  
   <xsl:template match="* | @* | comment()">
     <xsl:copy>
       <xsl:apply-templates select="node() | @*" />

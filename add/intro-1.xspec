@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
+	xmlns="http://www.tei-c.org/ns/1.0"
+	stylesheet="intro-1.xsl">
+	<x:scenario label="rs">
+		<x:context>
+			<note type="footnote">Vgl. den Brief an <rs type="person">Johann</rs><rs type="person">es</rs><rs type="person"> Lang</rs> vom 26.10.1516 (<bibl>WA 1, 73,27f. Nr. 28</bibl>; <bibl>Walch<hi rend="super">2</hi> 21, 561</bibl>).</note>
+		</x:context>
+		<x:expect label="Johannes Lang zusammengezogen">
+			<note type="footnote">Vgl. den Brief an <rs type="person">Johannes Lang</rs
+				> vom 26.10.1516 (<bibl>WA 1, 73,27f. Nr. 28</bibl>; <bibl>Walch<hi rend="super">2</hi> 21, 561</bibl>).</note>
+		</x:expect>
+	</x:scenario>
+</x:description>

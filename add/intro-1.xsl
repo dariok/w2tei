@@ -11,7 +11,24 @@
 		<xsl:value-of select="translate(., '║', '‖')"/>
 	</xsl:template>
 	
-	<xsl:template match="text()">
+	<xsl:template match="tei:rs[not(preceding-sibling::node()[1][self::tei:rs])]">
+		<rs type="{@type}">
+			<xsl:choose>
+				<xsl:when test="following-sibling::node()[not(self::tei:rs)]">
+					<xsl:sequence select="node()[not(self::comment())]
+						| (following-sibling::tei:rs intersect
+						following-sibling::text()[1]/preceding-sibling::tei:rs)/text()" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:sequence select="node()[not(self::comment())]
+						| following-sibling::tei:rs/node()" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</rs>
+	</xsl:template>
+	<xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:rs]]" />
+	
+	<xsl:template match="text()[not(parent::tei:title)]">
 		<xsl:analyze-string select="." regex="([\d\sr])-([\d\sv])">
 			<xsl:matching-substring>
 				<xsl:value-of select="regex-group(1) || '–' || regex-group(2)"/>
@@ -36,7 +53,7 @@
 	
 	<xsl:template match="node() | @*">
 		<xsl:copy>
-			<xsl:copy select="@* | node()" />
+			<xsl:apply-templates select="@* | node()" />
 		</xsl:copy>
 	</xsl:template>
 </xsl:stylesheet>
