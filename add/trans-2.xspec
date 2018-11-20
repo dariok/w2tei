@@ -163,6 +163,16 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.11: mit pb">
+			<x:context>
+				<p>
+					quod nos Ger-
+					<lb/><pb n="[A4v]"/>manos, meros blennones<note type="crit_app"> blennos <hi style="font-style: italic;">WA</hi></note><note type="footnote" xml:id="n32">Vgl. <bibl>CGL 6, 146</bibl>.</note>, bardos, buccones,</p>
+			</x:context>
+			<x:expect label=".">
+				<p>quod nos <w>Ger<pb n="[A4v]"/><lb break="no"/>manos,</w> meros blennones<note type="crit_app"> blennos <hi style="font-style: italic;">WA</hi></note><note type="footnote" xml:id="n32">Vgl. <bibl>CGL 6, 146</bibl>.</note>, bardos, buccones,</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T2: quote">

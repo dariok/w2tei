@@ -92,6 +92,8 @@
 	    			<lb break="no" />
 	    			<xsl:value-of select="xstring:substring-before(following-sibling::text()[1], ' ')" />
 	    		</w>
+	    		<xsl:text> </xsl:text>
+	    		<xsl:value-of select="substring-after(following-sibling::text()[1], ' ')"/>
 	    	</xsl:when>
 			<xsl:when test="preceding-sibling::*[1][self::tei:note]
 				and ends-with(preceding-sibling::tei:note[1]/preceding-sibling::text()[1], '-')">
