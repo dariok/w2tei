@@ -57,7 +57,7 @@
 		<rs type="person">
 			<xsl:variable name="register" select="doc('../../register/personenregister.xml')" />
 			<xsl:variable name="self" select="normalize-space()" />
-			<xsl:variable name="entry" select="$register//tei:person[tei:persName[@type ='vorl' and contains(., $self)]]"/>
+			<xsl:variable name="entry" select="$register//tei:person[tei:persName[contains(normalize-space(), $self)]]"/>
 			<xsl:choose>
 				<xsl:when test="count($entry) > 0">
 					<xsl:attribute name="ref">
@@ -76,7 +76,7 @@
 		<rs type="place">
 			<xsl:variable name="register" select="doc('../../register/ortsregister.xml')" />
 			<xsl:variable name="self" select="normalize-space()" />
-			<xsl:variable name="entry" select="$register//tei:place[tei:placeName[@type ='vorl' and contains(., $self)]]"/>
+			<xsl:variable name="entry" select="$register//tei:place[tei:placeName[contains(normalize-space(), $self)]]"/>
 			<xsl:choose>
 				<xsl:when test="count($entry) > 0">
 					<xsl:attribute name="ref">
