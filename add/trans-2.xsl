@@ -97,11 +97,14 @@
 				and ends-with(preceding-sibling::tei:note[1]/preceding-sibling::text()[1], '-')">
 				<xsl:text> </xsl:text>
 				<w>
-					<xsl:value-of select="xstring:substring-before(xstring:substring-after-last(preceding-sibling::text()[1], ' '), '-')" />
-					<xsl:sequence select="preceding-sibling::tei:note intersect preceding-sibling::text()[1]/following-sibling::*" />
+					<xsl:value-of
+						select="xstring:substring-before(xstring:substring-after-last(preceding-sibling::tei:note[1]/preceding-sibling::text()[1], ' '), '-')" />
+<!--					<xsl:sequence select="preceding-sibling::tei:note[1] intersect preceding-sibling::text()[1]/following-sibling::*" />-->
 					<lb break="no" />
 					<xsl:value-of select="xstring:substring-before(following-sibling::text()[1], ' ')" />
 				</w>
+				<xsl:sequence select="preceding-sibling::tei:note[1]/preceding-sibling::text()[1]/following-sibling::*
+					intersect preceding-sibling::*" />
 				<xsl:text> </xsl:text>
 			</xsl:when>
 			<xsl:when test="ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
@@ -317,6 +320,11 @@
 			</xsl:when>
 			<xsl:when test="preceding-sibling::node()[1][self::tei:lb] and
 				ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
+				<xsl:value-of select="substring-after(., ' ')" />
+			</xsl:when>
+			<xsl:when test="preceding-sibling::node()[1][self::tei:lb]
+				and preceding-sibling::*[2][self::tei:note[@place]]
+				and ends-with(preceding-sibling::tei:note[1]/preceding-sibling::text()[1], '-')">
 				<xsl:value-of select="substring-after(., ' ')" />
 			</xsl:when>
 			<xsl:otherwise>

@@ -62,7 +62,7 @@
 				</p>
 			</x:context>
 			<x:expect label="w und Marginalie drin">
-				<p><lb/>Dan wie heylig der mensch auff erdtreich wurt <w>od<note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note><lb break="no"/>der</w> ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
+				<p><lb/>Dan wie heylig der mensch auff erdtreich wurt <w>od<lb break="no"/>der</w><note place="margin">Das gesetz ist geystlich/der Bapst ist fleischlich</note> ist/ dennoch bleybt er bosz unnd fleischlich/ wie der
 				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="T1.4: FN vor nächstem Wort">
@@ -159,7 +159,7 @@
 				</p>
 			</x:context>
 			<x:expect label="w mit komplettem Wort">
-				<p>expilationis <w>incredibi<note place="margin">Incredibili Germanorum patientiae, etiam a Rho'manis' insultatur.</note><lb break="no"/>lem</w> patientiam.
+				<p>expilationis <w>incredibi<lb break="no"/>lem</w><note place="margin">Incredibili Germanorum patientiae, etiam a Rho'manis' insultatur.</note> patientiam.
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -239,7 +239,7 @@
 				<p>istis: or-<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb/>natissimi viri:</p>
 			</x:context>
 			<x:expect label="w mit Marginalien drin">
-				<p>istis: <w>or<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb break="no"/>natissimi</w> viri:</p></x:expect>
+				<p>istis: <w>or<lb break="no"/>natissimi</w><note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note> viri:</p></x:expect>
 		</x:scenario>
 		<x:scenario label="T3.3: Trennung in rs mit Teilen vor und dahinter">
 			<x:context>
