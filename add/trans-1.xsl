@@ -270,18 +270,6 @@
     </xsl:template>
     <!-- ENDE kritische Anmerkungen -->
     
-    <!-- neu 2017-12-08 DK -->
-    <xsl:template match="w:r[wt:is(., 'KSBibelstelle', 'r')]">
-        <xsl:choose>
-            <xsl:when test="ends-with(w:t, 'Vg')">
-                <ref type="biblical"><xsl:value-of select="substring-before(w:t, ' Vg')"/></ref> Vg
-            </xsl:when>
-            <xsl:otherwise>
-                <ref type="biblical"><xsl:apply-templates select="w:t" /></ref>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
     <xsl:template match="w:r[wt:is(., 'KSAutorenstelle', 'r')]">
         <ref type="medieval">
             <xsl:attribute name="cRef">

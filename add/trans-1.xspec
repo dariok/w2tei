@@ -3,12 +3,13 @@
   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
   xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
   xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns="http://www.tei-c.org/ns/1.0"
   xmlns:hab="http://diglib.hab.de"
   stylesheet="trans-1.xsl" xslt-version="3.0" preserve-space="no">
 	
-	<x:scenario label="Fußnoten">
-        <x:scenario label="mit Kursiven">
+	<x:scenario label="T1: Fußnoten">
+        <x:scenario label="T1.1: mit Kursiven">
             <x:context>
                 <w:endnoteReference w:id="11" />
                 <w:endnotes>
@@ -699,10 +700,10 @@
                 </w:endnotes>
             </x:context>
             <x:expect label="mixed content">
-                <note type="footnote">Die Ablässe der Mendikantenorden nahmen immer größerre Ausmaße an. Die gefälschte Sammlung von Privilegien der Minoriten des <rs type="person"><!--TODO ref eintragen-->Markus von Treviso</rs> aus dem Jahr 1428, angeblich päpstlichen Registern entnommen, setzte für eine Reihe von Festen, die in Ordenskirchen begangen wurden, 100 Jahre Ablass an. Ein notarielles Instrument erkannte 1482 diese Ablässe als echt an. Karlstadt mag der Druck dieser <hi style="font-style: italic;">Privilegia fratrum minorum</hi> (Hain 13371), zuletzt in <rs type="place"><!--TODO ref eintragen-->Leipzig</rs> 1495 und 1498 sowie in Venedig 1500, 1502 und 1508, zusammen mit den Bullen bekannt gewesen sein. <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> erließ für den Besuch der Ordenskirche am Fest des Hl. Franziskus 100 Jahre Ablass, <rs type="person"><!--TODO ref eintragen-->Leo X.</rs> gar einen vollkommenen Ablass für die, die sich im Ordenskleid beerdigen ließen. Die Dominikaner nahmen kurzerhand die Ablässe der Franziskaner auch für sich in Anspruch; dieser Übertragung gaben <rs type="person"><!--TODO ref eintragen-->Bonifaz IX.</rs> 1402 und <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> 1479 ihren päpstlichen Segen, der auch einen Ablass von 100 Jahren für den Kirchenbesuch am Fest des <rs type="person"><!--TODO ref eintragen-->Hl. Dominikus</rs> anordnete. Den Augustinern gewährte schon <rs type="person"><!--TODO ref eintragen-->Innozenz IV.</rs> im Jahr 1244 einen absurd anmutenden Ablass von 1000 Jahren für Almosen und den Besuch der Augustinerkirche zwischen Septuagesima und Palmsonntag sowie einen vollkommenen Ablass an drei Tagen in der Karwoche. <rs type="person"><!--TODO ref eintragen-->Julius II.</rs> bestätigt in der Bulle „Dum uberes fructus“ alte, den Augustinern gewährte Ablässe mit Beifügung eines Ablasses von 100 Jahren für den Kirchenbesuch an Festen von drei Ordensheiligen, erwähnte jedoch nicht den Ablass von 1244. Veröffentlicht wurden diese Ablässe in den Privilegia fratrum Heremitarum Augustini, Rom 1514, 27ff. S. hierzu <bibl>Paulus, Ablass 3, 260-268</bibl>.</note>
+                <note type="footnote" xml:id="n11">Die Ablässe der Mendikantenorden nahmen immer größerre Ausmaße an. Die gefälschte Sammlung von Privilegien der Minoriten des <rs type="person"><!--TODO ref eintragen-->Markus von Treviso</rs> aus dem Jahr 1428, angeblich päpstlichen Registern entnommen, setzte für eine Reihe von Festen, die in Ordenskirchen begangen wurden, 100 Jahre Ablass an. Ein notarielles Instrument erkannte 1482 diese Ablässe als echt an. Karlstadt mag der Druck dieser <hi style="font-style: italic;">Privilegia fratrum minorum</hi> (Hain 13371), zuletzt in <rs type="place"><!--TODO ref eintragen-->Leipzig</rs> 1495 und 1498 sowie in Venedig 1500, 1502 und 1508, zusammen mit den Bullen bekannt gewesen sein. <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> erließ für den Besuch der Ordenskirche am Fest des Hl. Franziskus 100 Jahre Ablass, <rs type="person"><!--TODO ref eintragen-->Leo X.</rs> gar einen vollkommenen Ablass für die, die sich im Ordenskleid beerdigen ließen. Die Dominikaner nahmen kurzerhand die Ablässe der Franziskaner auch für sich in Anspruch; dieser Übertragung gaben <rs type="person"><!--TODO ref eintragen-->Bonifaz IX.</rs> 1402 und <rs type="person"><!--TODO ref eintragen-->Sixtus IV.</rs> 1479 ihren päpstlichen Segen, der auch einen Ablass von 100 Jahren für den Kirchenbesuch am Fest des <rs type="person"><!--TODO ref eintragen-->Hl. Dominikus</rs> anordnete. Den Augustinern gewährte schon <rs type="person"><!--TODO ref eintragen-->Innozenz IV.</rs> im Jahr 1244 einen absurd anmutenden Ablass von 1000 Jahren für Almosen und den Besuch der Augustinerkirche zwischen Septuagesima und Palmsonntag sowie einen vollkommenen Ablass an drei Tagen in der Karwoche. <rs type="person"><!--TODO ref eintragen-->Julius II.</rs> bestätigt in der Bulle „Dum uberes fructus“ alte, den Augustinern gewährte Ablässe mit Beifügung eines Ablasses von 100 Jahren für den Kirchenbesuch an Festen von drei Ordensheiligen, erwähnte jedoch nicht den Ablass von 1244. Veröffentlicht wurden diese Ablässe in den Privilegia fratrum Heremitarum Augustini, Rom 1514, 27ff. S. hierzu <bibl>Paulus, Ablass 3, 260-268</bibl>.</note>
             </x:expect>
         </x:scenario>
-        <x:scenario label="Kursive 2">
+        <x:scenario label="T1.2: Kursive 2">
             <x:context>
                 <w:endnoteReference w:id="31" />
                 <w:endnotes>
@@ -844,7 +845,7 @@
                 </w:endnotes>
             </x:context>
             <x:expect label="Kursiv und korrektes ref">
-                <note type="footnote">Karlstadt übersetzt einen seinerzeit <rs type="person"><!--TODO ref eintragen-->Cyrill von Alexandria</rs> zugeschriebenen Text. S. <ref type="medieval" cRef="Origines!In Leviticum homilia 2"><!--TODO: cRef prüfen!-->Origines, In Leviticum homilia 2</ref>: „Sed quid praecipue in huiusmodi sacerdote mirandum est? non ut non peccet, quod
+                <note type="footnote" xml:id="n31">Karlstadt übersetzt einen seinerzeit <rs type="person"><!--TODO ref eintragen-->Cyrill von Alexandria</rs> zugeschriebenen Text. S. <ref type="medieval" cRef="Origines!In Leviticum homilia 2"><!--TODO: cRef prüfen!-->Origines, In Leviticum homilia 2</ref>: „Sed quid praecipue in huiusmodi sacerdote mirandum est? non ut non peccet, quod
                                     fieri non potest, sed ut agnoscat et intelligat peccatum suum. Nunquam enim se
                                     emendat, qui pecasse se non putat. Simul quia et facilius potest indulgere
                                     peccantibus, is qui alicuius infirmitatis suae conscientiae remordetur.“ (<bibl>PG 12, 415C</bibl>). Vgl. Eximii patris Cyrilli Alexandrini commentarii in Leviticum sexdecim
@@ -854,7 +855,7 @@
                                     alicuius infirmitatis conscientie sue remordetur.“</note>
             </x:expect>
         </x:scenario>
-        <x:scenario label="w:i und w:vertAlign">
+        <x:scenario label="T1.3: w:i und w:vertAlign">
             <x:context>
                 <w:endnoteReference w:id="31" />
                 <w:endnotes>
@@ -926,7 +927,7 @@
                 </w:endnotes>
             </x:context>
             <x:expect label="beides umgesetzt">
-                <note type="footnote">Eckium <hi style="font-style: italic;">D, E</hi>; Eccium, <hi style="font-style: italic;">F, H, </hi>
+                <note type="footnote" xml:id="n31">Eckium <hi style="font-style: italic;">D, E</hi>; Eccium, <hi style="font-style: italic;">F, H, </hi>
                     <hi style="font-style: italic;">G</hi><hi style="font-style: italic;"><hi rend="sub">1</hi></hi>.</note>
             </x:expect>
         </x:scenario>
@@ -1000,7 +1001,7 @@
                 </w:endnotes>
             </x:context>
             <x:expect label="hocgestellt">
-                <note type="footnote">Siehe z.B. <bibl>Eck, Disputatio et excusatio (1519), fol. A2<hi rend="super">v</hi>-A3<hi rend="super">r</hi></bibl>.</note>
+                <note type="footnote" xml:id="n10">Siehe z.B. <bibl>Eck, Disputatio et excusatio (1519), fol. A2<hi rend="super">v</hi>-A3<hi rend="super">r</hi></bibl>.</note>
             </x:expect>
         </x:scenario>
 		<x:scenario label="falsche Markierung in FN-Text">
@@ -1315,11 +1316,11 @@
 		</x:scenario>
 	</x:scenario>
     
-    <x:scenario label="Verweise">
-        <x:scenario label="Zielmarke erstellen">
+    <x:scenario label="T2: Verweise">
+        <x:scenario label="T2.1: Zielmarke erstellen">
             <x:context>
-                <tei:div>
-                    <tei:p>
+                <div>
+                    <p>
                         <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
                             w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
                             <w:pPr>
@@ -1388,26 +1389,25 @@
                                 <w:t xml:space="preserve"> Existit.</w:t>
                             </w:r>
                         </w:p>
-                    </tei:p>
-                </tei:div>
+                    </p>
+                </div>
                 <w:endnotes>
                     <w:endnote w:id="2"><w:p w:rsidR="00F111D2" w:rsidRPr="00367BD8" w:rsidRDefault="00F111D2" w:rsidP="00F111D2"><w:pPr><w:pStyle w:val="Endnotentext"/><w:rPr><w:lang w:val="fr-FR"/></w:rPr></w:pPr><w:r><w:rPr><w:rStyle w:val="Endnotenzeichen"/></w:rPr><w:endnoteRef/></w:r><w:r><w:t xml:space="preserve"> Der Begrifflichkeit der Thesenreihe liegt </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="KSBibelstelle"/></w:rPr><w:t>Röm 3,27-30</w:t></w:r><w:r><w:t xml:space="preserve"> zu Grunde: „(27) Ubi est ergo gloriatio tua? </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:lang w:val="it-IT"/></w:rPr><w:t xml:space="preserve">Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium? </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">Immo et gentium. </w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>(3</w:t></w:r><w:r w:rsidRPr="00C264D0"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">0) </w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">Quoniam </w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t xml:space="preserve">quidem </w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>unus e</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>s</w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>t Deus, qui justificat circumci</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>s</w:t></w:r><w:r w:rsidRPr="00FB11FB"><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>ionem ex fide, et praeputium per fidem.</w:t></w:r><w:r><w:rPr><w:lang w:val="fr-FR"/></w:rPr><w:t>"</w:t></w:r></w:p></w:endnote>
                     <w:endnote w:id="3"><w:p w:rsidR="00F111D2" w:rsidRPr="00C264D0" w:rsidRDefault="00F111D2" w:rsidP="00F111D2"><w:pPr><w:pStyle w:val="Endnotentext"/><w:rPr><w:lang w:val="sv-SE"/></w:rPr></w:pPr><w:r><w:rPr><w:rStyle w:val="Endnotenzeichen"/></w:rPr><w:endnoteRef/></w:r><w:r><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t xml:space="preserve"> Vgl. </w:t></w:r><w:r w:rsidRPr="00F111D2"><w:rPr><w:rStyle w:val="KSBibelstelle"/></w:rPr><w:t>Röm 3,29</w:t></w:r><w:r w:rsidRPr="00C264D0"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t xml:space="preserve"> (s. o. Anm. </w:t></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="begin"/></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:instrText xml:space="preserve"> NOTEREF _Ref495566379 \h </w:instrText></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="separate"/></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t>2</w:t></w:r><w:r w:rsidR="00E56A50"><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:fldChar w:fldCharType="end"/></w:r><w:r><w:rPr><w:lang w:val="sv-SE"/></w:rPr><w:t>).</w:t></w:r></w:p></w:endnote>
                 </w:endnotes>
             </x:context>
-            <x:expect label="hab:bm">
-                <div>
-                <p><lb/>Lex factorum<hab:bm name="_Ref495566379" /><note type="footnote">Der Begrifflichkeit der Thesenreihe liegt <ref type="biblical">Röm 3,27-30</ref> zu Grunde: „(27) Ubi est ergo gloriatio tua? Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium? Immo et gentium. (30) Quoniam quidem unus est Deus, qui justificat circumcisionem ex fide, et praeputium per fidem."</note> non in solo iudaismo<note type="footnote">Vgl. <ref type="biblical">Röm 3,29</ref> (s. o. Anm. <hab:mark xmlns:hab="http://diglib.hab.de" ref="NOTEREF _Ref495566379 \h"/>2<hab:mark xmlns:hab="http://diglib.hab.de"/>).</note> Existit.</p>
-                </div>
-            </x:expect>
+            <x:expect label="hab:bm" xml:space="preserve"><div><p>
+					<lb/>Lex factorum<hab:bm name="_Ref495566379" /><note type="footnote" xml:id="n2">Der Begrifflichkeit der Thesenreihe liegt <ref
+					type="biblical">Röm 3,27-30</ref> zu Grunde: „(27) Ubi est ergo gloriatio tua? Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium? Immo et gentium. (30) Quoniam quidem unus est Deus, qui justificat circumcisionem ex fide, et praeputium per fidem."</note> non in solo iudaismo<note
+					xml:id="n3"	type="footnote">Vgl. <ref type="biblical">Röm 3,29</ref> (s. o. Anm. <hab:mark xmlns:hab="http://diglib.hab.de" ref="NOTEREF _Ref495566379 \h"/>2<hab:mark xmlns:hab="http://diglib.hab.de"/>).</note> Existit.</p></div></x:expect>
         </x:scenario>
         
     </x:scenario>
     
-    <x:scenario label="listen">
-        <x:scenario label="mit großer röm. Zählung">
+    <x:scenario label="T3: listen">
+        <x:scenario label="T3.1: mit großer röm. Zählung">
             <x:context>
-                <tei:list>
+                <list>
                     <w:p w:rsidR="00FE24A7" w:rsidRPr="00B10639" w:rsidRDefault="00FE24A7" w:rsidP="00B10639">
                         <w:pPr>
                             <w:pStyle w:val="Listenabsatz"/>
@@ -1433,7 +1433,7 @@
                             <w:t>.</w:t>
                         </w:r>
                     </w:p>
-                </tei:list>
+                </list>
                 <w:numbering mc:Ignorable="w14 w15 wp14"
                     xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -1587,7 +1587,7 @@
         </x:scenario>
         <x:scenario label="korrigierte Zählung">
             <x:context>
-                <tei:list>
+                <list>
                     <w:p w:rsidR="00FE24A7" w:rsidRPr="00E5383B" w:rsidRDefault="00FE24A7" w:rsidP="00B10639">
                         <w:pPr>
                             <w:pStyle w:val="Listenabsatz"/>
@@ -1620,7 +1620,7 @@
                             <w:t>.</w:t>
                         </w:r>
                     </w:p>
-                </tei:list>
+                </list>
                 <w:numbering mc:Ignorable="w14 w15 wp14"
                     xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -1916,9 +1916,9 @@
                 </list>
             </x:expect>
         </x:scenario>
-    	<x:scenario label="Anm. z. Nummer">
+    	<x:scenario label="T3.3: Anm. z. Nummer">
     		<x:context>
-    			<tei:p>
+    			<p>
     				<w:p xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" w:rsidR="00D05E63" w:rsidRPr="001969BD" w:rsidRDefault="00D05E63" w:rsidP="001969BD">
     					<w:pPr>
     						<w:pStyle w:val="KSText"/>
@@ -2084,7 +2084,7 @@
     						<w:t xml:space="preserve"> </w:t>
     					</w:r>
     				</w:p>
-    			</tei:p>
+    			</p>
     			<w:footnotes>
     				<w:footnote w:id="33">
     					<w:p w:rsidR="00B71AA3" w:rsidRPr="00AA6FB8" w:rsidRDefault="00B71AA3" w:rsidP="00D05E63">
@@ -2110,10 +2110,12 @@
     				</w:footnote>
     			</w:footnotes>
     		</x:context>
-    		<x:expect label="Anm. in label" xml:space="preserve"><list><label>1.<note type="crit_app"> <hi style="font-style: italic;">in arabischen Ziffern in B, C.</hi></note></label><item> Cum D'ominus' <rs type="person"><!--TODO ref eintragen-->Ioan'nes'</rs> inficiatur<note type="crit_app" /> omnem omnium fidelium vitam esse
-					<lb />poenitentiam, aut poenitudinis indigam.<note type="footnote" /> Iudaeus est, sub
+    		<x:expect label="Anm. in label" xml:space="preserve"><list><label>1.<note type="crit_app"> <hi
+    			style="font-style: italic;">in arabischen Ziffern in B, C.</hi></note></label><item> Cum D'ominus' <rs type="person"><!--TODO ref eintragen-->Ioan'nes'</rs> inficiatur<note type="crit_app" /> omnem omnium fidelium vitam esse
+					<lb />poenitentiam, aut poenitudinis indigam.<note type="footnote" xml:id="n51"/> Iudaeus est, sub
 					<lb />Christiana pelle, occlamans, si iustus dei filius est?<note type="crit_app" /> descen-
-					<lb />dat de Cruce<note type="footnote" />, nescitque hanc vitam, diem crucis perferendae.<note type="footnote" /></item></list></x:expect>
+					<lb />dat de Cruce<note type="footnote" xml:id="n52"/>, nescitque hanc vitam, diem crucis perferendae.<note
+						xml:id="n53" type="footnote" /></item></list></x:expect>
     	</x:scenario>
     </x:scenario>
     
@@ -2662,7 +2664,7 @@
 					<lb/>hactenus ecclesiam defendit, et quis te vita defuncto <anchor type="crit_app" ref="s"></anchor>tuebitur? 
 					<lb/>quod<anchor type="crit_app" ref="se"></anchor><note type="crit_app"> tuebituro quod <hi style="font-style: italic;">B, C</hi></note> vix audent Imperatores mundi, audacter subit audaculus</p></x:expect>
 		</x:scenario>
-        <x:scenario label="mit Anmerkungen innerhalb">
+        <x:scenario label="T5.2: mit Anmerkungen innerhalb">
             <x:context>
                 <p>
                     <w:p w:rsidR="00FE24A7" w:rsidRPr="009430AF" w:rsidRDefault="00FE24A7" w:rsidP="00DB60AD">
@@ -3121,9 +3123,9 @@
                 </w:footnote>
                 </w:footnotes>
             </x:context>
-            <x:expect label="anchor vorne hinten, FN 1, Text a">
-                <p><lb/><pb n="[21]"/> <anchor type="crit_app" ref="s"/>Conclusiones duodecim de legis non furtum facies<note type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk</ref><ref type="biblical"> 18,20</ref>.</note>/ impletione et testamentorum legatione altarium<note type="crit_app"> <hi style="font-style: italic;">A</hi>; altatium <hi style="font-style: italic;">B</hi><hi style="font-style: italic;">, </hi><hi style="font-style: italic;">von Gottschalk verbessert</hi></note>/ et missarum fundatione<anchor type="crit_app" ref="se"/><note type="crit_app"> <hi style="font-style: italic;">Im Inhaltsverzeichnis</hi><hi style="font-style: italic;"> von A</hi><hi style="font-style: italic;">, </hi><hi style="font-style: italic;">pag</hi><hi style="font-style: italic;">. 2,</hi><hi style="font-style: italic;"> lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi></note>.</p>
-            </x:expect>
+            <x:expect label="anchor vorne hinten, FN 1, Text a" xml:space="preserve"><p>
+                	<lb/><pb n="[21]"/> <anchor type="crit_app" ref="s"/>Conclusiones duodecim de legis non furtum facies<note
+                		xml:id="n1" type="footnote">Wortlaut nach <ref type="biblical">Ex 20,15</ref>; <ref type="biblical">Lk</ref><ref type="biblical"> 18,20</ref>.</note>/ impletione et testamentorum legatione altarium<note type="crit_app"> <hi style="font-style: italic;">A</hi>; altatium <hi style="font-style: italic;">B</hi><hi style="font-style: italic;">, </hi><hi style="font-style: italic;">von Gottschalk verbessert</hi></note>/ et missarum fundatione<anchor type="crit_app" ref="se"/><note type="crit_app"> <hi style="font-style: italic;">Im Inhaltsverzeichnis</hi><hi style="font-style: italic;"> von A</hi><hi style="font-style: italic;">, </hi><hi style="font-style: italic;">pag</hi><hi style="font-style: italic;">. 2,</hi><hi style="font-style: italic;"> lautet der Titel:</hi> xii Pulchre conclusiones de impletione legis/ non furtum facies/ de testamentorum legatione et altarium aut missarum fundatione <hi style="font-style: italic;">Entsprechend in B</hi></note>.</p></x:expect>
         </x:scenario>
     </x:scenario>
 </x:description>
