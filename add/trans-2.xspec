@@ -151,6 +151,18 @@
 			<x:expect label="ein rs mit Marginalie">
 				<p>essem <rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"><hi style="font-style: italic;">fehlt B, C</hi></note></note><lb break="no"/>stae</rs>, patiebar</p></x:expect>
 		</x:scenario>
+		<x:scenario label="T1.10: Trennung mit Marginalie">
+			<x:context>
+				<p>
+					expilationis incredibi-<note place="margin">Incredibili Germanorum patientiae, etiam a Rho'manis' insultatur.</note>
+					<lb/>lem patientiam.
+				</p>
+			</x:context>
+			<x:expect label="w mit komplettem Wort">
+				<p>expilationis <w>incredibi<note place="margin">Incredibili Germanorum patientiae, etiam a Rho'manis' insultatur.</note><lb break="no"/>lem</w> patientiam.
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T2: quote">
