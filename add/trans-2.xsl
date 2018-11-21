@@ -185,7 +185,8 @@
 		<xsl:choose>
 			<xsl:when test="ends-with(preceding-sibling::text()[1], '-') and count($inter) = 0" />
 			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::text()[1], '-')"/>
-			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::node()[1][self::tei:rs], '-')"/>
+			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::node()[1][self::tei:rs], '-')" />
+			<xsl:when test="ends-with(preceding-sibling::text()[1], '') and following-sibling::node()[1][self::tei:note[@place]]" />
 			<xsl:otherwise>
 				<xsl:sequence select="." />
 			</xsl:otherwise>

@@ -173,6 +173,18 @@
 				<p>quod nos <w>Ger<pb n="[A4v]"/><lb break="no"/>manos,</w> meros blennones<note type="crit_app"> blennos <hi style="font-style: italic;">WA</hi></note><note type="footnote" xml:id="n32">Vgl. <bibl>CGL 6, 146</bibl>.</note>, bardos, buccones,</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.12: mehrzeilige Marginalie vor Umbruch">
+			<x:context>
+				<p>
+					istis: or-<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.<note type="crit_app"> Indulgentiae <hi style="font-style: italic;">B; C</hi></note></note>
+					<lb/>natissimi viri:
+				</p>
+			</x:context>
+			<x:expect label="eine Marginalie nach w">
+				<p>istis: <w>or<lb break="no"/>natissimi</w><note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.<note type="crit_app"> Indulgentiae <hi style="font-style: italic;">B; C</hi></note></note> viri:
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T2: quote">
