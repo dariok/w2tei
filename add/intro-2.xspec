@@ -4,6 +4,7 @@
   xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
   xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns:hab="http://diglib.hab.de"
   xmlns="http://www.tei-c.org/ns/1.0"
   stylesheet="intro-2.xsl"
   xslt-version="3.0">
@@ -26,7 +27,7 @@
         </cit>
       </x:context>
       <x:expect label="quote im cit">
-        <cit><quote>Deus non precipit homini impossibilia. <lb />Lex dei imperat multa impossibilia homini.</quote><note type="footnote">
+        <cit><hab:qs/>Deus non precipit homini impossibilia. <lb />Lex dei imperat multa impossibilia homini.<hab:qe/><note type="footnote">
           <hi style="font-style: italic;">151 Conclusiones</hi>, Th. 141f. (KGK I.1, Nr. 58, S. 510, Z. 13f.). Hinter dieser Argumentation steht 
           Aug. 
           grat
@@ -35,7 +36,7 @@
           lib. 
           arb
           .
-          16,32: <quote>Magnum aliquod Pelagiani se scire putant, quando dicunt, ‚Non juberet Deus, quod sciret non posse ab homine fieri.‘ quis hoc nesciat? Sed ideo jubet aliqua quae non possumus, ut noverimus quid ab illo petere debeamus. Ipsa est enim fides, quae orando impetrat quod lex imperat.</quote> (
+          16,32: <hab:qs/>Magnum aliquod Pelagiani se scire putant, quando dicunt, <hab:qs/>Non juberet Deus, quod sciret non posse ab homine fieri.<hab:qe/> quis hoc nesciat? Sed ideo jubet aliqua quae non possumus, ut noverimus quid ab illo petere debeamus. Ipsa est enim fides, quae orando impetrat quod lex imperat.<hab:qe/> (
           PL 44, 900
           ).</note>
         </cit>
@@ -183,11 +184,11 @@
 		</x:context>
 		<x:expect label="Verweise">
 			<note type="footnote" xml:id="n5">Anm. <ptr type="wdb" target="#n17"/>#; vgl.</note>
-			<note type="footnote" xml:id="n17">Immatrikuliert wurde er als „<rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs
-				> de <rs type="place"><!--TODO ref eintragen!-->Wangen</rs>“ im Sommersemester 1504 (<bibl ref="#foerstemann_album_1841"
+			<note type="footnote" xml:id="n17">Immatrikuliert wurde er als <hab:qs/><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs
+				> de <rs type="place"><!--TODO ref eintragen!-->Wangen</rs><hab:qe/> im Sommersemester 1504 (<bibl ref="#foerstemann_album_1841"
 					> 1, 14</bibl>). Der Rotulus von 1507 führt <rs type="person"><!--TODO ref eintragen!-->Gunckel</rs
-				> als Magister <quote>in philosophia extraordinarie</quote>, <bibl ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl
-				>; 1512 ist er einer der <quote>magistri collegiati</quote>, <bibl ref="#friedensburg_urkundenbuch_1926"> 1, 63 Nr. 36</bibl>.</note>
+				> als Magister <hab:qs/>in philosophia extraordinarie<hab:qe/>, <bibl ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl
+				>; 1512 ist er einer der <hab:qs/>magistri collegiati<hab:qe/>, <bibl ref="#friedensburg_urkundenbuch_1926"> 1, 63 Nr. 36</bibl>.</note>
 		</x:expect>
 	</x:scenario>
 </x:description>

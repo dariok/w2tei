@@ -18,26 +18,35 @@
   </xsl:template>
   
   <xsl:template match="text()[not(preceding-sibling::*[1][self::hab:mark[@ref]])]">
-    <xsl:analyze-string select="." regex="[„“&quot;»«]([^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
+    <xsl:analyze-string select="." regex="[&quot;]([^&quot;]*)[&quot;]">
       <xsl:matching-substring>
         <quote>
-          <xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.\.\.\]">
-            <xsl:matching-substring><gap/></xsl:matching-substring>
-            <xsl:non-matching-substring>
-              <xsl:analyze-string select="." regex="\$">
-                <xsl:matching-substring>
-                  <lb />
-                </xsl:matching-substring>
-                <xsl:non-matching-substring>
-                  <xsl:value-of select="."/>
-                </xsl:non-matching-substring>
-              </xsl:analyze-string>
-            </xsl:non-matching-substring>
-          </xsl:analyze-string>
+          <xsl:sequence select="substring(., 2, string-length()-2)" />
         </quote>
       </xsl:matching-substring>
       <xsl:non-matching-substring>
-        <xsl:sequence select="."/>
+      	<xsl:analyze-string select="." regex="[‚„»]">
+      		<xsl:matching-substring>
+      			<hab:qs />
+      		</xsl:matching-substring>
+      		<xsl:non-matching-substring>
+      			<xsl:analyze-string select="." regex="[‘”“‟«]">
+      				<xsl:matching-substring>
+      					<hab:qe />
+      				</xsl:matching-substring>
+      				<xsl:non-matching-substring>
+      					<xsl:analyze-string select="." regex="\$">
+      						<xsl:matching-substring>
+      							<lb />
+      						</xsl:matching-substring>
+      						<xsl:non-matching-substring>
+      							<xsl:sequence select="." />
+      						</xsl:non-matching-substring>
+      					</xsl:analyze-string>
+      				</xsl:non-matching-substring>
+      			</xsl:analyze-string>
+      		</xsl:non-matching-substring>
+      	</xsl:analyze-string>
       </xsl:non-matching-substring>
     </xsl:analyze-string>
   </xsl:template>
