@@ -17,4 +17,37 @@
 			</p>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="T2: quote">
+		<x:scenario label="T2.1: einfach">
+			<x:context>
+				<p>
+					Immatrikuliert wurde er als <hab:qs/><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs> de <rs
+						type="place"><!--TODO ref eintragen!-->Wangen</rs><hab:qe/> im Sommersemester 1504 (<bibl
+						ref="#foerstemann_album_1841"> 1, 14</bibl>). Der Rotulus von 1507 führt <rs
+						type="person">Gunckel</rs> als Magister <hab:qs/>in philosophia extraordinarie<hab:qe/>, <bibl
+						ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl>; 1512 ist er einer der <hab:qs/>magistri collegiati<hab:qe/>, <bibl
+						ref="#friedensburg_urkundenbuch_1926"> 1, 63 Nr. 36</bibl>.
+				</p>
+			</x:context>
+			<x:expect label="normale quote">
+				<p>
+					Immatrikuliert wurde er als <quote><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs> de <rs
+						type="place"><!--TODO ref eintragen!-->Wangen</rs></quote> im Sommersemester 1504 (<bibl
+						ref="#foerstemann_album_1841"> 1, 14</bibl>). Der Rotulus von 1507 führt <rs
+						type="person">Gunckel</rs> als Magister <quote>in philosophia extraordinarie</quote>, <bibl
+						ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl>; 1512 ist er einer der <quote>magistri collegiati</quote>, <bibl
+						ref="#friedensburg_urkundenbuch_1926"> 1, 63 Nr. 36</bibl>.
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T2.2: geschachtelt">
+			<x:context>
+				<p>16,32: <hab:qs/>Magnum aliquod Pelagiani se scire putant, quando dicunt, <hab:qs/>Non juberet Deus, quod sciret non posse ab homine fieri.<hab:qe/> quis hoc nesciat? Sed ideo jubet aliqua quae non possumus, ut noverimus quid ab illo petere debeamus. Ipsa est enim fides, quae orando impetrat quod lex imperat.<hab:qe/> (</p>
+			</x:context>
+			<x:expect label="geschachtelte quote">
+				<p>16,32: <quote>Magnum aliquod Pelagiani se scire putant, quando dicunt, <quote>Non juberet Deus, quod sciret non posse ab homine fieri.</quote> quis hoc nesciat? Sed ideo jubet aliqua quae non possumus, ut noverimus quid ab illo petere debeamus. Ipsa est enim fides, quae orando impetrat quod lex imperat.</quote> (</p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>

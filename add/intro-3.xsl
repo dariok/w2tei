@@ -15,9 +15,49 @@
 		</term>
 	</xsl:template>
 	
+	<xsl:template match="hab:qe" />
+	<xsl:template match="hab:qs">
+		<quote>
+			<xsl:choose>
+				<xsl:when test="following-sibling::hab:*[1][self::hab:qe]">
+					<xsl:apply-templates select="following-sibling::node()
+						intersect following-sibling::hab:*[1]/preceding-sibling::node()" mode="quote"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates select="(following-sibling::node()
+						intersect following-sibling::hab:*[3]/preceding-sibling::node())[not(
+							preceding-sibling::hab:*[1][self::hab:qs]
+							and preceding-sibling::hab:*[2][self::hab:qs])]" mode="quote"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</quote>
+	</xsl:template>
+	<xsl:template match="node()[preceding-sibling::hab:*[1][self::hab:qs]
+		and following-sibling::hab:*[1][self::hab:qe]]" />
+	<xsl:template match="node()[preceding-sibling::hab:*[1][self::hab:qs]
+		and following-sibling::hab:*[1][self::hab:qs]
+		and following-sibling::hab:*[2][self::hab:qe]]" />
+	<xsl:template match="node()[preceding-sibling::hab:*[1][self::hab:qe]
+		and following-sibling::hab:*[1][self::hab:qe]
+		and not(self::hab:qs)]" />
+	
+	<xsl:template match="@* | node()[not(self::hab:qs or self::hab:qe)]" mode="quote">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()" mode="quote" />
+		</xsl:copy>
+	</xsl:template>
+	
+	<xsl:template match="hab:qe" mode="quote" />
+	<xsl:template match="hab:qs" mode="quote">
+		<quote>
+			<xsl:apply-templates select="following-sibling::node()
+				intersect following-sibling::hab:*[1]/preceding-sibling::node()" mode="quote"/>
+		</quote>
+	</xsl:template>
+	
 	<xsl:template match="@* | node()">
 		<xsl:copy>
-			<xsl:apply-templates />
+			<xsl:apply-templates select="@* | node()"/>
 		</xsl:copy>
 	</xsl:template>
 </xsl:stylesheet>
