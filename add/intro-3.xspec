@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
+	xmlns:wdb="https://github.com/dariok/wdbplus"
+	xmlns:hab="http://diglib.hab.de"
+	xmlns="http://www.tei-c.org/ns/1.0"
+	stylesheet="intro-3.xsl">
+	<x:scenario label="T1: hi (italic) -> term">
+		<x:context>
+			<p>
+				<hi style="font-style: italic;">151 Conclusiones</hi>, Th. 141f. (KGK I.1, Nr. 58, S. 510, Z. 13f.). Hinter dieser Argumentation steht
+			</p>
+		</x:context>
+		<x:expect label="term">
+			<p>
+				<term type="term">151 Conclusiones</term>, Th. 141f. (KGK I.1, Nr. 58, S. 510, Z. 13f.). Hinter dieser Argumentation steht
+			</p>
+		</x:expect>
+	</x:scenario>
+</x:description>
