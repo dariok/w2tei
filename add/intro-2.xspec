@@ -7,8 +7,8 @@
   xmlns="http://www.tei-c.org/ns/1.0"
   stylesheet="intro-2.xsl"
   xslt-version="3.0">
-  <x:scenario label="Textknoten">
-    <x:scenario label="quote">
+  <x:scenario label="T1: Textknoten">
+    <x:scenario label="T1.1: quote">
       <x:context>
         <cit>„Deus non precipit homini impossibilia. $Lex dei imperat multa impossibilia homini.“<note type="footnote">
           <hi style="font-style: italic;">151 </hi>
@@ -27,8 +27,7 @@
       </x:context>
       <x:expect label="quote im cit">
         <cit><quote>Deus non precipit homini impossibilia. <lb />Lex dei imperat multa impossibilia homini.</quote><note type="footnote">
-          <hi style="font-style: italic;">151 </hi>
-          <hi style="font-style: italic;">Conclusiones</hi>, Th. 141f. (KGK I.1, Nr. 58, S. 510, Z. 13f.). Hinter dieser Argumentation steht 
+          <hi style="font-style: italic;">151 Conclusiones</hi>, Th. 141f. (KGK I.1, Nr. 58, S. 510, Z. 13f.). Hinter dieser Argumentation steht 
           Aug. 
           grat
           .
@@ -78,7 +77,7 @@
   	</x:scenario>
   </x:scenario>
 
-  <x:scenario label="Alle Bestandteile">
+  <x:scenario label="T3: Alle Bestandteile">
     <x:context>
       <biblStruct type="imprint" xml:id="B">
         <analytic>
@@ -138,10 +137,10 @@
           <title>Diſputatio do⸗‖mini Johannis Eccij et ‖ Pa. Martini Luther in ‖ ﬅudio Lipſenſi futura. ‖ [H] ‖ [TE]</title>
           <imprint>
             <pubPlace cert="unknown">
-            	<rs type="place"><!--TODO ref eintragen!-->Leipzig</rs>
+            	<rs type="place" ref="#leipzig">Leipzig</rs>
             </pubPlace>
             <publisher cert="unknown">
-            	<rs type="person"><!--TODO ref eintragen!-->Martin Landsberg</rs>
+            	<rs type="person" ref="#landsberg_martin">Martin Landsberg</rs>
             </publisher>
             <date when="1519">1519</date>
           </imprint>

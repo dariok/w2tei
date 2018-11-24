@@ -54,6 +54,15 @@
       </xsl:when>
     </xsl:choose>
   </xsl:template>
+	
+	<xsl:template match="tei:hi[preceding-sibling::node()[1][self::tei:hi]]"/>
+	<xsl:template match="tei:hi[not(preceding-sibling::node()[1][self::tei:hi])]">
+		<hi>
+			<xsl:apply-templates select="@rend | @style" />
+			<xsl:value-of select="string-join(.
+				| following-sibling::tei:hi intersect following-sibling::node()[not(self::tei:hi)][1]/preceding-sibling::*, '')"/>
+		</hi>
+	</xsl:template>
   
   <xsl:template match="* | @* | comment()">
     <xsl:copy>
