@@ -15931,14 +15931,14 @@
 						>PROTESTATIO D.dooris Caroloﬅadii per ‖ reſpondentem ſibi a latere.</title></analytic><monogr><author
 						>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</author><title
 						>Diſputatio inter Egre‖gios &amp; præclaros viros ac doores,Ioannem Ecciu &amp; Mar‖tinum Lutherum in ſentia notariorum habita ‖</title><imprint><pubPlace cert="unknown"><rs type="place">Paris</rs></pubPlace><publisher cert="unknown"><rs type="person">Jodocus Badius</rs></publisher><date when="1520" cert="unknown">1520</date></imprint><extent>4°, 92 Bl., a<hi rend="super">8</hi>‒l<hi rend="super">8</hi>, m<hi rend="super">4</hi>.</extent><biblScope>fol. a1<hi rend="super">r‒v</hi>.</biblScope></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"><label>BNF Paris</label><idno type="signatur">D‒5832.</idno></item><item><label>BNF Paris</label><idno type="signatur">RES P‒R‒908 (2).</idno></item></list></note><note type="references"><listBibl><bibl>Claus/Pegg, Ergänzungen, Nr. 407a.</bibl><bibl>Zorzin, Flugschriftenautor, Nr. 15a.</bibl></listBibl>
-				<p>Der ungefähr Anfang Januar 1520 von <rs type="person"><!--TODO ref eintragen-->Jodocus</rs><rs type="person"
-					><!--TODO ref eintragen--> </rs><rs type="person"><!--TODO ref eintragen-->Badius</rs> herausgegebene Band trägt kein Titelblatt und enthält nach einer kurzen Einleitung die <hi style="font-style: italic;">Protestatio</hi> der drei Autoren; es folgen die – hier nicht edierte – Disputation von <rs type="person"
-					><!--TODO ref eintragen-->Eck</rs> und <rs type="person"><!--TODO ref eintragen-->Luther</rs> und, am Schluss, die offiziellen Deklarationen der zwei Notare, <rs type="person"
-					><!--TODO ref eintragen-->Johannes </rs><rs type="person"><!--TODO ref eintragen-->Gra</rs><rs type="person"
-					><!--TODO ref eintragen-->mann</rs><hab:bm name="_Ref528864028" /><note type="footnote" xml:id="n28"/> und <rs type="person"
-					><!--TODO ref eintragen-->Franciscus Richter</rs><hab:bm name="_Ref528864074" /><note type="footnote" xml:id="n29"
+				<p>Der ungefähr Anfang Januar 1520 von <rs type="person">Jodocus</rs><rs type="person"
+					> </rs><rs type="person">Badius</rs> herausgegebene Band trägt kein Titelblatt und enthält nach einer kurzen Einleitung die <hi style="font-style: italic;">Protestatio</hi> der drei Autoren; es folgen die – hier nicht edierte – Disputation von <rs type="person"
+					>Eck</rs> und <rs type="person">Luther</rs> und, am Schluss, die offiziellen Deklarationen der zwei Notare, <rs type="person"
+					>Johannes </rs><rs type="person">Gra</rs><rs type="person"
+					>mann</rs><hab:bm name="_Ref528864028" /><note type="footnote" xml:id="n28"/> und <rs type="person"
+					>Franciscus Richter</rs><hab:bm name="_Ref528864074" /><note type="footnote" xml:id="n29"
 					/>, die das herausgegebene Teilprotokoll beglaubigten.<note type="footnote" xml:id="n30"/> Aus dieser Vorlage wird in der vorliegenden Edition nur die <hi style="font-style: italic;">Protestatio</hi> <rs type="person"
-					><!--TODO ref eintragen-->Karlstadts</rs> berücksichtigt.<note type="footnote" xml:id="n31" /> </p></note></biblStruct></listBibl>
+					>Karlstadts</rs> berücksichtigt.<note type="footnote" xml:id="n31" /> </p></note></biblStruct></listBibl>
 				<listBibl type="sigla">
 					<msDesc xml:id="a"><msIdentifier><altIdentifier type="siglum"><idno>a</idno></altIdentifier><repository 
 					/><idno type="signatur" /></msIdentifier><msContents><msItem><locus /></msItem></msContents><physDesc>
@@ -15946,7 +15946,7 @@
 						handschriftliche Eintragungen in A<hi rend="sub">5Lp</hi>) gewonnenen Erkenntnisse mit dem Erfurter Druck, so erscheint es in der Tat naheliegend, dass A kaum das von den Notaren erstellte und kollationierte offizielle Protokoll zur Vorlage gehabt haben konnte. Dies ist nicht nur durch die vom Herausgeber des Druckes hinzugefügten, hauptsächlich in der dritten Person verfassten Zusammenfassungen und Berichten über die Geschehnisse während der Disputation zu begründen (im Manuskript fehlen diese, sie wurden in A<hi rend="sub">5Lp</hi> korrekt als <hi style="font-style: italic;">Additio</hi> im Vergleich zu den notariellen Protokollen gekennzeichnet)<note type="footnote"
 						xml:id="n95"/>, sondern auch und vor allem durch die fehlenden Textpassagen – vor allem Zeitangaben<note type="footnote"
 						xml:id="n96"/> –, die in einem amtlichen Protokoll eigentlich unabdingbar sind. Dennoch zeigt der Erfurter Druck eine substantielle Übereinstimmung mit den handschriftlichen Quellen, wie auch der ehemalige Notar <rs type="person"
-					><!--TODO ref eintragen-->Johannes </rs><rs type="person"><!--TODO ref eintragen-->Graumann</rs> in seinem Exemplar des Druckes notierte<note type="footnote"
+					>Johannes </rs><rs type="person">Graumann</rs> in seinem Exemplar des Druckes notierte<note type="footnote"
 				xml:id="n97"	/>. Die Abweichungen sind nicht so relevant, dass man vermuten könnte, A greife auf eine Vorlage zurück, die von den während der Disputation angefertigten Niederschriften vollständig unabhängig sei. Es ist vielmehr anzunehmen, dass A auf einer während der Disputation <hi style="font-style: italic;">in </hi
 					><hi style="font-style: italic;">dictando</hi> angefertigten Niederschrift beruht, ähnlich wie das Freiberger Manuskript, das allerdings als Vorlage für A ausgeschlossen werden muss. Ob dem Herausgeber des Erfurter Druckes eines der noch nicht kollationierten Hörprotokolle
 						oder – wie einige Marginalien mit teilweise spöttischen Kommentaren vermuten lassen

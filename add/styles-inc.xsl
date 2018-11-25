@@ -123,14 +123,12 @@
     <!-- RS -->
     <xsl:template match="w:r[wt:is(., 'KSOrt', 'r')]">
         <rs type="place">
-            <xsl:comment>TODO ref eintragen</xsl:comment>
             <xsl:apply-templates select="w:t"/>
         </rs>
     </xsl:template>
     
     <xsl:template match="w:r[wt:is(., 'KSPerson', 'r')]">
         <rs type="person">
-            <xsl:comment>TODO ref eintragen</xsl:comment>
             <xsl:apply-templates select="w:t"/>
         </rs>
     </xsl:template>
