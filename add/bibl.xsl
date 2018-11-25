@@ -54,6 +54,14 @@
   </xsl:template>
 	
 	<xsl:template match="tei:rs[@type = 'person']">
+		<xsl:call-template name="rsPerson" />
+	</xsl:template>
+	
+	<xsl:template match="tei:rs[@type = 'place']">
+		<xsl:call-template name="rsPlace" />
+	</xsl:template>
+	
+	<xsl:template name="rsPerson">
 		<rs type="person">
 			<xsl:variable name="register" select="doc('../../register/personenregister.xml')" />
 			<xsl:variable name="self" select="normalize-space()" />
@@ -72,7 +80,7 @@
 		</rs>
 	</xsl:template>
 	
-	<xsl:template match="tei:rs[@type = 'place']">
+	<xsl:template name="rsPlace">
 		<rs type="place">
 			<xsl:variable name="register" select="doc('../../register/ortsregister.xml')" />
 			<xsl:variable name="self" select="normalize-space()" />

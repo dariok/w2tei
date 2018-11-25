@@ -9,6 +9,13 @@
 	exclude-result-prefixes="xs math"
 	version="3.0">
 	
+	<xsl:include href="bibl.xsl"/>
+	
+	<xsl:template match="/">
+		<xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
+		<xsl:apply-templates select="node()" />
+	</xsl:template>
+	
 	<xsl:template match="tei:hi[@style = 'font-style: italic;']">
 		<term type="term">
 			<xsl:apply-templates />
@@ -41,7 +48,14 @@
 		and following-sibling::hab:*[1][self::hab:qe]
 		and not(self::hab:qs)]" />
 	
-	<xsl:template match="@* | node()[not(self::hab:qs or self::hab:qe)]" mode="quote">
+	<xsl:template match="tei:rs[@type = 'place']" mode="quote">
+		<xsl:call-template name="rsPlace" />
+	</xsl:template>
+	<xsl:template match="tei:rs[@type = 'person']" mode="quote">
+		<xsl:call-template name="rsPerson" />
+	</xsl:template>
+	
+	<xsl:template match="@* | node()[not(self::hab:qs or self::hab:qe or self::tei:rs)]" mode="quote">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()" mode="quote" />
 		</xsl:copy>

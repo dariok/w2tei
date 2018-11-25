@@ -22,12 +22,11 @@
 		<x:scenario label="T2.1: einfach">
 			<x:context>
 				<p>
-					Immatrikuliert wurde er als <hab:qs/><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs> de <rs
-						type="place"><!--TODO ref eintragen!-->Wangen</rs><hab:qe/> im Sommersemester 1504 (<bibl
-						ref="#foerstemann_album_1841"> 1, 14</bibl>). Der Rotulus von 1507 führt <rs
-						type="person">Gunckel</rs> als Magister <hab:qs/>in philosophia extraordinarie<hab:qe/>, <bibl
-						ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl>; 1512 ist er einer der <hab:qs/>magistri collegiati<hab:qe/>, <bibl
-						ref="#friedensburg_urkundenbuch_1926"> 1, 63 Nr. 36</bibl>.
+					Immatrikuliert wurde er als <hab:qs/><rs type="person">Joannes günkeulin</rs
+					> de <rs type="place">Wangen</rs><hab:qe/> im Sommersemester 1504 (<bibl>AAV 1, 14</bibl
+					>). Der Rotulus von 1507 führt <rs type="person">Gunckel</rs
+					> als Magister <hab:qs/>in philosophia extraordinarie<hab:qe/>, <bibl>UUW 1, 16 Nr. 17</bibl
+					>; 1512 ist er einer der <hab:qs/>magistri collegiati<hab:qe/>, <bibl>UUW 1, 63 Nr. 36</bibl>.
 				</p>
 			</x:context>
 			<x:expect label="normale quote">
@@ -35,7 +34,7 @@
 					Immatrikuliert wurde er als <quote><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs> de <rs
 						type="place"><!--TODO ref eintragen!-->Wangen</rs></quote> im Sommersemester 1504 (<bibl
 						ref="#foerstemann_album_1841"> 1, 14</bibl>). Der Rotulus von 1507 führt <rs
-						type="person">Gunckel</rs> als Magister <quote>in philosophia extraordinarie</quote>, <bibl
+						type="person"><!--TODO ref eintragen!-->Gunckel</rs> als Magister <quote>in philosophia extraordinarie</quote>, <bibl
 						ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl>; 1512 ist er einer der <quote>magistri collegiati</quote>, <bibl
 						ref="#friedensburg_urkundenbuch_1926"> 1, 63 Nr. 36</bibl>.
 				</p>
@@ -47,6 +46,40 @@
 			</x:context>
 			<x:expect label="geschachtelte quote">
 				<p>16,32: <quote>Magnum aliquod Pelagiani se scire putant, quando dicunt, <quote>Non juberet Deus, quod sciret non posse ab homine fieri.</quote> quis hoc nesciat? Sed ideo jubet aliqua quae non possumus, ut noverimus quid ab illo petere debeamus. Ipsa est enim fides, quae orando impetrat quod lex imperat.</quote> (</p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
+	<x:scenario label="T3: bibl">
+		<x:scenario label="T3.1: einfach">
+			<x:context>
+				<listBibl>
+					<bibl>
+						Kolde, Disputationsthesen, 471, Nr. XXII
+					</bibl>
+					<bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+						>r</hi> und passim
+					</bibl>
+				</listBibl>
+			</x:context>
+			<x:expect label="bibl mit ref">
+				<listBibl>
+					<bibl ref="#kolde_disputationsthesen_1890">, 471, Nr. XXII</bibl>
+					<bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+						>r</hi> und passim</bibl>
+				</listBibl>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T3.2: mit hi rend=super">
+			<x:context>
+				<listBibl>
+					<bibl>Walch<hi rend="super">2</hi> 8, 1352-1363</bibl>
+				</listBibl>
+			</x:context>
+			<x:expect label="bibl ohne hi">
+				<listBibl>
+					<bibl ref="#walch2_1986"> 8, 1352-1363</bibl>
+				</listBibl>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>

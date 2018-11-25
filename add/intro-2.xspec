@@ -43,40 +43,6 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
-  
-  <x:scenario label="bibl">
-	  <x:scenario label="... einfach">
-	    <x:context>
-	      <listBibl>
-	        <bibl>
-	          Kolde, Disputationsthesen, 471, Nr. XXII
-	        </bibl>
-	        <bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-	          >r</hi> und passim
-	        </bibl>
-	      </listBibl>
-	    </x:context>
-	    <x:expect label="bibl mit ref">
-	      <listBibl>
-	        <bibl ref="#kolde_disputationsthesen_1890">, 471, Nr. XXII</bibl>
-	        <bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-	          >r</hi> und passim</bibl>
-	      </listBibl>
-	    </x:expect>
-	  </x:scenario>
-  	<x:scenario label="... mit hi rend=super">
-  		<x:context>
-  			<listBibl>
-  				<bibl>Walch<hi rend="super">2</hi> 8, 1352-1363</bibl>
-  			</listBibl>
-  		</x:context>
-  		<x:expect label="bibl ohne hi">
-  			<listBibl>
-  				<bibl ref="#walch2_1986"> 8, 1352-1363</bibl>
-  			</listBibl>
-  		</x:expect>
-  	</x:scenario>
-  </x:scenario>
 
   <x:scenario label="T3: Alle Bestandteile">
     <x:context>
@@ -122,8 +88,7 @@
             <bibl>Benzing, Lutherbibliographie, Nr. 348.</bibl>
             <bibl>VD 16 E 317.</bibl>
           </listBibl>
-          <p>Vier unterschiedliche Zierleisten mit Pflanzenmotiven, Banderole und Genien<note type="footnote">Vgl. <bibl>Dommer, Lutherdrucke, Orn. 96</bibl>.</note>. Holzschnitt in der Mitte: Johannes der Täufer mit einer Tierhaut bekleidet, tragend ein Lamm mit Kreuzfahne auf einem Buch.<note type="footnote">Vgl. <bibl>Heyer, Lutherdrucke, 472 (Orn. 15)</bibl>.</note> 
-          </p>
+          <p>Vier unterschiedliche Zierleisten mit Pflanzenmotiven, Banderole und Genien<note type="footnote">Vgl. <bibl>Dommer, Lutherdrucke, Orn. 96</bibl>.</note>. Holzschnitt in der Mitte: Johannes der Täufer mit einer Tierhaut bekleidet, tragend ein Lamm mit Kreuzfahne auf einem Buch.<note type="footnote">Vgl. <bibl>Heyer, Lutherdrucke, 472 (Orn. 15)</bibl>.</note></p>
         </note>
       </biblStruct>
     </x:context>
@@ -138,10 +103,10 @@
           <title>Diſputatio do⸗‖mini Johannis Eccij et ‖ Pa. Martini Luther in ‖ ﬅudio Lipſenſi futura. ‖ [H] ‖ [TE]</title>
           <imprint>
             <pubPlace cert="unknown">
-            	<rs type="place" ref="#leipzig">Leipzig</rs>
+            	<rs type="place">Leipzig</rs>
             </pubPlace>
             <publisher cert="unknown">
-            	<rs type="person" ref="#landsberg_martin">Martin Landsberg</rs>
+            	<rs type="person">Martin Landsberg</rs>
             </publisher>
             <date when="1519">1519</date>
           </imprint>
@@ -167,11 +132,10 @@
         </note>
         <note type="references">
           <listBibl>
-            <bibl ref="#benzing_lutherbibliographie_1966">, Nr. 348.</bibl>
-            <bibl ref="#vd16"> E 317.</bibl>
+          	<bibl>Benzing, Lutherbibliographie, Nr. 348.</bibl>
+          	<bibl>VD 16 E 317.</bibl>
           </listBibl>
-        	<p>Vier unterschiedliche Zierleisten mit Pflanzenmotiven, Banderole und Genien<note type="footnote">Vgl. <bibl ref="#dommer_lutherdrucke_1888">, Orn. 96</bibl>.</note>. Holzschnitt in der Mitte: Johannes der Täufer mit einer Tierhaut bekleidet, tragend ein Lamm mit Kreuzfahne auf einem Buch.<note type="footnote">Vgl. <bibl ref="#heyer_lutherdrucke_1892">, 472 (Orn. 15)</bibl>.</note> 
-          </p>
+        	<p>Vier unterschiedliche Zierleisten mit Pflanzenmotiven, Banderole und Genien<note type="footnote">Vgl. <bibl>Dommer, Lutherdrucke, Orn. 96</bibl>.</note>. Holzschnitt in der Mitte: Johannes der Täufer mit einer Tierhaut bekleidet, tragend ein Lamm mit Kreuzfahne auf einem Buch.<note type="footnote">Vgl. <bibl>Heyer, Lutherdrucke, 472 (Orn. 15)</bibl>.</note></p>
         </note>
       </biblStruct>
     </x:expect>
@@ -180,15 +144,18 @@
 	<x:scenario label="T5: FN-Verweise (neu)">
 		<x:context>
 			<note type="footnote" xml:id="n5">Anm. <hab:mark xmlns:hab="http://diglib.hab.de" ref="NOTEREF _Ref511739426 \h"/>17<hab:mark xmlns:hab="http://diglib.hab.de"/>#; vgl.</note>
-			<hab:bm xmlns:hab="http://diglib.hab.de" name="_Ref511739426"/><note type="footnote" xml:id="n17">Immatrikuliert wurde er als „<rs type="person">Joannes günkeulin</rs> de <rs type="place">Wangen</rs>“ im Sommersemester 1504 (<bibl>AAV 1, 14</bibl>). Der Rotulus von 1507 führt <rs type="person">Gunckel</rs> als Magister „in philosophia extraordinarie“, <bibl>UUW 1, 16 Nr. 17</bibl>; 1512 ist er einer der „magistri collegiati“, <bibl>UUW 1, 63 Nr. 36</bibl>.</note>
+			<hab:bm xmlns:hab="http://diglib.hab.de" name="_Ref511739426"/><note type="footnote"
+				xml:id="n17">Immatrikuliert wurde er als „<rs type="person">Joannes günkeulin</rs> de <rs
+				type="place">Wangen</rs>“ im Sommersemester 1504 (<bibl>AAV 1, 14</bibl>). Der Rotulus von 1507 führt <rs
+				type="person">Gunckel</rs> als Magister „in philosophia extraordinarie“, <bibl>UUW 1, 16 Nr. 17</bibl
+				>; 1512 ist er einer der „magistri collegiati“, <bibl>UUW 1, 63 Nr. 36</bibl>.</note>
 		</x:context>
 		<x:expect label="Verweise">
 			<note type="footnote" xml:id="n5">Anm. <ptr type="wdb" target="#n17"/>#; vgl.</note>
-			<note type="footnote" xml:id="n17">Immatrikuliert wurde er als <hab:qs/><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs
-				> de <rs type="place"><!--TODO ref eintragen!-->Wangen</rs><hab:qe/> im Sommersemester 1504 (<bibl ref="#foerstemann_album_1841"
-					> 1, 14</bibl>). Der Rotulus von 1507 führt <rs type="person"><!--TODO ref eintragen!-->Gunckel</rs
-				> als Magister <hab:qs/>in philosophia extraordinarie<hab:qe/>, <bibl ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl
-				>; 1512 ist er einer der <hab:qs/>magistri collegiati<hab:qe/>, <bibl ref="#friedensburg_urkundenbuch_1926"> 1, 63 Nr. 36</bibl>.</note>
+			<note type="footnote" xml:id="n17">Immatrikuliert wurde er als <hab:qs/><rs type="person">Joannes günkeulin</rs
+				> de <rs type="place">Wangen</rs><hab:qe/> im Sommersemester 1504 (<bibl>AAV 1, 14</bibl>). Der Rotulus von 1507 führt <rs type="person">Gunckel</rs
+				> als Magister <hab:qs/>in philosophia extraordinarie<hab:qe/>, <bibl>UUW 1, 16 Nr. 17</bibl
+				>; 1512 ist er einer der <hab:qs/>magistri collegiati<hab:qe/>, <bibl>UUW 1, 63 Nr. 36</bibl>.</note>
 		</x:expect>
 	</x:scenario>
 </x:description>
