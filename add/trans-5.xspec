@@ -631,6 +631,17 @@
 				<p>sensum <app><lem wit="#B">et</lem><rdg wit="#A #A5-L #A5-Br"><add place="corr">et</add></rdg></app> discrepantium</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T9.5: über der Zeile hinzugefügt">
+			<x:context>
+				<p>
+					ad opus bonum et <note type="crit_app"> <orig>opus</orig> über der Zeile hinzugefügt a<hi rend="sub">2</hi></note> meritorium
+				</p>
+			</x:context>
+			<x:expect label="alleinstehendes add">
+				<p>ad opus bonum et<add place="supralinear" wit="#a2">opus</add> meritorium
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T10: Normalfall">

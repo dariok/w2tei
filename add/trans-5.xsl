@@ -57,6 +57,10 @@
 					<xsl:sequence select="$content" />
 				</xsl:element>
 			</xsl:when>
+			<xsl:when test="$content/tei:add and count($content) = 1 and ends-with(preceding-sibling::node()[1], ' ')">
+				<xsl:value-of select="$text"/>
+				<xsl:sequence select="$content" />
+			</xsl:when>
 			<xsl:otherwise>
 				<xsl:sequence select="$content" />
 			</xsl:otherwise>
@@ -301,7 +305,6 @@
 						</xsl:choose>
 					</xsl:for-each>
 				</xsl:variable>
-				
 				<add>
 					<xsl:if test="string-length($wit) > 0">
 						<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
