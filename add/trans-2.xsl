@@ -67,15 +67,16 @@
 	</xsl:template>
 	
 	<xsl:template match="tei:lb">
-	    <xsl:choose>
-	        <xsl:when test="preceding-sibling::*[1][self::tei:pb]
-	            and ends-with(normalize-space(preceding-sibling::tei:pb[1]/preceding-sibling::text()[1]), '-')">
+		<xsl:choose>
+			<xsl:when test="preceding-sibling::*[1][self::tei:pb]
+				and ends-with(normalize-space(preceding-sibling::tei:pb[1]/preceding-sibling::text()[1]), '-')
+				and normalize-space(preceding-sibling::node()[1][self::text()]) = ''">
 	            <xsl:text> </xsl:text>
 	            <w>
 	                <xsl:value-of
 	                    select="xstring:substring-before(xstring:substring-after-last(normalize-space(
 	                        preceding-sibling::tei:pb[1]/preceding-sibling::text()[1]), ' '), '-')" />
-	                <pb break="no" n="{preceding-sibling::tei:pb[1]/@n}" />
+	                <pb n="{preceding-sibling::tei:pb[1]/@n}" />
 	                <lb break="no" />
 	                <xsl:value-of select="xstring:substring-before(following-sibling::text()[1], ' ')" />
 	            </w><xsl:if test="contains(following-sibling::text()[1], ' ')">
@@ -93,7 +94,9 @@
 	    			<xsl:value-of select="xstring:substring-before(following-sibling::text()[1], ' ')" />
 	    		</w>
 	    		<xsl:text> </xsl:text>
-	    		<xsl:value-of select="substring-after(following-sibling::text()[1], ' ')"/>
+	    		<xsl:if test="not(ends-with(normalize-space(following-sibling::text()[1]), '-'))">
+	    			<xsl:value-of select="substring-after(following-sibling::text()[1], ' ')"/>
+	    		</xsl:if>
 	    	</xsl:when>
 			<xsl:when test="preceding-sibling::*[1][self::tei:note]
 				and ends-with(preceding-sibling::tei:note[1]/preceding-sibling::text()[1], '-')">

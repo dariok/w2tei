@@ -90,7 +90,7 @@
 				</p>
 			</x:context>
 			<x:expect label="w">
-				<p><lb/>und altem weszen/ wir hoffen alhie/ das unser <w>ungefol<pb n="[A3r]" break="no" /><lb break="no" />giger</w> leyp erlost werd/ und haben die erlosung in <w>hoffe<lb break="no"/>nung</w> und glauben/ aber nit ym wesen und werck.
+				<p><lb/>und altem weszen/ wir hoffen alhie/ das unser <w>ungefol<pb n="[A3r]" /><lb break="no" />giger</w> leyp erlost werd/ und haben die erlosung in <w>hoffe<lb break="no"/>nung</w> und glauben/ aber nit ym wesen und werck.
 				</p></x:expect>
 		</x:scenario>
 		<x:scenario label="T1.6: mit rs">
@@ -137,7 +137,7 @@
 			</x:context>
 			<x:expect label="w mit note danach">
 				<p><lb></lb>ducit, ut suspicentur nos discrepare in re notissima, sicubi vero
-					<lb></lb>negocii cardo versatur, illic quam est imbellis quam mollis et <w>penetra<pb n="[A2r]" break="no"/><lb break="no"/>bilis.</w><note
+					<lb></lb>negocii cardo versatur, illic quam est imbellis quam mollis et <w>penetra<pb n="[A2r]" /><lb break="no"/>bilis.</w><note
 						type="footnote">Eine ähnliche Argumentation sowie die Gegenüberstellung von wahren (den
 						Wittenbergern) und falschen (<rs type="person"><!--TODO ref eintragen-->Eck</rs>) Verteidigern der göttliche
 						Lehre findet sich auch in: <rs type="person"><!--TODO ref eintragen-->Karlstadt</rs> an <rs type="person"
@@ -183,6 +183,32 @@
 			<x:expect label="eine Marginalie nach w">
 				<p>istis: <w>or<lb break="no"/>natissimi</w><note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.<note type="crit_app"> Indulgentiae <hi style="font-style: italic;">B; C</hi></note></note> viri:
 				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.13: ">
+			<x:context>
+				<p>sapientes se insipien-
+					<lb/><pb n="[B2r]"/>tibus preferrent, idonei minus idoneis, infirmis fortes, Propterea 
+					<lb/>Paulus subiunxit,</p>
+				<p>sapientes se insipien-
+					<pb n="[B2r]"/><lb/>tibus preferrent, idonei minus idoneis, infirmis fortes, Propterea 
+					<lb/>Paulus subiunxit,</p>
+				<p>totum peragere, con-
+					<lb/><pb n="[B4r]"/>tinuo adiunxit, quo genere causarum, eum totum inquit in 
+					<lb/>illo, totum ex illa.</p>
+				<p>virtutis tantulae praemium, mini-
+					<lb/><pb n="[C1r]"/>meque fastidiendum reposcunt, Eckii vero sublimitate nihil exau-
+					<lb/>diente, nihilque retribuente</p>
+			</x:context>
+			<x:expect label=".">
+				<p>sapientes se <w>insipien<pb n="[B2r]"/><lb break="no"/>tibus</w> preferrent, idonei minus idoneis, infirmis fortes, Propterea 
+					<lb/>Paulus subiunxit,</p>
+				<p>sapientes se <w>insipien<pb n="[B2r]"/><lb break="no"/>tibus</w> preferrent, idonei minus idoneis, infirmis fortes, Propterea 
+					<lb/>Paulus subiunxit,</p>
+				<p>totum peragere, <w>con<pb n="[B4r]"/><lb break="no"/>tinuo</w> adiunxit, quo genere causarum, eum totum inquit in 
+					<lb/>illo, totum ex illa.</p>
+				<p>virtutis tantulae praemium, <w>mini<pb n="[C1r]"/><lb break="no"/>meque</w> fastidiendum reposcunt, Eckii vero sublimitate nihil <w
+					>exau<lb break="no"/>diente,</w> nihilque retribuente</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
