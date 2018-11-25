@@ -325,6 +325,9 @@
 						<xsl:when test="contains(normalize-space(), 'zentriert')">
 							<xsl:attribute name="place">centre</xsl:attribute>
 						</xsl:when>
+						<xsl:when test="contains(normalize-space(), 'Korrekturverzeichnis')">
+							<xsl:attribute name="place">corr</xsl:attribute>
+						</xsl:when>
 					</xsl:choose>
 					<xsl:choose>
 						<xsl:when test="tei:orig">

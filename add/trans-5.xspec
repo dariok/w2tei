@@ -623,6 +623,14 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T9.4: Korrektuverzeichnis">
+			<x:context>
+				<p>sensum et<note type="crit_app">B<wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> hinzugefügt Korrekturverzeichnis A, A<hi rend="sub">5-L</hi>, A<hi rend="sub">5-Br</hi></note> discrepantium</p>
+			</x:context>
+			<x:expect label="add mit @place">
+				<p>sensum <app><lem wit="#B">et</lem><rdg wit="#A #A5-L #A5-Br"><add place="corr">et</add></rdg></app> discrepantium</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T10: Normalfall">
