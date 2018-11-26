@@ -200,8 +200,7 @@
 	<xsl:template match="hab:bm" />
 	<xsl:template match="tei:note[@type='footnote' and preceding-sibling::*[1][self::hab:bm]]">
 		<note type="footnote">
-			<xsl:attribute name="xml:id" select="'n'||count(preceding::hab:bm)"/>
-			<xsl:apply-templates select="node()" />
+			<xsl:apply-templates select="@* | node()" />
 		</note>
 	</xsl:template>
 	

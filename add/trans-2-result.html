@@ -7,7 +7,7 @@
    <body>
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/trans-2.xsl">home/dario/git/w2tei/add/trans-2.xsl</a></p>
-      <p>Tested: 25 November 2018 at 13:36</p>
+      <p>Tested: 26 November 2018 at 10:21</p>
       <h2>Contents</h2>
       <table class="xspec">
          <col width="75%" />
@@ -25,57 +25,64 @@
             </tr>
          </thead>
          <tbody>
-            <tr class="failed">
+            <tr class="successful">
                <th><a href="#d3e4">T1: Zeilenumbrüche</a></th>
                <th class="totals">13</th>
                <th class="totals">0</th>
-               <th class="totals">1</th>
-               <th class="totals">14</th>
+               <th class="totals">0</th>
+               <th class="totals">13</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e1540">T2: quote</a></th>
+               <th><a href="#d3e1372">T2: quote</a></th>
                <th class="totals">3</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">3</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e1803">T3: Trennungen</a></th>
+               <th><a href="#d3e1635">T3: Trennungen</a></th>
                <th class="totals">3</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">3</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e2002">T4: Absätze</a></th>
+               <th><a href="#d3e1834">T4: Absätze</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e2288">zusammenziehen / ersetzen</a></th>
+               <th><a href="#d3e2120">zusammenziehen / ersetzen</a></th>
                <th class="totals">2</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">2</th>
             </tr>
-            <tr class="successful">
-               <th><a href="#d3e2490">Verweise</a></th>
-               <th class="totals">2</th>
+            <tr class="failed">
+               <th><a href="#d3e2322">T6: Verweise</a></th>
+               <th class="totals">1</th>
                <th class="totals">0</th>
-               <th class="totals">0</th>
+               <th class="totals">1</th>
                <th class="totals">2</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e2577">anchor und span</a></th>
+               <th><a href="#d3e2409">anchor und span</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e2736">Titel verschieben</a></th>
+               <th><a href="#d3e2568">Titel verschieben</a></th>
+               <th class="totals">1</th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
+               <th class="totals">1</th>
+            </tr>
+            <tr class="successful">
+               <th><a href="#d3e2742">T9: Normalfall</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
@@ -84,14 +91,14 @@
          </tbody>
       </table>
       <div id="d3e4">
-         <h2 class="successful">T1: Zeilenumbrüche<span class="scenario-totals">passed: 13 / pending: 0 / failed: 1 / total: 14</span></h2>
+         <h2 class="successful">T1: Zeilenumbrüche<span class="scenario-totals">passed: 13 / pending: 0 / failed: 0 / total: 13</span></h2>
          <table class="xspec" id="t-d3e4">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
                   <th>T1: Zeilenumbrüche</th>
-                  <th>passed: 13 / pending: 0 / failed: 1 / total: 14</th>
+                  <th>passed: 13 / pending: 0 / failed: 0 / total: 13</th>
                </tr>
                <tr class="successful">
                   <th>T1.1: ohne FN</th>
@@ -197,65 +204,12 @@
                   <td>.</td>
                   <td>Success</td>
                </tr>
-               <tr class="failed">
-                  <th><a href="#d3e1371">T1.14: im Titel</a></th>
-                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
-               </tr>
-               <tr class="failed">
-                  <td><a href="#d3e1483">keine Doppelung</a></td>
-                  <td>Failure</td>
-               </tr>
-            </tbody>
-         </table>
-         <h3 id="d3e1371">T1: Zeilenumbrüche T1.14: im Titel</h3>
-         <h4 id="d3e1483">keine Doppelung</h4>
-         <table class="xspecResult">
-            <thead>
-               <tr>
-                  <th>Result</th>
-                  <th>Expected Result</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td><pre>&lt;<span class="diff">titlePart</span> xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span class="same">rendition</span>="#l"&gt;
-   &lt;<span class="same">lb</span> /&gt;
-   &lt;<span class="same">pb</span> <span class="same">n</span>="[A1r]" /&gt;
-   &lt;<span class="same">lb</span> /&gt;<span class="same">Epistola </span>&lt;<span class="same">rs</span> <span class="same">type</span>="person"&gt;<span class="same">Andreae Carolostadii</span>&lt;/rs&gt;
-   &lt;<span class="same">lb</span> /&gt;<span class="same">adversus ineptam et </span>&lt;<span class="same">w</span>&gt;<span class="same">ridi</span>&lt;<span class="same">lb</span> <span class="same">break</span>="no" /&gt;<span class="same">culam</span>&lt;/w&gt;<span class="same"> inventionem </span>&lt;<span class="diff">rs</span> <span class="same">type</span>="person"&gt;
-      &lt;<span class="diff">w</span>&gt;<span class="diff">Io</span>&lt;<span class="diff">lb</span> <span class="diff">break</span>="no" /&gt;<span class="diff">annis</span>&lt;/w&gt;<span class="diff"> Eckii</span>&lt;/rs&gt;
-   <span class="whitespace">...</span>
-   &lt;<span class="diff">w</span>&gt;<span class="diff">argutato</span>&lt;<span class="diff">lb</span> <span class="diff">break</span>="no" /&gt;<span class="diff">ris,</span>&lt;/w&gt;<span class="diff"> qui dixit, </span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="place"&gt;
-      &lt;<span class="diff">w</span>&gt;<span class="diff">Lip</span>&lt;<span class="diff">lb</span> <span class="diff">break</span>="no" /&gt;<span class="diff">siae</span>&lt;/w&gt;
-   &lt;/rs&gt;<span class="diff">, cum </span>&lt;<span class="diff">w</span>&gt;<span class="diff">ur</span>&lt;<span class="diff">lb</span> <span class="diff">break</span>="no" /&gt;<span class="diff">geret-
-					</span>&lt;/w&gt;
-   <span class="whitespace">.</span>
-   &lt;<span class="diff">w</span>&gt;<span class="diff">geret</span>&lt;<span class="diff">lb</span> <span class="diff">break</span>="no" /&gt;<span class="diff">ur.</span>&lt;/w&gt;
-   <span class="whitespace">.</span>
-&lt;/titlePart&gt;</pre></td>
-                  <td><pre>&lt;<span class="diff">titlePart</span> xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns="http://www.tei-c.org/ns/1.0"
-         <span class="same">rendition</span>="#l"&gt;
-   &lt;<span class="same">lb</span> /&gt;
-   &lt;<span class="same">pb</span> <span class="same">n</span>="[A1r]" /&gt;
-   &lt;<span class="same">lb</span> /&gt;<span class="same">Epistola </span>&lt;<span class="same">rs</span> <span class="same">type</span>="person"&gt;<span class="same">Andreae Carolostadii</span>&lt;/rs&gt;
-   &lt;<span class="same">lb</span> /&gt;<span class="same">adversus ineptam et </span>&lt;<span class="same">w</span>&gt;<span class="same">ridi</span>&lt;<span class="same">lb</span> <span class="same">break</span>="no" /&gt;<span class="same">culam</span>&lt;/w&gt;<span class="same"> inventionem </span>&lt;<span class="diff">rs</span> <span class="same">type</span>="person"&gt;<span class="diff">Io-</span>&lt;/rs&gt;
-   &lt;<span class="diff">lb</span> /&gt;
-   &lt;<span class="diff">rs</span> <span class="diff">type</span>="person"&gt;<span class="diff">annis Eckii</span>&lt;/rs&gt;
-   &lt;<span class="diff">w</span>&gt;<span class="diff">argutato</span>&lt;<span class="diff">lb</span> <span class="diff">break</span>="no" /&gt;<span class="diff">ris,</span>&lt;/w&gt;<span class="diff"> qui dixit, </span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="place"&gt;<span class="diff">Lip-</span>&lt;/rs&gt;
-   &lt;<span class="diff">lb</span> /&gt;
-   &lt;<span class="diff">rs</span> <span class="diff">type</span>="place"&gt;<span class="diff">siae</span>&lt;/rs&gt;<span class="diff">, cum ur-
-					</span>&lt;<span class="diff">lb</span> /&gt;<span class="diff">geret-
-					</span>&lt;<span class="diff">lb</span> /&gt;<span class="diff">ur. </span>&lt;/titlePart&gt;</pre></td>
-               </tr>
             </tbody>
          </table>
       </div>
-      <div id="d3e1540">
+      <div id="d3e1372">
          <h2 class="successful">T2: quote<span class="scenario-totals">passed: 3 / pending: 0 / failed: 0 / total: 3</span></h2>
-         <table class="xspec" id="t-d3e1540">
+         <table class="xspec" id="t-d3e1372">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -290,9 +244,9 @@
             </tbody>
          </table>
       </div>
-      <div id="d3e1803">
+      <div id="d3e1635">
          <h2 class="successful">T3: Trennungen<span class="scenario-totals">passed: 3 / pending: 0 / failed: 0 / total: 3</span></h2>
-         <table class="xspec" id="t-d3e1803">
+         <table class="xspec" id="t-d3e1635">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -327,9 +281,9 @@
             </tbody>
          </table>
       </div>
-      <div id="d3e2002">
+      <div id="d3e1834">
          <h2 class="successful">T4: Absätze<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e2002">
+         <table class="xspec" id="t-d3e1834">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -348,9 +302,9 @@
             </tbody>
          </table>
       </div>
-      <div id="d3e2288">
+      <div id="d3e2120">
          <h2 class="successful">zusammenziehen / ersetzen<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
-         <table class="xspec" id="t-d3e2288">
+         <table class="xspec" id="t-d3e2120">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -377,38 +331,68 @@
             </tbody>
          </table>
       </div>
-      <div id="d3e2490">
-         <h2 class="successful">Verweise<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
-         <table class="xspec" id="t-d3e2490">
+      <div id="d3e2322">
+         <h2 class="successful">T6: Verweise<span class="scenario-totals">passed: 1 / pending: 0 / failed: 1 / total: 2</span></h2>
+         <table class="xspec" id="t-d3e2322">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
-                  <th>Verweise</th>
-                  <th>passed: 2 / pending: 0 / failed: 0 / total: 2</th>
+                  <th>T6: Verweise</th>
+                  <th>passed: 1 / pending: 0 / failed: 1 / total: 2</th>
                </tr>
                <tr class="successful">
-                  <th>Nummer für normale FN</th>
+                  <th>T6.1: Nummer für normale FN</th>
                   <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
                </tr>
                <tr class="successful">
                   <td>ID n1</td>
                   <td>Success</td>
                </tr>
-               <tr class="successful">
-                  <th>Verweis auf normale FN</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#d3e2359">T6.2 Verweis auf normale FN</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>ptr type wdb mit n1</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#d3e2390">ptr type wdb mit n2</a></td>
+                  <td>Failure</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 id="d3e2359">T6: Verweise T6.2 Verweis auf normale FN</h3>
+         <h4 id="d3e2390">ptr type wdb mit n2</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span class="same">note</span> xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns="http://www.tei-c.org/ns/1.0"
+         <span class="same">type</span>="footnote"
+         <span class="same">xml:id</span>="n2"&gt;<span class="same">Der Begrifflichkeit der Thesenreihe liegt</span>&lt;/note&gt;&lt;<span class="diff">note</span> xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns="http://www.tei-c.org/ns/1.0"
+         <span class="same">type</span>="footnote"
+         <span class="same">xml:id</span>="n4"&gt;<span class="same">(s. o. Anm. </span>&lt;<span class="diff">ptr</span> <span class="same">type</span>="wdb"
+        <span class="diff">target</span>="#n1" /&gt;<span class="same">) die</span>&lt;/note&gt;</pre></td>
+                  <td><pre>&lt;<span class="same">note</span> xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns="http://www.tei-c.org/ns/1.0"
+         <span class="same">type</span>="footnote"
+         <span class="same">xml:id</span>="n2"&gt;<span class="same">Der Begrifflichkeit der Thesenreihe liegt</span>&lt;/note&gt;&lt;<span class="diff">note</span> xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns="http://www.tei-c.org/ns/1.0"
+         <span class="same">type</span>="footnote"
+         <span class="same">xml:id</span>="n4"&gt;<span class="same">(s. o. Anm. </span>&lt;<span class="diff">ptr</span> <span class="same">type</span>="wdb"
+        <span class="diff">target</span>="#n2" /&gt;<span class="same">) die</span>&lt;/note&gt;</pre></td>
                </tr>
             </tbody>
          </table>
       </div>
-      <div id="d3e2577">
+      <div id="d3e2409">
          <h2 class="successful">anchor und span<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e2577">
+         <table class="xspec" id="t-d3e2409">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -423,9 +407,9 @@
             </tbody>
          </table>
       </div>
-      <div id="d3e2736">
+      <div id="d3e2568">
          <h2 class="successful">Titel verschieben<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e2736">
+         <table class="xspec" id="t-d3e2568">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -435,6 +419,27 @@
                </tr>
                <tr class="successful">
                   <td>front, body</td>
+                  <td>Success</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div id="d3e2742">
+         <h2 class="successful">T9: Normalfall<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
+         <table class="xspec" id="t-d3e2742">
+            <col width="75%" />
+            <col width="25%" />
+            <tbody>
+               <tr class="successful">
+                  <th>T9: Normalfall</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <th>T9.1: Fußnote</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>n8</td>
                   <td>Success</td>
                </tr>
             </tbody>
