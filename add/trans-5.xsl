@@ -57,6 +57,23 @@
 					<xsl:sequence select="$content" />
 				</xsl:element>
 			</xsl:when>
+			<xsl:when test="$content/tei:add[@wit and string-length() > 0] and not($content/tei:rdg)">
+				<xsl:value-of select="$text"/>
+				<app>
+					<lem />
+					<xsl:for-each select="$content/tei:add">
+						<rdg>
+							<xsl:sequence select="@* | node()" />
+						</rdg>
+					</xsl:for-each>
+				</app>
+			</xsl:when>
+			<xsl:when test="$content/tei:add[not(text() or tei:del)] and count($content) = 1">
+				<add>
+					<xsl:sequence select="$content/*[1]/@*" />
+					<xsl:sequence select="$text" />
+				</add>
+			</xsl:when>
 			<xsl:when test="$content/tei:add and count($content) = 1 and ends-with(preceding-sibling::node()[1], ' ')">
 				<xsl:value-of select="$text"/>
 				<xsl:sequence select="$content" />
@@ -155,6 +172,12 @@
 					<xsl:apply-templates select="@from |@to" />
 					<xsl:apply-templates select="$note/node()" />
 				</xsl:element>
+			</xsl:when>
+			<xsl:when test="$cont/tei:add[@place = 'margin' and not(text())]">
+				<add>
+					<xsl:sequence select="$cont/tei:add/@*" />
+					<xsl:sequence select="$text" />
+				</add>
 			</xsl:when>
 			<xsl:when test="count($cont/*) = count($cont/tei:add)">
 				<xsl:sequence select="$cont" />
@@ -332,16 +355,13 @@
 							<xsl:attribute name="place">corr</xsl:attribute>
 						</xsl:when>
 					</xsl:choose>
-					<xsl:choose>
-						<xsl:when test="tei:orig">
-							<xsl:apply-templates select="tei:orig 
-								| text()[preceding-sibling::*[1][self::tei:orig]
-								and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="$text"/>
-						</xsl:otherwise>
-					</xsl:choose>
+					<xsl:apply-templates select="tei:orig 
+						| text()[preceding-sibling::*[1][self::tei:orig]
+						and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
+					<xsl:if test="not(tei:orig)
+						and preceding-sibling::wdb:wit[last()][not(tei:orig) and string-length(normalize-space()) > 0]">
+						<xsl:value-of select="$text"/>
+					</xsl:if>
 				</add>
 			</xsl:when>
 			<xsl:when test="matches(., '[vV]o.\s+.ditor\s+verbessert')">

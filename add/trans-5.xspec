@@ -13,7 +13,7 @@
 			</x:context>
 			<x:expect label="2 add" xml:space="preserve">
 				<p>
-					<lb/>Nam secundum <rs type="person"><!--TODO ref nachtragen--><expan>Aposto<ex>lum</ex></expan></rs> per unum hominem intravit peccatum<add wit="#a1">in mundum</add><add place="margin" wit="#A5Lp">in mundum</add> in omnes homines<note type="footnote">Vgl. <ref type="biblical" cRef="Rm 5,12">Röm 5,12</ref>.</note> Sicut
+					<lb/>Nam secundum <rs type="person"><!--TODO ref nachtragen--><expan>Aposto<ex>lum</ex></expan></rs> per unum hominem intravit peccatum<app><lem/><rdg wit="#a1">in mundum</rdg><rdg place="margin" wit="#A5Lp">in mundum</rdg></app> in omnes homines<note type="footnote">Vgl. <ref type="biblical" cRef="Rm 5,12">Röm 5,12</ref>.</note> Sicut
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -22,7 +22,7 @@
 				<p><lb/>Deinde quod mea conclusio septima<note type="crit_app">folgt  <orig>in</orig>  <orig>ordine</orig> a<hi rend="sub">1</hi></note> clare hoc proponit ista scilicet errat</p>
 			</x:context>
 			<x:expect label="ein add">
-				<p><lb/>Deinde quod mea conclusio septima<add wit="#a1">in ordine</add> clare hoc proponit ista scilicet errat</p>
+				<p><lb/>Deinde quod mea conclusio septima<app><lem/><rdg wit="#a1">in ordine</rdg></app> clare hoc proponit ista scilicet errat</p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T1.3: mehrere Zeugen">
@@ -30,7 +30,7 @@
 				<p>Non<note type="crit_app">folgt  <orig>enim</orig> a<hi rend="sub">1</hi>, A<hi rend="sub">4</hi><hi rend="sub">-5</hi></note></p>
 			</x:context>
 			<x:expect label="wit mit mehreren Einträgen">
-				<p>Non<add wit="#a1 #A4-5">enim</add></p>
+				<p>Non<app><lem /><rdg wit="#a1 #A4-5">enim</rdg></app></p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T1.4: nicht umsetzbar">
@@ -46,7 +46,7 @@
 				<p>unde ex<note type="crit_app">folgt  <orig>materia</orig> durchgestrichen a<hi rend="sub">1</hi></note> causa</p>
 			</x:context>
 			<x:expect label="add/del">
-				<p>unde ex<add wit="#a1"><del>materia</del></add> causa</p>
+				<p>unde ex<app><lem/><rdg wit="#a1"><del>materia</del></rdg></app> causa</p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T1.6: folgt als Lauftext">
@@ -73,7 +73,7 @@
 			</x:context>
 			<x:expect label="Spatium; add mit wit">
 				<p>
-					<w>ful<lb break="no"/>ten.</w> Wie sie<add wit="#a">auch</add> entlich heylig<add wit="#b"><expan>D<ex>octo</ex>r</expan></add>
+					<w>ful<lb break="no"/>ten.</w> Wie sie<app><lem/><rdg wit="#a">auch</rdg></app> entlich heylig<app><lem/><rdg wit="#b"><expan>D<ex>octo</ex>r</expan></rdg></app>
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -84,7 +84,7 @@
 				</p>
 			</x:context>
 			<x:expect label="note übernommen, nicht in @wit">
-				<p>iuditio iusto<add wit="#a1">f<note type="comment">gestrichen</note></add> factus
+				<p>iuditio iusto<app><lem/><rdg wit="#a1">f<note type="comment">gestrichen</note></rdg></app> factus
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -638,7 +638,7 @@
 				</p>
 			</x:context>
 			<x:expect label="alleinstehendes add">
-				<p>ad opus bonum et<add place="supralinear" wit="#a2">opus</add> meritorium
+				<p>ad opus bonum et<app><lem/><rdg place="supralinear" wit="#a2">opus</rdg></app> meritorium
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -649,12 +649,20 @@
 			<x:context>
 				<p><anchor type="crit_app" xml:id="s1"/> Doctor Archidiacon<anchor type="crit_app" xml:id="s1e"/><span from="#s1" to="#s1e" type="crit_app">am Rand hinzugefügt</span><note type="footnote">Seit 1510 war <rs type="person"><!--TODO ref eintragen!-->Karlstadt</rs> Archidiakon am <rs type="place"><!--TODO ref eintragen!-->Wittenberger Allerheiligenstift</rs>. Vgl. KGK I.1, Nr. 49, S. 437 Anm. 5.</note>
 					<lb/>angesuecht<note type="footnote">Siehe EE100.</note>, unnd mit vleyß unnderthenigklich gepeten hat, Ine sampt denIhenen, 
-					<lb/>so er mit sich, auff schirstkunfftige<note type="footnote">nächstkommend; vgl. <bibl ref="#grimm_woerterbuch_1854"> 9, 19-21</bibl> (schier).</note> Disputacion, welhe Er zu <rs type="place"><!--TODO ref eintragen!-->Leiptzk</rs>, wyder<note type="crit_app">folgt gestriche <orig>doctor <gap/> Eck</orig></note> her<note type="crit_app">über der Zeile hinzugefügt</note> <anchor type="crit_app" xml:id="s2"/>Iohann Eckius<anchor type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">am Rand hinzugefügt</span> </p>
+					<lb/>so er mit sich, auff schirstkunfftige<note type="footnote">nächstkommend; vgl. <bibl
+						ref="#grimm_woerterbuch_1854"> 9, 19-21</bibl> (schier).</note> Disputacion, welhe Er zu <rs type="place"
+						><!--TODO ref eintragen!-->Leiptzk</rs>, wyder<note type="crit_app">folgt gestriche <orig>doctor <gap
+						/> Eck</orig></note> her<note type="crit_app">über der Zeile hinzugefügt</note> <anchor type="crit_app"
+						xml:id="s2"/>Iohann Eckius<anchor type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2"
+						to="#s2e">am Rand hinzugefügt</span> </p>
 			</x:context>
 			<x:expect label="rs beibehalten">
 				<p><add place="margin"> Doctor Archidiacon</add><note type="footnote">Seit 1510 war <rs type="person"><!--TODO ref eintragen!-->Karlstadt</rs> Archidiakon am <rs type="place"><!--TODO ref eintragen!-->Wittenberger Allerheiligenstift</rs>. Vgl. KGK I.1, Nr. 49, S. 437 Anm. 5.</note>
 					<lb/>angesuecht<note type="footnote">Siehe EE100.</note>, unnd mit vleyß unnderthenigklich gepeten hat, Ine sampt denIhenen, 
-					<lb/>so er mit sich, auff schirstkunfftige<note type="footnote">nächstkommend; vgl. <bibl ref="#grimm_woerterbuch_1854"> 9, 19-21</bibl> (schier).</note> Disputacion, welhe Er zu <rs type="place"><!--TODO ref eintragen!-->Leiptzk</rs>, wyder<add><del>doctor <gap/> Eck</del></add> <add place="supralinear">her</add> <add place="margin">Iohann Eckius</add></p>
+					<lb/>so er mit sich, auff schirstkunfftige<note type="footnote">nächstkommend; vgl. <bibl
+						ref="#grimm_woerterbuch_1854"> 9, 19-21</bibl> (schier).</note> Disputacion, welhe Er zu <rs
+						type="place"><!--TODO ref eintragen!-->Leiptzk</rs>, wyder<add><del>doctor <gap/> Eck</del></add> <add
+							place="supralinear">her</add> <add place="margin">Iohann Eckius</add></p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
