@@ -36,14 +36,6 @@
         </list>
     </xsl:template>
     
-    <!--<xsl:template match="tei:p">
-        <xsl:text>
-    </xsl:text>
-        <p>
-            <xsl:apply-templates select="@*|node()" />
-        </p>
-    </xsl:template>-->
-    
     <xsl:template match="w:p[descendant::w:numPr]">
         <xsl:variable name="numId" select="descendant::w:numPr/w:numId/@w:val"/>
         <xsl:variable name="ilvl" select="descendant::w:numPr/w:ilvl/@w:val"/>

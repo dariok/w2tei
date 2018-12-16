@@ -94,7 +94,6 @@
         <xsl:apply-templates select="w:endnoteReference"/>
     </xsl:template>
     
-    
     <!-- neu 2017-08-07 DK -->
     <xsl:template match="w:endnoteReference">
         <xsl:variable name="wid" select="@w:id"/>
