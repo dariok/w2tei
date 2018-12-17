@@ -42,8 +42,7 @@
 			</xsl:when>
 			<xsl:when test="preceding-sibling::node()[1][self::tei:*]">
 				<xsl:variable name="pre" select="preceding-sibling::*[1]"/>
-				<xsl:element name="{local-name($pre)}">
-					<xsl:apply-templates select="$pre/@*" />
+				<xsl:variable name="proc">
 					<xsl:choose>
 						<xsl:when test="$pre[self::tei:w]"/>
 						<xsl:when test="$pre/node()[last()][self::text()]">
@@ -55,7 +54,20 @@
 						</xsl:when>
 					</xsl:choose>
 					<xsl:sequence select="$content" />
-				</xsl:element>
+				</xsl:variable>
+				
+				<xsl:choose>
+					<xsl:when test="$pre[self::tei:lb]">
+						<xsl:sequence select="$pre" />
+						<xsl:sequence select="$proc" />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:element name="{local-name($pre)}">
+							<xsl:apply-templates select="$pre/@*" />
+							<xsl:sequence select="$proc" />
+						</xsl:element>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="$content/tei:add[@wit and string-length() > 0] and not($content/tei:rdg)">
 				<xsl:value-of select="$text"/>
