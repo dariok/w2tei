@@ -9,7 +9,7 @@
 	exclude-result-prefixes="xs math"
 	version="3.0">
 	
-	<xsl:include href="bibl.xsl"/>
+	<xsl:include href="bibl.xsl#1"/>
 	
 	<xsl:template match="/">
 		<xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
