@@ -454,7 +454,7 @@
 				
 				<xsl:choose>
 					<xsl:when test="$wit = ''
-						or count(tokenize(normalize-space(tei:orig[1]/preceding-sibling::text()), ' ')) > 3
+						or count(tokenize(normalize-space(string-join(tei:orig[1]/preceding-sibling::text(), '')), ' ')) > 3
 						or (contains(., 'gestrichen') and contains(., 'hinzu'))">
 						<wdb:note>
 							<xsl:sequence select="node()" />

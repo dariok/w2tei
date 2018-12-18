@@ -266,6 +266,14 @@
 					<note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n6"/>.</note></p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T2.11">
+			<x:context>
+				<p>peccatorum decordatione<note type="crit_app">A<hi rend="sub">Os</hi><wdb:marker /> <orig>retractatione</orig> A</note> versatur, in </p>
+			</x:context>
+			<x:expect label="app">
+				<p>peccatorum <app><lem wit="#AOs">decordatione</lem><rdg wit="#A">retractatione</rdg></app> versatur, in </p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T3: fehlt">
