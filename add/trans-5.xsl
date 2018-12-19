@@ -177,7 +177,7 @@
 			</xsl:when>
 			<xsl:when test="$content/*[1][self::tei:add[not(text())]] and count($content) = 1">
 				<add>
-					<xsl:sequence select="$content/tei:add/@wit" />
+					<xsl:sequence select="$content/tei:add/@*" />
 					<xsl:sequence select="$text" ></xsl:sequence>
 				</add>
 			</xsl:when>
@@ -376,26 +376,30 @@
 						<xsl:attribute name="wit" select="translate(normalize-space($wit), '–', '-')" />
 					</xsl:if>
 					<xsl:choose>
-						<xsl:when test="contains(normalize-space(), 'am Rand')">
+						<xsl:when test="contains($norm, 'am Rand')">
 							<xsl:attribute name="place">margin</xsl:attribute>
 						</xsl:when>
-						<xsl:when test="ends-with(normalize-space(), 'AuRd-Gl')">
+						<xsl:when test="ends-with($norm, 'AuRd-Gl')">
 							<xsl:attribute name="place">AuRd-Gl</xsl:attribute>
 						</xsl:when>
-						<xsl:when test="ends-with(normalize-space(), 'InRd-Gl')">
+						<xsl:when test="ends-with($norm, 'InRd-Gl')">
 							<xsl:attribute name="place">InRd-Gl</xsl:attribute>
 						</xsl:when>
-						<xsl:when test="contains(normalize-space(), 'über der Zeile')">
+						<xsl:when test="contains($norm, 'über der Zeile')">
 							<xsl:attribute name="place">supralinear</xsl:attribute>
 						</xsl:when>
-						<xsl:when test="contains(normalize-space(), 'linksbündig')">
+						<xsl:when test="contains($norm, 'linksbündig')">
 							<xsl:attribute name="place">left</xsl:attribute>
 						</xsl:when>
-						<xsl:when test="contains(normalize-space(), 'zentriert')">
+						<xsl:when test="contains($norm, 'zentriert')">
 							<xsl:attribute name="place">centre</xsl:attribute>
 						</xsl:when>
-						<xsl:when test="contains(normalize-space(), 'Korrekturverzeichnis')">
+						<xsl:when test="contains($norm, 'Korrekturverzeichnis')">
 							<xsl:attribute name="place">corr</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="contains($norm, 'handschriftlich')
+							or contains($norm, 'hsl')">
+							<xsl:attribute name="type">manual</xsl:attribute>
 						</xsl:when>
 					</xsl:choose>
 					<xsl:apply-templates select="tei:orig 
