@@ -39,8 +39,7 @@
 	<teiHeader>
 		<fileDesc>
 			<sourceDesc>
-				<p>born digital</p>
-				<listWit>
+				<listWit type="other">
 					<witness xml:id="A" corresp="108_introduction.xml#A" />
 					<witness xml:id="B" corresp="108_introduction.xml#B" />
 					<witness xml:id="WA" corresp="108_introduction.xml#WA" /></listWit></sourceDesc></fileDesc></teiHeader>

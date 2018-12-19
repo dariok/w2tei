@@ -107,12 +107,12 @@
 		<xsl:text>
 			</xsl:text>
 		<sourceDesc>
-			<xsl:apply-templates select="*[not(self::tei:listWit)]" />
+			<!--<xsl:apply-templates select="*[not(self::tei:listWit)]" />-->
 			<xsl:variable name="val" select="substring-after(substring-before(/tei:TEI/@xml:id, '_tr'), '240_')"/>
 			<xsl:if test="//@wit">
 				<xsl:text>
 				</xsl:text>
-				<listWit>
+				<listWit type="other">
 					<xsl:variable name="wits" as="xs:string+">
 						<xsl:for-each select="//@wit">
 							<xsl:sequence select="tokenize(., ' ')" />	
