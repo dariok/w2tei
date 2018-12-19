@@ -678,6 +678,14 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T9.6: hsl. längerer Text in einem Zeugen">
+			<x:context>
+				<p><anchor type="crit_app" xml:id="s6"/>a deo<anchor type="crit_app" xml:id="s6e"/><span type="crit_app" from="#s6" to="#s6e">handschriftlich hinzugefügt A<hi rend="sub">5-L</hi>, A<hi rend="sub">5-Br</hi></span></p>
+			</x:context>
+			<x:expect label="add">
+				<p><add wit="#A5-L #A5-Br">a deo</add></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T10: Normalfall">

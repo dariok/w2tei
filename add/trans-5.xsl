@@ -152,10 +152,11 @@
 		</xsl:choose>
 	</xsl:template>
 	<xsl:template match="tei:span">
+		<xsl:variable name="text" select="id(substring-after(@from, '#'))/following-sibling::node()
+			intersect id(substring-after(@to, '#'))/preceding-sibling::node()"/>
 		<xsl:variable name="content">
 			<xsl:call-template name="critapp">
-				<xsl:with-param name="text" select="id(substring-after(@from, '#'))/following-sibling::node()
-					intersect id(substring-after(@to, '#'))/preceding-sibling::node()" />
+				<xsl:with-param name="text" select="$text" />
 				<xsl:with-param name="note" select="." />
 			</xsl:call-template>
 		</xsl:variable>
@@ -173,6 +174,12 @@
 					<xsl:attribute name="xml:id" select="substring-after(@to, '#')" />
 				</anchor>
 				<xsl:sequence select="$content/tei:span" />
+			</xsl:when>
+			<xsl:when test="$content/*[1][self::tei:add[not(text())]] and count($content) = 1">
+				<add>
+					<xsl:sequence select="$content/tei:add/@wit" />
+					<xsl:sequence select="$text" ></xsl:sequence>
+				</add>
 			</xsl:when>
 			<xsl:when test="$content/*[1][self::tei:*]">
 				<xsl:sequence select="$content" />
