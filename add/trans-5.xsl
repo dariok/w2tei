@@ -100,6 +100,20 @@
 				<xsl:value-of select="$text"/>
 				<xsl:sequence select="$content" />
 			</xsl:when>
+			<xsl:when test="$content/tei:del[not(text())]">
+				<app>
+					<lem>
+						<xsl:sequence select="$text"/>
+					</lem>
+					<rdg>
+						<xsl:sequence select="$content/tei:del/@wit" />
+						<del>
+							<xsl:sequence select="$content/tei:del/@place" />
+							<xsl:sequence select="$text" />
+						</del>
+					</rdg>
+				</app>
+			</xsl:when>
 			<xsl:otherwise>
 				<xsl:sequence select="$content" />
 			</xsl:otherwise>
@@ -413,6 +427,7 @@
 				</choice>
 			</xsl:when>
 			<xsl:when test="matches(., '^\w* *\w*gestrichen')
+				and tei:orig
 				and not(contains(., 'über') or contains(., 'Rand') or contains(., 'Zeile')
 				or contains(., 'hinzu'))">
 				<xsl:variable name="tok" select="tokenize(normalize-space(string-join(tei:orig[last()]/following-sibling::node()[not(self::tei:note)], '')), ' ')" />
@@ -442,6 +457,21 @@
 					<xsl:apply-templates select="tei:orig 
 						| text()[preceding-sibling::*[1][self::tei:orig]
 						and following-sibling::*[1][self::tei:orig]]" mode="norm"/>
+				</del>
+			</xsl:when>
+			<xsl:when test="matches(., '^\w* *\w*gestrichen')
+				and not(contains(., 'über') or contains(., 'Rand') or contains(., 'Zeile')
+				or contains(., 'hinzu'))">
+				<xsl:variable name="wit" select="tokenize(normalize-space(substring-after(., 'gestrichen')), ', ')"/>
+				<del>
+					<xsl:attribute name="wit">
+						<xsl:for-each select="$wit">
+							<xsl:value-of select="'#' || ."/>
+							<xsl:if test="position() != last()">
+								<xsl:text> </xsl:text>
+							</xsl:if>
+						</xsl:for-each>
+					</xsl:attribute>
 				</del>
 			</xsl:when>
 			<xsl:when test="count(tei:orig) = 1">

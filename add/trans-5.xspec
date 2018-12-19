@@ -332,6 +332,14 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T4.4: gestrichen in einigen Zeugen">
+			<x:context>
+				<p>ei<note type="crit_app">gestrichen A<hi rend="sub">5-L</hi>, A<hi rend="sub">5-Br</hi></note></p>
+			</x:context>
+			<x:expect label="rdg/del">
+				<p><app><lem>ei</lem><rdg wit="#A5-L #A5-Br"><del>ei</del></rdg></app></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T5: Korrekturen">
