@@ -13,7 +13,7 @@
 			</x:context>
 			<x:expect label="2 add" xml:space="preserve">
 				<p>
-					<lb/>Nam secundum <rs type="person"><!--TODO ref nachtragen--><expan>Aposto<ex>lum</ex></expan></rs> per unum hominem intravit peccatum<app><lem/><rdg wit="#a1">in mundum</rdg><rdg place="margin" wit="#A5Lp">in mundum</rdg></app> in omnes homines<note type="footnote">Vgl. <ref type="biblical" cRef="Rm 5,12">Röm 5,12</ref>.</note> Sicut
+					<lb/>Nam secundum <rs type="person"><!--TODO ref nachtragen--><expan>Aposto<ex>lum</ex></expan></rs> per unum hominem intravit peccatum<app><lem/><rdg wit="#a1">in mundum</rdg><rdg wit="#A5Lp"><add place="margin">in mundum</add></rdg></app> in omnes homines<note type="footnote">Vgl. <ref type="biblical" cRef="Rm 5,12">Röm 5,12</ref>.</note> Sicut
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -272,6 +272,14 @@
 			</x:context>
 			<x:expect label="app">
 				<p>peccatorum <app><lem wit="#AOs">decordatione</lem><rdg wit="#A">retractatione</rdg></app> versatur, in </p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T2.12: Text hinzugefügt in witness">
+			<x:context>
+				<p>comparari<note type="crit_app">hinzugefügt am Rand  <orig>Eckius omnia</orig> A<hi rend="sub">5-L</hi></note></p>
+			</x:context>
+			<x:expect label="rdg/add">
+				<p>comparari<app><lem /><rdg wit="#A5-L"><add place="margin">Eckius omnia</add></rdg></app></p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
@@ -658,7 +666,7 @@
 				</p>
 			</x:context>
 			<x:expect label="alleinstehendes add">
-				<p>ad opus bonum et<app><lem/><rdg place="supralinear" wit="#a2">opus</rdg></app> meritorium
+				<p>ad opus bonum et<app><lem/><rdg wit="#a2"><add place="supralinear">opus</add></rdg></app> meritorium
 				</p>
 			</x:expect>
 		</x:scenario>

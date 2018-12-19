@@ -75,7 +75,17 @@
 					<lem />
 					<xsl:for-each select="$content/tei:add">
 						<rdg>
-							<xsl:sequence select="@* | node()" />
+							<xsl:choose>
+								<xsl:when test="@place">
+									<xsl:sequence select="@wit" />
+									<add>
+										<xsl:sequence select="@*[not(name() = 'wit')] | node()" />
+									</add>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:sequence select="@* | node()" />
+								</xsl:otherwise>
+							</xsl:choose>
 						</rdg>
 					</xsl:for-each>
 				</app>
