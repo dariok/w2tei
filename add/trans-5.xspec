@@ -710,4 +710,27 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T11: Gruppierung">
+		<x:scenario label="T11.1">
+			<x:context>
+				<div>
+					<head>asdf</head>
+					<p>asdf</p>
+					<p>asdf</p>
+					<head>asfd</head>
+					<p>asdf</p>
+				</div>
+			</x:context>
+			<x:expect label="div/div">
+				<div>
+					<div><head>asdf</head>
+					<p>asdf</p>
+					<p>asdf</p></div>
+					<div><head>asfd</head>
+					<p>asdf</p></div>
+				</div>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>

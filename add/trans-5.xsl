@@ -128,6 +128,24 @@
 		and preceding-sibling::*[1][self::tei:anchor[ends-with(@xml:id, 'e')]]
 		and following-sibling::*[1][self::tei:span]]" />
 	
+	<xsl:template match="tei:div">
+		<div>
+			<xsl:choose>
+				<xsl:when test="tei:p[following-sibling::tei:head]">
+					<xsl:for-each-group select="*"
+						group-starting-with="tei:head[not(preceding-sibling::*[1][self::tei:head])]">
+						<div>
+							<xsl:apply-templates select="current-group()" />
+						</div>
+					</xsl:for-each-group>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates select="*" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</div>
+	</xsl:template>
+	
 	<xsl:template match="node()[not(self::tei:span)][(
 		preceding-sibling::tei:anchor[1][not(ends-with(@xml:id, 'e'))]
 		and following-sibling::tei:anchor[1][ends-with(@xml:id, 'e')])
