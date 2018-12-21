@@ -55,8 +55,12 @@
 		</orig>
 	</xsl:template>
 	
-	<xsl:template match="tei:note[@type = 'footnote']/node()[last()][self::text()]">
+	<xsl:template match="tei:note[@type = 'footnote']/node()[last()]">
 		<xsl:choose>
+			<xsl:when test="self::tei:* and not(matches(., '[\.!?] ?$'))">
+				<xsl:sequence select="." />
+				<xsl:text>.</xsl:text>
+			</xsl:when>
 			<xsl:when test="matches(., '[\.?!] $')">
 				<xsl:value-of select="substring(., 1, string-length() - 1)" />
 			</xsl:when>

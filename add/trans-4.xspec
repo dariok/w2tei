@@ -113,5 +113,15 @@
 					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote>.</note>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T5.3: Element ohne Punkt am Ende">
+			<x:context xml:space="preserve">
+				<note type="footnote" xml:id="n33"><ref type="biblical" cRef="Hebr 12,6">Hebr 12,6</ref> Vg
+					<quote>quem enim diligit Dominus castigat flagellat autem onme fillium quem recipit</quote></note>
+			</x:context>
+			<x:expect label="Punkt" xml:space="preserve">
+				<note type="footnote" xml:id="n33"><ref type="biblical" cRef="Hebr 12,6">Hebr 12,6</ref> Vg
+					<quote>quem enim diligit Dominus castigat flagellat autem onme fillium quem recipit</quote>.</note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>
