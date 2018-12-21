@@ -166,4 +166,21 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T3: Text">
+		<x:scenario label="T3.1: Spatium vor Marginalie">
+			<x:context>
+				<p>
+					<lb/>seinem abgehen oder abstehen befihlet. Christus/ der <note place="margin">Johan. ii.</note>
+					<lb/>auch zu einem zeychen (solcher bedechtickeit) zu
+				</p>
+			</x:context>
+			<x:expect label="ohne">
+				<p>
+					<lb/>seinem abgehen oder abstehen befihlet. Christus/ der<note place="margin">Johan. ii.</note>
+					<lb/>auch zu einem zeychen (solcher bedechtickeit) zu
+				</p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>

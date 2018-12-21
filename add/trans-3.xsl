@@ -124,8 +124,6 @@
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="tei:p/tei:lb">
-		<!--<xsl:text>
-					</xsl:text>-->
 		<lb />
 	</xsl:template>
 	
@@ -136,6 +134,17 @@
 			<xsl:value-of select="string-join(.
 				| following-sibling::tei:hi intersect following-sibling::node()[not(self::tei:hi)][1]/preceding-sibling::*, '')"/>
 		</hi>
+	</xsl:template>
+	
+	<xsl:template match="text()[following-sibling::*[1][self::tei:note[@place = 'margin']]]">
+		<xsl:choose>
+			<xsl:when test="ends-with(., ' ')">
+				<xsl:value-of select="substring(., 1, string-length() - 1)" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="."/>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<xsl:template match="@* | * | comment()">
