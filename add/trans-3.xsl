@@ -130,7 +130,8 @@
 	<xsl:template match="tei:note[@type = 'footnote']/tei:hi[preceding-sibling::node()[1][self::tei:hi]]"/>
 		
 	<xsl:template match="tei:note[@type = 'footnote']/tei:hi[not(preceding-sibling::node()[1][self::tei:hi])]">
-		<hi style="{@style}">
+		<hi>
+			<xsl:apply-templates select="@style | @rend" />
 			<xsl:value-of select="string-join(.
 				| following-sibling::tei:hi intersect following-sibling::node()[not(self::tei:hi)][1]/preceding-sibling::*, '')"/>
 		</hi>

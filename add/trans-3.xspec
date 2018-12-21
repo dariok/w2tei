@@ -183,4 +183,15 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T4: Standard umsetzen">
+		<x:scenario label="T4.1: hi">
+			<x:context>
+				<note type="footnote">auch C3<hi rend="super">v</hi> Karlstadts</note>
+			</x:context>
+			<x:expect label=".">
+				<note type="footnote">auch C3<hi rend="super">v</hi> Karlstadts</note>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
