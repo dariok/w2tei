@@ -57,6 +57,18 @@
 	
 	<xsl:template match="tei:note[@type = 'footnote']/node()[last()]">
 		<xsl:choose>
+			<xsl:when test="self::tei:quote and matches(., '[^\.]\.\.\.$')">
+				<quote>
+					<xsl:sequence select="node()[position != last()]" />
+					<xsl:variable name="te" select="substring(node()[last()], 1, string-length() - 3)"/>
+					<xsl:value-of select="$te"/>
+					<xsl:if test="not(ends-with($te, ' '))">
+						<xsl:text> </xsl:text>
+					</xsl:if>
+					<gap />
+					<xsl:text>.</xsl:text>
+				</quote>
+			</xsl:when>
 			<xsl:when test="self::tei:* and not(matches(., '[\.!?] ?$'))">
 				<xsl:sequence select="." />
 				<xsl:text>.</xsl:text>
@@ -71,7 +83,7 @@
 				<xsl:sequence select="." />
 				<xsl:text>.</xsl:text>
 			</xsl:when>
-			<xsl:when test="matches(., '\s\.\.\.$')">
+			<xsl:when test="matches(., '[^\.]\.\.\.$')">
 				<xsl:value-of select="substring(., 1, string-length() - 3)"/>
 				<gap />
 				<xsl:text>.</xsl:text>

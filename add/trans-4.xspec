@@ -141,5 +141,13 @@
 					beatus homo qui corripitur a Domino <gap/>.</note>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T5.7: gap">
+			<x:context xml:space="preserve">
+				<note type="footnote"><quote>.. concupiscentia cum conceperit parit peccatum...</quote></note>
+			</x:context>
+			<x:expect label="Punkt" xml:space="preserve">
+				<note type="footnote"><quote>.. concupiscentia cum conceperit parit peccatum <gap/>.</quote></note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>
