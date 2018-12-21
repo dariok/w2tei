@@ -129,6 +129,14 @@
 			</xsl:if>
 		</sourceDesc>
 	</xsl:template>
+	
+	<xsl:template match="tei:w">
+		<xsl:text>
+						</xsl:text>
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
+	</xsl:template>
   
   <xsl:template match="text()">
     <xsl:analyze-string select="." regex="([\d\sr])-([\d\sv])">
