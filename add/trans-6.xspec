@@ -62,6 +62,14 @@
 				<note> – <idno type="vd16">P 3009</idno>; 1506 u. 1517 </note>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T3.2: VD16 ohne Spatium">
+			<x:context>
+				<note>VD16 P3011</note>
+			</x:context>
+			<x:expect label="Spatium">
+				<note><idno type="vd16">P 3011</idno></note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T4: gap">

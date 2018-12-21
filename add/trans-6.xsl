@@ -154,10 +154,20 @@
             </expan>
           </xsl:matching-substring>
           <xsl:non-matching-substring>
-          	<xsl:analyze-string select="." regex="VD16 [A-Z] \d+">
+          	<xsl:analyze-string select="." regex="VD16 [A-Z] ?\d+">
           		<xsl:matching-substring>
           			<idno type="vd16">
-          				<xsl:value-of select="substring-after(., ' ')"/>
+          				<xsl:choose>
+          					<xsl:when test="contains(substring-after(., ' '), ' ')">
+          						<xsl:value-of select="substring-after(., ' ')"/>
+          					</xsl:when>
+          					<xsl:when test="contains(., 'ZV')">
+          						<xsl:value-of select="'ZV ' || substring-after(., 'ZV')"/>
+          					</xsl:when>
+          					<xsl:otherwise>
+          						<xsl:value-of select="substring(., 6, 1) || ' ' || substring(., 7, string-length()-6)"/>
+          					</xsl:otherwise>
+          				</xsl:choose>
           			</idno>
           		</xsl:matching-substring>
           		<xsl:non-matching-substring>
