@@ -92,14 +92,26 @@
 		</x:expect>
 	</x:scenario>
 	
-	<x:scenario label="T5: Spatium am Ende von FN">
-		<x:context>
-			<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
-				<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote> </note>
-		</x:context>
-		<x:expect label="ohne">
-			<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
-				<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote></note>
-		</x:expect>
+	<x:scenario label="T5: Ende von FN">
+		<x:scenario label="T5.1: Spatium">
+			<x:context xml:space="preserve">
+				<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
+					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote>. </note>
+			</x:context>
+			<x:expect label="ohne" xml:space="preserve">
+				<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
+					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote>.</note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T5.2: Punkt ergänzen">
+			<x:context xml:space="preserve">
+				<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
+					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote> </note>
+			</x:context>
+			<x:expect label="ohne" xml:space="preserve">
+				<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
+					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote>.</note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>

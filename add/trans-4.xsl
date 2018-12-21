@@ -18,7 +18,8 @@
 		</ref>
 	</xsl:template>
 	
-	<xsl:template match="text()[not(parent::tei:note[@type='crit_app'] or parent::tei:span)]">
+	<xsl:template match="text()[not(parent::tei:note[@type='crit_app'] or parent::tei:span)
+		and not(parent::tei:note[@type='footnote'] and position() = last())]">
 		<xsl:analyze-string select="." regex="&lt;.+?&gt;">
 			<xsl:matching-substring>
 				<xsl:choose>
@@ -56,8 +57,11 @@
 	
 	<xsl:template match="tei:note[@type = 'footnote']/node()[last()][self::text()]">
 		<xsl:choose>
-			<xsl:when test="ends-with(., ' ')">
+			<xsl:when test="matches(., '[\.?!] $')">
 				<xsl:value-of select="substring(., 1, string-length() - 1)" />
+			</xsl:when>
+			<xsl:when test="ends-with(., ' ')">
+				<xsl:value-of select="substring(., 1, string-length() - 1) || '.'" />
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="."/>
