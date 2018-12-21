@@ -91,4 +91,15 @@
 				<orig>non lucendo.</orig></note>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="T5: Spatium am Ende von FN">
+		<x:context>
+			<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
+				<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote> </note>
+		</x:context>
+		<x:expect label="ohne">
+			<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
+				<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote></note>
+		</x:expect>
+	</x:scenario>
 </x:description>

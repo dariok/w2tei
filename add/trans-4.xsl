@@ -54,6 +54,17 @@
 		</orig>
 	</xsl:template>
 	
+	<xsl:template match="tei:note[@type = 'footnote']/node()[last()][self::text()]">
+		<xsl:choose>
+			<xsl:when test="ends-with(., ' ')">
+				<xsl:value-of select="substring(., 1, string-length() - 1)" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="."/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
 	<xsl:template match="@* | * | comment()">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()"/>
