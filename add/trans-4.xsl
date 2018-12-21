@@ -71,6 +71,11 @@
 				<xsl:sequence select="." />
 				<xsl:text>.</xsl:text>
 			</xsl:when>
+			<xsl:when test="matches(., '\s\.\.\.$')">
+				<xsl:value-of select="substring(., 1, string-length() - 3)"/>
+				<gap />
+				<xsl:text>.</xsl:text>
+			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="."/>
 			</xsl:otherwise>

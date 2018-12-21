@@ -124,11 +124,21 @@
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T5.4: Klammer am Ende">
-			<x:context>
+			<x:context xml:space="preserve">
 				<note type="footnote" xml:id="n3">Teilnehmer; vgl. Clemen, Bericht, 51 und Anm.64. [GND 123502721]</note>
 			</x:context>
-			<x:expect label="Punkt">
+			<x:expect label="Punkt" xml:space="preserve">
 				<note type="footnote" xml:id="n3">Teilnehmer; vgl. Clemen, Bericht, 51 und Anm.64. [GND 123502721].</note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T5.6: gap">
+			<x:context xml:space="preserve">
+				<note type="footnote" xml:id="n32"><ref type="biblical" cRef="Hiob 5,17">Hiob 5,17</ref> Vg
+					beatus homo qui corripitur a Domino ...</note>
+			</x:context>
+			<x:expect label="Punkt" xml:space="preserve">
+				<note type="footnote" xml:id="n32"><ref type="biblical" cRef="Hiob 5,17">Hiob 5,17</ref> Vg
+					beatus homo qui corripitur a Domino <gap/>.</note>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
