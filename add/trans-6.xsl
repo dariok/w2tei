@@ -157,7 +157,7 @@
           	<xsl:analyze-string select="." regex="VD16 [A-Z] \d+">
           		<xsl:matching-substring>
           			<idno type="vd16">
-          				<xsl:value-of select="."/>
+          				<xsl:value-of select="substring-after(., ' ')"/>
           			</idno>
           		</xsl:matching-substring>
           		<xsl:non-matching-substring>

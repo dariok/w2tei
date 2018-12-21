@@ -59,7 +59,7 @@
 				<note> – VD16 P 3009; 1506 u. 1517 </note>
 			</x:context>
 			<x:expect label="idno">
-				<note> – <idno type="vd16">VD16 P 3009</idno>; 1506 u. 1517 </note>
+				<note> – <idno type="vd16">P 3009</idno>; 1506 u. 1517 </note>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
