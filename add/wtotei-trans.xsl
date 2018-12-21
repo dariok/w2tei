@@ -8,7 +8,7 @@
     xmlns="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all" version="3.0">
     
-    <xsl:include href="ks-common.xsl"/>
+    <xsl:include href="ks-common.xsl#1"/>
     
 <!--    <xsl:output indent="yes"/>-->
     

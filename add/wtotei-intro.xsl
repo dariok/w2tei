@@ -13,7 +13,7 @@
 	<!-- übernommen für Karlstadt Einleitungen; 2017-05-03 DK -->
 	<!-- Bearbeiter ab 2018-08-01: DK kampkaspar@baukast.digital -->
 	
-	<xsl:include href="ks-common.xsl" />
+	<xsl:include href="ks-common.xsl#1" />
 	
 <!--	<xsl:output indent="yes"/>-->
 	

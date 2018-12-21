@@ -130,7 +130,7 @@
                     <projectDesc>
                         <p xml:id="kgk">
                             <ref target="http://diglib.hab.de/edoc/ed000240/start.htm">Kritische Gesamtausgabe der
-                                Schriften und Briefe Andreas Bodensteins von Karlstadt</ref>
+						Schriften und Briefe Andreas Bodensteins von Karlstadt</ref>
                         </p>
                     </projectDesc>
                 </encodingDesc>
