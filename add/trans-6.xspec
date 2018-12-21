@@ -63,4 +63,13 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T4: gap">
+		<x:context>
+			<p>asdf ... asdf</p>
+		</x:context>
+		<x:expect label="gap">
+			<p xml:id="p1">asdf <gap /> asdf</p>
+		</x:expect>
+	</x:scenario>
 </x:description>
