@@ -52,4 +52,15 @@
 								<quote>qui iustificat quis est qui condemnet Christus Iesus qui mortuus est</quote>; <ref type="biblical" cRef="Rm 8,3">Röm 8,3</ref> Vg
 								<quote>Deus filium suum mittens in similitudinem carnis peccati et de peccato damnavit peccatum in carne</quote>. Vgl. <ref type="medieval">Aug. de trin. 12,23</ref>: <quote>velut rudis ad hoc sicut ducta fuerat duceretur idque inveniret ubi primum invenerat, in illa incorporea veritate unde rursus quasi descriptum in memoria figeretur. Neque enim sicut manet verbi gratia quadrati corporis incorporalis et immutabilis ratio sic in ea manet hominis cogitatio, si tamen ad eam sine phantasia spatii localis potuit pervenire.</quote> (<bibl ref="#">CChr 50, 377</bibl>).</note><pb xml:id="pag1" n="[B1r]"/></p></body></text></TEI></x:expect>
 	</x:scenario>
+	
+	<x:scenario label="T3: idno">
+		<x:scenario label="T3.1: VD16">
+			<x:context>
+				<note> – VD16 P 3009; 1506 u. 1517 </note>
+			</x:context>
+			<x:expect label="idno">
+				<note> – <idno type="vd16">VD16 P 3009</idno>; 1506 u. 1517 </note>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
