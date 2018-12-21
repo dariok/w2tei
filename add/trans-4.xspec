@@ -123,5 +123,13 @@
 					<quote>quem enim diligit Dominus castigat flagellat autem onme fillium quem recipit</quote>.</note>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T5.4: Klammer am Ende">
+			<x:context>
+				<note type="footnote" xml:id="n3">Teilnehmer; vgl. Clemen, Bericht, 51 und Anm.64. [GND 123502721]</note>
+			</x:context>
+			<x:expect label="Punkt">
+				<note type="footnote" xml:id="n3">Teilnehmer; vgl. Clemen, Bericht, 51 und Anm.64. [GND 123502721].</note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>

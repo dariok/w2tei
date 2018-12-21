@@ -67,6 +67,10 @@
 			<xsl:when test="ends-with(., ' ')">
 				<xsl:value-of select="substring(., 1, string-length() - 1) || '.'" />
 			</xsl:when>
+			<xsl:when test="matches(., '[^\.^!^?^ ]$')">
+				<xsl:sequence select="." />
+				<xsl:text>.</xsl:text>
+			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="."/>
 			</xsl:otherwise>
