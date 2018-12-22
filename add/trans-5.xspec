@@ -421,6 +421,14 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T5.5: vom Editor korrigiert für mit Quelle">
+			<x:context>
+				<note place="margin">&lt;i.<note type="crit_app">vom Editor verbessert für <orig>Reg. ii.</orig> A</note>&gt;Reg. ii. </note>
+			</x:context>
+			<x:expect label="rdg mit sic">
+				<note place="margin"><app><lem>&lt;i.</lem><rdg wit="#A"><sic>Reg. ii.</sic></rdg></app>&gt;Reg. ii. </note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T6: gemischte">

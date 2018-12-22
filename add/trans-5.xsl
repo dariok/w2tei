@@ -114,6 +114,16 @@
 					</rdg>
 				</app>
 			</xsl:when>
+			<xsl:when test="$content/tei:choice/tei:sic[@wit]">
+				<app>
+					<lem>
+						<xsl:sequence select="$text" />
+					</lem>
+					<rdg wit="{$content/tei:choice/tei:sic/@wit}">
+						<sic><xsl:sequence select="$content/tei:choice/tei:sic/node()" /></sic>
+					</rdg>
+				</app>
+			</xsl:when>
 			<xsl:otherwise>
 				<xsl:sequence select="$content" />
 			</xsl:otherwise>
