@@ -226,13 +226,6 @@
 					<xsl:apply-templates select="w:t"/>
 				</orig>
 			</xsl:when>
-		    <!-- neu 2016-08-11 DK -->
-		    <!-- aufgrund der viel zu kleinteiligen Kodierung von Word wieder auskommentiert -->
-		    <!--<xsl:when test="w:rPr/w:i and w:rPr/w:u">
-		        <quote>
-		            <xsl:apply-templates select="w:t" />
-		        </quote>
-		    </xsl:when>-->
 			<xsl:otherwise>
 				<xsl:apply-templates select="w:t"/>
 			</xsl:otherwise>
