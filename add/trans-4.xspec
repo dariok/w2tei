@@ -24,15 +24,28 @@
 		</x:scenario>
 	</x:scenario>
 	
-	<x:scenario label="bibl mit abbr eränzen">
-		<x:context>
-			<note type="footnote">Siehe z.B. <bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-			>r</hi></bibl>.</note>
-		</x:context>
-		<x:expect label="@ref">
-			<note type="footnote">Siehe z.B. <bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-			>r</hi></bibl>.</note>
-		</x:expect>
+	
+	<x:scenario label="T2: bibl ergänzen">
+		<x:scenario label="T2.1: bibl mit abbr eränzen">
+			<x:context>
+				<note type="footnote">Siehe z.B. <bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+				>r</hi></bibl>.</note>
+			</x:context>
+			<x:expect label="@ref">
+				<note type="footnote">Siehe z.B. <bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+				>r</hi></bibl>.</note>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T2.2: nichts gefunden">
+			<x:context>
+				<note type="footnote">Siehe z.B. <bibl>ABCSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+					>r</hi></bibl>.</note>
+			</x:context>
+			<x:expect label="kein @ref">
+				<note type="footnote">Siehe z.B. <bibl>ABCSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+					>r</hi></bibl>.</note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="rs mit ref ergänzen">

@@ -11,9 +11,11 @@
       <xsl:variable name="bibliography" select="doc('../../register/bibliography.xml')" />
       <xsl:variable name="self" select="normalize-space()" />
       <xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
-      <xsl:attribute name="ref">
-        <xsl:value-of select="'#'||$entry[1]/@xml:id"/>
-      </xsl:attribute>
+      <xsl:if test="count($entry) > 0">
+	    	<xsl:attribute name="ref">
+	        <xsl:value-of select="'#'||$entry[1]/@xml:id"/>
+	      </xsl:attribute>
+      </xsl:if>
       <xsl:variable name="start">
         <xsl:value-of select="substring-after(text()[1], normalize-space($entry[1]/tei:abbr))"/>
       </xsl:variable>
