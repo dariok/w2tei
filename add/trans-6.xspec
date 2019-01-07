@@ -11,46 +11,88 @@
 				<lb xml:id="z1"/>Durchleuchtigster Hochgebornner Churfurst. euern <expan>churf<ex>urstlich</ex></expan> <expan>g<ex>naden</ex></expan></p></x:expect>
 	</x:scenario>
 	
-	<x:scenario label="listWit">
-		<x:context>
-			<TEI n="137" xml:id="edoc_ed000240_108_transcript">
-				<teiHeader>
-					<fileDesc>
-						<sourceDesc>
-							<p>born digital</p>
-						</sourceDesc>
-					</fileDesc>
-				</teiHeader>
-				<text>
-					<body>
-						<p>Unigenitus dei filius incorporalis<note type="footnote">Unter der <hi style="font-style: italic;">incorporatio</hi> ist die Wiederauferstehung Christi in einem spirituellen Körper zu verstehen. Vgl. <ref type="biblical" cRef="Kol 2,17">Kol 2,17</ref>; <bibl ref="#">1. Kor 15,44-49</bibl>. <rs type="person"><!--TODO ref eintragen!-->Thomas von Aquin</rs> verwendete den Begriff ebenfalls im Sinne von geistig, immateriell, vgl. <ref type="medieval">Thomas, S.th. I q. 9 a. 2 co.</ref>; q. 50 a. 1 ad 1, 2 co., 4 co.; S.c.g. I c. 42; II c. 44, 50, 55, 92, 95 u. ö. Im Karlstadt’schen Zusammenhang der Trinitätsattribute bei <ref type="medieval">Prud. Trec. Praed. 9 cor.</ref>: <quote>Nihil digne de Deo dici, verum est quidem illam ineffabilem incorpoream immutabilemque naturam, quae est Trinitas, unus et verus Deus, nullis corporalium rerum signis ac vocibus proferri valere […].</quote> (<bibl ref="#migne_pl"> 115, 1118f.</bibl>).</note>, incommutabilis<note type="footnote">Der Begriff der Unveränderlichkeit Gottes (<hi style="font-style: italic;">incommutabilis</hi>) spielt in den Überlegungen zur Trinität bei <ref type="medieval">Ps. Aug. De fide ad Petrum = Fulg. Rusp. fid. 3-6</ref> (<bibl ref="#migne_pl"> 40, 762-770</bibl>), eine große Rolle. Verwendung bei Luther#</note>, sibimet
-							<lb/>consubstantialis<note type="footnote">Karlstadt bezieht sich auf die Konsubstantiation im Sinne der Homousia von Vater, Sohnund Heiligem Geist. Die Begriffe <hi style="font-style: italic;">consubstantialis</hi> bzw. <hi style="font-style: italic;">consubstantivus</hi> verwendete in dieser Art <ref type="medieval">Tert. Adv Hermog. 44,3</ref> (<bibl ref="#">CChr 1, 433</bibl>); <ref type="medieval">Tert. Adv. Valent. 12,5; 18,1; 37,2</ref> (<bibl ref="#">CChr 2, 764; 767; 778</bibl>). Eine andere Verwendungsform der Konsubstantiation steht in einer theologischen Tradition von Duns Scotus, Wilhelm von Ockham, Johannes Gerson und Gabriel Biel für die sakramentale Einheit von Leib und Blut Christi mit Brot und Wein. Vgl. Biel# 3, 328f. Sie ist hier nicht gemeint. Verwendung bei  Luther#</note>/ et natura patri et spiritui sancto, coeternus.<note type="footnote">Vgl. Aug. #</note>
-							<lb/><app><lem>Calamitates</lem><rdg wit="#A">ii. Calamitates</rdg><rdg wit="#B">II. Calamitates</rdg><rdg wit="#WA">coaeternus, calamitates</rdg></app> nostras assumens, factus est pro nobis peccatum
-							<lb/>ut de peccato condemnaret peccatum.<note type="footnote">Vgl. <ref type="biblical" cRef="2. Kor 5,21">2. Kor 5,21</ref> Vg
-								„Eum, qui non noverat peccatum, pro nobis peccatum fecit.; <ref type="biblical" cRef="Gal 3,1">Gal 3,1</ref> Vg
-								<quote>qui factus est pro nobis maledictum</quote>. Vgl. auch ##; <bibl ref="#wa"> 8, 86,32</bibl>: <quote>Christus dum offeretur pro nobis, factus est peccatum metaphorice</quote>. Weiter <ref type="biblical" cRef="Rm 8,33f.">Röm 8,33f.</ref> Vg
-								<quote>qui iustificat quis est qui condemnet Christus Iesus qui mortuus est</quote>; <ref type="biblical" cRef="Rm 8,3">Röm 8,3</ref> Vg
-								<quote>Deus filium suum mittens in similitudinem carnis peccati et de peccato damnavit peccatum in carne</quote>. Vgl. <ref type="medieval">Aug. de trin. 12,23</ref>: <quote>velut rudis ad hoc sicut ducta fuerat duceretur idque inveniret ubi primum invenerat, in illa incorporea veritate unde rursus quasi descriptum in memoria figeretur. Neque enim sicut manet verbi gratia quadrati corporis incorporalis et immutabilis ratio sic in ea manet hominis cogitatio, si tamen ad eam sine phantasia spatii localis potuit pervenire.</quote> (<bibl ref="#">CChr 50, 377</bibl>).</note> <pb n="[B1r]"/></p>
-					</body>
-				</text>
-			</TEI>
-		</x:context>
-		<x:expect label="3*witness" xml:space="preserve"><TEI n="137" xml:id="edoc_ed000240_108_transcript">
+	<x:scenario>
+		<x:scenario label="T2.1: listWit">
+			<x:context>
+				<TEI n="137" xml:id="edoc_ed000240_108_transcript">
+					<teiHeader>
+						<fileDesc>
+							<sourceDesc>
+								<p>born digital</p>
+							</sourceDesc>
+						</fileDesc>
+					</teiHeader>
+					<text>
+						<body>
+							<p>Unigenitus dei filius incorporalis<note type="footnote">Unter der <hi style="font-style: italic;">incorporatio</hi> ist die Wiederauferstehung Christi in einem spirituellen Körper zu verstehen. Vgl. <ref type="biblical" cRef="Kol 2,17">Kol 2,17</ref>; <bibl ref="#">1. Kor 15,44-49</bibl>. <rs type="person"><!--TODO ref eintragen!-->Thomas von Aquin</rs> verwendete den Begriff ebenfalls im Sinne von geistig, immateriell, vgl. <ref type="medieval">Thomas, S.th. I q. 9 a. 2 co.</ref>; q. 50 a. 1 ad 1, 2 co., 4 co.; S.c.g. I c. 42; II c. 44, 50, 55, 92, 95 u. ö. Im Karlstadt’schen Zusammenhang der Trinitätsattribute bei <ref type="medieval">Prud. Trec. Praed. 9 cor.</ref>: <quote>Nihil digne de Deo dici, verum est quidem illam ineffabilem incorpoream immutabilemque naturam, quae est Trinitas, unus et verus Deus, nullis corporalium rerum signis ac vocibus proferri valere […].</quote> (<bibl ref="#migne_pl"> 115, 1118f.</bibl>).</note>, incommutabilis<note type="footnote">Der Begriff der Unveränderlichkeit Gottes (<hi style="font-style: italic;">incommutabilis</hi>) spielt in den Überlegungen zur Trinität bei <ref type="medieval">Ps. Aug. De fide ad Petrum = Fulg. Rusp. fid. 3-6</ref> (<bibl ref="#migne_pl"> 40, 762-770</bibl>), eine große Rolle. Verwendung bei Luther#</note>, sibimet
+								<lb/>consubstantialis<note type="footnote">Karlstadt bezieht sich auf die Konsubstantiation im Sinne der Homousia von Vater, Sohnund Heiligem Geist. Die Begriffe <hi style="font-style: italic;">consubstantialis</hi> bzw. <hi style="font-style: italic;">consubstantivus</hi> verwendete in dieser Art <ref type="medieval">Tert. Adv Hermog. 44,3</ref> (<bibl ref="#">CChr 1, 433</bibl>); <ref type="medieval">Tert. Adv. Valent. 12,5; 18,1; 37,2</ref> (<bibl ref="#">CChr 2, 764; 767; 778</bibl>). Eine andere Verwendungsform der Konsubstantiation steht in einer theologischen Tradition von Duns Scotus, Wilhelm von Ockham, Johannes Gerson und Gabriel Biel für die sakramentale Einheit von Leib und Blut Christi mit Brot und Wein. Vgl. Biel# 3, 328f. Sie ist hier nicht gemeint. Verwendung bei  Luther#</note>/ et natura patri et spiritui sancto, coeternus.<note type="footnote">Vgl. Aug. #</note>
+								<lb/><app><lem>Calamitates</lem><rdg wit="#A">ii. Calamitates</rdg><rdg wit="#B">II. Calamitates</rdg><rdg wit="#WA">coaeternus, calamitates</rdg></app> nostras assumens, factus est pro nobis peccatum
+								<lb/>ut de peccato condemnaret peccatum.<note type="footnote">Vgl. <ref type="biblical" cRef="2. Kor 5,21">2. Kor 5,21</ref> Vg
+									„Eum, qui non noverat peccatum, pro nobis peccatum fecit.; <ref type="biblical" cRef="Gal 3,1">Gal 3,1</ref> Vg
+									<quote>qui factus est pro nobis maledictum</quote>. Vgl. auch ##; <bibl ref="#wa"> 8, 86,32</bibl>: <quote>Christus dum offeretur pro nobis, factus est peccatum metaphorice</quote>. Weiter <ref type="biblical" cRef="Rm 8,33f.">Röm 8,33f.</ref> Vg
+									<quote>qui iustificat quis est qui condemnet Christus Iesus qui mortuus est</quote>; <ref type="biblical" cRef="Rm 8,3">Röm 8,3</ref> Vg
+									<quote>Deus filium suum mittens in similitudinem carnis peccati et de peccato damnavit peccatum in carne</quote>. Vgl. <ref type="medieval">Aug. de trin. 12,23</ref>: <quote>velut rudis ad hoc sicut ducta fuerat duceretur idque inveniret ubi primum invenerat, in illa incorporea veritate unde rursus quasi descriptum in memoria figeretur. Neque enim sicut manet verbi gratia quadrati corporis incorporalis et immutabilis ratio sic in ea manet hominis cogitatio, si tamen ad eam sine phantasia spatii localis potuit pervenire.</quote> (<bibl ref="#">CChr 50, 377</bibl>).</note> <pb n="[B1r]"/></p>
+						</body>
+					</text>
+				</TEI>
+			</x:context>
+			<x:expect label="3*witness" xml:space="preserve"><TEI n="137" xml:id="edoc_ed000240_108_transcript">
+		<teiHeader>
+			<fileDesc>
+				<sourceDesc>
+					<listWit type="other">
+						<witness xml:id="A" corresp="108_introduction.xml#A" />
+						<witness xml:id="B" corresp="108_introduction.xml#B" />
+						<witness xml:id="WA" corresp="108_introduction.xml#WA" /></listWit></sourceDesc></fileDesc></teiHeader>
+		<text>
+			<body><p xml:id="p2">Unigenitus dei filius incorporalis<note xml:id="nn1" type="footnote">Unter der <term type="term">incorporatio</term> ist die Wiederauferstehung Christi in einem spirituellen Körper zu verstehen. Vgl. <ref type="biblical" cRef="Kol 2,17">Kol 2,17</ref>; <bibl ref="#">1. Kor 15,44–49</bibl>. <rs type="person"><!--TODO ref eintragen!-->Thomas von Aquin</rs> verwendete den Begriff ebenfalls im Sinne von geistig, immateriell, vgl. <ref type="medieval">Thomas, S.th. I q. 9 a. 2 co.</ref>; q. 50 a. 1 ad 1, 2 co., 4 co.; S.c.g. I c. 42; II c. 44, 50, 55, 92, 95 u. ö. Im Karlstadt’schen Zusammenhang der Trinitätsattribute bei <ref type="medieval">Prud. Trec. Praed. 9 cor.</ref>: <quote>Nihil digne de Deo dici, verum est quidem illam ineffabilem incorpoream immutabilemque naturam, quae est Trinitas, unus et verus Deus, nullis corporalium rerum signis ac vocibus proferri valere […].</quote> (<bibl ref="#migne_pl"> 115, 1118f.</bibl>).</note>, incommutabilis<note xml:id="nn2" type="footnote">Der Begriff der Unveränderlichkeit Gottes (<term type="term">incommutabilis</term>) spielt in den Überlegungen zur Trinität bei <ref type="medieval">Ps. Aug. De fide ad Petrum = Fulg. Rusp. fid. 3–6</ref> (<bibl ref="#migne_pl"> 40, 762–770</bibl>), eine große Rolle. Verwendung bei Luther#</note>, sibimet
+								<lb xml:id="z1"/>consubstantialis<note xml:id="nn3" type="footnote">Karlstadt bezieht sich auf die Konsubstantiation im Sinne der Homousia von Vater, Sohnund Heiligem Geist. Die Begriffe <term type="term">consubstantialis</term> bzw. <term type="term">consubstantivus</term> verwendete in dieser Art <ref type="medieval">Tert. Adv Hermog. 44,3</ref> (<bibl ref="#">CChr 1, 433</bibl>); <ref type="medieval">Tert. Adv. Valent. 12,5; 18,1; 37,2</ref> (<bibl ref="#">CChr 2, 764; 767; 778</bibl>). Eine andere Verwendungsform der Konsubstantiation steht in einer theologischen Tradition von Duns Scotus, Wilhelm von Ockham, Johannes Gerson und Gabriel Biel für die sakramentale Einheit von Leib und Blut Christi mit Brot und Wein. Vgl. Biel# 3, 328f. Sie ist hier nicht gemeint. Verwendung bei  Luther#</note>/ et natura patri et spiritui sancto, coeternus.<note xml:id="nn4" type="footnote">Vgl. Aug. #</note><lb xml:id="z2"/><app><lem>Calamitates</lem><rdg wit="#A">ii. Calamitates</rdg><rdg wit="#B">II. Calamitates</rdg><rdg wit="#WA">coaeternus, calamitates</rdg></app> nostras assumens, factus est pro nobis peccatum
+								<lb xml:id="z3"/>ut de peccato condemnaret peccatum.<note xml:id="nn5" type="footnote">Vgl. <ref type="biblical" cRef="2. Kor 5,21">2. Kor 5,21</ref> Vg
+									„Eum, qui non noverat peccatum, pro nobis peccatum fecit.; <ref type="biblical" cRef="Gal 3,1">Gal 3,1</ref> Vg
+									<quote>qui factus est pro nobis maledictum</quote>. Vgl. auch ##; <bibl ref="#wa"> 8, 86,32</bibl>: <quote>Christus dum offeretur pro nobis, factus est peccatum metaphorice</quote>. Weiter <ref type="biblical" cRef="Rm 8,33f.">Röm 8,33f.</ref> Vg
+									<quote>qui iustificat quis est qui condemnet Christus Iesus qui mortuus est</quote>; <ref type="biblical" cRef="Rm 8,3">Röm 8,3</ref> Vg
+									<quote>Deus filium suum mittens in similitudinem carnis peccati et de peccato damnavit peccatum in carne</quote>. Vgl. <ref type="medieval">Aug. de trin. 12,23</ref>: <quote>velut rudis ad hoc sicut ducta fuerat duceretur idque inveniret ubi primum invenerat, in illa incorporea veritate unde rursus quasi descriptum in memoria figeretur. Neque enim sicut manet verbi gratia quadrati corporis incorporalis et immutabilis ratio sic in ea manet hominis cogitatio, si tamen ad eam sine phantasia spatii localis potuit pervenire.</quote> (<bibl ref="#">CChr 50, 377</bibl>).</note><pb xml:id="pag1" n="[B1r]"/></p></body></text></TEI></x:expect>
+		</x:scenario>
+		<x:scenario label="T2.2: listWit mit leerem wit">
+			<x:context>
+				<TEI n="137" xml:id="edoc_ed000240_108_transcript">
+					<teiHeader>
+						<fileDesc>
+							<sourceDesc>
+								<p>born digital</p>
+							</sourceDesc>
+						</fileDesc>
+					</teiHeader>
+					<text>
+						<body>
+							<p>Unigenitus dei filius incorporalis<note type="footnote">Unter der <hi style="font-style: italic;">incorporatio</hi> ist die Wiederauferstehung Christi in einem spirituellen Körper zu verstehen. Vgl. <ref type="biblical" cRef="Kol 2,17">Kol 2,17</ref>; <bibl ref="#">1. Kor 15,44-49</bibl>. <rs type="person"><!--TODO ref eintragen!-->Thomas von Aquin</rs> verwendete den Begriff ebenfalls im Sinne von geistig, immateriell, vgl. <ref type="medieval">Thomas, S.th. I q. 9 a. 2 co.</ref>; q. 50 a. 1 ad 1, 2 co., 4 co.; S.c.g. I c. 42; II c. 44, 50, 55, 92, 95 u. ö. Im Karlstadt’schen Zusammenhang der Trinitätsattribute bei <ref type="medieval">Prud. Trec. Praed. 9 cor.</ref>: <quote>Nihil digne de Deo dici, verum est quidem illam ineffabilem incorpoream immutabilemque naturam, quae est Trinitas, unus et verus Deus, nullis corporalium rerum signis ac vocibus proferri valere […].</quote> (<bibl ref="#migne_pl"> 115, 1118f.</bibl>).</note>, incommutabilis<note type="footnote">Der Begriff der Unveränderlichkeit Gottes (<hi style="font-style: italic;">incommutabilis</hi>) spielt in den Überlegungen zur Trinität bei <ref type="medieval">Ps. Aug. De fide ad Petrum = Fulg. Rusp. fid. 3-6</ref> (<bibl ref="#migne_pl"> 40, 762-770</bibl>), eine große Rolle. Verwendung bei Luther#</note>, sibimet
+								<lb/>consubstantialis<note type="footnote">Karlstadt bezieht sich auf die Konsubstantiation im Sinne der Homousia von Vater, Sohnund Heiligem Geist. Die Begriffe <hi style="font-style: italic;">consubstantialis</hi> bzw. <hi style="font-style: italic;">consubstantivus</hi> verwendete in dieser Art <ref type="medieval">Tert. Adv Hermog. 44,3</ref> (<bibl ref="#">CChr 1, 433</bibl>); <ref type="medieval">Tert. Adv. Valent. 12,5; 18,1; 37,2</ref> (<bibl ref="#">CChr 2, 764; 767; 778</bibl>). Eine andere Verwendungsform der Konsubstantiation steht in einer theologischen Tradition von Duns Scotus, Wilhelm von Ockham, Johannes Gerson und Gabriel Biel für die sakramentale Einheit von Leib und Blut Christi mit Brot und Wein. Vgl. Biel# 3, 328f. Sie ist hier nicht gemeint. Verwendung bei  Luther#</note>/ et natura patri et spiritui sancto, coeternus.<note type="footnote">Vgl. Aug. #</note>
+								<lb/><app><lem>Calamitates</lem><rdg wit="">ii. Calamitates</rdg><rdg wit="#B">II. Calamitates</rdg><rdg wit="#WA">coaeternus, calamitates</rdg></app> nostras assumens, factus est pro nobis peccatum
+								<lb/>ut de peccato condemnaret peccatum.<note type="footnote">Vgl. <ref type="biblical" cRef="2. Kor 5,21">2. Kor 5,21</ref> Vg
+									„Eum, qui non noverat peccatum, pro nobis peccatum fecit.; <ref type="biblical" cRef="Gal 3,1">Gal 3,1</ref> Vg
+									<quote>qui factus est pro nobis maledictum</quote>. Vgl. auch ##; <bibl ref="#wa"> 8, 86,32</bibl>: <quote>Christus dum offeretur pro nobis, factus est peccatum metaphorice</quote>. Weiter <ref type="biblical" cRef="Rm 8,33f.">Röm 8,33f.</ref> Vg
+									<quote>qui iustificat quis est qui condemnet Christus Iesus qui mortuus est</quote>; <ref type="biblical" cRef="Rm 8,3">Röm 8,3</ref> Vg
+									<quote>Deus filium suum mittens in similitudinem carnis peccati et de peccato damnavit peccatum in carne</quote>. Vgl. <ref type="medieval">Aug. de trin. 12,23</ref>: <quote>velut rudis ad hoc sicut ducta fuerat duceretur idque inveniret ubi primum invenerat, in illa incorporea veritate unde rursus quasi descriptum in memoria figeretur. Neque enim sicut manet verbi gratia quadrati corporis incorporalis et immutabilis ratio sic in ea manet hominis cogitatio, si tamen ad eam sine phantasia spatii localis potuit pervenire.</quote> (<bibl ref="#">CChr 50, 377</bibl>).</note> <pb n="[B1r]"/></p>
+						</body>
+					</text>
+				</TEI>
+			</x:context>
+			<x:expect label="3*witness" xml:space="preserve"><TEI n="137" xml:id="edoc_ed000240_108_transcript">
 	<teiHeader>
 		<fileDesc>
 			<sourceDesc>
 				<listWit type="other">
-					<witness xml:id="A" corresp="108_introduction.xml#A" />
 					<witness xml:id="B" corresp="108_introduction.xml#B" />
 					<witness xml:id="WA" corresp="108_introduction.xml#WA" /></listWit></sourceDesc></fileDesc></teiHeader>
 	<text>
 		<body><p xml:id="p2">Unigenitus dei filius incorporalis<note xml:id="nn1" type="footnote">Unter der <term type="term">incorporatio</term> ist die Wiederauferstehung Christi in einem spirituellen Körper zu verstehen. Vgl. <ref type="biblical" cRef="Kol 2,17">Kol 2,17</ref>; <bibl ref="#">1. Kor 15,44–49</bibl>. <rs type="person"><!--TODO ref eintragen!-->Thomas von Aquin</rs> verwendete den Begriff ebenfalls im Sinne von geistig, immateriell, vgl. <ref type="medieval">Thomas, S.th. I q. 9 a. 2 co.</ref>; q. 50 a. 1 ad 1, 2 co., 4 co.; S.c.g. I c. 42; II c. 44, 50, 55, 92, 95 u. ö. Im Karlstadt’schen Zusammenhang der Trinitätsattribute bei <ref type="medieval">Prud. Trec. Praed. 9 cor.</ref>: <quote>Nihil digne de Deo dici, verum est quidem illam ineffabilem incorpoream immutabilemque naturam, quae est Trinitas, unus et verus Deus, nullis corporalium rerum signis ac vocibus proferri valere […].</quote> (<bibl ref="#migne_pl"> 115, 1118f.</bibl>).</note>, incommutabilis<note xml:id="nn2" type="footnote">Der Begriff der Unveränderlichkeit Gottes (<term type="term">incommutabilis</term>) spielt in den Überlegungen zur Trinität bei <ref type="medieval">Ps. Aug. De fide ad Petrum = Fulg. Rusp. fid. 3–6</ref> (<bibl ref="#migne_pl"> 40, 762–770</bibl>), eine große Rolle. Verwendung bei Luther#</note>, sibimet
-							<lb xml:id="z1"/>consubstantialis<note xml:id="nn3" type="footnote">Karlstadt bezieht sich auf die Konsubstantiation im Sinne der Homousia von Vater, Sohnund Heiligem Geist. Die Begriffe <term type="term">consubstantialis</term> bzw. <term type="term">consubstantivus</term> verwendete in dieser Art <ref type="medieval">Tert. Adv Hermog. 44,3</ref> (<bibl ref="#">CChr 1, 433</bibl>); <ref type="medieval">Tert. Adv. Valent. 12,5; 18,1; 37,2</ref> (<bibl ref="#">CChr 2, 764; 767; 778</bibl>). Eine andere Verwendungsform der Konsubstantiation steht in einer theologischen Tradition von Duns Scotus, Wilhelm von Ockham, Johannes Gerson und Gabriel Biel für die sakramentale Einheit von Leib und Blut Christi mit Brot und Wein. Vgl. Biel# 3, 328f. Sie ist hier nicht gemeint. Verwendung bei  Luther#</note>/ et natura patri et spiritui sancto, coeternus.<note xml:id="nn4" type="footnote">Vgl. Aug. #</note><lb xml:id="z2"/><app><lem>Calamitates</lem><rdg wit="#A">ii. Calamitates</rdg><rdg wit="#B">II. Calamitates</rdg><rdg wit="#WA">coaeternus, calamitates</rdg></app> nostras assumens, factus est pro nobis peccatum
-							<lb xml:id="z3"/>ut de peccato condemnaret peccatum.<note xml:id="nn5" type="footnote">Vgl. <ref type="biblical" cRef="2. Kor 5,21">2. Kor 5,21</ref> Vg
-								„Eum, qui non noverat peccatum, pro nobis peccatum fecit.; <ref type="biblical" cRef="Gal 3,1">Gal 3,1</ref> Vg
-								<quote>qui factus est pro nobis maledictum</quote>. Vgl. auch ##; <bibl ref="#wa"> 8, 86,32</bibl>: <quote>Christus dum offeretur pro nobis, factus est peccatum metaphorice</quote>. Weiter <ref type="biblical" cRef="Rm 8,33f.">Röm 8,33f.</ref> Vg
-								<quote>qui iustificat quis est qui condemnet Christus Iesus qui mortuus est</quote>; <ref type="biblical" cRef="Rm 8,3">Röm 8,3</ref> Vg
-								<quote>Deus filium suum mittens in similitudinem carnis peccati et de peccato damnavit peccatum in carne</quote>. Vgl. <ref type="medieval">Aug. de trin. 12,23</ref>: <quote>velut rudis ad hoc sicut ducta fuerat duceretur idque inveniret ubi primum invenerat, in illa incorporea veritate unde rursus quasi descriptum in memoria figeretur. Neque enim sicut manet verbi gratia quadrati corporis incorporalis et immutabilis ratio sic in ea manet hominis cogitatio, si tamen ad eam sine phantasia spatii localis potuit pervenire.</quote> (<bibl ref="#">CChr 50, 377</bibl>).</note><pb xml:id="pag1" n="[B1r]"/></p></body></text></TEI></x:expect>
+								<lb xml:id="z1"/>consubstantialis<note xml:id="nn3" type="footnote">Karlstadt bezieht sich auf die Konsubstantiation im Sinne der Homousia von Vater, Sohnund Heiligem Geist. Die Begriffe <term type="term">consubstantialis</term> bzw. <term type="term">consubstantivus</term> verwendete in dieser Art <ref type="medieval">Tert. Adv Hermog. 44,3</ref> (<bibl ref="#">CChr 1, 433</bibl>); <ref type="medieval">Tert. Adv. Valent. 12,5; 18,1; 37,2</ref> (<bibl ref="#">CChr 2, 764; 767; 778</bibl>). Eine andere Verwendungsform der Konsubstantiation steht in einer theologischen Tradition von Duns Scotus, Wilhelm von Ockham, Johannes Gerson und Gabriel Biel für die sakramentale Einheit von Leib und Blut Christi mit Brot und Wein. Vgl. Biel# 3, 328f. Sie ist hier nicht gemeint. Verwendung bei  Luther#</note>/ et natura patri et spiritui sancto, coeternus.<note xml:id="nn4" type="footnote">Vgl. Aug. #</note><lb xml:id="z2"/><app><lem>Calamitates</lem><rdg wit="">ii. Calamitates</rdg><rdg wit="#B">II. Calamitates</rdg><rdg wit="#WA">coaeternus, calamitates</rdg></app> nostras assumens, factus est pro nobis peccatum
+								<lb xml:id="z3"/>ut de peccato condemnaret peccatum.<note xml:id="nn5" type="footnote">Vgl. <ref type="biblical" cRef="2. Kor 5,21">2. Kor 5,21</ref> Vg
+									„Eum, qui non noverat peccatum, pro nobis peccatum fecit.; <ref type="biblical" cRef="Gal 3,1">Gal 3,1</ref> Vg
+									<quote>qui factus est pro nobis maledictum</quote>. Vgl. auch ##; <bibl ref="#wa"> 8, 86,32</bibl>: <quote>Christus dum offeretur pro nobis, factus est peccatum metaphorice</quote>. Weiter <ref type="biblical" cRef="Rm 8,33f.">Röm 8,33f.</ref> Vg
+									<quote>qui iustificat quis est qui condemnet Christus Iesus qui mortuus est</quote>; <ref type="biblical" cRef="Rm 8,3">Röm 8,3</ref> Vg
+									<quote>Deus filium suum mittens in similitudinem carnis peccati et de peccato damnavit peccatum in carne</quote>. Vgl. <ref type="medieval">Aug. de trin. 12,23</ref>: <quote>velut rudis ad hoc sicut ducta fuerat duceretur idque inveniret ubi primum invenerat, in illa incorporea veritate unde rursus quasi descriptum in memoria figeretur. Neque enim sicut manet verbi gratia quadrati corporis incorporalis et immutabilis ratio sic in ea manet hominis cogitatio, si tamen ad eam sine phantasia spatii localis potuit pervenire.</quote> (<bibl ref="#">CChr 50, 377</bibl>).</note><pb xml:id="pag1" n="[B1r]"/></p></body></text></TEI></x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T3: idno">

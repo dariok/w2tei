@@ -122,7 +122,9 @@
 						<xsl:text>
 					</xsl:text>
 						<witness corresp="{$val || '_introduction.xml' || .}">
-							<xsl:attribute name="xml:id" select="substring-after(., '#')" />
+							<xsl:if test="substring-after(., '#') != ''">
+								<xsl:attribute name="xml:id" select="substring-after(., '#')" />
+							</xsl:if>
 						</witness>
 					</xsl:for-each>
 				</listWit>
