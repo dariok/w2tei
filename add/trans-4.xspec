@@ -42,7 +42,7 @@
 					>r</hi></bibl>.</note>
 			</x:context>
 			<x:expect label="kein @ref">
-				<note type="footnote">Siehe z.B. <bibl>ABCSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+				<note type="footnote">Siehe z.B. <bibl><!--TODO ref eintragen!-->ABCSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
 					>r</hi></bibl>.</note>
 			</x:expect>
 		</x:scenario>
