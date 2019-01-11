@@ -308,8 +308,13 @@
 				<xsl:value-of select="xstring:substring-before-last($mid, ' ')" />
 			</xsl:when>
 			<xsl:when test="preceding-sibling::*[1][self::tei:pb]
-				and ends-with(normalize-space(preceding-sibling::text()[1]), '-')">
-				<!--<xsl:variable name="mid" select="substring-after(., ' ')" />-->
+				and ends-with(normalize-space(preceding-sibling::text()[1]), '-')"/>
+			<xsl:when test="preceding-sibling::*[1][self::tei:lb] and preceding-sibling::*[2][self::tei:pb]
+				and ends-with(normalize-space(preceding-sibling::tei:pb[1]/preceding-sibling::text()[1]), '-')
+				and normalize-space(preceding-sibling::text()[1]) = ''">
+				<!--<xsl:variable name="mid" select="substring-after(., ' ')" />
+				<xsl:value-of select="xstring:substring-before-last($mid, ' ')" />-->
+				<xsl:value-of select="substring-after(., ' ')" />
 			</xsl:when>
 			<xsl:when test="ends-with(normalize-space(), '-') and following-sibling::*[1][self::tei:note]">
 				<xsl:choose>

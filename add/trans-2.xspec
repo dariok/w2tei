@@ -270,31 +270,47 @@
 	
 	<x:scenario label="T3: Trennungen">
 		<x:scenario label="T3.1: Worttrennung">
-			<x:context>
+			<x:context xml:space="preserve">
 				<p>
 					<lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
 					<lb/>befelh gottis/ der genugsamlich in heyliger schrifft an-
 					<lb/>getzeigt und begriffen.
 				</p>
 			</x:context>
-			<x:expect label="w mit lb">
-				<p><lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
+			<x:expect label="w mit lb" xml:space="preserve">
+				<p>
+					<lb/>dan das gotliche wort vor/ und bleybe stracks/ in dem
 					<lb/>befelh gottis/ der genugsamlich in heyliger schrifft <w>an<lb break="no"/>getzeigt</w> und begriffen.
-				</p></x:expect>
+				</p>
+			</x:expect>
 		</x:scenario>
 		<x:scenario label="T3.2: Trennung mit Marginalie">
-			<x:context>
+			<x:context xml:space="preserve">
 				<p>istis: or-<note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note><lb/>natissimi viri:</p>
 			</x:context>
-			<x:expect label="w mit Marginalien drin">
-				<p>istis: <w>or<lb break="no"/>natissimi</w><note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note> viri:</p></x:expect>
+			<x:expect label="w mit Marginalien drin" xml:space="preserve">
+				<p>istis: <w>or<lb break="no"/>natissimi</w><note place="margin">Nugae <rs type="person"><!--TODO ref eintragen-->Lutherii</rs> de </note><note place="margin">indulgentiis, res leviculae, </note><note place="margin">de rebus leviculis.</note> viri:</p>
+			</x:expect>
 		</x:scenario>
 		<x:scenario label="T3.3: Trennung in rs mit Teilen vor und dahinter">
-			<x:context>
+			<x:context xml:space="preserve">
 				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium sanc-</rs><lb/><rs type="place"><!--TODO ref eintragen-->torum Wittenbergen’sium‘</rs> ordinariis</p>
 			</x:context>
-			<x:expect label="rs mit drei Wörtern und einem Umbruch">
-				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium <w>sanc<lb break="no"/>torum</w> Wittenbergen’sium‘</rs>  ordinariis</p></x:expect>
+			<x:expect label="rs mit drei Wörtern und einem Umbruch" xml:space="preserve">
+				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium <w>sanc<lb break="no"/>torum</w> Wittenbergen’sium‘</rs>  ordinariis</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T3.4: Trennung über Seitenumbruch mit app danach">
+			<x:context xml:space="preserve">
+				<p>
+					gratia in Evan-<pb n="[A3v]"/>
+					<lb/>gelio<note type="crit_app"><hi style="font-style: italic;"> </hi><hi style="font-style: italic;">folgt </hi>dicit<hi style="font-style: italic;"> </hi><hi style="font-style: italic;">a</hi><hi style="font-style: italic;"><hi rend="sub">1</hi></hi></note> laborasse
+				</p>
+			</x:context>
+			<x:expect label="keine Doppelungen" xml:space="preserve">
+				<p>gratia in <w>Evan<pb n="[A3v]"/><lb break="no"/>gelio</w><note type="crit_app"><hi style="font-style: italic;"> </hi><hi style="font-style: italic;">folgt </hi>dicit<hi style="font-style: italic;"> </hi><hi style="font-style: italic;">a</hi><hi style="font-style: italic;"><hi rend="sub">1</hi></hi></note> laborasse
+				</p>
+			</x:expect>
 		</x:scenario>
 	</x:scenario>
 	
