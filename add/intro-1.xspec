@@ -12,4 +12,13 @@
 				> vom 26.10.1516 (<bibl>WA 1, 73,27f. Nr. 28</bibl>; <bibl>Walch<hi rend="super">2</hi> 21, 561</bibl>).</note>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="T2: Text">
+		<x:context>
+			<quote>VERBA SVNT ║ LIBRI AD LEC=║TOREM</quote>
+		</x:context>
+		<x:expect label="Ersetzen">
+			<quote>VERBA SVNT ‖ LIBRI AD LEC=‖TOREM</quote>
+		</x:expect>
+	</x:scenario>
 </x:description>

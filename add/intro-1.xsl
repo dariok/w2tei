@@ -7,10 +7,6 @@
 	exclude-result-prefixes="xs math"
 	version="3.0">
 	
-	<xsl:template match="tei:listBibl[@type = 'sigla']//tei:title/text()">
-		<xsl:value-of select="translate(., '║', '‖')"/>
-	</xsl:template>
-	
 	<xsl:template match="tei:rs[not(preceding-sibling::node()[1][self::tei:rs])]">
 		<rs type="{@type}">
 			<xsl:choose>
@@ -28,8 +24,9 @@
 	</xsl:template>
 	<xsl:template match="tei:rs[preceding-sibling::node()[1][self::tei:rs]]" />
 	
-	<xsl:template match="text()[not(parent::tei:title)]">
-		<xsl:analyze-string select="." regex="([\d\sr])-([\d\sv])">
+	<xsl:template match="text()">
+		<xsl:variable name="t" select="translate(., '║', '‖')" />
+		<xsl:analyze-string select="$t" regex="([\d\sr])-([\d\sv])">
 			<xsl:matching-substring>
 				<xsl:value-of select="regex-group(1) || '–' || regex-group(2)"/>
 			</xsl:matching-substring>
@@ -51,7 +48,7 @@
 		</xsl:analyze-string>
 	</xsl:template>
 	
-	<xsl:template match="node() | @*">
+	<xsl:template match="@* | * | comment()">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()" />
 		</xsl:copy>
