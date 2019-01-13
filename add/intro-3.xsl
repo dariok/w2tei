@@ -76,7 +76,18 @@
 		</msIdentifier>
 	</xsl:template>
 	
-	<xsl:template match="@* | node()">
+	<xsl:template match="text()">
+		<xsl:analyze-string select="." regex="\.\.\.">
+			<xsl:matching-substring>
+				<gap />
+			</xsl:matching-substring>
+			<xsl:non-matching-substring>
+				<xsl:value-of select="."/>
+			</xsl:non-matching-substring>
+		</xsl:analyze-string>
+	</xsl:template>
+	
+	<xsl:template match="@* | * | comment() | processing-instruction()">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()"/>
 		</xsl:copy>

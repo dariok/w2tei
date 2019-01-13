@@ -97,5 +97,13 @@
 				</msIdentifier>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T4.2: gap">
+			<x:context>
+				<quote>Disputatio Lipsiensis Dn. Doct. Martini Lutheri &amp; Carolostadii cum Eccio. Item oratio Johannis Langii concludens actum illum disputatorium. Item epistola Melanchthonis de Disputatione Lipsicam cum Responsione Eccii. [...]</quote>
+			</x:context>
+			<x:expect label="gap">
+				<quote>Disputatio Lipsiensis Dn. Doct. Martini Lutheri &amp; Carolostadii cum Eccio. Item oratio Johannis Langii concludens actum illum disputatorium. Item epistola Melanchthonis de Disputatione Lipsicam cum Responsione Eccii. [<gap />]</quote>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>
