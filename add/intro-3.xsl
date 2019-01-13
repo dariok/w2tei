@@ -69,6 +69,13 @@
 		</quote>
 	</xsl:template>
 	
+	<xsl:template match="tei:msIdentifier">
+		<msIdentifier>
+			<xsl:apply-templates select="*[not(self::tei:altIdentifier)]" />
+			<xsl:apply-templates select="tei:altIdentifier" />
+		</msIdentifier>
+	</xsl:template>
+	
 	<xsl:template match="@* | node()">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()"/>

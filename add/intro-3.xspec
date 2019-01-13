@@ -83,4 +83,19 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T4: verschiedene">
+		<x:scenario label="T4.1: Reihenfolge in msIdentifier">
+			<x:context>
+				<msIdentifier><altIdentifier type="siglum"><idno>a</idno></altIdentifier><repository>Andreas-Möller-Bibliothek des Geschwister-Scholl-Gymnasiums Freiberg</repository><idno type="signatur">VII 4° 12, fol. 228r–256v und 379r–398v</idno></msIdentifier>
+			</x:context>
+			<x:expect label="altIdentifier hinten">
+				<msIdentifier>
+					<repository>Andreas-Möller-Bibliothek des Geschwister-Scholl-Gymnasiums Freiberg</repository>
+					<idno type="signatur">VII 4° 12, fol. 228r–256v und 379r–398v</idno>
+					<altIdentifier type="siglum"><idno>a</idno></altIdentifier>
+				</msIdentifier>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
