@@ -145,7 +145,7 @@
 						<xsl:value-of select="normalize-space(xstring:substring-after($post, ' '))"/>
 					</xsl:if>
 				</rs>
-				<xsl:if test="starts-with(following-sibling::text()[1], ' ')
+				<xsl:if test="starts-with(following-sibling::node()[1][self::text()], ' ')
 					or ends-with(following-sibling::tei:rs[1], ' ')">
 					<xsl:text> </xsl:text>
 				</xsl:if>

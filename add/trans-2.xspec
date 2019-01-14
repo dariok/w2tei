@@ -211,6 +211,19 @@
 					>exau<lb break="no"/>diente,</w> nihilque retribuente</p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T1.14: note direkt hinter Resttext">
+			<x:context>
+				<p>
+					<rs type="person">Martinus Lu-</rs>
+					<lb/><rs type="person">therius</rs><note type="crit_app"> Lutherus <hi style="font-style: italic;">C</hi></note><note type="footnote" xml:id="n3">Eine Selbstbezeichnung als „Lutherius“, die hier auf dem Titelblatt, in der Widmungsanrede und in Marginalien auftaucht, ist ungewöhnlich, vgl. <bibl>WA 2, 445 Anm. 1</bibl>; <bibl>Möller, Luder, 192</bibl>. Diese findet sich in dieser Zeit nur in Drucken aus <rs type="place">Leipzig</rs>, <rs type="place">Köln</rs>, <rs type="place">Basel</rs> und <rs type="place">Straßburg</rs>, die nicht von <rs type="person">Luther</rs> persönlich verantwortet waren (VD 16 L 3639, VD 16 E 2832, VD 16 L 334, VD 16 L 3408, VD 16 L 2336, VD 16 S 2173). Er selbst bezeichnete sich allenfalls als „Eleutherius“ (<bibl>WA.B 1, 122,56 Nr. 52</bibl>: „F. Martinus Eleutherius“, an <rs type="person">Johannes Lang</rs>, 11.11.1517, vgl. <bibl>Möller, Luder, 174</bibl>).</note> Augustinianus
+				</p>
+			</x:context>
+			<x:expect label="kein Spatium">
+				<p>
+					<rs type="person">Martinus <w>Lu<lb break="no"/>therius</w></rs><note type="crit_app"> Lutherus <hi style="font-style: italic;">C</hi></note><note type="footnote" xml:id="n3">Eine Selbstbezeichnung als <quote>Lutherius</quote>, die hier auf dem Titelblatt, in der Widmungsanrede und in Marginalien auftaucht, ist ungewöhnlich, vgl. <bibl>WA 2, 445 Anm. 1</bibl>; <bibl>Möller, Luder, 192</bibl>. Diese findet sich in dieser Zeit nur in Drucken aus <rs type="place">Leipzig</rs>, <rs type="place">Köln</rs>, <rs type="place">Basel</rs> und <rs type="place">Straßburg</rs>, die nicht von <rs type="person">Luther</rs> persönlich verantwortet waren (VD 16 L 3639, VD 16 E 2832, VD 16 L 334, VD 16 L 3408, VD 16 L 2336, VD 16 S 2173). Er selbst bezeichnete sich allenfalls als <quote>Eleutherius</quote> (<bibl>WA.B 1, 122,56 Nr. 52</bibl>: <quote>F. Martinus Eleutherius</quote>, an <rs type="person">Johannes Lang</rs>, 11.11.1517, vgl. <bibl>Möller, Luder, 174</bibl>).</note> Augustinianus
+				</p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T2: quote">
@@ -297,7 +310,7 @@
 				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium sanc-</rs><lb/><rs type="place"><!--TODO ref eintragen-->torum Wittenbergen’sium‘</rs> ordinariis</p>
 			</x:context>
 			<x:expect label="rs mit drei Wörtern und einem Umbruch" xml:space="preserve">
-				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium <w>sanc<lb break="no"/>torum</w> Wittenbergen’sium‘</rs>  ordinariis</p>
+				<p>Canonicis <rs type="place"><!--TODO ref eintragen-->omnium <w>sanc<lb break="no"/>torum</w> Wittenbergen’sium‘</rs> ordinariis</p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T3.4: Trennung über Seitenumbruch mit app danach">
