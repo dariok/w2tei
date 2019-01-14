@@ -72,7 +72,7 @@
 		<rs type="person">
 			<xsl:variable name="register" select="doc('../../register/personenregister.xml')" />
 			<xsl:variable name="self" select="string-join(analyze-string(normalize-space(), '''')//*:non-match, '')" />
-			<xsl:variable name="entry" select="$register//tei:person[tei:persName[contains(normalize-space(), $self)]]"/>
+			<xsl:variable name="entry" select="$register//tei:person[tei:persName[normalize-space() = $self]]"/>
 			<xsl:choose>
 				<xsl:when test="count($entry) > 0">
 					<xsl:attribute name="ref">
@@ -80,9 +80,7 @@
 					</xsl:attribute>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:comment>TODO ref eintragen!
-					<xsl:value-of select="$self"/>
-					</xsl:comment>
+					<xsl:comment>TODO ref eintragen!</xsl:comment>
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:sequence select="node()[not(self::comment())]" />
@@ -93,7 +91,7 @@
 		<rs type="place">
 			<xsl:variable name="register" select="doc('../../register/ortsregister.xml')" />
 			<xsl:variable name="self" select="string-join(analyze-string(normalize-space(), '''')//*:non-match, '')" />
-			<xsl:variable name="entry" select="$register//tei:place[tei:placeName[contains(normalize-space(), $self)]]"/>
+			<xsl:variable name="entry" select="$register//tei:place[tei:placeName[normalize-space() = $self]]"/>
 			<xsl:choose>
 				<xsl:when test="count($entry) > 0">
 					<xsl:attribute name="ref">

@@ -73,6 +73,18 @@
 				<p>Documenta <rs type="person" ref="#cyprian">Cypria'ni'</rs></p>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T3.4: Verwechselungsmöglichkeiten">
+			<x:context>
+				<rs type="person">Hieronymus</rs>
+				<rs type="person">Bischof Adolf von Merseburg</rs>
+				<rs type="person">Herzog</rs>
+			</x:context>
+			<x:expect label="hieronymus">
+				<rs type="person" ref="#hieronymus">Hieronymus</rs>
+				<rs type="person" ref="#adolf_anhalt">Bischof Adolf von Merseburg</rs>
+				<rs type="person"><!--TODO ref eintragen!-->Herzog</rs>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="krit. und FN gemischt">
