@@ -65,6 +65,14 @@
 				<rs type="place" ref="#leipzig">Lipsiae</rs>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T3.3: mit Expansion">
+			<x:context>
+				<p>Documenta <rs type="person"><!--TODO ref eintragen!-->Cypria'ni'</rs></p>
+			</x:context>
+			<x:expect label="ref">
+				<p>Documenta <rs type="person" ref="#cyprian">Cypria'ni'</rs></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="krit. und FN gemischt">
