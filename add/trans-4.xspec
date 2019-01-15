@@ -60,9 +60,11 @@
 		<x:scenario label="Orte">
 			<x:context>
 				<rs type="place"><!--TODO ref eintragen-->Lipsiae</rs>
+				<rs type="place"><!--TODO ref eintragen-->Wittenberga</rs>
 			</x:context>
 			<x:expect label="@ref">
 				<rs type="place" ref="#leipzig">Lipsiae</rs>
+				<rs type="place" ref="#wittenberg">Wittenberga</rs>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T3.3: mit Expansion">
