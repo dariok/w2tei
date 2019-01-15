@@ -6,7 +6,7 @@
 	xmlns:wdb="https://github.com/dariok/wdbplus"
 	xmlns:hab="http://diglib.hab.de"
 	xmlns="http://www.tei-c.org/ns/1.0"
-	exclude-result-prefixes="xs math"
+	exclude-result-prefixes="#all"
 	version="3.0">
 	
 	<xsl:include href="bibl.xsl#1"/>
