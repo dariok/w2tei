@@ -91,7 +91,7 @@
 		<rs type="place">
 			<xsl:variable name="register" select="doc('../../register/ortsregister.xml')" />
 			<xsl:variable name="self" select="string-join(analyze-string(normalize-space(), '''')//*:non-match, '')" />
-			<xsl:variable name="entry" select="$register//tei:place[tei:placeName[normalize-space() = $self]]"/>
+			<xsl:variable name="entry" select="$register//tei:place[tei:settlement[normalize-space() = $self]]"/>
 			<xsl:choose>
 				<xsl:when test="count($entry) > 0">
 					<xsl:attribute name="ref">
