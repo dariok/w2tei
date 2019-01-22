@@ -65,6 +65,39 @@
 		<xsl:param name="context" as="item()*" />
 		<xsl:param name="test" as="xs:string" />
 		<xsl:param name="pr" as="xs:string" />
+		
+		<xsl:sequence select="wt:is($context, $test, $pr, false())"/>
+	</xsl:function>
+	
+	<xd:doc>
+		<xd:desc>
+			<xd:p>Check whether a <xd:pre>w:p</xd:pre> has a certain 'type', i.e. a paragraph or character style of a given
+				name is applied.</xd:p>
+		</xd:desc>
+		<xd:param name="context">
+			<xd:p>The context item to be evaluated</xd:p>
+		</xd:param>
+		<xd:param name="test">
+			<xd:p>The string that is to be checked for.</xd:p>
+		</xd:param>
+		<xd:param name="pr">
+			<xd:p>Either 'p' for a paragraph style or 'r' for a character ('run') style.</xd:p>
+		</xd:param>
+		<xd:param name="strict">
+			<xd:p>If <xd:pre>true()</xd:pre>, strict comparison is used (<xd:pre>style($context) = $test</xd:pre>, else
+				<xd:pre>contains(style($context), $test)</xd:pre>.</xd:p>
+		</xd:param>
+		<xd:return>
+			<xd:p><xd:pre>true()</xd:pre> if a paragraph style of the given name is applied to the context element;
+				<xd:pre>false()</xd:pre> otherwise.</xd:p>
+			<xd:p>Will also return <xd:pre>false()</xd:pre> if <xs:pre>$pr</xs:pre> is anything but 'p' or 'r'.</xd:p>
+		</xd:return>
+	</xd:doc>
+	<xsl:function name="wt:is" as="xs:boolean">
+		<xsl:param name="context" as="item()*" />
+		<xsl:param name="test" as="xs:string" />
+		<xsl:param name="pr" as="xs:string" />
+		<xsl:param name="strict" as="xs:boolean" />
 		<xsl:variable name="val">
 			<xsl:choose>
 				<xsl:when test="not($pr = 'p' or $pr = 'r')">
@@ -79,7 +112,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:value-of select="contains($val, $test)"/>
+		<xsl:sequence select="if($strict) then $val = $test else contains($val, $test)" />
 	</xsl:function>
 	<!-- END Functions to check for a type -->
 	

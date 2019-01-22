@@ -2,15 +2,41 @@
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:wt="https://github.com/dariok/w2tei" stylesheet="word-pack.xsl">
-	<!--<x:scenario label="Scenario for testing function is">
-		<x:call function="wt:is">
-			<x:param name="context" select="''"/>
-			<x:param name="test" select="''"/>
-		</x:call>
-		<x:expect label="Not yet implemented" select="'Not yet implemented'"/>
+	
+	<x:scenario label="T1: Scenario for testing function is">
+		<x:scenario label="T1.1: strict, genau">
+			<x:call function="wt:is">
+				<x:param name="context">
+					<w:p w:rsidR="009E30B3" w:rsidRPr="00C43B00" w:rsidRDefault="003A3C64" w:rsidP="00C43B00">
+						<w:pPr>
+							<w:pStyle w:val="Kopfregest"/>
+						</w:pPr>
+					</w:p>
+				</x:param>
+				<x:param name="test" select="'Kopfregest'"/>
+				<x:param name="pr" select="'p'" />
+				<x:param name="strict" select="true()" />
+			</x:call>
+			<x:expect label="true" select="true()"/>
+		</x:scenario>
+		<x:scenario label="T1.2: strict, länger">
+			<x:call function="wt:is">
+				<x:param name="context">
+					<w:p w:rsidR="009E30B3" w:rsidRPr="00C43B00" w:rsidRDefault="003A3C64" w:rsidP="00C43B00">
+						<w:pPr>
+							<w:pStyle w:val="Kopfregest-Namensliste"/>
+						</w:pPr>
+					</w:p>
+				</x:param>
+				<x:param name="test" select="'Kopfregest'"/>
+				<x:param name="pr" select="'p'" />
+				<x:param name="strict" select="true()" />
+			</x:call>
+			<x:expect label="false" select="false()"/>
+		</x:scenario>
 	</x:scenario>
 
-	<x:scenario label="Scenario for testing function is">
+	<!--<x:scenario label="Scenario for testing function is">
 		<x:call function="wt:is">
 			<x:param name="context" select="''"/>
 			<x:param name="test" select="''"/>
