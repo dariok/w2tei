@@ -19,24 +19,23 @@
 					xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
 					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" mc:Ignorable="w14 wp14">
 					<w:body>
-						<w:p>
+						<w:p w:rsidR="00B504F7" w:rsidRPr="005A3D8C" w:rsidRDefault="00B504F7" w:rsidP="00C43B00">
 							<w:pPr>
 								<w:pStyle w:val="berschriftSitzungMRP"/>
-								<w:rPr/>
 							</w:pPr>
-							<w:r>
-								<w:rPr/>
-								<w:t xml:space="preserve">Nr. </w:t>
+							<w:r w:rsidRPr="005A3D8C">
+								<w:t>Nr. 1 Ministerrat, Wien, 19. Februar 1867 – Protokoll I</w:t>
 							</w:r>
-							<w:r>
-								<w:rPr/>
-								<w:t>123</w:t>
-							</w:r>
-							<w:r>
-								<w:rPr/>
-								<w:tab/>
-								<w:t>Ministerrat, Wien, 1. April 18XX [Formatvorlage: ÜberschriftSitzungMRP]</w:t>
-							</w:r>
+						</w:p>
+						<w:p w:rsidR="00B504F7" w:rsidRPr="00C43B00" w:rsidRDefault="00B504F7" w:rsidP="00B504F7">
+							<w:pPr>
+								<w:rPr>
+									<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+									<w:sz w:val="24"/>
+									<w:szCs w:val="24"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+							</w:pPr>
 						</w:p>
 					</w:body>
 				</w:document>
@@ -66,43 +65,41 @@
 					xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
 					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" mc:Ignorable="w14 wp14">
 					<w:body>
-						<w:p>
+						<w:p w:rsidR="00B504F7" w:rsidRPr="005A3D8C" w:rsidRDefault="00B504F7" w:rsidP="00C43B00">
 							<w:pPr>
 								<w:pStyle w:val="berschriftSitzungMRP"/>
-								<w:rPr/>
 							</w:pPr>
-							<w:r>
-								<w:rPr/>
-								<w:t xml:space="preserve">Nr. </w:t>
-							</w:r>
-							<w:r>
-								<w:rPr/>
-								<w:t>123</w:t>
-							</w:r>
-							<w:r>
-								<w:rPr/>
-								<w:tab/>
-								<w:t>Ministerrat, Wien, 1. April 18XX [Formatvorlage: ÜberschriftSitzungMRP]</w:t>
+							<w:r w:rsidRPr="005A3D8C">
+								<w:t>Nr. 1 Ministerrat, Wien, 19. Februar 1867 – Protokoll I</w:t>
 							</w:r>
 						</w:p>
-						<w:p>
+						<w:p w:rsidR="00B504F7" w:rsidRPr="00C43B00" w:rsidRDefault="00B504F7" w:rsidP="00B504F7">
+							<w:pPr>
+								<w:rPr>
+									<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+									<w:sz w:val="24"/>
+									<w:szCs w:val="24"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+							</w:pPr>
+						</w:p>
+						<w:p w:rsidR="00B504F7" w:rsidRPr="005A3D8C" w:rsidRDefault="00B504F7" w:rsidP="00C43B00">
 							<w:pPr>
 								<w:pStyle w:val="berschriftSitzungMRP"/>
-								<w:rPr/>
 							</w:pPr>
-							<w:r>
-								<w:rPr/>
-								<w:t xml:space="preserve">Nr. </w:t>
+							<w:r w:rsidRPr="005A3D8C">
+								<w:t>Nr. 1 Ministerrat, Wien, 19. Februar 1867 – Protokoll I</w:t>
 							</w:r>
-							<w:r>
-								<w:rPr/>
-								<w:t>124</w:t>
-							</w:r>
-							<w:r>
-								<w:rPr/>
-								<w:tab/>
-								<w:t>Ministerrat, Wien, 1. April 18XX [Formatvorlage: ÜberschriftSitzungMRP]</w:t>
-							</w:r>
+						</w:p>
+						<w:p w:rsidR="00B504F7" w:rsidRPr="00C43B00" w:rsidRDefault="00B504F7" w:rsidP="00B504F7">
+							<w:pPr>
+								<w:rPr>
+									<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+									<w:sz w:val="24"/>
+									<w:szCs w:val="24"/>
+									<w:lang w:val="de-DE"/>
+								</w:rPr>
+							</w:pPr>
 						</w:p>
 					</w:body>
 				</w:document>

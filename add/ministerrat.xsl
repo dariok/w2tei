@@ -79,7 +79,7 @@
 							</title>
 						</xsl:if>
 						<title type="short">
-							<!--<xsl:value-of select="format-number(xs:integer($num), '0000')" />-->
+							<xsl:value-of select="format-number(xs:integer($num), '0000')" />
 							<xsl:text>-</xsl:text>
 							<xsl:value-of select="concat($da[3], '-', $datum)"/>
 						</title>
@@ -111,7 +111,9 @@
 		</TEI>
 	</xsl:template>
 	
-	<xsl:template match="w:p[wt:is(., 'Kopfregest', 'p')]">
+	<xsl:template match="w:p[not(descendant::w:t)]" />
+	
+	<xsl:template match="w:p[wt:is(., 'Kopfregest', 'p', true()) and wt:hasContent(.)]">
 		<div>
 			<xsl:apply-templates />
 		</div>
@@ -151,10 +153,9 @@
 	</xsl:template>-->
 	
 	<!-- Schriftgröße 10 sind krit. Anmerkungen -->
-	<xsl:template match="w:p[descendant::w:sz/@w:val='20']" mode="fn">
+	<!--<xsl:template match="w:p[descendant::w:sz/@w:val='20']" mode="fn">
 		<xsl:apply-templates select="w:r"/>
-	</xsl:template>
-	<xsl:template match="w:p[descendant::w:sz/@w:val='20']" />
+	</xsl:template>-->
 	
 	<!-- neu 2017-10-06 DK -->
 	<!-- eingerückt sind die Info am Anfang -->
