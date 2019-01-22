@@ -3,6 +3,7 @@
 	xmlns="http://www.tei-c.org/ns/1.0"
 	xmlns:wt="https://github.com/dariok/w2tei"
 	xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
 	<x:scenario label="T1: Struktur">
 		<x:scenario label="T1.1: ein Text">
@@ -119,6 +120,256 @@
 						</text>
 					</TEI>
 				</teiCorpus>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
+	<x:scenario label="T2: Kopfregest und Teile">
+		<x:scenario label="T2.1: Namensliste">
+			<x:context>
+				<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+					<Relationship Id="rId8"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118510444" TargetMode="External"/>
+					<Relationship Id="rId13"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118510444" TargetMode="External"/>
+					<Relationship Id="rId18"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/117654981" TargetMode="External"/>
+					<Relationship Id="rId26"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118535013" TargetMode="External"/>
+					<Relationship Id="rId3"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles"
+						Target="styles.xml"/>
+					<Relationship Id="rId21"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/130561339" TargetMode="External"/>
+					<Relationship Id="rId7"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/endnotes"
+						Target="endnotes.xml"/>
+					<Relationship Id="rId12"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/143804669" TargetMode="External"/>
+					<Relationship Id="rId17"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/125970935" TargetMode="External"/>
+					<Relationship Id="rId25"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118510444" TargetMode="External"/>
+					<Relationship Id="rId2"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering"
+						Target="numbering.xml"/>
+					<Relationship Id="rId16"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118502875" TargetMode="External"/>
+					<Relationship Id="rId20"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/143804669" TargetMode="External"/>
+					<Relationship Id="rId29"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme"
+						Target="theme/theme1.xml"/>
+					<Relationship Id="rId1"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml"
+						Target="../customXml/item1.xml"/>
+					<Relationship Id="rId6"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footnotes"
+						Target="footnotes.xml"/>
+					<Relationship Id="rId11"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/117654981" TargetMode="External"/>
+					<Relationship Id="rId24"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/125970935" TargetMode="External"/>
+					<Relationship Id="rId5"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings"
+						Target="webSettings.xml"/>
+					<Relationship Id="rId15"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118510444" TargetMode="External"/>
+					<Relationship Id="rId23"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118502875" TargetMode="External"/>
+					<Relationship Id="rId28"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable"
+						Target="fontTable.xml"/>
+					<Relationship Id="rId10"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/125970935" TargetMode="External"/>
+					<Relationship Id="rId19"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="https://test.at1848" TargetMode="External"/>
+					<Relationship Id="rId4"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings"
+						Target="settings.xml"/>
+					<Relationship Id="rId9"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/137058497" TargetMode="External"/>
+					<Relationship Id="rId14"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118510444" TargetMode="External"/>
+					<Relationship Id="rId22"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/125970935" TargetMode="External"/>
+					<Relationship Id="rId27"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer"
+						Target="footer1.xml"/>
+				</Relationships>
+				<w:document>
+					<w:p w:rsidR="00B504F7" w:rsidRPr="005A3D8C" w:rsidRDefault="00B504F7" w:rsidP="00C43B00">
+						<w:pPr>
+							<w:pStyle w:val="berschriftSitzungMRP"/>
+						</w:pPr>
+						<w:r w:rsidRPr="005A3D8C">
+							<w:t>Nr. 1 Ministerrat, Wien, 19. Februar 1867 – Protokoll I</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="00B504F7" w:rsidRPr="00C43B00" w:rsidRDefault="00B504F7" w:rsidP="00C43B00">
+						<w:pPr>
+							<w:pStyle w:val="Kopfregest-Namensliste"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve">P. </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00ED11A1">
+							<w:rPr>
+								<w:rStyle w:val="ErwhntePerson"/>
+							</w:rPr>
+							<w:t>Meyer</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t>; V</w:t>
+						</w:r>
+						<w:r w:rsidR="00EE3406" w:rsidRPr="00C43B00">
+							<w:t>S</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve">. </w:t>
+						</w:r>
+						<w:hyperlink r:id="rId8" w:history="1">
+							<w:r w:rsidR="00ED11A1">
+								<w:rPr>
+									<w:rStyle w:val="ErwhntePerson"/>
+									<w:rFonts w:eastAsia="Times New Roman"/>
+									<w:color w:val="0000FF"/>
+									<w:lang w:val="en-US"/>
+								</w:rPr>
+								<w:t>Beust</w:t>
+							</w:r>
+						</w:hyperlink>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve">; anw. </w:t>
+						</w:r>
+						<w:hyperlink r:id="rId9" w:history="1">
+							<w:r w:rsidR="00E93139" w:rsidRPr="00E93139">
+								<w:rPr>
+									<w:rStyle w:val="ErwhntePerson"/>
+								</w:rPr>
+								<w:t>Ko</w:t>
+							</w:r>
+							<w:r w:rsidR="00E93139" w:rsidRPr="00E93139">
+								<w:rPr>
+									<w:rStyle w:val="ErwhntePerson"/>
+								</w:rPr>
+								<w:t>m</w:t>
+							</w:r>
+							<w:r w:rsidR="00E93139" w:rsidRPr="00E93139">
+								<w:rPr>
+									<w:rStyle w:val="ErwhntePerson"/>
+								</w:rPr>
+								<w:t>ers</w:t>
+							</w:r>
+						</w:hyperlink>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:hyperlink r:id="rId10" w:history="1">
+							<w:r w:rsidR="00E93139" w:rsidRPr="00E93139">
+								<w:rPr>
+									<w:rStyle w:val="ErwhntePerson"/>
+								</w:rPr>
+								<w:t>Wüllerstorff</w:t>
+							</w:r>
+						</w:hyperlink>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:hyperlink r:id="rId11" w:history="1">
+							<w:r w:rsidR="00E93139" w:rsidRPr="00E93139">
+								<w:rPr>
+									<w:rStyle w:val="ErwhntePerson"/>
+								</w:rPr>
+								<w:t>John</w:t>
+							</w:r>
+						</w:hyperlink>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve">, </w:t>
+						</w:r>
+						<w:hyperlink r:id="rId12" w:history="1">
+							<w:r w:rsidR="00E93139" w:rsidRPr="00E93139">
+								<w:rPr>
+									<w:rStyle w:val="ErwhntePerson"/>
+								</w:rPr>
+								<w:t>Becke</w:t>
+							</w:r>
+						</w:hyperlink>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+				</w:document>
+			</x:context>
+			<x:expect label="listPerson">
+				<teiCorpus>
+					<TEI>
+						<teiHeader>...</teiHeader>
+						<text>
+							<body>
+								<listPerson>
+									<person>Meyer</person>
+									<person ref="http://d-nb.info/gnd/118510444">Beust</person>
+									<person ref="http://d-nb.info/gnd/137058497">Komers</person>
+									<person ref="http://d-nb.info/gnd/125970935">Wüllerstorff</person>
+									<person ref="http://d-nb.info/gnd/117654981">John</person>
+									<person ref="http://d-nb.info/gnd/143804669">Becke</person>
+								</listPerson>
+							</body>
+						</text>
+					</TEI>
+				</teiCorpus>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
+	<x:scenario label="T3: Einzelteile">
+		<x:scenario label="T3.1: rs person">
+			<x:context>
+				<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+					<Relationship Id="rId8"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118510444" TargetMode="External"/>
+					<Relationship Id="rId13"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118510444" TargetMode="External"/>
+					<Relationship Id="rId18"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/117654981" TargetMode="External"/>
+					<Relationship Id="rId26"
+						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+						Target="http://d-nb.info/gnd/118535013" TargetMode="External"/>
+				</Relationships>
+				<w:hyperlink r:id="rId26" w:history="1">
+					<w:r w:rsidR="0020307D" w:rsidRPr="0020307D">
+						<w:rPr>
+							<w:rStyle w:val="ErwhntePerson"/>
+						</w:rPr>
+						<w:t xml:space="preserve">Sr. Majestät </w:t>
+					</w:r>
+				</w:hyperlink>
+			</x:context>
+			<x:expect label="rs">
+				<rs type="person" ref="http://d-nb.info/gnd/118535013">Sr. Majestät </rs>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>

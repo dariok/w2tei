@@ -3,6 +3,8 @@
 	xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:wt="https://github.com/dariok/w2tei"
+	xmlns:rel="http://schemas.openxmlformats.org/package/2006/relationships"
+	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="3.0">
 	<!-- neu 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
@@ -25,13 +27,8 @@
 		<xsl:value-of select="$t/*[1]"/>
 	</xsl:variable>
 	
-	<xsl:template match="/">
-		<xsl:apply-templates select="//w:document" />
-	</xsl:template>
 	<xsl:template match="w:document">
 		<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
-			<!--<xsl:apply-templates select="//w:p[w:pPr/w:rPr/w:b[ancestor::w:document]
-				or w:pPr/w:pStyle[@w:val='berschrift1']]" />-->
 			<xsl:apply-templates select="//w:p[wt:is(., 'berschriftSitzungMRP', 'p')]" />
 		</teiCorpus>
 	</xsl:template>
@@ -113,10 +110,19 @@
 	
 	<xsl:template match="w:p[not(descendant::w:t)]" />
 	
-	<xsl:template match="w:p[wt:is(., 'Kopfregest', 'p', true()) and wt:hasContent(.)]">
+	<xsl:template match="w:p[wt:isFirst(., 'Kopfregest', 'p') and wt:hasContent(.)]">
 		<div>
-			<xsl:apply-templates />
+			<p>
+				<xsl:apply-templates select="w:r"/>
+			</p>
+			<xsl:apply-templates select="following-sibling::w:p[wt:is(., 'Kopfregest')]"/>
 		</div>
+	</xsl:template>
+	
+	<xsl:template match="w:p[wt:is(., 'Kopfregest-Namensliste')]">
+		<listPerson>
+			<xsl:apply-templates select="w:r[wt:is(., 'ErwhntePerson', 'r')] | w:hyperlink" />
+		</listPerson>
 	</xsl:template>
 	
 	<!--<!-\- neu 2016-08-11 DK -\->
@@ -193,8 +199,7 @@
     <xsl:template match="w:r[not(w:t) and not(w:endnoteReference) and not(ancestor::w:endnote)]" />
 	
 	<!-- neu 2016-07-31 DK -->
-	<!-- Fußnoten getrennt behandeln; 2016-08-10 DK -->
-	<xsl:template match="w:r[w:t and not(w:endnoteReference) and not(ancestor::w:endnote)]">
+	<xsl:template match="w:r" mode="content">
 		<xsl:choose>
 			<xsl:when test="w:t = ' '">
 				<xsl:text> </xsl:text>
@@ -263,5 +268,37 @@
 	<!-- neu 2016-07-31 DK -->
 	<xsl:template match="w:endnote">
 		<xsl:apply-templates select="w:p/w:r"/>
+	</xsl:template>
+	
+	<!-- innerhal eines Links sollte es hoffentlich keine besonderen Formatierungen geben; sonst 2. Durchgang nötig -->
+	<xsl:template match="w:hyperlink">
+		<xsl:variable name="targetID" select="@r:id"/>
+		<xsl:variable name="target" select="//rel:Relationship[@Id = $targetID]/@Target"/>
+		<xsl:variable name="wr">
+			<w:p>
+				<xsl:sequence select="preceding-sibling::w:pPr" />
+				<w:r>
+					<xsl:sequence select="w:r[1]/w:rPr" />
+					<xsl:sequence select="descendant::w:t" />
+				</w:r>
+			</w:p>
+		</xsl:variable>
+		<xsl:apply-templates select="$wr//w:r">
+			<xsl:with-param name="link" select="$target" />
+		</xsl:apply-templates>
+	</xsl:template>
+	
+	<xsl:template match="w:r[wt:is(., 'ErwhntePerson', 'r')]">
+		<xsl:param name="link" />
+		<xsl:variable name="name" select="if(ancestor::w:p[wt:is(., 'Namensliste')]) then 'person' else 'rs'" />
+		<xsl:element name="{$name}">
+			<xsl:if test="$name = 'rs'">
+				<xsl:attribute name="type" select="'person'" />
+			</xsl:if>
+			<xsl:if test="$link">
+				<xsl:attribute name="ref" select="$link" />
+			</xsl:if>
+			<xsl:apply-templates select="." mode="content"/>
+		</xsl:element>
 	</xsl:template>
 </xsl:stylesheet>
