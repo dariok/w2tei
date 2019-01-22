@@ -2,11 +2,15 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+	xmlns:wt="https://github.com/dariok/w2tei"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all" version="3.0">
 	<!-- neu 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	
-<!--	<xsl:output indent="yes"/>-->
+	<xsl:output indent="yes"/>
+	
+	<xsl:import href="../word-pack.xsl"/>
+	<xsl:import href="../string-pack.xsl"/>
 	
 	<!-- Standard-Schriftgröße bestimmen -->
 	<xsl:variable name="mainsize">
@@ -23,12 +27,13 @@
 	
 	<xsl:template match="/">
 		<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
-			<xsl:apply-templates select="//w:p[w:pPr/w:rPr/w:b[ancestor::w:document]
-				or w:pPr/w:pStyle[@w:val='berschrift1']]" />
+			<!--<xsl:apply-templates select="//w:p[w:pPr/w:rPr/w:b[ancestor::w:document]
+				or w:pPr/w:pStyle[@w:val='berschrift1']]" />-->
+			<xsl:apply-templates select="//w:p[wt:is(., 'BerschriftSitzungMRP', 'p')]" />
 		</teiCorpus>
 	</xsl:template>
 	
-	<xsl:template match="w:p[w:pPr/w:rPr/w:b or w:pPr/w:pStyle[@w:val='berschrift1']]">
+	<xsl:template match="w:p[wt:is(., 'BerschriftSitzungMRP', 'p')]">
 		<TEI>
 			<teiHeader>
 				<xsl:variable name="md" select="tokenize(string-join(w:r/w:t, ''), ', ')"/>
@@ -71,7 +76,7 @@
 							</title>
 						</xsl:if>
 						<title type="short">
-							<xsl:value-of select="format-number(xs:integer($num), '0000')" />
+							<!--<xsl:value-of select="format-number(xs:integer($num), '0000')" />-->
 							<xsl:text>-</xsl:text>
 							<xsl:value-of select="concat($da[3], '-', $datum)"/>
 						</title>
