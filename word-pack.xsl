@@ -83,6 +83,32 @@
 	</xsl:function>
 	<!-- END Functions to check for a type -->
 	
+	<!-- Functions to check properties of a Word p -->
+	<xd:doc>
+		<xd:desc>Check whether a Word p has content</xd:desc>
+		<xd:param name="context">
+			<xd:p>The context item to be evalutated</xd:p>
+		</xd:param>
+		<xd:return>
+			<xd:p><xd:pre>true()</xd:pre> if either text, or a footnote or endnote reference is present;
+				<xd:pre>false()</xd:pre> otherwise</xd:p>
+		</xd:return>
+	</xd:doc>
+	<xsl:function name="wt:hasContent" as="xs:boolean">
+		<!-- TODO maybe, we need to check for comments Alone In The Dark^w p -->
+		<!-- or even a parameter whether comments count or don't -->
+		<xsl:param name="context" as="item()" />
+		<xsl:choose>
+			<xsl:when test="$context//w:t or $context//w:endnoteReference or $context//w:footnoteReference">
+				<xsl:sequence select="true()" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:sequence select="false()" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+	<!-- END Functions to check properties of a Word p -->
+	
 	<!-- Functions to deal with strings independently of Word 'runs' -->
 	<xd:doc>
 		<xd:desc>Return the full string</xd:desc>

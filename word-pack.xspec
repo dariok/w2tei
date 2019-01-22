@@ -79,4 +79,55 @@
 		</x:call>
 		<x:expect label="Not yet implemented" select="'Not yet implemented'"/>
 	</x:scenario>-->
+	
+	<x:scenario label="T9: hasContent()">
+		<x:scenario label="T9.1">
+			<x:call function="wt:hasContent">
+				<x:param name="context">
+					<w:p w:rsidR="006A04B2" w:rsidRPr="00C43B00" w:rsidRDefault="006A04B2" w:rsidP="00C43B00">
+						<w:pPr>
+							<w:pStyle w:val="Kopfregest"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t>Teildruck</w:t>
+						</w:r>
+						<w:r w:rsidR="003D78FB" w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve"> (I, II)</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve">: </w:t>
+						</w:r>
+						<w:r w:rsidRPr="00C43B00">
+							<w:rPr>
+								<w:smallCaps/>
+							</w:rPr>
+							<w:t>Redlich</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t>, Staats- und Reichsproblem 2, 619, Fußnote *</w:t>
+						</w:r>
+						<w:r w:rsidR="000D342F" w:rsidRPr="00C43B00">
+							<w:t xml:space="preserve"> (I), 625 (II)</w:t>
+						</w:r>
+						<w:r w:rsidRPr="00C43B00">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+				</x:param>
+			</x:call>
+			<x:expect label="true" select="true()" />
+		</x:scenario>
+		<x:scenario label="T9.2: nix">
+			<x:call function="wt:hasContent">
+				<x:param name="context">
+					<w:p w:rsidR="00B504F7" w:rsidRPr="00C43B00" w:rsidRDefault="00B504F7" w:rsidP="00C43B00">
+						<w:pPr>
+							<w:pStyle w:val="Kopfregest"/>
+						</w:pPr>
+					</w:p>
+				</x:param>
+			</x:call>
+			<x:expect label="false" select="false()" />
+		</x:scenario>
+	</x:scenario>
 </x:description>
