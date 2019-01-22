@@ -96,11 +96,13 @@
 						<xsl:when test="following-sibling::w:p[wt:is(., 'berschriftSitzungMRP', 'p')]">
 							<xsl:variable name="follId"
 								select="generate-id(following-sibling::w:p[wt:is(., 'berschriftSitzungMRP', 'p')][1])"/>
-							<xsl:apply-templates select="following-sibling::w:p intersect 
-								following-sibling::w:p[generate-id() = $follId]/preceding-sibling::w:p" />
+							<xsl:apply-templates select="(following-sibling::w:p intersect 
+								following-sibling::w:p[generate-id() = $follId]/preceding-sibling::w:p)[wt:isFirst(., 'Kopfregest', 'p')
+								or not(wt:is(., 'Kopfregest'))]" />
 						</xsl:when>
 						<xsl:otherwise>
-							<xsl:apply-templates select="following-sibling::w:p" />
+							<xsl:apply-templates select="following-sibling::w:p[wt:isFirst(., 'Kopfregest', 'p')
+								or not(wt:is(., 'Kopfregest'))]" />
 						</xsl:otherwise>
 					</xsl:choose>
 				</body>
@@ -118,87 +120,26 @@
 			<xsl:apply-templates select="following-sibling::w:p[wt:is(., 'Kopfregest')]"/>
 		</div>
 	</xsl:template>
+	<xsl:template match="w:p[wt:is(., 'Kopfregest', 'p', true()) and not(wt:isFirst(., 'Kopfregest', 'p'))
+		and wt:hasContent(.)]">
+		<p>
+			<xsl:apply-templates select="w:r"/>
+		</p>
+	</xsl:template>
 	
 	<xsl:template match="w:p[wt:is(., 'Kopfregest-Namensliste')]">
 		<listPerson>
 			<xsl:apply-templates select="w:r[wt:is(., 'ErwhntePerson', 'r')] | w:hyperlink" />
 		</listPerson>
 	</xsl:template>
-	
-	<!--<!-\- neu 2016-08-11 DK -\->
-    <xsl:template match="w:p[not(descendant::w:t)]" />
-    <xsl:template match="w:p[not(descendant::w:t)]" mode="text" />
-    <xsl:template match="w:body/text()" />
-	
-	<!-\- Aktenzeichen -\->
-	<xsl:template match="w:p[not(w:pPr/w:rPr/w:b or w:pPr/w:ind or w:pPr/w:pStyle) and descendant::w:t][1]">
-		<div type="idno"><p><idno><xsl:apply-templates select="w:r//w:t"/></idno></p></div>
-	</xsl:template>
-	
-	<!-\- Struktur hinter dem AZ -\->
-	<xsl:template match="w:p[not(w:pPr/w:rPr/w:b or w:pPr/w:ind or w:pPr/w:pStyle) and descendant::w:t][2]">
-		<div type="text">
-			<xsl:apply-templates
-				select=".
-				| following-sibling::w:p[descendant::w:t and not(w:pPr//w:b or w:pPr/w:ind)
-					and not(w:pPr/w:pStyle) and not(descendant::w:sz/@w:val='20')]"
-				mode="text" />
-		</div>
-	</xsl:template>
-	
-	<!-\- normaler Absatz - wird vom ersten nach dem AZ zusammengehalten; 2017-10-06 DK -\->
-	<xsl:template match="w:p[descendant::w:t and not(w:pPr//w:b or w:pPr/w:ind) and not(w:pPr/w:pStyle)
-		and not(descendant::w:sz/@w:val='20')][position()>2]"
-		/>
-	<xsl:template match="w:p[descendant::w:t and not(w:pPr//w:b or w:pPr/w:ind) and not(w:pPr/w:pStyle)
-		and not(descendant::w:sz/@w:val='20')][position()>1]"
-		mode="text">
-		<p>
+	<xsl:template match="w:p[wt:is(., 'Kopfregest-TObersicht')]">
+		<list type="to">
 			<xsl:apply-templates select="w:r"/>
-		</p>
-	</xsl:template>-->
+		</list>
+	</xsl:template>
 	
-	<!-- Schriftgröße 10 sind krit. Anmerkungen -->
-	<!--<xsl:template match="w:p[descendant::w:sz/@w:val='20']" mode="fn">
-		<xsl:apply-templates select="w:r"/>
-	</xsl:template>-->
-	
-	<!-- neu 2017-10-06 DK -->
-	<!-- eingerückt sind die Info am Anfang -->
-	<!--<xsl:template match="w:p[w:pPr/w:ind and descendant::w:t]">
-		<div>
-			<xsl:choose>
-				<xsl:when test="starts-with(w:r[1]/w:t, 'P.')">
-					<!-\- Personen / Anwesenheitsliste -\->
-					<xsl:attribute name="type">pers</xsl:attribute>
-					<xsl:variable name="str" select="string-join(w:r/w:t, '')"/>
-					<!-\- endet mit Punkt -\->
-					<xsl:variable name="pers" select="substring($str, 1, string-length($str)-1)" />
-					<xsl:variable name="functs" select="tokenize($pers, '; ')" />
-					<listPerson>
-						<person role="protocol"><persName><xsl:value-of select="substring-after($functs[1], ' ')"/></persName></person>
-						<person role="chair"><persName><xsl:value-of select="substring-after($functs[2], ' ')"/></persName></person>
-						<xsl:for-each select="tokenize(substring-after($functs[3], 'anw. '), ', ')">
-							<person><persName><xsl:value-of select="current()"/></persName></person>
-						</xsl:for-each>
-					</listPerson>
-				</xsl:when>
-				<xsl:when test="starts-with(w:r[1]/w:t, 'I.')">
-					<!-\- Kurzregest -\->
-					<xsl:attribute name="type">reg</xsl:attribute>
-					<p><xsl:apply-templates select="w:r"/></p>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:attribute name="type">other</xsl:attribute>
-					<p><xsl:apply-templates select="w:r"/></p>
-				</xsl:otherwise>
-			</xsl:choose>
-		</div>
-	</xsl:template>-->
-	
-    <xsl:template match="w:r[not(w:t) and not(w:endnoteReference) and not(ancestor::w:endnote)]" />
-	
-	<!-- neu 2016-07-31 DK -->
+	<!-- w:r -->
+	<!-- content of w:r incl. styles -->
 	<xsl:template match="w:r" mode="content">
 		<xsl:choose>
 			<xsl:when test="w:t = ' '">
@@ -236,8 +177,9 @@
 		</xsl:choose>
 	</xsl:template>
 	
-	<!-- neu 2016-08-10 DK -->
-	<xsl:template match="w:r[ancestor::w:endnote]">
+	<!-- special w:r (need to call w:r mode="content" to get styles right) -->
+	<xsl:template match="w:r[ancestor::w:endnote
+		and not(wt:is(., 'Endnotenzeichen', 'r'))]">
 		<!-- Originalschreibung recte; 2016-08-10 DK -->
 		<xsl:choose>
 			<xsl:when test="not(w:t) or w:t = '*' or w:t = ' '"/>
@@ -255,7 +197,28 @@
 	    </xsl:if>
 	</xsl:template>
 	
-	<!-- neu 2016-07-31 DK -->
+	<xsl:template match="w:r[wt:is(., 'ErwhntePerson', 'r')]">
+		<xsl:param name="link" />
+		<xsl:variable name="name" select="if(ancestor::w:p[wt:is(., 'Namensliste')]) then 'person' else 'rs'" />
+		<xsl:element name="{$name}">
+			<xsl:if test="$name = 'rs'">
+				<xsl:attribute name="type" select="'person'" />
+			</xsl:if>
+			<xsl:if test="$link">
+				<xsl:attribute name="ref" select="$link" />
+			</xsl:if>
+			<xsl:apply-templates select="." mode="content"/>
+		</xsl:element>
+	</xsl:template>
+	
+	<xsl:template match="w:r[not(descendant::w:rStyle or ancestor::w:endnote or ancestor::w:footnote)
+		and w:t]">
+		<xsl:apply-templates select="." mode="content" />
+	</xsl:template>
+	
+	<xsl:template match="w:r[wt:is(., 'Endnotenzeichen', 'r')
+		and(not(w:endnoteReference))]" />
+	
 	<xsl:template match="w:r[w:endnoteReference]">
 		<note type="footnote">
 			<xsl:variable name="nid" select="w:endnoteReference/@w:id" />
@@ -264,13 +227,14 @@
 			/>
 		</note>
 	</xsl:template>
+	<!-- END w:r -->
 	
 	<!-- neu 2016-07-31 DK -->
 	<xsl:template match="w:endnote">
 		<xsl:apply-templates select="w:p/w:r"/>
 	</xsl:template>
 	
-	<!-- innerhal eines Links sollte es hoffentlich keine besonderen Formatierungen geben; sonst 2. Durchgang nötig -->
+	<!-- innerhalb eines Links sollte es hoffentlich keine besonderen Formatierungen geben; sonst 2. Durchgang nötig -->
 	<xsl:template match="w:hyperlink">
 		<xsl:variable name="targetID" select="@r:id"/>
 		<xsl:variable name="target" select="//rel:Relationship[@Id = $targetID]/@Target"/>
@@ -288,17 +252,10 @@
 		</xsl:apply-templates>
 	</xsl:template>
 	
-	<xsl:template match="w:r[wt:is(., 'ErwhntePerson', 'r')]">
-		<xsl:param name="link" />
-		<xsl:variable name="name" select="if(ancestor::w:p[wt:is(., 'Namensliste')]) then 'person' else 'rs'" />
-		<xsl:element name="{$name}">
-			<xsl:if test="$name = 'rs'">
-				<xsl:attribute name="type" select="'person'" />
-			</xsl:if>
-			<xsl:if test="$link">
-				<xsl:attribute name="ref" select="$link" />
-			</xsl:if>
-			<xsl:apply-templates select="." mode="content"/>
-		</xsl:element>
+	<xsl:template match="*:pack">
+		<xsl:apply-templates select="w:document" />
 	</xsl:template>
+	
+	<xsl:template match="w:pPr | w:rPr" />
+	<!--<xsl:template match="text()[parent::w:p or parent::w:r][normalize-space() = '']" />-->
 </xsl:stylesheet>
