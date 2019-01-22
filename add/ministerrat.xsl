@@ -32,11 +32,11 @@
 		<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
 			<!--<xsl:apply-templates select="//w:p[w:pPr/w:rPr/w:b[ancestor::w:document]
 				or w:pPr/w:pStyle[@w:val='berschrift1']]" />-->
-			<xsl:apply-templates select="//w:p[wt:is(., 'BerschriftSitzungMRP', 'p')]" />
+			<xsl:apply-templates select="//w:p[wt:is(., 'berschriftSitzungMRP', 'p')]" />
 		</teiCorpus>
 	</xsl:template>
 	
-	<xsl:template match="w:p[wt:is(., 'BerschriftSitzungMRP', 'p')]">
+	<xsl:template match="w:p[wt:is(., 'berschriftSitzungMRP', 'p')]">
 		<TEI>
 			<teiHeader>
 				<xsl:variable name="md" select="tokenize(string-join(w:r/w:t, ''), ', ')"/>
@@ -96,9 +96,9 @@
 			<text>
 				<body>
 					<xsl:choose>
-						<xsl:when test="following-sibling::w:p[wt:is(., 'BerschriftSitzungMRP', 'p')]">
+						<xsl:when test="following-sibling::w:p[wt:is(., 'berschriftSitzungMRP', 'p')]">
 							<xsl:variable name="follId"
-								select="generate-id(following-sibling::w:p[wt:is(., 'BerschriftSitzungMRP', 'p')][1])"/>
+								select="generate-id(following-sibling::w:p[wt:is(., 'berschriftSitzungMRP', 'p')][1])"/>
 							<xsl:apply-templates select="following-sibling::w:p intersect 
 								following-sibling::w:p[generate-id() = $follId]/preceding-sibling::w:p" />
 						</xsl:when>
@@ -111,17 +111,23 @@
 		</TEI>
 	</xsl:template>
 	
-	<!-- neu 2016-08-11 DK -->
+	<xsl:template match="w:p[wt:is(., 'Kopfregest', 'p')]">
+		<div>
+			<xsl:apply-templates />
+		</div>
+	</xsl:template>
+	
+	<!--<!-\- neu 2016-08-11 DK -\->
     <xsl:template match="w:p[not(descendant::w:t)]" />
     <xsl:template match="w:p[not(descendant::w:t)]" mode="text" />
     <xsl:template match="w:body/text()" />
 	
-	<!-- Aktenzeichen -->
+	<!-\- Aktenzeichen -\->
 	<xsl:template match="w:p[not(w:pPr/w:rPr/w:b or w:pPr/w:ind or w:pPr/w:pStyle) and descendant::w:t][1]">
 		<div type="idno"><p><idno><xsl:apply-templates select="w:r//w:t"/></idno></p></div>
 	</xsl:template>
 	
-	<!-- Struktur hinter dem AZ -->
+	<!-\- Struktur hinter dem AZ -\->
 	<xsl:template match="w:p[not(w:pPr/w:rPr/w:b or w:pPr/w:ind or w:pPr/w:pStyle) and descendant::w:t][2]">
 		<div type="text">
 			<xsl:apply-templates
@@ -132,7 +138,7 @@
 		</div>
 	</xsl:template>
 	
-	<!-- normaler Absatz - wird vom ersten nach dem AZ zusammengehalten; 2017-10-06 DK -->
+	<!-\- normaler Absatz - wird vom ersten nach dem AZ zusammengehalten; 2017-10-06 DK -\->
 	<xsl:template match="w:p[descendant::w:t and not(w:pPr//w:b or w:pPr/w:ind) and not(w:pPr/w:pStyle)
 		and not(descendant::w:sz/@w:val='20')][position()>2]"
 		/>
@@ -142,7 +148,7 @@
 		<p>
 			<xsl:apply-templates select="w:r"/>
 		</p>
-	</xsl:template>
+	</xsl:template>-->
 	
 	<!-- Schriftgröße 10 sind krit. Anmerkungen -->
 	<xsl:template match="w:p[descendant::w:sz/@w:val='20']" mode="fn">
@@ -152,14 +158,14 @@
 	
 	<!-- neu 2017-10-06 DK -->
 	<!-- eingerückt sind die Info am Anfang -->
-	<xsl:template match="w:p[w:pPr/w:ind and descendant::w:t]">
+	<!--<xsl:template match="w:p[w:pPr/w:ind and descendant::w:t]">
 		<div>
 			<xsl:choose>
 				<xsl:when test="starts-with(w:r[1]/w:t, 'P.')">
-					<!-- Personen / Anwesenheitsliste -->
+					<!-\- Personen / Anwesenheitsliste -\->
 					<xsl:attribute name="type">pers</xsl:attribute>
 					<xsl:variable name="str" select="string-join(w:r/w:t, '')"/>
-					<!-- endet mit Punkt -->
+					<!-\- endet mit Punkt -\->
 					<xsl:variable name="pers" select="substring($str, 1, string-length($str)-1)" />
 					<xsl:variable name="functs" select="tokenize($pers, '; ')" />
 					<listPerson>
@@ -171,7 +177,7 @@
 					</listPerson>
 				</xsl:when>
 				<xsl:when test="starts-with(w:r[1]/w:t, 'I.')">
-					<!-- Kurzregest -->
+					<!-\- Kurzregest -\->
 					<xsl:attribute name="type">reg</xsl:attribute>
 					<p><xsl:apply-templates select="w:r"/></p>
 				</xsl:when>
@@ -181,7 +187,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</div>
-	</xsl:template>
+	</xsl:template>-->
 	
     <xsl:template match="w:r[not(w:t) and not(w:endnoteReference) and not(ancestor::w:endnote)]" />
 	
