@@ -46,7 +46,7 @@
 					<TEI>
 						<teiHeader>...</teiHeader>
 						<text>
-							<body></body>
+							<body>...</body>
 						</text>
 					</TEI>
 				</teiCorpus>
@@ -110,13 +110,13 @@
 					<TEI>
 						<teiHeader>...</teiHeader>
 						<text>
-							<body></body>
+							<body>...</body>
 						</text>
 					</TEI>
 					<TEI>
 						<teiHeader>...</teiHeader>
 						<text>
-							<body></body>
+							<body>...</body>
 						</text>
 					</TEI>
 				</teiCorpus>
@@ -216,7 +216,7 @@
 						Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer"
 						Target="footer1.xml"/>
 				</Relationships>
-				<w:document>
+				<w:document><w:body>
 					<w:p w:rsidR="00B504F7" w:rsidRPr="005A3D8C" w:rsidRDefault="00B504F7" w:rsidP="00C43B00">
 						<w:pPr>
 							<w:pStyle w:val="berschriftSitzungMRP"/>
@@ -318,7 +318,7 @@
 							<w:t>.</w:t>
 						</w:r>
 					</w:p>
-				</w:document>
+				</w:body></w:document>
 			</x:context>
 			<x:expect label="listPerson">
 				<teiCorpus>
@@ -334,6 +334,7 @@
 									<person ref="http://d-nb.info/gnd/117654981">John</person>
 									<person ref="http://d-nb.info/gnd/143804669">Becke</person>
 								</listPerson>
+								<div />
 							</body>
 						</text>
 					</TEI>

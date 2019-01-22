@@ -29,104 +29,100 @@
 	
 	<xsl:template match="w:document">
 		<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
-			<xsl:apply-templates select="//w:p[wt:is(., 'berschriftSitzungMRP', 'p')]" />
+			<xsl:for-each-group select="w:body/w:p" group-starting-with="w:p[wt:is(., 'berschriftSitzungMRP', 'p')]">
+				<TEI>
+					<teiHeader>
+						<xsl:variable name="md" select="tokenize(string-join(w:r/w:t, ''), ', ')"/>
+						<xsl:variable name="dat">
+							<xsl:choose>
+								<xsl:when test="contains($md[3], ' – ')">
+									<xsl:value-of select="substring-before($md[3], ' – ')" />
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="$md[3]" />
+								</xsl:otherwise>
+							</xsl:choose>
+						</xsl:variable>
+						<fileDesc>
+							<titleStmt>
+								<xsl:variable name="num" select="substring-before(substring-after($md[1], 'Nr. '), ' ')" />
+								<xsl:variable name="da" select="tokenize($dat, ' ')" />
+								<xsl:variable name="mo">
+									<xsl:choose>
+										<xsl:when test="$da[2] = 'Jänner'">01</xsl:when>
+										<xsl:when test="$da[2] = 'Februar'">02</xsl:when>
+										<xsl:when test="$da[2] = 'März'">03</xsl:when>
+										<xsl:when test="$da[2] = 'April'">04</xsl:when>
+										<xsl:when test="$da[2] = 'Mai'">05</xsl:when>
+										<xsl:when test="$da[2] = 'Juni'">06</xsl:when>
+										<xsl:when test="$da[2] = 'Juli'">07</xsl:when>
+										<xsl:when test="$da[2] = 'August'">08</xsl:when>
+										<xsl:when test="$da[2] = 'September'">09</xsl:when>
+										<xsl:when test="$da[2] = 'Oktober'">10</xsl:when>
+										<xsl:when test="$da[2] = 'November'">11</xsl:when>
+										<xsl:when test="$da[2] = 'Dezember'">12</xsl:when>
+									</xsl:choose>
+								</xsl:variable>
+								<xsl:variable name="datum" select="concat($mo, '-',
+									format-number(number(substring-before($da[1], '.')), '00'))" />
+								<title type="num"><xsl:value-of select="$num"/></title>
+								<xsl:if test="contains($md[3], ' – ')">
+									<title type="order">
+										<xsl:value-of select="substring-after($md[3], ' – ')" />
+									</title>
+								</xsl:if>
+								<title type="short">
+									<xsl:value-of select="format-number(xs:integer($num), '0000')" />
+									<xsl:text>-</xsl:text>
+									<xsl:value-of select="concat($da[3], '-', $datum)"/>
+								</title>
+								<meeting>
+									<placeName><xsl:value-of select="$md[2]"/></placeName>
+									<orgName><xsl:value-of select="substring-after(substring-after($md[1], 'Nr. '), ' ')"/></orgName>
+									<date when="{concat($da[3], '-', $datum)}"><xsl:value-of select="$dat" /></date>
+								</meeting>
+							</titleStmt>
+							<publicationStmt><p/></publicationStmt>
+							<sourceDesc><p/></sourceDesc>
+						</fileDesc>
+					</teiHeader>
+					<text>
+						<body>
+							<xsl:apply-templates select="following-sibling::w:p[wt:isFirst(., 'Kopfregest', 'p')]" />
+							<div>
+								<xsl:apply-templates select="following-sibling::w:p[wt:is(., 'Protokoll-berschrift')]" />
+								<xsl:for-each-group select="following-sibling::w:p[wt:is(., 'ProtokollTOP')]"
+									group-starting-with="w:p[wt:is(., 'ProtokollTOPAbsatz1')]">
+									<div type="top">
+										<xsl:apply-templates select="current-group()" />
+									</div>
+								</xsl:for-each-group>
+							</div>
+						</body>
+					</text>
+				</TEI>
+			</xsl:for-each-group>
 		</teiCorpus>
 	</xsl:template>
 	
-	<xsl:template match="w:p[wt:is(., 'berschriftSitzungMRP', 'p')]">
-		<TEI>
-			<teiHeader>
-				<xsl:variable name="md" select="tokenize(string-join(w:r/w:t, ''), ', ')"/>
-				<xsl:variable name="dat">
-					<xsl:choose>
-						<xsl:when test="contains($md[3], ' – ')">
-							<xsl:value-of select="substring-before($md[3], ' – ')" />
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="$md[3]" />
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				<fileDesc>
-					<titleStmt>
-						<xsl:variable name="num" select="substring-before(substring-after($md[1], 'Nr. '), ' ')" />
-						<xsl:variable name="da" select="tokenize($dat, ' ')" />
-						<xsl:variable name="mo">
-							<xsl:choose>
-								<xsl:when test="$da[2] = 'Jänner'">01</xsl:when>
-								<xsl:when test="$da[2] = 'Februar'">02</xsl:when>
-								<xsl:when test="$da[2] = 'März'">03</xsl:when>
-								<xsl:when test="$da[2] = 'April'">04</xsl:when>
-								<xsl:when test="$da[2] = 'Mai'">05</xsl:when>
-								<xsl:when test="$da[2] = 'Juni'">06</xsl:when>
-								<xsl:when test="$da[2] = 'Juli'">07</xsl:when>
-								<xsl:when test="$da[2] = 'August'">08</xsl:when>
-								<xsl:when test="$da[2] = 'September'">09</xsl:when>
-								<xsl:when test="$da[2] = 'Oktober'">10</xsl:when>
-								<xsl:when test="$da[2] = 'November'">11</xsl:when>
-								<xsl:when test="$da[2] = 'Dezember'">12</xsl:when>
-							</xsl:choose>
-						</xsl:variable>
-						<xsl:variable name="datum" select="concat($mo, '-',
-							format-number(number(substring-before($da[1], '.')), '00'))" />
-						<title type="num"><xsl:value-of select="$num"/></title>
-						<xsl:if test="contains($md[3], ' – ')">
-							<title type="order">
-								<xsl:value-of select="substring-after($md[3], ' – ')" />
-							</title>
-						</xsl:if>
-						<title type="short">
-							<xsl:value-of select="format-number(xs:integer($num), '0000')" />
-							<xsl:text>-</xsl:text>
-							<xsl:value-of select="concat($da[3], '-', $datum)"/>
-						</title>
-						<meeting>
-							<placeName><xsl:value-of select="$md[2]"/></placeName>
-							<orgName><xsl:value-of select="substring-after(substring-after($md[1], 'Nr. '), ' ')"/></orgName>
-							<date when="{concat($da[3], '-', $datum)}"><xsl:value-of select="$dat" /></date>
-						</meeting>
-					</titleStmt>
-					<publicationStmt><p/></publicationStmt>
-					<sourceDesc><p/></sourceDesc>
-				</fileDesc>
-			</teiHeader>
-			<text>
-				<body>
-					<xsl:choose>
-						<xsl:when test="following-sibling::w:p[wt:is(., 'berschriftSitzungMRP', 'p')]">
-							<xsl:variable name="follId"
-								select="generate-id(following-sibling::w:p[wt:is(., 'berschriftSitzungMRP', 'p')][1])"/>
-							<xsl:apply-templates select="(following-sibling::w:p intersect 
-								following-sibling::w:p[generate-id() = $follId]/preceding-sibling::w:p)[wt:isFirst(., 'Kopfregest', 'p')
-								or not(wt:is(., 'Kopfregest'))]" />
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:apply-templates select="following-sibling::w:p[wt:isFirst(., 'Kopfregest', 'p')
-								or not(wt:is(., 'Kopfregest'))]" />
-						</xsl:otherwise>
-					</xsl:choose>
-				</body>
-			</text>
-		</TEI>
-	</xsl:template>
-	
+	<!-- w:p -->
 	<xsl:template match="w:p[not(descendant::w:t)]" />
 	
 	<xsl:template match="w:p[wt:isFirst(., 'Kopfregest', 'p') and wt:hasContent(.)]">
-		<div>
+		<div type="regest">
 			<p>
 				<xsl:apply-templates select="w:r"/>
 			</p>
 			<xsl:apply-templates select="following-sibling::w:p[wt:is(., 'Kopfregest')]"/>
+			<xsl:apply-templates select="following-sibling::w:p[wt:is(., 'ProtokollAktenzahlen')]" />
 		</div>
 	</xsl:template>
 	<xsl:template match="w:p[wt:is(., 'Kopfregest', 'p', true()) and not(wt:isFirst(., 'Kopfregest', 'p'))
 		and wt:hasContent(.)]">
 		<p>
-			<xsl:apply-templates select="w:r"/>
+			<xsl:apply-templates />
 		</p>
 	</xsl:template>
-	
 	<xsl:template match="w:p[wt:is(., 'Kopfregest-Namensliste')]">
 		<listPerson>
 			<xsl:apply-templates select="w:r[wt:is(., 'ErwhntePerson', 'r')] | w:hyperlink" />
@@ -134,9 +130,26 @@
 	</xsl:template>
 	<xsl:template match="w:p[wt:is(., 'Kopfregest-TObersicht')]">
 		<list type="to">
-			<xsl:apply-templates select="w:r"/>
+			<xsl:apply-templates />
 		</list>
 	</xsl:template>
+	
+	<xsl:template match="w:p[wt:is(., 'ProtokollAktenzahlen')]">
+		<idno><xsl:apply-templates select="w:r" /></idno>
+	</xsl:template>
+	
+	<xsl:template match="w:p[wt:is(., 'Protokoll-berschrift')]">
+		<head>
+			<xsl:apply-templates />
+		</head>
+	</xsl:template>
+	
+	<xsl:template match="w:p[wt:is(., 'ProtokollTOP')]">
+		<p>
+			<xsl:apply-templates />
+		</p>
+	</xsl:template>
+	<!-- END w:p -->
 	
 	<!-- w:r -->
 	<!-- content of w:r incl. styles -->
@@ -257,5 +270,5 @@
 	</xsl:template>
 	
 	<xsl:template match="w:pPr | w:rPr" />
-	<!--<xsl:template match="text()[parent::w:p or parent::w:r][normalize-space() = '']" />-->
+	<xsl:template match="text()[parent::w:p or parent::w:r][normalize-space() = '']" />
 </xsl:stylesheet>
