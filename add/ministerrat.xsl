@@ -26,6 +26,9 @@
 	</xsl:variable>
 	
 	<xsl:template match="/">
+		<xsl:apply-templates select="//w:document" />
+	</xsl:template>
+	<xsl:template match="w:document">
 		<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
 			<!--<xsl:apply-templates select="//w:p[w:pPr/w:rPr/w:b[ancestor::w:document]
 				or w:pPr/w:pStyle[@w:val='berschrift1']]" />-->
@@ -93,9 +96,9 @@
 			<text>
 				<body>
 					<xsl:choose>
-						<xsl:when test="following-sibling::w:p[w:pPr/w:rPr/w:b or w:pPr/w:pStye[@w:val='berschrift1']]">
+						<xsl:when test="following-sibling::w:p[wt:is(., 'BerschriftSitzungMRP', 'p')]">
 							<xsl:variable name="follId"
-								select="generate-id(following-sibling::w:p[w:pPr/w:rPr/w:b or w:pPr/w:pStye[@w:val='berschrift1']][1])"/>
+								select="generate-id(following-sibling::w:p[wt:is(., 'BerschriftSitzungMRP', 'p')][1])"/>
 							<xsl:apply-templates select="following-sibling::w:p intersect 
 								following-sibling::w:p[generate-id() = $follId]/preceding-sibling::w:p" />
 						</xsl:when>

@@ -41,6 +41,88 @@
 					</w:body>
 				</w:document>
 			</x:context>
+			<x:expect label="ein TEI">
+				<teiCorpus>
+					<TEI>
+						<teiHeader>...</teiHeader>
+						<text>
+							<body></body>
+						</text>
+					</TEI>
+				</teiCorpus>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.2: zwei Texte">
+			<x:context>
+				<w:document xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+					xmlns:o="urn:schemas-microsoft-com:office:office"
+					xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+					xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+					xmlns:v="urn:schemas-microsoft-com:vml"
+					xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+					xmlns:w10="urn:schemas-microsoft-com:office:word"
+					xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+					xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+					xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+					xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" mc:Ignorable="w14 wp14">
+					<w:body>
+						<w:p>
+							<w:pPr>
+								<w:pStyle w:val="BerschriftSitzungMRP"/>
+								<w:rPr/>
+							</w:pPr>
+							<w:r>
+								<w:rPr/>
+								<w:t xml:space="preserve">Nr. </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr/>
+								<w:t>123</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr/>
+								<w:tab/>
+								<w:t>Ministerrat, Wien, 1. April 18XX [Formatvorlage: ÜberschriftSitzungMRP]</w:t>
+							</w:r>
+						</w:p>
+						<w:p>
+							<w:pPr>
+								<w:pStyle w:val="BerschriftSitzungMRP"/>
+								<w:rPr/>
+							</w:pPr>
+							<w:r>
+								<w:rPr/>
+								<w:t xml:space="preserve">Nr. </w:t>
+							</w:r>
+							<w:r>
+								<w:rPr/>
+								<w:t>124</w:t>
+							</w:r>
+							<w:r>
+								<w:rPr/>
+								<w:tab/>
+								<w:t>Ministerrat, Wien, 1. April 18XX [Formatvorlage: ÜberschriftSitzungMRP]</w:t>
+							</w:r>
+						</w:p>
+					</w:body>
+				</w:document>
+			</x:context>
+			<x:expect label="zwei TEI">
+				<teiCorpus>
+					<TEI>
+						<teiHeader>...</teiHeader>
+						<text>
+							<body></body>
+						</text>
+					</TEI>
+					<TEI>
+						<teiHeader>...</teiHeader>
+						<text>
+							<body></body>
+						</text>
+					</TEI>
+				</teiCorpus>
+			</x:expect>
 		</x:scenario>
 	</x:scenario>
 </x:description>
