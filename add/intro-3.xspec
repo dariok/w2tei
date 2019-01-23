@@ -31,12 +31,10 @@
 			</x:context>
 			<x:expect label="normale quote">
 				<p>
-					Immatrikuliert wurde er als <quote><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs> de <rs
-						type="place"><!--TODO ref eintragen!-->Wangen</rs></quote> im Sommersemester 1504 (<bibl
-						ref="#foerstemann_album_1841"> 1, 14</bibl>). Der Rotulus von 1507 führt <rs
-						type="person"><!--TODO ref eintragen!-->Gunckel</rs> als Magister <quote>in philosophia extraordinarie</quote>, <bibl
-						ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl>; 1512 ist er einer der <quote>magistri collegiati</quote>, <bibl
-						ref="#friedensburg_urkundenbuch_1926"> 1, 63 Nr. 36</bibl>.
+					Immatrikuliert wurde er als <quote><rs type="person">Joannes günkeulin</rs> de <rs
+						type="place">Wangen</rs></quote> im Sommersemester 1504 (<bibl>AAV 1, 14</bibl>). Der Rotulus von 1507 führt <rs type="person">Gunckel</rs
+					> als Magister <quote>in philosophia extraordinarie</quote>, <bibl>UUW 1, 16 Nr. 17</bibl
+					>; 1512 ist er einer der <quote>magistri collegiati</quote>, <bibl>UUW 1, 63 Nr. 36</bibl>.
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -48,38 +46,12 @@
 				<p>16,32: <quote>Magnum aliquod Pelagiani se scire putant, quando dicunt, <quote>Non juberet Deus, quod sciret non posse ab homine fieri.</quote> quis hoc nesciat? Sed ideo jubet aliqua quae non possumus, ut noverimus quid ab illo petere debeamus. Ipsa est enim fides, quae orando impetrat quod lex imperat.</quote> (</p>
 			</x:expect>
 		</x:scenario>
-	</x:scenario>
-	
-	<x:scenario label="T3: bibl">
-		<x:scenario label="T3.1: einfach">
+		<x:scenario label="T2.3: quote mit gap">
 			<x:context>
-				<listBibl>
-					<bibl>
-						Kolde, Disputationsthesen, 471, Nr. XXII
-					</bibl>
-					<bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-						>r</hi> und passim
-					</bibl>
-				</listBibl>
+				<p><note type="footnote">lautet: <hab:qs xmlns:hab="http://diglib.hab.de"/>&lt;...&gt; de quolibet anno 1514<hab:qe xmlns:hab="http://diglib.hab.de"/>. Rest der Seite leer.</note> auf dessem</p>
 			</x:context>
-			<x:expect label="bibl mit ref">
-				<listBibl>
-					<bibl ref="#kolde_disputationsthesen_1890">, 471, Nr. XXII</bibl>
-					<bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-						>r</hi> und passim</bibl>
-				</listBibl>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="T3.2: mit hi rend=super">
-			<x:context>
-				<listBibl>
-					<bibl>Walch² 8, 1352-1363</bibl>
-				</listBibl>
-			</x:context>
-			<x:expect label="bibl ohne hi">
-				<listBibl>
-					<bibl ref="#walch2_1986"> 8, 1352-1363</bibl>
-				</listBibl>
+			<x:expect label="gap in qupte">
+				<p><note type="footnote">lautet: <quote>&lt;...&gt; de quolibet anno 1514</quote>. Rest der Seite leer.</note> auf dessem</p>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
@@ -95,14 +67,6 @@
 					<idno type="signatur">VII 4° 12, fol. 228r–256v und 379r–398v</idno>
 					<altIdentifier type="siglum"><idno>a</idno></altIdentifier>
 				</msIdentifier>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="T4.2: gap">
-			<x:context>
-				<quote>Disputatio Lipsiensis Dn. Doct. Martini Lutheri &amp; Carolostadii cum Eccio. Item oratio Johannis Langii concludens actum illum disputatorium. Item epistola Melanchthonis de Disputatione Lipsicam cum Responsione Eccii. [...]</quote>
-			</x:context>
-			<x:expect label="gap">
-				<quote>Disputatio Lipsiensis Dn. Doct. Martini Lutheri &amp; Carolostadii cum Eccio. Item oratio Johannis Langii concludens actum illum disputatorium. Item epistola Melanchthonis de Disputatione Lipsicam cum Responsione Eccii. [<gap />]</quote>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
