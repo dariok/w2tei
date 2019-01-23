@@ -179,7 +179,7 @@
           				</xsl:matching-substring>
           				<xsl:non-matching-substring>
           					<!-- aus ks-ptr.xsl -->
-          					<xsl:analyze-string select="." regex="EE(\d+[AB]?)_(text|intro)_.nm\.? ?(\d+|[a-z]+)-?[a-z]?#">
+          					<xsl:analyze-string select="." regex="EE(\d+[AB]?)_(text|intro)([^#]+)?#?#">
           						<xsl:matching-substring>
           							<xsl:variable name="file">
           								<xsl:variable name="num" select="analyze-string(regex-group(1), '\d+')//*:match"/>
@@ -191,9 +191,18 @@
           										<xsl:otherwise>introduction</xsl:otherwise>
           									</xsl:choose>
           								</xsl:variable>
-          								<xsl:variable name="type" select="if(regex-group(3) castable as xs:integer) then 'n' else 'c'"/>
-          								<xsl:value-of select="'../' || $nr || $lit || '/' || $nr || $lit || '_' || $part || '.xml#' || $type
-          									|| regex-group(3)"/>
+          								<xsl:variable name="r3" select="regex-group(3)" />
+          								<xsl:variable name="tail">
+          									<xsl:analyze-string select="regex-group(3)" regex="_.nm\.? ?(\d+|[a-z]+)-?[a-z]?">
+          										<xsl:matching-substring>
+          											<xsl:value-of select="regex-group(1)"/> 
+          										</xsl:matching-substring>
+          									</xsl:analyze-string>
+          								</xsl:variable>
+          								<xsl:variable name="type" select="if($tail!='') 
+          									then '#' || (if ($tail castable as xs:integer) then 'n' else 'c') || $tail
+          									else ''"/>
+          								<xsl:value-of select="'../' || $nr || $lit || '/' || $nr || $lit || '_' || $part || '.xml' || $type"/>
           							</xsl:variable>
           							<ptr type="wdb">
           								<xsl:choose>
@@ -201,7 +210,7 @@
           										<xsl:attribute name="target" select="$file" />
           									</xsl:when>
           									<xsl:otherwise>
-          										<xsl:value-of select="."/>
+          										<xsl:value-of select="$file"/>
           									</xsl:otherwise>
           								</xsl:choose>
           							</ptr>

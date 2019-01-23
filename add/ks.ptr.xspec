@@ -2,22 +2,20 @@
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec" stylesheet="ks-ptr.xsl">
 	<x:scenario label="Scenario for testing template with match 'text()">
 		<x:context>
-			<note>Siehe z.B. Anm. EE92A_text_Anm. a#, EE92_text_Anm. 7#, EE92_text_Anm. j#, EE92_text_Anm. r#.</note> sowie die
+			<note>Siehe z.B. Anm. EE92A_text_Anm. a#, EE92_text_Anm. 7##, EE92_intro_Anm. 7##, EE92_text_Anm. r#.</note> sowie die
 			durchgängige Transliteration der griechischen Zitate.<note type="footnote" xml:id="n9">Siehe
 				Anm. EE92_text_Anm. f-f#, EE92_text_Anm. l-l#, EE103_text_Anm. t-t#.</note> Im Vergleich zu B beinhaltet C
 			darüber hinaus weitere Druckfehler,<note type="footnote" xml:id="n10">Vgl. Anm. EE103A_text_Anm. d#,
-				EE103_text_Anm. 113#<!--EE92_text_Anm. e#, EE92_text_Anm. q#, EE92_text_Anm. x#, EE92_text_Anm. ab#, EE92_text_Anm. ac#.</note> die ein
-			unbekannter Leser im Exemplar der UB Wrocław stellenweise handschriftlich korrigiert hat.<note type="footnote"
-				xml:id="n11">Vgl. Anm. EE92_text_Anm. n#, EE92_text_Anm. o#, EE92_text_Anm. s#, EE92_text_Anm. y#,
-				EE92_text_Anm. an#, EE92_text_Anm. au#.--></note></x:context>
+				EE103_text_Anm. 113#, EE82_text##</note></x:context>
 		<x:expect label="ptr">Siehe z.B. Anm. <ptr type="wdb" target="../092A/092A_transcript.xml#ca" />, <ptr type="wdb"
-			target="../092/092_transcript.xml#n7" />, <ptr type="wdb" target="../092/092_transcript.xml#cj" />, <ptr
+			target="../092/092_transcript.xml#n7" />, <ptr type="wdb" target="../092/092_introduction.xml#n7" />, <ptr
 				type="wdb" target="../092/092_transcript.xml#cr" />. sowie die
 			durchgängige Transliteration der griechischen Zitate.Siehe
 				Anm. <ptr type="wdb" target="../092/092_transcript.xml#cf" />, <ptr type="wdb"
 				target="../092/092_transcript.xml#cl" />, <ptr type="wdb"
 				target="../103/103_transcript.xml#ct" />. Im Vergleich zu B beinhaltet C
 			darüber hinaus weitere Druckfehler,Vgl. Anm. <ptr type="wdb" target="../103A/103A_transcript.xml#cd" />,
-				<ptr type="wdb" target="../103/103_transcript.xml#n113" /></x:expect>
+				<ptr type="wdb" target="../103/103_transcript.xml#n113" />, <ptr type="wdb"
+				target="../082/082_transcript.xml"/></x:expect>
 	</x:scenario>
 </x:description>
