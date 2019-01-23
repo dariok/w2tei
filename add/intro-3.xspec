@@ -73,7 +73,7 @@
 		<x:scenario label="T3.2: mit hi rend=super">
 			<x:context>
 				<listBibl>
-					<bibl>Walch<hi rend="super">2</hi> 8, 1352-1363</bibl>
+					<bibl>Walch² 8, 1352-1363</bibl>
 				</listBibl>
 			</x:context>
 			<x:expect label="bibl ohne hi">
