@@ -5,7 +5,7 @@
 	exclude-result-prefixes="xs math"
 	version="3.0">
 	<xsl:template match="text()">
-		<xsl:analyze-string select="." regex="EE(\d+[AB]?)_(text|intro)_.nm\.? ?(\d|[a-z])+-?[a-z]?#">
+		<xsl:analyze-string select="." regex="EE(\d+[AB]?)_(text|intro)_.nm\.? ?(\d+|[a-z]+)-?[a-z]?#">
 			<xsl:matching-substring>
 				<xsl:variable name="file">
 					<xsl:variable name="num" select="analyze-string(regex-group(1), '\d+')//*:match"/>
