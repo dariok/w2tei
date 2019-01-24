@@ -185,4 +185,23 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T6: Bibelstellen">
+		<x:scenario label="T6.1: mit Semikolon">
+			<x:context>
+				<ref xmlns="http://www.tei-c.org/ns/1.0" type="biblical">Mt 19,21; 10,9</ref>
+			</x:context>
+			<x:expect label=".">
+				<ref type="biblical" cRef="Mt 19,21">Mt 19,21</ref>; <ref type="biblical" cRef="Mt 10,9">10,9</ref>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T6.2: u.">
+			<x:context>
+				<ref xmlns="http://www.tei-c.org/ns/1.0" type="biblical" cRef="Hes 29,3 u. 9">Hes 29,3 u. 9</ref>
+			</x:context>
+			<x:expect label=".">
+				<ref type="biblical" cRef="Hes 29,3">Hes 29,3</ref> u. <ref type="biblical" cRef="Hes 29,9">9</ref>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
