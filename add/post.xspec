@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec" stylesheet="post.xsl"
+	xmlns="http://www.tei-c.org/ns/1.0">
+	<x:scenario label="T1: Anm. vor ptr">
+		<x:scenario label="T1.1">
+			<x:context>
+				<note type="footnote" xml:id="n13">S.o. Anm. <ptr type="wdb" target="#n8"/>.</note>
+			</x:context>
+			<x:expect label=".">
+				<note type="footnote" xml:id="n13">S.o. <ptr type="wdb" target="#n8"/>.</note>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+</x:description>
