@@ -4,7 +4,7 @@
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns="http://www.tei-c.org/ns/1.0"
-	exclude-result-prefixes="xs math"
+	exclude-result-prefixes="#all"
 	version="3.0">
 	
 	<xsl:template match="tei:rs[not(preceding-sibling::node()[1][self::tei:rs])]">
