@@ -11,4 +11,13 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T2: hi mit –">
+		<x:context>
+			<p>45<hi rend="super">r</hi>–<hi rend="super">v</hi></p>
+		</x:context>
+		<x:expect label=".">
+			<p>45<hi rend="super">r–v</hi></p>
+		</x:expect>
+	</x:scenario>
 </x:description>
