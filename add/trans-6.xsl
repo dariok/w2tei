@@ -214,6 +214,7 @@
           									</xsl:otherwise>
           								</xsl:choose>
           							</ptr>
+          							<xsl:if test="string-length(regex-group(3)) > 10"><xsl:value-of select="'##' || regex-group(3) || '##'" /></xsl:if>
           						</xsl:matching-substring>
           						<xsl:non-matching-substring>
           							<xsl:value-of select="." />

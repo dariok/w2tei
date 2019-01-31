@@ -26,6 +26,17 @@
 		</hi>
 	</xsl:template>
 	
+	<xsl:template match="tei:ref[preceding-sibling::node()[1][self::tei:ref]]" />
+	<xsl:template match="tei:ref[not(preceding-sibling::node()[1][self::tei:ref])]">
+		<xsl:variable name="me" select="generate-id()"/>
+		<ref>
+			<xsl:apply-templates select="@type" />
+			<xsl:value-of select="."/>
+			<xsl:value-of select="string-join(following-sibling::tei:ref[preceding-sibling::node()[1][self::tei:ref]
+				and preceding-sibling::tei:ref[not(preceding-sibling::*[1][self::tei:ref])][1][generate-id() = $me]], '')" />
+		</ref>
+	</xsl:template>
+	
 	<xsl:template match="@* | node()">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()" />

@@ -20,7 +20,7 @@
 				<gap />
 			</xsl:matching-substring>
 			<xsl:non-matching-substring>
-				<!-- aus ks-r.xsl -->
+				<!-- aus ks-ptr.xsl -->
 				<xsl:analyze-string select="." regex="EE(\d+[AB]?)_(text|intro)([^#]+)?#?#">
 					<xsl:matching-substring>
 						<xsl:variable name="file">
@@ -56,6 +56,7 @@
 								</xsl:otherwise>
 							</xsl:choose>
 						</ptr>
+						<xsl:if test="string-length(regex-group(3)) > 10"><xsl:value-of select="'##' || regex-group(3) || '##'" /></xsl:if>
 					</xsl:matching-substring>
 					<xsl:non-matching-substring>
 						<xsl:value-of select="." />
