@@ -207,8 +207,7 @@
 			<xsl:if test="$link">
 				<xsl:attribute name="ref" select="$link" />
 			</xsl:if>
-			<xsl:apply-templates select="." mode="content"/>
-			<!--<xsl:variable name="contents" as ="node()*">
+			<xsl:variable name="contents" as ="node()*">
 				<xsl:apply-templates select="." mode="content"/>
 			</xsl:variable>
 			<xsl:for-each select="$contents">
@@ -220,11 +219,11 @@
 						<xsl:sequence select="." />
 					</xsl:otherwise>
 				</xsl:choose>
-			</xsl:for-each>-->
+			</xsl:for-each>
 		</xsl:element>
-		<!--<xsl:if test="ends-with(., ' ')">
+		<xsl:if test="ends-with(., ' ')">
 			<xsl:text> </xsl:text>
-		</xsl:if>-->
+		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template match="w:r[not(descendant::w:rStyle or ancestor::w:endnote or ancestor::w:footnote)

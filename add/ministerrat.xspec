@@ -368,10 +368,12 @@
 						<w:t xml:space="preserve">Sr. Majestät </w:t>
 					</w:r>
 				</w:hyperlink>
+				<w:r>
+					<w:t>test</w:t>
+				</w:r>
 			</x:context>
 			<x:expect label="rs">
-				<rs type="person" ref="http://d-nb.info/gnd/118535013">Sr. Majestät </rs>
-			</x:expect>
+				<rs type="person" ref="http://d-nb.info/gnd/118535013">Sr. Majestät</rs> test</x:expect>
 		</x:scenario>
 	</x:scenario>
 </x:description>
