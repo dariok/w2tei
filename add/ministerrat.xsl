@@ -3,6 +3,7 @@
 	xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
 	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 	xmlns:wt="https://github.com/dariok/w2tei"
+	xmlns:xstring = "https://github.com/dariok/XStringUtils"
 	xmlns:rel="http://schemas.openxmlformats.org/package/2006/relationships"
 	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 	xmlns="http://www.tei-c.org/ns/1.0"
@@ -193,21 +194,7 @@
 	<!-- special w:r (need to call w:r mode="content" to get styles right) -->
 	<xsl:template match="w:r[ancestor::w:endnote
 		and not(wt:is(., 'Endnotenzeichen', 'r'))]">
-		<!-- Originalschreibung recte; 2016-08-10 DK -->
-		<xsl:choose>
-			<xsl:when test="not(w:t) or w:t = '*' or w:t = ' '"/>
-			<xsl:when test="not(w:rPr) or not(w:rPr/w:i)">
-				<orig>
-					<xsl:apply-templates select="w:t"/>
-				</orig>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:apply-templates select="w:t"/>
-			</xsl:otherwise>
-		</xsl:choose>
-	    <xsl:if test="contains(w:t, 'S. #') or contains(w:t, 'Anm. #')">
-	        <xsl:comment>TODO: Verweis</xsl:comment>
-	    </xsl:if>
+		<xsl:apply-templates />
 	</xsl:template>
 	
 	<xsl:template match="w:r[wt:is(., 'ErwhntePerson', 'r')]">
@@ -221,7 +208,23 @@
 				<xsl:attribute name="ref" select="$link" />
 			</xsl:if>
 			<xsl:apply-templates select="." mode="content"/>
+			<!--<xsl:variable name="contents" as ="node()*">
+				<xsl:apply-templates select="." mode="content"/>
+			</xsl:variable>
+			<xsl:for-each select="$contents">
+				<xsl:choose>
+					<xsl:when test="position() = last() and self::text()">
+						<xsl:value-of select="xstring:substring-before-if-ends(., ' ')" />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:sequence select="." />
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:for-each>-->
 		</xsl:element>
+		<!--<xsl:if test="ends-with(., ' ')">
+			<xsl:text> </xsl:text>
+		</xsl:if>-->
 	</xsl:template>
 	
 	<xsl:template match="w:r[not(descendant::w:rStyle or ancestor::w:endnote or ancestor::w:footnote)
@@ -244,7 +247,7 @@
 	
 	<!-- neu 2016-07-31 DK -->
 	<xsl:template match="w:endnote">
-		<xsl:apply-templates select="w:p/w:r"/>
+		<xsl:apply-templates select="w:p/w:r | w:p/w:hyperlink"/>
 	</xsl:template>
 	
 	<!-- innerhalb eines Links sollte es hoffentlich keine besonderen Formatierungen geben; sonst 2. Durchgang nötig -->
