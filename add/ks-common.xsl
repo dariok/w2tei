@@ -103,10 +103,7 @@
                             mode="head"/>
                     </titleStmt>
                     <publicationStmt>
-                        <publisher>
-                            <name type="org">Herzog August Bibliothek Wolfenbüttel</name>
-                            <ptr target="http://www.hab.de"/>
-                        </publisher>
+                        <publisher>Herzog August Bibliothek Wolfenbüttel (<ptr target="http://www.hab.de"/>)</publisher>
                         <date when="2017" type="created"/>
                         <distributor>Herzog August Bibliothek Wolfenbüttel</distributor>
                         <availability status="restricted">
