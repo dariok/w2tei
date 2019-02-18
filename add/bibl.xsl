@@ -7,7 +7,7 @@
   exclude-result-prefixes="#all"
   version="3.0">
   <xsl:template match="tei:bibl">
-    <bibl>
+    <rs type="bibl">
       <xsl:variable name="bibliography" select="doc('../../register/bibliography.xml')" />
       <xsl:variable name="self" select="normalize-space()" />
       <xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
@@ -57,7 +57,7 @@
           <xsl:sequence select="node()[last()]" />
         </xsl:otherwise>
       </xsl:choose>
-    </bibl>
+    </rs>
   </xsl:template>
 	
 	<xsl:template match="tei:rs[@type = 'person']">
