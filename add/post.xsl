@@ -37,6 +37,12 @@
 		</ref>
 	</xsl:template>
 	
+	<xsl:template match="tei:listBibl/tei:rs">
+		<bibl corresp="{@ref}">
+			<xsl:sequence select="node()" />
+		</bibl>
+	</xsl:template>
+	
 	<xsl:template match="@* | node()">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()" />
