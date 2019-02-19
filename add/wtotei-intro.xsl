@@ -41,7 +41,7 @@
 			<xsl:attribute name="type">
 				<xsl:choose>
 					<xsl:when test="wt:starts(., 'Überlieferung')">history_of_the_work</xsl:when>
-					<xsl:when test="wt:starts(., 'Entstehung und Inhalt')">contents</xsl:when>
+					<xsl:when test="wt:contains(., 'Entstehung')">contents</xsl:when>
 					<xsl:when test="wt:starts(., 'Referenz')">reference</xsl:when>
 					<xsl:when test="wt:starts(., 'Inhaltliche Hinweise')">evidence</xsl:when>
 				</xsl:choose>
