@@ -167,15 +167,18 @@
 				</note>
 				<note type="references">
 					<listBibl>
-						<xsl:variable name="weitere">
+						<!--<xsl:variable name="weitere">
 							<xsl:apply-templates select="$struct[wt:starts(., 'Bibliographische')]//w:r" />
-						</xsl:variable>
-						<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
+						</xsl:variable>-->
+						<!--<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
 							<bibl>
-								<!-- TODO ID aus bibliography übernehmen -->
+								<!-\- TODO ID aus bibliography übernehmen -\->
 								<xsl:value-of select="normalize-space(current())"/>
 							</bibl>
-						</xsl:for-each>
+						</xsl:for-each>-->
+						<xsl:apply-templates select="$struct[wt:starts(., 'Bibliographische')]//w:r[wt:is(., 'KSbibliographischeAngabe', 'r')
+							and not(preceding-sibling::w:r[1][wt:is(., 'KSbibliographischeAngabe', 'r')])]" 
+							mode="bibl"/>
 					</listBibl>
 					<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
 						$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)
