@@ -38,17 +38,20 @@
 			<xsl:apply-templates select="@type" />
 			<xsl:if test="@type = 'medieval'">
 				<xsl:attribute name="cRef">
-					<xsl:variable name="val" select="analyze-string($cont, '^\d')"/>
+					<xsl:variable name="val" select="analyze-string($cont, '\d')"/>
 					<xsl:choose>
-						<xsl:when test="contains($val//*:non-matching-substring[1], ',')">
-							<xsl:value-of select="substring-before($val//*:non-matching-substring[1], ',')" />
+						<xsl:when test="contains($val//*:non-match[1], ',')">
+							<xsl:value-of select="substring-before($val//*:non-match[1], ',')" />
 							<xsl:text>!</xsl:text>
-							<xsl:value-of select="substring-after($val//*:non-matching-substring[1], ',')" />
+							<xsl:value-of select="substring-after($val//*:non-match[1], ',')" />
 						</xsl:when>
 						<xsl:otherwise>
-							<xsl:value-of select="substring-before($val//*:non-matching-substring[1], ' ')" />
-							<xsl:text>!</xsl:text>
-							<xsl:value-of select="substring-after($val//*:non-matching-substring[1], ' ')" />
+							<xsl:value-of select="substring-before($val//*:non-match[1], ' ')" />
+							<xsl:variable name="c" select="substring-after($val//*:non-match[1], ' ')" />
+							<xsl:if test="string-length($c) &gt; 0">
+								<xsl:text>!</xsl:text>
+								<xsl:value-of select="$c" />
+							</xsl:if>
 						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:attribute>
