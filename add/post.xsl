@@ -29,11 +29,31 @@
 	<xsl:template match="tei:ref[preceding-sibling::node()[1][self::tei:ref]]" />
 	<xsl:template match="tei:ref[not(preceding-sibling::node()[1][self::tei:ref])]">
 		<xsl:variable name="me" select="generate-id()"/>
-		<ref>
-			<xsl:apply-templates select="@type" />
+		<xsl:variable name="cont">
 			<xsl:value-of select="."/>
 			<xsl:value-of select="string-join(following-sibling::tei:ref[preceding-sibling::node()[1][self::tei:ref]
 				and preceding-sibling::tei:ref[not(preceding-sibling::*[1][self::tei:ref])][1][generate-id() = $me]], '')" />
+		</xsl:variable>
+		<ref>
+			<xsl:apply-templates select="@type" />
+			<xsl:if test="@type = 'medieval'">
+				<xsl:attribute name="cRef">
+					<xsl:variable name="val" select="analyze-string($cont, '^\d')"/>
+					<xsl:choose>
+						<xsl:when test="contains($val//*:non-matching-substring[1], ',')">
+							<xsl:value-of select="substring-before($val//*:non-matching-substring[1], ',')" />
+							<xsl:text>!</xsl:text>
+							<xsl:value-of select="substring-after($val//*:non-matching-substring[1], ',')" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="substring-before($val//*:non-matching-substring[1], ' ')" />
+							<xsl:text>!</xsl:text>
+							<xsl:value-of select="substring-after($val//*:non-matching-substring[1], ' ')" />
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:attribute>
+			</xsl:if>
+			<xsl:sequence select="$cont" />
 		</ref>
 	</xsl:template>
 	
