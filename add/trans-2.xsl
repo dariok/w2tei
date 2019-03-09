@@ -217,7 +217,7 @@
 	</xsl:template>
 	
 	<xsl:template match="tei:note[@type = 'footnote']/text()[not(preceding-sibling::*[1][self::hab:mark])]">
-		<xsl:analyze-string select="." regex="[„“&quot;»«]([^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
+		<xsl:analyze-string select="." regex="[„“&quot;»«]([^„^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
 			<xsl:matching-substring>
 				<quote>
 					<xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.\.\.\]">
