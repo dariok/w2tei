@@ -43,14 +43,14 @@
 						<xsl:when test="contains($val//*:non-match[1], ',')">
 							<xsl:value-of select="substring-before($val//*:non-match[1], ',')" />
 							<xsl:text>!</xsl:text>
-							<xsl:value-of select="substring-after($val//*:non-match[1], ',')" />
+							<xsl:value-of select="normalize-space(substring-after($val//*:non-match[1], ','))" />
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:value-of select="substring-before($val//*:non-match[1], ' ')" />
 							<xsl:variable name="c" select="substring-after($val//*:non-match[1], ' ')" />
 							<xsl:if test="string-length($c) &gt; 0">
 								<xsl:text>!</xsl:text>
-								<xsl:value-of select="$c" />
+								<xsl:value-of select="normalize-space($c)" />
 							</xsl:if>
 						</xsl:otherwise>
 					</xsl:choose>
