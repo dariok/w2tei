@@ -143,7 +143,10 @@
 				<xsl:text>.</xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="."/>
+			  <xsl:if test="ends-with(preceding-sibling::node()[1][self::*], ' ')">
+			    <xsl:text> </xsl:text>
+			  </xsl:if>
+				<xsl:sequence select="."/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
