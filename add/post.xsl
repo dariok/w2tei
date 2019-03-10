@@ -26,36 +26,37 @@
 		</hi>
 	</xsl:template>
 	
-	<xsl:template match="tei:ref[preceding-sibling::node()[1][self::tei:ref]]" />
-	<xsl:template match="tei:ref[not(preceding-sibling::node()[1][self::tei:ref])]">
-		<xsl:variable name="me" select="generate-id()"/>
+	<xsl:template match="tei:ref">
 		<xsl:variable name="cont">
-			<xsl:value-of select="."/>
-			<xsl:value-of select="string-join(following-sibling::tei:ref[preceding-sibling::node()[1][self::tei:ref]
-				and preceding-sibling::tei:ref[not(preceding-sibling::*[1][self::tei:ref])][1][generate-id() = $me]], '')" />
+			<xsl:value-of select="normalize-space()"/>
 		</xsl:variable>
 		<ref>
-			<xsl:apply-templates select="@type" />
-			<xsl:if test="@type = 'medieval'">
-				<xsl:attribute name="cRef">
-					<xsl:variable name="val" select="analyze-string($cont, '\d')"/>
-					<xsl:choose>
-						<xsl:when test="contains($val//*:non-match[1], ',')">
-							<xsl:value-of select="substring-before($val//*:non-match[1], ',')" />
-							<xsl:text>!</xsl:text>
-							<xsl:value-of select="normalize-space(substring-after($val//*:non-match[1], ','))" />
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="substring-before($val//*:non-match[1], ' ')" />
-							<xsl:variable name="c" select="substring-after($val//*:non-match[1], ' ')" />
-							<xsl:if test="string-length($c) &gt; 0">
+			<xsl:sequence select="@type" />
+			<xsl:choose>
+				<xsl:when test="@type = 'medieval'">
+					<xsl:attribute name="cRef">
+						<xsl:variable name="val" select="analyze-string($cont, '\d')"/>
+						<xsl:choose>
+							<xsl:when test="contains($val//*:non-match[1], ',')">
+								<xsl:value-of select="substring-before($val//*:non-match[1], ',')" />
 								<xsl:text>!</xsl:text>
-								<xsl:value-of select="normalize-space($c)" />
-							</xsl:if>
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:attribute>
-			</xsl:if>
+								<xsl:value-of select="normalize-space(substring-after($val//*:non-match[1], ','))" />
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="substring-before($val//*:non-match[1], ' ')" />
+								<xsl:variable name="c" select="substring-after($val//*:non-match[1], ' ')" />
+								<xsl:if test="string-length($c) &gt; 0">
+									<xsl:text>!</xsl:text>
+									<xsl:value-of select="normalize-space($c)" />
+								</xsl:if>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:attribute>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:sequence select="@*" />
+				</xsl:otherwise>
+			</xsl:choose>
 			<xsl:sequence select="$cont" />
 		</ref>
 	</xsl:template>
