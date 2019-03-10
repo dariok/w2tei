@@ -190,8 +190,16 @@
 			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::text()[1], '-')"/>
 			<xsl:when test="following-sibling::*[1][self::tei:lb] and ends-with(preceding-sibling::node()[1][self::tei:rs], '-')" />
 			<xsl:when test="ends-with(preceding-sibling::text()[1], '') and following-sibling::node()[1][self::tei:note[@place]]" />
+			<xsl:when test="preceding-sibling::node()[1][self::tei:note[@place]]">
+				<note place="{@place}">
+					<xsl:apply-templates select="preceding-sibling::node()[1]/node()" />
+					<xsl:apply-templates />
+				</note>
+			</xsl:when>
 			<xsl:otherwise>
-				<xsl:sequence select="." />
+				<note place="{@place}">
+					<xsl:apply-templates />
+				</note>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
