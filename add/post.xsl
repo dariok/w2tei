@@ -7,12 +7,6 @@
 	exclude-result-prefixes="#all"
 	version="3.0">
 	
-	<xsl:template match="text()[following-sibling::*[1][self::tei:ptr[@type = 'wdb'
-		and (contains(@target, '#n') or contains(@target, '#c'))]]
-		and ends-with(normalize-space(), 'Anm.')]">
-		<xsl:value-of select="substring-before(., 'Anm.')" />
-	</xsl:template>
-	
 	<xsl:template match="text()[. = '–' and following-sibling::tei:hi and preceding-sibling::tei:hi]"/>
 	<xsl:template match="tei:hi[preceding-sibling::node()[1][self::text()][. = '–']
 		and preceding-sibling::*[1][self::tei:hi]]" />
@@ -24,6 +18,24 @@
 			<xsl:text>–</xsl:text>
 			<xsl:value-of select="following-sibling::*[1]"/>
 		</hi>
+	</xsl:template>
+	
+	<xsl:template match="text()[not(. = '–')]">
+		<xsl:analyze-string select="." regex="[„“&quot;»«]([^„^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
+			<xsl:matching-substring>
+				<quote>
+					<xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.{{3}}|…\]">
+						<xsl:matching-substring><gap/></xsl:matching-substring>
+						<xsl:non-matching-substring>
+							<xsl:sequence select="."/>
+						</xsl:non-matching-substring>
+					</xsl:analyze-string>
+				</quote>
+			</xsl:matching-substring>
+			<xsl:non-matching-substring>
+				<xsl:value-of select="."/>
+			</xsl:non-matching-substring>
+		</xsl:analyze-string>
 	</xsl:template>
 	
 	<xsl:template match="tei:ref">
