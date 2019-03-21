@@ -37,7 +37,7 @@
 				<span type="crit_app" from="#s1" to="#s1e"> über der Zeile ergänzt – hierbei handelt es sich um ein Beispiel für Issue 13.</span>
 			</x:context>
 			<x:expect label=".">
-				<span type="crit_app" from="#s1" to="#s1e"> <wt:place val="über der Zeile" /> ergänzt – hierbei handelt es sich um ein Beispiel für Issue 13.</span>
+				<span type="crit_app" from="#s1" to="#s1e"> <wt:place val="über der Zeile" /> <wt:action val="ergänzt" /> – hierbei handelt es sich um ein Beispiel für Issue 13.</span>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>

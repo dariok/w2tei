@@ -38,7 +38,15 @@
 				<wt:place val="{.}" />
 			</xsl:matching-substring>
 			<xsl:non-matching-substring>
-				<xsl:sequence select="." />
+				<xsl:analyze-string select="."
+				  regex="ergänzt|ergänzt für gestr.|gestr.|ein Wort gestr.|Wörter|ein Buchstabe|Buchstaben|korr. aus:|korr. von anderer Hand aus:|korr. von ... aus|konj. für:|konj. in ... aus:|gestr.|gestr. von anderer Hand|gestr. von ...|von anderer Hand|von ... Hand">
+				  <xsl:matching-substring>
+				    <wt:action val="{.}" />
+				  </xsl:matching-substring>
+				  <xsl:non-matching-substring>
+				    <xsl:sequence select="." />
+				  </xsl:non-matching-substring>
+				</xsl:analyze-string>
 			</xsl:non-matching-substring>
 		</xsl:analyze-string>
 	</xsl:template>
