@@ -75,7 +75,14 @@
 		</p>
 	</xsl:template>
 	
-	
+	<xsl:template match="tei:hi[@style='font-style: italic;' and not(preceding-sibling::node()[1][self::tei:hi[@style='font-style: italic;']])]">
+		<xsl:variable name="myId" select="generate-id()" />
+		<hi style="{@style}"><xsl:sequence select="text()
+			| following-sibling::tei:hi[@style='font-style: italic;' and preceding-sibling::node()[1][self::tei:hi[@style='font-style: italic;' ]]
+			and generate-id(preceding-sibling::tei:hi[@style='font-style: italic;'
+			and not(preceding-sibling::node()[1][self::tei:hi[@style='font-style: italic;' ]])][1]) = $myId]/text()" /></hi>
+	</xsl:template>
+	<xsl:template match="tei:hi[@style='font-style: italic;' and preceding-sibling::node()[1][self::tei:hi[@style='font-style: italic;']]]"/>
 	
 	<!-- postscript zusammenziehen -->
 	<xsl:template match="tei:div[tei:postscript and (preceding-sibling::tei:div[tei:postscript])]" />
