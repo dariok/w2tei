@@ -30,4 +30,29 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T2: Seitenumbruch">
+		<x:scenario label="T2.1: mit kursiver Seitenzahl">
+			<x:context>
+				<div>
+					<opener>| <hi style="font-style: italic;">14</hi><hi rend="super">v</hi> | Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</opener>
+					<p>| <hi style="font-style: italic;">14</hi><hi rend="super">r</hi> | </p><p>Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer <rs ref="thi:18" type="thing">gesundhaitt</rs>, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
+						zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</p>
+				</div>
+			</x:context>
+			<x:expect label="pb" xml:space="preserve"><div><opener><wt:pb/> <hi style="font-style: italic;">14</hi><hi rend="super">v</hi> <wt:pb/> Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</opener><p><wt:pb /> <hi style="font-style: italic;">14</hi><hi rend="super">r</hi> <wt:pb/></p><p>Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer <rs ref="thi:18" type="thing">gesundhaitt</rs>, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
+						zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</p></div></x:expect>
+		</x:scenario>
+		<x:scenario label="T2.2: Seitenzahl recte">
+			<x:context>
+				<div>
+					<opener>| 14<hi rend="super">v</hi> | Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</opener>
+					<p>| 14r | </p><p>Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer <rs ref="thi:18" type="thing">gesundhaitt</rs>, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
+						zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</p>
+				</div>
+			</x:context>
+			<x:expect label="pb" xml:space="preserve"><div><opener><wt:pb/> 14<hi rend="super">v</hi> <wt:pb/> Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</opener><p><wt:pb /> 14r <wt:pb/></p><p>Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer <rs ref="thi:18" type="thing">gesundhaitt</rs>, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
+						zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</p></div></x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>
