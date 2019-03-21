@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+	xmlns:wt="https://github.com/dariok/w2tei"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	exclude-result-prefixes="#all"
@@ -24,7 +23,7 @@
 	<xsl:template match="tei:closer[tei:emph]" />
 	<xsl:template match="tei:closer[preceding-sibling::*[1][tei:emph]]" />
 	
-	<!-- Anmerkung über mehrere Wörter: ancor mit ID versehen und note zu span -->
+	<!-- Anmerkung über mehrere Wörter: anchor mit ID versehen und note zu span -->
 	<xsl:template match="tei:anchor">
 		<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])+1"/>
 		<xsl:choose>
@@ -41,20 +40,31 @@
 		</xsl:choose>
 	</xsl:template>
 	<xsl:template match="tei:note[@type = 'crit_app']">
-		<xsl:choose>
-			<xsl:when test="preceding-sibling::*[1][self::tei:anchor[@ref='se']]">
+		<app>
+			<xsl:if test="preceding-sibling::*[1][self::tei:anchor[@ref='se']]">
 				<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])" />
-				<span type="crit_app" from="{'#s'||$num}" to="{'#s'||$num||'e'}">
-					<!--					<xsl:comment>TODO ggf. bessere Kodierung</xsl:comment>-->
-					<xsl:apply-templates />
-				</span>
-			</xsl:when>
-			<xsl:otherwise>
-				<note type="crit_app">
-					<xsl:apply-templates />
-				</note>
-			</xsl:otherwise>
-		</xsl:choose>
+				<xsl:attribute name="from" select="'#s'||$num" />
+				<xsl:attribute name="to" select="'#s'||$num||'e'" />
+			</xsl:if>
+			<xsl:apply-templates />
+		</app>
+	</xsl:template>
+	<xsl:template match="tei:note[@type = 'crit_app']/text()">
+		<xsl:analyze-string select="." regex="; ">
+			<xsl:matching-substring>
+				<wt:notes />
+			</xsl:matching-substring>
+			<xsl:non-matching-substring>
+				<xsl:analyze-string select="." regex=" – ">
+					<xsl:matching-substring>
+						<wt:comment />
+					</xsl:matching-substring>
+					<xsl:non-matching-substring>
+						<xsl:value-of select="."/>
+					</xsl:non-matching-substring>
+				</xsl:analyze-string>
+			</xsl:non-matching-substring>
+		</xsl:analyze-string>
 	</xsl:template>
 	
 	<xsl:template match="tei:p">
