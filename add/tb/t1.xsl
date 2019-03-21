@@ -85,6 +85,7 @@
 		</hi>
 	</xsl:template>
 	<xsl:template match="w:r[(descendant::w:vertAlign or descendant::w:position)
+		and w:t
 		and not(descendant::w:i[not(@w:val=0)])]">
 		<hi>
 			<xsl:attribute name="rend">
@@ -146,15 +147,18 @@
 	<!-- kritische Anmerkungen -->
 	<xsl:template match="w:footnotes"/>
 	<xsl:template match="w:r[wt:is(., 'Funotenzeichen', 'r') and not(w:footnoteReference)]" />
-	<xsl:template match="w:r[descendant::w:footnoteReference
-		and not(wt:is(., 'TBkritischeAnmerkungbermehrereWrter', 'r'))]">
-		<xsl:if test="wt:is(preceding-sibling::w:r[1], 'TBkritischeAnmerkungbermehrereWrter', 'r')">
-			<anchor type="crit_app" ref="se" />
-		</xsl:if>
+	<xsl:template match="w:r[wt:is(., 'Funotenzeichen', 'r') and w:footnoteReference]">
 		<xsl:apply-templates select="w:footnoteReference" />
+	</xsl:template>
+	<xsl:template match="w:r">
+		<xsl:apply-templates select="w:footnoteReference | w:endnoteReference | w:t" />
 	</xsl:template>
 	
 	<xsl:template match="w:footnoteReference">
+		<xsl:if test="not(wt:is(parent::w:r, 'TBkritischeAnmerkungbermehrereWrter', 'r'))
+			and wt:is(parent::w:r/preceding-sibling::w:r[1], 'TBkritischeAnmerkungbermehrereWrter', 'r')">
+			<anchor type="crit_app" ref="se" />
+		</xsl:if>
 		<note type="crit_app">
 			<xsl:variable name="wid" select="@w:id"/>
 			<xsl:apply-templates select="//w:footnote[@w:id = $wid]/w:p/w:r" />
