@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+	xmlns="http://www.tei-c.org/ns/1.0"
+	stylesheet="t3.xsl">
+	<x:scenario label="Marginalie mit Umgebung zusammenziehen">
+		<x:scenario label="Marginalie in postscript">
+			<x:context>
+				<postscript>
+					<p>ordnung vnnd das werk gebracht, wird es alles leicht vnnd richtig
+						werden. Darjnnen wöllen E. f. g. Auch den Allmechtigen Regieren lassen vnnd jrer
+						leibsgesundhaitt auch außwarten. Sie haben, gott lob, Christliche, fromme vnd
+						verstendige Rhaͤt vnd getrewe diener, die sollen E. f. g. helffen tragen, werden es auch gern
+						thon, vff das E. f. g. mitt dem <pb n="13v"/> frommen konig </p><note place="margin">Ps. 3<note type="footnote"> Ps. 3[6].</note></note>
+					<p>sagen khoͤnnen: Jch lige vnnd schlaffe vnd erwache, denn der Herr erhellt mich. Ja, freylich
+						hatt vnnser lieber Gott E. f. g. wunderbarlich erhallten, dem David nicht vngleich,
+						welcher zuuor vil widerwertigkaitt außstehn muste,</p>
+				</postscript>
+			</x:context>
+			<x:expect label="postscript mit einem p und darin Marginalie">
+				<postscript>
+					<p>ordnung vnnd das werk gebracht, wird es alles leicht vnnd richtig
+						werden. Darjnnen wöllen E. f. g. Auch den Allmechtigen Regieren lassen vnnd jrer
+						leibsgesundhaitt auch außwarten. Sie haben, gott lob, Christliche, fromme vnd
+						verstendige Rhaͤt vnd getrewe diener, die sollen E. f. g. helffen tragen, werden es auch gern
+						thon, vff das E. f. g. mitt dem <pb n="13v"/> frommen konig <note place="margin">Ps. 3<note type="footnote"> Ps. 3[6].</note></note>sagen khoͤnnen: Jch lige vnnd schlaffe vnd erwache, denn der Herr erhellt mich. Ja, freylich
+						hatt vnnser lieber Gott E. f. g. wunderbarlich erhallten, dem David nicht vngleich,
+						welcher zuuor vil widerwertigkaitt außstehn muste,</p>
+				</postscript>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
+	
+	<x:scenario label="krit. Anmerkungen">
+		
+	</x:scenario>
+</x:description>

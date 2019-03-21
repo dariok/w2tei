@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Test Report for home/dario/git/tb/xslt/t2.xsl (passed: 3 / pending: 0 / failed: 1 / total: 4)</title>
+      <link rel="stylesheet" type="text/css" href="file:/home/dario/.p2/pool/plugins/com.oxygenxml.editor_20.1.0.v2018080903/frameworks/xspec/src/reporter/test-report.css" />
+   </head>
+   <body>
+      <h1>Test Report</h1>
+      <p>Stylesheet: <a href="file:/home/dario/git/tb/xslt/t2.xsl">home/dario/git/tb/xslt/t2.xsl</a></p>
+      <p>Tested: 22 November 2018 at 10:25</p>
+      <h2>Contents</h2>
+      <table class="xspec">
+         <col width="75%" />
+         <col width="6.25%" />
+         <col width="6.25%" />
+         <col width="6.25%" />
+         <col width="6.25%" />
+         <thead>
+            <tr>
+               <th></th>
+               <th class="totals">passed: 3</th>
+               <th class="totals">pending: 0</th>
+               <th class="totals">failed: 1</th>
+               <th class="totals">total: 4</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr class="successful">
+               <th><a href="#d3e4">anchor + note</a></th>
+               <th class="totals">1</th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
+               <th class="totals">1</th>
+            </tr>
+            <tr class="failed">
+               <th><a href="#d3e55">T2: Seitenumbruch</a></th>
+               <th class="totals">1</th>
+               <th class="totals">0</th>
+               <th class="totals">1</th>
+               <th class="totals">2</th>
+            </tr>
+            <tr class="successful">
+               <th><a href="#d3e246">postscript zusammenziehen</a></th>
+               <th class="totals">1</th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
+               <th class="totals">1</th>
+            </tr>
+         </tbody>
+      </table>
+      <div id="d3e4">
+         <h2 class="successful">anchor + note<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
+         <table class="xspec" id="t-d3e4">
+            <col width="75%" />
+            <col width="25%" />
+            <tbody>
+               <tr class="successful">
+                  <th>anchor + note</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>anchor + span mit ID</td>
+                  <td>Success</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div id="d3e55">
+         <h2 class="successful">T2: Seitenumbruch<span class="scenario-totals">passed: 1 / pending: 0 / failed: 1 / total: 2</span></h2>
+         <table class="xspec" id="t-d3e55">
+            <col width="75%" />
+            <col width="25%" />
+            <tbody>
+               <tr class="successful">
+                  <th>T2: Seitenumbruch</th>
+                  <th>passed: 1 / pending: 0 / failed: 1 / total: 2</th>
+               </tr>
+               <tr class="successful">
+                  <th>T2.1: mit kursiver Seitenzahl</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>pb</td>
+                  <td>Success</td>
+               </tr>
+               <tr class="failed">
+                  <th><a href="#d3e158">T2.2: Seitenzahl recte</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
+               </tr>
+               <tr class="failed">
+                  <td><a href="#d3e216">pb</a></td>
+                  <td>Failure</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 id="d3e158">T2: Seitenumbruch T2.2: Seitenzahl recte</h3>
+         <h4 id="d3e216">pb</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span class="diff">div</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="diff">opener</span>&gt;<span class="diff">| 14</span>&lt;<span class="diff">hi</span> <span class="diff">rend</span>="super"&gt;<span class="diff">v</span>&lt;/hi&gt;<span class="diff"> | Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</span>&lt;/opener&gt;
+   <span class="whitespace">\n\t\t\t\t</span>
+   &lt;<span class="diff">p</span>&gt;
+      &lt;<span class="diff">pb</span> <span class="diff">n</span>="14r" /&gt;
+      <span class="whitespace">.</span>
+   &lt;/p&gt;
+   <span class="whitespace">\n\t\t\t\t</span>
+   &lt;<span class="diff">p</span>&gt;<span class="diff">Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer </span>&lt;<span class="diff">rs</span> <span class="diff">ref</span>="thi:18"
+        <span class="diff">type</span>="thing"&gt;<span class="diff">gesundhaitt</span>&lt;/rs&gt;<span class="diff">, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
+						zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</span>&lt;/p&gt;
+&lt;/div&gt;</pre></td>
+                  <td><pre>&lt;<span class="diff">div</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="diff">opener</span>&gt;
+      &lt;<span class="diff">pb</span> <span class="diff">n</span>="14v" /&gt;<span class="diff"> Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</span>&lt;/opener&gt;
+   &lt;<span class="diff">p</span>&gt;
+      &lt;<span class="diff">pb</span> <span class="diff">n</span>="14r" /&gt;
+   &lt;/p&gt;
+   &lt;<span class="diff">p</span>&gt;<span class="diff">Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer </span>&lt;<span class="diff">rs</span> <span class="diff">ref</span>="thi:18"
+        <span class="diff">type</span>="thing"&gt;<span class="diff">gesundhaitt</span>&lt;/rs&gt;<span class="diff">, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
+						zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</span>&lt;/p&gt;
+&lt;/div&gt;</pre></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div id="d3e246">
+         <h2 class="successful">postscript zusammenziehen<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
+         <table class="xspec" id="t-d3e246">
+            <col width="75%" />
+            <col width="25%" />
+            <tbody>
+               <tr class="successful">
+                  <th>postscript zusammenziehen</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>ein postscript mit mehreren p</td>
+                  <td>Success</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>
