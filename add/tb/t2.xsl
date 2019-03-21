@@ -75,33 +75,7 @@
 		</p>
 	</xsl:template>
 	
-	<!-- Seitenumbrüche umsetzen -->
-	<xsl:template match="text()[ends-with(normalize-space(), '|')
-		and following-sibling::node()[1][self::tei:hi]
-		and (starts-with(normalize-space(following-sibling::node()[2]), '|')
-		or starts-with(normalize-space(following-sibling::node()[3]), '|')
-		or starts-with(normalize-space(following-sibling::node()[4]), '|'))]">
-		<xsl:value-of select="substring-before(., '|')" />
-		<pb>
-			<xsl:attribute name="n" select="normalize-space(string-join(following-sibling::node()
-				intersect following-sibling::node()[starts-with(normalize-space(), '|')]/preceding-sibling::node(), ''))" />
-		</pb>
-	</xsl:template>
-	<xsl:template match="text()[starts-with(normalize-space(), '|')
-		and preceding-sibling::node()[1][self::tei:hi]
-		and (ends-with(normalize-space(preceding-sibling::node()[2]), '|')
-		or ends-with(normalize-space(preceding-sibling::node()[3]), '|')
-		or ends-with(normalize-space(preceding-sibling::node()[4]), '|'))]">
-		<xsl:value-of select="substring-after(., '|')"/>
-	</xsl:template>
-	<xsl:template match="tei:hi[(ends-with(normalize-space(preceding-sibling::text()[1]), '|')
-		or ends-with(normalize-space(preceding-sibling::text()[2]), '|')
-		or ends-with(normalize-space(preceding-sibling::text()[3]), '|'))
-		and (starts-with(normalize-space(following-sibling::text()[3]), '|')
-		or starts-with(normalize-space(following-sibling::text()[2]), '|')
-		or starts-with(normalize-space(following-sibling::text()[1]), '|')
-		)]" />
-	<!-- ENDE Seitenumbrüche -->
+	
 	
 	<!-- postscript zusammenziehen -->
 	<xsl:template match="tei:div[tei:postscript and (preceding-sibling::tei:div[tei:postscript])]" />
