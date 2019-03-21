@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+  xmlns="http://www.tei-c.org/ns/1.0"
+  stylesheet="t5.xsl">
+  <x:scenario label="T1: Expansionen">
+    <x:scenario label="T1.1">
+      <x:context>
+        <body>
+          <div>
+            <p>| fol. 187r | Illusstrissime Princeps et Domine, Domine clementissime.</p>
+            <p>V{estra} Illustrissima Cels{itud}o dignata fuit proximis praeteritis mensibus ad serenissimum</p>
+          </div>
+        </body>
+      </x:context>
+      <x:expect label="expan">
+        <body>
+          <div>
+            <p>| fol. 187r | Illusstrissime Princeps et Domine, Domine clementissime.</p>
+            <p><expan>V<ex>estra</ex></expan> Illustrissima <expan>Cels<ex>itud</ex>o</expan> dignata fuit proximis praeteritis mensibus ad serenissimum</p>
+          </div>
+        </body>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T2: supplied">
+    <x:scenario label="T2.1: mittendrin">
+      <x:context>
+        <body>
+          <div>
+            <p>Caeterum ex Tiguro habeo aliq[[ui]]d novi. Illi clamant contra me iratissimi. Sed me, inquam,</p>
+          </div>
+        </body>
+      </x:context>
+      <x:expect label="supplied">
+        <body>
+          <div>
+            <p>Caeterum ex Tiguro habeo aliq<supplied>ui</supplied>d novi. Illi clamant contra me iratissimi. Sed me, inquam,</p>
+          </div>
+        </body>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T3: unclear">
+    <x:scenario label="T3.1">
+      <x:context>
+        <body>
+          <div>
+            <p>Caeterum ex Tiguro habeo aliquid n[ov]i. Illi clamant contra me iratissimi. Sed me, inquam,</p>
+          </div>
+        </body>
+      </x:context>
+      <x:expect label=".">
+        <body>
+          <div>
+            <p>Caeterum ex Tiguro habeo aliquid n<unclear>ov</unclear>i. Illi clamant contra me iratissimi. Sed me, inquam,</p>
+          </div>
+        </body>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="krit. Anmerkungen">
+    <x:scenario label="ergänzt">
+      <x:context>
+        <p>
+          zwei wörter vor<note type="crit_app">über der Zeile ergänzt</note> und
+          <anchor xml:id="s1" />zwei dazwischen<anchor xml:id="s1e" /><span type="crit_app" from="#s1" to="#s1e">von Bucher am Rand ergänzt</span> Text
+          danach und<note type="crit_app">von anderer Hand unter der Zeile ergänzt</note> mehr.
+        </p>
+      </x:context>
+      <x:expect label="-">
+        <p>zwei wörter <add place="above">vor</add> und
+          <add hand="#Bucher" place="margin">zwei dazwischen</add> Text danach <add place="below" hand="#other">und</add> mehr.
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+</x:description>
