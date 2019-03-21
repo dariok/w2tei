@@ -50,12 +50,12 @@
 		</app>
 	</xsl:template>
 	<xsl:template match="tei:note[@type = 'crit_app']/text()">
-		<xsl:analyze-string select="." regex="; ">
+		<xsl:analyze-string select="." regex=";\s+">
 			<xsl:matching-substring>
 				<wt:notes />
 			</xsl:matching-substring>
 			<xsl:non-matching-substring>
-				<xsl:analyze-string select="." regex=" – ">
+				<xsl:analyze-string select="." regex="\s+–\s+">
 					<xsl:matching-substring>
 						<wt:comment />
 					</xsl:matching-substring>
