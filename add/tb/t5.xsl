@@ -9,47 +9,6 @@
   
   <xsl:include href="string-pack.xsl"/>
   
-  <!-- front getrennt behandeln -->
-  <xsl:template match="tei:body//text()[not(parent::tei:div)]">
-    <xsl:variable name="r2" select="'\{\w+\}'"/>
-    <xsl:variable name="r1" select="'\w+\{.+?\}\w*'"/>
-    <xsl:analyze-string select="." regex="{$r1}">
-      <xsl:matching-substring>
-        <expan>
-          <xsl:analyze-string select="." regex="{$r2}">
-            <xsl:matching-substring>
-              <ex><xsl:value-of select="substring(substring(., 2), 1, string-length()-2)"/></ex>
-            </xsl:matching-substring>
-            <xsl:non-matching-substring>
-              <xsl:value-of select="." />
-            </xsl:non-matching-substring>
-          </xsl:analyze-string>
-        </expan>
-      </xsl:matching-substring>
-      <xsl:non-matching-substring>
-        <xsl:analyze-string select="." regex="\[\[.+\]\]">
-          <xsl:matching-substring>
-            <supplied>
-              <xsl:value-of select="substring(., 3, string-length() - 4)"/>
-            </supplied>
-          </xsl:matching-substring>
-          <xsl:non-matching-substring>
-            <xsl:analyze-string select="." regex="\[.+\]">
-              <xsl:matching-substring>
-                <unclear>
-                  <xsl:value-of select="substring(., 2, string-length() - 2)" />
-                </unclear>
-              </xsl:matching-substring>
-              <xsl:non-matching-substring>
-                <xsl:value-of select="."/>
-              </xsl:non-matching-substring>
-            </xsl:analyze-string>
-          </xsl:non-matching-substring>
-        </xsl:analyze-string>
-      </xsl:non-matching-substring>
-    </xsl:analyze-string>
-  </xsl:template>
-  
   <xsl:template match="tei:note[@type = 'crit_app']">
     <xsl:variable name="text" select="xstring:substring-after-last(preceding-sibling::text()[1], ' ')"/>
     <xsl:call-template name="critapp">
@@ -139,9 +98,23 @@
     </xsl:choose>
   </xsl:template>
   
-  <xsl:template match="tei:div/text()">
-    <xsl:text>
-				</xsl:text>
+  <xsl:template match="tei:*[wt:qs]">
+    <xsl:copy>
+      <xsl:apply-templates select="@*" />
+      <xsl:for-each-group select="node()" group-starting-with="wt:qs">
+        <xsl:choose>
+          <xsl:when test="current-group()[self::wt:qs]">
+            <quote>
+              <xsl:sequence select="current-group()[not(self::wt:*) and following-sibling::wt:qe]" />
+            </quote>
+            <xsl:sequence select="current-group()[preceding-sibling::wt:qe]" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:sequence select="current-group()" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:for-each-group>
+    </xsl:copy>
   </xsl:template>
   
   <xsl:template match="@* | node()">
