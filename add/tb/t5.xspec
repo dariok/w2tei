@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
   xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:wt="https://github.com/dariok/w2tei"
   stylesheet="t5.xsl">
   
-  <x:scenario label="krit. Anmerkungen">
+  <x:scenario label="T1: krit. Anmerkungen: Übernahme des lem">
+    <x:scenario label="T1.1">
+      <x:context>
+        <p>Text davor <anchor type="crit_app" xml:id="s1"/>über der Zeile ergänzt<anchor type="crit_app" xml:id="s1e"/><app from="#s1" to="#s1e"/></p>
+      </x:context>
+      <x:expect label=".">
+        <p>Text davor <app from="#s1" to="#s1e"><lem>über der Zeile ergänzt</lem></app></p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T1.2">
+      <x:context>
+        <p>Etwas mehr Text<app/></p>
+      </x:context>
+      <x:expect label=".">
+        <p>Etwas mehr <app><lem>Text</lem></app></p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T1.3">
+      <x:context>
+        <p>Text <wt:qs />mit Zitat<wt:qe/> und<app /></p>
+      </x:context>
+      <x:expect label=".">
+        <p>Text <quote>mit Zitat</quote> <app><lem>und</lem></app></p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T1.4">
+      <x:context>
+        <p>Text <anchor xml:id="s11" />und dann</p>
+        <p>weiter mit<anchor xml:id="s11e" /><app from="#s11" to="#s11e"/></p>
+      </x:context>
+      <x:expect label=".">
+        <p>Text <anchor xml:id="s11" />und dann</p>
+        <p>weiter mit<anchor xml:id="s11e" /><app from="#s11" to="#s11e"/></p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T2">
     <x:scenario label="ergänzt">
       <x:context>
         <p>
-          zwei wörter vor<note type="crit_app">über der Zeile ergänzt</note> und
-          <anchor xml:id="s1" />zwei dazwischen<anchor xml:id="s1e" /><span type="crit_app" from="#s1" to="#s1e">von Bucher am Rand ergänzt</span> Text
-          danach und<note type="crit_app">von anderer Hand unter der Zeile ergänzt</note> mehr.
+          <anchor type="crit_app" xml:id="s1"/>über der Zeile ergänzt<anchor type="crit_app" xml:id="s1e"/><app from="#s1" to="#s1e"><rdg> <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="über der Zeile"/> <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="ergänzt"/><note type="comment">hierbei handelt es sich um ein Beispiel für Issue 13.</note></rdg></app>
         </p>
       </x:context>
       <x:expect label="-">
-        <p>zwei wörter <add place="above">vor</add> und
-          <add hand="#Bucher" place="margin">zwei dazwischen</add> Text danach <add place="below" hand="#other">und</add> mehr.
+        <p>
+          <anchor type="crit_app" xml:id="s1"/>über der Zeile ergänzt<anchor type="crit_app" xml:id="s1e"/><app from="#s1" to="#s1e"><rdg> <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="über der Zeile"/> <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="ergänzt"/><note type="comment">hierbei handelt es sich um ein Beispiel für Issue 13.</note></rdg></app>
         </p>
       </x:expect>
     </x:scenario>
   </x:scenario>
   
-  <x:scenario label="T2: quote">
-    <x:scenario label="T2.1">
+  <x:scenario label="T10: quote">
+    <x:scenario label="T10.1">
       <x:context>
         <note type="footnote"> Laut Toepke, Matrikel 2, S. 55 immatrikulierte sich ein <wt:qs xmlns:wt="https://github.com/dariok/w2tei"/>Alexander Rubinus, Chittelianus, iuris utr. doctor<wt:qe xmlns:wt="https://github.com/dariok/w2tei"/> am 2. Juni 1570 an der Universität Heidelberg. [[dort im Register: = Cîteaux]]</note>
       </x:context>

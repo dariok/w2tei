@@ -9,19 +9,28 @@
   
   <xsl:include href="string-pack.xsl"/>
   
-  <xsl:template match="tei:note[@type = 'crit_app']">
-    <xsl:variable name="text" select="xstring:substring-after-last(preceding-sibling::text()[1], ' ')"/>
-    <xsl:call-template name="critapp">
-      <xsl:with-param name="note" select="." />
-      <xsl:with-param name="text" select="$text" />
-    </xsl:call-template>
+  <xsl:template match="tei:anchor">
+    <xsl:variable name="peer">
+      <xsl:choose>
+        <xsl:when test="ends-with(@xml:id, 'e')">
+          <xsl:variable name="id" select="substring-before(@xml:id, 'e')" />
+          <xsl:sequence select="preceding-sibling::tei:anchor[@xml:id = $id]" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:variable name="id" select="@xml:id || 'e'"/>
+          <xsl:sequence select="following-sibling::tei:anchor[@xml:id = $id]" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="$peer/*[1][self::tei:anchor]" />
+      <xsl:otherwise>
+        <xsl:sequence select="." />
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
-  <xsl:template match="text()[following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
-    <xsl:value-of select="xstring:substring-before-last(., ' ') || ' '" />
-  </xsl:template>
-  
-  <xsl:template match="tei:anchor" />
-  <xsl:template match="text()[preceding-sibling::tei:anchor and following-sibling::tei:anchor]">
+  <xsl:template match="text()[preceding-sibling::tei:anchor[1][not(ends-with(@xml:id, 'e'))]
+    and following-sibling::tei:anchor[1][ends-with(@xml:id, 'e')]]">
     <xsl:variable name="pre" select="preceding-sibling::tei:anchor[1]/@xml:id"/>
     <xsl:choose>
       <xsl:when test="following-sibling::tei:anchor/@xml:id = $pre||'e'" />
@@ -30,12 +39,58 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-  <xsl:template match="tei:span">
-    <xsl:call-template name="critapp">
-      <xsl:with-param name="text" select="id(substring-after(@from, '#'))/following-sibling::node()
-        intersect id(substring-after(@to, '#'))/preceding-sibling::node()" />
-      <xsl:with-param name="note" select="." />
-    </xsl:call-template>
+  <xsl:template match="text()[following-sibling::node()[1][self::tei:app]]">
+    <xsl:value-of select="xstring:substring-before-last(., ' ') || ' '"/>
+  </xsl:template>
+  
+  <xsl:template match="tei:app">
+    <app>
+      <xsl:apply-templates select="@*" />
+      
+      <xsl:variable name="s" select="substring-after(@from, '#')" />
+      <xsl:variable name="e" select="substring-after(@to, '#')" />
+      <xsl:if test="preceding-sibling::tei:anchor[@xml:id = $s] or not(@from)">
+        <lem>
+          <xsl:choose>
+            <xsl:when test="@from">
+              <xsl:sequence select="id($s)/following-sibling::node()
+                intersect id($e)/preceding-sibling::node()"></xsl:sequence>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="xstring:substring-after-last(preceding-sibling::node()[1], ' ')"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </lem>
+      </xsl:if>
+    </app>
+  </xsl:template>
+  
+  <xsl:template match="tei:rdg">
+    <xsl:choose>
+      <xsl:when test="wt:action[@val = 'ergänzt']">
+        <add>
+          <xsl:apply-templates select="wt:place" />
+        </add>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates mode="text" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="wt:place">
+    <xsl:attribute name="place">
+      <xsl:choose>
+        <xsl:when test=". = 'über der Zeile'">supralinear</xsl:when>
+        <xsl:when test=". = 'unter der Zeile'">sublinear</xsl:when>
+        <xsl:when test=". = 'in der Zeile'">inline</xsl:when>
+        <xsl:when test=". = 'am Rand'">margin</xsl:when>
+        <xsl:when test=". = 'am Seitenanfang'">top</xsl:when>
+        <xsl:when test=". = 'am Seitenende'">bottom</xsl:when>
+        <xsl:when test=". = 'davor'">before</xsl:when>
+        <xsl:when test=". = 'danach'">after</xsl:when>
+      </xsl:choose>
+    </xsl:attribute>
   </xsl:template>
   
   <xsl:template match="wt:*" mode="text">
@@ -45,59 +100,6 @@
     <xsl:value-of select="."/>
   </xsl:template>
   
-  <xsl:template name="critapp">
-    <xsl:param name="text" />
-    <xsl:param name="note" />
-    
-    <xsl:choose>
-      <xsl:when test="$note/wt:action[@val = 'ergänzt']">
-        <add>
-          
-        </add>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:apply-templates mode="text" />
-      </xsl:otherwise>
-      <!--<xsl:when test="matches($note, 'ergänzt')">
-				<add>
-					<xsl:attribute name="place">
-						<xsl:choose>
-							<xsl:when test="matches(., 'am Rand')">margin</xsl:when>
-							<xsl:when test="matches(., 'über der Zeile')">above</xsl:when>
-							<xsl:when test="matches(., 'unter der Zeile')">below</xsl:when>
-						</xsl:choose>
-					</xsl:attribute>
-					<xsl:choose>
-						<xsl:when test="contains(., 'von anderer Hand')">
-							<xsl:attribute name="hand">#other</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="contains(., 'von')">
-							<xsl:attribute name="hand" select="'#' || substring-before(substring-after($note, 'von '), ' ')" />
-						</xsl:when>
-					</xsl:choose>
-					<xsl:sequence select="$text" /></add>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:choose>
-					<xsl:when test="$note[self::tei:note]">
-						<xsl:sequence select="$text" />
-						<xsl:sequence select="$note" />
-					</xsl:when>
-					<xsl:otherwise>
-						<anchor type="crit_app">
-							<xsl:attribute name="xml:id" select="substring-after($note/@from, '#')" />
-						</anchor>
-						<xsl:sequence select="$text" />
-						<anchor type="crit_app">
-							<xsl:attribute name="xml:id" select="substring-after($note/@to, '#')" />
-						</anchor>
-						<xsl:sequence select="$note" />
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:otherwise>-->
-    </xsl:choose>
-  </xsl:template>
-  
   <xsl:template match="tei:*[wt:qs]">
     <xsl:copy>
       <xsl:apply-templates select="@*" />
@@ -105,12 +107,12 @@
         <xsl:choose>
           <xsl:when test="current-group()[self::wt:qs]">
             <quote>
-              <xsl:sequence select="current-group()[not(self::wt:*) and following-sibling::wt:qe]" />
+              <xsl:apply-templates select="current-group()[not(self::wt:*) and following-sibling::wt:qe]" />
             </quote>
-            <xsl:sequence select="current-group()[preceding-sibling::wt:qe]" />
+            <xsl:apply-templates select="current-group()[preceding-sibling::wt:qe]" />
           </xsl:when>
           <xsl:otherwise>
-            <xsl:sequence select="current-group()" />
+            <xsl:apply-templates select="current-group()" />
           </xsl:otherwise>
         </xsl:choose>
       </xsl:for-each-group>
