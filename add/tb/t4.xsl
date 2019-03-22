@@ -29,7 +29,7 @@
 						<wt:action val="{.}" />
 					</xsl:matching-substring>
 					<xsl:non-matching-substring>
-						<xsl:analyze-string select="." regex="\s+(aus|für|in):\s+(.+)[\.$]">
+						<xsl:analyze-string select="." regex="\s*(aus|für|in)?:\s+(.+)[\.$]">
 							<xsl:matching-substring>
 								<wt:orig>
 									<xsl:sequence select="regex-group(2)" />

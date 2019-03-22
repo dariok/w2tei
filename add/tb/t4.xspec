@@ -24,8 +24,26 @@
 			<x:expect label=".">
 				<p>
 					korr. von Personenname aus<app>
-						<rdg> <wt:action val="korr." /> <wt:source val="von Personenname" /><wt:orig>test</wt:orig></rdg>
+						<rdg> <wt:action val="korr." /> <wt:source val="von Personenname" />  <wt:orig>test</wt:orig></rdg>
 					</app>
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.3">
+			<x:context>
+				<p>
+					<anchor type="crit_app" xml:id="s2"/>über der Zeile ergänzt für gestr.<anchor
+						type="crit_app" xml:id="s2e"/><app from="#s2" to="#s2e">
+							<rdg> über der Zeile ergänzt für gestr.: test.</rdg>
+						</app>
+				</p>
+			</x:context>
+			<x:expect label=".">
+				<p>
+					<anchor type="crit_app" xml:id="s2"/>über der Zeile ergänzt für gestr.<anchor
+						type="crit_app" xml:id="s2e"/><app from="#s2" to="#s2e">
+							<rdg> <wt:place val="über der Zeile" /> <wt:action val="ergänzt"/> für <wt:action val="gestr."/> <wt:orig>test</wt:orig></rdg>
+						</app>
 				</p>
 			</x:expect>
 		</x:scenario>
