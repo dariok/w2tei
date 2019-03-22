@@ -22,7 +22,7 @@
             </p>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:sequence select="current-group()" />
+            <xsl:apply-templates select="current-group()" />
           </xsl:otherwise>
         </xsl:choose>
       </xsl:for-each-group>

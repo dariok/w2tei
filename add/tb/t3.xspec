@@ -54,6 +54,14 @@
 			<x:expect label="pb" xml:space="preserve"><div><opener><wt:pb/> 14<hi rend="super">v</hi> <wt:pb/> Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</opener><p><wt:pb /> 14r <wt:pb/></p><p>Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer <rs ref="thi:18" type="thing">gesundhaitt</rs>, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
 						zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</p></div></x:expect>
 		</x:scenario>
+		<x:scenario label="T2.3">
+			<x:context>
+				<div><opener>|<hi style="font-style: italic;">14r</hi>| Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn, Herrn Julio, Hertzogen zu Brunschwigk vnd Lunenburg etc., meinem gnedigen Fürsten vnnd herren.</opener></div>
+			</x:context>
+			<x:expect label=".">
+				<div><opener><wt:pb/><hi style="font-style: italic;">14r</hi><wt:pb/> Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn, Herrn Julio, Hertzogen zu Brunschwigk vnd Lunenburg etc., meinem gnedigen Fürsten vnnd herren.</opener></div>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T3: app">
