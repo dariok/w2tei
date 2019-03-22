@@ -40,6 +40,24 @@
     </xsl:analyze-string>
   </xsl:template>
   
+  <xsl:template match="tei:app">
+    <app>
+      <xsl:apply-templates select="@*" />
+      <xsl:for-each-group group-ending-with="wt:notes" select="node()">
+        <rdg>
+          <xsl:sequence select="current-group()[not(self::wt:notes)
+            and not(preceding-sibling::wt:comment
+            or self::wt:comment)]" />
+          <xsl:if test="current-group()[self::wt:comment]">
+            <note type="comment">
+              <xsl:sequence select="current-group()[preceding-sibling::wt:comment]" />
+            </note>
+          </xsl:if>
+        </rdg>
+      </xsl:for-each-group>
+    </app>
+  </xsl:template>
+  
   <xsl:template match="@* | node()">
     <xsl:copy>
       <xsl:apply-templates select="@* | node()" />
