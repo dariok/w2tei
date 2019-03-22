@@ -24,7 +24,7 @@
 			</xsl:matching-substring>
 			<xsl:non-matching-substring>
 				<xsl:analyze-string select="."
-					regex="ergänzt|ergänzt für gestr.|gestr.|ein Wort gestr.|Wörter|ein Buchstabe|Buchstaben|korr.|konj.">
+					regex="ergänzt|gestr.|korr.|konj.">
 					<xsl:matching-substring>
 						<wt:action val="{.}" />
 					</xsl:matching-substring>
