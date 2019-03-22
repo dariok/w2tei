@@ -63,6 +63,7 @@
         </lem>
       </xsl:if>
       <xsl:apply-templates select="tei:rdg" />
+      <xsl:apply-templates select="tei:rdg/tei:note" />
     </app>
   </xsl:template>
   
@@ -71,8 +72,13 @@
       <xsl:when test="wt:action[@val = 'ergänzt']">
         <add>
           <xsl:apply-templates select="wt:place" />
-          <xsl:apply-templates select="node()[not(self::wt:*)]" />
+          <xsl:apply-templates select="wt:source" />
         </add>
+        <xsl:if test="wt:action[@val = 'gestr.']">
+          <del>
+            <xsl:value-of select="xstring:substring-before-if-ends(substring-after(., ': '), '.')"/>
+          </del>
+        </xsl:if>
       </xsl:when>
       <xsl:otherwise>
         <rdg>
@@ -80,6 +86,12 @@
         </rdg>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="wt:source">
+    <xsl:attribute name="resp">
+      <xsl:value-of select="@val"/>
+    </xsl:attribute>
   </xsl:template>
   
   <xsl:template match="wt:place">
