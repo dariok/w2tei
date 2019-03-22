@@ -62,6 +62,7 @@
           </xsl:choose>
         </lem>
       </xsl:if>
+      <xsl:apply-templates select="tei:rdg" />
     </app>
   </xsl:template>
   
@@ -70,10 +71,13 @@
       <xsl:when test="wt:action[@val = 'ergänzt']">
         <add>
           <xsl:apply-templates select="wt:place" />
+          <xsl:apply-templates select="node()[not(self::wt:*)]" />
         </add>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:apply-templates mode="text" />
+        <rdg>
+          <xsl:apply-templates mode="text" />
+        </rdg>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -81,14 +85,14 @@
   <xsl:template match="wt:place">
     <xsl:attribute name="place">
       <xsl:choose>
-        <xsl:when test=". = 'über der Zeile'">supralinear</xsl:when>
-        <xsl:when test=". = 'unter der Zeile'">sublinear</xsl:when>
-        <xsl:when test=". = 'in der Zeile'">inline</xsl:when>
-        <xsl:when test=". = 'am Rand'">margin</xsl:when>
-        <xsl:when test=". = 'am Seitenanfang'">top</xsl:when>
-        <xsl:when test=". = 'am Seitenende'">bottom</xsl:when>
-        <xsl:when test=". = 'davor'">before</xsl:when>
-        <xsl:when test=". = 'danach'">after</xsl:when>
+        <xsl:when test="@val = 'über der Zeile'">supralinear</xsl:when>
+        <xsl:when test="@val = 'unter der Zeile'">sublinear</xsl:when>
+        <xsl:when test="@val = 'in der Zeile'">inline</xsl:when>
+        <xsl:when test="@val = 'am Rand'">margin</xsl:when>
+        <xsl:when test="@val = 'am Seitenanfang'">top</xsl:when>
+        <xsl:when test="@val = 'am Seitenende'">bottom</xsl:when>
+        <xsl:when test="@val = 'davor'">before</xsl:when>
+        <xsl:when test="@val = 'danach'">after</xsl:when>
       </xsl:choose>
     </xsl:attribute>
   </xsl:template>
