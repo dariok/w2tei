@@ -16,7 +16,7 @@
 		</xsl:if>
 	</xsl:template>
 	
-	<xsl:template match="tei:note[@type = 'crit_app']/text() | tei:span/text()">
+	<xsl:template match="tei:rdg/text()">
 		<xsl:analyze-string select="."
 			regex="über der Zeile|unter der Zeile|in der Zeile|am Rand|am Seitenanfang|am Seitenende|davor|danach">
 			<xsl:matching-substring>
