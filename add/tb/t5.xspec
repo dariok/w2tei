@@ -60,7 +60,10 @@
     <x:scenario label="T2.2 erg. f. gestr.">
       <x:context>
         <p>
-          <anchor type="crit_app" xml:id="s2"/>über der Zeile ergänzt für gestr.<anchor type="crit_app" xml:id="s2e"/><app from="#s2" to="#s2e"><rdg> <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="über der Zeile"/> <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="ergänzt"/> für <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="gestr."/>: test.</rdg></app>
+          <anchor type="crit_app" xml:id="s2"/>über der Zeile ergänzt für gestr.<anchor
+            type="crit_app" xml:id="s2e"/><app from="#s2" to="#s2e">
+              <rdg> <wt:place val="über der Zeile" /> <wt:action val="ergänzt"/> für <wt:action val="gestr."/> <wt:orig>test</wt:orig></rdg>
+            </app>
         </p>
       </x:context>
       <x:expect label=".">
@@ -74,13 +77,36 @@
   <x:scenario label="T3: gestrichen">
     <x:scenario label="T3.1">
       <x:context>
-        danach gestr.<app>
-          <rdg>
-            <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="danach"/>
-            <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="gestr."/>: test.</rdg>
-        </app>
+        <p>
+          danach gestr.<app>
+            <rdg>
+              <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="danach"/>
+              <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="gestr."/><wt:orig
+                xmlns:wt="https://github.com/dariok/w2tei">test</wt:orig></rdg>
+          </app>
+        </p>
       </x:context>
-      <x:expect label=".">danach <app><lem>gestr.</lem><del place="after">test</del></app>
+      <x:expect label=".">
+        <p>danach <app><lem>gestr.</lem><del place="after">test</del></app></p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T4: korr.">
+    <x:scenario label="T4.1">
+      <x:context>
+        <p>korr. von Personenname aus<app>
+          <rdg>
+            <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="korr."/>
+            <wt:source xmlns:wt="https://github.com/dariok/w2tei" val="von Personenname"/><wt:orig
+              xmlns:wt="https://github.com/dariok/w2tei">test</wt:orig></rdg>
+        </app></p>
+      </x:context>
+      <x:expect label=".">
+        <p>korr. von Personenname <app>
+          <lem>aus</lem>
+          <corr resp="...">test</corr>
+        </app></p>
       </x:expect>
     </x:scenario>
   </x:scenario>

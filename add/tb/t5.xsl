@@ -76,7 +76,7 @@
         </add>
         <xsl:if test="wt:action[@val = 'gestr.']">
           <del>
-            <xsl:value-of select="xstring:substring-before-if-ends(substring-after(., ': '), '.')"/>
+            <xsl:sequence select="wt:orig/node()" />
           </del>
         </xsl:if>
       </xsl:when>
@@ -84,8 +84,15 @@
         <del>
           <xsl:apply-templates select="wt:place" />
           <xsl:apply-templates select="wt:source" />
-          <xsl:value-of select="xstring:substring-before-if-ends(substring-after(., ': '), '.')"/>
+          <xsl:sequence select="wt:orig/node()" />
         </del>
+      </xsl:when>
+      <xsl:when test="wt:action[@val = 'korr.']">
+        <corr>
+          <xsl:apply-templates select="wt:place" />
+          <xsl:apply-templates select="wt:source" />
+          <xsl:sequence select="wt:orig/node()" />
+        </corr>
       </xsl:when>
       <xsl:otherwise>
         <rdg>
