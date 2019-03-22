@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for home/dario/git/tb/xslt/t4.xsl (passed: 3 / pending: 0 / failed: 0 / total: 3)</title>
-      <link rel="stylesheet" type="text/css" href="file:/home/dario/.p2/pool/plugins/com.oxygenxml.editor_20.1.0.v2018101517/frameworks/xspec/src/reporter/test-report.css" />
+      <title>Test Report for home/dario/git/w2tei/add/tb/t4.xsl (passed: 1 / pending: 0 / failed: 1 / total: 2)</title>
+      <link rel="stylesheet" type="text/css" href="file:/home/dario/.p2/pool/plugins/com.oxygenxml.editor_20.1.0.v2018122403/frameworks/xspec/src/reporter/test-report.css" />
    </head>
    <body>
       <h1>Test Report</h1>
-      <p>Stylesheet: <a href="file:/home/dario/git/tb/xslt/t4.xsl">home/dario/git/tb/xslt/t4.xsl</a></p>
-      <p>Tested: 10 December 2018 at 15:49</p>
+      <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/tb/t4.xsl">home/dario/git/w2tei/add/tb/t4.xsl</a></p>
+      <p>Tested: 22 March 2019 at 10:06</p>
       <h2>Contents</h2>
       <table class="xspec">
          <col width="75%" />
@@ -18,29 +18,22 @@
          <thead>
             <tr>
                <th></th>
-               <th class="totals">passed: 3</th>
+               <th class="totals">passed: 1</th>
                <th class="totals">pending: 0</th>
-               <th class="totals">failed: 0</th>
-               <th class="totals">total: 3</th>
+               <th class="totals">failed: 1</th>
+               <th class="totals">total: 2</th>
             </tr>
          </thead>
          <tbody>
-            <tr class="successful">
-               <th><a href="#d3e4">T1: Expansionen</a></th>
-               <th class="totals">1</th>
+            <tr class="failed">
+               <th><a href="#d3e4">T1: krit. Anmerkungen</a></th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
-            </tr>
-            <tr class="successful">
-               <th><a href="#d3e91">T2: supplied</a></th>
-               <th class="totals">1</th>
-               <th class="totals">0</th>
-               <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e151">T3: unclear</a></th>
+               <th><a href="#d3e62">T2: pb</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
@@ -49,63 +42,69 @@
          </tbody>
       </table>
       <div id="d3e4">
-         <h2 class="successful">T1: Expansionen<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
+         <h2 class="successful">T1: krit. Anmerkungen<span class="scenario-totals">passed: 0 / pending: 0 / failed: 1 / total: 1</span></h2>
          <table class="xspec" id="t-d3e4">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
-                  <th>T1: Expansionen</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+                  <th>T1: krit. Anmerkungen</th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <th>T1.1</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#d3e9">T1.1</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>expan</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#d3e38">.</a></td>
+                  <td>Failure</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 id="d3e9">T1: krit. Anmerkungen T1.1</h3>
+         <h4 id="d3e38">.</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span class="diff">app</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:wt="https://github.com/dariok/w2tei"
+         <span class="same">from</span>="#s1"
+         <span class="same">to</span>="#s1e"&gt;
+   &lt;<span class="diff">rdg</span>&gt;<span class="diff"> über der Zeile ergänzt</span>&lt;<span class="diff">note</span> <span class="diff">type</span>="comment"&gt;<span class="diff">hierbei handelt es sich um ein Beispiel für Issue 13.</span>&lt;/note&gt;
+   &lt;/rdg&gt;
+&lt;/app&gt;</pre></td>
+                  <td><pre>&lt;<span class="diff">app</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:wt="https://github.com/dariok/w2tei"
+         <span class="same">from</span>="#s1"
+         <span class="same">to</span>="#s1e"&gt;
+   &lt;<span class="diff">rdg</span>&gt;
+      &lt;<span class="diff">wt:place</span> <span class="diff">val</span>="über der Zeile" /&gt;
+      &lt;<span class="diff">wt:action</span> <span class="diff">val</span>="ergänzt" /&gt;
+      &lt;<span class="diff">note</span> <span class="diff">type</span>="comment"&gt;<span class="diff">hierbei handelt es sich um ein Beispiel für Issue 13.</span>&lt;/note&gt;
+   &lt;/rdg&gt;
+&lt;/app&gt;</pre></td>
                </tr>
             </tbody>
          </table>
       </div>
-      <div id="d3e91">
-         <h2 class="successful">T2: supplied<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e91">
+      <div id="d3e62">
+         <h2 class="successful">T2: pb<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
+         <table class="xspec" id="t-d3e62">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
-                  <th>T2: supplied</th>
+                  <th>T2: pb</th>
                   <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
                </tr>
                <tr class="successful">
-                  <th>T2.1: mittendrin</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
-               </tr>
-               <tr class="successful">
-                  <td>supplied</td>
-                  <td>Success</td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
-      <div id="d3e151">
-         <h2 class="successful">T3: unclear<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e151">
-            <col width="75%" />
-            <col width="25%" />
-            <tbody>
-               <tr class="successful">
-                  <th>T3: unclear</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
-               </tr>
-               <tr class="successful">
-                  <th>T3.1</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
-               </tr>
-               <tr class="successful">
-                  <td>.</td>
+                  <td>pb</td>
                   <td>Success</td>
                </tr>
             </tbody>

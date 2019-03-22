@@ -7,7 +7,14 @@
 	exclude-result-prefixes="#all"
 	version="3.0">
 	
-	<xsl:include href="string-pack.xsl"/>
+	<xsl:template match="wt:pb">
+		<xsl:variable name="ct" select="count(preceding::wt:pb)" />
+		<xsl:if test="$ct mod 2 = 0">
+			<xsl:variable name="text" select="string-join(following-sibling::node()
+				intersect following-sibling::wt:pb[1]/preceding-sibling::node(), '')"/>
+			<pb n="{normalize-space($text)}"/>
+		</xsl:if>
+	</xsl:template>
 	
 	<xsl:template match="tei:note[@type = 'crit_app']/text() | tei:span/text()">
 		<xsl:analyze-string select="."
@@ -38,8 +45,11 @@
 	</xsl:template>
 	
 	<xsl:template match="@* | node()">
-		<xsl:copy>
-			<xsl:apply-templates select="@* | node()" />
-		</xsl:copy>
+		<xsl:variable name="ct" select="count(preceding::wt:pb)" />
+		<xsl:if test="not(preceding::wt:pb) or $ct mod 2 = 0">
+			<xsl:copy>
+				<xsl:apply-templates select="@* | node()" />
+			</xsl:copy>
+		</xsl:if>
 	</xsl:template>
 </xsl:stylesheet>

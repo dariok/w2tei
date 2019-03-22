@@ -3,8 +3,9 @@
 	xmlns="http://www.tei-c.org/ns/1.0"
 	xmlns:wt="https://github.com/dariok/w2tei"
 	stylesheet="t4.xsl">
-	<x:scenario label="krit. Anmerkungen">
-		<x:scenario label="T3.1">
+	
+	<x:scenario label="T1: krit. Anmerkungen">
+		<x:scenario label="T1.1">
 			<x:context>
 				<span type="crit_app" from="#s1" to="#s1e"> über der Zeile ergänzt – hierbei handelt es sich um ein Beispiel für Issue 13.</span>
 			</x:context>
@@ -13,5 +14,15 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
-
+	
+	<x:scenario label="T2: pb">
+		<x:context>
+			<div><opener><wt:pb/> 14<hi rend="super">v</hi> <wt:pb/> Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</opener><p><wt:pb /> 14r <wt:pb/></p><p>Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer <rs ref="thi:18" type="thing">gesundhaitt</rs>, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
+				zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</p></div>
+		</x:context>
+		<x:expect label="pb">
+			<div><opener><pb n="14v"/> Dem durchleuchtigen, Hochgebornen Fürsten vnnd herrn,</opener><p><pb n="14r"/></p><p>Der Allmechtig Gott vnnd vatter vnnsers Herrn Jhesu Christi woͤlle E. f. g. sampt der selben Christlichen vnnd gottseligen gemahel, jungen Herren vnd fraͤwlin (deren wir jn vnserm gebett nimmer vergessen) jn frischer <rs ref="thi:18" type="thing">gesundhaitt</rs>, langwiriger fridlichen vnd Christlichen Regirung sampt aller zeittlicher wolffart
+				zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</p></div>
+		</x:expect>
+	</x:scenario>
 </x:description>
