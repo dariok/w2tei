@@ -25,4 +25,13 @@
 				zu der ewigen Himmlischen Seligkaitt gnedig vnd vätterlich erhallten. Amen. Amen.</p></div>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="T3: quote">
+		<x:context>
+			<p>Stattdessen schlägt er die Entsendung junger, gut ausgebildeter „Magistri“ des Tübinger Stifts vor</p>
+		</x:context>
+		<x:expect label=".">
+			<p>Stattdessen schlägt er die Entsendung junger, gut ausgebildeter <wt:qs/>Magistri<wt:qe/> des Tübinger Stifts vor</p>
+		</x:expect>
+	</x:scenario>
 </x:description>

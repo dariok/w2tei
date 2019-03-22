@@ -46,10 +46,30 @@
 	
 	<xsl:template match="@* | node()">
 		<xsl:variable name="ct" select="count(preceding::wt:pb)" />
-		<xsl:if test="not(preceding::wt:pb) or $ct mod 2 = 0">
-			<xsl:copy>
-				<xsl:apply-templates select="@* | node()" />
-			</xsl:copy>
-		</xsl:if>
+		<xsl:choose>
+			<xsl:when test="$ct mod 2 = 1" />
+			<xsl:when test="self::text()">
+				<xsl:analyze-string select="." regex="„|»">
+					<xsl:matching-substring>
+						<wt:qs />
+					</xsl:matching-substring>
+					<xsl:non-matching-substring>
+						<xsl:analyze-string select="." regex="«|“">
+							<xsl:matching-substring>
+								<wt:qe />
+							</xsl:matching-substring>
+							<xsl:non-matching-substring>
+								<xsl:value-of select="."/>
+							</xsl:non-matching-substring>
+						</xsl:analyze-string>
+					</xsl:non-matching-substring>
+				</xsl:analyze-string>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:copy>
+					<xsl:apply-templates select="@* | node()" />
+				</xsl:copy>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 </xsl:stylesheet>
