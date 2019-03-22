@@ -96,7 +96,9 @@
       </xsl:when>
       <xsl:otherwise>
         <rdg>
-          <xsl:apply-templates mode="text" />
+          <xsl:variable name="text" select="normalize-space(xstring:substring-before-if-ends(text()[last()], '.'))"/>
+          <xsl:attribute name="wit" select="'#' || replace($text, ', ', ' #')" />
+          <xsl:sequence select="tei:hi/node()" />
         </rdg>
       </xsl:otherwise>
     </xsl:choose>

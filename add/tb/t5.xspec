@@ -111,6 +111,31 @@
     </x:scenario>
   </x:scenario>
   
+  <x:scenario label="T5: Lesarten">
+    <x:scenario label="T5.1">
+      <x:context>
+        <p>
+          A; Variante B, a; Variante C; Variante b<app>
+            <rdg> A</rdg>
+            <rdg><hi style="font-style: italic;">Variante 1</hi> B, a</rdg>
+            <rdg><hi style="font-style: italic;">Variante 2</hi> C</rdg>
+            <rdg><hi style="font-style: italic;">Variante 3</hi> c.</rdg>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>A; Variante B, a; Variante C; Variante <app>
+            <lem>b</lem>
+            <rdg wit="#A" />
+            <rdg wit="#B #a">Variante 1</rdg>
+            <rdg wit="#C">Variante 2</rdg>
+            <rdg wit="#c">Variante 3</rdg>
+          </app>
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
   <x:scenario label="T10: quote">
     <x:scenario label="T10.1">
       <x:context>
