@@ -80,6 +80,13 @@
           </del>
         </xsl:if>
       </xsl:when>
+      <xsl:when test="wt:action[@val = 'gestr.']">
+        <del>
+          <xsl:apply-templates select="wt:place" />
+          <xsl:apply-templates select="wt:source" />
+          <xsl:value-of select="xstring:substring-before-if-ends(substring-after(., ': '), '.')"/>
+        </del>
+      </xsl:when>
       <xsl:otherwise>
         <rdg>
           <xsl:apply-templates mode="text" />

@@ -71,6 +71,20 @@
     </x:scenario>
   </x:scenario>
   
+  <x:scenario label="T3: gestrichen">
+    <x:scenario label="T3.1">
+      <x:context>
+        danach gestr.<app>
+          <rdg>
+            <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="danach"/>
+            <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="gestr."/>: test.</rdg>
+        </app>
+      </x:context>
+      <x:expect label=".">danach <app><lem>gestr.</lem><del place="after">test</del></app>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
   <x:scenario label="T10: quote">
     <x:scenario label="T10.1">
       <x:context>
