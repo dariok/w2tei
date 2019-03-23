@@ -7,6 +7,21 @@
   exclude-result-prefixes="#all"
   version="3.0">
   
+  <xsl:template match="tei:app">
+    <xsl:choose>
+      <xsl:when test="tei:add and not(tei:del)">
+        <add>
+          <xsl:sequence select="tei:add/@*" />
+          <xsl:apply-templates select="tei:lem/node()" />
+          <xsl:apply-templates select="tei:note" />
+        </add>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="count(tei:del)"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
   <xsl:template match="tei:body//text()[not(parent::tei:div)]">
     <xsl:variable name="r2" select="'\{\w+\}'"/>
     <xsl:variable name="r1" select="'\w+\{.+?\}\w*'"/>

@@ -60,4 +60,36 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="T4: add">
+    <x:scenario label="T4.1">
+      <x:context>
+        <p><app from="#s1" to="#s1e">
+          <lem>über der Zeile ergänzt</lem>
+          <add place="supralinear"/>
+          <note type="comment">hierbei handelt es sich um ein Beispiel für Issue 13.</note>
+        </app></p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          <add place="supralinear">über der Zeile ergänzt<note type="comment">hierbei handelt es sich um ein Beispiel für Issue 13.</note></add>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T4.2">
+      <x:context>
+        <p>
+          <app from="#s3" to="#s3e">
+            <lem>über der Zeile von anderer Hand ergänzt</lem>
+            <add place="supralinear" resp="other"/>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          <add place="supralinear" resp="other">über der Zeile von anderer Hand ergänzt</add>
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>
