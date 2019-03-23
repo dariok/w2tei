@@ -7,6 +7,8 @@
 	exclude-result-prefixes="#all"
 	version="3.0">
 	
+	<xsl:import href="string-pack.xsl" />
+	
 	<xsl:template match="wt:pb">
 		<xsl:variable name="ct" select="count(preceding::wt:pb)" />
 		<xsl:if test="$ct mod 2 = 0">
@@ -14,6 +16,12 @@
 				intersect following-sibling::wt:pb[1]/preceding-sibling::node(), '')"/>
 			<pb n="{normalize-space($text)}"/>
 		</xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="tei:rdg">
+		<xsl:copy>
+			<xsl:apply-templates />
+		</xsl:copy>
 	</xsl:template>
 	
 	<xsl:template match="tei:rdg/text()">
@@ -29,7 +37,7 @@
 						<wt:action val="{.}" />
 					</xsl:matching-substring>
 					<xsl:non-matching-substring>
-						<xsl:analyze-string select="." regex="\s*(aus|für|in)?:\s+(.+)[\.$]">
+						<xsl:analyze-string select="." regex="(\s+aus|\s+für|\s+in)?:\s+(.+)[\.$]">
 							<xsl:matching-substring>
 								<wt:orig>
 									<xsl:sequence select="regex-group(2)" />
@@ -37,9 +45,9 @@
 							</xsl:matching-substring>
 							<xsl:non-matching-substring>
 								<xsl:analyze-string select="."
-									regex="von anderer Hand|von (.+)|in (.+)">
+									regex="\s+(von|in)\s+(.+)">
 									<xsl:matching-substring>
-										<wt:source val="{.}" />
+										<wt:source val="{xstring:substring-before-if-ends(regex-group(2), '.')}" />
 									</xsl:matching-substring>
 									<xsl:non-matching-substring>
 										<xsl:value-of select="."/>

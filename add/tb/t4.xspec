@@ -24,7 +24,7 @@
 			<x:expect label=".">
 				<p>
 					korr. von Personenname aus<app>
-						<rdg> <wt:action val="korr." /> <wt:source val="von Personenname" />  <wt:orig>test</wt:orig></rdg>
+						<rdg> <wt:action val="korr." /> <wt:source val="Personenname" />  <wt:orig>test</wt:orig></rdg>
 					</app>
 				</p>
 			</x:expect>
@@ -44,6 +44,54 @@
 						type="crit_app" xml:id="s2e"/><app from="#s2" to="#s2e">
 							<rdg> <wt:place val="über der Zeile" /> <wt:action val="ergänzt"/> für <wt:action val="gestr."/> <wt:orig>test</wt:orig></rdg>
 						</app>
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.4">
+			<x:context>
+				<p>
+					danach ein Buchstabe gestr.<app>
+						<rdg> danach ein Buchstabe gestr.</rdg>
+					</app>
+				</p>
+			</x:context>
+			<x:expect label=".">
+				<p>
+					danach ein Buchstabe gestr.<app>
+					<rdg> <wt:place val="danach" /> ein Buchstabe <wt:action val="gestr."/></rdg>
+				</app>
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.5">
+			<x:context>
+				<p>
+					von anderer Hand<app>
+						<rdg> von anderer Hand.</rdg>
+					</app>
+				</p>
+			</x:context>
+			<x:expect label=".">
+				<p>
+					von anderer Hand<app>
+						<rdg> <wt:source val="anderer Hand" /></rdg>
+					</app>
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.6">
+			<x:context>
+				<p>
+					konj. in XY aus<app>
+						<rdg> konj. in XY aus: test.</rdg>
+					</app>
+				</p>
+			</x:context>
+			<x:expect label=".">
+				<p>
+					konj. in XY aus<app>
+						<rdg> <wt:action val="konj." /> <wt:source val="XY" /> <wt:orig>test</wt:orig></rdg>
+					</app>
 				</p>
 			</x:expect>
 		</x:scenario>
