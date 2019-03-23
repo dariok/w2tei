@@ -91,5 +91,43 @@
         </p>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T4.3">
+      <x:context>
+        <p>
+          <app from="#s2" to="#s2e">
+            <lem>über der Zeile ergänzt für gestr.</lem>
+            <add place="supralinear"/>
+            <del>test</del>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          <subst>
+            <add place="supralinear">über der Zeile ergänzt für gestr.</add>
+            <del>test</del>
+          </subst>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T4.4">
+      <x:context>
+        <p>
+          <app from="#s6" to="#s6e">
+            <lem>über der Zeile von Personenname ergänzt für gestr.</lem>
+            <add place="supralinear" resp="Personenname"/>
+            <del>test</del>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          <subst>
+            <add place="supralinear" resp="Personenname">über der Zeile von Personenname ergänzt für gestr.</add>
+            <del>test</del>
+          </subst>
+        </p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>

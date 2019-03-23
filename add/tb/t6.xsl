@@ -16,9 +16,15 @@
           <xsl:apply-templates select="tei:note" />
         </add>
       </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="count(tei:del)"/>
-      </xsl:otherwise>
+      <xsl:when test="tei:add">
+        <subst>
+          <add>
+            <xsl:apply-templates select="tei:add/@*" />
+            <xsl:apply-templates select="tei:lem/node()" />
+          </add>
+          <xsl:apply-templates select="tei:del" />
+        </subst>
+      </xsl:when>
     </xsl:choose>
   </xsl:template>
   
