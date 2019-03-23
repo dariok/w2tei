@@ -100,6 +100,18 @@
           <xsl:sequence select="wt:orig/node()" />
         </corr>
       </xsl:when>
+      <xsl:when test="not(wt:action) and wt:source">
+        <seg>
+          <xsl:attribute name="hand">
+            <xsl:choose>
+              <xsl:when test="wt:source/@val = 'anderer Hand'">other</xsl:when>
+              <xsl:when test="ends-with(wt:source/@val, 's Hand')">
+                <xsl:value-of select="substring-before(wt:source/@val, 's Hand')"/>
+              </xsl:when>
+            </xsl:choose>
+          </xsl:attribute>
+        </seg>
+      </xsl:when>
       <xsl:otherwise>
         <rdg>
           <xsl:variable name="cont" select="(text()[last()], '.')[1]" />

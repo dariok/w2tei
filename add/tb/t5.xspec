@@ -164,6 +164,39 @@
     </x:scenario>
   </x:scenario>
   
+  <x:scenario label="T7: Hand">
+    <x:scenario label="T7.1">
+      <x:context>
+        <p>
+          von Personnenname+s Hand<app>
+            <rdg><wt:source xmlns:wt="https://github.com/dariok/w2tei" val="Personnenname+s Hand"
+            /></rdg>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>von Personnenname+s <app>
+          <lem>Hand</lem>
+          <seg hand="Personnenname+"/>
+        </app></p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T7.2">
+      <x:context>
+        <p>von anderer Hand<app>
+          <rdg><wt:source xmlns:wt="https://github.com/dariok/w2tei" val="anderer Hand"
+          />.</rdg>
+        </app></p>
+      </x:context>
+      <x:expect label=".">
+        <p>von anderer <app>
+          <lem>Hand</lem>
+          <seg hand="other"/>
+        </app></p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
   <x:scenario label="T10: quote">
     <x:scenario label="T10.1">
       <x:context>
