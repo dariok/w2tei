@@ -136,6 +136,34 @@
     </x:scenario>
   </x:scenario>
   
+  <x:scenario label="T6: konj.">
+    <x:scenario label="T6.1">
+      <x:context>
+        <p>
+          konj. für<app>
+            <rdg>
+              <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="konj."/><wt:orig
+                xmlns:wt="https://github.com/dariok/w2tei">test</wt:orig></rdg>
+          </app> konj. in XY aus<app>
+            <rdg>
+              <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="konj."/><wt:source
+                xmlns:wt="https://github.com/dariok/w2tei" val="XY"/><wt:orig
+                  xmlns:wt="https://github.com/dariok/w2tei">test</wt:orig></rdg>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>konj. <app>
+          <lem>für</lem>
+          <corr>test</corr>
+        </app> konj. in XY <app>
+          <lem>aus</lem>
+          <corr resp="XY">test</corr>
+        </app></p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
   <x:scenario label="T10: quote">
     <x:scenario label="T10.1">
       <x:context>

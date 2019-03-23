@@ -94,6 +94,12 @@
           <xsl:sequence select="wt:orig/node()" />
         </subst>
       </xsl:when>
+      <xsl:when test="wt:action[@val = 'konj.']">
+        <corr>
+          <xsl:apply-templates select="wt:source" />
+          <xsl:sequence select="wt:orig/node()" />
+        </corr>
+      </xsl:when>
       <xsl:otherwise>
         <rdg>
           <xsl:variable name="cont" select="(text()[last()], '.')[1]" />
