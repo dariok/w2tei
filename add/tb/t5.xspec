@@ -177,7 +177,7 @@
       <x:expect label=".">
         <p>von Personnenname+s <app>
           <lem>Hand</lem>
-          <seg hand="Personnenname+"/>
+          <seg resp="Personnenname+"/>
         </app></p>
       </x:expect>
     </x:scenario>
@@ -191,7 +191,7 @@
       <x:expect label=".">
         <p>von anderer <app>
           <lem>Hand</lem>
-          <seg hand="other"/>
+          <seg resp="other"/>
         </app></p>
       </x:expect>
     </x:scenario>

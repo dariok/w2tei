@@ -102,14 +102,7 @@
       </xsl:when>
       <xsl:when test="not(wt:action) and wt:source">
         <seg>
-          <xsl:attribute name="hand">
-            <xsl:choose>
-              <xsl:when test="wt:source/@val = 'anderer Hand'">other</xsl:when>
-              <xsl:when test="ends-with(wt:source/@val, 's Hand')">
-                <xsl:value-of select="substring-before(wt:source/@val, 's Hand')"/>
-              </xsl:when>
-            </xsl:choose>
-          </xsl:attribute>
+          <xsl:apply-templates select="wt:source" />
         </seg>
       </xsl:when>
       <xsl:otherwise>
@@ -125,7 +118,15 @@
   
   <xsl:template match="wt:source">
     <xsl:attribute name="resp">
-      <xsl:value-of select="@val"/>
+      <xsl:choose>
+        <xsl:when test="@val = 'anderer Hand'">other</xsl:when>
+        <xsl:when test="ends-with(@val, 's Hand')">
+          <xsl:value-of select="substring-before(@val, 's Hand')"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="@val"/>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:attribute>
   </xsl:template>
   
