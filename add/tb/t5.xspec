@@ -105,7 +105,7 @@
       <x:expect label=".">
         <p>korr. von Personenname <app>
           <lem>aus</lem>
-          <corr resp="...">test</corr>
+          <subst resp="...">test</subst>
         </app></p>
       </x:expect>
     </x:scenario>

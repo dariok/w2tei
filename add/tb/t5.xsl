@@ -88,15 +88,16 @@
         </del>
       </xsl:when>
       <xsl:when test="wt:action[@val = 'korr.']">
-        <corr>
+        <subst>
           <xsl:apply-templates select="wt:place" />
           <xsl:apply-templates select="wt:source" />
           <xsl:sequence select="wt:orig/node()" />
-        </corr>
+        </subst>
       </xsl:when>
       <xsl:otherwise>
         <rdg>
-          <xsl:variable name="text" select="normalize-space(xstring:substring-before-if-ends(text()[last()], '.'))"/>
+          <xsl:variable name="cont" select="(text()[last()], '.')[1]" />
+          <xsl:variable name="text" select="normalize-space(xstring:substring-before-if-ends($cont, '.'))"/>
           <xsl:attribute name="wit" select="'#' || replace($text, ', ', ' #')" />
           <xsl:sequence select="tei:hi/node()" />
         </rdg>
