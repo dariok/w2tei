@@ -25,6 +25,17 @@
           <xsl:apply-templates select="tei:del" />
         </subst>
       </xsl:when>
+      <xsl:when test="tei:subst">
+        <subst>
+          <add>
+            <xsl:apply-templates select="tei:subst/@*" />
+            <xsl:apply-templates select="tei:lem/node()" />
+          </add>
+          <del>
+            <xsl:apply-templates select="tei:subst/node()" />
+          </del>
+        </subst>
+      </xsl:when>
     </xsl:choose>
   </xsl:template>
   

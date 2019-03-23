@@ -129,5 +129,35 @@
         </p>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T4.5">
+      <x:context>
+        <p>
+          korr. <app>
+            <lem>aus</lem>
+            <subst>test</subst>
+          </app> korr. von anderer Hand <app>
+            <lem>aus</lem>
+            <subst resp="other">test</subst>
+          </app> korr. von Personenname <app>
+            <lem>aus</lem>
+            <subst resp="Personenname">test</subst>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          korr. <subst>
+            <add>aus</add>
+            <del>test</del>
+          </subst> korr. von anderer Hand <subst>
+            <add resp="other">aus</add>
+            <del>test</del>
+          </subst> korr. von Personenname <subst>
+            <add resp="Personenname">aus</add>
+            <del>test</del>
+          </subst>
+        </p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>
