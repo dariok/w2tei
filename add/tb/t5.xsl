@@ -117,14 +117,15 @@
   </xsl:template>
   
   <xsl:template match="wt:source">
+    <xsl:variable name="val" select="normalize-space(@val)" />
     <xsl:attribute name="resp">
       <xsl:choose>
-        <xsl:when test="@val = 'anderer Hand'">other</xsl:when>
-        <xsl:when test="ends-with(@val, 's Hand')">
-          <xsl:value-of select="substring-before(@val, 's Hand')"/>
+        <xsl:when test="$val = 'anderer Hand'">other</xsl:when>
+        <xsl:when test="ends-with($val, 's Hand')">
+          <xsl:value-of select="substring-before($val, 's Hand')"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="@val"/>
+          <xsl:value-of select="$val"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:attribute>

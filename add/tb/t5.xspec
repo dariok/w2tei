@@ -72,6 +72,27 @@
         </p>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T2.3">
+      <x:context>
+        <p>
+          <anchor type="crit_app" xml:id="s3"/>über der Zeile von anderer Hand ergänzt<anchor
+            type="crit_app" xml:id="s3e"/><app from="#s3" to="#s3e">
+              <rdg>
+                <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="über der Zeile"/><wt:source
+                  xmlns:wt="https://github.com/dariok/w2tei" val="anderer Hand "/><wt:action
+                    xmlns:wt="https://github.com/dariok/w2tei" val="ergänzt"/>.</rdg>
+            </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          <app from="#s3" to="#s3e">
+            <lem>über der Zeile von anderer Hand ergänzt</lem>
+            <add place="supralinear" resp="other"/>
+          </app>
+        </p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
   
   <x:scenario label="T3: gestrichen">
