@@ -85,7 +85,7 @@
           <xsl:attribute name="extent">
             <xsl:choose>
               <xsl:when test="matches(., 'ein Wort')">word</xsl:when>
-              <xsl:when test="matches(., 'Wörter')">worde</xsl:when>
+              <xsl:when test="matches(., 'Wörter')">words</xsl:when>
               <xsl:when test="matches(., 'ein Buchstaben')">letter</xsl:when>
               <xsl:when test="matches(., 'Buchstaben')">letters</xsl:when>
             </xsl:choose>
