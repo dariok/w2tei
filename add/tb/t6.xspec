@@ -159,5 +159,29 @@
         </p>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T4.6">
+      <x:context>
+        <p>
+          konj. <app>
+            <lem>für</lem>
+            <corr>test</corr>
+          </app> konj. in XY <app>
+            <lem>aus</lem>
+            <corr resp="XY">test</corr>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          konj. <choice>
+            <sic>für</sic>
+            <corr>test</corr>
+          </choice> konj. in XY <choice>
+            <sic>aus</sic>
+            <corr resp="XY">test</corr>
+          </choice>
+        </p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>

@@ -36,6 +36,14 @@
           </del>
         </subst>
       </xsl:when>
+      <xsl:when test="tei:corr">
+        <choice>
+          <sic>
+            <xsl:apply-templates select="tei:lem/node()" />
+          </sic>
+          <xsl:apply-templates select="tei:corr" />
+        </choice>
+      </xsl:when>
     </xsl:choose>
   </xsl:template>
   
