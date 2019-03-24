@@ -82,6 +82,14 @@
       </xsl:when>
       <xsl:when test="wt:action[@val = 'gestr.']">
         <del>
+          <xsl:attribute name="extent">
+            <xsl:choose>
+              <xsl:when test="matches(., 'ein Wort')">word</xsl:when>
+              <xsl:when test="matches(., 'Wörter')">worde</xsl:when>
+              <xsl:when test="matches(., 'ein Buchstaben')">letter</xsl:when>
+              <xsl:when test="matches(., 'Buchstaben')">letters</xsl:when>
+            </xsl:choose>
+          </xsl:attribute>
           <xsl:apply-templates select="wt:place" />
           <xsl:apply-templates select="wt:source" />
           <xsl:sequence select="wt:orig/node()" />

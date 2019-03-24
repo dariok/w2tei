@@ -108,7 +108,25 @@
         </p>
       </x:context>
       <x:expect label=".">
-        <p>danach <app><lem>gestr.</lem><del place="after">test</del></app></p>
+        <p>danach <app><lem>gestr.</lem><del place="after" extent="">test</del></app></p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T3.2">
+      <x:context>
+        <p>
+          davor ein Wort gestr.<app>
+            <rdg>
+              <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="davor"/> ein Wort <wt:action
+                xmlns:wt="https://github.com/dariok/w2tei" val="gestr."/></rdg>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>davor ein Wort <app>
+            <lem>gestr.</lem>
+            <del place="before" extent="word" />
+          </app>
+        </p>
       </x:expect>
     </x:scenario>
   </x:scenario>
