@@ -54,6 +54,11 @@
           <xsl:apply-templates select="tei:lem/node()" />
         </seg>
       </xsl:when>
+      <xsl:otherwise>
+        <xsl:copy>
+          <xsl:apply-templates />
+        </xsl:copy>
+      </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
   

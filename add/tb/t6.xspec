@@ -249,5 +249,29 @@
         </p>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T6.2">
+      <x:context>
+        <p>
+          A; Variante B, a; Variante C; Variante <app>
+            <lem>b</lem>
+            <rdg wit="#A"/>
+            <rdg wit="#B #a">Variante 1</rdg>
+            <rdg wit="#C">Variante 2</rdg>
+            <rdg wit="#c">Variante 3</rdg>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          A; Variante B, a; Variante C; Variante <app>
+            <lem>b</lem>
+            <rdg wit="#A"/>
+            <rdg wit="#B #a">Variante 1</rdg>
+            <rdg wit="#C">Variante 2</rdg>
+            <rdg wit="#c">Variante 3</rdg>
+          </app>
+        </p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>
