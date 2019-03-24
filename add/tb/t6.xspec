@@ -184,4 +184,52 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="T5">
+    <x:scenario label="T5.1">
+      <x:context>
+        <p>
+          danach <app>
+            <lem>gestr.</lem>
+            <del place="after">test</del>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          danach gestr.<del rend="after">test</del>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T5.2">
+      <x:context>
+        <p>
+          davor von anderer Hand <app>
+            <lem>gestr.</lem>
+            <del place="before" resp="other">test</del>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          davor von anderer Hand gestr.<del rend="before" resp="other">test</del>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T5.3">
+      <x:context>
+        <p>
+          danach Wörter <app>
+            <lem>gestr.</lem>
+            <del extent="words" place="after"/>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          danach Wörter gestr.<del extent="words" rend="after"/>
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>

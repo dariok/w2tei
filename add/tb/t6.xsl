@@ -44,6 +44,10 @@
           <xsl:apply-templates select="tei:corr" />
         </choice>
       </xsl:when>
+      <xsl:when test="tei:del">
+        <xsl:apply-templates select="tei:lem/node()" />
+        <xsl:apply-templates select="tei:del" />
+      </xsl:when>
     </xsl:choose>
   </xsl:template>
   
@@ -85,6 +89,12 @@
         </xsl:analyze-string>
       </xsl:non-matching-substring>
     </xsl:analyze-string>
+  </xsl:template>
+  
+  <xsl:template match="tei:del/@place">
+    <xsl:attribute name="rend">
+      <xsl:value-of select="." />
+    </xsl:attribute>
   </xsl:template>
   
   <xsl:template match="@* | node()">
