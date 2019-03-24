@@ -232,4 +232,22 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="T6">
+    <x:scenario label="T6.1">
+      <x:context>
+        <p>
+          von Personnenname+s <app>
+            <lem>Hand</lem>
+            <seg resp="Personnenname+"/>
+          </app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          von Personnenname+s <seg resp="Personnenname+">Hand</seg>
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>

@@ -48,6 +48,12 @@
         <xsl:apply-templates select="tei:lem/node()" />
         <xsl:apply-templates select="tei:del" />
       </xsl:when>
+      <xsl:when test="tei:seg">
+        <seg>
+          <xsl:sequence select="tei:seg/@*" />
+          <xsl:apply-templates select="tei:lem/node()" />
+        </seg>
+      </xsl:when>
     </xsl:choose>
   </xsl:template>
   
