@@ -302,5 +302,15 @@
         <p>ver- <pb n="239r"/><note type="crit_app"> Falsche Zählung, statt 240r.</note> stentnuß</p>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T7.4">
+      <x:context>
+        <p>
+          <app><lem>gemacht</lem><wt:note xmlns:wt="https://github.com/dariok/w2tei"> Dittographie<wt:orig>gemacht gemacht</wt:orig></wt:note></app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>gemacht<note type="crit_app"> Dittographie: gemacht gemacht</note></p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>

@@ -66,7 +66,7 @@
       <xsl:when test="wt:note">
         <xsl:sequence select="tei:lem/node()" />
         <note type="crit_app">
-          <xsl:apply-templates select="wt:note/node()" />
+          <xsl:apply-templates select="wt:note" />
         </note>
       </xsl:when>
       <xsl:otherwise>
@@ -79,6 +79,15 @@
   
   <xsl:template match="wt:note" mode="wit">
     <xsl:attribute name="wit" select="'#' || replace(normalize-space(), ', ', '#')" />
+  </xsl:template>
+  <xsl:template match="wt:note">
+    <xsl:apply-templates />
+  </xsl:template>
+  <xsl:template match="wt:note/wt:orig">
+    <xsl:if test="normalize-space(preceding-sibling::text()) != ''">
+      <xsl:text>: </xsl:text>
+    </xsl:if>
+    <xsl:apply-templates />
   </xsl:template>
   
   <xsl:template match="tei:body//text()[not(parent::tei:div)]">
