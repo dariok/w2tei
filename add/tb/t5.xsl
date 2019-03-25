@@ -56,9 +56,9 @@
               <xsl:sequence select="id($s)/following-sibling::node()
                 intersect id($e)/preceding-sibling::node()"></xsl:sequence>
             </xsl:when>
-            <xsl:otherwise>
+            <xsl:when test="preceding-sibling::node()">
               <xsl:value-of select="xstring:substring-after-last(preceding-sibling::node()[1], ' ')"/>
-            </xsl:otherwise>
+            </xsl:when>
           </xsl:choose>
         </lem>
       </xsl:if>
@@ -86,7 +86,7 @@
             <xsl:choose>
               <xsl:when test="matches(., 'ein Wort')">word</xsl:when>
               <xsl:when test="matches(., 'Wörter')">words</xsl:when>
-              <xsl:when test="matches(., 'ein Buchstaben')">letter</xsl:when>
+              <xsl:when test="matches(., 'ein Buchstabe')">letter</xsl:when>
               <xsl:when test="matches(., 'Buchstaben')">letters</xsl:when>
             </xsl:choose>
           </xsl:attribute>

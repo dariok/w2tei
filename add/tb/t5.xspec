@@ -129,6 +129,18 @@
         </p>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T3.3 40645">
+      <x:context>
+        <p>
+          <app><rdg> <wt:place xmlns:wt="https://github.com/dariok/w2tei" val="danach"/> ein Buchstabe <wt:action xmlns:wt="https://github.com/dariok/w2tei" val="gestr."/></rdg></app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          <app><lem /><del place="after" extent="letter" /></app>
+        </p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
   
   <x:scenario label="T4: korr.">
