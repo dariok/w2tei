@@ -87,7 +87,9 @@
     <xsl:if test="normalize-space(preceding-sibling::text()) != ''">
       <xsl:text>: </xsl:text>
     </xsl:if>
-    <xsl:apply-templates />
+    <orig>
+      <xsl:apply-templates />
+    </orig>
   </xsl:template>
   
   <xsl:template match="tei:body//text()[not(parent::tei:div)]">

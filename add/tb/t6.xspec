@@ -309,7 +309,7 @@
         </p>
       </x:context>
       <x:expect label=".">
-        <p>gemacht<note type="crit_app"> Dittographie: gemacht gemacht</note></p>
+        <p>gemacht<note type="crit_app"> Dittographie: <orig>gemacht gemacht</orig></note></p>
       </x:expect>
     </x:scenario>
   </x:scenario>
