@@ -274,4 +274,19 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="T7: misc">
+    <x:scenario label="T7.1: cit ohne bibl">
+      <x:context>
+        <cit>Dies ist ein Zitatblock über mehrere Zeilen, der in einem eigenen Absatz steht und ich
+          muss noch mehr schreiben, damit auch genug Text zusammenkommt für ein Beispiel für Issue
+          Nummer 15.</cit>
+      </x:context>
+      <x:expect label="cit mit quote">
+        <cit><quote>Dies ist ein Zitatblock über mehrere Zeilen, der in einem eigenen Absatz steht und ich
+          muss noch mehr schreiben, damit auch genug Text zusammenkommt für ein Beispiel für Issue
+          Nummer 15.</quote></cit>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>

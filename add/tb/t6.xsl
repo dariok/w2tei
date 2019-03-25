@@ -113,6 +113,15 @@
     </xsl:if>
   </xsl:template>
   
+  <xsl:template match="tei:cit">
+    <cit>
+      <quote>
+        <xsl:apply-templates select="node()[not(self::tei:bibl)]" />
+      </quote>
+      <xsl:apply-templates select="tei:bibl" />
+    </cit>
+  </xsl:template>
+  
   <xsl:template match="@* | node()">
     <xsl:copy>
       <xsl:apply-templates select="@* | node()" />
