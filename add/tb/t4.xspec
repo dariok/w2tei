@@ -131,11 +131,21 @@
 	</x:scenario>
 	
 	<x:scenario label="T3: quote">
-		<x:context>
-			<p>Stattdessen schlägt er die Entsendung junger, gut ausgebildeter „Magistri“ des Tübinger Stifts vor</p>
-		</x:context>
-		<x:expect label=".">
-			<p>Stattdessen schlägt er die Entsendung junger, gut ausgebildeter <wt:qs/>Magistri<wt:qe/> des Tübinger Stifts vor</p>
-		</x:expect>
+		<x:scenario label="T3.1: quote">
+			<x:context>
+				<p>Stattdessen schlägt er die Entsendung junger, gut ausgebildeter „Magistri“ des Tübinger Stifts vor</p>
+			</x:context>
+			<x:expect label=".">
+				<p>Stattdessen schlägt er die Entsendung junger, gut ausgebildeter <wt:qs/>Magistri<wt:qe/> des Tübinger Stifts vor</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T3.2">
+			<x:context>
+				<note type="footnote"> Anmerkung zur „Fabula": Plutarch, Gastmahl 4; Lukian, Piscator 32; Erasmus, Adagia 1551, Chil. III, 121 (Verweis auf Lukian); Joachim Maior, Opera I, Wittenberg 1563, Bl. Vlv (auch in Delitiae poetarum IV, S. 210).</note>
+			</x:context>
+			<x:expect label=".">
+				<note type="footnote"> Anmerkung zur <wt:qs />Fabula<wt:qe/>: Plutarch, Gastmahl 4; Lukian, Piscator 32; Erasmus, Adagia 1551, Chil. III, 121 (Verweis auf Lukian); Joachim Maior, Opera I, Wittenberg 1563, Bl. Vlv (auch in Delitiae poetarum IV, S. 210).</note>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>

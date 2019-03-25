@@ -72,12 +72,12 @@
 		<xsl:choose>
 			<xsl:when test="$ct mod 2 = 1" />
 			<xsl:when test="self::text()">
-				<xsl:analyze-string select="." regex="„|»">
+				<xsl:analyze-string select="." regex="„|»| &quot;">
 					<xsl:matching-substring>
 						<wt:qs />
 					</xsl:matching-substring>
 					<xsl:non-matching-substring>
-						<xsl:analyze-string select="." regex="«|“">
+						<xsl:analyze-string select="." regex="«|“|&quot;">
 							<xsl:matching-substring>
 								<wt:qe />
 							</xsl:matching-substring>
