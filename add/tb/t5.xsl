@@ -113,13 +113,18 @@
           <xsl:apply-templates select="wt:source" />
         </seg>
       </xsl:when>
-      <xsl:otherwise>
+      <xsl:when test="wt:orig">
         <rdg>
           <xsl:variable name="cont" select="(text()[last()], '.')[1]" />
           <xsl:variable name="text" select="normalize-space(xstring:substring-before-if-ends($cont, '.'))"/>
           <xsl:attribute name="wit" select="'#' || replace($text, ', ', ' #')" />
-          <xsl:sequence select="tei:hi/node()" />
+          <xsl:sequence select="wt:orig/node()" />
         </rdg>
+      </xsl:when>
+      <xsl:otherwise>
+        <wt:note>
+          <xsl:sequence select="node()" />
+        </wt:note>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

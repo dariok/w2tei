@@ -156,16 +156,16 @@
         <p>
           A; Variante B, a; Variante C; Variante b<app>
             <rdg> A</rdg>
-            <rdg><hi style="font-style: italic;">Variante 1</hi> B, a</rdg>
-            <rdg><hi style="font-style: italic;">Variante 2</hi> C</rdg>
-            <rdg><hi style="font-style: italic;">Variante 3</hi> c.</rdg>
+            <rdg><wt:orig>Variante 1</wt:orig> B, a</rdg>
+            <rdg><wt:orig>Variante 2</wt:orig> C</rdg>
+            <rdg><wt:orig>Variante 3</wt:orig> c.</rdg>
           </app>
         </p>
       </x:context>
       <x:expect label=".">
         <p>A; Variante B, a; Variante C; Variante <app>
             <lem>b</lem>
-            <rdg wit="#A" />
+            <wt:note> A</wt:note>
             <rdg wit="#B #a">Variante 1</rdg>
             <rdg wit="#C">Variante 2</rdg>
             <rdg wit="#c">Variante 3</rdg>
