@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+  xmlns:wt="https://github.com/dariok/w2tei"
   xmlns="http://www.tei-c.org/ns/1.0"
   stylesheet="t6.xsl">
   <x:scenario label="T1: Expansionen">
@@ -251,21 +252,18 @@
     </x:scenario>
     <x:scenario label="T6.2">
       <x:context>
-        <p>
-          A; Variante B, a; Variante C; Variante <app>
-            <lem>b</lem>
-            <rdg wit="#A"/>
-            <rdg wit="#B #a">Variante 1</rdg>
-            <rdg wit="#C">Variante 2</rdg>
-            <rdg wit="#c">Variante 3</rdg>
-          </app>
+        <p>A; Variante B, a; Variante C; Variante <app>
+          <lem>b</lem>
+          <wt:note> A</wt:note>
+          <rdg wit="#B #a">Variante 1</rdg>
+          <rdg wit="#C">Variante 2</rdg>
+          <rdg wit="#c">Variante 3</rdg>
+        </app>
         </p>
       </x:context>
       <x:expect label=".">
-        <p>
-          A; Variante B, a; Variante C; Variante <app>
-            <lem>b</lem>
-            <rdg wit="#A"/>
+        <p>A; Variante B, a; Variante C; Variante <app>
+            <lem wit="#A">b</lem>
             <rdg wit="#B #a">Variante 1</rdg>
             <rdg wit="#C">Variante 2</rdg>
             <rdg wit="#c">Variante 3</rdg>
@@ -294,6 +292,14 @@
       </x:context>
       <x:expect label=".">
         <pb n="239v"/>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T7.3">
+      <x:context>
+        <p>ver- <pb n=" 239r "/><app><lem/><wt:note xmlns:wt="https://github.com/dariok/w2tei"> Falsche Zählung, statt 240r.</wt:note></app> stentnuß</p>
+      </x:context>
+      <x:expect label="crit_app">
+        <p>ver- <pb n="239r"/><note type="crit_app"> Falsche Zählung, statt 240r.</note> stentnuß</p>
       </x:expect>
     </x:scenario>
   </x:scenario>

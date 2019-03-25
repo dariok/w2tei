@@ -54,12 +54,31 @@
           <xsl:apply-templates select="tei:lem/node()" />
         </seg>
       </xsl:when>
+      <xsl:when test="tei:lem and tei:rdg[@wit]">
+        <app>
+          <lem>
+            <xsl:apply-templates select="wt:note" mode="wit" />
+            <xsl:apply-templates select="tei:lem/node()" />
+          </lem>
+          <xsl:apply-templates select="tei:rdg" />
+        </app>
+      </xsl:when>
+      <xsl:when test="wt:note">
+        <xsl:sequence select="tei:lem/node()" />
+        <note type="crit_app">
+          <xsl:apply-templates select="wt:note/node()" />
+        </note>
+      </xsl:when>
       <xsl:otherwise>
         <xsl:copy>
           <xsl:apply-templates />
         </xsl:copy>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="wt:note" mode="wit">
+    <xsl:attribute name="wit" select="'#' || replace(normalize-space(), ', ', '#')" />
   </xsl:template>
   
   <xsl:template match="tei:body//text()[not(parent::tei:div)]">
