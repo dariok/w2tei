@@ -122,6 +122,10 @@
     </cit>
   </xsl:template>
   
+  <xsl:template match="tei:pb">
+    <pb n="{normalize-space(translate(@n, ' ', ' '))}" />
+  </xsl:template>
+  
   <xsl:template match="@* | node()">
     <xsl:copy>
       <xsl:apply-templates select="@* | node()" />
