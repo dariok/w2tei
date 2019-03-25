@@ -39,9 +39,12 @@
       <xsl:when test="tei:corr">
         <choice>
           <sic>
-            <xsl:apply-templates select="tei:lem/node()" />
+            <xsl:apply-templates select="tei:corr/node()" />
           </sic>
-          <xsl:apply-templates select="tei:corr" />
+          <corr>
+            <xsl:sequence select="tei:corr/@*" />
+            <xsl:apply-templates select="tei:lem/node()" />
+          </corr>
         </choice>
       </xsl:when>
       <xsl:when test="tei:del">

@@ -174,13 +174,24 @@
       </x:context>
       <x:expect label=".">
         <p>
-          konj. <choice>
-            <sic>für</sic>
-            <corr>test</corr>
+          konj. <choice><sic>test</sic>
+            <corr>für</corr>
           </choice> konj. in XY <choice>
-            <sic>aus</sic>
-            <corr resp="XY">test</corr>
+            <sic>test</sic>
+            <corr resp="XY">aus</corr>
           </choice>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T4.7">
+      <x:context>
+        <p>
+          <app><lem>Dorothea</lem><corr>Dorotheo</corr></app>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          <choice><sic>Dorotheo</sic><corr>Dorothea</corr></choice>
         </p>
       </x:expect>
     </x:scenario>
