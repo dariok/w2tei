@@ -113,7 +113,7 @@
           <xsl:apply-templates select="wt:source" />
         </seg>
       </xsl:when>
-      <xsl:when test="wt:orig">
+      <xsl:when test="wt:orig and wt:orig/following-sibling::text()[not(normalize-space() = '')]">
         <rdg>
           <xsl:variable name="cont" select="(text()[last()], '.')[1]" />
           <xsl:variable name="text" select="normalize-space(xstring:substring-before-if-ends($cont, '.'))"/>
