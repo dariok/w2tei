@@ -60,6 +60,12 @@
 			</xsl:non-matching-substring>
 		</xsl:analyze-string>
 	</xsl:template>
+  
+  <xsl:template match="tei:rdg/tei:hi">
+    <wt:orig>
+      <xsl:apply-templates />
+    </wt:orig>
+  </xsl:template>
 	
 	<xsl:template match="@* | node()">
 		<xsl:variable name="ct" select="count(preceding::wt:pb)" />

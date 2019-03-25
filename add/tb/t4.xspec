@@ -95,6 +95,28 @@
 				</p>
 			</x:expect>
 		</x:scenario>
+	  <x:scenario label="T1.7">
+	    <x:context>
+	      <p>
+	        A; Variante B, a; Variante C; Variante b<app>
+	          <rdg> A</rdg>
+	          <rdg><hi style="font-style: italic;">Variante 1</hi> B, a</rdg>
+	          <rdg><hi style="font-style: italic;">Variante 2</hi> C</rdg>
+	          <rdg><hi style="font-style: italic;">Variante 3</hi> c.</rdg>
+	        </app>
+	      </p>
+	    </x:context>
+	    <x:expect label=".">
+	      <p>
+	        A; Variante B, a; Variante C; Variante b<app>
+	          <rdg> A</rdg>
+	          <rdg><wt:orig>Variante 1</wt:orig> B, a</rdg>
+	          <rdg><wt:orig>Variante 2</wt:orig> C</rdg>
+	          <rdg><wt:orig>Variante 3</wt:orig> c.</rdg>
+	        </app>
+	      </p>
+	    </x:expect>
+	  </x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="T2: pb">
