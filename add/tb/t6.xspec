@@ -191,7 +191,7 @@
         <p>
           danach <app>
             <lem>gestr.</lem>
-            <del place="after">test</del>
+            <del extent="" place="after">test</del>
           </app>
         </p>
       </x:context>
@@ -206,7 +206,7 @@
         <p>
           davor von anderer Hand <app>
             <lem>gestr.</lem>
-            <del place="before" resp="other">test</del>
+            <del extent="" place="before" resp="other">test</del>
           </app>
         </p>
       </x:context>

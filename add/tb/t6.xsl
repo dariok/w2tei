@@ -107,6 +107,11 @@
       <xsl:value-of select="." />
     </xsl:attribute>
   </xsl:template>
+  <xsl:template match="tei:del/@extent">
+    <xsl:if test=". != ''">
+      <xsl:attribute name="extent" select="." />
+    </xsl:if>
+  </xsl:template>
   
   <xsl:template match="@* | node()">
     <xsl:copy>
