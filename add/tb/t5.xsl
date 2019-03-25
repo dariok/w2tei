@@ -172,10 +172,12 @@
       <xsl:for-each-group select="node()" group-starting-with="wt:qs">
         <xsl:choose>
           <xsl:when test="current-group()[self::wt:qs]">
+            <xsl:variable name="foll" select="generate-id(current-group()[self::wt:qe][1])" />
             <quote>
-              <xsl:apply-templates select="current-group()[not(self::wt:*) and following-sibling::wt:qe]" />
+              <xsl:apply-templates select="current-group()[not(self::wt:*)
+                and following-sibling::wt:qe[generate-id() = $foll]]" />
             </quote>
-            <xsl:apply-templates select="current-group()[preceding-sibling::wt:qe]" />
+            <xsl:apply-templates select="current-group()[preceding-sibling::wt:qe[generate-id() = $foll]]" />
           </xsl:when>
           <xsl:otherwise>
             <xsl:apply-templates select="current-group()" />

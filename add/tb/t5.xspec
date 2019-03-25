@@ -257,5 +257,39 @@
         <note type="footnote"> Laut Toepke, Matrikel 2, S. 55 immatrikulierte sich ein <quote>Alexander Rubinus, Chittelianus, iuris utr. doctor</quote> am 2. Juni 1570 an der Universität Heidelberg. [[dort im Register: = Cîteaux]]</note>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T10.2">
+      <x:context>
+        <note type="footnote">eine <wt:qs
+            xmlns:wt="https://github.com/dariok/w2tei"/>Quaestio de reali idiomatum
+          communicatione, quae est ipsa naturarum confusio<wt:qe
+            xmlns:wt="https://github.com/dariok/w2tei"/> gestellt worden, die mitsamt der Antwort
+          Sacks in der im Oktober 1570 gedruckten Sammlung von Wittenberger Disputationsthesen und
+          anderen Texten (De praecipuis horum temporum controversiis, 1570 [VD16 W 3749]; benutzt
+          wurde die Ausgabe von 1571 [VD16 W 3750]) zu finden ist (Bl. S7r-V3v). Der Verfasser
+          bittet Siegfried Sack, <wt:qs xmlns:wt="https://github.com/dariok/w2tei"/>ut ea de re
+          nos non gravatim ex veris fundamentis erudiat ac doceat<wt:qe
+            xmlns:wt="https://github.com/dariok/w2tei"/> (Bl. T2v); es folgt Sacks <wt:qs
+              xmlns:wt="https://github.com/dariok/w2tei"/>Responsio<wt:qe
+                xmlns:wt="https://github.com/dariok/w2tei"/>. Der Text muss bereits davor in Umlauf
+          gewesen sein, wie der vorliegende Brief belegt; dies bestätigt auch das Vorwort zum
+          genannten Druck (Bl. A3v). – Zur heftigen Kritik Wilhelm Bidembachs an den Wittenberger
+          Promotionsthesen und an Sacks <wt:qs xmlns:wt="https://github.com/dariok/w2tei"
+          />Responsio<wt:qe xmlns:wt="https://github.com/dariok/w2tei"/> vgl. unten, Nr. *** mit
+          Anm. *** und ***.</note>
+      </x:context>
+      <x:expect label=".">
+        <note type="footnote">eine <quote>Quaestio de reali idiomatum
+          communicatione, quae est ipsa naturarum confusio</quote> gestellt worden, die mitsamt der Antwort
+          Sacks in der im Oktober 1570 gedruckten Sammlung von Wittenberger Disputationsthesen und
+          anderen Texten (De praecipuis horum temporum controversiis, 1570 [VD16 W 3749]; benutzt
+          wurde die Ausgabe von 1571 [VD16 W 3750]) zu finden ist (Bl. S7r-V3v). Der Verfasser
+          bittet Siegfried Sack, <quote>ut ea de re
+          nos non gravatim ex veris fundamentis erudiat ac doceat</quote> (Bl. T2v); es folgt Sacks <quote>Responsio</quote>. Der Text muss bereits davor in Umlauf
+          gewesen sein, wie der vorliegende Brief belegt; dies bestätigt auch das Vorwort zum
+          genannten Druck (Bl. A3v). – Zur heftigen Kritik Wilhelm Bidembachs an den Wittenberger
+          Promotionsthesen und an Sacks <quote>Responsio</quote> vgl. unten, Nr. *** mit
+          Anm. *** und ***.</note>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>
