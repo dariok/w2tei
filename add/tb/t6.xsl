@@ -19,7 +19,7 @@
       <xsl:when test="tei:add">
         <subst>
           <add>
-            <xsl:apply-templates select="tei:add/@*" />
+            <xsl:sequence select="tei:add/@*" />
             <xsl:apply-templates select="tei:lem/node()" />
           </add>
           <xsl:apply-templates select="tei:del" />
@@ -28,7 +28,7 @@
       <xsl:when test="tei:subst">
         <subst>
           <add>
-            <xsl:apply-templates select="tei:subst/@*" />
+            <xsl:sequence select="tei:subst/@*" />
             <xsl:apply-templates select="tei:lem/node()" />
           </add>
           <del>
@@ -67,7 +67,7 @@
         </app>
       </xsl:when>
       <xsl:when test="wt:note">
-        <xsl:sequence select="tei:lem/node()" />
+        <xsl:apply-templates select="tei:lem/node()" />
         <note type="crit_app">
           <xsl:apply-templates select="wt:note" />
         </note>
@@ -95,7 +95,7 @@
     </orig>
   </xsl:template>
   
-  <xsl:template match="tei:body//text()[not(parent::tei:div)]">
+  <xsl:template match="text()[ancestor::tei:body]">
     <xsl:variable name="r2" select="'\{\w+\}'"/>
     <xsl:variable name="r1" select="'\w+\{.+?\}\w*'"/>
     <xsl:analyze-string select="." regex="{$r1}">
@@ -112,14 +112,14 @@
         </expan>
       </xsl:matching-substring>
       <xsl:non-matching-substring>
-        <xsl:analyze-string select="." regex="\[\[.+\]\]">
+        <xsl:analyze-string select="." regex="\[\[[^\]]+\]\]">
           <xsl:matching-substring>
             <supplied>
               <xsl:value-of select="substring(., 3, string-length() - 4)"/>
             </supplied>
           </xsl:matching-substring>
           <xsl:non-matching-substring>
-            <xsl:analyze-string select="." regex="\[.+\]">
+            <xsl:analyze-string select="." regex="\[[^\]]+\]">
               <xsl:matching-substring>
                 <unclear>
                   <xsl:value-of select="substring(., 2, string-length() - 2)" />
