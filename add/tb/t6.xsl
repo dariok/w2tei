@@ -114,16 +114,16 @@
       <xsl:non-matching-substring>
         <xsl:analyze-string select="." regex="\[\[[^\]]+\]\]">
           <xsl:matching-substring>
-            <supplied>
+            <unclear>
               <xsl:value-of select="substring(., 3, string-length() - 4)"/>
-            </supplied>
+            </unclear>
           </xsl:matching-substring>
           <xsl:non-matching-substring>
             <xsl:analyze-string select="." regex="\[[^\]]+\]">
               <xsl:matching-substring>
-                <unclear>
+                <supplied>
                   <xsl:value-of select="substring(., 2, string-length() - 2)" />
-                </unclear>
+                </supplied>
               </xsl:matching-substring>
               <xsl:non-matching-substring>
                 <xsl:value-of select="."/>

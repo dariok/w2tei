@@ -36,7 +36,7 @@
       <x:expect label="supplied">
         <body>
           <div>
-            <p>Caeterum ex Tiguro habeo aliq<supplied>ui</supplied>d novi. Illi clamant contra me iratissimi. Sed me, inquam,</p>
+            <p>Caeterum ex Tiguro habeo aliq<unclear>ui</unclear>d novi. Illi clamant contra me iratissimi. Sed me, inquam,</p>
           </div>
         </body>
       </x:expect>
@@ -55,7 +55,7 @@
       <x:expect label=".">
         <body>
           <div>
-            <p>Caeterum ex Tiguro habeo aliquid n<unclear>ov</unclear>i. Illi clamant contra me iratissimi. Sed me, inquam,</p>
+            <p>Caeterum ex Tiguro habeo aliquid n<supplied>ov</supplied>i. Illi clamant contra me iratissimi. Sed me, inquam,</p>
           </div>
         </body>
       </x:expect>
