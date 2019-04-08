@@ -252,7 +252,8 @@
 	<!-- innerhalb eines Links sollte es hoffentlich keine besonderen Formatierungen geben; sonst 2. Durchgang nötig -->
 	<xsl:template match="w:hyperlink">
 		<xsl:variable name="targetID" select="@r:id"/>
-		<xsl:variable name="target" select="//rel:Relationship[@Id = $targetID]/@Target"/>
+		<xsl:variable name="target" select="//rel:Relationship[@Id = $targetID
+		  and contains(@Type, 'hyperlink')]/@Target"/>
 		<xsl:variable name="wr">
 			<w:p>
 				<xsl:sequence select="preceding-sibling::w:pPr" />
