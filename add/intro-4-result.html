@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for home/dario/git/w2tei/add/intro-4.xsl (passed: 4 / pending: 0 / failed: 0 / total: 4)</title>
+      <title>Test Report for home/dario/git/w2tei/add/intro-4.xsl (passed: 1 / pending: 0 / failed: 3 / total: 4)</title>
       <link rel="stylesheet" type="text/css" href="file:/home/dario/.p2/pool/plugins/com.oxygenxml.editor_20.1.0.v2018122403/frameworks/xspec/src/reporter/test-report.css" />
    </head>
    <body>
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/intro-4.xsl">home/dario/git/w2tei/add/intro-4.xsl</a></p>
-      <p>Tested: 23 January 2019 at 16:28</p>
+      <p>Tested: 9 April 2019 at 22:24</p>
       <h2>Contents</h2>
       <table class="xspec">
          <col width="75%" />
@@ -18,18 +18,18 @@
          <thead>
             <tr>
                <th></th>
-               <th class="totals">passed: 4</th>
+               <th class="totals">passed: 1</th>
                <th class="totals">pending: 0</th>
-               <th class="totals">failed: 0</th>
+               <th class="totals">failed: 3</th>
                <th class="totals">total: 4</th>
             </tr>
          </thead>
          <tbody>
-            <tr class="successful">
+            <tr class="failed">
                <th><a href="#d3e4">T1: bibl/rs ergänzen</a></th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
                <th class="totals">1</th>
-               <th class="totals">0</th>
-               <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
@@ -39,32 +39,59 @@
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
-            <tr class="successful">
+            <tr class="failed">
                <th><a href="#d3e170">T3: bibl</a></th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
                <th class="totals">2</th>
-               <th class="totals">0</th>
-               <th class="totals">0</th>
                <th class="totals">2</th>
             </tr>
          </tbody>
       </table>
       <div id="d3e4">
-         <h2 class="successful">T1: bibl/rs ergänzen<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
+         <h2 class="successful">T1: bibl/rs ergänzen<span class="scenario-totals">passed: 0 / pending: 0 / failed: 1 / total: 1</span></h2>
          <table class="xspec" id="t-d3e4">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
                   <th>T1: bibl/rs ergänzen</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <th>T1.1</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#d3e9">T1.1</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>.</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#d3e85">.</a></td>
+                  <td>Failure</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 id="d3e9">T1: bibl/rs ergänzen T1.1</h3>
+         <h4 id="d3e85">.</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span class="diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;<span class="same">
+					Immatrikuliert wurde er als </span>&lt;<span class="same">quote</span>&gt;
+      &lt;<span class="same">rs</span> <span class="same">type</span>="person"&gt;<span class="same">&lt;--TODO ref eintragen!--&gt;</span><span class="same">Joannes günkeulin</span>&lt;/rs&gt;<span class="same"> de </span>&lt;<span class="same">rs</span> <span class="same">type</span>="place"&gt;<span class="same">&lt;--TODO ref eintragen!--&gt;</span><span class="same">Wangen</span>&lt;/rs&gt;
+   &lt;/quote&gt;<span class="same"> im Sommersemester 1504 (</span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="bibl"
+     <span class="same">ref</span>="#foerstemann_album_1841"&gt;<span class="same"> 1, 14</span>&lt;/rs&gt;<span class="same">). Der Rotulus von 1507 führt </span>&lt;<span class="same">rs</span> <span class="same">type</span>="person"&gt;<span class="same">&lt;--TODO ref eintragen!--&gt;</span><span class="same">Gunckel</span>&lt;/rs&gt;<span class="same"> als Magister </span>&lt;<span class="same">quote</span>&gt;<span class="same">in philosophia extraordinarie</span>&lt;/quote&gt;<span class="same">, </span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="bibl"
+     <span class="same">ref</span>="#friedensburg_urkundenbuch_1926"&gt;<span class="same"> 1, 16 Nr. 17</span>&lt;/rs&gt;<span class="same">; 1512 ist er einer der </span>&lt;<span class="same">quote</span>&gt;<span class="same">magistri collegiati</span>&lt;/quote&gt;<span class="same">, </span>&lt;<span class="diff">rs</span> <span class="diff">type</span>="bibl"
+     <span class="same">ref</span>="#friedensburg_urkundenbuch_1926"&gt;<span class="same"> 1, 63 Nr. 36</span>&lt;/rs&gt;<span class="same">.
+				</span>&lt;/p&gt;</pre></td>
+                  <td><pre>&lt;<span class="diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;<span class="same">
+					Immatrikuliert wurde er als </span>&lt;<span class="same">quote</span>&gt;
+      &lt;<span class="same">rs</span> <span class="same">type</span>="person"&gt;<span class="same">&lt;--TODO ref eintragen!--&gt;</span><span class="same">Joannes günkeulin</span>&lt;/rs&gt;<span class="same"> de </span>&lt;<span class="same">rs</span> <span class="same">type</span>="place"&gt;<span class="same">&lt;--TODO ref eintragen!--&gt;</span><span class="same">Wangen</span>&lt;/rs&gt;
+   &lt;/quote&gt;<span class="same"> im Sommersemester 1504 (</span>&lt;<span class="diff">bibl</span> <span class="same">ref</span>="#foerstemann_album_1841"&gt;<span class="same"> 1, 14</span>&lt;/bibl&gt;<span class="same">). Der Rotulus von 1507 führt </span>&lt;<span class="same">rs</span> <span class="same">type</span>="person"&gt;<span class="same">&lt;--TODO ref eintragen!--&gt;</span><span class="same">Gunckel</span>&lt;/rs&gt;<span class="same"> als Magister </span>&lt;<span class="same">quote</span>&gt;<span class="same">in philosophia extraordinarie</span>&lt;/quote&gt;<span class="same">, </span>&lt;<span class="diff">bibl</span> <span class="same">ref</span>="#friedensburg_urkundenbuch_1926"&gt;<span class="same"> 1, 16 Nr. 17</span>&lt;/bibl&gt;<span class="same">; 1512 ist er einer der </span>&lt;<span class="same">quote</span>&gt;<span class="same">magistri collegiati</span>&lt;/quote&gt;<span class="same">, </span>&lt;<span class="diff">bibl</span> <span class="same">ref</span>="#friedensburg_urkundenbuch_1926"&gt;<span class="same"> 1, 63 Nr. 36</span>&lt;/bibl&gt;<span class="same">.
+				</span>&lt;/p&gt;</pre></td>
                </tr>
             </tbody>
          </table>
@@ -91,30 +118,75 @@
          </table>
       </div>
       <div id="d3e170">
-         <h2 class="successful">T3: bibl<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
+         <h2 class="successful">T3: bibl<span class="scenario-totals">passed: 0 / pending: 0 / failed: 2 / total: 2</span></h2>
          <table class="xspec" id="t-d3e170">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
                   <th>T3: bibl</th>
-                  <th>passed: 2 / pending: 0 / failed: 0 / total: 2</th>
+                  <th>passed: 0 / pending: 0 / failed: 2 / total: 2</th>
                </tr>
-               <tr class="successful">
-                  <th>T3.1: einfach</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#d3e175">T3.1: einfach</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>bibl mit ref</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#d3e216">bibl mit ref</a></td>
+                  <td>Failure</td>
                </tr>
-               <tr class="successful">
-                  <th>T3.2: mit hi rend=super</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#d3e241">T3.2: mit hi rend=super</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>bibl ohne hi</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#d3e264">bibl ohne hi</a></td>
+                  <td>Failure</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 id="d3e175">T3: bibl T3.1: einfach</h3>
+         <h4 id="d3e216">bibl mit ref</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span class="diff">listBibl</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="diff">rs</span> <span class="diff">type</span>="bibl"
+            <span class="same">ref</span>="#kolde_disputationsthesen_1890"&gt;<span class="same">, 471, Nr. XXII</span>&lt;/rs&gt;
+   &lt;<span class="diff">rs</span> <span class="diff">type</span>="bibl"
+            <span class="same">ref</span>="#csel"&gt;<span class="same">, fol. A2</span>&lt;<span class="same">hi</span> <span class="same">rend</span>="super"&gt;<span class="same">v</span>&lt;/hi&gt;<span class="same">-A3</span>&lt;<span class="same">hi</span> <span class="same">rend</span>="super"&gt;<span class="same">r</span>&lt;/hi&gt;<span class="same"> und passim</span>&lt;/rs&gt;
+&lt;/listBibl&gt;</pre></td>
+                  <td><pre>&lt;<span class="diff">listBibl</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="diff">bibl</span> <span class="same">ref</span>="#kolde_disputationsthesen_1890"&gt;<span class="same">, 471, Nr. XXII</span>&lt;/bibl&gt;
+   &lt;<span class="diff">bibl</span> <span class="same">ref</span>="#csel"&gt;<span class="same">, fol. A2</span>&lt;<span class="same">hi</span> <span class="same">rend</span>="super"&gt;<span class="same">v</span>&lt;/hi&gt;<span class="same">-A3</span>&lt;<span class="same">hi</span> <span class="same">rend</span>="super"&gt;<span class="same">r</span>&lt;/hi&gt;<span class="same"> und passim</span>&lt;/bibl&gt;
+&lt;/listBibl&gt;</pre></td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 id="d3e241">T3: bibl T3.2: mit hi rend=super</h3>
+         <h4 id="d3e264">bibl ohne hi</h4>
+         <table class="xspecResult">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Expected Result</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><pre>&lt;<span class="diff">listBibl</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="diff">rs</span> <span class="diff">type</span>="bibl"
+            <span class="same">ref</span>="#walch2_1986"&gt;<span class="same"> 8, 1352-1363</span>&lt;/rs&gt;
+&lt;/listBibl&gt;</pre></td>
+                  <td><pre>&lt;<span class="diff">listBibl</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="diff">bibl</span> <span class="same">ref</span>="#walch2_1986"&gt;<span class="same"> 8, 1352-1363</span>&lt;/bibl&gt;
+&lt;/listBibl&gt;</pre></td>
                </tr>
             </tbody>
          </table>
