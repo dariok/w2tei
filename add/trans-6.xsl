@@ -8,6 +8,7 @@
 	
 	<xsl:template match="/">
 		<xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/phase.sch"</xsl:processing-instruction>
+	  <xsl:processing-instruction name="xml-model">href="http://dev2.hab.de/edoc/ed000240/rules/kgk.rnc"</xsl:processing-instruction>
 		<xsl:apply-templates select="node()" />
 	</xsl:template>
 	
