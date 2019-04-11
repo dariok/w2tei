@@ -25,6 +25,16 @@
         <xsl:apply-templates select="w:t" />
     </xsl:template>
     
+    <!-- fett -->
+    <xsl:template match="w:r[descendant::w:b[not(@w:val=0)]
+        and not(descendant::w:vertAlign or wt:is(., 'KSbibliographischeAngabe', 'r') or wt:is(., 'KSKommentar', 'r'))]">
+        <hi style="font-weight: bold;"><xsl:apply-templates select="w:t" /></hi>
+    </xsl:template>
+    <xsl:template match="w:r[descendant::w:b[@w:val=0] and not(wt:is(., 'KSbibliographischeAngabe', 'r')
+        or wt:is(., 'KSKommentar', 'r'))]">
+        <xsl:apply-templates select="w:t" />
+    </xsl:template>
+    
     <!-- hochgestellte -->
     <xsl:template match="w:r[descendant::w:vertAlign and not(descendant::w:i or w:endnoteReference
         or w:footnoteReference or hab:isSem(.))]">
@@ -63,11 +73,11 @@
         </hi>
     </xsl:template>
     
-    <xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i
+    <xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i or descendant::w:b
         or w:endnoteReference or w:footnoteReference or hab:isSem(.) or descendant::w:fldChar)]">
         <xsl:apply-templates select="w:t | w:br" />
     </xsl:template>
-    <xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i
+    <xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i or descendant::w:b
         or w:endnoteReference or w:footnoteReference or hab:isSem(.))]" mode="eval">
         <xsl:apply-templates select="w:t | w:br" />
     </xsl:template>
