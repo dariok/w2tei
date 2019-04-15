@@ -52,7 +52,7 @@
   <xsl:template match="w:p">
     <p>
       <xsl:apply-templates select="w:pPr/w:pStyle" />
-      <xsl:apply-templates select="w:r" />
+      <xsl:apply-templates select="w:r | w:hyperlink" />
     </p>
   </xsl:template>
   <xsl:template match="w:pStyle">
@@ -86,9 +86,9 @@
   <xsl:template match="w:r[w:fldChar/@w:fldCharType = ('separate','end')]" />
   <xsl:template match="w:r[w:fldChar/@w:fldCharType = 'begin']">
     <field>
-      <xsl:variable name="function"
-        select="string-join(following-sibling::w:r[w:instrText
-          and not(preceding-sibling::w:r[w:fldChar[@w:fldCharType = 'separate']])], '')"/>
+      <xsl:attribute name="function"
+        select="string-join(following-sibling::w:r
+        [not(preceding-sibling::w:r[w:fldChar[@w:fldCharType = 'separate']])]/w:instrText, '')"/>
       <xsl:apply-templates select="(following-sibling::w:r[w:fldChar][1]/following-sibling::*
         intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*)/*" />
     </field>
@@ -96,6 +96,16 @@
   <xsl:template match="w:r[(w:t or w:sym) and preceding-sibling::w:r[w:fldChar][1][w:fldChar/@w:fldCharType = 'separate']
     and following-sibling::w:r[w:fldChar][1][w:fldChar/@w:fldCharType = 'end']]" priority="0.75"/>
   <xsl:template match="w:r[w:instrText]" />
+  
+  <xsl:template match="w:hyperlink">
+    <field>
+      <xsl:attribute name="function">
+        <xsl:text>HYPERLKINK</xsl:text>
+        
+      </xsl:attribute>
+      <xsl:apply-templates select="w:r" />
+    </field>
+  </xsl:template>
   
   <xsl:template match="w:r">
     <T />
