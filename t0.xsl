@@ -47,4 +47,14 @@
       </div>
     </xsl:for-each-group>
   </xsl:template>
+  
+  <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym)]" />
+  <xsl:template match="w:p">
+    <p>
+      <xsl:apply-templates select="w:pPr/w:pStyle" />
+    </p>
+  </xsl:template>
+  <xsl:template match="w:pStyle">
+    <xsl:attribute name="style" select="@w:val" />
+  </xsl:template>
 </xsl:stylesheet>
