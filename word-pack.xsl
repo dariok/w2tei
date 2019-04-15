@@ -273,4 +273,22 @@
 		</xsl:choose>
 	</xsl:function>
 	<!-- END Functions to select runs -->
+	
+	<!-- Helper: Hex to Dec -->
+	<xsl:function name="wt:hexToDec">
+		<xsl:param name="hex"/>
+		<xsl:variable name="dec"
+			select="string-length(substring-before('0123456789ABCDEF', substring($hex,1,1)))"/>
+		<xsl:choose>
+			<xsl:when test="matches($hex, '([0-9]*|[A-F]*)')">
+				<xsl:value-of
+					select="if ($hex = '') then 0
+					else $dec * math:pow(16, string-length($hex) - 1) + wt:hexToDec(substring($hex,2))"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:message>Provided value is not hexadecimal...</xsl:message>
+				<xsl:value-of select="$hex"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
 </xsl:stylesheet>
