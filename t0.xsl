@@ -52,9 +52,33 @@
   <xsl:template match="w:p">
     <p>
       <xsl:apply-templates select="w:pPr/w:pStyle" />
+      <xsl:apply-templates select="w:r" />
     </p>
   </xsl:template>
   <xsl:template match="w:pStyle">
     <xsl:attribute name="style" select="@w:val" />
+  </xsl:template>
+  
+  <xsl:template match="w:r[not(w:fldChar)]">
+    <ab>
+      <xsl:apply-templates select="w:rPr" />
+    </ab>
+  </xsl:template>
+  <xsl:template match="w:rPr">
+    <xsl:attribute name="style">
+      <xsl:apply-templates select="*" />
+    </xsl:attribute>
+  </xsl:template>
+  <xsl:template match="w:rPr/*">
+    <xsl:value-of select="local-name()"/>
+    <xsl:text>:</xsl:text>
+    <xsl:value-of select="(@w:val | @w:ascii)"/>
+    <xsl:if test="following-sibling::*">
+      <xsl:text>; </xsl:text>
+    </xsl:if>
+  </xsl:template>
+  
+  <xsl:template match="w:r[w:fldChar]">
+    <T />
   </xsl:template>
 </xsl:stylesheet>
