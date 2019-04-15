@@ -59,9 +59,10 @@
     <xsl:attribute name="style" select="@w:val" />
   </xsl:template>
   
-  <xsl:template match="w:r[not(w:fldChar)]">
+  <xsl:template match="w:r[w:t or w:sym]">
     <ab>
       <xsl:apply-templates select="w:rPr" />
+      <xsl:apply-templates select="w:t | w:sym" />
     </ab>
   </xsl:template>
   <xsl:template match="w:rPr">
@@ -78,7 +79,11 @@
     </xsl:if>
   </xsl:template>
   
-  <xsl:template match="w:r[w:fldChar]">
+  <xsl:template match="w:sym">
+    <xsl:value-of select="codepoints-to-string(wt:hexToDec(@w:char))" />
+  </xsl:template>
+  
+  <xsl:template match="w:r">
     <T />
   </xsl:template>
 </xsl:stylesheet>
