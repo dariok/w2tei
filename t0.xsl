@@ -54,18 +54,17 @@
   <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym)]" />
   <xsl:template match="w:p">
     <p>
-      <xsl:attribute name="style">
-        <xsl:apply-templates select="w:pPr/w:pStyle/@w:val" />
-        <xsl:apply-templates select="w:pPr/w:rPr/*" />
-      </xsl:attribute>
-      <xsl:apply-templates select="w:r | w:hyperlink" />
+      <xsl:apply-templates select="*" />
     </p>
   </xsl:template>
-  <xsl:template match="w:pPr/w:pStyle/@w:val">
-    <xsl:value-of select="."/>
-    <xsl:if test="parent::w:pStyle/following-sibling::w:rPr">
-      <xsl:text>; </xsl:text>
-    </xsl:if>
+  <xsl:template match="w:pPr">
+    <xsl:attribute name="style">
+      <xsl:value-of select="w:pStyle/@w:val"/>
+      <xsl:if test="w:pStyle and w:rPr">
+        <xsl:text>; </xsl:text>
+      </xsl:if>
+      <xsl:apply-templates select="w:rPr/*" />
+    </xsl:attribute>
   </xsl:template>
   
   <xsl:template match="w:r[w:t or w:sym]">
@@ -146,13 +145,24 @@
   
   <xsl:template match="w:r[w:tab]">
     <space width="tab">
-      <xsl:attribute name="style">
-        <xsl:apply-templates select="w:rPr" />
-      </xsl:attribute>
+      <xsl:apply-templates select="w:rPr" />
     </space>
   </xsl:template>
   
   <xsl:template match="w:r">
     <T />
   </xsl:template>
+  
+  <xsl:template match="w:commentRangeEnd"/>
+  <xsl:template match="w:commentRangeStart">
+    <ptr type="comment" xml:id="c{@w:id}" />
+  </xsl:template>
+  <xsl:template match="w:r[w:commentReference]">
+    <xsl:variable name="cID" select="w:commentReference/@w:id"/>
+    <xsl:variable name="comment" select="//w:comment[@w:id = $cID]" />
+    <note type="comment" from="#c{$cID}">
+      <xsl:apply-templates select="$comment/w:p/*" />
+    </note>
+  </xsl:template>
+  <xsl:template match="w:r[w:annotationRef]" />
 </xsl:stylesheet>
