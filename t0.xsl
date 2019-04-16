@@ -55,14 +55,17 @@
   <xsl:template match="w:p">
     <p>
       <xsl:attribute name="style">
-        <xsl:apply-templates select="w:pPr/w:pStyle/@w:val || '; '" />
+        <xsl:apply-templates select="w:pPr/w:pStyle/@w:val" />
         <xsl:apply-templates select="w:pPr/w:rPr/*" />
       </xsl:attribute>
       <xsl:apply-templates select="w:r | w:hyperlink" />
     </p>
   </xsl:template>
   <xsl:template match="w:pPr/w:pStyle/@w:val">
-    
+    <xsl:value-of select="."/>
+    <xsl:if test="parent::w:pStyle/following-sibling::w:rPr">
+      <xsl:text>; </xsl:text>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="w:r[w:t or w:sym]">
