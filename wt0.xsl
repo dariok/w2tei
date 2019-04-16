@@ -67,8 +67,11 @@
     </xsl:attribute>
   </xsl:template>
   
+  <xsl:template match="w:r[not(*) or not(w:rPr/following-sibling::*)]" />
+  
   <xsl:template match="w:r[w:t or w:sym]">
     <ab>
+      <xsl:sequence select="w:t/@xml:space" />
       <xsl:apply-templates select="w:rPr" />
       <xsl:apply-templates select="w:t | w:sym" />
     </ab>
@@ -109,7 +112,6 @@
     <field>
       <xsl:attribute name="function">
         <xsl:text>HYPERLKINK</xsl:text>
-        
       </xsl:attribute>
       <xsl:apply-templates select="w:r" />
     </field>
@@ -138,7 +140,7 @@
   </xsl:template>
   <xsl:template match="w:endnote">
     <note type="endnote" xml:id="e{@w:id}">
-      <xsl:apply-templates select="w:p//w:pStyle" />
+      <xsl:apply-templates select="w:p//w:pPr" />
       <xsl:apply-templates select="w:p/w:r | w:p/w:hyperlink" />
     </note>
   </xsl:template>
@@ -165,4 +167,13 @@
     </note>
   </xsl:template>
   <xsl:template match="w:r[w:annotationRef]" />
+  
+  <xsl:template match="w:bookmarkStart[@name = '_GoBack']" />
+  <xsl:template match="w:bookmarkStart">
+    <ptr type="bookmarkStart" xml:id="b{@w:id}" ref="{translate(@w:name, '_', '#')}" /> 
+  </xsl:template>
+  <xsl:template match="w:bookmarkEnd">
+    <ptr type="bookmarkEnd" ref="#b{@w:id}" />
+  </xsl:template>
+  
 </xsl:stylesheet>

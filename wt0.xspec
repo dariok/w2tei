@@ -27,7 +27,7 @@
               <w:spacing w:before="120"/>
             </w:pPr>
             <w:r w:rsidRPr="00D113A3">
-              <w:t xml:space="pereserve">Currus </w:t>
+              <w:t xml:space="preserve">Currus </w:t>
             </w:r>
           </w:p>
           <w:p w14:paraId="7BED2E65" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="00D113A3" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
@@ -154,11 +154,11 @@
       <x:expect label="2 div">
         <div>
           <p style="KSEE-Titel">
-            <ab>EE 86 </ab>
+            <ab xml:space="preserve">EE 86 </ab>
             <ab>[= Nr. 110]</ab>
           </p>
           <p style="KSEE-Titel">
-            <ab>Currus </ab>
+            <ab xml:space="preserve">Currus </ab>
           </p>
           <p style="KSEE-Titel">
             <ab>[Wittenberg], 1519, [Mitte März]</ab>
@@ -177,14 +177,14 @@
             <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
             <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
             <ab style="rFonts:Junicode; lang:en-US">]</ab>
-            <ab style="rFonts:Junicode; lang:en-US"> </ab>
+            <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve"> </ab>
             <ab style="rFonts:Junicode; b:; lang:en-US">Currus .D</ab>
             <ab style="rFonts:Junicode; b:; lang:en-US">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
             <ptr type="endnote" ref="#e1"/>
-            <ab style="rFonts:Junicode; b:; lang:en-US"> </ab>
+            <ab style="rFonts:Junicode; b:; lang:en-US" xml:space="preserve"> </ab>
             <ab style="rFonts:Junicode; b:; lang:en-US">I. P.</ab>
             <ptr type="endnote" ref="#e2"/>
-            <ab style="rFonts:Junicode; lang:en-US"> </ab>
+            <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve"> </ab>
           </p>
         </div>
       </x:expect>
@@ -287,15 +287,15 @@
             <body>
               <div>
                 <p style="KSEE-Titel">
-                  <ab>EE 86 </ab>
+                  <ab xml:space="preserve">EE 86 </ab>
                   <ab>[= Nr. 110]</ab>
                   <ptr type="endnote" ref="#e1" />
                 </p>
               </div>
             </body>
             <back>
-              <note type="endnote" xml:id="e1">
-                <ab style="rFonts:Junicode"> Zwei stark beschnittene Worte.</ab>
+              <note type="endnote" xml:id="e1" style="Endnotentext; rFonts:Junicode">
+                <ab style="rFonts:Junicode" xml:space="preserve"> Zwei stark beschnittene Worte.</ab>
               </note>
             </back>
           </text>
@@ -304,4 +304,312 @@
     </x:scenario>
   </x:scenario>
   
+  <x:scenario label="T2: p">
+    <x:scenario label="T2.1">
+      <x:context>
+        <w:p w14:paraId="5FAA8C11" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="00272EBF" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
+          <w:pPr>
+            <w:spacing w:after="60" w:line="240" w:lineRule="auto"/>
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+          </w:pPr>
+          <w:r w:rsidRPr="00272EBF">
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t>[G4</w:t>
+          </w:r>
+          <w:r w:rsidRPr="00272EBF">
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:vertAlign w:val="superscript"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t>r</w:t>
+          </w:r>
+          <w:r w:rsidRPr="00272EBF">
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t>]</w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t xml:space="preserve"> </w:t>
+          </w:r>
+          <w:r w:rsidR="0063701B">
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:b/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t>Currus .D</w:t>
+          </w:r>
+          <w:r w:rsidR="0063701B" w:rsidRPr="0063701B">
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:b/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t>[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</w:t>
+          </w:r>
+          <w:r w:rsidR="0063701B" w:rsidRPr="0063701B">
+            <w:rPr>
+              <w:rStyle w:val="Endnotenzeichen"/>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:endnoteReference w:id="1"/>
+          </w:r>
+          <w:r w:rsidR="00A0712E">
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:b/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t xml:space="preserve"> </w:t>
+          </w:r>
+          <w:r w:rsidR="0063701B" w:rsidRPr="0063701B">
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:b/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t>I. P.</w:t>
+          </w:r>
+          <w:r w:rsidRPr="00272EBF">
+            <w:rPr>
+              <w:rStyle w:val="Endnotenzeichen"/>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+            </w:rPr>
+            <w:endnoteReference w:id="2"/>
+          </w:r>
+          <w:r w:rsidRPr="00272EBF">
+            <w:rPr>
+              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:t xml:space="preserve"> </w:t>
+          </w:r>
+        </w:p>
+      </x:context>
+      <x:expect label=".">
+        <p style="rFonts:Junicode; lang:en-US">
+          <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
+          <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
+          <ab style="rFonts:Junicode; lang:en-US">]</ab>
+          <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve"> </ab>
+          <ab style="rFonts:Junicode; b:; lang:en-US">Currus .D</ab>
+          <ab style="rFonts:Junicode; b:; lang:en-US">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
+          <ptr type="endnote" ref="#e1"/>
+          <ab style="rFonts:Junicode; b:; lang:en-US" xml:space="preserve"> </ab>
+          <ab style="rFonts:Junicode; b:; lang:en-US">I. P.</ab>
+          <ptr type="endnote" ref="#e2"/>
+          <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve"> </ab>
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T3: bookmarks, comments, etc.">
+    <x:scenario label="T3.1">
+      <x:context>
+        <pack>
+          <w:document>
+            <w:body>
+              <w:p w14:paraId="156E2082" w14:textId="326F0F9C" w:rsidR="0026474D" w:rsidRPr="006F3259" w:rsidRDefault="0026474D" w:rsidP="0026474D">
+                <w:pPr>
+                  <w:pStyle w:val="KSZwischenberschrift"/>
+                  <w:rPr>
+                    <w:lang w:val="en-US"/>
+                  </w:rPr>
+                </w:pPr>
+                <w:proofErr w:type="spellStart"/>
+                <w:proofErr w:type="gramStart"/>
+                <w:r w:rsidRPr="006F3259">
+                  <w:rPr>
+                    <w:lang w:val="en-US"/>
+                  </w:rPr>
+                  <w:t>conformare</w:t>
+                </w:r>
+                <w:proofErr w:type="spellEnd"/>
+                <w:proofErr w:type="gramEnd"/>
+                <w:r w:rsidRPr="006F3259">
+                  <w:rPr>
+                    <w:lang w:val="en-US"/>
+                  </w:rPr>
+                  <w:t>.</w:t>
+                </w:r>
+                <w:bookmarkStart w:id="2" w:name="_Ref534135879"/>
+                <w:r w:rsidR="00603C24">
+                  <w:rPr>
+                    <w:rStyle w:val="Endnotenzeichen"/>
+                  </w:rPr>
+                  <w:endnoteReference w:id="2"/>
+                </w:r>
+                <w:bookmarkEnd w:id="2"/>
+                <w:r w:rsidR="005066C8" w:rsidRPr="005900A1">
+                  <w:rPr>
+                    <w:lang w:val="en-US"/>
+                  </w:rPr>
+                  <w:sym w:font="Symbol" w:char="F05E"/>
+                </w:r>
+              </w:p>
+            </w:body>
+          </w:document>
+          <w:endnotes>
+            <w:endnote w:id="5">
+              <w:p w14:paraId="2A7C9B7A" w14:textId="50453ED2" w:rsidR="00566E89" w:rsidRPr="00BE17BD" w:rsidRDefault="00566E89" w:rsidP="00A56561">
+                <w:pPr>
+                  <w:pStyle w:val="Endnotentext"/>
+                  <w:contextualSpacing/>
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rStyle w:val="Endnotenzeichen"/>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:endnoteRef/>
+                </w:r>
+                <w:r w:rsidR="001A5053" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:t xml:space="preserve"> Vgl. </w:t>
+                </w:r>
+                <w:r w:rsidR="001A5053" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:t>Anm.</w:t>
+                </w:r>
+                <w:r w:rsidR="0049735B" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:t xml:space="preserve"> </w:t>
+                </w:r>
+                <w:r w:rsidR="007601E1" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="begin"/>
+                </w:r>
+                <w:r w:rsidR="007601E1" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:instrText xml:space="preserve"> NOTEREF _Ref534135879 \h </w:instrText>
+                </w:r>
+                <w:r w:rsidR="007601E1" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                </w:r>
+                <w:r w:rsidR="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:instrText xml:space="preserve"> \* MERGEFORMAT </w:instrText>
+                </w:r>
+                <w:r w:rsidR="007601E1" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="separate"/>
+                </w:r>
+                <w:r w:rsidR="00BE17BD" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:t>2</w:t>
+                </w:r>
+                <w:r w:rsidR="007601E1" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="end"/>
+                </w:r>
+                <w:r w:rsidR="001A5053" w:rsidRPr="00BE17BD">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:highlight w:val="yellow"/>
+                    <w:lang w:val="de-DE"/>
+                  </w:rPr>
+                  <w:t>.</w:t>
+                </w:r>
+              </w:p>
+            </w:endnote>
+          </w:endnotes>
+        </pack>
+      </x:context>
+      <x:expect label=".">
+        <TEI>
+          <teiHeader>
+            <fileDesc>
+              <sourceDesc>
+                <p>Created from a MS Word file by <ref target="https://github.com/dariok/w2tei">W2TEI</ref>:
+              <date when="{current-dateTime()}" type="created" /></p>
+              </sourceDesc>
+            </fileDesc>
+          </teiHeader>
+          <text>
+            <body>
+              <div>
+                <p style="KSZwischenberschrift; lang:en-US">
+                  <ab style="lang:en-US">conformare</ab>
+                  <ab style="lang:en-US">.</ab>
+                  <ptr type="bookmarkStart" xml:id="b2" ref="#Ref534135879"/>
+                  <ptr type="endnote" ref="#e2" />
+                  <ptr type="bookmarkEnd" ref="#b2"/>
+                  <ab style="lang:en-US">&#xF05e;</ab>
+                </p>
+              </div>
+            </body>
+            <back>
+              <note type="endnote" xml:id="e5" style="Endnotentext; rFonts:Junicode; lang:de-DE">
+                <ab style="rFonts:Junicode; lang:de-DE" xml:space="preserve"> Vgl. </ab>
+                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">Anm.</ab>
+                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE" xml:space="preserve"> </ab>
+                <field function=" NOTEREF _Ref534135879 \h 
+\* MERGEFORMAT " style="rFonts:Junicode; highlight:yellow; lang:de-DE">2</field>
+                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">.</ab>
+              </note>
+            </back>
+          </text>
+        </TEI>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>
