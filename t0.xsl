@@ -54,12 +54,15 @@
   <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym)]" />
   <xsl:template match="w:p">
     <p>
-      <xsl:apply-templates select="w:pPr/w:pStyle | w:pPr/w:rPr" />
+      <xsl:attribute name="style">
+        <xsl:apply-templates select="w:pPr/w:pStyle/@w:val || '; '" />
+        <xsl:apply-templates select="w:pPr/w:rPr/*" />
+      </xsl:attribute>
       <xsl:apply-templates select="w:r | w:hyperlink" />
     </p>
   </xsl:template>
-  <xsl:template match="w:pStyle">
-    <xsl:attribute name="style" select="@w:val" />
+  <xsl:template match="w:pPr/w:pStyle/@w:val">
+    
   </xsl:template>
   
   <xsl:template match="w:r[w:t or w:sym]">
