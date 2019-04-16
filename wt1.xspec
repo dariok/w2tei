@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns="http://www.tei-c.org/ns/1.0"
+  stylesheet="wt1.xsl">
+  <x:scenario label="T1">
+    <x:context>
+      <p style="rFonts:Junicode; lang:en-US">
+        <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
+        <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
+        <ab style="rFonts:Junicode; lang:en-US">]</ab>
+        <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
+        <ab style="rFonts:Junicode; b:; lang:en-US">Currus .D</ab>
+        <ab style="rFonts:Junicode; b:; lang:en-US">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
+        <ptr type="endnote" ref="#e1"/>
+        <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US"> </ab>
+        <ab style="rFonts:Junicode; b:; lang:en-US">I. P.</ab>
+        <ptr type="endnote" ref="#e2"/>
+        <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
+      </p>
+    </x:context>
+    <x:expect label="-">
+      <p style="rFonts:Junicode; lang:en-US">
+        <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
+        <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
+        <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve">] </ab>
+        <ab style="rFonts:Junicode; b:; lang:en-US">Currus .D[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
+        <ptr type="endnote" ref="#e1"/>
+        <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US"> I. P.</ab>
+        <ptr type="endnote" ref="#e2"/>
+        <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
+      </p>
+    </x:expect>
+  </x:scenario>
+</x:description>
