@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+  xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+  stylesheet="wt0.xsl">
+  
+  <x:scenario label="T1: structure">
+    <x:scenario label="T1.1">
+      <x:context>
+        <w:body>
+          <w:p w14:paraId="1F6E427E" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="00D113A3" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
+            <w:pPr>
+              <w:pStyle w:val="KSEE-Titel"/>
+              <w:spacing w:before="120"/>
+            </w:pPr>
+            <w:r w:rsidRPr="00D113A3">
+              <w:t xml:space="preserve">EE 86 </w:t>
+            </w:r>
+            <w:r>
+              <w:t>[= Nr. 110]</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="63F9A99F" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="00D113A3" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
+            <w:pPr>
+              <w:pStyle w:val="KSEE-Titel"/>
+              <w:spacing w:before="120"/>
+            </w:pPr>
+            <w:r w:rsidRPr="00D113A3">
+              <w:t xml:space="pereserve">Currus </w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="7BED2E65" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="00D113A3" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
+            <w:pPr>
+              <w:pStyle w:val="KSEE-Titel"/>
+              <w:spacing w:before="120"/>
+            </w:pPr>
+            <w:r w:rsidRPr="00D113A3">
+              <w:t>[Wittenberg], 1519, [Mitte März]</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="5519DFA3" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
+            <w:pPr>
+              <w:pStyle w:val="KSEE-Titel"/>
+            </w:pPr>
+            <w:r w:rsidRPr="00D113A3">
+              <w:t>Bearbeitet von Alejandro Zorzin</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="5CA54F4C" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="00B45E69" w:rsidRDefault="002C62C4" w:rsidP="002C62C4"/>
+          <w:p w14:paraId="4CE003B4" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
+            <w:pPr>
+              <w:pStyle w:val="berschrift1"/>
+            </w:pPr>
+            <w:r w:rsidRPr="00D113A3">
+              <w:t>Text</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="48FAFC36" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="002C62C4" w:rsidRDefault="002C62C4" w:rsidP="002C62C4"/>
+          <w:p w14:paraId="5FAA8C11" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="00272EBF" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
+            <w:pPr>
+              <w:spacing w:after="60" w:line="240" w:lineRule="auto"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00272EBF">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t>[G4</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00272EBF">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:vertAlign w:val="superscript"/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t>r</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00272EBF">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t>]</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+            <w:r w:rsidR="0063701B">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:b/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t>Currus .D</w:t>
+            </w:r>
+            <w:r w:rsidR="0063701B" w:rsidRPr="0063701B">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:b/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t>[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</w:t>
+            </w:r>
+            <w:r w:rsidR="0063701B" w:rsidRPr="0063701B">
+              <w:rPr>
+                <w:rStyle w:val="Endnotenzeichen"/>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:endnoteReference w:id="1"/>
+            </w:r>
+            <w:r w:rsidR="00A0712E">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:b/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+            <w:r w:rsidR="0063701B" w:rsidRPr="0063701B">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:b/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t>I. P.</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00272EBF">
+              <w:rPr>
+                <w:rStyle w:val="Endnotenzeichen"/>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+              </w:rPr>
+              <w:endnoteReference w:id="2"/>
+            </w:r>
+            <w:r w:rsidRPr="00272EBF">
+              <w:rPr>
+                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                <w:lang w:val="en-US"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> </w:t>
+            </w:r>
+          </w:p>
+        </w:body>
+      </x:context>
+      <x:expect label="2 div">
+        <div>
+          <p style="KSEE-Titel">
+            <ab>EE 86 </ab>
+            <ab>[= Nr. 110]</ab>
+          </p>
+          <p style="KSEE-Titel">
+            <ab>Currus </ab>
+          </p>
+          <p style="KSEE-Titel">
+            <ab>[Wittenberg], 1519, [Mitte März]</ab>
+          </p>
+          <p style="KSEE-Titel">
+            <ab>Bearbeitet von Alejandro Zorzin</ab>
+          </p>
+        </div>
+        <div>
+          <p style="berschrift1">
+            <ab>Text</ab>
+          </p>
+        </div>
+        <div>
+          <p style="rFonts:Junicode; lang:en-US">
+            <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
+            <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
+            <ab style="rFonts:Junicode; lang:en-US">]</ab>
+            <ab style="rFonts:Junicode; lang:en-US"> </ab>
+            <ab style="rFonts:Junicode; b:; lang:en-US">Currus .D</ab>
+            <ab style="rFonts:Junicode; b:; lang:en-US">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
+            <ptr type="endnote" ref="#e1"/>
+            <ab style="rFonts:Junicode; b:; lang:en-US"> </ab>
+            <ab style="rFonts:Junicode; b:; lang:en-US">I. P.</ab>
+            <ptr type="endnote" ref="#e2"/>
+            <ab style="rFonts:Junicode; lang:en-US"> </ab>
+          </p>
+        </div>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T1.2">
+      <x:context>
+        <pack>
+          <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+            <Relationship Id="rId8" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme" Target="theme/theme1.xml"/>
+            <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings" Target="settings.xml"/>
+            <Relationship Id="rId7" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable" Target="fontTable.xml"/>
+            <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>
+            <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml" Target="../customXml/item1.xml"/>
+            <Relationship Id="rId6" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/endnotes" Target="endnotes.xml"/>
+            <Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footnotes" Target="footnotes.xml"/>
+            <Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/webSettings" Target="webSettings.xml"/>
+          </Relationships>
+          <w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 wp14">
+            <w:body>
+              <w:p w14:paraId="1F6E427E" w14:textId="77777777" w:rsidR="002C62C4" w:rsidRPr="00D113A3" w:rsidRDefault="002C62C4" w:rsidP="002C62C4">
+                <w:pPr>
+                  <w:pStyle w:val="KSEE-Titel"/>
+                  <w:spacing w:before="120"/>
+                </w:pPr>
+                <w:r w:rsidRPr="00D113A3">
+                  <w:t xml:space="preserve">EE 86 </w:t>
+                </w:r>
+                <w:r>
+                  <w:t>[= Nr. 110]</w:t>
+                </w:r>
+                <w:r w:rsidR="0063701B" w:rsidRPr="0063701B">
+                  <w:rPr>
+                    <w:rStyle w:val="Endnotenzeichen"/>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                    <w:lang w:val="en-US"/>
+                  </w:rPr>
+                  <w:endnoteReference w:id="1"/>
+                </w:r>
+              </w:p>
+            </w:body>
+          </w:document>
+          <w:endnotes xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 wp14">
+            <w:endnote w:type="separator" w:id="-1">
+              <w:p w14:paraId="18C65B15" w14:textId="77777777" w:rsidR="00932517" w:rsidRDefault="00932517" w:rsidP="002C62C4">
+                <w:pPr>
+                  <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                </w:pPr>
+                <w:r>
+                  <w:separator/>
+                </w:r>
+              </w:p>
+            </w:endnote>
+            <w:endnote w:type="continuationSeparator" w:id="0">
+              <w:p w14:paraId="1650CA53" w14:textId="77777777" w:rsidR="00932517" w:rsidRDefault="00932517" w:rsidP="002C62C4">
+                <w:pPr>
+                  <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                </w:pPr>
+                <w:r>
+                  <w:continuationSeparator/>
+                </w:r>
+              </w:p>
+            </w:endnote>
+            <w:endnote w:id="1">
+              <w:p w14:paraId="1102E5CB" w14:textId="77777777" w:rsidR="0063701B" w:rsidRPr="00C94AAF" w:rsidRDefault="0063701B">
+                <w:pPr>
+                  <w:pStyle w:val="Endnotentext"/>
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00C94AAF">
+                  <w:rPr>
+                    <w:rStyle w:val="Endnotenzeichen"/>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:endnoteRef/>
+                </w:r>
+                <w:r w:rsidRPr="00C94AAF">
+                  <w:rPr>
+                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:t xml:space="preserve"> Zwei stark beschnittene Worte.</w:t>
+                </w:r>
+              </w:p>
+            </w:endnote>
+          </w:endnotes>
+        </pack>
+      </x:context>
+      <x:expect label=".">
+        <TEI>
+          <teiHeader>
+            <fileDesc>
+              <sourceDesc>
+                <p>Created from a MS Word file by <ref target="https://github.com/dariok/w2tei">W2TEI</ref>:
+              <date when="..." type="created" /></p>
+              </sourceDesc>
+            </fileDesc>
+          </teiHeader>
+          <text>
+            <body>
+              <div>
+                <p style="KSEE-Titel">
+                  <ab>EE 86 </ab>
+                  <ab>[= Nr. 110]</ab>
+                  <ptr type="endnote" ref="#e1" />
+                </p>
+              </div>
+            </body>
+            <back>
+              <note type="endnote" xml:id="e1">
+                <ab style="rFonts:Junicode"> Zwei stark beschnittene Worte.</ab>
+              </note>
+            </back>
+          </text>
+        </TEI>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+</x:description>

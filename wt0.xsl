@@ -15,8 +15,8 @@
   <xsl:variable name="titelei" select="string-join(//w:p[wt:is(., 'TBEE-Titel')])"/>
   <xsl:variable name="nr" select="normalize-space(xstring:substring-before(substring-after($titelei, 'ID'), ';'))" />
   
-  <xsl:template match="/">
-    <xsl:apply-templates select="//w:document" />
+  <xsl:template match="/*:pack">
+    <xsl:apply-templates select="w:document" />
   </xsl:template>
   
   <xsl:template match="w:document">
@@ -43,8 +43,8 @@
   <xsl:template match="w:body">
     <xsl:for-each-group select="w:p"
       group-starting-with="w:p[not(descendant::w:t or descendant::w:sym)]">
-      <xsl:text>
-      </xsl:text>
+      <!--<xsl:text>
+      </xsl:text>-->
       <div>
         <xsl:apply-templates select="current-group()" />
       </div>
@@ -128,7 +128,7 @@
   <xsl:template match="w:r[w:endnoteReference]">
     <xsl:variable name="id" select="w:endnoteReference/@w:id"/>
     <xsl:variable name="note" select="//w:endnote[@w:id = $id]"/>
-    <ptr type="endnote" xml:id="n{$id}">
+    <ptr type="endnote" ref="#e{$id}">
       <xsl:apply-templates select="$note//w:pStyle" />
     </ptr>
   </xsl:template>
@@ -137,7 +137,7 @@
     <xsl:apply-templates select="w:endnote[@w:id &gt; 0]" />
   </xsl:template>
   <xsl:template match="w:endnote">
-    <note type="endnote">
+    <note type="endnote" xml:id="e{@w:id}">
       <xsl:apply-templates select="w:p//w:pStyle" />
       <xsl:apply-templates select="w:p/w:r | w:p/w:hyperlink" />
     </note>
