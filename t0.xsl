@@ -138,6 +138,14 @@
     </note>
   </xsl:template>
   
+  <xsl:template match="w:r[w:tab]">
+    <space width="tab">
+      <xsl:attribute name="style">
+        <xsl:apply-templates select="w:rPr" />
+      </xsl:attribute>
+    </space>
+  </xsl:template>
+  
   <xsl:template match="w:r">
     <T />
   </xsl:template>
