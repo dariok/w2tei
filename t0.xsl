@@ -33,6 +33,9 @@
         <body>
           <xsl:apply-templates select="//w:body"/>
         </body>
+        <back>
+          <xsl:apply-templates select="//w:endnotes" />
+        </back>
       </text>
     </TEI>
   </xsl:template>
@@ -116,6 +119,24 @@
     </note>
   </xsl:template>
   <xsl:template match="w:r[w:footnoteRef]" />
+  
+  <xsl:template match="w:r[w:endnoteReference]">
+    <xsl:variable name="id" select="w:endnoteReference/@w:id"/>
+    <xsl:variable name="note" select="//w:endnote[@w:id = $id]"/>
+    <ptr type="endnote" xml:id="n{$id}">
+      <xsl:apply-templates select="$note//w:pStyle" />
+    </ptr>
+  </xsl:template>
+  <xsl:template match="w:r[w:endnoteRef]" />
+  <xsl:template match="w:endnotes">
+    <xsl:apply-templates select="w:endnote[@w:id &gt; 0]" />
+  </xsl:template>
+  <xsl:template match="w:endnote">
+    <note type="endnote">
+      <xsl:apply-templates select="w:p//w:pStyle" />
+      <xsl:apply-templates select="w:p/w:r | w:p/w:hyperlink" />
+    </note>
+  </xsl:template>
   
   <xsl:template match="w:r">
     <T />
