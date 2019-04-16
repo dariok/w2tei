@@ -54,7 +54,7 @@
   <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym)]" />
   <xsl:template match="w:p">
     <p>
-      <xsl:apply-templates select="w:pPr/w:pStyle" />
+      <xsl:apply-templates select="w:pPr/w:pStyle | w:pPr/w:rPr" />
       <xsl:apply-templates select="w:r | w:hyperlink" />
     </p>
   </xsl:template>
