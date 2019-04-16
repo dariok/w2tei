@@ -170,10 +170,11 @@
   
   <xsl:template match="w:bookmarkStart[@name = '_GoBack']" />
   <xsl:template match="w:bookmarkStart">
-    <ptr type="bookmarkStart" xml:id="b{@w:id}" ref="{translate(@w:name, '_', '#')}" /> 
+    <anchor type="bookmarkStart" xml:id="{@w:name}" /> 
   </xsl:template>
   <xsl:template match="w:bookmarkEnd">
-    <ptr type="bookmarkEnd" ref="#b{@w:id}" />
+    <xsl:variable name="target" select="@w:id" />
+    <anchor type="bookmarkEnd" ref="#{preceding-sibling::w:bookmarkStart[@w:id = $target]/@w:name}" />
   </xsl:template>
   
 </xsl:stylesheet>
