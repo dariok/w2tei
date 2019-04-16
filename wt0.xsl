@@ -67,7 +67,7 @@
     </xsl:attribute>
   </xsl:template>
   
-  <xsl:template match="w:r[not(*) or not(w:rPr/following-sibling::*)]" />
+  <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
   
   <xsl:template match="w:r[w:t or w:sym]">
     <ab>
