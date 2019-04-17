@@ -16,7 +16,7 @@
             <xsl:attribute name="xml:space" select="'preserve'" />
           </xsl:if>
           <xsl:sequence select="@*" />
-          <xsl:value-of select="string-join(current-group(), '')"/>
+          <xsl:sequence select="current-group()/node()"/>
         </xsl:element>
       </xsl:for-each-group>
     </xsl:element>
