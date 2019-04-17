@@ -73,7 +73,7 @@
     <ab>
       <xsl:sequence select="w:t/@xml:space" />
       <xsl:apply-templates select="w:rPr" />
-      <xsl:apply-templates select="w:t | w:sym" />
+      <xsl:apply-templates select="w:t | w:sym | w:tab" />
     </ab>
   </xsl:template>
   <xsl:template match="w:rPr">
@@ -145,10 +145,8 @@
     </note>
   </xsl:template>
   
-  <xsl:template match="w:r[w:tab]">
-    <space width="tab">
-      <xsl:apply-templates select="w:rPr" />
-    </space>
+  <xsl:template match="w:tab">
+    <space width="tab" />
   </xsl:template>
   
   <xsl:template match="w:r">
