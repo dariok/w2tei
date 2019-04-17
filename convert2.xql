@@ -41,7 +41,6 @@ let $debug := xmldb:store('/db/apps/w2tei', 'word.xml', document{$incoming})
 
 let $base := request:get-parameter('base', '')
 let $add := request:get-parameter('xslt', 'none')
-let $post := request:get-parameter('firstheading', false())
 
 let $params :=
   <parameters/>
