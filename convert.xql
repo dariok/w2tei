@@ -4,7 +4,7 @@ declare option exist:serialize "method=html5 media-type=text/html";
 
 <html>
 	<head>
-		<title>Table Conversion</title>
+		<title>Text document to TEI conversion</title>
 	</head>
 	<body>
 		<div id="content">
