@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dokumentation der Word-TEI-Umwandlung im Projekt „Theologenbriefwechsel“</title>
+        <author>Dario Kampkaspar</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>HAdW</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <p>born digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Voraussetzungen</head>
+        <figure>
+          <graphic url="flow1-ger.svg" />
+          <label>Grundlegender Ablauf</label>
+        </figure>
+        <p>
+          Grundsätzlich sind alle Word-Dokumente, die im Format DOCX (.docx) bzw. Word-XML (.xml) gespeichert wurden,
+          für die Konversion zu TEI geeignet. Um jedoch die Struktur und insbesondere die Textkritik korrekt überführen
+          zu können, ist es nötig, bestimmte Konventionen einzuhalten.
+        </p>
+        <p>
+          Es gibt zwei Arten von Konventionen, die getroffen werden müssen. Einerseits ist dies die einheitliche und
+          nachvollziehbare Benennung von Formatvorlagen. Aus Absatzvorlagen werden die einzelnen Strukturelemente
+          gebildet, wie <hi rend="code">opener</hi> oder <hi rend="code">postscript</hi> oder der generelle Absatz
+          <hi rend="code"></hi>. Zeichenvorlagen dienen zum Auszeichnen von Textteilen innerhalb eines Absatzes 
+          (unabhängig von dessen Strukturtyp). Beispiele sind Personen und Orte, aber auch längere Textabschnitte, die
+          zu einer textkritischen Anmerkung gehören.
+        </p>
+      </div>
+      <div>
+        <head>Generelle Schritte der Verarbeitung</head>
+        <div>
+          <head>Eingangsdaten</head>
+          <p>
+            Als Eingang dient entweder eine .docx- oder eine .xml-Datei. Das Format .docx ist ein ZIP-Archiv einer
+            Dateistruktur mit mehreren XML-Dateien. Jede der enthaltenen XML-Dateien enthält spezifische Teile des
+            Textes, neben dem eigentlichen Text sind die z.B. Fuß- und Endnote und Hyperlinks aber auch Angaben zur
+            Numerierung von Listen und Verknüpfungen der einzelnen Teile. In einer Word-XML-Datei sind diese Teile
+            in einer gemeinsamen XML-Struktur vereint und nicht komprimiert.
+          </p>
+          <p>
+            Eine .docx-Datei muß zunächst entpackt werden. In beiden Fällen werden die für die Konversion benötigten
+            Teile zu einer gemeinsamen Struktur zusammengefügt, die als Eingang für den nachfolgenden Konversionsprozess
+            dient. Wenn verschiedene Versionen von Word genutzt werden, kann es vorteilhaft sein, mit generalisierten
+            Skripten zunächst eine vereinheitlichte Eingangsversion zu erstellen (z.B. können Hyperlinks auf
+            verschiedene Art gespeichert werden).
+          </p>
+          <p>
+            Die Verarbeitung wird in den meisten Fällen durch mehrere Skripte erfolgen. Zwar wäre eine Kombination der
+            einzelnen Schritte in einem einzelnen XSLT machbar, doch erschwert dies die Fehlersuche massiv, sodass von
+            diesem Vorgehen dringend abzuraten ist.
+          </p>
+        </div>
+        <div>
+          <head>Verarbeitungsstufen</head>
+          <figure>
+            <graphic url="flow2-ger.svg" />
+            <label>Stufen der Verarbeitung</label>
+          </figure>
+          <list>
+            <label>Grobstrukturierung</label>
+            <item>
+              Anhand vorgegebener Grenzen werden die grundlegenden Strukturen erstellt: <hi rend="code">div</hi>
+              werden z.B. anhand von Leerzeilen und/oder (Zwischen-)Überschriften erstellt. Die einzelnen Absätze
+              <hi rend="code">p</hi> ergeben sich entweder aus den Absätzen in Word oder, im Fall einer zeilengenauen
+              Transkription, aus einer Endmarkierung.
+            </item>
+            <label>Feinstruktur</label>
+            <item>
+              Anhand der Absatzvorlagen werden die einzelnen Absätze <hi rend="code">p</hi> in die spezifischeren
+              Elemente überführt.
+            </item>
+            <label>Textkritik</label>
+            <item>
+              Das Umsetzen der Textkritik ist eine der komplexesten Anforderungen. Wichtig ist, dass eine feste
+              Wortwahl eingehalten wird, aus der dann die einzelnen Kodierungen in mehreren Schritten erstellt werden.
+              Zu unterscheiden sind mehrere Bestandteile einer solchen Anmerkung:
+              <list>
+                <item>Text</item>
+                <item>„Aktion”, z.B. „eingefügt“, „gestrichen”</item>
+                <item>Zeuge bzw. Quelle</item>
+              </list>
+              Diese müssen eindeutig trenn- und analysierbar sein, damit die Kodierung der Textkritik errfolgen kann.
+            </item>
+            <label>Entitäten</label>
+            <item>
+              Ggf. sind als nächstes die Verknüpfungen von Verweisen mit Normdaten vorzunehmen, z.B. das Hinterlegen
+              von IDs hinter Personennennungen.
+            </item>
+            <label>Nachbearbeitung</label>
+            <item>
+              Z.B. Leerzeichen kontrollieren und Erstellen des <hi rend="code">teiHeader</hi>.
+            </item>
+          </list>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
