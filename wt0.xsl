@@ -183,7 +183,9 @@
     </cell>
   </xsl:template>
   <xsl:template match="w:tc/w:p">
-    <lb />
+    <xsl:if test="preceding-sibling::w:p">
+      <lb />
+    </xsl:if>
     <xsl:apply-templates select="w:r" />
   </xsl:template>
   
