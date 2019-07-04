@@ -41,7 +41,7 @@
   </xsl:template>
   
   <xsl:template match="w:body">
-    <xsl:for-each-group select="w:p"
+    <xsl:for-each-group select="w:p | w:tbl"
       group-starting-with="w:p[not(descendant::w:t or descendant::w:sym)]">
       <!--<xsl:text>
       </xsl:text>-->
@@ -51,7 +51,7 @@
     </xsl:for-each-group>
   </xsl:template>
   
-  <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym)]" />
+  <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym or ancestor::w:tbl)]" />
   <xsl:template match="w:p">
     <p>
       <xsl:apply-templates select="*" />
@@ -165,6 +165,27 @@
     </note>
   </xsl:template>
   <xsl:template match="w:r[w:annotationRef]" />
+  
+  <!-- Tables -->
+  <xsl:template match="w:tbl">
+    <table cols="{count(w:tblGrid/w:gridCol)}">
+      <xsl:apply-templates select="w:tr" />
+    </table>
+  </xsl:template>
+  <xsl:template match="w:tr">
+    <row>
+      <xsl:apply-templates select="w:tc" />
+    </row>
+  </xsl:template>
+  <xsl:template match="w:tc">
+    <cell>
+      <xsl:apply-templates select="w:p" />
+    </cell>
+  </xsl:template>
+  <xsl:template match="w:tc/w:p">
+    <lb />
+    <xsl:apply-templates select="w:r" />
+  </xsl:template>
   
   <xsl:template match="w:bookmarkStart[@name = '_GoBack']" />
   <xsl:template match="w:bookmarkStart">
