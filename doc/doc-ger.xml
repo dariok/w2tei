@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dokumentation der Word-TEI-Umwandlung im Projekt „Theologenbriefwechsel“</title>
+        <author>Dario Kampkaspar</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>HAdW</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <p>born digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Voraussetzungen</head>
+        <figure>
+          <graphic url="flow1-ger.svg" />
+          <label>Grundlegender Ablauf</label>
+        </figure>
+        <p>
+          Grundsätzlich sind alle Word-Dokumente, die im Format DOCX (.docx) bzw. Word-XML (.xml) gespeichert wurden,
+          für die Konversion zu TEI geeignet. Um jedoch die Struktur und insbesondere die Textkritik korrekt überführen
+          zu können, ist es nötig, bestimmte Konventionen einzuhalten.
+        </p>
+        <p>
+          Es gibt zwei Arten von Konventionen, die getroffen werden müssen. Einerseits ist dies die einheitliche und
+          nachvollziehbare Benennung von Formatvorlagen. Aus Absatzvorlagen werden die einzelnen Strukturelemente
+          gebildet, wie <hi rend="code">opener</hi> oder <hi rend="code">postscript</hi> oder der generelle Absatz
+          <hi rend="code"></hi>. Zeichenvorlagen dienen zum Auszeichnen von Textteilen innerhalb eines Absatzes 
+          (unabhängig von dessen Strukturtyp). Beispiele sind Personen und Orte, aber auch längere Textabschnitte, die
+          zu einer textkritischen Anmerkung gehören.
+        </p>
+      </div>
+      <div>
+        <head>Generelle Schritte der Verarbeitung</head>
+        <div>
+          <head>Eingangsdaten</head>
+          <p>
+            Als Eingang dient entweder eine .docx- oder eine .xml-Datei. Das Format .docx ist ein ZIP-Archiv einer
+            Dateistruktur mit mehreren XML-Dateien. Jede der enthaltenen XML-Dateien enthält spezifische Teile des
+            Textes, neben dem eigentlichen Text sind die z.B. Fuß- und Endnote und Hyperlinks aber auch Angaben zur
+            Numerierung von Listen und Verknüpfungen der einzelnen Teile. In einer Word-XML-Datei sind diese Teile
+            in einer gemeinsamen XML-Struktur vereint und nicht komprimiert.
+          </p>
+          <p>
+            Eine .docx-Datei muß zunächst entpackt werden. In beiden Fällen werden die für die Konversion benötigten
+            Teile zu einer gemeinsamen Struktur zusammengefügt, die als Eingang für den nachfolgenden Konversionsprozess
+            dient. Wenn verschiedene Versionen von Word genutzt werden, kann es vorteilhaft sein, mit generalisierten
+            Skripten zunächst eine vereinheitlichte Eingangsversion zu erstellen (z.B. können Hyperlinks auf
+            verschiedene Art gespeichert werden).
+          </p>
+          <p>
+            Die Verarbeitung wird in den meisten Fällen durch mehrere Skripte erfolgen. Zwar wäre eine Kombination der
+            einzelnen Schritte in einem einzelnen XSLT machbar, doch erschwert dies die Fehlersuche massiv, sodass von
+            diesem Vorgehen dringend abzuraten ist.
+          </p>
+        </div>
+        <div>
+          <head>Verarbeitungsstufen</head>
+          <figure>
+            <graphic url="flow2-ger.svg" />
+            <label>Stufen der Verarbeitung</label>
+          </figure>
+          <list>
+            <label>Grobstrukturierung</label>
+            <item>
+              Anhand vorgegebener Grenzen werden die grundlegenden Strukturen erstellt: <hi rend="code">div</hi>
+              werden z.B. anhand von Leerzeilen und/oder (Zwischen-)Überschriften erstellt. Die einzelnen Absätze
+              <hi rend="code">p</hi> ergeben sich entweder aus den Absätzen in Word oder, im Fall einer zeilengenauen
+              Transkription, aus einer Endmarkierung.
+            </item>
+            <label>Feinstruktur</label>
+            <item>
+              Anhand der Absatzvorlagen werden die einzelnen Absätze <hi rend="code">p</hi> in die spezifischeren
+              Elemente überführt.
+            </item>
+            <label>Textkritik</label>
+            <item>
+              Das Umsetzen der Textkritik ist eine der komplexesten Anforderungen. Wichtig ist, dass eine feste
+              Wortwahl eingehalten wird, aus der dann die einzelnen Kodierungen in mehreren Schritten erstellt werden.
+              Zu unterscheiden sind mehrere Bestandteile einer solchen Anmerkung:
+              <list>
+                <item>Text</item>
+                <item>„Aktion”, z.B. „eingefügt“, „gestrichen”</item>
+                <item>Zeuge bzw. Quelle</item>
+              </list>
+              Diese müssen eindeutig trenn- und analysierbar sein, damit die Kodierung der Textkritik errfolgen kann.
+            </item>
+            <label>Entitäten</label>
+            <item>
+              Ggf. sind als nächstes die Verknüpfungen von Verweisen mit Normdaten vorzunehmen, z.B. das Hinterlegen
+              von IDs hinter Personennennungen.
+            </item>
+            <label>Nachbearbeitung</label>
+            <item>
+              Z.B. Leerzeichen kontrollieren und Erstellen des <hi rend="code">teiHeader</hi>.
+            </item>
+          </list>
+        </div>
+      </div>
+      <div>
+        <head>Funktionen der Skripte</head>
+        <figure>
+          <graphic url="flow-thbw.svg" />
+          <label>Ablauf der Transformation</label>
+        </figure>
+        <list>
+          <label>tok0.xsl</label>
+          <item>
+            <list>
+              <item>Erstellen des TEI-Grundgerüstes mit teiHeader, front und body</item>
+              <item>Ermitteln von Titel, Bearbeiter und Quellen aus festgelegter Struktur</item>
+              <item>Grobglierderung in <hi rend="code">div</hi>: bis zur ersten Zwischenüberschrift, hinter
+                Zwischenüberschriften, Postscripta</item>
+            </list>
+          </item>
+          <label>tok1.xsl</label>
+          <item>
+            <list>
+              <item>Zuweisen der Absatztags p, postscript, cit, head, opener, close anhand der Formatierungen</item>
+              <item>Umsetzen bestimmer nicht-Unicode Sonderzeichen</item>
+              <item>Kursivierungen und Hoch-/Tiefstellungen zu <hi rend="code">hi</hi></item>
+              <item>Umterstreichungen zu <hi rend="code">emph</hi></item>
+              <item>Links zu <hi rend="code">rs</hi></item>
+              <item>Endnoten zu <hi rend="code">note[@type = 'footnote']</hi></item>
+              <item>Anfangs- und Endpunkte langer textkrit. Anm. zu <hi rend="code">anchor</hi></item>
+              <item>Erster Verarbeitungsschritt Textkritik: Fußnoten zu <hi rend="code">note[@type = 'crit_app']</hi></item>
+            </list>
+          </item>
+          <label>tok2.xsl</label>
+          <item>
+            <list>
+              <item><hi rend="code">closer</hi> in <hi rend="code">back</hi></item>
+              <item>Textkritik: <hi rend="code">anchor</hi> mit ID versehen</item>
+              <item>Textkritik: <hi rend="code">note[@type = 'crit_app']</hi> zu <hi rend="code">app</hi> (dort ggf. ID
+                der <hi rend="code">anchor</hi> als Attribute einfügen) und in <hi rend="code">wt:copy</hi> kopieren für
+                späteres Wiederherstellen</item>
+              <item>Textkritik: Text der Anm. an „; “ auftrennen und Grenze als <hi rend="code">wt:note</hi> markieren;
+                Tele hinter Halbgeviert als <hi rend="code">wt:comment</hi></item>
+              <item>benachbarte Kursivierungen und <hi rend="code">postscript</hi> zusammenziehen</item>
+            </list>
+          </item>
+          <label>tok3.xsl</label>
+          <item>
+            <list>
+              <item>Absatz-Marginalie-Absatz zusammenziehen (Anm.: Marginalien dürfen daher nicht vor dem Anfang oder
+                nach dem Ende eines Absatzes stehen)</item>
+              <item>Begrenzung der Seitenzahl markieren (Anm.: hochgest. recto/verso unterbricht Text, daher reicht eine
+                RegEx nicht aus)</item>
+              <item>Textkritik: Text anhand der <hi rend="code">wt:notes</hi> zu <hi rend="code">rdg</hi> gruppieren,
+                ggf. <hi rend="code">wt:comment</hi> als <hi rend="code">note[@type = 'comment']</hi> übernehmen</item>
+            </list>
+          </item>
+          <label>tok4.xsl</label>
+          <item>
+            <list>
+              <item>Anhand <hi rend="code">wt:pb</hi> <hi rend="code">pb</hi> mit Attributen erstellen</item>
+              <item>Textkritik: <hi rend="code">rdg</hi> aufteilen in <hi rend="code">wt:place</hi>,
+                <hi rend="code">wt:action</hi>, <hi rend="code">wt:orig</hi>, <hi rend="code">wt:source</hi></item>
+              <item>Grenzen von Zitaten markieren</item>
+            </list>
+          </item>
+          <label>tok5.xsl</label>
+          <item>
+            <list>
+              <item>Textkritik: <hi rend="code">lem</hi> erstellen aus Wort vor <hi rend="code">app</hi> bzw. aus Text
+                zwischen den <hi rend="code">anchor</hi></item>
+              <item>Textkritik: aus <hi rend="code">rdg</hi> und <hi rend="code">wt:action</hi> die textkrit. Elemente
+                <hi rend="code">add</hi>, <hi rend="code">del</hi>, <hi rend="code">subst</hi>,
+                <hi rend="code">corr</hi>, <hi rend="code">seg</hi> erstellen und ggf. Quelle/Textzeuge in @resp und Ort
+                in @place schreiben</item>
+              <item><hi rend="code">quote</hi> kodieren</item>
+            </list>
+          </item>
+          <label>t6.xsl</label>
+          <item>
+            <list>
+              <item>Textkritik: <hi rend="code">app</hi> auflösen, wo die einfache Handlungen vorliegen (z.B. nur
+                <hi rend="code">subst</hi> oder <hi rend="code">del</hi>)</item>
+              <item>Textkritik: in verbliebenen <hi rend="code">wt:note</hi> Originaltext als <hi rend="code">orig</hi>
+                hinterlegen</item>
+              <item>Expansionen, unsichere Lesung, Konjekturen aus den festgelegten Zeichen auslesen</item>
+              <item>Anpassungen an Attributen, wo bisheriges Attribut nicht erlaubt oder unpassend</item>
+              <item><hi rend="code">cit</hi> aus <hi rend="code">quote</hi> und ggf. bibl. Angabe aufbauen</item>
+            </list>
+          </item>
+          <label>t7.xsl</label>
+          <item>
+            <list>
+              <item><hi rend="code">gap</hi> statt Auslassungspunkten</item>
+              <item>Textkritik: <hi rend="code">note</hi> mit nicht verarbeiteten Zwischenelementen wiederherstellen</item>
+              <item>Textkritik: <hi rend="code">note</hi> ohne Text wiederherstellen</item>
+              <item>Textkritik: Umfang von <hi rend="code">unclear</hi>, wenn kein Text</item>
+              <item>Typisierung von rs</item>
+              <item>Sonderfälle</item>
+            </list>
+          </item>
+        </list>
+      </div>
+    </body>
+  </text>
+</TEI>
