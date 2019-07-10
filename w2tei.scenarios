@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serialized version="20.0" xml:space="preserve">
+	<serializableOrderedMap>
+		<entry>
+			<String>scenarios</String>
+			<scenario-array>
+				<scenario>
+					<field name="advancedOptionsMap">
+						<null/>
+					</field>
+					<field name="name">
+						<String>DOCX → Flat OPC</String>
+					</field>
+					<field name="baseURL">
+						<String></String>
+					</field>
+					<field name="footerURL">
+						<String></String>
+					</field>
+					<field name="fOPMethod">
+						<String>pdf</String>
+					</field>
+					<field name="fOProcessorName">
+						<String>Apache FOP</String>
+					</field>
+					<field name="headerURL">
+						<String></String>
+					</field>
+					<field name="inputXSLURL">
+						<String>${pdu}/w2tei/docx.xsl</String>
+					</field>
+					<field name="inputXMLURL">
+						<String>${pdu}/w2tei/word-empty.xml</String>
+					</field>
+					<field name="defaultScenario">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="isFOPPerforming">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="type">
+						<String>XML</String>
+					</field>
+					<field name="saveAs">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="openInBrowser">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="outputFile">
+						<File>${pd}/w2tei/test/wt0.xml</File>
+					</field>
+					<field name="outputResource">
+						<String>${pd}/w2tei/test/wt0.xml</String>
+					</field>
+					<field name="openOtherLocationInBrowser">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="locationToOpenInBrowserURL">
+						<null/>
+					</field>
+					<field name="openInEditor">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="showInHTMLPane">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="showInXMLPane">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="showInSVGPane">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="showInResultSetPane">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="useXSLTInput">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="xsltParams">
+						<list>
+							<transformationParameter>
+								<field name="paramDescription">
+									<paramDescriptor>
+										<field name="localName">
+											<String>filename</String>
+										</field>
+										<field name="prefix">
+											<null/>
+										</field>
+										<field name="namespace">
+											<null/>
+										</field>
+									</paramDescriptor>
+								</field>
+								<field name="value">
+									<String>${cf}</String>
+								</field>
+								<field name="hasXPathValue">
+									<Boolean>false</Boolean>
+								</field>
+							</transformationParameter>
+						</list>
+					</field>
+					<field name="cascadingStylesheets">
+						<String-array/>
+					</field>
+					<field name="xslTransformer">
+						<String>Saxon-PE</String>
+					</field>
+					<field name="extensionURLs">
+						<String-array/>
+					</field>
+				</scenario>
+				<scenario>
+					<field name="advancedOptionsMap">
+						<null/>
+					</field>
+					<field name="name">
+						<String>DOCX → TEI basic</String>
+					</field>
+					<field name="baseURL">
+						<String></String>
+					</field>
+					<field name="footerURL">
+						<String></String>
+					</field>
+					<field name="fOPMethod">
+						<String>pdf</String>
+					</field>
+					<field name="fOProcessorName">
+						<String>Apache FOP</String>
+					</field>
+					<field name="headerURL">
+						<String></String>
+					</field>
+					<field name="inputXSLURL">
+						<String>${pdu}/w2tei/docx.xsl</String>
+					</field>
+					<field name="inputXMLURL">
+						<String>${pdu}/w2tei/word-empty.xml</String>
+					</field>
+					<field name="defaultScenario">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="isFOPPerforming">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="type">
+						<String>XML</String>
+					</field>
+					<field name="saveAs">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="openInBrowser">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="outputFile">
+						<File>${pd}/w2tei/test/tei.xml</File>
+					</field>
+					<field name="outputResource">
+						<String>${pd}/w2tei/test/tei.xml</String>
+					</field>
+					<field name="openOtherLocationInBrowser">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="locationToOpenInBrowserURL">
+						<null/>
+					</field>
+					<field name="openInEditor">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="showInHTMLPane">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="showInXMLPane">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="showInSVGPane">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="showInResultSetPane">
+						<Boolean>false</Boolean>
+					</field>
+					<field name="useXSLTInput">
+						<Boolean>true</Boolean>
+					</field>
+					<field name="xsltParams">
+						<list>
+							<transformationParameter>
+								<field name="paramDescription">
+									<paramDescriptor>
+										<field name="localName">
+											<String>filename</String>
+										</field>
+										<field name="prefix">
+											<null/>
+										</field>
+										<field name="namespace">
+											<null/>
+										</field>
+									</paramDescriptor>
+								</field>
+								<field name="value">
+									<String>${cf}</String>
+								</field>
+								<field name="hasXPathValue">
+									<Boolean>false</Boolean>
+								</field>
+							</transformationParameter>
+						</list>
+					</field>
+					<field name="cascadingStylesheets">
+						<String-array>
+							<String>file:/home/dario/git/w2tei/wt0.xsl</String>
+							<String>file:/home/dario/git/w2tei/wt1.xsl</String>
+						</String-array>
+					</field>
+					<field name="xslTransformer">
+						<String>Saxon-PE</String>
+					</field>
+					<field name="extensionURLs">
+						<String-array/>
+					</field>
+				</scenario>
+			</scenario-array>
+		</entry>
+		<entry>
+			<String>scenarios.load.from.project</String>
+			<Boolean>false</Boolean>
+		</entry>
+	</serializableOrderedMap>
+</serialized>
