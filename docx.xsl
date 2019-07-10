@@ -27,30 +27,16 @@
       <xsl:variable name="parts" select="('word/document.xml', 'word/comments.xml', 'word/endnotes.xml',
         'word/footnotes.xml', 'word/numbering.xml', 'word/_rels/endnotes.xml.rels', 'word/_rels/document.xml.rels')" />
       <xsl:for-each select="$parts">
-        <xsl:choose>
-          <xsl:when test="function-available('archive:extract-text')">
-            <xsl:try>
-              <pkg:part>
-                <xsl:attribute name="pkg:name" select="'/' || ." />
-                <pkg:xmlData>
-                  <xsl:sequence select="parse-xml(archive:extract-text($zip, .))" />
-                </pkg:xmlData>
-              </pkg:part>
-              <xsl:catch />
-            </xsl:try>
-          </xsl:when>
-          <xsl:when test="function-available('zip:xml-entry')">
-            <xsl:try>
-              <pkg:part>
-                <xsl:attribute name="pkg:name" select="'/' || ." />
-                <pkg:xmlData>
-                  <xsl:sequence select="zip:xml-entry($zip, .)" />
-                </pkg:xmlData>
-              </pkg:part>
-              <xsl:catch />
-            </xsl:try>
-          </xsl:when>
-        </xsl:choose>
+        <xsl:try>
+          <pkg:part>
+            <xsl:attribute name="pkg:name" select="'/' || ." />
+            <pkg:xmlData>
+              <xsl:sequence select="parse-xml(archive:extract-text($zip, .))" use-when="function-available('archive:extract-text')"/>
+              <xsl:sequence select="zip:xml-entry($zip, .)" use-when="function-available('zip:xml-entry')"/>
+            </pkg:xmlData>
+          </pkg:part>
+          <xsl:catch />
+        </xsl:try>
       </xsl:for-each>
     </pkg:package>
   </xsl:template>
