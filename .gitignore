@@ -5,4 +5,7 @@ add/wtotei-intro-result.html
 *.zip
 /fertig/
 /test/
-/result/
+result/
+wt0.xml
+wt1.xml
+wt2.xml

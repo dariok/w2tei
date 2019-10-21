@@ -12,9 +12,6 @@
   <xsl:include href="string-pack.xsl"/>
   <xsl:include href="word-pack.xsl"/>
   
-  <xsl:variable name="titelei" select="string-join(//w:p[wt:is(., 'TBEE-Titel')])"/>
-  <xsl:variable name="nr" select="normalize-space(xstring:substring-before(substring-after($titelei, 'ID'), ';'))" />
-  
   <xsl:template match="/*:pack">
     <xsl:apply-templates select="w:document" />
   </xsl:template>
