@@ -25,7 +25,8 @@
     <pkg:package
       xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
       <xsl:variable name="parts" select="('word/document.xml', 'word/comments.xml', 'word/endnotes.xml',
-        'word/footnotes.xml', 'word/numbering.xml', 'word/_rels/endnotes.xml.rels', 'word/_rels/document.xml.rels')" />
+        'word/footnotes.xml', 'word/numbering.xml', 'word/_rels/endnotes.xml.rels', 'word/_rels/document.xml.rels',
+        'word/_rels/footnotes.xml.rels')" />
       <xsl:for-each select="$parts">
         <xsl:try>
           <pkg:part>
