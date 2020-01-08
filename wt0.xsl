@@ -3,6 +3,7 @@
   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
   xmlns:xstring = "https://github.com/dariok/XStringUtils"
   xmlns:wt="https://github.com/dariok/w2tei"
+  xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
   xmlns="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="#all"
   version="3.0">
@@ -12,8 +13,8 @@
   <xsl:include href="string-pack.xsl"/>
   <xsl:include href="word-pack.xsl"/>
   
-  <xsl:template match="/*:pack">
-    <xsl:apply-templates select="w:document" />
+  <xsl:template match="/">
+    <xsl:apply-templates select="descendant::w:document" />
   </xsl:template>
   
   <xsl:template match="w:document">
@@ -194,5 +195,7 @@
     <xsl:variable name="target" select="@w:id" />
     <anchor type="bookmarkEnd" ref="#{preceding-sibling::w:bookmarkStart[@w:id = $target]/@w:name}" />
   </xsl:template>
+  
+  <xsl:template match="pkg:part" />
   
 </xsl:stylesheet>
