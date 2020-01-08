@@ -129,6 +129,24 @@
 						Schriften und Briefe Andreas Bodensteins von Karlstadt</ref>
                         </p>
                     </projectDesc>
+                    <tagsDecl>
+                        <rendition xml:id="f">Full width text</rendition>
+                        <rendition xml:id="c">Text within a full width region that is centered</rendition>
+                        <rendition xml:id="l">Text aligned left in a full width region</rendition>
+                        <rendition xml:id="r">Text aligned right in a full width region</rendition>
+                        <rendition xml:id="ll">Text aligned left (or justified) in a left column</rendition>
+                        <rendition xml:id="lc">Text centered in a left column</rendition>
+                        <rendition xml:id="lr">Text aligned right in a left column</rendition>
+                        <rendition xml:id="lh">Text aligned left (or justified) in a left column with the first line hanging</rendition>
+                        <rendition xml:id="rl">Text aligned left (or justified) in a right column</rendition>
+                        <rendition xml:id="rc">Text centered in a right column</rendition>
+                        <rendition xml:id="rr">Text aligned right in a right column</rendition>
+                        <rendition xml:id="rh">Text aligned left (or justified) in a right column with the first line hanging</rendition>
+                        <rendition xml:id="cl">Text aligned left (or justified) in a middle or centered column</rendition>
+                        <rendition xml:id="cc">Text centered in a middle or centered column</rendition>
+                        <rendition xml:id="cr">Text aligned right in a middle or centered column</rendition>
+                        <rendition xml:id="ch">Text aligned left (or justified) in a middle or centered column with the first line hanging</rendition>
+                    </tagsDecl>
                 </encodingDesc>
             </teiHeader>
             <text>
