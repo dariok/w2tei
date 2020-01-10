@@ -253,6 +253,7 @@
                                     <String-array>
                                         <String>file:/home/dario/git/w2tei/wt0.xsl</String>
                                         <String>file:/home/dario/git/w2tei/wt1.xsl</String>
+                                        <String>file:/home/dario/git/w2tei/wt2.xsl</String>
                                     </String-array>
                                 </field>
                                 <field name="xslTransformer">

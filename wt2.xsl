@@ -20,8 +20,15 @@
           <xsl:apply-templates />
         </hi>
       </xsl:when>
+      <xsl:otherwise>
+        <hi rend="{@style}">
+          <xsl:apply-templates />
+        </hi>
+      </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+  
+  <xsl:template match="@style[. = '']" />
   
   <xsl:template match="@* | node()">
     <xsl:copy>
