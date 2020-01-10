@@ -708,7 +708,7 @@
           </package:part>
         </package:package>
       </x:context>
-      <x:expect label=".">
+      <x:expect label="." xml:space="ignore">
         <TEI xmlns="http://www.tei-c.org/ns/1.0">
           <teiHeader>
             <fileDesc>
@@ -725,13 +725,13 @@
                 <p>
                   <ab xml:space="preserve" style="lang:la-Latn"> et ecclesiam nostram declaras. Sed qua ratione tuis
                       consiliis satisfieri possit non video. Speras posse iniri aliquem modum, quo et Christo et </ab>
-                  <field function="Hyperlink"
+                  <ref style="rStyle:Hyperlink; rFonts:; lang:la-Latn"
                     target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
-                    ><ab style="rStyle:Hyperlink; rFonts:; lang:la-Latn">Caesareo</ab></field>
+                    >Caesareo</ref>
                   <ptr type="endnote" ref="#e7" />
                   <anchor type="bookmarkStart" xml:id="_GoBack"/>
-                  <field function=" HYPERLINK &#34;http://d-nb.info/gnd/121098-1&#34; "
-                    style="rStyle:auszeichnungbermehrereworte0; rFonts:; color:0000FF">Handelsministerium</field>
+                  <ref target="http://d-nb.info/gnd/121098-1"
+                    style="rStyle:auszeichnungbermehrereworte0; rFonts:; color:0000FF">Handelsministerium</ref>
                   <anchor type="bookmarkEnd" ref="#_GoBack"/>
                   <ab style="rStyle:AuszeichnungberMehrereWorte">]]</ab>
                 </p>

@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
   xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
   xmlns:wt="https://github.com/dariok/w2tei"
   xmlns:xstring = "https://github.com/dariok/XStringUtils"
@@ -95,29 +96,44 @@
   
   <xsl:template match="w:r[w:fldChar/@w:fldCharType = ('separate','end')]" />
   <xsl:template match="w:r[w:fldChar/@w:fldCharType = 'begin']">
-    <field>
-      <xsl:attribute name="function"
-        select="string-join(following-sibling::w:r
-        [not(preceding-sibling::w:r[w:fldChar[@w:fldCharType = 'separate']])]/w:instrText, '')"/>
-      <xsl:apply-templates select="(following-sibling::w:r[w:fldChar][1]/following-sibling::*
-        intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*)/*" />
-    </field>
+    <xsl:choose>
+      <xsl:when test="contains(following-sibling::w:r[1]/w:instrText, 'HYPERLINK')">
+        <ref>
+          <xsl:attribute name="target">
+            <xsl:variable name="target" select="substring(following-sibling::w:r[1]/w:instrText, 13)" />
+            <xsl:value-of select="normalize-space(substring($target, 1, string-length($target) - 2))"/>
+          </xsl:attribute>
+          <xsl:apply-templates select="(following-sibling::w:r[w:fldChar][1]/following-sibling::*
+            intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*)/*" />
+        </ref>
+      </xsl:when>
+      <xsl:otherwise>
+        <field>
+          <xsl:attribute name="function"
+            select="string-join(following-sibling::w:r
+            [not(preceding-sibling::w:r[w:fldChar[@w:fldCharType = 'separate']])]/w:instrText, '')"/>
+          <xsl:apply-templates select="(following-sibling::w:r[w:fldChar][1]/following-sibling::*
+            intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*)/*" />
+        </field>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   <xsl:template match="w:r[(w:t or w:sym) and preceding-sibling::w:r[w:fldChar][1][w:fldChar/@w:fldCharType = 'separate']
     and following-sibling::w:r[w:fldChar][1][w:fldChar/@w:fldCharType = 'end']]" priority="0.75"/>
   <xsl:template match="w:r[w:instrText]" />
   
   <xsl:template match="w:hyperlink">
-    <field>
-      <xsl:attribute name="function">
-        <xsl:text>Hyperlink</xsl:text>
-      </xsl:attribute>
+    <ref>
       <xsl:attribute name="target">
         <xsl:variable name="id" select="@r:id"/>
         <xsl:value-of select="//*:Relationship[@Id = $id]/@Target"/>
       </xsl:attribute>
-      <xsl:apply-templates select="w:r" />
-    </field>
+      <xsl:variable name="content">
+        <xsl:apply-templates select="w:r" />
+      </xsl:variable>
+      <xsl:sequence select="$content/tei:ab/@style" />
+      <xsl:sequence select="$content/tei:ab/node()" />
+    </ref>
   </xsl:template>
   
   <xsl:template match="w:r[w:footnoteReference]">

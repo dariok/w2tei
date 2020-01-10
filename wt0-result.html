@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for home/dario/git/w2tei/wt0.xsl (passed: 3 / pending: 0 / failed: 2 / total: 5)</title>
+      <title>Test Report for home/dario/git/w2tei/wt0.xsl (passed: 5 / pending: 0 / failed: 0 / total: 5)</title>
       <link rel="stylesheet" type="text/css" href="file:/home/dario/.com.oxygenxml/extensions/v21.1/frameworks/https___www.oxygenxml.com_InstData_Addons_community_updateSite.xml/xspec.support-1.2.1/src/reporter/test-report.css" />
    </head>
    <body>
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/wt0.xsl">home/dario/git/w2tei/wt0.xsl</a></p>
       <p>XSpec: <a href="file:/home/dario/git/w2tei/wt0.xspec">home/dario/git/w2tei/wt0.xspec</a></p>
-      <p>Tested: 10 January 2020 at 19:08</p>
+      <p>Tested: 10 January 2020 at 19:57</p>
       <h2>Contents</h2>
       <table class="xspec">
          <col width="75%" />
@@ -19,45 +19,45 @@
          <thead>
             <tr>
                <th></th>
-               <th class="totals">passed: 3</th>
+               <th class="totals">passed: 5</th>
                <th class="totals">pending: 0</th>
-               <th class="totals">failed: 2</th>
+               <th class="totals">failed: 0</th>
                <th class="totals">total: 5</th>
             </tr>
          </thead>
          <tbody>
-            <tr class="failed">
+            <tr class="successful">
                <th><a href="#d3e4">T1: structure</a></th>
-               <th class="totals">1</th>
+               <th class="totals">2</th>
                <th class="totals">0</th>
-               <th class="totals">1</th>
+               <th class="totals">0</th>
                <th class="totals">2</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e668">T2: p</a></th>
+               <th><a href="#d3e718">T2: p</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
-            <tr class="failed">
-               <th><a href="#d3e941">T3: bookmarks, comments, etc.</a></th>
-               <th class="totals">1</th>
+            <tr class="successful">
+               <th><a href="#d3e991">T3: bookmarks, comments, etc.</a></th>
+               <th class="totals">2</th>
                <th class="totals">0</th>
-               <th class="totals">1</th>
+               <th class="totals">0</th>
                <th class="totals">2</th>
             </tr>
          </tbody>
       </table>
       <div id="d3e4">
-         <h2 class="successful">T1: structure<span class="scenario-totals">passed: 1 / pending: 0 / failed: 1 / total: 2</span></h2>
+         <h2 class="successful">T1: structure<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
          <table class="xspec" id="t-d3e4">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
                   <th>T1: structure</th>
-                  <th>passed: 1 / pending: 0 / failed: 1 / total: 2</th>
+                  <th>passed: 2 / pending: 0 / failed: 0 / total: 2</th>
                </tr>
                <tr class="successful">
                   <th>T1.1</th>
@@ -67,71 +67,20 @@
                   <td>2 div</td>
                   <td>Success</td>
                </tr>
-               <tr class="failed">
-                  <th><a href="#d3e450">T1.2</a></th>
-                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
+               <tr class="successful">
+                  <th>T1.2</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
                </tr>
-               <tr class="failed">
-                  <td><a href="#d3e608">.</a></td>
-                  <td>Failure</td>
-               </tr>
-            </tbody>
-         </table>
-         <h3 id="d3e450">T1: structure T1.2</h3>
-         <h4 id="d3e608">.</h4>
-         <table class="xspecResult">
-            <thead>
-               <tr>
-                  <th>Result</th>
-                  <th>Expected Result</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td><pre>()</pre></td>
-                  <td><pre>&lt;<span class="diff">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
-         xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
-         xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-         xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-         xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"&gt;
-   &lt;<span class="diff">teiHeader</span>&gt;
-      &lt;<span class="diff">fileDesc</span>&gt;
-         &lt;<span class="diff">sourceDesc</span>&gt;
-            &lt;<span class="diff">p</span>&gt;<span class="diff">Created from a MS Word file by </span>&lt;<span class="diff">ref</span> <span class="diff">target</span>="https://github.com/dariok/w2tei"&gt;<span class="diff">W2TEI</span>&lt;/ref&gt;<span class="diff">:
-              </span>&lt;<span class="diff">date</span> <span class="diff">when</span>="..."
-                 <span class="diff">type</span>="created" /&gt;
-            &lt;/p&gt;
-         &lt;/sourceDesc&gt;
-      &lt;/fileDesc&gt;
-   &lt;/teiHeader&gt;
-   &lt;<span class="diff">text</span>&gt;
-      &lt;<span class="diff">body</span>&gt;
-         &lt;<span class="diff">div</span>&gt;
-            &lt;<span class="diff">p</span> <span class="diff">style</span>="KSEE-Titel"&gt;
-               &lt;<span class="diff">ab</span> <span class="diff">xml:space</span>="preserve"&gt;<span class="diff">EE 86 </span>&lt;/ab&gt;
-               &lt;<span class="diff">ab</span>&gt;<span class="diff">[= Nr. 110]</span>&lt;/ab&gt;
-               &lt;<span class="diff">ptr</span> <span class="diff">type</span>="endnote"
-                 <span class="diff">ref</span>="#e1" /&gt;
-            &lt;/p&gt;
-         &lt;/div&gt;
-      &lt;/body&gt;
-      &lt;<span class="diff">back</span>&gt;
-         &lt;<span class="diff">note</span> <span class="diff">type</span>="endnote"
-              <span class="diff">xml:id</span>="e1"
-              <span class="diff">style</span>="Endnotentext; rFonts:Junicode"&gt;
-            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode"
-                 <span class="diff">xml:space</span>="preserve"&gt;<span class="diff"> Zwei stark beschnittene Worte.</span>&lt;/ab&gt;
-         &lt;/note&gt;
-      &lt;/back&gt;
-   &lt;/text&gt;
-&lt;/TEI&gt;</pre></td>
+               <tr class="successful">
+                  <td>.</td>
+                  <td>Success</td>
                </tr>
             </tbody>
          </table>
       </div>
-      <div id="d3e668">
+      <div id="d3e718">
          <h2 class="successful">T2: p<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e668">
+         <table class="xspec" id="t-d3e718">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -150,23 +99,23 @@
             </tbody>
          </table>
       </div>
-      <div id="d3e941">
-         <h2 class="successful">T3: bookmarks, comments, etc.<span class="scenario-totals">passed: 1 / pending: 0 / failed: 1 / total: 2</span></h2>
-         <table class="xspec" id="t-d3e941">
+      <div id="d3e991">
+         <h2 class="successful">T3: bookmarks, comments, etc.<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
+         <table class="xspec" id="t-d3e991">
             <col width="75%" />
             <col width="25%" />
             <tbody>
                <tr class="successful">
                   <th>T3: bookmarks, comments, etc.</th>
-                  <th>passed: 1 / pending: 0 / failed: 1 / total: 2</th>
+                  <th>passed: 2 / pending: 0 / failed: 0 / total: 2</th>
                </tr>
-               <tr class="failed">
-                  <th><a href="#d3e946">T3.1</a></th>
-                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
+               <tr class="successful">
+                  <th>T3.1</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
                </tr>
-               <tr class="failed">
-                  <td><a href="#d3e987">.</a></td>
-                  <td>Failure</td>
+               <tr class="successful">
+                  <td>.</td>
+                  <td>Success</td>
                </tr>
                <tr class="successful">
                   <th>T3.2: Links</th>
@@ -175,88 +124,6 @@
                <tr class="successful">
                   <td>.</td>
                   <td>Success</td>
-               </tr>
-            </tbody>
-         </table>
-         <h3 id="d3e946">T3: bookmarks, comments, etc. T3.1</h3>
-         <h4 id="d3e987">.</h4>
-         <table class="xspecResult">
-            <thead>
-               <tr>
-                  <th>Result</th>
-                  <th>Expected Result</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td><pre>&lt;<span class="diff">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
-         xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
-         xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-         xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-         xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"&gt;
-   &lt;<span class="same">teiHeader</span>&gt;
-      &lt;<span class="same">fileDesc</span>&gt;
-         &lt;<span class="same">sourceDesc</span>&gt;
-            &lt;<span class="same">p</span>&gt;<span class="same">Created from a MS Word file by </span>&lt;<span class="same">ref</span> <span class="same">target</span>="https://github.com/dariok/w2tei"&gt;<span class="same">W2TEI</span>&lt;/ref&gt;<span class="same">:
-              </span>&lt;<span class="same">date</span> <span class="same">when</span>="2020-01-10T19:08:21.893+01:00"
-                 <span class="same">type</span>="created" /&gt;
-            &lt;/p&gt;
-         &lt;/sourceDesc&gt;
-      &lt;/fileDesc&gt;
-   &lt;/teiHeader&gt;
-   &lt;<span class="diff">text</span>&gt;
-      &lt;<span class="diff">body</span> /&gt;
-      &lt;<span class="diff">back</span> /&gt;
-   &lt;/text&gt;
-&lt;/TEI&gt;</pre></td>
-                  <td><pre>&lt;<span class="diff">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
-         xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
-         xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-         xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-         xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"&gt;
-   &lt;<span class="same">teiHeader</span>&gt;
-      &lt;<span class="same">fileDesc</span>&gt;
-         &lt;<span class="same">sourceDesc</span>&gt;
-            &lt;<span class="same">p</span>&gt;<span class="same">Created from a MS Word file by </span>&lt;<span class="same">ref</span> <span class="same">target</span>="https://github.com/dariok/w2tei"&gt;<span class="same">W2TEI</span>&lt;/ref&gt;<span class="same">:
-              </span>&lt;<span class="same">date</span> <span class="same">when</span>="2020-01-10T19:08:21.893+01:00"
-                 <span class="same">type</span>="created" /&gt;
-            &lt;/p&gt;
-         &lt;/sourceDesc&gt;
-      &lt;/fileDesc&gt;
-   &lt;/teiHeader&gt;
-   &lt;<span class="diff">text</span>&gt;
-      &lt;<span class="diff">body</span>&gt;
-         &lt;<span class="diff">div</span>&gt;
-            &lt;<span class="diff">p</span> <span class="diff">style</span>="KSZwischenberschrift; lang:en-US"&gt;
-               &lt;<span class="diff">ab</span> <span class="diff">style</span>="lang:en-US"&gt;<span class="diff">conformare</span>&lt;/ab&gt;
-               &lt;<span class="diff">ab</span> <span class="diff">style</span>="lang:en-US"&gt;<span class="diff">.</span>&lt;/ab&gt;
-               &lt;<span class="diff">anchor</span> <span class="diff">type</span>="bookmarkStart"
-                 <span class="diff">xml:id</span>="_Ref534135879" /&gt;
-               &lt;<span class="diff">ptr</span> <span class="diff">type</span>="endnote"
-                 <span class="diff">ref</span>="#e2" /&gt;
-               &lt;<span class="diff">anchor</span> <span class="diff">type</span>="bookmarkEnd"
-                 <span class="diff">ref</span>="#_Ref534135879" /&gt;
-               &lt;<span class="diff">ab</span> <span class="diff">style</span>="lang:en-US"&gt;<span class="diff"></span>&lt;/ab&gt;
-            &lt;/p&gt;
-         &lt;/div&gt;
-      &lt;/body&gt;
-      &lt;<span class="diff">back</span>&gt;
-         &lt;<span class="diff">note</span> <span class="diff">type</span>="endnote"
-              <span class="diff">xml:id</span>="e5"
-              <span class="diff">style</span>="Endnotentext; rFonts:Junicode; lang:de-DE"&gt;
-            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; lang:de-DE"
-                 <span class="diff">xml:space</span>="preserve"&gt;<span class="diff"> Vgl. </span>&lt;/ab&gt;
-            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">Anm.</span>&lt;/ab&gt;
-            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"
-                 <span class="diff">xml:space</span>="preserve"&gt;<span class="whitespace">.</span>&lt;/ab&gt;
-            &lt;<span class="diff">field</span> <span class="diff">function</span>=" NOTEREF _Ref534135879 \h
- \* MERGEFORMAT "
-                 <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">2</span>&lt;/field&gt;
-            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">.</span>&lt;/ab&gt;
-         &lt;/note&gt;
-      &lt;/back&gt;
-   &lt;/text&gt;
-&lt;/TEI&gt;</pre></td>
                </tr>
             </tbody>
          </table>
