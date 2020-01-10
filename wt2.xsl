@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns="http://www.tei-c.org/ns/1.0"
+  exclude-result-prefixes="#all"
+  version="3.0">
+  
+  <xsl:template match="tei:ab">
+    <xsl:choose>
+      <xsl:when test="@style = 'rtl:0'">
+        <xsl:apply-templates />
+      </xsl:when>
+      <xsl:when test="@style = ('b:1; rtl:0', 'b:1;')">
+        <hi rend="bold">
+          <xsl:apply-templates />
+        </hi>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="@* | node()">
+    <xsl:copy>
+      <xsl:apply-templates select="@* | node()" />
+    </xsl:copy>
+  </xsl:template>
+</xsl:stylesheet>

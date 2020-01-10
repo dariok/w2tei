@@ -14,7 +14,7 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>DOCX → Flat OPC</String>
+                                        <String>DOCX → TEI basic</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
