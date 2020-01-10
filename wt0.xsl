@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-  xmlns:xstring = "https://github.com/dariok/XStringUtils"
-  xmlns:wt="https://github.com/dariok/w2tei"
   xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:wt="https://github.com/dariok/w2tei"
+  xmlns:xstring = "https://github.com/dariok/XStringUtils"
   xmlns="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="#all"
   version="3.0">
@@ -109,7 +110,11 @@
   <xsl:template match="w:hyperlink">
     <field>
       <xsl:attribute name="function">
-        <xsl:text>HYPERLKINK</xsl:text>
+        <xsl:text>Hyperlink</xsl:text>
+      </xsl:attribute>
+      <xsl:attribute name="target">
+        <xsl:variable name="id" select="@r:id"/>
+        <xsl:value-of select="//*:Relationship[@Id = $id]/@Target"/>
       </xsl:attribute>
       <xsl:apply-templates select="w:r" />
     </field>

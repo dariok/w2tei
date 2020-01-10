@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
   xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
   xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
   stylesheet="wt0.xsl">
@@ -609,6 +610,123 @@
             </back>
           </text>
         </TEI>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T3.2: Links">
+      <x:context>
+        <pack>
+          <r:Relationships>
+            <r:Relationship Id="rId7"
+              Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+              Target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
+              TargetMode="External"/>
+          </r:Relationships>
+          <w:document>
+            <w:body>
+              <w:p>
+                <w:r w:rsidR="00F65648" w:rsidRPr="00530F84">
+                  <w:rPr>
+                    <w:lang w:val="la-Latn"/>
+                  </w:rPr>
+                  <w:t xml:space="preserve"> et ecclesiam nostram declaras. Sed qua ratione tuis
+                    consiliis satisfieri possit non video. Speras posse iniri aliquem modum, quo et Christo et </w:t>
+                </w:r>
+                <w:hyperlink r:id="rId7" w:history="1">
+                  <w:r w:rsidR="009443D3">
+                    <w:rPr>
+                      <w:rStyle w:val="Hyperlink"/>
+                      <w:rFonts w:eastAsia="Times New Roman"/>
+                      <w:lang w:val="la-Latn"/>
+                    </w:rPr>
+                    <w:t>Caesareo</w:t>
+                  </w:r>
+                </w:hyperlink>
+                <w:r w:rsidR="00643B86">
+                  <w:rPr>
+                    <w:rStyle w:val="Endnotenzeichen"/>
+                    <w:lang w:val="la-Latn"/>
+                  </w:rPr>
+                  <w:endnoteReference w:id="7"/>
+                </w:r>
+                <w:bookmarkStart w:id="1" w:name="_GoBack"/>
+                <w:r w:rsidR="00FC485F">
+                  <w:rPr>
+                    <w:rFonts w:eastAsia="Times New Roman"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="begin"/>
+                </w:r>
+                <w:r w:rsidR="00FC485F">
+                  <w:rPr>
+                    <w:rFonts w:eastAsia="Times New Roman"/>
+                  </w:rPr>
+                  <w:instrText xml:space="preserve"> HYPERLINK "http://d-nb.info/gnd/121098-1" </w:instrText>
+                </w:r>
+                <w:r w:rsidR="00FC485F">
+                  <w:rPr>
+                    <w:rFonts w:eastAsia="Times New Roman"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="separate"/>
+                </w:r>
+                <w:r w:rsidR="00FC485F" w:rsidRPr="00FC485F">
+                  <w:rPr>
+                    <w:rStyle w:val="auszeichnungbermehrereworte0"/>
+                    <w:rFonts w:eastAsia="Times New Roman"/>
+                    <w:color w:val="0000FF"/>
+                  </w:rPr>
+                  <w:t>Handelsministerium</w:t>
+                </w:r>
+                <w:r w:rsidR="00FC485F">
+                  <w:rPr>
+                    <w:rFonts w:eastAsia="Times New Roman"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="end"/>
+                </w:r>
+                <w:bookmarkEnd w:id="1"/>
+                <w:r w:rsidR="00043B3B" w:rsidRPr="00043B3B">
+                  <w:rPr>
+                    <w:rStyle w:val="AuszeichnungberMehrereWorte"/>
+                  </w:rPr>
+                  <w:t>]]</w:t>
+                </w:r>
+              </w:p>
+            </w:body>
+          </w:document>
+        </pack>
+      </x:context>
+      <x:expect label=".">
+        
+        <TEI xmlns="http://www.tei-c.org/ns/1.0">
+          <teiHeader>
+            <fileDesc>
+              <sourceDesc>
+                <p>Created from a MS Word file by <ref target="https://github.com/dariok/w2tei">W2TEI</ref>:
+              <date when="..." type="created"/>
+                </p>
+              </sourceDesc>
+            </fileDesc>
+          </teiHeader>
+          <text>
+            <body>
+              <div>
+                <p>
+                  <ab xml:space="preserve" style="lang:la-Latn"> et ecclesiam nostram declaras. Sed qua ratione tuis
+                    consiliis satisfieri possit non video. Speras posse iniri aliquem modum, quo et Christo et </ab>
+                  <field function="Hyperlink"
+                    target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
+                    ><ab style="rStyle:Hyperlink; rFonts:; lang:la-Latn">Caesareo</ab></field>
+                  <ptr type="endnote" ref="#e7" />
+                  <anchor type="bookmarkStart" xml:id="_GoBack"/>
+                  <field function=" HYPERLINK &#34;http://d-nb.info/gnd/121098-1&#34; "
+                    style="rStyle:auszeichnungbermehrereworte0; rFonts:; color:0000FF">Handelsministerium</field>
+                  <anchor type="bookmarkEnd" ref="#_GoBack"/>
+                  <ab style="rStyle:AuszeichnungberMehrereWorte">]]</ab>
+                </p>
+              </div>
+            </body>
+            <back/>
+          </text>
+        </TEI>
+        
       </x:expect>
     </x:scenario>
   </x:scenario>
