@@ -15,6 +15,11 @@
           <xsl:apply-templates />
         </hi>
       </xsl:when>
+      <xsl:when test="@style = ('i:1; rtl:0', 'i:1')">
+        <hi rend="italics">
+          <xsl:apply-templates />
+        </hi>
+      </xsl:when>
     </xsl:choose>
   </xsl:template>
   
