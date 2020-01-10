@@ -15,7 +15,7 @@
   <xsl:include href="word-pack.xsl"/>
   
   <xsl:template match="/">
-    <xsl:apply-templates select="descendant::w:document" />
+    <xsl:apply-templates />
   </xsl:template>
   
   <xsl:template match="w:document">
@@ -30,7 +30,7 @@
       </teiHeader>
       <text>
         <body>
-          <xsl:apply-templates select="//w:body"/>
+          <xsl:apply-templates select="w:body"/>
         </body>
         <back>
           <xsl:apply-templates select="//w:endnotes" />
@@ -201,6 +201,6 @@
     <anchor type="bookmarkEnd" ref="#{preceding-sibling::w:bookmarkStart[@w:id = $target]/@w:name}" />
   </xsl:template>
   
-  <xsl:template match="pkg:part" />
+  <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
   
 </xsl:stylesheet>

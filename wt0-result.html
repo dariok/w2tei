@@ -8,7 +8,7 @@
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/wt0.xsl">home/dario/git/w2tei/wt0.xsl</a></p>
       <p>XSpec: <a href="file:/home/dario/git/w2tei/wt0.xspec">home/dario/git/w2tei/wt0.xspec</a></p>
-      <p>Tested: 10 January 2020 at 17:43</p>
+      <p>Tested: 10 January 2020 at 19:08</p>
       <h2>Contents</h2>
       <table class="xspec">
          <col width="75%" />
@@ -34,14 +34,14 @@
                <th class="totals">2</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e715">T2: p</a></th>
+               <th><a href="#d3e668">T2: p</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="failed">
-               <th><a href="#d3e988">T3: bookmarks, comments, etc.</a></th>
+               <th><a href="#d3e941">T3: bookmarks, comments, etc.</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
@@ -72,13 +72,13 @@
                   <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
                <tr class="failed">
-                  <td><a href="#d3e655">.</a></td>
+                  <td><a href="#d3e608">.</a></td>
                   <td>Failure</td>
                </tr>
             </tbody>
          </table>
          <h3 id="d3e450">T1: structure T1.2</h3>
-         <h4 id="d3e655">.</h4>
+         <h4 id="d3e608">.</h4>
          <table class="xspecResult">
             <thead>
                <tr>
@@ -88,81 +88,39 @@
             </thead>
             <tbody>
                <tr>
-                  <td><pre>&lt;<span class="same">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
+                  <td><pre>()</pre></td>
+                  <td><pre>&lt;<span class="diff">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
          xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
          xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
          xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"&gt;
-   &lt;<span class="same">teiHeader</span>&gt;
-      &lt;<span class="same">fileDesc</span>&gt;
-         &lt;<span class="same">sourceDesc</span>&gt;
-            &lt;<span class="same">p</span>&gt;<span class="same">Created from a MS Word file by </span>&lt;<span class="same">ref</span> <span class="same">target</span>="https://github.com/dariok/w2tei"&gt;<span class="same">W2TEI</span>&lt;/ref&gt;<span class="same">:
-              </span>&lt;<span class="same">date</span> <span class="same">when</span>="2020-01-10T17:43:09.306+01:00"
-                 <span class="same">type</span>="created" /&gt;
+   &lt;<span class="diff">teiHeader</span>&gt;
+      &lt;<span class="diff">fileDesc</span>&gt;
+         &lt;<span class="diff">sourceDesc</span>&gt;
+            &lt;<span class="diff">p</span>&gt;<span class="diff">Created from a MS Word file by </span>&lt;<span class="diff">ref</span> <span class="diff">target</span>="https://github.com/dariok/w2tei"&gt;<span class="diff">W2TEI</span>&lt;/ref&gt;<span class="diff">:
+              </span>&lt;<span class="diff">date</span> <span class="diff">when</span>="..."
+                 <span class="diff">type</span>="created" /&gt;
             &lt;/p&gt;
          &lt;/sourceDesc&gt;
       &lt;/fileDesc&gt;
    &lt;/teiHeader&gt;
-   &lt;<span class="same">text</span>&gt;
-      &lt;<span class="same">body</span>&gt;
-         &lt;<span class="same">div</span>&gt;
-            &lt;<span class="same">p</span> <span class="same">style</span>="KSEE-Titel"&gt;
-               &lt;<span class="same">ab</span> <span class="same">xml:space</span>="preserve"&gt;<span class="same">EE 86 </span>&lt;/ab&gt;
-               &lt;<span class="same">ab</span>&gt;<span class="same">[= Nr. 110]</span>&lt;/ab&gt;
-               &lt;<span class="same">ptr</span> <span class="same">type</span>="endnote"
-                 <span class="same">ref</span>="#e1" /&gt;
+   &lt;<span class="diff">text</span>&gt;
+      &lt;<span class="diff">body</span>&gt;
+         &lt;<span class="diff">div</span>&gt;
+            &lt;<span class="diff">p</span> <span class="diff">style</span>="KSEE-Titel"&gt;
+               &lt;<span class="diff">ab</span> <span class="diff">xml:space</span>="preserve"&gt;<span class="diff">EE 86 </span>&lt;/ab&gt;
+               &lt;<span class="diff">ab</span>&gt;<span class="diff">[= Nr. 110]</span>&lt;/ab&gt;
+               &lt;<span class="diff">ptr</span> <span class="diff">type</span>="endnote"
+                 <span class="diff">ref</span>="#e1" /&gt;
             &lt;/p&gt;
          &lt;/div&gt;
       &lt;/body&gt;
-      &lt;<span class="same">back</span>&gt;
-         &lt;<span class="same">note</span> <span class="same">type</span>="endnote"
-              <span class="same">xml:id</span>="e1"
-              <span class="same">style</span>="Endnotentext; rFonts:Junicode"&gt;
-            &lt;<span class="same">ab</span> <span class="same">xml:space</span>="preserve"
-                 <span class="same">style</span>="rFonts:Junicode"&gt;<span class="same"> Zwei stark beschnittene Worte.</span>&lt;/ab&gt;
-         &lt;/note&gt;
-      &lt;/back&gt;
-   &lt;/text&gt;
-&lt;/TEI&gt;&lt;<span class="diff">note</span> xmlns="http://www.tei-c.org/ns/1.0"
-         xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-         xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-         xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-         <span class="diff">type</span>="endnote"
-         <span class="diff">xml:id</span>="e1"
-         <span class="diff">style</span>="Endnotentext; rFonts:Junicode"&gt;
-   &lt;<span class="diff">ab</span> <span class="diff">xml:space</span>="preserve"
-        <span class="diff">style</span>="rFonts:Junicode"&gt;<span class="diff"> Zwei stark beschnittene Worte.</span>&lt;/ab&gt;
-&lt;/note&gt;</pre></td>
-                  <td><pre>&lt;<span class="same">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
-         xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-         xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-         xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"&gt;
-   &lt;<span class="same">teiHeader</span>&gt;
-      &lt;<span class="same">fileDesc</span>&gt;
-         &lt;<span class="same">sourceDesc</span>&gt;
-            &lt;<span class="same">p</span>&gt;<span class="same">Created from a MS Word file by </span>&lt;<span class="same">ref</span> <span class="same">target</span>="https://github.com/dariok/w2tei"&gt;<span class="same">W2TEI</span>&lt;/ref&gt;<span class="same">:
-              </span>&lt;<span class="same">date</span> <span class="same">when</span>="..."
-                 <span class="same">type</span>="created" /&gt;
-            &lt;/p&gt;
-         &lt;/sourceDesc&gt;
-      &lt;/fileDesc&gt;
-   &lt;/teiHeader&gt;
-   &lt;<span class="same">text</span>&gt;
-      &lt;<span class="same">body</span>&gt;
-         &lt;<span class="same">div</span>&gt;
-            &lt;<span class="same">p</span> <span class="same">style</span>="KSEE-Titel"&gt;
-               &lt;<span class="same">ab</span> <span class="same">xml:space</span>="preserve"&gt;<span class="same">EE 86 </span>&lt;/ab&gt;
-               &lt;<span class="same">ab</span>&gt;<span class="same">[= Nr. 110]</span>&lt;/ab&gt;
-               &lt;<span class="same">ptr</span> <span class="same">type</span>="endnote"
-                 <span class="same">ref</span>="#e1" /&gt;
-            &lt;/p&gt;
-         &lt;/div&gt;
-      &lt;/body&gt;
-      &lt;<span class="same">back</span>&gt;
-         &lt;<span class="same">note</span> <span class="same">type</span>="endnote"
-              <span class="same">xml:id</span>="e1"
-              <span class="same">style</span>="Endnotentext; rFonts:Junicode"&gt;
-            &lt;<span class="same">ab</span> <span class="same">style</span>="rFonts:Junicode"
-                 <span class="same">xml:space</span>="preserve"&gt;<span class="same"> Zwei stark beschnittene Worte.</span>&lt;/ab&gt;
+      &lt;<span class="diff">back</span>&gt;
+         &lt;<span class="diff">note</span> <span class="diff">type</span>="endnote"
+              <span class="diff">xml:id</span>="e1"
+              <span class="diff">style</span>="Endnotentext; rFonts:Junicode"&gt;
+            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode"
+                 <span class="diff">xml:space</span>="preserve"&gt;<span class="diff"> Zwei stark beschnittene Worte.</span>&lt;/ab&gt;
          &lt;/note&gt;
       &lt;/back&gt;
    &lt;/text&gt;
@@ -171,9 +129,9 @@
             </tbody>
          </table>
       </div>
-      <div id="d3e715">
+      <div id="d3e668">
          <h2 class="successful">T2: p<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e715">
+         <table class="xspec" id="t-d3e668">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -192,9 +150,9 @@
             </tbody>
          </table>
       </div>
-      <div id="d3e988">
+      <div id="d3e941">
          <h2 class="successful">T3: bookmarks, comments, etc.<span class="scenario-totals">passed: 1 / pending: 0 / failed: 1 / total: 2</span></h2>
-         <table class="xspec" id="t-d3e988">
+         <table class="xspec" id="t-d3e941">
             <col width="75%" />
             <col width="25%" />
             <tbody>
@@ -203,11 +161,11 @@
                   <th>passed: 1 / pending: 0 / failed: 1 / total: 2</th>
                </tr>
                <tr class="failed">
-                  <th><a href="#d3e993">T3.1</a></th>
+                  <th><a href="#d3e946">T3.1</a></th>
                   <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
                <tr class="failed">
-                  <td><a href="#d3e1366">.</a></td>
+                  <td><a href="#d3e987">.</a></td>
                   <td>Failure</td>
                </tr>
                <tr class="successful">
@@ -220,8 +178,8 @@
                </tr>
             </tbody>
          </table>
-         <h3 id="d3e993">T3: bookmarks, comments, etc. T3.1</h3>
-         <h4 id="d3e1366">.</h4>
+         <h3 id="d3e946">T3: bookmarks, comments, etc. T3.1</h3>
+         <h4 id="d3e987">.</h4>
          <table class="xspecResult">
             <thead>
                <tr>
@@ -231,7 +189,8 @@
             </thead>
             <tbody>
                <tr>
-                  <td><pre>&lt;<span class="same">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
+                  <td><pre>&lt;<span class="diff">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
          xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
          xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
          xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"&gt;
@@ -239,62 +198,19 @@
       &lt;<span class="same">fileDesc</span>&gt;
          &lt;<span class="same">sourceDesc</span>&gt;
             &lt;<span class="same">p</span>&gt;<span class="same">Created from a MS Word file by </span>&lt;<span class="same">ref</span> <span class="same">target</span>="https://github.com/dariok/w2tei"&gt;<span class="same">W2TEI</span>&lt;/ref&gt;<span class="same">:
-              </span>&lt;<span class="same">date</span> <span class="same">when</span>="2020-01-10T17:43:09.306+01:00"
+              </span>&lt;<span class="same">date</span> <span class="same">when</span>="2020-01-10T19:08:21.893+01:00"
                  <span class="same">type</span>="created" /&gt;
             &lt;/p&gt;
          &lt;/sourceDesc&gt;
       &lt;/fileDesc&gt;
    &lt;/teiHeader&gt;
-   &lt;<span class="same">text</span>&gt;
-      &lt;<span class="same">body</span>&gt;
-         &lt;<span class="same">div</span>&gt;
-            &lt;<span class="same">p</span> <span class="same">style</span>="KSZwischenberschrift; lang:en-US"&gt;
-               &lt;<span class="same">ab</span> <span class="same">style</span>="lang:en-US"&gt;<span class="same">conformare</span>&lt;/ab&gt;
-               &lt;<span class="same">ab</span> <span class="same">style</span>="lang:en-US"&gt;<span class="same">.</span>&lt;/ab&gt;
-               &lt;<span class="same">anchor</span> <span class="same">type</span>="bookmarkStart"
-                 <span class="same">xml:id</span>="_Ref534135879" /&gt;
-               &lt;<span class="same">ptr</span> <span class="same">type</span>="endnote"
-                 <span class="same">ref</span>="#e2" /&gt;
-               &lt;<span class="same">anchor</span> <span class="same">type</span>="bookmarkEnd"
-                 <span class="same">ref</span>="#_Ref534135879" /&gt;
-               &lt;<span class="same">ab</span> <span class="same">style</span>="lang:en-US"&gt;<span class="same"></span>&lt;/ab&gt;
-            &lt;/p&gt;
-         &lt;/div&gt;
-      &lt;/body&gt;
-      &lt;<span class="same">back</span>&gt;
-         &lt;<span class="same">note</span> <span class="same">type</span>="endnote"
-              <span class="same">xml:id</span>="e5"
-              <span class="same">style</span>="Endnotentext; rFonts:Junicode; lang:de-DE"&gt;
-            &lt;<span class="same">ab</span> <span class="same">xml:space</span>="preserve"
-                 <span class="same">style</span>="rFonts:Junicode; lang:de-DE"&gt;<span class="same"> Vgl. </span>&lt;/ab&gt;
-            &lt;<span class="same">ab</span> <span class="same">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="same">Anm.</span>&lt;/ab&gt;
-            &lt;<span class="same">ab</span> <span class="same">xml:space</span>="preserve"
-                 <span class="same">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="whitespace">.</span>&lt;/ab&gt;
-            &lt;<span class="same">field</span> <span class="same">function</span>=" NOTEREF _Ref534135879 \h
- \* MERGEFORMAT "
-                 <span class="same">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="same">2</span>&lt;/field&gt;
-            &lt;<span class="same">ab</span> <span class="same">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="same">.</span>&lt;/ab&gt;
-         &lt;/note&gt;
-      &lt;/back&gt;
+   &lt;<span class="diff">text</span>&gt;
+      &lt;<span class="diff">body</span> /&gt;
+      &lt;<span class="diff">back</span> /&gt;
    &lt;/text&gt;
-&lt;/TEI&gt;&lt;<span class="diff">note</span> xmlns="http://www.tei-c.org/ns/1.0"
-         xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-         xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-         xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-         <span class="diff">type</span>="endnote"
-         <span class="diff">xml:id</span>="e5"
-         <span class="diff">style</span>="Endnotentext; rFonts:Junicode; lang:de-DE"&gt;
-   &lt;<span class="diff">ab</span> <span class="diff">xml:space</span>="preserve"
-        <span class="diff">style</span>="rFonts:Junicode; lang:de-DE"&gt;<span class="diff"> Vgl. </span>&lt;/ab&gt;
-   &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">Anm.</span>&lt;/ab&gt;
-   &lt;<span class="diff">ab</span> <span class="diff">xml:space</span>="preserve"
-        <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="whitespace">.</span>&lt;/ab&gt;
-   &lt;<span class="diff">field</span> <span class="diff">function</span>=" NOTEREF _Ref534135879 \h
- \* MERGEFORMAT "
-        <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">2</span>&lt;/field&gt;
-   &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">.</span>&lt;/ab&gt;
-&lt;/note&gt;</pre></td>
-                  <td><pre>&lt;<span class="same">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
+&lt;/TEI&gt;</pre></td>
+                  <td><pre>&lt;<span class="diff">TEI</span> xmlns="http://www.tei-c.org/ns/1.0"
+         xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
          xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
          xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
          xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"&gt;
@@ -302,41 +218,41 @@
       &lt;<span class="same">fileDesc</span>&gt;
          &lt;<span class="same">sourceDesc</span>&gt;
             &lt;<span class="same">p</span>&gt;<span class="same">Created from a MS Word file by </span>&lt;<span class="same">ref</span> <span class="same">target</span>="https://github.com/dariok/w2tei"&gt;<span class="same">W2TEI</span>&lt;/ref&gt;<span class="same">:
-              </span>&lt;<span class="same">date</span> <span class="same">when</span>="2020-01-10T17:43:09.306+01:00"
+              </span>&lt;<span class="same">date</span> <span class="same">when</span>="2020-01-10T19:08:21.893+01:00"
                  <span class="same">type</span>="created" /&gt;
             &lt;/p&gt;
          &lt;/sourceDesc&gt;
       &lt;/fileDesc&gt;
    &lt;/teiHeader&gt;
-   &lt;<span class="same">text</span>&gt;
-      &lt;<span class="same">body</span>&gt;
-         &lt;<span class="same">div</span>&gt;
-            &lt;<span class="same">p</span> <span class="same">style</span>="KSZwischenberschrift; lang:en-US"&gt;
-               &lt;<span class="same">ab</span> <span class="same">style</span>="lang:en-US"&gt;<span class="same">conformare</span>&lt;/ab&gt;
-               &lt;<span class="same">ab</span> <span class="same">style</span>="lang:en-US"&gt;<span class="same">.</span>&lt;/ab&gt;
-               &lt;<span class="same">anchor</span> <span class="same">type</span>="bookmarkStart"
-                 <span class="same">xml:id</span>="_Ref534135879" /&gt;
-               &lt;<span class="same">ptr</span> <span class="same">type</span>="endnote"
-                 <span class="same">ref</span>="#e2" /&gt;
-               &lt;<span class="same">anchor</span> <span class="same">type</span>="bookmarkEnd"
-                 <span class="same">ref</span>="#_Ref534135879" /&gt;
-               &lt;<span class="same">ab</span> <span class="same">style</span>="lang:en-US"&gt;<span class="same"></span>&lt;/ab&gt;
+   &lt;<span class="diff">text</span>&gt;
+      &lt;<span class="diff">body</span>&gt;
+         &lt;<span class="diff">div</span>&gt;
+            &lt;<span class="diff">p</span> <span class="diff">style</span>="KSZwischenberschrift; lang:en-US"&gt;
+               &lt;<span class="diff">ab</span> <span class="diff">style</span>="lang:en-US"&gt;<span class="diff">conformare</span>&lt;/ab&gt;
+               &lt;<span class="diff">ab</span> <span class="diff">style</span>="lang:en-US"&gt;<span class="diff">.</span>&lt;/ab&gt;
+               &lt;<span class="diff">anchor</span> <span class="diff">type</span>="bookmarkStart"
+                 <span class="diff">xml:id</span>="_Ref534135879" /&gt;
+               &lt;<span class="diff">ptr</span> <span class="diff">type</span>="endnote"
+                 <span class="diff">ref</span>="#e2" /&gt;
+               &lt;<span class="diff">anchor</span> <span class="diff">type</span>="bookmarkEnd"
+                 <span class="diff">ref</span>="#_Ref534135879" /&gt;
+               &lt;<span class="diff">ab</span> <span class="diff">style</span>="lang:en-US"&gt;<span class="diff"></span>&lt;/ab&gt;
             &lt;/p&gt;
          &lt;/div&gt;
       &lt;/body&gt;
-      &lt;<span class="same">back</span>&gt;
-         &lt;<span class="same">note</span> <span class="same">type</span>="endnote"
-              <span class="same">xml:id</span>="e5"
-              <span class="same">style</span>="Endnotentext; rFonts:Junicode; lang:de-DE"&gt;
-            &lt;<span class="same">ab</span> <span class="same">style</span>="rFonts:Junicode; lang:de-DE"
-                 <span class="same">xml:space</span>="preserve"&gt;<span class="same"> Vgl. </span>&lt;/ab&gt;
-            &lt;<span class="same">ab</span> <span class="same">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="same">Anm.</span>&lt;/ab&gt;
-            &lt;<span class="same">ab</span> <span class="same">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"
-                 <span class="same">xml:space</span>="preserve"&gt;<span class="whitespace">.</span>&lt;/ab&gt;
-            &lt;<span class="same">field</span> <span class="same">function</span>=" NOTEREF _Ref534135879 \h
+      &lt;<span class="diff">back</span>&gt;
+         &lt;<span class="diff">note</span> <span class="diff">type</span>="endnote"
+              <span class="diff">xml:id</span>="e5"
+              <span class="diff">style</span>="Endnotentext; rFonts:Junicode; lang:de-DE"&gt;
+            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; lang:de-DE"
+                 <span class="diff">xml:space</span>="preserve"&gt;<span class="diff"> Vgl. </span>&lt;/ab&gt;
+            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">Anm.</span>&lt;/ab&gt;
+            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"
+                 <span class="diff">xml:space</span>="preserve"&gt;<span class="whitespace">.</span>&lt;/ab&gt;
+            &lt;<span class="diff">field</span> <span class="diff">function</span>=" NOTEREF _Ref534135879 \h
  \* MERGEFORMAT "
-                 <span class="same">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="same">2</span>&lt;/field&gt;
-            &lt;<span class="same">ab</span> <span class="same">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="same">.</span>&lt;/ab&gt;
+                 <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">2</span>&lt;/field&gt;
+            &lt;<span class="diff">ab</span> <span class="diff">style</span>="rFonts:Junicode; highlight:yellow; lang:de-DE"&gt;<span class="diff">.</span>&lt;/ab&gt;
          &lt;/note&gt;
       &lt;/back&gt;
    &lt;/text&gt;
