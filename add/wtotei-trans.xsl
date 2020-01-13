@@ -15,7 +15,7 @@
     <xsl:template match="w:body">
         <xsl:apply-templates
           select="w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1')]/following-sibling::w:p[hab:isDiv(.)]"/>
-        <xsl:apply-templates select="parent::w:document/following-sibling::w:*"/>
+        <xsl:apply-templates select="ancestor::pkg:part/following-sibling::*/w:*"/>
     </xsl:template>
     
     <!-- Paragraphen -->
