@@ -4,6 +4,7 @@
   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
   xmlns:hab="http://diglib.hab.de"
   xmlns:wt="https://github.com/dariok/w2tei"
+  xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
   xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all"
   version="3.0">
   
@@ -154,6 +155,7 @@
           <xsl:apply-templates select="//w:body"/>
         </body>
       </text>
+      <xsl:apply-templates select="//pkg:part[not(w:document)]"/>
     </TEI>
   </xsl:template>
   <!-- Ende root -->
@@ -310,10 +312,8 @@
   <xsl:template match="w:br[ancestor::w:p[wt:is(., 'KSZitatblock')]]">
     <xsl:text>$</xsl:text>
   </xsl:template>
-	
-	<xsl:template match="w:endnotes | w:footnotes">
-		<xsl:copy>
-			<xsl:apply-templates />
-		</xsl:copy>
-	</xsl:template>
+  
+  <xsl:template match="pkg:part">
+    <xsl:sequence select="." />
+  </xsl:template>
 </xsl:stylesheet>

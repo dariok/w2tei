@@ -134,12 +134,14 @@
         <rs type="place">
             <xsl:apply-templates select="w:t"/>
         </rs>
+        <xsl:apply-templates select="w:footnoteReference" />
     </xsl:template>
     
     <xsl:template match="w:r[wt:is(., 'KSPerson', 'r')]">
         <rs type="person">
             <xsl:apply-templates select="w:t"/>
         </rs>
+        <xsl:apply-templates select="w:footnoteReference" />
     </xsl:template>
     <!-- Ende RS -->
     

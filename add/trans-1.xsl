@@ -202,7 +202,9 @@
     
 	<!-- kritische Anmerkungen -->
 	<xsl:template match="w:r[descendant::w:footnoteReference
-		and not(wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r'))]">
+		and not(wt:is(., 'KSkritischeAnmerkungbermehrereWrter', 'r')
+		or wt:is(., 'KSOrt', 'r')
+		or wt:is(., 'KSPerson', 'r'))]">
 		<xsl:apply-templates select="w:footnoteReference" />
 	</xsl:template>
 	
@@ -262,11 +264,11 @@
     </xsl:template>
     <!-- ENDE kritische Anmerkungen -->
     
-    <xsl:template match="w:r[wt:is(., 'KSAutorenstelle', 'r')]">
+    <!--<xsl:template match="w:r[wt:is(., 'KSAutorenstelle', 'r')]">
         <ref type="medieval">
             <xsl:apply-templates select="w:t" />
         </ref>
-    </xsl:template>
+    </xsl:template>-->
     
     <!--<xsl:template match="w:p[wt:is(., 'KSlistWit', 'p')]">
         <xsl:variable name="text"><xsl:apply-templates select="w:r"/></xsl:variable>

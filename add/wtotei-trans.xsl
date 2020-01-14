@@ -15,7 +15,6 @@
     <xsl:template match="w:body">
         <xsl:apply-templates
           select="w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1')]/following-sibling::w:p[hab:isDiv(.)]"/>
-        <xsl:apply-templates select="ancestor::pkg:part/following-sibling::*/w:*"/>
     </xsl:template>
     
     <!-- Paragraphen -->
@@ -26,7 +25,8 @@
 			</xsl:text>
 		<div>
 			<xsl:apply-templates select="following-sibling::w:p[(hab:isP(.))
-				and generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />
+				and generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]
+				| following-sibling::w:tbl[generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />
 		</div>
 	</xsl:template>
     
@@ -97,7 +97,44 @@
 			<xsl:sequence select="@* | node()" />
 		</w:footnote>
 	</xsl:template>
-    
+	
+	<xd:doc>
+		<xd:desc>Tabellen</xd:desc>
+	</xd:doc>
+	<xsl:template match="w:tbl">
+		<table>
+			<xsl:apply-templates select="w:tr"/>
+		</table>
+	</xsl:template>
+	<xsl:template match="w:tr">
+		<row>
+			<xsl:apply-templates select="w:tc	"/>
+		</row>
+	</xsl:template>
+	<xsl:template match="w:tc">
+		<cell>
+			<xsl:if test="w:tcPr/w:vMerge[@w:val]">
+				<xsl:variable name="pos" select="count(preceding-sibling::w:tc) + 1" />
+				<xsl:variable name="next" select="(parent::*/following-sibling::w:tr[w:tc[$pos][not(descendant::w:vMerge)]])[1]" />
+				<xsl:variable name="rows">
+					<xsl:choose>
+						<xsl:when test="$next">
+							<xsl:value-of select="count(parent::w:tr/following-sibling::w:tr[descendant::w:vMerge and following-sibling::w:tr[not(descendant::w:vSpan)][1] = $next]) + 1"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="count(parent::w:tr/following-sibling::w:tr) + 1"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable> 
+				<xsl:attribute name="rows" select="$rows" />
+			</xsl:if>
+			<xsl:if test="w:tcPr/w:gridSpan">
+				<xsl:attribute name="cols" select="w:tcPr/w:gridSpan/@w:val"/>
+			</xsl:if>
+			<xsl:sequence select="w:p" />
+		</cell>
+	</xsl:template>
+	
     <!-- Funktionen -->
     <xd:doc>
         <xd:desc>Prüfen, ob es einen Absatz bildet</xd:desc>
