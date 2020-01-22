@@ -5,12 +5,14 @@
     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:hab="http://diglib.hab.de"
+    xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
     stylesheet="wtotei-trans.xsl" xslt-version="3.0" preserve-space="no">
     
 	<x:scenario label="T1: normaler Absatz">
 		<x:scenario label="T1.1: mit Leerzeilen">
 			<x:context>
-                <w:body>
+				<package:package>
+					<package:part package:name="titelei">
                     <w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53"
                         w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
                         <w:pPr>
@@ -28,6 +30,9 @@
                             <w:t>Text</w:t>
                         </w:r>
                     </w:p>
+					</package:part>
+					<package:part package:name="/word/document.xml">
+<!--						<w:p />-->
                     <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
                         w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
                         <w:pPr>
@@ -124,8 +129,9 @@
                             <w:sym w:font="Symbol" w:char="F05E"/>
                         </w:r>
                     </w:p>
-                </w:body>
-            </x:context>
+					</package:part>
+				</package:package>
+			</x:context>
 			<x:expect label="div" xml:space="preserve">
 			<div>
 				<p>
@@ -228,24 +234,8 @@
 		</x:scenario>
 		<x:scenario label="T1.2: Endzeichen löschen">
 			<x:context>
-                <w:body>
-                    <w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53"
-                        w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
-                        <w:pPr>
-                            <w:pStyle w:val="berschrift1"/>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                        </w:pPr>
-                        <w:r w:rsidRPr="00E46B53">
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                            <w:t>Text</w:t>
-                        </w:r>
-                    </w:p>
+				<package:package>
+					<package:part package:name="/word/document.xml">
                     <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
                         w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
                         <w:pPr>
@@ -277,8 +267,9 @@
                             <w:t></w:t>
                         </w:r>
                     </w:p>
-                </w:body>
-            </x:context>
+					</package:part>
+				</package:package>
+			</x:context>
 			<x:expect label="Text ohne F05E" xml:space="preserve">
 			<div>
 				<p><w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
@@ -317,23 +308,8 @@
 	<x:scenario label="T2: Sonderkodierungen">
 		<x:scenario label="T2.1: Buchtitel">
 			<x:context>
-				<w:body>
-					<w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53" w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
-						<w:pPr>
-							<w:pStyle w:val="berschrift1"/>
-							<w:rPr>
-								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-								<w:lang w:val="de-DE"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r w:rsidRPr="00E46B53">
-							<w:rPr>
-								<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-								<w:lang w:val="de-DE"/>
-							</w:rPr>
-							<w:t>Text</w:t>
-						</w:r>
-					</w:p>
+				<package:package>
+					<package:part package:name="/word/document.xml">
 					<w:p w14:paraId="3F1DBF0A" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00197C2C" w:rsidRDefault="00F62B33" w:rsidP="00F4242F">
 						<w:pPr>
 							<w:rPr>
@@ -547,7 +523,8 @@
 						</w:r>
 					</w:p>
 					<w:p w14:paraId="37CC1C2D" w14:textId="77777777" w:rsidR="00197C2C" w:rsidRPr="00197C2C" w:rsidRDefault="00197C2C" w:rsidP="00197C2C"/>
-				</w:body>
+					</package:part>
+				</package:package>
 			</x:context>
 			<x:expect label="titlePart" xml:space="preserve">
 			<div>
@@ -768,24 +745,8 @@
 	</x:scenario>
 
 	<x:scenario label="T4: Zentrierung Titelseite">
-		<x:context>
-			<w:body>
-				<w:p w14:paraId="5F28E673" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00E46B53" w:rsidRDefault="00F62B33" w:rsidP="00BB22B3">
-					<w:pPr>
-						<w:pStyle w:val="berschrift1"/>
-						<w:rPr>
-							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-							<w:lang w:val="de-DE"/>
-						</w:rPr>
-					</w:pPr>
-					<w:r w:rsidRPr="00E46B53">
-						<w:rPr>
-							<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-							<w:lang w:val="de-DE"/>
-						</w:rPr>
-						<w:t>Text</w:t>
-					</w:r>
-				</w:p>
+		<x:context><package:package>
+			<package:part package:name="/word/document.xml">
 				<w:p w14:paraId="3F1DBF0A" w14:textId="77777777" w:rsidR="00F62B33" w:rsidRPr="00197C2C" w:rsidRDefault="00F62B33" w:rsidP="00F4242F">
 					<w:pPr>
 						<w:rPr>
@@ -1010,7 +971,8 @@
 				</w:r>
 			</w:p>
 			<w:p w14:paraId="37CC1C2D" w14:textId="77777777" w:rsidR="00197C2C" w:rsidRPr="00197C2C" w:rsidRDefault="00197C2C" w:rsidP="00197C2C"/>
-			</w:body>
+			</package:part>
+		</package:package>
 		</x:context>
 		<x:expect label="zentriert" xml:space="preserve">
 			<div>

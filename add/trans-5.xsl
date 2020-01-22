@@ -134,6 +134,9 @@
 	</xsl:template>-->
 	
 	<xsl:template match="tei:anchor" />
+	<xsl:template match="tei:anchor[not(@type = 'crit_app') and matches(@xml:id, '^s\d\d\de?$')]">
+		<xsl:sequence select="." />
+	</xsl:template>
 	<xsl:template match="tei:note[@type = 'footnote'
 		and preceding-sibling::*[1][self::tei:anchor[ends-with(@xml:id, 'e')]]
 		and following-sibling::*[1][self::tei:span]]" />
@@ -156,9 +159,11 @@
 		</div>
 	</xsl:template>
 	
+	
+	
 	<xsl:template match="node()[not(self::tei:span)][(
-		preceding-sibling::tei:anchor[1][not(ends-with(@xml:id, 'e'))]
-		and following-sibling::tei:anchor[1][ends-with(@xml:id, 'e')])
+		preceding-sibling::tei:anchor[1][@type = 'crit_app' and not(ends-with(@xml:id, 'e'))]
+		and following-sibling::tei:anchor[1][@type = 'crit_app' and ends-with(@xml:id, 'e')])
 		or following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
 		<xsl:variable name="pre" select="preceding-sibling::tei:anchor[1]/@xml:id"/>
 		<xsl:choose>

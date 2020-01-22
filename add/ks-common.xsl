@@ -43,21 +43,22 @@
           </xsl:otherwise>
         </xsl:choose>
       </xsl:attribute>
+      <xsl:variable name="titel" select="//pkg:part[@pkg:name = 'titelei']//w:p[wt:is(., 'KSEE-Titel', 'p')]" />
+      <xsl:variable name="title">
+        <xsl:apply-templates select="$titel[2]//w:t" mode="mTitle" />
+      </xsl:variable>
       <teiHeader>
         <fileDesc>
           <titleStmt>
             <title>
-              <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle"/>
-              <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel')][3]" mode="date"/>
+              <xsl:sequence select="$title" />
+              <xsl:apply-templates select="$titel[3]//w:t" mode="date" />
             </title>
             <!-- Kurztitel erzeugen; 2017-08-07 DK -->
             <title type="short">
               <xsl:if test="//w:p[hab:isHead(., 1)][1]//w:t = 'Referenz'">
                 <xsl:text>Verschollen: </xsl:text>
               </xsl:if>
-              <xsl:variable name="title">
-                <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel')][2]//w:t" mode="mTitle"/>
-              </xsl:variable>
               <!--<xsl:choose>
                 <xsl:when test="$title/*:lb">
                   <xsl:value-of select="$title/text()[following-sibling::*:lb]"/>
@@ -86,7 +87,7 @@
                 </xsl:otherwise>
               </xsl:choose>
               <xsl:variable name="dpline">
-                <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel')][3]" mode="date"/>
+                <xsl:apply-templates select="$titel[3]" mode="date"/>
               </xsl:variable>
               <xsl:apply-templates select="$dpline/*:date" mode="header"/>
               <xsl:choose>
@@ -99,7 +100,7 @@
                 </xsl:otherwise>
               </xsl:choose>
             </title>
-            <xsl:apply-templates select="//w:p[wt:is(., 'KSEE-Titel') and wt:starts(., 'Bearb')]"
+            <xsl:apply-templates select="$titel[wt:starts(., 'Bearb')]"
               mode="head"/>
           </titleStmt>
           <publicationStmt>
@@ -152,13 +153,14 @@
       </teiHeader>
       <text>
         <body>
-          <xsl:apply-templates select="//w:body"/>
+          <xsl:apply-templates select="//pkg:part[@pkg:name='/word/document.xml']"/>
         </body>
       </text>
-      <xsl:apply-templates select="//pkg:part[not(w:document)]"/>
+      <xsl:sequence select="//pkg:part[not(@pkg:name='/word/document.xml' or @pkg:name='titelei')]"/>
     </TEI>
   </xsl:template>
   <!-- Ende root -->
+  
   <!-- Kopf-Zeug -->
   <!-- Bearbeiter/Autor; 2017-05-03 DK -->
   <xsl:template match="w:p[wt:is(., 'KSEE-Titel') and wt:starts(., 'Bearb')]" mode="head">
@@ -311,9 +313,5 @@
   </xsl:template>
   <xsl:template match="w:br[ancestor::w:p[wt:is(., 'KSZitatblock')]]">
     <xsl:text>$</xsl:text>
-  </xsl:template>
-  
-  <xsl:template match="pkg:part">
-    <xsl:sequence select="." />
   </xsl:template>
 </xsl:stylesheet>

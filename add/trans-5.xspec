@@ -741,4 +741,19 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+	
+	<x:scenario label="T12: Zitatmarkierungen">
+		<x:context>
+			<p>
+				comprehendunt. ╠ <anchor xml:id="s002"/>Tertius est <rs type="person"><!--TODO ref eintragen!-->Salomon</rs>
+				<lb/>tres libros habens. Prover'bia' quae illi parabolas<anchor xml:id="s002e"/>, idest
+			</p>
+		</x:context>
+		<x:expect label=".">
+			<p>
+				comprehendunt. ╠ <anchor xml:id="s002"/>Tertius est <rs type="person"><!--TODO ref eintragen!-->Salomon</rs>
+				<lb/>tres libros habens. Prover'bia' quae illi parabolas<anchor xml:id="s002e"/>, idest
+			</p>
+		</x:expect>
+	</x:scenario>
 </x:description>

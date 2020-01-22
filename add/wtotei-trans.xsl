@@ -10,23 +10,30 @@
     
     <xsl:include href="ks-common.xsl#1"/>
     
-<!--    <xsl:output indent="yes"/>-->
-    
-    <xsl:template match="w:body">
-        <xsl:apply-templates
-          select="w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1')]/following-sibling::w:p[hab:isDiv(.)]"/>
+    <xsl:template match="pkg:part[@pkg:name='/word/document.xml']">
+        <xsl:apply-templates select="w:p[hab:isDiv(.)]"/>
     </xsl:template>
     
     <!-- Paragraphen -->
 	<xsl:template match="w:proofErr" />
 	<xsl:template match="w:p[hab:isDiv(.)]">
-		<xsl:variable name="myId" select="generate-id()"/>
+<!--		<xsl:variable name="myId" select="generate-id()"/>-->
+		<xsl:variable name="next" select="(following-sibling::w:p[hab:isDiv(.)])[1]" />
 		<xsl:text>
 			</xsl:text>
 		<div>
-			<xsl:apply-templates select="following-sibling::w:p[(hab:isP(.))
+			<xsl:choose>
+				<xsl:when test="$next">
+					<xsl:apply-templates select="(following-sibling::w:p[hab:isP(.)] | following-sibling::w:tbl)
+						intersect $next/preceding-sibling::*" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates select="following-sibling::w:p[hab:isP(.)] | following-sibling::w:tbl" />
+				</xsl:otherwise>
+			</xsl:choose>
+			<!--<xsl:apply-templates select="following-sibling::w:p[(hab:isP(.))
 				and generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]
-				| following-sibling::w:tbl[generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />
+				| following-sibling::w:tbl[generate-id(preceding-sibling::w:p[hab:isDiv(.)][1]) = $myId]" />-->
 		</div>
 	</xsl:template>
     
@@ -74,10 +81,20 @@
 			<xsl:if test="wt:is(., 'KSZwischenberschrift2', 'p')">
 				<xsl:attribute name="type">subheading</xsl:attribute>
 			</xsl:if>
-			<xsl:sequence select="preceding-sibling::w:p[not(hab:isP(.)
+			<xsl:variable name="pre" select="preceding-sibling::w:p[hab:isP(.)][1]"/>
+			<xsl:choose>
+				<xsl:when test="$pre">
+					<xsl:sequence select="$pre/following-sibling::w:p
+						intersect preceding-sibling::w:p"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:sequence select="preceding-sibling::w:p" />
+				</xsl:otherwise>
+			</xsl:choose>
+			<!--<xsl:sequence select="preceding-sibling::w:p[not(hab:isP(.)
 				or wt:is(., 'KSEE-Titel') or wt:is(., 'KSEETitel')
 				or wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1'))
-				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]"/>
+				and generate-id(following-sibling::w:p[hab:isP(.)][1]) = $myId]"/>-->
 			<xsl:sequence select="." />
 		</xsl:element>
 	</xsl:template>
@@ -141,8 +158,8 @@
     </xd:doc>
     <xsl:function name="hab:isP" as="xs:boolean">
         <xsl:param name="context"/>
-        <xsl:sequence select="if($context//w:sym/@w:char='F05E' or $context//w:t[contains(., '')]
-            or $context//w:t[contains(., '⏊')])
+        <xsl:sequence select="if($context//w:sym/@w:char='F05E' or $context//w:t[ends-with(normalize-space(), '')]
+            or $context//w:t[ends-with(normalize-space(), '⏊')])
             then true() else false()"/>
     </xsl:function>
   
@@ -151,7 +168,7 @@
     </xd:doc>
     <xsl:function name="hab:isDiv" as="xs:boolean">
         <xsl:param name="context" />
-        <xsl:sequence select="if($context//w:t or ($context//w:pStyle and $context//w:t)) then false() else true()" />
+        <xsl:sequence select="not($context//w:t or $context//w:sym)" />
     </xsl:function>
   
     <xsl:function name="hab:isStruct" as="xs:boolean">

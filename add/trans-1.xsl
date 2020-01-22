@@ -25,7 +25,7 @@
     <xsl:template match="w:p[not(w:r)]" />
     
     <!-- Marginalie -->
-    <xsl:template match="w:p[wt:is(., 'KSMarginalie', 'p')]">
+    <xsl:template match="w:p[wt:is(., 'KSMarginalie', 'p') and w:r]">
         <note place="margin"><xsl:apply-templates select="w:r" /></note>
     </xsl:template>
     
@@ -113,7 +113,7 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="temp">
-            <xsl:apply-templates select="w:r | w:bookmarkStart"/>
+            <xsl:apply-templates select="w:r | w:bookmarkStart | w:bookmarkEnd"/>
         </xsl:variable>
         <xsl:variable name="content">
             <xsl:for-each select="$temp/node()">
@@ -161,9 +161,20 @@
     <!-- Ende Paragraphen -->
     
     <!-- Verweise -->
-    <xsl:template match="w:bookmarkStart">
+    <!--<xsl:template match="w:bookmarkStart">
         <xsl:if test="not(@w:name = '_GoBack')">
             <hab:bm name="{@w:name}"/>
+        </xsl:if>
+    </xsl:template>-->
+    <xsl:template match="w:bookmarkStart[@name = '_GoBack']" />
+    <xsl:template match="w:bookmarkStart[starts-with(@w:name, 's')]">
+        <anchor type="bookmarkStart" xml:id="{@w:name}" /> 
+    </xsl:template>
+    <xsl:template match="w:bookmarkEnd">
+        <xsl:variable name="target" select="@w:id" />
+        <xsl:variable name="peer" select="preceding::w:bookmarkStart[@w:id = $target]" />
+        <xsl:if test="starts-with($peer/@w:name, 's')">
+            <anchor type="bookmarkEnd" xml:id="{$peer/@w:name}" />
         </xsl:if>
     </xsl:template>
     <xsl:template match="w:r[w:fldChar]">
@@ -276,6 +287,8 @@
         <witness><xsl:value-of select="$value"/></witness>
     </xsl:template>-->
 	<xsl:template match="w:p[wt:is(., 'KSlistWit', 'p')]" />
+    
+    <xsl:template match="*:part" />
     
     <xsl:template match="text() | @*">
         <xsl:copy>
