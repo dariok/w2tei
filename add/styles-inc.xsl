@@ -7,6 +7,8 @@
     xmlns:hab="http://diglib.hab.de"
     xmlns:rel="http://schemas.openxmlformats.org/package/2006/relationships"
     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+    xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all"
     version="3.0">
@@ -148,10 +150,34 @@
     <!-- Hyperlinks -->
     <xsl:template match="w:hyperlink">
         <xsl:variable name="targetID" select="@r:id"/>
-        <xsl:variable name="target" select="//rel:Relationship[@Id = $targetID]/@Target"/>
-        <ptr type="digitalisat" target="{$target}">
-            <xsl:apply-templates select="w:r" />
-        </ptr>
+        <xsl:variable name="target">
+            <xsl:choose>
+                <xsl:when test="ancestor::w:endnote">
+                    <xsl:value-of select="//pkg:part[contains(@pkg:name, 'endnote')]//rel:Relationship[@Id = $targetID]/@Target" />
+                </xsl:when>
+                <xsl:when test="ancestor::w:footnote">
+                    <xsl:value-of select="//pkg:part[contains(@pkg:name, 'footnote')]//rel:Relationship[@Id = $targetID]/@Target" />
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="//pkg:part[contains(@pkg:name, 'document')]//rel:Relationship[@Id = $targetID]/@Target" />
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="matches(@w:anchor, 's\d\d\d')">
+                <xsl:variable name="s" select="replace($target, '.*EE(\d+_?(transcript|introduction)).*', '$1')"/>
+                <xsl:variable name="num" select="substring-before($s, '_')"/>
+                <xsl:variable name="id" select="replace(/tei:TEI/@xml:id, '.*_(\d\d\d)_.*', '$1')" />
+                <xsl:variable name="loc"
+                    select="if($num = $id) then '' else '../' || $num || '/' "/>
+                <ptr type="wdb" target="{$loc}{$s}.xml#{@w:anchor}" />
+            </xsl:when>
+            <xsl:otherwise>
+                <ptr type="digitalisat" target="{$target}">
+                    <xsl:apply-templates select="w:r" />
+                </ptr>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <!-- Ende Styles -->
     
@@ -222,4 +248,6 @@
         <xsl:value-of select="matches($context//w:rStyle/@w:val,
             'KSOrt|KSPerson|KSbibliographischeAngabe|KSBibelstelle|KSAutorenstelle|KSkorrigierteThesennummer|KSkritischeAnmerkungbermehrereWrter|KSKommentar')"/>
     </xsl:function>
+    
+    <xsl:template match="pkg:part" />
 </xsl:stylesheet>

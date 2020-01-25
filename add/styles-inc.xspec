@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:hab="http://diglib.hab.de"
+  xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
+  stylesheet="styles-inc.xsl" xslt-version="3.0" preserve-space="no">
+  <x:scenario label="T1: Links">
+    <x:scenario label="T1.1">
+      <x:context>
+        <TEI>
+          <text>
+            <body>
+              <div>
+                <p>
+                  <w:p xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage" w14:paraId="1EBB1C9E" w14:textId="19CA9599" w:rsidR="002D0960" w:rsidRPr="0091498F" w:rsidRDefault="002D0960" w:rsidP="0021051C">
+                    <w:pPr>
+                      <w:pStyle w:val="KSText"/>
+                      <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                    </w:pPr>
+                    <w:r w:rsidRPr="0091498F">
+                      <w:t>An ne</w:t>
+                    </w:r>
+                    <w:r w:rsidR="002A4AA0">
+                      <w:t>u</w:t>
+                    </w:r>
+                    <w:r w:rsidRPr="0091498F">
+                      <w:t xml:space="preserve">ndter stelh stehet </w:t>
+                    </w:r>
+                    <w:r w:rsidRPr="00327AA0">
+                      <w:rPr>
+                        <w:rStyle w:val="KSPerson"/>
+                      </w:rPr>
+                      <w:t>Hester</w:t>
+                    </w:r>
+                    <w:r w:rsidRPr="0091498F">
+                      <w:t>.</w:t>
+                    </w:r>
+                    <w:r w:rsidR="00C35FF1">
+                      <w:rPr>
+                        <w:rStyle w:val="Endnotenzeichen"/>
+                      </w:rPr>
+                      <w:endnoteReference w:id="20"/>
+                    </w:r>
+                    <w:r w:rsidRPr="0091498F">
+                      <w:rPr>
+                        <w:lang w:val="en-US"/>
+                      </w:rPr>
+                      <w:sym w:font="Symbol" w:char="F05E"/>
+                    </w:r>
+                  </w:p>
+                </p>
+              </div>
+            </body>
+          </text>
+          <package:part xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage" pkg:name="/word/endnotes.xml">
+            <package:xmlData>
+              <w:endnotes>
+                <w:endnote w:id="20">
+                  <w:p w14:paraId="5821FC97" w14:textId="5A650BCA" w:rsidR="00104FED" w:rsidRPr="005A295E" w:rsidRDefault="00104FED" w:rsidP="004A4B48">
+                    <w:pPr>
+                      <w:pStyle w:val="Endnotentext"/>
+                      <w:jc w:val="both"/>
+                      <w:rPr>
+                        <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                      </w:rPr>
+                    </w:pPr>
+                    <w:r w:rsidRPr="005A295E">
+                      <w:rPr>
+                        <w:rStyle w:val="Endnotenzeichen"/>
+                        <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                      </w:rPr>
+                      <w:endnoteRef/>
+                    </w:r>
+                    <w:r w:rsidRPr="005A295E">
+                      <w:rPr>
+                        <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                      </w:rPr>
+                      <w:t xml:space="preserve"> Hier folgt </w:t>
+                    </w:r>
+                    <w:r w:rsidRPr="003B5407">
+                      <w:rPr>
+                        <w:rStyle w:val="KSPerson"/>
+                      </w:rPr>
+                      <w:t>Karlstadt</w:t>
+                    </w:r>
+                    <w:r w:rsidRPr="005A295E">
+                      <w:rPr>
+                        <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                      </w:rPr>
+                      <w:t xml:space="preserve"> nochmals </w:t>
+                    </w:r>
+                    <w:r w:rsidRPr="003B5407">
+                      <w:rPr>
+                        <w:rStyle w:val="KSPerson"/>
+                      </w:rPr>
+                      <w:t>Hieronymus</w:t>
+                    </w:r>
+                    <w:r w:rsidRPr="005A295E">
+                      <w:rPr>
+                        <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                      </w:rPr>
+                      <w:t xml:space="preserve">; vgl. </w:t>
+                    </w:r>
+                    <w:hyperlink r:id="rId2" w:anchor="s002" w:history="1">
+                      <w:r w:rsidRPr="00104FED">
+                        <w:rPr>
+                          <w:rStyle w:val="Hyperlink"/>
+                          <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                          <w:highlight w:val="yellow"/>
+                        </w:rPr>
+                        <w:t>EE125_text#Tertius est Salomon     tres libros habens. Prover'bia' quae illi parabolas###</w:t>
+                      </w:r>
+                    </w:hyperlink>
+                    <w:r w:rsidRPr="005A295E">
+                      <w:rPr>
+                        <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                      </w:rPr>
+                      <w:t>.</w:t>
+                    </w:r>
+                  </w:p>
+                </w:endnote>
+              </w:endnotes>
+            </package:xmlData>
+          </package:part>
+          <package:part xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage" pkg:name="/word/_rels/endnotes.xml.rels">
+            <package:xmlData>
+              <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+                <Relationship Id="rId8" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10203996_00023.html" TargetMode="External"/>
+                <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="../../EE125_StS/EE125upload/EE125_transcript_2020-1-18_Probe%20QV.docx" TargetMode="External"/>
+                <Relationship Id="rId7" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10898794_00010.html" TargetMode="External"/>
+                <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="../../EE125_StS/EE125upload/EE125_transcript_2020-1-18_Probe%20QV.docx" TargetMode="External"/>
+                <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="../../EE125_StS/EE125upload/EE125_transcript_2020-1-18_Probe%20QV.docx" TargetMode="External"/>
+                <Relationship Id="rId6" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://digi.ub.uni-heidelberg.de/diglit/ib00632000/0647/image" TargetMode="External"/>
+                <Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="../../EE125_StS/EE125upload/EE125_transcript_2020-1-18_Probe%20QV.docx" TargetMode="External"/>
+                <Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="../../EE125_StS/EE125upload/EE125_transcript_2020-1-18_Probe%20QV.docx" TargetMode="External"/>
+                <Relationship Id="rId9" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10203996_00023.html" TargetMode="External"/>
+              </Relationships>
+            </package:xmlData>
+          </package:part>
+        </TEI>
+      </x:context>
+      <x:expect label=".">An neundter stelh stehet <rs type="person">Hester</rs>.<note type="footnote"
+        xml:id="n20">Hier folgt <rs  type="person">Karlstadt</rs> nochmals <rs type="person">Hieronymus</rs>; vgl. <ptr
+        type="wdb" target="../125/125_transcript.xml#s002" />.</note></x:expect>
+    </x:scenario>
+  </x:scenario>
+</x:description>
