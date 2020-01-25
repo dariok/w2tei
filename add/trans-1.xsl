@@ -161,11 +161,11 @@
     <!-- Ende Paragraphen -->
     
     <!-- Verweise -->
-    <!--<xsl:template match="w:bookmarkStart">
+    <xsl:template match="w:bookmarkStart">
         <xsl:if test="not(@w:name = '_GoBack')">
             <hab:bm name="{@w:name}"/>
         </xsl:if>
-    </xsl:template>-->
+    </xsl:template>
     <xsl:template match="w:bookmarkStart[@name = '_GoBack']" />
     <xsl:template match="w:bookmarkStart[starts-with(@w:name, 's')]">
         <anchor type="bookmarkStart" xml:id="{@w:name}" /> 

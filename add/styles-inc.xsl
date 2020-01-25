@@ -219,7 +219,7 @@
 	<xsl:template match="w:r[wt:is(., 'KSAutorenstelle', 'r')]">
 		<ref type="classical">
 			<xsl:attribute name="cRef">
-				<xsl:value-of select="substring-before(w:t, ' ') || '!' || substring-after(w:t, ' ')" />
+				<xsl:value-of select="replace(w:t, '(\w+),.+', '$1') || '!' || substring-after(w:t, ' ')" />
 			</xsl:attribute>
 			<xsl:apply-templates select="w:t" />
 		</ref>
