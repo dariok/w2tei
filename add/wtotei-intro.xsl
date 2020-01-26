@@ -17,7 +17,7 @@
 	
 <!--	<xsl:output indent="yes"/>-->
 	
-	<xsl:template match="w:body">
+	<xsl:template match="pkg:part[contains(@pkg:name, 'word/document.xml')]">
 		<xsl:apply-templates select="w:p[hab:isHead(., 1)]"/>
 	</xsl:template>
 	

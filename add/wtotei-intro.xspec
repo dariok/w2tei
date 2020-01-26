@@ -5,6 +5,7 @@
 	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 	xmlns:tei="http://www.tei-c.org/ns/1.0"
 	xmlns:hab="http://diglib.hab.de"
+	xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
 	xmlns="http://www.tei-c.org/ns/1.0"
 	stylesheet="wtotei-intro.xsl" xslt-version="3.0"
 	preserve-space="no">
@@ -251,7 +252,7 @@
 	<x:scenario label="T3: Ü2">
 		<x:scenario label="T3.1: Beispiel 1">
 		<x:context>
-			<w:body>
+			<package:part package:name="word/document.xml">
 				<w:p w:rsidR="003E79AF" w:rsidRDefault="003E79AF" w:rsidP="003E79AF">
 					<w:pPr>
 						<w:pStyle w:val="KSberschrift1"/>
@@ -1408,7 +1409,7 @@
 						</w:pPr>
 					</w:p>
 				</w:comment>
-			</w:body>
+			</package:part>
 		</x:context>
 		<!--<x:scenario label="Frühdrucke">-->
 		<x:expect label="listBibl" xml:space="preserve">
@@ -1425,7 +1426,7 @@
 	</x:scenario>
 		<x:scenario label="T3.2: EE 132a">
 			<x:context>
-				<w:body>
+				<package:part package:name="/word/document.xml">
 					<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="00703482">
 						<w:pPr>
 							<w:pStyle w:val="KSberschrift1"/>
@@ -2149,6 +2150,8 @@
 							<w:t>.</w:t>
 						</w:r>
 					</w:p>
+				</package:part>
+				<package:part package:name="endnotes.xml">
 					<w:endnotes>
 						<w:endnote w:id="2">
 							<w:p w:rsidR="002D1EC0" w:rsidRDefault="002D1EC0" w:rsidP="002D1EC0">
@@ -2183,7 +2186,7 @@
 							</w:p>
 						</w:endnote>
 					</w:endnotes>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="Ausgabe inkl. FN in Anm. und Nachweisen" xml:space="preserve">
 			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
@@ -2205,7 +2208,7 @@
 		</x:scenario>
 		<x:scenario label="T3.3: EE 107">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w14:paraId="1688D78F" w14:textId="77777777" w:rsidR="0010182F"
 						w:rsidRDefault="00255645" w:rsidP="0010182F">
 						<w:pPr>
@@ -2536,7 +2539,7 @@
 							<w:t>.</w:t>
 						</w:r>
 					</w:p>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="." xml:space="preserve">
 			<div xmlns="http://www.tei-c.org/ns/1.0"
@@ -2550,7 +2553,7 @@
 		</x:scenario>
 		<x:scenario label="T3.4: EE 138 = 168">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w:rsidR="0010182F" w:rsidRPr="00F04EA7" w:rsidRDefault="008D5430" w:rsidP="0010182F">
 						<w:pPr>
 							<w:pStyle w:val="KSEE-Titel"/>
@@ -6571,7 +6574,7 @@
 						<w:cols w:space="708"/>
 						<w:docGrid w:linePitch="360"/>
 					</w:sectPr>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="." xml:space="preserve">
 			<div type="history_of_the_work">
@@ -6583,7 +6586,7 @@
 		</x:scenario>
 		<x:scenario label="T3.5: EE 081 = KGK 136">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w:rsidR="003E79AF" w:rsidRDefault="003E79AF" w:rsidP="003E79AF">
 						<w:pPr>
 							<w:pStyle w:val="KSberschrift1"/>
@@ -8494,7 +8497,7 @@
 							<w:t>Entstehung und Inhalt</w:t>
 						</w:r>
 					</w:p>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="." xml:space="preserve">
 			<div type="history_of_the_work">
@@ -8506,7 +8509,7 @@
 		</x:scenario>
 		<x:scenario label="T3.6: EE 101">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w:rsidR="004C6DB6" w:rsidRPr="004C6DB6" w:rsidRDefault="004C6DB6" w:rsidP="001B01E0">
 						<w:pPr>
 							<w:pStyle w:val="KSberschrift1"/>
@@ -8636,7 +8639,7 @@
 							<w:t>.</w:t>
 						</w:r>
 					</w:p>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="Hochstellung in fol.-Angabe" xml:space="preserve">
 			<div type="history_of_the_work">
@@ -8645,7 +8648,7 @@
 		</x:scenario>
 		<x:scenario label="T3.7: EE092, H">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
 						<w:pPr>
 							<w:pStyle w:val="KSberschrift1"/>
@@ -9943,7 +9946,7 @@
 							<w:t>, Karlstadt 1, 144‒146</w:t>
 						</w:r>
 					</w:p>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="zusammengesetzte, passende Anmerkungen" xml:space="preserve">
 			<div xmlns:pkg="http://expath.org/ns/pkg"
@@ -9962,7 +9965,7 @@
 	<x:scenario label="T4: ms">
 		<x:scenario label="T4.1: EE 100">
 		<x:context>
-			<w:body>
+			<package:part package:name="word/document.xml">
 				<w:p w:rsidR="00CE2F47" w:rsidRDefault="004C6DB6" w:rsidP="00703482">
 					<w:pPr>
 						<w:pStyle w:val="KSberschrift1"/>
@@ -10032,7 +10035,7 @@
 						<w:t>)</w:t>
 					</w:r>
 				</w:p>
-			</w:body>
+			</package:part>
 		</x:context>
 		<x:expect label="formatiert" xml:space="preserve">
 			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
@@ -10045,7 +10048,8 @@
 		</x:scenario>
 		<x:scenario label="T4.2: EE 107">
 			<x:context>
-				<w:body>
+				<package:package>
+				<package:part package:name="titelei">
 					<w:p w14:paraId="1688D78F" w14:textId="77777777" w:rsidR="0010182F"
 						w:rsidRDefault="00255645" w:rsidP="0010182F">
 						<w:pPr>
@@ -10121,6 +10125,8 @@
 							<w:t xml:space="preserve"> Stefania Salvadori</w:t>
 						</w:r>
 					</w:p>
+				</package:part>
+				<package:part package:name="/word/document.xml">
 					<w:p w14:paraId="5EB13F1C" w14:textId="77777777" w:rsidR="00CE2F47"
 						w:rsidRDefault="004C6DB6" w:rsidP="0011564A">
 						<w:pPr>
@@ -10376,7 +10382,8 @@
 							<w:t>.</w:t>
 						</w:r>
 					</w:p>
-				</w:body>
+				</package:part>
+					<package:part name="comments.xml">
 				<w:comments>
 					<w:comment w:id="0" w:author="Salvadori, Stefania" w:date="2017-06-22T11:16:00Z"
 						w:initials="Salv">
@@ -10404,7 +10411,7 @@
 							</w:hyperlink>
 						</w:p>
 					</w:comment>
-				</w:comments>
+				</w:comments></package:part></package:package>
 			</x:context>
 			<x:expect label="Link zum Digitalisat" xml:space="preserve">
 			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
@@ -10418,7 +10425,7 @@
 	<x:scenario label="T5: Ausgabe ab 1. Überschrift">
 		<x:scenario label="T5.1: verschollene mit Referenz (k. Sigle, 1 Abs., Lit.) o. Hinw.">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w:rsidR="004C6DB6" w:rsidRDefault="00061D06" w:rsidP="00C87A59">
 						<w:pPr>
 							<w:pStyle w:val="KSberschrift1"/>
@@ -10493,7 +10500,7 @@
 							<w:t xml:space="preserve"> 225.</w:t>
 						</w:r>
 					</w:p>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="p mit Text und listBibl" xml:space="preserve">
 			<div xmlns="http://www.tei-c.org/ns/1.0"
@@ -10505,7 +10512,7 @@
 		</x:scenario>
 		<x:scenario label="T5.2: verschollene mit Referenz (k. Sigle, 2 Abs., k. Lit.) o. Hinw.">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w14:paraId="0FB06673" w14:textId="50695BB9" w:rsidR="00CE2F47"
 						w:rsidRDefault="00FA4C5D" w:rsidP="0011564A">
 						<w:pPr>
@@ -10550,7 +10557,7 @@
 						(verschollene) Antwort darauf von Karlstadts (EE 93B).</w:t>
 						</w:r>
 					</w:p>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="2 Absätze" xml:space="preserve">
 			<div type="reference" xmlns="http://www.tei-c.org/ns/1.0">
@@ -10564,7 +10571,7 @@
 		</x:scenario>
 		<x:scenario label="T5.3: versch. m. Referenz (k. Sigle, 1 Abs., Lit) und Hinweisen">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w:rsidR="00061D06" w:rsidRPr="0049423F" w:rsidRDefault="00061D06" w:rsidP="00BA7CCD">
 						<w:pPr>
 							<w:pStyle w:val="KSEE-Titel"/>
@@ -10763,7 +10770,7 @@
 						<w:cols w:space="708"/>
 						<w:docGrid w:linePitch="360"/>
 					</w:sectPr>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="1. div mit. Text und Lit. o. Sigle; 2. div mit Text" xml:space="preserve">
 			<div type="reference" xmlns="http://www.tei-c.org/ns/1.0">
@@ -10776,7 +10783,7 @@
 		</x:scenario>
 		<x:scenario label="T5.4: EE 110: Druck mit Kommentar">
 			<x:context>
-				<w:body>
+				<package:part package:name="word/document.xml">
 					<w:p w:rsidR="00CE2F47" w:rsidRPr="00A25B42" w:rsidRDefault="004C6DB6" w:rsidP="00BE2F1B">
 						<w:pPr>
 							<w:pStyle w:val="KSberschrift1"/>
@@ -13591,7 +13598,7 @@
 							<w:t>Entstehung und Inhalt</w:t>
 						</w:r>
 					</w:p>
-				</w:body>
+				</package:part>
 			</x:context>
 			<x:expect label="2 bibl und ein p" xml:space="preserve">
 			<div type="history_of_the_work" xmlns="http://www.tei-c.org/ns/1.0">
@@ -14671,7 +14678,17 @@
 	<x:scenario label="T6: Fußnoten-Verweise">
 		<x:scenario label="T6.1: einfach">
 			<x:context>
-				<w:p w:rsidR="005E2CC1" w:rsidRPr="00D45477" w:rsidRDefault="005E2CC1" w:rsidP="001F6631">
+				<package:part package:name="word/document.xml">
+					<w:p w14:paraId="14C21D64" w14:textId="77777777" w:rsidR="00CE2F47" w:rsidRPr="00143D83"
+						w:rsidRDefault="004C6DB6" w:rsidP="003866C0">
+						<w:pPr>
+							<w:pStyle w:val="KSberschrift1" />
+						</w:pPr>
+						<w:r w:rsidRPr="003866C0">
+							<w:t>Überlieferung</w:t>
+						</w:r>
+					</w:p>
+					<w:p w:rsidR="005E2CC1" w:rsidRPr="00D45477" w:rsidRDefault="005E2CC1" w:rsidP="001F6631">
 					<w:pPr>
 						<w:pStyle w:val="KSText"/>
 						<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
@@ -14695,6 +14712,8 @@
 					</w:r>
 					<w:bookmarkEnd w:id="4"/>
 				</w:p>
+				</package:part>
+				<package:part name="endnotes.xmL">
 				<w:endnotes>
 					<w:endnote w:id="4">
 						<w:p w:rsidR="005E2CC1" w:rsidRDefault="005E2CC1">
@@ -14744,15 +14763,18 @@
 						</w:p>
 					</w:endnote>
 				</w:endnotes>
+					</package:part>
+				
 			</x:context>
 			<x:expect label="hab:bm" xml:space="preserve">
+			<div type="history_of_the_work">
 				<p>Titeleinfassung mit musizierenden Engeln, Putten, biblischen Figuren, pflanzlichen Ornamenten und Blumen.<hab:bm
-					name="_Ref506220014"/><note type="footnote" xml:id="n4">Genaue Beschreibung in <bibl>Dommer, Lutherdrucke, Orn. 90</bibl>.</note></p></x:expect>
+					name="_Ref506220014"/><note type="footnote" xml:id="n4">Genaue Beschreibung in <bibl>Dommer, Lutherdrucke, Orn. 90</bibl>.</note></p></div></x:expect>
 		</x:scenario>
 	</x:scenario>
 	<x:scenario label="T7: Druck und Handschrift">
 		<x:context>
-			<w:body>
+			<package:part package:name="word/document.xml">
 			<w:p w14:paraId="14C21D64" w14:textId="77777777" w:rsidR="00CE2F47" w:rsidRPr="00143D83"
 				w:rsidRDefault="004C6DB6" w:rsidP="003866C0">
 				<w:pPr>
@@ -15922,7 +15944,7 @@
 				<w:r w:rsidRPr="00804D5D">
 					<w:t>Entstehung und Inhalt</w:t>
 				</w:r>
-			</w:p></w:body>
+			</w:p></package:part>
 		</x:context>
 		<x:expect label="." xml:space="preserve">
 			<div type="history_of_the_work">

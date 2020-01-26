@@ -52,7 +52,7 @@
           <titleStmt>
             <title>
               <xsl:sequence select="$title" />
-              <xsl:apply-templates select="$titel[3]//w:t" mode="date" />
+              <xsl:apply-templates select="$titel[3]" mode="date" />
             </title>
             <!-- Kurztitel erzeugen; 2017-08-07 DK -->
             <title type="short">
@@ -153,10 +153,10 @@
       </teiHeader>
       <text>
         <body>
-          <xsl:apply-templates select="//pkg:part[@pkg:name='/word/document.xml']"/>
+          <xsl:apply-templates select="//pkg:part[contains(@pkg:name, 'word/document.xml')]"/>
         </body>
       </text>
-      <xsl:sequence select="//pkg:part[not(@pkg:name='/word/document.xml' or @pkg:name='titelei')]"/>
+      <xsl:sequence select="//pkg:part[not(contains(@pkg:name, 'word/document.xml') or @pkg:name='titelei')]"/>
     </TEI>
   </xsl:template>
   <!-- Ende root -->
