@@ -167,13 +167,13 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="w:bookmarkStart[@name = '_GoBack']" />
-    <xsl:template match="w:bookmarkStart[starts-with(@w:name, 's')]">
+    <xsl:template match="w:bookmarkStart[matches(@w:name, '[cqns]\d\d\d')]">
         <anchor type="bookmarkStart" xml:id="{@w:name}" /> 
     </xsl:template>
     <xsl:template match="w:bookmarkEnd">
         <xsl:variable name="target" select="@w:id" />
         <xsl:variable name="peer" select="preceding::w:bookmarkStart[@w:id = $target]" />
-        <xsl:if test="starts-with($peer/@w:name, 's')">
+        <xsl:if test="matches($peer/@w:name, '[cnqs]\d\d\d')">
             <anchor type="bookmarkEnd" xml:id="{$peer/@w:name}" />
         </xsl:if>
     </xsl:template>

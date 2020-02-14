@@ -1401,7 +1401,105 @@
 					type="biblical">Röm 3,27-30</ref> zu Grunde: „(27) Ubi est ergo gloriatio tua? Exclusa est. Per quam legem? Factorum? Non; sed per legem fidei. (28) Arbitramur enim justificari hominem per fidem sine operibus legis. (29) An Judaeorum Deus tantum? nonne et gentium? Immo et gentium. (30) Quoniam quidem unus est Deus, qui justificat circumcisionem ex fide, et praeputium per fidem."</note> non in solo iudaismo<note
 					xml:id="n3"	type="footnote">Vgl. <ref type="biblical">Röm 3,29</ref> (s. o. Anm. <hab:mark xmlns:hab="http://diglib.hab.de" ref="NOTEREF _Ref495566379 \h"/>2<hab:mark xmlns:hab="http://diglib.hab.de"/>).</note> Existit.</p></div></x:expect>
         </x:scenario>
-        
+        <x:scenario label="T2.2">
+            <x:context>
+                <div>
+      <p>
+          <w:p xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage" w14:paraId="24D526DA" w14:textId="145D4ABD" w:rsidR="008D0C08" w:rsidRPr="001A1761" w:rsidRDefault="008D0C08" w:rsidP="00005BA3">
+              <w:pPr>
+                  <w:pStyle w:val="KSText"/>
+                  <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                  <w:rPr>
+                      <w:lang w:val="en-US"/>
+                  </w:rPr>
+              </w:pPr>
+              <w:bookmarkStart w:id="44" w:name="q001"/>
+              <w:r w:rsidRPr="001A1761">
+                  <w:rPr>
+                      <w:lang w:val="en-US"/>
+                  </w:rPr>
+                  <w:t>Repurgantur quoque vitiosae orationes Ecclesiae</w:t>
+              </w:r>
+              <w:r w:rsidR="001B4584" w:rsidRPr="001A1761">
+                  <w:rPr>
+                      <w:rStyle w:val="Funotenzeichen"/>
+                      <w:lang w:val="en-US"/>
+                  </w:rPr>
+                  <w:footnoteReference w:id="124"/>
+              </w:r>
+              <w:r w:rsidRPr="001A1761">
+                  <w:rPr>
+                      <w:lang w:val="en-US"/>
+                  </w:rPr>
+                  <w:t>, sa</w:t>
+              </w:r>
+              <w:r w:rsidR="00926B47" w:rsidRPr="001A1761">
+                  <w:rPr>
+                      <w:lang w:val="en-US"/>
+                  </w:rPr>
+                  <w:t>-</w:t>
+              </w:r>
+          </w:p>
+        <w:p xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage" w14:paraId="2BF6ED37" w14:textId="36BF644E" w:rsidR="008D0C08" w:rsidRPr="001A1761" w:rsidRDefault="008D0C08" w:rsidP="00005BA3">
+          <w:pPr>
+            <w:pStyle w:val="KSText"/>
+            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+            <w:rPr>
+              <w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+              <w:szCs w:val="24"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+          </w:pPr>
+          <w:r w:rsidRPr="001A1761">
+            <w:rPr>
+              <w:lang w:val="it-IT"/>
+            </w:rPr>
+            <w:t xml:space="preserve">rarum eo ordine quo </w:t>
+          </w:r>
+          <w:r w:rsidRPr="001A1761">
+            <w:rPr>
+              <w:rStyle w:val="KSPerson"/>
+            </w:rPr>
+            <w:t>August'inus'</w:t>
+          </w:r>
+          <w:r w:rsidRPr="001A1761">
+            <w:rPr>
+              <w:lang w:val="it-IT"/>
+            </w:rPr>
+            <w:t xml:space="preserve"> digessit, sub oculos</w:t>
+          </w:r>
+          <w:r w:rsidR="009E2569" w:rsidRPr="001A1761">
+            <w:rPr>
+              <w:rStyle w:val="Funotenzeichen"/>
+              <w:lang w:val="it-IT"/>
+            </w:rPr>
+            <w:footnoteReference w:id="130"/>
+          </w:r>
+          <w:r w:rsidRPr="001A1761">
+            <w:rPr>
+              <w:lang w:val="it-IT"/>
+            </w:rPr>
+            <w:t xml:space="preserve"> condo.</w:t>
+          </w:r>
+          <w:bookmarkEnd w:id="9"/>
+          <w:bookmarkEnd w:id="39"/>
+          <w:bookmarkEnd w:id="43"/>
+          <w:bookmarkEnd w:id="44"/>
+          <w:r w:rsidR="00D259D8" w:rsidRPr="001A1761">
+            <w:rPr>
+              <w:rFonts w:ascii="Cambria" w:eastAsia="Cambria" w:hAnsi="Cambria" w:cs="Times New Roman"/>
+              <w:szCs w:val="24"/>
+              <w:lang w:val="en-US"/>
+            </w:rPr>
+            <w:sym w:font="Symbol" w:char="F05E"/>
+          </w:r>
+        </w:p></p></div>
+            </x:context>
+          <x:expect label="." xml:space="preserve"><div><p>
+					<lb /><anchor type="bookmarkStart"
+                          xml:id="q001" />Repurgantur quoque vitiosae orationes Ecclesiae<note type="crit_app" />, sa-
+					<lb />rarum eo ordine quo <rs type="person">August'inus'</rs> digessit, sub oculos<note type="crit_app" /> condo.<anchor type="bookmarkEnd" xml:id="q001" /></p></div></x:expect>
+        </x:scenario>
     </x:scenario>
     
     <x:scenario label="T3: listen">
