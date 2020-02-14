@@ -742,18 +742,30 @@
 		</x:scenario>
 	</x:scenario>
 	
-	<x:scenario label="T12: Zitatmarkierungen">
-		<x:context>
-			<p>
-				comprehendunt. ╠ <anchor xml:id="s002"/>Tertius est <rs type="person"><!--TODO ref eintragen!-->Salomon</rs>
-				<lb/>tres libros habens. Prover'bia' quae illi parabolas<anchor xml:id="s002e"/>, idest
-			</p>
-		</x:context>
-		<x:expect label=".">
-			<p>
-				comprehendunt. ╠ <anchor xml:id="s002"/>Tertius est <rs type="person"><!--TODO ref eintragen!-->Salomon</rs>
-				<lb/>tres libros habens. Prover'bia' quae illi parabolas<anchor xml:id="s002e"/>, idest
-			</p>
-		</x:expect>
+	<x:scenario label="T12">
+		<x:scenario label="T12.1: s000">
+			<x:context>
+				<p>
+					comprehendunt. ╠ <anchor xml:id="s002"/>Tertius est <rs type="person"><!--TODO ref eintragen!-->Salomon</rs>
+					<lb/>tres libros habens. Prover'bia' quae illi parabolas<anchor xml:id="s002e"/>, idest
+				</p>
+			</x:context>
+			<x:expect label=".">
+				<p>
+					comprehendunt. ╠ <anchor xml:id="s002"/>Tertius est <rs type="person"><!--TODO ref eintragen!-->Salomon</rs>
+					<lb/>tres libros habens. Prover'bia' quae illi parabolas<anchor xml:id="s002e"/>, idest
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T12.2: q000">
+			<x:context>
+				<p>
+					<lb/><anchor xml:id="q001"/>Repurgantur quoque vitiosae orationes<anchor xml:id="q001e"/></p>
+			</x:context>
+			<x:expect label=".">
+				<p>
+					<lb/><anchor xml:id="q001"/>Repurgantur quoque vitiosae orationes<anchor xml:id="q001e"/></p>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 </x:description>

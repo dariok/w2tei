@@ -134,7 +134,7 @@
 	</xsl:template>-->
 	
 	<xsl:template match="tei:anchor" />
-	<xsl:template match="tei:anchor[not(@type = 'crit_app') and matches(@xml:id, '^s\d\d\de?$')]">
+	<xsl:template match="tei:anchor[not(@type = 'crit_app') and matches(@xml:id, '^[cnqs]\d\d\de?$')]">
 		<xsl:sequence select="." />
 	</xsl:template>
 	<xsl:template match="tei:note[@type = 'footnote'
