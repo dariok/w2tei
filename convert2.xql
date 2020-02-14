@@ -66,9 +66,8 @@ let $result := if ($add = 'none')
     }
 
 let $create := if (not(xmldb:collection-available('/db/apps/w2tei/result')))
-  	then xmldb:create-collection('/db/apps/w2tei', 'result')
-  	else ()
-let $t2 := console:log($result)
+    then xmldb:create-collection('/db/apps/w2tei', 'result')
+    else ()
 
 return if (local-name($result) = 'TEI')
   then
