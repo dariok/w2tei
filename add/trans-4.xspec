@@ -32,8 +32,8 @@
 				>r</hi></bibl>.</note>
 			</x:context>
 			<x:expect label="@ref">
-				<note type="footnote">Siehe z.B. <bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-				>r</hi></bibl>.</note>
+				<note type="footnote">Siehe z.B. <rs type="bibl" ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+				>r</hi></rs>.</note>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T2.2: nichts gefunden">
@@ -42,8 +42,8 @@
 					>r</hi></bibl>.</note>
 			</x:context>
 			<x:expect label="kein @ref">
-				<note type="footnote">Siehe z.B. <bibl><!--TODO ref eintragen!-->ABCSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-					>r</hi></bibl>.</note>
+				<note type="footnote">Siehe z.B. <rs type="bibl"><!--TODO ref eintragen!-->ABCSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+					>r</hi></rs>.</note>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
@@ -101,16 +101,14 @@
 								B; <orig>@</orig> fehlt a<hi rend="sub">1</hi>; <orig>Protestatio Carolostad&lt;ius&gt;</orig>
 								a<hi rend="sub">2 </hi><note type="comment">AuRd-Gl</note></span></p>
 			</x:context>
-			<x:expect label="geordneter content">
-				<p><lb/><anchor type="crit_app" xml:id="s2"/>Protestatio<note type="footnote" xml:id="n2"
+			<x:expect label="geordneter content" xml:space="preserve"><p><lb/><anchor type="crit_app" xml:id="s2"/>Protestatio<note type="footnote" xml:id="n2"
 					>Hier im Sinn von <hi style="font-style: italic;">Bedingung</hi>, als vorsorglichen
 					Rechtsanspruch; vgl. EE126_text_Anm1.</note> Carolostadii per respondentem<note
 						type="footnote">Die Name des Respondenten ist nicht bekannt.</note> sibi a latere<anchor
-							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e">
-								<orig>Protestatio D'omini' doctoris Carolostadii per respondentem sibi a latere</orig>
+							type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2" to="#s2e"><orig
+							>Protestatio D'omini' doctoris Carolostadii per respondentem sibi a latere</orig>
 								B<wdb:marker/> <orig>@</orig> fehlt a<hi rend="sub">1</hi><wdb:marker /> <orig>Protestatio Carolostad<supplied>ius</supplied></orig>
-								a<hi rend="sub">2 </hi><note type="comment">AuRd-Gl</note></span></p>
-			</x:expect>
+								a<hi rend="sub">2 </hi><note type="comment">AuRd-Gl</note></span></p></x:expect>
 		</x:scenario>
 	</x:scenario>
 	
