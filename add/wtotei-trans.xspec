@@ -134,103 +134,30 @@
 			</x:context>
 			<x:expect label="div" xml:space="preserve">
 			<div>
-				<p>
-                        <w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-                            <w:pPr>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                            </w:pPr>
-                        </w:p>
-                        <w:p w14:paraId="4EB56B69" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-                            <w:pPr>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r w:rsidRPr="00E46B53">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>Disses buchlin beschleust durch heylige schrifft/</w:t>
-                            </w:r>
-                        </w:p>
-                        <w:p w14:paraId="20E66C98" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-                            <w:pPr>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r w:rsidRPr="00E46B53">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>das Bepstliche heylickeit altzu viel yrrenn/</w:t>
-                            </w:r>
-                        </w:p>
-                        <w:p w14:paraId="42E0C7B4" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-                            <w:pPr>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r w:rsidRPr="00E46B53">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>sundigen/ unnd unrecht thun kan.</w:t>
-                            </w:r>
-                        </w:p>
-                        <w:p w14:paraId="445A1EFB" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-                            <w:pPr>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r w:rsidRPr="00E46B53">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>Wer das nit glaubt/ der ist</w:t>
-                            </w:r>
-                        </w:p>
-                        <w:p w14:paraId="50634DD0" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-                            w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-                            <w:pPr>
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r w:rsidRPr="00E46B53">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:t>Ein boszer unchrist.</w:t>
-                            </w:r>
-                            <w:r w:rsidRPr="00E46B53">
-                                <w:rPr>
-                                    <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                    <w:lang w:val="de-DE"/>
-                                </w:rPr>
-                                <w:sym w:font="Symbol" w:char="F05E"/>
-                            </w:r>
-                        </w:p></p></div></x:expect>
+				<p><w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+						w:rsidRDefault="00C526B3" w:rsidP="00C526B3"><w:pPr><w:rPr><w:rFonts w:ascii="Junicode"
+						w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr></w:p><w:p w14:paraId="4EB56B69"
+						w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53" w:rsidRDefault="00C526B3"
+						w:rsidP="00C526B3"><w:pPr><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang
+						w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00E46B53"><w:rPr><w:rFonts w:ascii="Junicode"
+						w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t
+							>Disses buchlin beschleust durch heylige schrifft/</w:t></w:r></w:p><w:p w14:paraId="20E66C98"
+						w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53" w:rsidRDefault="00C526B3"
+						w:rsidP="00C526B3"><w:pPr><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang
+						w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00E46B53"><w:rPr><w:rFonts w:ascii="Junicode"
+						w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>das Bepstliche heylickeit altzu viel yrrenn/</w:t
+							></w:r></w:p><w:p w14:paraId="42E0C7B4" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
+						w:rsidRDefault="00C526B3" w:rsidP="00C526B3"><w:pPr><w:rPr><w:rFonts w:ascii="Junicode"
+						w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00E46B53"><w:rPr><w:rFonts
+						w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t
+							>sundigen/ unnd unrecht thun kan.</w:t></w:r></w:p><w:p w14:paraId="445A1EFB" w14:textId="77777777"
+						w:rsidR="00C526B3" w:rsidRPr="00E46B53" w:rsidRDefault="00C526B3" w:rsidP="00C526B3"><w:pPr><w:rPr><w:rFonts
+						w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00E46B53"
+							><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t
+							>Wer das nit glaubt/ der ist</w:t></w:r></w:p><w:p w14:paraId="50634DD0" w14:textId="77777777"
+						w:rsidR="00C526B3" w:rsidRPr="00E46B53" w:rsidRDefault="00C526B3" w:rsidP="00C526B3"><w:pPr><w:rPr><w:rFonts
+						w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00E46B53"
+							><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>Ein boszer unchrist.</w:t></w:r><w:r w:rsidRPr="00E46B53"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:sym w:font="Symbol" w:char="F05E"/></w:r></w:p></p></div></x:expect>
 		</x:scenario>
 		<x:scenario label="T1.2: Endzeichen löschen">
 			<x:context>
@@ -273,36 +200,7 @@
 			<x:expect label="Text ohne F05E" xml:space="preserve">
 			<div>
 				<p><w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00E46B53"
-                        w:rsidRDefault="00C526B3" w:rsidP="00C526B3">
-                        <w:pPr>
-                            <w:rPr>
-                                <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
-                                <w:lang w:val="de-DE"/>
-                            </w:rPr>
-                        </w:pPr>
-                    </w:p>
-                        <w:p w:rsidR="00FE24A7" w:rsidRPr="00FE4F55" w:rsidRDefault="00FE24A7" w:rsidP="00FE4F55">
-                            <w:pPr>
-                                <w:spacing w:line="360" w:lineRule="auto"/>
-                                <w:ind w:left="360"/>
-                                <w:jc w:val="center"/>
-                                <w:rPr>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                            </w:pPr>
-                            <w:r w:rsidRPr="00FE4F55">
-                                <w:rPr>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t>Christus in eternum regnat.</w:t>
-                            </w:r>
-                            <w:r w:rsidR="00F56B88">
-                                <w:rPr>
-                                    <w:lang w:val="it-IT"/>
-                                </w:rPr>
-                                <w:t></w:t>
-                            </w:r>
-                        </w:p></p></div></x:expect>
+					w:rsidRDefault="00C526B3" w:rsidP="00C526B3"><w:pPr><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr></w:p><w:p w:rsidR="00FE24A7" w:rsidRPr="00FE4F55" w:rsidRDefault="00FE24A7" w:rsidP="00FE4F55"><w:pPr><w:spacing w:line="360" w:lineRule="auto"/><w:ind w:left="360"/><w:jc w:val="center"/><w:rPr><w:lang w:val="it-IT"/></w:rPr></w:pPr><w:r w:rsidRPr="00FE4F55"><w:rPr><w:lang w:val="it-IT"/></w:rPr><w:t>Christus in eternum regnat.</w:t></w:r><w:r w:rsidR="00F56B88"><w:rPr><w:lang w:val="it-IT"/></w:rPr><w:t></w:t></w:r></w:p></p></div></x:expect>
         </x:scenario>
     </x:scenario>
 	<x:scenario label="T2: Sonderkodierungen">
@@ -980,8 +878,7 @@
 			<div>
 				<titlePart rendition="#c"><w:p w14:paraId="53D287ED" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr></w:p><w:p w14:paraId="4EB56B69" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00197C2C"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>Disses buchlin beschleust durch heylige schrifft/</w:t></w:r></w:p><w:p w14:paraId="20E66C98" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00197C2C"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>das Bepstliche heylickeit altzu viel yrrenn/</w:t></w:r></w:p><w:p w14:paraId="42E0C7B4" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00197C2C"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>sundigen/ unnd unrecht thun kan.</w:t></w:r></w:p><w:p w14:paraId="445A1EFB" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00197C2C"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>Wer das nit glaubt/ der ist</w:t></w:r></w:p><w:p w14:paraId="50634DD0" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr><w:r w:rsidRPr="00197C2C"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>Ein boszer unchrist.</w:t></w:r><w:r w:rsidRPr="00C410E6"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/></w:rPr><w:sym w:font="Symbol" w:char="F05E"/></w:r></w:p></titlePart></div>
 			<div>
-				<titlePart rendition="#c"><w:p w14:paraId="0CACFB1C" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr></w:p><w:p w14:paraId="6B95CC8B" w14:textId="77777777" w:rsidR="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/></w:rPr></w:pPr><w:r w:rsidRPr="00197C2C"><w:rPr><w:rStyle w:val="KSOrt"/><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>Wittemberg</w:t></w:r><w:r w:rsidRPr="00197C2C"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>.</w:t></w:r><w:r w:rsidRPr="00C410E6"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/></w:rPr><w:sym w:font="Symbol" w:char="F05E"/></w:r></w:p></titlePart>
-			</div>
+				<titlePart rendition="#c"><w:p w14:paraId="0CACFB1C" w14:textId="77777777" w:rsidR="00C526B3" w:rsidRPr="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr></w:pPr></w:p><w:p w14:paraId="6B95CC8B" w14:textId="77777777" w:rsidR="00197C2C" w:rsidRDefault="00C526B3" w:rsidP="00655405"><w:pPr><w:pStyle w:val="KSBuchtitel"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/></w:rPr></w:pPr><w:r w:rsidRPr="00197C2C"><w:rPr><w:rStyle w:val="KSOrt"/><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>Wittemberg</w:t></w:r><w:r w:rsidRPr="00197C2C"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/><w:lang w:val="de-DE"/></w:rPr><w:t>.</w:t></w:r><w:r w:rsidRPr="00C410E6"><w:rPr><w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/></w:rPr><w:sym w:font="Symbol" w:char="F05E"/></w:r></w:p></titlePart></div>
 			<div /></x:expect>
 	</x:scenario>
 </x:description>

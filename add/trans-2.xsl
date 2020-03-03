@@ -94,7 +94,9 @@
 					<lb break="no" />
 					<xsl:value-of select="xstring:substring-before(following-sibling::text()[1], ' ')" />
 				</w>
-				<xsl:text> </xsl:text>
+				<xsl:if test="contains(following-sibling::text()[1], ' ')">
+					<xsl:text> </xsl:text>
+				</xsl:if>
 				<xsl:if test="not(ends-with(normalize-space(following-sibling::text()[1]), '-'))">
 					<xsl:value-of select="substring-after(following-sibling::text()[1], ' ')"/>
 				</xsl:if>

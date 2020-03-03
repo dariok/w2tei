@@ -87,7 +87,7 @@
 				<p><rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/>stae</rs></p>
 			</x:context>
 			<x:expect label="unverändert" xml:space="preserve">
-				<p><rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"><hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/>stae</rs></p>
+				<p><rs type="place">Augu<note place="margin"><rs type="person">Caietanus</rs> satis benignus <rs type="person">Lutherii</rs> paedagogus <rs type="place">Augustae</rs>.<note type="crit_app"> <hi style="font-style: italic;">fehlt B, C</hi></note></note><lb/>stae</rs></p>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="hi">
@@ -115,11 +115,8 @@
 					style="font-style: italic;">;</hi> ex <hi style="font-style: italic;">C </hi><note type="comment">mit hsl.
 						Korrektur </note><note type="comment"><orig>et</orig></note></note>
 			</x:context>
-			<x:expect label="zusammengezogen">
-				<note type="crit_app">
-					<orig>er</orig> B; <orig>ex</orig> C <note type="comment">mit hsl.
-						Korrektur <orig>et</orig></note></note>
-			</x:expect>
+			<x:expect label="zusammengezogen" xml:space="preserve"><note type="crit_app"> <orig>er</orig> B; <orig>ex</orig> C <note type="comment">mit hsl.
+						Korrektur <orig>et</orig></note></note></x:expect>
 		</x:scenario>
 		<x:scenario label="... mit mehreren Kommentaren">
 			<x:context>
@@ -159,11 +156,12 @@
 					<note type="comment">AuRd-Gl</note>
 				</span>
 			</x:context>
-			<x:expect label="je einmal AuRd-Gl">
-				<span type="crit_app" from="#s2" to="#s2e">A<hi rend="sub">1-4</hi>; <orig>XXvii die Junii hora secunda 1519</orig> A<hi rend="sub">5</hi>;  <orig>Egregius Doctor carolstadius</orig> a<hi rend="sub">1</hi>; <orig>Anno 1519</orig> hinzugefügt a<hi rend="sub">3</hi>;  <orig>27 die Juni&lt;i&gt;</orig> a<hi rend="sub">3</hi>
-					<note type="comment">AuRd-Gl</note>; <orig>hora s&lt;ecunda&gt;</orig> a<hi rend="sub">2</hi>
-					<note type="comment">AuRd-Gl</note></span>
-			</x:expect>
+			<x:expect label="je einmal AuRd-Gl" xml:space="preserve"><span type="crit_app" from="#s2" to="#s2e">A<hi
+				rend="sub">1-4</hi>; <orig>XXvii die Junii hora secunda 1519</orig> A<hi rend="sub">5</hi>;  <orig
+					>Egregius Doctor carolstadius</orig> a<hi rend="sub">1</hi>; <orig>Anno 1519</orig> hinzugefügt a<hi
+					rend="sub">3</hi>;  <orig>27 die Juni&lt;i&gt;</orig> a<hi rend="sub">3</hi> <note
+						type="comment">AuRd-Gl</note>; <orig>hora s&lt;ecunda&gt;</orig> a<hi rend="sub">2</hi> <note
+						type="comment">AuRd-Gl</note></span></x:expect>
 		</x:scenario>
 	</x:scenario>
 	
