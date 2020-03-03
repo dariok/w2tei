@@ -141,17 +141,17 @@
 		<x:scenario label="T5.2: Punkt ergänzen">
 			<x:context xml:space="preserve">
 				<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
-					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote> </note>
+					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote>. <ref xmlns="http://www.tei-c.org/ns/1.0" type="biblical">Mt 19,21; 10,9</ref></note>
 			</x:context>
 			<x:expect label="ohne" xml:space="preserve">
 				<note type="footnote" xml:id="n48"><ref type="biblical" cRef="Ps 29(30),6">Ps 29(30),6</ref> Vg
-					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote>.</note>
+					<quote>quoniam <gap/> ad vesperum demorabitur fletus et ad matutinum laetitia</quote>. <ref xmlns="http://www.tei-c.org/ns/1.0" type="biblical">Mt 19,21; 10,9</ref>.</note>
 			</x:expect>
 		</x:scenario>
 		<x:scenario label="T5.3: Element ohne Punkt am Ende">
 			<x:context xml:space="preserve">
 				<note type="footnote" xml:id="n33"><ref type="biblical" cRef="Hebr 12,6">Hebr 12,6</ref> Vg
-					<quote>quem enim diligit Dominus castigat flagellat autem onme fillium quem recipit</quote></note>
+					<quote>quem enim diligit Dominus castigat flagellat autem onme fillium quem recipit</quote> </note>
 			</x:context>
 			<x:expect label="Punkt" xml:space="preserve">
 				<note type="footnote" xml:id="n33"><ref type="biblical" cRef="Hebr 12,6">Hebr 12,6</ref> Vg
@@ -182,25 +182,6 @@
 			</x:context>
 			<x:expect label="Punkt" xml:space="preserve">
 				<note type="footnote"><quote>.. concupiscentia cum conceperit parit peccatum <gap/>.</quote></note>
-			</x:expect>
-		</x:scenario>
-	</x:scenario>
-	
-	<x:scenario label="T6: Bibelstellen">
-		<x:scenario label="T6.1: mit Semikolon">
-			<x:context>
-				<ref xmlns="http://www.tei-c.org/ns/1.0" type="biblical">Mt 19,21; 10,9</ref>
-			</x:context>
-			<x:expect label=".">
-				<ref type="biblical" cRef="Mt 19,21">Mt 19,21</ref>; <ref type="biblical" cRef="Mt 10,9">10,9</ref>
-			</x:expect>
-		</x:scenario>
-		<x:scenario label="T6.2: u.">
-			<x:context>
-				<ref xmlns="http://www.tei-c.org/ns/1.0" type="biblical" cRef="Hes 29,3 u. 9">Hes 29,3 u. 9</ref>
-			</x:context>
-			<x:expect label=".">
-				<ref type="biblical" cRef="Hes 29,3">Hes 29,3</ref> u. <ref type="biblical" cRef="Hes 29,9">9</ref>
 			</x:expect>
 		</x:scenario>
 	</x:scenario>

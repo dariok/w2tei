@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><html xmlns:test="http://www.jenitennison.com/xslt/unit-test" xmlns="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for home/dario/git/w2tei/add/trans-5.xsl (passed: 58 / pending: 0 / failed: 0 / total: 58)</title><style type="text/css">/****************************************************************************/
+      <title>Test Report for /home/dario/git/w2tei/add/trans-5.xsl (passed: 56 / pending: 0 / failed: 4 / total: 60)</title>
+      <style type="text/css">/****************************************************************************/
 /*  File:       test-report.css                                             */
 /*  Author:     Jeni Tennison                                               */
 /*  Tags:                                                                   */
@@ -147,12 +148,12 @@ dd pre, li pre {
 
 /* fonts */
 body {
-	font-family: arial, helvetica, sans-serif;
+	font-family: sans-serif;
 	font-size: small;
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'trebuchet MS', arial, sans-serif;
+	font-family: sans-serif;
 	}
 
 h1 {
@@ -193,18 +194,18 @@ address {
 	}
 
 div.example, .sidebar {
-  font-family: Verdana, arial, sans-serif;
+  font-family: sans-serif;
   font-size: 100%;
   }
 
 
 .note, .link {
-	font-family: Verdana, arial, sans-serif;
+	font-family: sans-serif;
 	font-size: 83%;
 	}
 
 .example, .string, .rtf, .code, pre, code {
-	font-family: "Lucida Console", "Courier New", monospace;
+	font-family: monospace;
   font-size: 83%;
 	}
 
@@ -324,14 +325,22 @@ a.img:hover, a.img:active {
   background-color: rgb(206, 239, 174);
 }
 
+.inner-diff {
+  background-color: rgba(255, 204, 204, .4);
+}
+
 .diff {
   background-color: #FCC;
 }
 
 .whitespace {
-	font-style: italic;
+	/*font-style: italic;*/
 	color: #999;
-	background: white;
+	/*background: white;*/
+}
+
+.ellipsis {
+	color: #999;
 }
 
 .ignored {
@@ -405,21 +414,27 @@ div > table > tbody > tr > th:first-child {
 body > table:first-of-type tr.successful th:first-child:before
 { 
 margin-right: 5px; 
-content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCQjU0NjU4QjIyQTNFMTExQkI5Rjk5QkQ4RkQ5RUJFQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMDVBNThBQUEzRDUxMUUxQjdCQkM2QUNBMTNBMDExNiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMDVBNThBOUEzRDUxMUUxQjdCQkM2QUNBMTNBMDExNiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ4MTZDRTNCRDVBM0UxMTFBQTI2QTBCMjZENzg1Qzg5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkJCNTQ2NThCMjJBM0UxMTFCQjlGOTlCRDhGRDlFQkVCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xJ3YrgAAAYBJREFUeNpsUrtKA1EQPZtdY4gEQiD4QCsLEVGX4CP4AykEq1hYiGghCDZ+gBZWVtrZ+EAjaGOhfoAkNiaKhYWICilMEQNqoYjZ5O4d5+6ucQuLM3funDNzD7OrLe229YBwSKAEnyAP/pyIbL5fcz5rcNiLtuqJSEz3ickn5ruE/vFmJ9/LYjvAldGWqA7bJkgPtoAHQrS5G6NdiwhFWCoxHOCgKUL+iurkCBVawyamE8d4qmSZ51clBZUlh+RG14JzEsJNcaTNLVwWd1B6vXXqkmGoYNeVUPnW3JNr4+YarPoncvebEAKNekAlokaY6N/A1NA+SBgY6Eijtz2Fs5sVWNWawysorWNJsO+q9QWzaxLTYwfojA3isZzDfSnrWvTsNiyp7pOrZURC7ejrTDEpcVpY9ab+NSioLZEiapZA5nwBxZcC8g9HeK7ccYM7TDnwmoU2vx6/NIJaUjc0b0u8YvJNle5HdJvlhbI0Y31ThqsjTGr0/+8hOOQ5nfsRYACtHiy+FDd82wAAAABJRU5ErkJggg==')
+
+/* optimized version of ../../graphics/success12.png */
+content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAABcUlEQVR42m1SPUsDQRB9661BIoEQDBqJnRhE1BD8CP4AgwhWEbQIKIhi6Q/QwspCtBBs/CBG1Fb9AWK0iBosLCQgYmGQEFARRUguezfuLeZygsWbmZ037zEMyxZ2W0IgHBIoIjPoF6q2QQYIWVlPcxmS3mYt4vFpjmEpd4pNaJ9vRvS9ILa57Aw2ejUYBtVcTdsZPnc7Qk0juNQ3QC/o55JkhnAO19wDnjAmIkkcZBMwBVmci1uEoR5Od4K73o94eAuZpx3kX+9U35TgVjAqVWdmZUWOhldQrnwhnduEELD7dVYhdMJY9zom+/ZAgqOnNY7OQAynt0sol3TFSyiRWklUCKXyN8Jt40gM7SPo68VDIY1c/ly5KlBtJaU+vlmEpyGArmBMkiZOrpdV3yFQ4PJBkmBkCqTO5jE3fITixyOei/dy0L5aVSjY7Jo/w10sqnFmn9VU+e+ZhW7BvGAzq/4O2UiBMCBJRv9/DyHDFQFTPwI/IlPYPLYnAAAAAElFTkSuQmCC')
 }
 
 .failed td:first-child:before,
 body > table:first-of-type tr.failed th:first-child:before
 { 
 margin-right: 5px; 
-content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCQjU0NjU4QjIyQTNFMTExQkI5Rjk5QkQ4RkQ5RUJFQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQTUyOTdBQUEzRDUxMUUxQTQwN0YzMUI0Nzg3NDU1RSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQTUyOTdBOUEzRDUxMUUxQTQwN0YzMUI0Nzg3NDU1RSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ4MTZDRTNCRDVBM0UxMTFBQTI2QTBCMjZENzg1Qzg5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkJCNTQ2NThCMjJBM0UxMTFCQjlGOTlCRDhGRDlFQkVCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+aHNJrgAAAZ1JREFUeNpsUssrRGEU/907985YMDPNYlh4hbKZPMdgR3aysrGSSFIeKyUKpewoRTYkmcgCf4MsMI2FPDYGKeUZSoru4/uc82VC+W7fOeee+zvn/M45V1uuyCmVwDogq0hDklD6jy1dspNkdxokVrIzPFUh0/MD5OdXoJDwPFtu3d2ns6TTp9oggTlFZlmN0o4AHMmXfJGo0lmGzoE1OgmNHf5YA8rmN5HfM6wADmUuHphA9cIW/JX1yiek9DIlyijxkNjBzXYche19gNcHzfShoLUdVxtLuD/cYzCoMAzCwqYrhMDx9Chs20JRWzf4nMcXcDI3pYAqQHIAtWUJbpKursMMhpA+RiAEGzpc4X5XkDB4GjaHmiZik/PIa2rBEWVlSuW9Q+T3YndskBi46QpQFcLltchtbEZyZhxna4uKhmV9Ito/gtPNOG4P99WItdlIWARNXWOAv6AEr9cplel7/ggUleDlMqUSvNnCobHKxDsNnqs8XaWUZopp/XhxTkOR+HDVOveYUge9rNLyY9SU9v+vwXuUB2R0fQkwABfn/VKSjTLBAAAAAElFTkSuQmCC')
+
+/* optimized version of ../../graphics/fail12.png */
+content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAjVBMVEWDKBSQLBadMBidMBiSLBWSLRaLKhWCKBOZLheHKRT//////v3ivLPgt67dsafhraLfqJvcopXQl4vNkoTKjH3RbljKaVO8aVaxYlCsUDylUDusOh+wNxu0OBu4ORy7OhzAOx3EPB2rNRqnNBqjMhifMRidMBeaLxeXLhaULRaRLBaOKxWLKhWIKRSFKBRkN75PAAAACnRSTlP7+c3Hx8TIwicknixbQAAAAIZJREFUeNoNwsEKgkAUBdD77jzSXKhDuEpyURBE//8h0SratQuKRK3QsdccjqTjDgLEV9VpPSEyYHPjVtFb9LYQKNYPrVk7fOyAfdMUWRnX9VHFLO9GJB4ClR8wxyIQYmGveZmGu1BUJFjm5fHtShDM8xVZFZ4nXtQVjDxd4hbPytGRPLf8A/K/MGOep8atAAAAAElFTkSuQmCC')
 }
 
 .pending td:first-child:before,
 body > table:first-of-type tr.pending th:first-child:before
 {
 margin-right: 5px; 
-content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCQjU0NjU4QjIyQTNFMTExQkI5Rjk5QkQ4RkQ5RUJFQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDODdDM0Y0QUEzRDUxMUUxQjk5N0MzQjVFRDMyQUE1MiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDODdDM0Y0OUEzRDUxMUUxQjk5N0MzQjVFRDMyQUE1MiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ4MTZDRTNCRDVBM0UxMTFBQTI2QTBCMjZENzg1Qzg5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkJCNTQ2NThCMjJBM0UxMTFCQjlGOTlCRDhGRDlFQkVCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+yj6RYgAAAPZJREFUeNp0kM8KgkAQxmc1E0Wfo3vQn5eRSDx4EUHwbTpEhx4lil7DiydBQUFXp5nAMNsGhpnd/X77za4Iw3CFiFcAWFMFDkXtKZ/UHhfUnB3HWdu2/REpAL2u631ZlicGdpZlwTAMSmBM0zS5bhgQLB5FU3AOUS4XvNn3vVKgAACCIMA0TbFpGsyyDJMkefdFUWAcx1hVFeZ5jlEUoed5qPEI7KDrOhiG8e6llNC27Zcz77FW+L6Pruv+WKtGIzfgR39umv/UHOJgAMlO/BPOXCQDD5p3r2ma8lvHNU9BcWPg0HXdhRZbOhRT8aSXVO9U/ZcAAwAsmjsSQcM0lwAAAABJRU5ErkJggg==')
+
+/* optimized version of ../../graphics/pending12.png */
+content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAt1BMVEVgYGBZWVldXV1gYGBjY2NmZmZnZ2dnZ2diYmJfX19dXV1hYWFZWVlYWFhiYmJeXl5YWFhoaGj6+vr39/fz8/Py8vLv7+/p6enk5OR9fX18fHx7e3t6enp5eXl4eHh3d3d2dnZ1dXV0dHRzc3NycnJxcXFwcHBvb29ubm5tbW1sbGxra2tqamppaWloaGhnZ2dmZmZlZWVkZGRjY2NiYmJhYWFfX19eXl5dXV1cXFxbW1taWlpZWVl0CTiLAAAAEnRSTlP++/75/P7Nx8fHyMTBwygmIycZZx20AAAAdElEQVR42jWKvQ4BURSEzzdzED+NQiFRaCWi4f1rhcor2EZl2RDdcq+YyUzyZYb5c0MUn3PIaPUKKk4aBgsqfHPRVpLl0nuFbbkKoe7te5ftw0jue4OJFIeOn4KZsNN26SB28Z9OHi+RJUTePL0263LMY5sfIzMU3HCY7dEAAAAASUVORK5CYII=')
 }
 
 
@@ -470,115 +485,125 @@ span.scenario-totals {float: right; text-align: right}
 /*  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE       */
 /*  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                  */
 /* ------------------------------------------------------------------------ */
-</style></head>
+</style>
+   </head>
    <body>
       <h1>Test Report</h1>
-      <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/trans-5.xsl">home/dario/git/w2tei/add/trans-5.xsl</a></p>
-      <p>XSpec: <a href="file:/home/dario/git/w2tei/add/trans-5.xspec">home/dario/git/w2tei/add/trans-5.xspec</a></p>
-      <p>Tested: 14 February 2020 at 12:57</p>
+      <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/trans-5.xsl">/home/dario/git/w2tei/add/trans-5.xsl</a></p>
+      <p>XSpec: <a href="file:/home/dario/git/w2tei/add/trans-5.xspec">/home/dario/git/w2tei/add/trans-5.xspec</a></p>
+      <p>Tested: 3 March 2020 at 15:29</p>
       <h2>Contents</h2>
       <table class="xspec">
-         <col width="75%" />
-         <col width="6.25%" />
-         <col width="6.25%" />
-         <col width="6.25%" />
-         <col width="6.25%" />
+         <colgroup>
+            <col style="width:75%" />
+            <col style="width:6.25%" />
+            <col style="width:6.25%" />
+            <col style="width:6.25%" />
+            <col style="width:6.25%" />
+         </colgroup>
          <thead>
             <tr>
                <th></th>
-               <th class="totals">passed: 58</th>
+               <th class="totals">passed: 56</th>
                <th class="totals">pending: 0</th>
-               <th class="totals">failed: 0</th>
-               <th class="totals">total: 58</th>
+               <th class="totals">failed: 4</th>
+               <th class="totals">total: 60</th>
             </tr>
          </thead>
          <tbody>
             <tr class="successful">
-               <th><a href="#d3e4">T1: folgt</a></th>
+               <th><a href="#top-level-scenario-d5e4">T1: folgt</a></th>
                <th class="totals">9</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">9</th>
             </tr>
-            <tr class="successful">
-               <th><a href="#d3e812">T2: app/lem/rdg</a></th>
+            <tr class="failed">
+               <th><a href="#top-level-scenario-d5e755">T2: app/lem/rdg</a></th>
+               <th class="totals">10</th>
+               <th class="totals">0</th>
+               <th class="totals">2</th>
                <th class="totals">12</th>
-               <th class="totals">0</th>
-               <th class="totals">0</th>
-               <th class="totals">12</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e2311">T3: fehlt</a></th>
+               <th><a href="#top-level-scenario-d5e2140">T3: fehlt</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e2363">T3.2:</a></th>
+               <th><a href="#top-level-scenario-d5e2188">T3.2:</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e2418">T4: gestrichen</a></th>
+               <th><a href="#top-level-scenario-d5e2239">T4: gestrichen</a></th>
                <th class="totals">4</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">4</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e2733">T5: Korrekturen</a></th>
+               <th><a href="#top-level-scenario-d5e2531">T5: Korrekturen</a></th>
                <th class="totals">5</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">5</th>
             </tr>
-            <tr class="successful">
-               <th><a href="#d3e3263">T6: gemischte</a></th>
-               <th class="totals">9</th>
+            <tr class="failed">
+               <th><a href="#top-level-scenario-d5e3001">T6: gemischte</a></th>
+               <th class="totals">8</th>
                <th class="totals">0</th>
-               <th class="totals">0</th>
+               <th class="totals">1</th>
                <th class="totals">9</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e4301">T7: nicht umsetzbare</a></th>
+               <th><a href="#top-level-scenario-d5e3969">T7: nicht umsetzbare</a></th>
                <th class="totals">3</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">3</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e4728">T8: Elemente vorher</a></th>
+               <th><a href="#top-level-scenario-d5e4369">T8: Elemente vorher</a></th>
                <th class="totals">4</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">4</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e5356">T9: add</a></th>
+               <th><a href="#top-level-scenario-d5e4977">T9: add</a></th>
                <th class="totals">6</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">6</th>
             </tr>
+            <tr class="failed">
+               <th><a href="#top-level-scenario-d5e5384">T10: Normalfall</a></th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
+               <th class="totals">1</th>
+               <th class="totals">1</th>
+            </tr>
             <tr class="successful">
-               <th><a href="#d3e5796">T10: Normalfall</a></th>
+               <th><a href="#top-level-scenario-d5e5567">T11: Gruppierung</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e5983">T11: Gruppierung</a></th>
-               <th class="totals">1</th>
+               <th><a href="#top-level-scenario-d5e5642">T12</a></th>
+               <th class="totals">2</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
-               <th class="totals">1</th>
+               <th class="totals">2</th>
             </tr>
             <tr class="successful">
-               <th><a href="#d3e6076">T12</a></th>
+               <th><a href="#top-level-scenario-d5e5751">T13: Bibelstellen</a></th>
                <th class="totals">2</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
@@ -586,11 +611,13 @@ span.scenario-totals {float: right; text-align: right}
             </tr>
          </tbody>
       </table>
-      <div id="d3e4">
+      <div id="top-level-scenario-d5e4">
          <h2 class="successful">T1: folgt<span class="scenario-totals">passed: 9 / pending: 0 / failed: 0 / total: 9</span></h2>
-         <table class="xspec" id="t-d3e4">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e4">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T1: folgt</th>
@@ -671,15 +698,17 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e812">
-         <h2 class="successful">T2: app/lem/rdg<span class="scenario-totals">passed: 12 / pending: 0 / failed: 0 / total: 12</span></h2>
-         <table class="xspec" id="t-d3e812">
-            <col width="75%" />
-            <col width="25%" />
+      <div id="top-level-scenario-d5e755">
+         <h2 class="successful">T2: app/lem/rdg<span class="scenario-totals">passed: 10 / pending: 0 / failed: 2 / total: 12</span></h2>
+         <table class="xspec" id="t-d5e755">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T2: app/lem/rdg</th>
-                  <th>passed: 12 / pending: 0 / failed: 0 / total: 12</th>
+                  <th>passed: 10 / pending: 0 / failed: 2 / total: 12</th>
                </tr>
                <tr class="successful">
                   <th>T2.1</th>
@@ -689,13 +718,13 @@ span.scenario-totals {float: right; text-align: right}
                   <td>letzes rdg mit note</td>
                   <td>Success</td>
                </tr>
-               <tr class="successful">
-                  <th>T2.2: vorher rs mit mehreren Wörtern</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#scenario-d5e834">T2.2: vorher rs mit mehreren Wörtern</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>app in rs</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#test-d5e896">app in rs</a></td>
+                  <td>Failure</td>
                </tr>
                <tr class="successful">
                   <th>T2.3: Zeilenanfang einfach</th>
@@ -737,13 +766,13 @@ span.scenario-totals {float: right; text-align: right}
                   <td>comment mit orig im rdf</td>
                   <td>Success</td>
                </tr>
-               <tr class="successful">
-                  <th>T2.8: komplexere rdg</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#scenario-d5e1420">T2.8: komplexere rdg</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>langer Text nicht in @wit</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#test-d5e1647">langer Text nicht in @wit</a></td>
+                  <td>Failure</td>
                </tr>
                <tr class="successful">
                   <th>T2.9: mit lb im Lemma</th>
@@ -779,12 +808,178 @@ span.scenario-totals {float: right; text-align: right}
                </tr>
             </tbody>
          </table>
+         <div id="scenario-d5e834">
+            <h3>T2: app/lem/rdg T2.2: vorher rs mit mehreren Wörtern</h3>
+            <div id="test-d5e896">
+               <h4>app in rs</h4>
+               <table class="xspecResult">
+                  <thead>
+                     <tr>
+                        <th>Result</th>
+                        <th>Expected Result</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:wdb="https://github.com/dariok/wdbplus"&gt;<span class="same">ad </span>&lt;<span class="inner-diff">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref nachtragen--&gt;</span>
+      &lt;<span class="same">expan</span>&gt;<span class="same">D</span>&lt;<span class="same">ex</span>&gt;<span class="same">ominum</span>&lt;/ex&gt;
+      &lt;/expan&gt;
+      <span class="diff whitespace">␣␣</span>
+      &lt;<span class="diff">app</span>&gt;
+         &lt;<span class="diff">lem</span>&gt;<span class="diff">Eccium</span>&lt;/lem&gt;
+         &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#A5"</span>&gt;<span class="diff">Eckium</span>&lt;/rdg&gt;
+         &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#a1"</span>&gt;<span class="diff">Ecckium</span>&lt;/rdg&gt;
+      &lt;/app&gt;
+   &lt;/rs&gt;
+&lt;/p&gt;</pre>
+                        </td>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:wdb="https://github.com/dariok/wdbplus"&gt;<span class="same">ad </span>&lt;<span class="inner-diff">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref nachtragen--&gt;</span>
+      &lt;<span class="same">expan</span>&gt;<span class="same">D</span>&lt;<span class="same">ex</span>&gt;<span class="same">ominum</span>&lt;/ex&gt;
+      &lt;/expan&gt;
+      &lt;<span class="diff">app</span>&gt;
+         &lt;<span class="diff">lem</span>&gt;<span class="diff">Eccium</span>&lt;/lem&gt;
+         &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#A5"</span>&gt;<span class="diff">Eckium</span>&lt;/rdg&gt;
+         &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#a1"</span>&gt;<span class="diff">Ecckium</span>&lt;/rdg&gt;
+      &lt;/app&gt;
+   &lt;/rs&gt;
+&lt;/p&gt;</pre>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div id="scenario-d5e1420">
+            <h3>T2: app/lem/rdg T2.8: komplexere rdg</h3>
+            <div id="test-d5e1647">
+               <h4>langer Text nicht in @wit</h4>
+               <table class="xspecResult">
+                  <thead>
+                     <tr>
+                        <th>Result</th>
+                        <th>Expected Result</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="same">head</span> xmlns="http://www.tei-c.org/ns/1.0"
+      xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="same">lb</span> /&gt;
+   &lt;<span class="same">app</span>&gt;
+      &lt;<span class="same">lem</span>&gt;<span class="same">Scopus Disputationis.</span>&lt;/lem&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a1"</span> /&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a2"</span>&gt;
+         &lt;<span class="same">add</span> <span class="same">place</span>=<span class="same">"left"</span>&gt;<span class="same">Scopus Disputationis.</span>&lt;/add&gt;
+      &lt;/rdg&gt;
+   &lt;/app&gt;
+   &lt;<span class="same">app</span>&gt;
+      &lt;<span class="same">lem</span>&gt;<span class="same"> Liberum arbitrium.</span>&lt;/lem&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#A5"</span>&gt;<span class="same">Liberum arbitrium</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a1"</span>&gt;<span class="same">lberum ar</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a2"</span>
+           <span class="same">cause</span>=<span class="same">"correction"</span>&gt;<span class="same">liberum arbitrium</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a2"</span>
+           <span class="same">rend</span>=<span class="same">"AuRd-Gl"</span>&gt;<span class="same">Eckius </span>&lt;<span class="same">supplied</span>&gt;<span class="same">contra?</span>&lt;/supplied&gt;<span class="same"> 11 conclusio</span>&lt;<span class="same">supplied</span>&gt;<span class="same">nem</span>&lt;/supplied&gt;<span class="same"> doc
+							Corol</span>&lt;<span class="same">supplied</span>&gt;<span class="same">ostadii</span>&lt;/supplied&gt;<span class="same"> de libero arbitrio</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#A5Lp"</span>
+           <span class="same">rend</span>=<span class="same">"InRd-Gl"</span>&gt;<span class="same">2 hora</span>&lt;/rdg&gt;
+   &lt;/app&gt;
+&lt;/head&gt;
+&lt;<span class="same">head</span> xmlns="http://www.tei-c.org/ns/1.0"
+      xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="same">lb</span> /&gt;<span class="same">&lt;</span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref nachtragen--&gt;</span><span class="same">Eccius</span>&lt;/rs&gt;<span class="same">&gt;</span>&lt;/head&gt;
+&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="same">lb</span> /&gt;
+   &lt;<span class="same">app</span>&gt;
+      &lt;<span class="same">lem</span>&gt;
+         &lt;<span class="same">expan</span>&gt;<span class="same">Con</span>&lt;<span class="same">ex</span>&gt;<span class="same">tra</span>&lt;/ex&gt;
+         &lt;/expan&gt;<span class="same"> XI.</span>&lt;/lem&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a1"</span>
+           <span class="same">rend</span>=<span class="same">"centre"</span>&gt;<span class="same">contra 11</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#A5Lp"</span>
+           <span class="same">rend</span>=<span class="same">"AuRd-Gl"</span>&gt;<span class="same">questio 14</span>&lt;/rdg&gt;
+   &lt;/app&gt;
+   &lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"footnote"</span>&gt;<span class="same">Vgl. Anm. </span>&lt;<span class="same">ptr</span> <span class="same">type</span>=<span class="same">"wdb"</span>
+           <span class="same">target</span>=<span class="same">"#n3"</span> /&gt;<span class="same">.</span>&lt;/note&gt;
+   <span class="diff whitespace">␣␣</span>
+   &lt;<span class="diff">app</span>&gt;
+      &lt;<span class="diff">lem</span>&gt;<span class="diff">risit</span>&lt;/lem&gt;
+      &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#a1"</span> /&gt;
+   &lt;/app&gt;
+   &lt;<span class="diff">note</span> <span class="diff">type</span>=<span class="diff">"footnote"</span>&gt;<span class="diff">Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </span>&lt;/note&gt;
+&lt;/p&gt;</pre>
+                        </td>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="same">head</span> xmlns="http://www.tei-c.org/ns/1.0"
+      xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="same">lb</span> /&gt;
+   &lt;<span class="same">app</span>&gt;
+      &lt;<span class="same">lem</span>&gt;<span class="same">Scopus Disputationis.</span>&lt;/lem&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a1"</span> /&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a2"</span>&gt;
+         &lt;<span class="same">add</span> <span class="same">place</span>=<span class="same">"left"</span>&gt;<span class="same">Scopus Disputationis.</span>&lt;/add&gt;
+      &lt;/rdg&gt;
+   &lt;/app&gt;
+   &lt;<span class="same">app</span>&gt;
+      &lt;<span class="same">lem</span>&gt;<span class="same"> Liberum arbitrium.</span>&lt;/lem&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#A5"</span>&gt;<span class="same">Liberum arbitrium</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a1"</span>&gt;<span class="same">lberum ar</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">cause</span>=<span class="same">"correction"</span>
+           <span class="same">wit</span>=<span class="same">"#a2"</span>&gt;<span class="same">liberum arbitrium</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a2"</span>
+           <span class="same">rend</span>=<span class="same">"AuRd-Gl"</span>&gt;<span class="same">Eckius </span>&lt;<span class="same">supplied</span>&gt;<span class="same">contra?</span>&lt;/supplied&gt;<span class="same"> 11 conclusio</span>&lt;<span class="same">supplied</span>&gt;<span class="same">nem</span>&lt;/supplied&gt;<span class="same"> doc
+							Corol</span>&lt;<span class="same">supplied</span>&gt;<span class="same">ostadii</span>&lt;/supplied&gt;<span class="same"> de libero arbitrio</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#A5Lp"</span>
+           <span class="same">rend</span>=<span class="same">"InRd-Gl"</span>&gt;<span class="same">2 hora</span>&lt;/rdg&gt;
+   &lt;/app&gt;
+&lt;/head&gt;
+&lt;<span class="same">head</span> xmlns="http://www.tei-c.org/ns/1.0"
+      xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="same">lb</span> /&gt;<span class="same">&lt;</span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref nachtragen--&gt;</span><span class="same">Eccius</span>&lt;/rs&gt;<span class="same">&gt;</span>&lt;/head&gt;
+&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="same">lb</span> /&gt;
+   &lt;<span class="same">app</span>&gt;
+      &lt;<span class="same">lem</span>&gt;
+         &lt;<span class="same">expan</span>&gt;<span class="same">Con</span>&lt;<span class="same">ex</span>&gt;<span class="same">tra</span>&lt;/ex&gt;
+         &lt;/expan&gt;<span class="same"> XI.</span>&lt;/lem&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#a1"</span>
+           <span class="same">rend</span>=<span class="same">"centre"</span>&gt;<span class="same">contra 11</span>&lt;/rdg&gt;
+      &lt;<span class="same">rdg</span> <span class="same">wit</span>=<span class="same">"#A5Lp"</span>
+           <span class="same">rend</span>=<span class="same">"AuRd-Gl"</span>&gt;<span class="same">questio 14</span>&lt;/rdg&gt;
+   &lt;/app&gt;
+   &lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"footnote"</span>&gt;<span class="same">Vgl. Anm. </span>&lt;<span class="same">ptr</span> <span class="same">type</span>=<span class="same">"wdb"</span>
+           <span class="same">target</span>=<span class="same">"#n3"</span> /&gt;<span class="same">.</span>&lt;/note&gt;
+   &lt;<span class="diff">app</span>&gt;
+      &lt;<span class="diff">lem</span>&gt;<span class="diff">risit</span>&lt;/lem&gt;
+      &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#a1"</span> /&gt;
+   &lt;/app&gt;
+   &lt;<span class="diff">note</span> <span class="diff">type</span>=<span class="diff">"footnote"</span>&gt;<span class="diff">Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </span>&lt;/note&gt;
+&lt;/p&gt;</pre>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
       </div>
-      <div id="d3e2311">
+      <div id="top-level-scenario-d5e2140">
          <h2 class="successful">T3: fehlt<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e2311">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e2140">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T3: fehlt</th>
@@ -797,11 +992,13 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e2363">
+      <div id="top-level-scenario-d5e2188">
          <h2 class="successful">T3.2:<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e2363">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e2188">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T3.2:</th>
@@ -814,11 +1011,13 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e2418">
+      <div id="top-level-scenario-d5e2239">
          <h2 class="successful">T4: gestrichen<span class="scenario-totals">passed: 4 / pending: 0 / failed: 0 / total: 4</span></h2>
-         <table class="xspec" id="t-d3e2418">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e2239">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T4: gestrichen</th>
@@ -859,11 +1058,13 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e2733">
+      <div id="top-level-scenario-d5e2531">
          <h2 class="successful">T5: Korrekturen<span class="scenario-totals">passed: 5 / pending: 0 / failed: 0 / total: 5</span></h2>
-         <table class="xspec" id="t-d3e2733">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e2531">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T5: Korrekturen</th>
@@ -912,15 +1113,17 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e3263">
-         <h2 class="successful">T6: gemischte<span class="scenario-totals">passed: 9 / pending: 0 / failed: 0 / total: 9</span></h2>
-         <table class="xspec" id="t-d3e3263">
-            <col width="75%" />
-            <col width="25%" />
+      <div id="top-level-scenario-d5e3001">
+         <h2 class="successful">T6: gemischte<span class="scenario-totals">passed: 8 / pending: 0 / failed: 1 / total: 9</span></h2>
+         <table class="xspec" id="t-d5e3001">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T6: gemischte</th>
-                  <th>passed: 9 / pending: 0 / failed: 0 / total: 9</th>
+                  <th>passed: 8 / pending: 0 / failed: 1 / total: 9</th>
                </tr>
                <tr class="successful">
                   <th>T6.1: rdg mit Hinzufügungen</th>
@@ -930,13 +1133,13 @@ span.scenario-totals {float: right; text-align: right}
                   <td>app?</td>
                   <td>Success</td>
                </tr>
-               <tr class="successful">
-                  <th>T6.2: mehrere note incl. comment</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#scenario-d5e3101">T6.2: mehrere note incl. comment</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>gemischt</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#test-d5e3164">gemischt</a></td>
+                  <td>Failure</td>
                </tr>
                <tr class="successful">
                   <th>T6.3: mehrere in Marginaline</th>
@@ -996,12 +1199,57 @@ span.scenario-totals {float: right; text-align: right}
                </tr>
             </tbody>
          </table>
+         <div id="scenario-d5e3101">
+            <h3>T6: gemischte T6.2: mehrere note incl. comment</h3>
+            <div id="test-d5e3164">
+               <h4>gemischt</h4>
+               <table class="xspecResult">
+                  <thead>
+                     <tr>
+                        <th>Result</th>
+                        <th>Expected Result</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:wdb="https://github.com/dariok/wdbplus"&gt;<span class="same">est. Nisi</span>&lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"crit_app"</span>&gt;<span class="same">folgt ein Wort durchgestrichen a</span>&lt;<span class="same">hi</span> <span class="same">rend</span>=<span class="same">"sub"</span>&gt;<span class="same">1</span>&lt;/hi&gt;
+   &lt;/note&gt;
+   <span class="diff whitespace">␣␣</span>
+   &lt;<span class="diff">app</span>&gt;
+      &lt;<span class="diff">lem</span>&gt;<span class="diff">sanctissimum</span>&lt;/lem&gt;
+      &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#a1"</span>&gt;<span class="diff">sactissimum</span>&lt;/rdg&gt;
+      &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#a2"</span>&gt;<span class="diff">sanctissimum</span>&lt;<span class="diff">note</span> <span class="diff">type</span>=<span class="diff">"comment"</span>&gt;<span class="diff">korrigiert</span>&lt;/note&gt;
+      &lt;/rdg&gt;
+   &lt;/app&gt;<span class="diff"> in Christo</span>&lt;/p&gt;</pre>
+                        </td>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:wdb="https://github.com/dariok/wdbplus"&gt;<span class="same">est. Nisi</span>&lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"crit_app"</span>&gt;<span class="same">folgt ein Wort durchgestrichen a</span>&lt;<span class="same">hi</span> <span class="same">rend</span>=<span class="same">"sub"</span>&gt;<span class="same">1</span>&lt;/hi&gt;
+   &lt;/note&gt;
+   &lt;<span class="diff">app</span>&gt;
+      &lt;<span class="diff">lem</span>&gt;<span class="diff">sanctissimum</span>&lt;/lem&gt;
+      &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#a1"</span>&gt;<span class="diff">sactissimum</span>&lt;/rdg&gt;
+      &lt;<span class="diff">rdg</span> <span class="diff">wit</span>=<span class="diff">"#a2"</span>&gt;<span class="diff">sanctissimum</span>&lt;<span class="diff">note</span> <span class="diff">type</span>=<span class="diff">"comment"</span>&gt;<span class="diff">korrigiert</span>&lt;/note&gt;
+      &lt;/rdg&gt;
+   &lt;/app&gt;<span class="diff"> in Christo</span>&lt;/p&gt;</pre>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
       </div>
-      <div id="d3e4301">
+      <div id="top-level-scenario-d5e3969">
          <h2 class="successful">T7: nicht umsetzbare<span class="scenario-totals">passed: 3 / pending: 0 / failed: 0 / total: 3</span></h2>
-         <table class="xspec" id="t-d3e4301">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e3969">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T7: nicht umsetzbare</th>
@@ -1034,11 +1282,13 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e4728">
+      <div id="top-level-scenario-d5e4369">
          <h2 class="successful">T8: Elemente vorher<span class="scenario-totals">passed: 4 / pending: 0 / failed: 0 / total: 4</span></h2>
-         <table class="xspec" id="t-d3e4728">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e4369">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T8: Elemente vorher</th>
@@ -1079,11 +1329,13 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e5356">
+      <div id="top-level-scenario-d5e4977">
          <h2 class="successful">T9: add<span class="scenario-totals">passed: 6 / pending: 0 / failed: 0 / total: 6</span></h2>
-         <table class="xspec" id="t-d3e5356">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e4977">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T9: add</th>
@@ -1140,32 +1392,83 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e5796">
-         <h2 class="successful">T10: Normalfall<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e5796">
-            <col width="75%" />
-            <col width="25%" />
+      <div id="top-level-scenario-d5e5384">
+         <h2 class="successful">T10: Normalfall<span class="scenario-totals">passed: 0 / pending: 0 / failed: 1 / total: 1</span></h2>
+         <table class="xspec" id="t-d5e5384">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T10: Normalfall</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <th>T10.1: rs zwischen anchor Ende und Anfang</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#scenario-d5e5388">T10.1: rs zwischen anchor Ende und Anfang</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>rs beibehalten</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#test-d5e5507">rs beibehalten</a></td>
+                  <td>Failure</td>
                </tr>
             </tbody>
          </table>
+         <div id="scenario-d5e5388">
+            <h3>T10: Normalfall T10.1: rs zwischen anchor Ende und Anfang</h3>
+            <div id="test-d5e5507">
+               <h4>rs beibehalten</h4>
+               <table class="xspecResult">
+                  <thead>
+                     <tr>
+                        <th>Result</th>
+                        <th>Expected Result</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="same">add</span> <span class="same">place</span>=<span class="same">"margin"</span>&gt;<span class="same"> Doctor Archidiacon</span>&lt;/add&gt;
+   &lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"footnote"</span>&gt;<span class="same">Seit 1510 war </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Karlstadt</span>&lt;/rs&gt;<span class="same"> Archidiakon am </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"place"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Wittenberger Allerheiligenstift</span>&lt;/rs&gt;<span class="same">. Vgl. KGK I.1, Nr. 49, S. 437 Anm. 5.</span>&lt;/note&gt;
+   &lt;<span class="same">lb</span> /&gt;<span class="same">angesuecht</span>&lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"footnote"</span>&gt;<span class="same">Siehe EE100.</span>&lt;/note&gt;<span class="same">, unnd mit vleyß unnderthenigklich gepeten hat, Ine sampt denIhenen, 
+					</span>&lt;<span class="same">lb</span> /&gt;<span class="same">so er mit sich, auff schirstkunfftige</span>&lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"footnote"</span>&gt;<span class="same">nächstkommend; vgl. </span>&lt;<span class="same">bibl</span> <span class="same">ref</span>=<span class="same">"#grimm_woerterbuch_1854"</span>&gt;<span class="same"> 9, 19-21</span>&lt;/bibl&gt;<span class="same"> (schier).</span>&lt;/note&gt;<span class="same"> Disputacion, welhe Er zu </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"place"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Leiptzk</span>&lt;/rs&gt;<span class="same">, wyder</span>&lt;<span class="same">add</span>&gt;
+      &lt;<span class="same">del</span>&gt;<span class="same">doctor </span>&lt;<span class="same">gap</span> /&gt;<span class="same"> Eck</span>&lt;/del&gt;
+   &lt;/add&gt;
+   <span class="diff whitespace">␣␣</span>
+   &lt;<span class="inner-diff">add</span> <span class="inner-diff">place</span>=<span class="diff">"supralinear"</span>&gt;<span class="diff">her</span>&lt;/add&gt;
+   &lt;<span class="diff">add</span> <span class="diff">place</span>=<span class="diff">"margin"</span>&gt;<span class="diff">Iohann Eckius</span>&lt;/add&gt;
+&lt;/p&gt;</pre>
+                        </td>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:wdb="https://github.com/dariok/wdbplus"&gt;
+   &lt;<span class="same">add</span> <span class="same">place</span>=<span class="same">"margin"</span>&gt;<span class="same"> Doctor Archidiacon</span>&lt;/add&gt;
+   &lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"footnote"</span>&gt;<span class="same">Seit 1510 war </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Karlstadt</span>&lt;/rs&gt;<span class="same"> Archidiakon am </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"place"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Wittenberger Allerheiligenstift</span>&lt;/rs&gt;<span class="same">. Vgl. KGK I.1, Nr. 49, S. 437 Anm. 5.</span>&lt;/note&gt;
+   &lt;<span class="same">lb</span> /&gt;<span class="same">angesuecht</span>&lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"footnote"</span>&gt;<span class="same">Siehe EE100.</span>&lt;/note&gt;<span class="same">, unnd mit vleyß unnderthenigklich gepeten hat, Ine sampt denIhenen, 
+					</span>&lt;<span class="same">lb</span> /&gt;<span class="same">so er mit sich, auff schirstkunfftige</span>&lt;<span class="same">note</span> <span class="same">type</span>=<span class="same">"footnote"</span>&gt;<span class="same">nächstkommend; vgl. </span>&lt;<span class="same">bibl</span> <span class="same">ref</span>=<span class="same">"#grimm_woerterbuch_1854"</span>&gt;<span class="same"> 9, 19-21</span>&lt;/bibl&gt;<span class="same"> (schier).</span>&lt;/note&gt;<span class="same"> Disputacion, welhe Er zu </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"place"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Leiptzk</span>&lt;/rs&gt;<span class="same">, wyder</span>&lt;<span class="same">add</span>&gt;
+      &lt;<span class="same">del</span>&gt;<span class="same">doctor </span>&lt;<span class="same">gap</span> /&gt;<span class="same"> Eck</span>&lt;/del&gt;
+   &lt;/add&gt;
+   &lt;<span class="diff">add</span> <span class="diff">place</span>=<span class="diff">"supralinear"</span>&gt;<span class="diff">her</span>&lt;/add&gt;
+   &lt;<span class="inner-diff">add</span> <span class="inner-diff">place</span>=<span class="diff">"margin"</span>&gt;<span class="diff">Iohann Eckius</span>&lt;/add&gt;
+&lt;/p&gt;</pre>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
       </div>
-      <div id="d3e5983">
+      <div id="top-level-scenario-d5e5567">
          <h2 class="successful">T11: Gruppierung<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d3e5983">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e5567">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T11: Gruppierung</th>
@@ -1182,11 +1485,13 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="d3e6076">
+      <div id="top-level-scenario-d5e5642">
          <h2 class="successful">T12<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
-         <table class="xspec" id="t-d3e6076">
-            <col width="75%" />
-            <col width="25%" />
+         <table class="xspec" id="t-d5e5642">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
             <tbody>
                <tr class="successful">
                   <th>T12</th>
@@ -1202,6 +1507,37 @@ span.scenario-totals {float: right; text-align: right}
                </tr>
                <tr class="successful">
                   <th>T12.2: q000</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>.</td>
+                  <td>Success</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div id="top-level-scenario-d5e5751">
+         <h2 class="successful">T13: Bibelstellen<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
+         <table class="xspec" id="t-d5e5751">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
+            <tbody>
+               <tr class="successful">
+                  <th>T13: Bibelstellen</th>
+                  <th>passed: 2 / pending: 0 / failed: 0 / total: 2</th>
+               </tr>
+               <tr class="successful">
+                  <th>T13.1: mit Semikolon</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>.</td>
+                  <td>Success</td>
+               </tr>
+               <tr class="successful">
+                  <th>T13.2: u.</th>
                   <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
                </tr>
                <tr class="successful">
