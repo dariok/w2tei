@@ -7,6 +7,8 @@
 	exclude-result-prefixes="#all"
 	version="3.0">
 	
+	<xsl:include href="ref-qv.xsl" />
+	
 	<xsl:template match="tei:rs[not(preceding-sibling::node()[1][self::tei:rs])]">
 		<rs type="{@type}">
 			<xsl:choose>

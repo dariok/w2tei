@@ -12,6 +12,8 @@
 <!--	<xsl:output indent="yes"/>-->
 	
 	<xsl:include href="../string-pack.xsl" />
+	<xsl:include href="../word-pack.xsl" />
+	<xsl:include href="ref-qv.xsl" />
 	
 	<xsl:template match="/">
 		<xsl:apply-templates />
@@ -245,12 +247,9 @@
 	</xsl:template>
 	
 	<!-- Anmerkung über mehrere Wörter -->
-	<xsl:template match="tei:anchor">
+	<xsl:template match="tei:anchor[not(@xml:id)]">
 		<xsl:variable name="num" select="count(preceding::tei:anchor[@ref='se'])+1"/>
 		<xsl:choose>
-			<xsl:when test="@xml:id">
-				<anchor xml:id="{@xml:id}{if(@type = 'bookmarkEnd') then 'e' else ''}" />
-			</xsl:when>
 			<xsl:when test="@ref='se'">
 				<anchor type="crit_app">
 					<xsl:attribute name="xml:id" select="'s'||$num||'e'" />

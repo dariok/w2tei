@@ -10,6 +10,8 @@
 	version="3.0">
 	
 	<xsl:include href="../string-pack.xsl" />
+	<xsl:include href="../word-pack.xsl" />
+	<xsl:include href="ref-qv.xsl" />
 	
 	<!-- verschoben aus trans-4 -->
 	<xsl:template match="tei:ref[@type='biblical']">
@@ -195,9 +197,6 @@
 	</xsl:template>-->
 	
 	<xsl:template match="tei:anchor" />
-	<xsl:template match="tei:anchor[not(@type = 'crit_app') and matches(@xml:id, '^[cnqs]\d\d\de?$')]">
-		<xsl:sequence select="." />
-	</xsl:template>
 	<xsl:template match="tei:note[@type = 'footnote'
 		and preceding-sibling::*[1][self::tei:anchor[ends-with(@xml:id, 'e')]]
 		and following-sibling::*[1][self::tei:span]]" />
@@ -219,8 +218,6 @@
 			</xsl:choose>
 		</div>
 	</xsl:template>
-	
-	
 	
 	<xsl:template match="node()[not(self::tei:span)][(
 		preceding-sibling::tei:anchor[1][@type = 'crit_app' and not(ends-with(@xml:id, 'e'))]
