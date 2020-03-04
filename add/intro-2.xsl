@@ -10,6 +10,7 @@
   version="3.0">
   
   <xsl:include href="styles-inc.xsl"/>
+  <xsl:include href="ref-qv.xsl" />
   
   <xsl:template match="text()[not(preceding-sibling::*[1][self::hab:mark[@ref]])]">
     <xsl:analyze-string select="." regex="[&quot;]([^&quot;]*)[&quot;]">
@@ -45,20 +46,7 @@
     </xsl:analyze-string>
   </xsl:template>
   
-  <xsl:template match="hab:bm" />
-  <xsl:template match="hab:mark[not(@ref)]" />
-  <xsl:template match="text()[preceding-sibling::*[1][self::hab:mark[@ref]]]" />
-  <xsl:template match="hab:mark[@ref]">
-    <xsl:variable name="ref" select="substring-before(substring-after(@ref, 'REF '), ' ')" />
-    <xsl:variable name="target" select="//hab:bm[@name = $ref]/following-sibling::*[1]" />
-    <xsl:choose>
-      <xsl:when test="$target/@type='footnote'">
-        <ptr type="wdb" target="#{$target/@xml:id}" />
-      </xsl:when>
-    </xsl:choose>
-  </xsl:template>
-	
-	<xsl:template match="tei:hi[preceding-sibling::node()[1][self::tei:hi]]"/>
+  <xsl:template match="tei:hi[preceding-sibling::node()[1][self::tei:hi]]"/>
 	<xsl:template match="tei:hi[not(preceding-sibling::node()[1][self::tei:hi])]">
 		<hi>
 			<xsl:apply-templates select="@rend | @style" />

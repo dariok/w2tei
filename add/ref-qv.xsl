@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:rel="http://schemas.openxmlformats.org/package/2006/relationships"
   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
   xmlns:math="http://www.w3.org/2005/xpath-functions/math"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -40,6 +43,26 @@
     </xsl:if>
   </xsl:template>
   
+  <!-- Verweise -->
+  <xsl:template match="hab:bm" />
+  <xsl:template match="tei:note[@type='footnote' and preceding-sibling::*[1][self::hab:bm]]">
+    <note type="footnote">
+      <xsl:apply-templates select="@* | node()" />
+    </note>
+  </xsl:template>
+  
+  <xsl:template match="hab:mark[not(@ref)]" />
+  <xsl:template match="text()[preceding-sibling::*[1][self::hab:mark[@ref]]]" />
+  <xsl:template match="hab:mark[@ref]">
+    <xsl:variable name="ref" select="substring-before(substring-after(@ref, 'REF '), ' ')" />
+    <xsl:variable name="target" select="//hab:bm[@name = $ref]/following-sibling::*[1]" />
+    <xsl:choose>
+      <xsl:when test="$target/@type='footnote'">
+        <ptr type="wdb" target="#{$target/@xml:id}" />
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+  
   <!-- EE-Verweis -->
   <xsl:template match="w:r[wt:is(., 'KSEEVerweis', 'r')]">
     <ptr type="wdb">
@@ -54,6 +77,41 @@
         </xsl:otherwise>
       </xsl:choose>
     </ptr>
+  </xsl:template>
+  
+  <!-- Hyperlinks -->
+  <xsl:template match="w:hyperlink">
+    <xsl:variable name="targetID" select="@r:id"/>
+    <xsl:choose>
+      <xsl:when test="matches(@w:anchor, '[cnqs]\d\d\d')">
+        <xsl:variable name="target" select="replace(normalize-space(), 'text', 'transcript')"/>
+        <xsl:variable name="s" select="replace($target, '.*EE(\d+_?(transcript|introduction)).*', '$1')"/>
+        <xsl:variable name="num" select="substring-before($s, '_')"/>
+        <xsl:variable name="id" select="replace(/tei:TEI/@xml:id, '.*_(\d\d\d)_.*', '$1')" />
+        <xsl:variable name="loc"
+          select="if($num = $id) then '' else '../' || $num || '/' "/>
+        <ptr type="wdb" target="{$loc}{$s}.xml#{@w:anchor}" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="target">
+          <xsl:choose>
+            <xsl:when test="ancestor::w:endnote">
+              <xsl:value-of select="//pkg:part[contains(@pkg:name, 'endnote')]//rel:Relationship[@Id = $targetID]/@Target" />
+            </xsl:when>
+            <xsl:when test="ancestor::w:footnote">
+              <xsl:value-of select="//pkg:part[contains(@pkg:name, 'footnote')]//rel:Relationship[@Id = $targetID]/@Target" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="//pkg:part[contains(@pkg:name, 'document')]//rel:Relationship[@Id = $targetID]/@Target" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        
+        <ptr type="digitalisat" target="{$target}">
+          <xsl:apply-templates select="w:r" />
+        </ptr>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   
   <xsl:template match="tei:anchor[not(@type = 'crit_app') and @xml:id]">

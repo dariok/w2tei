@@ -15976,4 +15976,284 @@
 					>Brecht, Luther 1, 285-311</bibl><bibl>Hein/Kohnle, Leipziger Disputation</bibl></listBibl></div>
 			<div type="contents"/></x:expect>
 	</x:scenario>
+	<x:scenario label="T8: Ref und Querverweise">
+		<x:scenario label="T8.1">
+			<x:context>
+				<w:p xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+      xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+      xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+      xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+      xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+      xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+      xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:w10="urn:schemas-microsoft-com:office:word"
+      xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+      xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+      xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+      xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+      xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="750D66E1"
+      w14:textId="2F19960C" w:rsidR="005D279D" w:rsidRPr="006D56A9" w:rsidRDefault="00F74DB7" w:rsidP="0066622C">
+      <w:pPr>
+        <w:pStyle w:val="KSText"/>
+        <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+        <w:jc w:val="both"/>
+      </w:pPr>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:bookmarkStart w:id="10" w:name="s003"/>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve">Es ist nicht klar, ob der hier edierte Druck zu diesem Zeitpunkt </w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7">
+        <w:t xml:space="preserve">bereits </w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t>als erste</w:t>
+      </w:r>
+      <w:r w:rsidR="003856A3">
+        <w:t>r</w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> Entwurf vorlag oder</w:t>
+      </w:r>
+      <w:r w:rsidR="00A3730F">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7">
+        <w:t>in Planung</w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> war;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00A3730F" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve">ähnlich </w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t>fraglich</w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7" w:rsidRPr="00185DB7">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7" w:rsidRPr="006D56A9">
+        <w:t>bleibt</w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t>, ob die Um</w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7">
+        <w:t>w</w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve">idmung vom </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00015BDC">
+        <w:rPr>
+          <w:rStyle w:val="KSPerson"/>
+        </w:rPr>
+        <w:t>Lübecker Bischof</w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> zu </w:t>
+      </w:r>
+      <w:r w:rsidR="00BD7CAA" w:rsidRPr="00015BDC">
+        <w:rPr>
+          <w:rStyle w:val="KSPerson"/>
+        </w:rPr>
+        <w:t>Wolfgang Kuch</w:t>
+      </w:r>
+      <w:r w:rsidR="00BD7CAA" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7">
+        <w:t>eine</w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t>Folge der Beratung</w:t>
+      </w:r>
+      <w:r w:rsidR="00DE65D6" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidR="00DE65D6" w:rsidRPr="00015BDC">
+        <w:rPr>
+          <w:rStyle w:val="KSPerson"/>
+        </w:rPr>
+        <w:t>Spalatins</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidR="00DE65D6" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7">
+        <w:t>war</w:t>
+      </w:r>
+      <w:r w:rsidRPr="006D56A9">
+        <w:t>.</w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00F9775E" w:rsidRPr="006D56A9">
+        <w:t>Es ist jedoch naheliegend, dass</w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7" w:rsidRPr="00D43BC6">
+        <w:t>sich</w:t>
+      </w:r>
+      <w:r w:rsidR="00185DB7" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="00015BDC">
+        <w:rPr>
+          <w:rStyle w:val="KSPerson"/>
+        </w:rPr>
+        <w:t>Karlstadt</w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00DE65D6" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve">in jener Zeit gezielt </w:t>
+      </w:r>
+      <w:r w:rsidR="00D43BC6" w:rsidRPr="00D43BC6">
+        <w:t>mit dem Kanon beschäftigt</w:t>
+      </w:r>
+      <w:r w:rsidR="00D43BC6">
+        <w:t>e</w:t>
+      </w:r>
+      <w:r w:rsidR="00627F47" w:rsidRPr="006D56A9">
+        <w:t>. Dies entsprach</w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> seine</w:t>
+      </w:r>
+      <w:r w:rsidR="00DE3AE4" w:rsidRPr="006D56A9">
+        <w:t>m</w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00F9775E" w:rsidRPr="006D56A9">
+        <w:t>i</w:t>
+      </w:r>
+      <w:r w:rsidR="003856A3">
+        <w:t>n</w:t>
+      </w:r>
+      <w:r w:rsidR="00F9775E" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> de</w:t>
+      </w:r>
+      <w:r w:rsidR="003856A3">
+        <w:t>m</w:t>
+      </w:r>
+      <w:r w:rsidR="00F9775E" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve">selben Brief </w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t>ausgedr</w:t>
+      </w:r>
+      <w:r w:rsidR="003856A3">
+        <w:t>ü</w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t>ckten W</w:t>
+      </w:r>
+      <w:r w:rsidR="003856A3">
+        <w:t>u</w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve">nsch, </w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="00015BDC">
+        <w:rPr>
+          <w:rStyle w:val="KSPerson"/>
+        </w:rPr>
+        <w:t>Eck</w:t>
+      </w:r>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> Anlass zur Beschäf</w:t>
+      </w:r>
+      <w:r w:rsidR="00627F47" w:rsidRPr="006D56A9">
+        <w:t>tigung mit der Heiligen Schrift</w:t>
+      </w:r>
+      <w:r w:rsidR="00F9775E" w:rsidRPr="006D56A9">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="004C18B6">
+        <w:t xml:space="preserve">zu </w:t>
+      </w:r>
+      <w:r w:rsidR="00F9775E" w:rsidRPr="006D56A9">
+        <w:t>geben</w:t>
+      </w:r>
+      <w:bookmarkEnd w:id="10"/>
+      <w:r w:rsidR="005D279D" w:rsidRPr="006D56A9">
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+			</x:context>
+			<x:expect label="." xml:space="preserve">
+				<p> <anchor type="bookmarkStart" xml:id="s003" />Es ist nicht klar, ob der hier edierte Druck zu diesem Zeitpunkt bereits als erster Entwurf vorlag oder in Planung war; ähnlich fraglich bleibt, ob die Umwidmung vom <rs
+				type="person">Lübecker Bischof</rs> zu <rs type="person">Wolfgang Kuch</rs> eine Folge der Beratung <rs
+				type="person">Spalatins</rs> war. Es ist jedoch naheliegend, dass sich <rs type="person"
+					>Karlstadt</rs> in jener Zeit gezielt mit dem Kanon beschäftigte. Dies entsprach seinem in demselben Brief ausgedrückten Wunsch, <rs
+				type="person">Eck</rs> Anlass zur Beschäftigung mit der Heiligen Schrift zu geben<anchor type="bookmarkEnd" xml:id="s003" />.</p></x:expect>
+		</x:scenario>
+		<x:scenario label="T8.2">
+			<x:context>
+				<w:endnote w:id="37">
+					<w:p w14:paraId="69788C97" w14:textId="791540FC" w:rsidR="00905A8F" w:rsidRPr="00080B26" w:rsidRDefault="00905A8F" w:rsidP="00A40AC2">
+						<w:pPr>
+							<w:pStyle w:val="Endnotentext"/>
+							<w:jc w:val="both"/>
+						</w:pPr>
+						<w:r w:rsidRPr="00080B26">
+							<w:rPr>
+								<w:rStyle w:val="Endnotenzeichen"/>
+							</w:rPr>
+							<w:endnoteRef/>
+						</w:r>
+						<w:r w:rsidRPr="00080B26">
+							<w:t xml:space="preserve"> S.u. </w:t>
+						</w:r>
+						<w:hyperlink r:id="rId19" w:anchor="q003" w:history="1">
+							<w:r w:rsidRPr="00D547A0">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+								</w:rPr>
+								<w:t xml:space="preserve">EE125_text##Text </w:t>
+							</w:r>
+							<w:proofErr w:type="spellStart"/>
+							<w:r w:rsidRPr="00D547A0">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+								</w:rPr>
+								<w:t>Widmunsgbrief</w:t>
+							</w:r>
+							<w:proofErr w:type="spellEnd"/>
+							<w:r w:rsidRPr="00D547A0">
+								<w:rPr>
+									<w:rStyle w:val="Hyperlink"/>
+								</w:rPr>
+								<w:t>##</w:t>
+							</w:r>
+						</w:hyperlink>
+						<w:r w:rsidRPr="00D547A0">
+							<w:t>.</w:t>
+						</w:r>
+					</w:p>
+				</w:endnote>
+			</x:context>
+			<x:expect label="."> S.u. <ptr type="wdb" target="../125/125_transcript.xml#q003" />.</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>

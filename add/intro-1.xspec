@@ -21,4 +21,17 @@
 			<quote>VERBA SVNT ‖ LIBRI AD LEC=‖TOREM</quote>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="T3: QV">
+		<x:scenario label="T3.1">
+			<x:context href="wtotei-intro.xspec" select="//x:scenario[@label = 'T8.1']/x:expect/tei:p" />
+			<x:expect label=".">
+				<p> <anchor xml:id="s003" />Es ist nicht klar, ob der hier edierte Druck zu diesem Zeitpunkt bereits als erster Entwurf vorlag oder in Planung war; ähnlich fraglich bleibt, ob die Umwidmung vom <rs
+					type="person">Lübecker Bischof</rs> zu <rs type="person">Wolfgang Kuch</rs> eine Folge der Beratung <rs
+						type="person">Spalatins</rs> war. Es ist jedoch naheliegend, dass sich <rs type="person"
+							>Karlstadt</rs> in jener Zeit gezielt mit dem Kanon beschäftigte. Dies entsprach seinem in demselben Brief ausgedrückten Wunsch, <rs
+								type="person">Eck</rs> Anlass zur Beschäftigung mit der Heiligen Schrift zu geben<anchor xml:id="s003e" />.</p>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>

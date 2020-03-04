@@ -12,8 +12,10 @@
 	<!-- neu für Projekt Rist, 2016-07-28 Dario Kampkaspar (DK) – kampkaspar@hab.de -->
 	<!-- übernommen für Karlstadt Einleitungen; 2017-05-03 DK -->
 	<!-- Bearbeiter ab 2018-08-01: DK kampkaspar@baukast.digital -->
+	<!-- Erägnzung: Ref und Querverweise – 2020-03-04 -->
 	
 	<xsl:include href="ks-common.xsl#1" />
+	<xsl:include href="ref-qv.xsl" />
 	
 <!--	<xsl:output indent="yes"/>-->
 	
@@ -646,7 +648,7 @@
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
 		<xsl:text>
 				</xsl:text>
-		<p><xsl:apply-templates select="w:r | w:bookmarkStart" /></p>
+		<p><xsl:apply-templates select="w:r | w:bookmarkStart | w:bookmarkEnd" /></p>
 	</xsl:template>
 	
 	<!-- neu 2017-06-11 DK -->
@@ -713,7 +715,7 @@
 	</xsl:template>
 	
 	<!-- Verweise -->
-	<xsl:template match="w:bookmarkStart">
+	<!--<xsl:template match="w:bookmarkStart">
 		<xsl:if test="not(@name = '_GoBack')">
 			<hab:bm name="{@w:name}"/>
 		</xsl:if>
@@ -726,7 +728,7 @@
 				</xsl:if>
 			</hab:mark>
 		</xsl:if>
-	</xsl:template>
+	</xsl:template>-->
 	
 	<xsl:template match="w:endnotes" />
 	
