@@ -103,9 +103,8 @@
 			<x:context>
 				<p>ad <rs type="person"><!--TODO ref nachtragen--><expan>D<ex>ominum</ex></expan> Eccium</rs><note type="crit_app"> <orig>Eckium</orig> A<hi rend="sub">5</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/>  <orig>Ecckium</orig> a<hi rend="sub">1</hi></note></p>
 			</x:context>
-			<x:expect label="app in rs">
-				<p>ad <rs type="person"><!--TODO ref nachtragen--><expan>D<ex>ominum</ex></expan> <app><lem>Eccium</lem><rdg wit="#A5">Eckium</rdg><rdg wit="#a1">Ecckium</rdg></app></rs></p>
-			</x:expect>
+			<x:expect label="app in rs" xml:space="preserve"><p>ad <rs type="person"><!--TODO ref nachtragen--><expan>D<ex
+				>ominum</ex></expan>  <app><lem>Eccium</lem><rdg wit="#A5">Eckium</rdg><rdg wit="#a1">Ecckium</rdg></app></rs></p></x:expect>
 		</x:scenario>
 		<x:scenario label="T2.3: Zeilenanfang einfach">
 			<x:context>
@@ -214,29 +213,16 @@
 				<p>
 					<lb/><anchor type="crit_app" xml:id="s12"/><expan>Con<ex>tra</ex></expan> XI.<anchor type="crit_app" xml:id="s12e"/><note type="footnote">Vgl. Anm. <ptr type="wdb" target="#n3"/>.</note><span type="crit_app" from="#s12" to="#s12e"> <orig>contra 11</orig> zentriert a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>questio 14</orig> A<hi rend="sub">5Lp</hi> AuRd-Gl</span>  risit<note type="crit_app">fehlt a<hi rend="sub">1</hi></note><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </note></p>
 			</x:context>
-			<x:expect label="langer Text nicht in @wit">
-				<head>
-					<lb/><app><lem>Scopus Disputationis.</lem>
-						<rdg wit="#a1" />
-						<rdg wit="#a2"><add place="left">Scopus Disputationis.</add></rdg></app><app>
-						<lem> Liberum arbitrium.</lem>
-						<rdg wit="#A5">Liberum arbitrium</rdg>
-						<rdg wit="#a1">lberum ar</rdg>
-						<rdg cause="correction" wit="#a2">liberum arbitrium</rdg>
-						<rdg wit="#a2" rend="AuRd-Gl">Eckius <supplied>contra?</supplied> 11 conclusio<supplied>nem</supplied> doc
-							Corol<supplied>ostadii</supplied> de libero arbitrio</rdg>
-						<rdg wit="#A5Lp" rend="InRd-Gl">2 hora</rdg></app>
-				</head>
-				<head>
-					<lb/>&lt;<rs type="person"><!--TODO ref nachtragen-->Eccius</rs>&gt;</head>
-				<p>
-					<lb/><app><lem><expan>Con<ex>tra</ex></expan> XI.</lem>
-						<rdg wit="#a1" rend="centre">contra 11</rdg>
-						<rdg wit="#A5Lp" rend="AuRd-Gl">questio 14</rdg></app><note type="footnote">Vgl. Anm. <ptr type="wdb"
-								target="#n3"/>.</note>
-					<app><lem>risit</lem>
-									<rdg wit="#a1" /></app><note type="footnote">Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </note></p>
-			</x:expect>
+			<x:expect label="langer Text nicht in @wit" xml:space="preserve"><head><lb/><app><lem>Scopus Disputationis.</lem
+				><rdg wit="#a1" /><rdg wit="#a2"><add place="left">Scopus Disputationis.</add></rdg></app><app><lem
+					> Liberum arbitrium.</lem><rdg wit="#A5">Liberum arbitrium</rdg><rdg wit="#a1">lberum ar</rdg><rdg
+						cause="correction" wit="#a2">liberum arbitrium</rdg><rdg wit="#a2" rend="AuRd-Gl">Eckius <supplied>contra?</supplied> 11 conclusio<supplied>nem</supplied> doc
+							Corol<supplied>ostadii</supplied> de libero arbitrio</rdg><rdg wit="#A5Lp" rend="InRd-Gl">2 hora</rdg></app
+				></head><head><lb/>&lt;<rs type="person"><!--TODO ref nachtragen-->Eccius</rs>&gt;</head><p><lb/><app><lem
+					><expan>Con<ex>tra</ex></expan> XI.</lem><rdg wit="#a1" rend="centre">contra 11</rdg><rdg wit="#A5Lp"
+						rend="AuRd-Gl">questio 14</rdg></app><note type="footnote">Vgl. Anm. <ptr type="wdb"
+								target="#n3"/>.</note>  <app><lem>risit</lem><rdg wit="#a1" /></app><note type="footnote"
+						>Hier hat angeblich der Verfasser des Manuskriptes, das dem Druck zu Grunde liegt, auch die Reaktion Ecks – er lächelte oder lachelte – registriert. </note></p></x:expect>
 		</x:scenario>
 		<x:scenario label="T2.9: mit lb im Lemma">
 			<x:context>
@@ -449,9 +435,7 @@
 			<x:context>
 				<p>est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> sanctissimum<note type="crit_app"> <orig>sactissimum</orig> a<hi rend="sub">1</hi><wdb:marker xmlns:wdb="https://github.com/dariok/wdbplus"/> <orig>sanctissimum</orig> a<hi rend="sub">2</hi> <note type="comment">korrigiert</note></note> in Christo</p>
 			</x:context>
-			<x:expect label="gemischt">
-				<p>est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note> <app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in Christo</p>
-			</x:expect>
+			<x:expect label="gemischt" xml:space="preserve"><p>est. Nisi<note type="crit_app">folgt ein Wort durchgestrichen a<hi rend="sub">1</hi></note>  <app><lem>sanctissimum</lem><rdg wit="#a1">sactissimum</rdg><rdg wit="#a2">sanctissimum<note type="comment">korrigiert</note></rdg></app> in Christo</p></x:expect>
 		</x:scenario>
 		<x:scenario label="T6.3: mehrere in Marginaline">
 			<x:context>
@@ -708,14 +692,15 @@
 						xml:id="s2"/>Iohann Eckius<anchor type="crit_app" xml:id="s2e"/><span type="crit_app" from="#s2"
 						to="#s2e">am Rand hinzugefügt</span> </p>
 			</x:context>
-			<x:expect label="rs beibehalten">
-				<p><add place="margin"> Doctor Archidiacon</add><note type="footnote">Seit 1510 war <rs type="person"><!--TODO ref eintragen!-->Karlstadt</rs> Archidiakon am <rs type="place"><!--TODO ref eintragen!-->Wittenberger Allerheiligenstift</rs>. Vgl. KGK I.1, Nr. 49, S. 437 Anm. 5.</note>
-					<lb/>angesuecht<note type="footnote">Siehe EE100.</note>, unnd mit vleyß unnderthenigklich gepeten hat, Ine sampt denIhenen, 
+			<x:expect label="rs beibehalten" xml:space="preserve"><p><add place="margin"> Doctor Archidiacon</add><note
+				type="footnote">Seit 1510 war <rs type="person"><!--TODO ref eintragen!-->Karlstadt</rs> Archidiakon am <rs
+				type="place"><!--TODO ref eintragen!-->Wittenberger Allerheiligenstift</rs
+				>. Vgl. KGK I.1, Nr. 49, S. 437 Anm. 5.</note><lb/>angesuecht<note type="footnote">Siehe EE100.</note
+				>, unnd mit vleyß unnderthenigklich gepeten hat, Ine sampt denIhenen, 
 					<lb/>so er mit sich, auff schirstkunfftige<note type="footnote">nächstkommend; vgl. <bibl
 						ref="#grimm_woerterbuch_1854"> 9, 19-21</bibl> (schier).</note> Disputacion, welhe Er zu <rs
-						type="place"><!--TODO ref eintragen!-->Leiptzk</rs>, wyder<add><del>doctor <gap/> Eck</del></add> <add
-							place="supralinear">her</add> <add place="margin">Iohann Eckius</add></p>
-			</x:expect>
+						type="place"><!--TODO ref eintragen!-->Leiptzk</rs>, wyder<add><del>doctor <gap/> Eck</del></add>  <add
+							place="supralinear">her</add><add place="margin">Iohann Eckius</add></p></x:expect>
 		</x:scenario>
 	</x:scenario>
 	

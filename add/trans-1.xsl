@@ -167,7 +167,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="w:bookmarkStart[@name = '_GoBack']" />
-    <xsl:template match="w:bookmarkStart[matches(@w:name, '[cqns]\d\d\d')]">
+    <xsl:template match="w:bookmarkStart[matches(@w:name, '[cnqs]\d\d\d')]">
         <anchor type="bookmarkStart" xml:id="{@w:name}" /> 
     </xsl:template>
     <xsl:template match="w:bookmarkEnd">

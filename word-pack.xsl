@@ -38,7 +38,7 @@
 	<xsl:function name="wt:is" as="xs:boolean">
 		<xsl:param name="context" as="item()*" />
 		<xsl:param name="test" as="xs:string" />
-		<xsl:value-of select="wt:is($context, $test, 'p')"/>
+		<xsl:sequence select="wt:is($context, $test, 'p')"/>
 	</xsl:function>
 	
 	<xd:doc>
@@ -100,10 +100,10 @@
 		<xsl:param name="strict" as="xs:boolean" />
 		<xsl:variable name="val">
 			<xsl:choose>
-				<xsl:when test="not($pr = 'p' or $pr = 'r')">
+				<!--<xsl:when test="not($pr = 'p' or $pr = 'r')">
 					<xsl:message>Supplied value for parameter `pr` was neither 'p' nor 'r'</xsl:message>
 					<xsl:sequence select="false()"/>
-				</xsl:when>
+				</xsl:when>-->
 				<xsl:when test="$pr = 'p'">
 					<xsl:value-of select="$context//w:pStyle/@w:val"/>
 				</xsl:when>
@@ -175,7 +175,7 @@
 	<xsl:function name="wt:contains" as="xs:boolean">
 		<xsl:param name="context" as="item()*"/>
 		<xsl:param name="test" as="xs:string"/>
-		<xsl:value-of select="contains(wt:string($context), $test)"/>
+		<xsl:sequence select="contains(wt:string($context), $test)"/>
 	</xsl:function>
 	
 	<xd:doc>
@@ -196,7 +196,7 @@
 	<xsl:function name="wt:starts" as="xs:boolean">
 		<xsl:param name="context" as="item()"/>
 		<xsl:param name="test" as="xs:string"/>
-		<xsl:value-of select="starts-with(wt:string($context), $test)"/>
+		<xsl:sequence select="starts-with(wt:string($context), $test)"/>
 	</xsl:function>
 	
 	<xd:doc>
@@ -217,7 +217,7 @@
 	<xsl:function name="wt:ends" as="xs:boolean">
 		<xsl:param name="context" as="item()"/>
 		<xsl:param name="test" as="xs:string"/>
-		<xsl:value-of select="ends-with(wt:string($context), $test)"/>
+		<xsl:sequence select="ends-with(wt:string($context), $test)"/>
 	</xsl:function>
 	<!-- END Functions to deal with strings independently of Word 'runs' -->
 	

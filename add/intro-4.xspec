@@ -15,12 +15,12 @@
 			<x:expect label=".">
 				<p>
 					Immatrikuliert wurde er als <quote><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs> de <rs
-						type="place"><!--TODO ref eintragen!-->Wangen</rs></quote> im Sommersemester 1504 (<bibl
-						ref="#foerstemann_album_1841"> 1, 14</bibl>). Der Rotulus von 1507 führt <rs
+						type="place"><!--TODO ref eintragen!-->Wangen</rs></quote> im Sommersemester 1504 (<rs type="bibl"
+						ref="#foerstemann_album_1841"> 1, 14</rs>). Der Rotulus von 1507 führt <rs
 						type="person"><!--TODO ref eintragen!-->Gunckel</rs> als Magister <quote
-						>in philosophia extraordinarie</quote>, <bibl ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</bibl
-					>; 1512 ist er einer der <quote>magistri collegiati</quote>, <bibl ref="#friedensburg_urkundenbuch_1926"
-					> 1, 63 Nr. 36</bibl>.
+						>in philosophia extraordinarie</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</rs
+					>; 1512 ist er einer der <quote>magistri collegiati</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"
+					> 1, 63 Nr. 36</rs>.
 				</p>
 			</x:expect>
 		</x:scenario>
@@ -51,9 +51,9 @@
 			</x:context>
 			<x:expect label="bibl mit ref">
 				<listBibl>
-					<bibl ref="#kolde_disputationsthesen_1890">, 471, Nr. XXII</bibl>
-					<bibl ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-						>r</hi> und passim</bibl>
+					<rs type="bibl" ref="#kolde_disputationsthesen_1890">, 471, Nr. XXII</rs>
+					<rs type="bibl" ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+						>r</hi> und passim</rs>
 				</listBibl>
 			</x:expect>
 		</x:scenario>
@@ -65,7 +65,7 @@
 			</x:context>
 			<x:expect label="bibl ohne hi">
 				<listBibl>
-					<bibl ref="#walch2_1986"> 8, 1352-1363</bibl>
+					<rs type="bibl" ref="#walch2_1986"> 8, 1352-1363</rs>
 				</listBibl>
 			</x:expect>
 		</x:scenario>
