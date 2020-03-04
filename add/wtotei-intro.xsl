@@ -734,6 +734,6 @@
 	
 	<xsl:function name="hab:isSigle" as="xs:boolean">
 		<xsl:param name="context" as="node()" />
-		<xsl:value-of select="wt:is($context/descendant-or-self::w:r, 'KSSigle', 'r')"/>
+		<xsl:sequence select="wt:is($context/descendant-or-self::w:r, 'KSSigle', 'r')"/>
 	</xsl:function>
 </xsl:stylesheet>

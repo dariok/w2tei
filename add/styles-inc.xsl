@@ -79,8 +79,7 @@
         or w:endnoteReference or w:footnoteReference or hab:isSem(.) or descendant::w:fldChar)]">
         <xsl:apply-templates select="w:t | w:br" />
     </xsl:template>
-    <xsl:template match="w:r[not(descendant::w:vertAlign or descendant::w:i or descendant::w:b
-        or w:endnoteReference or w:footnoteReference or hab:isSem(.))]" mode="eval">
+    <xsl:template match="w:r" mode="eval">
         <xsl:apply-templates select="w:t | w:br" />
     </xsl:template>
     
@@ -207,12 +206,12 @@
     <xsl:function name="hab:isHead" as="xs:boolean">
         <xsl:param name="context" as="node()" />
         <xsl:param name="num"/>
-        <xsl:value-of select="wt:is($context, 'KSberschrift'||$num)"/>
+        <xsl:sequence select="wt:is($context, 'KSberschrift'||$num)"/>
     </xsl:function>
     
     <xsl:function name="hab:isSem" as="xs:boolean">
         <xsl:param name="context" as="node()" />
-        <xsl:value-of select="matches($context//w:rStyle/@w:val,
+        <xsl:sequence select="matches($context//w:rStyle/@w:val,
             'KSOrt|KSPerson|KSbibliographischeAngabe|KSBibelstelle|KSAutorenstelle|KSkorrigierteThesennummer|KSkritischeAnmerkungbermehrereWrter|KSKommentar')"/>
     </xsl:function>
     
