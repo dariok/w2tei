@@ -82,31 +82,30 @@
   <!-- Hyperlinks -->
   <xsl:template match="w:hyperlink">
     <xsl:variable name="targetID" select="@r:id"/>
+    <xsl:variable name="target">
+      <xsl:choose>
+        <xsl:when test="ancestor::w:endnote">
+          <xsl:value-of select="//pkg:part[contains(@pkg:name, 'endnote')]//rel:Relationship[@Id = $targetID]/@Target" />
+        </xsl:when>
+        <xsl:when test="ancestor::w:footnote">
+          <xsl:value-of select="//pkg:part[contains(@pkg:name, 'footnote')]//rel:Relationship[@Id = $targetID]/@Target" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="//pkg:part[contains(@pkg:name, 'document')]//rel:Relationship[@Id = $targetID]/@Target" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    
     <xsl:choose>
       <xsl:when test="matches(@w:anchor, '[cnqs]\d\d\d')">
-        <xsl:variable name="target" select="replace(normalize-space(), 'text', 'transcript')"/>
-        <xsl:variable name="s" select="replace($target, '.*EE(\d+_?(transcript|introduction)).*', '$1')"/>
-        <xsl:variable name="num" select="substring-before($s, '_')"/>
+        <xsl:variable name="s" select="analyze-string($target, '.*EE(\d+)_?([tTiI ]).*')"/>
+        <xsl:variable name="num" select="$s//*:group[1]"/>
+        <xsl:variable name="par" select="if($s//*:group[2] = ('t', 'T')) then 'transcript' else 'introduction'" />
         <xsl:variable name="id" select="replace(/tei:TEI/@xml:id, '.*_(\d\d\d)_.*', '$1')" />
-        <xsl:variable name="loc"
-          select="if($num = $id) then '' else '../' || $num || '/' "/>
-        <ptr type="wdb" target="{$loc}{$s}.xml#{@w:anchor}" />
+        <xsl:variable name="loc" select="if($num = $id) then '' else '../' || $num || '/' "/>
+        <ptr type="wdb" target="{$loc}{$num}_{$par}.xml#{@w:anchor}" />
       </xsl:when>
       <xsl:otherwise>
-        <xsl:variable name="target">
-          <xsl:choose>
-            <xsl:when test="ancestor::w:endnote">
-              <xsl:value-of select="//pkg:part[contains(@pkg:name, 'endnote')]//rel:Relationship[@Id = $targetID]/@Target" />
-            </xsl:when>
-            <xsl:when test="ancestor::w:footnote">
-              <xsl:value-of select="//pkg:part[contains(@pkg:name, 'footnote')]//rel:Relationship[@Id = $targetID]/@Target" />
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="//pkg:part[contains(@pkg:name, 'document')]//rel:Relationship[@Id = $targetID]/@Target" />
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:variable>
-        
         <ptr type="digitalisat" target="{$target}">
           <xsl:apply-templates select="w:r" />
         </ptr>
