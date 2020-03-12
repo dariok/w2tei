@@ -64,19 +64,21 @@
   </xsl:template>
   
   <!-- EE-Verweis -->
-  <xsl:template match="w:r[wt:is(., 'KSEEVerweis', 'r')]">
-    <ptr type="wdb">
-      <xsl:choose>
-        <xsl:when test="contains(., 'II')">
-          <xsl:comment> TODO verlinken</xsl:comment>
-          <xsl:apply-templates select="w:t" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:comment> TODO verlinken</xsl:comment>
-          <xsl:apply-templates select="w:t" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </ptr>
+  <xsl:template match="w:r[wt:is(., 'KSEE-Verweis', 'r')]">
+    <xsl:variable name="content">
+      <xsl:apply-templates select="w:t" />
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="matches($content, 'EE\d+##?')">
+        <ptr type="wdb" target="../{substring($content, 3, 3)}/{substring($content, 3, 3)}_transcript.xml"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <ref>
+          <xsl:comment>TODO Verweis</xsl:comment>
+          <xsl:value-of select="$content"/>
+        </ref>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   
   <!-- Hyperlinks -->

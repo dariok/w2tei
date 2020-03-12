@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for /home/dario/git/w2tei/add/wtotei-intro.xsl (passed: 28 / pending: 0 / failed: 0 / total: 28)</title>
+      <title>Test Report for /home/dario/git/w2tei/add/wtotei-intro.xsl (passed: 27 / pending: 0 / failed: 1 / total: 28)</title>
       <style type="text/css">/****************************************************************************/
 /*  File:       test-report.css                                             */
 /*  Author:     Jeni Tennison                                               */
@@ -491,7 +491,7 @@ span.scenario-totals {float: right; text-align: right}
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/wtotei-intro.xsl">/home/dario/git/w2tei/add/wtotei-intro.xsl</a></p>
       <p>XSpec: <a href="file:/home/dario/git/w2tei/add/wtotei-intro.xspec">/home/dario/git/w2tei/add/wtotei-intro.xspec</a></p>
-      <p>Tested: 4 March 2020 at 22:59</p>
+      <p>Tested: 12 March 2020 at 20:23</p>
       <h2>Contents</h2>
       <table class="xspec">
          <colgroup>
@@ -504,9 +504,9 @@ span.scenario-totals {float: right; text-align: right}
          <thead>
             <tr>
                <th></th>
-               <th class="totals">passed: 28</th>
+               <th class="totals">passed: 27</th>
                <th class="totals">pending: 0</th>
-               <th class="totals">failed: 0</th>
+               <th class="totals">failed: 1</th>
                <th class="totals">total: 28</th>
             </tr>
          </thead>
@@ -560,11 +560,11 @@ span.scenario-totals {float: right; text-align: right}
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
-            <tr class="successful">
+            <tr class="failed">
                <th><a href="#top-level-scenario-d5e32366">T8: Ref und Querverweise</a></th>
-               <th class="totals">2</th>
+               <th class="totals">1</th>
                <th class="totals">0</th>
-               <th class="totals">0</th>
+               <th class="totals">1</th>
                <th class="totals">2</th>
             </tr>
          </tbody>
@@ -879,7 +879,7 @@ span.scenario-totals {float: right; text-align: right}
          </table>
       </div>
       <div id="top-level-scenario-d5e32366">
-         <h2 class="successful">T8: Ref und Querverweise<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
+         <h2 class="successful">T8: Ref und Querverweise<span class="scenario-totals">passed: 1 / pending: 0 / failed: 1 / total: 2</span></h2>
          <table class="xspec" id="t-d5e32366">
             <colgroup>
                <col style="width:75%" />
@@ -888,7 +888,7 @@ span.scenario-totals {float: right; text-align: right}
             <tbody>
                <tr class="successful">
                   <th>T8: Ref und Querverweise</th>
-                  <th>passed: 2 / pending: 0 / failed: 0 / total: 2</th>
+                  <th>passed: 1 / pending: 0 / failed: 1 / total: 2</th>
                </tr>
                <tr class="successful">
                   <th>T8.1</th>
@@ -898,16 +898,58 @@ span.scenario-totals {float: right; text-align: right}
                   <td>.</td>
                   <td>Success</td>
                </tr>
-               <tr class="successful">
-                  <th>T8.2</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#scenario-d5e32826">T8.2</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>.</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#test-d5e32910">.</a></td>
+                  <td>Failure</td>
                </tr>
             </tbody>
          </table>
+         <div id="scenario-d5e32826">
+            <h3>T8: Ref und Querverweise T8.2</h3>
+            <div id="test-d5e32910">
+               <h4>.</h4>
+               <table class="xspecResult">
+                  <thead>
+                     <tr>
+                        <th>Result</th>
+                        <th>Expected Result</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p>XPath <code class="same">/node()</code> from:</p>
+                           <pre><span class="same"> S.u. </span>&lt;<span class="inner-diff">ptr</span> xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+     xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:hab="http://diglib.hab.de"
+     xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     <span class="same">type</span>=<span class="same">"wdb"</span>
+     <span class="inner-diff">target</span>=<span class="diff">"..//_introduction.xml#q003"</span> /&gt;<span class="same">.</span></pre>
+                        </td>
+                        <td>
+                           <p>XPath <code class="same">/node()</code> from:</p>
+                           <pre><span class="same"> S.u. </span>&lt;<span class="inner-diff">ptr</span> xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+     xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:hab="http://diglib.hab.de"
+     xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     <span class="same">type</span>=<span class="same">"wdb"</span>
+     <span class="inner-diff">target</span>=<span class="diff">"../125/125_transcript.xml#q003"</span> /&gt;<span class="same">.</span></pre>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
       </div>
    </body>
 </html>

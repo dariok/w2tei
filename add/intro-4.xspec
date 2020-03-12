@@ -15,7 +15,7 @@
 			<x:expect label=".">
 				<p>
 					Immatrikuliert wurde er als <quote><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs> de <rs
-						type="place"><!--TODO ref eintragen!-->Wangen</rs></quote> im Sommersemester 1504 (<rs type="bibl"
+						type="place" ref="#wangen">Wangen</rs></quote> im Sommersemester 1504 (<rs type="bibl"
 						ref="#foerstemann_album_1841"> 1, 14</rs>). Der Rotulus von 1507 führt <rs
 						type="person"><!--TODO ref eintragen!-->Gunckel</rs> als Magister <quote
 						>in philosophia extraordinarie</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</rs
