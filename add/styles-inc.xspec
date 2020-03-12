@@ -148,4 +148,24 @@
         type="wdb" target="../125/125_transcript.xml#s002" />.</note></x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="T2: bibl">
+    <x:scenario label="T2.1">
+      <x:context>
+        <w:r w:rsidRPr="00337961">
+          <w:rPr>
+            <w:rStyle w:val="KSbibliographischeAngabe"/>
+            <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+            <w:sz w:val="20"/>
+            <w:szCs w:val="20"/>
+            <w:lang w:val="de-DE"/>
+          </w:rPr>
+          <w:t>Barge, Karlstadt 1, 218; Zorzin, Flugschriftenautor, 143</w:t>
+        </w:r>
+      </x:context>
+      <x:expect label=".">
+        <bibl>Barge, Karlstadt 1, 218</bibl>; <bibl>Zorzin, Flugschriftenautor, 143</bibl>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>

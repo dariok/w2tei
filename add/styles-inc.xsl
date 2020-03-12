@@ -88,11 +88,19 @@
         not(wt:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
     <xsl:template match="w:r[wt:isFirst(., 'KSbibliographischeAngabe', 'r')]">
         <xsl:variable name="me" select="." />
-        <bibl>
+        <xsl:variable name="content">
             <xsl:apply-templates select="w:t" />
             <xsl:apply-templates select="following-sibling::w:r[wt:followMe(., $me, 'KSbibliographischeAngabe', 'r')]"
                 mode="eval"/>
-        </bibl>
+        </xsl:variable>
+        <xsl:for-each select="tokenize($content, '; ')">
+            <bibl>
+                <xsl:sequence select="." />
+            </bibl>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template match="w:r[wt:is(., 'KSbibliographischeAngabe', 'r') and
         not(descendant::w:vertAlign or descendant::w:i)]" mode="eval">
