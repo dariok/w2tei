@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:map="http://www.w3.org/2005/xpath-functions/map"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="#all"
@@ -9,11 +10,11 @@
   <xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/data/ed000216/register/kgk_bibliography.xml')" />
   <xsl:variable name="personenregister" select="doc('http://dev2.hab.de/edoc/data/ed000216/register/kgk_personenregister.xml')" />
   <xsl:variable name="ortsregister" select="doc('http://dev2.hab.de/edoc/data/ed000216/register/kgk_ortsregister.xml')" />
-  
   <xsl:template match="tei:bibl">
     <rs type="bibl">
       <xsl:variable name="self" select="normalize-space()" />
-      <xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
+      <xsl:variable name="entry" select="$bibliography//tei:bibl[tei:abbr
+        and starts-with($self, normalize-space(tei:abbr))]"/>
       <xsl:choose>
         <xsl:when test="count($entry) > 0">
           <xsl:attribute name="ref">

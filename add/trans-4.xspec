@@ -46,6 +46,14 @@
 					>r</hi></rs>.</note>
 			</x:expect>
 		</x:scenario>
+		<x:scenario label="T2.3: mehrere Angaben in einem bibl">
+			<x:context>
+				<bibl>Barge, Karlstadt 1, 218</bibl>; <bibl>Zorzin, Flugschriftenautor, 143</bibl>
+			</x:context>
+			<x:expect label=".">
+				<rs type="bibl" ref="#barge_karlstadt_1905"> 1, 218</rs>; <rs type="bibl" ref="#zorzin_flugschriftenautor_1990">, 143</rs>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	
 	<x:scenario label="rs mit ref ergänzen">
