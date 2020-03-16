@@ -352,6 +352,11 @@
 		</note>
 	</xsl:template>
 	
+	<xsl:template match="tei:ptr[text() or *]">
+		<ref type="digitalisat">
+			<xsl:sequence select="@* | node()" />
+		</ref>
+	</xsl:template>
 	
 	<xsl:template match="@*|*|comment()">
 		<xsl:copy>
