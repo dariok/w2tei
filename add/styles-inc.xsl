@@ -220,7 +220,7 @@
     <xsl:function name="hab:isSem" as="xs:boolean">
         <xsl:param name="context" as="node()" />
         <xsl:sequence select="matches($context//w:rStyle/@w:val,
-            'KSOrt|KSPerson|KSbibliographischeAngabe|KSBibelstelle|KSAutorenstelle|KSkorrigierteThesennummer|KSkritischeAnmerkungbermehrereWrter|KSKommentar')"/>
+            'KSOrt|KSPerson|KSbibliographischeAngabe|KSBibelstelle|KSAutorenstelle|KSkorrigierteThesennummer|KSkritischeAnmerkungbermehrereWrter|KSKommentar|KSEE-Verweis')"/>
     </xsl:function>
     
     <xsl:template match="pkg:part" />
