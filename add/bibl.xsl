@@ -62,17 +62,12 @@
         </xsl:otherwise>
       </xsl:choose>
     </rs>
+    <xsl:if test="matches(., '\s$') and not(ancestor::tei:listBibl)">
+      <xsl:text> </xsl:text>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="tei:rs[@type = 'person']">
-    <xsl:call-template name="rsPerson" />
-  </xsl:template>
-  
-  <xsl:template match="tei:rs[@type = 'place']">
-    <xsl:call-template name="rsPlace" />
-  </xsl:template>
-  
-  <xsl:template name="rsPerson">
     <rs type="person">
       <xsl:variable name="self" select="string-join(analyze-string(normalize-space(), '''')//*:non-match, '')" />
       <xsl:variable name="entry" select="$personenregister//tei:person[tei:persName[normalize-space() = $self]]"/>
@@ -90,7 +85,7 @@
     </rs>
   </xsl:template>
   
-  <xsl:template name="rsPlace">
+  <xsl:template match="tei:rs[@type = 'place']">
     <rs type="place">
       <xsl:variable name="self" select="string-join(analyze-string(normalize-space(), '''')//*:non-match, '')" />
       <xsl:variable name="entry" select="$ortsregister//tei:place[descendant::tei:settlement[normalize-space() = $self]]"/>
