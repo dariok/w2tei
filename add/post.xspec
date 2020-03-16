@@ -20,4 +20,15 @@
 			<p>45<hi rend="super">r–v</hi></p>
 		</x:expect>
 	</x:scenario>
+	
+	<x:scenario label="T3: ref">
+		<x:scenario label="T3.1">
+			<x:context>
+				<ref type="digitalisat" target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10980528_00286.html?zoom=0.9500000000000004">y2<hi rend="super">v</hi></ref>
+			</x:context>
+			<x:expect label="unverändert">
+				<ref type="digitalisat" target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10980528_00286.html?zoom=0.9500000000000004">y2<hi rend="super">v</hi></ref>
+			</x:expect>
+		</x:scenario>
+	</x:scenario>
 </x:description>

@@ -21,31 +21,38 @@
 	</xsl:template>
 	
 	<xsl:template match="text()[not(. = '–')]">
-		<xsl:analyze-string select="." regex="[„“&quot;»«]([^„^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
-			<xsl:matching-substring>
-				<quote>
-					<xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.{{3}}|…\]">
-						<xsl:matching-substring><gap/></xsl:matching-substring>
-						<xsl:non-matching-substring>
-							<xsl:sequence select="."/>
-						</xsl:non-matching-substring>
-					</xsl:analyze-string>
-				</quote>
-			</xsl:matching-substring>
-			<xsl:non-matching-substring>
-				<xsl:value-of select="."/>
-			</xsl:non-matching-substring>
-		</xsl:analyze-string>
+		<xsl:choose>
+			<xsl:when test="following-sibling::node()[1][self::tei:ptr] and ends-with(normalize-space(), 'Anm.')">
+				<xsl:value-of select="substring-before(., 'Anm.')" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:analyze-string select="." regex="[„“&quot;»«]([^„^”^“^&quot;‟^»^«]*)[”“‟&quot;»«]">
+					<xsl:matching-substring>
+						<quote>
+							<xsl:analyze-string select="substring(., 2, string-length()-2)" regex="\[\.{{3}}|…\]">
+								<xsl:matching-substring><gap/></xsl:matching-substring>
+								<xsl:non-matching-substring>
+									<xsl:sequence select="."/>
+								</xsl:non-matching-substring>
+							</xsl:analyze-string>
+						</quote>
+					</xsl:matching-substring>
+					<xsl:non-matching-substring>
+						<xsl:sequence select="." />
+					</xsl:non-matching-substring>
+				</xsl:analyze-string>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<xsl:template match="tei:ref">
-		<xsl:variable name="cont">
-			<xsl:value-of select="normalize-space()"/>
-		</xsl:variable>
 		<ref>
 			<xsl:sequence select="@type" />
 			<xsl:choose>
 				<xsl:when test="@type = 'medieval'">
+					<xsl:variable name="cont">
+						<xsl:value-of select="normalize-space()"/>
+					</xsl:variable>
 					<xsl:attribute name="cRef">
 						<xsl:variable name="val" select="analyze-string($cont, '\d')"/>
 						<xsl:choose>
@@ -66,10 +73,9 @@
 					</xsl:attribute>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:sequence select="@*" />
+					<xsl:sequence select="@* | node()" />
 				</xsl:otherwise>
 			</xsl:choose>
-			<xsl:sequence select="$cont" />
 		</ref>
 	</xsl:template>
 	
