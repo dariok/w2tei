@@ -742,5 +742,145 @@
         </TEI>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T3.3: multiple texts in comment">
+      <x:context>
+        <w:comment w:author="Elisabeth Decultot"
+          w:id="8"
+          w:date="2020-03-07T11:53:50Z">
+          <w:p w:rsidR="00000000"
+            w:rsidDel="00000000"
+            w:rsidP="00000000"
+            w:rsidRDefault="00000000"
+            w:rsidRPr="00000000"
+            w14:paraId="000001E1">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="240" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:ins w:author="Thomas Staecker" w:id="2" w:date="2020-03-06T14:40:49Z"/>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:u w:val="none"/>
+                <w:shd w:fill="auto" w:val="clear"/>
+                <w:vertAlign w:val="baseline"/>
+              </w:rPr>
+            </w:pPr>
+            <w:ins w:author="Thomas Staecker" w:id="2" w:date="2020-03-06T14:40:49Z">
+              <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                  <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                  <w:b w:val="0"/>
+                  <w:i w:val="0"/>
+                  <w:smallCaps w:val="0"/>
+                  <w:strike w:val="0"/>
+                  <w:color w:val="000000"/>
+                  <w:sz w:val="22"/>
+                  <w:szCs w:val="22"/>
+                  <w:u w:val="none"/>
+                  <w:shd w:fill="auto" w:val="clear"/>
+                  <w:vertAlign w:val="baseline"/>
+                  <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Soll man hier vielleicht noch resümierend auf die einzelnen Rechteklärung-Beschreibungen in den APs hinweisen, etwa mit dem Vermerk am Ende des Abschnitts oder als Fußnote):</w:t>
+              </w:r>
+            </w:ins>
+          </w:p>
+          <w:p w:rsidR="00000000"
+            w:rsidDel="00000000"
+            w:rsidP="00000000"
+            w:rsidRDefault="00000000"
+            w:rsidRPr="00000000"
+            w14:paraId="000001E2">
+            <w:pPr>
+              <w:keepNext w:val="0"/>
+              <w:keepLines w:val="0"/>
+              <w:widowControl w:val="0"/>
+              <w:pBdr>
+                <w:top w:space="0" w:sz="0" w:val="nil"/>
+                <w:left w:space="0" w:sz="0" w:val="nil"/>
+                <w:bottom w:space="0" w:sz="0" w:val="nil"/>
+                <w:right w:space="0" w:sz="0" w:val="nil"/>
+                <w:between w:space="0" w:sz="0" w:val="nil"/>
+              </w:pBdr>
+              <w:shd w:fill="auto" w:val="clear"/>
+              <w:spacing w:after="0" w:before="0" w:line="240" w:lineRule="auto"/>
+              <w:ind w:left="0" w:right="0" w:firstLine="0"/>
+              <w:jc w:val="left"/>
+              <w:rPr>
+                <w:ins w:author="Thomas Staecker" w:id="2" w:date="2020-03-06T14:40:49Z"/>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+                <w:u w:val="none"/>
+                <w:shd w:fill="auto" w:val="clear"/>
+                <w:vertAlign w:val="baseline"/>
+              </w:rPr>
+            </w:pPr>
+            <w:ins w:author="Thomas Staecker" w:id="2" w:date="2020-03-06T14:40:49Z">
+              <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                  <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                  <w:b w:val="0"/>
+                  <w:i w:val="0"/>
+                  <w:smallCaps w:val="0"/>
+                  <w:strike w:val="0"/>
+                  <w:color w:val="000000"/>
+                  <w:sz w:val="22"/>
+                  <w:szCs w:val="22"/>
+                  <w:u w:val="none"/>
+                  <w:shd w:fill="auto" w:val="clear"/>
+                  <w:vertAlign w:val="baseline"/>
+                  <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Zu weiteren Informationen zur Rechteklärung, s. die Beschreibungen der AP. 1, 3 und 7.</w:t>
+              </w:r>
+            </w:ins>
+          </w:p>
+        </w:comment>
+      </x:context>
+      <x:expect label=".">
+        <note xmlns="http://www.tei-c.org/ns/1.0"
+          xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
+          xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+          xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+          xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+          style="ins:; rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline">
+          <ab xml:space="preserve"
+       style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Soll man hier vielleicht noch resümierend auf die einzelnen Rechteklärung-Beschreibungen in den APs hinweisen, etwa mit dem Vermerk am Ende des Abschnitts oder als Fußnote):</ab>
+        </note>
+        <note xmlns="http://www.tei-c.org/ns/1.0"
+          xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
+          xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+          xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+          xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+          style="ins:; rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline">
+          <ab xml:space="preserve"
+       style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Zu weiteren Informationen zur Rechteklärung, s. die Beschreibungen der AP. 1, 3 und 7.</ab>
+        </note>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>

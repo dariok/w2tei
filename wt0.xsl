@@ -57,6 +57,11 @@
       <xsl:apply-templates select="*" />
     </p>
   </xsl:template>
+  <xsl:template match="w:comment/w:p">
+    <note>
+      <xsl:apply-templates select="*"/>
+    </note>
+  </xsl:template>
   <xsl:template match="w:pPr">
     <xsl:attribute name="style">
       <xsl:value-of select="w:pStyle/@w:val"/>
@@ -180,7 +185,7 @@
     <xsl:variable name="cID" select="w:commentReference/@w:id"/>
     <xsl:variable name="comment" select="//w:comment[@w:id = $cID]" />
     <note type="comment" from="#c{$cID}">
-      <xsl:apply-templates select="$comment/w:p/*" />
+      <xsl:apply-templates select="$comment/w:p" />
     </note>
   </xsl:template>
   <xsl:template match="w:r[w:annotationRef]" />
