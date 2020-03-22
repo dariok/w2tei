@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:map="http://www.w3.org/2005/xpath-functions/map"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="#all"
@@ -13,7 +14,8 @@
   <xsl:template match="tei:bibl">
     <rs type="bibl">
       <xsl:variable name="self" select="normalize-space()" />
-      <xsl:variable name="entry" select="$bibliography//tei:bibl[starts-with($self, normalize-space(tei:abbr))]"/>
+      <xsl:variable name="entry" select="$bibliography//tei:bibl[tei:abbr
+        and starts-with($self, normalize-space(tei:abbr))]"/>
       <xsl:choose>
         <xsl:when test="count($entry) > 0">
           <xsl:attribute name="ref">
@@ -61,17 +63,12 @@
         </xsl:otherwise>
       </xsl:choose>
     </rs>
+    <xsl:if test="matches(., '\s$') and not(ancestor::tei:listBibl)">
+      <xsl:text> </xsl:text>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="tei:rs[@type = 'person']">
-    <xsl:call-template name="rsPerson" />
-  </xsl:template>
-  
-  <xsl:template match="tei:rs[@type = 'place']">
-    <xsl:call-template name="rsPlace" />
-  </xsl:template>
-  
-  <xsl:template name="rsPerson">
     <rs type="person">
       <xsl:variable name="self" select="string-join(analyze-string(normalize-space(), '''')//*:non-match, '')" />
       <xsl:variable name="entry" select="$personenregister//tei:person[tei:persName[normalize-space() = $self]]"/>
@@ -89,7 +86,7 @@
     </rs>
   </xsl:template>
   
-  <xsl:template name="rsPlace">
+  <xsl:template match="tei:rs[@type = 'place']">
     <rs type="place">
       <xsl:variable name="self" select="string-join(analyze-string(normalize-space(), '''')//*:non-match, '')" />
       <xsl:variable name="entry" select="$ortsregister//tei:place[descendant::tei:settlement[normalize-space() = $self]]"/>
