@@ -648,7 +648,7 @@
 		<!-- Endnoten berücksichtigen; 2017-08-08 DK -->
 		<xsl:text>
 				</xsl:text>
-		<p><xsl:apply-templates select="w:r | w:bookmarkStart | w:bookmarkEnd" /></p>
+		<p><xsl:apply-templates select="w:r | w:bookmarkStart | w:bookmarkEnd | w:hyperlink" /></p>
 	</xsl:template>
 	
 	<!-- neu 2017-06-11 DK -->
