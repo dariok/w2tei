@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for /home/dario/git/w2tei/add/intro-4.xsl (passed: 4 / pending: 0 / failed: 0 / total: 4)</title>
+      <title>Test Report for /home/dario/git/w2tei/add/intro-4.xsl (passed: 1 / pending: 0 / failed: 3 / total: 4)</title>
       <style type="text/css">/****************************************************************************/
 /*  File:       test-report.css                                             */
 /*  Author:     Jeni Tennison                                               */
@@ -491,7 +491,7 @@ span.scenario-totals {float: right; text-align: right}
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/intro-4.xsl">/home/dario/git/w2tei/add/intro-4.xsl</a></p>
       <p>XSpec: <a href="file:/home/dario/git/w2tei/add/intro-4.xspec">/home/dario/git/w2tei/add/intro-4.xspec</a></p>
-      <p>Tested: 4 March 2020 at 14:29</p>
+      <p>Tested: 10 March 2020 at 19:06</p>
       <h2>Contents</h2>
       <table class="xspec">
          <colgroup>
@@ -504,38 +504,38 @@ span.scenario-totals {float: right; text-align: right}
          <thead>
             <tr>
                <th></th>
-               <th class="totals">passed: 4</th>
+               <th class="totals">passed: 1</th>
                <th class="totals">pending: 0</th>
-               <th class="totals">failed: 0</th>
+               <th class="totals">failed: 3</th>
                <th class="totals">total: 4</th>
             </tr>
          </thead>
          <tbody>
-            <tr class="successful">
+            <tr class="failed">
                <th><a href="#top-level-scenario-d5e4">T1: bibl/rs ergänzen</a></th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
+               <th class="totals">1</th>
+               <th class="totals">1</th>
+            </tr>
+            <tr class="successful">
+               <th><a href="#top-level-scenario-d5e117">T2: gap</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
-            <tr class="successful">
-               <th><a href="#top-level-scenario-d5e118">T2: gap</a></th>
-               <th class="totals">1</th>
+            <tr class="failed">
+               <th><a href="#top-level-scenario-d5e153">T3: bibl</a></th>
                <th class="totals">0</th>
                <th class="totals">0</th>
-               <th class="totals">1</th>
-            </tr>
-            <tr class="successful">
-               <th><a href="#top-level-scenario-d5e154">T3: bibl</a></th>
                <th class="totals">2</th>
-               <th class="totals">0</th>
-               <th class="totals">0</th>
                <th class="totals">2</th>
             </tr>
          </tbody>
       </table>
       <div id="top-level-scenario-d5e4">
-         <h2 class="successful">T1: bibl/rs ergänzen<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
+         <h2 class="successful">T1: bibl/rs ergänzen<span class="scenario-totals">passed: 0 / pending: 0 / failed: 1 / total: 1</span></h2>
          <table class="xspec" id="t-d5e4">
             <colgroup>
                <col style="width:75%" />
@@ -544,22 +544,63 @@ span.scenario-totals {float: right; text-align: right}
             <tbody>
                <tr class="successful">
                   <th>T1: bibl/rs ergänzen</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <th>T1.1</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#scenario-d5e8">T1.1</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>.</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#test-d5e75">.</a></td>
+                  <td>Failure</td>
                </tr>
             </tbody>
          </table>
+         <div id="scenario-d5e8">
+            <h3>T1: bibl/rs ergänzen T1.1</h3>
+            <div id="test-d5e75">
+               <h4>.</h4>
+               <table class="xspecResult">
+                  <thead>
+                     <tr>
+                        <th>Result</th>
+                        <th>Expected Result</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;<span class="same">
+					Immatrikuliert wurde er als </span>&lt;<span class="inner-diff">quote</span>&gt;
+      &lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Joannes günkeulin</span>&lt;/rs&gt;<span class="same"> de </span>&lt;<span class="inner-diff">rs</span> <span class="same">type</span>=<span class="same">"place"</span>
+          <span class="diff">ref</span>=<span class="diff">"#wangen"</span>&gt;<span class="diff">Wangen</span>&lt;/rs&gt;
+   &lt;/quote&gt;<span class="same"> im Sommersemester 1504 (</span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="same">ref</span>=<span class="same">"#foerstemann_album_1841"</span>&gt;<span class="same"> 1, 14</span>&lt;/rs&gt;<span class="same">). Der Rotulus von 1507 führt </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Gunckel</span>&lt;/rs&gt;<span class="same"> als Magister </span>&lt;<span class="same">quote</span>&gt;<span class="same">in philosophia extraordinarie</span>&lt;/quote&gt;<span class="same">, </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="same">ref</span>=<span class="same">"#friedensburg_urkundenbuch_1926"</span>&gt;<span class="same"> 1, 16 Nr. 17</span>&lt;/rs&gt;<span class="same">; 1512 ist er einer der </span>&lt;<span class="same">quote</span>&gt;<span class="same">magistri collegiati</span>&lt;/quote&gt;<span class="same">, </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="same">ref</span>=<span class="same">"#friedensburg_urkundenbuch_1926"</span>&gt;<span class="same"> 1, 63 Nr. 36</span>&lt;/rs&gt;<span class="same">.
+				</span>&lt;/p&gt;</pre>
+                        </td>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">p</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;<span class="same">
+					Immatrikuliert wurde er als </span>&lt;<span class="inner-diff">quote</span>&gt;
+      &lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Joannes günkeulin</span>&lt;/rs&gt;<span class="same"> de </span>&lt;<span class="inner-diff">rs</span> <span class="same">type</span>=<span class="same">"place"</span>&gt;<span class="diff">&lt;!--TODO ref eintragen!--&gt;</span><span class="diff">Wangen</span>&lt;/rs&gt;
+   &lt;/quote&gt;<span class="same"> im Sommersemester 1504 (</span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="same">ref</span>=<span class="same">"#foerstemann_album_1841"</span>&gt;<span class="same"> 1, 14</span>&lt;/rs&gt;<span class="same">). Der Rotulus von 1507 führt </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"person"</span>&gt;<span class="same">&lt;!--TODO ref eintragen!--&gt;</span><span class="same">Gunckel</span>&lt;/rs&gt;<span class="same"> als Magister </span>&lt;<span class="same">quote</span>&gt;<span class="same">in philosophia extraordinarie</span>&lt;/quote&gt;<span class="same">, </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="same">ref</span>=<span class="same">"#friedensburg_urkundenbuch_1926"</span>&gt;<span class="same"> 1, 16 Nr. 17</span>&lt;/rs&gt;<span class="same">; 1512 ist er einer der </span>&lt;<span class="same">quote</span>&gt;<span class="same">magistri collegiati</span>&lt;/quote&gt;<span class="same">, </span>&lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="same">ref</span>=<span class="same">"#friedensburg_urkundenbuch_1926"</span>&gt;<span class="same"> 1, 63 Nr. 36</span>&lt;/rs&gt;<span class="same">.
+				</span>&lt;/p&gt;</pre>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
       </div>
-      <div id="top-level-scenario-d5e118">
+      <div id="top-level-scenario-d5e117">
          <h2 class="successful">T2: gap<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d5e118">
+         <table class="xspec" id="t-d5e117">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -580,9 +621,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e154">
-         <h2 class="successful">T3: bibl<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
-         <table class="xspec" id="t-d5e154">
+      <div id="top-level-scenario-d5e153">
+         <h2 class="successful">T3: bibl<span class="scenario-totals">passed: 0 / pending: 0 / failed: 2 / total: 2</span></h2>
+         <table class="xspec" id="t-d5e153">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -590,26 +631,94 @@ span.scenario-totals {float: right; text-align: right}
             <tbody>
                <tr class="successful">
                   <th>T3: bibl</th>
-                  <th>passed: 2 / pending: 0 / failed: 0 / total: 2</th>
+                  <th>passed: 0 / pending: 0 / failed: 2 / total: 2</th>
                </tr>
-               <tr class="successful">
-                  <th>T3.1: einfach</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#scenario-d5e157">T3.1: einfach</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>bibl mit ref</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#test-d5e196">bibl mit ref</a></td>
+                  <td>Failure</td>
                </tr>
-               <tr class="successful">
-                  <th>T3.2: mit hi rend=super</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="failed">
+                  <th><a href="#scenario-d5e220">T3.2: mit hi rend=super</a></th>
+                  <th>passed: 0 / pending: 0 / failed: 1 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>bibl ohne hi</td>
-                  <td>Success</td>
+               <tr class="failed">
+                  <td><a href="#test-d5e241">bibl ohne hi</a></td>
+                  <td>Failure</td>
                </tr>
             </tbody>
          </table>
+         <div id="scenario-d5e157">
+            <h3>T3: bibl T3.1: einfach</h3>
+            <div id="test-d5e196">
+               <h4>bibl mit ref</h4>
+               <table class="xspecResult">
+                  <thead>
+                     <tr>
+                        <th>Result</th>
+                        <th>Expected Result</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">listBibl</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="inner-diff">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="inner-diff">ref</span>=<span class="diff">"#"</span>&gt;<span class="diff">Kolde, Disputationsthesen, 471, Nr. XXII</span>&lt;/rs&gt;
+   &lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="same">ref</span>=<span class="same">"#csel"</span>&gt;<span class="same">, fol. A2</span>&lt;<span class="same">hi</span> <span class="same">rend</span>=<span class="same">"super"</span>&gt;<span class="same">v</span>&lt;/hi&gt;<span class="same">-A3</span>&lt;<span class="same">hi</span> <span class="same">rend</span>=<span class="same">"super"</span>&gt;<span class="same">r</span>&lt;/hi&gt;<span class="same"> und passim</span>&lt;/rs&gt;
+&lt;/listBibl&gt;</pre>
+                        </td>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">listBibl</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="inner-diff">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="inner-diff">ref</span>=<span class="diff">"#kolde_disputationsthesen_1890"</span>&gt;<span class="diff">, 471, Nr. XXII</span>&lt;/rs&gt;
+   &lt;<span class="same">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="same">ref</span>=<span class="same">"#csel"</span>&gt;<span class="same">, fol. A2</span>&lt;<span class="same">hi</span> <span class="same">rend</span>=<span class="same">"super"</span>&gt;<span class="same">v</span>&lt;/hi&gt;<span class="same">-A3</span>&lt;<span class="same">hi</span> <span class="same">rend</span>=<span class="same">"super"</span>&gt;<span class="same">r</span>&lt;/hi&gt;<span class="same"> und passim</span>&lt;/rs&gt;
+&lt;/listBibl&gt;</pre>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div id="scenario-d5e220">
+            <h3>T3: bibl T3.2: mit hi rend=super</h3>
+            <div id="test-d5e241">
+               <h4>bibl ohne hi</h4>
+               <table class="xspecResult">
+                  <thead>
+                     <tr>
+                        <th>Result</th>
+                        <th>Expected Result</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">listBibl</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="inner-diff">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="inner-diff">ref</span>=<span class="diff">"#"</span>&gt;<span class="diff">Walch² 8, 1352-1363</span>&lt;/rs&gt;
+&lt;/listBibl&gt;</pre>
+                        </td>
+                        <td>
+                           <p>XPath <code class="same">/element()</code> from:</p>
+                           <pre>&lt;<span class="inner-diff">listBibl</span> xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;<span class="inner-diff">rs</span> <span class="same">type</span>=<span class="same">"bibl"</span>
+       <span class="inner-diff">ref</span>=<span class="diff">"#walch2_1986"</span>&gt;<span class="diff"> 8, 1352-1363</span>&lt;/rs&gt;
+&lt;/listBibl&gt;</pre>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
       </div>
    </body>
 </html>
