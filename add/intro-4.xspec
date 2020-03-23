@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
-	xmlns="http://www.tei-c.org/ns/1.0"
-	stylesheet="intro-4.xsl">
-	<x:scenario label="T1: bibl/rs ergänzen">
-		<x:scenario label="T1.1">
-			<x:context>
-				<p>
-					Immatrikuliert wurde er als <quote><rs type="person">Joannes günkeulin</rs> de <rs
-						type="place">Wangen</rs></quote> im Sommersemester 1504 (<bibl>AAV 1, 14</bibl>). Der Rotulus von 1507 führt <rs type="person">Gunckel</rs
-					> als Magister <quote>in philosophia extraordinarie</quote>, <bibl>UUW 1, 16 Nr. 17</bibl
-					>; 1512 ist er einer der <quote>magistri collegiati</quote>, <bibl>UUW 1, 63 Nr. 36</bibl>.
-				</p>
-			</x:context>
-			<x:expect label=".">
-				<p>
-				  Immatrikuliert wurde er als <quote><rs type="person" ref="#gunckel_johannes">Joannes günkeulin</rs> de <rs
-						type="place" ref="#wangen">Wangen</rs></quote> im Sommersemester 1504 (<rs type="bibl"
-						ref="#foerstemann_album_1841"> 1, 14</rs>). Der Rotulus von 1507 führt <rs
-						  type="person" ref="#gunckel_johannes">Gunckel</rs> als Magister <quote
-						>in philosophia extraordinarie</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</rs
-					>; 1512 ist er einer der <quote>magistri collegiati</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"
-					> 1, 63 Nr. 36</rs>.
-				</p>
-			</x:expect>
-		</x:scenario>
-	</x:scenario>
-	
-	<x:scenario label="T2: gap">
-		<x:scenario label="T2.1: gap">
-			<x:context>
-				<quote>Disputatio Lipsiensis Dn. Doct. Martini Lutheri &amp; Carolostadii cum Eccio. Item oratio Johannis Langii concludens actum illum disputatorium. Item epistola Melanchthonis de Disputatione Lipsicam cum Responsione Eccii. [...]</quote>
-			</x:context>
-			<x:expect label="gap">
-				<quote>Disputatio Lipsiensis Dn. Doct. Martini Lutheri &amp; Carolostadii cum Eccio. Item oratio Johannis Langii concludens actum illum disputatorium. Item epistola Melanchthonis de Disputatione Lipsicam cum Responsione Eccii. <gap /></quote>
-			</x:expect>
-		</x:scenario>
-	</x:scenario>
-	
-	<x:scenario label="T3: bibl">
-		<x:scenario label="T3.1: einfach">
-			<x:context>
-				<listBibl>
-					<bibl>
-						Kolde, Disputationsthesen, 471, Nr. XXII
-					</bibl>
-					<bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-						>r</hi> und passim
-					</bibl>
-				</listBibl>
-			</x:context>
-			<x:expect label="bibl mit ref">
-				<listBibl>
-					<rs type="bibl" ref="#kolde_disputationsthesen_1890">, 471, Nr. XXII</rs>
-					<rs type="bibl" ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
-						>r</hi> und passim</rs>
-				</listBibl>
-			</x:expect>
-		</x:scenario>
-		<!--<x:scenario label="T3.2: mit hi rend=super">
-			<x:context>
-				<listBibl>
-					<bibl>Walch² 8, 1352-1363</bibl>
-				</listBibl>
-			</x:context>
-			<x:expect label="bibl ohne hi">
-				<listBibl>
-					<rs type="bibl" ref="#walch2_1986"> 8, 1352-1363</rs>
-				</listBibl>
-			</x:expect>
-		</x:scenario>-->
-	</x:scenario>
+  xmlns="http://www.tei-c.org/ns/1.0"
+  stylesheet="intro-4.xsl">
+  <x:scenario label="T1: bibl/rs ergänzen">
+    <x:scenario label="T1.1">
+      <x:context>
+        <p>
+          Immatrikuliert wurde er als <quote><rs type="person">Joannes günkeulin</rs> de <rs
+            type="place">Wangen</rs></quote> im Sommersemester 1504 (<bibl>AAV 1, 14</bibl>). Der Rotulus von 1507 führt <rs type="person">Gunckel</rs
+          > als Magister <quote>in philosophia extraordinarie</quote>, <bibl>UUW 1, 16 Nr. 17</bibl
+          >; 1512 ist er einer der <quote>magistri collegiati</quote>, <bibl>UUW 1, 63 Nr. 36</bibl>.
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          Immatrikuliert wurde er als <quote><rs type="person" ref="#gunckel_johannes">Joannes günkeulin</rs> de <rs
+            type="place" ref="#wangen">Wangen</rs></quote> im Sommersemester 1504 (<rs type="bibl"
+            ref="#foerstemann_album_1841"> 1, 14</rs>). Der Rotulus von 1507 führt <rs
+              type="person" ref="#gunckel_johannes">Gunckel</rs> als Magister <quote
+            >in philosophia extraordinarie</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</rs
+          >; 1512 ist er einer der <quote>magistri collegiati</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"
+          > 1, 63 Nr. 36</rs>.
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T2: gap">
+    <x:scenario label="T2.1: gap">
+      <x:context>
+        <quote>Disputatio Lipsiensis Dn. Doct. Martini Lutheri &amp; Carolostadii cum Eccio. Item oratio … Johannis Langii concludens actum illum disputatorium. Item epistola Melanchthonis de Disputatione Lipsicam cum Responsione Eccii. [...]</quote>
+      </x:context>
+      <x:expect label="gap">
+        <quote>Disputatio Lipsiensis Dn. Doct. Martini Lutheri &amp; Carolostadii cum Eccio. Item oratio <gap /> Johannis Langii concludens actum illum disputatorium. Item epistola Melanchthonis de Disputatione Lipsicam cum Responsione Eccii. <gap /></quote>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T3: bibl">
+    <x:scenario label="T3.1: einfach">
+      <x:context>
+        <listBibl>
+          <bibl>
+            Kolde, Disputationsthesen, 471, Nr. XXII
+          </bibl>
+          <bibl>CSEL, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+            >r</hi> und passim
+          </bibl>
+        </listBibl>
+      </x:context>
+      <x:expect label="bibl mit ref">
+        <listBibl>
+          <rs type="bibl" ref="#kolde_disputationsthesen_1890">, 471, Nr. XXII</rs>
+          <rs type="bibl" ref="#csel">, fol. A2<hi rend="super">v</hi>-A3<hi rend="super"
+            >r</hi> und passim</rs>
+        </listBibl>
+      </x:expect>
+    </x:scenario>
+    <!--<x:scenario label="T3.2: mit hi rend=super">
+      <x:context>
+        <listBibl>
+          <bibl>Walch² 8, 1352-1363</bibl>
+        </listBibl>
+      </x:context>
+      <x:expect label="bibl ohne hi">
+        <listBibl>
+          <rs type="bibl" ref="#walch2_1986"> 8, 1352-1363</rs>
+        </listBibl>
+      </x:expect>
+    </x:scenario>-->
+  </x:scenario>
 </x:description>
