@@ -348,7 +348,7 @@
 						„Ecce vicit leo de tribu Iuda radix David/ aperire librum [...].“ Die Wurzel Jesse, das Stammgeschlecht <rs type="person"><!--TODO ref eintragen-->Davids</rs>, aus der der Messias entstammt, geht zurück auf <ref type="biblical">Jes 11,1-10</ref>. Aus ihr bezog sich die heilsgeschichtliche Legitimation der gegenwärtigen
 						Kirche, die sich im Glauben in apostolischer und ungebrochener Kontinuität verstand.
 						Die Symbolisierung Judas durch einen Löwen findet sich in <ref type="biblical">1.Mose 49,9</ref>. Karlstadt nutzt die Synonymität mit dem Namen Papst <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> Zugleich verbindet er diese Textstelle mit <ref type="biblical">Offb 3,7</ref> Vg
-						„qui aperit et nemo cludit, et cludit et nemo aperit.“</note></p>
+						„qui aperit et nemo […] cludit, et cludit [...] et nemo aperit.“</note></p>
 			</x:context>
 			<x:expect label="identisch, zwei quote aufgelöst,mehrere Trennungen">
 				<p><lb/>Viel gelarten und ungelarten/ gestrenger her und
@@ -365,7 +365,7 @@
 						<quote>Ecce vicit leo de tribu Iuda radix David/ aperire librum <gap />.</quote> Die Wurzel Jesse, das Stammgeschlecht <rs type="person"><!--TODO ref eintragen-->Davids</rs>, aus der der Messias entstammt, geht zurück auf <ref type="biblical">Jes 11,1-10</ref>. Aus ihr bezog sich die heilsgeschichtliche Legitimation der gegenwärtigen
 						Kirche, die sich im Glauben in apostolischer und ungebrochener Kontinuität verstand.
 						Die Symbolisierung Judas durch einen Löwen findet sich in <ref type="biblical">1.Mose 49,9</ref>. Karlstadt nutzt die Synonymität mit dem Namen Papst <rs type="person"><!--TODO ref eintragen-->Leos X.</rs> Zugleich verbindet er diese Textstelle mit <ref type="biblical">Offb 3,7</ref> Vg
-						<quote>qui aperit et nemo cludit, et cludit et nemo aperit.</quote></note></p></x:expect>
+						<quote>qui aperit et nemo <gap /> cludit, et cludit <gap /> et nemo aperit.</quote></note></p></x:expect>
 		</x:scenario>
 	</x:scenario>
 	
