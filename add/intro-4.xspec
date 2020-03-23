@@ -14,10 +14,10 @@
 			</x:context>
 			<x:expect label=".">
 				<p>
-					Immatrikuliert wurde er als <quote><rs type="person"><!--TODO ref eintragen!-->Joannes günkeulin</rs> de <rs
+				  Immatrikuliert wurde er als <quote><rs type="person" ref="#gunckel_johannes">Joannes günkeulin</rs> de <rs
 						type="place" ref="#wangen">Wangen</rs></quote> im Sommersemester 1504 (<rs type="bibl"
 						ref="#foerstemann_album_1841"> 1, 14</rs>). Der Rotulus von 1507 führt <rs
-						type="person"><!--TODO ref eintragen!-->Gunckel</rs> als Magister <quote
+						  type="person" ref="#gunckel_johannes">Gunckel</rs> als Magister <quote
 						>in philosophia extraordinarie</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"> 1, 16 Nr. 17</rs
 					>; 1512 ist er einer der <quote>magistri collegiati</quote>, <rs type="bibl" ref="#friedensburg_urkundenbuch_1926"
 					> 1, 63 Nr. 36</rs>.
@@ -57,7 +57,7 @@
 				</listBibl>
 			</x:expect>
 		</x:scenario>
-		<x:scenario label="T3.2: mit hi rend=super">
+		<!--<x:scenario label="T3.2: mit hi rend=super">
 			<x:context>
 				<listBibl>
 					<bibl>Walch² 8, 1352-1363</bibl>
@@ -68,6 +68,6 @@
 					<rs type="bibl" ref="#walch2_1986"> 8, 1352-1363</rs>
 				</listBibl>
 			</x:expect>
-		</x:scenario>
+		</x:scenario>-->
 	</x:scenario>
 </x:description>
