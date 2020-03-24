@@ -45,37 +45,90 @@
     </xsl:choose>
   </xsl:template>
   
-  <xsl:template match="tei:ref">
-    <ref>
-      <xsl:sequence select="@type" />
-      <xsl:choose>
-        <xsl:when test="@type = 'medieval'">
-          <xsl:variable name="cont">
-            <xsl:value-of select="normalize-space()"/>
-          </xsl:variable>
-          <xsl:attribute name="cRef">
-            <xsl:variable name="val" select="analyze-string($cont, '\d')"/>
+  <!-- verschoben aus trans-4 -->
+  <xsl:template match="tei:ref[@type='biblical']">
+    <xsl:variable name="self" select="normalize-space(analyze-string(., '^.+[a-z] ')//*:match)"/>
+    <xsl:variable name="trenn" select="." />
+    <xsl:choose>
+      <xsl:when test="contains(., ';') or contains(., 'u.') or contains(., 'und')">
+        <xsl:variable name="parts" as="xs:string*">
+          <xsl:choose>
+            <xsl:when test="contains(., ';')">
+              <xsl:sequence select="tokenize(., ';')"/>
+            </xsl:when>
+            <xsl:when test="contains(., 'u.')">
+              <xsl:sequence select="tokenize(., 'u.')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:sequence select="tokenize(., 'und')" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:for-each select="$parts">
+          <ref type="biblical">
             <xsl:choose>
-              <xsl:when test="contains($val//*:non-match[1], ',')">
-                <xsl:value-of select="substring-before($val//*:non-match[1], ',')" />
-                <xsl:text>!</xsl:text>
-                <xsl:value-of select="normalize-space(substring-after($val//*:non-match[1], ','))" />
+              <xsl:when test="matches(normalize-space(), '^\d') and contains(., ',')">
+                <xsl:attribute name="cRef" select="$self || ' ' || normalize-space()" />
+                <xsl:value-of select="normalize-space()"/>
+              </xsl:when>
+              <xsl:when test="matches(normalize-space(), '^\d')">
+                <xsl:variable name="chap"
+                  select="normalize-space(substring-before(substring-after($trenn, $self), ','))" />
+                <xsl:attribute name="cRef" select="$self || ' ' || $chap || ',' || normalize-space()" />
+                <xsl:value-of select="normalize-space()"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="substring-before($val//*:non-match[1], ' ')" />
-                <xsl:variable name="c" select="substring-after($val//*:non-match[1], ' ')" />
-                <xsl:if test="string-length($c) &gt; 0">
-                  <xsl:text>!</xsl:text>
-                  <xsl:value-of select="normalize-space($c)" />
-                </xsl:if>
+                <xsl:attribute name="cRef" select="normalize-space(replace(., 'ö', ''))" />
+                <xsl:value-of select="normalize-space()" />
               </xsl:otherwise>
             </xsl:choose>
-          </xsl:attribute>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:sequence select="@* | node()" />
-        </xsl:otherwise>
-      </xsl:choose>
+          </ref>
+          <xsl:if test="position() != last()">
+            <xsl:choose>
+              <xsl:when test="contains($trenn, ';')">
+                <xsl:text>; </xsl:text>
+              </xsl:when>
+              <xsl:when test="contains($trenn, 'u.')">
+                <xsl:text> u. </xsl:text>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:text> und </xsl:text>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:if>
+        </xsl:for-each>
+      </xsl:when>
+      <xsl:otherwise>
+        <ref type="biblical" cRef="{normalize-space(replace(., 'ö', ''))}">
+          <xsl:value-of select="."/>
+        </ref>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="tei:ref[@type = 'medieval']">
+    <ref type="medieval">
+      <xsl:variable name="cont">
+        <xsl:value-of select="normalize-space()"/>
+      </xsl:variable>
+      <xsl:attribute name="cRef">
+        <xsl:variable name="val" select="analyze-string($cont, '\d')"/>
+        <xsl:choose>
+          <xsl:when test="contains($val//*:non-match[1], ',')">
+            <xsl:value-of select="substring-before($val//*:non-match[1], ',')" />
+            <xsl:text>!</xsl:text>
+            <xsl:value-of select="normalize-space(substring-after($val//*:non-match[1], ','))" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="substring-before($val//*:non-match[1], ' ')" />
+            <xsl:variable name="c" select="substring-after($val//*:non-match[1], ' ')" />
+            <xsl:if test="string-length($c) &gt; 0">
+              <xsl:text>!</xsl:text>
+              <xsl:value-of select="normalize-space($c)" />
+            </xsl:if>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
     </ref>
   </xsl:template>
   
