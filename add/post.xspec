@@ -31,4 +31,11 @@
 			</x:expect>
 		</x:scenario>
 	</x:scenario>
+  
+  <x:scenario label="T4: quote, gap">
+    <x:scenario label="T4.1">
+      <x:context>„id […] est [...]“</x:context>
+      <x:expect label="."><quote>id <gap /> est <gap /></quote></x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>
