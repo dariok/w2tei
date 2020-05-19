@@ -75,8 +75,8 @@
 	</xsl:template>
 	
 	<xsl:template match="tei:note[@type = 'crit_app'
-		and not(preceding-sibling::tei:anchor[1][not(ends-with(@xml:id, 'e'))]
-		and following-sibling::tei:anchor[1][ends-with(@xml:id, 'e')])]">
+		and not(preceding-sibling::tei:anchor[1][@type = 'crit_app' and not(ends-with(@xml:id, 'e'))]
+		and following-sibling::tei:anchor[1][@type = 'crit_app' and ends-with(@xml:id, 'e')])]">
 		<xsl:apply-templates select="." mode="eval" />
 	</xsl:template>
 	<xsl:template match="tei:note[@type = 'crit_app']" mode="eval">
@@ -225,7 +225,8 @@
 		or following-sibling::node()[1][self::tei:note[@type='crit_app']]]">
 		<xsl:variable name="pre" select="preceding-sibling::tei:anchor[1]/@xml:id"/>
 		<xsl:choose>
-			<xsl:when test="following-sibling::tei:anchor/@xml:id = $pre||'e'" />
+			<xsl:when test="following-sibling::tei:anchor[1][@type = 'crit_app' and @xml:id = $pre||'e']" />
+			<xsl:when test="self::tei:lb and following-sibling::node()[1][self::tei:note]" />
 			<xsl:when test="self::text() and following-sibling::*[1][self::tei:note]">
 				<xsl:choose>
 					<xsl:when test="contains(., ' ')">
@@ -717,6 +718,10 @@
 	</xsl:template>
 	<xsl:template match="wdb:note">
 		<xsl:apply-templates />
+	</xsl:template>
+	
+	<xsl:template match="tei:lb" mode="eval">
+		<xsl:sequence select="." />
 	</xsl:template>
 	
 	<xsl:template match="text()" mode="norm">
