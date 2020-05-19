@@ -190,5 +190,23 @@
 				<note type="footnote"><quote>.. concupiscentia cum conceperit parit peccatum <gap/>.</quote></note>
 			</x:expect>
 		</x:scenario>
+	  <x:scenario label="T5.8: gap">
+	    <x:context xml:space="preserve">
+				<note type="footnote" xml:id="n32"><ref type="biblical" cRef="Hiob 5,17">Hiob 5,17</ref> Vg
+					beatus homo qui corripitur a Domino …</note>
+			</x:context>
+	    <x:expect label="Punkt" xml:space="preserve">
+				<note type="footnote" xml:id="n32"><ref type="biblical" cRef="Hiob 5,17">Hiob 5,17</ref> Vg
+					beatus homo qui corripitur a Domino <gap/>.</note>
+			</x:expect>
+	  </x:scenario>
+	  <x:scenario label="T5.9: gap">
+	    <x:context xml:space="preserve">
+				<note type="footnote"><quote>.. concupiscentia cum conceperit parit peccatum…</quote></note>
+			</x:context>
+	    <x:expect label="Punkt" xml:space="preserve">
+				<note type="footnote"><quote>.. concupiscentia cum conceperit parit peccatum <gap/>.</quote></note>
+			</x:expect>
+	  </x:scenario>
 	</x:scenario>
 </x:description>

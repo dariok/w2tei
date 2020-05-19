@@ -10,6 +10,7 @@
   <xsl:variable name="bibliography" select="doc('http://dev2.hab.de/edoc/data/ed000216/register/kgk_bibliography.xml')" />
   <xsl:variable name="personenregister" select="doc('http://dev2.hab.de/edoc/data/ed000216/register/kgk_personenregister.xml')" />
   <xsl:variable name="ortsregister" select="doc('http://dev2.hab.de/edoc/data/ed000216/register/kgk_ortsregister.xml')" />
+  
   <xsl:template match="tei:bibl">
     <rs type="bibl">
       <xsl:variable name="self" select="normalize-space()" />

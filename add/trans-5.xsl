@@ -13,67 +13,6 @@
 	<xsl:include href="../word-pack.xsl" />
 	<xsl:include href="ref-qv.xsl" />
 	
-	<!-- verschoben aus trans-4 -->
-	<xsl:template match="tei:ref[@type='biblical']">
-		<xsl:variable name="self" select="normalize-space(analyze-string(., '^.+[a-z] ')//*:match)"/>
-		<xsl:variable name="trenn" select="." />
-		<xsl:choose>
-			<xsl:when test="contains(., ';') or contains(., 'u.') or contains(., 'und')">
-				<xsl:variable name="parts" as="xs:string*">
-					<xsl:choose>
-						<xsl:when test="contains(., ';')">
-							<xsl:sequence select="tokenize(., ';')"/>
-						</xsl:when>
-						<xsl:when test="contains(., 'u.')">
-							<xsl:sequence select="tokenize(., 'u.')"/>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:sequence select="tokenize(., 'und')" />
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				<xsl:for-each select="$parts">
-					<ref type="biblical">
-						<xsl:choose>
-							<xsl:when test="matches(normalize-space(), '^\d') and contains(., ',')">
-								<xsl:attribute name="cRef" select="$self || ' ' || normalize-space()" />
-								<xsl:value-of select="normalize-space()"/>
-							</xsl:when>
-							<xsl:when test="matches(normalize-space(), '^\d')">
-								<xsl:variable name="chap"
-									select="normalize-space(substring-before(substring-after($trenn, $self), ','))" />
-								<xsl:attribute name="cRef" select="$self || ' ' || $chap || ',' || normalize-space()" />
-								<xsl:value-of select="normalize-space()"/>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:attribute name="cRef" select="normalize-space(replace(., 'ö', ''))" />
-								<xsl:value-of select="normalize-space()" />
-							</xsl:otherwise>
-						</xsl:choose>
-					</ref>
-					<xsl:if test="position() != last()">
-						<xsl:choose>
-							<xsl:when test="contains($trenn, ';')">
-								<xsl:text>; </xsl:text>
-							</xsl:when>
-							<xsl:when test="contains($trenn, 'u.')">
-								<xsl:text> u. </xsl:text>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:text> und </xsl:text>
-							</xsl:otherwise>
-						</xsl:choose>
-					</xsl:if>
-				</xsl:for-each>
-			</xsl:when>
-			<xsl:otherwise>
-				<ref type="biblical" cRef="{normalize-space(replace(., 'ö', ''))}">
-					<xsl:value-of select="."/>
-				</ref>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>
-	
 	<xsl:template match="tei:note[@type = 'crit_app'
 		and not(preceding-sibling::tei:anchor[1][@type = 'crit_app' and not(ends-with(@xml:id, 'e'))]
 		and following-sibling::tei:anchor[1][@type = 'crit_app' and ends-with(@xml:id, 'e')])]">

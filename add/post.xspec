@@ -1,34 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec" stylesheet="post.xsl"
-	xmlns="http://www.tei-c.org/ns/1.0">
-	<x:scenario label="T1: Anm. vor ptr">
-		<x:scenario label="T1.1">
-			<x:context>
-				<note type="footnote" xml:id="n13">S.o. Anm. <ptr type="wdb" target="#n8"/>.</note>
-			</x:context>
-			<x:expect label=".">
-				<note type="footnote" xml:id="n13">S.o. <ptr type="wdb" target="#n8"/>.</note>
-			</x:expect>
-		</x:scenario>
-	</x:scenario>
-	
-	<x:scenario label="T2: hi mit –">
-		<x:context>
-			<p>45<hi rend="super">r</hi>–<hi rend="super">v</hi></p>
-		</x:context>
-		<x:expect label=".">
-			<p>45<hi rend="super">r–v</hi></p>
-		</x:expect>
-	</x:scenario>
-	
-	<x:scenario label="T3: ref">
-		<x:scenario label="T3.1">
-			<x:context>
-				<ref type="digitalisat" target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10980528_00286.html?zoom=0.9500000000000004">y2<hi rend="super">v</hi></ref>
-			</x:context>
-			<x:expect label="unverändert">
-				<ref type="digitalisat" target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10980528_00286.html?zoom=0.9500000000000004">y2<hi rend="super">v</hi></ref>
-			</x:expect>
-		</x:scenario>
-	</x:scenario>
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <x:scenario label="T1: Anm. vor ptr">
+    <x:scenario label="T1.1">
+      <x:context>
+        <note type="footnote" xml:id="n13">S.o. Anm. <ptr type="wdb" target="#n8"/>.</note>
+      </x:context>
+      <x:expect label=".">
+        <note type="footnote" xml:id="n13">S.o. <ptr type="wdb" target="#n8"/>.</note>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T2: hi mit –">
+    <x:context>
+      <p>45<hi rend="super">r</hi>–<hi rend="super">v</hi></p>
+    </x:context>
+    <x:expect label=".">
+      <p>45<hi rend="super">r–v</hi></p>
+    </x:expect>
+  </x:scenario>
+  
+  <x:scenario label="T3: ref">
+    <x:scenario label="T3.1">
+      <x:context>
+        <ref type="digitalisat" target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10980528_00286.html?zoom=0.9500000000000004">y2<hi rend="super">v</hi></ref>
+      </x:context>
+      <x:expect label="unverändert">
+        <ref type="digitalisat" target="https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10980528_00286.html?zoom=0.9500000000000004">y2<hi rend="super">v</hi></ref>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T4: quote, gap">
+    <x:scenario label="T4.1">
+      <x:context>„id […] est [...]“</x:context>
+      <x:expect label="."><quote>id <gap /> est <gap /></quote></x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T5: Bibelstellen">
+    <x:scenario label="T5.1: mit Semikolon">
+      <x:context>
+        <ref xmlns="http://www.tei-c.org/ns/1.0" type="biblical">Mt 19,21; 10,9</ref>
+      </x:context>
+      <x:expect label=".">
+        <ref type="biblical" cRef="Mt 19,21">Mt 19,21</ref>; <ref type="biblical" cRef="Mt 10,9">10,9</ref>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T5.2: u.">
+      <x:context>
+        <ref xmlns="http://www.tei-c.org/ns/1.0" type="biblical" cRef="Hes 29,3 u. 9">Hes 29,3 u. 9</ref>
+      </x:context>
+      <x:expect label=".">
+        <ref type="biblical" cRef="Hes 29,3">Hes 29,3</ref> u. <ref type="biblical" cRef="Hes 29,9">9</ref>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>
