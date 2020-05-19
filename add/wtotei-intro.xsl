@@ -558,6 +558,12 @@
 		</listBibl>
 	</xsl:template>
 	
+	<xsl:template match="w:p">
+		<p>
+			<xsl:apply-templates select="w:r"/>
+		</p>
+	</xsl:template>
+	
 	<xsl:template name="imprint">
 		<xsl:param name="context" />
 		<xsl:variable name="imprintText">
