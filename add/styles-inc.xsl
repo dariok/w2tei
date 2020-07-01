@@ -88,19 +88,24 @@
         not(wt:isFirst(., 'KSbibliographischeAngabe', 'r'))]" />
     <xsl:template match="w:r[wt:isFirst(., 'KSbibliographischeAngabe', 'r')]">
         <xsl:variable name="me" select="." />
-        <xsl:variable name="content">
+        <!--<xsl:variable name="content">
             <xsl:apply-templates select="w:t" />
             <xsl:apply-templates select="following-sibling::w:r[wt:followMe(., $me, 'KSbibliographischeAngabe', 'r')]"
                 mode="eval"/>
-        </xsl:variable>
-        <xsl:for-each select="tokenize($content, '; ')">
+        </xsl:variable>-->
+        <bibl>
+            <xsl:apply-templates select="w:t" />
+            <xsl:apply-templates select="following-sibling::w:r[wt:followMe(., $me, 'KSbibliographischeAngabe', 'r')]"
+                mode="eval"/>
+        </bibl>
+        <!--<xsl:for-each select="tokenize($content, '; ')">
             <bibl>
                 <xsl:sequence select="." />
             </bibl>
             <xsl:if test="position() != last()">
                 <xsl:text>; </xsl:text>
             </xsl:if>
-        </xsl:for-each>
+        </xsl:for-each>-->
     </xsl:template>
     <xsl:template match="w:r[wt:is(., 'KSbibliographischeAngabe', 'r') and
         not(descendant::w:vertAlign or descendant::w:i)]" mode="eval">
@@ -120,14 +125,14 @@
             <xsl:apply-templates select="//w:endnote[@w:id = $wid]//w:p"/>
         </xsl:variable>
         <note type="footnote">
-        	<xsl:attribute name="xml:id" select="'n'||$wid" />
+            <xsl:attribute name="xml:id" select="'n'||$wid" />
             <xsl:for-each select="$temp/node()">
                 <xsl:choose>
                     <xsl:when test="position() = 1 and self::text() and starts-with(., ' ')">
                         <xsl:value-of select="substring(., 2)"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:copy-of select="."/>
+                        <xsl:sequence select="."/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
