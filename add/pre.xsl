@@ -18,10 +18,10 @@
   </xsl:template>
   
   <xsl:template match="pkg:part[contains(@pkg:name, 'word/document.xml')]">
-<!--    <xsl:variable name="trenner" select="(descendant::w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1')])[1]"/>-->
-    <xsl:variable name="trenner" select="descendant::w:p[not(descendant::w:t)][1]" />
+    <xsl:variable name="trenner" select="(descendant::w:p[wt:is(., 'berschrift1') or wt:is(., 'Heading1') or wt:is(., 'Titolo1')])[1]"/>
+<!--    <xsl:variable name="trenner" select="descendant::w:p[not(descendant::w:t)][1]" />-->
     <pkg:part pkg:name="titelei">
-      <xsl:sequence select="$trenner/preceding-sibling::* | $trenner" />
+      <xsl:sequence select="$trenner/preceding-sibling::*" />
     </pkg:part>
     <pkg:part pkg:name="/word/document.xml">
       <xsl:sequence select="$trenner/following-sibling::*" />
