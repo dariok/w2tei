@@ -145,16 +145,26 @@
                 </xsl:choose>
             </xsl:for-each>
         </xsl:variable>
-    	<xsl:text>
-					</xsl:text>
-        <lb />
-        <xsl:choose>
+    	<xsl:choose>
             <xsl:when test="$relind castable as xs:integer and  $relind > 0">
+                <xsl:text>
+					</xsl:text>
+                <lb />
                 <ab style="centre">
                     <xsl:sequence select="$content"/>
                 </ab>
             </xsl:when>
+            <xsl:when test="$content/node()[1][self::tei:pb]">
+                <xsl:text>
+					</xsl:text>
+                <xsl:sequence select="$content/tei:pb" />
+                <lb />
+                <xsl:sequence select="$content/node()[position() gt 1]" />
+            </xsl:when>
             <xsl:otherwise>
+                <xsl:text>
+					</xsl:text>
+                <lb />
                 <xsl:sequence select="$content" />
             </xsl:otherwise>
         </xsl:choose>
