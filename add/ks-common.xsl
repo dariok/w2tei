@@ -35,7 +35,9 @@
       n="{$nr}">
       <xsl:attribute name="xml:id">
         <xsl:choose>
-          <xsl:when test="//w:footnote[descendant::w:t] or //w:p[wt:is(., 'berschrift1', 'p') and wt:contains(., 'Text')]">
+          <xsl:when test="//pkg:part[contains(@pkg:name, 'word/document.xml')]/@type = 'Text'
+            or //w:footnote[descendant::w:t]
+            or //w:p[wt:is(., 'berschrift1', 'p') and wt:contains(., 'Text')]">
             <xsl:value-of select="concat('edoc_ed000240_', $ee, '_transcript')"/>
           </xsl:when>
           <xsl:otherwise>

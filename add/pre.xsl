@@ -23,7 +23,9 @@
     <pkg:part pkg:name="titelei">
       <xsl:sequence select="$trenner/preceding-sibling::*" />
     </pkg:part>
-    <pkg:part pkg:name="/word/document.xml">
+    <xsl:text>
+   </xsl:text>
+    <pkg:part pkg:name="/word/document.xml" type="{normalize-space($trenner)}">
       <xsl:sequence select="$trenner/following-sibling::*" />
     </pkg:part>
   </xsl:template>
