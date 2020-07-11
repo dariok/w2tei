@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for /home/dario/git/w2tei/add/trans-5.xsl (passed: 58 / pending: 0 / failed: 0 / total: 58)</title>
+      <title>Test Report for /home/dario/git/w2tei/add/trans-5.xsl (passed: 58 / pending: 1 / failed: 0 / total: 59)</title>
       <style type="text/css">/****************************************************************************/
 /*  File:       test-report.css                                             */
 /*  Author:     Jeni Tennison                                               */
@@ -147,9 +147,9 @@ dd pre, li pre {
 	}
 
 /* fonts */
-body {
+body, table {
 	font-family: sans-serif;
-	font-size: small;
+	font-size: 12px;
 	}
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,12 +157,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 h1 {
-	font-size: 173%;
+	font-size: 1.7em;
 	font-weight: bold;
 	}
 
 h2 {
-	font-size: 144%;
+	font-size: 1.4em;
 	font-weight: bold;
 	}
 
@@ -201,12 +201,12 @@ div.example, .sidebar {
 
 .note, .link {
 	font-family: sans-serif;
-	font-size: 83%;
+	/*font-size: 83%;*/
 	}
 
 .example, .string, .rtf, .code, pre, code {
 	font-family: monospace;
-  font-size: 83%;
+  /*font-size: 83%;*/
 	}
 
 .boolean {
@@ -388,6 +388,7 @@ a {
 
 body > h2:first-of-type {
     background: inherit;
+    font-size: 1.7em;
     margin-bottom: 0;
 }
 
@@ -403,8 +404,8 @@ div > table > tbody > tr > th:first-child {
     color: #474747;
 }
 
-.xspec tbody th { font-weight: normal; font-size: 0.8em; border-top: 1px #666 solid; }
-.xspec tbody td { font-size: 0.8em; color: #262626; }
+.xspec tbody th { font-weight: normal; /*font-size: 0.8em;*/ border-top: 1px #666 solid; }
+.xspec tbody td { /*font-size: 0.8em;*/ color: #262626; }
 
 .successful { background-color: #CFC; }
 .pending { background-color: #EEE; color: #666; }
@@ -458,6 +459,25 @@ span.scenario-totals {float: right; text-align: right}
 	box-shadow: -0.5rem 0 0 0 #FC511D;
 }
 
+/* hint button */
+.xTestReport {
+	display: grid;
+	grid-template-areas:
+		"title title"
+		"table hint";
+	grid-template-columns: 1fr 1em;
+}
+.xTestReportTitle {
+	grid-area: title
+}
+.xTestReportHint {
+	grid-area: hint;
+	text-shadow: 1px 2px 3px gray;
+}
+.xspecResult {
+	grid-area: table;
+}
+
 /* ------------------------------------------------------------------------ */
 /*  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS COMMENT.               */
 /*                                                                          */
@@ -491,11 +511,7 @@ span.scenario-totals {float: right; text-align: right}
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/trans-5.xsl">/home/dario/git/w2tei/add/trans-5.xsl</a></p>
       <p>XSpec: <a href="file:/home/dario/git/w2tei/add/trans-5.xspec">/home/dario/git/w2tei/add/trans-5.xspec</a></p>
-<<<<<<< HEAD
-      <p>Tested: 16 March 2020 at 23:34</p>
-=======
-      <p>Tested: 24 March 2020 at 01:20</p>
->>>>>>> c50716f0bf16e58a0962e4060d7b3e010bd5ca95
+      <p>Tested: 11 July 2020 at 23:37</p>
       <h2>Contents</h2>
       <table class="xspec">
          <colgroup>
@@ -509,98 +525,98 @@ span.scenario-totals {float: right; text-align: right}
             <tr>
                <th></th>
                <th class="totals">passed: 58</th>
-               <th class="totals">pending: 0</th>
+               <th class="totals">pending: 1</th>
                <th class="totals">failed: 0</th>
-               <th class="totals">total: 58</th>
+               <th class="totals">total: 59</th>
             </tr>
          </thead>
          <tbody>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e4">T1: folgt</a></th>
+               <th><a href="#top_scenario1">T1: folgt</a></th>
                <th class="totals">9</th>
+               <th class="totals">1</th>
                <th class="totals">0</th>
-               <th class="totals">0</th>
-               <th class="totals">9</th>
+               <th class="totals">10</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e755">T2: app/lem/rdg</a></th>
+               <th><a href="#top_scenario2">T2: app/lem/rdg</a></th>
                <th class="totals">12</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">12</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e2145">T3: fehlt</a></th>
+               <th><a href="#top_scenario3">T3: fehlt</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e2193">T3.2:</a></th>
+               <th><a href="#top_scenario4">T3.2:</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e2244">T4: gestrichen</a></th>
+               <th><a href="#top_scenario5">T4: gestrichen</a></th>
                <th class="totals">4</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">4</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e2536">T5: Korrekturen</a></th>
+               <th><a href="#top_scenario6">T5: Korrekturen</a></th>
                <th class="totals">5</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">5</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e3006">T6: gemischte</a></th>
+               <th><a href="#top_scenario7">T6: gemischte</a></th>
                <th class="totals">9</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">9</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e3976">T7: nicht umsetzbare</a></th>
+               <th><a href="#top_scenario8">T7: nicht umsetzbare</a></th>
                <th class="totals">3</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">3</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e4376">T8: Elemente vorher</a></th>
+               <th><a href="#top_scenario9">T8: Elemente vorher</a></th>
                <th class="totals">4</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">4</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e4984">T9: add</a></th>
+               <th><a href="#top_scenario10">T9: add</a></th>
                <th class="totals">6</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">6</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e5391">T10: Normalfall</a></th>
+               <th><a href="#top_scenario11">T10: Normalfall</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e5576">T11: Gruppierung</a></th>
+               <th><a href="#top_scenario12">T11: Gruppierung</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e5651">T12</a></th>
+               <th><a href="#top_scenario13">T12</a></th>
                <th class="totals">2</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
@@ -608,9 +624,9 @@ span.scenario-totals {float: right; text-align: right}
             </tr>
          </tbody>
       </table>
-      <div id="top-level-scenario-d5e4">
-         <h2 class="successful">T1: folgt<span class="scenario-totals">passed: 9 / pending: 0 / failed: 0 / total: 9</span></h2>
-         <table class="xspec" id="t-d5e4">
+      <div id="top_scenario1">
+         <h2 class="successful">T1: folgt<span class="scenario-totals">passed: 9 / pending: 1 / failed: 0 / total: 10</span></h2>
+         <table class="xspec" id="table_scenario1">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -618,7 +634,7 @@ span.scenario-totals {float: right; text-align: right}
             <tbody>
                <tr class="successful">
                   <th>T1: folgt</th>
-                  <th>passed: 9 / pending: 0 / failed: 0 / total: 9</th>
+                  <th>passed: 9 / pending: 1 / failed: 0 / total: 10</th>
                </tr>
                <tr class="successful">
                   <th>T1.1: LD, 2 verschiedene</th>
@@ -652,13 +668,13 @@ span.scenario-totals {float: right; text-align: right}
                   <td>note</td>
                   <td>Success</td>
                </tr>
-               <tr class="successful">
-                  <th>T1.5: folgt durchgestrichen</th>
-                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               <tr class="pending">
+                  <th>(<strong>(durch)gestrichen nach orig nicht mehr unterstützt!</strong>) T1.5: folgt durchgestrichen</th>
+                  <th>passed: 0 / pending: 1 / failed: 0 / total: 1</th>
                </tr>
-               <tr class="successful">
-                  <td>add/del</td>
-                  <td>Success</td>
+               <tr class="pending">
+                  <td>(<strong>(durch)gestrichen nach orig nicht mehr unterstützt!</strong>) add/del</td>
+                  <td>Pending</td>
                </tr>
                <tr class="successful">
                   <th>T1.6: folgt als Lauftext</th>
@@ -692,12 +708,20 @@ span.scenario-totals {float: right; text-align: right}
                   <td>note übernommen, nicht in @wit</td>
                   <td>Success</td>
                </tr>
+               <tr class="successful">
+                  <th>T1.10: folgt gestrichen</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>.</td>
+                  <td>Success</td>
+               </tr>
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e755">
+      <div id="top_scenario2">
          <h2 class="successful">T2: app/lem/rdg<span class="scenario-totals">passed: 12 / pending: 0 / failed: 0 / total: 12</span></h2>
-         <table class="xspec" id="t-d5e755">
+         <table class="xspec" id="table_scenario2">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -806,9 +830,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e2145">
+      <div id="top_scenario3">
          <h2 class="successful">T3: fehlt<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d5e2145">
+         <table class="xspec" id="table_scenario3">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -825,9 +849,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e2193">
+      <div id="top_scenario4">
          <h2 class="successful">T3.2:<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d5e2193">
+         <table class="xspec" id="table_scenario4">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -844,9 +868,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e2244">
+      <div id="top_scenario5">
          <h2 class="successful">T4: gestrichen<span class="scenario-totals">passed: 4 / pending: 0 / failed: 0 / total: 4</span></h2>
-         <table class="xspec" id="t-d5e2244">
+         <table class="xspec" id="table_scenario5">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -891,9 +915,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e2536">
+      <div id="top_scenario6">
          <h2 class="successful">T5: Korrekturen<span class="scenario-totals">passed: 5 / pending: 0 / failed: 0 / total: 5</span></h2>
-         <table class="xspec" id="t-d5e2536">
+         <table class="xspec" id="table_scenario6">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -946,9 +970,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e3006">
+      <div id="top_scenario7">
          <h2 class="successful">T6: gemischte<span class="scenario-totals">passed: 9 / pending: 0 / failed: 0 / total: 9</span></h2>
-         <table class="xspec" id="t-d5e3006">
+         <table class="xspec" id="table_scenario7">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -1023,7 +1047,7 @@ span.scenario-totals {float: right; text-align: right}
                   <td>Success</td>
                </tr>
                <tr class="successful">
-                  <th>T6.9: </th>
+                  <th>T6.9:</th>
                   <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
                </tr>
                <tr class="successful">
@@ -1033,9 +1057,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e3976">
+      <div id="top_scenario8">
          <h2 class="successful">T7: nicht umsetzbare<span class="scenario-totals">passed: 3 / pending: 0 / failed: 0 / total: 3</span></h2>
-         <table class="xspec" id="t-d5e3976">
+         <table class="xspec" id="table_scenario8">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -1072,9 +1096,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e4376">
+      <div id="top_scenario9">
          <h2 class="successful">T8: Elemente vorher<span class="scenario-totals">passed: 4 / pending: 0 / failed: 0 / total: 4</span></h2>
-         <table class="xspec" id="t-d5e4376">
+         <table class="xspec" id="table_scenario9">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -1119,9 +1143,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e4984">
+      <div id="top_scenario10">
          <h2 class="successful">T9: add<span class="scenario-totals">passed: 6 / pending: 0 / failed: 0 / total: 6</span></h2>
-         <table class="xspec" id="t-d5e4984">
+         <table class="xspec" id="table_scenario10">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -1182,9 +1206,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e5391">
+      <div id="top_scenario11">
          <h2 class="successful">T10: Normalfall<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d5e5391">
+         <table class="xspec" id="table_scenario11">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -1205,9 +1229,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e5576">
+      <div id="top_scenario12">
          <h2 class="successful">T11: Gruppierung<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d5e5576">
+         <table class="xspec" id="table_scenario12">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -1228,9 +1252,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e5651">
+      <div id="top_scenario13">
          <h2 class="successful">T12<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
-         <table class="xspec" id="t-d5e5651">
+         <table class="xspec" id="table_scenario13">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />

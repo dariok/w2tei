@@ -41,7 +41,7 @@
 				<p>primum<note type="crit_app">folgt  <orig>tunc</orig> und ein Wort durchgestrichen a<hi rend="sub">1</hi></note> concordamus</p>
 			</x:expect>
 		</x:scenario>
-		<x:scenario label="T1.5: folgt durchgestrichen">
+		<x:scenario label="T1.5: folgt durchgestrichen" pending="(durch)gestrichen nach orig nicht mehr unterstützt!">
 			<x:context>
 				<p>unde ex<note type="crit_app">folgt  <orig>materia</orig> durchgestrichen a<hi rend="sub">1</hi></note> causa</p>
 			</x:context>
@@ -85,6 +85,18 @@
 			</x:context>
 			<x:expect label="note übernommen, nicht in @wit">
 				<p>iuditio iusto<app><lem/><rdg wit="#a1">f<note type="comment">gestrichen</note></rdg></app> factus
+				</p>
+			</x:expect>
+		</x:scenario>
+		<x:scenario label="T1.10: folgt gestrichen">
+			<x:context>
+				<p>
+					<lb/>facit ydoneos ac sufficientes<note type="crit_app">folgt gestrichen <orig>librum</orig> a</note> liberum (quod
+				</p>
+			</x:context>
+			<x:expect label=".">
+				<p>
+					<lb/>facit ydoneos ac sufficientes<app><lem /><rdg wit="#a"><del>librum</del></rdg></app> liberum (quod
 				</p>
 			</x:expect>
 		</x:scenario>

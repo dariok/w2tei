@@ -337,10 +337,11 @@
 					<xsl:when test="not(tei:orig)">
 						<wdb:note><xsl:sequence select="node()" /></wdb:note>
 					</xsl:when>
-					<xsl:when test="starts-with($inter, 'gestrichen') or starts-with($inter, 'durchgestrichen')
-						or starts-with(substring-after(., 'folgt '), 'gestr') or starts-with(substring-after(., 'folgt '), 'durchgestr')">
+					<!--<xsl:when test="starts-with($inter, 'gestrichen') or starts-with($inter, 'durchgestrichen')
+						or starts-with(substring-after(., 'folgt '), 'gestr') or starts-with(substring-after(., 'folgt '), 'durchgestr')">-->
+					<xsl:when test="starts-with(substring-after(., 'folgt '), 'gestr') or starts-with(substring-after(., 'folgt '), 'durchgestr')">
 						<xsl:variable name="wit">
-							<xsl:for-each select="tokenize(substring-after(string-join(tei:orig[last()]/following-sibling::node(), ''), 'chen '), ',')">
+							<xsl:for-each select="tokenize(string-join(tei:orig[last()]/following-sibling::node(), ''), ',')">
 								<xsl:value-of select="'#' || normalize-space()"/>
 								<xsl:if test="not(position() = last())">
 									<xsl:text> </xsl:text>
