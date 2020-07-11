@@ -12192,8 +12192,7 @@
 					<biblStruct type="imprint" xml:id="B"><analytic
 						><author
 							>Karlstadt, Andreas Bodenstein von</author><title
-							>ARTICV-‖LI SVPER CELEBRATIONE ‖ MISSARVM, SACRA=‖menti Panis &amp; Vini, ‖ &amp; diſcrımine ‖ præcepti &amp; promißionis, &amp; alĳs, ‖ Andræ Bo. Carolo. ‖</title>
-						</analytic><monogr
+							>ARTICV-‖LI SVPER CELEBRATIONE ‖ MISSARVM, SACRA=‖menti Panis &amp; Vini, ‖ &amp; diſcrımine ‖ præcepti &amp; promißionis, &amp; alĳs, ‖ Andræ Bo. Carolo. ‖</title></analytic><monogr
 						><author
 							>Luther, Martin; Melanchthon, Philipp; Karlstadt, Andreas Bodenstein von </author><title
 							>LVTHERI, ǁ MELANCH. CAROLOSTADII &amp;c. ǁ PROPOSITIONES, VVITTEM= ǁ BERGAE uiua uoce traatae,in hocq́; pleǁræq; æditæ ab auoribus,ut uel nos abſentes ǁ cum ipſis agamus,uel certe ut ueri= ǁ tatis,&amp; ſeduionum ad ǁ moneãtur boni. ǁ Sunt autem id genus, ǁ De ǁ Mia &amp; celebratione eius. ǁ Sacramento panis &amp; uini. ǁ Promißione et præcepto. ǁ Fıde &amp; operibus. ǁ Cantu Gergoriano. ǁ Coniuratione irituum. ǁ Cœlıbatu preſbyterorum. ǁ Decımis ac uotis. &amp;c. ǁ BASILEAE. M. D. XXII. ǁ [Am Ende] BASILEAE ANNO ‖ M. D. XXII.</title><imprint
@@ -12208,8 +12207,7 @@
 				<msDesc xml:id="b"><msIdentifier><altIdentifier type="siglum"><idno>b</idno></altIdentifier><repository>Ministerialbibliothek Celle</repository><idno type="signatur">Ms.</idno></msIdentifier><msContents><msItem><locus/></msItem></msContents><physDesc>
 				<p>Handschrift a ist eine Abschrift von Druck A oder einer mit A nahezu identischen Vorlage. Die Ordnung der Blätter ist gestört.<note type="footnote" xml:id="n2">Zu dieser Handschrift vgl. EE#.</note> Den Titel der Thesenreihe gibt fol. 288<hi rend="super">v</hi> wider, es folgen die Thesen 1 bis 92 samt einleitenden Informationen zu Anlass, Präses und Zeitpunkt der Diputation auf fol. 285<hi rend="super">r</hi>-286<hi rend="super">v</hi>. Die restlichen Thesen hat dann fol. 289<hi rend="super">r-v</hi>. Handschrift b ist eine spätere Abschrift des 18. Jahrhunderts.<note type="footnote" xml:id="n3">Vgl. Uhlhorn, Urbanus Rhegius, 358  Nr. 3 Wrede, Einführung, 37 Anm. 2.</note></p></physDesc></msDesc></listBibl><listBibl
 					type="editions"><bibl>Goebel, Abendmahlslehre, 334ff.</bibl><bibl>Jäger, Carlstadt, 221-227</bibl><bibl>Barge, Karlstadt 1, 484-490</bibl></listBibl><listBibl
-					type="literatur"><bibl>Barge, Karlstadt 1, 484-490 Nr. 18</bibl></listBibl>
-			</div>
+					type="literatur"><bibl>Barge, Karlstadt 1, 484-490 Nr. 18</bibl></listBibl></div>
 			<div type="contents">
 				<p>Anlass und Datierung für die <hi style="font-style: italic;">138 Articuli</hi> liefern die Titelei des Erst- und Separatdrucks A wie auch der Nachdruck in der Basler Thesensammlung [B:] wie auch die Abschrift Christoph Schappelers. Die Thesen wurden am 17. Oktober 1521 unter dem Vorsitz Karlstadts anläßlich der Doppelpromotionen von <rs type="person">Gottschalk Crop</rs><note
 					type="footnote" xml:id="n4"><rs type="person">Gottschalk Crop</rs> war ein Augustiner aus <bibl>Herford</bibl>, vgl. </note> und <rs type="person">Gottschalk Cruse</rs>/Crause (hier Crusse)<note

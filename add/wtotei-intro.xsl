@@ -473,10 +473,10 @@
 					<xsl:variable name="te">
 						<xsl:choose>
 							<xsl:when test="$md/hab:b[2]">
-								<xsl:apply-templates select="$md/hab:b[2]/preceding-sibling::node() intersect $md/hab:b[1]/following-sibling::node()" />
+								<xsl:sequence select="$md/hab:b[2]/preceding-sibling::node() intersect $md/hab:b[1]/following-sibling::node()" />
 							</xsl:when>
 							<xsl:otherwise>
-								<xsl:apply-templates select="$md/hab:b[1]/following-sibling::node()" />
+								<xsl:sequence select="$md/hab:b[1]/following-sibling::node()" />
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:variable>
@@ -494,7 +494,7 @@
 							</xsl:choose>
 						</xsl:when>
 						<xsl:otherwise>
-							<xsl:value-of select="$te"/>
+							<xsl:sequence select="$te"/>
 						</xsl:otherwise>
 					</xsl:choose>
 				</idno>
