@@ -9959,6 +9959,2263 @@
 				<listBibl type="sigla">
 					<biblStruct type="imprint" xml:id="H"><analytic><author>Karlstadt, Andreas Bodenstein von</author><title
 >Subſcriptas Concluſiones,Andreas Caroloﬅadius,aduersus domi⸗‖num Ioannem Eccium defendet Lipsiæ ,die xxvij. ‖ Iunij.M.D.XIX. ‖</title></analytic><monogr><author>Eck, Johannes; Karlstadt, Andreas Bodenstein von; Luther, Martin</author><title>Diſputatio ‖ excellentium.D.doctorū Iohannis Eccij &amp; ‖ Andreę Caroloﬅadij q̄ cepta eſt Lipsię ‖ XXVII.Iunij.AN.M.D.XIX. ‖ Diſputatio ſecunda.D.Doorū Iohānis ‖ Eccij &amp; Andreę Caroloﬅadij q̄ cepit ‖ XV.Iulij. ‖ Diſputatio eiuſdem.D.Iohannis Eccij &amp; ‖ D.Martini Lutheri Auguﬅiniani q̄ ǁ cepit.IIII.Iulij. ‖ </title><imprint><pubPlace cert="unknown"><rs type="place">Erfurt</rs></pubPlace><publisher cert="unknown"><rs type="person">Matthes Maler</rs></publisher><date when="1519" cert="unknown">1519</date></imprint><extent>4°, 62 Bl., A<hi rend="super">6</hi>, B<hi rend="super">4</hi>‒P<hi rend="super">4</hi>.</extent><biblScope>fol. A1<hi rend="super">v</hi>‒D4<hi rend="super">v</hi> und P3<hi rend="super">v</hi>‒P4<hi rend="super">r</hi>.</biblScope></monogr><idno type="siglum">H</idno><note type="copies"><list><item n="editionsvorlage"><label>HAB Wolfenbüttel</label><idno type="signatur">H: H 65.4° Helmst. (4).</idno></item><item><label>MKB Goslar</label><idno type="signatur">349,4</idno><note xmlns:hab="http://diglib.hab.de">aus dem Besitz von Andreas Gronewalt</note></item><item><label>UB Leipzig</label><idno type="signatur">Libri.sep.2379</idno><note xmlns:hab="http://diglib.hab.de">auf dem Titelblatt, Widmung an Georg Spalatin von der Hand Johannes Langs</note></item><item><label>ULB Münster</label><idno type="signatur">COLL.ERH. 313.</idno></item><item><label>BSB München</label><idno type="signatur">Res/4 H.ref. 258.</idno></item><item><label>UB Paderborn</label><idno type="signatur">Erzbischöfliche Akademische Bibliothek Th. 6116(19)</idno><note xmlns:hab="http://diglib.hab.de">aus dem Besitz von Otto Beckmann</note></item><item><label>ÖNB Wien</label><idno type="signatur">*35.R.200.</idno></item></list></note><note type="references"><listBibl><bibl>Freys/Barge, Verzeichnis, Nr. 23</bibl><bibl>Benzing, Lutherbibliographie, Nr. 407</bibl><bibl>Zorzin, Flugschriftenautor, 15</bibl><bibl>VD16 E 320</bibl></listBibl></note></biblStruct></listBibl><listBibl type="editions"><bibl>Löscher, Reformations-Acta 3, 284‒291</bibl><bibl>Eck, Briefwechsel, Nr. 84 (nur Karlstadts Brief an Eck)</bibl><bibl>Walch<hi rend="super">2</hi> 15, Sp. 825‒830</bibl></listBibl><listBibl type="literatur"><bibl>Barge, Karlstadt 1, 144‒146</bibl></listBibl></div></x:expect>		</x:scenario>
+		<x:scenario label="T3.8: EE162 = Nr. 199">
+			<x:context>
+				<package:part package:name="word/document.xml">
+					<w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="5209D5DB" w14:textId="371789CD" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSberschrift1"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Überlieferung</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="5E5E04D4" w14:textId="77777777" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSberschrift2"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Frühdrucke:</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="57EC23CA" w14:textId="77777777" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="001C4279">
+	            <w:rPr>
+	              <w:rStyle w:val="KSSigle"/>
+	            </w:rPr>
+	            <w:t>[A:]</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Karlstadt, Andreas Bodenstein von, </w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="1925D001" w14:textId="50FD5C2F" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00534391">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">ARTICVLI SVPER CELEBRATIONE </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Cambria"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Mi</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>arum</w:t>
+	          </w:r>
+	          <w:r w:rsidR="007201FE">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>, Sacramenti Panis &amp; Vini, &amp; diſ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">crimine </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Cambria"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> pr</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00256797">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>æ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>cepti &amp; promi</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ionis,</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>&amp; alijs.</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00C0546F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Cambria"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Andre</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>æ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Bo. Carolo. </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Cambria"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Sic Themata </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ſ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>eu articulos aliquot dige</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t></w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>i,vt eis u</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">elut libello queas </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Cambria"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> uti. Nempe, Lector bone ,</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> ſequentia præ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>cedentium rationem red-</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Cambria"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>dunt,</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>Feſ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>tin</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ãter &amp; cur</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ſim,hocipſum,quod eſ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>t editum,</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>boni conſ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">ule, </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cs="Cambria"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Rem per ſcripturam tanquam aurificis ſtateram exige qu</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>æ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ſ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">o. </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cs="Cambria"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00534391">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Alioqui ſ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">acras literas appellabo. </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	            </w:rPr>
+	            <w:t>Vale f</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	            </w:rPr>
+	            <w:t>œ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	            </w:rPr>
+	            <w:t>liciter.</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cs="Cambria"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:eastAsia="Arial Unicode MS" w:hAnsi="Junicode" w:cstheme="minorHAnsi"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="5AA9851D" w14:textId="696CC721" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>[Wittenberg</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E12796">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>]</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">: </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E12796">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>[</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Nickel Schirlentz</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E12796">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>]</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">, </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E12796">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>[</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>1521].</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="34647FB4" w14:textId="7F27AFC8" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>4°</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00F050FC">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>,</w:t>
+	          </w:r>
+	          <w:r w:rsidR="008C5A2E">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> 5 Bl., A</w:t>
+	          </w:r>
+	          <w:r w:rsidR="008C5A2E" w:rsidRPr="008C5A2E">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>1-5</w:t>
+	          </w:r>
+	          <w:r w:rsidR="008C5A2E">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="0E83F1E3" w14:textId="3706F66E" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	            </w:rPr>
+	            <w:t>Editionsvorlage</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>:</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00F050FC" w:rsidRPr="00F050FC">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00F050FC" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>HAB Wolfenbüttel , H: G 69.4° Helmst. (</w:t>
+	          </w:r>
+	          <w:commentRangeStart w:id="0"/>
+	          <w:r w:rsidR="00F050FC" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>10</w:t>
+	          </w:r>
+	          <w:commentRangeEnd w:id="0"/>
+	          <w:r w:rsidR="00E55D5F">
+	            <w:rPr>
+	              <w:rStyle w:val="Kommentarzeichen"/>
+	            </w:rPr>
+	            <w:commentReference w:id="0"/>
+	          </w:r>
+	          <w:r w:rsidR="00F050FC" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>)</w:t>
+	          </w:r>
+	          <w:r w:rsidR="002B6E42">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="094B728B" w14:textId="5BC4C2C2" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00F050FC">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	            </w:rPr>
+	            <w:t>Weitere Exemplare</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">: UB Basel , FP IX 4.13. – </w:t>
+	          </w:r>
+	          <w:r w:rsidR="002B6E42">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>UB Heidelberg , Salem 82,27 RES.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="2E75F711" w14:textId="3D6C75C0" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00F050FC" w:rsidP="001C4279">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	            </w:rPr>
+	            <w:t>Bibliographischer Nachweise</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">: </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00804C0C">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>Freys/Barge, Verzeichnis, Nr. 67</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00804C0C">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">. </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>-</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00804C0C">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>Köhler, Bibliographie, Nr. 1852</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00804C0C">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> - </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00804C0C">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>Zorzi</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00AC65B5" w:rsidRPr="00804C0C">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>n, Flugschriftenautor, Nr. 38</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00804C0C">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>A</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00804C0C">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">. </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">- </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00804C0C">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">VD 16 B </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00AC65B5" w:rsidRPr="00804C0C">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>6110</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="7E942655" w14:textId="77777777" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="001C4279">
+	            <w:rPr>
+	              <w:rStyle w:val="KSSigle"/>
+	            </w:rPr>
+	            <w:t>[B:]</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00F8778F" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Karlstadt, Andreas Bodenstein von</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="148F7EF2" w14:textId="71CC9858" w:rsidR="00F8778F" w:rsidRPr="00E85B47" w:rsidRDefault="00C0546F" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ARTICV-</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>‖</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00F8778F" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>LI SVPER CE</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>LEBRATIONE ‖ MISSARVM, SACRA=‖</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00F8778F" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>menti Panis &amp; Vini, ‖ &amp; di</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00BF1E6B" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t>ſcrımine ‖ præcepti &amp; promißionis, &amp; alĳs, ‖ Andræ Bo. Carolo. ‖</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="6005CB53" w14:textId="77777777" w:rsidR="00F8778F" w:rsidRPr="00E85B47" w:rsidRDefault="00F8778F" w:rsidP="00F8778F">
+	          <w:pPr>
+	            <w:spacing w:after="0"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">in: </w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="59561EF2" w14:textId="77777777" w:rsidR="00F8778F" w:rsidRPr="00E85B47" w:rsidRDefault="00F8778F" w:rsidP="00F8778F">
+	          <w:pPr>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:lastRenderedPageBreak/>
+	            <w:t xml:space="preserve">Luther, Martin; Melanchthon, Philipp; Karlstadt, Andreas Bodenstein von </w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="7536D793" w14:textId="24F488A7" w:rsidR="00185399" w:rsidRPr="00FB04D7" w:rsidRDefault="00185399" w:rsidP="00185399">
+	          <w:pPr>
+	            <w:spacing w:after="0"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">LVTHERI, ǁ MELANCH. CAROLOSTADII </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>&amp;c.</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> ǁ PROPOSITIONES, VVITTEM= ǁ BERGAE </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00A4565C">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>uiua</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> uoce tr</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="004930BF">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>aat</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>ae,</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">in hocq́; pleǁræq; </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>æditæ ab auoribus,</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>ut uel nos ab</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Junicode"/>
+	            </w:rPr>
+	            <w:t>ſ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>entes ǁ cum ip</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Junicode"/>
+	            </w:rPr>
+	            <w:t>ſ</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>is agamus,</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>uel certe ut ueri= ǁ tatis,</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>&amp;</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Junicode"/>
+	            </w:rPr>
+	            <w:t>ſ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>ed</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="004930BF">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>ui</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">onum ad ǁ moneãtur boni. ǁ </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Sunt autem id genus, ǁ De ǁ Mi</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">a </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>&amp;</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> celebratione eius. ǁ Sacramento panis </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>&amp;</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> uini. ǁ </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Promißione et præcepto. ǁ Fı</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">de </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>&amp;</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> operibus. ǁ Cantu Gergoriano. ǁ Coniuratione </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="006E368F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Junicode"/>
+	            </w:rPr>
+	            <w:t></w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00055BC8">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Junicode"/>
+	            </w:rPr>
+	            <w:t>irituum</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">. </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">ǁ </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Junicode"/>
+	            </w:rPr>
+	            <w:t>Cœlı</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">batu preſbyterorum. </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Decı</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">mis ac uotis. </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>&amp;c</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>. ǁ BASILEAE. M. D. XXII.</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>ǁ</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="0004643D">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode" w:cs="Times New Roman"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> [Am Ende] BASILEAE ANNO ‖ M. D. XXII.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="611E5444" w14:textId="2F5AEDE9" w:rsidR="00FF4B50" w:rsidRDefault="00F8778F" w:rsidP="00AB6D02">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:lang w:val="en-US"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">Basel: [Adam Petri], 1522, </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00FF4B50" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>BI. A5</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00FF4B50" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>r</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00C0546F">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>-</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00FF4B50" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>B4</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00FF4B50" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>v</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00FF4B50" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="358D4BC3" w14:textId="08A03B34" w:rsidR="00AB6D02" w:rsidRPr="00E85B47" w:rsidRDefault="00AB6D02" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="005E0FFB">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>8°, [56] Bl., A</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="005E0FFB">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>8</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>–</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="005E0FFB">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>G</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="005E0FFB">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>8</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">, </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>fol. A1</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>v</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> und G8</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>v</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> leer</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="6393A3F8" w14:textId="7DB65997" w:rsidR="00E85B47" w:rsidRDefault="00E85B47" w:rsidP="00E85B47">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	            </w:rPr>
+	            <w:t>Editionsvorlage</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>:</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00185399">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00185399" w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>BSB München</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00185399">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00185399" w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>, Polem. 3020, 13</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00185399">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="2F8F9752" w14:textId="08AEC3D9" w:rsidR="00AB45AA" w:rsidRPr="00E85B47" w:rsidRDefault="00AB45AA" w:rsidP="00AB45AA">
+	          <w:pPr>
+	            <w:spacing w:after="0"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	            </w:rPr>
+	            <w:t>Weitere Exemplare</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00FB04D7">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">: </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>ÖNB W</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>ien , 77.Cc.281. — RFB-Lutherge</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>denkstätten Wittenb</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>erg , Ag 8 548d. — RFB-Lutherge</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>denkstätten Witte</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>nberg , SS 1516. — RFB-Lutherge</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>denkstätten Wittenberg , SS 2272. — RFB-Evangelisches Predigerseminar Wittenberg , LC590/1</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00554E7E">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> (</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00554E7E" w:rsidRPr="00554E7E">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:highlight w:val="yellow"/>
+	            </w:rPr>
+	            <w:t>Provenienz Johannes Lang</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00554E7E">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>)</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="002C49F9">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>. — RFB-Evangelisches Predigerseminar Wittenberg , NH C13/3.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="3206572F" w14:textId="7AA3D73B" w:rsidR="00FF4B50" w:rsidRDefault="00E85B47" w:rsidP="00E85B47">
+	          <w:pPr>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	              <w:iCs/>
+	            </w:rPr>
+	            <w:t>Bibliographische Nachweise</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">: </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00DD4D2D">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>VD 16 L 7642</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00DD4D2D">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="74A86187" w14:textId="034D2DC2" w:rsidR="00F62DE0" w:rsidRPr="00E85B47" w:rsidRDefault="00F62DE0" w:rsidP="00F62DE0">
+	          <w:pPr>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Druck B ist ein Nachdruck des Erst- und Separatdrucks A inklusive Abdruck des gesamten Titels. Aus
+	              diesem ergibt insbesondere folgende Passage für den Separatdruck durchaus, für den Nachdruck jedoch keinen
+	              Sinn: „</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Sic Themata. seu articulos aliquot digessi, ut eis</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> velut libello queam </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>uti</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.“</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rStyle w:val="Endnotenzeichen"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:endnoteReference w:id="1"/>
+	          </w:r>
+	          <w:bookmarkStart w:id="1" w:name="_GoBack"/>
+	          <w:bookmarkEnd w:id="1"/>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="677D2C10" w14:textId="77777777" w:rsidR="009255C3" w:rsidRDefault="009255C3" w:rsidP="009255C3">
+	          <w:pPr>
+	            <w:pStyle w:val="KSberschrift2"/>
+	          </w:pPr>
+	          <w:r>
+	            <w:t>Handschrift:</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="384B63BE" w14:textId="649E8423" w:rsidR="00E85B47" w:rsidRDefault="009255C3" w:rsidP="009255C3">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="001C4279">
+	            <w:rPr>
+	              <w:rStyle w:val="KSSigle"/>
+	            </w:rPr>
+	            <w:t>[a:]</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> KantonsB Vadiana St. Gallen , Ms. 266, fol. 285</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="009255C3">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>r</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>-286</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00DD43E2">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>v</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>; fol. 288</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="009255C3">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>v</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>-289</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="009255C3">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>v</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="6AD44182" w14:textId="555FD0F1" w:rsidR="00780E99" w:rsidRDefault="00780E99" w:rsidP="009255C3">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="001C4279">
+	            <w:rPr>
+	              <w:rStyle w:val="KSSigle"/>
+	            </w:rPr>
+	            <w:t>[b:]</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Ministerialbibliothek Celle</w:t>
+	          </w:r>
+	          <w:r w:rsidR="002D0944">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> , Ms.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="2D67F4B2" w14:textId="2D04B5CF" w:rsidR="00F62DE0" w:rsidRPr="00E85B47" w:rsidRDefault="00F62DE0" w:rsidP="00E94B40">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Handschrift a ist eine Abschrift von Druck A oder einer mit A nahezu identischen Vorlage.</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Die Ordnung der Blätter ist gestört.</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00780E99">
+	            <w:rPr>
+	              <w:rStyle w:val="Endnotenzeichen"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:endnoteReference w:id="2"/>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Den Titel der Thesenreihe gibt fol. 288</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40" w:rsidRPr="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>v</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> wider, es folgen die Thesen 1 bis 92 samt einleitenden Informationen zu Anlass, Präses und Zeitpunkt der Diputation auf fol. 285</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40" w:rsidRPr="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>r</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>-286</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40" w:rsidRPr="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>v</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>. Die restlichen Thesen hat dann fol. 289</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40" w:rsidRPr="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:vertAlign w:val="superscript"/>
+	            </w:rPr>
+	            <w:t>r-v</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E94B40">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00780E99">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> Handschrift b ist eine spätere Abschrift des 18. Jahrhunderts.</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00780E99">
+	            <w:rPr>
+	              <w:rStyle w:val="Endnotenzeichen"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:endnoteReference w:id="3"/>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="3F3E364E" w14:textId="67B0824A" w:rsidR="00FF4B50" w:rsidRPr="00E85B47" w:rsidRDefault="00FF4B50" w:rsidP="008646A0">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	            </w:rPr>
+	            <w:t>Editionen</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00E36890">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">: </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="008646A0">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>Goebel, Abendmahlslehre</w:t>
+	          </w:r>
+	          <w:r w:rsidR="008646A0" w:rsidRPr="008646A0">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">, </w:t>
+	          </w:r>
+	          <w:r w:rsidR="008646A0" w:rsidRPr="008646A0">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	              <w:highlight w:val="yellow"/>
+	            </w:rPr>
+	            <w:t>334</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="008646A0">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	              <w:highlight w:val="yellow"/>
+	            </w:rPr>
+	            <w:t>ff</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="008646A0">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00666485">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>–</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00666485">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>Jäger, Carlstadt, 221-227</w:t>
+	          </w:r>
+	          <w:r w:rsidR="004E579E">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00666485">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>–</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00666485">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>Barge, Karlstadt 1, 484-490</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="154CB3F0" w14:textId="238DDED3" w:rsidR="00A307B5" w:rsidRDefault="00FF4B50" w:rsidP="001C4279">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	            </w:rPr>
+	            <w:t>Literatur</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>:</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00666485">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00666485">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>Bar</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00583D41">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">ge, Karlstadt 1, 484-490 </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00666485" w:rsidRPr="00666485">
+	            <w:rPr>
+	              <w:rStyle w:val="KSbibliographischeAngabe"/>
+	            </w:rPr>
+	            <w:t>Nr. 18</w:t>
+	          </w:r>
+	          <w:r w:rsidR="00666485">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> </w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="12AE328D" w14:textId="14A9FC7A" w:rsidR="003A7BB3" w:rsidRDefault="001C4279" w:rsidP="00FF4B50">
+	          <w:pPr>
+	            <w:pStyle w:val="KSberschrift1"/>
+	            <w:rPr>
+	              <w:rStyle w:val="KSEE-Verweis"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r>
+	            <w:rPr>
+	              <w:rStyle w:val="KSEE-Verweis"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:lastRenderedPageBreak/>
+	            <w:t xml:space="preserve">2. </w:t>
+	          </w:r>
+	          <w:r w:rsidR="00FF4B50" w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rStyle w:val="KSEE-Verweis"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>Entstehung und Inhalt</w:t>
+	          </w:r>
+	        </w:p><w:p xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="0EA0E80E" w14:textId="77777777" w:rsidR="007B14F8" w:rsidRDefault="007B14F8" w:rsidP="007B14F8">
+	          <w:pPr>
+	            <w:pStyle w:val="KSText"/>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	          </w:pPr>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">Anlass und Datierung für die </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="001C4279">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	              <w:i/>
+	            </w:rPr>
+	            <w:t>138 Articuli</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> liefern die Titelei des Erst- und Separatdrucks A wie auch der Nachdruck in der Basler Thesensammlung [B:] wie auch die Abschrift Christoph Schappelers. Die Thesen wurden </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">am 17. Oktober 1521 </w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve">unter dem Vorsitz Karlstadts anläßlich der Doppelpromotionen von </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00565CEE">
+	            <w:rPr>
+	              <w:rStyle w:val="KSPerson"/>
+	            </w:rPr>
+	            <w:t>Gottschalk Crop</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rStyle w:val="Endnotenzeichen"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:endnoteReference w:id="4"/>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> und </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00780E99">
+	            <w:rPr>
+	              <w:rStyle w:val="KSPerson"/>
+	            </w:rPr>
+	            <w:t>Gottschalk Cruse</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>/Crause (hier Crusse)</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rStyle w:val="Endnotenzeichen"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:endnoteReference w:id="5"/>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t xml:space="preserve"> (1499-1540) zum Baccalaureus biblicus </w:t>
+	          </w:r>
+	          <w:r w:rsidRPr="00E85B47">
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>disputiert</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:t>.</w:t>
+	          </w:r>
+	          <w:r>
+	            <w:rPr>
+	              <w:rStyle w:val="Endnotenzeichen"/>
+	              <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+	            </w:rPr>
+	            <w:endnoteReference w:id="6"/>
+	          </w:r>
+	        </w:p>
+				</package:part>
+				<package:part package:name="comments.xml">
+					<w:comments xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 wp14">
+						<w:comment w:id="0" w:author="hbollbu" w:date="2020-04-02T23:10:00Z" w:initials="h">
+							<w:p w14:paraId="3ECB1FFC" w14:textId="62C697AC" w:rsidR="00E55D5F" w:rsidRDefault="00E55D5F">
+								<w:pPr>
+									<w:pStyle w:val="Kommentartext"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="Kommentarzeichen"/>
+									</w:rPr>
+									<w:annotationRef/>
+								</w:r>
+								<w:hyperlink r:id="rId1" w:history="1">
+									<w:r w:rsidRPr="008B12BF">
+										<w:rPr>
+											<w:rFonts w:ascii="Times New Roman" w:eastAsia="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+											<w:color w:val="0000FF"/>
+											<w:sz w:val="24"/>
+											<w:szCs w:val="24"/>
+											<w:u w:val="single"/>
+											<w:lang w:eastAsia="it-IT"/>
+										</w:rPr>
+										<w:t>http://diglib.hab.de/drucke/g-69-4f-helmst-10s/start.htm</w:t>
+									</w:r>
+								</w:hyperlink>
+							</w:p>
+						</w:comment>
+					</w:comments>
+				</package:part>
+				<package:part package:name="word/endnotes.xml">
+					<w:endnotes xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 wp14">
+						<w:endnote w:type="separator" w:id="-1">
+							<w:p w14:paraId="03F9F4F4" w14:textId="77777777" w:rsidR="00CB2F29" w:rsidRDefault="00CB2F29" w:rsidP="004E6EF6">
+								<w:pPr>
+									<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+								</w:pPr>
+								<w:r>
+									<w:separator/>
+								</w:r>
+							</w:p>
+						</w:endnote>
+						<w:endnote w:type="continuationSeparator" w:id="0">
+							<w:p w14:paraId="7FF23E63" w14:textId="77777777" w:rsidR="00CB2F29" w:rsidRDefault="00CB2F29" w:rsidP="004E6EF6">
+								<w:pPr>
+									<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+								</w:pPr>
+								<w:r>
+									<w:continuationSeparator/>
+								</w:r>
+							</w:p>
+						</w:endnote>
+						<w:endnote w:id="1">
+							<w:p w14:paraId="0DF6A566" w14:textId="36DF211D" w:rsidR="00F62DE0" w:rsidRDefault="00F62DE0">
+								<w:pPr>
+									<w:pStyle w:val="Endnotentext"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="Endnotenzeichen"/>
+									</w:rPr>
+									<w:endnoteRef/>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> In Druck A fol. A1</w:t>
+								</w:r>
+								<w:r w:rsidRPr="00F62DE0">
+									<w:rPr>
+										<w:vertAlign w:val="superscript"/>
+									</w:rPr>
+									<w:t>r</w:t>
+								</w:r>
+								<w:r>
+									<w:t>, in Druck B – mit „queas“ statt „queam“ – fol. A5</w:t>
+								</w:r>
+								<w:r w:rsidRPr="00F62DE0">
+									<w:rPr>
+										<w:vertAlign w:val="superscript"/>
+									</w:rPr>
+									<w:t>r</w:t>
+								</w:r>
+								<w:r>
+									<w:t>.</w:t>
+								</w:r>
+							</w:p>
+						</w:endnote>
+						<w:endnote w:id="2">
+							<w:p w14:paraId="5AE0C0F9" w14:textId="58B89088" w:rsidR="00780E99" w:rsidRDefault="00780E99">
+								<w:pPr>
+									<w:pStyle w:val="Endnotentext"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="Endnotenzeichen"/>
+									</w:rPr>
+									<w:endnoteRef/>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> Zu dieser Handschrift vgl. </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:rPr>
+										<w:highlight w:val="yellow"/>
+									</w:rPr>
+									<w:t>EE#</w:t>
+								</w:r>
+								<w:r>
+									<w:t>.</w:t>
+								</w:r>
+							</w:p>
+						</w:endnote>
+						<w:endnote w:id="3">
+							<w:p w14:paraId="28BF81B2" w14:textId="1BD78EF0" w:rsidR="00780E99" w:rsidRDefault="00780E99" w:rsidP="00AE48B0">
+								<w:pPr>
+									<w:pStyle w:val="Endnotentext"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="Endnotenzeichen"/>
+									</w:rPr>
+									<w:endnoteRef/>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> </w:t>
+								</w:r>
+								<w:r w:rsidR="00AE48B0">
+									<w:t xml:space="preserve">Vgl. Uhlhorn, Urbanus Rhegius, 358  Nr. 3 </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:t>Wrede, Einführung, 37 Anm. 2.</w:t>
+								</w:r>
+							</w:p>
+						</w:endnote>
+						<w:endnote w:id="4">
+							<w:p w14:paraId="6021F09F" w14:textId="77777777" w:rsidR="007B14F8" w:rsidRDefault="007B14F8" w:rsidP="007B14F8">
+								<w:pPr>
+									<w:pStyle w:val="Endnotentext"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="Endnotenzeichen"/>
+									</w:rPr>
+									<w:endnoteRef/>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:rPr>
+										<w:rStyle w:val="KSPerson"/>
+									</w:rPr>
+									<w:t>Gottschalk Crop</w:t>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> war ein Augustiner aus </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:rPr>
+										<w:rStyle w:val="KSbibliographischeAngabe"/>
+									</w:rPr>
+									<w:t>Herford</w:t>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve">, vgl. </w:t>
+								</w:r>
+							</w:p>
+						</w:endnote>
+						<w:endnote w:id="5">
+							<w:p w14:paraId="1118E7F2" w14:textId="77777777" w:rsidR="007B14F8" w:rsidRDefault="007B14F8" w:rsidP="007B14F8">
+								<w:pPr>
+									<w:pStyle w:val="Endnotentext"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="Endnotenzeichen"/>
+									</w:rPr>
+									<w:endnoteRef/>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:rPr>
+										<w:rStyle w:val="KSPerson"/>
+									</w:rPr>
+									<w:t>Gottschalk Cruse</w:t>
+								</w:r>
+								<w:r>
+									<w:rPr>
+										<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									</w:rPr>
+									<w:t xml:space="preserve">/Crause, stammte aus </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:rPr>
+										<w:rStyle w:val="KSOrt"/>
+									</w:rPr>
+									<w:t>Braunschweig</w:t>
+								</w:r>
+								<w:r>
+									<w:rPr>
+										<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									</w:rPr>
+									<w:t xml:space="preserve"> und war Mönch im dortigen Benediktinerkloster St. Ägidien, das er 1523 verließ. Erhielt durch Vermittlung </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:rPr>
+										<w:rStyle w:val="KSPerson"/>
+									</w:rPr>
+									<w:t>Luthers</w:t>
+								</w:r>
+								<w:r>
+									<w:rPr>
+										<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									</w:rPr>
+									<w:t xml:space="preserve"> eine Stelle in </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:rPr>
+										<w:rStyle w:val="KSOrt"/>
+									</w:rPr>
+									<w:t>Celle</w:t>
+								</w:r>
+								<w:r>
+									<w:rPr>
+										<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									</w:rPr>
+									<w:t xml:space="preserve">, vermutlich als Kaplan am Hof von </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00322889">
+									<w:rPr>
+										<w:rStyle w:val="KSPerson"/>
+									</w:rPr>
+									<w:t>Hzg. Ernst von Lüneburg</w:t>
+								</w:r>
+								<w:r>
+									<w:rPr>
+										<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									</w:rPr>
+									<w:t xml:space="preserve">. Vgl. </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00780E99">
+									<w:rPr>
+										<w:rStyle w:val="KSbibliographischeAngabe"/>
+									</w:rPr>
+									<w:t>Wrede, Einführung, 36-39</w:t>
+								</w:r>
+								<w:r>
+									<w:rPr>
+										<w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+									</w:rPr>
+									<w:t xml:space="preserve">; </w:t>
+								</w:r>
+								<w:r w:rsidRPr="00322889">
+									<w:rPr>
+										<w:rStyle w:val="KSbibliographischeAngabe"/>
+									</w:rPr>
+									<w:t>NDB 13, 149f.</w:t>
+								</w:r>
+							</w:p>
+						</w:endnote>
+						<w:endnote w:id="6">
+							<w:p w14:paraId="0386DCC6" w14:textId="2CEE848D" w:rsidR="007B14F8" w:rsidRDefault="007B14F8" w:rsidP="007B14F8">
+								<w:pPr>
+									<w:pStyle w:val="Endnotentext"/>
+								</w:pPr>
+								<w:r>
+									<w:rPr>
+										<w:rStyle w:val="Endnotenzeichen"/>
+									</w:rPr>
+									<w:endnoteRef/>
+								</w:r>
+								<w:r>
+									<w:t xml:space="preserve"> Vgl. </w:t>
+								</w:r>
+								<w:r w:rsidR="002D0944">
+									<w:rPr>
+										<w:rStyle w:val="KSbibliographischeAngabe"/>
+									</w:rPr>
+									<w:t>Liber D</w:t>
+								</w:r>
+								<w:r w:rsidRPr="00522873">
+									<w:rPr>
+										<w:rStyle w:val="KSbibliographischeAngabe"/>
+									</w:rPr>
+									<w:t>ecanorum, 26</w:t>
+								</w:r>
+								<w:r>
+									<w:t>.</w:t>
+								</w:r>
+							</w:p>
+						</w:endnote>
+					</w:endnotes>
+				</package:part>
+			</x:context>
+			<x:expect label="." xml:space="preserve">
+			<div type="history_of_the_work">
+				<listBibl type="sigla">
+					<biblStruct type="imprint" xml:id="A"><monogr
+						><author
+							>Karlstadt, Andreas Bodenstein von,</author><title
+							>ARTICVLI SVPER CELEBRATIONE ǁ Miarum, Sacramenti Panis &amp; Vini, &amp; diſcrimine ǁ præcepti &amp; promiionis,&amp; alijs. ǁ Andreæ Bo. Carolo. ǁ Sic Themata ſeu articulos aliquot digei,vt eis uelut libello queas ǁ uti. Nempe, Lector bone , ſequentia præcedentium rationem red-ǁdunt,Feſtinãter &amp; curſim,hocipſum,quod eſt editum,boni conſule, ǁ Rem per ſcripturam tanquam aurificis ſtateram exige quæſo. ǁ Alioqui ſacras literas appellabo. Vale fœliciter. ǁ </title><imprint
+							><pubPlace cert="unknown"
+								><rs type="place">Wittenberg</rs></pubPlace><publisher cert="unknown"
+								><rs type="person">Nickel Schirlentz</rs></publisher><date
+								when="1521">1521</date></imprint><extent
+							>4°, 5 Bl., A<hi rend="super">1-5</hi>.</extent></monogr><idno
+						type="siglum">A</idno><note type="copies"><list><item n="editionsvorlage"><label>HAB Wolfenbüttel</label><idno type="signatur">H: G 69.4° Helmst. (10</idno><ptr xmlns:hab="http://diglib.hab.de" type="digitalisat" target="http://diglib.hab.de/drucke/g-69-4f-helmst-10s/start.htm"/></item><item><label>UB Basel</label><idno type="signatur">FP IX 4.13.</idno></item><item><label>UB Heidelberg</label><idno type="signatur">Salem 82,27 RES.</idno></item></list></note><note type="references"><listBibl><bibl>Freys/Barge, Verzeichnis, Nr. 67</bibl><bibl>Köhler, Bibliographie, Nr. 1852</bibl><bibl>Zorzin, Flugschriftenautor, Nr. 38A</bibl><bibl>VD 16 B 6110</bibl></listBibl></note></biblStruct>
+					<biblStruct type="imprint" xml:id="B"><analytic
+						><author
+							>Karlstadt, Andreas Bodenstein von</author><title
+							>ARTICV-‖LI SVPER CELEBRATIONE ‖ MISSARVM, SACRA=‖menti Panis &amp; Vini, ‖ &amp; diſcrımine ‖ præcepti &amp; promißionis, &amp; alĳs, ‖ Andræ Bo. Carolo. ‖</title>
+						</analytic><monogr
+						><author
+							>Luther, Martin; Melanchthon, Philipp; Karlstadt, Andreas Bodenstein von </author><title
+							>LVTHERI, ǁ MELANCH. CAROLOSTADII &amp;c. ǁ PROPOSITIONES, VVITTEM= ǁ BERGAE uiua uoce traatae,in hocq́; pleǁræq; æditæ ab auoribus,ut uel nos abſentes ǁ cum ipſis agamus,uel certe ut ueri= ǁ tatis,&amp; ſeduionum ad ǁ moneãtur boni. ǁ Sunt autem id genus, ǁ De ǁ Mia &amp; celebratione eius. ǁ Sacramento panis &amp; uini. ǁ Promißione et præcepto. ǁ Fıde &amp; operibus. ǁ Cantu Gergoriano. ǁ Coniuratione irituum. ǁ Cœlıbatu preſbyterorum. ǁ Decımis ac uotis. &amp;c. ǁ BASILEAE. M. D. XXII. ǁ [Am Ende] BASILEAE ANNO ‖ M. D. XXII.</title><imprint
+							><pubPlace><rs type="place">Basel</rs></pubPlace><publisher cert="unknown"><rs type="person">Adam Petri</rs></publisher><date when="1522">1522</date></imprint><extent
+							>8°, [56] Bl., A<hi rend="super">8</hi>–G<hi rend="super">8</hi>, fol. A1<hi rend="super">v</hi> und G8<hi rend="super">v</hi> leer.</extent><biblScope
+							>BI. A5<hi rend="super">r</hi>-B4<hi rend="super">v</hi>.</biblScope></monogr><idno type="siglum">B</idno><note type="copies"><list><item n="editionsvorlage"><label>BSB München</label><idno type="signatur">Polem. 3020, 13.</idno></item><item><label>ÖNB Wien</label><idno type="signatur">77.Cc.281.</idno></item><item><label>RFB-Luthergedenkstätten Wittenberg</label><idno type="signatur">Ag 8 548d.</idno></item><item><label>RFB-Luthergedenkstätten Wittenberg</label><idno type="signatur">SS 1516.</idno></item><item><label>RFB-Luthergedenkstätten Wittenberg</label><idno type="signatur">SS 2272.</idno></item><item><label>RFB-Evangelisches Predigerseminar Wittenberg</label><idno type="signatur">LC590/1 </idno></item><item><label>RFB-Evangelisches Predigerseminar Wittenberg</label><idno type="signatur">NH C13/3.</idno></item></list></note><note type="references"><listBibl><bibl>VD 16 L 7642</bibl></listBibl>
+				<p>Druck B ist ein Nachdruck des Erst- und Separatdrucks A inklusive Abdruck des gesamten Titels. Aus
+	              diesem ergibt insbesondere folgende Passage für den Separatdruck durchaus, für den Nachdruck jedoch keinen
+	              Sinn: „Sic Themata. seu articulos aliquot digessi, ut eis velut libello queam uti.“<note type="footnote" xml:id="n1">In Druck A fol. A1<hi rend="super">r</hi>, in Druck B – mit „queas“ statt „queam“ – fol. A5<hi rend="super">r</hi>.</note></p></note></biblStruct></listBibl>
+				<listBibl type="sigla">
+				<msDesc xml:id="a"><msIdentifier><altIdentifier type="siglum"><idno>a</idno></altIdentifier><repository>KantonsB Vadiana St. Gallen</repository><idno type="signatur">Ms. 266, fol. 285<hi rend="super">r</hi>-286<hi rend="super">v</hi>; fol. 288<hi rend="super">v</hi>-289<hi rend="super">v</hi>.</idno></msIdentifier><msContents><msItem><locus/></msItem></msContents><physDesc/></msDesc>
+				<msDesc xml:id="b"><msIdentifier><altIdentifier type="siglum"><idno>b</idno></altIdentifier><repository>Ministerialbibliothek Celle</repository><idno type="signatur">Ms.</idno></msIdentifier><msContents><msItem><locus/></msItem></msContents><physDesc>
+				<p>Handschrift a ist eine Abschrift von Druck A oder einer mit A nahezu identischen Vorlage. Die Ordnung der Blätter ist gestört.<note type="footnote" xml:id="n2">Zu dieser Handschrift vgl. EE#.</note> Den Titel der Thesenreihe gibt fol. 288<hi rend="super">v</hi> wider, es folgen die Thesen 1 bis 92 samt einleitenden Informationen zu Anlass, Präses und Zeitpunkt der Diputation auf fol. 285<hi rend="super">r</hi>-286<hi rend="super">v</hi>. Die restlichen Thesen hat dann fol. 289<hi rend="super">r-v</hi>. Handschrift b ist eine spätere Abschrift des 18. Jahrhunderts.<note type="footnote" xml:id="n3">Vgl. Uhlhorn, Urbanus Rhegius, 358  Nr. 3 Wrede, Einführung, 37 Anm. 2.</note></p></physDesc></msDesc></listBibl><listBibl
+					type="editions"><bibl>Goebel, Abendmahlslehre, 334ff.</bibl><bibl>Jäger, Carlstadt, 221-227</bibl><bibl>Barge, Karlstadt 1, 484-490</bibl></listBibl><listBibl
+					type="literatur"><bibl>Barge, Karlstadt 1, 484-490 Nr. 18</bibl></listBibl>
+			</div>
+			<div type="contents">
+				<p>Anlass und Datierung für die <hi style="font-style: italic;">138 Articuli</hi> liefern die Titelei des Erst- und Separatdrucks A wie auch der Nachdruck in der Basler Thesensammlung [B:] wie auch die Abschrift Christoph Schappelers. Die Thesen wurden am 17. Oktober 1521 unter dem Vorsitz Karlstadts anläßlich der Doppelpromotionen von <rs type="person">Gottschalk Crop</rs><note
+					type="footnote" xml:id="n4"><rs type="person">Gottschalk Crop</rs> war ein Augustiner aus <bibl>Herford</bibl>, vgl. </note> und <rs type="person">Gottschalk Cruse</rs>/Crause (hier Crusse)<note
+					type="footnote" xml:id="n5"><rs type="person">Gottschalk Cruse</rs>/Crause, stammte aus <rs type="place">Braunschweig</rs> und war Mönch im dortigen Benediktinerkloster St. Ägidien, das er 1523 verließ. Erhielt durch Vermittlung <rs type="person">Luthers</rs> eine Stelle in <rs type="place">Celle</rs>, vermutlich als Kaplan am Hof von <rs type="person">Hzg. Ernst von Lüneburg</rs>. Vgl. <bibl>Wrede, Einführung, 36-39</bibl>; <bibl>NDB 13, 149f.</bibl></note> (1499-1540) zum Baccalaureus biblicus disputiert.<note
+					type="footnote" xml:id="n6">Vgl. <bibl>Liber Decanorum, 26</bibl>.</note></p></div></x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="T4: ms">
 		<x:scenario label="T4.1: EE 100">
@@ -10528,9 +12785,9 @@
 							</w:rPr>
 						</w:pPr>
 						<w:r w:rsidRPr="00FA4C5D">
-							<w:rPr>
+							<!--<w:rPr>
 								<w:rStyle w:val="KSEE-Verweis"/>
-							</w:rPr>
+							</w:rPr>-->
 							<w:t>Karlstadt schreibt (EE 95 [= Nr. 118], er habe einen Brief Spalatins beantwortet, den
 						dieser –als Karlstadt abwesend war– hier [= Wittenberg] „bei den Brüdern“ hinterlassen
 						hatte. Auf seinen Antwortbrief darauf hatte Karlstadt bisher von Spalatin keine
@@ -10546,9 +12803,9 @@
 							</w:rPr>
 						</w:pPr>
 						<w:r w:rsidRPr="00FA4C5D">
-							<w:rPr>
+							<!--<w:rPr>
 								<w:rStyle w:val="KSEE-Verweis"/>
-							</w:rPr>
+							</w:rPr>-->
 							<w:t>Folglich fallen zwischen den 28. April (EE 93 [= Nr. 114]) und dem 6. Mai 1519: (1.)
 						der (verschollene) Brief von Spalatin an Karlstadt (EE 93A) und (2.) vor dem 6. Mai eine
 						(verschollene) Antwort darauf von Karlstadts (EE 93B).</w:t>
@@ -16208,7 +18465,8 @@
 					>Karlstadt</rs> in jener Zeit gezielt mit dem Kanon beschäftigte. Dies entsprach seinem in demselben Brief ausgedrückten Wunsch, <rs
 				type="person">Eck</rs> Anlass zur Beschäftigung mit der Heiligen Schrift zu geben<anchor type="bookmarkEnd" xml:id="s003" />.</p></x:expect>
 		</x:scenario>
-		<x:scenario label="T8.2">
+		<!-- neue Umsetzung: hier müssen die rels hinterlegt werden, damit das richtige Ergebnis kommt -->
+		<x:scenario label="T8.2" pending="true">
 			<x:context>
 				<w:endnote w:id="37">
 					<w:p w14:paraId="69788C97" w14:textId="791540FC" w:rsidR="00905A8F" w:rsidRPr="00080B26" w:rsidRDefault="00905A8F" w:rsidP="00A40AC2">

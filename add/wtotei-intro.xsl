@@ -182,12 +182,22 @@
 							and not(preceding-sibling::w:r[1][wt:is(., 'KSbibliographischeAngabe', 'r')])]" 
 							mode="bibl"/>
 					</listBibl>
-					<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
+					<xsl:choose>
+						<xsl:when test="following-sibling::w:p[hab:isSigle(.)]">
+							<xsl:apply-templates select="$end/following-sibling::w:p[not(hab:isHead(., '2'))]
+								intersect following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:apply-templates select="$end/following-sibling::w:p[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur'))]
+								intersect following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p" />
+						</xsl:otherwise>
+					</xsl:choose>
+					<!--<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
 						$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)
 						[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur') or wt:starts(., 'Handschriften') or hab:isHead(., '1')
 						or hab:isSigle(.))
-						and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>
-					
+						and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>-->
+
 					<!-- auch dann ausgeben, wenn die Anmerkung hinter dem letzten Exemplar steht -->
 					<!--<xsl:choose>
 						<xsl:when test="$struct[last()]/following-sibling::w:p[hab:isSigle(.)]">
@@ -532,9 +542,19 @@
 					</xsl:variable>
 					<p><ptr type="digitalisat" target="{$link}"/></p>
 				</xsl:if>
-				<xsl:apply-templates select="following-sibling::w:p[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur'))
+				<!--<xsl:apply-templates select="following-sibling::w:p[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur'))
 					and following-sibling::w:p[hab:isHead(., 1)] and not(preceding-sibling::w:p[wt:starts(., 'Literatur')])
-					and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>
+					and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>-->
+				<xsl:choose>
+					<xsl:when test="following-sibling::w:p[hab:isSigle(.)]">
+						<xsl:apply-templates select="following-sibling::w:p[not(hab:isHead(., '2'))]
+							intersect following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p" />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:apply-templates select="following-sibling::w:p[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur'))]
+							intersect following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p" />
+					</xsl:otherwise>
+				</xsl:choose>
 			</physDesc>
 		</msDesc>
 	</xsl:template>
