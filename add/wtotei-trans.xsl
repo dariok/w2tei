@@ -62,17 +62,17 @@
 						<xsl:when test="descendant::w:jc[@w:val='center']">
 							<xsl:text>#cc</xsl:text>
 						</xsl:when>
-						<xsl:when test="not(descendant::w:ind)">
+						<xsl:when test="not(descendant::w:ind or descendant::w:jc)">
 							<xsl:text>#l</xsl:text>
 						</xsl:when>
 						<xsl:when test="descendant::w:ind/@w:left &lt; 2000">
 							<xsl:text>#l</xsl:text>
 						</xsl:when>
 						<xsl:when test="descendant::w:ind/@w:left &lt; 4900">
-							<xsl:text>#c</xsl:text>
+							<xsl:text>#cc</xsl:text>
 						</xsl:when>
-						<xsl:when test="descendant::w:ind/@w:left &lt; 6400">
-							<xsl:text>#r</xsl:text>
+						<xsl:when test="descendant::w:ind/@w:left &lt; 6400 or descendant::w:jc[@w:val = 'right']">
+							<xsl:text>#rr</xsl:text>
 						</xsl:when>
 						<xsl:otherwise>#rc</xsl:otherwise>
 					</xsl:choose>

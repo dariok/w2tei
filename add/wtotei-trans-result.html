@@ -147,9 +147,9 @@ dd pre, li pre {
 	}
 
 /* fonts */
-body {
+body, table {
 	font-family: sans-serif;
-	font-size: small;
+	font-size: 12px;
 	}
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,12 +157,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 h1 {
-	font-size: 173%;
+	font-size: 1.7em;
 	font-weight: bold;
 	}
 
 h2 {
-	font-size: 144%;
+	font-size: 1.4em;
 	font-weight: bold;
 	}
 
@@ -201,12 +201,12 @@ div.example, .sidebar {
 
 .note, .link {
 	font-family: sans-serif;
-	font-size: 83%;
+	/*font-size: 83%;*/
 	}
 
 .example, .string, .rtf, .code, pre, code {
 	font-family: monospace;
-  font-size: 83%;
+  /*font-size: 83%;*/
 	}
 
 .boolean {
@@ -388,6 +388,7 @@ a {
 
 body > h2:first-of-type {
     background: inherit;
+    font-size: 1.7em;
     margin-bottom: 0;
 }
 
@@ -403,8 +404,8 @@ div > table > tbody > tr > th:first-child {
     color: #474747;
 }
 
-.xspec tbody th { font-weight: normal; font-size: 0.8em; border-top: 1px #666 solid; }
-.xspec tbody td { font-size: 0.8em; color: #262626; }
+.xspec tbody th { font-weight: normal; /*font-size: 0.8em;*/ border-top: 1px #666 solid; }
+.xspec tbody td { /*font-size: 0.8em;*/ color: #262626; }
 
 .successful { background-color: #CFC; }
 .pending { background-color: #EEE; color: #666; }
@@ -458,6 +459,25 @@ span.scenario-totals {float: right; text-align: right}
 	box-shadow: -0.5rem 0 0 0 #FC511D;
 }
 
+/* hint button */
+.xTestReport {
+	display: grid;
+	grid-template-areas:
+		"title title"
+		"table hint";
+	grid-template-columns: 1fr 1em;
+}
+.xTestReportTitle {
+	grid-area: title
+}
+.xTestReportHint {
+	grid-area: hint;
+	text-shadow: 1px 2px 3px gray;
+}
+.xspecResult {
+	grid-area: table;
+}
+
 /* ------------------------------------------------------------------------ */
 /*  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS COMMENT.               */
 /*                                                                          */
@@ -491,7 +511,7 @@ span.scenario-totals {float: right; text-align: right}
       <h1>Test Report</h1>
       <p>Stylesheet: <a href="file:/home/dario/git/w2tei/add/wtotei-trans.xsl">/home/dario/git/w2tei/add/wtotei-trans.xsl</a></p>
       <p>XSpec: <a href="file:/home/dario/git/w2tei/add/wtotei-trans.xspec">/home/dario/git/w2tei/add/wtotei-trans.xspec</a></p>
-      <p>Tested: 3 March 2020 at 15:55</p>
+      <p>Tested: 12 July 2020 at 01:54</p>
       <h2>Contents</h2>
       <table class="xspec">
          <colgroup>
@@ -512,28 +532,28 @@ span.scenario-totals {float: right; text-align: right}
          </thead>
          <tbody>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e4">T1: normaler Absatz</a></th>
+               <th><a href="#top_scenario1">T1: normaler Absatz</a></th>
                <th class="totals">2</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">2</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e733">T2: Sonderkodierungen</a></th>
+               <th><a href="#top_scenario2">T2: Sonderkodierungen</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e1910">Ort und Datum formatieren</a></th>
+               <th><a href="#top_scenario3">Ort und Datum formatieren</a></th>
                <th class="totals">7</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">7</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e2340">T4: Zentrierung Titelseite</a></th>
+               <th><a href="#top_scenario4">T4: Zentrierung Titelseite</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
@@ -541,9 +561,9 @@ span.scenario-totals {float: right; text-align: right}
             </tr>
          </tbody>
       </table>
-      <div id="top-level-scenario-d5e4">
+      <div id="top_scenario1">
          <h2 class="successful">T1: normaler Absatz<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
-         <table class="xspec" id="t-d5e4">
+         <table class="xspec" id="table_scenario1">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -572,9 +592,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e733">
+      <div id="top_scenario2">
          <h2 class="successful">T2: Sonderkodierungen<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d5e733">
+         <table class="xspec" id="table_scenario2">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -595,9 +615,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e1910">
+      <div id="top_scenario3">
          <h2 class="successful">Ort und Datum formatieren<span class="scenario-totals">passed: 7 / pending: 0 / failed: 0 / total: 7</span></h2>
-         <table class="xspec" id="t-d5e1910">
+         <table class="xspec" id="table_scenario3">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -666,9 +686,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e2340">
+      <div id="top_scenario4">
          <h2 class="successful">T4: Zentrierung Titelseite<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d5e2340">
+         <table class="xspec" id="table_scenario4">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
