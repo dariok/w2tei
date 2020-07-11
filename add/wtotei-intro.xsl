@@ -141,7 +141,7 @@
 					</xsl:call-template>
 				</xsl:if>
 			</xsl:element>
-			<xsl:if test="$struct//w:t[starts-with(., 'Editions')]">
+			<xsl:if test="$struct[wt:starts(., 'Editions')]">
 				<xsl:variable name="pos"
 					select="index-of($struct, ($struct//w:t[starts-with(., 'Editions')]/ancestor::w:p)[1])" />
 				<xsl:if test="$struct[3]//w:t[starts-with(normalize-space(), 'in')]">
@@ -169,15 +169,6 @@
 				</note>
 				<note type="references">
 					<listBibl>
-						<!--<xsl:variable name="weitere">
-							<xsl:apply-templates select="$struct[wt:starts(., 'Bibliographische')]//w:r" />
-						</xsl:variable>-->
-						<!--<xsl:for-each select="tokenize(substring-after($weitere, ':'), '–|—')">
-							<bibl>
-								<!-\- TODO ID aus bibliography übernehmen -\->
-								<xsl:value-of select="normalize-space(current())"/>
-							</bibl>
-						</xsl:for-each>-->
 						<xsl:apply-templates select="$struct[wt:starts(., 'Bibliographische')]//w:r[wt:is(., 'KSbibliographischeAngabe', 'r')
 							and not(preceding-sibling::w:r[1][wt:is(., 'KSbibliographischeAngabe', 'r')])]" 
 							mode="bibl"/>
@@ -192,30 +183,6 @@
 								intersect following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p" />
 						</xsl:otherwise>
 					</xsl:choose>
-					<!--<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
-						$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)
-						[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur') or wt:starts(., 'Handschriften') or hab:isHead(., '1')
-						or hab:isSigle(.))
-						and generate-id(preceding-sibling::w:p[hab:isSigle(.)][1]) = $myId]"/>-->
-
-					<!-- auch dann ausgeben, wenn die Anmerkung hinter dem letzten Exemplar steht -->
-					<!--<xsl:choose>
-						<xsl:when test="$struct[last()]/following-sibling::w:p[hab:isSigle(.)]">
-							<xsl:apply-templates select="$struct[last()]/following-sibling::w:p
-								intersect $struct[last()]/following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p"/>
-						</xsl:when>
-						<xsl:when test="$struct[last()]/following-sibling::w:p[not(hab:isHead(., '1'))
-							and count(preceding-sibling::w:p[hab:isHead(., '1')]) = 1]">
-							<xsl:apply-templates select="$struct[last()]/following-sibling::w:p[not(hab:isHead(., '1'))
-								and count(preceding-sibling::w:p[hab:isHead(., '1')]) = 1]" />
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:apply-templates select="($struct[last()]/following-sibling::w:p intersect 
-								$struct[last()]/following-sibling::w:p[hab:isHead(., '1')]/preceding-sibling::w:p)[not(
-								wt:starts(., 'Edition') or wt:starts(., 'Literatur')
-								or wt:is(., 'KSText', 'p'))]"/>
-						</xsl:otherwise>
-					</xsl:choose>-->
 				</note>
 			</xsl:if>
 		</biblStruct>
