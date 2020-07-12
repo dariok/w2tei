@@ -195,8 +195,8 @@
 	</xd:doc>
 	<xsl:function name="wt:starts" as="xs:boolean">
 		<xsl:param name="context" as="item()"/>
-		<xsl:param name="wt-test" as="xs:string"/>
-		<xsl:sequence select="starts-with(wt:string($context), $wt-test)"/>
+		<xsl:param name="test" as="xs:string"/>
+		<xsl:sequence select="starts-with(wt:string($context), $test)"/>
 	</xsl:function>
 	
 	<xd:doc>
