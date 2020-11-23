@@ -62,6 +62,19 @@
       <xsl:apply-templates select="*"/>
     </note>
   </xsl:template>
+  <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc)]">
+    <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
+    <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
+    <!-- TODO this should be expanded later -->
+    <xsl:variable name="label" select="//w:abstractNum[@w:abstractNumId eq $numId]/w:lvl[@w:ilvl eq $level]/w:lvlText/@w:val"/>
+    
+    <label>
+      <xsl:value-of select="$label" />
+    </label>
+    <item level="{$level}">
+      <xsl:apply-templates select="w:r" />
+    </item>
+  </xsl:template>
   
   <xsl:template match="w:pPr">
     <xsl:apply-templates select="w:pStyle" />
