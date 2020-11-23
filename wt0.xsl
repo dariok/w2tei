@@ -129,14 +129,25 @@
   <xsl:template match="w:r[w:instrText]" />
   
   <xsl:template match="w:hyperlink">
+    <xsl:variable name="content">
+      <xsl:apply-templates select="w:r" />
+    </xsl:variable>
+    <xsl:variable name="id" select="@r:id"/>
+    
     <ref>
       <xsl:attribute name="target">
-        <xsl:variable name="id" select="@r:id"/>
-        <xsl:value-of select="//*:Relationship[@Id = $id]/@Target"/>
+        <xsl:variable name="rel" select="//*:Relationship[@Id = $id and @TargetMode eq 'External']/@Target"/>
+        
+        <xsl:choose>
+          <xsl:when test="$rel">
+            <xsl:value-of select="$rel"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$content"/>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:attribute>
-      <xsl:variable name="content">
-        <xsl:apply-templates select="w:r" />
-      </xsl:variable>
+      
       <xsl:sequence select="$content/tei:ab/@style" />
       <xsl:sequence select="$content/tei:ab/node()" />
     </ref>
@@ -146,8 +157,8 @@
     <xsl:variable name="id" select="w:footnoteReference/@w:id"/>
     <xsl:variable name="note" select="//w:footnote[@w:id = $id]"/>
     <note type="footnote" xml:id="n{$id}">
-      <xsl:apply-templates select="$note//w:pStyle" />
-      <xsl:apply-templates select="$note//w:r | $note//w:hyperlink" />
+      <xsl:apply-templates select="$note/w:p/w:pStyle" />
+      <xsl:apply-templates select="$note/w:p/w:r | $note/w:p/w:hyperlink" />
     </note>
   </xsl:template>
   <xsl:template match="w:r[w:footnoteRef]" />
