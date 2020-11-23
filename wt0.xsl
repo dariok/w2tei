@@ -62,14 +62,10 @@
       <xsl:apply-templates select="*"/>
     </note>
   </xsl:template>
+  
   <xsl:template match="w:pPr">
-    <xsl:attribute name="style">
-      <xsl:value-of select="w:pStyle/@w:val"/>
-      <xsl:if test="w:pStyle and w:rPr">
-        <xsl:text>; </xsl:text>
-      </xsl:if>
-      <xsl:apply-templates select="w:rPr/*" />
-    </xsl:attribute>
+    <xsl:apply-templates select="w:pStyle" />
+    <xsl:apply-templates select="w:rPr" />;
   </xsl:template>
   
   <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
@@ -81,7 +77,12 @@
       <xsl:apply-templates select="w:t | w:sym | w:tab" />
     </ab>
   </xsl:template>
-  <xsl:template match="w:rPr">
+  
+  <xsl:template match="w:pStyle">
+    <xsl:attribute name="rendition" select="@w:val" />
+  </xsl:template>
+  
+  <xsl:template match="w:rPr[*]">
     <xsl:attribute name="style">
       <xsl:apply-templates select="*" />
     </xsl:attribute>

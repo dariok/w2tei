@@ -2,6 +2,9 @@
 
 A web service and collection of basic scripts to convert Word (XML or DOCX) to TEI.
 
+**Incompatible change: As of 2020-11-23, paragraph style names (`w:pStyle/@w:val`) are recorded in `tei:p/@rendition`,
+the definitions in `w:rPr` are kept in `tei:p/@style`.** 
+
 ## How to use (docx to Flat XML)
 
 ### Oxygen
