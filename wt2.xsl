@@ -46,6 +46,11 @@
             <xsl:value-of select="'font-size: ' || number($val) div 2 || 'pt'" />
           </xsl:when>
           
+          <xsl:when test="$key eq 'vertAlign'">
+            <xsl:variable name="align" select="if ($val eq 'superscript') then 'super' else 'sub'" as="xs:string"/>
+            <xsl:value-of select="'vertical-align: ' || $align" />
+          </xsl:when>
+          
           <xsl:otherwise>
             <xsl:value-of select="."/>
           </xsl:otherwise>
