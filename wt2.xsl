@@ -33,6 +33,7 @@
           <xsl:when test="$key eq 'u' and $val ne '0'">text-decoration: underline</xsl:when>
           
           <xsl:when test="$key eq 'rtl' and $val eq '1'">direction: rtl</xsl:when>
+          <xsl:when test="$key eq 'rtl'" />
           
           <xsl:when test="$key eq 'rFonts'">
             <xsl:value-of select="'font-family: ' || $val" />
@@ -45,6 +46,9 @@
           <xsl:when test="$key eq 'sz'">
             <xsl:value-of select="'font-size: ' || number($val) div 2 || 'pt'" />
           </xsl:when>
+          <!-- script- size for complex fonts – evaluation postponed until we have a use case and an expert for
+              complex scripts and CSS -->
+          <xsl:when test="$key eq 'szCs'" />
           
           <xsl:when test="$key eq 'vertAlign'">
             <xsl:variable name="align" select="if ($val eq 'superscript') then 'super' else 'sub'" as="xs:string"/>
