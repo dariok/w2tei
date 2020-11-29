@@ -87,7 +87,7 @@
     <ab>
       <xsl:sequence select="w:t/@xml:space" />
       <xsl:apply-templates select="w:rPr" />
-      <xsl:apply-templates select="w:t | w:sym | w:tab" />
+      <xsl:apply-templates select="w:t | w:sym | w:tab | w:br" />
     </ab>
   </xsl:template>
   
@@ -245,6 +245,10 @@
   <xsl:template match="w:bookmarkEnd">
     <xsl:variable name="target" select="@w:id" />
     <anchor type="bookmarkEnd" ref="#{preceding-sibling::w:bookmarkStart[@w:id = $target]/@w:name}" />
+  </xsl:template>
+  
+  <xsl:template match="w:br">
+    <lb />
   </xsl:template>
   
   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
