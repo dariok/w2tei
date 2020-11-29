@@ -228,6 +228,9 @@
   </xsl:template>
   <xsl:template match="w:tc">
     <cell>
+      <xsl:if test="w:tcPr/w:gridSpan">
+        <xsl:attribute name="cols" select="w:tcPr/w:gridSpan/@w:val" />
+      </xsl:if>
       <xsl:apply-templates select="w:p" />
     </cell>
   </xsl:template>
