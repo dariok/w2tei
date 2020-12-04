@@ -36,7 +36,7 @@
           <xsl:when test="$key eq 'rtl'" />
           
           <xsl:when test="$key eq 'rFonts'">
-            <xsl:value-of select="'font-family: ' || $val" />
+            <xsl:value-of select="'font-family: ' || translate($val, ' ', '_')" />
           </xsl:when>
           
           <xsl:when test="$key eq 'color'">
