@@ -5,7 +5,7 @@
   exclude-result-prefixes="#all"
   version="3.0">
   
-  <xsl:output indent="1" />
+  <xsl:output indent="1" omit-xml-declaration="1" />
   
   <xsl:template match="*[tei:ab]">
     <xsl:element name="{local-name()}">

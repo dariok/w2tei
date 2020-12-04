@@ -10,7 +10,7 @@
   exclude-result-prefixes="#all"
   version="3.0">
   
-  <xsl:output indent="1" />
+  <xsl:output indent="1" omit-xml-declaration="1" />
   
   <xsl:include href="string-pack.xsl"/>
   <xsl:include href="word-pack.xsl"/>
