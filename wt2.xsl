@@ -28,8 +28,8 @@
         <xsl:variable name="val" select="normalize-space(substring-after(., ':'))" />
         
         <xsl:choose>
-          <xsl:when test="$key eq 'b' and $val eq '1'">font-weight: bold</xsl:when>
-          <xsl:when test="$key eq 'i' and $val eq '1'">font-style: italic</xsl:when>
+          <xsl:when test="$key eq 'b' and $val = ('', '1')">font-weight: bold</xsl:when>
+          <xsl:when test="$key eq 'i' and $val = ('', '1')">font-style: italic</xsl:when>
           <xsl:when test="$key eq 'u' and $val ne '0'">text-decoration: underline</xsl:when>
           
           <xsl:when test="$key eq 'rtl' and $val eq '1'">direction: rtl</xsl:when>
