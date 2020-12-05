@@ -91,16 +91,19 @@
     </ab>
   </xsl:template>
   
-  <xsl:template match="w:pStyle">
+  <xsl:template match="w:pStyle | w:rStyle">
     <xsl:attribute name="rendition" select="@w:val" />
   </xsl:template>
   
-  <xsl:template match="w:rPr[*]">
-    <xsl:attribute name="style">
-      <xsl:apply-templates select="*" />
-    </xsl:attribute>
+  <xsl:template match="w:rPr[*]" as="attribute()*">
+    <xsl:apply-templates select="w:rStyle" />
+    <xsl:if test="*[not(self::w:rStyle)]">
+      <xsl:attribute name="style">
+        <xsl:apply-templates select="*[not(self::w:rStyle)]" />
+      </xsl:attribute>
+    </xsl:if>
   </xsl:template>
-  <xsl:template match="w:rPr/*">
+  <xsl:template match="w:rPr/*[not(self::w:rStyle)]">
     <xsl:value-of select="local-name()"/>
     <xsl:text>:</xsl:text>
     <xsl:value-of select="translate((@w:val | @w:ascii)[1], ';', ',')" />
@@ -161,7 +164,7 @@
         </xsl:choose>
       </xsl:attribute>
       
-      <xsl:sequence select="$content/tei:ab/@style" />
+      <xsl:sequence select="$content/tei:ab/@*" />
       <xsl:sequence select="$content/tei:ab/node()" />
     </ref>
   </xsl:template>
