@@ -170,8 +170,7 @@
     <xsl:variable name="id" select="w:footnoteReference/@w:id"/>
     <xsl:variable name="note" select="//w:footnote[@w:id = $id]"/>
     <note type="footnote" xml:id="n{$id}">
-      <xsl:apply-templates select="$note/w:p/w:pStyle" />
-      <xsl:apply-templates select="$note/w:p/w:r | $note/w:p/w:hyperlink" />
+      <xsl:apply-templates select="$note/w:p" />
     </note>
   </xsl:template>
   <xsl:template match="w:r[w:footnoteRef]" />
@@ -189,8 +188,7 @@
   </xsl:template>
   <xsl:template match="w:endnote">
     <note type="endnote" xml:id="e{@w:id}">
-      <xsl:apply-templates select="w:p//w:pPr" />
-      <xsl:apply-templates select="w:p/w:r | w:p/w:hyperlink" />
+      <xsl:apply-templates select="w:p" />
     </note>
   </xsl:template>
   

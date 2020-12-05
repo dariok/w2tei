@@ -65,6 +65,13 @@
     <xsl:attribute name="style" select="string-join($values, '; ') || ';'" />
   </xsl:template>
   
+  <xsl:template match="tei:note/tei:p">
+    <xsl:if test="preceding-sibling::*">
+      <lb/>
+    </xsl:if>
+    <xsl:apply-templates />
+  </xsl:template>
+  
   <xsl:template match="@* | node()">
     <xsl:copy>
       <xsl:apply-templates select="@* | node()" />
