@@ -83,7 +83,7 @@
   
   <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
   
-  <xsl:template match="w:r[w:t or w:sym]">
+  <xsl:template match="w:r">
     <ab>
       <xsl:sequence select="w:t/@xml:space" />
       <xsl:apply-templates select="w:rPr" />
@@ -196,10 +196,6 @@
   
   <xsl:template match="w:tab">
     <space width="tab" />
-  </xsl:template>
-  
-  <xsl:template match="w:r">
-    <T />
   </xsl:template>
   
   <xsl:template match="w:commentRangeEnd"/>
