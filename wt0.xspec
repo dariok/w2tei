@@ -155,22 +155,22 @@
       </x:context>
       <x:expect label="2 div">
         <div>
-          <p style="KSEE-Titel">
+          <p rendition="KSEE-Titel">
             <ab xml:space="preserve">EE 86 </ab>
             <ab>[= Nr. 110]</ab>
           </p>
-          <p style="KSEE-Titel">
+          <p rendition="KSEE-Titel">
             <ab xml:space="preserve">Currus </ab>
           </p>
-          <p style="KSEE-Titel">
+          <p rendition="KSEE-Titel">
             <ab>[Wittenberg], 1519, [Mitte März]</ab>
           </p>
-          <p style="KSEE-Titel">
+          <p rendition="KSEE-Titel">
             <ab>Bearbeitet von Alejandro Zorzin</ab>
           </p>
         </div>
         <div>
-          <p style="berschrift1">
+          <p rendition="berschrift1">
             <ab>Text</ab>
           </p>
         </div>
@@ -294,16 +294,18 @@
           <text>
             <body>
               <div>
-                <p style="KSEE-Titel">
+                <p rendition="KSEE-Titel">
                   <ab xml:space="preserve">EE 86 </ab>
                   <ab>[= Nr. 110]</ab>
-                  <ptr type="endnote" ref="#e1" />
+                  <ptr type="endnote" ref="#e1" rendition="Endnotentext" />
                 </p>
               </div>
             </body>
             <back>
-              <note type="endnote" xml:id="e1" style="Endnotentext; rFonts:Junicode">
-                <ab style="rFonts:Junicode" xml:space="preserve"> Zwei stark beschnittene Worte.</ab>
+              <note type="endnote" xml:id="e1">
+                <p rendition="Endnotentext" style="rFonts:Junicode">
+                  <ab style="rFonts:Junicode" xml:space="preserve"> Zwei stark beschnittene Worte.</ab>
+                </p>
               </note>
             </back>
           </text>
@@ -599,7 +601,7 @@
           <text>
             <body>
               <div>
-                <p style="KSZwischenberschrift; lang:en-US">
+                <p rendition="KSZwischenberschrift" style="lang:en-US">
                   <ab style="lang:en-US">conformare</ab>
                   <ab style="lang:en-US">.</ab>
                   <anchor type="bookmarkStart" xml:id="_Ref534135879"/>
@@ -610,13 +612,15 @@
               </div>
             </body>
             <back>
-              <note type="endnote" xml:id="e5" style="Endnotentext; rFonts:Junicode; lang:de-DE">
-                <ab style="rFonts:Junicode; lang:de-DE" xml:space="preserve"> Vgl. </ab>
-                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">Anm.</ab>
-                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE" xml:space="preserve"> </ab>
-                <field function=" NOTEREF _Ref534135879 \h 
+              <note type="endnote" xml:id="e5">
+                <p rendition="Endnotentext" style="rFonts:Junicode; lang:de-DE">
+                  <ab style="rFonts:Junicode; lang:de-DE" xml:space="preserve"> Vgl. </ab>
+                  <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">Anm.</ab>
+                  <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE" xml:space="preserve"> </ab>
+                  <field function=" NOTEREF _Ref534135879 \h 
 \* MERGEFORMAT " style="rFonts:Junicode; highlight:yellow; lang:de-DE">2</field>
-                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">.</ab>
+                  <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">.</ab>
+                </p>
               </note>
             </back>
           </text>
@@ -725,15 +729,15 @@
                 <p>
                   <ab xml:space="preserve" style="lang:la-Latn"> et ecclesiam nostram declaras. Sed qua ratione tuis
                       consiliis satisfieri possit non video. Speras posse iniri aliquem modum, quo et Christo et </ab>
-                  <ref style="rStyle:Hyperlink; rFonts:; lang:la-Latn"
+                  <ref rendition="Hyperlink" style="rFonts:; lang:la-Latn"
                     target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
                     >Caesareo</ref>
                   <ptr type="endnote" ref="#e7" />
                   <anchor type="bookmarkStart" xml:id="_GoBack"/>
                   <ref target="http://d-nb.info/gnd/121098-1"
-                    style="rStyle:auszeichnungbermehrereworte0; rFonts:; color:0000FF">Handelsministerium</ref>
+                    rendition="auszeichnungbermehrereworte0" style="rFonts:; color:0000FF">Handelsministerium</ref>
                   <anchor type="bookmarkEnd" ref="#_GoBack"/>
-                  <ab style="rStyle:AuszeichnungberMehrereWorte">]]</ab>
+                  <ab rendition="AuszeichnungberMehrereWorte">]]</ab>
                 </p>
               </div>
             </body>
