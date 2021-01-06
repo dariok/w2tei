@@ -78,7 +78,7 @@
   
   <xsl:template match="w:pPr">
     <xsl:apply-templates select="w:pStyle" />
-    <xsl:apply-templates select="w:rPr" />;
+    <xsl:apply-templates select="w:rPr" />
   </xsl:template>
   
   <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
