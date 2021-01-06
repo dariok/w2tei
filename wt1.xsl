@@ -10,7 +10,7 @@
   <xsl:template match="*[tei:ab]">
     <xsl:element name="{local-name()}">
       <xsl:sequence select="@*" />
-      <xsl:for-each-group group-adjacent="local-name() || @style" select="*">
+      <xsl:for-each-group group-adjacent="local-name() || @style || @type" select="*">
         <xsl:element name="{local-name()}">
           <xsl:if test="current-group()[@xml:space]">
             <xsl:attribute name="xml:space" select="'preserve'" />

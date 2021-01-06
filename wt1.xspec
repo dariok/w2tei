@@ -32,4 +32,33 @@
       </p>
     </x:expect>
   </x:scenario>
+  
+  <x:scenario label="T2">
+    <x:context>
+      <p rendition="Normal" style="rFonts:; sz:24">
+        <ab style="rFonts:; sz:24">Hast Du meine Broschüre</ab>
+        <ptr type="comment" xml:id="c0"/>
+        <ptr type="endnote" ref="#e2" rendition="Endnote"/>
+        <note type="comment" from="#c0">
+          <note>
+            <ab style="rFonts:Wingdings; sz:24; szCs:24; lang:en-US"></ab>
+            <ab style="rFonts:Liberation Serif; sz:24; szCs:24; lang:en-US">Link auf gelb markiertes Wort</ab>
+          </note>
+        </note>
+      </p>
+    </x:context>
+    <x:expect label=".">
+      <p rendition="Normal" style="rFonts:; sz:24">
+        <ab style="rFonts:; sz:24">Hast Du meine Broschüre</ab>
+        <ptr type="comment" xml:id="c0"/>
+        <ptr type="endnote" ref="#e2" rendition="Endnote"/>
+        <note type="comment" from="#c0">
+          <note>
+            <ab style="rFonts:Wingdings; sz:24; szCs:24; lang:en-US"></ab>
+            <ab style="rFonts:Liberation Serif; sz:24; szCs:24; lang:en-US">Link auf gelb markiertes Wort</ab>
+          </note>
+        </note>
+      </p>
+    </x:expect>
+  </x:scenario>
 </x:description>
