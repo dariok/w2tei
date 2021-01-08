@@ -106,7 +106,7 @@
   <xsl:template match="w:rPr/*[not(self::w:rStyle)]">
     <xsl:value-of select="local-name()"/>
     <xsl:text>:</xsl:text>
-    <xsl:value-of select="translate((@w:val | @w:ascii)[1], ';', ',')" />
+    <xsl:value-of select="translate((@w:val | @w:ascii | @w:cs)[1], ';', ',')" />
     <xsl:if test="following-sibling::*">
       <xsl:text>; </xsl:text>
     </xsl:if>

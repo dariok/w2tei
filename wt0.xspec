@@ -887,4 +887,44 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="T4: styles">
+    <x:scenario label="T4.1">
+      <x:context>
+        <w:p w14:paraId="009AC91E"
+          w14:textId="77777777"
+          w:rsidR="009376DE"
+          w:rsidRDefault="009376DE"
+          w:rsidP="009376DE">
+          <w:pPr>
+            <w:pStyle w:val="AMWGApparatTextDatierung"/>
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:smallCaps/>
+            </w:rPr>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rStyle w:val="AMWGApparatberschrift2Zchn"/>
+            </w:rPr>
+            <w:t>Übertragung/Mitarbeit</w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:smallCaps/>
+            </w:rPr>
+            <w:t>:</w:t>
+          </w:r>
+        </w:p>
+      </x:context>
+      <x:expect label=".">
+        <p rendition="AMWGApparatTextDatierung"
+          style="rFonts:Segoe UI Historic; smallCaps:">
+          <ab rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</ab>
+          <ab style="rFonts:Segoe UI Historic; smallCaps:">:</ab>
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>
