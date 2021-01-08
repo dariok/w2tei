@@ -871,7 +871,7 @@
           xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
           xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
           xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-          style="ins:; rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline">
+          style="text-align:left; ins:; rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline">
           <ab xml:space="preserve"
        style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Soll man hier vielleicht noch resümierend auf die einzelnen Rechteklärung-Beschreibungen in den APs hinweisen, etwa mit dem Vermerk am Ende des Abschnitts oder als Fußnote):</ab>
         </note>
@@ -880,7 +880,7 @@
           xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
           xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
           xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-          style="ins:; rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline">
+          style="text-align:left; ins:; rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline">
           <ab xml:space="preserve"
        style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Zu weiteren Informationen zur Rechteklärung, s. die Beschreibungen der AP. 1, 3 und 7.</ab>
         </note>
@@ -923,6 +923,38 @@
           style="rFonts:Segoe UI Historic; smallCaps:">
           <ab rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</ab>
           <ab style="rFonts:Segoe UI Historic; smallCaps:">:</ab>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T4.2: alignment">
+      <x:context>
+        <w:p w14:paraId="55AFEF3D"
+          w14:textId="77777777"
+          w:rsidR="001A3ADF"
+          w:rsidRPr="00276524"
+          w:rsidRDefault="001A3ADF"
+          w:rsidP="001A3ADF">
+          <w:pPr>
+            <w:pStyle w:val="AMWGFlietext"/>
+            <w:jc w:val="right"/>
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:u w:val="single"/>
+            </w:rPr>
+          </w:pPr>
+          <w:r w:rsidRPr="00276524">
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:u w:val="single"/>
+            </w:rPr>
+            <w:t>Montag</w:t>
+          </w:r>
+        </w:p>
+      </x:context>
+      <x:expect label=".">
+        <p rendition="AMWGFlietext"
+          style="text-align:right; rFonts:Segoe UI Historic; u:single">
+          <ab style="rFonts:Segoe UI Historic; u:single">Montag</ab>
         </p>
       </x:expect>
     </x:scenario>

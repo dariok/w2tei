@@ -78,7 +78,7 @@
   
   <xsl:template match="w:pPr">
     <xsl:apply-templates select="w:pStyle" />
-    <xsl:apply-templates select="w:*[not(self::w:pStyle)]" />
+    <xsl:apply-templates select="w:rPr" />
   </xsl:template>
   
   <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
@@ -99,7 +99,7 @@
     <xsl:apply-templates select="w:rStyle" />
     <xsl:if test="*[not(self::w:rStyle)]">
       <xsl:attribute name="style">
-        <xsl:apply-templates select="*[not(self::w:rStyle)]" />
+        <xsl:apply-templates select="*[not(self::w:rStyle)] | preceding-sibling::*[not(self::w:pStyle)]" />
       </xsl:attribute>
     </xsl:if>
   </xsl:template>
@@ -251,6 +251,17 @@
   
   <xsl:template match="w:br">
     <lb />
+  </xsl:template>
+  
+  <xsl:template match="w:jc">
+    <xsl:text>text-align:</xsl:text>
+    <xsl:choose>
+      <xsl:when test="@w:val = ('start', 'left')">left</xsl:when>
+      <xsl:when test="@w:val = ('end', 'right')">right</xsl:when>
+      <xsl:when test="@w:val eq 'center'">center</xsl:when>
+      <xsl:when test="@w:val = ('both', 'distribute')">justify</xsl:when>
+    </xsl:choose>
+    <xsl:text>; </xsl:text>
   </xsl:template>
   
   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
