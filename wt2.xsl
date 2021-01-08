@@ -28,6 +28,8 @@
         <xsl:variable name="val" select="normalize-space(substring-after(., ':'))" />
         
         <xsl:choose>
+          <xsl:when test=". eq ' '" />
+          
           <xsl:when test="$key eq 'b' and $val = ('', '1')">font-weight: bold</xsl:when>
           <xsl:when test="$key eq 'i' and $val = ('', '1')">font-style: italic</xsl:when>
           <xsl:when test="$key eq 'u' and $val ne '0'">text-decoration: underline</xsl:when>
@@ -62,7 +64,10 @@
       </xsl:for-each>
     </xsl:variable>
     
-    <xsl:attribute name="style" select="string-join($values, '; ') || ';'" />
+    <xsl:variable name="styleValue" select="string-join($values, '; ')"/>
+    <xsl:if test="string-length($styleValue) gt 0">
+      <xsl:attribute name="style" select="$styleValue || ';'" />
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="tei:note/tei:p">
