@@ -78,7 +78,7 @@
   
   <xsl:template match="w:pPr">
     <xsl:apply-templates select="w:pStyle" />
-    <xsl:apply-templates select="w:rPr" />
+    <xsl:apply-templates select="w:*[not(self::w:pStyle)]" />
   </xsl:template>
   
   <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
@@ -195,7 +195,9 @@
     </note>
   </xsl:template>
   
-  <xsl:template match="w:tab">
+  <xsl:template match="w:tabs" />
+  
+  <xsl:template match="w:tab[not(ancestor::w:pPr)]">
     <space width="tab" />
   </xsl:template>
   
