@@ -42,4 +42,20 @@
       <hi style="font-style: italic;">correspSearch</hi>
     </x:expect>
   </x:scenario>
+  
+  <x:scenario label="small caps">
+    <x:context>
+      <p rendition="AMWGApparatTextDatierung"
+        style="rFonts:Segoe UI Historic; smallCaps:">
+        <ab rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</ab>
+        <ab style="rFonts:Segoe UI Historic; smallCaps:">:</ab>
+      </p>
+    </x:context>
+    <x:expect label=".">
+      <p rendition="AMWGApparatTextDatierung" style="font-family: Segoe_UI_Historic; font-variant: small-caps;">
+        <hi>Übertragung/Mitarbeit</hi>
+        <hi style="font-family: Segoe_UI_Historic; font-variant: small-caps;">:</hi>
+      </p>
+    </x:expect>
+  </x:scenario>
 </x:description>

@@ -57,6 +57,10 @@
             <xsl:value-of select="'vertical-align: ' || $align" />
           </xsl:when>
           
+          <xsl:when test="$key eq 'smallCaps'">
+            <xsl:text>font-variant: small-caps</xsl:text>
+          </xsl:when>
+          
           <xsl:otherwise>
             <xsl:value-of select="."/>
           </xsl:otherwise>
