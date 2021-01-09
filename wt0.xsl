@@ -254,7 +254,7 @@
   </xsl:template>
   
   <xsl:template match="w:jc">
-    <xsl:text>text-align:</xsl:text>
+    <xsl:text>text-align: </xsl:text>
     <xsl:choose>
       <xsl:when test="@w:val = ('start', 'left')">left</xsl:when>
       <xsl:when test="@w:val = ('end', 'right')">right</xsl:when>
