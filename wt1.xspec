@@ -5,7 +5,7 @@
   stylesheet="wt1.xsl">
   <x:scenario label="T1">
     <x:context>
-      <p style="rFonts:Junicode; lang:en-US">
+      <p>
         <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
         <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
         <ab style="rFonts:Junicode; lang:en-US">]</ab>
@@ -20,7 +20,7 @@
       </p>
     </x:context>
     <x:expect label="-">
-      <p style="rFonts:Junicode; lang:en-US">
+      <p>
         <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
         <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
         <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve">] </ab>
@@ -35,7 +35,7 @@
   
   <x:scenario label="T2">
     <x:context>
-      <p rendition="Normal" style="rFonts:; sz:24">
+      <p rendition="Normal">
         <ab style="rFonts:; sz:24">Hast Du meine Broschüre</ab>
         <ptr type="comment" xml:id="c0"/>
         <ptr type="endnote" ref="#e2" rendition="Endnote"/>
@@ -48,7 +48,7 @@
       </p>
     </x:context>
     <x:expect label=".">
-      <p rendition="Normal" style="rFonts:; sz:24">
+      <p rendition="Normal">
         <ab style="rFonts:; sz:24">Hast Du meine Broschüre</ab>
         <ptr type="comment" xml:id="c0"/>
         <ptr type="endnote" ref="#e2" rendition="Endnote"/>
