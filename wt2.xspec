@@ -58,4 +58,55 @@
       </p>
     </x:expect>
   </x:scenario>
+  
+  <x:scenario label="T5: underline, strikethrough">
+    <x:scenario label="T5.1">
+      <x:context>
+        <p rendition="AMWGFlietexteingerckt" style="rFonts:Segoe UI Historic">
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic">Du, meine aristophelische 2</ab>
+          <ab style="rFonts:Segoe UI Historic; u:single">te</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> Hälfte</ab>
+          <ptr type="endnote" ref="#e5" rendition="AMWGFunote"/>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> – wie </ab>
+          <ab style="rFonts:Segoe UI Historic; u:single">absolut</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> bist Du </ab>
+          <ab style="rFonts:Segoe UI Historic; strike:">Dir</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> mir eigen und </ab>
+          <ab style="rFonts:Segoe UI Historic; u:single">bluts</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic">verwandt. </ab>
+          <ab style="rFonts:Segoe UI Historic; u:single">Bleib</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> </ab>
+          <ab style="rFonts:Segoe UI Historic; u:single">mir</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic">!! – Es gibt einen hohen schönen Ort hier – Tre Croce [recte: Tre Croci] zwischen Cortina &amp; Misurina</ab>
+          <ptr type="endnote" ref="#e6" rendition="AMWGFunote"/>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic">[,] </ab>
+          <ab style="rFonts:Segoe UI Historic; u:double">dort</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> wollen wir eine Wiedergeburt unsrer Liebe feiern.</ab>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p rendition="AMWGFlietexteingerckt" style="font-family: Segoe_UI_Historic;">
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">Du, meine aristophelische 2</hi>
+          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">te</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> Hälfte</hi>
+          <ptr type="endnote" ref="#e5" rendition="AMWGFunote"/>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> – wie </hi>
+          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">absolut</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> bist Du </hi>
+          <hi style="font-family: Segoe_UI_Historic; text-decoration: line-through single auto;">Dir</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> mir eigen und </hi>
+          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">bluts</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">verwandt. </hi>
+          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">Bleib</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> </hi>
+          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">mir</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">!! – Es gibt einen hohen schönen Ort hier – Tre Croce [recte: Tre Croci] zwischen Cortina &amp; Misurina</hi>
+          <ptr type="endnote" ref="#e6" rendition="AMWGFunote"/>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">[,] </hi>
+          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline double auto;">dort</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> wollen wir eine Wiedergeburt unsrer Liebe feiern.</hi>
+        </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
 </x:description>

@@ -32,7 +32,14 @@
           
           <xsl:when test="$key eq 'b' and $val = ('', '1')">font-weight: bold</xsl:when>
           <xsl:when test="$key eq 'i' and $val = ('', '1')">font-style: italic</xsl:when>
-          <xsl:when test="$key eq 'u' and $val ne '0'">text-decoration: underline</xsl:when>
+          <xsl:when test="$key eq 'u'">
+            <xsl:choose>
+              <xsl:when test="$val eq '0' or $val eq ''" />
+              <xsl:when test="$val eq 'single'">text-decoration: underline single auto</xsl:when>
+              <xsl:when test="$val eq 'double'">text-decoration: underline double auto</xsl:when>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:when test="$key eq 'strike'">text-decoration: line-through single auto</xsl:when>
           
           <xsl:when test="$key eq 'rtl' and $val eq '1'">direction: rtl</xsl:when>
           <xsl:when test="$key eq 'rtl'" />
