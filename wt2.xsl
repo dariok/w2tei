@@ -10,14 +10,9 @@
   <xsl:output indent="0" />
   
   <xsl:template match="tei:ab">
-    <xsl:variable name="style" as="xs:string*">
-      <xsl:apply-templates select="@style" />
-    </xsl:variable>
     
     <hi>
-      <xsl:apply-templates select="@style" />
-      
-      <xsl:apply-templates />
+      <xsl:apply-templates select="@* | node()" />
     </hi>
   </xsl:template>
   
