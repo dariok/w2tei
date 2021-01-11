@@ -23,7 +23,7 @@
         <xsl:variable name="val" select="normalize-space(substring-after(., ':'))" />
         
         <xsl:choose>
-          <xsl:when test=". eq ' '" />
+          <xsl:when test=". eq ' ' or . eq ''" />
           
           <xsl:when test="$key eq 'b' and $val = ('', '1')">font-weight: bold</xsl:when>
           <xsl:when test="$key eq 'i' and $val = ('', '1')">font-style: italic</xsl:when>

@@ -108,4 +108,17 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="T6: paragraph alignment">
+    <x:context>
+      <p rendition="AMWGFlietext" style="text-align: right;">
+        <ab style="rFonts:Segoe UI Historic">Abend</ab>
+      </p>
+    </x:context>
+    <x:expect label=".">
+      <p rendition="AMWGFlietext" style="text-align: right;">
+        <hi style="font-family: Segoe_UI_Historic;">Abend</hi>
+      </p>
+    </x:expect>
+  </x:scenario>
 </x:description>
