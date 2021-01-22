@@ -5,6 +5,7 @@
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
   xmlns:wt="https://github.com/dariok/w2tei"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:xstring = "https://github.com/dariok/XStringUtils"
   xmlns="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="#all"
@@ -78,7 +79,13 @@
   
   <xsl:template match="w:pPr">
     <xsl:apply-templates select="w:pStyle" />
-    <xsl:apply-templates select="w:rPr" />;
+    
+    <xsl:variable name="style" as="xs:string*">
+      <xsl:apply-templates select="*[not(self::w:rPr or self::w:pStyle)]" />
+    </xsl:variable>
+    <xsl:if test="count($style) gt 0">
+      <xsl:attribute name="style" select="normalize-space(string-join($style))" />
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
@@ -99,14 +106,14 @@
     <xsl:apply-templates select="w:rStyle" />
     <xsl:if test="*[not(self::w:rStyle)]">
       <xsl:attribute name="style">
-        <xsl:apply-templates select="*[not(self::w:rStyle)]" />
+        <xsl:apply-templates select="*[not(self::w:rStyle)] | preceding-sibling::*[not(self::w:pStyle)]" />
       </xsl:attribute>
     </xsl:if>
   </xsl:template>
   <xsl:template match="w:rPr/*[not(self::w:rStyle)]">
     <xsl:value-of select="local-name()"/>
     <xsl:text>:</xsl:text>
-    <xsl:value-of select="translate((@w:val | @w:ascii)[1], ';', ',')" />
+    <xsl:value-of select="translate((@w:val | @w:ascii | @w:cs)[1], ';', ',')" />
     <xsl:if test="following-sibling::*">
       <xsl:text>; </xsl:text>
     </xsl:if>
@@ -195,7 +202,9 @@
     </note>
   </xsl:template>
   
-  <xsl:template match="w:tab">
+  <xsl:template match="w:tabs" />
+  
+  <xsl:template match="w:tab[not(ancestor::w:pPr)]">
     <space width="tab" />
   </xsl:template>
   
@@ -249,6 +258,17 @@
   
   <xsl:template match="w:br">
     <lb />
+  </xsl:template>
+  
+  <xsl:template match="w:jc">
+    <xsl:text>text-align: </xsl:text>
+    <xsl:choose>
+      <xsl:when test="@w:val = ('start', 'left')">left</xsl:when>
+      <xsl:when test="@w:val = ('end', 'right')">right</xsl:when>
+      <xsl:when test="@w:val eq 'center'">center</xsl:when>
+      <xsl:when test="@w:val = ('both', 'distribute')">justify</xsl:when>
+    </xsl:choose>
+    <xsl:text>; </xsl:text>
   </xsl:template>
   
   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />

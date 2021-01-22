@@ -155,27 +155,27 @@
       </x:context>
       <x:expect label="2 div">
         <div>
-          <p style="KSEE-Titel">
+          <p rendition="KSEE-Titel">
             <ab xml:space="preserve">EE 86 </ab>
             <ab>[= Nr. 110]</ab>
           </p>
-          <p style="KSEE-Titel">
+          <p rendition="KSEE-Titel">
             <ab xml:space="preserve">Currus </ab>
           </p>
-          <p style="KSEE-Titel">
+          <p rendition="KSEE-Titel">
             <ab>[Wittenberg], 1519, [Mitte März]</ab>
           </p>
-          <p style="KSEE-Titel">
+          <p rendition="KSEE-Titel">
             <ab>Bearbeitet von Alejandro Zorzin</ab>
           </p>
         </div>
         <div>
-          <p style="berschrift1">
+          <p rendition="berschrift1">
             <ab>Text</ab>
           </p>
         </div>
         <div>
-          <p style="rFonts:Junicode; lang:en-US">
+          <p>
             <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
             <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
             <ab style="rFonts:Junicode; lang:en-US">]</ab>
@@ -294,16 +294,18 @@
           <text>
             <body>
               <div>
-                <p style="KSEE-Titel">
+                <p rendition="KSEE-Titel">
                   <ab xml:space="preserve">EE 86 </ab>
                   <ab>[= Nr. 110]</ab>
-                  <ptr type="endnote" ref="#e1" />
+                  <ptr type="endnote" ref="#e1" rendition="Endnotentext" />
                 </p>
               </div>
             </body>
             <back>
-              <note type="endnote" xml:id="e1" style="Endnotentext; rFonts:Junicode">
-                <ab style="rFonts:Junicode" xml:space="preserve"> Zwei stark beschnittene Worte.</ab>
+              <note type="endnote" xml:id="e1">
+                <p rendition="Endnotentext">
+                  <ab style="rFonts:Junicode" xml:space="preserve"> Zwei stark beschnittene Worte.</ab>
+                </p>
               </note>
             </back>
           </text>
@@ -409,7 +411,7 @@
         </w:p>
       </x:context>
       <x:expect label=".">
-        <p style="rFonts:Junicode; lang:en-US">
+        <p>
           <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
           <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
           <ab style="rFonts:Junicode; lang:en-US">]</ab>
@@ -599,7 +601,7 @@
           <text>
             <body>
               <div>
-                <p style="KSZwischenberschrift; lang:en-US">
+                <p rendition="KSZwischenberschrift">
                   <ab style="lang:en-US">conformare</ab>
                   <ab style="lang:en-US">.</ab>
                   <anchor type="bookmarkStart" xml:id="_Ref534135879"/>
@@ -610,13 +612,15 @@
               </div>
             </body>
             <back>
-              <note type="endnote" xml:id="e5" style="Endnotentext; rFonts:Junicode; lang:de-DE">
-                <ab style="rFonts:Junicode; lang:de-DE" xml:space="preserve"> Vgl. </ab>
-                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">Anm.</ab>
-                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE" xml:space="preserve"> </ab>
-                <field function=" NOTEREF _Ref534135879 \h 
+              <note type="endnote" xml:id="e5">
+                <p rendition="Endnotentext">
+                  <ab style="rFonts:Junicode; lang:de-DE" xml:space="preserve"> Vgl. </ab>
+                  <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">Anm.</ab>
+                  <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE" xml:space="preserve"> </ab>
+                  <field function=" NOTEREF _Ref534135879 \h 
 \* MERGEFORMAT " style="rFonts:Junicode; highlight:yellow; lang:de-DE">2</field>
-                <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">.</ab>
+                  <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE">.</ab>
+                </p>
               </note>
             </back>
           </text>
@@ -725,15 +729,15 @@
                 <p>
                   <ab xml:space="preserve" style="lang:la-Latn"> et ecclesiam nostram declaras. Sed qua ratione tuis
                       consiliis satisfieri possit non video. Speras posse iniri aliquem modum, quo et Christo et </ab>
-                  <ref style="rStyle:Hyperlink; rFonts:; lang:la-Latn"
+                  <ref rendition="Hyperlink" style="rFonts:; lang:la-Latn"
                     target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
                     >Caesareo</ref>
                   <ptr type="endnote" ref="#e7" />
                   <anchor type="bookmarkStart" xml:id="_GoBack"/>
                   <ref target="http://d-nb.info/gnd/121098-1"
-                    style="rStyle:auszeichnungbermehrereworte0; rFonts:; color:0000FF">Handelsministerium</ref>
+                    rendition="auszeichnungbermehrereworte0" style="rFonts:; color:0000FF">Handelsministerium</ref>
                   <anchor type="bookmarkEnd" ref="#_GoBack"/>
-                  <ab style="rStyle:AuszeichnungberMehrereWorte">]]</ab>
+                  <ab rendition="AuszeichnungberMehrereWorte">]]</ab>
                 </p>
               </div>
             </body>
@@ -867,7 +871,7 @@
           xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
           xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
           xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-          style="ins:; rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline">
+          style="text-align: left;">
           <ab xml:space="preserve"
        style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Soll man hier vielleicht noch resümierend auf die einzelnen Rechteklärung-Beschreibungen in den APs hinweisen, etwa mit dem Vermerk am Ende des Abschnitts oder als Fußnote):</ab>
         </note>
@@ -876,10 +880,137 @@
           xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
           xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
           xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
-          style="ins:; rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline">
+          style="text-align: left;">
           <ab xml:space="preserve"
        style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Zu weiteren Informationen zur Rechteklärung, s. die Beschreibungen der AP. 1, 3 und 7.</ab>
         </note>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T4: styles">
+    <x:scenario label="T4.1">
+      <x:context>
+        <w:p w14:paraId="009AC91E"
+          w14:textId="77777777"
+          w:rsidR="009376DE"
+          w:rsidRDefault="009376DE"
+          w:rsidP="009376DE">
+          <w:pPr>
+            <w:pStyle w:val="AMWGApparatTextDatierung"/>
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:smallCaps/>
+            </w:rPr>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:rStyle w:val="AMWGApparatberschrift2Zchn"/>
+            </w:rPr>
+            <w:t>Übertragung/Mitarbeit</w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:smallCaps/>
+            </w:rPr>
+            <w:t>:</w:t>
+          </w:r>
+        </w:p>
+      </x:context>
+      <x:expect label=".">
+        <p rendition="AMWGApparatTextDatierung">
+          <ab rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</ab>
+          <ab style="rFonts:Segoe UI Historic; smallCaps:">:</ab>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T4.2: alignment">
+      <x:context>
+        <w:p w14:paraId="55AFEF3D"
+          w14:textId="77777777"
+          w:rsidR="001A3ADF"
+          w:rsidRPr="00276524"
+          w:rsidRDefault="001A3ADF"
+          w:rsidP="001A3ADF">
+          <w:pPr>
+            <w:pStyle w:val="AMWGFlietext"/>
+            <w:jc w:val="right"/>
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:u w:val="single"/>
+            </w:rPr>
+          </w:pPr>
+          <w:r w:rsidRPr="00276524">
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:u w:val="single"/>
+            </w:rPr>
+            <w:t>Montag</w:t>
+          </w:r>
+        </w:p>
+      </x:context>
+      <x:expect label=".">
+        <p rendition="AMWGFlietext" style="text-align: right;">
+          <ab style="rFonts:Segoe UI Historic; u:single">Montag</ab>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T4.3">
+      <x:context>
+        <w:p w14:paraId="55AFEF3D"
+          w14:textId="77777777"
+          w:rsidR="001A3ADF"
+          w:rsidRPr="00276524"
+          w:rsidRDefault="001A3ADF"
+          w:rsidP="001A3ADF">
+          <w:pPr>
+            <w:pStyle w:val="AMWGFlietext"/>
+            <w:jc w:val="right"/>
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:u w:val="single"/>
+            </w:rPr>
+          </w:pPr>
+          <w:r w:rsidRPr="00276524">
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+              <w:u w:val="single"/>
+            </w:rPr>
+            <w:t>Montag</w:t>
+          </w:r>
+        </w:p>
+        <w:p w14:paraId="5979ED52"
+          w14:textId="60F17FAB"
+          w:rsidR="00256C2D"
+          w:rsidRDefault="001A3ADF"
+          w:rsidP="008C7254">
+          <w:pPr>
+            <w:pStyle w:val="AMWGFlietext"/>
+            <w:tabs>
+              <w:tab w:val="center" w:pos="4532"/>
+              <w:tab w:val="right" w:pos="9064"/>
+            </w:tabs>
+            <w:jc w:val="right"/>
+            <w:rPr>
+              <w:u w:val="double"/>
+            </w:rPr>
+          </w:pPr>
+          <w:r w:rsidRPr="00276524">
+            <w:rPr>
+              <w:rFonts w:cs="Segoe UI Historic"/>
+            </w:rPr>
+            <w:t>Abend</w:t>
+          </w:r>
+        </w:p>
+      </x:context>
+      <x:expect label=".">
+        <p rendition="AMWGFlietext" style="text-align: right;">
+          <ab style="rFonts:Segoe UI Historic; u:single">Montag</ab>
+        </p>
+        <p rendition="AMWGFlietext" style="text-align: right;">
+          <ab style="rFonts:Segoe UI Historic">Abend</ab>
+        </p>
       </x:expect>
     </x:scenario>
   </x:scenario>

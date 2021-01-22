@@ -175,8 +175,9 @@
 					</listBibl>
 					<xsl:choose>
 						<xsl:when test="following-sibling::w:p[hab:isSigle(.)]">
-							<xsl:apply-templates select="$end/following-sibling::w:p[not(hab:isHead(., '2'))]
-								intersect following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p" />
+							<xsl:apply-templates
+								select="$end/following-sibling::w:p[not(hab:isHead(., '2')) and string-length(normalize-space()) gt 0]
+									intersect following-sibling::w:p[hab:isSigle(.)][1]/preceding-sibling::w:p" />
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:apply-templates select="$end/following-sibling::w:p[not(wt:starts(., 'Edition') or wt:starts(., 'Literatur'))]
@@ -204,7 +205,7 @@
 				</xsl:when>
 				<xsl:otherwise>
 					<!-- leere Exemplarangaben abfangen; 2017-10-24 DK -->
-					<xsl:if test="w:r[wt:contains(., 'plare')] and string-length(wt:string(.)) &gt; 20">
+					<xsl:if test="wt:contains(., 'Exemplare') and string-length(wt:string(.)) &gt; 20">
 						<xsl:variable name="t1">
 							<hab:t>
 								<xsl:apply-templates select="w:r[wt:contains(preceding-sibling::w:r, 'plare')]
@@ -634,7 +635,7 @@
 	</xsl:template>
 	
 	<!-- leere p abfangen; 2017-10-24 DK -->
-	<xsl:template match="w:p[not(descendant::w:t) or string-length(wt:string(.)) &lt; 5]" />
+	<xsl:template match="w:p[not(w:r or w:hyperlink)]" />
 	<xsl:template match="w:p[(not(descendant::w:pStyle or ancestor-or-self::w:endnote)
 		or wt:is(., 'KSText') ) and not(hab:isSigle(.) or wt:starts(., 'Edition') or
 		wt:starts(., 'Literatur')) and descendant::w:t and string-length(wt:string(.)) &gt; 5]">

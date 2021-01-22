@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Test Report for /media/p5/home/dario/git/w2tei/wt0.xsl (passed: 6 / pending: 0 / failed: 0 / total: 6)</title>
+      <title>Test Report for /home/dario/git/w2tei/wt0.xsl (passed: 9 / pending: 0 / failed: 0 / total: 9)</title>
       <style type="text/css">/****************************************************************************/
 /*  File:       test-report.css                                             */
 /*  Author:     Jeni Tennison                                               */
@@ -147,9 +147,9 @@ dd pre, li pre {
 	}
 
 /* fonts */
-body {
+body, table {
 	font-family: sans-serif;
-	font-size: small;
+	font-size: 12px;
 	}
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,12 +157,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 h1 {
-	font-size: 173%;
+	font-size: 1.7em;
 	font-weight: bold;
 	}
 
 h2 {
-	font-size: 144%;
+	font-size: 1.4em;
 	font-weight: bold;
 	}
 
@@ -201,12 +201,12 @@ div.example, .sidebar {
 
 .note, .link {
 	font-family: sans-serif;
-	font-size: 83%;
+	/*font-size: 83%;*/
 	}
 
 .example, .string, .rtf, .code, pre, code {
 	font-family: monospace;
-  font-size: 83%;
+  /*font-size: 83%;*/
 	}
 
 .boolean {
@@ -388,6 +388,7 @@ a {
 
 body > h2:first-of-type {
     background: inherit;
+    font-size: 1.7em;
     margin-bottom: 0;
 }
 
@@ -403,8 +404,8 @@ div > table > tbody > tr > th:first-child {
     color: #474747;
 }
 
-.xspec tbody th { font-weight: normal; font-size: 0.8em; border-top: 1px #666 solid; }
-.xspec tbody td { font-size: 0.8em; color: #262626; }
+.xspec tbody th { font-weight: normal; /*font-size: 0.8em;*/ border-top: 1px #666 solid; }
+.xspec tbody td { /*font-size: 0.8em;*/ color: #262626; }
 
 .successful { background-color: #CFC; }
 .pending { background-color: #EEE; color: #666; }
@@ -458,6 +459,25 @@ span.scenario-totals {float: right; text-align: right}
 	box-shadow: -0.5rem 0 0 0 #FC511D;
 }
 
+/* hint button */
+.xTestReport {
+	display: grid;
+	grid-template-areas:
+		"title title"
+		"table hint";
+	grid-template-columns: 1fr 1em;
+}
+.xTestReportTitle {
+	grid-area: title
+}
+.xTestReportHint {
+	grid-area: hint;
+	text-shadow: 1px 2px 3px gray;
+}
+.xspecResult {
+	grid-area: table;
+}
+
 /* ------------------------------------------------------------------------ */
 /*  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS COMMENT.               */
 /*                                                                          */
@@ -489,9 +509,9 @@ span.scenario-totals {float: right; text-align: right}
    </head>
    <body>
       <h1>Test Report</h1>
-      <p>Stylesheet: <a href="file:/media/p5/home/dario/git/w2tei/wt0.xsl">/media/p5/home/dario/git/w2tei/wt0.xsl</a></p>
-      <p>XSpec: <a href="file:/media/p5/home/dario/git/w2tei/wt0.xspec">/media/p5/home/dario/git/w2tei/wt0.xspec</a></p>
-      <p>Tested: 22 March 2020 at 16:36</p>
+      <p>Stylesheet: <a href="file:/home/dario/git/w2tei/wt0.xsl">/home/dario/git/w2tei/wt0.xsl</a></p>
+      <p>XSpec: <a href="file:/home/dario/git/w2tei/wt0.xspec">/home/dario/git/w2tei/wt0.xspec</a></p>
+      <p>Tested: 11 January 2021 at 03:36</p>
       <h2>Contents</h2>
       <table class="xspec">
          <colgroup>
@@ -504,29 +524,36 @@ span.scenario-totals {float: right; text-align: right}
          <thead>
             <tr>
                <th></th>
-               <th class="totals">passed: 6</th>
+               <th class="totals">passed: 9</th>
                <th class="totals">pending: 0</th>
                <th class="totals">failed: 0</th>
-               <th class="totals">total: 6</th>
+               <th class="totals">total: 9</th>
             </tr>
          </thead>
          <tbody>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e4">T1: structure</a></th>
+               <th><a href="#top_scenario1">T1: structure</a></th>
                <th class="totals">2</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">2</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e686">T2: p</a></th>
+               <th><a href="#top_scenario2">T2: p</a></th>
                <th class="totals">1</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
                <th class="totals">1</th>
             </tr>
             <tr class="successful">
-               <th><a href="#top-level-scenario-d5e944">T3: bookmarks, comments, etc.</a></th>
+               <th><a href="#top_scenario3">T3: bookmarks, comments, etc.</a></th>
+               <th class="totals">3</th>
+               <th class="totals">0</th>
+               <th class="totals">0</th>
+               <th class="totals">3</th>
+            </tr>
+            <tr class="successful">
+               <th><a href="#top_scenario4">T4: styles</a></th>
                <th class="totals">3</th>
                <th class="totals">0</th>
                <th class="totals">0</th>
@@ -534,9 +561,9 @@ span.scenario-totals {float: right; text-align: right}
             </tr>
          </tbody>
       </table>
-      <div id="top-level-scenario-d5e4">
+      <div id="top_scenario1">
          <h2 class="successful">T1: structure<span class="scenario-totals">passed: 2 / pending: 0 / failed: 0 / total: 2</span></h2>
-         <table class="xspec" id="t-d5e4">
+         <table class="xspec" id="table_scenario1">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -565,9 +592,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e686">
+      <div id="top_scenario2">
          <h2 class="successful">T2: p<span class="scenario-totals">passed: 1 / pending: 0 / failed: 0 / total: 1</span></h2>
-         <table class="xspec" id="t-d5e686">
+         <table class="xspec" id="table_scenario2">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -588,9 +615,9 @@ span.scenario-totals {float: right; text-align: right}
             </tbody>
          </table>
       </div>
-      <div id="top-level-scenario-d5e944">
+      <div id="top_scenario3">
          <h2 class="successful">T3: bookmarks, comments, etc.<span class="scenario-totals">passed: 3 / pending: 0 / failed: 0 / total: 3</span></h2>
-         <table class="xspec" id="t-d5e944">
+         <table class="xspec" id="table_scenario3">
             <colgroup>
                <col style="width:75%" />
                <col style="width:25%" />
@@ -618,6 +645,45 @@ span.scenario-totals {float: right; text-align: right}
                </tr>
                <tr class="successful">
                   <th>T3.3: multiple texts in comment</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>.</td>
+                  <td>Success</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div id="top_scenario4">
+         <h2 class="successful">T4: styles<span class="scenario-totals">passed: 3 / pending: 0 / failed: 0 / total: 3</span></h2>
+         <table class="xspec" id="table_scenario4">
+            <colgroup>
+               <col style="width:75%" />
+               <col style="width:25%" />
+            </colgroup>
+            <tbody>
+               <tr class="successful">
+                  <th>T4: styles</th>
+                  <th>passed: 3 / pending: 0 / failed: 0 / total: 3</th>
+               </tr>
+               <tr class="successful">
+                  <th>T4.1</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>.</td>
+                  <td>Success</td>
+               </tr>
+               <tr class="successful">
+                  <th>T4.2: alignment</th>
+                  <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
+               </tr>
+               <tr class="successful">
+                  <td>.</td>
+                  <td>Success</td>
+               </tr>
+               <tr class="successful">
+                  <th>T4.3</th>
                   <th>passed: 1 / pending: 0 / failed: 0 / total: 1</th>
                </tr>
                <tr class="successful">

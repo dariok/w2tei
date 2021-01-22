@@ -12214,6 +12214,124 @@
 					type="footnote" xml:id="n5"><rs type="person">Gottschalk Cruse</rs>/Crause, stammte aus <rs type="place">Braunschweig</rs> und war Mönch im dortigen Benediktinerkloster St. Ägidien, das er 1523 verließ. Erhielt durch Vermittlung <rs type="person">Luthers</rs> eine Stelle in <rs type="place">Celle</rs>, vermutlich als Kaplan am Hof von <rs type="person">Hzg. Ernst von Lüneburg</rs>. Vgl. <bibl>Wrede, Einführung, 36-39</bibl>; <bibl>NDB 13, 149f.</bibl></note> (1499-1540) zum Baccalaureus biblicus disputiert.<note
 					type="footnote" xml:id="n6">Vgl. <bibl>Liber Decanorum, 26</bibl>.</note></p></div></x:expect>
 		</x:scenario>
+		<x:scenario label="T3.9: EE227A = Nr. 268">
+			<x:context mode="item">
+				<w:p xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="353A69CE" w14:textId="7B949477" w:rsidR="00862BFE" w:rsidRPr="00862BFE" w:rsidRDefault="00862BFE" w:rsidP="00862BFE">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r>
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+							<w:i/>
+						</w:rPr>
+						<w:t>Editionsvorlage</w:t>
+					</w:r>
+					<w:r>
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t>:</w:t>
+					</w:r>
+					<w:r w:rsidR="0000436E">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> SUB Göttingen , </w:t>
+					</w:r>
+					<w:r w:rsidR="0000436E" w:rsidRPr="0000436E">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t>8 H E ECCL 378/5:2 (13) RARA</w:t>
+					</w:r>
+				</w:p><w:p xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w14:paraId="1CF9C52D" w14:textId="77777777" w:rsidR="003631C6" w:rsidRDefault="00862BFE" w:rsidP="00862BFE">
+					<w:pPr>
+						<w:pStyle w:val="KSText"/>
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+					</w:pPr>
+					<w:r>
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+							<w:i/>
+						</w:rPr>
+						<w:t xml:space="preserve">Weitere </w:t>
+					</w:r>
+					<w:r w:rsidR="003631C6" w:rsidRPr="00E82A8E">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+							<w:i/>
+						</w:rPr>
+						<w:t>Exemplar</w:t>
+					</w:r>
+					<w:r>
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+							<w:i/>
+						</w:rPr>
+						<w:t>e</w:t>
+					</w:r>
+					<w:r w:rsidR="003631C6">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t xml:space="preserve">: BSB München , </w:t>
+					</w:r>
+					<w:r w:rsidR="003631C6" w:rsidRPr="00E82A8E">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t>4</w:t>
+					</w:r>
+					<w:r w:rsidR="003631C6">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t>°</w:t>
+					</w:r>
+					<w:r w:rsidR="003631C6" w:rsidRPr="00E82A8E">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> H.ref. 749</w:t>
+					</w:r>
+					<w:r w:rsidR="003631C6">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t xml:space="preserve"> </w:t>
+					</w:r>
+					<w:r w:rsidR="003631C6" w:rsidRPr="0038558D">
+						<w:rPr>
+							<w:rStyle w:val="KSAnmerkunginberlieferung"/>
+						</w:rPr>
+						<w:t>(Digitalisat)</w:t>
+					</w:r>
+					<w:r w:rsidR="00156DFE">
+						<w:rPr>
+							<w:rFonts w:cs="Arial"/>
+						</w:rPr>
+						<w:t>.</w:t>
+					</w:r>
+				</w:p>
+			</x:context>
+			<x:expect label=".">
+				<item n="editionsvorlage">
+					<label>SUB Göttingen</label>
+					<idno type="signatur">8 H E ECCL 378/5:2 (13) RARA</idno>
+				</item>
+				<item>
+					<label>BSB München</label>
+					<idno type="signatur">4° H.ref. 749</idno>
+					<note xmlns:hab="http://diglib.hab.de">Digitalisat</note>
+				</item>
+			</x:expect>
+		</x:scenario>
 	</x:scenario>
 	<x:scenario label="T4: ms">
 		<x:scenario label="T4.1: EE 100">

@@ -10,14 +10,9 @@
   <xsl:output indent="0" />
   
   <xsl:template match="tei:ab">
-    <xsl:variable name="style" as="xs:string*">
-      <xsl:apply-templates select="@style" />
-    </xsl:variable>
     
     <hi>
-      <xsl:apply-templates select="@style" />
-      
-      <xsl:apply-templates />
+      <xsl:apply-templates select="@* | node()" />
     </hi>
   </xsl:template>
   
@@ -28,9 +23,18 @@
         <xsl:variable name="val" select="normalize-space(substring-after(., ':'))" />
         
         <xsl:choose>
+          <xsl:when test=". eq ' ' or . eq ''" />
+          
           <xsl:when test="$key eq 'b' and $val = ('', '1')">font-weight: bold</xsl:when>
           <xsl:when test="$key eq 'i' and $val = ('', '1')">font-style: italic</xsl:when>
-          <xsl:when test="$key eq 'u' and $val ne '0'">text-decoration: underline</xsl:when>
+          <xsl:when test="$key eq 'u'">
+            <xsl:choose>
+              <xsl:when test="$val eq '0' or $val eq ''" />
+              <xsl:when test="$val eq 'single'">text-decoration: underline single auto</xsl:when>
+              <xsl:when test="$val eq 'double'">text-decoration: underline double auto</xsl:when>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:when test="$key eq 'strike'">text-decoration: line-through single auto</xsl:when>
           
           <xsl:when test="$key eq 'rtl' and $val eq '1'">direction: rtl</xsl:when>
           <xsl:when test="$key eq 'rtl'" />
@@ -55,6 +59,10 @@
             <xsl:value-of select="'vertical-align: ' || $align" />
           </xsl:when>
           
+          <xsl:when test="$key eq 'smallCaps'">
+            <xsl:text>font-variant: small-caps</xsl:text>
+          </xsl:when>
+          
           <xsl:otherwise>
             <xsl:value-of select="."/>
           </xsl:otherwise>
@@ -62,7 +70,10 @@
       </xsl:for-each>
     </xsl:variable>
     
-    <xsl:attribute name="style" select="string-join($values, '; ') || ';'" />
+    <xsl:variable name="styleValue" select="string-join($values, '; ')"/>
+    <xsl:if test="string-length($styleValue) gt 0">
+      <xsl:attribute name="style" select="$styleValue || ';'" />
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="tei:note/tei:p">
