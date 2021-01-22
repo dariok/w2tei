@@ -48,7 +48,8 @@ let $params :=
 let $firstPass := if ($base = 'on')
   then
     let $t1 := transform:transform($incoming, doc('wt0.xsl'), $params)
-    return transform:transform($t1, doc('wt1.xsl'), $params)
+    let $t2 := transform:transform($t1, doc('wt1.xsl'), $params)
+    return transform:transform($t2, doc('wt2.xsl'), $params)
   else $incoming
 
 let $attr := <attributes><attr name="http://saxon.sf.net/feature/recoveryPolicyName" value="recoverSilently" /></attributes>
