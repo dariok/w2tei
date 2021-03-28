@@ -61,4 +61,45 @@
       </p>
     </x:expect>
   </x:scenario>
+  
+  <x:scenario label="T3: structure">
+    <x:context>
+      <div>
+        <p rendition="Normal" style="text-align: justify;">
+          <ab style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
+          <ab style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
+          <ab style="rFonts:Stempel Garamond CE Roman">.</ab>
+        </p>
+      </div>
+      <div />
+      <div>
+        <p rendition="Normal" style="text-align: justify;">
+          <ab style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
+          <ab style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
+          <ab style="rFonts:Stempel Garamond CE Roman">.</ab>
+        </p>
+      </div>
+    </x:context>
+    <x:expect label="divs">
+      <div>
+        <p rendition="Normal" style="text-align: justify;">
+          <ab style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
+          <ab style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
+          <ab style="rFonts:Stempel Garamond CE Roman">.</ab>
+        </p>
+      </div>
+      <div />
+      <div>
+        <p rendition="Normal" style="text-align: justify;">
+          <ab style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
+          <ab style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
+          <ab style="rFonts:Stempel Garamond CE Roman">.</ab>
+        </p>
+      </div>
+    </x:expect>
+  </x:scenario>
 </x:description>
