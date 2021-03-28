@@ -94,7 +94,7 @@
   
   <xsl:template match="w:r">
     <ab>
-      <xsl:sequence select="w:t/@xml:space" />
+      <xsl:attribute name="xml:space">preserve</xsl:attribute>
       <xsl:apply-templates select="w:rPr" />
       <xsl:apply-templates select="w:t | w:sym | w:tab | w:br" />
     </ab>

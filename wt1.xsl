@@ -12,9 +12,6 @@
       <xsl:sequence select="@*" />
       <xsl:for-each-group group-adjacent="local-name() || @style || @type || @rendition" select="*">
         <xsl:element name="{local-name()}">
-          <xsl:if test="current-group()[@xml:space]">
-            <xsl:attribute name="xml:space" select="'preserve'" />
-          </xsl:if>
           <xsl:sequence select="@*" />
           <xsl:apply-templates select="current-group()/node()"/>
         </xsl:element>
