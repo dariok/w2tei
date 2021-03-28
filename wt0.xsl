@@ -205,7 +205,7 @@
   <xsl:template match="w:tabs" />
   
   <xsl:template match="w:tab[not(ancestor::w:pPr)]">
-    <space width="tab" />
+    <space unit="tab" />
   </xsl:template>
   
   <xsl:template match="w:commentRangeEnd"/>
