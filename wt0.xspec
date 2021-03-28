@@ -886,6 +886,349 @@
         </note>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T3.4: footnotes with differing numbering starting value">
+      <x:context>
+        <pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+          <pkg:part pkg:name="/word/document.xml">
+            <pkg:xmlData>
+              <w:document xmlns:o="urn:schemas-microsoft-com:office:office"
+                xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                xmlns:v="urn:schemas-microsoft-com:vml"
+                xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                xmlns:w10="urn:schemas-microsoft-com:office:word"
+                xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+                xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+                xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+                xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                mc:Ignorable="w14 wp14">
+                <w:body>
+                  <w:p>
+                    <w:pPr>
+                      <w:pStyle w:val="Normal"/>
+                      <w:spacing w:lineRule="exact" w:line="280"/>
+                      <w:jc w:val="both"/>
+                      <w:rPr>
+                        <w:rFonts w:ascii="Stempel Garamond CE Roman" w:hAnsi="Stempel Garamond CE Roman"/>
+                      </w:rPr>
+                    </w:pPr>
+                    <w:r>
+                      <w:rPr>
+                        <w:rFonts w:ascii="Stempel Garamond CE Roman" w:hAnsi="Stempel Garamond CE Roman"/>
+                        <w:b/>
+                        <w:i/>
+                      </w:rPr>
+                      <w:t>Druck</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:rFonts w:ascii="Stempel Garamond CE Roman" w:hAnsi="Stempel Garamond CE Roman"/>
+                      </w:rPr>
+                      <w:t>: Auszug bei Stengel 2, S. 150f.</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:rStyle w:val="Funotenzeichen1"/>
+                        <w:rStyle w:val="FootnoteAnchor"/>
+                        <w:rFonts w:ascii="Stempel Garamond CE Roman" w:hAnsi="Stempel Garamond CE Roman"/>
+                      </w:rPr>
+                      <w:footnoteReference w:id="2"/>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:rFonts w:ascii="Stempel Garamond CE Roman" w:hAnsi="Stempel Garamond CE Roman"/>
+                      </w:rPr>
+                      <w:t xml:space="preserve"> Die ersten Seiten fehlen in SBPK; ab „Zum armen Heinrich“ mit Pränumeranten erh. </w:t>
+                    </w:r>
+                  </w:p>
+                </w:body>
+              </w:document>
+            </pkg:xmlData>
+          </pkg:part>
+          <pkg:part pkg:name="/word/footnotes.xml">
+            <pkg:xmlData>
+              <w:footnotes xmlns:o="urn:schemas-microsoft-com:office:office"
+                xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                xmlns:v="urn:schemas-microsoft-com:vml"
+                xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                xmlns:w10="urn:schemas-microsoft-com:office:word"
+                xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+                xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+                xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+                xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                mc:Ignorable="w14 wp14">
+                <w:footnote w:id="0" w:type="separator">
+                  <w:p>
+                    <w:pPr>
+                      <w:rPr>
+                        <w:sz w:val="12"/>
+                      </w:rPr>
+                    </w:pPr>
+                    <w:r>
+                      <w:separator/>
+                    </w:r>
+                  </w:p>
+                </w:footnote>
+                <w:footnote w:id="1" w:type="continuationSeparator">
+                  <w:p>
+                    <w:pPr>
+                      <w:rPr>
+                        <w:sz w:val="12"/>
+                      </w:rPr>
+                    </w:pPr>
+                    <w:r>
+                      <w:continuationSeparator/>
+                    </w:r>
+                  </w:p>
+                </w:footnote>
+                <w:footnote w:id="2">
+                  <w:p>
+                    <w:pPr>
+                      <w:pStyle w:val="Normal"/>
+                      <w:pBdr>
+                        <w:top w:val="single" w:sz="6" w:space="1" w:color="000000"/>
+                        <w:bottom w:val="single" w:sz="6" w:space="1" w:color="000000"/>
+                      </w:pBdr>
+                      <w:spacing w:lineRule="exact" w:line="280"/>
+                      <w:jc w:val="both"/>
+                      <w:rPr>
+                        <w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                    </w:pPr>
+                    <w:r>
+                      <w:rPr>
+                        <w:rStyle w:val="FootnoteCharacters"/>
+                      </w:rPr>
+                      <w:footnoteRef/>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                        <w:highlight w:val="cyan"/>
+                      </w:rPr>
+                      <w:t>Edmund Ernst Stengel: Private und amtliche Beziehungen der Brüder Grimm zu Hessen. Eine Sammlung von Briefen und Actenstücken als Festschrift zum hundertsten Geburtstag Wilhelm Grimms am 24. Februar 1886, 3 Bde, Band 1: Briefe der Brüder Grimm an hessische Freunde. Zweite Ausg., Marburg: Elwert, 1895 (nachfolgend Stengel 1)</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:color w:val="FF0000"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                        <w:highlight w:val="cyan"/>
+                      </w:rPr>
+                      <w:t>=515=</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                        <w:highlight w:val="cyan"/>
+                      </w:rPr>
+                      <w:t>. Band 2: Actenstücke über die Tätigkeit der Brüder Grimm im hessischen Staatsdienste. 2. Ausg. Marburg: Elwert, 1895 (nachfolgend Stengel 2)</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:color w:val="FF0000"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                        <w:highlight w:val="cyan"/>
+                      </w:rPr>
+                      <w:t>=516=</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                        <w:highlight w:val="cyan"/>
+                      </w:rPr>
+                      <w:t>. Bd. 3: Briefe der Brüder Grimm an Paul Wigand. Marburg: Elwert, 1910.</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:color w:val="FF0000"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t>=517=</w:t>
+                    </w:r>
+                  </w:p>
+                  <w:p>
+                    <w:pPr>
+                      <w:pStyle w:val="Footnote"/>
+                      <w:rPr/>
+                    </w:pPr>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t xml:space="preserve">Stengels Bände enthalten 34 handschriftliche Briefe und einen Brief in Abschrift der </w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:rStyle w:val="Person"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t>Brüder Grimm</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:color w:val="00B050"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t>=Grimm 1/ 2=</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t xml:space="preserve"> an </w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:rStyle w:val="Person"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t>Bang</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:color w:val="00B050"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t>=Bang 1=</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t>. In seinem Herausgeberkommentar schreibt Stengel: „Diese Briefe sind mir von den Kindern des ältesten Sohnes des Adressaten freundlichst übergeben worden.“ (</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                        <w:highlight w:val="cyan"/>
+                      </w:rPr>
+                      <w:t>Stengel 2</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:color w:val="FF0000"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                        <w:highlight w:val="cyan"/>
+                      </w:rPr>
+                      <w:t>=516=</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                        <w:highlight w:val="cyan"/>
+                      </w:rPr>
+                      <w:t>,</w:t>
+                    </w:r>
+                    <w:r>
+                      <w:rPr>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                      <w:t xml:space="preserve"> S. 149). Die Ausnahmen, die Stengel nennt, werden an der entsprechenden Stelle angemerkt. </w:t>
+                    </w:r>
+                  </w:p>
+                  <w:p>
+                    <w:pPr>
+                      <w:pStyle w:val="Footnote"/>
+                      <w:rPr>
+                        <w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/>
+                        <w:sz w:val="20"/>
+                        <w:szCs w:val="20"/>
+                      </w:rPr>
+                    </w:pPr>
+                    <w:r>
+                      <w:rPr/>
+                    </w:r>
+                  </w:p>
+                </w:footnote>
+              </w:footnotes>
+            </pkg:xmlData>
+          </pkg:part>
+          <pkg:part pkg:name="/word/settings.xml">
+            <pkg:xmlData>
+              <w:settings xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+                <w:zoom w:percent="90"/>
+                <w:defaultTabStop w:val="709"/>
+                <w:autoHyphenation w:val="true"/>
+                <w:footnotePr>
+                  <w:numFmt w:val="decimal"/>
+                  <w:numStart w:val="15"/>
+                  <w:footnote w:id="0"/>
+                  <w:footnote w:id="1"/>
+                </w:footnotePr>
+                <w:compat>
+                  <w:compatSetting w:name="compatibilityMode"
+                    w:uri="http://schemas.microsoft.com/office/word"
+                    w:val="12"/>
+                </w:compat>
+                <w:themeFontLang w:val="" w:eastAsia="" w:bidi=""/>
+              </w:settings>
+            </pkg:xmlData>
+          </pkg:part>
+        </pkg:package>
+      </x:context>
+      <x:expect label="footnote with @n='15'">
+        <TEI xmlns="http://www.tei-c.org/ns/1.0">
+          <teiHeader>...</teiHeader>
+          <text>
+            <body>
+              <div>
+                <p rendition="Normal" style="text-align: justify;">
+                  <ab style="rFonts:Stempel Garamond CE Roman; b:; i:">Druck</ab>
+                  <ab style="rFonts:Stempel Garamond CE Roman">: Auszug bei Stengel 2, S. 150f.</ab>
+                  <note type="footnote" xml:id="n2" n="15">
+                    <p rendition="Normal" style="text-align: justify;">
+                      <ab style="sz:20; szCs:20; highlight:cyan">Edmund Ernst Stengel: Private und amtliche Beziehungen der Brüder Grimm zu Hessen. Eine Sammlung von Briefen und Actenstücken als Festschrift zum hundertsten Geburtstag Wilhelm Grimms am 24. Februar 1886, 3 Bde, Band 1: Briefe der Brüder Grimm an hessische Freunde. Zweite Ausg., Marburg: Elwert, 1895 (nachfolgend Stengel 1)</ab>
+                      <ab style="color:FF0000; sz:20; szCs:20; highlight:cyan">=515=</ab>
+                      <ab style="sz:20; szCs:20; highlight:cyan">. Band 2: Actenstücke über die Tätigkeit der Brüder Grimm im hessischen Staatsdienste. 2. Ausg. Marburg: Elwert, 1895 (nachfolgend Stengel 2)</ab>
+                      <ab style="color:FF0000; sz:20; szCs:20; highlight:cyan">=516=</ab>
+                      <ab style="sz:20; szCs:20; highlight:cyan">. Bd. 3: Briefe der Brüder Grimm an Paul Wigand. Marburg: Elwert, 1910.</ab>
+                      <ab style="color:FF0000; sz:20; szCs:20">=517=</ab>
+                    </p>
+                    <p rendition="Footnote">
+                      <ab xml:space="preserve" style="sz:20; szCs:20">Stengels Bände enthalten 34 handschriftliche Briefe und einen Brief in Abschrift der </ab>
+                      <ab rendition="Person" style="sz:20; szCs:20">Brüder Grimm</ab>
+                      <ab style="color:00B050; sz:20; szCs:20">=Grimm 1/ 2=</ab>
+                      <ab xml:space="preserve" style="sz:20; szCs:20"> an </ab>
+                      <ab rendition="Person" style="sz:20; szCs:20">Bang</ab>
+                      <ab style="color:00B050; sz:20; szCs:20">=Bang 1=</ab>
+                      <ab style="sz:20; szCs:20">. In seinem Herausgeberkommentar schreibt Stengel: „Diese Briefe sind mir von den Kindern des ältesten Sohnes des Adressaten freundlichst übergeben worden.“ (</ab>
+                      <ab style="sz:20; szCs:20; highlight:cyan">Stengel 2</ab>
+                      <ab style="color:FF0000; sz:20; szCs:20; highlight:cyan">=516=</ab>
+                      <ab style="sz:20; szCs:20; highlight:cyan">,</ab>
+                      <ab xml:space="preserve" style="sz:20; szCs:20"> S. 149). Die Ausnahmen, die Stengel nennt, werden an der entsprechenden Stelle angemerkt. </ab>
+                    </p>
+                  </note>
+                  <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman"> Die ersten Seiten fehlen in SBPK; ab „Zum armen Heinrich“ mit Pränumeranten erh. </ab>
+                </p>
+              </div>
+            </body>
+            <back />
+          </text>
+        </TEI>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
   
   <x:scenario label="T4: styles">
