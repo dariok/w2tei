@@ -2,7 +2,7 @@
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
   xmlns="http://www.tei-c.org/ns/1.0"
   stylesheet="wt2.xsl">
-  <x:scenario label="T!: rtl">
+  <x:scenario label="T1: rtl">
     <x:context>
       <p style="Heading2; ">
         <anchor type="bookmarkStart" xml:id="_sr21dbarkb4s"/>
@@ -46,14 +46,14 @@
   <x:scenario label="T4: small caps">
     <x:context>
       <p rendition="AMWGApparatTextDatierung">
-        <ab rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</ab>
-        <ab style="rFonts:Segoe UI Historic; smallCaps:">:</ab>
+        <ab xml:space="preserve" rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</ab>
+        <ab xml:space="preserve" style="rFonts:Segoe UI Historic; smallCaps:">:</ab>
       </p>
     </x:context>
     <x:expect label=".">
       <p rendition="AMWGApparatTextDatierung">
-        <hi rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</hi>
-        <hi style="font-family: Segoe_UI_Historic; font-variant: small-caps;">:</hi>
+        <hi xml:space="preserve" rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</hi>
+        <hi xml:space="preserve" style="font-family: Segoe_UI_Historic; font-variant: small-caps;">:</hi>
       </p>
     </x:expect>
   </x:scenario>
@@ -63,46 +63,46 @@
       <x:context>
         <p rendition="AMWGFlietexteingerckt">
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic">Du, meine aristophelische 2</ab>
-          <ab style="rFonts:Segoe UI Historic; u:single">te</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; u:single">te</ab>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> Hälfte</ab>
           <ptr type="endnote" ref="#e5" rendition="AMWGFunote"/>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> – wie </ab>
-          <ab style="rFonts:Segoe UI Historic; u:single">absolut</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; u:single">absolut</ab>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> bist Du </ab>
-          <ab style="rFonts:Segoe UI Historic; strike:">Dir</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; strike:">Dir</ab>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> mir eigen und </ab>
-          <ab style="rFonts:Segoe UI Historic; u:single">bluts</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; u:single">bluts</ab>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic">verwandt. </ab>
-          <ab style="rFonts:Segoe UI Historic; u:single">Bleib</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; u:single">Bleib</ab>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> </ab>
-          <ab style="rFonts:Segoe UI Historic; u:single">mir</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; u:single">mir</ab>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic">!! – Es gibt einen hohen schönen Ort hier – Tre Croce [recte: Tre Croci] zwischen Cortina &amp; Misurina</ab>
           <ptr type="endnote" ref="#e6" rendition="AMWGFunote"/>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic">[,] </ab>
-          <ab style="rFonts:Segoe UI Historic; u:double">dort</ab>
+          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; u:double">dort</ab>
           <ab xml:space="preserve" style="rFonts:Segoe UI Historic"> wollen wir eine Wiedergeburt unsrer Liebe feiern.</ab>
         </p>
       </x:context>
       <x:expect label=".">
         <p rendition="AMWGFlietexteingerckt">
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">Du, meine aristophelische 2</hi>
-          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">te</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">te</hi>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> Hälfte</hi>
           <ptr type="endnote" ref="#e5" rendition="AMWGFunote"/>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> – wie </hi>
-          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">absolut</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">absolut</hi>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> bist Du </hi>
-          <hi style="font-family: Segoe_UI_Historic; text-decoration: line-through single auto;">Dir</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic; text-decoration: line-through single auto;">Dir</hi>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> mir eigen und </hi>
-          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">bluts</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">bluts</hi>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">verwandt. </hi>
-          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">Bleib</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">Bleib</hi>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> </hi>
-          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">mir</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic; text-decoration: underline single auto;">mir</hi>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">!! – Es gibt einen hohen schönen Ort hier – Tre Croce [recte: Tre Croci] zwischen Cortina &amp; Misurina</hi>
           <ptr type="endnote" ref="#e6" rendition="AMWGFunote"/>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">[,] </hi>
-          <hi style="font-family: Segoe_UI_Historic; text-decoration: underline double auto;">dort</hi>
+          <hi xml:space="preserve" style="font-family: Segoe_UI_Historic; text-decoration: underline double auto;">dort</hi>
           <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;"> wollen wir eine Wiedergeburt unsrer Liebe feiern.</hi>
         </p>
       </x:expect>
@@ -112,12 +112,12 @@
   <x:scenario label="T6: paragraph alignment">
     <x:context>
       <p rendition="AMWGFlietext" style="text-align: right;">
-        <ab style="rFonts:Segoe UI Historic">Abend</ab>
+        <ab xml:space="preserve" style="rFonts:Segoe UI Historic">Abend</ab>
       </p>
     </x:context>
     <x:expect label=".">
       <p rendition="AMWGFlietext" style="text-align: right;">
-        <hi style="font-family: Segoe_UI_Historic;">Abend</hi>
+        <hi xml:space="preserve" style="font-family: Segoe_UI_Historic;">Abend</hi>
       </p>
     </x:expect>
   </x:scenario>
