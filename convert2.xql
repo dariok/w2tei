@@ -21,22 +21,22 @@ switch ($path)
     return false()
 }
 
-let $entry-data := function ($path as xs:string, $data-type as xs:string, $data as item()?, $param as item()*) {
-  $data
+let $process := function ($path as xs:string, $data-type as xs:string, $data as item()?, $param as item()*) {
+  <pkg:part pkg:name="/{$path}" xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+    <pkg:xmlData>{
+      $data
+    }</pkg:xmlData>
+  </pkg:part>
 }
-
 let $title := if (ends-with(request:get-uploaded-file-name('file'), '.odt'))
   then substring-before(request:get-uploaded-file-name('file'), '.odt')
   else substring-before(request:get-uploaded-file-name('file'), '.docx')
 
 let $origFileData := string(request:get-uploaded-file-data('file'))
-(: unzip erwartet base64Binary, die vom Upload direkt geliefert werden :)
-let $unpack := compression:unzip($origFileData, $filter, (), $entry-data, ())
 let $incoming := 
-  <pack>{
-    for $item in $unpack
-      return $item}
-  </pack>
+  <pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">{
+    compression:unzip($origFileData, $filter, (), $process, ())
+  }</pkg:package>
   
 let $debug := xmldb:store('/db/apps/w2tei', 'word.xml', document{$incoming})
 
