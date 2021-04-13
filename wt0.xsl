@@ -66,7 +66,9 @@
   <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc)]">
     <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
     <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
-    <!-- TODO this should be expanded later -->
+    
+    <!-- TODO this is actually only the setting how the value should be rendered; the value must be evalutated similar
+      to footnotes -->
     <xsl:variable name="label" select="//w:abstractNum[@w:abstractNumId eq $numId]/w:lvl[@w:ilvl eq $level]/w:lvlText/@w:val"/>
     
     <label>
@@ -92,7 +94,7 @@
   
   <xsl:template match="w:r">
     <ab>
-      <xsl:sequence select="w:t/@xml:space" />
+      <xsl:attribute name="xml:space">preserve</xsl:attribute>
       <xsl:apply-templates select="w:rPr" />
       <xsl:apply-templates select="w:t | w:sym | w:tab | w:br" />
     </ab>
@@ -176,15 +178,37 @@
     </ref>
   </xsl:template>
   
+  <!-- footnotes -->
   <xsl:template match="w:r[w:footnoteReference]">
     <xsl:variable name="id" select="w:footnoteReference/@w:id"/>
     <xsl:variable name="note" select="//w:footnote[@w:id = $id]"/>
-    <note type="footnote" xml:id="n{$id}">
+    
+    <!-- footnotes may have a starting value other than 1, which may be found in settings.xml -->
+    <xsl:variable name="count">
+      <xsl:variable name="start" as="xs:integer">
+        <xsl:choose>
+          <xsl:when test="//pkg:part[@pkg:name eq '/word/settings.xml']//w:footnotePr">
+            <!-- the settings also include empty footnotes parallel to the empty ones in //w:footnotes;
+                 Cf. ECMA-376, 5th ed., 17.11.9 -->
+            <xsl:value-of select="//pkg:part[@pkg:name eq '/word/settings.xml']//w:footnotePr/w:numStart/@w:val
+              - count(//pkg:part[@pkg:name eq '/word/settings.xml']//w:footnotePr/w:footnote) + $id"/>
+          </xsl:when>
+          <xsl:otherwise>0</xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      
+      <xsl:value-of select="$start"/>
+    </xsl:variable>
+    
+    <note type="footnote" xml:id="n{$id}" n="{$count}">
       <xsl:apply-templates select="$note/w:p" />
     </note>
   </xsl:template>
-  <xsl:template match="w:r[w:footnoteRef]" />
   
+  <xsl:template match="w:r[w:footnoteRef]" />
+  <!-- END footnotes -->
+  
+  <!-- endnotes -->
   <xsl:template match="w:r[w:endnoteReference]">
     <xsl:variable name="id" select="w:endnoteReference/@w:id"/>
     <xsl:variable name="note" select="//w:endnote[@w:id = $id]"/>
@@ -192,15 +216,20 @@
       <xsl:apply-templates select="$note//w:pStyle" />
     </ptr>
   </xsl:template>
+  
   <xsl:template match="w:r[w:endnoteRef]" />
+  
   <xsl:template match="w:endnotes">
     <xsl:apply-templates select="w:endnote[@w:id &gt; 0]" />
   </xsl:template>
+  
   <xsl:template match="w:endnote">
+    <!-- TODO if this comes up, deal with startings values other than 1 like for footnotes -->
     <note type="endnote" xml:id="e{@w:id}">
       <xsl:apply-templates select="w:p" />
     </note>
   </xsl:template>
+  <!-- END endnotes -->
   
   <xsl:template match="w:tabs" />
   

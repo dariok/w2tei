@@ -3,62 +3,127 @@
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns="http://www.tei-c.org/ns/1.0"
   stylesheet="wt1.xsl">
-  <x:scenario label="T1">
-    <x:context>
-      <p>
-        <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
-        <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
-        <ab style="rFonts:Junicode; lang:en-US">]</ab>
-        <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
-        <ab style="rFonts:Junicode; b:; lang:en-US">Currus .D</ab>
-        <ab style="rFonts:Junicode; b:; lang:en-US">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
-        <ptr type="endnote" ref="#e1"/>
-        <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US"> </ab>
-        <ab style="rFonts:Junicode; b:; lang:en-US">I. P.</ab>
-        <ptr type="endnote" ref="#e2"/>
-        <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
-      </p>
-    </x:context>
-    <x:expect label="-">
-      <p>
-        <ab style="rFonts:Junicode; lang:en-US">[G4</ab>
-        <ab style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
-        <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve">] </ab>
-        <ab style="rFonts:Junicode; b:; lang:en-US">Currus .D[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
-        <ptr type="endnote" ref="#e1"/>
-        <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US"> I. P.</ab>
-        <ptr type="endnote" ref="#e2"/>
-        <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
-      </p>
-    </x:expect>
+  <x:scenario label="T1: grouping styles">
+    <x:scenario label="T1.1">
+      <x:context>
+        <p>
+          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US">[G4</ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US">]</ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">Currus .D</ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
+          <ptr type="endnote" ref="#e1"/>
+          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US"> </ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">I. P.</ab>
+          <ptr type="endnote" ref="#e2"/>
+          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
+        </p>
+      </x:context>
+      <x:expect label="-">
+        <p>
+          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US">[G4</ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US">] </ab>
+          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">Currus .D[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
+          <ptr type="endnote" ref="#e1"/>
+          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US"> I. P.</ab>
+          <ptr type="endnote" ref="#e2"/>
+          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
+        </p>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T1.2">
+      <x:context>
+        <p>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman"> – 8.) </ab>
+          <ab xml:space="preserve" rendition="Person" style="rFonts:Stempel Garamond CE Roman; u:single">Dickerhof</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; color:00B050; u:single">=Dickerhof=</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">, Stud: Theol: aus der </ab>
+          <ab xml:space="preserve" rendition="Place" style="rFonts:Stempel Garamond CE Roman">Graf§chaft Mark</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; color:00B050">=Grafschaft Mark=</ab>
+        </p>
+      </x:context>
+      <x:expect label=".">
+        <p>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman"> – 8.) </ab>
+          <ab xml:space="preserve" rendition="Person" style="rFonts:Stempel Garamond CE Roman; u:single">Dickerhof</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; color:00B050; u:single">=Dickerhof=</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">, Stud: Theol: aus der </ab>
+          <ab xml:space="preserve" rendition="Place" style="rFonts:Stempel Garamond CE Roman">Graf§chaft Mark</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; color:00B050">=Grafschaft Mark=</ab>
+        </p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
   
   <x:scenario label="T2">
     <x:context>
       <p rendition="Normal">
-        <ab style="rFonts:; sz:24">Hast Du meine Broschüre</ab>
+        <ab xml:space="preserve" style="rFonts:; sz:24">Hast Du meine Broschüre</ab>
         <ptr type="comment" xml:id="c0"/>
         <ptr type="endnote" ref="#e2" rendition="Endnote"/>
         <note type="comment" from="#c0">
           <note>
-            <ab style="rFonts:Wingdings; sz:24; szCs:24; lang:en-US"></ab>
-            <ab style="rFonts:Liberation Serif; sz:24; szCs:24; lang:en-US">Link auf gelb markiertes Wort</ab>
+            <ab xml:space="preserve" style="rFonts:Wingdings; sz:24; szCs:24; lang:en-US"></ab>
+            <ab xml:space="preserve" style="rFonts:Liberation Serif; sz:24; szCs:24; lang:en-US">Link auf gelb markiertes Wort</ab>
           </note>
         </note>
       </p>
     </x:context>
     <x:expect label=".">
       <p rendition="Normal">
-        <ab style="rFonts:; sz:24">Hast Du meine Broschüre</ab>
+        <ab xml:space="preserve" style="rFonts:; sz:24">Hast Du meine Broschüre</ab>
         <ptr type="comment" xml:id="c0"/>
         <ptr type="endnote" ref="#e2" rendition="Endnote"/>
         <note type="comment" from="#c0">
           <note>
-            <ab style="rFonts:Wingdings; sz:24; szCs:24; lang:en-US"></ab>
-            <ab style="rFonts:Liberation Serif; sz:24; szCs:24; lang:en-US">Link auf gelb markiertes Wort</ab>
+            <ab xml:space="preserve" style="rFonts:Wingdings; sz:24; szCs:24; lang:en-US"></ab>
+            <ab xml:space="preserve" style="rFonts:Liberation Serif; sz:24; szCs:24; lang:en-US">Link auf gelb markiertes Wort</ab>
           </note>
         </note>
       </p>
+    </x:expect>
+  </x:scenario>
+  
+  <x:scenario label="T3: structure">
+    <x:context>
+      <div>
+        <p rendition="Normal" style="text-align: justify;">
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">.</ab>
+        </p>
+      </div>
+      <div />
+      <div>
+        <p rendition="Normal" style="text-align: justify;">
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">.</ab>
+        </p>
+      </div>
+    </x:context>
+    <x:expect label="divs">
+      <div>
+        <p rendition="Normal" style="text-align: justify;">
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">.</ab>
+        </p>
+      </div>
+      <div />
+      <div>
+        <p rendition="Normal" style="text-align: justify;">
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
+          <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">.</ab>
+        </p>
+      </div>
     </x:expect>
   </x:scenario>
 </x:description>

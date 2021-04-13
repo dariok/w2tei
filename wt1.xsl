@@ -10,11 +10,8 @@
   <xsl:template match="*[tei:ab]">
     <xsl:element name="{local-name()}">
       <xsl:sequence select="@*" />
-      <xsl:for-each-group group-adjacent="local-name() || @style || @type" select="*">
+      <xsl:for-each-group group-adjacent="local-name() || @style || @type || @rendition" select="*">
         <xsl:element name="{local-name()}">
-          <xsl:if test="current-group()[@xml:space]">
-            <xsl:attribute name="xml:space" select="'preserve'" />
-          </xsl:if>
           <xsl:sequence select="@*" />
           <xsl:apply-templates select="current-group()/node()"/>
         </xsl:element>
@@ -23,19 +20,21 @@
   </xsl:template>
   
   <xsl:template match="tei:div">
-    <xsl:choose>
-      <xsl:when test="tei:label">
-        <xsl:for-each-group select="*" group-starting-with="tei:label[not(preceding-sibling::tei:label)]">
-          <list>
-            <xsl:apply-templates select="current-group()[self::tei:label or self::tei:item]" />
-          </list>
-          <xsl:apply-templates select="current-group()[not(self::tei:label or self::tei:item)]" />
-        </xsl:for-each-group>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:apply-templates />
-      </xsl:otherwise>
-    </xsl:choose>
+    <div>
+      <xsl:choose>
+        <xsl:when test="tei:label">
+          <xsl:for-each-group select="*" group-starting-with="tei:label[not(preceding-sibling::tei:label)]">
+            <list>
+              <xsl:apply-templates select="current-group()[self::tei:label or self::tei:item]" />
+            </list>
+            <xsl:apply-templates select="current-group()[not(self::tei:label or self::tei:item)]" />
+          </xsl:for-each-group>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:apply-templates />
+        </xsl:otherwise>
+      </xsl:choose>
+    </div>
   </xsl:template>
   
   <xsl:template match="@* | node()">
