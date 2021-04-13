@@ -247,13 +247,17 @@
     <xsl:apply-templates select="w:r" />
   </xsl:template>
   
-  <xsl:template match="w:bookmarkStart[@name = '_GoBack']" />
+  <xsl:template match="w:bookmarkStart[@w:name = '_GoBack']" />
   <xsl:template match="w:bookmarkStart">
     <anchor type="bookmarkStart" xml:id="{@w:name}" /> 
   </xsl:template>
   <xsl:template match="w:bookmarkEnd">
     <xsl:variable name="target" select="@w:id" />
-    <anchor type="bookmarkEnd" ref="#{preceding-sibling::w:bookmarkStart[@w:id = $target]/@w:name}" />
+    <xsl:variable name="ref" select="preceding-sibling::w:bookmarkStart[@w:id = $target]/@w:name" />
+    
+    <xsl:if test="$ref ne '_GoBack'">
+      <anchor type="bookmarkEnd" ref="#{$ref}" />
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="w:br">

@@ -733,10 +733,8 @@
                     target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
                     >Caesareo</ref>
                   <ptr type="endnote" ref="#e7" />
-                  <anchor type="bookmarkStart" xml:id="_GoBack"/>
                   <ref target="http://d-nb.info/gnd/121098-1"
                     rendition="auszeichnungbermehrereworte0" style="rFonts:; color:0000FF">Handelsministerium</ref>
-                  <anchor type="bookmarkEnd" ref="#_GoBack"/>
                   <ab rendition="AuszeichnungberMehrereWorte">]]</ab>
                 </p>
               </div>
@@ -884,6 +882,82 @@
           <ab xml:space="preserve"
        style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Zu weiteren Informationen zur Rechteklärung, s. die Beschreibungen der AP. 1, 3 und 7.</ab>
         </note>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T3.4">
+      <x:context>
+        <w:p w14:paraId="1856D20A"
+          w14:textId="48FB86DA"
+          w:rsidR="00256C2D"
+          w:rsidRPr="00B2258C"
+          w:rsidRDefault="006F6E8B"
+          w:rsidP="00B2258C">
+          <w:pPr>
+            <w:pStyle w:val="AMWGKopfzeileBrief"/>
+          </w:pPr>
+          <w:r>
+            <w:t>oWG1</w:t>
+          </w:r>
+          <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+          <w:bookmarkEnd w:id="0"/>
+          <w:r w:rsidR="0040756C">
+            <w:t>1</w:t>
+          </w:r>
+          <w:r w:rsidR="00C12560" w:rsidRPr="00B2258C">
+            <w:t>,</w:t>
+          </w:r>
+          <w:r w:rsidR="00256C2D" w:rsidRPr="00B2258C">
+            <w:t xml:space="preserve"> </w:t>
+          </w:r>
+          <w:r w:rsidR="005F26BA" w:rsidRPr="00B2258C">
+            <w:t>Brief</w:t>
+          </w:r>
+          <w:r w:rsidR="00D27A73">
+            <w:t>entwurf</w:t>
+          </w:r>
+          <w:r w:rsidR="00256C2D" w:rsidRPr="00B2258C">
+            <w:t xml:space="preserve"> </w:t>
+          </w:r>
+          <w:r w:rsidR="00201FEE" w:rsidRPr="00B2258C">
+            <w:t xml:space="preserve">an </w:t>
+          </w:r>
+          <w:r w:rsidR="00D27A73">
+            <w:t>AM</w:t>
+          </w:r>
+          <w:r w:rsidR="00C12560" w:rsidRPr="00B2258C">
+            <w:t>,</w:t>
+          </w:r>
+          <w:r w:rsidR="00256C2D" w:rsidRPr="00B2258C">
+            <w:t xml:space="preserve"> </w:t>
+          </w:r>
+          <w:r w:rsidR="00454EDD">
+            <w:t>im Zug von Berlin nach Timmendorfer Strand</w:t>
+          </w:r>
+          <w:r w:rsidR="00C12560" w:rsidRPr="00B2258C">
+            <w:t xml:space="preserve">, </w:t>
+          </w:r>
+          <w:r w:rsidR="00DB6715">
+            <w:t>Donnerstag, 21. Juli 1910</w:t>
+          </w:r>
+        </w:p>
+      </x:context>
+      <x:expect label=".">
+        <p rendition="AMWGKopfzeileBrief">
+          <ab>oWG1</ab>
+          <ab>1</ab>
+          <ab>,</ab>
+          <ab xml:space="preserve"> </ab>
+          <ab>Brief</ab>
+          <ab>entwurf</ab>
+          <ab xml:space="preserve"> </ab>
+          <ab xml:space="preserve">an </ab>
+          <ab>AM</ab>
+          <ab>,</ab>
+          <ab xml:space="preserve"> </ab>
+          <ab>im Zug von Berlin nach Timmendorfer Strand</ab>
+          <ab xml:space="preserve">, </ab>
+          <ab>Donnerstag, 21. Juli 1910</ab>
+        </p>
       </x:expect>
     </x:scenario>
   </x:scenario>
