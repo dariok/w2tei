@@ -63,7 +63,8 @@
       <xsl:apply-templates select="*"/>
     </note>
   </xsl:template>
-  <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc)]">
+  <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc
+      or wt:is(., 'Heading'))]">
     <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
     <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
     
