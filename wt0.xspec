@@ -1656,7 +1656,7 @@
       <x:expect label=".">
         <row>
           <cell/>
-          <cell style="border-top: 1px single #000000;">
+          <cell style="border-top: 1px solid #000000;">
             <ab xml:space="preserve">[Var. 4]</ab>
           </cell>
           <cell/>

@@ -292,8 +292,9 @@
     </xsl:if>
   </xsl:template>
   <xsl:template match="w:tcBorders/*">
+    <xsl:variable name="style" select="if (@w:val eq 'single') then 'solid' else @w:val" />
     <xsl:value-of
-      select="'border-' || local-name() || ': ' || number(@w:sz) div 2 || 'px ' || @w:val || ' #' || @w:color"/>
+      select="'border-' || local-name() || ': ' || number(@w:sz) div 2 || 'px ' || $style || ' #' || @w:color"/>
   </xsl:template>
   
   <xsl:template match="w:bookmarkStart[@w:name = '_GoBack']" />
