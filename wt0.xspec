@@ -1430,5 +1430,90 @@
         </p>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T4.4: table cell borders">
+      <x:context>
+        <w:tr>
+          <w:trPr>
+            <w:trHeight w:val="285" w:hRule="atLeast"/>
+          </w:trPr>
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1472" w:type="dxa"/>
+              <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tcBorders>
+            </w:tcPr>
+            <w:p>
+              <w:pPr>
+                <w:pStyle w:val="AMWGFlietext"/>
+                <w:rPr/>
+              </w:pPr>
+              <w:r>
+                <w:rPr/>
+              </w:r>
+            </w:p>
+          </w:tc>
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="4369" w:type="dxa"/>
+              <w:tcBorders>
+                <w:top w:val="single" w:sz="2" w:space="0" w:color="000000"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tcBorders>
+              <w:tcMar>
+                <w:top w:w="55" w:type="dxa"/>
+                <w:left w:w="55" w:type="dxa"/>
+                <w:bottom w:w="55" w:type="dxa"/>
+                <w:right w:w="55" w:type="dxa"/>
+              </w:tcMar>
+            </w:tcPr>
+            <w:p>
+              <w:pPr>
+                <w:pStyle w:val="AMWGFlietext"/>
+                <w:rPr/>
+              </w:pPr>
+              <w:r>
+                <w:rPr/>
+                <w:t>[Var. 4]</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="3178" w:type="dxa"/>
+              <w:tcBorders>
+                <w:top w:val="nil"/>
+                <w:left w:val="nil"/>
+                <w:bottom w:val="nil"/>
+                <w:right w:val="nil"/>
+              </w:tcBorders>
+            </w:tcPr>
+            <w:p>
+              <w:pPr>
+                <w:pStyle w:val="AMWGFlietext"/>
+                <w:rPr/>
+              </w:pPr>
+              <w:r>
+                <w:rPr/>
+              </w:r>
+            </w:p>
+          </w:tc>
+        </w:tr>
+      </x:context>
+      <x:expect label=".">
+        <row>
+          <cell/>
+          <cell style="border-top: 1px single #000000;">
+            <ab xml:space="preserve">[Var. 4]</ab>
+          </cell>
+          <cell/>
+        </row>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>

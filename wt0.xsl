@@ -263,9 +263,7 @@
   </xsl:template>
   <xsl:template match="w:tc">
     <cell>
-      <xsl:if test="w:tcPr/w:gridSpan">
-        <xsl:attribute name="cols" select="w:tcPr/w:gridSpan/@w:val" />
-      </xsl:if>
+      <xsl:apply-templates select="w:tcPr" />
       <xsl:apply-templates select="w:p" />
     </cell>
   </xsl:template>
@@ -274,6 +272,27 @@
       <lb />
     </xsl:if>
     <xsl:apply-templates select="w:r" />
+  </xsl:template>
+  
+  <xsl:template match="w:tcPr" as="attribute()*">
+    <xsl:if test="w:gridSpan">
+      <xsl:attribute name="cols" select="w:gridSpan/@w:val" />
+    </xsl:if>
+    
+    <xsl:apply-templates select="w:tcBorders" />
+  </xsl:template>
+  <xsl:template match="w:tcBorders">
+    <xsl:variable name="values" as="xs:string*">
+      <xsl:apply-templates select="*[@w:val ne 'nil']" />
+    </xsl:variable>
+    
+    <xsl:if test="count($values) gt 0">
+      <xsl:attribute name="style" select="string-join($values, '; ') || ';'"/>
+    </xsl:if>
+  </xsl:template>
+  <xsl:template match="w:tcBorders/*">
+    <xsl:value-of
+      select="'border-' || local-name() || ': ' || number(@w:sz) div 2 || 'px ' || @w:val || ' #' || @w:color"/>
   </xsl:template>
   
   <xsl:template match="w:bookmarkStart[@w:name = '_GoBack']" />
