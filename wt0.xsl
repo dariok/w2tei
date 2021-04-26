@@ -264,7 +264,18 @@
   </xsl:template>
   <xsl:template match="w:tc">
     <cell>
-      <xsl:apply-templates select="w:tcPr" />
+      <xsl:variable name="styles" as="attribute()*">
+        <xsl:apply-templates select="w:tcPr | w:p[1]/w:pPr" />
+      </xsl:variable>
+      <xsl:choose>
+        <xsl:when test="count($styles[name() eq 'style']) gt 1">
+          <xsl:sequence select="$styles[name() eq 'rendition']"></xsl:sequence>
+          <xsl:attribute name="style" select="string-join($styles[name() eq 'style'], '; ')" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:sequence select="$styles" />
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:apply-templates select="w:p" />
     </cell>
   </xsl:template>
