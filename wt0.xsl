@@ -264,9 +264,18 @@
   </xsl:template>
   <xsl:template match="w:tc">
     <cell>
-      <xsl:if test="w:tcPr/w:gridSpan">
-        <xsl:attribute name="cols" select="w:tcPr/w:gridSpan/@w:val" />
-      </xsl:if>
+      <xsl:variable name="styles" as="attribute()*">
+        <xsl:apply-templates select="w:tcPr | w:p[1]/w:pPr" />
+      </xsl:variable>
+      <xsl:choose>
+        <xsl:when test="count($styles[name() eq 'style']) gt 1">
+          <xsl:sequence select="$styles[name() eq 'rendition']"></xsl:sequence>
+          <xsl:attribute name="style" select="string-join($styles[name() eq 'style'], '; ')" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:sequence select="$styles" />
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:apply-templates select="w:p" />
     </cell>
   </xsl:template>
@@ -275,6 +284,28 @@
       <lb />
     </xsl:if>
     <xsl:apply-templates select="w:r" />
+  </xsl:template>
+  
+  <xsl:template match="w:tcPr" as="attribute()*">
+    <xsl:if test="w:gridSpan">
+      <xsl:attribute name="cols" select="w:gridSpan/@w:val" />
+    </xsl:if>
+    
+    <xsl:apply-templates select="w:tcBorders" />
+  </xsl:template>
+  <xsl:template match="w:tcBorders">
+    <xsl:variable name="values" as="xs:string*">
+      <xsl:apply-templates select="*[@w:val ne 'nil']" />
+    </xsl:variable>
+    
+    <xsl:if test="count($values) gt 0">
+      <xsl:attribute name="style" select="string-join($values, '; ') || ';'"/>
+    </xsl:if>
+  </xsl:template>
+  <xsl:template match="w:tcBorders/*">
+    <xsl:variable name="style" select="if (@w:val eq 'single') then 'solid' else @w:val" />
+    <xsl:value-of
+      select="'border-' || local-name() || ': ' || number(@w:sz) div 2 || 'px ' || $style || ' #' || @w:color"/>
   </xsl:template>
   
   <xsl:template match="w:bookmarkStart[@w:name = '_GoBack']" />
