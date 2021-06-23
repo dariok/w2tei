@@ -188,7 +188,7 @@
     <xsl:variable name="count">
       <xsl:variable name="start" as="xs:integer">
         <xsl:choose>
-          <xsl:when test="//pkg:part[@pkg:name eq '/word/settings.xml']//w:footnotePr">
+          <xsl:when test="//pkg:part[@pkg:name eq '/word/settings.xml']//w:footnotePr/w:numStart">
             <!-- the settings also include empty footnotes parallel to the empty ones in //w:footnotes;
                  Cf. ECMA-376, 5th ed., 17.11.9 -->
             <xsl:value-of select="//pkg:part[@pkg:name eq '/word/settings.xml']//w:footnotePr/w:numStart/@w:val
