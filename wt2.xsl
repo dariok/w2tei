@@ -83,6 +83,8 @@
     <xsl:apply-templates />
   </xsl:template>
   
+  <xsl:template match="tei:list[not(*)]" />
+  
   <xsl:template match="@* | node()">
     <xsl:copy>
       <xsl:apply-templates select="@* | node()" />

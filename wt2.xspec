@@ -121,4 +121,65 @@
       </p>
     </x:expect>
   </x:scenario>
+  
+  <x:scenario label="T7">
+    <x:context href="wt1.xspec" select="//x:scenario[starts-with(@label, 'T4.1')]/x:expect/*" />
+    <x:expect label="." xml:space="preserve"><div>
+          
+          <p rendition="AMWGApparatFlietext">
+            <hi xml:space="preserve" style="font-weight: bold;">Online AMWG Abkürzungsverzeichnis</hi>
+          </p>
+          <p rendition="AMWGApparatFlietext">
+            <hi xml:space="preserve">Personen:</hi>
+          </p>
+          <list>
+            <label></label>
+            <item level="0">
+              <hi xml:space="preserve">Manon Gropius senior: MGsen</hi>
+            </item>
+            <label></label>
+            <item level="0">
+              <hi xml:space="preserve">Walter Gropius: WG</hi>
+            </item>
+            <label></label>
+            <item level="0">
+              <hi xml:space="preserve">Alma Mahler: AM</hi>
+            </item>
+            <label></label>
+            <item level="0">
+              <hi xml:space="preserve">Gustav Mahler: GM</hi>
+            </item>
+            <label></label>
+            <item level="0">
+              <hi xml:space="preserve" style="lang:en-US;">Anna Moll: AMo</hi>
+            </item>
+          </list>
+          <p rendition="AMWGApparatFlietext">
+            <hi xml:space="preserve" style="lang:en-US;">Archive:</hi>
+          </p>
+          <list>
+            <label>-</label>
+            <item level="0">
+              <hi xml:space="preserve" style="lang:en-US;">Bauhaus-Archiv, Berlin: BHA</hi>
+            </item>
+            <label>-</label>
+            <item level="0">
+              <hi xml:space="preserve">Österreichische Nationalbibliothek: ÖNB</hi>
+            </item>
+            <label>-</label>
+            <item level="0">
+              <hi xml:space="preserve">University of Pennsylvania Libraries, Philadelphia: US-PHu</hi>
+            </item>
+          </list>
+          <p>
+            <hi xml:space="preserve" style="font-size: 12pt;">Anderes:</hi>
+          </p>
+          <list>
+            <label>-</label>
+            <item level="0">
+              <hi xml:space="preserve" style="lang:en-US;">Altes Testament: AT</hi>
+            </item>
+          </list>
+        </div></x:expect>
+  </x:scenario>
 </x:description>

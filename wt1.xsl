@@ -23,7 +23,8 @@
     <div>
       <xsl:choose>
         <xsl:when test="tei:label">
-          <xsl:for-each-group select="*" group-starting-with="tei:label[not(preceding-sibling::tei:label)]">
+          <xsl:for-each-group select="*"
+            group-starting-with="tei:label[not(preceding-sibling::*[1][self::tei:item])]">
             <list>
               <xsl:apply-templates select="current-group()[self::tei:label or self::tei:item]" />
             </list>
