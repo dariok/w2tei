@@ -61,19 +61,23 @@
     </xsl:for-each-group>
   </xsl:template>
   
+  <!-- normal paragraphs -->
   <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym or ancestor::w:tbl)]" />
   <xsl:template match="w:p">
     <p>
       <xsl:apply-templates select="*" />
     </p>
   </xsl:template>
+  
   <xsl:template match="w:comment/w:p">
     <note>
       <xsl:apply-templates select="*"/>
     </note>
   </xsl:template>
-  <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc
-      or wt:is(., 'Heading'))]">
+  
+  <!-- numberinga usually are part of lists, except when applied to a heading. Recognize headings by looking for an
+       explicit style name or the presence of w:outlineLvl -->
+  <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc or wt:is(., 'Heading')or w:pPr/w:outlineLvl)]">
     <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
     <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
     
@@ -88,6 +92,13 @@
       <xsl:apply-templates select="w:r" />
     </item>
   </xsl:template>
+   
+   <!-- headings have an outlineLvl child and/or a style that tells it away; we only check for Heading* right now -->
+   <xsl:template match="w:p[descendant::w:outlineLvl or wt:is(., 'Heading')]">
+      <head>
+         <xsl:apply-templates select="*" />
+      </head>
+   </xsl:template>
   
   <xsl:template match="w:pPr">
     <xsl:apply-templates select="w:pStyle" />
@@ -96,7 +107,7 @@
       <xsl:apply-templates select="*[not(self::w:rPr or self::w:pStyle)]" />
     </xsl:variable>
     <xsl:if test="count($style) gt 0">
-      <xsl:attribute name="style" select="normalize-space(string-join($style)) || ';'" />
+      <xsl:attribute name="style" select="normalize-space(string-join($style[normalize-space() ne ''], '; ')) || ';'" />
     </xsl:if>
   </xsl:template>
   
@@ -340,14 +351,21 @@
     <lb />
   </xsl:template>
   
-  <xsl:template match="w:jc" as="xs:string">
-    <xsl:choose>
-      <xsl:when test="@w:val = ('start', 'left')">text-align: left</xsl:when>
-      <xsl:when test="@w:val = ('end', 'right')">text-align: right</xsl:when>
-      <xsl:when test="@w:val eq 'center'">text-align: center</xsl:when>
-      <xsl:when test="@w:val = ('both', 'distribute')">text-align: justify</xsl:when>
-    </xsl:choose>
-  </xsl:template>
+  <!-- some paragraph-level style settings -->
+   <!-- justification -->
+   <xsl:template match="w:jc" as="xs:string">
+      <xsl:choose>
+         <xsl:when test="@w:val = ('start', 'left')">text-align: left</xsl:when>
+         <xsl:when test="@w:val = ('end', 'right')">text-align: right</xsl:when>
+         <xsl:when test="@w:val eq 'center'">text-align: center</xsl:when>
+         <xsl:when test="@w:val = ('both', 'distribute')">text-align: justify</xsl:when>
+      </xsl:choose>
+   </xsl:template>
+   
+   <!-- outline level: different levels of headings -->
+   <xsl:template match="w:outlineLvl">
+      <xsl:value-of select="'outlineLvl: ' || @w:val" />
+   </xsl:template>
   
   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
   

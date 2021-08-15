@@ -7,7 +7,7 @@
   xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
   stylesheet="wt0.xsl">
   
-  <x:scenario label="T1: structure">
+   <x:scenario label="T1: structure">
     <x:scenario label="T1.1">
       <x:context>
         <w:body>
@@ -320,7 +320,269 @@
         </TEI>
       </x:expect>
     </x:scenario>
-  </x:scenario>
+      <x:scenario label="T1.3: headings vs. lists">
+         <x:context>
+            <package:part package:name="/word/document.xml">
+               <package:xmlData>
+                  <w:document>
+                     <w:body>
+                        <w:p>
+                           <w:pPr>
+                              <w:pStyle w:val="AMWGApparatberschrift2"/>
+                              <w:keepNext w:val="true"/>
+                              <w:keepLines/>
+                              <w:widowControl/>
+                              <w:numPr>
+                                 <w:ilvl w:val="0"/>
+                                 <w:numId w:val="0"/>
+                              </w:numPr>
+                              <w:suppressLineNumbers/>
+                              <w:suppressAutoHyphens w:val="true"/>
+                              <w:bidi w:val="0"/>
+                              <w:spacing w:lineRule="auto" w:line="240" w:before="240" w:after="120"/>
+                              <w:ind w:left="0" w:hanging="0"/>
+                              <w:jc w:val="left"/>
+                              <w:outlineLvl w:val="0"/>
+                              <w:rPr>
+                                 <w:rFonts w:ascii="Segoe UI Historic"
+                                    w:hAnsi="Segoe UI Historic"
+                                    w:eastAsia=""
+                                    w:cs="Arial"
+                                    w:eastAsiaTheme="majorEastAsia"/>
+                                 <w:smallCaps/>
+                                 <w:color w:val="auto"/>
+                                 <w:kern w:val="0"/>
+                                 <w:sz w:val="24"/>
+                                 <w:szCs w:val="28"/>
+                                 <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                              </w:rPr>
+                           </w:pPr>
+                           <w:r>
+                              <w:rPr>
+                                 <w:rFonts w:eastAsia="" w:cs="Arial" w:eastAsiaTheme="majorEastAsia"/>
+                                 <w:smallCaps/>
+                                 <w:color w:val="auto"/>
+                                 <w:kern w:val="0"/>
+                                 <w:sz w:val="24"/>
+                                 <w:szCs w:val="28"/>
+                                 <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                              </w:rPr>
+                              <w:t>Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</w:t>
+                           </w:r>
+                        </w:p>
+                        <w:p>
+                           <w:pPr>
+                              <w:pStyle w:val="AMWGApparatFlietext"/>
+                              <w:widowControl/>
+                              <w:numPr>
+                                 <w:ilvl w:val="0"/>
+                                 <w:numId w:val="1"/>
+                              </w:numPr>
+                              <w:suppressLineNumbers/>
+                              <w:suppressAutoHyphens w:val="true"/>
+                              <w:bidi w:val="0"/>
+                              <w:spacing w:lineRule="auto" w:line="240" w:before="0" w:after="120"/>
+                              <w:rPr>
+                                 <w:rFonts w:ascii="Segoe UI Historic"
+                                    w:hAnsi="Segoe UI Historic"
+                                    w:eastAsia="Times New Roman"
+                                    w:cs="Arial"/>
+                                 <w:color w:val="auto"/>
+                                 <w:kern w:val="0"/>
+                                 <w:sz w:val="24"/>
+                                 <w:szCs w:val="22"/>
+                                 <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                              </w:rPr>
+                           </w:pPr>
+                           <w:r>
+                              <w:rPr>
+                                 <w:rFonts w:eastAsia="Times New Roman" w:cs="Arial"/>
+                                 <w:color w:val="auto"/>
+                                 <w:kern w:val="0"/>
+                                 <w:sz w:val="24"/>
+                                 <w:szCs w:val="22"/>
+                                 <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                              </w:rPr>
+                              <w:t>asdf</w:t>
+                           </w:r>
+                        </w:p>
+                        <w:p>
+                           <w:pPr>
+                              <w:pStyle w:val="AMWGApparatFlietext"/>
+                              <w:widowControl/>
+                              <w:numPr>
+                                 <w:ilvl w:val="0"/>
+                                 <w:numId w:val="1"/>
+                              </w:numPr>
+                              <w:suppressLineNumbers/>
+                              <w:suppressAutoHyphens w:val="true"/>
+                              <w:bidi w:val="0"/>
+                              <w:spacing w:lineRule="auto" w:line="240" w:before="0" w:after="120"/>
+                              <w:rPr>
+                                 <w:rFonts w:ascii="Segoe UI Historic"
+                                    w:hAnsi="Segoe UI Historic"
+                                    w:eastAsia="Times New Roman"
+                                    w:cs="Arial"/>
+                                 <w:color w:val="auto"/>
+                                 <w:kern w:val="0"/>
+                                 <w:sz w:val="24"/>
+                                 <w:szCs w:val="22"/>
+                                 <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                              </w:rPr>
+                           </w:pPr>
+                           <w:r>
+                              <w:rPr>
+                                 <w:rFonts w:eastAsia="Times New Roman" w:cs="Arial"/>
+                                 <w:color w:val="auto"/>
+                                 <w:kern w:val="0"/>
+                                 <w:sz w:val="24"/>
+                                 <w:szCs w:val="22"/>
+                                 <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                              </w:rPr>
+                              <w:t>asdf</w:t>
+                           </w:r>
+                        </w:p>
+                        <w:p>
+                           <w:pPr>
+                              <w:pStyle w:val="AMWGApparatFlietext"/>
+                              <w:widowControl/>
+                              <w:numPr>
+                                 <w:ilvl w:val="0"/>
+                                 <w:numId w:val="1"/>
+                              </w:numPr>
+                              <w:suppressLineNumbers/>
+                              <w:suppressAutoHyphens w:val="true"/>
+                              <w:bidi w:val="0"/>
+                              <w:spacing w:lineRule="auto" w:line="240" w:before="0" w:after="120"/>
+                              <w:rPr>
+                                 <w:rFonts w:ascii="Segoe UI Historic"
+                                    w:hAnsi="Segoe UI Historic"
+                                    w:eastAsia="Times New Roman"
+                                    w:cs="Arial"/>
+                                 <w:color w:val="auto"/>
+                                 <w:kern w:val="0"/>
+                                 <w:sz w:val="24"/>
+                                 <w:szCs w:val="22"/>
+                                 <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                              </w:rPr>
+                           </w:pPr>
+                           <w:r>
+                              <w:rPr>
+                                 <w:rFonts w:eastAsia="Times New Roman" w:cs="Arial"/>
+                                 <w:color w:val="auto"/>
+                                 <w:kern w:val="0"/>
+                                 <w:sz w:val="24"/>
+                                 <w:szCs w:val="22"/>
+                                 <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                              </w:rPr>
+                              <w:t>dhg</w:t>
+                           </w:r>
+                        </w:p>
+                        <w:sectPr>
+                           <w:headerReference w:type="default" r:id="rId2"/>
+                           <w:type w:val="nextPage"/>
+                           <w:pgSz w:w="11906" w:h="16838"/>
+                           <w:pgMar w:left="1417"
+                              w:right="1417"
+                              w:header="708"
+                              w:top="1417"
+                              w:footer="0"
+                              w:bottom="1134"
+                              w:gutter="0"/>
+                           <w:pgNumType w:fmt="decimal"/>
+                           <w:formProt w:val="false"/>
+                           <w:textDirection w:val="lrTb"/>
+                           <w:docGrid w:type="default" w:linePitch="360" w:charSpace="4096"/>
+                        </w:sectPr>
+                     </w:body>
+                  </w:document>
+               </package:xmlData>
+            </package:part>
+            <package:part package:name="/word/styles.xml">
+               <package:xmlData>
+                  <w:style w:type="paragraph"
+                     w:styleId="AMWGApparatFlietext"
+                     w:customStyle="1">
+                     <w:name w:val="AMWG_Apparat (Fließtext)"/>
+                     <w:basedOn w:val="Normal"/>
+                     <w:autoRedefine/>
+                     <w:qFormat/>
+                     <w:rsid w:val="005b3724"/>
+                     <w:pPr>
+                        <w:suppressLineNumbers/>
+                        <w:spacing w:lineRule="auto" w:line="240" w:before="0" w:after="120"/>
+                        <w:jc w:val="left"/>
+                     </w:pPr>
+                     <w:rPr>
+                        <w:rFonts w:ascii="Segoe UI Historic"
+                           w:hAnsi="Segoe UI Historic"
+                           w:eastAsia="Times New Roman"
+                           w:cs="Arial"/>
+                        <w:sz w:val="24"/>
+                     </w:rPr>
+                  </w:style>
+                  <w:style w:type="paragraph"
+                     w:styleId="AMWGApparatberschrift2"
+                     w:customStyle="1">
+                     <w:name w:val="AMWG_Apparat (Überschrift 2)"/>
+                     <w:basedOn w:val="Normal"/>
+                     <w:link w:val="AMWGApparatberschrift2Zchn"/>
+                     <w:autoRedefine/>
+                     <w:qFormat/>
+                     <w:rsid w:val="00337cd2"/>
+                     <w:pPr>
+                        <w:keepNext w:val="true"/>
+                        <w:keepLines/>
+                        <w:suppressLineNumbers/>
+                        <w:spacing w:lineRule="auto" w:line="240" w:before="240" w:after="120"/>
+                        <w:outlineLvl w:val="0"/>
+                     </w:pPr>
+                     <w:rPr>
+                        <w:rFonts w:ascii="Segoe UI Historic"
+                           w:hAnsi="Segoe UI Historic"
+                           w:eastAsia=""
+                           w:cs="Arial"
+                           w:eastAsiaTheme="majorEastAsia"/>
+                        <w:i/>
+                        <w:iCs/>
+                        <w:smallCaps/>
+                        <w:sz w:val="24"/>
+                        <w:szCs w:val="28"/>
+                     </w:rPr>
+                  </w:style>
+               </package:xmlData>
+            </package:part>
+         </x:context>
+         <x:expect label=".">
+            <TEI>
+               <teiHeader>...</teiHeader>
+               <text>
+                  <body>
+                     <div>
+                        <head rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;">
+                           <ab xml:space="preserve" style="rFonts: Arial; smallCaps: ; color: auto; kern: 0; sz: 24; szCs: 28; lang: de-DE;"
+                              >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</ab>
+                        </head>
+                        <label></label>
+                        <item level="0">
+                           <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
+                        </item>
+                        <label></label>
+                        <item level="0">
+                           <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
+                        </item>
+                        <label></label>
+                        <item level="0">
+                           <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">dhg</ab>
+                        </item>
+                     </div>
+                  </body>
+                  <back />
+               </text>
+            </TEI>
+         </x:expect>
+      </x:scenario>
+   </x:scenario>
   
   <x:scenario label="T2: p">
     <x:scenario label="T2.1">
@@ -1446,21 +1708,21 @@
         </w:p>
       </x:context>
       <x:expect label=".">
-        <p rendition="Heading1">
+        <head rendition="Heading1">
           <anchor type="bookmarkStart" xml:id="_sddw164bik7v"/>
           <anchor type="bookmarkEnd" ref="#_sddw164bik7v"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage</ab>
-        </p>
-        <p rendition="Heading2">
+        </head>
+        <head rendition="Heading2">
           <anchor type="bookmarkStart" xml:id="_1lljeedsw1zi"/>
           <anchor type="bookmarkEnd" ref="#_1lljeedsw1zi"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage und eigene Vorarbeiten</ab>
-        </p>
-        <p rendition="Heading3">
+        </head>
+        <head rendition="Heading3">
           <anchor type="bookmarkStart" xml:id="_dp00tcwtcmc3"/>
           <anchor type="bookmarkEnd" ref="#_dp00tcwtcmc3"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage</ab>
-        </p>
+        </head>
         <p>
           <ab xml:space="preserve" style="sz: 22; szCs: 22; rtl: 0;">Die Briefforschung hat in den letzten Jahren und Jahrzehnten breite Konjunktur erlebt. Galten Briefe, insbesondere Privatbriefe, lange Zeit als bloße Gebrauchstexte, so werden sie heute als Materialien wahrgenommen, die an der Schnittstelle zwischen privatem und öffentlichem Raum aufschlussreiche Einblicke in intellektuelle, kulturelle und soziale Transformationsprozesse gewähren. Für den </ab>
           <ab xml:space="preserve" style="b: 1; sz: 22; szCs: 22; rtl: 0;">deutschsprachigen Raum</ab>
