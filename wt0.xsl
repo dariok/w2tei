@@ -17,7 +17,7 @@
   <xsl:include href="word-pack.xsl"/>
   
   <xsl:template match="/">
-    <xsl:apply-templates />
+    <xsl:apply-templates select="//w:document"/>
   </xsl:template>
   
   <xsl:template match="w:document">
@@ -29,6 +29,15 @@
               <date when="{current-dateTime()}" type="created" /></p>
           </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+          <tagsDecl>
+            <xsl:for-each-group select="w:body//w:pStyle | //w:endnotes//w:pStyle | //w:footnotes//w:pstyle" group-by="@w:val">
+              <rendition scheme="css" xml:id="{current-grouping-key()}">
+                <xsl:apply-templates select="//w:style[@w:styleId eq current-grouping-key()]/w:rPr" />
+              </rendition>
+            </xsl:for-each-group>
+          </tagsDecl>
+        </encodingDesc>
       </teiHeader>
       <text>
         <body>
@@ -87,7 +96,7 @@
       <xsl:apply-templates select="*[not(self::w:rPr or self::w:pStyle)]" />
     </xsl:variable>
     <xsl:if test="count($style) gt 0">
-      <xsl:attribute name="style" select="normalize-space(string-join($style))" />
+      <xsl:attribute name="style" select="normalize-space(string-join($style)) || ';'" />
     </xsl:if>
   </xsl:template>
   
@@ -108,18 +117,23 @@
   <xsl:template match="w:rPr[*]" as="attribute()*">
     <xsl:apply-templates select="w:rStyle" />
     <xsl:if test="*[not(self::w:rStyle)]">
+      <xsl:variable name="styles" as="xs:string*">
+        <xsl:apply-templates select="*[not(self::w:rStyle)] | preceding-sibling::*[not(self::w:pStyle or self::w:pPr)]
+            | preceding-sibling::w:pPr/*" />
+      </xsl:variable>
       <xsl:attribute name="style">
-        <xsl:apply-templates select="*[not(self::w:rStyle)] | preceding-sibling::*[not(self::w:pStyle)]" />
+        <xsl:value-of select="string-join($styles, '; ') || ';'"/>
       </xsl:attribute>
     </xsl:if>
   </xsl:template>
-  <xsl:template match="w:rPr/*[not(self::w:rStyle)]">
-    <xsl:value-of select="local-name()"/>
-    <xsl:text>:</xsl:text>
-    <xsl:value-of select="translate((@w:val | @w:ascii | @w:cs)[1], ';', ',')" />
-    <xsl:if test="following-sibling::*">
-      <xsl:text>; </xsl:text>
-    </xsl:if>
+  
+  <xsl:template match="w:rPr/*[not(self::w:rStyle)]" as="xs:string">
+    <xsl:variable name="val">
+      <xsl:value-of select="local-name()"/>
+      <xsl:text>: </xsl:text>
+      <xsl:value-of select="translate((@w:val | @w:ascii | @w:cs)[1], ';', ',')" />
+    </xsl:variable>
+    <xsl:value-of select="string($val)"/>
   </xsl:template>
   
   <xsl:template match="w:sym">
@@ -307,6 +321,7 @@
     <xsl:value-of
       select="'border-' || local-name() || ': ' || number(@w:sz) div 2 || 'px ' || $style || ' #' || @w:color"/>
   </xsl:template>
+  <!-- END tables -->
   
   <xsl:template match="w:bookmarkStart[@w:name = '_GoBack']" />
   <xsl:template match="w:bookmarkStart">
@@ -325,15 +340,13 @@
     <lb />
   </xsl:template>
   
-  <xsl:template match="w:jc">
-    <xsl:text>text-align: </xsl:text>
+  <xsl:template match="w:jc" as="xs:string">
     <xsl:choose>
-      <xsl:when test="@w:val = ('start', 'left')">left</xsl:when>
-      <xsl:when test="@w:val = ('end', 'right')">right</xsl:when>
-      <xsl:when test="@w:val eq 'center'">center</xsl:when>
-      <xsl:when test="@w:val = ('both', 'distribute')">justify</xsl:when>
+      <xsl:when test="@w:val = ('start', 'left')">text-align: left</xsl:when>
+      <xsl:when test="@w:val = ('end', 'right')">text-align: right</xsl:when>
+      <xsl:when test="@w:val eq 'center'">text-align: center</xsl:when>
+      <xsl:when test="@w:val = ('both', 'distribute')">text-align: justify</xsl:when>
     </xsl:choose>
-    <xsl:text>; </xsl:text>
   </xsl:template>
   
   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />

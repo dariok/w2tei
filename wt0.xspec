@@ -176,17 +176,17 @@
         </div>
         <div>
           <p>
-            <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US">[G4</ab>
-            <ab xml:space="preserve" style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
-            <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US">]</ab>
-            <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
-            <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">Currus .D</ab>
-            <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;">[G4</ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; vertAlign: superscript; lang: en-US;">r</ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;">]</ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;"> </ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; b: ; lang: en-US;">Currus .D</ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; b: ; lang: en-US;">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
             <ptr type="endnote" ref="#e1"/>
-            <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US"> </ab>
-            <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">I. P.</ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; b: ; lang: en-US;"> </ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; b: ; lang: en-US;">I. P.</ab>
             <ptr type="endnote" ref="#e2"/>
-            <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US"> </ab>
+            <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;"> </ab>
           </p>
         </div>
       </x:expect>
@@ -290,6 +290,14 @@
               <date when="..." type="created" /></p>
               </sourceDesc>
             </fileDesc>
+            <encodingDesc>
+              <tagsDecl>
+                <rendition scheme="css"
+                  xml:id="KSEE-Titel" />
+                <rendition scheme="css"
+                  xml:id="Endnotentext" />
+              </tagsDecl>
+            </encodingDesc>
           </teiHeader>
           <text>
             <body>
@@ -304,7 +312,7 @@
             <back>
               <note type="endnote" xml:id="e1">
                 <p rendition="Endnotentext">
-                  <ab style="rFonts:Junicode" xml:space="preserve"> Zwei stark beschnittene Worte.</ab>
+                  <ab style="rFonts: Junicode;" xml:space="preserve"> Zwei stark beschnittene Worte.</ab>
                 </p>
               </note>
             </back>
@@ -412,17 +420,17 @@
       </x:context>
       <x:expect label=".">
         <p>
-          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US">[G4</ab>
-          <ab xml:space="preserve" style="rFonts:Junicode; vertAlign:superscript; lang:en-US">r</ab>
-          <ab xml:space="preserve" style="rFonts:Junicode; lang:en-US">]</ab>
-          <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve"> </ab>
-          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">Currus .D</ab>
-          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
+          <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;">[G4</ab>
+          <ab xml:space="preserve" style="rFonts: Junicode; vertAlign: superscript; lang: en-US;">r</ab>
+          <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;">]</ab>
+          <ab style="rFonts: Junicode; lang: en-US;" xml:space="preserve"> </ab>
+          <ab xml:space="preserve" style="rFonts: Junicode; b: ; lang: en-US;">Currus .D</ab>
+          <ab xml:space="preserve" style="rFonts: Junicode; b: ; lang: en-US;">[omini] Andreae Carol&lt;ostad&gt;ii &lt;…&gt;</ab>
           <ptr type="endnote" ref="#e1"/>
-          <ab style="rFonts:Junicode; b:; lang:en-US" xml:space="preserve"> </ab>
-          <ab xml:space="preserve" style="rFonts:Junicode; b:; lang:en-US">I. P.</ab>
+          <ab style="rFonts: Junicode; b: ; lang: en-US;" xml:space="preserve"> </ab>
+          <ab xml:space="preserve" style="rFonts: Junicode; b: ; lang: en-US;">I. P.</ab>
           <ptr type="endnote" ref="#e2"/>
-          <ab style="rFonts:Junicode; lang:en-US" xml:space="preserve"> </ab>
+          <ab style="rFonts: Junicode; lang: en-US;" xml:space="preserve"> </ab>
         </p>
       </x:expect>
     </x:scenario>
@@ -597,29 +605,37 @@
               <date when="{current-dateTime()}" type="created" /></p>
               </sourceDesc>
             </fileDesc>
+            <encodingDesc>
+              <tagsDecl>
+                <rendition scheme="css"
+                  xml:id="KSZwischenberschrift" />
+                <rendition scheme="css"
+                  xml:id="Endnotentext" />
+              </tagsDecl>
+            </encodingDesc>
           </teiHeader>
           <text>
             <body>
               <div>
                 <p rendition="KSZwischenberschrift">
-                  <ab xml:space="preserve" style="lang:en-US">conformare</ab>
-                  <ab xml:space="preserve" style="lang:en-US">.</ab>
+                  <ab xml:space="preserve" style="lang: en-US;">conformare</ab>
+                  <ab xml:space="preserve" style="lang: en-US;">.</ab>
                   <anchor type="bookmarkStart" xml:id="_Ref534135879"/>
                   <ptr type="endnote" ref="#e2" />
                   <anchor type="bookmarkEnd" ref="#_Ref534135879"/>
-                  <ab xml:space="preserve" style="lang:en-US">&#xF05e;</ab>
+                  <ab xml:space="preserve" style="lang: en-US;">&#xF05e;</ab>
                 </p>
               </div>
             </body>
             <back>
               <note type="endnote" xml:id="e5">
                 <p rendition="Endnotentext">
-                  <ab style="rFonts:Junicode; lang:de-DE" xml:space="preserve"> Vgl. </ab>
-                  <ab xml:space="preserve" style="rFonts:Junicode; highlight:yellow; lang:de-DE">Anm.</ab>
-                  <ab style="rFonts:Junicode; highlight:yellow; lang:de-DE" xml:space="preserve"> </ab>
+                  <ab style="rFonts: Junicode; lang: de-DE;" xml:space="preserve"> Vgl. </ab>
+                  <ab xml:space="preserve" style="rFonts: Junicode; highlight: yellow; lang: de-DE;">Anm.</ab>
+                  <ab style="rFonts: Junicode; highlight: yellow; lang: de-DE;" xml:space="preserve"> </ab>
                   <field function=" NOTEREF _Ref534135879 \h 
-\* MERGEFORMAT " style="rFonts:Junicode; highlight:yellow; lang:de-DE">2</field>
-                  <ab xml:space="preserve" style="rFonts:Junicode; highlight:yellow; lang:de-DE">.</ab>
+\* MERGEFORMAT " style="rFonts: Junicode; highlight: yellow; lang: de-DE;">2</field>
+                  <ab xml:space="preserve" style="rFonts: Junicode; highlight: yellow; lang: de-DE;">.</ab>
                 </p>
               </note>
             </back>
@@ -722,19 +738,22 @@
                 </p>
               </sourceDesc>
             </fileDesc>
+            <encodingDesc>
+              <tagsDecl />
+            </encodingDesc>
           </teiHeader>
           <text>
             <body>
               <div>
                 <p>
-                  <ab xml:space="preserve" style="lang:la-Latn"> et ecclesiam nostram declaras. Sed qua ratione tuis
+                  <ab xml:space="preserve" style="lang: la-Latn;"> et ecclesiam nostram declaras. Sed qua ratione tuis
                       consiliis satisfieri possit non video. Speras posse iniri aliquem modum, quo et Christo et </ab>
-                  <ref xml:space="preserve" rendition="Hyperlink" style="rFonts:; lang:la-Latn"
+                  <ref xml:space="preserve" rendition="Hyperlink" style="rFonts: ; lang: la-Latn;"
                     target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
                     >Caesareo</ref>
                   <ptr type="endnote" ref="#e7" />
                   <ref target="http://d-nb.info/gnd/121098-1"
-                    rendition="auszeichnungbermehrereworte0" style="rFonts:; color:0000FF">Handelsministerium</ref>
+                    rendition="auszeichnungbermehrereworte0" style="rFonts: ; color: 0000FF;">Handelsministerium</ref>
                   <ab xml:space="preserve" rendition="AuszeichnungberMehrereWorte">]]</ab>
                 </p>
               </div>
@@ -871,7 +890,7 @@
           xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
           style="text-align: left;">
           <ab xml:space="preserve"
-       style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Soll man hier vielleicht noch resümierend auf die einzelnen Rechteklärung-Beschreibungen in den APs hinweisen, etwa mit dem Vermerk am Ende des Abschnitts oder als Fußnote):</ab>
+       style="rFonts: Arial; b: 0; i: 0; smallCaps: 0; strike: 0; color: 000000; sz: 22; szCs: 22; u: none; shd: clear; vertAlign: baseline; rtl: 0;">Soll man hier vielleicht noch resümierend auf die einzelnen Rechteklärung-Beschreibungen in den APs hinweisen, etwa mit dem Vermerk am Ende des Abschnitts oder als Fußnote):</ab>
         </note>
         <note xmlns="http://www.tei-c.org/ns/1.0"
           xmlns:package="http://schemas.microsoft.com/office/2006/xmlPackage"
@@ -880,7 +899,7 @@
           xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
           style="text-align: left;">
           <ab xml:space="preserve"
-       style="rFonts:Arial; b:0; i:0; smallCaps:0; strike:0; color:000000; sz:22; szCs:22; u:none; shd:clear; vertAlign:baseline; rtl:0">Zu weiteren Informationen zur Rechteklärung, s. die Beschreibungen der AP. 1, 3 und 7.</ab>
+       style="rFonts: Arial; b: 0; i: 0; smallCaps: 0; strike: 0; color: 000000; sz: 22; szCs: 22; u: none; shd: clear; vertAlign: baseline; rtl: 0;">Zu weiteren Informationen zur Rechteklärung, s. die Beschreibungen der AP. 1, 3 und 7.</ab>
         </note>
       </x:expect>
     </x:scenario>
@@ -1193,32 +1212,32 @@
             <body>
               <div>
                 <p rendition="Normal" style="text-align: justify;">
-                  <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; b:; i:">Druck</ab>
-                  <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Auszug bei Stengel 2, S. 150f.</ab>
+                  <ab xml:space="preserve" style="rFonts: Stempel Garamond CE Roman; b: ; i: ;">Druck</ab>
+                  <ab xml:space="preserve" style="rFonts: Stempel Garamond CE Roman;">: Auszug bei Stengel 2, S. 150f.</ab>
                   <note type="footnote" xml:id="n2" n="15">
                     <p rendition="Normal" style="text-align: justify;">
-                      <ab xml:space="preserve" style="sz:20; szCs:20; highlight:cyan">Edmund Ernst Stengel: Private und amtliche Beziehungen der Brüder Grimm zu Hessen. Eine Sammlung von Briefen und Actenstücken als Festschrift zum hundertsten Geburtstag Wilhelm Grimms am 24. Februar 1886, 3 Bde, Band 1: Briefe der Brüder Grimm an hessische Freunde. Zweite Ausg., Marburg: Elwert, 1895 (nachfolgend Stengel 1)</ab>
-                      <ab xml:space="preserve" style="color:FF0000; sz:20; szCs:20; highlight:cyan">=515=</ab>
-                      <ab xml:space="preserve" style="sz:20; szCs:20; highlight:cyan">. Band 2: Actenstücke über die Tätigkeit der Brüder Grimm im hessischen Staatsdienste. 2. Ausg. Marburg: Elwert, 1895 (nachfolgend Stengel 2)</ab>
-                      <ab xml:space="preserve" style="color:FF0000; sz:20; szCs:20; highlight:cyan">=516=</ab>
-                      <ab xml:space="preserve" style="sz:20; szCs:20; highlight:cyan">. Bd. 3: Briefe der Brüder Grimm an Paul Wigand. Marburg: Elwert, 1910.</ab>
-                      <ab xml:space="preserve" style="color:FF0000; sz:20; szCs:20">=517=</ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20; highlight: cyan;">Edmund Ernst Stengel: Private und amtliche Beziehungen der Brüder Grimm zu Hessen. Eine Sammlung von Briefen und Actenstücken als Festschrift zum hundertsten Geburtstag Wilhelm Grimms am 24. Februar 1886, 3 Bde, Band 1: Briefe der Brüder Grimm an hessische Freunde. Zweite Ausg., Marburg: Elwert, 1895 (nachfolgend Stengel 1)</ab>
+                      <ab xml:space="preserve" style="color: FF0000; sz: 20; szCs: 20; highlight: cyan;">=515=</ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20; highlight: cyan;">. Band 2: Actenstücke über die Tätigkeit der Brüder Grimm im hessischen Staatsdienste. 2. Ausg. Marburg: Elwert, 1895 (nachfolgend Stengel 2)</ab>
+                      <ab xml:space="preserve" style="color: FF0000; sz: 20; szCs: 20; highlight: cyan;">=516=</ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20; highlight: cyan;">. Bd. 3: Briefe der Brüder Grimm an Paul Wigand. Marburg: Elwert, 1910.</ab>
+                      <ab xml:space="preserve" style="color: FF0000; sz: 20; szCs: 20;">=517=</ab>
                     </p>
                     <p rendition="Footnote">
-                      <ab xml:space="preserve" style="sz:20; szCs:20">Stengels Bände enthalten 34 handschriftliche Briefe und einen Brief in Abschrift der </ab>
-                      <ab xml:space="preserve" rendition="Person" style="sz:20; szCs:20">Brüder Grimm</ab>
-                      <ab xml:space="preserve" style="color:00B050; sz:20; szCs:20">=Grimm 1/ 2=</ab>
-                      <ab xml:space="preserve" style="sz:20; szCs:20"> an </ab>
-                      <ab xml:space="preserve" rendition="Person" style="sz:20; szCs:20">Bang</ab>
-                      <ab xml:space="preserve" style="color:00B050; sz:20; szCs:20">=Bang 1=</ab>
-                      <ab xml:space="preserve" style="sz:20; szCs:20">. In seinem Herausgeberkommentar schreibt Stengel: „Diese Briefe sind mir von den Kindern des ältesten Sohnes des Adressaten freundlichst übergeben worden.“ (</ab>
-                      <ab xml:space="preserve" style="sz:20; szCs:20; highlight:cyan">Stengel 2</ab>
-                      <ab xml:space="preserve" style="color:FF0000; sz:20; szCs:20; highlight:cyan">=516=</ab>
-                      <ab xml:space="preserve" style="sz:20; szCs:20; highlight:cyan">,</ab>
-                      <ab xml:space="preserve" style="sz:20; szCs:20"> S. 149). Die Ausnahmen, die Stengel nennt, werden an der entsprechenden Stelle angemerkt. </ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20;">Stengels Bände enthalten 34 handschriftliche Briefe und einen Brief in Abschrift der </ab>
+                      <ab xml:space="preserve" rendition="Person" style="sz: 20; szCs: 20;">Brüder Grimm</ab>
+                      <ab xml:space="preserve" style="color: 00B050; sz: 20; szCs: 20;">=Grimm 1/ 2=</ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20;"> an </ab>
+                      <ab xml:space="preserve" rendition="Person" style="sz: 20; szCs: 20;">Bang</ab>
+                      <ab xml:space="preserve" style="color: 00B050; sz: 20; szCs: 20;">=Bang 1=</ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20;">. In seinem Herausgeberkommentar schreibt Stengel: „Diese Briefe sind mir von den Kindern des ältesten Sohnes des Adressaten freundlichst übergeben worden.“ (</ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20; highlight: cyan;">Stengel 2</ab>
+                      <ab xml:space="preserve" style="color: FF0000; sz: 20; szCs: 20; highlight: cyan;">=516=</ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20; highlight: cyan;">,</ab>
+                      <ab xml:space="preserve" style="sz: 20; szCs: 20;"> S. 149). Die Ausnahmen, die Stengel nennt, werden an der entsprechenden Stelle angemerkt. </ab>
                     </p>
                   </note>
-                  <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman"> Die ersten Seiten fehlen in SBPK; ab „Zum armen Heinrich“ mit Pränumeranten erh. </ab>
+                  <ab xml:space="preserve" style="rFonts: Stempel Garamond CE Roman;"> Die ersten Seiten fehlen in SBPK; ab „Zum armen Heinrich“ mit Pränumeranten erh. </ab>
                 </p>
               </div>
             </body>
@@ -1430,24 +1449,24 @@
         <p rendition="Heading1">
           <anchor type="bookmarkStart" xml:id="_sddw164bik7v"/>
           <anchor type="bookmarkEnd" ref="#_sddw164bik7v"/>
-          <ab xml:space="preserve" style="rtl:0">Ausgangslage</ab>
+          <ab xml:space="preserve" style="rtl: 0;">Ausgangslage</ab>
         </p>
         <p rendition="Heading2">
           <anchor type="bookmarkStart" xml:id="_1lljeedsw1zi"/>
           <anchor type="bookmarkEnd" ref="#_1lljeedsw1zi"/>
-          <ab xml:space="preserve" style="rtl:0">Ausgangslage und eigene Vorarbeiten</ab>
+          <ab xml:space="preserve" style="rtl: 0;">Ausgangslage und eigene Vorarbeiten</ab>
         </p>
         <p rendition="Heading3">
           <anchor type="bookmarkStart" xml:id="_dp00tcwtcmc3"/>
           <anchor type="bookmarkEnd" ref="#_dp00tcwtcmc3"/>
-          <ab xml:space="preserve" style="rtl:0">Ausgangslage</ab>
+          <ab xml:space="preserve" style="rtl: 0;">Ausgangslage</ab>
         </p>
         <p>
-          <ab xml:space="preserve" style="sz:22; szCs:22; rtl:0">Die Briefforschung hat in den letzten Jahren und Jahrzehnten breite Konjunktur erlebt. Galten Briefe, insbesondere Privatbriefe, lange Zeit als bloße Gebrauchstexte, so werden sie heute als Materialien wahrgenommen, die an der Schnittstelle zwischen privatem und öffentlichem Raum aufschlussreiche Einblicke in intellektuelle, kulturelle und soziale Transformationsprozesse gewähren. Für den </ab>
-          <ab xml:space="preserve" style="b:1; sz:22; szCs:22; rtl:0">deutschsprachigen Raum</ab>
-          <ab xml:space="preserve" style="sz:22; szCs:22; rtl:0"> spielt dabei </ab>
-          <ab xml:space="preserve" style="b:1; sz:22; szCs:22; rtl:0">das 18. Jahrhundert</ab>
-          <ab xml:space="preserve" style="sz:22; szCs:22; rtl:0"> eine zentrale Rolle. In dieser Zeit erfährt epistolares Schreiben in Deutschland einen bedeutsamen Wandel, der sich insbesondere durch die quantitative Vervielfachung und qualitative Veränderung des Briefes manifestiert (Vellusig 2000; Füllner 2001; Anderegg 2001; Furger 2010; Bunzel 2014).</ab>
+          <ab xml:space="preserve" style="sz: 22; szCs: 22; rtl: 0;">Die Briefforschung hat in den letzten Jahren und Jahrzehnten breite Konjunktur erlebt. Galten Briefe, insbesondere Privatbriefe, lange Zeit als bloße Gebrauchstexte, so werden sie heute als Materialien wahrgenommen, die an der Schnittstelle zwischen privatem und öffentlichem Raum aufschlussreiche Einblicke in intellektuelle, kulturelle und soziale Transformationsprozesse gewähren. Für den </ab>
+          <ab xml:space="preserve" style="b: 1; sz: 22; szCs: 22; rtl: 0;">deutschsprachigen Raum</ab>
+          <ab xml:space="preserve" style="sz: 22; szCs: 22; rtl: 0;"> spielt dabei </ab>
+          <ab xml:space="preserve" style="b: 1; sz: 22; szCs: 22; rtl: 0;">das 18. Jahrhundert</ab>
+          <ab xml:space="preserve" style="sz: 22; szCs: 22; rtl: 0;"> eine zentrale Rolle. In dieser Zeit erfährt epistolares Schreiben in Deutschland einen bedeutsamen Wandel, der sich insbesondere durch die quantitative Vervielfachung und qualitative Veränderung des Briefes manifestiert (Vellusig 2000; Füllner 2001; Anderegg 2001; Furger 2010; Bunzel 2014).</ab>
         </p>
       </x:expect>
     </x:scenario>
@@ -1486,7 +1505,7 @@
       <x:expect label=".">
         <p rendition="AMWGApparatTextDatierung">
           <ab xml:space="preserve" rendition="AMWGApparatberschrift2Zchn">Übertragung/Mitarbeit</ab>
-          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; smallCaps:">:</ab>
+          <ab xml:space="preserve" style="rFonts: Segoe UI Historic; smallCaps: ;">:</ab>
         </p>
       </x:expect>
     </x:scenario>
@@ -1517,7 +1536,7 @@
       </x:context>
       <x:expect label=".">
         <p rendition="AMWGFlietext" style="text-align: right;">
-          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; u:single">Montag</ab>
+          <ab xml:space="preserve" style="rFonts: Segoe UI Historic; u: single;">Montag</ab>
         </p>
       </x:expect>
     </x:scenario>
@@ -1571,10 +1590,10 @@
       </x:context>
       <x:expect label=".">
         <p rendition="AMWGFlietext" style="text-align: right;">
-          <ab xml:space="preserve" style="rFonts:Segoe UI Historic; u:single">Montag</ab>
+          <ab xml:space="preserve" style="rFonts: Segoe UI Historic; u: single;">Montag</ab>
         </p>
         <p rendition="AMWGFlietext" style="text-align: right;">
-          <ab xml:space="preserve" style="rFonts:Segoe UI Historic">Abend</ab>
+          <ab xml:space="preserve" style="rFonts: Segoe UI Historic;">Abend</ab>
         </p>
       </x:expect>
     </x:scenario>
