@@ -367,6 +367,16 @@
       <xsl:value-of select="'outlineLvl: ' || @w:val" />
    </xsl:template>
   
+  <!-- indentation of first line -->
+  <xsl:template match="w:ind" as="xs:string*">
+    <xsl:if test="@w:firstLine">
+      <xsl:variable name="val" select="round(@w:firstLine/number() div 20)" />
+      <xsl:if test="$val gt 0">
+        <xsl:value-of select="'text-indent: ' || $val || 'pt'"/>
+      </xsl:if>
+    </xsl:if>
+  </xsl:template>
+  
   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
   
 </xsl:stylesheet>

@@ -1970,5 +1970,46 @@
         </cell>
       </x:expect>
     </x:scenario>
+    <x:scenario label="T4.6: indent">
+      <x:context>
+        <w:p w14:paraId="5322D14F"
+          w14:textId="77777777"
+          w:rsidR="00177957"
+          w:rsidRPr="00177957"
+          w:rsidRDefault="00177957"
+          w:rsidP="0052502E">
+          <w:pPr>
+            <w:pStyle w:val="AMWGFlietext"/>
+            <w:ind w:firstLine="708"/>
+          </w:pPr>
+          <w:r w:rsidRPr="0052502E">
+            <w:rPr>
+              <w:strike/>
+            </w:rPr>
+            <w:t>Und</w:t>
+          </w:r>
+          <w:r w:rsidRPr="00177957">
+            <w:t xml:space="preserve"> \Ich/ fühle </w:t>
+          </w:r>
+          <w:r w:rsidRPr="0052502E">
+            <w:rPr>
+              <w:strike/>
+            </w:rPr>
+            <w:t>ich</w:t>
+          </w:r>
+          <w:r w:rsidRPr="00177957">
+            <w:t xml:space="preserve"> mich</w:t>
+          </w:r>
+        </w:p>
+      </x:context>
+      <x:expect label=".">
+        <p rendition="AMWGFlietext" style="text-indent: 35pt;">
+          <ab xml:space="preserve" style="strike: ;">Und</ab>
+          <ab xml:space="preserve"> \Ich/ fühle </ab>
+          <ab xml:space="preserve" style="strike: ;">ich</ab>
+          <ab xml:space="preserve"> mich</ab>
+        </p>
+      </x:expect>
+    </x:scenario>
   </x:scenario>
 </x:description>
