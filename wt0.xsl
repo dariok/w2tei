@@ -75,23 +75,29 @@
     </note>
   </xsl:template>
   
-   <!-- numberinga usually are part of lists, except when applied to a heading. Recognize headings by looking for an
+   <!-- numberings usually are part of lists, except when applied to a heading. Recognize headings by looking for an
        explicit style name or the presence of w:outlineLvl -->
    <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc or wt:is(., 'Heading')or w:pPr/w:outlineLvl)]">
       <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
       <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
+      <xsl:variable name="abstractNumId" select="//w:num[@w:numId = $numId]/w:abstractNumId/@w:val" />
+      <xsl:variable name="abstractNum" select="//w:abstractNum[@w:abstractNumId = $abstractNumId]" />
       
-      <xsl:variable name="start" select="//w:abstractNum[@w:abstractNumId eq $numId]/w:lvl[@w:ilvl eq $level]/w:start/@w:val"/>
-      <xsl:variable name="label" select="count(preceding::w:p[descendant::w:numId/@w:val = $numId
-         and descendant::w:ilvl/@w:val = $level]) + $start"/>
+      <!-- distinguish between numbered and unordered (bulleted etc.) lists -->
+      <xsl:if test="$abstractNum/w:lvl[@w:ilvl = $level]/w:numFmt/@w:val = 'decimal'">
+         <xsl:variable name="start" select="$abstractNum/w:lvl[@w:ilvl eq $level]/w:start/@w:val"/>
+         <xsl:variable name="label" select="count(preceding::w:p[descendant::w:numId/@w:val = $numId
+            and descendant::w:ilvl/@w:val = $level]) + $start"/>
+         
+         <label>
+            <xsl:value-of select="$label" />
+         </label>
+      </xsl:if>
       
-    <label>
-      <xsl:value-of select="$label" />
-    </label>
-    <item level="{$level}">
-      <xsl:apply-templates select="w:r" />
-    </item>
-  </xsl:template>
+      <item level="{$level}">
+         <xsl:apply-templates select="w:r" />
+      </item>
+   </xsl:template>
    
    <!-- headings have an outlineLvl child and/or a style that tells it away; we only check for Heading* right now -->
    <xsl:template match="w:p[descendant::w:outlineLvl or wt:is(., 'Heading')]">

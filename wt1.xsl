@@ -31,6 +31,13 @@
             <xsl:apply-templates select="current-group()[not(self::tei:label or self::tei:item)]" />
           </xsl:for-each-group>
         </xsl:when>
+         <xsl:when test="tei:item">
+            <xsl:apply-templates select="tei:item[1]/preceding-sibling::*" />
+            <list>
+               <xsl:apply-templates select="tei:item" />
+            </list>
+            <xsl:apply-templates select="tei:item[last()]/following-sibling::*" />
+         </xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates />
         </xsl:otherwise>

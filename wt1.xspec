@@ -262,5 +262,35 @@
         </div>
       </x:expect>
     </x:scenario>
+      <x:scenario label="T4.2: lists without label">
+         <x:context href="wt0.xspec?strip-space=yes" select="//x:scenario[starts-with(@label, 'T1.3:')]/x:expect/tei:TEI" />
+         <x:expect label="list">
+            <TEI>
+               <teiHeader>...</teiHeader>
+               <text>
+                  <body>
+                     <div>
+                        <head rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;">
+                           <ab xml:space="preserve" style="rFonts: Arial; smallCaps: ; color: auto; kern: 0; sz: 24; szCs: 28; lang: de-DE;"
+                              >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</ab>
+                        </head>
+                        <list>
+                           <item level="0">
+                              <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
+                           </item>
+                           <item level="0">
+                              <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
+                           </item>
+                           <item level="0">
+                              <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">dhg</ab>
+                           </item>
+                        </list>
+                     </div>
+                  </body>
+                  <back />
+               </text>
+            </TEI>
+         </x:expect>
+      </x:scenario>
   </x:scenario>
 </x:description>

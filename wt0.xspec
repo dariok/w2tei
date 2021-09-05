@@ -563,15 +563,12 @@
                            <ab xml:space="preserve" style="rFonts: Arial; smallCaps: ; color: auto; kern: 0; sz: 24; szCs: 28; lang: de-DE;"
                               >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</ab>
                         </head>
-                        <label></label>
                         <item level="0">
                            <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
                         </item>
-                        <label></label>
                         <item level="0">
                            <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
                         </item>
-                        <label></label>
                         <item level="0">
                            <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">dhg</ab>
                         </item>
@@ -1915,6 +1912,9 @@
                 <w:rPr/>
              </w:lvl>
           </w:abstractNum>
+          <w:num w:numId="11">
+             <w:abstractNumId w:val="11"/>
+          </w:num>
        </x:context>
        <x:expect label="labels 3 and 4">
           <TEI>
