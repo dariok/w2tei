@@ -75,16 +75,16 @@
     </note>
   </xsl:template>
   
-  <!-- numberinga usually are part of lists, except when applied to a heading. Recognize headings by looking for an
+   <!-- numberinga usually are part of lists, except when applied to a heading. Recognize headings by looking for an
        explicit style name or the presence of w:outlineLvl -->
-  <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc or wt:is(., 'Heading')or w:pPr/w:outlineLvl)]">
-    <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
-    <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
-    
-    <!-- TODO this is actually only the setting how the value should be rendered; the value must be evalutated similar
-      to footnotes -->
-    <xsl:variable name="label" select="//w:abstractNum[@w:abstractNumId eq $numId]/w:lvl[@w:ilvl eq $level]/w:lvlText/@w:val"/>
-    
+   <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc or wt:is(., 'Heading')or w:pPr/w:outlineLvl)]">
+      <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
+      <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
+      
+      <xsl:variable name="start" select="//w:abstractNum[@w:abstractNumId eq $numId]/w:lvl[@w:ilvl eq $level]/w:start/@w:val"/>
+      <xsl:variable name="label" select="count(preceding::w:p[descendant::w:numId/@w:val = $numId
+         and descendant::w:ilvl/@w:val = $level]) + $start"/>
+      
     <label>
       <xsl:value-of select="$label" />
     </label>
