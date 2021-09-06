@@ -88,54 +88,44 @@
   
   <x:scenario label="T3: structure">
     <x:context>
-      <div>
         <p rendition="Normal" style="text-align: justify;">
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">.</ab>
         </p>
-      </div>
-      <div />
-      <div>
         <p rendition="Normal" style="text-align: justify;">
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">.</ab>
         </p>
-      </div>
     </x:context>
     <x:expect label="divs">
-      <div>
         <p rendition="Normal" style="text-align: justify;">
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">.</ab>
         </p>
-      </div>
-      <div />
-      <div>
         <p rendition="Normal" style="text-align: justify;">
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; u:single">Inhalt</ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">: Bang berichtet vom Fortgang der Subskription für den von den Brüdern Grimm herausgegebenen Band: </ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman; i:; iCs:">Der arme Heinrich von Hartmann von der Aue</ab>
           <ab xml:space="preserve" style="rFonts:Stempel Garamond CE Roman">.</ab>
         </p>
-      </div>
     </x:expect>
   </x:scenario>
   
-  <x:scenario label="T4: lists">
+  <x:scenario label="T4: lists in divs">
     <x:scenario label="T4.1: multiple lists">
       <x:context>
-        <div>
-          <p rendition="AMWGApparatFlietext">
+        <body>
+          <head level="0" rendition="AMWGApparatFlietext">
             <ab xml:space="preserve" style="b:">Online </ab>
             <ab xml:space="preserve" style="b:">AMWG </ab>
             <ab xml:space="preserve" style="b:">Abkürzungsverzeichnis</ab>
-          </p>
+          </head>
           <p rendition="AMWGApparatFlietext">
             <ab xml:space="preserve">Personen</ab>
             <ab xml:space="preserve">:</ab>
@@ -200,66 +190,62 @@
             <ab xml:space="preserve" style="lang:en-US"> Testament: </ab>
             <ab xml:space="preserve" style="lang:en-US">AT</ab>
           </item>
-        </div>
+        </body>
       </x:context>
       <x:expect label=".">
-        <div>
-          <list />
-          <p rendition="AMWGApparatFlietext">
-            <ab xml:space="preserve" style="b:">Online AMWG Abkürzungsverzeichnis</ab>
-          </p>
-          <p rendition="AMWGApparatFlietext">
-            <ab xml:space="preserve">Personen:</ab>
-          </p>
-          <list>
-            <label></label>
-            <item level="0">
-              <ab xml:space="preserve">Manon Gropius senior: MGsen</ab>
-            </item>
-            <label></label>
-            <item level="0">
-              <ab xml:space="preserve">Walter Gropius: WG</ab>
-            </item>
-            <label></label>
-            <item level="0">
-              <ab xml:space="preserve">Alma Mahler: AM</ab>
-            </item>
-            <label></label>
-            <item level="0">
-              <ab xml:space="preserve">Gustav Mahler: GM</ab>
-            </item>
-            <label></label>
-            <item level="0">
-              <ab xml:space="preserve" style="lang:en-US">Anna Moll: AMo</ab>
-            </item>
-          </list>
-          <p rendition="AMWGApparatFlietext">
-            <ab xml:space="preserve" style="lang:en-US">Archive:</ab>
-          </p>
-          <list>
-            <label>-</label>
-            <item level="0">
-              <ab xml:space="preserve" style="lang:en-US">Bauhaus-Archiv, Berlin: BHA</ab>
-            </item>
-            <label>-</label>
-            <item level="0">
-              <ab xml:space="preserve">Österreichische Nationalbibliothek: ÖNB</ab>
-            </item>
-            <label>-</label>
-            <item level="0">
-              <ab xml:space="preserve">University of Pennsylvania Libraries, Philadelphia: US-PHu</ab>
-            </item>
-          </list>
-          <p>
-            <ab xml:space="preserve" style="sz:24">Anderes:</ab>
-          </p>
-          <list>
-            <label>-</label>
-            <item level="0">
-              <ab xml:space="preserve" style="lang:en-US">Altes Testament: AT</ab>
-            </item>
-          </list>
-        </div>
+         <body>
+         <div>
+           <head level="0" rendition="AMWGApparatFlietext">
+             <ab xml:space="preserve" style="b:">Online AMWG Abkürzungsverzeichnis</ab>
+           </head>
+           <p rendition="AMWGApparatFlietext">
+             <ab xml:space="preserve">Personen:</ab>
+           </p>
+          <label></label>
+          <item level="0">
+            <ab xml:space="preserve">Manon Gropius senior: MGsen</ab>
+          </item>
+          <label></label>
+          <item level="0">
+            <ab xml:space="preserve">Walter Gropius: WG</ab>
+          </item>
+          <label></label>
+          <item level="0">
+            <ab xml:space="preserve">Alma Mahler: AM</ab>
+          </item>
+          <label></label>
+          <item level="0">
+            <ab xml:space="preserve">Gustav Mahler: GM</ab>
+          </item>
+          <label></label>
+          <item level="0">
+            <ab xml:space="preserve" style="lang:en-US">Anna Moll: AMo</ab>
+          </item>
+           <p rendition="AMWGApparatFlietext">
+             <ab xml:space="preserve" style="lang:en-US">Archive:</ab>
+           </p>
+          <label>-</label>
+          <item level="0">
+            <ab xml:space="preserve" style="lang:en-US">Bauhaus-Archiv, Berlin: BHA</ab>
+          </item>
+          <label>-</label>
+          <item level="0">
+            <ab xml:space="preserve">Österreichische Nationalbibliothek: ÖNB</ab>
+          </item>
+          <label>-</label>
+          <item level="0">
+            <ab xml:space="preserve">University of Pennsylvania Libraries, Philadelphia: US-PHu</ab>
+          </item>
+           <p>
+             <ab xml:space="preserve" style="sz:24">Anderes:</ab>
+           </p>
+          <label>-</label>
+          <item level="0">
+            <ab xml:space="preserve" style="lang:en-US">Altes Testament: AT</ab>
+          </item>
+           
+         </div>
+         </body>
       </x:expect>
     </x:scenario>
       <x:scenario label="T4.2: lists without label">
@@ -270,21 +256,19 @@
                <text>
                   <body>
                      <div>
-                        <head rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;">
+                        <head level="0" rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;">
                            <ab xml:space="preserve" style="rFonts: Arial; smallCaps: ; color: auto; kern: 0; sz: 24; szCs: 28; lang: de-DE;"
                               >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</ab>
                         </head>
-                        <list>
-                           <item level="0">
-                              <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
-                           </item>
-                           <item level="0">
-                              <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
-                           </item>
-                           <item level="0">
-                              <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">dhg</ab>
-                           </item>
-                        </list>
+                        <item level="0">
+                           <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
+                        </item>
+                        <item level="0">
+                           <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">asdf</ab>
+                        </item>
+                        <item level="0">
+                           <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">dhg</ab>
+                        </item>
                      </div>
                   </body>
                   <back />

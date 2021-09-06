@@ -153,8 +153,7 @@
           </w:p>
         </w:body>
       </x:context>
-      <x:expect label="2 div">
-        <div>
+      <x:expect label=".">
           <p rendition="KSEE-Titel">
             <ab xml:space="preserve">EE 86 </ab>
             <ab xml:space="preserve">[= Nr. 110]</ab>
@@ -168,13 +167,9 @@
           <p rendition="KSEE-Titel">
             <ab xml:space="preserve">Bearbeitet von Alejandro Zorzin</ab>
           </p>
-        </div>
-        <div>
           <p rendition="berschrift1">
             <ab xml:space="preserve">Text</ab>
           </p>
-        </div>
-        <div>
           <p>
             <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;">[G4</ab>
             <ab xml:space="preserve" style="rFonts: Junicode; vertAlign: superscript; lang: en-US;">r</ab>
@@ -188,7 +183,6 @@
             <ptr type="endnote" ref="#e2"/>
             <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;"> </ab>
           </p>
-        </div>
       </x:expect>
     </x:scenario>
     <x:scenario label="T1.2">
@@ -301,13 +295,11 @@
           </teiHeader>
           <text>
             <body>
-              <div>
                 <p rendition="KSEE-Titel">
                   <ab xml:space="preserve">EE 86 </ab>
                   <ab xml:space="preserve">[= Nr. 110]</ab>
                   <ptr type="endnote" ref="#e1" rendition="Endnotentext" />
                 </p>
-              </div>
             </body>
             <back>
               <note type="endnote" xml:id="e1">
@@ -558,7 +550,6 @@
                <teiHeader>...</teiHeader>
                <text>
                   <body>
-                     <div>
                         <head level="0" rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;">
                            <ab xml:space="preserve" style="rFonts: Arial; smallCaps: ; color: auto; kern: 0; sz: 24; szCs: 28; lang: de-DE;"
                               >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</ab>
@@ -572,7 +563,6 @@
                         <item level="0">
                            <ab xml:space="preserve" style="rFonts: Arial; color: auto; kern: 0; sz: 24; szCs: 22; lang: de-DE;">dhg</ab>
                         </item>
-                     </div>
                   </body>
                   <back />
                </text>
@@ -875,7 +865,6 @@
           </teiHeader>
           <text>
             <body>
-              <div>
                 <p rendition="KSZwischenberschrift">
                   <ab xml:space="preserve" style="lang: en-US;">conformare</ab>
                   <ab xml:space="preserve" style="lang: en-US;">.</ab>
@@ -884,7 +873,6 @@
                   <anchor type="bookmarkEnd" ref="#_Ref534135879"/>
                   <ab xml:space="preserve" style="lang: en-US;">&#xF05e;</ab>
                 </p>
-              </div>
             </body>
             <back>
               <note type="endnote" xml:id="e5">
@@ -1003,7 +991,6 @@
           </teiHeader>
           <text>
             <body>
-              <div>
                 <p>
                   <ab xml:space="preserve" style="lang: la-Latn;"> et ecclesiam nostram declaras. Sed qua ratione tuis
                       consiliis satisfieri possit non video. Speras posse iniri aliquem modum, quo et Christo et </ab>
@@ -1015,7 +1002,6 @@
                     rendition="auszeichnungbermehrereworte0" style="rFonts: ; color: 0000FF;">Handelsministerium</ref>
                   <ab xml:space="preserve" rendition="AuszeichnungberMehrereWorte">]]</ab>
                 </p>
-              </div>
             </body>
             <back/>
           </text>
@@ -1469,7 +1455,6 @@
           <teiHeader>...</teiHeader>
           <text>
             <body>
-              <div>
                 <p rendition="Normal" style="text-align: justify;">
                   <ab xml:space="preserve" style="rFonts: Stempel Garamond CE Roman; b: ; i: ;">Druck</ab>
                   <ab xml:space="preserve" style="rFonts: Stempel Garamond CE Roman;">: Auszug bei Stengel 2, S. 150f.</ab>
@@ -1498,7 +1483,6 @@
                   </note>
                   <ab xml:space="preserve" style="rFonts: Stempel Garamond CE Roman;"> Die ersten Seiten fehlen in SBPK; ab „Zum armen Heinrich“ mit Pränumeranten erh. </ab>
                 </p>
-              </div>
             </body>
             <back />
           </text>
@@ -1924,7 +1908,6 @@
              <teiHeader>...</teiHeader>
              <text>
                 <body>
-                   <div>
                       <label>3</label>
                       <item level="0">
                          <ab xml:space="preserve" style="rFonts: Times New Roman; b: ; bCs: ; sz: 24; szCs: 24; shd: clear;">Stlibreart: 3</ab>
@@ -1933,7 +1916,6 @@
                       <item level="0">
                          <ab xml:space="preserve" style="rFonts: Times New Roman; b: ; bCs: ; sz: 24; szCs: 24; shd: clear;">Jetzt 4</ab>
                       </item>
-                   </div>
                 </body>
                 <back />
              </text>

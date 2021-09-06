@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
-  xmlns="http://www.tei-c.org/ns/1.0"
-  stylesheet="wt2.xsl">
+   xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns="http://www.tei-c.org/ns/1.0"
+   stylesheet="wt2.xsl">
+   
   <x:scenario label="T1: rtl">
     <x:context>
       <p style="Heading2; ">
@@ -122,64 +124,108 @@
     </x:expect>
   </x:scenario>
   
-  <x:scenario label="T7">
-    <x:context href="wt1.xspec" select="//x:scenario[starts-with(@label, 'T4.1')]/x:expect/*" />
-    <x:expect label="." xml:space="preserve"><div>
-          
-          <p rendition="AMWGApparatFlietext">
-            <hi xml:space="preserve" style="font-weight: bold;">Online AMWG Abkürzungsverzeichnis</hi>
-          </p>
-          <p rendition="AMWGApparatFlietext">
-            <hi xml:space="preserve">Personen:</hi>
-          </p>
-          <list>
-            <label></label>
-            <item level="0">
-              <hi xml:space="preserve">Manon Gropius senior: MGsen</hi>
-            </item>
-            <label></label>
-            <item level="0">
-              <hi xml:space="preserve">Walter Gropius: WG</hi>
-            </item>
-            <label></label>
-            <item level="0">
-              <hi xml:space="preserve">Alma Mahler: AM</hi>
-            </item>
-            <label></label>
-            <item level="0">
-              <hi xml:space="preserve">Gustav Mahler: GM</hi>
-            </item>
-            <label></label>
-            <item level="0">
-              <hi xml:space="preserve" style="lang:en-US;">Anna Moll: AMo</hi>
-            </item>
-          </list>
-          <p rendition="AMWGApparatFlietext">
-            <hi xml:space="preserve" style="lang:en-US;">Archive:</hi>
-          </p>
-          <list>
-            <label>-</label>
-            <item level="0">
-              <hi xml:space="preserve" style="lang:en-US;">Bauhaus-Archiv, Berlin: BHA</hi>
-            </item>
-            <label>-</label>
-            <item level="0">
-              <hi xml:space="preserve">Österreichische Nationalbibliothek: ÖNB</hi>
-            </item>
-            <label>-</label>
-            <item level="0">
-              <hi xml:space="preserve">University of Pennsylvania Libraries, Philadelphia: US-PHu</hi>
-            </item>
-          </list>
-          <p>
-            <hi xml:space="preserve" style="font-size: 12pt;">Anderes:</hi>
-          </p>
-          <list>
-            <label>-</label>
-            <item level="0">
-              <hi xml:space="preserve" style="lang:en-US;">Altes Testament: AT</hi>
-            </item>
-          </list>
-        </div></x:expect>
-  </x:scenario>
+   <x:scenario label="T7: lists">
+      <x:scenario label="T7.1">
+         <x:context href="wt1.xspec?strip-space=yes" select="//x:scenario[starts-with(@label, 'T4.1:')]/x:expect/tei:body" />
+         <x:expect label=".">
+            <body>
+               <div>
+                  <head level="0" rendition="AMWGApparatFlietext">
+                     <hi xml:space="preserve" style="font-weight: bold;">Online AMWG Abkürzungsverzeichnis</hi>
+                  </head>
+                  <p rendition="AMWGApparatFlietext">
+                     <hi xml:space="preserve">Personen:</hi>
+                  </p>
+                  <list>
+                     <label></label>
+                     <item level="0">
+                        <hi xml:space="preserve">Manon Gropius senior: MGsen</hi>
+                     </item>
+                     <label></label>
+                     <item level="0">
+                        <hi xml:space="preserve">Walter Gropius: WG</hi>
+                     </item>
+                     <label></label>
+                     <item level="0">
+                        <hi xml:space="preserve">Alma Mahler: AM</hi>
+                     </item>
+                     <label></label>
+                     <item level="0">
+                        <hi xml:space="preserve">Gustav Mahler: GM</hi>
+                     </item>
+                     <label></label>
+                     <item level="0">
+                        <hi xml:space="preserve" style="lang:en-US;">Anna Moll: AMo</hi>
+                     </item>
+                  </list>
+                  <p rendition="AMWGApparatFlietext">
+                     <hi xml:space="preserve" style="lang:en-US;">Archive:</hi>
+                  </p>
+                  <list>
+                     <label>-</label>
+                     <item level="0">
+                        <hi xml:space="preserve" style="lang:en-US;">Bauhaus-Archiv, Berlin: BHA</hi>
+                     </item>
+                     <label>-</label>
+                     <item level="0">
+                        <hi xml:space="preserve">Österreichische Nationalbibliothek: ÖNB</hi>
+                     </item>
+                     <label>-</label>
+                     <item level="0">
+                        <hi xml:space="preserve">University of Pennsylvania Libraries, Philadelphia: US-PHu</hi>
+                     </item>
+                  </list>
+                  <p>
+                     <hi xml:space="preserve" style="font-size: 12pt;">Anderes:</hi>
+                  </p>
+                  <list>
+                     <label>-</label>
+                     <item level="0">
+                        <hi xml:space="preserve" style="lang:en-US;">Altes Testament: AT</hi>
+                     </item>
+                  </list>
+               </div>
+            </body>
+         </x:expect>
+      </x:scenario>
+      <x:scenario label="T7.2">
+         <x:context href="wt1.xspec?strip-space=yes" select="//x:scenario[starts-with(@label, 'T4.2:')]/x:expect/tei:*" />
+         <x:expect label="list">
+            <TEI>
+               <teiHeader>...</teiHeader>
+               <text>
+                  <body>
+                     <div>
+                        <head level="0" rendition="AMWGApparatberschrift2" style="text-align: left;">
+                           <hi xml:space="preserve"
+                              style="font-family: Arial; font-variant: small-caps; color: #auto;
+ kern: 0; font-size: 12pt;
+ lang: de-DE;"
+                              >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</hi>
+                        </head>
+                        <list>
+                           <item level="0">
+                              <hi xml:space="preserve" style="font-family: Arial; color: #auto;
+ kern: 0; font-size: 12pt;
+ lang: de-DE;">asdf</hi>
+                           </item>
+                           <item level="0">
+                              <hi xml:space="preserve" style="font-family: Arial; color: #auto;
+ kern: 0; font-size: 12pt;
+ lang: de-DE;">asdf</hi>
+                           </item>
+                           <item level="0">
+                              <hi xml:space="preserve" style="font-family: Arial; color: #auto;
+ kern: 0; font-size: 12pt;
+ lang: de-DE;">dhg</hi>
+                           </item>
+                        </list>
+                     </div>
+                  </body>
+                  <back />
+               </text>
+            </TEI>
+         </x:expect>
+      </x:scenario>
+   </x:scenario>
 </x:description>

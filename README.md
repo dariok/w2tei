@@ -5,6 +5,10 @@ A web service and collection of basic scripts to convert Word (XML or DOCX) to T
 **Incompatible change: As of 2020-11-23, paragraph style names (`w:pStyle/@w:val`) are recorded in `tei:p/@rendition`,
 the definitions in `w:rPr` are kept in `tei:p/@style`.** 
 
+**Incompatible change: As of 2021-09-06, heading levels and div structure are evaluated based upon the values given by
+w:outlineLvl in a paragraph preset or paragraph style; empty lines or a style called “Heading \d” will not suffice.
+Paragraphs not having a defined outline level are not recognized as headings.**
+
 ## How to use (docx to Flat XML)
 
 ### Oxygen

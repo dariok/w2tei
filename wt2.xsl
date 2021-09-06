@@ -24,6 +24,7 @@
         
         <xsl:choose>
           <xsl:when test=". eq ' ' or . eq ''" />
+          <xsl:when test="$key eq 'outlineLvl'" />
           
           <xsl:when test="$key eq 'b' and $val = ('', '1')">font-weight: bold</xsl:when>
           <xsl:when test="$key eq 'i' and $val = ('', '1')">font-style: italic</xsl:when>
@@ -83,8 +84,33 @@
     </xsl:if>
     <xsl:apply-templates />
   </xsl:template>
-  
-  <xsl:template match="tei:list[not(*)]" />
+   
+   <xsl:template match="tei:div">
+      <div>
+         <xsl:choose>
+            <xsl:when test="tei:label">
+               <xsl:apply-templates select="tei:label[1]/preceding-sibling::*" />
+               <xsl:for-each-group select="tei:label[1] | tei:label[1]/following-sibling::*"
+                  group-starting-with="tei:label[not(preceding-sibling::*[1][self::tei:item])]">
+                  <list>
+                     <xsl:apply-templates select="current-group()[self::tei:label or self::tei:item]" />
+                  </list>
+                  <xsl:apply-templates select="current-group()[not(self::tei:label or self::tei:item)]" />
+               </xsl:for-each-group>
+            </xsl:when>
+            <xsl:when test="tei:item">
+               <xsl:apply-templates select="tei:item[1]/preceding-sibling::*" />
+               <list>
+                  <xsl:apply-templates select="tei:item" />
+               </list>
+               <xsl:apply-templates select="tei:item[last()]/following-sibling::*" />
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:apply-templates />
+            </xsl:otherwise>
+         </xsl:choose>
+      </div>
+   </xsl:template>
   
   <xsl:template match="@* | node()">
     <xsl:copy>

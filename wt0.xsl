@@ -50,17 +50,6 @@
     </TEI>
   </xsl:template>
   
-  <xsl:template match="w:body">
-    <xsl:for-each-group select="w:p | w:tbl"
-      group-starting-with="w:p[not(descendant::w:t or descendant::w:sym)]">
-      <!--<xsl:text>
-      </xsl:text>-->
-      <div>
-        <xsl:apply-templates select="current-group()" />
-      </div>
-    </xsl:for-each-group>
-  </xsl:template>
-  
   <!-- normal paragraphs -->
   <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym or ancestor::w:tbl)]" />
   <xsl:template match="w:p">
