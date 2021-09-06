@@ -99,9 +99,21 @@
       </item>
    </xsl:template>
    
-   <!-- headings have an outlineLvl child and/or a style that tells it away; we only check for Heading* right now -->
-   <xsl:template match="w:p[descendant::w:outlineLvl or wt:is(., 'Heading')]">
+   <!-- headings either have a w:outlineLvl descendant or a style with element – check using a function -->
+   <xsl:template match="w:p[wt:isHeading(.)]">
       <head>
+         <xsl:attribute name="level">
+            <xsl:choose>
+               <xsl:when test="w:pPr/w:outlineLvl">
+                  <xsl:value-of select="w:pPr/w:outlineLvl/@w:val" />
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:variable name="pStyle" select="w:pPr/w:pStyle/@w:val" />
+                  <xsl:variable name="style" select="//w:style[@w:styleId = $pStyle]" />
+                  <xsl:value-of select="$style//w:outlineLvl/@w:val" />
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:attribute>
          <xsl:apply-templates select="*" />
       </head>
    </xsl:template>

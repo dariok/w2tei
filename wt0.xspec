@@ -559,7 +559,7 @@
                <text>
                   <body>
                      <div>
-                        <head rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;">
+                        <head level="0" rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;">
                            <ab xml:space="preserve" style="rFonts: Arial; smallCaps: ; color: auto; kern: 0; sz: 24; szCs: 28; lang: de-DE;"
                               >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</ab>
                         </head>
@@ -1597,6 +1597,7 @@
             <w:rPr>
               <w:u w:val="none"/>
             </w:rPr>
+             <w:outlineLvl w:val="0" />
           </w:pPr>
           <w:bookmarkStart w:colFirst="0" w:colLast="0" w:name="_sddw164bik7v" w:id="5"/>
           <w:bookmarkEnd w:id="5"/>
@@ -1610,6 +1611,7 @@
         <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000000B">
           <w:pPr>
             <w:pStyle w:val="Heading2"/>
+             <w:outlineLvl w:val="1" />
             <w:keepNext w:val="0"/>
             <w:keepLines w:val="0"/>
             <w:numPr>
@@ -1634,6 +1636,7 @@
         <w:p w:rsidR="00000000" w:rsidDel="00000000" w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidRPr="00000000" w14:paraId="0000000C">
           <w:pPr>
             <w:pStyle w:val="Heading3"/>
+             <w:outlineLvl w:val="2" />
             <w:numPr>
               <w:ilvl w:val="2"/>
               <w:numId w:val="2"/>
@@ -1705,17 +1708,17 @@
         </w:p>
       </x:context>
       <x:expect label=".">
-        <head rendition="Heading1">
+         <head rendition="Heading1" level="0" style="outlineLvl: 0;">
           <anchor type="bookmarkStart" xml:id="_sddw164bik7v"/>
           <anchor type="bookmarkEnd" ref="#_sddw164bik7v"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage</ab>
         </head>
-        <head rendition="Heading2">
+         <head rendition="Heading2" level="1" style="outlineLvl: 1;">
           <anchor type="bookmarkStart" xml:id="_1lljeedsw1zi"/>
           <anchor type="bookmarkEnd" ref="#_1lljeedsw1zi"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage und eigene Vorarbeiten</ab>
         </head>
-        <head rendition="Heading3">
+         <head rendition="Heading3" level="2" style="outlineLvl: 2;">
           <anchor type="bookmarkStart" xml:id="_dp00tcwtcmc3"/>
           <anchor type="bookmarkEnd" ref="#_dp00tcwtcmc3"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage</ab>
