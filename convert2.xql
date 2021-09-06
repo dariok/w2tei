@@ -15,7 +15,9 @@ switch ($path)
   case "word/numbering.xml"
   case "word/_rels/endnotes.xml.rels"
   case "word/_rels/document.xml.rels"
+  case "word/_rels/footnotes.xml.rels"
   case "word/settings.xml"
+  case "word/styles.xml"
     return true()
   default
     return false()
