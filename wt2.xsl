@@ -114,6 +114,8 @@
          </xsl:choose>
       </div>
    </xsl:template>
+   
+   <xsl:template match="@level" />
   
   <xsl:template match="@* | node()">
     <xsl:copy>

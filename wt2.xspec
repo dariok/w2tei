@@ -130,7 +130,7 @@
          <x:expect label=".">
             <body>
                <div>
-                  <head level="0" rendition="AMWGApparatFlietext">
+                  <head rendition="AMWGApparatFlietext">
                      <hi xml:space="preserve" style="font-weight: bold;">Online AMWG Abkürzungsverzeichnis</hi>
                   </head>
                   <p rendition="AMWGApparatFlietext">
@@ -138,23 +138,23 @@
                   </p>
                   <list>
                      <label></label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve">Manon Gropius senior: MGsen</hi>
                      </item>
                      <label></label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve">Walter Gropius: WG</hi>
                      </item>
                      <label></label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve">Alma Mahler: AM</hi>
                      </item>
                      <label></label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve">Gustav Mahler: GM</hi>
                      </item>
                      <label></label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve" style="lang:en-US;">Anna Moll: AMo</hi>
                      </item>
                   </list>
@@ -163,15 +163,15 @@
                   </p>
                   <list>
                      <label>-</label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve" style="lang:en-US;">Bauhaus-Archiv, Berlin: BHA</hi>
                      </item>
                      <label>-</label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve">Österreichische Nationalbibliothek: ÖNB</hi>
                      </item>
                      <label>-</label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve">University of Pennsylvania Libraries, Philadelphia: US-PHu</hi>
                      </item>
                   </list>
@@ -180,7 +180,7 @@
                   </p>
                   <list>
                      <label>-</label>
-                     <item level="0">
+                     <item>
                         <hi xml:space="preserve" style="lang:en-US;">Altes Testament: AT</hi>
                      </item>
                   </list>
@@ -196,7 +196,7 @@
                <text>
                   <body>
                      <div>
-                        <head level="0" rendition="AMWGApparatberschrift2" style="text-align: left;">
+                        <head rendition="AMWGApparatberschrift2" style="text-align: left;">
                            <hi xml:space="preserve"
                               style="font-family: Arial; font-variant: small-caps; color: #auto;
  kern: 0; font-size: 12pt;
@@ -204,17 +204,17 @@
                               >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</hi>
                         </head>
                         <list>
-                           <item level="0">
+                           <item>
                               <hi xml:space="preserve" style="font-family: Arial; color: #auto;
  kern: 0; font-size: 12pt;
  lang: de-DE;">asdf</hi>
                            </item>
-                           <item level="0">
+                           <item>
                               <hi xml:space="preserve" style="font-family: Arial; color: #auto;
  kern: 0; font-size: 12pt;
  lang: de-DE;">asdf</hi>
                            </item>
-                           <item level="0">
+                           <item>
                               <hi xml:space="preserve" style="font-family: Arial; color: #auto;
  kern: 0; font-size: 12pt;
  lang: de-DE;">dhg</hi>
