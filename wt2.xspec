@@ -227,5 +227,247 @@
             </TEI>
          </x:expect>
       </x:scenario>
+      <x:scenario label="T7.3: multiple lists with p in between">
+        <x:context>
+          <div>
+           <p rendition="Normal" style="text-align: justify;">
+             <ab xml:space="preserve">Die nachfolgend alphabetisch geordneten Bahnverbindungen innerhalb Europas mit Zwischenstationen und vorangestellten Fahrplannummern (kursiv) gehen von den Uhrzeiten der </ab>
+             <ptr type="comment" xml:id="c6"/>
+             <ab xml:space="preserve">Poststempel</ab>
+             <note type="comment" from="#c6">
+               <note>
+                 <ab xml:space="preserve" style="rFonts: Liberation Serif; sz: 24; szCs: 24; lang: en-US;">Link auf Material &gt; Poststempel</ab>
+               </note>
+             </note>
+             <ab xml:space="preserve"> auf den Umschlägen zu Alma Mahlers (und Anna Molls) Schreiben aus. Tragen die </ab>
+             <ptr type="comment" xml:id="c7"/>
+             <ab xml:space="preserve">Poststempel</ab>
+             <note type="comment" from="#c7">
+               <note>
+                 <ab xml:space="preserve" style="rFonts: Liberation Serif; sz: 24; szCs: 24; lang: en-US;">Link auf Material &gt; Poststempel</ab>
+               </note>
+             </note>
+             <ab xml:space="preserve"> keine Uhrzeit, wurden die frühesten Abfahrtszeiten angesetzt, um eine seinerzeit übliche Mindestfahrzeit stundengenau zu ermitteln. Schließlich wird ersichtlich, an welchem Tag nach Absendung Walter Gropius die Schreiben jeweils frühestens erhalten haben konnte. Umgekehrt kann bei Schreiben von Walter Gropius, die Alma Mahler in ihren Briefen erwähnt, rekonstruiert werden, wann sie spätestens verfasst worden sein mussten, um sie zu erwidern. Für größere Städte (wie Berlin/Neubabelsberg) wurde hierbei eine zusätzliche Zustelldauer innerhalb der Stadt von einer Stunde anberaumt. An Walter Gropius weitergeleitete Briefe nach Berlin (Kaiserin-Augusta-Straße), Berlin-Wilmersdorf, Dresden, Hannover und Janikow stellen in der Regel keine Herausforderung für die Rekonstruktion der Postlaufzeit dar, weil sie tagesgenaue Weiterleitungsvermerke oder gar stundengenaue Empfangsstempel enthalten:</ab>
+           </p>
+           <p rendition="Normal">
+             <ab xml:space="preserve" style="rFonts: Calibri; smallCaps: ; lang: ;">Abbazia – Berlin</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">, #AM128#, </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; b: ; lang: ;">PSt.: 8 Uhr</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">, </ab>
+             <ab xml:space="preserve">Zustellung am </ab>
+             <ab xml:space="preserve" style="b: ;">zweiten Tag nach Stempelung</ab>
+             <ab xml:space="preserve"> möglich:</ab>
+           </p>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: ; lang: ;">Abfahrtszeiten für Abbazia-Triest unbekannt (</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">vgl. Fahrzeit für </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; i: ; lang: ;">422</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;"> Triest ab: 8.00, Abbazia an: </ab>
+             <ab xml:space="preserve">11.00), d. h. Dauer ca. 3 Stunden</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: ; bCs: ; i: ; lang: ;">755</ab>
+             <ab xml:space="preserve" style="rFonts: ; bCs: ; lang: ;"> Triest ab: 17.00</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve">Berlin an: 18.42 + 1 Tag → Postlaufzeit: </ab>
+             <ab xml:space="preserve" style="b: ;">ca. 35 Stunden + 1 Stunde (Zustellung)</ab>
+           </item>
+           <p rendition="Normal">
+             <ab xml:space="preserve" style="rFonts: Calibri; smallCaps: ; lang: ;">Berlin W[est] – Märkisch-Friedland</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;"> (heute: </ab>
+             <ab xml:space="preserve">Mirosławiec)</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">, #AM133#, </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; b: ; lang: ;">PSt.: 9–10 Uhr</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">, </ab>
+             <ab xml:space="preserve">Zustellung </ab>
+             <ab xml:space="preserve" style="b: ;">am Tag nach Stempelung</ab>
+             <ab xml:space="preserve"> möglich</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">:</ab>
+           </p>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: ; bCs: ; i: ; lang: ;">###</ab>
+             <ab xml:space="preserve" style="rFonts: ; lang: ;"> Berlin ab: #.##</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">Märkisch-Friedland an: #.## → Postlaufzeit: </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; b: ; lang: ;">ca. # Stunden</ab>
+           </item>
+           <p rendition="Normal">
+             <ab xml:space="preserve" style="rFonts: Calibri; smallCaps: ; lang: ;">Franzensbad – Berlin – </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; smallCaps: ; u: single; lang: ;">Niendorf</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; smallCaps: ; lang: ;"> – Timmendorfer Strand</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">, #AM139-2#, </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; b: ; lang: ;">PSt.: 19 Uhr</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">, </ab>
+             <ab xml:space="preserve">Zustellung </ab>
+             <ab xml:space="preserve" style="b: ;">am Tag nach Stempelung</ab>
+             <ab xml:space="preserve"> möglich</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">:</ab>
+           </p>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: ; bCs: ; i: ; lang: ;">93a</ab>
+             <ab xml:space="preserve" style="rFonts: ; lang: ;"> Franzensbad ab: 22.11</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">Berlin Anh. Bf. an: 6.26</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: ; bCs: ; i: ; lang: ;">10a</ab>
+             <ab xml:space="preserve" style="rFonts: ; lang: ;"> Berlin Lehrt. Bf. ab: 9.01</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">Lübeck an: 13.05</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: ; bCs: ; i: ; lang: ;">15</ab>
+             <ab xml:space="preserve" style="rFonts: ; lang: ;"> Lübeck ab: 13.28</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">Niendorf an: 14.38</ab>
+           </item>
+           <item level="0">
+             <ab xml:space="preserve" style="rFonts: ; lang: ;">Abfahrtszeiten für Niendorf-Timmendorfer Strand per „Pferd und Wagen“ (Kuhlmann 1982, S. 172) unbekannt; geschätzte Fahrzeit ca. 30 Minuten </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">→ Postlaufzeit: </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; b: ; lang: ;">mind. 20 Stunden</ab>
+           </item>
+           <p rendition="Normal">
+             <ab xml:space="preserve" style="rFonts: Calibri; smallCaps: ; lang: ;">Franzensbad – Berlin – </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; smallCaps: ; u: single; lang: ;">Pansdorf</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; smallCaps: ; lang: ;"> – Timmendorfer Strand</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">, #AM139-2#, </ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; b: ; lang: ;">PSt.: 19 Uhr</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">, </ab>
+             <ab xml:space="preserve">Zustellung </ab>
+             <ab xml:space="preserve" style="b: ;">am Tag nach Stempelung</ab>
+             <ab xml:space="preserve"> möglich</ab>
+             <ab xml:space="preserve" style="rFonts: Calibri; lang: ;">:</ab>
+           </p>
+          </div>
+        </x:context>
+        <x:expect label=".">
+          <div>
+            <p rendition="Normal" style="...">
+              <hi xml:space="preserve">Die nachfolgend alphabetisch geordneten Bahnverbindungen innerhalb Europas mit Zwischenstationen und vorangestellten Fahrplannummern (kursiv) gehen von den Uhrzeiten der </hi>
+              <ptr type="comment" xml:id="c6"/>
+              <hi xml:space="preserve">Poststempel</hi>
+              <note type="comment" from="#c6">
+                <note>
+                  <hi xml:space="preserve" style="...">Link auf Material &gt; Poststempel</hi>
+                </note>
+              </note>
+              <hi xml:space="preserve"> auf den Umschlägen zu Alma Mahlers (und Anna Molls) Schreiben aus. Tragen die </hi>
+              <ptr type="comment" xml:id="c7"/>
+              <hi xml:space="preserve">Poststempel</hi>
+              <note type="comment" from="#c7">
+                <note>
+                  <hi xml:space="preserve" style="...">Link auf Material &gt; Poststempel</hi>
+                </note>
+              </note>
+              <hi xml:space="preserve"> keine Uhrzeit, wurden die frühesten Abfahrtszeiten angesetzt, um eine seinerzeit übliche Mindestfahrzeit stundengenau zu ermitteln. Schließlich wird ersichtlich, an welchem Tag nach Absendung Walter Gropius die Schreiben jeweils frühestens erhalten haben konnte. Umgekehrt kann bei Schreiben von Walter Gropius, die Alma Mahler in ihren Briefen erwähnt, rekonstruiert werden, wann sie spätestens verfasst worden sein mussten, um sie zu erwidern. Für größere Städte (wie Berlin/Neubabelsberg) wurde hierbei eine zusätzliche Zustelldauer innerhalb der Stadt von einer Stunde anberaumt. An Walter Gropius weitergeleitete Briefe nach Berlin (Kaiserin-Augusta-Straße), Berlin-Wilmersdorf, Dresden, Hannover und Janikow stellen in der Regel keine Herausforderung für die Rekonstruktion der Postlaufzeit dar, weil sie tagesgenaue Weiterleitungsvermerke oder gar stundengenaue Empfangsstempel enthalten:</hi>
+            </p>
+            <p rendition="Normal">
+              <hi xml:space="preserve" style="...">Abbazia – Berlin</hi>
+              <hi xml:space="preserve" style="...">, #AM128#, </hi>
+              <hi xml:space="preserve" style="...">PSt.: 8 Uhr</hi>
+              <hi xml:space="preserve" style="...">, </hi>
+              <hi xml:space="preserve">Zustellung am </hi>
+              <hi xml:space="preserve" style="...">zweiten Tag nach Stempelung</hi>
+              <hi xml:space="preserve"> möglich:</hi>
+            </p>
+            <list>
+              <item>
+                <hi xml:space="preserve" style="...">Abfahrtszeiten für Abbazia-Triest unbekannt (</hi>
+                <hi xml:space="preserve" style="...">vgl. Fahrzeit für </hi>
+                <hi xml:space="preserve" style="...">422</hi>
+                <hi xml:space="preserve" style="..."> Triest ab: 8.00, Abbazia an: </hi>
+                <hi xml:space="preserve">11.00), d. h. Dauer ca. 3 Stunden</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve" style="...">755</hi>
+                <hi xml:space="preserve" style="..."> Triest ab: 17.00</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve">Berlin an: 18.42 + 1 Tag → Postlaufzeit: </hi>
+                <hi xml:space="preserve" style="...">ca. 35 Stunden + 1 Stunde (Zustellung)</hi>
+              </item>
+            </list>
+            <p rendition="Normal">
+              <hi xml:space="preserve" style="...">Berlin W[est] – Märkisch-Friedland</hi>
+              <hi xml:space="preserve" style="..."> (heute: </hi>
+              <hi xml:space="preserve">Mirosławiec)</hi>
+              <hi xml:space="preserve" style="...">, #AM133#, </hi>
+              <hi xml:space="preserve" style="...">PSt.: 9–10 Uhr</hi>
+              <hi xml:space="preserve" style="...">, </hi>
+              <hi xml:space="preserve">Zustellung </hi>
+              <hi xml:space="preserve" style="...">am Tag nach Stempelung</hi>
+              <hi xml:space="preserve"> möglich</hi>
+              <hi xml:space="preserve" style="...">:</hi>
+            </p>
+            <list>
+              <item>
+                <hi xml:space="preserve" style="...">###</hi>
+                <hi xml:space="preserve" style="..."> Berlin ab: #.##</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve" style="...">Märkisch-Friedland an: #.## → Postlaufzeit: </hi>
+                <hi xml:space="preserve" style="...">ca. # Stunden</hi>
+              </item>
+            </list>
+            <p rendition="Normal">
+              <hi xml:space="preserve" style="...">Franzensbad – Berlin – </hi>
+              <hi xml:space="preserve" style="...">Niendorf</hi>
+              <hi xml:space="preserve" style="..."> – Timmendorfer Strand</hi>
+              <hi xml:space="preserve" style="...">, #AM139-2#, </hi>
+              <hi xml:space="preserve" style="...">PSt.: 19 Uhr</hi>
+              <hi xml:space="preserve" style="...">, </hi>
+              <hi xml:space="preserve">Zustellung </hi>
+              <hi xml:space="preserve" style="...">am Tag nach Stempelung</hi>
+              <hi xml:space="preserve"> möglich</hi>
+              <hi xml:space="preserve" style="...">:</hi>
+            </p>
+            <list>
+              <item>
+                <hi xml:space="preserve" style="...">93a</hi>
+                <hi xml:space="preserve" style="..."> Franzensbad ab: 22.11</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve" style="...">Berlin Anh. Bf. an: 6.26</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve" style="...">10a</hi>
+                <hi xml:space="preserve" style="..."> Berlin Lehrt. Bf. ab: 9.01</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve" style="...">Lübeck an: 13.05</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve" style="...">15</hi>
+                <hi xml:space="preserve" style="..."> Lübeck ab: 13.28</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve" style="...">Niendorf an: 14.38</hi>
+              </item>
+              <item>
+                <hi xml:space="preserve" style="...">Abfahrtszeiten für Niendorf-Timmendorfer Strand per „Pferd und Wagen“ (Kuhlmann 1982, S. 172) unbekannt; geschätzte Fahrzeit ca. 30 Minuten </hi>
+                <hi xml:space="preserve" style="...">→ Postlaufzeit: </hi>
+                <hi xml:space="preserve" style="...">mind. 20 Stunden</hi>
+              </item>
+            </list>
+            <p rendition="Normal">
+              <hi xml:space="preserve" style="...">Franzensbad – Berlin – </hi>
+              <hi xml:space="preserve" style="...">Pansdorf</hi>
+              <hi xml:space="preserve" style="..."> – Timmendorfer Strand</hi>
+              <hi xml:space="preserve" style="...">, #AM139-2#, </hi>
+              <hi xml:space="preserve" style="...">PSt.: 19 Uhr</hi>
+              <hi xml:space="preserve" style="...">, </hi>
+              <hi xml:space="preserve">Zustellung </hi>
+              <hi xml:space="preserve" style="...">am Tag nach Stempelung</hi>
+              <hi xml:space="preserve"> möglich</hi>
+              <hi xml:space="preserve" style="...">:</hi>
+            </p>
+          </div>
+        </x:expect>
+      </x:scenario>
    </x:scenario>
 </x:description>

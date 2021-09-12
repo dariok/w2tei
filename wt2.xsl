@@ -102,11 +102,22 @@
                </xsl:for-each-group>
             </xsl:when>
             <xsl:when test="tei:item">
-               <xsl:apply-templates select="tei:item[1]/preceding-sibling::*" />
-               <list>
-                  <xsl:apply-templates select="tei:item" />
-               </list>
-               <xsl:apply-templates select="tei:item[last()]/following-sibling::*" />
+              <xsl:for-each-group select="*"
+                group-starting-with="tei:item[preceding-sibling::*[1][not(self::tei:item)]] | tei:p[not(preceding-sibling::tei:p)]">
+                <xsl:choose>
+                  <xsl:when test="current-group()[1][self::tei:item]">
+                    <xsl:variable name="end" select="current-group()[self::tei:item][last()]/generate-id()"/>
+                    <list>
+                      <xsl:apply-templates select="current-group()[following-sibling::tei:item[generate-id() = $end]
+                        or generate-id() = $end]" />
+                    </list>
+                    <xsl:apply-templates select="current-group()[preceding-sibling::*[generate-id() = $end]]" />
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:apply-templates select="current-group()" />
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:for-each-group>
             </xsl:when>
             <xsl:otherwise>
                <xsl:apply-templates />
