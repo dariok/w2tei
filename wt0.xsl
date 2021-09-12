@@ -50,17 +50,6 @@
     </TEI>
   </xsl:template>
   
-  <xsl:template match="w:body">
-    <xsl:for-each-group select="w:p | w:tbl"
-      group-starting-with="w:p[not(descendant::w:t or descendant::w:sym)]">
-      <!--<xsl:text>
-      </xsl:text>-->
-      <div>
-        <xsl:apply-templates select="current-group()" />
-      </div>
-    </xsl:for-each-group>
-  </xsl:template>
-  
   <!-- normal paragraphs -->
   <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym or ancestor::w:tbl)]" />
   <xsl:template match="w:p">
@@ -75,27 +64,45 @@
     </note>
   </xsl:template>
   
-  <!-- numberinga usually are part of lists, except when applied to a heading. Recognize headings by looking for an
+   <!-- numberings usually are part of lists, except when applied to a heading. Recognize headings by looking for an
        explicit style name or the presence of w:outlineLvl -->
-  <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc or wt:is(., 'Heading')or w:pPr/w:outlineLvl)]">
-    <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
-    <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
-    
-    <!-- TODO this is actually only the setting how the value should be rendered; the value must be evalutated similar
-      to footnotes -->
-    <xsl:variable name="label" select="//w:abstractNum[@w:abstractNumId eq $numId]/w:lvl[@w:ilvl eq $level]/w:lvlText/@w:val"/>
-    
-    <label>
-      <xsl:value-of select="$label" />
-    </label>
-    <item level="{$level}">
-      <xsl:apply-templates select="w:r" />
-    </item>
-  </xsl:template>
+   <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc or wt:is(., 'Heading')or w:pPr/w:outlineLvl)]">
+      <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
+      <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
+      <xsl:variable name="abstractNumId" select="//w:num[@w:numId = $numId]/w:abstractNumId/@w:val" />
+      <xsl:variable name="abstractNum" select="//w:abstractNum[@w:abstractNumId = $abstractNumId]" />
+      
+      <!-- distinguish between numbered and unordered (bulleted etc.) lists -->
+      <xsl:if test="$abstractNum/w:lvl[@w:ilvl = $level]/w:numFmt/@w:val = 'decimal'">
+         <xsl:variable name="start" select="$abstractNum/w:lvl[@w:ilvl eq $level]/w:start/@w:val"/>
+         <xsl:variable name="label" select="count(preceding::w:p[descendant::w:numId/@w:val = $numId
+            and descendant::w:ilvl/@w:val = $level]) + $start"/>
+         
+         <label>
+            <xsl:value-of select="$label" />
+         </label>
+      </xsl:if>
+      
+      <item level="{$level}">
+         <xsl:apply-templates select="w:r" />
+      </item>
+   </xsl:template>
    
-   <!-- headings have an outlineLvl child and/or a style that tells it away; we only check for Heading* right now -->
-   <xsl:template match="w:p[descendant::w:outlineLvl or wt:is(., 'Heading')]">
+   <!-- headings either have a w:outlineLvl descendant or a style with element – check using a function -->
+   <xsl:template match="w:p[wt:isHeading(.)]">
       <head>
+         <xsl:attribute name="level">
+            <xsl:choose>
+               <xsl:when test="w:pPr/w:outlineLvl">
+                  <xsl:value-of select="w:pPr/w:outlineLvl/@w:val" />
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:variable name="pStyle" select="w:pPr/w:pStyle/@w:val" />
+                  <xsl:variable name="style" select="//w:style[@w:styleId = $pStyle]" />
+                  <xsl:value-of select="$style//w:outlineLvl/@w:val" />
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:attribute>
          <xsl:apply-templates select="*" />
       </head>
    </xsl:template>

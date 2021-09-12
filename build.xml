@@ -3,8 +3,25 @@
     <property name="project.version" value="${package(version)}"/>
     <property name="project.app" value="w2t"/>
     <property name="build.dir" value="build"/>
-    <target name="xar">
-        <mkdir dir="${build.dir}"/>
-        <zip basedir="." destfile="${build.dir}/${project.app}-${project.version}.xar" excludes="${build.dir}/*"/>
-    </target>
+   <target name="xar">
+      <mkdir dir="w2tei" />
+      <copy todir="w2tei/">
+         <fileset dir=".">
+            <include name="*.xsl"/>
+            <include name="*.xml"/>
+            <include name="*.xql"/>
+         </fileset>
+      </copy>
+      <mkdir dir="w2tei/add" />
+      <copy todir="w2tei/add/">
+         <fileset dir="add/">
+            <include name="*.xsl"/>
+         </fileset>
+      </copy>
+      
+      <mkdir dir="${build.dir}"/>
+      <zip basedir="w2tei" destfile="${build.dir}/${project.app}-${project.version}.xar" excludes="${build.dir}/*"/>
+      
+      <delete dir="w2tei/" />
+   </target>
 </project>
