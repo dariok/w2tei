@@ -375,6 +375,12 @@
         <xsl:value-of select="'text-indent: ' || $val || 'pt'"/>
       </xsl:if>
     </xsl:if>
+    <xsl:if test="@w:left">
+      <xsl:variable name="val" select="round(@w:firstLine/number() div 20)" />
+      <xsl:if test="$val gt 0">
+        <xsl:value-of select="'padding-left: ' || $val || 'pt'"/>
+      </xsl:if>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
