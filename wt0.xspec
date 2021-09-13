@@ -167,9 +167,11 @@
           <p rendition="KSEE-Titel">
             <ab xml:space="preserve">Bearbeitet von Alejandro Zorzin</ab>
           </p>
+          <p />
           <p rendition="berschrift1">
             <ab xml:space="preserve">Text</ab>
           </p>
+          <p />
           <p>
             <ab xml:space="preserve" style="rFonts: Junicode; lang: en-US;">[G4</ab>
             <ab xml:space="preserve" style="rFonts: Junicode; vertAlign: superscript; lang: en-US;">r</ab>
@@ -1480,6 +1482,7 @@
                       <ab xml:space="preserve" style="sz: 20; szCs: 20; highlight: cyan;">,</ab>
                       <ab xml:space="preserve" style="sz: 20; szCs: 20;"> S. 149). Die Ausnahmen, die Stengel nennt, werden an der entsprechenden Stelle angemerkt. </ab>
                     </p>
+                    <p rendition="Footnote" />
                   </note>
                   <ab xml:space="preserve" style="rFonts: Stempel Garamond CE Roman;"> Die ersten Seiten fehlen in SBPK; ab „Zum armen Heinrich“ mit Pränumeranten erh. </ab>
                 </p>

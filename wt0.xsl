@@ -51,7 +51,7 @@
   </xsl:template>
   
   <!-- normal paragraphs -->
-  <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym or ancestor::w:tbl)]" />
+<!--  <xsl:template match="w:p[not(descendant::w:t or descendant::w:sym or ancestor::w:tbl)]" />-->
   <xsl:template match="w:p">
     <p>
       <xsl:apply-templates select="*" />
