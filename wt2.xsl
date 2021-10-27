@@ -32,6 +32,7 @@
             <xsl:choose>
               <xsl:when test="$val eq '0' or $val eq ''" />
               <xsl:when test="$val eq 'single'">text-decoration: underline</xsl:when>
+              <xsl:when test="$val eq 'dotted'">text-decoration: underline dotted</xsl:when>
               <xsl:when test="$val eq 'double'">text-decoration: underline double auto</xsl:when>
               <xsl:when test="$val eq 'wave'">text-decoration: underline wavy 1px</xsl:when>
             </xsl:choose>
