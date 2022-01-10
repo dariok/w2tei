@@ -28,6 +28,7 @@
           
           <xsl:when test="$key eq 'b' and $val = ('', '1')">font-weight: bold</xsl:when>
           <xsl:when test="$key eq 'i' and $val = ('', '1')">font-style: italic</xsl:when>
+          <xsl:when test="$key = ('b', 'i') and $val = '0'" />
           <xsl:when test="$key eq 'u'">
             <xsl:choose>
               <xsl:when test="$val eq '0' or $val eq ''" />
