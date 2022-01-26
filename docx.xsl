@@ -11,17 +11,18 @@
   <xsl:param name="filename" />
   
   <xsl:variable name="zip">
-    <xsl:choose>
-      <xsl:when test="function-available('archive:extract-text')">
-        <xsl:sequence select="file:read-binary($filename)" />
-      </xsl:when>
-      <xsl:when test="function-available('zip:xml-entry')">
-        <xsl:value-of select="xs:anyURI($filename)"/>
-      </xsl:when>
-    </xsl:choose>
-  </xsl:variable> 
+    <xsl:sequence select="file:read-binary($filename)" use-when="function-available('archive:extract-text')" />
+    <xsl:value-of select="xs:anyURI($filename)" use-when="function-available('zip:xml-entry')" />
+    </xsl:variable> 
   
   <xsl:template match="/">
+    <xsl:if test="not(function-available('file:read-binary')) and not(function-available('zip:xml-entry'))">
+      <xsl:message terminate="yes">!!
+Neither file:read-binary nor zip:xml-entry functions are available. Word document
+cannot be extracted with this XSLT processor. zip:xml-entry is available in Saxon
+⩽ 9.5.1.1, file:read-binary requires Saxon PE or EE ⩾ 9.6.
+</xsl:message>
+    </xsl:if>
     <pkg:package
       xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
       <xsl:variable name="parts" select="('word/document.xml', 'word/comments.xml', 'word/endnotes.xml',

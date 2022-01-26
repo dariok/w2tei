@@ -19,8 +19,13 @@ Paragraphs not having a defined outline level are not recognized as headings.**
 Build the package using `ant` on `build.xml`. You can upload docx files via a web form or by POSTing them to cnvert2.xql
 
 ### CLI
-To convert a docx, apply `docx.xsl` to `word-empty.xml` (or any XML file) and pass the parameter `filename` with a full 
-  URL to the docx to be converted.
+! The older `zip:xml-entry` function is available in Saxon ⩽ 9.5.1.1 while `file:read-binary` and `archive:extract-text`
+require Saxon *PE or EE* ⩾ 9.6. If you do not have Saxon PE or EE, you currently have to use a different XSLT processor,
+use oXygen (as it includes a recent version ofSaxon PE and EE), or use the web service implementation from within
+eXist-DB or baseX as these implement the ExPath modules independently.
+
+To convert a docx, apply `docx.xsl` to `word-empty.xml` (or any XML file) and pass the parameter `filename` with a path
+to the docx to be converted.
   
 ## How to use (XML to TEI)
 apply basic transformation scenario to docx or apply wt0.xsl and wt1.xsl to any flat Word XML
