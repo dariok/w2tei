@@ -191,10 +191,12 @@
       <xsl:apply-templates select="w:r" />
     </xsl:variable>
     <xsl:variable name="id" select="@r:id"/>
+    <xsl:variable name="environment" select="substring-after(ancestor::pkg:part/@pkg:name, 'word')" />
+    <xsl:variable name="targetRels" select="//pkg:part[@pkg:name = '/word/_rels' || $environment || '.rels']" />
     
     <ref>
       <xsl:attribute name="target">
-        <xsl:variable name="rel" select="//*:Relationship[@Id = $id and @TargetMode eq 'External']/@Target"/>
+        <xsl:variable name="rel" select="$targetRels//*:Relationship[@Id = $id and @TargetMode eq 'External']/@Target"/>
         
         <xsl:choose>
           <xsl:when test="$rel">

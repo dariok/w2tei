@@ -895,7 +895,7 @@
     <x:scenario label="T3.2: Links">
       <x:context>
         <package:package>
-          <package:part>
+          <package:part package:name="/word/_rels/document.xml.rels">
             <r:Relationships>
               <r:Relationship Id="rId7"
                 Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
@@ -1721,187 +1721,191 @@
     </x:scenario>
     <x:scenario label="T3.7: lists not starting at 1">
        <x:context>
-          <w:document>
-             <w:body>
-             <w:p>
-                <w:pPr>
-                   <w:pStyle w:val="Footnote"/>
-                   <w:numPr>
-                      <w:ilvl w:val="0"/>
-                      <w:numId w:val="11"/>
-                   </w:numPr>
-                   <w:jc w:val="both"/>
-                   <w:rPr/>
-                </w:pPr>
-                <w:r>
-                   <w:rPr>
-                      <w:rFonts w:cs="Times New Roman"
-                         w:ascii="Times New Roman"
-                         w:hAnsi="Times New Roman"/>
-                      <w:b/>
-                      <w:bCs/>
-                      <w:sz w:val="24"/>
-                      <w:szCs w:val="24"/>
-                      <w:shd w:fill="FFFFFF" w:val="clear"/>
-                   </w:rPr>
-                   <w:t>Stlibreart: 3</w:t>
-                </w:r>
-             </w:p>
-                <w:p>
-                   <w:pPr>
-                      <w:pStyle w:val="Footnote"/>
-                      <w:numPr>
-                         <w:ilvl w:val="0"/>
-                         <w:numId w:val="11"/>
-                      </w:numPr>
-                      <w:jc w:val="both"/>
-                      <w:rPr>
-                         <w:rFonts w:ascii="Times New Roman"
-                            w:hAnsi="Times New Roman"
-                            w:cs="Times New Roman"/>
-                         <w:b/>
-                         <w:b/>
-                         <w:bCs/>
-                         <w:sz w:val="24"/>
-                         <w:szCs w:val="24"/>
-                         <w:shd w:fill="FFFFFF" w:val="clear"/>
-                      </w:rPr>
-                   </w:pPr>
-                   <w:r>
-                      <w:rPr>
-                         <w:rFonts w:cs="Times New Roman"
-                            w:ascii="Times New Roman"
-                            w:hAnsi="Times New Roman"/>
-                         <w:b/>
-                         <w:bCs/>
-                         <w:sz w:val="24"/>
-                         <w:szCs w:val="24"/>
-                         <w:shd w:fill="FFFFFF" w:val="clear"/>
-                      </w:rPr>
-                      <w:t>Jetzt 4</w:t>
-                   </w:r>
-                </w:p>
-             </w:body>
-          </w:document>
-          <w:abstractNum w:abstractNumId="11">
-             <w:lvl w:ilvl="0">
-                <w:start w:val="3"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%1."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="720"/>
-                   </w:tabs>
-                   <w:ind w:left="720" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-             <w:lvl w:ilvl="1">
-                <w:start w:val="1"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%2."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="1080"/>
-                   </w:tabs>
-                   <w:ind w:left="1080" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-             <w:lvl w:ilvl="2">
-                <w:start w:val="1"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%3."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="1440"/>
-                   </w:tabs>
-                   <w:ind w:left="1440" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-             <w:lvl w:ilvl="3">
-                <w:start w:val="1"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%4."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="1800"/>
-                   </w:tabs>
-                   <w:ind w:left="1800" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-             <w:lvl w:ilvl="4">
-                <w:start w:val="1"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%5."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="2160"/>
-                   </w:tabs>
-                   <w:ind w:left="2160" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-             <w:lvl w:ilvl="5">
-                <w:start w:val="1"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%6."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="2520"/>
-                   </w:tabs>
-                   <w:ind w:left="2520" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-             <w:lvl w:ilvl="6">
-                <w:start w:val="1"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%7."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="2880"/>
-                   </w:tabs>
-                   <w:ind w:left="2880" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-             <w:lvl w:ilvl="7">
-                <w:start w:val="1"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%8."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="3240"/>
-                   </w:tabs>
-                   <w:ind w:left="3240" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-             <w:lvl w:ilvl="8">
-                <w:start w:val="1"/>
-                <w:numFmt w:val="decimal"/>
-                <w:lvlText w:val="%9."/>
-                <w:lvlJc w:val="left"/>
-                <w:pPr>
-                   <w:tabs>
-                      <w:tab w:val="num" w:pos="3600"/>
-                   </w:tabs>
-                   <w:ind w:left="3600" w:hanging="360"/>
-                </w:pPr>
-                <w:rPr/>
-             </w:lvl>
-          </w:abstractNum>
+         <package:part package:name="/word/document.xml">
+            <w:document>
+               <w:body>
+                  <w:p>
+                     <w:pPr>
+                        <w:pStyle w:val="Footnote"/>
+                        <w:numPr>
+                           <w:ilvl w:val="0"/>
+                           <w:numId w:val="11"/>
+                        </w:numPr>
+                        <w:jc w:val="both"/>
+                        <w:rPr/>
+                     </w:pPr>
+                     <w:r>
+                        <w:rPr>
+                           <w:rFonts w:cs="Times New Roman"
+                              w:ascii="Times New Roman"
+                              w:hAnsi="Times New Roman"/>
+                           <w:b/>
+                           <w:bCs/>
+                           <w:sz w:val="24"/>
+                           <w:szCs w:val="24"/>
+                           <w:shd w:fill="FFFFFF" w:val="clear"/>
+                        </w:rPr>
+                        <w:t>Stlibreart: 3</w:t>
+                     </w:r>
+                  </w:p>
+                  <w:p>
+                     <w:pPr>
+                        <w:pStyle w:val="Footnote"/>
+                        <w:numPr>
+                           <w:ilvl w:val="0"/>
+                           <w:numId w:val="11"/>
+                        </w:numPr>
+                        <w:jc w:val="both"/>
+                        <w:rPr>
+                           <w:rFonts w:ascii="Times New Roman"
+                              w:hAnsi="Times New Roman"
+                              w:cs="Times New Roman"/>
+                           <w:b/>
+                           <w:b/>
+                           <w:bCs/>
+                           <w:sz w:val="24"/>
+                           <w:szCs w:val="24"/>
+                           <w:shd w:fill="FFFFFF" w:val="clear"/>
+                        </w:rPr>
+                     </w:pPr>
+                     <w:r>
+                        <w:rPr>
+                           <w:rFonts w:cs="Times New Roman"
+                              w:ascii="Times New Roman"
+                              w:hAnsi="Times New Roman"/>
+                           <w:b/>
+                           <w:bCs/>
+                           <w:sz w:val="24"/>
+                           <w:szCs w:val="24"/>
+                           <w:shd w:fill="FFFFFF" w:val="clear"/>
+                        </w:rPr>
+                        <w:t>Jetzt 4</w:t>
+                     </w:r>
+                  </w:p>
+               </w:body>
+            </w:document>
+         </package:part>
+         <package:part package:name="/word/settings.xml">
+            <w:abstractNum w:abstractNumId="11">
+               <w:lvl w:ilvl="0">
+                  <w:start w:val="3"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%1."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="720"/>
+                     </w:tabs>
+                     <w:ind w:left="720" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+               <w:lvl w:ilvl="1">
+                  <w:start w:val="1"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%2."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="1080"/>
+                     </w:tabs>
+                     <w:ind w:left="1080" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+               <w:lvl w:ilvl="2">
+                  <w:start w:val="1"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%3."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="1440"/>
+                     </w:tabs>
+                     <w:ind w:left="1440" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+               <w:lvl w:ilvl="3">
+                  <w:start w:val="1"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%4."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="1800"/>
+                     </w:tabs>
+                     <w:ind w:left="1800" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+               <w:lvl w:ilvl="4">
+                  <w:start w:val="1"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%5."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="2160"/>
+                     </w:tabs>
+                     <w:ind w:left="2160" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+               <w:lvl w:ilvl="5">
+                  <w:start w:val="1"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%6."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="2520"/>
+                     </w:tabs>
+                     <w:ind w:left="2520" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+               <w:lvl w:ilvl="6">
+                  <w:start w:val="1"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%7."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="2880"/>
+                     </w:tabs>
+                     <w:ind w:left="2880" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+               <w:lvl w:ilvl="7">
+                  <w:start w:val="1"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%8."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="3240"/>
+                     </w:tabs>
+                     <w:ind w:left="3240" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+               <w:lvl w:ilvl="8">
+                  <w:start w:val="1"/>
+                  <w:numFmt w:val="decimal"/>
+                  <w:lvlText w:val="%9."/>
+                  <w:lvlJc w:val="left"/>
+                  <w:pPr>
+                     <w:tabs>
+                        <w:tab w:val="num" w:pos="3600"/>
+                     </w:tabs>
+                     <w:ind w:left="3600" w:hanging="360"/>
+                  </w:pPr>
+                  <w:rPr/>
+               </w:lvl>
+            </w:abstractNum>
+         </package:part>
           <w:num w:numId="11">
              <w:abstractNumId w:val="11"/>
           </w:num>
@@ -2202,6 +2206,274 @@
           <ab xml:space="preserve" style="strike: ;">ich</ab>
           <ab xml:space="preserve"> mich</ab>
         </p>
+      </x:expect>
+    </x:scenario>
+  </x:scenario>
+  
+  <x:scenario label="T5: relationships">
+    <x:scenario label="T5.1">
+      <x:context><pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+   <pkg:part pkg:name="/word/document.xml">
+      <pkg:xmlData>
+         <w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+                     xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex"
+                     xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex"
+                     xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex"
+                     xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex"
+                     xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex"
+                     xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex"
+                     xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex"
+                     xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex"
+                     xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink"
+                     xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d"
+                     xmlns:o="urn:schemas-microsoft-com:office:office"
+                     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                     xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+                     xmlns:v="urn:schemas-microsoft-com:vml"
+                     xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+                     xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+                     xmlns:w10="urn:schemas-microsoft-com:office:word"
+                     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                     xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                     xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+                     xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex"
+                     xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid"
+                     xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml"
+                     xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash"
+                     xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex"
+                     xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+                     xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+                     xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+                     xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+                     mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
+            <w:body>
+               <w:p w14:paraId="3F545933"
+                    w14:textId="77777777"
+                    w:rsidR="00290118"
+                    w:rsidRDefault="0072462F">
+                  <w:pPr>
+                     <w:pStyle w:val="AMWGKopfzeileBrief"/>
+                  </w:pPr>
+                  <w:r>
+                     <w:t xml:space="preserve">oWG5, Abschrift eines Briefes an </w:t>
+                  </w:r>
+                  <w:proofErr w:type="spellStart"/>
+                  <w:r>
+                     <w:t>AMo</w:t>
+                  </w:r>
+                  <w:proofErr w:type="spellEnd"/>
+                  <w:r>
+                     <w:t>, Wien, Sonntag, 17. Juli 1910</w:t>
+                  </w:r>
+               </w:p>
+               <w:p w14:paraId="21EEC941"
+                    w14:textId="77777777"
+                    w:rsidR="00290118"
+                    w:rsidRDefault="0072462F">
+                  <w:pPr>
+                     <w:pStyle w:val="AMWGKopfzeileScan"/>
+                  </w:pPr>
+                  <w:r>
+                     <w:t>2017_1642.2036.1r</w:t>
+                  </w:r>
+               </w:p>
+               <w:p w14:paraId="60AB8047"
+                    w14:textId="77777777"
+                    w:rsidR="00290118"
+                    w:rsidRDefault="0072462F">
+                  <w:pPr>
+                     <w:pStyle w:val="AMWGFlietext"/>
+                     <w:jc w:val="right"/>
+                  </w:pPr>
+                  <w:r>
+                     <w:t>Wien, 17.7.10</w:t>
+                  </w:r>
+                  <w:r>
+                     <w:rPr>
+                        <w:rStyle w:val="EndnoteAnchor"/>
+                     </w:rPr>
+                     <w:endnoteReference w:id="1"/>
+                  </w:r>
+               </w:p>
+               <w:p w14:paraId="2E651071"
+                    w14:textId="1637A7BC"
+                    w:rsidR="00290118"
+                    w:rsidRDefault="0072462F">
+                  <w:pPr>
+                     <w:pStyle w:val="AMWGFlietext"/>
+                  </w:pPr>
+                  <w:r>
+                     <w:t xml:space="preserve">Liebe Frau </w:t>
+                  </w:r>
+                  <w:hyperlink r:id="rId10" w:history="1">
+                     <w:r w:rsidR="00AE2D38">
+                        <w:rPr>
+                           <w:rStyle w:val="Hyperlink"/>
+                        </w:rPr>
+                        <w:t>Moll</w:t>
+                     </w:r>
+                  </w:hyperlink>
+                  <w:r>
+                     <w:t>,</w:t>
+                  </w:r>
+               </w:p>
+            </w:body>
+         </w:document>
+      </pkg:xmlData>
+   </pkg:part>
+   <pkg:part pkg:name="/word/endnotes.xml">
+      <pkg:xmlData>
+         <w:endnotes xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+                     xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex"
+                     xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex"
+                     xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex"
+                     xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex"
+                     xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex"
+                     xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex"
+                     xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex"
+                     xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex"
+                     xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink"
+                     xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d"
+                     xmlns:o="urn:schemas-microsoft-com:office:office"
+                     xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                     xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+                     xmlns:v="urn:schemas-microsoft-com:vml"
+                     xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+                     xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+                     xmlns:w10="urn:schemas-microsoft-com:office:word"
+                     xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                     xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                     xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+                     xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex"
+                     xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid"
+                     xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml"
+                     xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash"
+                     xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex"
+                     xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+                     xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+                     xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+                     xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+                     mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
+            <w:endnote w:id="4">
+               <w:p w14:paraId="135D017B"
+                    w14:textId="042B7C43"
+                    w:rsidR="00290118"
+                    w:rsidRDefault="0072462F">
+                  <w:pPr>
+                     <w:pStyle w:val="Endnotentext"/>
+                  </w:pPr>
+                  <w:r>
+                     <w:rPr>
+                        <w:rStyle w:val="EndnoteCharacters"/>
+                     </w:rPr>
+                     <w:endnoteRef/>
+                  </w:r>
+                  <w:r>
+                     <w:t xml:space="preserve"> </w:t>
+                  </w:r>
+                  <w:r>
+                     <w:rPr>
+                        <w:i/>
+                     </w:rPr>
+                     <w:t>A.M. 40.</w:t>
+                  </w:r>
+                  <w:r>
+                     <w:t xml:space="preserve"> – Diese Chiffre hatte </w:t>
+                  </w:r>
+                  <w:hyperlink r:id="rId9" w:history="1">
+                     <w:r w:rsidR="00AE2D38">
+                        <w:rPr>
+                           <w:rStyle w:val="Hyperlink"/>
+                        </w:rPr>
+                        <w:t>AM</w:t>
+                     </w:r>
+                  </w:hyperlink>
+                  <w:r>
+                     <w:t xml:space="preserve"> für die Postlagersendung von </w:t>
+                  </w:r>
+                  <w:hyperlink r:id="rId10" w:history="1">
+                     <w:r w:rsidR="00AE2D38">
+                        <w:rPr>
+                           <w:rStyle w:val="Hyperlink"/>
+                        </w:rPr>
+                        <w:t>WG</w:t>
+                     </w:r>
+                  </w:hyperlink>
+                  <w:r>
+                     <w:t>s Briefen an sie gewählt.</w:t>
+                  </w:r>
+               </w:p>
+            </w:endnote>
+         </w:endnotes>
+      </pkg:xmlData>
+   </pkg:part>
+   <pkg:part pkg:name="/word/_rels/endnotes.xml.rels">
+      <pkg:xmlData>
+         <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+            <Relationship Id="rId10"
+                          Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+                          Target="https://digital.bauhaus.de/amwg/per/per2"
+                          TargetMode="External"/>
+           <Relationship Id="rId9"
+             Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+             Target="https://digital.bauhaus.de/amwg/per/per1"
+             TargetMode="External"/>
+         </Relationships>
+      </pkg:xmlData>
+   </pkg:part>
+   <pkg:part pkg:name="/word/_rels/document.xml.rels">
+      <pkg:xmlData>
+         <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+            <Relationship Id="rId10"
+                          Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+                          Target="https://digital.bauhaus.de/amwg/per/per6"
+                          TargetMode="External"/>
+         </Relationships>
+      </pkg:xmlData>
+   </pkg:part>
+</pkg:package></x:context>
+      <x:expect label=".">
+        <TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>...</teiHeader>
+   <text>
+      <body>
+         <p rendition="AMWGKopfzeileBrief">
+            <ab xml:space="preserve">oWG5, Abschrift eines Briefes an </ab>
+            <ab xml:space="preserve">AMo</ab>
+            <ab xml:space="preserve">, Wien, Sonntag, 17. Juli 1910</ab>
+         </p>
+         <p rendition="AMWGKopfzeileScan">
+            <ab xml:space="preserve">2017_1642.2036.1r</ab>
+         </p>
+         <p rendition="AMWGFlietext" style="text-align: right;">
+            <ab xml:space="preserve">Wien, 17.7.10</ab>
+            <ptr type="endnote" ref="#e1" />
+         </p>
+         <p rendition="AMWGFlietext">
+            <ab xml:space="preserve">Liebe Frau </ab>
+            <ref target="https://digital.bauhaus.de/amwg/per/per6" xml:space="preserve" rendition="Hyperlink">Moll</ref>
+            <ab xml:space="preserve">,</ab>
+         </p>
+      </body>
+      <back>
+         <note type="endnote" xml:id="e4">
+            <p rendition="Endnotentext">
+               <ab xml:space="preserve"> </ab>
+               <ab xml:space="preserve" style="i: ;">A.M. 40.</ab>
+               <ab xml:space="preserve"> – Diese Chiffre hatte </ab>
+               <ref target="https://digital.bauhaus.de/amwg/per/per1" xml:space="preserve" rendition="Hyperlink">AM</ref>
+               <ab xml:space="preserve"> für die Postlagersendung von </ab>
+               <ref target="https://digital.bauhaus.de/amwg/per/per2" xml:space="preserve" rendition="Hyperlink">WG</ref>
+               <ab xml:space="preserve">s Briefen an sie gewählt.</ab>
+            </p>
+         </note>
+      </back>
+   </text>
+</TEI>
       </x:expect>
     </x:scenario>
   </x:scenario>
