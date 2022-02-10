@@ -1000,8 +1000,8 @@
                     target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
                     >Caesareo</ref>
                   <ptr type="endnote" ref="#e7" />
-                  <ref target="http://d-nb.info/gnd/121098-1"
-                    rendition="auszeichnungbermehrereworte0" style="rFonts: ; color: 0000FF;">Handelsministerium</ref>
+                  <ref target="http://d-nb.info/gnd/121098-1"><ab xml:space="preserve"
+                    rendition="auszeichnungbermehrereworte0" style="rFonts: ; color: 0000FF;">Handelsministerium</ab></ref>
                   <ab xml:space="preserve" rendition="AuszeichnungberMehrereWorte">]]</ab>
                 </p>
             </body>
@@ -1928,6 +1928,76 @@
              </text>
           </TEI>
        </x:expect>
+    </x:scenario>
+    <x:scenario label="T3.8: more styling in old link style">
+      <x:context>
+        <w:r w:rsidR="000E0AA8" w:rsidRPr="002F62B7">
+          <w:rPr>
+            <w:rFonts w:ascii="Segoe UI Historic" w:hAnsi="Segoe UI Historic" w:cs="Segoe UI Historic"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+          <w:t xml:space="preserve"> (</w:t>
+        </w:r>
+        <w:proofErr w:type="spellStart"/>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rFonts w:eastAsia="Times New Roman"/>
+          </w:rPr>
+          <w:fldChar w:fldCharType="begin"/>
+        </w:r>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rFonts w:eastAsia="Times New Roman"/>
+          </w:rPr>
+          <w:instrText xml:space="preserve"> HYPERLINK "https://digital.bauhaus.de/amwg/bib/MahlerA-1924" </w:instrText>
+        </w:r>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rFonts w:eastAsia="Times New Roman"/>
+          </w:rPr>
+          <w:fldChar w:fldCharType="separate"/>
+        </w:r>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rStyle w:val="Hyperlink"/>
+            <w:rFonts w:ascii="Segoe UI Historic" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI Historic"
+              w:cs="Segoe UI Historic"/>
+          </w:rPr>
+          <w:t>MahlerA</w:t>
+        </w:r>
+        <w:proofErr w:type="spellEnd"/>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rStyle w:val="Hyperlink"/>
+            <w:rFonts w:ascii="Segoe UI Historic" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI Historic"
+              w:cs="Segoe UI Historic"/>
+          </w:rPr>
+          <w:t xml:space="preserve"> 1924</w:t>
+        </w:r>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rFonts w:eastAsia="Times New Roman"/>
+          </w:rPr>
+          <w:fldChar w:fldCharType="end"/>
+        </w:r>
+        <w:r w:rsidR="000E0AA8" w:rsidRPr="002F62B7">
+          <w:rPr>
+            <w:rFonts w:ascii="Segoe UI Historic" w:hAnsi="Segoe UI Historic" w:cs="Segoe UI Historic"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+          <w:t xml:space="preserve">). </w:t>
+        </w:r>
+      </x:context>
+      <x:expect label=".">
+        <ab xml:space="preserve" style="rFonts: Segoe UI Historic; sz: 24; szCs: 24;"> (</ab>
+        <ref target="https://digital.bauhaus.de/amwg/bib/MahlerA-1924">
+          <ab xml:space="preserve" rendition="Hyperlink" style="rFonts: Segoe UI Historic;">MahlerA</ab>
+          <ab xml:space="preserve" rendition="Hyperlink" style="rFonts: Segoe UI Historic;"> 1924</ab>
+        </ref>
+        <ab xml:space="preserve" style="rFonts: Segoe UI Historic; sz: 24; szCs: 24;">). </ab>
+      </x:expect>
     </x:scenario>
   </x:scenario>
   

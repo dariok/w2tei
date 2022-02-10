@@ -120,7 +120,7 @@
   
   <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
   
-  <xsl:template match="w:r">
+  <xsl:template match="w:r" mode="#all">
     <ab>
       <xsl:attribute name="xml:space">preserve</xsl:attribute>
       <xsl:apply-templates select="w:rPr" />
@@ -167,8 +167,8 @@
             <xsl:variable name="target" select="substring(following-sibling::w:r[1]/w:instrText, 13)" />
             <xsl:value-of select="normalize-space(substring($target, 1, string-length($target) - 2))"/>
           </xsl:attribute>
-          <xsl:apply-templates select="(following-sibling::w:r[w:fldChar][1]/following-sibling::*
-            intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*)/*" />
+          <xsl:apply-templates select="following-sibling::w:r[w:fldChar][1]/following-sibling::*
+            intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*" mode="link" />
         </ref>
       </xsl:when>
       <xsl:otherwise>
