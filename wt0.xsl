@@ -84,7 +84,7 @@
       </xsl:if>
       
       <item level="{$level}">
-         <xsl:apply-templates select="w:r" />
+         <xsl:apply-templates select="w:*[not(self::w:pPr)]" />
       </item>
    </xsl:template>
    
