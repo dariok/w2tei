@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:archive="http://expath.org/ns/archive"
+  xmlns:err="http://www.w3.org/2005/xqt-errors"
   xmlns:file="http://expath.org/ns/file"
   xmlns:zip="http://expath.org/ns/zip"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -33,8 +34,25 @@ cannot be extracted with this XSLT processor. zip:xml-entry is available in Saxo
           <pkg:part>
             <xsl:attribute name="pkg:name" select="'/' || ." />
             <pkg:xmlData>
-              <xsl:sequence select="parse-xml(archive:extract-text($zip, .))" use-when="function-available('archive:extract-text')"/>
-              <xsl:sequence select="zip:xml-entry($zip, .)" use-when="function-available('zip:xml-entry')"/>
+              <xsl:choose>
+                <xsl:when test="function-available('archive:extract-text')" use-when="function-available('archive:extract-text')">
+                  <xsl:variable name="extracted" select="archive:extract-text($zip, .)" />
+                  <xsl:variable name="parsable">
+                    <xsl:choose>
+                      <xsl:when test="$extracted => substring(1, 6) => contains('&lt;?xml')">
+                        <xsl:value-of select="substring-after($extracted, '?&gt;')" />
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:sequence select="$extracted" />
+                      </xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:variable>
+                  <xsl:sequence select="parse-xml($parsable)" />
+                </xsl:when>
+                <xsl:when test="function-available('zip:xml-entry')" use-when="function-available('zip:xml-entry')">
+                  <xsl:sequence select="zip:xml-entry($zip, .)" />
+                </xsl:when>
+              </xsl:choose>
             </pkg:xmlData>
           </pkg:part>
           <xsl:catch />
