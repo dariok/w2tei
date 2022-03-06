@@ -1000,8 +1000,8 @@
                     target="https://thbw-www.adw.uni-heidelberg.de/publicUIview/zitiername/5c18ef2b735af9203e54b8a2"
                     >Caesareo</ref>
                   <ptr type="endnote" ref="#e7" />
-                  <ref target="http://d-nb.info/gnd/121098-1"
-                    rendition="auszeichnungbermehrereworte0" style="rFonts: ; color: 0000FF;">Handelsministerium</ref>
+                  <ref target="http://d-nb.info/gnd/121098-1"><ab xml:space="preserve"
+                    rendition="auszeichnungbermehrereworte0" style="rFonts: ; color: 0000FF;">Handelsministerium</ab></ref>
                   <ab xml:space="preserve" rendition="AuszeichnungberMehrereWorte">]]</ab>
                 </p>
             </body>
@@ -1928,6 +1928,182 @@
              </text>
           </TEI>
        </x:expect>
+    </x:scenario>
+    <x:scenario label="T3.8: more styling in old link style">
+      <x:context>
+        <w:r w:rsidR="000E0AA8" w:rsidRPr="002F62B7">
+          <w:rPr>
+            <w:rFonts w:ascii="Segoe UI Historic" w:hAnsi="Segoe UI Historic" w:cs="Segoe UI Historic"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+          <w:t xml:space="preserve"> (</w:t>
+        </w:r>
+        <w:proofErr w:type="spellStart"/>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rFonts w:eastAsia="Times New Roman"/>
+          </w:rPr>
+          <w:fldChar w:fldCharType="begin"/>
+        </w:r>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rFonts w:eastAsia="Times New Roman"/>
+          </w:rPr>
+          <w:instrText xml:space="preserve"> HYPERLINK "https://digital.bauhaus.de/amwg/bib/MahlerA-1924" </w:instrText>
+        </w:r>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rFonts w:eastAsia="Times New Roman"/>
+          </w:rPr>
+          <w:fldChar w:fldCharType="separate"/>
+        </w:r>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rStyle w:val="Hyperlink"/>
+            <w:rFonts w:ascii="Segoe UI Historic" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI Historic"
+              w:cs="Segoe UI Historic"/>
+          </w:rPr>
+          <w:t>MahlerA</w:t>
+        </w:r>
+        <w:proofErr w:type="spellEnd"/>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rStyle w:val="Hyperlink"/>
+            <w:rFonts w:ascii="Segoe UI Historic" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI Historic"
+              w:cs="Segoe UI Historic"/>
+          </w:rPr>
+          <w:t xml:space="preserve"> 1924</w:t>
+        </w:r>
+        <w:r w:rsidR="006C7B24">
+          <w:rPr>
+            <w:rFonts w:eastAsia="Times New Roman"/>
+          </w:rPr>
+          <w:fldChar w:fldCharType="end"/>
+        </w:r>
+        <w:r w:rsidR="000E0AA8" w:rsidRPr="002F62B7">
+          <w:rPr>
+            <w:rFonts w:ascii="Segoe UI Historic" w:hAnsi="Segoe UI Historic" w:cs="Segoe UI Historic"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+          </w:rPr>
+          <w:t xml:space="preserve">). </w:t>
+        </w:r>
+      </x:context>
+      <x:expect label=".">
+        <ab xml:space="preserve" style="rFonts: Segoe UI Historic; sz: 24; szCs: 24;"> (</ab>
+        <ref target="https://digital.bauhaus.de/amwg/bib/MahlerA-1924">
+          <ab xml:space="preserve" rendition="Hyperlink" style="rFonts: Segoe UI Historic;">MahlerA</ab>
+          <ab xml:space="preserve" rendition="Hyperlink" style="rFonts: Segoe UI Historic;"> 1924</ab>
+        </ref>
+        <ab xml:space="preserve" style="rFonts: Segoe UI Historic; sz: 24; szCs: 24;">). </ab>
+      </x:expect>
+    </x:scenario>
+    <x:scenario label="T3.9: ">
+      <x:context>
+        <package:part package:name="/word/document.xml">
+          <package:xmlData>
+            <w:document 
+              xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+              <w:body>
+                <w:p w14:paraId="45540868" w14:textId="3C9C005F" w:rsidR="007C241F" w:rsidRPr="002A177E"
+                  w:rsidRDefault="00CB0D8C" w:rsidP="00CB0D8C">
+                  <w:pPr>
+                    <w:pStyle w:val="Listenabsatz"/>
+                    <w:numPr>
+                      <w:ilvl w:val="0"/>
+                      <w:numId w:val="12"/>
+                    </w:numPr>
+                    <w:jc w:val="both"/>
+                  </w:pPr>
+                  <w:r w:rsidRPr="002A177E">
+                    <w:rPr>
+                      <w:rFonts w:eastAsia="Times New Roman"/>
+                      <w:lang w:eastAsia="de-DE"/>
+                    </w:rPr>
+                    <w:t>Abfahrtszeiten für Niendorf-Timmendorfer Strand per „Pferd und Wagen“ (</w:t>
+                  </w:r>
+                  <w:hyperlink r:id="rId34" w:history="1">
+                    <w:r w:rsidR="00710B85">
+                      <w:rPr>
+                        <w:rStyle w:val="Hyperlink"/>
+                        <w:rFonts w:eastAsia="Times New Roman"/>
+                      </w:rPr>
+                      <w:t>Kuhlmann 1982</w:t>
+                    </w:r>
+                  </w:hyperlink>
+                  <w:r w:rsidRPr="002A177E">
+                    <w:rPr>
+                      <w:rFonts w:eastAsia="Times New Roman"/>
+                      <w:lang w:eastAsia="de-DE"/>
+                    </w:rPr>
+                    <w:t xml:space="preserve">, S. 172) unbekannt; geschätzte Fahrzeit ca. 30 Minuten </w:t>
+                  </w:r>
+                  <w:r w:rsidRPr="002A177E">
+                    <w:rPr>
+                      <w:rFonts w:eastAsia="Times New Roman" w:cstheme="minorHAnsi"/>
+                      <w:lang w:eastAsia="de-DE"/>
+                    </w:rPr>
+                    <w:t xml:space="preserve">→ Postlaufzeit: </w:t>
+                  </w:r>
+                  <w:r w:rsidRPr="002A177E">
+                    <w:rPr>
+                      <w:rFonts w:eastAsia="Times New Roman" w:cstheme="minorHAnsi"/>
+                      <w:b/>
+                      <w:lang w:eastAsia="de-DE"/>
+                    </w:rPr>
+                    <w:t xml:space="preserve">mind. </w:t>
+                  </w:r>
+                  <w:r w:rsidR="009A5E60">
+                    <w:rPr>
+                      <w:rFonts w:eastAsia="Times New Roman" w:cstheme="minorHAnsi"/>
+                      <w:b/>
+                      <w:lang w:eastAsia="de-DE"/>
+                    </w:rPr>
+                    <w:t>20</w:t>
+                  </w:r>
+                  <w:r w:rsidRPr="002A177E">
+                    <w:rPr>
+                      <w:rFonts w:eastAsia="Times New Roman" w:cstheme="minorHAnsi"/>
+                      <w:b/>
+                      <w:lang w:eastAsia="de-DE"/>
+                    </w:rPr>
+                    <w:t xml:space="preserve"> Stunden</w:t>
+                  </w:r>
+                </w:p>
+              </w:body>
+            </w:document>
+          </package:xmlData>
+        </package:part>
+        <package:part package:name="/word/_rels/document.xml.rels">
+          <package:xmlData>
+            <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+              <Relationship Id="rId34"
+                Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+                Target="https://digital.bauhaus.de/amwg/bib/Kuhlmann-1982" TargetMode="External"/>
+            </Relationships>
+          </package:xmlData>
+        </package:part>
+      </x:context>
+      <x:expect label=".">
+        <TEI>
+          <teiHeader>...</teiHeader>
+          <text>
+            <body>
+              <item level="0">
+                <ab xml:space="preserve" style="rFonts: ; lang: ;">Abfahrtszeiten für Niendorf-Timmendorfer Strand per „Pferd und Wagen“ (</ab>
+                <ref target="https://digital.bauhaus.de/amwg/bib/Kuhlmann-1982" xml:space="preserve" rendition="Hyperlink" style="rFonts: ;">Kuhlmann 1982</ref>
+                <ab xml:space="preserve" style="rFonts: ; lang: ;">, S. 172) unbekannt; geschätzte Fahrzeit ca. 30 Minuten </ab>
+                <ab xml:space="preserve" style="rFonts: ; lang: ;">→ Postlaufzeit: </ab>
+                <ab xml:space="preserve" style="rFonts: ; b: ; lang: ;">mind. </ab>
+                <ab xml:space="preserve" style="rFonts: ; b: ; lang: ;">20</ab>
+                <ab xml:space="preserve" style="rFonts: ; b: ; lang: ;"> Stunden</ab>
+              </item>
+            </body>
+            <back />
+          </text>
+        </TEI>
+      </x:expect>
     </x:scenario>
   </x:scenario>
   
