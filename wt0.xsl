@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+   xmlns:map="http://www.w3.org/2005/xpath-functions/map"
   xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
   xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
@@ -72,19 +73,47 @@
       <xsl:variable name="abstractNumId" select="//w:num[@w:numId = $numId]/w:abstractNumId/@w:val" />
       <xsl:variable name="abstractNum" select="//w:abstractNum[@w:abstractNumId = $abstractNumId]" />
       
+      <xsl:variable name="context" select="." />
+      
       <!-- distinguish between numbered and unordered (bulleted etc.) lists -->
       <xsl:if test="$abstractNum/w:lvl[@w:ilvl = $level]/w:numFmt/@w:val = 'decimal'">
          <xsl:variable name="start" select="$abstractNum/w:lvl[@w:ilvl eq $level]/w:start/@w:val"/>
-         <xsl:variable name="label" select="count(preceding::w:p[descendant::w:numId/@w:val = $numId
-            and descendant::w:ilvl/@w:val = $level]) + $start"/>
+         <xsl:variable name="label" as="map(*)">
+            <xsl:map>
+               <xsl:for-each select="0 to xs:integer($level)">
+                  <xsl:map-entry key=".">
+                     <xsl:variable name="iteration" select="." />
+                     <xsl:choose>
+                        <xsl:when test="$iteration = $level">
+                           <xsl:value-of select="count($context/preceding::w:p[descendant::w:numId/@w:val = $numId
+                              and descendant::w:ilvl/@w:val = $iteration]) + $start"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                           <xsl:value-of select="count($context/preceding::w:p[descendant::w:numId/@w:val = $numId
+                              and descendant::w:ilvl/@w:val = $iteration]) + $start - 1"/>
+                        </xsl:otherwise>
+                     </xsl:choose>
+                  </xsl:map-entry>
+               </xsl:for-each>
+            </xsl:map>
+         </xsl:variable>
+         <xsl:variable name="picture" select="$abstractNum/w:lvl[@w:ilvl = $level]/w:lvlText/@w:val"/>
          
          <label>
-            <xsl:value-of select="$label" />
+            <xsl:analyze-string select="$picture" regex="%(\d+)">
+               <xsl:matching-substring>
+                  <xsl:variable name="index" select="number(substring(., 2)) - 1"/>
+                  <xsl:value-of select="map:get($label, $index)" />
+               </xsl:matching-substring>
+               <xsl:non-matching-substring>
+                  <xsl:value-of select="." />
+               </xsl:non-matching-substring>
+            </xsl:analyze-string>
          </label>
       </xsl:if>
       
       <item level="{$level}">
-         <xsl:apply-templates select="w:*[not(self::w:pPr)]" />
+         <xsl:apply-templates select="w:r" />
       </item>
    </xsl:template>
    

@@ -1915,11 +1915,11 @@
              <teiHeader>...</teiHeader>
              <text>
                 <body>
-                      <label>3</label>
+                      <label>3.</label>
                       <item level="0">
                          <ab xml:space="preserve" style="rFonts: Times New Roman; b: ; bCs: ; sz: 24; szCs: 24; shd: clear;">Stlibreart: 3</ab>
                       </item>
-                      <label>4</label>
+                      <label>4.</label>
                       <item level="0">
                          <ab xml:space="preserve" style="rFonts: Times New Roman; b: ; bCs: ; sz: 24; szCs: 24; shd: clear;">Jetzt 4</ab>
                       </item>
@@ -1997,112 +1997,6 @@
           <ab xml:space="preserve" rendition="Hyperlink" style="rFonts: Segoe UI Historic;"> 1924</ab>
         </ref>
         <ab xml:space="preserve" style="rFonts: Segoe UI Historic; sz: 24; szCs: 24;">). </ab>
-      </x:expect>
-    </x:scenario>
-    <x:scenario label="T3.9: ">
-      <x:context>
-        <package:part package:name="/word/document.xml">
-          <package:xmlData>
-            <w:document 
-              xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
-              <w:body>
-                <w:p w14:paraId="45540868" w14:textId="3C9C005F" w:rsidR="007C241F" w:rsidRPr="002A177E"
-                  w:rsidRDefault="00CB0D8C" w:rsidP="00CB0D8C">
-                  <w:pPr>
-                    <w:pStyle w:val="Listenabsatz"/>
-                    <w:numPr>
-                      <w:ilvl w:val="0"/>
-                      <w:numId w:val="12"/>
-                    </w:numPr>
-                    <w:jc w:val="both"/>
-                  </w:pPr>
-                  <w:r w:rsidRPr="002A177E">
-                    <w:rPr>
-                      <w:rFonts w:eastAsia="Times New Roman"/>
-                      <w:lang w:eastAsia="de-DE"/>
-                    </w:rPr>
-                    <w:t>Abfahrtszeiten für Niendorf-Timmendorfer Strand per „Pferd und Wagen“ (</w:t>
-                  </w:r>
-                  <w:hyperlink r:id="rId34" w:history="1">
-                    <w:r w:rsidR="00710B85">
-                      <w:rPr>
-                        <w:rStyle w:val="Hyperlink"/>
-                        <w:rFonts w:eastAsia="Times New Roman"/>
-                      </w:rPr>
-                      <w:t>Kuhlmann 1982</w:t>
-                    </w:r>
-                  </w:hyperlink>
-                  <w:r w:rsidRPr="002A177E">
-                    <w:rPr>
-                      <w:rFonts w:eastAsia="Times New Roman"/>
-                      <w:lang w:eastAsia="de-DE"/>
-                    </w:rPr>
-                    <w:t xml:space="preserve">, S. 172) unbekannt; geschätzte Fahrzeit ca. 30 Minuten </w:t>
-                  </w:r>
-                  <w:r w:rsidRPr="002A177E">
-                    <w:rPr>
-                      <w:rFonts w:eastAsia="Times New Roman" w:cstheme="minorHAnsi"/>
-                      <w:lang w:eastAsia="de-DE"/>
-                    </w:rPr>
-                    <w:t xml:space="preserve">→ Postlaufzeit: </w:t>
-                  </w:r>
-                  <w:r w:rsidRPr="002A177E">
-                    <w:rPr>
-                      <w:rFonts w:eastAsia="Times New Roman" w:cstheme="minorHAnsi"/>
-                      <w:b/>
-                      <w:lang w:eastAsia="de-DE"/>
-                    </w:rPr>
-                    <w:t xml:space="preserve">mind. </w:t>
-                  </w:r>
-                  <w:r w:rsidR="009A5E60">
-                    <w:rPr>
-                      <w:rFonts w:eastAsia="Times New Roman" w:cstheme="minorHAnsi"/>
-                      <w:b/>
-                      <w:lang w:eastAsia="de-DE"/>
-                    </w:rPr>
-                    <w:t>20</w:t>
-                  </w:r>
-                  <w:r w:rsidRPr="002A177E">
-                    <w:rPr>
-                      <w:rFonts w:eastAsia="Times New Roman" w:cstheme="minorHAnsi"/>
-                      <w:b/>
-                      <w:lang w:eastAsia="de-DE"/>
-                    </w:rPr>
-                    <w:t xml:space="preserve"> Stunden</w:t>
-                  </w:r>
-                </w:p>
-              </w:body>
-            </w:document>
-          </package:xmlData>
-        </package:part>
-        <package:part package:name="/word/_rels/document.xml.rels">
-          <package:xmlData>
-            <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-              <Relationship Id="rId34"
-                Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
-                Target="https://digital.bauhaus.de/amwg/bib/Kuhlmann-1982" TargetMode="External"/>
-            </Relationships>
-          </package:xmlData>
-        </package:part>
-      </x:context>
-      <x:expect label=".">
-        <TEI>
-          <teiHeader>...</teiHeader>
-          <text>
-            <body>
-              <item level="0">
-                <ab xml:space="preserve" style="rFonts: ; lang: ;">Abfahrtszeiten für Niendorf-Timmendorfer Strand per „Pferd und Wagen“ (</ab>
-                <ref target="https://digital.bauhaus.de/amwg/bib/Kuhlmann-1982" xml:space="preserve" rendition="Hyperlink" style="rFonts: ;">Kuhlmann 1982</ref>
-                <ab xml:space="preserve" style="rFonts: ; lang: ;">, S. 172) unbekannt; geschätzte Fahrzeit ca. 30 Minuten </ab>
-                <ab xml:space="preserve" style="rFonts: ; lang: ;">→ Postlaufzeit: </ab>
-                <ab xml:space="preserve" style="rFonts: ; b: ; lang: ;">mind. </ab>
-                <ab xml:space="preserve" style="rFonts: ; b: ; lang: ;">20</ab>
-                <ab xml:space="preserve" style="rFonts: ; b: ; lang: ;"> Stunden</ab>
-              </item>
-            </body>
-            <back />
-          </text>
-        </TEI>
       </x:expect>
     </x:scenario>
   </x:scenario>
@@ -2653,4 +2547,668 @@
       </x:expect>
     </x:scenario>
   </x:scenario>
+  
+  <x:scenario label="T6: labels">
+     <x:scenario label="T6.1">
+        <x:context>
+           <pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+              <pkg:part pkg:name="/word/document.xml">
+                 <pkg:xmlData>
+                    <w:document xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       xmlns:o="urn:schemas-microsoft-com:office:office"
+                       xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                       xmlns:v="urn:schemas-microsoft-com:vml"
+                       xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                       xmlns:w10="urn:schemas-microsoft-com:office:word"
+                       xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                       xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+                       xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+                       xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+                       xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+                       xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+                       mc:Ignorable="w14 wp14 w15">
+                       <w:body>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="ListParagraph"/>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="0" w:start="0" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:bCs/>
+                                   <w:sz w:val="40"/>
+                                   <w:szCs w:val="40"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="40"/>
+                                   <w:szCs w:val="40"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">Quantz, Johann, Joachim, </w:t>
+                             </w:r>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:i/>
+                                   <w:sz w:val="40"/>
+                                   <w:szCs w:val="40"/>
+                                </w:rPr>
+                                <w:t>Versuch einer Anweisung die Flöte traversière zu spielen</w:t>
+                             </w:r>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="40"/>
+                                   <w:szCs w:val="40"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">, Berlin 1752 </w:t>
+                             </w:r>
+                          </w:p>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="Normal"/>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="0" w:start="0" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman"
+                                      w:hAnsi="Times New Roman"
+                                      w:cs="Times New Roman"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:cs="Times New Roman"
+                                      w:ascii="Times New Roman"
+                                      w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                             </w:r>
+                          </w:p>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="ListParagraph"/>
+                                <w:numPr>
+                                   <w:ilvl w:val="0"/>
+                                   <w:numId w:val="1"/>
+                                </w:numPr>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="360" w:start="360" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:bCs/>
+                                   <w:sz w:val="40"/>
+                                   <w:szCs w:val="40"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:bCs/>
+                                   <w:sz w:val="40"/>
+                                   <w:szCs w:val="40"/>
+                                </w:rPr>
+                                <w:t>Metadaten zur Primärquelle</w:t>
+                             </w:r>
+                          </w:p>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="ListParagraph"/>
+                                <w:numPr>
+                                   <w:ilvl w:val="1"/>
+                                   <w:numId w:val="1"/>
+                                </w:numPr>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="432" w:start="792" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="36"/>
+                                   <w:szCs w:val="36"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="36"/>
+                                   <w:szCs w:val="36"/>
+                                </w:rPr>
+                                <w:t>Angaben zum Autor*zur Autorin</w:t>
+                             </w:r>
+                          </w:p>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="ListParagraph"/>
+                                <w:numPr>
+                                   <w:ilvl w:val="2"/>
+                                   <w:numId w:val="1"/>
+                                </w:numPr>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="504" w:start="1224" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="32"/>
+                                   <w:szCs w:val="32"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="32"/>
+                                   <w:szCs w:val="32"/>
+                                </w:rPr>
+                                <w:t>GND-ID (soweit verfügbar)</w:t>
+                             </w:r>
+                          </w:p>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="ListParagraph"/>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="0" w:start="0" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:commentRangeStart w:id="0"/>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                                <w:t>https://explore.gnd.network/gnd/118747975</w:t>
+                             </w:r>
+                             <w:commentRangeEnd w:id="0"/>
+                             <w:r>
+                                <w:commentReference w:id="0"/>
+                             </w:r>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                             </w:r>
+                          </w:p>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="ListParagraph"/>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="0" w:start="0" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                             </w:r>
+                          </w:p>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="ListParagraph"/>
+                                <w:numPr>
+                                   <w:ilvl w:val="2"/>
+                                   <w:numId w:val="1"/>
+                                </w:numPr>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="504" w:start="1224" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="32"/>
+                                   <w:szCs w:val="32"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="32"/>
+                                   <w:szCs w:val="32"/>
+                                </w:rPr>
+                                <w:t>Alternative Schreibweisen des Namens (optional)</w:t>
+                             </w:r>
+                          </w:p>
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="ListParagraph"/>
+                                <w:numPr>
+                                   <w:ilvl w:val="3"/>
+                                   <w:numId w:val="1"/>
+                                </w:numPr>
+                                <w:bidi w:val="0"/>
+                                <w:spacing w:lineRule="auto" w:line="360"/>
+                                <w:ind w:hanging="648" w:start="1728" w:end="0"/>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="28"/>
+                                   <w:szCs w:val="28"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="28"/>
+                                   <w:szCs w:val="28"/>
+                                </w:rPr>
+                                <w:t>Persönlicher Name/Nachname</w:t>
+                             </w:r>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rStyle w:val="FootnoteReference"/>
+                                   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+                                   <w:sz w:val="28"/>
+                                   <w:szCs w:val="28"/>
+                                   <w:lang w:val="de-DE" w:eastAsia="en-US" w:bidi="ar-SA"/>
+                                </w:rPr>
+                                <w:footnoteReference w:id="2"/>
+                             </w:r>
+                          </w:p>
+                       </w:body>
+                    </w:document>
+                 </pkg:xmlData>
+              </pkg:part>
+              <pkg:part pkg:name="/word/numbering.xml">
+                 <pkg:xmlData>
+                    <w:numbering xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                                 xmlns:o="urn:schemas-microsoft-com:office:office"
+                                 xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                                 xmlns:v="urn:schemas-microsoft-com:vml"
+                                 xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                                 xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                                 mc:Ignorable="w14">
+                       <w:abstractNum w:abstractNumId="1">
+                          <w:lvl w:ilvl="0">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="360" w:hanging="360"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                          <w:lvl w:ilvl="1">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1.%2."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="792" w:hanging="432"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:sz w:val="36"/>
+                                <w:i w:val="false"/>
+                                <w:szCs w:val="36"/>
+                                <w:iCs/>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                          <w:lvl w:ilvl="2">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1.%2.%3."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="1224" w:hanging="504"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:sz w:val="32"/>
+                                <w:i w:val="false"/>
+                                <w:szCs w:val="32"/>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                          <w:lvl w:ilvl="3">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1.%2.%3.%4."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="1728" w:hanging="648"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:sz w:val="28"/>
+                                <w:szCs w:val="28"/>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                          <w:lvl w:ilvl="4">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1.%2.%3.%4.%5."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="2232" w:hanging="792"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:sz w:val="26"/>
+                                <w:szCs w:val="26"/>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                          <w:lvl w:ilvl="5">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1.%2.%3.%4.%5.%6."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="2736" w:hanging="936"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                          <w:lvl w:ilvl="6">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="3240" w:hanging="1080"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                          <w:lvl w:ilvl="7">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="3744" w:hanging="1224"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                          <w:lvl w:ilvl="8">
+                             <w:start w:val="1"/>
+                             <w:numFmt w:val="decimal"/>
+                             <w:lvlText w:val="%1.%2.%3.%4.%5.%6.%7.%8.%9."/>
+                             <w:lvlJc w:val="start"/>
+                             <w:pPr>
+                                <w:tabs>
+                                   <w:tab w:val="num" w:pos="0"/>
+                                </w:tabs>
+                                <w:ind w:start="4320" w:hanging="1440"/>
+                             </w:pPr>
+                             <w:rPr>
+                                <w:rFonts w:cs="Times New Roman"/>
+                             </w:rPr>
+                          </w:lvl>
+                       </w:abstractNum>
+                       <w:num w:numId="1">
+                          <w:abstractNumId w:val="1"/>
+                       </w:num>
+                    </w:numbering>
+                 </pkg:xmlData>
+              </pkg:part>
+              <pkg:part pkg:name="/word/footnotes.xml">
+                 <pkg:xmlData>
+                    <w:footnotes xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       xmlns:o="urn:schemas-microsoft-com:office:office"
+                       xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                       xmlns:v="urn:schemas-microsoft-com:vml"
+                       xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                       xmlns:w10="urn:schemas-microsoft-com:office:word"
+                       xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                       xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+                       xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+                       xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+                       xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+                       xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+                       mc:Ignorable="w14 wp14 w15">
+                       <w:footnote w:id="0" w:type="separator">
+                          <w:p>
+                             <w:pPr>
+                                <w:rPr>
+                                   <w:sz w:val="12"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:separator/>
+                             </w:r>
+                          </w:p>
+                       </w:footnote>
+                       <w:footnote w:id="1" w:type="continuationSeparator">
+                          <w:p>
+                             <w:pPr>
+                                <w:rPr>
+                                   <w:sz w:val="12"/>
+                                </w:rPr>
+                             </w:pPr>
+                             <w:r>
+                                <w:continuationSeparator/>
+                             </w:r>
+                          </w:p>
+                       </w:footnote>
+                       <w:footnote w:id="2">
+                          <w:p>
+                             <w:pPr>
+                                <w:pStyle w:val="FootnoteText"/>
+                                <w:bidi w:val="0"/>
+                                <w:jc w:val="start"/>
+                                <w:rPr/>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rStyle w:val="FootnoteCharacters"/>
+                                </w:rPr>
+                                <w:footnoteRef/>
+                             </w:r>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:cs="Times New Roman"
+                                      w:ascii="Times New Roman"
+                                      w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve"> </w:t>
+                             </w:r>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:cs="Times New Roman"
+                                      w:ascii="Times New Roman"
+                                      w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">Deutsche Nationalbibliothek, „Quantz, Johann Joachim“, </w:t>
+                             </w:r>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:cs="Times New Roman"
+                                      w:ascii="Times New Roman"
+                                      w:hAnsi="Times New Roman"/>
+                                   <w:i/>
+                                </w:rPr>
+                                <w:t>GND Explorer</w:t>
+                             </w:r>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:cs="Times New Roman"
+                                      w:ascii="Times New Roman"
+                                      w:hAnsi="Times New Roman"/>
+                                </w:rPr>
+                                <w:t>, https://explore.gnd.network/gnd/118747975, letzte Änderung 17.05.2023, abgerufen am 16.08.2023.</w:t>
+                             </w:r>
+                          </w:p>
+                       </w:footnote>
+                    </w:footnotes>
+                 </pkg:xmlData>
+              </pkg:part>
+              <pkg:part pkg:name="/word/comments.xml">
+                 <pkg:xmlData>
+                    <w:comments xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       xmlns:o="urn:schemas-microsoft-com:office:office"
+                       xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                       xmlns:v="urn:schemas-microsoft-com:vml"
+                       xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                       xmlns:w10="urn:schemas-microsoft-com:office:word"
+                       xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+                       xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+                       xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+                       xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+                       xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+                       xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+                       mc:Ignorable="w14 wp14 w15">
+                       <w:comment w:id="0"
+                          w:author="Autor"
+                          w:date="0-00-00T00:00:00Z"
+                          w:initials="A">
+                          <w:p>
+                             <w:pPr>
+                                <w:overflowPunct w:val="false"/>
+                                <w:bidi w:val="0"/>
+                                <w:rPr/>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Liberation Serif"
+                                      w:hAnsi="Liberation Serif"
+                                      w:eastAsia="DejaVu Sans"
+                                      w:cs="DejaVu Sans"/>
+                                   <w:kern w:val="0"/>
+                                   <w:lang w:val="en-US" w:eastAsia="en-US" w:bidi="en-US"/>
+                                </w:rPr>
+                                <w:t>Im Moment werden die Daten zu den Punkten 2.1.2.-2.1.6. händisch eingegeben. Sinnvoll wäre ein automatisiertes Einfügen über den GND-Datensatz mit der Option des Hinzufügens weiterer Informationen.</w:t>
+                             </w:r>
+                          </w:p>
+                       </w:comment>
+                       <w:comment w:id="1"
+                          w:author="Autor"
+                          w:date="0-00-00T00:00:00Z"
+                          w:initials="A">
+                          <w:p>
+                             <w:pPr>
+                                <w:overflowPunct w:val="false"/>
+                                <w:bidi w:val="0"/>
+                                <w:rPr/>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Liberation Serif"
+                                      w:hAnsi="Liberation Serif"
+                                      w:eastAsia="DejaVu Sans"
+                                      w:cs="DejaVu Sans"/>
+                                   <w:kern w:val="0"/>
+                                   <w:lang w:val="en-US" w:eastAsia="en-US" w:bidi="en-US"/>
+                                </w:rPr>
+                                <w:t>Beleg?</w:t>
+                             </w:r>
+                          </w:p>
+                       </w:comment>
+                       <w:comment w:id="2"
+                          w:author="Autor"
+                          w:date="0-00-00T00:00:00Z"
+                          w:initials="A">
+                          <w:p>
+                             <w:pPr>
+                                <w:overflowPunct w:val="false"/>
+                                <w:bidi w:val="0"/>
+                                <w:rPr/>
+                             </w:pPr>
+                             <w:r>
+                                <w:rPr>
+                                   <w:rFonts w:ascii="Liberation Serif"
+                                      w:hAnsi="Liberation Serif"
+                                      w:eastAsia="DejaVu Sans"
+                                      w:cs="DejaVu Sans"/>
+                                   <w:kern w:val="0"/>
+                                   <w:lang w:val="en-US" w:eastAsia="en-US" w:bidi="en-US"/>
+                                </w:rPr>
+                                <w:t>Beleg?</w:t>
+                             </w:r>
+                          </w:p>
+                       </w:comment>
+                    </w:comments>
+                 </pkg:xmlData>
+              </pkg:part>
+           </pkg:package>
+        </x:context>
+        <x:expect label="1.1.2.1">
+           <TEI xmlns="http://www.tei-c.org/ns/1.0">
+              <teiHeader>...</teiHeader>
+              <text>
+                 <body>
+                    <p rendition="ListParagraph">
+                       <ab xml:space="preserve" style="rFonts: Times New Roman; sz: 40; szCs: 40;">Quantz, Johann, Joachim, </ab>
+                       <ab xml:space="preserve" style="rFonts: Times New Roman; i: ; sz: 40; szCs: 40;">Versuch einer Anweisung die Flöte traversière zu spielen</ab>
+                       <ab xml:space="preserve" style="rFonts: Times New Roman; sz: 40; szCs: 40;">, Berlin 1752 </ab>
+                    </p>
+                    <p rendition="Normal"/>
+                    <label>1.</label>
+                    <item level="0">
+                       <ab xml:space="preserve" style="rFonts: Times New Roman; bCs: ; sz: 40; szCs: 40;">Metadaten zur Primärquelle</ab>
+                    </item>
+                    <label>1.1.</label>
+                    <item level="1">
+                       <ab xml:space="preserve" style="rFonts: Times New Roman; sz: 36; szCs: 36;">Angaben zum Autor*zur Autorin</ab>
+                    </item>
+                    <label>1.1.1.</label>
+                    <item level="2">
+                       <ab xml:space="preserve" style="rFonts: Times New Roman; sz: 32; szCs: 32;">GND-ID (soweit verfügbar)</ab>
+                    </item>
+                    <p rendition="ListParagraph">
+                       <ptr type="comment" xml:id="c0"/>
+                       <ab xml:space="preserve" style="rFonts: Times New Roman;">https://explore.gnd.network/gnd/118747975</ab>
+                       <note type="comment" from="#c0">
+                          <note>
+                             <ab xml:space="preserve" style="rFonts: Liberation Serif; kern: 0; lang: en-US;">Im Moment werden die Daten zu den Punkten 2.1.2.-2.1.6. händisch eingegeben. Sinnvoll wäre ein automatisiertes Einfügen über den GND-Datensatz mit der Option des Hinzufügens weiterer Informationen.</ab>
+                          </note>
+                       </note>
+                    </p>
+                    <p rendition="ListParagraph"/>
+                    <label>1.1.2.</label>
+                    <item level="2">
+                       <ab xml:space="preserve" style="rFonts: Times New Roman; sz: 32; szCs: 32;">Alternative Schreibweisen des Namens (optional)</ab>
+                    </item>
+                    <label>1.1.2.1.</label>
+                    <item level="3">
+                       <ab xml:space="preserve" style="rFonts: Times New Roman; sz: 28; szCs: 28;">Persönlicher Name/Nachname</ab>
+                       <note type="footnote" xml:id="n2" n="0">
+                          <p rendition="FootnoteText" style="text-align: left;">
+                             <ab xml:space="preserve" style="rFonts: Times New Roman;"> </ab>
+                             <ab xml:space="preserve" style="rFonts: Times New Roman;">Deutsche Nationalbibliothek, „Quantz, Johann Joachim“, </ab>
+                             <ab xml:space="preserve" style="rFonts: Times New Roman; i: ;">GND Explorer</ab>
+                             <ab xml:space="preserve" style="rFonts: Times New Roman;">, https://explore.gnd.network/gnd/118747975, letzte Änderung 17.05.2023, abgerufen am 16.08.2023.</ab>
+                          </p>
+                       </note>
+                    </item>
+                 </body>
+                 <back />
+              </text>
+           </TEI>
+        </x:expect>
+     </x:scenario>
+  </x:scenario>
+
 </x:description>
