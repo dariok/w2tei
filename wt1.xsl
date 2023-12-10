@@ -33,7 +33,32 @@
       <xsl:param name="level" as="xs:integer" />
       <xsl:param name="context" as="node()+" />
       
-      <xsl:for-each-group select="$context" group-starting-with="tei:head[@level = $level 
+      <xsl:for-each-group select="$context" group-starting-with="tei:head[@level = $level
+            and not(preceding-sibling::*[1][self::tei:head[@level = $level]])]">
+         <xsl:choose>
+            <xsl:when test="current-group()[1][@level = $level]">
+               <div>
+                  <xsl:apply-templates select="current-group()[self::tei:head and @level = $level]" />
+                  
+                  <xsl:call-template name="divStructure">
+                     <xsl:with-param name="level" select="$level + 1" />
+                     <xsl:with-param name="context" select="current-group()[not(self::tei:head and @level = $level)]" />
+                  </xsl:call-template>
+               </div>
+            </xsl:when>
+            <xsl:when test="current-group()[self::tei:head]">
+               <xsl:call-template name="divStructure">
+                  <xsl:with-param name="level" select="$level + 1" />
+                  <xsl:with-param name="context" select="current-group()" />
+               </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:apply-templates select="current-group()" />
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:for-each-group>
+      
+      <!--<xsl:for-each-group select="$context" group-starting-with="tei:head[@level = $level 
          and not(preceding-sibling::*[1][self::tei:head[@level = $level]])]">
          <div>
             <xsl:apply-templates select="current-group()[self:: tei:head and @level = $level]" />
@@ -49,7 +74,7 @@
                </xsl:otherwise>
             </xsl:choose>
          </div>
-      </xsl:for-each-group>
+      </xsl:for-each-group>-->
    </xsl:template>
   
   <xsl:template match="@* | node()">

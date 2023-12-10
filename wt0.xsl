@@ -161,7 +161,7 @@
                         <xsl:when test="$from//w:ilvl/@w:val != $level - 1">
                            <xsl:value-of select="$pic
                               => replace('%' || $level + 1, string($count))
-                              => replace('%' || $level, '1')" />
+                              => replace('%' || $level, '0')" />
                         </xsl:when>
                         <xsl:otherwise>
                            <xsl:value-of select="replace($pic, '%' || $level + 1, string($count))" />
