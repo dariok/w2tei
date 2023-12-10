@@ -552,7 +552,7 @@
                <teiHeader>...</teiHeader>
                <text>
                   <body>
-                        <head level="0" rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;">
+                     <head level="0" rendition="AMWGApparatberschrift2" style="text-align: left; outlineLvl: 0;" n="">
                            <ab xml:space="preserve" style="rFonts: Arial; smallCaps: ; color: auto; kern: 0; sz: 24; szCs: 28; lang: de-DE;"
                               >Über das Wesen des verschiedenen Kunstwollens im Orient und Occident</ab>
                         </head>
@@ -1695,17 +1695,17 @@
         </w:p>
       </x:context>
       <x:expect label=".">
-         <head rendition="Heading1" level="0" style="padding-left: 36pt; outlineLvl: 0;">
+         <head rendition="Heading1" level="0" style="padding-left: 36pt; outlineLvl: 0;" n="">
           <anchor type="bookmarkStart" xml:id="_sddw164bik7v"/>
           <anchor type="bookmarkEnd" ref="#_sddw164bik7v"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage</ab>
         </head>
-         <head rendition="Heading2" level="1" style="outlineLvl: 1; padding-left: 72pt;">
+         <head rendition="Heading2" level="1" style="outlineLvl: 1; padding-left: 72pt;" n="">
           <anchor type="bookmarkStart" xml:id="_1lljeedsw1zi"/>
           <anchor type="bookmarkEnd" ref="#_1lljeedsw1zi"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage und eigene Vorarbeiten</ab>
         </head>
-         <head rendition="Heading3" level="2" style="outlineLvl: 2; padding-left: 108pt;">
+         <head rendition="Heading3" level="2" style="outlineLvl: 2; padding-left: 108pt;" n="">
           <anchor type="bookmarkStart" xml:id="_dp00tcwtcmc3"/>
           <anchor type="bookmarkEnd" ref="#_dp00tcwtcmc3"/>
           <ab xml:space="preserve" style="rtl: 0;">Ausgangslage</ab>

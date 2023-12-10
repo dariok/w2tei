@@ -77,38 +77,8 @@
       
       <!-- distinguish between numbered and unordered (bulleted etc.) lists -->
       <xsl:if test="$abstractNum/w:lvl[@w:ilvl = $level]/w:numFmt/@w:val = 'decimal'">
-         <xsl:variable name="start" select="$abstractNum/w:lvl[@w:ilvl eq $level]/w:start/@w:val"/>
-         <xsl:variable name="label" as="map(*)">
-            <xsl:map>
-               <xsl:for-each select="0 to xs:integer($level)">
-                  <xsl:map-entry key=".">
-                     <xsl:variable name="iteration" select="." />
-                     <xsl:choose>
-                        <xsl:when test="$iteration = $level">
-                           <xsl:value-of select="count($context/preceding::w:p[descendant::w:numId/@w:val = $numId
-                              and descendant::w:ilvl/@w:val = $iteration]) + $start"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                           <xsl:value-of select="count($context/preceding::w:p[descendant::w:numId/@w:val = $numId
-                              and descendant::w:ilvl/@w:val = $iteration]) + $start - 1"/>
-                        </xsl:otherwise>
-                     </xsl:choose>
-                  </xsl:map-entry>
-               </xsl:for-each>
-            </xsl:map>
-         </xsl:variable>
-         <xsl:variable name="picture" select="$abstractNum/w:lvl[@w:ilvl = $level]/w:lvlText/@w:val"/>
-         
          <label>
-            <xsl:analyze-string select="$picture" regex="%(\d+)">
-               <xsl:matching-substring>
-                  <xsl:variable name="index" select="number(substring(., 2)) - 1"/>
-                  <xsl:value-of select="map:get($label, $index)" />
-               </xsl:matching-substring>
-               <xsl:non-matching-substring>
-                  <xsl:value-of select="." />
-               </xsl:non-matching-substring>
-            </xsl:analyze-string>
+            <xsl:apply-templates select="." mode="numbering" />
          </label>
       </xsl:if>
       
@@ -132,6 +102,11 @@
                </xsl:otherwise>
             </xsl:choose>
          </xsl:attribute>
+         <xsl:if test="descendant::w:numPr">
+            <xsl:attribute name="n">
+               <xsl:apply-templates select="." mode="numbering" />
+            </xsl:attribute>
+         </xsl:if>
          <xsl:apply-templates select="*" />
       </head>
    </xsl:template>
@@ -146,6 +121,58 @@
       <xsl:attribute name="style" select="normalize-space(string-join($style[normalize-space() ne ''], '; ')) || ';'" />
     </xsl:if>
   </xsl:template>
+   
+   <xsl:template match="w:p" mode="numbering">
+      <xsl:param name="picture" />
+      
+      <xsl:variable name="level" select="descendant::w:ilvl/@w:val" />
+      <xsl:variable name="numId" select="descendant::w:numId/@w:val" />
+      <xsl:variable name="abstractNumId" select="//w:num[@w:numId = $numId]/w:abstractNumId/@w:val" />
+      <xsl:variable name="abstractNum" select="//w:abstractNum[@w:abstractNumId = $abstractNumId]" />
+      <xsl:variable name="pic" select="if ( $picture = '' )
+            then $abstractNum/w:lvl[@w:ilvl = $level]/w:lvlText/@w:val => string()
+            else $picture" />
+      
+      <!-- distinguish between numbered and unordered (bulleted etc.) lists -->
+      <xsl:if test="$abstractNum/w:lvl[@w:ilvl = $level]/w:numFmt/@w:val = 'decimal'">
+         <xsl:variable name="start" select="$abstractNum/w:lvl[@w:ilvl eq $level]/w:start/@w:val"/>
+         <xsl:variable name="from" select="preceding-sibling::w:p[descendant::w:numId/@w:val = $numId and number(descendant::w:ilvl/@w:val) lt number($level)][1]"/>
+         <xsl:variable name="count">
+            <xsl:choose>
+               <xsl:when test="$from">
+                  <xsl:value-of select="count($from/following-sibling::w:p[descendant::w:numId/@w:val = $numId and descendant::w:ilvl/@w:val = $level]
+                     intersect preceding-sibling::w:p[descendant::w:numId/@w:val = $numId and descendant::w:ilvl/@w:val = $level]) + $start" />
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:value-of select="count(preceding-sibling::w:p[descendant::w:numId/@w:val = $numId and descendant::w:ilvl/@w:val = $level]) + $start" />
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:variable>
+         
+         
+         <xsl:choose>
+            <xsl:when test="$level = 0">
+               <xsl:value-of select="replace($pic, '%' || $level + 1, string($count)) => normalize-space()" />
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:apply-templates select="$from" mode="numbering">
+                  <xsl:with-param name="picture">
+                     <xsl:choose>
+                        <xsl:when test="$from//w:ilvl/@w:val != $level - 1">
+                           <xsl:value-of select="$pic
+                              => replace('%' || $level + 1, string($count))
+                              => replace('%' || $level, '1')" />
+                        </xsl:when>
+                        <xsl:otherwise>
+                           <xsl:value-of select="replace($pic, '%' || $level + 1, string($count))" />
+                        </xsl:otherwise>
+                     </xsl:choose>
+                  </xsl:with-param>
+               </xsl:apply-templates>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:if>
+   </xsl:template>
   
   <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
   
