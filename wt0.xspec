@@ -883,7 +883,7 @@
                   <ab xml:space="preserve" style="rFonts: Junicode; highlight: yellow; lang: de-DE;">Anm.</ab>
                   <ab style="rFonts: Junicode; highlight: yellow; lang: de-DE;" xml:space="preserve"> </ab>
                   <field function=" NOTEREF _Ref534135879 \h 
-\* MERGEFORMAT " style="rFonts: Junicode; highlight: yellow; lang: de-DE;">2</field>
+\* MERGEFORMAT "><ab xml:space="preserve" style="rFonts: Junicode; highlight: yellow; lang: de-DE;">2</ab></field>
                   <ab xml:space="preserve" style="rFonts: Junicode; highlight: yellow; lang: de-DE;">.</ab>
                 </p>
               </note>
@@ -1999,6 +1999,147 @@
         <ab xml:space="preserve" style="rFonts: Segoe UI Historic; sz: 24; szCs: 24;">). </ab>
       </x:expect>
     </x:scenario>
+      <x:scenario label="T3.9: multiple fields">
+         <x:context>
+            <w:p>
+               <w:r w:rsidR="00FC0128" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:t>oben Abschnitt</w:t>
+               </w:r>
+               <w:r w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:t xml:space="preserve"> </w:t>
+               </w:r>
+               <w:r w:rsidR="004E4BEE" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="begin"/>
+               </w:r>
+               <w:r w:rsidR="004E4BEE" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:instrText xml:space="preserve"> REF _Ref174872928 \r \h </w:instrText>
+               </w:r>
+               <w:r w:rsidR="0084036E" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:instrText xml:space="preserve"> \* MERGEFORMAT </w:instrText>
+               </w:r>
+               <w:r w:rsidR="004E4BEE" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+               </w:r>
+               <w:r w:rsidR="004E4BEE" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="separate"/>
+               </w:r>
+               <w:r w:rsidR="00300E18" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                     <w:cs/>
+                  </w:rPr>
+                  <w:t>‎</w:t>
+               </w:r>
+               <w:r w:rsidR="00300E18" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:t>3</w:t>
+               </w:r>
+               <w:r w:rsidR="004E4BEE" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="end"/>
+               </w:r>
+               <w:r w:rsidR="004E4BEE" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:t xml:space="preserve">, bes. Anm. </w:t>
+               </w:r>
+               <w:r w:rsidR="00FA7032" w:rsidRPr="00FA7032">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                     <w:highlight w:val="green"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="begin"/>
+               </w:r>
+               <w:r w:rsidR="00FA7032" w:rsidRPr="00FA7032">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                     <w:highlight w:val="green"/>
+                  </w:rPr>
+                  <w:instrText xml:space="preserve"> NOTEREF _Ref174872966 \h </w:instrText>
+               </w:r>
+               <w:r w:rsidR="00FA7032">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                     <w:highlight w:val="green"/>
+                  </w:rPr>
+                  <w:instrText xml:space="preserve"> \* MERGEFORMAT </w:instrText>
+               </w:r>
+               <w:r w:rsidR="00FA7032" w:rsidRPr="00FA7032">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                     <w:highlight w:val="green"/>
+                  </w:rPr>
+               </w:r>
+               <w:r w:rsidR="00FA7032" w:rsidRPr="00FA7032">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                     <w:highlight w:val="green"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="separate"/>
+               </w:r>
+               <w:r w:rsidR="00FA7032" w:rsidRPr="00FA7032">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                     <w:highlight w:val="green"/>
+                  </w:rPr>
+                  <w:t>40</w:t>
+               </w:r>
+               <w:r w:rsidR="00FA7032" w:rsidRPr="00FA7032">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                     <w:highlight w:val="green"/>
+                  </w:rPr>
+                  <w:fldChar w:fldCharType="end"/>
+               </w:r>
+               <w:r w:rsidR="004E4BEE" w:rsidRPr="0084036E">
+                  <w:rPr>
+                     <w:rFonts w:ascii="Junicode" w:hAnsi="Junicode"/>
+                  </w:rPr>
+                  <w:t>.</w:t>
+               </w:r>
+            </w:p>
+         </x:context>
+         <x:expect label=".">
+            <p>
+               <ab xml:space="preserve" style="rFonts: Junicode;">oben Abschnitt</ab>
+               <ab xml:space="preserve" style="rFonts: Junicode;"> </ab>
+               <field function=" REF _Ref174872928 \r \h  \* MERGEFORMAT ">
+                  <ab xml:space="preserve" style="rFonts: Junicode; cs: ;">‎</ab>
+                  <ab xml:space="preserve" style="rFonts: Junicode;">3</ab>
+               </field>
+               <ab xml:space="preserve" style="rFonts: Junicode;">, bes. Anm. </ab>
+               <field function=" NOTEREF _Ref174872966 \h  \* MERGEFORMAT ">
+                  <ab xml:space="preserve" style="rFonts: Junicode; highlight: green;">40</ab>
+               </field>
+               <ab xml:space="preserve" style="rFonts: Junicode;">.</ab>
+            </p>
+         </x:expect>
+      </x:scenario>
   </x:scenario>
   
   <x:scenario label="T4: styles">

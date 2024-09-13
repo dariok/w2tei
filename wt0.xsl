@@ -174,7 +174,11 @@
       </xsl:if>
    </xsl:template>
   
-  <xsl:template match="w:r[not(*) or (w:rPr and not(w:rPr/following-sibling::*))]" />
+   <xsl:template match="w:r[
+            not(*)
+         or (w:rPr and not(w:rPr/following-sibling::*))
+         or w:t = ''
+      ]" />
   
   <xsl:template match="w:r" mode="#all">
     <ab>
@@ -214,30 +218,34 @@
     <xsl:value-of select="codepoints-to-string(wt:hexToDec(@w:char))" />
   </xsl:template>
   
-  <xsl:template match="w:r[w:fldChar/@w:fldCharType = ('separate','end')]" />
-  <xsl:template match="w:r[w:fldChar/@w:fldCharType = 'begin']">
-    <xsl:choose>
-      <xsl:when test="contains(following-sibling::w:r[1]/w:instrText, 'HYPERLINK')">
-        <ref>
-          <xsl:attribute name="target">
-            <xsl:variable name="target" select="substring(following-sibling::w:r[1]/w:instrText, 13)" />
-            <xsl:value-of select="normalize-space(substring($target, 1, string-length($target) - 2))"/>
-          </xsl:attribute>
-          <xsl:apply-templates select="following-sibling::w:r[w:fldChar][1]/following-sibling::*
-            intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*" mode="link" />
-        </ref>
-      </xsl:when>
-      <xsl:otherwise>
-        <field>
-          <xsl:attribute name="function"
-            select="string-join(following-sibling::w:r
-            [not(preceding-sibling::w:r[w:fldChar[@w:fldCharType = 'separate']])]/w:instrText, '')"/>
-          <xsl:apply-templates select="(following-sibling::w:r[w:fldChar][1]/following-sibling::*
-            intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*)/*" />
-        </field>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
+   <xsl:template match="w:r[w:fldChar/@w:fldCharType = ('separate','end')]" />
+   <xsl:template match="w:r[w:fldChar/@w:fldCharType = 'begin']">
+      <xsl:choose>
+         <xsl:when test="contains(following-sibling::w:r[1]/w:instrText, 'HYPERLINK')">
+           <ref>
+             <xsl:attribute name="target">
+               <xsl:variable name="target" select="substring(following-sibling::w:r[1]/w:instrText, 13)" />
+               <xsl:value-of select="normalize-space(substring($target, 1, string-length($target) - 2))"/>
+             </xsl:attribute>
+             <xsl:apply-templates select="following-sibling::w:r[w:fldChar][1]/following-sibling::*
+               intersect following-sibling::w:r[w:fldChar][2]/preceding-sibling::*" mode="link" />
+           </ref>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:variable name="field" select="
+                            following-sibling::*
+                  intersect following-sibling::w:r[w:fldChar/@w:fldCharType = 'end'][1]/preceding-sibling::*
+               " />
+            <xsl:variable name="types" select="$field ! (w:fldChar/@w:fldCharType, '')[1] "/>
+            <xsl:variable name="separator" select="index-of($types, 'separate')" />
+            
+            <field>
+               <xsl:attribute name="function" select="string-join($field[position() lt $separator]/w:instrText)" />
+               <xsl:apply-templates select="$field[position() gt $separator]" mode="inField" />
+           </field>
+         </xsl:otherwise>
+      </xsl:choose>
+   </xsl:template>
   <xsl:template match="w:r[(w:t or w:sym) and preceding-sibling::w:r[w:fldChar][1][w:fldChar/@w:fldCharType = 'separate']
     and following-sibling::w:r[w:fldChar][1][w:fldChar/@w:fldCharType = 'end']]" priority="0.75"/>
   <xsl:template match="w:r[w:instrText]" />
