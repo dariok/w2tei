@@ -83,7 +83,7 @@
       </xsl:if>
       
       <item level="{$level}">
-         <xsl:apply-templates select="w:r" />
+         <xsl:apply-templates select="*" />
       </item>
    </xsl:template>
    
@@ -94,6 +94,9 @@
             <xsl:choose>
                <xsl:when test="w:pPr/w:outlineLvl">
                   <xsl:value-of select="w:pPr/w:outlineLvl/@w:val" />
+               </xsl:when>
+               <xsl:when test="starts-with(w:pPr/w:pStyle/@w:val, 'Heading')">
+                  <xsl:value-of select="substring-after(w:pPr/w:pStyle/@w:val, 'Heading')" />
                </xsl:when>
                <xsl:otherwise>
                   <xsl:variable name="pStyle" select="w:pPr/w:pStyle/@w:val" />
@@ -455,7 +458,7 @@
       </xsl:if>
     </xsl:if>
   </xsl:template>
-  
+   
   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
   
 </xsl:stylesheet>
