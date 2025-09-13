@@ -136,6 +136,9 @@
          <xsl:when test="$context/w:pPr/w:outlineLvl">
             <xsl:sequence select="true()" />
          </xsl:when>
+         <xsl:when test="starts-with($context/w:pPr/w:pStyle/@w:val, 'Heading')">
+            <xsl:sequence select="true()" />
+         </xsl:when>
          <xsl:otherwise>
             <xsl:variable name="pStyle" select="$context/w:pPr/w:pStyle/@w:val" />
             <xsl:variable name="style" select="$context/ancestor::pkg:package//w:style[@w:styleId = $pStyle]" />
