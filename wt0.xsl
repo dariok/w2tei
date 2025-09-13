@@ -459,6 +459,14 @@
     </xsl:if>
   </xsl:template>
    
-  <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
+   <xsl:template match="w:sdt">
+      <ab>
+         <xsl:attribute name="type" select="w:sdtPr/w:alias/@w:val" />
+         <xsl:apply-templates select="w:sdtPr/w:rPr" />
+         <xsl:apply-templates select="w:sdtContent/*" />
+      </ab>
+   </xsl:template>
+   
+   <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
   
 </xsl:stylesheet>
