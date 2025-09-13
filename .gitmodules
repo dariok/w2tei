@@ -1,0 +1,3 @@
+[submodule "2tei-post"]
+	path = 2tei-post
+	url = ../2tei-post/
