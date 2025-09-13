@@ -1,93 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="22.1">
+<project>
     <meta>
         <filters directoryPatterns="" filePatterns="\Qw2tei.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="22.1" xml:space="preserve">
+            <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>test/googledoc.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Word (Flat OPC) → TEI</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>test/edoc_ed000240_125_introduction-word.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>edoc_ed000240_125_introduction-word</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>test/Der%20deutsche%20Brief%201650%20-%201850%20(1).docx</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>DOCX → TEI basic</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>test/Der%20deutsche%20Brief%201650%20-%201850.docx</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>DOCX → TEI basic</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
                         </scenarioAssociation-array>
                     </entry>
                     <entry>
@@ -116,7 +36,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/wt0.xsl</String>
+                                    <String>${pd}/../w2tei/wt0.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -137,7 +57,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${cfn}-tei.xml</String>
+                                    <String>${pd}/w2tei-output/${cfn}-tei.xml</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -168,96 +88,8 @@
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array>
-                                        <String>${pdu}/wt1.xsl</String>
-                                        <String>${pdu}/wt2.xsl</String>
-                                    </String-array>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>edoc_ed000240_125_introduction-word</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/add/pre.xsl</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XSL</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${pd}/test/i4.xml</String>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array>
-                                        <String>${pdu}/add/wtotei-intro.xsl</String>
-                                        <String>${pdu}/add/intro-1.xsl</String>
-                                        <String>${pdu}/add/intro-2.xsl</String>
-                                        <String>${pdu}/add/intro-3.xsl</String>
+                                        <String>${pd}/../w2tei/wt1.xsl</String>
+                                        <String>${pd}/../w2tei/wt2.xsl</String>
                                     </String-array>
                                 </field>
                                 <field name="xslTransformer">
@@ -290,10 +122,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>/home/dario/git/w2tei/docx.xsl</String>
+                                    <String>${pd}/../w2tei/docx.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>/home/dario/git/w2tei/word-empty.xml</String>
+                                    <String>${pd}/../w2tei/word-empty.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -305,13 +137,13 @@
                                     <String>XML</String>
                                 </field>
                                 <field name="saveAs">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/w2tei/test/wt0.xml</String>
+                                    <String>${pd}/../w2tei-output/${cfn}-opc.xml</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -398,10 +230,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>/home/dario/git/w2tei/docx.xsl</String>
+                                    <String>${pd}/../w2tei/docx.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>/home/dario/git/w2tei/word-empty.xml</String>
+                                    <String>${pd}/../w2tei/word-empty.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -413,13 +245,13 @@
                                     <String>XML</String>
                                 </field>
                                 <field name="saveAs">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/w2tei/test/tei.xml</String>
+                                    <String>${pd}/w2tei-output/{$cfn}-tei.xml</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -428,7 +260,7 @@
                                     <null/>
                                 </field>
                                 <field name="openInEditor">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInHTMLPane">
                                     <Boolean>false</Boolean>
@@ -475,9 +307,10 @@
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array>
-                                        <String>file:/home/dario/git/w2tei/wt0.xsl</String>
-                                        <String>file:/home/dario/git/w2tei/wt1.xsl</String>
-                                        <String>file:/home/dario/git/w2tei/wt2.xsl</String>
+                                        <String>${pd}/../w2tei/wt0.xsl</String>
+                                        <String>${pd}/../w2tei/wt1.xsl</String>
+                                        <String>${pd}/../w2tei/wt2.xsl</String>
+                                        <String>${pd}/../w2tei/2tei-post/process-hi.xsl</String>
                                     </String-array>
                                 </field>
                                 <field name="xslTransformer">
