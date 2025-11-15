@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
    xmlns:map="http://www.w3.org/2005/xpath-functions/map"
-  xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
-  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
-  xmlns:tei="http://www.tei-c.org/ns/1.0"
-  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-  xmlns:wt="https://github.com/dariok/w2tei"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:xstring = "https://github.com/dariok/XStringUtils"
-  xmlns="http://www.tei-c.org/ns/1.0"
-  exclude-result-prefixes="#all"
-  version="3.0">
+   xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"
+   xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
+   xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+   xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+   xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+   xmlns:wt="https://github.com/dariok/w2tei"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xmlns:xstring = "https://github.com/dariok/XStringUtils"
+   xmlns="http://www.tei-c.org/ns/1.0"
+   exclude-result-prefixes="#all"
+   version="3.0">
   
   <xsl:output indent="1" omit-xml-declaration="1" />
   
@@ -60,9 +62,9 @@
   </xsl:template>
   
   <xsl:template match="w:comment/w:p">
-    <note>
+    <ab>
       <xsl:apply-templates select="*"/>
-    </note>
+    </ab>
   </xsl:template>
   
    <!-- numberings usually are part of lists, except when applied to a heading. Recognize headings by looking for an
@@ -187,7 +189,7 @@
     <ab>
       <xsl:attribute name="xml:space">preserve</xsl:attribute>
       <xsl:apply-templates select="w:rPr" />
-      <xsl:apply-templates select="w:t | w:sym | w:tab | w:br" />
+      <xsl:apply-templates select="w:t | w:sym | w:tab | w:br | descendant::w:drawing" />
     </ab>
   </xsl:template>
   
@@ -468,5 +470,11 @@
    </xsl:template>
    
    <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
+   
+   <xsl:template match="w:drawing">
+      <figure>
+         <graphic url="{ (descendant::wp:docPr/@descr, descendant::pic:cNvPr/@descr)[1] }" />
+      </figure>
+   </xsl:template>
   
 </xsl:stylesheet>
