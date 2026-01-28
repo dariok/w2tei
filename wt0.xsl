@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+   xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
    xmlns:map="http://www.w3.org/2005/xpath-functions/map"
    xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"
    xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"
@@ -18,6 +19,8 @@
   
   <xsl:include href="string-pack.xsl"/>
   <xsl:include href="word-pack.xsl"/>
+   
+   <xsl:variable name="documentRels" select="//pkg:part[@pkg:name = '/word/_rels/document.xml.rels']" />
   
   <xsl:template match="/">
     <xsl:apply-templates select="//w:document"/>
@@ -448,7 +451,10 @@
   <!-- indentation of first line -->
   <xsl:template match="w:ind" as="xs:string*">
     <xsl:if test="@w:firstLine">
-      <xsl:variable name="val" select="round(@w:firstLine/number() div 20)" />
+       <xsl:variable name="val" select="if ( @w:start )
+          then round((number(@w:firstLine) + number(@w:start)) div 20)
+          else round(number(@w:firstLine) div 20)
+          "/>
       <xsl:if test="$val gt 0">
         <xsl:value-of select="'text-indent: ' || $val || 'pt'"/>
       </xsl:if>
@@ -472,8 +478,10 @@
    <xsl:template match="pkg:part[not(@pkg:name='/word/document.xml')]" />
    
    <xsl:template match="w:drawing">
+      <xsl:variable name="pic" select="descendant::pic:pic/pic:blipFill/a:blip/@r:embed" />
+      <xsl:variable name="rel" select="$documentRels//*:Relationship[@Id = $pic]/@Target"/>
       <figure>
-         <graphic url="{ (descendant::wp:docPr/@descr, descendant::pic:cNvPr/@descr)[1] }" />
+         <graphic url="{ ($rel, descendant::pic:cNvPr/@name, descendant::wp:docPr/@name, descendant::wp:docPr/@descr, descendant::pic:cNvPr/@descr)[1] }" />
       </figure>
    </xsl:template>
   
