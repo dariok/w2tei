@@ -450,21 +450,8 @@
   
   <!-- indentation of first line -->
   <xsl:template match="w:ind" as="xs:string*">
-    <xsl:if test="@w:firstLine">
-       <xsl:variable name="val" select="if ( @w:start )
-          then round((number(@w:firstLine) + number(@w:start)) div 20)
-          else round(number(@w:firstLine) div 20)
-          "/>
-      <xsl:if test="$val gt 0">
-        <xsl:value-of select="'text-indent: ' || $val || 'pt'"/>
-      </xsl:if>
-    </xsl:if>
-    <xsl:if test="@w:left">
-      <xsl:variable name="val" select="round(@w:left/number() div 20)" />
-      <xsl:if test="$val gt 0">
-        <xsl:value-of select="'padding-left: ' || $val || 'pt'"/>
-      </xsl:if>
-    </xsl:if>
+     <xsl:variable name="values" select="(@w:firstLine, @w:start, @w:left)" as="xs:int+"/>
+     <xsl:value-of select="'text-indent: ' || round(sum($values) div 20) || 'px'"/>
   </xsl:template>
    
    <xsl:template match="w:sdt">
