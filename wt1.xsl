@@ -52,6 +52,11 @@
                   <xsl:with-param name="context" select="current-group()" />
                </xsl:call-template>
             </xsl:when>
+            <xsl:when test="position() = 1 and not(current-group()[1]/preceding-sibling::*)">
+               <div>
+                  <xsl:apply-templates select="current-group()" />
+               </div>
+            </xsl:when>
             <xsl:otherwise>
                <xsl:apply-templates select="current-group()" />
             </xsl:otherwise>
