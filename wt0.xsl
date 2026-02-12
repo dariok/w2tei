@@ -450,9 +450,14 @@
   
   <!-- indentation of first line -->
   <xsl:template match="w:ind" as="xs:string*">
-     <xsl:variable name="values" select="(@w:firstLine, @w:start, @w:left)" as="xs:int+"/>
-     <xsl:value-of select="'text-indent: ' || round(sum($values) div 20) || 'px'"/>
+     <xsl:apply-templates select="@w:firstLine | @w:start | @w:left | @w:right" />
   </xsl:template>
+   <xsl:template match="@w:firstLine | @w:start">
+      <xsl:value-of select="'text-indent: ' || round(number(.) div 20) || 'px'"/>
+   </xsl:template>
+   <xsl:template match="@w:left | @w:right">
+      <xsl:value-of select="'padding-' || local-name() || ': ' || round(number(.) div 20) || 'px'"/>
+   </xsl:template>
    
    <xsl:template match="w:sdt">
       <ab>
