@@ -70,6 +70,9 @@
     </ab>
   </xsl:template>
   
+   <!-- TOC? – leave this for now -->
+   <xsl:template match="w:sdt" />
+  
    <!-- numberings usually are part of lists, except when applied to a heading. Recognize headings by looking for an
        explicit style name or the presence of w:outlineLvl -->
    <xsl:template match="w:p[descendant::w:numPr and not(ancestor::w:tc or wt:is(., 'Heading')or w:pPr/w:outlineLvl)]">
@@ -188,6 +191,12 @@
          or w:t = ''
       ]" />
   
+   <xsl:template match="w:comment">
+      <note type="comment" xml:id="comment">
+         <!-- this must be dealt with when we have an example -->
+      </note>
+   </xsl:template>
+  
   <xsl:template match="w:r" mode="#all">
     <ab>
       <xsl:attribute name="xml:space">preserve</xsl:attribute>
@@ -197,7 +206,7 @@
   </xsl:template>
   
   <xsl:template match="w:pStyle | w:rStyle">
-    <xsl:attribute name="rendition" select="@w:val" />
+    <xsl:attribute name="rendition" select="'#' || @w:val" />
   </xsl:template>
   
   <xsl:template match="w:rPr[*]" as="attribute()*">
@@ -213,14 +222,43 @@
     </xsl:if>
   </xsl:template>
   
-  <xsl:template match="w:rPr/*[not(self::w:rStyle)]" as="xs:string">
-    <xsl:variable name="val">
-      <xsl:value-of select="local-name()"/>
-      <xsl:text>: </xsl:text>
-      <xsl:value-of select="translate((@w:val | @w:ascii | @w:cs)[1], ';', ',')" />
-    </xsl:variable>
-    <xsl:value-of select="string($val)"/>
-  </xsl:template>
+   <xsl:template match="w:rPr/*[not(self::w:rStyle)]" as="xs:string">
+      <xsl:variable name="val">
+         <xsl:choose>
+            <xsl:when test="local-name() = 'rFonts'">
+               <xsl:text>font-family: </xsl:text>
+               <xsl:value-of select="(@w:ascii, @w:cs)[1]"/>
+            </xsl:when>
+            <xsl:when test="local-name() = 'b' and not(@w:val = '0')">
+               <xsl:text>font-weight: bold</xsl:text>
+            </xsl:when>
+            <xsl:when test="local-name() = 'i' and not(@w:val = '0')">
+               <xsl:text>font-variant: italic</xsl:text>
+            </xsl:when>
+            <xsl:when test="local-name() = 'u' and not(@w:val = 'none')">
+               <xsl:text>text-decoration: underline</xsl:text>
+            </xsl:when>
+            <xsl:when test="local-name() = 'sz' and not(@w:val = '0')">
+               <xsl:text>font-size: </xsl:text>
+               <xsl:value-of select="number(@w:val) div 2"/>
+               <xsl:text>pt</xsl:text>
+            </xsl:when>
+            <xsl:when test="local-name() = 'vertAlign'">
+               <xsl:text>vertical-align: </xsl:text>
+               <xsl:choose>
+                  <xsl:when test="@w:val = ('super', 'superscript')">super</xsl:when>
+                  <xsl:otherwise>sub</xsl:otherwise>
+               </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="local-name()"/>
+               <xsl:text>: </xsl:text>
+               <xsl:value-of select="translate((@w:val | @w:ascii | @w:cs)[1], ';', ',')" />
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:value-of select="string($val)"/>
+   </xsl:template>
   
   <xsl:template match="w:sym">
     <xsl:value-of select="codepoints-to-string(wt:hexToDec(@w:char))" />
@@ -248,8 +286,8 @@
             <xsl:variable name="separator" select="index-of($types, 'separate')" />
             
             <field>
-               <xsl:attribute name="function" select="string-join($field[position() lt $separator]/w:instrText)" />
-               <xsl:apply-templates select="$field[position() gt $separator]" mode="inField" />
+               <xsl:attribute name="function" select="string-join($field[position() lt $separator[1]]/w:instrText)" />
+               <xsl:apply-templates select="$field[position() gt $separator[last()]]" mode="inField" />
            </field>
          </xsl:otherwise>
       </xsl:choose>
@@ -351,7 +389,10 @@
   <xsl:template match="w:r[w:commentReference]">
     <xsl:variable name="cID" select="w:commentReference/@w:id"/>
     <xsl:variable name="comment" select="//w:comment[@w:id = $cID]" />
-    <note type="comment" from="#c{$cID}">
+    <note type="comment" from="#c{$cID}" xml:id="comment{$cID}">
+       <xsl:if test="$comment/@w:author">
+          <xsl:attribute name="resp" select="'#' || $comment/@w:author" />
+       </xsl:if>
       <xsl:apply-templates select="$comment/w:p" />
     </note>
   </xsl:template>
@@ -453,10 +494,12 @@
      <xsl:apply-templates select="@w:firstLine | @w:start | @w:left | @w:right" />
   </xsl:template>
    <xsl:template match="@w:firstLine | @w:start">
-      <xsl:value-of select="'text-indent: ' || round(number(.) div 20) || 'px'"/>
+      <xsl:if test=". != '0'">
+         <xsl:value-of select="'text-indent: ' || round(number(.) div 20) || 'pt'"/>
+      </xsl:if>
    </xsl:template>
    <xsl:template match="@w:left | @w:right">
-      <xsl:value-of select="'padding-' || local-name() || ': ' || round(number(.) div 20) || 'px'"/>
+      <xsl:value-of select="'padding-' || local-name() || ': ' || round(number(.) div 20) || 'pt'"/>
    </xsl:template>
    
    <xsl:template match="w:sdt">
